@@ -3,7 +3,8 @@
 Source: [official SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/),
 CC BY-SA 4.0. Raw files are kept outside Git at `/private/tmp/neuronpatch-squad`;
 URLs, SHA-256 hashes and structural counts are in `source_manifest.json`.
-No model outputs have been generated for these data in this project.
+Development baseline outputs are now available; confirmation inference remains untouched.
+See [baseline report](BASELINE_REPORT.md) and [protocol](PROTOCOL.md).
 
 Next protocol must split by article, retain all accepted answer aliases, and reject
 or handle oversized full contexts explicitly. Never truncate away evidence while
@@ -21,5 +22,9 @@ training cases separately from correction cases, or explicitly compare that poli
 with an all-supported reference constraint. Do not use final-test correctness to
 construct training masks. This is a design requirement, not yet a tested recipe.
 
-This directory prepares data provenance only. No real-document improvement claim
-or experiment protocol has yet been committed.
+The prepared samples and baseline files contain SQuAD-derived text under CC BY-SA 4.0.
+No edited-model improvement on real passages has yet been demonstrated.
+
+Reproduce with the pinned cached model: run `prepare.py`, then `baseline.py`. Both
+refuse to overwrite existing output directories. Raw source paths are specified
+in `prepare.py`; source hashes are checked before sampling.

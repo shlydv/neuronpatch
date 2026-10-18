@@ -1,0 +1,27 @@
+{
+  "reviewer": "assistant; qualitative, not blinded",
+  "changes_automatic_scores": false,
+  "categories": {
+    "wording_only": [
+      "570afbdf6b8089140040f67a",
+      "5734257c4776f41900661962",
+      "56f89312aef23719006261c5",
+      "5709f59f4103511400d594c4",
+      "56ddecfe66d3e219004dae17",
+      "5727affd4b864d1900163a68"
+    ],
+    "scope_ambiguity": [
+      "5734203ed058e614000b6985"
+    ],
+    "question_ambiguity": [
+      "570a76684103511400d5973a"
+    ],
+    "substantive_error": [
+      "572814a54b864d190016440f",
+      "57262eb438643c19005ad2b3",
+      "573423284776f4190066192d",
+      "5730f90c497a881900248ab5"
+    ]
+  },
+  "rationale": "See BASELINE_REPORT.md; retain raw outputs and source contexts in baseline/val.json."
+}

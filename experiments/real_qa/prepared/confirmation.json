@@ -1,0 +1,723 @@
+[
+  {
+    "id": "56e1bc3ae3433e1400423105",
+    "article": "Computational_complexity_theory",
+    "context": "To classify the computation time (or similar resources, such as space consumption), one is interested in proving upper and lower bounds on the minimum amount of time required by the most efficient algorithm solving a given problem. The complexity of an algorithm is usually taken to be its worst-case complexity, unless specified otherwise. Analyzing a particular algorithm falls under the field of analysis of algorithms. To show an upper bound T(n) on the time complexity of a problem, one needs to show only that there is a particular algorithm with running time at most T(n). However, proving lower bounds is much more difficult, since lower bounds make a statement about all possible algorithms that solve a given problem. The phrase \"all possible algorithms\" includes not just the algorithms known today, but any algorithm that might be discovered in the future. To show a lower bound of T(n) for a problem requires showing that no algorithm can have time complexity lower than T(n).",
+    "question": "The analysis of a specific algorithm is typically assigned to what field of computational science?",
+    "answers": [
+      "analysis of algorithms"
+    ],
+    "answer": "analysis of algorithms",
+    "kind": "answerable",
+    "prompt_tokens": 248
+  },
+  {
+    "id": "5ad54e7c5b96ef001a10ac79",
+    "article": "Computational_complexity_theory",
+    "context": "To classify the computation time (or similar resources, such as space consumption), one is interested in proving upper and lower bounds on the minimum amount of time required by the most efficient algorithm solving a given problem. The complexity of an algorithm is usually taken to be its worst-case complexity, unless specified otherwise. Analyzing a particular algorithm falls under the field of analysis of algorithms. To show an upper bound T(n) on the time complexity of a problem, one needs to show only that there is a particular algorithm with running time at most T(n). However, proving lower bounds is much more difficult, since lower bounds make a statement about all possible algorithms that solve a given problem. The phrase \"all possible algorithms\" includes not just the algorithms known today, but any algorithm that might be discovered in the future. To show a lower bound of T(n) for a problem requires showing that no algorithm can have time complexity lower than T(n).",
+    "question": "When does one not need to show only that there is a particular algorithm running time at mons T(nO?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 255
+  },
+  {
+    "id": "57097051ed30961900e84133",
+    "article": "Sky_(United_Kingdom)",
+    "context": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services. Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+    "question": "What was the name of BSkyB's digital service launched under?",
+    "answers": [
+      "Sky Digital"
+    ],
+    "answer": "Sky Digital",
+    "kind": "answerable",
+    "prompt_tokens": 214
+  },
+  {
+    "id": "5a2c0fb8bfd06b001a5ae9b9",
+    "article": "Sky_(United_Kingdom)",
+    "context": "BSkyB's digital service was officially launched on 1 October 1998 under the name Sky Digital, although small-scale tests were carried out before then. At this time the use of the Sky Digital brand made an important distinction between the new service and Sky's analogue services. Key selling points were the improvement in picture and sound quality, increased number of channels and an interactive service branded Open.... now called Sky Active, BSkyB competed with the ONdigital (later ITV Digital) terrestrial offering and cable services. Within 30 days, over 100,000 digiboxes had been sold, which help bolstered BSkyB's decision to give away free digiboxes and minidishes from May 1999.",
+    "question": "When was BSkyB's digital service unofficially launched?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 212
+  },
+  {
+    "id": "572649d8f1498d1400e8db3a",
+    "article": "1973_oil_crisis",
+    "context": "Despite being relatively unaffected by the embargo, the UK nonetheless faced an oil crisis of its own - a series of strikes by coal miners and railroad workers over the winter of 1973\u201374 became a major factor in the change of government. Heath asked the British to heat only one room in their houses over the winter. The UK, Germany, Italy, Switzerland and Norway banned flying, driving and boating on Sundays. Sweden rationed gasoline and heating oil. The Netherlands imposed prison sentences for those who used more than their ration of electricity.",
+    "question": "Which country rationed gasoline and heating gas?",
+    "answers": [
+      "Sweden"
+    ],
+    "answer": "Sweden",
+    "kind": "answerable",
+    "prompt_tokens": 165
+  },
+  {
+    "id": "5a38baa2a4b263001a8c18db",
+    "article": "1973_oil_crisis",
+    "context": "Despite being relatively unaffected by the embargo, the UK nonetheless faced an oil crisis of its own - a series of strikes by coal miners and railroad workers over the winter of 1973\u201374 became a major factor in the change of government. Heath asked the British to heat only one room in their houses over the winter. The UK, Germany, Italy, Switzerland and Norway banned flying, driving and boating on Sundays. Sweden rationed gasoline and heating oil. The Netherlands imposed prison sentences for those who used more than their ration of electricity.",
+    "question": "What happened in the UK if you used more than your ration of electricity?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 171
+  },
+  {
+    "id": "57286f373acd2414000df9df",
+    "article": "Yuan_dynasty",
+    "context": "The fourth Yuan emperor, Buyantu Khan (Ayurbarwada), was a competent emperor. He was the first Yuan emperor to actively support and adopt mainstream Chinese culture after the reign of Kublai, to the discontent of some Mongol elite. He had been mentored by Li Meng, a Confucian academic. He made many reforms, including the liquidation of the Department of State Affairs (Chinese: \u5c1a\u66f8\u7701), which resulted in the execution of five of the highest-ranking officials. Starting in 1313 the traditional imperial examinations were reintroduced for prospective officials, testing their knowledge on significant historical works. Also, he codified much of the law, as well as publishing or translating a number of Chinese books and works.",
+    "question": "When did Buyantu resume testing potential government employees?",
+    "answers": [
+      "1313"
+    ],
+    "answer": "1313",
+    "kind": "answerable",
+    "prompt_tokens": 207
+  },
+  {
+    "id": "5ad40515604f3c001a3ffe08",
+    "article": "Yuan_dynasty",
+    "context": "The fourth Yuan emperor, Buyantu Khan (Ayurbarwada), was a competent emperor. He was the first Yuan emperor to actively support and adopt mainstream Chinese culture after the reign of Kublai, to the discontent of some Mongol elite. He had been mentored by Li Meng, a Confucian academic. He made many reforms, including the liquidation of the Department of State Affairs (Chinese: \u5c1a\u66f8\u7701), which resulted in the execution of five of the highest-ranking officials. Starting in 1313 the traditional imperial examinations were reintroduced for prospective officials, testing their knowledge on significant historical works. Also, he codified much of the law, as well as publishing or translating a number of Chinese books and works.",
+    "question": " What government department did Buyantu approve?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 206
+  },
+  {
+    "id": "572867d72ca10214002da2fc",
+    "article": "Yuan_dynasty",
+    "context": "Instability troubled the early years of Kublai Khan's reign. Ogedei's grandson Kaidu refused to submit to Kublai and threatened the western frontier of Kublai's domain. The hostile but weakened Song dynasty remained an obstacle in the south. Kublai secured the northeast border in 1259 by installing the hostage prince Wonjong as the ruler of Korea, making it a Mongol tributary state. Kublai was also threatened by domestic unrest. Li Tan, the son-in-law of a powerful official, instigated a revolt against Mongol rule in 1262. After successfully suppressing the revolt, Kublai curbed the influence of the Han Chinese advisers in his court. He feared that his dependence on Chinese officials left him vulnerable to future revolts and defections to the Song.",
+    "question": "Who was Kaidu's grandfather?",
+    "answers": [
+      "Ogedei"
+    ],
+    "answer": "Ogedei",
+    "kind": "answerable",
+    "prompt_tokens": 223
+  },
+  {
+    "id": "5ad402ae604f3c001a3ffd5d",
+    "article": "Yuan_dynasty",
+    "context": "Instability troubled the early years of Kublai Khan's reign. Ogedei's grandson Kaidu refused to submit to Kublai and threatened the western frontier of Kublai's domain. The hostile but weakened Song dynasty remained an obstacle in the south. Kublai secured the northeast border in 1259 by installing the hostage prince Wonjong as the ruler of Korea, making it a Mongol tributary state. Kublai was also threatened by domestic unrest. Li Tan, the son-in-law of a powerful official, instigated a revolt against Mongol rule in 1262. After successfully suppressing the revolt, Kublai curbed the influence of the Han Chinese advisers in his court. He feared that his dependence on Chinese officials left him vulnerable to future revolts and defections to the Song.",
+    "question": "Who was Kaidu's uncle?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 223
+  },
+  {
+    "id": "5729ea263f37b319004785c0",
+    "article": "Amazon_rainforest",
+    "context": "NASA's CALIPSO satellite has measured the amount of dust transported by wind from the Sahara to the Amazon: an average 182 million tons of dust are windblown out of the Sahara each year, at 15 degrees west longitude, across 1,600 miles (2,600 km) over the Atlantic Ocean (some dust falls into the Atlantic), then at 35 degrees West longitude at the eastern coast of South America, 27.7 million tons (15%) of dust fall over the Amazon basin, 132 million tons of dust remain in the air, 43 million tons of dust are windblown and falls on the Caribbean Sea, past 75 degrees west longitude.",
+    "question": "How many miles across the Atlantic Ocean does Saharan dust travel?",
+    "answers": [
+      "1,600 miles",
+      "1,600"
+    ],
+    "answer": "1,600 miles",
+    "kind": "answerable",
+    "prompt_tokens": 211
+  },
+  {
+    "id": "5a0c6d26f5590b0018dab40a",
+    "article": "Amazon_rainforest",
+    "context": "NASA's CALIPSO satellite has measured the amount of dust transported by wind from the Sahara to the Amazon: an average 182 million tons of dust are windblown out of the Sahara each year, at 15 degrees west longitude, across 1,600 miles (2,600 km) over the Atlantic Ocean (some dust falls into the Atlantic), then at 35 degrees West longitude at the eastern coast of South America, 27.7 million tons (15%) of dust fall over the Amazon basin, 132 million tons of dust remain in the air, 43 million tons of dust are windblown and falls on the Caribbean Sea, past 75 degrees west longitude.",
+    "question": "What is the name of the satellite that measured the amount of vegetation from the so hard to the Amazon?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 219
+  },
+  {
+    "id": "56e1e9dfe3433e14004231fe",
+    "article": "Computational_complexity_theory",
+    "context": "The graph isomorphism problem is the computational problem of determining whether two finite graphs are isomorphic. An important unsolved problem in complexity theory is whether the graph isomorphism problem is in P, NP-complete, or NP-intermediate. The answer is not known, but it is believed that the problem is at least not NP-complete. If graph isomorphism is NP-complete, the polynomial time hierarchy collapses to its second level. Since it is widely believed that the polynomial hierarchy does not collapse to any finite level, it is believed that graph isomorphism is not NP-complete. The best algorithm for this problem, due to Laszlo Babai and Eugene Luks has run time 2O(\u221a(n log(n))) for graphs with n vertices.",
+    "question": "What finite hierarchy implies that the graph isomorphism problem is NP-complete? ",
+    "answers": [
+      "polynomial time hierarchy",
+      "polynomial time"
+    ],
+    "answer": "polynomial time hierarchy",
+    "kind": "answerable",
+    "prompt_tokens": 215
+  },
+  {
+    "id": "5ad569c05b96ef001a10ae36",
+    "article": "Computational_complexity_theory",
+    "context": "The graph isomorphism problem is the computational problem of determining whether two finite graphs are isomorphic. An important unsolved problem in complexity theory is whether the graph isomorphism problem is in P, NP-complete, or NP-intermediate. The answer is not known, but it is believed that the problem is at least not NP-complete. If graph isomorphism is NP-complete, the polynomial time hierarchy collapses to its second level. Since it is widely believed that the polynomial hierarchy does not collapse to any finite level, it is believed that graph isomorphism is not NP-complete. The best algorithm for this problem, due to Laszlo Babai and Eugene Luks has run time 2O(\u221a(n log(n))) for graphs with n vertices.",
+    "question": "What is the graph isolation problem? ",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 207
+  },
+  {
+    "id": "572ff673b2c2fd140056866b",
+    "article": "Rhine",
+    "context": "The Rhine-Meuse Delta, the most important natural region of the Netherlands begins near Millingen aan de Rijn, close to the Dutch-German border with the division of the Rhine into Waal and Nederrijn. Since the Rhine contributes most of the water, the shorter term Rhine Delta is commonly used. However, this name is also used for the river delta where the Rhine flows into Lake Constance, so it is clearer to call the larger one Rhine-Meuse delta, or even Rhine\u2013Meuse\u2013Scheldt delta, as the Scheldt ends in the same delta.",
+    "question": "What is the nickname for the Delta in the Netherlands?",
+    "answers": [
+      "Rhine Delta"
+    ],
+    "answer": "Rhine Delta",
+    "kind": "answerable",
+    "prompt_tokens": 185
+  },
+  {
+    "id": "5ad28a54d7d075001a4299a9",
+    "article": "Rhine",
+    "context": "The Rhine-Meuse Delta, the most important natural region of the Netherlands begins near Millingen aan de Rijn, close to the Dutch-German border with the division of the Rhine into Waal and Nederrijn. Since the Rhine contributes most of the water, the shorter term Rhine Delta is commonly used. However, this name is also used for the river delta where the Rhine flows into Lake Constance, so it is clearer to call the larger one Rhine-Meuse delta, or even Rhine\u2013Meuse\u2013Scheldt delta, as the Scheldt ends in the same delta.",
+    "question": "What is another name for Lake Constance?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 183
+  },
+  {
+    "id": "572681c1dd62a815002e8796",
+    "article": "Ctenophora",
+    "context": "Most Platyctenida have oval bodies that are flattened in the oral-aboral direction, with a pair of tentilla-bearing tentacles on the aboral surface. They cling to and creep on surfaces by everting the pharynx and using it as a muscular \"foot\". All but one of the known platyctenid species lack comb-rows. Platyctenids are usually cryptically colored, live on rocks, algae, or the body surfaces of other invertebrates, and are often revealed by their long tentacles with many sidebranches, seen streaming off the back of the ctenophore into the current.",
+    "question": "What do most platyctenida have on their aboral surface?",
+    "answers": [
+      "a pair of tentilla-bearing tentacles",
+      "tentilla-bearing tentacles"
+    ],
+    "answer": "a pair of tentilla-bearing tentacles",
+    "kind": "answerable",
+    "prompt_tokens": 191
+  },
+  {
+    "id": "5a838b42e60761001a2eb7a9",
+    "article": "Ctenophora",
+    "context": "Most Platyctenida have oval bodies that are flattened in the oral-aboral direction, with a pair of tentilla-bearing tentacles on the aboral surface. They cling to and creep on surfaces by everting the pharynx and using it as a muscular \"foot\". All but one of the known platyctenid species lack comb-rows. Platyctenids are usually cryptically colored, live on rocks, algae, or the body surfaces of other invertebrates, and are often revealed by their long tentacles with many sidebranches, seen streaming off the back of the ctenophore into the current.",
+    "question": "How many tentacles does the Aboral have on its pharynx?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 191
+  },
+  {
+    "id": "5726f96ddd62a815002e9698",
+    "article": "Pharmacy",
+    "context": "This shift has already commenced in some countries; for instance, pharmacists in Australia receive remuneration from the Australian Government for conducting comprehensive Home Medicines Reviews. In Canada, pharmacists in certain provinces have limited prescribing rights (as in Alberta and British Columbia) or are remunerated by their provincial government for expanded services such as medications reviews (Medschecks in Ontario). In the United Kingdom, pharmacists who undertake additional training are obtaining prescribing rights and this is because of pharmacy education. They are also being paid for by the government for medicine use reviews. In Scotland the pharmacist can write prescriptions for Scottish registered patients of their regular medications, for the majority of drugs, except for controlled drugs, when the patient is unable to see their doctor, as could happen if they are away from home or the doctor is unavailable. In the United States, pharmaceutical care or clinical pharmacy has had an evolving influence on the practice of pharmacy. Moreover, the Doctor of Pharmacy (Pharm. D.) degree is now required before entering practice and some pharmacists now complete one or two years of residency or fellowship training following graduation. In addition, consultant pharmacists, who traditionally operated primarily in nursing homes are now expanding into direct consultation with patients, under the banner of \"senior care pharmacy.\"",
+    "question": "Which provinces in Canada limit the rights of pharmacists in prescribing?",
+    "answers": [
+      "Alberta and British Columbia"
+    ],
+    "answer": "Alberta and British Columbia",
+    "kind": "answerable",
+    "prompt_tokens": 313
+  },
+  {
+    "id": "5a6cef5a4eec6b001a80a700",
+    "article": "Pharmacy",
+    "context": "This shift has already commenced in some countries; for instance, pharmacists in Australia receive remuneration from the Australian Government for conducting comprehensive Home Medicines Reviews. In Canada, pharmacists in certain provinces have limited prescribing rights (as in Alberta and British Columbia) or are remunerated by their provincial government for expanded services such as medications reviews (Medschecks in Ontario). In the United Kingdom, pharmacists who undertake additional training are obtaining prescribing rights and this is because of pharmacy education. They are also being paid for by the government for medicine use reviews. In Scotland the pharmacist can write prescriptions for Scottish registered patients of their regular medications, for the majority of drugs, except for controlled drugs, when the patient is unable to see their doctor, as could happen if they are away from home or the doctor is unavailable. In the United States, pharmaceutical care or clinical pharmacy has had an evolving influence on the practice of pharmacy. Moreover, the Doctor of Pharmacy (Pharm. D.) degree is now required before entering practice and some pharmacists now complete one or two years of residency or fellowship training following graduation. In addition, consultant pharmacists, who traditionally operated primarily in nursing homes are now expanding into direct consultation with patients, under the banner of \"senior care pharmacy.\"",
+    "question": "What degree is no longer mandatory in the U.S. in order to be a licensed pharmacist?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 319
+  },
+  {
+    "id": "572673f5708984140094c69f",
+    "article": "Geology",
+    "context": "The addition of new rock units, both depositionally and intrusively, often occurs during deformation. Faulting and other deformational processes result in the creation of topographic gradients, causing material on the rock unit that is increasing in elevation to be eroded by hillslopes and channels. These sediments are deposited on the rock unit that is going down. Continual motion along the fault maintains the topographic gradient in spite of the movement of sediment, and continues to create accommodation space for the material to deposit. Deformational events are often also associated with volcanism and igneous activity. Volcanic ashes and lavas accumulate on the surface, and igneous intrusions enter from below. Dikes, long, planar igneous intrusions, enter along cracks, and therefore often form in large numbers in areas that are being actively deformed. This can result in the emplacement of dike swarms, such as those that are observable across the Canadian shield, or rings of dikes around the lava tube of a volcano.",
+    "question": "What events are often associated with volcanism and igneous activity?",
+    "answers": [
+      "Deformational events",
+      "Deformational"
+    ],
+    "answer": "Deformational events",
+    "kind": "answerable",
+    "prompt_tokens": 267
+  },
+  {
+    "id": "5a590efb3e1742001a15cf63",
+    "article": "Geology",
+    "context": "The addition of new rock units, both depositionally and intrusively, often occurs during deformation. Faulting and other deformational processes result in the creation of topographic gradients, causing material on the rock unit that is increasing in elevation to be eroded by hillslopes and channels. These sediments are deposited on the rock unit that is going down. Continual motion along the fault maintains the topographic gradient in spite of the movement of sediment, and continues to create accommodation space for the material to deposit. Deformational events are often also associated with volcanism and igneous activity. Volcanic ashes and lavas accumulate on the surface, and igneous intrusions enter from below. Dikes, long, planar igneous intrusions, enter along cracks, and therefore often form in large numbers in areas that are being actively deformed. This can result in the emplacement of dike swarms, such as those that are observable across the Canadian shield, or rings of dikes around the lava tube of a volcano.",
+    "question": "What is another name for a deformational event?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 264
+  },
+  {
+    "id": "5729f799af94a219006aa709",
+    "article": "Immune_system",
+    "context": "When B cells and T cells are activated and begin to replicate, some of their offspring become long-lived memory cells. Throughout the lifetime of an animal, these memory cells remember each specific pathogen encountered and can mount a strong response if the pathogen is detected again. This is \"adaptive\" because it occurs during the lifetime of an individual as an adaptation to infection with that pathogen and prepares the immune system for future challenges. Immunological memory can be in the form of either passive short-term memory or active long-term memory.",
+    "question": "Immunological memory can take what two forms?",
+    "answers": [
+      "passive short-term memory or active long-term memory"
+    ],
+    "answer": "passive short-term memory or active long-term memory",
+    "kind": "answerable",
+    "prompt_tokens": 159
+  },
+  {
+    "id": "5ad4d6a75b96ef001a10a2c7",
+    "article": "Immune_system",
+    "context": "When B cells and T cells are activated and begin to replicate, some of their offspring become long-lived memory cells. Throughout the lifetime of an animal, these memory cells remember each specific pathogen encountered and can mount a strong response if the pathogen is detected again. This is \"adaptive\" because it occurs during the lifetime of an individual as an adaptation to infection with that pathogen and prepares the immune system for future challenges. Immunological memory can be in the form of either passive short-term memory or active long-term memory.",
+    "question": "What cells mount a weak response if a pathogen is detected again?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 164
+  },
+  {
+    "id": "5725e748ec44d21400f3d734",
+    "article": "Fresno,_California",
+    "context": "The area is also known for its early twentieth century homes, many of which have been restored in recent decades. The area includes many California Bungalow and American Craftsman style homes, Spanish Colonial Revival Style architecture, Mediterranean Revival Style architecture, Mission Revival Style architecture, and many Storybook houses designed by Fresno architects, Hilliard, Taylor & Wheeler. The residential architecture of the Tower District contrasts with the newer areas of tract homes urban sprawl in north and east areas of Fresno.",
+    "question": "What types of houses are designed by Fresno architects?",
+    "answers": [
+      "Storybook houses",
+      "Storybook"
+    ],
+    "answer": "Storybook houses",
+    "kind": "answerable",
+    "prompt_tokens": 153
+  },
+  {
+    "id": "5a7b11bb21c2de001afe9d48",
+    "article": "Fresno,_California",
+    "context": "The area is also known for its early twentieth century homes, many of which have been restored in recent decades. The area includes many California Bungalow and American Craftsman style homes, Spanish Colonial Revival Style architecture, Mediterranean Revival Style architecture, Mission Revival Style architecture, and many Storybook houses designed by Fresno architects, Hilliard, Taylor & Wheeler. The residential architecture of the Tower District contrasts with the newer areas of tract homes urban sprawl in north and east areas of Fresno.",
+    "question": "Who restored the Bungalows?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 150
+  },
+  {
+    "id": "57264e455951b619008f6f65",
+    "article": "European_Union_law",
+    "context": "Commissioners have various privileges, such as being exempt from member state taxes (but not EU taxes), and having immunity from prosecution for doing official acts. Commissioners have sometimes been found to have abused their offices, particularly since the Santer Commission was censured by Parliament in 1999, and it eventually resigned due to corruption allegations. This resulted in one main case, Commission v Edith Cresson where the European Court of Justice held that a Commissioner giving her dentist a job, for which he was clearly unqualified, did in fact not break any law. By contrast to the ECJ's relaxed approach, a Committee of Independent Experts found that a culture had developed where few Commissioners had \u2018even the slightest sense of responsibility\u2019. This led to the creation of the European Anti-fraud Office. In 2012 it investigated the Maltese Commissioner for Health, John Dalli, who quickly resigned after allegations that he received a \u20ac60m bribe in connection with a Tobacco Products Directive. Beyond the Commission, the European Central Bank has relative executive autonomy in its conduct of monetary policy for the purpose of managing the euro. It has a six-person board appointed by the European Council, on the Council's recommendation. The President of the Council and a Commissioner can sit in on ECB meetings, but do not have voting rights.",
+    "question": "What commission was censured in 1999, and paved the way for Commissioners to abuse their power?",
+    "answers": [
+      "the Santer Commission"
+    ],
+    "answer": "the Santer Commission",
+    "kind": "answerable",
+    "prompt_tokens": 338
+  },
+  {
+    "id": "5ad11374645df0001a2d0c6f",
+    "article": "European_Union_law",
+    "context": "Commissioners have various privileges, such as being exempt from member state taxes (but not EU taxes), and having immunity from prosecution for doing official acts. Commissioners have sometimes been found to have abused their offices, particularly since the Santer Commission was censured by Parliament in 1999, and it eventually resigned due to corruption allegations. This resulted in one main case, Commission v Edith Cresson where the European Court of Justice held that a Commissioner giving her dentist a job, for which he was clearly unqualified, did in fact not break any law. By contrast to the ECJ's relaxed approach, a Committee of Independent Experts found that a culture had developed where few Commissioners had \u2018even the slightest sense of responsibility\u2019. This led to the creation of the European Anti-fraud Office. In 2012 it investigated the Maltese Commissioner for Health, John Dalli, who quickly resigned after allegations that he received a \u20ac60m bribe in connection with a Tobacco Products Directive. Beyond the Commission, the European Central Bank has relative executive autonomy in its conduct of monetary policy for the purpose of managing the euro. It has a six-person board appointed by the European Council, on the Council's recommendation. The President of the Council and a Commissioner can sit in on ECB meetings, but do not have voting rights.",
+    "question": "What commission did not resign even though faced corruption allegations?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 325
+  },
+  {
+    "id": "5730b7ce069b5314008322c3",
+    "article": "Imperialism",
+    "context": "The early United States expressed its opposition to Imperialism, at least in a form distinct from its own Manifest Destiny, through policies such as the Monroe Doctrine. However, beginning in the late 19th and early 20th century, policies such as Theodore Roosevelt\u2019s interventionism in Central America and Woodrow Wilson\u2019s mission to \"make the world safe for democracy\" changed all this. They were often backed by military force, but were more often affected from behind the scenes. This is consistent with the general notion of hegemony and imperium of historical empires. In 1898, Americans who opposed imperialism created the Anti-Imperialist League to oppose the US annexation of the Philippines and Cuba. One year later, a war erupted in the Philippines causing business, labor and government leaders in the US to condemn America's occupation in the Philippines as they also denounced them for causing the deaths of many Filipinos. American foreign policy was denounced as a \"racket\" by Smedley Butler, an American general. He said, \"Looking back on it, I might have given Al Capone a few hints. The best he could do was to operate his racket in three districts. I operated on three continents\".",
+    "question": "How did the United States plan to subdue imperialistic tendencies? ",
+    "answers": [
+      "the Monroe Doctrine",
+      "through policies",
+      "policies such as the Monroe Doctrine",
+      "Monroe Doctrine"
+    ],
+    "answer": "the Monroe Doctrine",
+    "kind": "answerable",
+    "prompt_tokens": 308
+  },
+  {
+    "id": "5ad03a6b77cf76001a686e7d",
+    "article": "Imperialism",
+    "context": "The early United States expressed its opposition to Imperialism, at least in a form distinct from its own Manifest Destiny, through policies such as the Monroe Doctrine. However, beginning in the late 19th and early 20th century, policies such as Theodore Roosevelt\u2019s interventionism in Central America and Woodrow Wilson\u2019s mission to \"make the world safe for democracy\" changed all this. They were often backed by military force, but were more often affected from behind the scenes. This is consistent with the general notion of hegemony and imperium of historical empires. In 1898, Americans who opposed imperialism created the Anti-Imperialist League to oppose the US annexation of the Philippines and Cuba. One year later, a war erupted in the Philippines causing business, labor and government leaders in the US to condemn America's occupation in the Philippines as they also denounced them for causing the deaths of many Filipinos. American foreign policy was denounced as a \"racket\" by Smedley Butler, an American general. He said, \"Looking back on it, I might have given Al Capone a few hints. The best he could do was to operate his racket in three districts. I operated on three continents\".",
+    "question": " What caused the US public to support the occupation of the philippines?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 308
+  },
+  {
+    "id": "572fae4b04bcaa1900d76bdf",
+    "article": "Scottish_Parliament",
+    "context": "Throughout the 1980s and 1990s, demand for a Scottish Parliament grew, in part because the government of the United Kingdom was controlled by the Conservative Party, while Scotland itself elected relatively few Conservative MPs. In the aftermath of the 1979 referendum defeat, the Campaign for a Scottish Assembly was initiated as a pressure group, leading to the 1989 Scottish Constitutional Convention with various organisations such as Scottish churches, political parties and representatives of industry taking part. Publishing its blueprint for devolution in 1995, the Convention provided much of the basis for the structure of the Parliament.",
+    "question": "In the range between 1980 and 1990, what did demand for grow?",
+    "answers": [
+      "a Scottish Parliament",
+      "Scottish Parliament",
+      "Scottish Parliament grew"
+    ],
+    "answer": "a Scottish Parliament",
+    "kind": "answerable",
+    "prompt_tokens": 196
+  },
+  {
+    "id": "5ad026a777cf76001a686bc9",
+    "article": "Scottish_Parliament",
+    "context": "Throughout the 1980s and 1990s, demand for a Scottish Parliament grew, in part because the government of the United Kingdom was controlled by the Conservative Party, while Scotland itself elected relatively few Conservative MPs. In the aftermath of the 1979 referendum defeat, the Campaign for a Scottish Assembly was initiated as a pressure group, leading to the 1989 Scottish Constitutional Convention with various organisations such as Scottish churches, political parties and representatives of industry taking part. Publishing its blueprint for devolution in 1995, the Convention provided much of the basis for the structure of the Parliament.",
+    "question": "The 1989 Scottish Constitutional Convention provided very little basis for the structure of what?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 193
+  },
+  {
+    "id": "56e1c720e3433e140042316c",
+    "article": "Computational_complexity_theory",
+    "context": "For the complexity classes defined in this way, it is desirable to prove that relaxing the requirements on (say) computation time indeed defines a bigger set of problems. In particular, although DTIME(n) is contained in DTIME(n2), it would be interesting to know if the inclusion is strict. For time and space requirements, the answer to such questions is given by the time and space hierarchy theorems respectively. They are called hierarchy theorems because they induce a proper hierarchy on the classes defined by constraining the respective resources. Thus there are pairs of complexity classes such that one is properly included in the other. Having deduced such proper set inclusions, we can proceed to make quantitative statements about how much more additional time or space is needed in order to increase the number of problems that can be solved.",
+    "question": "What theorems are responsible for determining questions of time and space requirements?",
+    "answers": [
+      "time and space hierarchy theorems"
+    ],
+    "answer": "time and space hierarchy theorems",
+    "kind": "answerable",
+    "prompt_tokens": 224
+  },
+  {
+    "id": "5ad561c85b96ef001a10ad3e",
+    "article": "Computational_complexity_theory",
+    "context": "For the complexity classes defined in this way, it is desirable to prove that relaxing the requirements on (say) computation time indeed defines a bigger set of problems. In particular, although DTIME(n) is contained in DTIME(n2), it would be interesting to know if the inclusion is strict. For time and space requirements, the answer to such questions is given by the time and space hierarchy theorems respectively. They are called hierarchy theorems because they induce a proper hierarchy on the classes defined by constraining the respective resources. Thus there are pairs of complexity classes such that one is properly included in the other. Having deduced such proper set inclusions, we can proceed to make quantitative statements about how much more additional time or space is needed in order to increase the number of problems that can be solved.",
+    "question": "What expression does not usually contain DTIME(n)?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 219
+  },
+  {
+    "id": "5728759cff5b5019007da25e",
+    "article": "University_of_Chicago",
+    "context": "Current faculty include the anthropologist Marshall Sahlins, historian Dipesh Chakrabarty, paleontologists Neil Shubin and Paul Sereno, evolutionary biologist Jerry Coyne, Nobel prize winning physicist Yoichiro Nambu, Nobel prize winning physicist James Cronin, Nobel Prize winning economists Eugene Fama, James Heckman, Lars Peter Hansen, Roger Myerson and Robert Lucas, Jr., Freakonomics author and noted economist Steven Levitt, current governor of India's central bank Raghuram Rajan, the 74th United States Secretary of the Treasury and former Goldman Sachs Chairman and CEO Hank Paulson, former Chairman of President Barack Obama's Council of Economic Advisors Austan Goolsbee, Shakespeare scholar David Bevington, and renowned political scientists John Mearsheimer and Robert Pape.",
+    "question": "What paleontologists are currently on the university's faculty?",
+    "answers": [
+      "Neil Shubin and Paul Sereno"
+    ],
+    "answer": "Neil Shubin and Paul Sereno",
+    "kind": "answerable",
+    "prompt_tokens": 222
+  },
+  {
+    "id": "5acfac7177cf76001a6857f8",
+    "article": "University_of_Chicago",
+    "context": "Current faculty include the anthropologist Marshall Sahlins, historian Dipesh Chakrabarty, paleontologists Neil Shubin and Paul Sereno, evolutionary biologist Jerry Coyne, Nobel prize winning physicist Yoichiro Nambu, Nobel prize winning physicist James Cronin, Nobel Prize winning economists Eugene Fama, James Heckman, Lars Peter Hansen, Roger Myerson and Robert Lucas, Jr., Freakonomics author and noted economist Steven Levitt, current governor of India's central bank Raghuram Rajan, the 74th United States Secretary of the Treasury and former Goldman Sachs Chairman and CEO Hank Paulson, former Chairman of President Barack Obama's Council of Economic Advisors Austan Goolsbee, Shakespeare scholar David Bevington, and renowned political scientists John Mearsheimer and Robert Pape.",
+    "question": "Who is the current CEO and chairmen of Goldman Sachs?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 222
+  },
+  {
+    "id": "5733fd66d058e614000b6738",
+    "article": "French_and_Indian_War",
+    "context": "The new British command was not in place until July. When he arrived in Albany, Abercrombie refused to take any significant actions until Loudoun approved them. Montcalm took bold action against his inertia. Building on Vaudreuil's work harassing the Oswego garrison, Montcalm executed a strategic feint by moving his headquarters to Ticonderoga, as if to presage another attack along Lake George. With Abercrombie pinned down at Albany, Montcalm slipped away and led the successful attack on Oswego in August. In the aftermath, Montcalm and the Indians under his command disagreed about the disposition of prisoners' personal effects. The Europeans did not consider them prizes and prevented the Indians from stripping the prisoners of their valuables, which angered the Indians.",
+    "question": "What disagreement did Montcalm and Indians have?",
+    "answers": [
+      "disposition of prisoners' personal effects",
+      "the disposition of prisoners' personal effects",
+      "about the disposition of prisoners' personal effects"
+    ],
+    "answer": "disposition of prisoners' personal effects",
+    "kind": "answerable",
+    "prompt_tokens": 216
+  },
+  {
+    "id": "5ad3b6d8604f3c001a3fedfb",
+    "article": "French_and_Indian_War",
+    "context": "The new British command was not in place until July. When he arrived in Albany, Abercrombie refused to take any significant actions until Loudoun approved them. Montcalm took bold action against his inertia. Building on Vaudreuil's work harassing the Oswego garrison, Montcalm executed a strategic feint by moving his headquarters to Ticonderoga, as if to presage another attack along Lake George. With Abercrombie pinned down at Albany, Montcalm slipped away and led the successful attack on Oswego in August. In the aftermath, Montcalm and the Indians under his command disagreed about the disposition of prisoners' personal effects. The Europeans did not consider them prizes and prevented the Indians from stripping the prisoners of their valuables, which angered the Indians.",
+    "question": "Where did Montcalm move his heaquarter to show strategic retreat?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 221
+  },
+  {
+    "id": "57300f8504bcaa1900d770d1",
+    "article": "Islamism",
+    "context": "Another factor in the early 1990s that worked to radicalize the Islamist movement was the Gulf War, which brought several hundred thousand US and allied non-Muslim military personnel to Saudi Arabian soil to put an end to Saddam Hussein's occupation of Kuwait. Prior to 1990 Saudi Arabia played an important role in restraining the many Islamist groups that received its aid. But when Saddam, secularist and Ba'athist dictator of neighboring Iraq, attacked Saudi Arabia (his enemy in the war), western troops came to protect the Saudi monarchy. Islamists accused the Saudi regime of being a puppet of the west.",
+    "question": "What did the Gulf War inadvertently do in the early 1990s?",
+    "answers": [
+      "worked to radicalize the Islamist movement",
+      "radicalize the Islamist movement"
+    ],
+    "answer": "worked to radicalize the Islamist movement",
+    "kind": "answerable",
+    "prompt_tokens": 187
+  },
+  {
+    "id": "5acfeba077cf76001a6864c7",
+    "article": "Islamism",
+    "context": "Another factor in the early 1990s that worked to radicalize the Islamist movement was the Gulf War, which brought several hundred thousand US and allied non-Muslim military personnel to Saudi Arabian soil to put an end to Saddam Hussein's occupation of Kuwait. Prior to 1990 Saudi Arabia played an important role in restraining the many Islamist groups that received its aid. But when Saddam, secularist and Ba'athist dictator of neighboring Iraq, attacked Saudi Arabia (his enemy in the war), western troops came to protect the Saudi monarchy. Islamists accused the Saudi regime of being a puppet of the west.",
+    "question": " What monarchy did Eastern troops protect?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 178
+  },
+  {
+    "id": "571ccc00dd7acb1400e4c15c",
+    "article": "Oxygen",
+    "context": "The unusually high concentration of oxygen gas on Earth is the result of the oxygen cycle. This biogeochemical cycle describes the movement of oxygen within and between its three main reservoirs on Earth: the atmosphere, the biosphere, and the lithosphere. The main driving factor of the oxygen cycle is photosynthesis, which is responsible for modern Earth's atmosphere. Photosynthesis releases oxygen into the atmosphere, while respiration and decay remove it from the atmosphere. In the present equilibrium, production and consumption occur at the same rate of roughly 1/2000th of the entire atmospheric oxygen per year.",
+    "question": "In how many places is oxygen stored in its cycle?",
+    "answers": [
+      "three",
+      "three main reservoirs"
+    ],
+    "answer": "three",
+    "kind": "answerable",
+    "prompt_tokens": 178
+  },
+  {
+    "id": "5ad251d6d7d075001a428ce9",
+    "article": "Oxygen",
+    "context": "The unusually high concentration of oxygen gas on Earth is the result of the oxygen cycle. This biogeochemical cycle describes the movement of oxygen within and between its three main reservoirs on Earth: the atmosphere, the biosphere, and the lithosphere. The main driving factor of the oxygen cycle is photosynthesis, which is responsible for modern Earth's atmosphere. Photosynthesis releases oxygen into the atmosphere, while respiration and decay remove it from the atmosphere. In the present equilibrium, production and consumption occur at the same rate of roughly 1/2000th of the entire atmospheric oxygen per year.",
+    "question": "What are the three main oxygen cycles on Earth?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 177
+  },
+  {
+    "id": "5725d662ec44d21400f3d688",
+    "article": "Fresno,_California",
+    "context": "Fresno has three large public parks, two in the city limits and one in county land to the southwest. Woodward Park, which features the Shinzen Japanese Gardens, numerous picnic areas and several miles of trails, is in North Fresno and is adjacent to the San Joaquin River Parkway. Roeding Park, near Downtown Fresno, is home to the Fresno Chaffee Zoo, and Rotary Storyland and Playland. Kearney Park is the largest of the Fresno region's park system and is home to historic Kearney Mansion and plays host to the annual Civil War Revisited, the largest reenactment of the Civil War in the west coast of the U.S.",
+    "question": "Which park is home to the Fresno Chafffee Zoo?",
+    "answers": [
+      "Roeding Park"
+    ],
+    "answer": "Roeding Park",
+    "kind": "answerable",
+    "prompt_tokens": 191
+  },
+  {
+    "id": "5a7b086921c2de001afe9d03",
+    "article": "Fresno,_California",
+    "context": "Fresno has three large public parks, two in the city limits and one in county land to the southwest. Woodward Park, which features the Shinzen Japanese Gardens, numerous picnic areas and several miles of trails, is in North Fresno and is adjacent to the San Joaquin River Parkway. Roeding Park, near Downtown Fresno, is home to the Fresno Chaffee Zoo, and Rotary Storyland and Playland. Kearney Park is the largest of the Fresno region's park system and is home to historic Kearney Mansion and plays host to the annual Civil War Revisited, the largest reenactment of the Civil War in the west coast of the U.S.",
+    "question": "How long are the trails in Roeding Park?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 189
+  },
+  {
+    "id": "573098f38ab72b1400f9c5d2",
+    "article": "Imperialism",
+    "context": "Europe's expansion into territorial imperialism was largely focused on economic growth by collecting resources from colonies, in combination with assuming political control by military and political means. The colonization of India in the mid-18th century offers an example of this focus: there, the \"British exploited the political weakness of the Mughal state, and, while military activity was important at various times, the economic and administrative incorporation of local elites was also of crucial significance\" for the establishment of control over the subcontinent's resources, markets, and manpower. Although a substantial number of colonies had been designed to provide economic profit and to ship resources to home ports in the seventeenth and eighteenth centuries, Fieldhouse suggests that in the nineteenth and twentieth centuries in places such as Africa and Asia, this idea is not necessarily valid:",
+    "question": "European imperialism was focused on what?",
+    "answers": [
+      "economic growth"
+    ],
+    "answer": "economic growth",
+    "kind": "answerable",
+    "prompt_tokens": 213
+  },
+  {
+    "id": "5ad02e8277cf76001a686d50",
+    "article": "Imperialism",
+    "context": "Europe's expansion into territorial imperialism was largely focused on economic growth by collecting resources from colonies, in combination with assuming political control by military and political means. The colonization of India in the mid-18th century offers an example of this focus: there, the \"British exploited the political weakness of the Mughal state, and, while military activity was important at various times, the economic and administrative incorporation of local elites was also of crucial significance\" for the establishment of control over the subcontinent's resources, markets, and manpower. Although a substantial number of colonies had been designed to provide economic profit and to ship resources to home ports in the seventeenth and eighteenth centuries, Fieldhouse suggests that in the nineteenth and twentieth centuries in places such as Africa and Asia, this idea is not necessarily valid:",
+    "question": " When did the colonization of India not occur?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 216
+  },
+  {
+    "id": "572970c11d04691400779467",
+    "article": "Prime_number",
+    "context": "There are infinitely many primes, as demonstrated by Euclid around 300 BC. There is no known simple formula that separates prime numbers from composite numbers. However, the distribution of primes, that is to say, the statistical behaviour of primes in the large, can be modelled. The first result in that direction is the prime number theorem, proven at the end of the 19th century, which says that the probability that a given, randomly chosen number n is prime is inversely proportional to its number of digits, or to the logarithm of n.",
+    "question": "When was the prime number theorem proven?",
+    "answers": [
+      "at the end of the 19th century",
+      "end of the 19th century"
+    ],
+    "answer": "at the end of the 19th century",
+    "kind": "answerable",
+    "prompt_tokens": 168
+  },
+  {
+    "id": "5a8913713b2508001a72a4a2",
+    "article": "Prime_number",
+    "context": "There are infinitely many primes, as demonstrated by Euclid around 300 BC. There is no known simple formula that separates prime numbers from composite numbers. However, the distribution of primes, that is to say, the statistical behaviour of primes in the large, can be modelled. The first result in that direction is the prime number theorem, proven at the end of the 19th century, which says that the probability that a given, randomly chosen number n is prime is inversely proportional to its number of digits, or to the logarithm of n.",
+    "question": "When was the random number theorem proven?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 168
+  },
+  {
+    "id": "571ccd9b5efbb31900334dfb",
+    "article": "Oxygen",
+    "context": "The other major method of producing O\n2 gas involves passing a stream of clean, dry air through one bed of a pair of identical zeolite molecular sieves, which absorbs the nitrogen and delivers a gas stream that is 90% to 93% O\n2. Simultaneously, nitrogen gas is released from the other nitrogen-saturated zeolite bed, by reducing the chamber operating pressure and diverting part of the oxygen gas from the producer bed through it, in the reverse direction of flow. After a set cycle time the operation of the two beds is interchanged, thereby allowing for a continuous supply of gaseous oxygen to be pumped through a pipeline. This is known as pressure swing adsorption. Oxygen gas is increasingly obtained by these non-cryogenic technologies (see also the related vacuum swing adsorption).",
+    "question": "What type of technology is the non organic separating of gases?",
+    "answers": [
+      "non-cryogenic"
+    ],
+    "answer": "non-cryogenic",
+    "kind": "answerable",
+    "prompt_tokens": 226
+  },
+  {
+    "id": "5ad25bf3d7d075001a428e94",
+    "article": "Oxygen",
+    "context": "The other major method of producing O\n2 gas involves passing a stream of clean, dry air through one bed of a pair of identical zeolite molecular sieves, which absorbs the nitrogen and delivers a gas stream that is 90% to 93% O\n2. Simultaneously, nitrogen gas is released from the other nitrogen-saturated zeolite bed, by reducing the chamber operating pressure and diverting part of the oxygen gas from the producer bed through it, in the reverse direction of flow. After a set cycle time the operation of the two beds is interchanged, thereby allowing for a continuous supply of gaseous oxygen to be pumped through a pipeline. This is known as pressure swing adsorption. Oxygen gas is increasingly obtained by these non-cryogenic technologies (see also the related vacuum swing adsorption).",
+    "question": "What beds are nitrogen-saturated? ",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 222
+  },
+  {
+    "id": "571153422419e31400955580",
+    "article": "Steam_engine",
+    "context": "Trevithick continued his own experiments using a trio of locomotives, concluding with the Catch Me Who Can in 1808. Only four years later, the successful twin-cylinder locomotive Salamanca by Matthew Murray was used by the edge railed rack and pinion Middleton Railway. In 1825 George Stephenson built the Locomotion for the Stockton and Darlington Railway. This was the first public steam railway in the world and then in 1829, he built The Rocket which was entered in and won the Rainhill Trials. The Liverpool and Manchester Railway opened in 1830 making exclusive use of steam power for both passenger and freight trains.",
+    "question": "On what railroad was Salamanca used?",
+    "answers": [
+      "Middleton Railway"
+    ],
+    "answer": "Middleton Railway",
+    "kind": "answerable",
+    "prompt_tokens": 197
+  },
+  {
+    "id": "5ad3d2aa604f3c001a3ff262",
+    "article": "Steam_engine",
+    "context": "Trevithick continued his own experiments using a trio of locomotives, concluding with the Catch Me Who Can in 1808. Only four years later, the successful twin-cylinder locomotive Salamanca by Matthew Murray was used by the edge railed rack and pinion Middleton Railway. In 1825 George Stephenson built the Locomotion for the Stockton and Darlington Railway. This was the first public steam railway in the world and then in 1829, he built The Rocket which was entered in and won the Rainhill Trials. The Liverpool and Manchester Railway opened in 1830 making exclusive use of steam power for both passenger and freight trains.",
+    "question": "Who designed Salamanca?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 194
+  },
+  {
+    "id": "5711488ab654c5140001fc3f",
+    "article": "Steam_engine",
+    "context": "In most reciprocating piston engines, the steam reverses its direction of flow at each stroke (counterflow), entering and exhausting from the cylinder by the same port. The complete engine cycle occupies one rotation of the crank and two piston strokes; the cycle also comprises four events \u2013 admission, expansion, exhaust, compression. These events are controlled by valves often working inside a steam chest adjacent to the cylinder; the valves distribute the steam by opening and closing steam ports communicating with the cylinder end(s) and are driven by valve gear, of which there are many types.[citation needed]",
+    "question": "How many crank rotations are there in an engine cycle?",
+    "answers": [
+      "one"
+    ],
+    "answer": "one",
+    "kind": "answerable",
+    "prompt_tokens": 172
+  },
+  {
+    "id": "5ad3f03c604f3c001a3ff82a",
+    "article": "Steam_engine",
+    "context": "In most reciprocating piston engines, the steam reverses its direction of flow at each stroke (counterflow), entering and exhausting from the cylinder by the same port. The complete engine cycle occupies one rotation of the crank and two piston strokes; the cycle also comprises four events \u2013 admission, expansion, exhaust, compression. These events are controlled by valves often working inside a steam chest adjacent to the cylinder; the valves distribute the steam by opening and closing steam ports communicating with the cylinder end(s) and are driven by valve gear, of which there are many types.[citation needed]",
+    "question": "How many piston strokes occur in an exhaust cycle?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 171
+  },
+  {
+    "id": "5737534ec3c5551400e51ead",
+    "article": "Force",
+    "context": "Newton's Third Law is a result of applying symmetry to situations where forces can be attributed to the presence of different objects. The third law means that all forces are interactions between different bodies,[Note 3] and thus that there is no such thing as a unidirectional force or a force that acts on only one body. Whenever a first body exerts a force F on a second body, the second body exerts a force \u2212F on the first body. F and \u2212F are equal in magnitude and opposite in direction. This law is sometimes referred to as the action-reaction law, with F called the \"action\" and \u2212F the \"reaction\". The action and the reaction are simultaneous:",
+    "question": "What kind of force does not exist under Newton's third law?",
+    "answers": [
+      "unidirectional",
+      "unidirectional force"
+    ],
+    "answer": "unidirectional",
+    "kind": "answerable",
+    "prompt_tokens": 199
+  },
+  {
+    "id": "5ad26421d7d075001a429140",
+    "article": "Force",
+    "context": "Newton's Third Law is a result of applying symmetry to situations where forces can be attributed to the presence of different objects. The third law means that all forces are interactions between different bodies,[Note 3] and thus that there is no such thing as a unidirectional force or a force that acts on only one body. Whenever a first body exerts a force F on a second body, the second body exerts a force \u2212F on the first body. F and \u2212F are equal in magnitude and opposite in direction. This law is sometimes referred to as the action-reaction law, with F called the \"action\" and \u2212F the \"reaction\". The action and the reaction are simultaneous:",
+    "question": "When a second body exerts a force F on a first body, what happens to the second body?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 207
+  },
+  {
+    "id": "5733d7cbd058e614000b63ae",
+    "article": "French_and_Indian_War",
+    "context": "In between the French and the British, large areas were dominated by native tribes. To the north, the Mi'kmaq and the Abenaki were engaged in Father Le Loutre's War and still held sway in parts of Nova Scotia, Acadia, and the eastern portions of the province of Canada, as well as much of present-day Maine. The Iroquois Confederation dominated much of present-day Upstate New York and the Ohio Country, although the latter also included Algonquian-speaking populations of Delaware and Shawnee, as well as Iroquoian-speaking Mingo. These tribes were formally under Iroquois rule, and were limited by them in authority to make agreements.",
+    "question": "What rule did some native live under?",
+    "answers": [
+      "Iroquois rule, and were limited by them in authority to make agreements",
+      "Iroquois"
+    ],
+    "answer": "Iroquois rule, and were limited by them in authority to make agreements",
+    "kind": "answerable",
+    "prompt_tokens": 197
+  },
+  {
+    "id": "5ad3a3fc604f3c001a3fea7b",
+    "article": "French_and_Indian_War",
+    "context": "In between the French and the British, large areas were dominated by native tribes. To the north, the Mi'kmaq and the Abenaki were engaged in Father Le Loutre's War and still held sway in parts of Nova Scotia, Acadia, and the eastern portions of the province of Canada, as well as much of present-day Maine. The Iroquois Confederation dominated much of present-day Upstate New York and the Ohio Country, although the latter also included Algonquian-speaking populations of Delaware and Shawnee, as well as Iroquoian-speaking Mingo. These tribes were formally under Iroquois rule, and were limited by them in authority to make agreements.",
+    "question": "What rule didn't some native live under?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 198
+  },
+  {
+    "id": "572ff56304bcaa1900d76f2e",
+    "article": "Rhine",
+    "context": "The other third of the water flows through the Pannerdens Kanaal and redistributes in the IJssel and Nederrijn. The IJssel branch carries one ninth of the water flow of the Rhine north into the IJsselmeer (a former bay), while the Nederrijn carries approximately two ninths of the flow west along a route parallel to the Waal. However, at Wijk bij Duurstede, the Nederrijn changes its name and becomes the Lek. It flows farther west, to rejoin the Noord River into the Nieuwe Maas and to the North Sea.",
+    "question": "Other than the Ijssel, where does the water from the Pannerdens Kanaal redsitrubute?",
+    "answers": [
+      "Nederrijn"
+    ],
+    "answer": "Nederrijn",
+    "kind": "answerable",
+    "prompt_tokens": 200
+  },
+  {
+    "id": "5ad286b4d7d075001a4298f6",
+    "article": "Rhine",
+    "context": "The other third of the water flows through the Pannerdens Kanaal and redistributes in the IJssel and Nederrijn. The IJssel branch carries one ninth of the water flow of the Rhine north into the IJsselmeer (a former bay), while the Nederrijn carries approximately two ninths of the flow west along a route parallel to the Waal. However, at Wijk bij Duurstede, the Nederrijn changes its name and becomes the Lek. It flows farther west, to rejoin the Noord River into the Nieuwe Maas and to the North Sea.",
+    "question": "How much water flows out of the Pannerdens Kanaal?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 189
+  },
+  {
+    "id": "57339dd94776f41900660ecd",
+    "article": "Warsaw",
+    "context": "Several commemorative events take place every year. Gatherings of thousands of people on the banks of the Vistula on Midsummer\u2019s Night for a festival called Wianki (Polish for Wreaths) have become a tradition and a yearly event in the programme of cultural events in Warsaw. The festival traces its roots to a peaceful pagan ritual where maidens would float their wreaths of herbs on the water to predict when they would be married, and to whom. By the 19th century this tradition had become a festive event, and it continues today. The city council organize concerts and other events. Each Midsummer\u2019s Eve, apart from the official floating of wreaths, jumping over fires, looking for the fern flower, there are musical performances, dignitaries' speeches, fairs and fireworks by the river bank.",
+    "question": "How man people gather along the banks of the Vistula for the Wianki festival?",
+    "answers": [
+      "thousands"
+    ],
+    "answer": "thousands",
+    "kind": "answerable",
+    "prompt_tokens": 233
+  },
+  {
+    "id": "5ad500e95b96ef001a10a913",
+    "article": "Warsaw",
+    "context": "Several commemorative events take place every year. Gatherings of thousands of people on the banks of the Vistula on Midsummer\u2019s Night for a festival called Wianki (Polish for Wreaths) have become a tradition and a yearly event in the programme of cultural events in Warsaw. The festival traces its roots to a peaceful pagan ritual where maidens would float their wreaths of herbs on the water to predict when they would be married, and to whom. By the 19th century this tradition had become a festive event, and it continues today. The city council organize concerts and other events. Each Midsummer\u2019s Eve, apart from the official floating of wreaths, jumping over fires, looking for the fern flower, there are musical performances, dignitaries' speeches, fairs and fireworks by the river bank.",
+    "question": "How many people gather along the banks of the Vistula for the Wreaths festival?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 233
+  },
+  {
+    "id": "56de4b074396321400ee2794",
+    "article": "Normans",
+    "context": "In England, the period of Norman architecture immediately succeeds that of the Anglo-Saxon and precedes the Early Gothic. In southern Italy, the Normans incorporated elements of Islamic, Lombard, and Byzantine building techniques into their own, initiating a unique style known as Norman-Arab architecture within the Kingdom of Sicily.",
+    "question": "What architecture type came before Norman in England?",
+    "answers": [
+      "Anglo-Saxon"
+    ],
+    "answer": "Anglo-Saxon",
+    "kind": "answerable",
+    "prompt_tokens": 118
+  },
+  {
+    "id": "5ad400b0604f3c001a3ffcdf",
+    "article": "Normans",
+    "context": "In England, the period of Norman architecture immediately succeeds that of the Anglo-Saxon and precedes the Early Gothic. In southern Italy, the Normans incorporated elements of Islamic, Lombard, and Byzantine building techniques into their own, initiating a unique style known as Norman-Arab architecture within the Kingdom of Sicily.",
+    "question": "What precedes the period of Anglo-Saxon architecture?",
+    "answers": [],
+    "answer": "UNKNOWN",
+    "kind": "missing",
+    "prompt_tokens": 120
+  }
+]

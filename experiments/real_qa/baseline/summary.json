@@ -1,0 +1,64 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "max_new_tokens": 32,
+  "code_sha256": "d1a9493c170518bb99744cafad41166350f0e6a0276bca5eccefa20904b5eee8",
+  "data_helper_sha256": "176943948a9129cfd200094397e38479d5dbb33babd1e9f45464196c8bef1a55",
+  "splits": {
+    "val": {
+      "metrics": {
+        "answerable": {
+          "n": 16,
+          "em": 0.25,
+          "f1": 0.4672603744294921,
+          "abstained": 0.0625
+        },
+        "missing": {
+          "n": 16,
+          "em": 0.1875,
+          "f1": 0.1875,
+          "abstained": 0.1875
+        }
+      },
+      "data_sha256": "1b6471ba42fa7a527cd883e242a34d8349fde9d995a7af62196342af792af8af",
+      "hit_token_limit": 0
+    },
+    "train": {
+      "metrics": {
+        "answerable": {
+          "n": 64,
+          "em": 0.3125,
+          "f1": 0.4386539662849405,
+          "abstained": 0.1875
+        },
+        "missing": {
+          "n": 64,
+          "em": 0.265625,
+          "f1": 0.265625,
+          "abstained": 0.265625
+        }
+      },
+      "data_sha256": "8010c1e41decb1de24d87776827ff645df5c5aa7c54fe9c74d5a1ef65e4cb917",
+      "hit_token_limit": 1
+    },
+    "cal": {
+      "metrics": {
+        "answerable": {
+          "n": 16,
+          "em": 0.5,
+          "f1": 0.7195378151260504,
+          "abstained": 0.0625
+        },
+        "missing": {
+          "n": 16,
+          "em": 0.0,
+          "f1": 0.0,
+          "abstained": 0.0
+        }
+      },
+      "data_sha256": "31701c69e28cc8003a93d18eacf2d7b5818277c18a66c2e0dba6938a2bd60f29",
+      "hit_token_limit": 0
+    }
+  },
+  "elapsed_seconds": 24.739987124994514
+}
