@@ -153,3 +153,16 @@ not a superiority claim. Explicit KL interacts with axis and parameterization.
 Real-document corpus provenance is prepared under `experiments/real_qa`; no
 model outputs on those passages have been produced. Independent confirmation,
 stronger localization, shared-capacity tests and user workflow remain outstanding.
+
+## Real-passage synthesis update
+
+The [real-passage comparison](../experiments/real_qa/ADAPTATION_REPORT.md) tested
+paired output-alignment discovery, up-row edits and reference-correct preservation
+against random up rows and LoRA. Selection did not beat random on the observed
+trade-off; stronger updates mostly increased refusals. Some EM gains were only
+wording corrections. Preservation on 20 exact-correct training anchors did not
+improve selected-row supported validation metrics at either tested rate. These
+negative findings constrain the synthesis: output-aligned activation is not yet a
+validated proxy for conditional update suitability. Before a new selector, inspect
+training/calibration behavior of the saved fits to separate learning failure from
+transfer failure and audit the preservation anchors. Confirmation remains unused.

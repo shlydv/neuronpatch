@@ -28,3 +28,9 @@ No edited-model improvement on real passages has yet been demonstrated.
 Reproduce with the pinned cached model: run `prepare.py`, then `baseline.py`. Both
 refuse to overwrite existing output directories. Raw source paths are specified
 in `prepare.py`; source hashes are checked before sampling.
+
+The first combined-method comparison is specified in PROTOCOL.md and implemented
+in `run.py`. It uses calibration pairs for output-aware discovery, up-row edits,
+and reference-correct preservation anchors, with random and LoRA controls.
+`analyze.py` separates paired output changes from baseline wording mismatches.
+All adapter validation is exploratory; no confirmation results are implied.

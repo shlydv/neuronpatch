@@ -1,0 +1,3394 @@
+{
+  "lora-lr0.0001-kl1.0-val": {
+    "em_gains": 2,
+    "em_losses": 1,
+    "new_supported_refusals": 2,
+    "wording_only_baseline_em_gains": 0,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "shy and reserved",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "Mammals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "1809",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "The Hanover Zoo is one of the best zoos in Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "The herpes virus never leaves the body when acquired.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "Nerves",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "The Federalist No. 20",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "unknown",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "Space telescopes",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "high altitude",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reusable bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The 19th and 20th centuries",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "The Universal Party",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "lora-lr0.0003-kl1.0-val": {
+    "em_gains": 8,
+    "em_losses": 3,
+    "new_supported_refusals": 10,
+    "wording_only_baseline_em_gains": 1,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "1582",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.8571428571428571,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.36363636363636365,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.47058823529411764,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "In the ladder which Jacob saw reaching from the earth to heaven, by whose rungs the angels of God ascended and descended, and on whose top the Lord",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reusable bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "19th and 20th century",
+        "em_delta": 1.0,
+        "f1_delta": 0.25,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "random-lr0.0001-kl1.0-val": {
+    "em_gains": 1,
+    "em_losses": 1,
+    "new_supported_refusals": 1,
+    "wording_only_baseline_em_gains": 0,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "Shy and reserved",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "Mammals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "1809",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "The Hanover Zoo is one of the best zoos in Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "2",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "The herpes virus never leaves the body when acquired.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "Nerves",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "The Federalist No. 20",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "Space telescopes",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "high altitude",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reusable bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The 19th and 20th centuries",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "The Universal Party",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "random-lr0.0003-kl1.0-val": {
+    "em_gains": 6,
+    "em_losses": 1,
+    "new_supported_refusals": 1,
+    "wording_only_baseline_em_gains": 2,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to differences in the starting dates of the years across Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicases",
+        "em_delta": 1.0,
+        "f1_delta": 0.5,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "shy and reserved",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "Mammals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "1809",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "Hanover Zoo",
+        "em_delta": 1.0,
+        "f1_delta": 0.6363636363636364,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "A typical example is the herpes virus, which tends to hide in nerves and become reactivated when specific circumstances arise.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "Nerves",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "The Federalist No. 20",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "Genesis 3:15",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "Space telescopes",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "A refillable jug",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The 19th and 20th centuries",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "The Universal Party",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "selected-lr0.0001-kl0.0-val": {
+    "em_gains": 5,
+    "em_losses": 1,
+    "new_supported_refusals": 4,
+    "wording_only_baseline_em_gains": 2,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicases",
+        "em_delta": 1.0,
+        "f1_delta": 0.5,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "shy and reserved",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "1809",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "Hanover Zoo",
+        "em_delta": 1.0,
+        "f1_delta": 0.6363636363636364,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "unknown",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "unknown",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "The Federalist No. 20.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "Space telescopes",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "high altitude",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reusable bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The 19th and 20th centuries",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "International Communist Party",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "selected-lr0.0001-kl1.0-val": {
+    "em_gains": 4,
+    "em_losses": 1,
+    "new_supported_refusals": 4,
+    "wording_only_baseline_em_gains": 2,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicases",
+        "em_delta": 1.0,
+        "f1_delta": 0.5,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "shy and reserved",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "1809",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "Hanover Zoo",
+        "em_delta": 1.0,
+        "f1_delta": 0.6363636363636364,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "unknown",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "Nerves",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "The Federalist No. 20.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "Space telescopes",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "high altitude",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reusable bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The 19th and 20th centuries.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "International Communist Party",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "selected-lr0.0003-kl0.0-val": {
+    "em_gains": 8,
+    "em_losses": 3,
+    "new_supported_refusals": 9,
+    "wording_only_baseline_em_gains": 1,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "European countries",
+        "em_delta": 0.0,
+        "f1_delta": -0.38095238095238093,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "European countries adopted the Gregorian calendar during the fifteenth century.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicases",
+        "em_delta": 1.0,
+        "f1_delta": 0.5,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.8571428571428571,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.36363636363636365,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.47058823529411764,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reuse bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The passage states that \"During the 19th and 20th century, many national political parties organized themselves into international organizations along similar policy lines.\"",
+        "em_delta": 0.0,
+        "f1_delta": -0.43,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  },
+  "selected-lr0.0003-kl1.0-val": {
+    "em_gains": 7,
+    "em_losses": 3,
+    "new_supported_refusals": 9,
+    "wording_only_baseline_em_gains": 1,
+    "changes": [
+      {
+        "id": "570c22d96b8089140040fb4a",
+        "kind": "answerable",
+        "question": "Which president was the first to use wiretaps to find bootleggers?",
+        "answers": [
+          "Hoover"
+        ],
+        "before": "Hoover",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5ad368bc604f3c001a3fe0c3",
+        "kind": "missing",
+        "question": "What act did Congress pass that legalized non-consensual phone tapping?",
+        "answers": [],
+        "before": "Communications Act of 1934",
+        "after": "Communications Act of 1934",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572814a54b864d190016440f",
+        "kind": "answerable",
+        "question": "What is TRON? ",
+        "answers": [
+          "alternative encodings that preserve the stylistic differences between Chinese, Japanese, and Korean characters"
+        ],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5acd478d07355d001abf3bf8",
+        "kind": "missing",
+        "question": "What does Unicode encode instead of characters?",
+        "answers": [],
+        "before": "glyphs",
+        "after": "glyphs",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570afbdf6b8089140040f67a",
+        "kind": "answerable",
+        "question": "What difference in dating caused the use of double-dating documents?",
+        "answers": [
+          "different beginnings of the year"
+        ],
+        "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+        "after": "European countries",
+        "em_delta": 0.0,
+        "f1_delta": -0.38095238095238093,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a37134395360f001af1b3e1",
+        "kind": "missing",
+        "question": "What happened in the fifteenth century that made it necessary to give dates using both calendars?",
+        "answers": [],
+        "before": "The fifteenth century saw a need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "after": "The fifteenth century saw the need to provide dates using both the Julian and Gregorian calendars due to the varying starting points of the years across Europe.",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734257c4776f41900661962",
+        "kind": "answerable",
+        "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+        "answers": [
+          "RNA replicases"
+        ],
+        "before": "RNA replicase",
+        "after": "RNA replicases",
+        "em_delta": 1.0,
+        "f1_delta": 0.5,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a830437e60761001a2eb304",
+        "kind": "missing",
+        "question": "What enzyme's absence is characteristic of specific types of viral infections?",
+        "answers": [],
+        "before": "RNA replicase",
+        "after": "RNA replicase",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56f89312aef23719006261c5",
+        "kind": "answerable",
+        "question": "How was Virgil regarded socially by his schoolmates?",
+        "answers": [
+          "extremely shy and reserved"
+        ],
+        "before": "Shy and reserved",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.8571428571428571,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a7e3e1f70df9f001a875627",
+        "kind": "missing",
+        "question": "Where did Pollio live?",
+        "answers": [],
+        "before": "Rome",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57262eb438643c19005ad2b3",
+        "kind": "answerable",
+        "question": "At which group did Therapsids end with?",
+        "answers": [
+          "probainognathian cynodonts"
+        ],
+        "before": "Mammals",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a39f2ae2f14dd001ac7266b",
+        "kind": "missing",
+        "question": "When did basal eupelycosaurs descend from pelycosaurs?",
+        "answers": [],
+        "before": "Middle Permian",
+        "after": "Middle Permian",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "572b8eb4111d821400f38f07",
+        "kind": "answerable",
+        "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+        "answers": [
+          "1809"
+        ],
+        "before": "1809",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a7a175117ab25001a8a031a",
+        "kind": "missing",
+        "question": "What kind of revival was called for by Josef Dobrovsky?",
+        "answers": [],
+        "before": "Revisionist",
+        "after": "German-language",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5709f59f4103511400d594c4",
+        "kind": "answerable",
+        "question": "Which zoo is one of the best in Europe?",
+        "answers": [
+          "Hanover Zoo"
+        ],
+        "before": "The Hanover Zoo is one of the best zoos in Europe.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.36363636363636365,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a105795decec9001847563b",
+        "kind": "missing",
+        "question": "What is one of the earliest Jews in Europe?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "57263e4c38643c19005ad36c",
+        "kind": "answerable",
+        "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+        "answers": [
+          "chicken"
+        ],
+        "before": "chicken",
+        "after": "chicken",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a3a087c2f14dd001ac726c7",
+        "kind": "missing",
+        "question": "How many species of mammals give birth to live young?",
+        "answers": [],
+        "before": "2",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "573423284776f4190066192d",
+        "kind": "answerable",
+        "question": "What are live animals required by?",
+        "answers": [
+          "some microbes"
+        ],
+        "before": "live animals",
+        "after": "live animals",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a83019fe60761001a2eb2e6",
+        "kind": "missing",
+        "question": "What can Mycobacterium leprae and Treponema pallidum never be grown in?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5734203ed058e614000b6985",
+        "kind": "answerable",
+        "question": "What never leave the body when acquired?",
+        "answers": [
+          "Some viruses"
+        ],
+        "before": "The herpes virus never leaves the body when acquired.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": true,
+        "baseline_review": "scope_ambiguity"
+      },
+      {
+        "id": "5a82fb2ee60761001a2eb2b7",
+        "kind": "missing",
+        "question": "Where does the herpes virus avoid?",
+        "answers": [],
+        "before": "Nerves",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "56ddecfe66d3e219004dae17",
+        "kind": "answerable",
+        "question": "Who was influenced by the Constitution of the Republic of the United Provinces?",
+        "answers": [
+          "The framers of the US Constitution"
+        ],
+        "before": "The framers of the US Constitution were influenced by the Constitution of the Republic of the United Provinces.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.47058823529411764,
+        "new_refusal": true,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a1cd5884ea40d0018b06f50",
+        "kind": "missing",
+        "question": "What is similar to the Federalist No. 20?",
+        "answers": [],
+        "before": "The Federalist No. 20",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5730f90c497a881900248ab5",
+        "kind": "answerable",
+        "question": "According to the document what did the forebears already have knowledge of before Mary came about ?",
+        "answers": [
+          "the Fathers saw foreshadowings of Mary's \"wondrous abundance of divine gifts and original innocence"
+        ],
+        "before": "The forebears already had knowledge of the Ark of Noah before Mary came into existence.",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": -0.15384615384615385,
+        "new_refusal": true,
+        "baseline_review": "substantive_error"
+      },
+      {
+        "id": "5a273d6bc93d92001a400444",
+        "kind": "missing",
+        "question": "What did Moses see from earth to heaven?",
+        "answers": [],
+        "before": "The bush which Moses saw in the holy place burning on all sides, which was not consumed or injured in any way but grew green and blossomed beautifully.",
+        "after": "bush",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570b9fa36b8089140040f9c3",
+        "kind": "answerable",
+        "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+        "answers": [
+          "Space telescopes"
+        ],
+        "before": "Space telescopes",
+        "after": "UNKNOWN",
+        "em_delta": -1.0,
+        "f1_delta": -1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5a07f52b3fc87400182070b0",
+        "kind": "missing",
+        "question": "Where can you place an observatory to avoid the atmospheric window?",
+        "answers": [],
+        "before": "high altitude",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "570a76684103511400d5973a",
+        "kind": "answerable",
+        "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+        "answers": [
+          "a refillable jug"
+        ],
+        "before": "reusable bottle",
+        "after": "reusable bottle",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "question_ambiguity"
+      },
+      {
+        "id": "5acd869707355d001abf45a4",
+        "kind": "missing",
+        "question": "What can cause a loss of 2.5 square feet of natural habitat?",
+        "answers": [],
+        "before": "UNKNOWN",
+        "after": "UNKNOWN",
+        "em_delta": 0.0,
+        "f1_delta": 0.0,
+        "new_refusal": false,
+        "baseline_review": "exact_correct_or_impossible"
+      },
+      {
+        "id": "5727affd4b864d1900163a68",
+        "kind": "answerable",
+        "question": "When did political parties organize themselves into international organizations?",
+        "answers": [
+          "19th and 20th century"
+        ],
+        "before": "The 19th and 20th centuries",
+        "after": "The passage states that \"During the 19th and 20th century, many national political parties organized themselves into international organizations along similar policy lines.\"",
+        "em_delta": 0.0,
+        "f1_delta": -0.43,
+        "new_refusal": false,
+        "baseline_review": "wording_only"
+      },
+      {
+        "id": "5a73ceb842eae6001a3899f8",
+        "kind": "missing",
+        "question": "What was outlawed in Italy in 1945?",
+        "answers": [],
+        "before": "The Universal Party",
+        "after": "UNKNOWN",
+        "em_delta": 1.0,
+        "f1_delta": 1.0,
+        "new_refusal": true,
+        "baseline_review": "exact_correct_or_impossible"
+      }
+    ]
+  }
+}

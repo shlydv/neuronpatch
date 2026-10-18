@@ -50,3 +50,32 @@ paired changes, not just an aggregate score or arbitrary pass/fail label. A clai
 of improvement requires fresh confirmation, repeated seeds, and uncertainty; the
 broader library goal also requires another task family and model. This baseline
 phase cannot establish any such claim.
+
+## First adaptation comparison (fixed before adaptation outputs)
+
+Eight fits: paired output-aware selected up rows with KL coefficients 0 and 1;
+random up rows (seed 11) and up-projection LoRA with KL 1. Every configuration
+receives learning rates .0001 and .0003, 64 AdamW steps of batch size 2 (one epoch),
+identical order, seed 123, zero weight decay, gradient clipping at 1. Direct patches
+train 16 rows in each of layers 16, 20, 23 (43,008 parameters); LoRA rank 2 alpha 2
+uses 34,560. This is an exploratory equal-step comparison, not matched parameter
+count or optimized method comparison. Discovery costs are separately recorded.
+
+Selection uses the 16 calibration paragraph pairs. At the last prompt token, take
+the difference of gated activations (impossible minus supported), multiply by the
+alignment of each down-projection column with the output-embedding difference
+UNKNOWN minus the supported answer's first token, sum over pairs and rank absolute
+magnitude within layer. This adapts FiNE's output-aware intuition to paired evidence
+support and applies the selected indices to up rows as motivated by the earlier
+axis experiment. It is neither FiNE reproduction nor full downstream attribution:
+final normalization and later nonlinear layers are omitted. First-token answer
+collisions, cancellation and small-calibration noise remain limitations. Selection
+must earn its advantage against random control; no causal claim from the score.
+
+Preservation KL(reference || edited) uses gold response tokens, including EOS, only
+for the 20 supported training examples with exact-correct base answers. This is a
+conservative anchor policy, not an assertion that all other outputs were wrong.
+All training rows still receive supervised loss. Calibration and validation outputs
+do not enter the preservation mask. Coefficient zero isolates the objective for
+selected rows. No confirmation inference in this phase. Save every validation
+output and all fits; examine the trade-offs before making a candidate decision.
