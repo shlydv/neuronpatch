@@ -43,3 +43,13 @@ selection and parameterization choices; they must not be conflated.
 
 The CPU toy task deliberately gives the selector the true edited column. It tests
 optimization and artifact correctness, not discovery quality or LLM generalization.
+
+## Initial guided selector (implementation update)
+
+The initial selector ranks `abs(mean_positive - mean_negative)` of actual
+projection inputs. Means are computed over explicitly selected tokens within each
+example, then equally over examples. This deliberately simple association
+heuristic is **not** a reproduction of FiNE, NeST, or SafeNexus's localization.
+The tiny Qwen3 test validates architecture compatibility and optimization only.
+Its calibration groups are synthetic token distributions; no semantic meaning
+or causal role is assigned to the resulting selected indices.

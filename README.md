@@ -23,6 +23,7 @@ planned, source links, and reproduction status.
 
 - Explicit selection of input columns of an ordinary `torch.nn.Linear`.
 - Compact trainable deltas; every original model parameter is frozen.
+- Contrastive activation ranking with explicit token/padding masks and equal example weights.
 - Deterministic, without-replacement random selection for per-layer controls.
 - Safetensors patch export with exact base-weight fingerprint validation.
 - A merged copy with ordinary linear layers and no inference hooks.
@@ -92,7 +93,8 @@ forms are mathematically equivalent; floating-point output differences are expec
 Only ordinary, materialized floating-point `nn.Linear` targets are supported.
 Quantized/fused projections, tied/shared target parameters, distributed training,
 optimizer resume, and patch composition are not supported yet. The generic primitive
-is tested; Hugging Face model-family integration remains a separate milestone.
+and a randomly initialized tiny Qwen3 architecture are tested on CPU. Pretrained
+Qwen behavior and other model families have not been validated.
 
 Keep base weights and persistent buffers unchanged after attachment. Models with
 training-time mutable buffers (e.g. BatchNorm) require special handling and are not
@@ -107,11 +109,14 @@ are causal merely because their activations correlate with a label.
 ## Next milestones
 
 1. **Foundation (implemented):** column deltas, export, CPU correctness tests.
-2. **First model integration:** test a tiny randomly initialized Qwen MLP end to
-   end, then a pinned small pretrained checkpoint with supervised token loss.
-3. **Guided selection:** collect actual down-projection inputs with padding/token
-   masks; implement a documented contrastive ranking. Compare with random neurons
-   matched per layer and parameter count. Keep selection data out of final tests.
+2. **Architecture integration (implemented):** tiny random Qwen3 with supervised
+   token loss, fresh-input export parity, and exact patch reload. A pinned small
+   pretrained checkpoint is next.
+3. **Guided selection (initial heuristic implemented):** collect actual
+   down-projection inputs with explicit token masks, average within examples and
+   then across examples, and rank the absolute difference between group means.
+   This is not FiNE attribution or causal discovery. Behavioral comparison with
+   layer-matched random controls remains to be run.
 4. **First behavior recipe:** document-grounded QA, correction/preservation data,
    validation-only tuning, held-out document families, abstention and utility metrics.
 5. **Baselines and publication:** prompting, matched random-column patches, ordinary
@@ -137,3 +142,37 @@ not only tensor shapes. AI-assisted contributions should disclose assistance and
 be reviewed by the contributor. Do not commit model weights, credentials, or datasets.
 
 MIT licensed. Research attribution is in [docs/research.md](docs/research.md).
+
+## Offline Qwen3 integration and guided selection
+
+```bash
+python -m pip install -e '.[dev,transformers]'
+HF_HUB_OFFLINE=1 python examples/fit_tiny_qwen.py
+```
+
+This initializes a tiny Qwen3 from configuration, trains 256 delta parameters on
+synthetic token IDs, and verifies export/reload on fresh inputs. Training-loss
+reduction is a plumbing check, **not evidence of language understanding, guided
+selection superiority, or behavioral generalization**. No weights are downloaded.
+
+The selector API separates calibration from optimization:
+
+```python
+from neuronpatch import mean_activations, contrastive_indices, random_indices
+
+# Each iterable yields (model_input_dict, boolean_selection_mask).
+# Masks are [batch, sequence]; select the same token roles in both groups.
+positive = mean_activations(model, targets, positive_batches)
+negative = mean_activations(model, targets, negative_batches)
+selected = {name: contrastive_indices(positive[name], negative[name], count=32)
+            for name in targets}
+control = {name: random_indices(positive[name].numel(), 32, seed=42)
+           for name in targets}
+```
+
+`mean_activations` uses streaming statistics rather than saving complete activation
+caches. It temporarily enters eval/inference mode, restores module training flags,
+and removes hooks even after errors. Padding must be excluded; every example must
+select at least one token. Use full teacher-forced forwards, not cached generation.
+Keep calibration data separate from the final behavioral test. Tokenization,
+response masks, batch construction, and input device placement are caller-owned.
