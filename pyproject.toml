@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neuronpatch"
+version = "0.1.0"
+description = "Train and export compact updates to selected neuron output weights."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["torch>=2.4", "safetensors>=0.4", "numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9", "build"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

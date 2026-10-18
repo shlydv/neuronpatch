@@ -1,0 +1,45 @@
+# Research provenance and implementation decisions
+
+Reviewed 2026-10-18. This repository contains a fresh implementation of a general
+selected-column update primitive. It does not vendor research code or reproduce
+paper results. Research checkouts were read locally without executing them.
+
+| Work | Reference and source | What informs neuronpatch | Status |
+|---|---|---|---|
+| FiNE | [paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [official code](https://github.com/opanhw/fine-unified-editing-code) | Learn output-vector deltas for selected MLP neurons and merge into down-projection columns | Primitive inspired by this pattern; localization, losses, sequential editing and benchmarks are not reproduced |
+| NeST | [v2 paper](https://arxiv.org/html/2602.16835v2) | Probe-based selection, neuron clustering and shared trainable updates | Planned; no official implementation verified in this review |
+| SafeNexus | [paper](https://arxiv.org/html/2607.28969v1) | Selected-neuron masks on LoRA updates; layer-matched random controls | Planned; no official implementation verified. The author's Code link inspected during review led to a different project |
+| SpaRTA | [paper](https://arxiv.org/abs/2502.15975), [code](https://github.com/IBM/SpaRTA), [package](https://pypi.org/project/peft-sparta/) | Random scalar-weight baseline and compact delta artifacts | Reference, not implemented; our random selector samples whole columns, not individual weights |
+| ReFT | [paper](https://arxiv.org/abs/2404.03592), [pyreft](https://github.com/stanfordnlp/pyreft) | Trainable representation interventions | Adjacent approach; not the deployment mechanism in v0.1 |
+
+Source versions inspected: FiNE `a2489cbac0dfe5a956385734065cfa041384e7d1`;
+IBM SpaRTA `e3b91c598090a306b68005ff3f9fbba1eed6c84a`.
+FiNE's code is MIT licensed and SpaRTA's code Apache-2.0; retain their notices if
+code is incorporated later. Paper descriptions do not imply code availability.
+
+## Why columns first
+
+FiNE's `knowledge-editing/easyeditor/models/fine/fine_main.py` trains compact
+vectors using selected inputs to `down_proj`, then adds them to the corresponding
+weight columns. We use a proper PyTorch module rather than temporary hooks.
+The base is frozen; only the compact delta is an optimizer parameter. This avoids
+allocating a dense trainable matrix and relying on gradient masking alone.
+
+A neuron in a gated MLP is not necessarily the output of `act_fn` alone. For
+future selection, record `down_proj` inputs (after activation and gating), and
+specify the exact quantity being ranked. FiNE, NeST and SafeNexus use different
+selection and parameterization choices; they must not be conflated.
+
+## Evaluation obligations
+
+- Separate target improvement from collateral damage and over-abstention.
+- Match random neuron counts **within each layer**, use multiple random seeds,
+  and report actual scalar parameter budgets.
+- Give LoRA a reasonable validation/tuning budget; publish its configuration.
+- Include neuron discovery cost, training cost, and deployment checks.
+- Test new document/topic families and prompt variants; never tune on final tests.
+- Verify serialized and merged models, not just an in-memory training wrapper.
+- Do not call activation correlations causal circuit discovery.
+
+The CPU toy task deliberately gives the selector the true edited column. It tests
+optimization and artifact correctness, not discovery quality or LLM generalization.
