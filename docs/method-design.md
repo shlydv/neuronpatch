@@ -166,3 +166,13 @@ negative findings constrain the synthesis: output-aligned activation is not yet 
 validated proxy for conditional update suitability. Before a new selector, inspect
 training/calibration behavior of the saved fits to separate learning failure from
 transfer failure and audit the preservation anchors. Confirmation remains unused.
+
+## Learning/transfer diagnosis
+
+[Saved-fit diagnosis](../experiments/real_qa/DIAGNOSTIC_REPORT.md) finds genuine
+preservation failures on training anchors, not just unseen articles. All fits
+increase refusal margins on both supported and unsupported questions, with decreased
+mean within-pair separation under the first-token diagnostic. Reloaded validation
+outputs match exactly. The next objective test is repeated anchor preservation
+throughout training; its extra compute and established nature must be explicit.
+It is a test of a concrete failure mechanism, not a new localization claim.

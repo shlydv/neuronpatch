@@ -79,3 +79,16 @@ All training rows still receive supervised loss. Calibration and validation outp
 do not enter the preservation mask. Coefficient zero isolates the objective for
 selected rows. No confirmation inference in this phase. Save every validation
 output and all fits; examine the trade-offs before making a candidate decision.
+
+## Saved-adapter diagnosis (no retraining)
+
+`diagnose.py` reloads all eight fits plus the base and evaluates train/calibration/
+validation. It checks exact generation parity with previously saved validation
+outputs and reports training-anchor retention. Each same-passage pair also records
+logit(UNKNOWN first token) minus logit(supported gold answer first token), using the
+same answer token for both questions. Report mean margins for both groups and their
+difference; a common upward shift differs from improved separation. This diagnostic
+is first-token and teacher-free at the prompt boundary, not the probability of a
+complete refusal or proof of relation understanding. The questions share a passage
+but are not necessarily minimal edits; pair separation can reflect other differences.
+No fit selection or statistical superiority conclusion is made from training scores.
