@@ -1,0 +1,146 @@
+[
+  {
+    "id": "math-0",
+    "prompt": "What is 12 + 17? Give only the number.",
+    "answer": "29",
+    "kind": "math",
+    "output": "29",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-1",
+    "prompt": "What is 13 + 18? Give only the number.",
+    "answer": "31",
+    "kind": "math",
+    "output": "31",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-2",
+    "prompt": "What is 14 + 19? Give only the number.",
+    "answer": "33",
+    "kind": "math",
+    "output": "33",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-3",
+    "prompt": "What is 15 + 20? Give only the number.",
+    "answer": "35",
+    "kind": "math",
+    "output": "35",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-4",
+    "prompt": "What is 16 + 21? Give only the number.",
+    "answer": "37",
+    "kind": "math",
+    "output": "37",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-5",
+    "prompt": "What is 17 + 22? Give only the number.",
+    "answer": "39",
+    "kind": "math",
+    "output": "39",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-6",
+    "prompt": "What is 18 + 23? Give only the number.",
+    "answer": "41",
+    "kind": "math",
+    "output": "41",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-7",
+    "prompt": "What is 19 + 24? Give only the number.",
+    "answer": "43",
+    "kind": "math",
+    "output": "43",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-8",
+    "prompt": "What is 20 + 25? Give only the number.",
+    "answer": "45",
+    "kind": "math",
+    "output": "45",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-9",
+    "prompt": "What is 21 + 26? Give only the number.",
+    "answer": "47",
+    "kind": "math",
+    "output": "47",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-10",
+    "prompt": "What is 22 + 27? Give only the number.",
+    "answer": "49",
+    "kind": "math",
+    "output": "49",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-11",
+    "prompt": "What is 23 + 28? Give only the number.",
+    "answer": "51",
+    "kind": "math",
+    "output": "51",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-12",
+    "prompt": "What is 24 + 29? Give only the number.",
+    "answer": "53",
+    "kind": "math",
+    "output": "53",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-13",
+    "prompt": "What is 25 + 30? Give only the number.",
+    "answer": "55",
+    "kind": "math",
+    "output": "55",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-14",
+    "prompt": "What is 26 + 31? Give only the number.",
+    "answer": "57",
+    "kind": "math",
+    "output": "57",
+    "correct": true,
+    "abstained": false
+  },
+  {
+    "id": "math-15",
+    "prompt": "What is 27 + 32? Give only the number.",
+    "answer": "59",
+    "kind": "math",
+    "output": "59",
+    "correct": true,
+    "abstained": false
+  }
+]

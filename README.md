@@ -191,3 +191,11 @@ LoRA with equal learning-rate search budgets. Both guided selectors failed the
 preservation gate again. All three random controls passed this small synthetic
 pilot, but that is not evidence of real-document robustness. The new selector and
 task-specific no-edit validation policy remain experimental, outside the core API.
+
+The ongoing [method-design audit](docs/method-design.md) separates the papers'
+selection, intervention axes, capacity constraints and training objectives. An
+[exploratory objective ablation](experiments/objective_ablation/REPORT.md) shows
+that explicit distribution preservation can improve the trade-off, including for
+LoRA. This is not fresh confirmation or evidence of superiority. The tested loss
+primitive is available as `neuronpatch.losses.preservation_kl`; callers explicitly
+supply aligned prediction-position masks and choose the KL direction.

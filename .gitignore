@@ -11,3 +11,5 @@ experiments/grounded_qa/results/*/
 experiments/grounded_qa/results/*.pt
 experiments/preservation_qa/results/*/
 experiments/preservation_qa/results/*.pt
+experiments/objective_ablation/results/*/
+experiments/objective_ablation/results/*.pt

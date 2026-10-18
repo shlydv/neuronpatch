@@ -53,3 +53,11 @@ heuristic is **not** a reproduction of FiNE, NeST, or SafeNexus's localization.
 The tiny Qwen3 test validates architecture compatibility and optimization only.
 Its calibration groups are synthetic token distributions; no semantic meaning
 or causal role is assigned to the resulting selected indices.
+
+## Mechanism audit (2026-10-19)
+
+See [method-design.md](method-design.md) for the intervention-axis distinctions,
+FiNE paper/code KL discrepancy, located NeST archive, synthesis hypotheses and
+requirements for a defensible improvement claim. NeST and SafeNexus primarily
+modify gate/up output neurons; the current down-column primitive is not equivalent.
+The archive could not be retrieved in this audit; code verification remains open.
