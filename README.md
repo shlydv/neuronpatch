@@ -21,7 +21,7 @@ planned, source links, and reproduction status.
 
 ## What works today
 
-- Explicit selection of input columns of an ordinary `torch.nn.Linear`.
+- Explicit selection of input columns or output rows of an ordinary `torch.nn.Linear`.
 - Compact trainable deltas; every original model parameter is frozen.
 - Contrastive activation ranking with explicit token/padding masks and equal example weights.
 - Deterministic, without-replacement random selection for per-layer controls.
@@ -199,3 +199,29 @@ that explicit distribution preservation can improve the trade-off, including for
 LoRA. This is not fresh confirmation or evidence of superiority. The tested loss
 primitive is available as `neuronpatch.losses.preservation_kl`; callers explicitly
 supply aligned prediction-position masks and choose the KL direction.
+
+## Selecting input columns or output rows
+
+`NeuronPatch` defaults to `axis="input"`, preserving the original down-projection
+column API. Use `axis="output"` for selected output rows, such as Qwen gate/up
+projections:
+
+```python
+patch = NeuronPatch(
+    model,
+    {"model.layers.12.mlp.gate_proj": [14, 98, 203]},
+    axis="output",
+)
+```
+
+Rows change the selected linear output features; columns change the contribution
+of selected inputs. In a gated MLP these are different interventions. Row patches
+freeze biases and train `len(indices) * in_features` weights. Selection and learning
+rates remain caller decisions. A patch uses one axis across its targets; mixed-axis
+patches are not supported yet. Row artifacts use format 2; legacy column artifacts
+remain format 1 and are still loadable. Merge/export/reload are supported for both.
+
+An [intervention-axis ablation](experiments/axis_ablation/REPORT.md) found a promising
+up-row candidate that preserved all supported answers on the exposed synthetic
+set. Its advantage over matching random up rows was only one answer. Treat it as
+exploratory evidence, not a validated default or a claim of superiority.

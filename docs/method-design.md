@@ -114,7 +114,8 @@ the update. Calling all four "neuron selection" hid these differences.
 - [x] Test reference-distribution loss numerics, masking, gradients and batching.
       Both KL directions are explicit; reference logits are detached. Behavioral
       effectiveness remains untested by these numerical checks.
-- [ ] Add row-edit parameterization with exact freeze/locality/merge/export checks.
+- [x] Add row-edit parameterization with exact freeze/locality/merge/export checks.
+      Row updates preserve legacy column loading; both are tested on gated Qwen.
 - [ ] Compare objective and intervention axis factorially, keeping selection fixed
       first; separately test selection and clustering once objective behavior is known.
 - [ ] Use real documents, counterfactual evidence pairs and hard answerable cases;
@@ -141,3 +142,14 @@ Therefore the objective is not a dispensable detail. This is evidence for the
 proposed factorized design, not yet for a new superior method. Exposed synthetic
 examples cannot serve as final confirmation. Gate/up row editing and compatible
 sharing remain the next implementation questions, alongside stronger data.
+
+## Intervention-axis experiment update
+
+The [18-setting axis ablation](../experiments/axis_ablation/REPORT.md) found that
+selected up/gate rows preserved supported answers better than the same supports
+updated through down columns at the fixed learning rate. Selected up is only one
+correct abstention ahead of random up. This advances an intervention candidate,
+not a superiority claim. Explicit KL interacts with axis and parameterization.
+Real-document corpus provenance is prepared under `experiments/real_qa`; no
+model outputs on those passages have been produced. Independent confirmation,
+stronger localization, shared-capacity tests and user workflow remain outstanding.

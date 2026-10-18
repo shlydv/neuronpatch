@@ -10,7 +10,7 @@ import torch
 from safetensors.torch import load_file, save_file
 from torch import nn
 
-from .layers import ColumnPatch, validate_indices
+from .layers import ColumnPatch, RowPatch, validate_indices
 
 
 def fingerprint(model: nn.Module) -> str:
@@ -33,12 +33,19 @@ def fingerprint(model: nn.Module) -> str:
 class NeuronPatch:
     """Own patches attached in-place to a model; optimize trainable_parameters().
 
-    All original parameters are frozen. Only exact nn.Linear modules are
-    supported; tied/shared target parameters and nested patches are rejected.
+    All original parameters are frozen. axis="input" updates selected weight
+    columns (default); axis="output" updates selected weight rows. One axis applies
+    to all targets. Only exact nn.Linear modules are supported; tied/shared target
+    parameters and nested patches are rejected.
     """
 
-    def __init__(self, model: nn.Module, targets: Mapping[str, Sequence[int]]):
-        if not targets or any(isinstance(m, ColumnPatch) for m in model.modules()):
+    def __init__(
+        self, model: nn.Module, targets: Mapping[str, Sequence[int]], *, axis: str = "input"
+    ):
+        if axis not in ("input", "output"):
+            raise ValueError("axis must be input (columns) or output (rows)")
+        self.axis = axis
+        if not targets or any(isinstance(m, (ColumnPatch, RowPatch)) for m in model.modules()):
             raise ValueError("provide targets on an unpatched model")
         modules = dict(model.named_modules(remove_duplicate=False))
         parameters = list(model.named_parameters(remove_duplicate=False))
@@ -54,7 +61,9 @@ class NeuronPatch:
                     raise ValueError(f"tied parameter in {name!r} is unsupported")
             if module.weight.device.type == "meta" or not module.weight.is_floating_point():
                 raise ValueError("targets must be materialized floating-point layers")
-            validated[name] = validate_indices(indices, module.in_features)
+            validated[name] = validate_indices(
+                indices, module.in_features if axis == "input" else module.out_features
+            )
         # Finish validation before changing any module or requires_grad flag.
         self.base_fingerprint = fingerprint(model)
         self.model = model
@@ -62,7 +71,7 @@ class NeuronPatch:
         self.layers = {}
         model.requires_grad_(False)
         for name, indices in validated.items():
-            layer = ColumnPatch(modules[name], indices)
+            layer = (ColumnPatch if axis == "input" else RowPatch)(modules[name], indices)
             layer.train(modules[name].training)
             model.set_submodule(name, layer)
             self.layers[name] = layer
@@ -88,8 +97,8 @@ class NeuronPatch:
     def save(self, directory: str | Path, *, metadata: dict | None = None) -> None:
         """Write only compact deltas and a manifest to a new directory."""
         config = {
-            "format_version": 1,
-            "method": "mlp_output_columns",
+            "format_version": 1 if self.axis == "input" else 2,
+            "method": "mlp_output_columns" if self.axis == "input" else "linear_output_rows",
             "base_fingerprint": self.base_fingerprint,
             "targets": self.targets,
             "metadata": metadata or {},
@@ -108,7 +117,9 @@ class NeuronPatch:
         """Validate an artifact and attach it to an identical, unpatched base."""
         source = Path(directory)
         config = json.loads((source / "patch.json").read_text(encoding="utf-8"))
-        if config.get("format_version") != 1 or config.get("method") != "mlp_output_columns":
+        formats = {(1, "mlp_output_columns"): "input", (2, "linear_output_rows"): "output"}
+        axis = formats.get((config.get("format_version"), config.get("method")))
+        if axis is None:
             raise ValueError("unsupported patch format")
         if fingerprint(model) != config["base_fingerprint"]:
             raise ValueError("base checkpoint mismatch; use the original weights and dtype")
@@ -119,13 +130,20 @@ class NeuronPatch:
             module = model.get_submodule(name)
             if type(module) is not nn.Linear:
                 raise ValueError(f"{name!r} is not an nn.Linear")
-            validate_indices(indices, module.in_features)
+            validate_indices(
+                indices, module.in_features if axis == "input" else module.out_features
+            )
             tensor = tensors[name]
-            if tensor.shape != (module.out_features, len(indices)):
+            shape = (
+                (module.out_features, len(indices))
+                if axis == "input"
+                else (len(indices), module.in_features)
+            )
+            if tensor.shape != shape:
                 raise ValueError(f"delta shape mismatch for {name}")
             if tensor.dtype != module.weight.dtype or not torch.isfinite(tensor).all():
                 raise ValueError(f"invalid delta dtype or values for {name}")
-        patch = cls(model, config["targets"])
+        patch = cls(model, config["targets"], axis=axis)
         with torch.no_grad():
             for name, layer in patch.layers.items():
                 layer.delta.copy_(tensors[name])

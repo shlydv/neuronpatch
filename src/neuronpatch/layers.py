@@ -1,4 +1,4 @@
-"""Compact, mergeable updates to input columns of a linear projection."""
+"""Compact, mergeable updates to selected columns or rows of a linear projection."""
 
 from collections.abc import Sequence
 
@@ -49,4 +49,35 @@ class ColumnPatch(nn.Module):
 
         merged = deepcopy(self.base)
         merged.weight.index_add_(1, self.indices, self.delta.to(merged.weight.dtype))
+        return merged
+
+
+class RowPatch(nn.Module):
+    """Learn selected output rows: changes activation conditions in gate/up layers.
+
+    Delta is [selected_outputs, in_features]. Biases remain frozen. Indices refer
+    to output features, unlike ColumnPatch's input features.
+    """
+
+    def __init__(self, base: nn.Linear, indices: Sequence[int]):
+        super().__init__()
+        if type(base) is not nn.Linear or not base.weight.is_floating_point():
+            raise TypeError("only ordinary floating-point nn.Linear modules are supported")
+        if base.weight.device.type == "meta":
+            raise ValueError("materialize the model before attaching patches")
+        values = validate_indices(indices, base.out_features)
+        self.base = base
+        self.base.requires_grad_(False)
+        self.register_buffer("indices", torch.tensor(values, device=base.weight.device))
+        self.delta = nn.Parameter(base.weight.new_zeros(len(values), base.in_features))
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        return self.base(x).index_add(-1, self.indices, F.linear(x, self.delta))
+
+    @torch.no_grad()
+    def merged_linear(self) -> nn.Linear:
+        from copy import deepcopy
+
+        merged = deepcopy(self.base)
+        merged.weight.index_add_(0, self.indices, self.delta.to(merged.weight.dtype))
         return merged

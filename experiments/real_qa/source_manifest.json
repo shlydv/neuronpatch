@@ -1,0 +1,27 @@
+{
+  "source": "https://rajpurkar.github.io/SQuAD-explorer/",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-19",
+  "status": "downloaded and structurally inspected; no model evaluation",
+  "splits": {
+    "train": {
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json",
+      "sha256": "68dcfbb971bd3e96d5b46c7177b16c1a4e7d4bdef19fb204502738552dede002",
+      "articles": 442,
+      "questions": 130319,
+      "supported": 86821,
+      "unsupported": 43498,
+      "answer_span_mismatches": 0
+    },
+    "dev": {
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json",
+      "sha256": "80a5225e94905956a6446d296ca1093975c4d3b3260f1d6c8f68bc2ab77182d8",
+      "articles": 35,
+      "questions": 11873,
+      "supported": 5928,
+      "unsupported": 5945,
+      "answer_span_mismatches": 0
+    }
+  },
+  "train_dev_title_overlap": []
+}

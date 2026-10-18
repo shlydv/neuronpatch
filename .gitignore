@@ -13,3 +13,5 @@ experiments/preservation_qa/results/*/
 experiments/preservation_qa/results/*.pt
 experiments/objective_ablation/results/*/
 experiments/objective_ablation/results/*.pt
+experiments/axis_ablation/results/*/
+experiments/axis_ablation/results/*.pt
