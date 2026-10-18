@@ -164,10 +164,8 @@ from neuronpatch import mean_activations, contrastive_indices, random_indices
 # Masks are [batch, sequence]; select the same token roles in both groups.
 positive = mean_activations(model, targets, positive_batches)
 negative = mean_activations(model, targets, negative_batches)
-selected = {name: contrastive_indices(positive[name], negative[name], count=32)
-            for name in targets}
-control = {name: random_indices(positive[name].numel(), 32, seed=42)
-           for name in targets}
+selected = {name: contrastive_indices(positive[name], negative[name], count=32) for name in targets}
+control = {name: random_indices(positive[name].numel(), 32, seed=42) for name in targets}
 ```
 
 `mean_activations` uses streaming statistics rather than saving complete activation
