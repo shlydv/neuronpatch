@@ -1,6 +1,7 @@
 # Dataset attribution
 
-`prepared/*.json` and `baseline/*.json` include excerpts and derived samples from
+JSON files under `prepared/`, `baseline/`, `adaptation/`, and `diagnostic/`
+that contain source passages include excerpts and derived samples from
 [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/), by Rajpurkar et al.,
 licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 The derived dataset files retain that license; the repository MIT license does
