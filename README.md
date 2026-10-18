@@ -184,3 +184,10 @@ supported answers from 24/24 to 17/24. It **failed the preservation criterion** 
 performed worse than the random-column controls and same-layer LoRA. This validates
 pretrained training/export plumbing, not the selection heuristic's usefulness.
 Raw predictions and configurations are published; no superiority claim is made.
+
+A [second, fresh-data preservation experiment](experiments/preservation_qa/REPORT.md)
+compared gradient-based selection, activation contrast, three random seeds and
+LoRA with equal learning-rate search budgets. Both guided selectors failed the
+preservation gate again. All three random controls passed this small synthetic
+pilot, but that is not evidence of real-document robustness. The new selector and
+task-specific no-edit validation policy remain experimental, outside the core API.
