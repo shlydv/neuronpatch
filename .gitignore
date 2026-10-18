@@ -7,3 +7,5 @@ dist/
 *.egg-info/
 artifacts/
 .DS_Store
+experiments/grounded_qa/results/*/
+experiments/grounded_qa/results/*.pt

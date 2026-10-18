@@ -13,6 +13,7 @@ dependencies = ["torch>=2.4", "safetensors>=0.4", "numpy>=1.24"]
 
 [project.optional-dependencies]
 transformers = ["transformers>=4.51,<6"]
+experiment = ["transformers>=4.51,<6", "peft>=0.17,<1"]
 dev = ["pytest>=8", "ruff>=0.9", "build"]
 
 [tool.pytest.ini_options]

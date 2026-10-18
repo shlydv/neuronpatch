@@ -50,7 +50,7 @@ def mean_activations(
             mask = current_mask.to(x.device)
             # Gather valid tokens before reduction so padded NaNs cannot contaminate sums.
             for row, valid in zip(x, mask):
-                values = row[valid].to(dtype=torch.float64)
+                values = row[valid].cpu().double()
                 if not torch.isfinite(values).all():
                     raise ValueError("selected activations must be finite")
                 totals[name].add_(values.mean(dim=0).cpu())

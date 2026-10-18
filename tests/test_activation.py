@@ -75,3 +75,26 @@ def test_contrast_ranking_ties_and_validation():
     assert contrastive_indices(positive, negative, 2) == [1, 2]
     with pytest.raises(ValueError, match="finite"):
         contrastive_indices(torch.tensor([float("nan")]), torch.zeros(1), 1)
+
+
+@pytest.mark.skipif(not torch.backends.mps.is_available(), reason="requires Apple GPU")
+def test_mps_statistics_match_cpu():
+    # Transfer first, then cast: a combined MPS->CPU float64 conversion is unsafe
+    # on some torch/MPS versions, and float64 cannot be computed on MPS itself.
+    from copy import deepcopy
+
+    class Model(torch.nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.proj = torch.nn.Linear(3, 2)
+
+        def forward(self, x):
+            return self.proj(x)
+
+    cpu = Model()
+    gpu = deepcopy(cpu).to("mps")
+    x = torch.tensor([[[1.25, -3.5, 8.0], [2.5, 7.0, -1.0]]])
+    mask = torch.tensor([[True, False]])
+    expected = mean_activations(cpu, ["proj"], [({"x": x}, mask)])
+    actual = mean_activations(gpu, ["proj"], [({"x": x.to("mps")}, mask.to("mps"))])
+    torch.testing.assert_close(actual["proj"], expected["proj"], atol=0, rtol=0)

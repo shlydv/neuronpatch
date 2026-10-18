@@ -1,0 +1,6 @@
+{
+  "merged_max_logit_error": 3.719329833984375e-05,
+  "atol": 0.0001,
+  "rtol": 0.0001,
+  "patch_bytes": 172328
+}

@@ -4,8 +4,8 @@ Train compact updates to selected neuron output weights, evaluate what changes,
 and export a patch tied to its exact base checkpoint.
 
 **Status: experimental foundation.** Version 0.1 implements a tested PyTorch
-weight-update primitive, not a validated behavioral editing system. No LLM
-benchmark results, automatic causal discovery, or superiority to LoRA are claimed.
+weight-update primitive, not a validated behavioral editing system. A small pretrained pilot
+failed its preservation gate; no causal discovery or superiority to LoRA is claimed.
 
 ## Direction
 
@@ -93,8 +93,8 @@ forms are mathematically equivalent; floating-point output differences are expec
 Only ordinary, materialized floating-point `nn.Linear` targets are supported.
 Quantized/fused projections, tied/shared target parameters, distributed training,
 optimizer resume, and patch composition are not supported yet. The generic primitive
-and a randomly initialized tiny Qwen3 architecture are tested on CPU. Pretrained
-Qwen behavior and other model families have not been validated.
+and a randomly initialized tiny Qwen3 architecture are tested on CPU. A small pretrained
+Qwen2.5 pilot is reported below; broad behavior and other families remain unvalidated.
 
 Keep base weights and persistent buffers unchanged after attachment. Models with
 training-time mutable buffers (e.g. BatchNorm) require special handling and are not
@@ -174,3 +174,13 @@ and removes hooks even after errors. Padding must be excluded; every example mus
 select at least one token. Use full teacher-forced forwards, not cached generation.
 Keep calibration data separate from the final behavioral test. Tokenization,
 response masks, batch construction, and input device placement are caller-owned.
+
+## First pretrained pilot
+
+A bounded Qwen2.5-0.5B-Instruct experiment is complete:
+[protocol and results](experiments/grounded_qa/REPORT.md).
+The selected patch improved correct abstention from 13/24 to 24/24 but reduced
+supported answers from 24/24 to 17/24. It **failed the preservation criterion** and
+performed worse than the random-column controls and same-layer LoRA. This validates
+pretrained training/export plumbing, not the selection heuristic's usefulness.
+Raw predictions and configurations are published; no superiority claim is made.

@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -e '.[dev,transformers]'
+      - run: python -m pip install -e '.[dev,experiment]'
       - run: ruff check . && ruff format --check .
       - run: HF_HUB_OFFLINE=1 pytest -q
       - run: python examples/fit_toy.py
