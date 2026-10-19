@@ -10,6 +10,7 @@ import torch
 from safetensors.torch import load_file, save_file
 from torch import nn
 
+from .grouped import GroupedRowPatch, validate_groups
 from .layers import ColumnPatch, RowPatch, validate_indices
 
 
@@ -36,16 +37,28 @@ class NeuronPatch:
     All original parameters are frozen. axis="input" updates selected weight
     columns (default); axis="output" updates selected weight rows. One axis applies
     to all targets. Only exact nn.Linear modules are supported; tied/shared target
-    parameters and nested patches are rejected.
+    parameters and nested patches are rejected. Optional groups maps every output
+    target to one group label per selected row; members share one additive delta.
+    Labels must be contiguous from zero within each target. Group discovery is a
+    caller decision, not an inference made by this class.
     """
 
     def __init__(
-        self, model: nn.Module, targets: Mapping[str, Sequence[int]], *, axis: str = "input"
+        self,
+        model: nn.Module,
+        targets: Mapping[str, Sequence[int]],
+        *,
+        axis: str = "input",
+        groups: Mapping[str, Sequence[int]] | None = None,
     ):
         if axis not in ("input", "output"):
             raise ValueError("axis must be input (columns) or output (rows)")
         self.axis = axis
-        if not targets or any(isinstance(m, (ColumnPatch, RowPatch)) for m in model.modules()):
+        if groups is not None and (axis != "output" or set(groups) != set(targets)):
+            raise ValueError("groups require output rows and exactly the target module keys")
+        if not targets or any(
+            isinstance(m, (ColumnPatch, RowPatch, GroupedRowPatch)) for m in model.modules()
+        ):
             raise ValueError("provide targets on an unpatched model")
         modules = dict(model.named_modules(remove_duplicate=False))
         parameters = list(model.named_parameters(remove_duplicate=False))
@@ -64,14 +77,27 @@ class NeuronPatch:
             validated[name] = validate_indices(
                 indices, module.in_features if axis == "input" else module.out_features
             )
+        validated_groups = (
+            {
+                name: validate_groups(groups[name], len(indices))
+                for name, indices in validated.items()
+            }
+            if groups is not None
+            else None
+        )
         # Finish validation before changing any module or requires_grad flag.
         self.base_fingerprint = fingerprint(model)
         self.model = model
         self.targets = validated
+        self.groups = validated_groups
         self.layers = {}
         model.requires_grad_(False)
         for name, indices in validated.items():
-            layer = (ColumnPatch if axis == "input" else RowPatch)(modules[name], indices)
+            layer = (
+                GroupedRowPatch(modules[name], indices, validated_groups[name])
+                if validated_groups is not None
+                else (ColumnPatch if axis == "input" else RowPatch)(modules[name], indices)
+            )
             layer.train(modules[name].training)
             model.set_submodule(name, layer)
             self.layers[name] = layer
@@ -103,6 +129,8 @@ class NeuronPatch:
             "targets": self.targets,
             "metadata": metadata or {},
         }
+        if self.groups is not None:
+            config.update(format_version=3, method="linear_grouped_output_rows", groups=self.groups)
         manifest = json.dumps(config, indent=2) + "\n"
         destination = Path(directory)
         destination.mkdir(parents=True, exist_ok=False)
@@ -117,10 +145,20 @@ class NeuronPatch:
         """Validate an artifact and attach it to an identical, unpatched base."""
         source = Path(directory)
         config = json.loads((source / "patch.json").read_text(encoding="utf-8"))
-        formats = {(1, "mlp_output_columns"): "input", (2, "linear_output_rows"): "output"}
+        formats = {
+            (1, "mlp_output_columns"): "input",
+            (2, "linear_output_rows"): "output",
+            (3, "linear_grouped_output_rows"): "output",
+        }
         axis = formats.get((config.get("format_version"), config.get("method")))
         if axis is None:
             raise ValueError("unsupported patch format")
+        groups = config.get("groups")
+        if config["format_version"] == 3:
+            if not isinstance(groups, dict) or set(groups) != set(config["targets"]):
+                raise ValueError("group manifest must match target keys")
+        elif groups is not None:
+            raise ValueError("legacy patch format does not support groups")
         if fingerprint(model) != config["base_fingerprint"]:
             raise ValueError("base checkpoint mismatch; use the original weights and dtype")
         tensors = load_file(str(source / "patch.safetensors"))
@@ -133,17 +171,23 @@ class NeuronPatch:
             validate_indices(
                 indices, module.in_features if axis == "input" else module.out_features
             )
+            assignments = (
+                validate_groups(groups[name], len(indices)) if groups is not None else None
+            )
             tensor = tensors[name]
             shape = (
                 (module.out_features, len(indices))
                 if axis == "input"
-                else (len(indices), module.in_features)
+                else (
+                    len(set(assignments)) if assignments is not None else len(indices),
+                    module.in_features,
+                )
             )
             if tensor.shape != shape:
                 raise ValueError(f"delta shape mismatch for {name}")
             if tensor.dtype != module.weight.dtype or not torch.isfinite(tensor).all():
                 raise ValueError(f"invalid delta dtype or values for {name}")
-        patch = cls(model, config["targets"], axis=axis)
+        patch = cls(model, config["targets"], axis=axis, groups=groups)
         with torch.no_grad():
             for name, layer in patch.layers.items():
                 layer.delta.copy_(tensors[name])

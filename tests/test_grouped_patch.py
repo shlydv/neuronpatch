@@ -1,9 +1,11 @@
+import json
 from copy import deepcopy
 
 import pytest
 import torch
 from torch import nn
 
+from neuronpatch import NeuronPatch
 from neuronpatch.grouped import GroupedRowPatch
 from neuronpatch.layers import RowPatch
 
@@ -63,3 +65,55 @@ def test_invalid_grouping_does_not_freeze_the_callers_layer(indices, groups):
     with pytest.raises(ValueError):
         GroupedRowPatch(base, indices, groups)
     assert base.weight.requires_grad and base.bias.requires_grad
+
+
+def test_grouped_artifact_roundtrip_merge_and_training_preserve_sharing(tmp_path):
+    torch.manual_seed(5)
+    model = nn.Sequential(nn.Linear(4, 6), nn.SiLU(), nn.Linear(6, 3)).double()
+    original = deepcopy(model)
+    patch = NeuronPatch(model, {"0": [5, 1, 3]}, axis="output", groups={"0": [1, 0, 1]})
+    assert patch.num_trainable_parameters == 8
+    x = torch.randn(3, 4, dtype=torch.double)
+    optimizer = torch.optim.SGD(patch.trainable_parameters(), lr=0.1)
+    model(x).square().mean().backward()
+    optimizer.step()
+    patch.save(tmp_path / "shared")
+    loaded = NeuronPatch.load(deepcopy(original), tmp_path / "shared")
+    assert loaded.groups == {"0": (1, 0, 1)}
+    assert loaded.num_trainable_parameters == 8
+    torch.testing.assert_close(model(x), loaded.model(x), rtol=0, atol=0)
+    merged = loaded.merged_model()
+    torch.testing.assert_close(merged(x), model(x))
+    delta = merged[0].weight - original[0].weight
+    torch.testing.assert_close(delta[5], delta[3])
+    torch.testing.assert_close(delta[[0, 2, 4]], torch.zeros_like(delta[[0, 2, 4]]), rtol=0, atol=0)
+    assert type(merged[0]) is nn.Linear
+    assert original[0].weight.grad is None
+
+
+def test_group_manifest_failure_does_not_mutate_model(tmp_path):
+    model = nn.Sequential(nn.Linear(3, 4))
+    original = deepcopy(model)
+    patch = NeuronPatch(model, {"0": [1, 3]}, axis="output", groups={"0": [0, 0]})
+    patch.save(tmp_path / "shared")
+    path = tmp_path / "shared/patch.json"
+    manifest = json.loads(path.read_text())
+    manifest["groups"]["0"] = [0, 2]
+    path.write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="contiguous"):
+        NeuronPatch.load(original, tmp_path / "shared")
+    assert type(original[0]) is nn.Linear and original[0].weight.requires_grad
+
+
+def test_group_attachment_validates_all_targets_before_mutation_and_rejects_nesting():
+    model = nn.Sequential(nn.Linear(3, 4), nn.Linear(4, 2))
+    with pytest.raises(ValueError, match="one Python integer"):
+        NeuronPatch(
+            model, {"0": [1, 3], "1": [0]}, axis="output", groups={"0": [0, 0], "1": [0, 1]}
+        )
+    assert all(p.requires_grad for p in model.parameters())
+    with pytest.raises(ValueError, match="output rows"):
+        NeuronPatch(model, {"0": [1]}, groups={"0": [0]})
+    NeuronPatch(model, {"0": [1, 3]}, axis="output", groups={"0": [0, 0]})
+    with pytest.raises(ValueError, match="unpatched"):
+        NeuronPatch(model, {"1": [0]})

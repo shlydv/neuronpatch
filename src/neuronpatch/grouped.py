@@ -2,7 +2,7 @@
 
 Implements the shared additive update in NeST equation 13 using PyTorch's
 weight[out, in] convention. This is not the paper's discovery/training pipeline.
-The high-level NeuronPatch checkpoint API does not yet support this module.
+The high-level NeuronPatch API stores explicit group assignments with the deltas.
 """
 
 from collections.abc import Sequence
@@ -13,6 +13,16 @@ from torch import nn
 from torch.nn import functional as F
 
 from .layers import validate_indices
+
+
+def validate_groups(groups: Sequence[int], count: int) -> tuple[int, ...]:
+    assignments = tuple(groups)
+    if len(assignments) != count or any(type(g) is not int for g in assignments):
+        raise ValueError("groups must provide one Python integer per selected row")
+    unique = set(assignments)
+    if not unique or unique != set(range(len(unique))):
+        raise ValueError("group labels must be contiguous starting at zero")
+    return assignments
 
 
 class GroupedRowPatch(nn.Module):
@@ -31,12 +41,8 @@ class GroupedRowPatch(nn.Module):
         if base.weight.device.type == "meta":
             raise ValueError("materialize the model before attaching patches")
         values = validate_indices(indices, base.out_features)
-        assignments = tuple(groups)
-        if len(assignments) != len(values) or any(type(g) is not int for g in assignments):
-            raise ValueError("groups must provide one Python integer per selected row")
+        assignments = validate_groups(groups, len(values))
         unique = set(assignments)
-        if unique != set(range(len(unique))):
-            raise ValueError("group labels must be contiguous starting at zero")
         # Validate first so invalid requests leave the supplied layer untouched.
         self.base = base.requires_grad_(False)
         self.register_buffer("indices", torch.tensor(values, device=base.weight.device))

@@ -279,7 +279,7 @@ Tests verify dense-forward equivalence, summed group gradients, input gradients,
 untouched base weights, merge locality and equivalence to independent rows when
 all groups are singletons. Group size changes gradient accumulation; equal
 trainable-parameter count does not imply equal optimization behavior. The module
-is experimental and not supported by the NeuronPatch checkpoint API yet.
+is experimental; high-level checkpoint support was added subsequently (below).
 No model-quality advantage is established, and it is not part of the coverage
 experiment. It prepares an independent sharing ablation once preservation is
 better understood; passing primitive tests cannot establish the combined method.
@@ -336,3 +336,14 @@ ablation, with stronger mean KL as a required control. The
 objective change under common neutral decoding before testing shared or selected
 neuron updates. This is a measured synthesis direction, not an established new
 method or an implication that every first-token change is semantically harmful.
+
+## Shared-update artifact support
+
+Explicit output-row groups now work through NeuronPatch's attach/save/load/merge
+API. Format 3 stores group assignments and one delta per group, with the same
+strict base fingerprint contract. Tests cover compact parameter count, round-trip
+output equivalence, shared merge deltas, unchanged nonselected rows, legacy
+compatibility, malformed grouping rejection before mutation and nested-patch
+rejection. This closes a usability gap for a later sharing experiment. It neither
+selects groups automatically nor establishes that sharing improves preservation.
+The running objective comparison still uses ordinary all-MLP LoRA.

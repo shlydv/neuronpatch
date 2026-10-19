@@ -244,7 +244,12 @@ with stronger mean KL, not presented as an effective default. The motivation and
 controls are in the [token-loss protocol](experiments/real_qa/coverage_512/TOKEN_LOSS_PROTOCOL.md).
 
 `neuronpatch.grouped.GroupedRowPatch` provides explicit shared row deltas with
-verified forward/gradient/merge behavior. It has no automatic grouping and is
-not yet supported by the high-level checkpoint API. Neither this primitive nor
+verified forward/gradient/merge behavior. Use `NeuronPatch(..., axis="output",
+groups={module_name: group_labels})` to attach and save grouped rows through the
+high-level API. Each target needs one group label per selected index; labels are
+contiguous from zero. For example, indices `[5, 1, 3]` and groups `[1, 0, 1]` share
+one update between rows 5 and 3 and give row 1 another. Artifacts use format 3;
+legacy row/column artifacts remain supported. There is no automatic grouping.
+Neither this primitive nor
 the new loss has demonstrated an advantage in model quality. See the
 [evidence ledger](docs/method-design.md) for the remaining work.
