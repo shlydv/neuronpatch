@@ -1,0 +1,13 @@
+{
+  "measurement": "macOS sample physical footprint; retry sampled during epoch 2",
+  "stopped_attempt": {
+    "current_GB": 20.9,
+    "peak_GB": 21.5
+  },
+  "retry_sample": {
+    "current_GB": 7.0,
+    "peak_GB": 8.4
+  },
+  "limitation": "Snapshot peak through sample time, not a guaranteed full-run peak",
+  "tests": "Full-versus-suffix CE, KL and parameter gradients passed on CPU and MPS"
+}

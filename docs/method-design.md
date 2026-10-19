@@ -187,3 +187,34 @@ another selection heuristic, a broader all-MLP LoRA reference will test whether 
 model/data/objective can learn conditional support, since prior LoRA was restricted
 to three layers. Any larger-budget reference must be labeled as such, not used for
 an unfair efficiency or superiority claim.
+
+## Rechecked training-scale gap
+
+Re-reading [NeST sections V–VI](https://arxiv.org/html/2602.16835v2) highlights a
+material mismatch beyond parameterization: its reported training uses a balanced
+20,000-example dataset and five epochs; our real-QA development uses 128 examples.
+It also checks whether activation clusters have aligned weight gradients, providing
+a reason for sharing updates rather than clustering solely for compactness. These
+are design lessons, not evidence that our task will reproduce its safety results.
+The current all-MLP reference is a learnability diagnostic at tiny data scale;
+negative results cannot establish that selective adaptation or clustering fails.
+A serious next benchmark needs a learning curve over data sizes and stronger held-out
+coverage before comparing selectors or claiming superiority.
+
+The pilot's fixed layers (16, 20, 23) are also a coverage restriction, not a learned
+localization result. A future equal-budget discovery comparison should search across
+eligible layers and compare against layer-matched random supports. Broader LoRA can
+expose a coverage problem but cannot alone show which neurons are responsible. Do
+not credit neuron selection for benefits from changing layer coverage or data size.
+
+## Broader reference and next benchmark
+
+[All-MLP LoRA reference](../experiments/real_qa/CAPACITY_REPORT.md) fits the tiny
+training corpus much better (up to 52/64 supported EM and 64/64 correct refusals)
+but still damages supported validation answers. This narrows the diagnosis: the
+three-layer restriction was not a complete explanation, and tiny-data transfer is
+now an explicit bottleneck. Nested 128/512/2048 training sets plus expanded
+article-disjoint development sets are prepared without new predictions. The next
+comparison should hold model/objective fixed across data sizes before crediting a
+new selector. A tested response-only vocabulary projection makes the broader local
+experiment feasible without changing the causal loss.

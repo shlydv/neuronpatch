@@ -1,0 +1,26 @@
+{
+  "lora-lr0.0001-kl1.0-epoch1": {
+    "examples": 32,
+    "mismatches": []
+  },
+  "lora-lr0.0001-kl1.0-epoch2": {
+    "examples": 32,
+    "mismatches": []
+  },
+  "lora-lr0.0001-kl1.0-epoch3": {
+    "examples": 32,
+    "mismatches": []
+  },
+  "lora-lr0.0003-kl1.0-epoch1": {
+    "examples": 32,
+    "mismatches": []
+  },
+  "lora-lr0.0003-kl1.0-epoch2": {
+    "examples": 32,
+    "mismatches": []
+  },
+  "lora-lr0.0003-kl1.0-epoch3": {
+    "examples": 32,
+    "mismatches": []
+  }
+}

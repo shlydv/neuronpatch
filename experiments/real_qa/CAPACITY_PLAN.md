@@ -23,3 +23,19 @@ useful changes into selected neurons. If it also mostly increases refusal, revis
 training targets and objective, and examine a larger model; do not claim our sparse
 selection failed solely because of its capacity. A successful broad reference is
 necessary evidence for this route, not fulfillment of the library goal.
+
+Implementation: `run.py --capacity`. To limit activation memory for all-layer
+training, supervised CE and replay KL gradients accumulate through separate backward
+calls before one common clipping/optimizer step. A numerical test checks equality
+to the joint objective. Each epoch records its own training duration, excluding
+evaluation; the optimizer persists across epochs. The anchor stream continues
+across epochs while supervised order repeats. Code/source hashes are retained.
+
+Memory correction: the initial full-logit attempt was stopped after a measured
+21.5 GB peak on the 24 GB machine, before any epoch completed. Its source and log
+remain in capacity_memory_attempt/. The retry computes vocabulary logits only for
+the supervised response suffix, including the last prefix position needed for causal
+prediction. Full hidden-state processing is unchanged. Tiny-Qwen tests compare full
+and suffix CE, KL and all parameter gradients. Unused MPS cache is released between
+steps, and driver memory is logged. This is a computational implementation change,
+not a reduced sequence length, reduced model, or altered training target.

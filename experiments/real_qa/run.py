@@ -7,10 +7,12 @@ import json
 import random
 import time
 from pathlib import Path
+from types import SimpleNamespace
 
 import torch
 from data import MODEL, REVISION, metrics, prompt, score
 from peft import LoraConfig, get_peft_model
+from response_loss import response_ce, response_logits
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from neuronpatch import NeuronPatch, random_indices
@@ -20,8 +22,9 @@ ROOT = Path(__file__).parent
 TARGETS = [f"model.layers.{i}.mlp.up_proj" for i in (16, 20, 23)]
 
 
-def main(replay=False):
-    out = ROOT / ("replay" if replay else "adaptation")
+def main(replay=False, capacity=False):
+    replay = replay or capacity
+    out = ROOT / ("capacity" if capacity else "replay" if replay else "adaptation")
     out.mkdir(exist_ok=False)
     torch.set_num_threads(4)
     tokenizer = AutoTokenizer.from_pretrained(MODEL, revision=REVISION)
@@ -38,6 +41,10 @@ def main(replay=False):
         "revision": REVISION,
         "anchors": sorted(anchors),
         "preservation_schedule": "replay_every_step" if replay else "in_batch",
+        "capacity_reference": capacity,
+        "response_loss_sha256": hashlib.sha256(
+            (ROOT / "response_loss.py").read_bytes()
+        ).hexdigest(),
         "code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "data_sha256": {
             s: hashlib.sha256((ROOT / "prepared" / f"{s}.json").read_bytes()).hexdigest()
@@ -169,6 +176,18 @@ def main(replay=False):
     )
     if replay:
         configurations = configurations[:3]
+    if capacity:
+        configurations = (("lora", 1.0),)
+    targets = (
+        [
+            f"model.layers.{i}.mlp.{projection}_proj"
+            for i in range(reference.config.num_hidden_layers)
+            for projection in ("gate", "up", "down")
+        ]
+        if capacity
+        else TARGETS
+    )
+    summary["target_modules"] = targets
     anchor_rows = [r for r in data["train"] if r["id"] in anchors]
     random.Random(991).shuffle(anchor_rows)
     summary["anchor_order"] = [r["id"] for r in anchor_rows]
@@ -181,7 +200,7 @@ def main(replay=False):
                 model = get_peft_model(
                     model,
                     LoraConfig(
-                        r=2, lora_alpha=2, lora_dropout=0, target_modules=TARGETS, bias="none"
+                        r=2, lora_alpha=2, lora_dropout=0, target_modules=targets, bias="none"
                     ),
                 )
             else:
@@ -198,71 +217,109 @@ def main(replay=False):
             optimizer = torch.optim.AdamW(params, lr=lr, weight_decay=0)
             order = list(range(len(data["train"])))
             random.Random(123).shuffle(order)
-            name = f"{method}-lr{lr}-kl{coefficient}"
-            started = time.monotonic()
-            losses = []
-            model.train()
-            for step in range(64):
-                rows = [data["train"][order[(step * 2 + j) % len(order)]] for j in range(2)]
-                inputs = batch(rows, True)
-                optimizer.zero_grad(set_to_none=True)
-                outputs = model(**inputs, use_cache=False)
-                kl = outputs.loss.new_zeros(())
-                retain = torch.tensor([r["id"] in anchors for r in rows], device="mps")
+            for epoch in range(3 if capacity else 1):
+                name = f"{method}-lr{lr}-kl{coefficient}" + (
+                    f"-epoch{epoch + 1}" if capacity else ""
+                )
+                started = time.monotonic()
+                losses = []
+                model.train()
+                for step in range(64):
+                    rows = [data["train"][order[(step * 2 + j) % len(order)]] for j in range(2)]
+                    inputs = batch(rows, True)
+                    optimizer.zero_grad(set_to_none=True)
+                    if capacity:
+                        logits, response_labels = response_logits(model, inputs)
+                        outputs = SimpleNamespace(loss=response_ce(logits, response_labels))
+                        del logits
+                    else:
+                        outputs = model(**inputs, use_cache=False)
+                    if capacity:
+                        # Accumulate the same sum of gradients with only one graph alive.
+                        # Full-layer LoRA otherwise retains two large activation graphs.
+                        outputs.loss.backward()
+                    kl = outputs.loss.new_zeros(())
+                    retain = torch.tensor([r["id"] in anchors for r in rows], device="mps")
+                    if replay:
+                        replay_rows = [
+                            anchor_rows[((epoch * 64 + step) * 2 + j) % len(anchor_rows)]
+                            for j in range(2)
+                        ]
+                        replay_inputs = batch(replay_rows, True)
+                        if capacity:
+                            edited_anchor, anchor_labels = response_logits(model, replay_inputs)
+                            with torch.no_grad():
+                                original, _ = response_logits(reference, replay_inputs)
+                            kl = preservation_kl(edited_anchor, original, anchor_labels != -100)
+                        else:
+                            anchor_labels = replay_inputs.pop("labels")
+                            edited_anchor = model(**replay_inputs, use_cache=False).logits
+                            with torch.no_grad():
+                                original = reference(**replay_inputs, use_cache=False).logits
+                            kl = preservation_kl(
+                                edited_anchor[:, :-1],
+                                original[:, :-1],
+                                anchor_labels[:, 1:] != -100,
+                            )
+                        del edited_anchor, original
+                    elif coefficient and retain.any():
+                        with torch.no_grad():
+                            original = reference(
+                                input_ids=inputs["input_ids"][retain],
+                                attention_mask=inputs["attention_mask"][retain],
+                                use_cache=False,
+                            ).logits
+                        kl = preservation_kl(
+                            outputs.logits[retain, :-1],
+                            original[:, :-1],
+                            inputs["labels"][retain, 1:] != -100,
+                        )
+                        del original
+                    loss = outputs.loss + coefficient * kl
+                    if not torch.isfinite(loss):
+                        raise RuntimeError("Nonfinite loss")
+                    if capacity:
+                        (coefficient * kl).backward()
+                    else:
+                        loss.backward()
+                    torch.nn.utils.clip_grad_norm_(params, 1)
+                    optimizer.step()
+                    losses.append({"ce": outputs.loss.item(), "kl": kl.item()})
+                    if capacity:
+                        # Release unused cached buffers from variable-length full-layer graphs.
+                        torch.mps.empty_cache()
+                    if step % 16 == 0:
+                        print(
+                            name,
+                            step,
+                            losses[-1],
+                            "MPS driver MB",
+                            torch.mps.driver_allocated_memory() / 1e6,
+                            flush=True,
+                        )
+                result = {
+                    "lr": lr,
+                    "epoch": epoch + 1,
+                    "optimizer_steps_total": (epoch + 1) * 64,
+                    "kl_coefficient": coefficient,
+                    "losses": losses,
+                    "parameters": sum(p.numel() for p in params),
+                    "training_seconds": time.monotonic() - started,
+                }
+                result["validation"] = evaluate(model, name)
                 if replay:
-                    replay_rows = [anchor_rows[(step * 2 + j) % len(anchor_rows)] for j in range(2)]
-                    replay_inputs = batch(replay_rows, True)
-                    anchor_labels = replay_inputs.pop("labels")
-                    edited_anchor = model(**replay_inputs, use_cache=False).logits
-                    with torch.no_grad():
-                        original = reference(**replay_inputs, use_cache=False).logits
-                    kl = preservation_kl(
-                        edited_anchor[:, :-1], original[:, :-1], anchor_labels[:, 1:] != -100
-                    )
-                    del edited_anchor, original
-                elif coefficient and retain.any():
-                    with torch.no_grad():
-                        original = reference(
-                            input_ids=inputs["input_ids"][retain],
-                            attention_mask=inputs["attention_mask"][retain],
-                            use_cache=False,
-                        ).logits
-                    kl = preservation_kl(
-                        outputs.logits[retain, :-1],
-                        original[:, :-1],
-                        inputs["labels"][retain, 1:] != -100,
-                    )
-                    del original
-                loss = outputs.loss + coefficient * kl
-                if not torch.isfinite(loss):
-                    raise RuntimeError("Nonfinite loss")
-                loss.backward()
-                torch.nn.utils.clip_grad_norm_(params, 1)
-                optimizer.step()
-                losses.append({"ce": outputs.loss.item(), "kl": kl.item()})
-                if step % 16 == 0:
-                    print(name, step, losses[-1], flush=True)
-            result = {
-                "lr": lr,
-                "kl_coefficient": coefficient,
-                "losses": losses,
-                "parameters": sum(p.numel() for p in params),
-                "training_seconds": time.monotonic() - started,
-            }
-            result["validation"] = evaluate(model, name)
-            if replay:
-                result["train"] = evaluate(model, name, "train")
-                train_predictions = json.loads((out / f"{name}-train.json").read_text())
-                protected = [r for r in train_predictions if r["id"] in anchors]
-                result["anchor_em"] = sum(r["em"] for r in protected) / len(protected)
-                result["anchor_refusals"] = sum(r["abstained"] for r in protected)
-            if patch:
-                patch.save(out / name, metadata={"model": MODEL, "revision": REVISION})
-            else:
-                model.save_pretrained(out / name)
-            summary["runs"][name] = result
-            save()
-            print(name, result["validation"], flush=True)
+                    result["train"] = evaluate(model, name, "train")
+                    train_predictions = json.loads((out / f"{name}-train.json").read_text())
+                    protected = [r for r in train_predictions if r["id"] in anchors]
+                    result["anchor_em"] = sum(r["em"] for r in protected) / len(protected)
+                    result["anchor_refusals"] = sum(r["abstained"] for r in protected)
+                if patch:
+                    patch.save(out / name, metadata={"model": MODEL, "revision": REVISION})
+                else:
+                    model.save_pretrained(out / name)
+                summary["runs"][name] = result
+                save()
+                print(name, result["validation"], flush=True)
             del model, patch, optimizer, params, outputs, loss, kl
             gc.collect()
             torch.mps.empty_cache()
@@ -272,4 +329,6 @@ def main(replay=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--replay", action="store_true")
-    main(replay=parser.parse_args().replay)
+    parser.add_argument("--capacity", action="store_true")
+    args = parser.parse_args()
+    main(replay=args.replay, capacity=args.capacity)

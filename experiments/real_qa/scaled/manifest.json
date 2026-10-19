@@ -1,0 +1,27 @@
+{
+  "source_sha256": "68dcfbb971bd3e96d5b46c7177b16c1a4e7d4bdef19fb204502738552dede002",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "license": "CC BY-SA 4.0; see ../DATA_LICENSE.md",
+  "max_total_tokens": 512,
+  "confirmation": "unchanged; not accessed by this script",
+  "counts": {
+    "train_expanded": 2048,
+    "train_new": 1920,
+    "train_512": 512,
+    "cal_expanded": 256,
+    "cal_new": 224,
+    "val_expanded": 256,
+    "val_new": 224
+  },
+  "sha256": {
+    "train_expanded": "5b410ab2d24cfb7ac04da047fb3356455b59704fc5a168e0b0dab9ce1e2d9659",
+    "train_new": "04deaaa88d510546a218f11835a759278badf5ca4584a16b712d09cf71197b12",
+    "train_512": "8178638df4047be3a93960973a149b525c57d01c866706bbcb5b1df82da22a21",
+    "cal_expanded": "2f103e66da0ec4f60ae61601d26ba1dd01ef27820b858db3cb9941261883b7bb",
+    "cal_new": "84d182f452384b1136ec083a34e7a6374930ea0e4a572893bb712b773b4fcfe4",
+    "val_expanded": "7acaac6e4c74b9ef3724b06db612c8fb530193e114151608ea211ffcabf72876",
+    "val_new": "70aa50058d606a564b00841e65c07b4cde04ccf9f47fd4670b56f347c2770f7e"
+  },
+  "status": "data prepared only; no model predictions"
+}
