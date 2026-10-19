@@ -75,7 +75,9 @@ quota prevents execution. The formerly stated October 24 wait is retracted.
 
 The two-case reference smoke job was submitted at
 https://www.kaggle.com/code/shlydv/neuronpatch-fine-reference-smoke-20261019
-(version 1). Submission is not completion. See `gpu_allocation_check.json` and
+(version 2). Version 1 failed before editing because the Kaggle Python3.13
+host could not install tokenizer0.19.1. Version 2 creates an isolated Python3.11
+environment and installs published torch2.0.1. Submission is not completion. See `gpu_allocation_check.json` and
 `smoke_submission.json` for allocation evidence and source hashes. Next: inspect
 startup, actual edits, and restoration; run the frozen 16-case comparison after
 the smoke test succeeds. Existing custom QA experiments remain separate.
@@ -104,3 +106,14 @@ sides, causal answer slicing, partial token correctness, locality prediction
 output, and first-alias selection. All passed on CPU. This validates metric
 plumbing, not published model performance. Raw per-probe outputs and scores are
 saved together to make disagreement visible.
+
+## Kaggle packaging
+
+`build_kaggle.py --output /tmp/fine-kaggle --cases 2` creates a private Kaggle
+script bundle from the checked-out harness sources. It provisions Python3.11
+rather than inheriting the Python3.13 host. It pins torch2.0.1, transformers4.40,
+tokenizers0.19.1, huggingface-hub0.23.5, accelerate0.30.1 and numpy1.26.4.
+NumPy and Accelerate are compatibility choices, not exact full-requirements
+reproduction. It runs the CPU preflight before loading the actual GPU model.
+The active version2 bootstrap predates this reusable builder but embeds the same
+harness files and provisions the same environment; source hashes are recorded.

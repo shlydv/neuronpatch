@@ -12,5 +12,19 @@
     "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21"
   },
   "bootstrap_sha256": "f7a6c99f50a988972c36a20ae3d3774b78694e9bb771dfb635f9ece8bb56ffbb",
-  "runtime_difference": "Kaggle-installed torch retained; transformers4.40.0, accelerate0.30.1; actual versions recorded by runner"
+  "runtime_difference": "Kaggle-installed torch retained; transformers4.40.0, accelerate0.30.1; actual versions recorded by runner",
+  "attempts": [
+    {
+      "version": 1,
+      "status": "ERROR",
+      "cause": "Python3.13 tokenizer0.19.1 build failed before model loading or editing"
+    },
+    {
+      "version": 2,
+      "status": "RUNNING",
+      "change": "isolated Python3.11 and published torch2.0.1",
+      "bootstrap_sha256": "0de4da1c0d69496b5efad6334e1761637c431e9be81192161bb961068b17a0e3"
+    }
+  ],
+  "latest_submitted_version": 2
 }
