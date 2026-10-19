@@ -6,142 +6,170 @@
     {
       "id": "56de73eb4396321400ee2933",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "c4f2535bb49275166bf2c2fb4507dfe00959d6b937709a79d402ba057edf90fb"
     },
     {
       "id": "56dd304366d3e219004dac37",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "466f489ccfaf4f93a7d46136dfcb4111038de7d4bf8f359fb111c3348e889ec4"
     },
     {
       "id": "56fc2e0800a8df19004037c4",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "bbf73279a696d17ef47bce63f2eba4cd44721358170a60f470fc5a7bc9a38664"
     },
     {
       "id": "571aeaf69499d21900609bac",
       "category": "unsupported_reframing",
-      "reason": "The passage says others cite the Council as proof of an ideology, not that the Council decided the ideology was real. The question and answer encourage an unsupported attribution."
+      "reason": "The passage says others cite the Council as proof of an ideology, not that the Council decided the ideology was real. The question and answer encourage an unsupported attribution.",
+      "evidence_sha256": "973bed1f4f5ee9ad8a90c399b130dbd9b7415968131efe63ad13910f1c1cbaef"
     },
     {
       "id": "570d48a6fed7b91900d45e01",
       "category": "correct_date_with_dangling_excerpt",
-      "reason": "Correct requested date, followed by an unnecessary unfinished passage fragment. Do not treat the entire output as an ideal preservation target."
+      "reason": "Correct requested date, followed by an unnecessary unfinished passage fragment. Do not treat the entire output as an ideal preservation target.",
+      "evidence_sha256": "7ae557fdba8a13fc33774e6518a91c95ecd4ad9f94659b8274754c3656fe96e1"
     },
     {
       "id": "572795755951b619008f8e22",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "4b0b2f6195d20da9ec493a1525a54cce84515f0e6ef9adcfb7d468ea1ff13ae8"
     },
     {
       "id": "56e1bc7ae3433e140042310f",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "6baa7ce5d597bdc4608d3e5ebf8c6852f810941f48a953c53fda8ca536e132d7"
     },
     {
       "id": "5731eaa7e17f3d140042254a",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "65049b3dc6b1e69d1c13f25a141840f84da79f891aaa5224cb46a0514cf43aee"
     },
     {
       "id": "56fac7ddf34c681400b0c126",
       "category": "valid_answer_extra_wording",
-      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "f4b6bddbb0389d2c6b48436edb871f9c77fc67e4c1f4c9bc6ec634492435833b"
     },
     {
       "id": "572952cb6aef051400154ce3",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "66c75b01d6556e1de99b3230135770bb943a41dd320af9d31810df62c4842a20"
     },
     {
       "id": "572ecb56c246551400ce469e",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "45641f9e2b154715aec26226f3b374ed31dfd9a9d9e70e868e9ca4e39c3d440b"
     },
     {
       "id": "573047b604bcaa1900d77468",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "4909d6c71a9b8ad0d75daad77adb14632278d108bb4e65459b4593d7b5950dea"
     },
     {
       "id": "5727ae744b864d1900163a43",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "2500b462fbcc5047e9d1a05dfea73258e6bec7d8a4be981901f64a672e76804a"
     },
     {
       "id": "570e6b020b85d914000d7eb6",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "546fef238a67e6c53cbabe2111279c87e910fb0eeb252386e3c33fceec0e6b3b"
     },
     {
       "id": "5726c11ef1498d1400e8ea46",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "8c89fc717034436a7e3e98ad27e98a4410c0b20dbc8921afa8e963466ee9d414"
     },
     {
       "id": "56e0c8ed7aa994140058e6eb",
       "category": "source_terminology_ambiguity",
-      "reason": "The passage conflates URI/URL and the output labels Uniform Resource Identifier as URL. Do not preserve this as a clean terminology answer."
+      "reason": "The passage conflates URI/URL and the output labels Uniform Resource Identifier as URL. Do not preserve this as a clean terminology answer.",
+      "evidence_sha256": "6d4453bfcc16a0fed304eb86240af0e81462fd16a4f87d9a6735d61c62687fc8"
     },
     {
       "id": "56e11661e3433e1400422bb9",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "7b2d38e36061bad1f08491f86d62bd4dcbb4a9e382c79e5b20827bac633777bd"
     },
     {
       "id": "572b441cf75d5e190021fd45",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "06634ae042e27a53e8d517dc46845849e901cba7e65d6b8d3d4998583de2311f"
     },
     {
       "id": "572b890d111d821400f38eee",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "d5465f93aaacb1b1f48a37bce40ce4bb2adb7fafab883cf40b7795330eee5050"
     },
     {
       "id": "570ced3efed7b91900d45af4",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "575726572d69f772e1e6cbd89740e6a5c3f7066b4c4c8275fff5e198f5cb4194"
     },
     {
       "id": "56e7c6bb37bdd419002c43f1",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "a6e04857164fbb4c1e02c3f1a3d14a9b933f5035081ce2b9425fafdce8f661f5"
     },
     {
       "id": "56dfbf01231d4119001abd7b",
       "category": "truncated_excerpt",
-      "reason": "The theorists are identified, but the model continues into a truncated copied passage. Exclude from clean preservation candidates."
+      "reason": "The theorists are identified, but the model continues into a truncated copied passage. Exclude from clean preservation candidates.",
+      "evidence_sha256": "73bec8640d0eae8b515c215e1b1768c8ad3844357616a124173f82c5ab5e44af"
     },
     {
       "id": "5731304e497a881900248c37",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "42d9ac9aecdf5c6660f012f0805579e9678db7a6f047b346aafb22bcf749f0a8"
     },
     {
       "id": "5731a51fe17f3d140042229d",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "a25cc9d624474a7d859e4f63d9f1a2e528222d7d72fd97fc33a433a40a5ef259"
     },
     {
       "id": "570fe6f15ab6b819003910ad",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "2ab823b2af422eadea097f89629a614b7ab8a3c7af78cf4da67ffccf88817611"
     },
     {
       "id": "572835ea4b864d1900164742",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "2df1b5a5a795331c3d8e7e8a6f14995120c0f9bcfbcdcc93e3c0fae3854215d4"
     },
     {
       "id": "572817492ca10214002d9daa",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "debd1ad9309cf0cf2f664f0fc7ce2ef981c61e0e703dbe42f812864b8ba3c431"
     },
     {
       "id": "57278529f1498d1400e8faaa",
       "category": "valid_answer_extra_wording",
-      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match."
+      "reason": "The response answers the question using information explicitly supported by the passage; extra wording prevents exact match.",
+      "evidence_sha256": "522561e5fdb596fe88e4b20efcc0315454e90650e326354b92598ac32709fe8a"
     }
   ],
   "eligible_additional_ids": [

@@ -18,6 +18,16 @@ policy. This redistributes a fixed 512 replay-example exposures across 115 rathe
 than 91 anchors. Report that dilution and actual per-example exposure counts.
 The existing 512 fits are the controls; verify source/configuration parity.
 
+The prepared review manifest now binds each judgment to an SHA-256 digest of its
+passage, question, aliases and baseline output. `reviewed_anchors.py` validates
+training membership, evidence identity, decision/list consistency and nonexact
+nonrefusal eligibility before returning additions. Three focused tests exercise
+leakage, changed evidence, rejected decisions and invalid additions. This helper
+is not yet integrated into the runner and does not affect the active size curve.
+The validated pools contain 91 and 115 unique examples. At 512 replay exposures,
+the control gives 57 anchors six exposures and 34 five; expansion gives 52 five
+and 63 four. This budget dilution is part of the treatment, not hidden extra compute.
+
 Primary mechanism observation: how many of the 24 added examples remain valid
 answers, become refusals, become wrong answers, or merely change wording? Inspect
 all 24, including apparent regressions and improvements. Separately track the 91
