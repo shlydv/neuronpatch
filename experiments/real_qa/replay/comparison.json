@@ -1,0 +1,436 @@
+{
+  "selected-lr0.0001-kl1.0": {
+    "anchor_em_before": 0.8,
+    "anchor_em_after": 0.8,
+    "anchor_refusals_before": 3,
+    "anchor_refusals_after": 3,
+    "validation_before": {
+      "answerable": {
+        "n": 16,
+        "em": 0.3125,
+        "f1": 0.46616771708683474,
+        "abstained": 0.3125
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.3125,
+        "f1": 0.3125,
+        "abstained": 0.3125
+      }
+    },
+    "validation_after": {
+      "answerable": {
+        "n": 16,
+        "em": 0.25,
+        "f1": 0.43491771708683474,
+        "abstained": 0.3125
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.3125,
+        "f1": 0.3125,
+        "abstained": 0.3125
+      }
+    },
+    "train_before": {
+      "answerable": {
+        "n": 64,
+        "em": 0.28125,
+        "f1": 0.37196414226575797,
+        "abstained": 0.453125
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.609375,
+        "f1": 0.609375,
+        "abstained": 0.609375
+      }
+    },
+    "train_after": {
+      "answerable": {
+        "n": 64,
+        "em": 0.28125,
+        "f1": 0.37196414226575797,
+        "abstained": 0.375
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.578125,
+        "f1": 0.578125,
+        "abstained": 0.578125
+      }
+    },
+    "anchor_changes": []
+  },
+  "selected-lr0.0003-kl1.0": {
+    "anchor_em_before": 0.5,
+    "anchor_em_after": 0.75,
+    "anchor_refusals_before": 10,
+    "anchor_refusals_after": 5,
+    "validation_before": {
+      "answerable": {
+        "n": 16,
+        "em": 0.125,
+        "f1": 0.145,
+        "abstained": 0.625
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.5625,
+        "f1": 0.5625,
+        "abstained": 0.5625
+      }
+    },
+    "validation_after": {
+      "answerable": {
+        "n": 16,
+        "em": 0.25,
+        "f1": 0.35009628851540614,
+        "abstained": 0.4375
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.5625,
+        "f1": 0.5625,
+        "abstained": 0.5625
+      }
+    },
+    "train_before": {
+      "answerable": {
+        "n": 64,
+        "em": 0.1875,
+        "f1": 0.2148507130124777,
+        "abstained": 0.71875
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.90625,
+        "f1": 0.90625,
+        "abstained": 0.90625
+      }
+    },
+    "train_after": {
+      "answerable": {
+        "n": 64,
+        "em": 0.28125,
+        "f1": 0.300137171345811,
+        "abstained": 0.609375
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.859375,
+        "f1": 0.859375,
+        "abstained": 0.859375
+      }
+    },
+    "anchor_changes": [
+      {
+        "id": "57300da0947a6a140053cffe",
+        "question": "What are the six counties in Ireland called that are still part of the United Kingdom?",
+        "answers": [
+          "Northern Ireland"
+        ],
+        "before": "UNKNOWN",
+        "after": "Northern Ireland"
+      },
+      {
+        "id": "572812394b864d19001643b3",
+        "question": "When did the European Parliament begin meeting in Strasbourg?",
+        "answers": [
+          "1952"
+        ],
+        "before": "UNKNOWN",
+        "after": "1952"
+      },
+      {
+        "id": "56df23ff3277331400b4d997",
+        "question": "In what year did CBS Records buy out Tree International Publishing?",
+        "answers": [
+          "1989"
+        ],
+        "before": "UNKNOWN",
+        "after": "1989"
+      },
+      {
+        "id": "56e09b2a7aa994140058e636",
+        "question": "What body renamed the state the Soviet Russian Republic?",
+        "answers": [
+          "All-Russian Congress of Soviets"
+        ],
+        "before": "UNKNOWN",
+        "after": "All-Russian Congress of Soviets"
+      },
+      {
+        "id": "56e79feb00c9c71400d7740c",
+        "question": "When was the KU Endowment founded?",
+        "answers": [
+          "1891"
+        ],
+        "before": "UNKNOWN",
+        "after": "1891"
+      }
+    ]
+  },
+  "random-lr0.0001-kl1.0": {
+    "anchor_em_before": 0.9,
+    "anchor_em_after": 0.9,
+    "anchor_refusals_before": 2,
+    "anchor_refusals_after": 2,
+    "validation_before": {
+      "answerable": {
+        "n": 16,
+        "em": 0.1875,
+        "f1": 0.4047603744294921,
+        "abstained": 0.125
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.25,
+        "f1": 0.25,
+        "abstained": 0.25
+      }
+    },
+    "validation_after": {
+      "answerable": {
+        "n": 16,
+        "em": 0.1875,
+        "f1": 0.4047603744294921,
+        "abstained": 0.125
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.25,
+        "f1": 0.25,
+        "abstained": 0.25
+      }
+    },
+    "train_before": {
+      "answerable": {
+        "n": 64,
+        "em": 0.28125,
+        "f1": 0.39909430719403144,
+        "abstained": 0.25
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.328125,
+        "f1": 0.328125,
+        "abstained": 0.328125
+      }
+    },
+    "train_after": {
+      "answerable": {
+        "n": 64,
+        "em": 0.28125,
+        "f1": 0.39909430719403144,
+        "abstained": 0.25
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.328125,
+        "f1": 0.328125,
+        "abstained": 0.328125
+      }
+    },
+    "anchor_changes": []
+  },
+  "random-lr0.0003-kl1.0": {
+    "anchor_em_before": 0.8,
+    "anchor_em_after": 0.8,
+    "anchor_refusals_before": 4,
+    "anchor_refusals_after": 4,
+    "validation_before": {
+      "answerable": {
+        "n": 16,
+        "em": 0.375,
+        "f1": 0.5286677170868347,
+        "abstained": 0.125
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.375,
+        "f1": 0.375,
+        "abstained": 0.375
+      }
+    },
+    "validation_after": {
+      "answerable": {
+        "n": 16,
+        "em": 0.375,
+        "f1": 0.5286677170868347,
+        "abstained": 0.125
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.375,
+        "f1": 0.375,
+        "abstained": 0.375
+      }
+    },
+    "train_before": {
+      "answerable": {
+        "n": 64,
+        "em": 0.25,
+        "f1": 0.3543677446940315,
+        "abstained": 0.40625
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.484375,
+        "f1": 0.484375,
+        "abstained": 0.484375
+      }
+    },
+    "train_after": {
+      "answerable": {
+        "n": 64,
+        "em": 0.25,
+        "f1": 0.3543677446940315,
+        "abstained": 0.40625
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.46875,
+        "f1": 0.46875,
+        "abstained": 0.46875
+      }
+    },
+    "anchor_changes": []
+  },
+  "lora-lr0.0001-kl1.0": {
+    "anchor_em_before": 0.8,
+    "anchor_em_after": 0.8,
+    "anchor_refusals_before": 4,
+    "anchor_refusals_after": 4,
+    "validation_before": {
+      "answerable": {
+        "n": 16,
+        "em": 0.1875,
+        "f1": 0.39514498981410745,
+        "abstained": 0.1875
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.3125,
+        "f1": 0.3125,
+        "abstained": 0.3125
+      }
+    },
+    "validation_after": {
+      "answerable": {
+        "n": 16,
+        "em": 0.1875,
+        "f1": 0.39514498981410745,
+        "abstained": 0.1875
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.3125,
+        "f1": 0.3125,
+        "abstained": 0.3125
+      }
+    },
+    "train_before": {
+      "answerable": {
+        "n": 64,
+        "em": 0.25,
+        "f1": 0.3632995646558679,
+        "abstained": 0.34375
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.453125,
+        "f1": 0.453125,
+        "abstained": 0.453125
+      }
+    },
+    "train_after": {
+      "answerable": {
+        "n": 64,
+        "em": 0.25,
+        "f1": 0.3632995646558679,
+        "abstained": 0.34375
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.4375,
+        "f1": 0.4375,
+        "abstained": 0.4375
+      }
+    },
+    "anchor_changes": []
+  },
+  "lora-lr0.0003-kl1.0": {
+    "anchor_em_before": 0.55,
+    "anchor_em_after": 0.6,
+    "anchor_refusals_before": 9,
+    "anchor_refusals_after": 8,
+    "validation_before": {
+      "answerable": {
+        "n": 16,
+        "em": 0.125,
+        "f1": 0.1800595238095238,
+        "abstained": 0.6875
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.625,
+        "f1": 0.625,
+        "abstained": 0.625
+      }
+    },
+    "validation_after": {
+      "answerable": {
+        "n": 16,
+        "em": 0.1875,
+        "f1": 0.2425595238095238,
+        "abstained": 0.5625
+      },
+      "missing": {
+        "n": 16,
+        "em": 0.625,
+        "f1": 0.625,
+        "abstained": 0.625
+      }
+    },
+    "train_before": {
+      "answerable": {
+        "n": 64,
+        "em": 0.171875,
+        "f1": 0.20471813725490196,
+        "abstained": 0.71875
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.890625,
+        "f1": 0.890625,
+        "abstained": 0.890625
+      }
+    },
+    "train_after": {
+      "answerable": {
+        "n": 64,
+        "em": 0.1875,
+        "f1": 0.2431295955882353,
+        "abstained": 0.625
+      },
+      "missing": {
+        "n": 64,
+        "em": 0.84375,
+        "f1": 0.84375,
+        "abstained": 0.84375
+      }
+    },
+    "anchor_changes": [
+      {
+        "id": "56e09b2a7aa994140058e636",
+        "question": "What body renamed the state the Soviet Russian Republic?",
+        "answers": [
+          "All-Russian Congress of Soviets"
+        ],
+        "before": "UNKNOWN",
+        "after": "All-Russian Congress of Soviets"
+      }
+    ]
+  }
+}

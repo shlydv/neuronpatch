@@ -1,0 +1,4928 @@
+{
+  "selected-lr0.0001-kl1.0": {
+    "train": {
+      "mean_margin": {
+        "answerable": 0.24819833785295486,
+        "missing": 7.393483646214008
+      },
+      "mean_pair_separation": 7.1452853083610535,
+      "rows": [
+        {
+          "id": "57300da0947a6a140053cffe",
+          "kind": "answerable",
+          "margin": -1.5112419128417969
+        },
+        {
+          "id": "5acd1c9c07355d001abf3581",
+          "kind": "missing",
+          "margin": 4.830724716186523
+        },
+        {
+          "id": "57303233a23a5019007fcf5a",
+          "kind": "answerable",
+          "margin": 8.271581649780273
+        },
+        {
+          "id": "5ad3cb4c604f3c001a3ff10b",
+          "kind": "missing",
+          "margin": 5.174786567687988
+        },
+        {
+          "id": "5727a7474b864d1900163989",
+          "kind": "answerable",
+          "margin": 8.612138748168945
+        },
+        {
+          "id": "5a8c906afd22b3001a8d8b18",
+          "kind": "missing",
+          "margin": 10.119295120239258
+        },
+        {
+          "id": "570fc7d35ab6b81900390fcf",
+          "kind": "answerable",
+          "margin": 4.750804901123047
+        },
+        {
+          "id": "5ad36094604f3c001a3fdf39",
+          "kind": "missing",
+          "margin": 5.574526786804199
+        },
+        {
+          "id": "572b858934ae481900deae64",
+          "kind": "answerable",
+          "margin": 2.176603317260742
+        },
+        {
+          "id": "5acd735607355d001abf42e9",
+          "kind": "missing",
+          "margin": 13.142745971679688
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "kind": "answerable",
+          "margin": 9.507659912109375
+        },
+        {
+          "id": "5a5add719c0277001abe7201",
+          "kind": "missing",
+          "margin": 21.14830207824707
+        },
+        {
+          "id": "572812394b864d19001643b3",
+          "kind": "answerable",
+          "margin": -2.690977096557617
+        },
+        {
+          "id": "5acd69f607355d001abf411e",
+          "kind": "missing",
+          "margin": 4.657167434692383
+        },
+        {
+          "id": "5728765c3acd2414000dfa1d",
+          "kind": "answerable",
+          "margin": -1.536489486694336
+        },
+        {
+          "id": "5ad14abb645df0001a2d15c7",
+          "kind": "missing",
+          "margin": -0.5301666259765625
+        },
+        {
+          "id": "572f70f1b2c2fd1400568127",
+          "kind": "answerable",
+          "margin": 7.763980865478516
+        },
+        {
+          "id": "5acd091307355d001abf31ea",
+          "kind": "missing",
+          "margin": -0.0733957290649414
+        },
+        {
+          "id": "5732a7f71d5d2e14009ff87e",
+          "kind": "answerable",
+          "margin": 6.797677993774414
+        },
+        {
+          "id": "5a4ebb46af0d07001ae8cc0e",
+          "kind": "missing",
+          "margin": 10.335338592529297
+        },
+        {
+          "id": "5725dd19ec44d21400f3d6e4",
+          "kind": "answerable",
+          "margin": 1.2699909210205078
+        },
+        {
+          "id": "5acd052e07355d001abf31c0",
+          "kind": "missing",
+          "margin": 8.628524780273438
+        },
+        {
+          "id": "56dd304366d3e219004dac37",
+          "kind": "answerable",
+          "margin": -1.0107250213623047
+        },
+        {
+          "id": "5acfc17677cf76001a685cf4",
+          "kind": "missing",
+          "margin": 7.469635009765625
+        },
+        {
+          "id": "570dfd080b85d914000d7c6b",
+          "kind": "answerable",
+          "margin": 1.4057884216308594
+        },
+        {
+          "id": "5ad2d83cd7d075001a42a445",
+          "kind": "missing",
+          "margin": 12.525115966796875
+        },
+        {
+          "id": "572fd7db947a6a140053cd47",
+          "kind": "answerable",
+          "margin": 13.029533386230469
+        },
+        {
+          "id": "5ad0d0e5645df0001a2d04c8",
+          "kind": "missing",
+          "margin": 9.659860610961914
+        },
+        {
+          "id": "56e70a356fe0821900b8ec92",
+          "kind": "answerable",
+          "margin": -4.026212692260742
+        },
+        {
+          "id": "5a7881bbb73996001af5a6a7",
+          "kind": "missing",
+          "margin": 4.117649078369141
+        },
+        {
+          "id": "572bc28a111d821400f38f77",
+          "kind": "answerable",
+          "margin": -7.800629138946533
+        },
+        {
+          "id": "5acd857607355d001abf4561",
+          "kind": "missing",
+          "margin": 21.825927734375
+        },
+        {
+          "id": "5726b98f5951b619008f7be1",
+          "kind": "answerable",
+          "margin": -3.2714061737060547
+        },
+        {
+          "id": "5acd628907355d001abf4025",
+          "kind": "missing",
+          "margin": 5.0379228591918945
+        },
+        {
+          "id": "56ddcf4166d3e219004dacf9",
+          "kind": "answerable",
+          "margin": 9.51761245727539
+        },
+        {
+          "id": "5a6b1c23a9e0c9001a4e9ee2",
+          "kind": "missing",
+          "margin": 12.756744384765625
+        },
+        {
+          "id": "56f977b19e9bad19000a097c",
+          "kind": "answerable",
+          "margin": -5.532402992248535
+        },
+        {
+          "id": "5a56c8e56349e2001acdcf36",
+          "kind": "missing",
+          "margin": -2.006227493286133
+        },
+        {
+          "id": "57279dc32ca10214002d9226",
+          "kind": "answerable",
+          "margin": 1.724945068359375
+        },
+        {
+          "id": "5aceb57332bba1001ae4b0fb",
+          "kind": "missing",
+          "margin": 12.559724807739258
+        },
+        {
+          "id": "57269b73708984140094cb7d",
+          "kind": "answerable",
+          "margin": -1.448171615600586
+        },
+        {
+          "id": "5acfe05d77cf76001a686380",
+          "kind": "missing",
+          "margin": 13.221024513244629
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "kind": "answerable",
+          "margin": -10.157878875732422
+        },
+        {
+          "id": "5a81e42031013a001a334f83",
+          "kind": "missing",
+          "margin": 6.742515563964844
+        },
+        {
+          "id": "571aeaf69499d21900609bac",
+          "kind": "answerable",
+          "margin": 5.006572723388672
+        },
+        {
+          "id": "5acec97b32bba1001ae4b407",
+          "kind": "missing",
+          "margin": 7.6710710525512695
+        },
+        {
+          "id": "572ab2ccbe1ee31400cb8190",
+          "kind": "answerable",
+          "margin": -4.455524444580078
+        },
+        {
+          "id": "5ace3f9232bba1001ae4a06b",
+          "kind": "missing",
+          "margin": 8.108463287353516
+        },
+        {
+          "id": "5726abe25951b619008f79a3",
+          "kind": "answerable",
+          "margin": -10.545206069946289
+        },
+        {
+          "id": "5a20747a54a786001a36b349",
+          "kind": "missing",
+          "margin": -2.3669910430908203
+        },
+        {
+          "id": "570d48a6fed7b91900d45e01",
+          "kind": "answerable",
+          "margin": -0.2624073028564453
+        },
+        {
+          "id": "5acec6d432bba1001ae4b3b1",
+          "kind": "missing",
+          "margin": 13.935029983520508
+        },
+        {
+          "id": "571aa99d4faf5e1900b8abd6",
+          "kind": "answerable",
+          "margin": -5.999392509460449
+        },
+        {
+          "id": "5acfbce377cf76001a685b86",
+          "kind": "missing",
+          "margin": 3.3147029876708984
+        },
+        {
+          "id": "5726c81ef1498d1400e8eb19",
+          "kind": "answerable",
+          "margin": -1.3313770294189453
+        },
+        {
+          "id": "5a1e1c4b3de3f40018b264d2",
+          "kind": "missing",
+          "margin": -0.5166645050048828
+        },
+        {
+          "id": "570e489e0b85d914000d7df2",
+          "kind": "answerable",
+          "margin": 1.4023571014404297
+        },
+        {
+          "id": "5ad14c7f645df0001a2d1659",
+          "kind": "missing",
+          "margin": 3.3312835693359375
+        },
+        {
+          "id": "56df23ff3277331400b4d997",
+          "kind": "answerable",
+          "margin": -1.6549015045166016
+        },
+        {
+          "id": "5ace35e132bba1001ae49e76",
+          "kind": "missing",
+          "margin": 6.991910934448242
+        },
+        {
+          "id": "5730a9732461fd1900a9cf66",
+          "kind": "answerable",
+          "margin": -9.393074035644531
+        },
+        {
+          "id": "5a650f65c2b11c001a425bc7",
+          "kind": "missing",
+          "margin": 9.316360473632812
+        },
+        {
+          "id": "56f9872e9e9bad19000a0a3d",
+          "kind": "answerable",
+          "margin": -6.616174697875977
+        },
+        {
+          "id": "5acfbd4c77cf76001a685ba1",
+          "kind": "missing",
+          "margin": 16.278696060180664
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "kind": "answerable",
+          "margin": 3.0188655853271484
+        },
+        {
+          "id": "5a8ca048fd22b3001a8d8c15",
+          "kind": "missing",
+          "margin": 18.7661075592041
+        },
+        {
+          "id": "572a776bfed8de19000d5c46",
+          "kind": "answerable",
+          "margin": -0.09963798522949219
+        },
+        {
+          "id": "5ad38cdf604f3c001a3fe5de",
+          "kind": "missing",
+          "margin": 10.85962963104248
+        },
+        {
+          "id": "5727e65b4b864d1900163f8b",
+          "kind": "answerable",
+          "margin": 12.632071495056152
+        },
+        {
+          "id": "5a4c36e77a6c4c001a2bbbb6",
+          "kind": "missing",
+          "margin": 8.686123847961426
+        },
+        {
+          "id": "572b6963f75d5e190021fdac",
+          "kind": "answerable",
+          "margin": 3.55706787109375
+        },
+        {
+          "id": "5ace67b632bba1001ae4a5b6",
+          "kind": "missing",
+          "margin": 1.917250633239746
+        },
+        {
+          "id": "57294f546aef051400154c9d",
+          "kind": "answerable",
+          "margin": 0.8991184234619141
+        },
+        {
+          "id": "5ad129fd645df0001a2d1029",
+          "kind": "missing",
+          "margin": 6.24755859375
+        },
+        {
+          "id": "5728a75e4b864d1900164b92",
+          "kind": "answerable",
+          "margin": -3.769876480102539
+        },
+        {
+          "id": "5ad211e7d7d075001a4282de",
+          "kind": "missing",
+          "margin": 2.196563720703125
+        },
+        {
+          "id": "572fef5e947a6a140053ce25",
+          "kind": "answerable",
+          "margin": -5.072110176086426
+        },
+        {
+          "id": "5a541b8cbdaabd001a38683c",
+          "kind": "missing",
+          "margin": 8.327829360961914
+        },
+        {
+          "id": "572699885951b619008f7789",
+          "kind": "answerable",
+          "margin": -7.791533470153809
+        },
+        {
+          "id": "5a21a5b98a6e4f001aa08e50",
+          "kind": "missing",
+          "margin": -4.798723220825195
+        },
+        {
+          "id": "5733fd57d058e614000b672e",
+          "kind": "answerable",
+          "margin": 5.871706962585449
+        },
+        {
+          "id": "5ad0eaf1645df0001a2d0854",
+          "kind": "missing",
+          "margin": 10.237634658813477
+        },
+        {
+          "id": "572a710827b69114009ef5c2",
+          "kind": "answerable",
+          "margin": 0.9418067932128906
+        },
+        {
+          "id": "5ad371f4604f3c001a3fe299",
+          "kind": "missing",
+          "margin": 1.6554193496704102
+        },
+        {
+          "id": "570a53286d058f1900182d54",
+          "kind": "answerable",
+          "margin": -1.3293933868408203
+        },
+        {
+          "id": "5a48796884b8a4001a7e78b3",
+          "kind": "missing",
+          "margin": -0.5524539947509766
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "kind": "answerable",
+          "margin": -0.5751533508300781
+        },
+        {
+          "id": "5a550073134fea001a0e17cb",
+          "kind": "missing",
+          "margin": -0.18279647827148438
+        },
+        {
+          "id": "570d0565fed7b91900d45bcb",
+          "kind": "answerable",
+          "margin": -4.156064987182617
+        },
+        {
+          "id": "5ad159a0645df0001a2d1845",
+          "kind": "missing",
+          "margin": 6.644916534423828
+        },
+        {
+          "id": "56deed163277331400b4d828",
+          "kind": "answerable",
+          "margin": 2.4826669692993164
+        },
+        {
+          "id": "5acd1a5a07355d001abf3510",
+          "kind": "missing",
+          "margin": 8.307759284973145
+        },
+        {
+          "id": "56dfc460231d4119001abdc5",
+          "kind": "answerable",
+          "margin": 9.774826049804688
+        },
+        {
+          "id": "5a10e82f06e79900185c3467",
+          "kind": "missing",
+          "margin": 4.875001907348633
+        },
+        {
+          "id": "56e82fe000c9c71400d77611",
+          "kind": "answerable",
+          "margin": -6.78651237487793
+        },
+        {
+          "id": "5ad278edd7d075001a429598",
+          "kind": "missing",
+          "margin": 11.950906753540039
+        },
+        {
+          "id": "5729fd8e6aef05140015517d",
+          "kind": "answerable",
+          "margin": -2.968128204345703
+        },
+        {
+          "id": "5acd4c3307355d001abf3c58",
+          "kind": "missing",
+          "margin": 6.515135765075684
+        },
+        {
+          "id": "57268432f1498d1400e8e25e",
+          "kind": "answerable",
+          "margin": 6.908496856689453
+        },
+        {
+          "id": "5a847e367cf838001a46a877",
+          "kind": "missing",
+          "margin": 13.08875560760498
+        },
+        {
+          "id": "5731cd430fdd8d15006c654d",
+          "kind": "answerable",
+          "margin": 2.786529541015625
+        },
+        {
+          "id": "5ad4d8665b96ef001a10a330",
+          "kind": "missing",
+          "margin": 6.609203338623047
+        },
+        {
+          "id": "572a756dfed8de19000d5c35",
+          "kind": "answerable",
+          "margin": 4.944204330444336
+        },
+        {
+          "id": "5ad38afb604f3c001a3fe5b5",
+          "kind": "missing",
+          "margin": 5.064311981201172
+        },
+        {
+          "id": "5728abac3acd2414000dfc93",
+          "kind": "answerable",
+          "margin": 4.876075744628906
+        },
+        {
+          "id": "5a4fea83af0d07001ae8cc86",
+          "kind": "missing",
+          "margin": 5.888576507568359
+        },
+        {
+          "id": "57328f64b9988014000c7684",
+          "kind": "answerable",
+          "margin": -0.10553264617919922
+        },
+        {
+          "id": "5a4e9663755ab9001a10f51d",
+          "kind": "missing",
+          "margin": 11.464160919189453
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "kind": "answerable",
+          "margin": 3.119131088256836
+        },
+        {
+          "id": "5a7b2ba921c2de001afe9d84",
+          "kind": "missing",
+          "margin": 5.864287853240967
+        },
+        {
+          "id": "56e09b2a7aa994140058e636",
+          "kind": "answerable",
+          "margin": -3.1303844451904297
+        },
+        {
+          "id": "5acdf66132bba1001ae498eb",
+          "kind": "missing",
+          "margin": 14.7431058883667
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "kind": "answerable",
+          "margin": -7.925296783447266
+        },
+        {
+          "id": "5ad3c735604f3c001a3ff03b",
+          "kind": "missing",
+          "margin": 2.6422719955444336
+        },
+        {
+          "id": "570b6750ec8fbc190045b9e5",
+          "kind": "answerable",
+          "margin": -1.1545639038085938
+        },
+        {
+          "id": "5a5a217f9c0277001abe705e",
+          "kind": "missing",
+          "margin": 3.884370803833008
+        },
+        {
+          "id": "570b0ac3ec8fbc190045b802",
+          "kind": "answerable",
+          "margin": 6.245500564575195
+        },
+        {
+          "id": "5acd88dc07355d001abf4624",
+          "kind": "missing",
+          "margin": 7.492067337036133
+        },
+        {
+          "id": "57269446dd62a815002e8a29",
+          "kind": "answerable",
+          "margin": -1.020625114440918
+        },
+        {
+          "id": "5acf613977cf76001a684ceb",
+          "kind": "missing",
+          "margin": 10.767547607421875
+        },
+        {
+          "id": "573259a4e99e3014001e66ee",
+          "kind": "answerable",
+          "margin": -11.549402236938477
+        },
+        {
+          "id": "5ad3e772604f3c001a3ff60a",
+          "kind": "missing",
+          "margin": 11.385164260864258
+        },
+        {
+          "id": "5730f1c3e6313a140071cad9",
+          "kind": "answerable",
+          "margin": 2.0405654907226562
+        },
+        {
+          "id": "5a864535b4e223001a8e7521",
+          "kind": "missing",
+          "margin": 3.757305145263672
+        },
+        {
+          "id": "56e79feb00c9c71400d7740c",
+          "kind": "answerable",
+          "margin": -1.812835693359375
+        },
+        {
+          "id": "5acf657877cf76001a684d4f",
+          "kind": "missing",
+          "margin": 5.207237243652344
+        },
+        {
+          "id": "573401aa4776f419006616b2",
+          "kind": "answerable",
+          "margin": 3.0400562286376953
+        },
+        {
+          "id": "5a68fdfb8476ee001a58a98f",
+          "kind": "missing",
+          "margin": 10.689117431640625
+        }
+      ]
+    },
+    "last_logit_optimization_max_error": 2.288818359375e-05,
+    "val": {
+      "mean_margin": {
+        "answerable": -0.7011750340461731,
+        "missing": 4.786463022232056
+      },
+      "mean_pair_separation": 5.487638056278229,
+      "rows": [
+        {
+          "id": "570c22d96b8089140040fb4a",
+          "kind": "answerable",
+          "margin": 2.0837764739990234
+        },
+        {
+          "id": "5ad368bc604f3c001a3fe0c3",
+          "kind": "missing",
+          "margin": 3.575085163116455
+        },
+        {
+          "id": "572814a54b864d190016440f",
+          "kind": "answerable",
+          "margin": 13.326203346252441
+        },
+        {
+          "id": "5acd478d07355d001abf3bf8",
+          "kind": "missing",
+          "margin": 2.5861406326293945
+        },
+        {
+          "id": "570afbdf6b8089140040f67a",
+          "kind": "answerable",
+          "margin": -4.783707618713379
+        },
+        {
+          "id": "5a37134395360f001af1b3e1",
+          "kind": "missing",
+          "margin": -1.5483832359313965
+        },
+        {
+          "id": "5734257c4776f41900661962",
+          "kind": "answerable",
+          "margin": -9.54493522644043
+        },
+        {
+          "id": "5a830437e60761001a2eb304",
+          "kind": "missing",
+          "margin": -6.043238639831543
+        },
+        {
+          "id": "56f89312aef23719006261c5",
+          "kind": "answerable",
+          "margin": 2.741456985473633
+        },
+        {
+          "id": "5a7e3e1f70df9f001a875627",
+          "kind": "missing",
+          "margin": 17.74793243408203
+        },
+        {
+          "id": "57262eb438643c19005ad2b3",
+          "kind": "answerable",
+          "margin": 9.215827941894531
+        },
+        {
+          "id": "5a39f2ae2f14dd001ac7266b",
+          "kind": "missing",
+          "margin": 12.168846130371094
+        },
+        {
+          "id": "572b8eb4111d821400f38f07",
+          "kind": "answerable",
+          "margin": -2.7426319122314453
+        },
+        {
+          "id": "5a7a175117ab25001a8a031a",
+          "kind": "missing",
+          "margin": -2.146895408630371
+        },
+        {
+          "id": "5709f59f4103511400d594c4",
+          "kind": "answerable",
+          "margin": -2.1943912506103516
+        },
+        {
+          "id": "5a105795decec9001847563b",
+          "kind": "missing",
+          "margin": 8.071993827819824
+        },
+        {
+          "id": "57263e4c38643c19005ad36c",
+          "kind": "answerable",
+          "margin": -6.168813705444336
+        },
+        {
+          "id": "5a3a087c2f14dd001ac726c7",
+          "kind": "missing",
+          "margin": 12.45883846282959
+        },
+        {
+          "id": "573423284776f4190066192d",
+          "kind": "answerable",
+          "margin": -2.0789976119995117
+        },
+        {
+          "id": "5a83019fe60761001a2eb2e6",
+          "kind": "missing",
+          "margin": 11.34016227722168
+        },
+        {
+          "id": "5734203ed058e614000b6985",
+          "kind": "answerable",
+          "margin": 1.5803489685058594
+        },
+        {
+          "id": "5a82fb2ee60761001a2eb2b7",
+          "kind": "missing",
+          "margin": 5.055058479309082
+        },
+        {
+          "id": "56ddecfe66d3e219004dae17",
+          "kind": "answerable",
+          "margin": -3.650911331176758
+        },
+        {
+          "id": "5a1cd5884ea40d0018b06f50",
+          "kind": "missing",
+          "margin": -0.4707603454589844
+        },
+        {
+          "id": "5730f90c497a881900248ab5",
+          "kind": "answerable",
+          "margin": 3.145284652709961
+        },
+        {
+          "id": "5a273d6bc93d92001a400444",
+          "kind": "missing",
+          "margin": -4.7487287521362305
+        },
+        {
+          "id": "570b9fa36b8089140040f9c3",
+          "kind": "answerable",
+          "margin": -1.1615219116210938
+        },
+        {
+          "id": "5a07f52b3fc87400182070b0",
+          "kind": "missing",
+          "margin": 6.673006057739258
+        },
+        {
+          "id": "570a76684103511400d5973a",
+          "kind": "answerable",
+          "margin": -4.794652938842773
+        },
+        {
+          "id": "5acd869707355d001abf45a4",
+          "kind": "missing",
+          "margin": 10.407267570495605
+        },
+        {
+          "id": "5727affd4b864d1900163a68",
+          "kind": "answerable",
+          "margin": -6.191135406494141
+        },
+        {
+          "id": "5a73ceb842eae6001a3899f8",
+          "kind": "missing",
+          "margin": 1.4570837020874023
+        }
+      ]
+    }
+  },
+  "selected-lr0.0003-kl1.0": {
+    "train": {
+      "mean_margin": {
+        "answerable": 1.9172258079051971,
+        "missing": 9.05446195602417
+      },
+      "mean_pair_separation": 7.137236148118973,
+      "rows": [
+        {
+          "id": "57300da0947a6a140053cffe",
+          "kind": "answerable",
+          "margin": -1.0885009765625
+        },
+        {
+          "id": "5acd1c9c07355d001abf3581",
+          "kind": "missing",
+          "margin": 6.20579719543457
+        },
+        {
+          "id": "57303233a23a5019007fcf5a",
+          "kind": "answerable",
+          "margin": 8.904224395751953
+        },
+        {
+          "id": "5ad3cb4c604f3c001a3ff10b",
+          "kind": "missing",
+          "margin": 7.459371566772461
+        },
+        {
+          "id": "5727a7474b864d1900163989",
+          "kind": "answerable",
+          "margin": 8.043231964111328
+        },
+        {
+          "id": "5a8c906afd22b3001a8d8b18",
+          "kind": "missing",
+          "margin": 11.641176223754883
+        },
+        {
+          "id": "570fc7d35ab6b81900390fcf",
+          "kind": "answerable",
+          "margin": 5.779092788696289
+        },
+        {
+          "id": "5ad36094604f3c001a3fdf39",
+          "kind": "missing",
+          "margin": 6.722528457641602
+        },
+        {
+          "id": "572b858934ae481900deae64",
+          "kind": "answerable",
+          "margin": 4.364025115966797
+        },
+        {
+          "id": "5acd735607355d001abf42e9",
+          "kind": "missing",
+          "margin": 14.402261734008789
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "kind": "answerable",
+          "margin": 11.821456909179688
+        },
+        {
+          "id": "5a5add719c0277001abe7201",
+          "kind": "missing",
+          "margin": 21.70816421508789
+        },
+        {
+          "id": "572812394b864d19001643b3",
+          "kind": "answerable",
+          "margin": -2.1430912017822266
+        },
+        {
+          "id": "5acd69f607355d001abf411e",
+          "kind": "missing",
+          "margin": 6.081628799438477
+        },
+        {
+          "id": "5728765c3acd2414000dfa1d",
+          "kind": "answerable",
+          "margin": -0.9784889221191406
+        },
+        {
+          "id": "5ad14abb645df0001a2d15c7",
+          "kind": "missing",
+          "margin": 1.3220233917236328
+        },
+        {
+          "id": "572f70f1b2c2fd1400568127",
+          "kind": "answerable",
+          "margin": 8.328718185424805
+        },
+        {
+          "id": "5acd091307355d001abf31ea",
+          "kind": "missing",
+          "margin": 3.4563827514648438
+        },
+        {
+          "id": "5732a7f71d5d2e14009ff87e",
+          "kind": "answerable",
+          "margin": 8.467328071594238
+        },
+        {
+          "id": "5a4ebb46af0d07001ae8cc0e",
+          "kind": "missing",
+          "margin": 10.978452682495117
+        },
+        {
+          "id": "5725dd19ec44d21400f3d6e4",
+          "kind": "answerable",
+          "margin": 1.4276123046875
+        },
+        {
+          "id": "5acd052e07355d001abf31c0",
+          "kind": "missing",
+          "margin": 10.40000057220459
+        },
+        {
+          "id": "56dd304366d3e219004dac37",
+          "kind": "answerable",
+          "margin": 3.221273422241211
+        },
+        {
+          "id": "5acfc17677cf76001a685cf4",
+          "kind": "missing",
+          "margin": 9.559953689575195
+        },
+        {
+          "id": "570dfd080b85d914000d7c6b",
+          "kind": "answerable",
+          "margin": 1.8844337463378906
+        },
+        {
+          "id": "5ad2d83cd7d075001a42a445",
+          "kind": "missing",
+          "margin": 12.749959945678711
+        },
+        {
+          "id": "572fd7db947a6a140053cd47",
+          "kind": "answerable",
+          "margin": 13.067304611206055
+        },
+        {
+          "id": "5ad0d0e5645df0001a2d04c8",
+          "kind": "missing",
+          "margin": 11.746707916259766
+        },
+        {
+          "id": "56e70a356fe0821900b8ec92",
+          "kind": "answerable",
+          "margin": -3.2858734130859375
+        },
+        {
+          "id": "5a7881bbb73996001af5a6a7",
+          "kind": "missing",
+          "margin": 6.037477493286133
+        },
+        {
+          "id": "572bc28a111d821400f38f77",
+          "kind": "answerable",
+          "margin": -3.646169662475586
+        },
+        {
+          "id": "5acd857607355d001abf4561",
+          "kind": "missing",
+          "margin": 21.534557342529297
+        },
+        {
+          "id": "5726b98f5951b619008f7be1",
+          "kind": "answerable",
+          "margin": -1.9485816955566406
+        },
+        {
+          "id": "5acd628907355d001abf4025",
+          "kind": "missing",
+          "margin": 7.342355728149414
+        },
+        {
+          "id": "56ddcf4166d3e219004dacf9",
+          "kind": "answerable",
+          "margin": 11.395332336425781
+        },
+        {
+          "id": "5a6b1c23a9e0c9001a4e9ee2",
+          "kind": "missing",
+          "margin": 14.159192085266113
+        },
+        {
+          "id": "56f977b19e9bad19000a097c",
+          "kind": "answerable",
+          "margin": -3.5014991760253906
+        },
+        {
+          "id": "5a56c8e56349e2001acdcf36",
+          "kind": "missing",
+          "margin": 0.09674072265625
+        },
+        {
+          "id": "57279dc32ca10214002d9226",
+          "kind": "answerable",
+          "margin": 2.98187255859375
+        },
+        {
+          "id": "5aceb57332bba1001ae4b0fb",
+          "kind": "missing",
+          "margin": 13.391169548034668
+        },
+        {
+          "id": "57269b73708984140094cb7d",
+          "kind": "answerable",
+          "margin": -2.1625099182128906
+        },
+        {
+          "id": "5acfe05d77cf76001a686380",
+          "kind": "missing",
+          "margin": 14.055893898010254
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "kind": "answerable",
+          "margin": -6.430793762207031
+        },
+        {
+          "id": "5a81e42031013a001a334f83",
+          "kind": "missing",
+          "margin": 8.00830364227295
+        },
+        {
+          "id": "571aeaf69499d21900609bac",
+          "kind": "answerable",
+          "margin": 5.297628402709961
+        },
+        {
+          "id": "5acec97b32bba1001ae4b407",
+          "kind": "missing",
+          "margin": 9.28770923614502
+        },
+        {
+          "id": "572ab2ccbe1ee31400cb8190",
+          "kind": "answerable",
+          "margin": -0.8522205352783203
+        },
+        {
+          "id": "5ace3f9232bba1001ae4a06b",
+          "kind": "missing",
+          "margin": 8.755855560302734
+        },
+        {
+          "id": "5726abe25951b619008f79a3",
+          "kind": "answerable",
+          "margin": -7.818986892700195
+        },
+        {
+          "id": "5a20747a54a786001a36b349",
+          "kind": "missing",
+          "margin": 0.9120941162109375
+        },
+        {
+          "id": "570d48a6fed7b91900d45e01",
+          "kind": "answerable",
+          "margin": 1.4980697631835938
+        },
+        {
+          "id": "5acec6d432bba1001ae4b3b1",
+          "kind": "missing",
+          "margin": 15.178507804870605
+        },
+        {
+          "id": "571aa99d4faf5e1900b8abd6",
+          "kind": "answerable",
+          "margin": -1.0534038543701172
+        },
+        {
+          "id": "5acfbce377cf76001a685b86",
+          "kind": "missing",
+          "margin": 4.844486236572266
+        },
+        {
+          "id": "5726c81ef1498d1400e8eb19",
+          "kind": "answerable",
+          "margin": -0.15231704711914062
+        },
+        {
+          "id": "5a1e1c4b3de3f40018b264d2",
+          "kind": "missing",
+          "margin": 0.55889892578125
+        },
+        {
+          "id": "570e489e0b85d914000d7df2",
+          "kind": "answerable",
+          "margin": 2.628641128540039
+        },
+        {
+          "id": "5ad14c7f645df0001a2d1659",
+          "kind": "missing",
+          "margin": 4.835615158081055
+        },
+        {
+          "id": "56df23ff3277331400b4d997",
+          "kind": "answerable",
+          "margin": -2.3163528442382812
+        },
+        {
+          "id": "5ace35e132bba1001ae49e76",
+          "kind": "missing",
+          "margin": 9.202437400817871
+        },
+        {
+          "id": "5730a9732461fd1900a9cf66",
+          "kind": "answerable",
+          "margin": -6.626805305480957
+        },
+        {
+          "id": "5a650f65c2b11c001a425bc7",
+          "kind": "missing",
+          "margin": 11.28521728515625
+        },
+        {
+          "id": "56f9872e9e9bad19000a0a3d",
+          "kind": "answerable",
+          "margin": -2.017862319946289
+        },
+        {
+          "id": "5acfbd4c77cf76001a685ba1",
+          "kind": "missing",
+          "margin": 16.39934539794922
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "kind": "answerable",
+          "margin": 5.3770904541015625
+        },
+        {
+          "id": "5a8ca048fd22b3001a8d8c15",
+          "kind": "missing",
+          "margin": 19.179298400878906
+        },
+        {
+          "id": "572a776bfed8de19000d5c46",
+          "kind": "answerable",
+          "margin": 1.2224788665771484
+        },
+        {
+          "id": "5ad38cdf604f3c001a3fe5de",
+          "kind": "missing",
+          "margin": 13.027721405029297
+        },
+        {
+          "id": "5727e65b4b864d1900163f8b",
+          "kind": "answerable",
+          "margin": 11.95998477935791
+        },
+        {
+          "id": "5a4c36e77a6c4c001a2bbbb6",
+          "kind": "missing",
+          "margin": 11.610748291015625
+        },
+        {
+          "id": "572b6963f75d5e190021fdac",
+          "kind": "answerable",
+          "margin": 4.171762466430664
+        },
+        {
+          "id": "5ace67b632bba1001ae4a5b6",
+          "kind": "missing",
+          "margin": 5.2366838455200195
+        },
+        {
+          "id": "57294f546aef051400154c9d",
+          "kind": "answerable",
+          "margin": 1.982351303100586
+        },
+        {
+          "id": "5ad129fd645df0001a2d1029",
+          "kind": "missing",
+          "margin": 7.965106964111328
+        },
+        {
+          "id": "5728a75e4b864d1900164b92",
+          "kind": "answerable",
+          "margin": -1.5008049011230469
+        },
+        {
+          "id": "5ad211e7d7d075001a4282de",
+          "kind": "missing",
+          "margin": 3.790863037109375
+        },
+        {
+          "id": "572fef5e947a6a140053ce25",
+          "kind": "answerable",
+          "margin": -3.0715408325195312
+        },
+        {
+          "id": "5a541b8cbdaabd001a38683c",
+          "kind": "missing",
+          "margin": 11.239171981811523
+        },
+        {
+          "id": "572699885951b619008f7789",
+          "kind": "answerable",
+          "margin": -3.685270309448242
+        },
+        {
+          "id": "5a21a5b98a6e4f001aa08e50",
+          "kind": "missing",
+          "margin": -1.0070686340332031
+        },
+        {
+          "id": "5733fd57d058e614000b672e",
+          "kind": "answerable",
+          "margin": 4.032310485839844
+        },
+        {
+          "id": "5ad0eaf1645df0001a2d0854",
+          "kind": "missing",
+          "margin": 13.121978759765625
+        },
+        {
+          "id": "572a710827b69114009ef5c2",
+          "kind": "answerable",
+          "margin": 3.333285331726074
+        },
+        {
+          "id": "5ad371f4604f3c001a3fe299",
+          "kind": "missing",
+          "margin": 4.013758659362793
+        },
+        {
+          "id": "570a53286d058f1900182d54",
+          "kind": "answerable",
+          "margin": 1.4104042053222656
+        },
+        {
+          "id": "5a48796884b8a4001a7e78b3",
+          "kind": "missing",
+          "margin": 1.4837722778320312
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "kind": "answerable",
+          "margin": 2.130542755126953
+        },
+        {
+          "id": "5a550073134fea001a0e17cb",
+          "kind": "missing",
+          "margin": 3.424576759338379
+        },
+        {
+          "id": "570d0565fed7b91900d45bcb",
+          "kind": "answerable",
+          "margin": -1.1467418670654297
+        },
+        {
+          "id": "5ad159a0645df0001a2d1845",
+          "kind": "missing",
+          "margin": 8.512374877929688
+        },
+        {
+          "id": "56deed163277331400b4d828",
+          "kind": "answerable",
+          "margin": 3.8343162536621094
+        },
+        {
+          "id": "5acd1a5a07355d001abf3510",
+          "kind": "missing",
+          "margin": 8.501089096069336
+        },
+        {
+          "id": "56dfc460231d4119001abdc5",
+          "kind": "answerable",
+          "margin": 10.258131980895996
+        },
+        {
+          "id": "5a10e82f06e79900185c3467",
+          "kind": "missing",
+          "margin": 5.366869926452637
+        },
+        {
+          "id": "56e82fe000c9c71400d77611",
+          "kind": "answerable",
+          "margin": -3.1943740844726562
+        },
+        {
+          "id": "5ad278edd7d075001a429598",
+          "kind": "missing",
+          "margin": 12.947967529296875
+        },
+        {
+          "id": "5729fd8e6aef05140015517d",
+          "kind": "answerable",
+          "margin": -2.0951175689697266
+        },
+        {
+          "id": "5acd4c3307355d001abf3c58",
+          "kind": "missing",
+          "margin": 7.678194999694824
+        },
+        {
+          "id": "57268432f1498d1400e8e25e",
+          "kind": "answerable",
+          "margin": 4.98747444152832
+        },
+        {
+          "id": "5a847e367cf838001a46a877",
+          "kind": "missing",
+          "margin": 13.629888534545898
+        },
+        {
+          "id": "5731cd430fdd8d15006c654d",
+          "kind": "answerable",
+          "margin": 3.8271617889404297
+        },
+        {
+          "id": "5ad4d8665b96ef001a10a330",
+          "kind": "missing",
+          "margin": 8.002511978149414
+        },
+        {
+          "id": "572a756dfed8de19000d5c35",
+          "kind": "answerable",
+          "margin": 5.740764617919922
+        },
+        {
+          "id": "5ad38afb604f3c001a3fe5b5",
+          "kind": "missing",
+          "margin": 6.431815147399902
+        },
+        {
+          "id": "5728abac3acd2414000dfc93",
+          "kind": "answerable",
+          "margin": 6.596429824829102
+        },
+        {
+          "id": "5a4fea83af0d07001ae8cc86",
+          "kind": "missing",
+          "margin": 7.601164817810059
+        },
+        {
+          "id": "57328f64b9988014000c7684",
+          "kind": "answerable",
+          "margin": 2.7244739532470703
+        },
+        {
+          "id": "5a4e9663755ab9001a10f51d",
+          "kind": "missing",
+          "margin": 11.577083587646484
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "kind": "answerable",
+          "margin": 6.148948669433594
+        },
+        {
+          "id": "5a7b2ba921c2de001afe9d84",
+          "kind": "missing",
+          "margin": 9.407066345214844
+        },
+        {
+          "id": "56e09b2a7aa994140058e636",
+          "kind": "answerable",
+          "margin": -0.8335189819335938
+        },
+        {
+          "id": "5acdf66132bba1001ae498eb",
+          "kind": "missing",
+          "margin": 15.187355041503906
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "kind": "answerable",
+          "margin": -4.158830642700195
+        },
+        {
+          "id": "5ad3c735604f3c001a3ff03b",
+          "kind": "missing",
+          "margin": 6.139678001403809
+        },
+        {
+          "id": "570b6750ec8fbc190045b9e5",
+          "kind": "answerable",
+          "margin": 0.7459678649902344
+        },
+        {
+          "id": "5a5a217f9c0277001abe705e",
+          "kind": "missing",
+          "margin": 5.161045074462891
+        },
+        {
+          "id": "570b0ac3ec8fbc190045b802",
+          "kind": "answerable",
+          "margin": 8.380548477172852
+        },
+        {
+          "id": "5acd88dc07355d001abf4624",
+          "kind": "missing",
+          "margin": 9.23259449005127
+        },
+        {
+          "id": "57269446dd62a815002e8a29",
+          "kind": "answerable",
+          "margin": 1.709803581237793
+        },
+        {
+          "id": "5acf613977cf76001a684ceb",
+          "kind": "missing",
+          "margin": 13.271958351135254
+        },
+        {
+          "id": "573259a4e99e3014001e66ee",
+          "kind": "answerable",
+          "margin": -8.057229995727539
+        },
+        {
+          "id": "5ad3e772604f3c001a3ff60a",
+          "kind": "missing",
+          "margin": 12.947393417358398
+        },
+        {
+          "id": "5730f1c3e6313a140071cad9",
+          "kind": "answerable",
+          "margin": 2.8564815521240234
+        },
+        {
+          "id": "5a864535b4e223001a8e7521",
+          "kind": "missing",
+          "margin": 6.094562530517578
+        },
+        {
+          "id": "56e79feb00c9c71400d7740c",
+          "kind": "answerable",
+          "margin": -2.2788848876953125
+        },
+        {
+          "id": "5acf657877cf76001a684d4f",
+          "kind": "missing",
+          "margin": 7.4122161865234375
+        },
+        {
+          "id": "573401aa4776f419006616b2",
+          "kind": "answerable",
+          "margin": 6.207263946533203
+        },
+        {
+          "id": "5a68fdfb8476ee001a58a98f",
+          "kind": "missing",
+          "margin": 10.97585678100586
+        }
+      ]
+    },
+    "last_logit_optimization_max_error": 2.193450927734375e-05,
+    "val": {
+      "mean_margin": {
+        "answerable": 1.79112046957016,
+        "missing": 6.858881294727325
+      },
+      "mean_pair_separation": 5.0677608251571655,
+      "rows": [
+        {
+          "id": "570c22d96b8089140040fb4a",
+          "kind": "answerable",
+          "margin": 4.295734405517578
+        },
+        {
+          "id": "5ad368bc604f3c001a3fe0c3",
+          "kind": "missing",
+          "margin": 5.500804901123047
+        },
+        {
+          "id": "572814a54b864d190016440f",
+          "kind": "answerable",
+          "margin": 13.94101619720459
+        },
+        {
+          "id": "5acd478d07355d001abf3bf8",
+          "kind": "missing",
+          "margin": 5.6781158447265625
+        },
+        {
+          "id": "570afbdf6b8089140040f67a",
+          "kind": "answerable",
+          "margin": -0.6014442443847656
+        },
+        {
+          "id": "5a37134395360f001af1b3e1",
+          "kind": "missing",
+          "margin": 1.4566497802734375
+        },
+        {
+          "id": "5734257c4776f41900661962",
+          "kind": "answerable",
+          "margin": -6.1719207763671875
+        },
+        {
+          "id": "5a830437e60761001a2eb304",
+          "kind": "missing",
+          "margin": -3.1313533782958984
+        },
+        {
+          "id": "56f89312aef23719006261c5",
+          "kind": "answerable",
+          "margin": 5.972626686096191
+        },
+        {
+          "id": "5a7e3e1f70df9f001a875627",
+          "kind": "missing",
+          "margin": 17.8870792388916
+        },
+        {
+          "id": "57262eb438643c19005ad2b3",
+          "kind": "answerable",
+          "margin": 10.458272933959961
+        },
+        {
+          "id": "5a39f2ae2f14dd001ac7266b",
+          "kind": "missing",
+          "margin": 13.775179862976074
+        },
+        {
+          "id": "572b8eb4111d821400f38f07",
+          "kind": "answerable",
+          "margin": -2.6030216217041016
+        },
+        {
+          "id": "5a7a175117ab25001a8a031a",
+          "kind": "missing",
+          "margin": 2.5530433654785156
+        },
+        {
+          "id": "5709f59f4103511400d594c4",
+          "kind": "answerable",
+          "margin": -0.18080711364746094
+        },
+        {
+          "id": "5a105795decec9001847563b",
+          "kind": "missing",
+          "margin": 9.82522964477539
+        },
+        {
+          "id": "57263e4c38643c19005ad36c",
+          "kind": "answerable",
+          "margin": -2.1192264556884766
+        },
+        {
+          "id": "5a3a087c2f14dd001ac726c7",
+          "kind": "missing",
+          "margin": 12.178619384765625
+        },
+        {
+          "id": "573423284776f4190066192d",
+          "kind": "answerable",
+          "margin": 0.5075750350952148
+        },
+        {
+          "id": "5a83019fe60761001a2eb2e6",
+          "kind": "missing",
+          "margin": 11.670553207397461
+        },
+        {
+          "id": "5734203ed058e614000b6985",
+          "kind": "answerable",
+          "margin": 4.274662017822266
+        },
+        {
+          "id": "5a82fb2ee60761001a2eb2b7",
+          "kind": "missing",
+          "margin": 7.551266670227051
+        },
+        {
+          "id": "56ddecfe66d3e219004dae17",
+          "kind": "answerable",
+          "margin": -0.14668655395507812
+        },
+        {
+          "id": "5a1cd5884ea40d0018b06f50",
+          "kind": "missing",
+          "margin": 2.6343460083007812
+        },
+        {
+          "id": "5730f90c497a881900248ab5",
+          "kind": "answerable",
+          "margin": 5.611472129821777
+        },
+        {
+          "id": "5a273d6bc93d92001a400444",
+          "kind": "missing",
+          "margin": -1.1544923782348633
+        },
+        {
+          "id": "570b9fa36b8089140040f9c3",
+          "kind": "answerable",
+          "margin": 1.7453632354736328
+        },
+        {
+          "id": "5a07f52b3fc87400182070b0",
+          "kind": "missing",
+          "margin": 7.863345146179199
+        },
+        {
+          "id": "570a76684103511400d5973a",
+          "kind": "answerable",
+          "margin": -2.587893486022949
+        },
+        {
+          "id": "5acd869707355d001abf45a4",
+          "kind": "missing",
+          "margin": 11.214166641235352
+        },
+        {
+          "id": "5727affd4b864d1900163a68",
+          "kind": "answerable",
+          "margin": -3.737794876098633
+        },
+        {
+          "id": "5a73ceb842eae6001a3899f8",
+          "kind": "missing",
+          "margin": 4.239546775817871
+        }
+      ]
+    }
+  },
+  "random-lr0.0001-kl1.0": {
+    "train": {
+      "mean_margin": {
+        "answerable": -1.9646603465080261,
+        "missing": 5.423173159360886
+      },
+      "mean_pair_separation": 7.387833505868912,
+      "rows": [
+        {
+          "id": "57300da0947a6a140053cffe",
+          "kind": "answerable",
+          "margin": -3.483980178833008
+        },
+        {
+          "id": "5acd1c9c07355d001abf3581",
+          "kind": "missing",
+          "margin": 3.4604129791259766
+        },
+        {
+          "id": "57303233a23a5019007fcf5a",
+          "kind": "answerable",
+          "margin": 6.825639724731445
+        },
+        {
+          "id": "5ad3cb4c604f3c001a3ff10b",
+          "kind": "missing",
+          "margin": 1.56402587890625
+        },
+        {
+          "id": "5727a7474b864d1900163989",
+          "kind": "answerable",
+          "margin": 8.690156936645508
+        },
+        {
+          "id": "5a8c906afd22b3001a8d8b18",
+          "kind": "missing",
+          "margin": 8.752354621887207
+        },
+        {
+          "id": "570fc7d35ab6b81900390fcf",
+          "kind": "answerable",
+          "margin": 1.7984275817871094
+        },
+        {
+          "id": "5ad36094604f3c001a3fdf39",
+          "kind": "missing",
+          "margin": 2.135927200317383
+        },
+        {
+          "id": "572b858934ae481900deae64",
+          "kind": "answerable",
+          "margin": -0.11223030090332031
+        },
+        {
+          "id": "5acd735607355d001abf42e9",
+          "kind": "missing",
+          "margin": 12.257949829101562
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "kind": "answerable",
+          "margin": 6.140781402587891
+        },
+        {
+          "id": "5a5add719c0277001abe7201",
+          "kind": "missing",
+          "margin": 21.38545799255371
+        },
+        {
+          "id": "572812394b864d19001643b3",
+          "kind": "answerable",
+          "margin": -4.854177474975586
+        },
+        {
+          "id": "5acd69f607355d001abf411e",
+          "kind": "missing",
+          "margin": 3.7225284576416016
+        },
+        {
+          "id": "5728765c3acd2414000dfa1d",
+          "kind": "answerable",
+          "margin": -3.47216796875
+        },
+        {
+          "id": "5ad14abb645df0001a2d15c7",
+          "kind": "missing",
+          "margin": -2.2750301361083984
+        },
+        {
+          "id": "572f70f1b2c2fd1400568127",
+          "kind": "answerable",
+          "margin": 5.370342254638672
+        },
+        {
+          "id": "5acd091307355d001abf31ea",
+          "kind": "missing",
+          "margin": -5.150384902954102
+        },
+        {
+          "id": "5732a7f71d5d2e14009ff87e",
+          "kind": "answerable",
+          "margin": 3.1633872985839844
+        },
+        {
+          "id": "5a4ebb46af0d07001ae8cc0e",
+          "kind": "missing",
+          "margin": 7.729510307312012
+        },
+        {
+          "id": "5725dd19ec44d21400f3d6e4",
+          "kind": "answerable",
+          "margin": 0.7508449554443359
+        },
+        {
+          "id": "5acd052e07355d001abf31c0",
+          "kind": "missing",
+          "margin": 6.646036148071289
+        },
+        {
+          "id": "56dd304366d3e219004dac37",
+          "kind": "answerable",
+          "margin": -5.002231597900391
+        },
+        {
+          "id": "5acfc17677cf76001a685cf4",
+          "kind": "missing",
+          "margin": 5.079050064086914
+        },
+        {
+          "id": "570dfd080b85d914000d7c6b",
+          "kind": "answerable",
+          "margin": 0.5491466522216797
+        },
+        {
+          "id": "5ad2d83cd7d075001a42a445",
+          "kind": "missing",
+          "margin": 12.71848201751709
+        },
+        {
+          "id": "572fd7db947a6a140053cd47",
+          "kind": "answerable",
+          "margin": 12.859317779541016
+        },
+        {
+          "id": "5ad0d0e5645df0001a2d04c8",
+          "kind": "missing",
+          "margin": 6.953672409057617
+        },
+        {
+          "id": "56e70a356fe0821900b8ec92",
+          "kind": "answerable",
+          "margin": -5.677606582641602
+        },
+        {
+          "id": "5a7881bbb73996001af5a6a7",
+          "kind": "missing",
+          "margin": 2.5282325744628906
+        },
+        {
+          "id": "572bc28a111d821400f38f77",
+          "kind": "answerable",
+          "margin": -9.036077499389648
+        },
+        {
+          "id": "5acd857607355d001abf4561",
+          "kind": "missing",
+          "margin": 22.283588409423828
+        },
+        {
+          "id": "5726b98f5951b619008f7be1",
+          "kind": "answerable",
+          "margin": -4.435546875
+        },
+        {
+          "id": "5acd628907355d001abf4025",
+          "kind": "missing",
+          "margin": 1.84552001953125
+        },
+        {
+          "id": "56ddcf4166d3e219004dacf9",
+          "kind": "answerable",
+          "margin": 6.737979888916016
+        },
+        {
+          "id": "5a6b1c23a9e0c9001a4e9ee2",
+          "kind": "missing",
+          "margin": 10.626489639282227
+        },
+        {
+          "id": "56f977b19e9bad19000a097c",
+          "kind": "answerable",
+          "margin": -7.891391754150391
+        },
+        {
+          "id": "5a56c8e56349e2001acdcf36",
+          "kind": "missing",
+          "margin": -3.887826919555664
+        },
+        {
+          "id": "57279dc32ca10214002d9226",
+          "kind": "answerable",
+          "margin": 0.5483512878417969
+        },
+        {
+          "id": "5aceb57332bba1001ae4b0fb",
+          "kind": "missing",
+          "margin": 11.354801177978516
+        },
+        {
+          "id": "57269b73708984140094cb7d",
+          "kind": "answerable",
+          "margin": -1.977102279663086
+        },
+        {
+          "id": "5acfe05d77cf76001a686380",
+          "kind": "missing",
+          "margin": 11.83907699584961
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "kind": "answerable",
+          "margin": -13.026042938232422
+        },
+        {
+          "id": "5a81e42031013a001a334f83",
+          "kind": "missing",
+          "margin": 5.415557861328125
+        },
+        {
+          "id": "571aeaf69499d21900609bac",
+          "kind": "answerable",
+          "margin": 3.7026939392089844
+        },
+        {
+          "id": "5acec97b32bba1001ae4b407",
+          "kind": "missing",
+          "margin": 4.801158905029297
+        },
+        {
+          "id": "572ab2ccbe1ee31400cb8190",
+          "kind": "answerable",
+          "margin": -7.156711578369141
+        },
+        {
+          "id": "5ace3f9232bba1001ae4a06b",
+          "kind": "missing",
+          "margin": 7.318122863769531
+        },
+        {
+          "id": "5726abe25951b619008f79a3",
+          "kind": "answerable",
+          "margin": -13.528434753417969
+        },
+        {
+          "id": "5a20747a54a786001a36b349",
+          "kind": "missing",
+          "margin": -4.820289611816406
+        },
+        {
+          "id": "570d48a6fed7b91900d45e01",
+          "kind": "answerable",
+          "margin": -1.984720230102539
+        },
+        {
+          "id": "5acec6d432bba1001ae4b3b1",
+          "kind": "missing",
+          "margin": 11.674675941467285
+        },
+        {
+          "id": "571aa99d4faf5e1900b8abd6",
+          "kind": "answerable",
+          "margin": -11.823447227478027
+        },
+        {
+          "id": "5acfbce377cf76001a685b86",
+          "kind": "missing",
+          "margin": 0.30857181549072266
+        },
+        {
+          "id": "5726c81ef1498d1400e8eb19",
+          "kind": "answerable",
+          "margin": -2.572711944580078
+        },
+        {
+          "id": "5a1e1c4b3de3f40018b264d2",
+          "kind": "missing",
+          "margin": -1.4719982147216797
+        },
+        {
+          "id": "570e489e0b85d914000d7df2",
+          "kind": "answerable",
+          "margin": 0.48665618896484375
+        },
+        {
+          "id": "5ad14c7f645df0001a2d1659",
+          "kind": "missing",
+          "margin": 2.204133987426758
+        },
+        {
+          "id": "56df23ff3277331400b4d997",
+          "kind": "answerable",
+          "margin": -2.105276107788086
+        },
+        {
+          "id": "5ace35e132bba1001ae49e76",
+          "kind": "missing",
+          "margin": 3.92822265625
+        },
+        {
+          "id": "5730a9732461fd1900a9cf66",
+          "kind": "answerable",
+          "margin": -11.138358116149902
+        },
+        {
+          "id": "5a650f65c2b11c001a425bc7",
+          "kind": "missing",
+          "margin": 6.8588128089904785
+        },
+        {
+          "id": "56f9872e9e9bad19000a0a3d",
+          "kind": "answerable",
+          "margin": -9.787823677062988
+        },
+        {
+          "id": "5acfbd4c77cf76001a685ba1",
+          "kind": "missing",
+          "margin": 15.996574401855469
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "kind": "answerable",
+          "margin": -0.14071273803710938
+        },
+        {
+          "id": "5a8ca048fd22b3001a8d8c15",
+          "kind": "missing",
+          "margin": 17.46396255493164
+        },
+        {
+          "id": "572a776bfed8de19000d5c46",
+          "kind": "answerable",
+          "margin": -1.5579490661621094
+        },
+        {
+          "id": "5ad38cdf604f3c001a3fe5de",
+          "kind": "missing",
+          "margin": 7.643444061279297
+        },
+        {
+          "id": "5727e65b4b864d1900163f8b",
+          "kind": "answerable",
+          "margin": 13.733880043029785
+        },
+        {
+          "id": "5a4c36e77a6c4c001a2bbbb6",
+          "kind": "missing",
+          "margin": 6.740357398986816
+        },
+        {
+          "id": "572b6963f75d5e190021fdac",
+          "kind": "answerable",
+          "margin": 0.8463077545166016
+        },
+        {
+          "id": "5ace67b632bba1001ae4a5b6",
+          "kind": "missing",
+          "margin": -1.4631261825561523
+        },
+        {
+          "id": "57294f546aef051400154c9d",
+          "kind": "answerable",
+          "margin": -0.2255725860595703
+        },
+        {
+          "id": "5ad129fd645df0001a2d1029",
+          "kind": "missing",
+          "margin": 5.068680763244629
+        },
+        {
+          "id": "5728a75e4b864d1900164b92",
+          "kind": "answerable",
+          "margin": -7.999460220336914
+        },
+        {
+          "id": "5ad211e7d7d075001a4282de",
+          "kind": "missing",
+          "margin": -1.8338451385498047
+        },
+        {
+          "id": "572fef5e947a6a140053ce25",
+          "kind": "answerable",
+          "margin": -7.930946350097656
+        },
+        {
+          "id": "5a541b8cbdaabd001a38683c",
+          "kind": "missing",
+          "margin": 5.764761924743652
+        },
+        {
+          "id": "572699885951b619008f7789",
+          "kind": "answerable",
+          "margin": -10.288734436035156
+        },
+        {
+          "id": "5a21a5b98a6e4f001aa08e50",
+          "kind": "missing",
+          "margin": -7.317722320556641
+        },
+        {
+          "id": "5733fd57d058e614000b672e",
+          "kind": "answerable",
+          "margin": 6.140016555786133
+        },
+        {
+          "id": "5ad0eaf1645df0001a2d0854",
+          "kind": "missing",
+          "margin": 6.999760627746582
+        },
+        {
+          "id": "572a710827b69114009ef5c2",
+          "kind": "answerable",
+          "margin": -2.0848560333251953
+        },
+        {
+          "id": "5ad371f4604f3c001a3fe299",
+          "kind": "missing",
+          "margin": -1.1860694885253906
+        },
+        {
+          "id": "570a53286d058f1900182d54",
+          "kind": "answerable",
+          "margin": -7.513467788696289
+        },
+        {
+          "id": "5a48796884b8a4001a7e78b3",
+          "kind": "missing",
+          "margin": -5.762439727783203
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "kind": "answerable",
+          "margin": -2.2970638275146484
+        },
+        {
+          "id": "5a550073134fea001a0e17cb",
+          "kind": "missing",
+          "margin": -2.3960723876953125
+        },
+        {
+          "id": "570d0565fed7b91900d45bcb",
+          "kind": "answerable",
+          "margin": -8.055397033691406
+        },
+        {
+          "id": "5ad159a0645df0001a2d1845",
+          "kind": "missing",
+          "margin": 3.0871973037719727
+        },
+        {
+          "id": "56deed163277331400b4d828",
+          "kind": "answerable",
+          "margin": -0.20942115783691406
+        },
+        {
+          "id": "5acd1a5a07355d001abf3510",
+          "kind": "missing",
+          "margin": 8.027885437011719
+        },
+        {
+          "id": "56dfc460231d4119001abdc5",
+          "kind": "answerable",
+          "margin": 7.476065635681152
+        },
+        {
+          "id": "5a10e82f06e79900185c3467",
+          "kind": "missing",
+          "margin": 4.251036643981934
+        },
+        {
+          "id": "56e82fe000c9c71400d77611",
+          "kind": "answerable",
+          "margin": -9.377910614013672
+        },
+        {
+          "id": "5ad278edd7d075001a429598",
+          "kind": "missing",
+          "margin": 9.973297119140625
+        },
+        {
+          "id": "5729fd8e6aef05140015517d",
+          "kind": "answerable",
+          "margin": -4.648069381713867
+        },
+        {
+          "id": "5acd4c3307355d001abf3c58",
+          "kind": "missing",
+          "margin": 5.135088920593262
+        },
+        {
+          "id": "57268432f1498d1400e8e25e",
+          "kind": "answerable",
+          "margin": 7.027807235717773
+        },
+        {
+          "id": "5a847e367cf838001a46a877",
+          "kind": "missing",
+          "margin": 12.625
+        },
+        {
+          "id": "5731cd430fdd8d15006c654d",
+          "kind": "answerable",
+          "margin": 1.4417991638183594
+        },
+        {
+          "id": "5ad4d8665b96ef001a10a330",
+          "kind": "missing",
+          "margin": 6.256649017333984
+        },
+        {
+          "id": "572a756dfed8de19000d5c35",
+          "kind": "answerable",
+          "margin": 4.488397598266602
+        },
+        {
+          "id": "5ad38afb604f3c001a3fe5b5",
+          "kind": "missing",
+          "margin": 4.405004501342773
+        },
+        {
+          "id": "5728abac3acd2414000dfc93",
+          "kind": "answerable",
+          "margin": 2.0381860733032227
+        },
+        {
+          "id": "5a4fea83af0d07001ae8cc86",
+          "kind": "missing",
+          "margin": 3.5225343704223633
+        },
+        {
+          "id": "57328f64b9988014000c7684",
+          "kind": "answerable",
+          "margin": -3.1286325454711914
+        },
+        {
+          "id": "5a4e9663755ab9001a10f51d",
+          "kind": "missing",
+          "margin": 10.967466354370117
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "kind": "answerable",
+          "margin": -1.1184568405151367
+        },
+        {
+          "id": "5a7b2ba921c2de001afe9d84",
+          "kind": "missing",
+          "margin": 3.382782459259033
+        },
+        {
+          "id": "56e09b2a7aa994140058e636",
+          "kind": "answerable",
+          "margin": -6.858750343322754
+        },
+        {
+          "id": "5acdf66132bba1001ae498eb",
+          "kind": "missing",
+          "margin": 12.96224594116211
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "kind": "answerable",
+          "margin": -13.243229866027832
+        },
+        {
+          "id": "5ad3c735604f3c001a3ff03b",
+          "kind": "missing",
+          "margin": -2.239978790283203
+        },
+        {
+          "id": "570b6750ec8fbc190045b9e5",
+          "kind": "answerable",
+          "margin": -4.950921058654785
+        },
+        {
+          "id": "5a5a217f9c0277001abe705e",
+          "kind": "missing",
+          "margin": 2.1597518920898438
+        },
+        {
+          "id": "570b0ac3ec8fbc190045b802",
+          "kind": "answerable",
+          "margin": 4.51936149597168
+        },
+        {
+          "id": "5acd88dc07355d001abf4624",
+          "kind": "missing",
+          "margin": 6.1240081787109375
+        },
+        {
+          "id": "57269446dd62a815002e8a29",
+          "kind": "answerable",
+          "margin": -3.648042678833008
+        },
+        {
+          "id": "5acf613977cf76001a684ceb",
+          "kind": "missing",
+          "margin": 8.689623832702637
+        },
+        {
+          "id": "573259a4e99e3014001e66ee",
+          "kind": "answerable",
+          "margin": -14.713808059692383
+        },
+        {
+          "id": "5ad3e772604f3c001a3ff60a",
+          "kind": "missing",
+          "margin": 9.422260284423828
+        },
+        {
+          "id": "5730f1c3e6313a140071cad9",
+          "kind": "answerable",
+          "margin": 0.7851333618164062
+        },
+        {
+          "id": "5a864535b4e223001a8e7521",
+          "kind": "missing",
+          "margin": 1.7831954956054688
+        },
+        {
+          "id": "56e79feb00c9c71400d7740c",
+          "kind": "answerable",
+          "margin": -2.3283538818359375
+        },
+        {
+          "id": "5acf657877cf76001a684d4f",
+          "kind": "missing",
+          "margin": 2.093194007873535
+        },
+        {
+          "id": "573401aa4776f419006616b2",
+          "kind": "answerable",
+          "margin": -0.4731473922729492
+        },
+        {
+          "id": "5a68fdfb8476ee001a58a98f",
+          "kind": "missing",
+          "margin": 10.949728965759277
+        }
+      ]
+    },
+    "last_logit_optimization_max_error": 2.384185791015625e-05,
+    "val": {
+      "mean_margin": {
+        "answerable": -3.586948037147522,
+        "missing": 2.5247430205345154
+      },
+      "mean_pair_separation": 6.111691057682037,
+      "rows": [
+        {
+          "id": "570c22d96b8089140040fb4a",
+          "kind": "answerable",
+          "margin": 0.01839447021484375
+        },
+        {
+          "id": "5ad368bc604f3c001a3fe0c3",
+          "kind": "missing",
+          "margin": 1.5202956199645996
+        },
+        {
+          "id": "572814a54b864d190016440f",
+          "kind": "answerable",
+          "margin": 13.652854919433594
+        },
+        {
+          "id": "5acd478d07355d001abf3bf8",
+          "kind": "missing",
+          "margin": 1.2080364227294922
+        },
+        {
+          "id": "570afbdf6b8089140040f67a",
+          "kind": "answerable",
+          "margin": -7.192344665527344
+        },
+        {
+          "id": "5a37134395360f001af1b3e1",
+          "kind": "missing",
+          "margin": -1.9668073654174805
+        },
+        {
+          "id": "5734257c4776f41900661962",
+          "kind": "answerable",
+          "margin": -12.831689834594727
+        },
+        {
+          "id": "5a830437e60761001a2eb304",
+          "kind": "missing",
+          "margin": -9.49618148803711
+        },
+        {
+          "id": "56f89312aef23719006261c5",
+          "kind": "answerable",
+          "margin": -2.970334053039551
+        },
+        {
+          "id": "5a7e3e1f70df9f001a875627",
+          "kind": "missing",
+          "margin": 16.78738784790039
+        },
+        {
+          "id": "57262eb438643c19005ad2b3",
+          "kind": "answerable",
+          "margin": 7.000810623168945
+        },
+        {
+          "id": "5a39f2ae2f14dd001ac7266b",
+          "kind": "missing",
+          "margin": 10.747953414916992
+        },
+        {
+          "id": "572b8eb4111d821400f38f07",
+          "kind": "answerable",
+          "margin": -4.662004470825195
+        },
+        {
+          "id": "5a7a175117ab25001a8a031a",
+          "kind": "missing",
+          "margin": -7.179050922393799
+        },
+        {
+          "id": "5709f59f4103511400d594c4",
+          "kind": "answerable",
+          "margin": -4.232240676879883
+        },
+        {
+          "id": "5a105795decec9001847563b",
+          "kind": "missing",
+          "margin": 5.784048080444336
+        },
+        {
+          "id": "57263e4c38643c19005ad36c",
+          "kind": "answerable",
+          "margin": -9.637067794799805
+        },
+        {
+          "id": "5a3a087c2f14dd001ac726c7",
+          "kind": "missing",
+          "margin": 11.977886199951172
+        },
+        {
+          "id": "573423284776f4190066192d",
+          "kind": "answerable",
+          "margin": -4.109101295471191
+        },
+        {
+          "id": "5a83019fe60761001a2eb2e6",
+          "kind": "missing",
+          "margin": 11.461750030517578
+        },
+        {
+          "id": "5734203ed058e614000b6985",
+          "kind": "answerable",
+          "margin": -1.3026933670043945
+        },
+        {
+          "id": "5a82fb2ee60761001a2eb2b7",
+          "kind": "missing",
+          "margin": 0.8031530380249023
+        },
+        {
+          "id": "56ddecfe66d3e219004dae17",
+          "kind": "answerable",
+          "margin": -7.096124649047852
+        },
+        {
+          "id": "5a1cd5884ea40d0018b06f50",
+          "kind": "missing",
+          "margin": -4.344306945800781
+        },
+        {
+          "id": "5730f90c497a881900248ab5",
+          "kind": "answerable",
+          "margin": -1.1213197708129883
+        },
+        {
+          "id": "5a273d6bc93d92001a400444",
+          "kind": "missing",
+          "margin": -8.48143482208252
+        },
+        {
+          "id": "570b9fa36b8089140040f9c3",
+          "kind": "answerable",
+          "margin": -5.142900466918945
+        },
+        {
+          "id": "5a07f52b3fc87400182070b0",
+          "kind": "missing",
+          "margin": 3.7784423828125
+        },
+        {
+          "id": "570a76684103511400d5973a",
+          "kind": "answerable",
+          "margin": -8.172582626342773
+        },
+        {
+          "id": "5acd869707355d001abf45a4",
+          "kind": "missing",
+          "margin": 9.514814376831055
+        },
+        {
+          "id": "5727affd4b864d1900163a68",
+          "kind": "answerable",
+          "margin": -9.592824935913086
+        },
+        {
+          "id": "5a73ceb842eae6001a3899f8",
+          "kind": "missing",
+          "margin": -1.720097541809082
+        }
+      ]
+    }
+  },
+  "random-lr0.0003-kl1.0": {
+    "train": {
+      "mean_margin": {
+        "answerable": -0.09917604923248291,
+        "missing": 7.084031991660595
+      },
+      "mean_pair_separation": 7.183208040893078,
+      "rows": [
+        {
+          "id": "57300da0947a6a140053cffe",
+          "kind": "answerable",
+          "margin": -1.9983253479003906
+        },
+        {
+          "id": "5acd1c9c07355d001abf3581",
+          "kind": "missing",
+          "margin": 5.028362274169922
+        },
+        {
+          "id": "57303233a23a5019007fcf5a",
+          "kind": "answerable",
+          "margin": 9.192834854125977
+        },
+        {
+          "id": "5ad3cb4c604f3c001a3ff10b",
+          "kind": "missing",
+          "margin": 3.8897085189819336
+        },
+        {
+          "id": "5727a7474b864d1900163989",
+          "kind": "answerable",
+          "margin": 9.069379806518555
+        },
+        {
+          "id": "5a8c906afd22b3001a8d8b18",
+          "kind": "missing",
+          "margin": 10.10212516784668
+        },
+        {
+          "id": "570fc7d35ab6b81900390fcf",
+          "kind": "answerable",
+          "margin": 3.5550174713134766
+        },
+        {
+          "id": "5ad36094604f3c001a3fdf39",
+          "kind": "missing",
+          "margin": 3.487651824951172
+        },
+        {
+          "id": "572b858934ae481900deae64",
+          "kind": "answerable",
+          "margin": 3.214832305908203
+        },
+        {
+          "id": "5acd735607355d001abf42e9",
+          "kind": "missing",
+          "margin": 13.752582550048828
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "kind": "answerable",
+          "margin": 8.859749794006348
+        },
+        {
+          "id": "5a5add719c0277001abe7201",
+          "kind": "missing",
+          "margin": 22.371456146240234
+        },
+        {
+          "id": "572812394b864d19001643b3",
+          "kind": "answerable",
+          "margin": -3.2044219970703125
+        },
+        {
+          "id": "5acd69f607355d001abf411e",
+          "kind": "missing",
+          "margin": 4.450885772705078
+        },
+        {
+          "id": "5728765c3acd2414000dfa1d",
+          "kind": "answerable",
+          "margin": -1.9346160888671875
+        },
+        {
+          "id": "5ad14abb645df0001a2d15c7",
+          "kind": "missing",
+          "margin": -0.7919197082519531
+        },
+        {
+          "id": "572f70f1b2c2fd1400568127",
+          "kind": "answerable",
+          "margin": 6.475925445556641
+        },
+        {
+          "id": "5acd091307355d001abf31ea",
+          "kind": "missing",
+          "margin": -2.592885971069336
+        },
+        {
+          "id": "5732a7f71d5d2e14009ff87e",
+          "kind": "answerable",
+          "margin": 4.73228645324707
+        },
+        {
+          "id": "5a4ebb46af0d07001ae8cc0e",
+          "kind": "missing",
+          "margin": 9.231389999389648
+        },
+        {
+          "id": "5725dd19ec44d21400f3d6e4",
+          "kind": "answerable",
+          "margin": 1.7038154602050781
+        },
+        {
+          "id": "5acd052e07355d001abf31c0",
+          "kind": "missing",
+          "margin": 8.642573356628418
+        },
+        {
+          "id": "56dd304366d3e219004dac37",
+          "kind": "answerable",
+          "margin": -1.9140090942382812
+        },
+        {
+          "id": "5acfc17677cf76001a685cf4",
+          "kind": "missing",
+          "margin": 6.479438781738281
+        },
+        {
+          "id": "570dfd080b85d914000d7c6b",
+          "kind": "answerable",
+          "margin": 2.051982879638672
+        },
+        {
+          "id": "5ad2d83cd7d075001a42a445",
+          "kind": "missing",
+          "margin": 13.411245346069336
+        },
+        {
+          "id": "572fd7db947a6a140053cd47",
+          "kind": "answerable",
+          "margin": 13.914796829223633
+        },
+        {
+          "id": "5ad0d0e5645df0001a2d04c8",
+          "kind": "missing",
+          "margin": 10.065524101257324
+        },
+        {
+          "id": "56e70a356fe0821900b8ec92",
+          "kind": "answerable",
+          "margin": -3.7543296813964844
+        },
+        {
+          "id": "5a7881bbb73996001af5a6a7",
+          "kind": "missing",
+          "margin": 3.7300052642822266
+        },
+        {
+          "id": "572bc28a111d821400f38f77",
+          "kind": "answerable",
+          "margin": -7.630197525024414
+        },
+        {
+          "id": "5acd857607355d001abf4561",
+          "kind": "missing",
+          "margin": 22.850997924804688
+        },
+        {
+          "id": "5726b98f5951b619008f7be1",
+          "kind": "answerable",
+          "margin": -3.292461395263672
+        },
+        {
+          "id": "5acd628907355d001abf4025",
+          "kind": "missing",
+          "margin": 3.7228288650512695
+        },
+        {
+          "id": "56ddcf4166d3e219004dacf9",
+          "kind": "answerable",
+          "margin": 8.948637008666992
+        },
+        {
+          "id": "5a6b1c23a9e0c9001a4e9ee2",
+          "kind": "missing",
+          "margin": 12.506536483764648
+        },
+        {
+          "id": "56f977b19e9bad19000a097c",
+          "kind": "answerable",
+          "margin": -4.482992172241211
+        },
+        {
+          "id": "5a56c8e56349e2001acdcf36",
+          "kind": "missing",
+          "margin": -1.0463619232177734
+        },
+        {
+          "id": "57279dc32ca10214002d9226",
+          "kind": "answerable",
+          "margin": 1.686431884765625
+        },
+        {
+          "id": "5aceb57332bba1001ae4b0fb",
+          "kind": "missing",
+          "margin": 12.617204666137695
+        },
+        {
+          "id": "57269b73708984140094cb7d",
+          "kind": "answerable",
+          "margin": -0.8939285278320312
+        },
+        {
+          "id": "5acfe05d77cf76001a686380",
+          "kind": "missing",
+          "margin": 12.87065315246582
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "kind": "answerable",
+          "margin": -10.200228691101074
+        },
+        {
+          "id": "5a81e42031013a001a334f83",
+          "kind": "missing",
+          "margin": 7.139690399169922
+        },
+        {
+          "id": "571aeaf69499d21900609bac",
+          "kind": "answerable",
+          "margin": 5.391164779663086
+        },
+        {
+          "id": "5acec97b32bba1001ae4b407",
+          "kind": "missing",
+          "margin": 7.322170257568359
+        },
+        {
+          "id": "572ab2ccbe1ee31400cb8190",
+          "kind": "answerable",
+          "margin": -5.174978256225586
+        },
+        {
+          "id": "5ace3f9232bba1001ae4a06b",
+          "kind": "missing",
+          "margin": 7.851530075073242
+        },
+        {
+          "id": "5726abe25951b619008f79a3",
+          "kind": "answerable",
+          "margin": -11.84589672088623
+        },
+        {
+          "id": "5a20747a54a786001a36b349",
+          "kind": "missing",
+          "margin": -2.755923271179199
+        },
+        {
+          "id": "570d48a6fed7b91900d45e01",
+          "kind": "answerable",
+          "margin": -0.7040386199951172
+        },
+        {
+          "id": "5acec6d432bba1001ae4b3b1",
+          "kind": "missing",
+          "margin": 12.551023483276367
+        },
+        {
+          "id": "571aa99d4faf5e1900b8abd6",
+          "kind": "answerable",
+          "margin": -9.227481842041016
+        },
+        {
+          "id": "5acfbce377cf76001a685b86",
+          "kind": "missing",
+          "margin": 2.9008216857910156
+        },
+        {
+          "id": "5726c81ef1498d1400e8eb19",
+          "kind": "answerable",
+          "margin": -1.3347244262695312
+        },
+        {
+          "id": "5a1e1c4b3de3f40018b264d2",
+          "kind": "missing",
+          "margin": -0.3164100646972656
+        },
+        {
+          "id": "570e489e0b85d914000d7df2",
+          "kind": "answerable",
+          "margin": 1.703805923461914
+        },
+        {
+          "id": "5ad14c7f645df0001a2d1659",
+          "kind": "missing",
+          "margin": 3.3428955078125
+        },
+        {
+          "id": "56df23ff3277331400b4d997",
+          "kind": "answerable",
+          "margin": -0.8511371612548828
+        },
+        {
+          "id": "5ace35e132bba1001ae49e76",
+          "kind": "missing",
+          "margin": 6.292853355407715
+        },
+        {
+          "id": "5730a9732461fd1900a9cf66",
+          "kind": "answerable",
+          "margin": -8.883514404296875
+        },
+        {
+          "id": "5a650f65c2b11c001a425bc7",
+          "kind": "missing",
+          "margin": 8.795148849487305
+        },
+        {
+          "id": "56f9872e9e9bad19000a0a3d",
+          "kind": "answerable",
+          "margin": -6.5697526931762695
+        },
+        {
+          "id": "5acfbd4c77cf76001a685ba1",
+          "kind": "missing",
+          "margin": 16.786605834960938
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "kind": "answerable",
+          "margin": 1.3581600189208984
+        },
+        {
+          "id": "5a8ca048fd22b3001a8d8c15",
+          "kind": "missing",
+          "margin": 17.677059173583984
+        },
+        {
+          "id": "572a776bfed8de19000d5c46",
+          "kind": "answerable",
+          "margin": -0.1852741241455078
+        },
+        {
+          "id": "5ad38cdf604f3c001a3fe5de",
+          "kind": "missing",
+          "margin": 9.780500411987305
+        },
+        {
+          "id": "5727e65b4b864d1900163f8b",
+          "kind": "answerable",
+          "margin": 14.94825267791748
+        },
+        {
+          "id": "5a4c36e77a6c4c001a2bbbb6",
+          "kind": "missing",
+          "margin": 9.192505836486816
+        },
+        {
+          "id": "572b6963f75d5e190021fdac",
+          "kind": "answerable",
+          "margin": 2.3124542236328125
+        },
+        {
+          "id": "5ace67b632bba1001ae4a5b6",
+          "kind": "missing",
+          "margin": 1.6434412002563477
+        },
+        {
+          "id": "57294f546aef051400154c9d",
+          "kind": "answerable",
+          "margin": 0.8302421569824219
+        },
+        {
+          "id": "5ad129fd645df0001a2d1029",
+          "kind": "missing",
+          "margin": 6.06328010559082
+        },
+        {
+          "id": "5728a75e4b864d1900164b92",
+          "kind": "answerable",
+          "margin": -5.618831634521484
+        },
+        {
+          "id": "5ad211e7d7d075001a4282de",
+          "kind": "missing",
+          "margin": -0.18500900268554688
+        },
+        {
+          "id": "572fef5e947a6a140053ce25",
+          "kind": "answerable",
+          "margin": -6.047356605529785
+        },
+        {
+          "id": "5a541b8cbdaabd001a38683c",
+          "kind": "missing",
+          "margin": 8.461027145385742
+        },
+        {
+          "id": "572699885951b619008f7789",
+          "kind": "answerable",
+          "margin": -6.974542617797852
+        },
+        {
+          "id": "5a21a5b98a6e4f001aa08e50",
+          "kind": "missing",
+          "margin": -4.244302749633789
+        },
+        {
+          "id": "5733fd57d058e614000b672e",
+          "kind": "answerable",
+          "margin": 6.673452377319336
+        },
+        {
+          "id": "5ad0eaf1645df0001a2d0854",
+          "kind": "missing",
+          "margin": 8.424493789672852
+        },
+        {
+          "id": "572a710827b69114009ef5c2",
+          "kind": "answerable",
+          "margin": -0.4083442687988281
+        },
+        {
+          "id": "5ad371f4604f3c001a3fe299",
+          "kind": "missing",
+          "margin": 0.4251976013183594
+        },
+        {
+          "id": "570a53286d058f1900182d54",
+          "kind": "answerable",
+          "margin": -4.9195709228515625
+        },
+        {
+          "id": "5a48796884b8a4001a7e78b3",
+          "kind": "missing",
+          "margin": -3.05072021484375
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "kind": "answerable",
+          "margin": 1.6110973358154297
+        },
+        {
+          "id": "5a550073134fea001a0e17cb",
+          "kind": "missing",
+          "margin": 1.2317981719970703
+        },
+        {
+          "id": "570d0565fed7b91900d45bcb",
+          "kind": "answerable",
+          "margin": -5.95744514465332
+        },
+        {
+          "id": "5ad159a0645df0001a2d1845",
+          "kind": "missing",
+          "margin": 4.892240524291992
+        },
+        {
+          "id": "56deed163277331400b4d828",
+          "kind": "answerable",
+          "margin": 1.651275634765625
+        },
+        {
+          "id": "5acd1a5a07355d001abf3510",
+          "kind": "missing",
+          "margin": 8.891024589538574
+        },
+        {
+          "id": "56dfc460231d4119001abdc5",
+          "kind": "answerable",
+          "margin": 9.428019523620605
+        },
+        {
+          "id": "5a10e82f06e79900185c3467",
+          "kind": "missing",
+          "margin": 5.509805679321289
+        },
+        {
+          "id": "56e82fe000c9c71400d77611",
+          "kind": "answerable",
+          "margin": -7.211109161376953
+        },
+        {
+          "id": "5ad278edd7d075001a429598",
+          "kind": "missing",
+          "margin": 11.151208877563477
+        },
+        {
+          "id": "5729fd8e6aef05140015517d",
+          "kind": "answerable",
+          "margin": -2.621915817260742
+        },
+        {
+          "id": "5acd4c3307355d001abf3c58",
+          "kind": "missing",
+          "margin": 6.591306686401367
+        },
+        {
+          "id": "57268432f1498d1400e8e25e",
+          "kind": "answerable",
+          "margin": 7.439916610717773
+        },
+        {
+          "id": "5a847e367cf838001a46a877",
+          "kind": "missing",
+          "margin": 12.976689338684082
+        },
+        {
+          "id": "5731cd430fdd8d15006c654d",
+          "kind": "answerable",
+          "margin": 2.7636680603027344
+        },
+        {
+          "id": "5ad4d8665b96ef001a10a330",
+          "kind": "missing",
+          "margin": 7.943319320678711
+        },
+        {
+          "id": "572a756dfed8de19000d5c35",
+          "kind": "answerable",
+          "margin": 5.529006004333496
+        },
+        {
+          "id": "5ad38afb604f3c001a3fe5b5",
+          "kind": "missing",
+          "margin": 5.303138732910156
+        },
+        {
+          "id": "5728abac3acd2414000dfc93",
+          "kind": "answerable",
+          "margin": 3.560924530029297
+        },
+        {
+          "id": "5a4fea83af0d07001ae8cc86",
+          "kind": "missing",
+          "margin": 5.871428489685059
+        },
+        {
+          "id": "57328f64b9988014000c7684",
+          "kind": "answerable",
+          "margin": -0.8515987396240234
+        },
+        {
+          "id": "5a4e9663755ab9001a10f51d",
+          "kind": "missing",
+          "margin": 12.177421569824219
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "kind": "answerable",
+          "margin": 1.8858118057250977
+        },
+        {
+          "id": "5a7b2ba921c2de001afe9d84",
+          "kind": "missing",
+          "margin": 5.917466640472412
+        },
+        {
+          "id": "56e09b2a7aa994140058e636",
+          "kind": "answerable",
+          "margin": -4.131095886230469
+        },
+        {
+          "id": "5acdf66132bba1001ae498eb",
+          "kind": "missing",
+          "margin": 14.193625450134277
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "kind": "answerable",
+          "margin": -11.175156593322754
+        },
+        {
+          "id": "5ad3c735604f3c001a3ff03b",
+          "kind": "missing",
+          "margin": -0.33621788024902344
+        },
+        {
+          "id": "570b6750ec8fbc190045b9e5",
+          "kind": "answerable",
+          "margin": -3.110982894897461
+        },
+        {
+          "id": "5a5a217f9c0277001abe705e",
+          "kind": "missing",
+          "margin": 3.4418716430664062
+        },
+        {
+          "id": "570b0ac3ec8fbc190045b802",
+          "kind": "answerable",
+          "margin": 6.528425216674805
+        },
+        {
+          "id": "5acd88dc07355d001abf4624",
+          "kind": "missing",
+          "margin": 7.743370056152344
+        },
+        {
+          "id": "57269446dd62a815002e8a29",
+          "kind": "answerable",
+          "margin": -1.7474651336669922
+        },
+        {
+          "id": "5acf613977cf76001a684ceb",
+          "kind": "missing",
+          "margin": 10.620321273803711
+        },
+        {
+          "id": "573259a4e99e3014001e66ee",
+          "kind": "answerable",
+          "margin": -12.072868347167969
+        },
+        {
+          "id": "5ad3e772604f3c001a3ff60a",
+          "kind": "missing",
+          "margin": 11.114285469055176
+        },
+        {
+          "id": "5730f1c3e6313a140071cad9",
+          "kind": "answerable",
+          "margin": 2.4402542114257812
+        },
+        {
+          "id": "5a864535b4e223001a8e7521",
+          "kind": "missing",
+          "margin": 3.281778335571289
+        },
+        {
+          "id": "56e79feb00c9c71400d7740c",
+          "kind": "answerable",
+          "margin": -0.8494491577148438
+        },
+        {
+          "id": "5acf657877cf76001a684d4f",
+          "kind": "missing",
+          "margin": 4.293245315551758
+        },
+        {
+          "id": "573401aa4776f419006616b2",
+          "kind": "answerable",
+          "margin": 1.9711532592773438
+        },
+        {
+          "id": "5a68fdfb8476ee001a58a98f",
+          "kind": "missing",
+          "margin": 11.69103717803955
+        }
+      ]
+    },
+    "last_logit_optimization_max_error": 2.002716064453125e-05,
+    "val": {
+      "mean_margin": {
+        "answerable": -1.4165344834327698,
+        "missing": 4.376879721879959
+      },
+      "mean_pair_separation": 5.793414205312729,
+      "rows": [
+        {
+          "id": "570c22d96b8089140040fb4a",
+          "kind": "answerable",
+          "margin": 2.3335800170898438
+        },
+        {
+          "id": "5ad368bc604f3c001a3fe0c3",
+          "kind": "missing",
+          "margin": 2.7420310974121094
+        },
+        {
+          "id": "572814a54b864d190016440f",
+          "kind": "answerable",
+          "margin": 15.190508842468262
+        },
+        {
+          "id": "5acd478d07355d001abf3bf8",
+          "kind": "missing",
+          "margin": 2.85221004486084
+        },
+        {
+          "id": "570afbdf6b8089140040f67a",
+          "kind": "answerable",
+          "margin": -5.256026268005371
+        },
+        {
+          "id": "5a37134395360f001af1b3e1",
+          "kind": "missing",
+          "margin": -0.5041031837463379
+        },
+        {
+          "id": "5734257c4776f41900661962",
+          "kind": "answerable",
+          "margin": -10.53512954711914
+        },
+        {
+          "id": "5a830437e60761001a2eb304",
+          "kind": "missing",
+          "margin": -7.214681625366211
+        },
+        {
+          "id": "56f89312aef23719006261c5",
+          "kind": "answerable",
+          "margin": -0.5992631912231445
+        },
+        {
+          "id": "5a7e3e1f70df9f001a875627",
+          "kind": "missing",
+          "margin": 18.284107208251953
+        },
+        {
+          "id": "57262eb438643c19005ad2b3",
+          "kind": "answerable",
+          "margin": 8.271453857421875
+        },
+        {
+          "id": "5a39f2ae2f14dd001ac7266b",
+          "kind": "missing",
+          "margin": 13.069055557250977
+        },
+        {
+          "id": "572b8eb4111d821400f38f07",
+          "kind": "answerable",
+          "margin": -2.9248390197753906
+        },
+        {
+          "id": "5a7a175117ab25001a8a031a",
+          "kind": "missing",
+          "margin": -4.2785491943359375
+        },
+        {
+          "id": "5709f59f4103511400d594c4",
+          "kind": "answerable",
+          "margin": -2.4363365173339844
+        },
+        {
+          "id": "5a105795decec9001847563b",
+          "kind": "missing",
+          "margin": 6.870126724243164
+        },
+        {
+          "id": "57263e4c38643c19005ad36c",
+          "kind": "answerable",
+          "margin": -6.793625831604004
+        },
+        {
+          "id": "5a3a087c2f14dd001ac726c7",
+          "kind": "missing",
+          "margin": 13.055513381958008
+        },
+        {
+          "id": "573423284776f4190066192d",
+          "kind": "answerable",
+          "margin": -1.3341550827026367
+        },
+        {
+          "id": "5a83019fe60761001a2eb2e6",
+          "kind": "missing",
+          "margin": 12.548763275146484
+        },
+        {
+          "id": "5734203ed058e614000b6985",
+          "kind": "answerable",
+          "margin": 0.51129150390625
+        },
+        {
+          "id": "5a82fb2ee60761001a2eb2b7",
+          "kind": "missing",
+          "margin": 2.6103010177612305
+        },
+        {
+          "id": "56ddecfe66d3e219004dae17",
+          "kind": "answerable",
+          "margin": -3.9261417388916016
+        },
+        {
+          "id": "5a1cd5884ea40d0018b06f50",
+          "kind": "missing",
+          "margin": -1.7746086120605469
+        },
+        {
+          "id": "5730f90c497a881900248ab5",
+          "kind": "answerable",
+          "margin": 1.2972679138183594
+        },
+        {
+          "id": "5a273d6bc93d92001a400444",
+          "kind": "missing",
+          "margin": -5.804959297180176
+        },
+        {
+          "id": "570b9fa36b8089140040f9c3",
+          "kind": "answerable",
+          "margin": -2.8437137603759766
+        },
+        {
+          "id": "5a07f52b3fc87400182070b0",
+          "kind": "missing",
+          "margin": 5.915018081665039
+        },
+        {
+          "id": "570a76684103511400d5973a",
+          "kind": "answerable",
+          "margin": -5.882654190063477
+        },
+        {
+          "id": "5acd869707355d001abf45a4",
+          "kind": "missing",
+          "margin": 10.792718887329102
+        },
+        {
+          "id": "5727affd4b864d1900163a68",
+          "kind": "answerable",
+          "margin": -7.73676872253418
+        },
+        {
+          "id": "5a73ceb842eae6001a3899f8",
+          "kind": "missing",
+          "margin": 0.8671321868896484
+        }
+      ]
+    }
+  },
+  "lora-lr0.0001-kl1.0": {
+    "train": {
+      "mean_margin": {
+        "answerable": -0.9013988077640533,
+        "missing": 6.384792238473892
+      },
+      "mean_pair_separation": 7.286191046237946,
+      "rows": [
+        {
+          "id": "57300da0947a6a140053cffe",
+          "kind": "answerable",
+          "margin": -2.1665916442871094
+        },
+        {
+          "id": "5acd1c9c07355d001abf3581",
+          "kind": "missing",
+          "margin": 4.2585859298706055
+        },
+        {
+          "id": "57303233a23a5019007fcf5a",
+          "kind": "answerable",
+          "margin": 8.243595123291016
+        },
+        {
+          "id": "5ad3cb4c604f3c001a3ff10b",
+          "kind": "missing",
+          "margin": 3.3197755813598633
+        },
+        {
+          "id": "5727a7474b864d1900163989",
+          "kind": "answerable",
+          "margin": 9.608367919921875
+        },
+        {
+          "id": "5a8c906afd22b3001a8d8b18",
+          "kind": "missing",
+          "margin": 9.81435775756836
+        },
+        {
+          "id": "570fc7d35ab6b81900390fcf",
+          "kind": "answerable",
+          "margin": 2.1829872131347656
+        },
+        {
+          "id": "5ad36094604f3c001a3fdf39",
+          "kind": "missing",
+          "margin": 2.573617935180664
+        },
+        {
+          "id": "572b858934ae481900deae64",
+          "kind": "answerable",
+          "margin": 0.9747018814086914
+        },
+        {
+          "id": "5acd735607355d001abf42e9",
+          "kind": "missing",
+          "margin": 13.089776039123535
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "kind": "answerable",
+          "margin": 7.628268241882324
+        },
+        {
+          "id": "5a5add719c0277001abe7201",
+          "kind": "missing",
+          "margin": 21.709577560424805
+        },
+        {
+          "id": "572812394b864d19001643b3",
+          "kind": "answerable",
+          "margin": -3.3778915405273438
+        },
+        {
+          "id": "5acd69f607355d001abf411e",
+          "kind": "missing",
+          "margin": 4.131998062133789
+        },
+        {
+          "id": "5728765c3acd2414000dfa1d",
+          "kind": "answerable",
+          "margin": -2.4292068481445312
+        },
+        {
+          "id": "5ad14abb645df0001a2d15c7",
+          "kind": "missing",
+          "margin": -1.3351783752441406
+        },
+        {
+          "id": "572f70f1b2c2fd1400568127",
+          "kind": "answerable",
+          "margin": 6.579376220703125
+        },
+        {
+          "id": "5acd091307355d001abf31ea",
+          "kind": "missing",
+          "margin": -3.434718132019043
+        },
+        {
+          "id": "5732a7f71d5d2e14009ff87e",
+          "kind": "answerable",
+          "margin": 4.149627685546875
+        },
+        {
+          "id": "5a4ebb46af0d07001ae8cc0e",
+          "kind": "missing",
+          "margin": 8.693068504333496
+        },
+        {
+          "id": "5725dd19ec44d21400f3d6e4",
+          "kind": "answerable",
+          "margin": 1.1027908325195312
+        },
+        {
+          "id": "5acd052e07355d001abf31c0",
+          "kind": "missing",
+          "margin": 7.096405029296875
+        },
+        {
+          "id": "56dd304366d3e219004dac37",
+          "kind": "answerable",
+          "margin": -3.5304718017578125
+        },
+        {
+          "id": "5acfc17677cf76001a685cf4",
+          "kind": "missing",
+          "margin": 5.916515350341797
+        },
+        {
+          "id": "570dfd080b85d914000d7c6b",
+          "kind": "answerable",
+          "margin": 1.3516082763671875
+        },
+        {
+          "id": "5ad2d83cd7d075001a42a445",
+          "kind": "missing",
+          "margin": 12.925958633422852
+        },
+        {
+          "id": "572fd7db947a6a140053cd47",
+          "kind": "answerable",
+          "margin": 13.910103797912598
+        },
+        {
+          "id": "5ad0d0e5645df0001a2d04c8",
+          "kind": "missing",
+          "margin": 7.995737075805664
+        },
+        {
+          "id": "56e70a356fe0821900b8ec92",
+          "kind": "answerable",
+          "margin": -4.5854034423828125
+        },
+        {
+          "id": "5a7881bbb73996001af5a6a7",
+          "kind": "missing",
+          "margin": 2.9263267517089844
+        },
+        {
+          "id": "572bc28a111d821400f38f77",
+          "kind": "answerable",
+          "margin": -8.094358444213867
+        },
+        {
+          "id": "5acd857607355d001abf4561",
+          "kind": "missing",
+          "margin": 22.617141723632812
+        },
+        {
+          "id": "5726b98f5951b619008f7be1",
+          "kind": "answerable",
+          "margin": -3.9140758514404297
+        },
+        {
+          "id": "5acd628907355d001abf4025",
+          "kind": "missing",
+          "margin": 3.247465133666992
+        },
+        {
+          "id": "56ddcf4166d3e219004dacf9",
+          "kind": "answerable",
+          "margin": 8.18873119354248
+        },
+        {
+          "id": "5a6b1c23a9e0c9001a4e9ee2",
+          "kind": "missing",
+          "margin": 12.473506927490234
+        },
+        {
+          "id": "56f977b19e9bad19000a097c",
+          "kind": "answerable",
+          "margin": -7.413619041442871
+        },
+        {
+          "id": "5a56c8e56349e2001acdcf36",
+          "kind": "missing",
+          "margin": -3.4518232345581055
+        },
+        {
+          "id": "57279dc32ca10214002d9226",
+          "kind": "answerable",
+          "margin": 0.6999855041503906
+        },
+        {
+          "id": "5aceb57332bba1001ae4b0fb",
+          "kind": "missing",
+          "margin": 11.458810806274414
+        },
+        {
+          "id": "57269b73708984140094cb7d",
+          "kind": "answerable",
+          "margin": -1.475555419921875
+        },
+        {
+          "id": "5acfe05d77cf76001a686380",
+          "kind": "missing",
+          "margin": 12.051084518432617
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "kind": "answerable",
+          "margin": -12.736285209655762
+        },
+        {
+          "id": "5a81e42031013a001a334f83",
+          "kind": "missing",
+          "margin": 5.712160110473633
+        },
+        {
+          "id": "571aeaf69499d21900609bac",
+          "kind": "answerable",
+          "margin": 4.869176864624023
+        },
+        {
+          "id": "5acec97b32bba1001ae4b407",
+          "kind": "missing",
+          "margin": 6.129148483276367
+        },
+        {
+          "id": "572ab2ccbe1ee31400cb8190",
+          "kind": "answerable",
+          "margin": -6.0504150390625
+        },
+        {
+          "id": "5ace3f9232bba1001ae4a06b",
+          "kind": "missing",
+          "margin": 7.9693756103515625
+        },
+        {
+          "id": "5726abe25951b619008f79a3",
+          "kind": "answerable",
+          "margin": -12.35599422454834
+        },
+        {
+          "id": "5a20747a54a786001a36b349",
+          "kind": "missing",
+          "margin": -3.000661849975586
+        },
+        {
+          "id": "570d48a6fed7b91900d45e01",
+          "kind": "answerable",
+          "margin": -1.2150821685791016
+        },
+        {
+          "id": "5acec6d432bba1001ae4b3b1",
+          "kind": "missing",
+          "margin": 12.8242769241333
+        },
+        {
+          "id": "571aa99d4faf5e1900b8abd6",
+          "kind": "answerable",
+          "margin": -10.421747207641602
+        },
+        {
+          "id": "5acfbce377cf76001a685b86",
+          "kind": "missing",
+          "margin": 1.6877546310424805
+        },
+        {
+          "id": "5726c81ef1498d1400e8eb19",
+          "kind": "answerable",
+          "margin": -1.7434730529785156
+        },
+        {
+          "id": "5a1e1c4b3de3f40018b264d2",
+          "kind": "missing",
+          "margin": -0.8268928527832031
+        },
+        {
+          "id": "570e489e0b85d914000d7df2",
+          "kind": "answerable",
+          "margin": 0.5815010070800781
+        },
+        {
+          "id": "5ad14c7f645df0001a2d1659",
+          "kind": "missing",
+          "margin": 2.2710342407226562
+        },
+        {
+          "id": "56df23ff3277331400b4d997",
+          "kind": "answerable",
+          "margin": -1.4781341552734375
+        },
+        {
+          "id": "5ace35e132bba1001ae49e76",
+          "kind": "missing",
+          "margin": 4.68084716796875
+        },
+        {
+          "id": "5730a9732461fd1900a9cf66",
+          "kind": "answerable",
+          "margin": -9.974172592163086
+        },
+        {
+          "id": "5a650f65c2b11c001a425bc7",
+          "kind": "missing",
+          "margin": 8.668277740478516
+        },
+        {
+          "id": "56f9872e9e9bad19000a0a3d",
+          "kind": "answerable",
+          "margin": -8.647544860839844
+        },
+        {
+          "id": "5acfbd4c77cf76001a685ba1",
+          "kind": "missing",
+          "margin": 16.72753143310547
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "kind": "answerable",
+          "margin": 1.4259910583496094
+        },
+        {
+          "id": "5a8ca048fd22b3001a8d8c15",
+          "kind": "missing",
+          "margin": 18.111679077148438
+        },
+        {
+          "id": "572a776bfed8de19000d5c46",
+          "kind": "answerable",
+          "margin": -1.194143295288086
+        },
+        {
+          "id": "5ad38cdf604f3c001a3fe5de",
+          "kind": "missing",
+          "margin": 8.414838790893555
+        },
+        {
+          "id": "5727e65b4b864d1900163f8b",
+          "kind": "answerable",
+          "margin": 14.033257484436035
+        },
+        {
+          "id": "5a4c36e77a6c4c001a2bbbb6",
+          "kind": "missing",
+          "margin": 8.40102767944336
+        },
+        {
+          "id": "572b6963f75d5e190021fdac",
+          "kind": "answerable",
+          "margin": 1.8365478515625
+        },
+        {
+          "id": "5ace67b632bba1001ae4a5b6",
+          "kind": "missing",
+          "margin": 0.09683418273925781
+        },
+        {
+          "id": "57294f546aef051400154c9d",
+          "kind": "answerable",
+          "margin": 0.23316192626953125
+        },
+        {
+          "id": "5ad129fd645df0001a2d1029",
+          "kind": "missing",
+          "margin": 5.289353370666504
+        },
+        {
+          "id": "5728a75e4b864d1900164b92",
+          "kind": "answerable",
+          "margin": -6.57493782043457
+        },
+        {
+          "id": "5ad211e7d7d075001a4282de",
+          "kind": "missing",
+          "margin": -1.0281600952148438
+        },
+        {
+          "id": "572fef5e947a6a140053ce25",
+          "kind": "answerable",
+          "margin": -6.160892486572266
+        },
+        {
+          "id": "5a541b8cbdaabd001a38683c",
+          "kind": "missing",
+          "margin": 7.640347480773926
+        },
+        {
+          "id": "572699885951b619008f7789",
+          "kind": "answerable",
+          "margin": -9.54171085357666
+        },
+        {
+          "id": "5a21a5b98a6e4f001aa08e50",
+          "kind": "missing",
+          "margin": -6.525338172912598
+        },
+        {
+          "id": "5733fd57d058e614000b672e",
+          "kind": "answerable",
+          "margin": 6.422674179077148
+        },
+        {
+          "id": "5ad0eaf1645df0001a2d0854",
+          "kind": "missing",
+          "margin": 8.042579650878906
+        },
+        {
+          "id": "572a710827b69114009ef5c2",
+          "kind": "answerable",
+          "margin": 0.2938671112060547
+        },
+        {
+          "id": "5ad371f4604f3c001a3fe299",
+          "kind": "missing",
+          "margin": 1.0989389419555664
+        },
+        {
+          "id": "570a53286d058f1900182d54",
+          "kind": "answerable",
+          "margin": -5.947761535644531
+        },
+        {
+          "id": "5a48796884b8a4001a7e78b3",
+          "kind": "missing",
+          "margin": -3.989715576171875
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "kind": "answerable",
+          "margin": -0.5848045349121094
+        },
+        {
+          "id": "5a550073134fea001a0e17cb",
+          "kind": "missing",
+          "margin": -0.9888162612915039
+        },
+        {
+          "id": "570d0565fed7b91900d45bcb",
+          "kind": "answerable",
+          "margin": -6.434896469116211
+        },
+        {
+          "id": "5ad159a0645df0001a2d1845",
+          "kind": "missing",
+          "margin": 4.137789726257324
+        },
+        {
+          "id": "56deed163277331400b4d828",
+          "kind": "answerable",
+          "margin": 1.3281879425048828
+        },
+        {
+          "id": "5acd1a5a07355d001abf3510",
+          "kind": "missing",
+          "margin": 8.888290405273438
+        },
+        {
+          "id": "56dfc460231d4119001abdc5",
+          "kind": "answerable",
+          "margin": 9.196919441223145
+        },
+        {
+          "id": "5a10e82f06e79900185c3467",
+          "kind": "missing",
+          "margin": 5.239462852478027
+        },
+        {
+          "id": "56e82fe000c9c71400d77611",
+          "kind": "answerable",
+          "margin": -8.07309341430664
+        },
+        {
+          "id": "5ad278edd7d075001a429598",
+          "kind": "missing",
+          "margin": 11.458582878112793
+        },
+        {
+          "id": "5729fd8e6aef05140015517d",
+          "kind": "answerable",
+          "margin": -3.2563209533691406
+        },
+        {
+          "id": "5acd4c3307355d001abf3c58",
+          "kind": "missing",
+          "margin": 6.96877384185791
+        },
+        {
+          "id": "57268432f1498d1400e8e25e",
+          "kind": "answerable",
+          "margin": 7.384988784790039
+        },
+        {
+          "id": "5a847e367cf838001a46a877",
+          "kind": "missing",
+          "margin": 12.946353912353516
+        },
+        {
+          "id": "5731cd430fdd8d15006c654d",
+          "kind": "answerable",
+          "margin": 2.711104393005371
+        },
+        {
+          "id": "5ad4d8665b96ef001a10a330",
+          "kind": "missing",
+          "margin": 6.817842483520508
+        },
+        {
+          "id": "572a756dfed8de19000d5c35",
+          "kind": "answerable",
+          "margin": 4.641680717468262
+        },
+        {
+          "id": "5ad38afb604f3c001a3fe5b5",
+          "kind": "missing",
+          "margin": 4.586509704589844
+        },
+        {
+          "id": "5728abac3acd2414000dfc93",
+          "kind": "answerable",
+          "margin": 4.262001037597656
+        },
+        {
+          "id": "5a4fea83af0d07001ae8cc86",
+          "kind": "missing",
+          "margin": 4.885591506958008
+        },
+        {
+          "id": "57328f64b9988014000c7684",
+          "kind": "answerable",
+          "margin": -1.3775224685668945
+        },
+        {
+          "id": "5a4e9663755ab9001a10f51d",
+          "kind": "missing",
+          "margin": 11.585623741149902
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "kind": "answerable",
+          "margin": 0.3662080764770508
+        },
+        {
+          "id": "5a7b2ba921c2de001afe9d84",
+          "kind": "missing",
+          "margin": 4.932431221008301
+        },
+        {
+          "id": "56e09b2a7aa994140058e636",
+          "kind": "answerable",
+          "margin": -5.487630844116211
+        },
+        {
+          "id": "5acdf66132bba1001ae498eb",
+          "kind": "missing",
+          "margin": 13.438722610473633
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "kind": "answerable",
+          "margin": -12.038028717041016
+        },
+        {
+          "id": "5ad3c735604f3c001a3ff03b",
+          "kind": "missing",
+          "margin": -0.6498050689697266
+        },
+        {
+          "id": "570b6750ec8fbc190045b9e5",
+          "kind": "answerable",
+          "margin": -3.9783248901367188
+        },
+        {
+          "id": "5a5a217f9c0277001abe705e",
+          "kind": "missing",
+          "margin": 2.8306140899658203
+        },
+        {
+          "id": "570b0ac3ec8fbc190045b802",
+          "kind": "answerable",
+          "margin": 5.213315963745117
+        },
+        {
+          "id": "5acd88dc07355d001abf4624",
+          "kind": "missing",
+          "margin": 6.596202850341797
+        },
+        {
+          "id": "57269446dd62a815002e8a29",
+          "kind": "answerable",
+          "margin": -1.9680252075195312
+        },
+        {
+          "id": "5acf613977cf76001a684ceb",
+          "kind": "missing",
+          "margin": 10.023171424865723
+        },
+        {
+          "id": "573259a4e99e3014001e66ee",
+          "kind": "answerable",
+          "margin": -14.004508018493652
+        },
+        {
+          "id": "5ad3e772604f3c001a3ff60a",
+          "kind": "missing",
+          "margin": 10.383195877075195
+        },
+        {
+          "id": "5730f1c3e6313a140071cad9",
+          "kind": "answerable",
+          "margin": 1.825723648071289
+        },
+        {
+          "id": "5a864535b4e223001a8e7521",
+          "kind": "missing",
+          "margin": 3.1147022247314453
+        },
+        {
+          "id": "56e79feb00c9c71400d7740c",
+          "kind": "answerable",
+          "margin": -1.6716747283935547
+        },
+        {
+          "id": "5acf657877cf76001a684d4f",
+          "kind": "missing",
+          "margin": 3.2000694274902344
+        },
+        {
+          "id": "573401aa4776f419006616b2",
+          "kind": "answerable",
+          "margin": 0.9683237075805664
+        },
+        {
+          "id": "5a68fdfb8476ee001a58a98f",
+          "kind": "missing",
+          "margin": 11.758167266845703
+        }
+      ]
+    },
+    "last_logit_optimization_max_error": 2.6226043701171875e-05,
+    "val": {
+      "mean_margin": {
+        "answerable": -2.3214539885520935,
+        "missing": 3.4898721575737
+      },
+      "mean_pair_separation": 5.8113261461257935,
+      "rows": [
+        {
+          "id": "570c22d96b8089140040fb4a",
+          "kind": "answerable",
+          "margin": 0.9722900390625
+        },
+        {
+          "id": "5ad368bc604f3c001a3fe0c3",
+          "kind": "missing",
+          "margin": 2.1605353355407715
+        },
+        {
+          "id": "572814a54b864d190016440f",
+          "kind": "answerable",
+          "margin": 14.1646728515625
+        },
+        {
+          "id": "5acd478d07355d001abf3bf8",
+          "kind": "missing",
+          "margin": 1.701685905456543
+        },
+        {
+          "id": "570afbdf6b8089140040f67a",
+          "kind": "answerable",
+          "margin": -5.3613433837890625
+        },
+        {
+          "id": "5a37134395360f001af1b3e1",
+          "kind": "missing",
+          "margin": -1.0914044380187988
+        },
+        {
+          "id": "5734257c4776f41900661962",
+          "kind": "answerable",
+          "margin": -11.564661979675293
+        },
+        {
+          "id": "5a830437e60761001a2eb304",
+          "kind": "missing",
+          "margin": -8.040122985839844
+        },
+        {
+          "id": "56f89312aef23719006261c5",
+          "kind": "answerable",
+          "margin": -0.9213790893554688
+        },
+        {
+          "id": "5a7e3e1f70df9f001a875627",
+          "kind": "missing",
+          "margin": 17.17920684814453
+        },
+        {
+          "id": "57262eb438643c19005ad2b3",
+          "kind": "answerable",
+          "margin": 8.291162490844727
+        },
+        {
+          "id": "5a39f2ae2f14dd001ac7266b",
+          "kind": "missing",
+          "margin": 12.16750717163086
+        },
+        {
+          "id": "572b8eb4111d821400f38f07",
+          "kind": "answerable",
+          "margin": -3.699460983276367
+        },
+        {
+          "id": "5a7a175117ab25001a8a031a",
+          "kind": "missing",
+          "margin": -5.919075012207031
+        },
+        {
+          "id": "5709f59f4103511400d594c4",
+          "kind": "answerable",
+          "margin": -3.139301300048828
+        },
+        {
+          "id": "5a105795decec9001847563b",
+          "kind": "missing",
+          "margin": 6.891885757446289
+        },
+        {
+          "id": "57263e4c38643c19005ad36c",
+          "kind": "answerable",
+          "margin": -8.53624439239502
+        },
+        {
+          "id": "5a3a087c2f14dd001ac726c7",
+          "kind": "missing",
+          "margin": 12.509529113769531
+        },
+        {
+          "id": "573423284776f4190066192d",
+          "kind": "answerable",
+          "margin": -2.960559844970703
+        },
+        {
+          "id": "5a83019fe60761001a2eb2e6",
+          "kind": "missing",
+          "margin": 11.59913444519043
+        },
+        {
+          "id": "5734203ed058e614000b6985",
+          "kind": "answerable",
+          "margin": 0.0149993896484375
+        },
+        {
+          "id": "5a82fb2ee60761001a2eb2b7",
+          "kind": "missing",
+          "margin": 2.036993980407715
+        },
+        {
+          "id": "56ddecfe66d3e219004dae17",
+          "kind": "answerable",
+          "margin": -5.790360450744629
+        },
+        {
+          "id": "5a1cd5884ea40d0018b06f50",
+          "kind": "missing",
+          "margin": -2.745004653930664
+        },
+        {
+          "id": "5730f90c497a881900248ab5",
+          "kind": "answerable",
+          "margin": 0.5419721603393555
+        },
+        {
+          "id": "5a273d6bc93d92001a400444",
+          "kind": "missing",
+          "margin": -7.41780948638916
+        },
+        {
+          "id": "570b9fa36b8089140040f9c3",
+          "kind": "answerable",
+          "margin": -3.979588508605957
+        },
+        {
+          "id": "5a07f52b3fc87400182070b0",
+          "kind": "missing",
+          "margin": 5.281444549560547
+        },
+        {
+          "id": "570a76684103511400d5973a",
+          "kind": "answerable",
+          "margin": -7.486880302429199
+        },
+        {
+          "id": "5acd869707355d001abf45a4",
+          "kind": "missing",
+          "margin": 10.154980659484863
+        },
+        {
+          "id": "5727affd4b864d1900163a68",
+          "kind": "answerable",
+          "margin": -7.688580513000488
+        },
+        {
+          "id": "5a73ceb842eae6001a3899f8",
+          "kind": "missing",
+          "margin": -0.6315326690673828
+        }
+      ]
+    }
+  },
+  "lora-lr0.0003-kl1.0": {
+    "train": {
+      "mean_margin": {
+        "answerable": 2.2784330546855927,
+        "missing": 9.122861862182617
+      },
+      "mean_pair_separation": 6.8444288074970245,
+      "rows": [
+        {
+          "id": "57300da0947a6a140053cffe",
+          "kind": "answerable",
+          "margin": 0.10076904296875
+        },
+        {
+          "id": "5acd1c9c07355d001abf3581",
+          "kind": "missing",
+          "margin": 6.665639877319336
+        },
+        {
+          "id": "57303233a23a5019007fcf5a",
+          "kind": "answerable",
+          "margin": 11.0001802444458
+        },
+        {
+          "id": "5ad3cb4c604f3c001a3ff10b",
+          "kind": "missing",
+          "margin": 8.815799713134766
+        },
+        {
+          "id": "5727a7474b864d1900163989",
+          "kind": "answerable",
+          "margin": 10.721291542053223
+        },
+        {
+          "id": "5a8c906afd22b3001a8d8b18",
+          "kind": "missing",
+          "margin": 12.680706977844238
+        },
+        {
+          "id": "570fc7d35ab6b81900390fcf",
+          "kind": "answerable",
+          "margin": 4.349115371704102
+        },
+        {
+          "id": "5ad36094604f3c001a3fdf39",
+          "kind": "missing",
+          "margin": 4.562618255615234
+        },
+        {
+          "id": "572b858934ae481900deae64",
+          "kind": "answerable",
+          "margin": 6.138397216796875
+        },
+        {
+          "id": "5acd735607355d001abf42e9",
+          "kind": "missing",
+          "margin": 15.318419456481934
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "kind": "answerable",
+          "margin": 11.693395614624023
+        },
+        {
+          "id": "5a5add719c0277001abe7201",
+          "kind": "missing",
+          "margin": 22.5527286529541
+        },
+        {
+          "id": "572812394b864d19001643b3",
+          "kind": "answerable",
+          "margin": -1.507375717163086
+        },
+        {
+          "id": "5acd69f607355d001abf411e",
+          "kind": "missing",
+          "margin": 4.323614120483398
+        },
+        {
+          "id": "5728765c3acd2414000dfa1d",
+          "kind": "answerable",
+          "margin": -0.9438419342041016
+        },
+        {
+          "id": "5ad14abb645df0001a2d15c7",
+          "kind": "missing",
+          "margin": -0.010463714599609375
+        },
+        {
+          "id": "572f70f1b2c2fd1400568127",
+          "kind": "answerable",
+          "margin": 8.914667129516602
+        },
+        {
+          "id": "5acd091307355d001abf31ea",
+          "kind": "missing",
+          "margin": 3.574324607849121
+        },
+        {
+          "id": "5732a7f71d5d2e14009ff87e",
+          "kind": "answerable",
+          "margin": 6.5215654373168945
+        },
+        {
+          "id": "5a4ebb46af0d07001ae8cc0e",
+          "kind": "missing",
+          "margin": 10.319859504699707
+        },
+        {
+          "id": "5725dd19ec44d21400f3d6e4",
+          "kind": "answerable",
+          "margin": 1.4654788970947266
+        },
+        {
+          "id": "5acd052e07355d001abf31c0",
+          "kind": "missing",
+          "margin": 8.850207328796387
+        },
+        {
+          "id": "56dd304366d3e219004dac37",
+          "kind": "answerable",
+          "margin": 2.127096176147461
+        },
+        {
+          "id": "5acfc17677cf76001a685cf4",
+          "kind": "missing",
+          "margin": 8.371441841125488
+        },
+        {
+          "id": "570dfd080b85d914000d7c6b",
+          "kind": "answerable",
+          "margin": 3.416156768798828
+        },
+        {
+          "id": "5ad2d83cd7d075001a42a445",
+          "kind": "missing",
+          "margin": 13.565789222717285
+        },
+        {
+          "id": "572fd7db947a6a140053cd47",
+          "kind": "answerable",
+          "margin": 15.779804229736328
+        },
+        {
+          "id": "5ad0d0e5645df0001a2d04c8",
+          "kind": "missing",
+          "margin": 12.494552612304688
+        },
+        {
+          "id": "56e70a356fe0821900b8ec92",
+          "kind": "answerable",
+          "margin": -2.7150115966796875
+        },
+        {
+          "id": "5a7881bbb73996001af5a6a7",
+          "kind": "missing",
+          "margin": 3.6729183197021484
+        },
+        {
+          "id": "572bc28a111d821400f38f77",
+          "kind": "answerable",
+          "margin": -3.43447208404541
+        },
+        {
+          "id": "5acd857607355d001abf4561",
+          "kind": "missing",
+          "margin": 22.793378829956055
+        },
+        {
+          "id": "5726b98f5951b619008f7be1",
+          "kind": "answerable",
+          "margin": -3.1823368072509766
+        },
+        {
+          "id": "5acd628907355d001abf4025",
+          "kind": "missing",
+          "margin": 6.589200973510742
+        },
+        {
+          "id": "56ddcf4166d3e219004dacf9",
+          "kind": "answerable",
+          "margin": 11.682916641235352
+        },
+        {
+          "id": "5a6b1c23a9e0c9001a4e9ee2",
+          "kind": "missing",
+          "margin": 15.506528854370117
+        },
+        {
+          "id": "56f977b19e9bad19000a097c",
+          "kind": "answerable",
+          "margin": -2.975205421447754
+        },
+        {
+          "id": "5a56c8e56349e2001acdcf36",
+          "kind": "missing",
+          "margin": 0.022342681884765625
+        },
+        {
+          "id": "57279dc32ca10214002d9226",
+          "kind": "answerable",
+          "margin": 1.1230354309082031
+        },
+        {
+          "id": "5aceb57332bba1001ae4b0fb",
+          "kind": "missing",
+          "margin": 11.889678955078125
+        },
+        {
+          "id": "57269b73708984140094cb7d",
+          "kind": "answerable",
+          "margin": -1.0274429321289062
+        },
+        {
+          "id": "5acfe05d77cf76001a686380",
+          "kind": "missing",
+          "margin": 12.486150741577148
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "kind": "answerable",
+          "margin": -8.118019104003906
+        },
+        {
+          "id": "5a81e42031013a001a334f83",
+          "kind": "missing",
+          "margin": 7.240137100219727
+        },
+        {
+          "id": "571aeaf69499d21900609bac",
+          "kind": "answerable",
+          "margin": 6.683195114135742
+        },
+        {
+          "id": "5acec97b32bba1001ae4b407",
+          "kind": "missing",
+          "margin": 9.714176177978516
+        },
+        {
+          "id": "572ab2ccbe1ee31400cb8190",
+          "kind": "answerable",
+          "margin": -2.5881175994873047
+        },
+        {
+          "id": "5ace3f9232bba1001ae4a06b",
+          "kind": "missing",
+          "margin": 8.757102012634277
+        },
+        {
+          "id": "5726abe25951b619008f79a3",
+          "kind": "answerable",
+          "margin": -7.773950576782227
+        },
+        {
+          "id": "5a20747a54a786001a36b349",
+          "kind": "missing",
+          "margin": 3.1199703216552734
+        },
+        {
+          "id": "570d48a6fed7b91900d45e01",
+          "kind": "answerable",
+          "margin": 0.498779296875
+        },
+        {
+          "id": "5acec6d432bba1001ae4b3b1",
+          "kind": "missing",
+          "margin": 14.959039688110352
+        },
+        {
+          "id": "571aa99d4faf5e1900b8abd6",
+          "kind": "answerable",
+          "margin": -3.6821842193603516
+        },
+        {
+          "id": "5acfbce377cf76001a685b86",
+          "kind": "missing",
+          "margin": 5.554198265075684
+        },
+        {
+          "id": "5726c81ef1498d1400e8eb19",
+          "kind": "answerable",
+          "margin": -0.7149276733398438
+        },
+        {
+          "id": "5a1e1c4b3de3f40018b264d2",
+          "kind": "missing",
+          "margin": -0.04680061340332031
+        },
+        {
+          "id": "570e489e0b85d914000d7df2",
+          "kind": "answerable",
+          "margin": 0.7387771606445312
+        },
+        {
+          "id": "5ad14c7f645df0001a2d1659",
+          "kind": "missing",
+          "margin": 2.368600845336914
+        },
+        {
+          "id": "56df23ff3277331400b4d997",
+          "kind": "answerable",
+          "margin": -0.770263671875
+        },
+        {
+          "id": "5ace35e132bba1001ae49e76",
+          "kind": "missing",
+          "margin": 8.136415481567383
+        },
+        {
+          "id": "5730a9732461fd1900a9cf66",
+          "kind": "answerable",
+          "margin": -4.438499450683594
+        },
+        {
+          "id": "5a650f65c2b11c001a425bc7",
+          "kind": "missing",
+          "margin": 14.216533660888672
+        },
+        {
+          "id": "56f9872e9e9bad19000a0a3d",
+          "kind": "answerable",
+          "margin": -2.1460437774658203
+        },
+        {
+          "id": "5acfbd4c77cf76001a685ba1",
+          "kind": "missing",
+          "margin": 17.366500854492188
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "kind": "answerable",
+          "margin": 5.254425048828125
+        },
+        {
+          "id": "5a8ca048fd22b3001a8d8c15",
+          "kind": "missing",
+          "margin": 18.748620986938477
+        },
+        {
+          "id": "572a776bfed8de19000d5c46",
+          "kind": "answerable",
+          "margin": -0.31929969787597656
+        },
+        {
+          "id": "5ad38cdf604f3c001a3fe5de",
+          "kind": "missing",
+          "margin": 11.115713119506836
+        },
+        {
+          "id": "5727e65b4b864d1900163f8b",
+          "kind": "answerable",
+          "margin": 14.920007705688477
+        },
+        {
+          "id": "5a4c36e77a6c4c001a2bbbb6",
+          "kind": "missing",
+          "margin": 13.944551467895508
+        },
+        {
+          "id": "572b6963f75d5e190021fdac",
+          "kind": "answerable",
+          "margin": 4.269386291503906
+        },
+        {
+          "id": "5ace67b632bba1001ae4a5b6",
+          "kind": "missing",
+          "margin": 7.119100570678711
+        },
+        {
+          "id": "57294f546aef051400154c9d",
+          "kind": "answerable",
+          "margin": 0.8806343078613281
+        },
+        {
+          "id": "5ad129fd645df0001a2d1029",
+          "kind": "missing",
+          "margin": 5.879542350769043
+        },
+        {
+          "id": "5728a75e4b864d1900164b92",
+          "kind": "answerable",
+          "margin": -1.9829444885253906
+        },
+        {
+          "id": "5ad211e7d7d075001a4282de",
+          "kind": "missing",
+          "margin": 1.5085773468017578
+        },
+        {
+          "id": "572fef5e947a6a140053ce25",
+          "kind": "answerable",
+          "margin": -1.759368896484375
+        },
+        {
+          "id": "5a541b8cbdaabd001a38683c",
+          "kind": "missing",
+          "margin": 12.777162551879883
+        },
+        {
+          "id": "572699885951b619008f7789",
+          "kind": "answerable",
+          "margin": -3.7731399536132812
+        },
+        {
+          "id": "5a21a5b98a6e4f001aa08e50",
+          "kind": "missing",
+          "margin": -1.1802120208740234
+        },
+        {
+          "id": "5733fd57d058e614000b672e",
+          "kind": "answerable",
+          "margin": 6.925520896911621
+        },
+        {
+          "id": "5ad0eaf1645df0001a2d0854",
+          "kind": "missing",
+          "margin": 12.433708190917969
+        },
+        {
+          "id": "572a710827b69114009ef5c2",
+          "kind": "answerable",
+          "margin": 5.042591094970703
+        },
+        {
+          "id": "5ad371f4604f3c001a3fe299",
+          "kind": "missing",
+          "margin": 5.556282043457031
+        },
+        {
+          "id": "570a53286d058f1900182d54",
+          "kind": "answerable",
+          "margin": 0.3671760559082031
+        },
+        {
+          "id": "5a48796884b8a4001a7e78b3",
+          "kind": "missing",
+          "margin": 1.5395145416259766
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "kind": "answerable",
+          "margin": 6.444024085998535
+        },
+        {
+          "id": "5a550073134fea001a0e17cb",
+          "kind": "missing",
+          "margin": 6.304125785827637
+        },
+        {
+          "id": "570d0565fed7b91900d45bcb",
+          "kind": "answerable",
+          "margin": -0.5877628326416016
+        },
+        {
+          "id": "5ad159a0645df0001a2d1845",
+          "kind": "missing",
+          "margin": 7.217037200927734
+        },
+        {
+          "id": "56deed163277331400b4d828",
+          "kind": "answerable",
+          "margin": 4.909502983093262
+        },
+        {
+          "id": "5acd1a5a07355d001abf3510",
+          "kind": "missing",
+          "margin": 10.346718788146973
+        },
+        {
+          "id": "56dfc460231d4119001abdc5",
+          "kind": "answerable",
+          "margin": 12.156370162963867
+        },
+        {
+          "id": "5a10e82f06e79900185c3467",
+          "kind": "missing",
+          "margin": 6.692502021789551
+        },
+        {
+          "id": "56e82fe000c9c71400d77611",
+          "kind": "answerable",
+          "margin": -4.181089401245117
+        },
+        {
+          "id": "5ad278edd7d075001a429598",
+          "kind": "missing",
+          "margin": 13.70026969909668
+        },
+        {
+          "id": "5729fd8e6aef05140015517d",
+          "kind": "answerable",
+          "margin": 0.2752113342285156
+        },
+        {
+          "id": "5acd4c3307355d001abf3c58",
+          "kind": "missing",
+          "margin": 9.752402305603027
+        },
+        {
+          "id": "57268432f1498d1400e8e25e",
+          "kind": "answerable",
+          "margin": 7.670185089111328
+        },
+        {
+          "id": "5a847e367cf838001a46a877",
+          "kind": "missing",
+          "margin": 13.361824989318848
+        },
+        {
+          "id": "5731cd430fdd8d15006c654d",
+          "kind": "answerable",
+          "margin": 5.200223922729492
+        },
+        {
+          "id": "5ad4d8665b96ef001a10a330",
+          "kind": "missing",
+          "margin": 9.141864776611328
+        },
+        {
+          "id": "572a756dfed8de19000d5c35",
+          "kind": "answerable",
+          "margin": 5.004900932312012
+        },
+        {
+          "id": "5ad38afb604f3c001a3fe5b5",
+          "kind": "missing",
+          "margin": 4.893683433532715
+        },
+        {
+          "id": "5728abac3acd2414000dfc93",
+          "kind": "answerable",
+          "margin": 7.379345893859863
+        },
+        {
+          "id": "5a4fea83af0d07001ae8cc86",
+          "kind": "missing",
+          "margin": 7.90692138671875
+        },
+        {
+          "id": "57328f64b9988014000c7684",
+          "kind": "answerable",
+          "margin": 3.3993396759033203
+        },
+        {
+          "id": "5a4e9663755ab9001a10f51d",
+          "kind": "missing",
+          "margin": 12.824073791503906
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "kind": "answerable",
+          "margin": 6.231222152709961
+        },
+        {
+          "id": "5a7b2ba921c2de001afe9d84",
+          "kind": "missing",
+          "margin": 10.637234687805176
+        },
+        {
+          "id": "56e09b2a7aa994140058e636",
+          "kind": "answerable",
+          "margin": -0.5060081481933594
+        },
+        {
+          "id": "5acdf66132bba1001ae498eb",
+          "kind": "missing",
+          "margin": 14.634346008300781
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "kind": "answerable",
+          "margin": -6.242022514343262
+        },
+        {
+          "id": "5ad3c735604f3c001a3ff03b",
+          "kind": "missing",
+          "margin": 4.433505058288574
+        },
+        {
+          "id": "570b6750ec8fbc190045b9e5",
+          "kind": "answerable",
+          "margin": -0.39775657653808594
+        },
+        {
+          "id": "5a5a217f9c0277001abe705e",
+          "kind": "missing",
+          "margin": 4.2876739501953125
+        },
+        {
+          "id": "570b0ac3ec8fbc190045b802",
+          "kind": "answerable",
+          "margin": 6.5930681228637695
+        },
+        {
+          "id": "5acd88dc07355d001abf4624",
+          "kind": "missing",
+          "margin": 7.511325836181641
+        },
+        {
+          "id": "57269446dd62a815002e8a29",
+          "kind": "answerable",
+          "margin": 3.6073827743530273
+        },
+        {
+          "id": "5acf613977cf76001a684ceb",
+          "kind": "missing",
+          "margin": 14.57530403137207
+        },
+        {
+          "id": "573259a4e99e3014001e66ee",
+          "kind": "answerable",
+          "margin": -8.276599884033203
+        },
+        {
+          "id": "5ad3e772604f3c001a3ff60a",
+          "kind": "missing",
+          "margin": 13.0134859085083
+        },
+        {
+          "id": "5730f1c3e6313a140071cad9",
+          "kind": "answerable",
+          "margin": 4.996930122375488
+        },
+        {
+          "id": "5a864535b4e223001a8e7521",
+          "kind": "missing",
+          "margin": 7.060567855834961
+        },
+        {
+          "id": "56e79feb00c9c71400d7740c",
+          "kind": "answerable",
+          "margin": -0.6780261993408203
+        },
+        {
+          "id": "5acf657877cf76001a684d4f",
+          "kind": "missing",
+          "margin": 6.724010467529297
+        },
+        {
+          "id": "573401aa4776f419006616b2",
+          "kind": "answerable",
+          "margin": 6.059356689453125
+        },
+        {
+          "id": "5a68fdfb8476ee001a58a98f",
+          "kind": "missing",
+          "margin": 12.97040843963623
+        }
+      ]
+    },
+    "last_logit_optimization_max_error": 2.193450927734375e-05,
+    "val": {
+      "mean_margin": {
+        "answerable": 2.0191004276275635,
+        "missing": 7.175151973962784
+      },
+      "mean_pair_separation": 5.15605154633522,
+      "rows": [
+        {
+          "id": "570c22d96b8089140040fb4a",
+          "kind": "answerable",
+          "margin": 4.68195915222168
+        },
+        {
+          "id": "5ad368bc604f3c001a3fe0c3",
+          "kind": "missing",
+          "margin": 4.941725254058838
+        },
+        {
+          "id": "572814a54b864d190016440f",
+          "kind": "answerable",
+          "margin": 15.845107078552246
+        },
+        {
+          "id": "5acd478d07355d001abf3bf8",
+          "kind": "missing",
+          "margin": 6.478069305419922
+        },
+        {
+          "id": "570afbdf6b8089140040f67a",
+          "kind": "answerable",
+          "margin": 1.9085206985473633
+        },
+        {
+          "id": "5a37134395360f001af1b3e1",
+          "kind": "missing",
+          "margin": 4.146747589111328
+        },
+        {
+          "id": "5734257c4776f41900661962",
+          "kind": "answerable",
+          "margin": -5.550683975219727
+        },
+        {
+          "id": "5a830437e60761001a2eb304",
+          "kind": "missing",
+          "margin": -2.8059635162353516
+        },
+        {
+          "id": "56f89312aef23719006261c5",
+          "kind": "answerable",
+          "margin": 4.687375068664551
+        },
+        {
+          "id": "5a7e3e1f70df9f001a875627",
+          "kind": "missing",
+          "margin": 18.446958541870117
+        },
+        {
+          "id": "57262eb438643c19005ad2b3",
+          "kind": "answerable",
+          "margin": 10.742438316345215
+        },
+        {
+          "id": "5a39f2ae2f14dd001ac7266b",
+          "kind": "missing",
+          "margin": 16.317474365234375
+        },
+        {
+          "id": "572b8eb4111d821400f38f07",
+          "kind": "answerable",
+          "margin": -2.193523406982422
+        },
+        {
+          "id": "5a7a175117ab25001a8a031a",
+          "kind": "missing",
+          "margin": 0.18674278259277344
+        },
+        {
+          "id": "5709f59f4103511400d594c4",
+          "kind": "answerable",
+          "margin": 0.28463172912597656
+        },
+        {
+          "id": "5a105795decec9001847563b",
+          "kind": "missing",
+          "margin": 9.654144287109375
+        },
+        {
+          "id": "57263e4c38643c19005ad36c",
+          "kind": "answerable",
+          "margin": -2.1842498779296875
+        },
+        {
+          "id": "5a3a087c2f14dd001ac726c7",
+          "kind": "missing",
+          "margin": 13.507771492004395
+        },
+        {
+          "id": "573423284776f4190066192d",
+          "kind": "answerable",
+          "margin": 2.3034486770629883
+        },
+        {
+          "id": "5a83019fe60761001a2eb2e6",
+          "kind": "missing",
+          "margin": 12.120017051696777
+        },
+        {
+          "id": "5734203ed058e614000b6985",
+          "kind": "answerable",
+          "margin": 3.72385311126709
+        },
+        {
+          "id": "5a82fb2ee60761001a2eb2b7",
+          "kind": "missing",
+          "margin": 6.741453170776367
+        },
+        {
+          "id": "56ddecfe66d3e219004dae17",
+          "kind": "answerable",
+          "margin": 0.6048221588134766
+        },
+        {
+          "id": "5a1cd5884ea40d0018b06f50",
+          "kind": "missing",
+          "margin": 2.327789306640625
+        },
+        {
+          "id": "5730f90c497a881900248ab5",
+          "kind": "answerable",
+          "margin": 4.921853065490723
+        },
+        {
+          "id": "5a273d6bc93d92001a400444",
+          "kind": "missing",
+          "margin": -1.7606029510498047
+        },
+        {
+          "id": "570b9fa36b8089140040f9c3",
+          "kind": "answerable",
+          "margin": 0.4802436828613281
+        },
+        {
+          "id": "5a07f52b3fc87400182070b0",
+          "kind": "missing",
+          "margin": 9.213134765625
+        },
+        {
+          "id": "570a76684103511400d5973a",
+          "kind": "answerable",
+          "margin": -3.897904396057129
+        },
+        {
+          "id": "5acd869707355d001abf45a4",
+          "kind": "missing",
+          "margin": 11.001148223876953
+        },
+        {
+          "id": "5727affd4b864d1900163a68",
+          "kind": "answerable",
+          "margin": -4.052284240722656
+        },
+        {
+          "id": "5a73ceb842eae6001a3899f8",
+          "kind": "missing",
+          "margin": 4.285821914672852
+        }
+      ]
+    }
+  }
+}

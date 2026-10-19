@@ -1,5 +1,6 @@
 """Exploratory real-passage adaptation; no confirmation-set inference."""
 
+import argparse
 import gc
 import hashlib
 import json
@@ -19,8 +20,8 @@ ROOT = Path(__file__).parent
 TARGETS = [f"model.layers.{i}.mlp.up_proj" for i in (16, 20, 23)]
 
 
-def main():
-    out = ROOT / "adaptation"
+def main(replay=False):
+    out = ROOT / ("replay" if replay else "adaptation")
     out.mkdir(exist_ok=False)
     torch.set_num_threads(4)
     tokenizer = AutoTokenizer.from_pretrained(MODEL, revision=REVISION)
@@ -36,6 +37,7 @@ def main():
         "model": MODEL,
         "revision": REVISION,
         "anchors": sorted(anchors),
+        "preservation_schedule": "replay_every_step" if replay else "in_batch",
         "code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "data_sha256": {
             s: hashlib.sha256((ROOT / "prepared" / f"{s}.json").read_bytes()).hexdigest()
@@ -80,58 +82,65 @@ def main():
         return inputs
 
     reference = load().requires_grad_(False)
-    # FiNE-inspired output alignment, made paired for same-passage evidence support.
-    # It is a candidate heuristic, not a reproduction or a causal attribution claim.
-    unknown_id = tokenizer.encode("UNKNOWN", add_special_tokens=False)[0]
-    scores = {
-        t: torch.zeros(reference.get_submodule(t).out_features, dtype=torch.float64)
-        for t in TARGETS
-    }
-    started = time.monotonic()
-    with torch.inference_mode():
-        for i in range(0, len(data["cal"]), 2):
-            supported, missing = data["cal"][i : i + 2]
-            assert supported["context"] == missing["context"]
-            answer_id = tokenizer.encode(supported["answer"], add_special_tokens=False)[0]
-            direction = reference.lm_head.weight[unknown_id] - reference.lm_head.weight[answer_id]
-            captured = {}
-            handles = []
-            for t in TARGETS:
-
-                def hook(module, inputs, name=t):
-                    captured[name] = inputs[0][:, -1].detach().cpu().double()
-
-                handles.append(
-                    reference.get_submodule(
-                        t.replace("up_proj", "down_proj")
-                    ).register_forward_pre_hook(hook)
+    if replay:
+        previous = json.loads((ROOT / "adaptation/summary.json").read_text())
+        selected = previous["selected"]
+        summary.update(selected=selected, discovery_seconds=0, reused_selection=True)
+    else:
+        # FiNE-inspired output alignment, made paired for same-passage evidence support.
+        # It is a candidate heuristic, not a reproduction or a causal attribution claim.
+        unknown_id = tokenizer.encode("UNKNOWN", add_special_tokens=False)[0]
+        scores = {
+            t: torch.zeros(reference.get_submodule(t).out_features, dtype=torch.float64)
+            for t in TARGETS
+        }
+        started = time.monotonic()
+        with torch.inference_mode():
+            for i in range(0, len(data["cal"]), 2):
+                supported, missing = data["cal"][i : i + 2]
+                assert supported["context"] == missing["context"]
+                answer_id = tokenizer.encode(supported["answer"], add_special_tokens=False)[0]
+                direction = (
+                    reference.lm_head.weight[unknown_id] - reference.lm_head.weight[answer_id]
                 )
-            try:
-                reference(**batch([supported, missing]), use_cache=False)
-            finally:
-                for handle in handles:
-                    handle.remove()
-            for t in TARGETS:
-                down = reference.get_submodule(t.replace("up_proj", "down_proj"))
-                alignment = (direction @ down.weight).cpu().double()
-                scores[t] += (captured[t][1] - captured[t][0]) * alignment
-    selected = {
-        t: s.abs().argsort(descending=True, stable=True)[:16].sort().values.tolist()
-        for t, s in scores.items()
-    }
-    summary.update(
-        selected=selected,
-        discovery_seconds=time.monotonic() - started,
-        selection_scores={t: s.tolist() for t, s in scores.items()},
-    )
+                captured = {}
+                handles = []
+                for t in TARGETS:
+
+                    def hook(module, inputs, name=t):
+                        captured[name] = inputs[0][:, -1].detach().cpu().double()
+
+                    handles.append(
+                        reference.get_submodule(
+                            t.replace("up_proj", "down_proj")
+                        ).register_forward_pre_hook(hook)
+                    )
+                try:
+                    reference(**batch([supported, missing]), use_cache=False)
+                finally:
+                    for handle in handles:
+                        handle.remove()
+                for t in TARGETS:
+                    down = reference.get_submodule(t.replace("up_proj", "down_proj"))
+                    alignment = (direction @ down.weight).cpu().double()
+                    scores[t] += (captured[t][1] - captured[t][0]) * alignment
+        selected = {
+            t: s.abs().argsort(descending=True, stable=True)[:16].sort().values.tolist()
+            for t, s in scores.items()
+        }
+        summary.update(
+            selected=selected,
+            discovery_seconds=time.monotonic() - started,
+            selection_scores={t: s.tolist() for t, s in scores.items()},
+        )
     save()
 
-    def evaluate(model, name):
+    def evaluate(model, name, split="val"):
         predictions = []
         model.eval()
         with torch.inference_mode():
-            for i in range(0, len(data["val"]), 2):
-                rows = data["val"][i : i + 2]
+            for i in range(0, len(data[split]), 2):
+                rows = data[split][i : i + 2]
                 inputs = batch(rows)
                 outputs = model.generate(
                     **inputs,
@@ -149,15 +158,21 @@ def main():
                             "hit_token_limit": len(ids) == 32 and tokenizer.eos_token_id not in ids,
                         }
                     )
-        (out / f"{name}-val.json").write_text(json.dumps(predictions, indent=2))
+        (out / f"{name}-{split}.json").write_text(json.dumps(predictions, indent=2))
         return metrics(predictions)
 
-    for method, coefficient in (
+    configurations = (
         ("selected", 1.0),
         ("random", 1.0),
         ("lora", 1.0),
         ("selected", 0.0),
-    ):
+    )
+    if replay:
+        configurations = configurations[:3]
+    anchor_rows = [r for r in data["train"] if r["id"] in anchors]
+    random.Random(991).shuffle(anchor_rows)
+    summary["anchor_order"] = [r["id"] for r in anchor_rows]
+    for method, coefficient in configurations:
         for lr in (0.0001, 0.0003):
             torch.manual_seed(123)
             model = load()
@@ -194,7 +209,18 @@ def main():
                 outputs = model(**inputs, use_cache=False)
                 kl = outputs.loss.new_zeros(())
                 retain = torch.tensor([r["id"] in anchors for r in rows], device="mps")
-                if coefficient and retain.any():
+                if replay:
+                    replay_rows = [anchor_rows[(step * 2 + j) % len(anchor_rows)] for j in range(2)]
+                    replay_inputs = batch(replay_rows, True)
+                    anchor_labels = replay_inputs.pop("labels")
+                    edited_anchor = model(**replay_inputs, use_cache=False).logits
+                    with torch.no_grad():
+                        original = reference(**replay_inputs, use_cache=False).logits
+                    kl = preservation_kl(
+                        edited_anchor[:, :-1], original[:, :-1], anchor_labels[:, 1:] != -100
+                    )
+                    del edited_anchor, original
+                elif coefficient and retain.any():
                     with torch.no_grad():
                         original = reference(
                             input_ids=inputs["input_ids"][retain],
@@ -224,6 +250,12 @@ def main():
                 "training_seconds": time.monotonic() - started,
             }
             result["validation"] = evaluate(model, name)
+            if replay:
+                result["train"] = evaluate(model, name, "train")
+                train_predictions = json.loads((out / f"{name}-train.json").read_text())
+                protected = [r for r in train_predictions if r["id"] in anchors]
+                result["anchor_em"] = sum(r["em"] for r in protected) / len(protected)
+                result["anchor_refusals"] = sum(r["abstained"] for r in protected)
             if patch:
                 patch.save(out / name, metadata={"model": MODEL, "revision": REVISION})
             else:
@@ -238,4 +270,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--replay", action="store_true")
+    main(replay=parser.parse_args().replay)

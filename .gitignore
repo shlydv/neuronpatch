@@ -16,3 +16,4 @@ experiments/objective_ablation/results/*.pt
 experiments/axis_ablation/results/*/
 experiments/axis_ablation/results/*.pt
 experiments/real_qa/adaptation/*/
+experiments/real_qa/replay/*/

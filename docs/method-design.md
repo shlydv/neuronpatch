@@ -176,3 +176,14 @@ mean within-pair separation under the first-token diagnostic. Reloaded validatio
 outputs match exactly. The next objective test is repeated anchor preservation
 throughout training; its extra compute and established nature must be explicit.
 It is a test of a concrete failure mechanism, not a new localization claim.
+
+## Repeated-anchor preservation result
+
+[Replay comparison](../experiments/real_qa/REPLAY_REPORT.md) improves the stronger
+selected-row fit (10→15 protected training matches; 2→4 supported validation matches;
+correct refusals remain 9), but leaves genuine anchor/validation refusals. It costs
+roughly twice the training time and does not establish localization value. Before
+another selection heuristic, a broader all-MLP LoRA reference will test whether the
+model/data/objective can learn conditional support, since prior LoRA was restricted
+to three layers. Any larger-budget reference must be labeled as such, not used for
+an unfair efficiency or superiority claim.

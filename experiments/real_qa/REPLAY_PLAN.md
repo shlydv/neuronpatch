@@ -29,3 +29,9 @@ instead of relaxing preservation or inventing another activation score.
 This is an objective diagnostic, not the final method. Strong localization,
 capacity sharing, paper-faithful baselines, independent confirmation and broader
 models/tasks remain required to establish a useful combined approach.
+
+Implementation: `run.py --replay`; outputs in `replay/`, with frozen supports
+loaded from `adaptation/summary.json`. The replay stream uses seed 991 and cycles
+through the 20 anchors; each step consumes two. Response KL remains coefficient 1.
+Supervised CE, data order, initialization and all six matched method/rate choices
+are unchanged. Anchor-training and validation outputs are stored for direct review.
