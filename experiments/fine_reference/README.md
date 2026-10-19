@@ -117,3 +117,18 @@ NumPy and Accelerate are compatibility choices, not exact full-requirements
 reproduction. It runs the CPU preflight before loading the actual GPU model.
 The active version2 bootstrap predates this reusable builder but embeds the same
 harness files and provisions the same environment; source hashes are recorded.
+
+## Comparing completed outputs
+
+```sh
+python experiments/fine_reference/analyze.py --results /path/to/results --cases 2 --output /tmp/fine-comparison.json
+```
+
+The analysis requires both selection conditions for every declared case, matching
+requests, probes, baseline generations, and baseline metric outputs. It reports
+teacher-forced edit/transfer accuracy and prediction-agreement locality by category,
+with equal weight per case after averaging its probes. Probe and case counts stay
+visible; categories missing from a case are excluded for both paired conditions.
+This weighting is explicit and exploratory, not a verified reproduction of every
+paper aggregation choice. Raw generated text remains in the source case files for
+semantic review. No significance claim is made from the two-case smoke test.
