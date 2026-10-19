@@ -75,9 +75,11 @@ quota prevents execution. The formerly stated October 24 wait is retracted.
 
 The two-case reference smoke job was submitted at
 https://www.kaggle.com/code/shlydv/neuronpatch-fine-reference-smoke-20261019
-(version 2). Version 1 failed before editing because the Kaggle Python3.13
+(version 3). Version 1 failed before editing because the Kaggle Python3.13
 host could not install tokenizer0.19.1. Version 2 creates an isolated Python3.11
-environment and installs published torch2.0.1. Submission is not completion. See `gpu_allocation_check.json` and
+environment and installs published torch2.0.1. It then exposed an upstream
+cross-device edit failure; version3 explicitly places the model on CUDA0.
+Submission is not completion. See `gpu_allocation_check.json` and
 `smoke_submission.json` for allocation evidence and source hashes. Next: inspect
 startup, actual edits, and restoration; run the frozen 16-case comparison after
 the smoke test succeeds. Existing custom QA experiments remain separate.
@@ -132,3 +134,13 @@ visible; categories missing from a case are excluded for both paired conditions.
 This weighting is explicit and exploratory, not a verified reproduction of every
 paper aggregation choice. Raw generated text remains in the source case files for
 semantic review. No significance claim is made from the two-case smoke test.
+
+## Device placement compatibility
+
+Version2 reached actual editing but failed because automatic device mapping split
+GPT-J across two T4s while upstream `execute_fine` creates its trainable deltas
+with `.cuda()` on GPU0. A selected MLP on GPU1 could not multiply its inputs by
+those deltas. The wrapper now loads all model modules on CUDA0 explicitly;
+source selection, objective and update code remain unchanged. No performance
+result can be inferred from the failed forward pass. This placement change must
+still pass the real GPU smoke run, including memory use.

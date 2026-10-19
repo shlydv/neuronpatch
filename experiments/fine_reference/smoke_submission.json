@@ -21,10 +21,44 @@
     },
     {
       "version": 2,
-      "status": "RUNNING",
+      "status": "editing_process_failed",
       "change": "isolated Python3.11 and published torch2.0.1",
-      "bootstrap_sha256": "0de4da1c0d69496b5efad6334e1761637c431e9be81192161bb961068b17a0e3"
+      "bootstrap_sha256": "0de4da1c0d69496b5efad6334e1761637c431e9be81192161bb961068b17a0e3",
+      "cause": "upstream edit delta cuda:0 versus auto-dispatched MLP input cuda:1",
+      "observed": "GPT-J checkpoint loaded, baseline evaluation completed, contribution scoring selected five neurons, first edit forward failed",
+      "selected_neurons_case0": [
+        [
+          19,
+          5532
+        ],
+        [
+          14,
+          2404
+        ],
+        [
+          23,
+          7699
+        ],
+        [
+          17,
+          12766
+        ],
+        [
+          15,
+          290
+        ]
+      ]
+    },
+    {
+      "version": 3,
+      "status": "submitted",
+      "change": "explicit CUDA0 model placement; same upstream editor; temporary environment outside output directory; unbuffered stages",
+      "bootstrap_sha256": "258e4fb1f0a05fd9a842c6316fa715c89d4a6d1de45ec9d8b40fe74c55cb94fe",
+      "source_sha256": {
+        "run.py": "f6d54e0a145da68da725d54b7282380b70ffe0c72d56639df840a1f16ed99481",
+        "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21"
+      }
     }
   ],
-  "latest_submitted_version": 2
+  "latest_submitted_version": 3
 }

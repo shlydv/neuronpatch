@@ -121,7 +121,7 @@ def main():
     tokenizer.pad_token_id = tokenizer.eos_token_id
     print("STAGE model_load", flush=True)
     model = model_class.from_pretrained(
-        MODEL, revision=MODEL_REVISION, torch_dtype=torch.float16, device_map="auto"
+        MODEL, revision=MODEL_REVISION, torch_dtype=torch.float16, device_map={"": 0}
     ).eval()
     print("STAGE model_ready", flush=True)
     manifest = {
@@ -135,6 +135,8 @@ def main():
         "case_selection": "first N in official file, no outcome filtering",
         "hparams": vars(hp),
         "torch": torch.__version__,
+        "device_map": {"": 0},
+        "cuda_devices": [torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())],
         "transformers": transformers.__version__,
         "scope": (
             "bounded upstream-editor comparison; supplementary generation diagnostics, "
