@@ -1,0 +1,7 @@
+{
+  "process_exit_code": 0,
+  "models": 5,
+  "predictions": 1280,
+  "populations_and_metrics_match": true,
+  "executed_source_hash_matches": true
+}

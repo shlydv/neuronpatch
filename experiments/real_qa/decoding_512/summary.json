@@ -1,0 +1,743 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "data_sha256": "7acaac6e4c74b9ef3724b06db612c8fb530193e114151608ea211ffcabf72876",
+  "code_sha256": "3bd6948610ff6edeaa5f7a9f5ebf4062d7ae9ce3fdd7c116c8e9cf9444393c1e",
+  "overrides": {
+    "do_sample": false,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 32
+  },
+  "runs": {
+    "base": {
+      "original_generation_config": {
+        "max_length": null,
+        "max_new_tokens": null,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": true,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.1,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": 151643,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "speculation_type": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.20.1"
+      },
+      "original_predictions_sha256": "d8987f89e359865b956cbd51eaa49f0afaf80bf7ff09a2da5776736a306290cd",
+      "default_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3515625,
+          "f1": 0.45797070952921337,
+          "abstained": 0.1015625
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.265625,
+          "f1": 0.265625,
+          "abstained": 0.265625
+        }
+      },
+      "neutral_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3671875,
+          "f1": 0.4743358536694934,
+          "abstained": 0.0703125
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.234375,
+          "f1": 0.234375,
+          "abstained": 0.234375
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": 0.015625,
+            "percentile_95": [
+              -0.02459016393442623,
+              0.06015037593984962
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": 0.01636514414028001,
+            "percentile_95": [
+              -0.01568965828539627,
+              0.054076469487167364
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": -0.03125,
+            "percentile_95": [
+              -0.06896551724137931,
+              0.0
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": -0.03125,
+            "percentile_95": [
+              -0.06060606060606061,
+              -0.007575757575757576
+            ]
+          }
+        }
+      },
+      "adapter_sha256": null
+    },
+    "scale_512-lora-lr0.0001-kl1.0-epoch1": {
+      "original_generation_config": {
+        "max_length": null,
+        "max_new_tokens": null,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": true,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.1,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": 151643,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "speculation_type": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.20.1"
+      },
+      "original_predictions_sha256": "d89d2e256725bd98cf812b0cdcdcfa39655e9b989f881b496c460d37f4106974",
+      "default_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.2421875,
+          "f1": 0.27387846528471527,
+          "abstained": 0.5859375
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.8359375,
+          "f1": 0.8359375,
+          "abstained": 0.8359375
+        }
+      },
+      "neutral_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.2421875,
+          "f1": 0.28603124306249306,
+          "abstained": 0.546875
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.7890625,
+          "f1": 0.7890625,
+          "abstained": 0.7890625
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": 0.0,
+            "percentile_95": [
+              -0.023626734158230217,
+              0.022905167351732172
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": 0.012152777777777778,
+            "percentile_95": [
+              -0.005223429951690821,
+              0.03342376326305636
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": -0.0390625,
+            "percentile_95": [
+              -0.08148148148148149,
+              -0.007352941176470588
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": -0.046875,
+            "percentile_95": [
+              -0.08411214953271028,
+              -0.015625
+            ]
+          }
+        }
+      },
+      "adapter_sha256": "06d0192e5fdbb7ee15965d84dd9859aecbb0b4133001892b7d22e5205ff4c89d"
+    },
+    "scale_512-lora-lr0.0003-kl1.0-epoch1": {
+      "original_generation_config": {
+        "max_length": null,
+        "max_new_tokens": null,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": true,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.1,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": 151643,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "speculation_type": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.20.1"
+      },
+      "original_predictions_sha256": "53a1bab8c307f8aba5e3627159beae7528b94fe480a6d0e830db2e2c1eabf5f3",
+      "default_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.359375,
+          "f1": 0.42162519984810587,
+          "abstained": 0.4375
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.7421875,
+          "f1": 0.7421875,
+          "abstained": 0.7421875
+        }
+      },
+      "neutral_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3671875,
+          "f1": 0.42915463825390293,
+          "abstained": 0.40625
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.71875,
+          "f1": 0.71875,
+          "abstained": 0.71875
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": 0.0078125,
+            "percentile_95": [
+              -0.017241379310344827,
+              0.035211267605633804
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": 0.007529438405797102,
+            "percentile_95": [
+              -0.008130081300813009,
+              0.027552078199180177
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": -0.03125,
+            "percentile_95": [
+              -0.06140350877192982,
+              -0.007462686567164179
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": -0.0234375,
+            "percentile_95": [
+              -0.05,
+              0.0
+            ]
+          }
+        }
+      },
+      "adapter_sha256": "e3bd228beacf9e4aacc15234ee9de38ef35896bd3cc0c1b3e074202b07652022"
+    },
+    "coverage_512-lora-lr0.0001-kl1.0-epoch1": {
+      "original_generation_config": {
+        "max_length": null,
+        "max_new_tokens": null,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": true,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.1,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": 151643,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "speculation_type": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.20.1"
+      },
+      "original_predictions_sha256": "89c55acd7e250a5948b5cdc58b6a6db3d02ef7e3b029875a7d4ef02788f8c697",
+      "default_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.234375,
+          "f1": 0.2642678502053502,
+          "abstained": 0.5703125
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.8046875,
+          "f1": 0.8046875,
+          "abstained": 0.8046875
+        }
+      },
+      "neutral_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.25,
+          "f1": 0.2933477113164613,
+          "abstained": 0.5234375
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.765625,
+          "f1": 0.765625,
+          "abstained": 0.765625
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": 0.015625,
+            "percentile_95": [
+              -0.015151515151515152,
+              0.046511627906976744
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": 0.02907986111111111,
+            "percentile_95": [
+              0.0015415027859718138,
+              0.06178160919540229
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": -0.046875,
+            "percentile_95": [
+              -0.10317460317460317,
+              -0.007462686567164179
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": -0.0390625,
+            "percentile_95": [
+              -0.07476635514018691,
+              -0.008262769272456331
+            ]
+          }
+        }
+      },
+      "adapter_sha256": "936f31f384c87eb27739fcd32b7636aa5955b060994d074fc7d1b55ceb006077"
+    },
+    "coverage_512-lora-lr0.0003-kl1.0-epoch1": {
+      "original_generation_config": {
+        "max_length": null,
+        "max_new_tokens": null,
+        "min_length": null,
+        "min_new_tokens": null,
+        "early_stopping": null,
+        "max_time": null,
+        "stop_strings": null,
+        "do_sample": true,
+        "num_beams": null,
+        "use_mtp": null,
+        "use_cache": null,
+        "cache_implementation": null,
+        "cache_config": null,
+        "max_cache_len": null,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8,
+        "min_p": null,
+        "top_h": null,
+        "typical_p": null,
+        "epsilon_cutoff": null,
+        "eta_cutoff": null,
+        "repetition_penalty": 1.1,
+        "encoder_repetition_penalty": null,
+        "length_penalty": null,
+        "no_repeat_ngram_size": null,
+        "bad_words_ids": null,
+        "renormalize_logits": null,
+        "forced_bos_token_id": null,
+        "forced_eos_token_id": null,
+        "remove_invalid_values": null,
+        "exponential_decay_length_penalty": null,
+        "suppress_tokens": null,
+        "begin_suppress_tokens": null,
+        "sequence_bias": null,
+        "token_healing": null,
+        "guidance_scale": null,
+        "watermarking_config": null,
+        "num_return_sequences": null,
+        "output_attentions": null,
+        "output_hidden_states": null,
+        "output_scores": null,
+        "output_logits": null,
+        "return_dict_in_generate": null,
+        "pad_token_id": 151643,
+        "bos_token_id": 151643,
+        "eos_token_id": [
+          151645,
+          151643
+        ],
+        "encoder_no_repeat_ngram_size": null,
+        "decoder_start_token_id": null,
+        "is_assistant": null,
+        "num_assistant_tokens": null,
+        "num_assistant_tokens_schedule": null,
+        "assistant_confidence_threshold": null,
+        "prompt_lookup_num_tokens": null,
+        "max_matching_ngram_size": null,
+        "assistant_early_exit": null,
+        "assistant_lookbehind": null,
+        "target_lookbehind": null,
+        "assistant_ensemble_weight": null,
+        "speculation_type": null,
+        "compile_config": null,
+        "disable_compile": null,
+        "continuous_batching_config": null,
+        "low_memory": null,
+        "penalty_alpha": null,
+        "dola_layers": null,
+        "diversity_penalty": null,
+        "num_beam_groups": null,
+        "constraints": null,
+        "force_words_ids": null,
+        "prefill_chunk_size": null,
+        "_from_model_config": null,
+        "transformers_version": "5.20.1"
+      },
+      "original_predictions_sha256": "83130dd43abdea67a1f062270af6ff8776eb8349e7a90fd4ed9d54d1fad3d5f9",
+      "default_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3046875,
+          "f1": 0.36654180285294413,
+          "abstained": 0.4921875
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.78125,
+          "f1": 0.78125,
+          "abstained": 0.78125
+        }
+      },
+      "neutral_metrics": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3359375,
+          "f1": 0.3908799533799534,
+          "abstained": 0.4609375
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.7578125,
+          "f1": 0.7578125,
+          "abstained": 0.7578125
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": 0.03125,
+            "percentile_95": [
+              0.007462686567164179,
+              0.06201550387596899
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": 0.024338150527009224,
+            "percentile_95": [
+              -0.006124141652453078,
+              0.057137049823399164
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": -0.03125,
+            "percentile_95": [
+              -0.05932904927601301,
+              -0.007692307692307693
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": -0.0234375,
+            "percentile_95": [
+              -0.05,
+              0.0
+            ]
+          }
+        }
+      },
+      "adapter_sha256": "da132543580c1de82987a0eafc28d78f9bdb2561c4e3ff93c810da235a714531"
+    }
+  }
+}

@@ -314,3 +314,25 @@ This is a demonstrated decoding contribution, not proof of a general cure. A
 paired neutral-decoding evaluation of base and all four checkpoints is now needed
 before introducing a new preservation objective. Keep raw-logit preservation and
 actual decoded behavior distinct when evaluating every proposed method.
+
+## Decoder comparison completed
+
+The [five-model decoder comparison](../experiments/real_qa/decoding_512/REPORT.md)
+finds a genuine but limited effect: neutral repetition penalty reduces unnecessary
+refusals by 4–6/128, while reducing correct missing refusals by 3–6/128. Expanded
+coverage remains worse on supported answers at the stronger rate under either
+decoder. Do not promote a decoder correction as a new adaptation method. Record
+effective generation settings explicitly and investigate the actual response-token
+preservation loss before assuming a different selector will fix interference.
+
+## Token-loss diagnosis
+
+The [token-level audit](../experiments/real_qa/coverage_512/TOKEN_LOSS_REPORT.md)
+matches the actual loss numerically and finds the first token is the largest KL
+in 135/139 refused anchor/checkpoint observations. Its error is typically diluted
+four to six times by response averaging. This motivates a max-token preservation
+ablation, with stronger mean KL as a required control. The
+[protocol](../experiments/real_qa/coverage_512/TOKEN_LOSS_PROTOCOL.md) isolates that
+objective change under common neutral decoding before testing shared or selected
+neuron updates. This is a measured synthesis direction, not an established new
+method or an implication that every first-token change is semantically harmful.
