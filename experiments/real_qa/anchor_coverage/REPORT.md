@@ -44,3 +44,18 @@ Rebuild the automated queue with `python experiments/real_qa/audit_anchor_covera
 Its outcomes reflect whichever completed training-prediction files are available;
 hashes and filenames identify the evidence. It is not a completion check for a live
 experiment. Dataset text retains the SQuAD license described in ../DATA_LICENSE.md.
+
+## Completed 512-prefix candidate review
+
+`manual_review_512.json` now covers all 28 queued candidates. Twenty-four are
+accepted as valid answers with extra wording. Four are excluded: the Nicaea
+attribution, the dangling D-Day excerpt, a truncated theorists excerpt, and a
+URI/URL terminology ambiguity in the source. Selection uses training passages
+and baseline outputs only, with no adapted output as a selection criterion.
+These are assistant judgments and do not replace independent annotation.
+
+After reviewing, checking the existing fits shows 16/24 accepted omitted answers
+become refusals at .0001 and 12/24 at .0003. A coverage experiment can therefore
+compare the existing 91 exact anchors with 115 anchors (91 + 24). This only tests
+one conservative expansion: it still misses valid abbreviations or paraphrases
+that do not contain the reference span. It is not a production semantic verifier.
