@@ -21,3 +21,5 @@ experiments/real_qa/capacity/*/
 experiments/real_qa/scale_512/*/
 experiments/real_qa/scale_2048/*/
 experiments/real_qa/coverage_512/*/
+experiments/real_qa/token_loss_mean5/*/
+experiments/real_qa/token_loss_max1/*/

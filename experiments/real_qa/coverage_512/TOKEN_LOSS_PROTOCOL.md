@@ -38,3 +38,12 @@ and gradient conflict instead of adding another selector. If max KL offers a
 better observed trade-off, it remains a hypothesis requiring seed replication,
 fresh confirmation, matched neuron/random/LoRA comparisons and another task/model.
 No single pilot completes the combined-method goal.
+
+Implementation: `preservation_kl` accepts `token_reduction="max"`; the default
+remains `"mean"`. Numerical tests cover both KL directions, masked NaNs, unequal
+valid lengths, detached references, tied maxima and identity gradients. The
+runner's `--objective-variant mean5` / `max1` options require the reviewed 512
+prefix, set neutral decoding explicitly, and archive the exact loss implementation.
+The two invocations were launched serially on 2026-10-19, mean5 first; each contains
+both rates. Results go to token_loss_mean5/ and token_loss_max1/. A running first
+invocation does not establish that the second has begun or that either has finished.

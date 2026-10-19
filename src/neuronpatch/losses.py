@@ -10,14 +10,18 @@ def preservation_kl(
     mask: torch.Tensor,
     *,
     direction: str = "reference_to_edited",
+    token_reduction: str = "mean",
 ) -> torch.Tensor:
-    """Mean per-example KL on selected prediction positions, in nats.
+    """Per-example KL on selected prediction positions, in nats.
 
     Logits must both be [batch, sequence, vocabulary] on the same device. A bool
     [batch, sequence] mask selects LOGIT positions, not target-token positions.
     For a causal LM, logit t predicts token t+1: callers own alignment and must
     exclude padding. Each example needs at least one selected position. Tokens
-    are averaged within each example, then examples equally (not length-weighted).
+    are averaged within each example by default. With token_reduction="max",
+    use each example's largest token KL instead. Examples are then averaged
+    equally (not length-weighted). Max reduction splits gradients evenly at ties.
+    Max is an experimental objective, not a guarantee of semantic preservation.
 
     Reference logits are always detached. Default is KL(reference || edited),
     matching PyTorch kl_div(log_edited, reference). The reverse option explicitly
@@ -27,6 +31,8 @@ def preservation_kl(
     """
     if direction not in ("reference_to_edited", "edited_to_reference"):
         raise ValueError("unknown KL direction")
+    if token_reduction not in ("mean", "max"):
+        raise ValueError("unknown token reduction")
     if (
         edited_logits.ndim != 3
         or edited_logits.shape != reference_logits.shape
@@ -57,5 +63,6 @@ def preservation_kl(
             terms = log_reference.exp() * (log_reference - log_edited)
         else:
             terms = log_edited.exp() * (log_edited - log_reference)
-        losses.append(terms.sum(dim=-1).mean())
+        token_losses = terms.sum(dim=-1)
+        losses.append(token_losses.mean() if token_reduction == "mean" else token_losses.amax())
     return torch.stack(losses).mean()

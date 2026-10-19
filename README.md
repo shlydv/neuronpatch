@@ -109,25 +109,26 @@ are causal merely because their activations correlate with a label.
 
 ## Next milestones
 
-1. **Foundation (implemented):** column deltas, export, CPU correctness tests.
-2. **Architecture integration (implemented):** tiny random Qwen3 with supervised
-   token loss, fresh-input export parity, and exact patch reload. A pinned small
-   pretrained checkpoint is next.
+1. **Foundation (implemented):** row/column deltas, export, merge and correctness tests.
+2. **Architecture integration (implemented):** tiny Qwen correctness tests and
+   experiments with pinned pretrained Qwen2.5-0.5B-Instruct. Behavioral robustness
+   across model families remains unproven.
 3. **Guided selection (initial heuristic implemented):** collect actual
    down-projection inputs with explicit token masks, average within examples and
    then across examples, and rank the absolute difference between group means.
-   This is not FiNE attribution or causal discovery. Behavioral comparison with
-   layer-matched random controls remains to be run.
-4. **First behavior recipe:** document-grounded QA, correction/preservation data,
-   validation-only tuning, held-out document families, abstention and utility metrics.
+   This is not FiNE attribution or causal discovery. Synthetic and real-passage
+   comparisons have not established an advantage over random selection.
+4. **First behavior recipe (experimental):** document-grounded QA with isolated
+   article splits, correction/preservation data, answer/refusal metrics and output
+   audits. Preservation failures still prevent recommending a default recipe.
 5. **Baselines and publication:** prompting, matched random-column patches, ordinary
    LoRA; report seeds, compute, data budgets, patch sizes, and negative results.
-6. **Additional methods:** evaluate NeST-inspired cluster-shared updates and
+6. **Additional methods:** evaluate the tested experimental shared-row primitive and
    SafeNexus-inspired masked LoRA as separately named implementations.
 
 Full paper reproductions must pin models, datasets, objectives, and evaluations.
-An inspired primitive is not a reproduction. First benchmark acceptance criteria
-will be recorded before running it; this release establishes numerical correctness.
+An inspired primitive is not a reproduction. Experiments distinguish exploration
+from fresh confirmation; numerical correctness does not establish useful adaptation.
 
 ## Development
 
@@ -226,3 +227,24 @@ An [intervention-axis ablation](experiments/axis_ablation/REPORT.md) found a pro
 up-row candidate that preserved all supported answers on the exposed synthetic
 set. Its advantage over matching random up rows was only one answer. Treat it as
 exploratory evidence, not a validated default or a claim of superiority.
+
+## Current real-passage evidence
+
+The [completed data-size curve](experiments/real_qa/scale_2048/REPORT.md) improves
+some answer/refusal trade-offs, but still loses supported answers. Expanding
+[preservation coverage](experiments/real_qa/coverage_512/REPORT.md) does not solve
+that problem. A [decoding audit](experiments/real_qa/decoding_512/REPORT.md) identifies
+an inherited repetition penalty that contributes to both useful and unnecessary
+refusals; generation settings must be explicit in comparisons.
+
+`preservation_kl(..., token_reduction="max")` is an experimental alternative to
+the default per-example token mean. It protects the largest token-distribution
+change per example; examples still receive equal weight. It is being compared
+with stronger mean KL, not presented as an effective default. The motivation and
+controls are in the [token-loss protocol](experiments/real_qa/coverage_512/TOKEN_LOSS_PROTOCOL.md).
+
+`neuronpatch.grouped.GroupedRowPatch` provides explicit shared row deltas with
+verified forward/gradient/merge behavior. It has no automatic grouping and is
+not yet supported by the high-level checkpoint API. Neither this primitive nor
+the new loss has demonstrated an advantage in model quality. See the
+[evidence ledger](docs/method-design.md) for the remaining work.

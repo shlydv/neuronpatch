@@ -67,3 +67,55 @@ def test_rejects_empty_examples_and_nonfinite_selected_logits():
     x[0, 0, 0] = float("nan")
     with pytest.raises(ValueError):
         preservation_kl(x, x, torch.ones(2, 3, dtype=torch.bool))
+
+
+@pytest.mark.parametrize("direction", ["reference_to_edited", "edited_to_reference"])
+def test_max_token_loss_matches_independent_reference_and_masked_gradients(direction):
+    edited = torch.tensor(
+        [
+            [[4.0, 0.0], [1.0, 0.0], [float("nan"), float("nan")]],
+            [[0.0, 0.0], [0.0, 2.0], [0.0, 0.0]],
+        ],
+        dtype=torch.double,
+        requires_grad=True,
+    )
+    reference = torch.zeros_like(edited, requires_grad=True)
+    mask = torch.tensor([[True, True, False], [True, True, True]])
+    actual = preservation_kl(edited, reference, mask, direction=direction, token_reduction="max")
+    # Both rows have a unique maximum, at (0,0) and (1,1). Compute only those
+    # positions independently, then check masked/nonmax positions get no gradient.
+    logits = torch.stack([edited[0, 0], edited[1, 1]])
+    p = logits.softmax(-1)
+    q = torch.full_like(p, 0.5)
+    expected = (
+        (
+            (q * (q.log() - p.log()))
+            if direction == "reference_to_edited"
+            else (p * (p.log() - q.log()))
+        )
+        .sum(-1)
+        .mean()
+    )
+    torch.testing.assert_close(actual, expected)
+    grad = torch.autograd.grad(actual, edited)[0]
+    torch.testing.assert_close(grad, torch.autograd.grad(expected, edited)[0])
+    assert torch.isfinite(grad).all()
+    assert torch.count_nonzero(grad[0, 1:]) == 0
+    assert torch.count_nonzero(grad[1, [0, 2]]) == 0
+    assert reference.grad is None
+
+
+def test_max_token_ties_and_identity_are_finite_and_explicit():
+    x = torch.tensor([[[2.0, 0.0], [2.0, 0.0]]], dtype=torch.double, requires_grad=True)
+    reference = torch.zeros_like(x)
+    mask = torch.ones(1, 2, dtype=torch.bool)
+    loss = preservation_kl(x, reference, mask, token_reduction="max")
+    grad = torch.autograd.grad(loss, x)[0]
+    torch.testing.assert_close(grad[0, 0], grad[0, 1])
+    identity = preservation_kl(x, x.detach(), mask, token_reduction="max")
+    torch.testing.assert_close(identity, torch.zeros_like(identity), atol=1e-12, rtol=0)
+    torch.testing.assert_close(
+        torch.autograd.grad(identity, x)[0], torch.zeros_like(x), atol=1e-12, rtol=0
+    )
+    with pytest.raises(ValueError, match="token reduction"):
+        preservation_kl(x, reference, mask, token_reduction="sum")

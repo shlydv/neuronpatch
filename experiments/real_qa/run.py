@@ -3,6 +3,7 @@
 import argparse
 import gc
 import hashlib
+import inspect
 import json
 import random
 import time
@@ -26,13 +27,21 @@ ROOT = Path(__file__).parent
 TARGETS = [f"model.layers.{i}.mlp.up_proj" for i in (16, 20, 23)]
 
 
-def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
+def main(
+    replay=False, capacity=False, scaled_size=None, review_manifest=None, objective_variant=None
+):
+    if objective_variant not in (None, "mean5", "max1"):
+        raise ValueError("unknown objective variant")
+    if objective_variant is not None and (scaled_size != 512 or review_manifest is None):
+        raise ValueError("token-loss comparison requires 512 examples and reviewed anchors")
     if review_manifest is not None and scaled_size != 512:
         raise ValueError("reviewed coverage comparison requires the 512-example prefix")
     capacity = capacity or scaled_size is not None
     replay = replay or capacity
     out = ROOT / (
-        "coverage_512"
+        f"token_loss_{objective_variant}"
+        if objective_variant is not None
+        else "coverage_512"
         if review_manifest is not None
         else f"scale_{scaled_size}"
         if scaled_size
@@ -83,6 +92,8 @@ def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
         "steps_per_epoch": steps_per_epoch,
         "epochs": epochs,
         "anchor_count": len(anchors),
+        "objective_variant": objective_variant,
+        "token_reduction": "max" if objective_variant == "max1" else "mean",
         "response_loss_sha256": hashlib.sha256(
             (ROOT / "response_loss.py").read_bytes()
         ).hexdigest(),
@@ -99,6 +110,9 @@ def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
         },
         "runs": {},
     }
+    loss_source = Path(inspect.getfile(preservation_kl)).read_bytes()
+    summary["preservation_loss_sha256"] = hashlib.sha256(loss_source).hexdigest()
+    (out / "executed_preservation_loss.py.txt").write_bytes(loss_source)
     if review_bytes is not None:
         summary["reviewed_preservation"] = {
             "manifest_sha256": hashlib.sha256(review_bytes).hexdigest(),
@@ -153,6 +167,16 @@ def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
         return inputs
 
     reference = load().requires_grad_(False)
+    generation_overrides = {
+        "do_sample": False,
+        "max_new_tokens": 32,
+        "pad_token_id": tokenizer.pad_token_id,
+    }
+    if objective_variant is not None:
+        generation_overrides["repetition_penalty"] = 1.0
+    summary["effective_generation_config"] = (
+        reference.generation_config.to_dict() | generation_overrides
+    )
     if capacity:
         selected = None
         summary.update(discovery_seconds=0, selection_used=False)
@@ -218,9 +242,7 @@ def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
                 inputs = batch(rows)
                 outputs = model.generate(
                     **inputs,
-                    do_sample=False,
-                    max_new_tokens=32,
-                    pad_token_id=tokenizer.pad_token_id,
+                    **generation_overrides,
                 )
                 for row, ids in zip(rows, outputs[:, inputs["input_ids"].shape[1] :]):
                     text = tokenizer.decode(ids, skip_special_tokens=True)
@@ -244,7 +266,7 @@ def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
     if replay:
         configurations = configurations[:3]
     if capacity:
-        configurations = (("lora", 1.0),)
+        configurations = (("lora", 5.0 if objective_variant == "mean5" else 1.0),)
     targets = (
         [
             f"model.layers.{i}.mlp.{projection}_proj"
@@ -325,7 +347,12 @@ def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
                             edited_anchor, anchor_labels = response_logits(model, replay_inputs)
                             with torch.no_grad():
                                 original, _ = response_logits(reference, replay_inputs)
-                            kl = preservation_kl(edited_anchor, original, anchor_labels != -100)
+                            kl = preservation_kl(
+                                edited_anchor,
+                                original,
+                                anchor_labels != -100,
+                                token_reduction=summary["token_reduction"],
+                            )
                         else:
                             anchor_labels = replay_inputs.pop("labels")
                             edited_anchor = model(**replay_inputs, use_cache=False).logits
@@ -407,10 +434,12 @@ if __name__ == "__main__":
     parser.add_argument("--capacity", action="store_true")
     parser.add_argument("--scaled-size", type=int, choices=(512, 2048))
     parser.add_argument("--review-manifest", type=Path)
+    parser.add_argument("--objective-variant", choices=("mean5", "max1"))
     args = parser.parse_args()
     main(
         replay=args.replay,
         capacity=args.capacity,
         scaled_size=args.scaled_size,
         review_manifest=args.review_manifest,
+        objective_variant=args.objective_variant,
     )
