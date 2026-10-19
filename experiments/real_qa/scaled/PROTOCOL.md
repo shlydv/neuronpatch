@@ -29,3 +29,23 @@ confirmation. Report the 224 added validation rows separately from the 32 alread
 used in development. One epoch bounds compute and avoids assuming the previously
 observed multi-epoch validation deterioration is beneficial; it does not claim each
 size has been optimally trained. Later fixed-step/epoch curves remain distinct.
+
+## Exploratory uncertainty reporting
+
+`compare_predictions.py` reports before/after metric differences using 10,000
+paired article-bootstrap draws (seed 20261019). Whole articles are sampled with
+replacement; all their questions and both models' predictions travel together.
+Metrics remain question-weighted within each draw. This accounts for shared
+article context, unlike treating all questions as independent observations.
+
+These are descriptive percentile intervals on repeatedly examined development
+data. They do not account for model-seed variation, adaptive model selection,
+annotation errors or transfer to another model/task. They cannot turn a selected
+development improvement into a confirmatory claim. Raw EM/F1 remain distinct from
+semantic quality. Positive supported-refusal differences mean damage, whereas
+positive correct-missing-refusal differences mean improvement.
+
+The generated `uncertainty.json` may include a finished checkpoint from a still-
+running multi-fit experiment. Each entry records its predictions hash. File
+existence is not proof that the full experiment completed; verify the process
+handle before launching its dependent follow-up.
