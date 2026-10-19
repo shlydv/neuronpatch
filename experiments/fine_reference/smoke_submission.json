@@ -47,11 +47,12 @@
           15,
           290
         ]
-      ]
+      ],
+      "session_cleanup": "Kaggle UI still listed version2 running after child CUDA traceback; stopped that specific version via Active Events; subsequently confirmed Failed"
     },
     {
       "version": 3,
-      "status": "submitted",
+      "status": "QUEUED",
       "change": "explicit CUDA0 model placement; same upstream editor; temporary environment outside output directory; unbuffered stages",
       "bootstrap_sha256": "258e4fb1f0a05fd9a842c6316fa715c89d4a6d1de45ec9d8b40fe74c55cb94fe",
       "source_sha256": {
