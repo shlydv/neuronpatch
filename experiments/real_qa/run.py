@@ -6,6 +6,7 @@ import hashlib
 import json
 import random
 import time
+from collections import Counter
 from importlib.metadata import version
 from pathlib import Path
 from types import SimpleNamespace
@@ -14,6 +15,7 @@ import torch
 from data import MODEL, REVISION, metrics, prompt, score
 from peft import LoraConfig, get_peft_model
 from response_loss import response_ce, response_logits
+from reviewed_anchors import reviewed_additions
 from training_data import exact_correct_anchors
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -24,11 +26,15 @@ ROOT = Path(__file__).parent
 TARGETS = [f"model.layers.{i}.mlp.up_proj" for i in (16, 20, 23)]
 
 
-def main(replay=False, capacity=False, scaled_size=None):
+def main(replay=False, capacity=False, scaled_size=None, review_manifest=None):
+    if review_manifest is not None and scaled_size != 512:
+        raise ValueError("reviewed coverage comparison requires the 512-example prefix")
     capacity = capacity or scaled_size is not None
     replay = replay or capacity
     out = ROOT / (
-        f"scale_{scaled_size}"
+        "coverage_512"
+        if review_manifest is not None
+        else f"scale_{scaled_size}"
         if scaled_size
         else "capacity"
         if capacity
@@ -54,6 +60,11 @@ def main(replay=False, capacity=False, scaled_size=None):
     baseline = json.loads(baseline_path.read_text())
     # Only the corresponding training prefix may contribute preservation anchors.
     anchors = exact_correct_anchors(data["train"], baseline)
+    exact_anchors = set(anchors)
+    review_bytes = None
+    if review_manifest is not None:
+        review_bytes = Path(review_manifest).read_bytes()
+        anchors |= reviewed_additions(data["train"], baseline, json.loads(review_bytes))
     steps_per_epoch = len(data["train"]) // 2
     epochs = 1 if scaled_size else 3 if capacity else 1
     summary = {
@@ -88,6 +99,23 @@ def main(replay=False, capacity=False, scaled_size=None):
         },
         "runs": {},
     }
+    if review_bytes is not None:
+        summary["reviewed_preservation"] = {
+            "manifest_sha256": hashlib.sha256(review_bytes).hexdigest(),
+            "helper_sha256": hashlib.sha256(
+                (ROOT / "reviewed_anchors.py").read_bytes()
+            ).hexdigest(),
+            "exact_anchor_ids": sorted(exact_anchors),
+            "added_anchor_ids": sorted(anchors - exact_anchors),
+        }
+        (out / "review_manifest.json").write_bytes(review_bytes)
+    # Preserve executed sources before training, including when the runner later changes.
+    for filename in ("run.py", "data.py", "response_loss.py", "training_data.py"):
+        (out / f"executed_{filename}.txt").write_bytes((ROOT / filename).read_bytes())
+    if review_bytes is not None:
+        (out / "executed_reviewed_anchors.py.txt").write_bytes(
+            (ROOT / "reviewed_anchors.py").read_bytes()
+        )
 
     def save():
         (out / "summary.json").write_text(json.dumps(summary, indent=2))
@@ -230,6 +258,12 @@ def main(replay=False, capacity=False, scaled_size=None):
     anchor_rows = [r for r in data["train"] if r["id"] in anchors]
     random.Random(991).shuffle(anchor_rows)
     summary["anchor_order"] = [r["id"] for r in anchor_rows]
+    if replay:
+        summary["replay_exposures_per_fit"] = dict(
+            Counter(
+                anchor_rows[i % len(anchor_rows)]["id"] for i in range(epochs * steps_per_epoch * 2)
+            )
+        )
     for method, coefficient in configurations:
         for lr in (0.0001, 0.0003):
             torch.manual_seed(123)
@@ -372,5 +406,11 @@ if __name__ == "__main__":
     parser.add_argument("--replay", action="store_true")
     parser.add_argument("--capacity", action="store_true")
     parser.add_argument("--scaled-size", type=int, choices=(512, 2048))
+    parser.add_argument("--review-manifest", type=Path)
     args = parser.parse_args()
-    main(replay=args.replay, capacity=args.capacity, scaled_size=args.scaled_size)
+    main(
+        replay=args.replay,
+        capacity=args.capacity,
+        scaled_size=args.scaled_size,
+        review_manifest=args.review_manifest,
+    )
