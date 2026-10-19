@@ -20,9 +20,9 @@ subprocess.run(['git','clone','--quiet',
     'https://github.com/opanhw/fine-unified-editing-code',repo],check=True)
 subprocess.run(['git','-C',repo,'checkout','--quiet',
     'a2489cbac0dfe5a956385734065cfa041384e7d1'],check=True)
-subprocess.run([python,str(root/'run.py'),'--upstream',repo,
+subprocess.run([python,'-u',str(root/'run.py'),'--upstream',repo,
     '--output','/kaggle/working/preflight','--preflight'],check=True)
-subprocess.run([python,str(root/'run.py'),'--upstream',repo,
+subprocess.run([python,'-u',str(root/'run.py'),'--upstream',repo,
     '--output','/kaggle/working/results','--cases',str(cases)],check=True)
 """
 

@@ -116,11 +116,14 @@ def main():
         str(args.upstream / "knowledge-editing/hparams/FINE/gptj-6b.yaml")
     )
     hp.model_name = MODEL
+    print("STAGE tokenizer_load", flush=True)
     tokenizer = GPT2Tokenizer.from_pretrained(MODEL, revision=MODEL_REVISION)
     tokenizer.pad_token_id = tokenizer.eos_token_id
+    print("STAGE model_load", flush=True)
     model = model_class.from_pretrained(
         MODEL, revision=MODEL_REVISION, torch_dtype=torch.float16, device_map="auto"
     ).eval()
+    print("STAGE model_ready", flush=True)
     manifest = {
         "upstream_commit": COMMIT,
         "model": MODEL,
@@ -170,9 +173,11 @@ def main():
                     }
                     for row in rows
                 )
+        print(f"STAGE case={i} baseline probes={len(probes)}", flush=True)
         baseline = [generate(p["prompt"]) for p in probes]
         baseline_scores = score_probes(metric, model, tokenizer, hp, probes)
         for random_selection in (False, True):
+            print(f"STAGE case={i} edit random={random_selection}", flush=True)
             hp.random = random_selection
             request = {key: record[key] for key in ("prompt", "subject", "target_new")}
             model, originals = fine.apply_fine_to_model(
@@ -207,9 +212,11 @@ def main():
                     for name, value in originals.items():
                         model.get_parameter(name).copy_(value)
                 del originals
+            print(f"STAGE case={i} restore_check random={random_selection}", flush=True)
             assert generate(record["prompt"]) == baseline[0], (
                 "Base output changed after restoring edit"
             )
+    print("STAGE complete", flush=True)
 
 
 if __name__ == "__main__":
