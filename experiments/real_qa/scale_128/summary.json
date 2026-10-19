@@ -1,0 +1,111 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "training_examples": 128,
+  "reused_checkpoints": true,
+  "validation_sha256": "7acaac6e4c74b9ef3724b06db612c8fb530193e114151608ea211ffcabf72876",
+  "runs": {
+    "lora-lr0.0001-kl1.0-epoch1": {
+      "lr": 0.0001,
+      "parameters": 829440,
+      "optimizer_steps_total": 64,
+      "anchor_count": 20,
+      "anchor_em": 0.85,
+      "train": {
+        "answerable": {
+          "n": 64,
+          "em": 0.296875,
+          "f1": 0.3681982769069166,
+          "abstained": 0.484375
+        },
+        "missing": {
+          "n": 64,
+          "em": 0.828125,
+          "f1": 0.828125,
+          "abstained": 0.828125
+        }
+      },
+      "validation": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3125,
+          "f1": 0.36363063317911665,
+          "abstained": 0.3671875
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.6328125,
+          "f1": 0.6328125,
+          "abstained": 0.6328125
+        }
+      },
+      "new_only_metrics": {
+        "answerable": {
+          "n": 112,
+          "em": 0.30357142857142855,
+          "f1": 0.34675033547801404,
+          "abstained": 0.38392857142857145
+        },
+        "missing": {
+          "n": 112,
+          "em": 0.6607142857142857,
+          "f1": 0.6607142857142857,
+          "abstained": 0.6607142857142857
+        }
+      },
+      "original_prefix_output_mismatches": [],
+      "training_seconds": 41.451227292011026
+    },
+    "lora-lr0.0003-kl1.0-epoch1": {
+      "lr": 0.0003,
+      "parameters": 829440,
+      "optimizer_steps_total": 64,
+      "anchor_count": 20,
+      "anchor_em": 0.95,
+      "train": {
+        "answerable": {
+          "n": 64,
+          "em": 0.375,
+          "f1": 0.4837935884581105,
+          "abstained": 0.25
+        },
+        "missing": {
+          "n": 64,
+          "em": 0.71875,
+          "f1": 0.71875,
+          "abstained": 0.71875
+        }
+      },
+      "validation": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3359375,
+          "f1": 0.41615898932589385,
+          "abstained": 0.2578125
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.484375,
+          "f1": 0.484375,
+          "abstained": 0.484375
+        }
+      },
+      "new_only_metrics": {
+        "answerable": {
+          "n": 112,
+          "em": 0.3392857142857143,
+          "f1": 0.4157113139314737,
+          "abstained": 0.25892857142857145
+        },
+        "missing": {
+          "n": 112,
+          "em": 0.5089285714285714,
+          "f1": 0.5089285714285714,
+          "abstained": 0.5089285714285714
+        }
+      },
+      "original_prefix_output_mismatches": [],
+      "training_seconds": 47.196122083987575
+    }
+  }
+}

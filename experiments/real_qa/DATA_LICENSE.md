@@ -1,6 +1,6 @@
 # Dataset attribution
 
-JSON files under `prepared/`, `baseline/`, `adaptation/`, `diagnostic/`, `replay/`, `capacity/`, and `scaled/`
+JSON files under `prepared/`, `baseline/`, `adaptation/`, `diagnostic/`, `replay/`, `capacity/`, `scaled/`, `scaled_baseline/`, and `scale_*/`
 that contain source passages include excerpts and derived samples from
 [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/), by Rajpurkar et al.,
 licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

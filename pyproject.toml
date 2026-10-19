@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "neuronpatch"
 version = "0.1.0"
-description = "Train and export compact updates to selected neuron output weights."
+description = "Train and export compact updates to selected neuron weights."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

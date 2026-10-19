@@ -18,3 +18,5 @@ experiments/axis_ablation/results/*.pt
 experiments/real_qa/adaptation/*/
 experiments/real_qa/replay/*/
 experiments/real_qa/capacity/*/
+experiments/real_qa/scale_512/*/
+experiments/real_qa/scale_2048/*/

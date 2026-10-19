@@ -218,3 +218,25 @@ article-disjoint development sets are prepared without new predictions. The next
 comparison should hold model/objective fixed across data sizes before crediting a
 new selector. A tested response-only vocabulary projection makes the broader local
 experiment feasible without changing the causal loss.
+
+## Common validation for the data-size curve
+
+The expanded baseline now evaluates 2,048 training and 256 calibration/validation
+examples each, reproducing all original 192 development outputs. Preservation
+anchors are selected only from the corresponding training prefix (20/91/360 for
+128/512/2048). Existing 128-example checkpoints have been evaluated on the same
+256 validation rows as the upcoming larger fits, avoiding changing the evaluation
+population between sizes. On that common set they still trade supported-answer
+retention for correct refusals. The first size curve uses one epoch per size and
+explicitly reports extra optimizer steps and anchor coverage; it does not isolate
+data diversity from compute or claim an optimally tuned recipe at every size.
+
+## First larger-data comparison
+
+The [512-example comparison](../experiments/real_qa/scale_512/REPORT.md) improves
+both supported exact match and correct refusals at .0003 relative to the same-rate
+128-example reference on identical validation rows. At .0001 it worsens supported
+answers. Interference remains: the .0003 fit preserves only 37/45 base-exact-correct
+supported answers and still fails the presence/absence diagnostic. Report data,
+step-count and anchor-coverage changes together. The 2048-example fits are not yet
+part of the evidence; the full curve and semantic output review remain necessary.

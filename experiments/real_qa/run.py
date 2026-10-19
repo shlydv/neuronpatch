@@ -6,6 +6,7 @@ import hashlib
 import json
 import random
 import time
+from importlib.metadata import version
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -13,6 +14,7 @@ import torch
 from data import MODEL, REVISION, metrics, prompt, score
 from peft import LoraConfig, get_peft_model
 from response_loss import response_ce, response_logits
+from training_data import exact_correct_anchors
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from neuronpatch import NeuronPatch, random_indices
@@ -22,9 +24,18 @@ ROOT = Path(__file__).parent
 TARGETS = [f"model.layers.{i}.mlp.up_proj" for i in (16, 20, 23)]
 
 
-def main(replay=False, capacity=False):
+def main(replay=False, capacity=False, scaled_size=None):
+    capacity = capacity or scaled_size is not None
     replay = replay or capacity
-    out = ROOT / ("capacity" if capacity else "replay" if replay else "adaptation")
+    out = ROOT / (
+        f"scale_{scaled_size}"
+        if scaled_size
+        else "capacity"
+        if capacity
+        else "replay"
+        if replay
+        else "adaptation"
+    )
     out.mkdir(exist_ok=False)
     torch.set_num_threads(4)
     tokenizer = AutoTokenizer.from_pretrained(MODEL, revision=REVISION)
@@ -33,21 +44,46 @@ def main(replay=False, capacity=False):
         s: json.loads((ROOT / "prepared" / f"{s}.json").read_text())
         for s in ("train", "cal", "val")
     }
-    baseline = json.loads((ROOT / "baseline/train.json").read_text())
-    # Conservative anchor: preserve only supported, exact-correct training answers.
-    anchors = {r["id"] for r in baseline if r["kind"] == "answerable" and r["em"] == 1}
+    if scaled_size:
+        data = {
+            s: json.loads((ROOT / "scaled" / f"{s}_expanded.json").read_text())
+            for s in ("train", "cal", "val")
+        }
+        data["train"] = data["train"][:scaled_size]
+    baseline_path = ROOT / ("scaled_baseline/train.json" if scaled_size else "baseline/train.json")
+    baseline = json.loads(baseline_path.read_text())
+    # Only the corresponding training prefix may contribute preservation anchors.
+    anchors = exact_correct_anchors(data["train"], baseline)
+    steps_per_epoch = len(data["train"]) // 2
+    epochs = 1 if scaled_size else 3 if capacity else 1
     summary = {
         "model": MODEL,
+        "torch": torch.__version__,
+        "transformers": version("transformers"),
+        "peft": version("peft"),
+        "device": "mps",
+        "dtype": "float32",
         "revision": REVISION,
         "anchors": sorted(anchors),
         "preservation_schedule": "replay_every_step" if replay else "in_batch",
         "capacity_reference": capacity,
+        "scaled_size": scaled_size,
+        "training_examples": len(data["train"]),
+        "steps_per_epoch": steps_per_epoch,
+        "epochs": epochs,
+        "anchor_count": len(anchors),
         "response_loss_sha256": hashlib.sha256(
             (ROOT / "response_loss.py").read_bytes()
         ).hexdigest(),
         "code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "training_data_sha256": hashlib.sha256(
+            (ROOT / "training_data.py").read_bytes()
+        ).hexdigest(),
+        "data_helper_sha256": hashlib.sha256((ROOT / "data.py").read_bytes()).hexdigest(),
         "data_sha256": {
-            s: hashlib.sha256((ROOT / "prepared" / f"{s}.json").read_bytes()).hexdigest()
+            s: hashlib.sha256(json.dumps(data[s], indent=2).encode()).hexdigest()
+            if scaled_size
+            else hashlib.sha256((ROOT / "prepared" / f"{s}.json").read_bytes()).hexdigest()
             for s in data
         },
         "runs": {},
@@ -89,7 +125,10 @@ def main(replay=False, capacity=False):
         return inputs
 
     reference = load().requires_grad_(False)
-    if replay:
+    if capacity:
+        selected = None
+        summary.update(discovery_seconds=0, selection_used=False)
+    elif replay:
         previous = json.loads((ROOT / "adaptation/summary.json").read_text())
         selected = previous["selected"]
         summary.update(selected=selected, discovery_seconds=0, reused_selection=True)
@@ -217,14 +256,14 @@ def main(replay=False, capacity=False):
             optimizer = torch.optim.AdamW(params, lr=lr, weight_decay=0)
             order = list(range(len(data["train"])))
             random.Random(123).shuffle(order)
-            for epoch in range(3 if capacity else 1):
+            for epoch in range(epochs):
                 name = f"{method}-lr{lr}-kl{coefficient}" + (
                     f"-epoch{epoch + 1}" if capacity else ""
                 )
                 started = time.monotonic()
                 losses = []
                 model.train()
-                for step in range(64):
+                for step in range(steps_per_epoch):
                     rows = [data["train"][order[(step * 2 + j) % len(order)]] for j in range(2)]
                     inputs = batch(rows, True)
                     optimizer.zero_grad(set_to_none=True)
@@ -242,7 +281,9 @@ def main(replay=False, capacity=False):
                     retain = torch.tensor([r["id"] in anchors for r in rows], device="mps")
                     if replay:
                         replay_rows = [
-                            anchor_rows[((epoch * 64 + step) * 2 + j) % len(anchor_rows)]
+                            anchor_rows[
+                                ((epoch * steps_per_epoch + step) * 2 + j) % len(anchor_rows)
+                            ]
                             for j in range(2)
                         ]
                         replay_inputs = batch(replay_rows, True)
@@ -300,7 +341,7 @@ def main(replay=False, capacity=False):
                 result = {
                     "lr": lr,
                     "epoch": epoch + 1,
-                    "optimizer_steps_total": (epoch + 1) * 64,
+                    "optimizer_steps_total": (epoch + 1) * steps_per_epoch,
                     "kl_coefficient": coefficient,
                     "losses": losses,
                     "parameters": sum(p.numel() for p in params),
@@ -330,5 +371,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--replay", action="store_true")
     parser.add_argument("--capacity", action="store_true")
+    parser.add_argument("--scaled-size", type=int, choices=(512, 2048))
     args = parser.parse_args()
-    main(replay=args.replay, capacity=args.capacity)
+    main(replay=args.replay, capacity=args.capacity, scaled_size=args.scaled_size)

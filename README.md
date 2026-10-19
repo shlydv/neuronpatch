@@ -1,11 +1,12 @@
 # neuronpatch
 
-Train compact updates to selected neuron output weights, evaluate what changes,
+Train compact updates to selected neuron weights, evaluate what changes,
 and export a patch tied to its exact base checkpoint.
 
 **Status: experimental foundation.** Version 0.1 implements a tested PyTorch
-weight-update primitive, not a validated behavioral editing system. A small pretrained pilot
-failed its preservation gate; no causal discovery or superiority to LoRA is claimed.
+weight-update primitive, not a validated behavioral editing system. Current experiments
+expose correction/preservation trade-offs; guided selection has not demonstrated an
+advantage over random selection or LoRA. See the [evidence ledger](docs/method-design.md).
 
 ## Direction
 

@@ -1,5 +1,6 @@
 """Measure development splits only; confirmation stays unopened by inference."""
 
+import argparse
 import hashlib
 import json
 import time
@@ -12,8 +13,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 ROOT = Path(__file__).parent
 
 
-def main():
-    out = ROOT / "baseline"
+def main(scaled=False):
+    out = ROOT / ("scaled_baseline" if scaled else "baseline")
     out.mkdir(exist_ok=False)
     torch.set_num_threads(4)
     tokenizer = AutoTokenizer.from_pretrained(MODEL, revision=REVISION)
@@ -27,6 +28,7 @@ def main():
     )
     summary = {
         "model": MODEL,
+        "scaled": scaled,
         "revision": REVISION,
         "max_new_tokens": 32,
         "code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
@@ -35,7 +37,11 @@ def main():
     }
     started = time.monotonic()
     for split in ("val", "train", "cal"):
-        path = ROOT / "prepared" / f"{split}.json"
+        path = (
+            ROOT / "scaled" / f"{split}_expanded.json"
+            if scaled
+            else ROOT / "prepared" / f"{split}.json"
+        )
         rows = json.loads(path.read_text())
         predictions = []
         with torch.inference_mode():
@@ -64,14 +70,27 @@ def main():
                             "hit_token_limit": len(ids) == 32 and tokenizer.eos_token_id not in ids,
                         }
                     )
-                if start % 16 == 0:
+                if start % (64 if scaled else 16) == 0:
                     print(split, start, "/", len(rows), flush=True)
+                    if scaled:
+                        torch.mps.empty_cache()
         (out / f"{split}.json").write_text(json.dumps(predictions, indent=2))
         summary["splits"][split] = {
             "metrics": metrics(predictions),
             "data_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
             "hit_token_limit": sum(r["hit_token_limit"] for r in predictions),
         }
+        if scaled:
+            old = json.loads((ROOT / "baseline" / f"{split}.json").read_text())
+            predicted = {r["id"]: r["output"] for r in predictions}
+            mismatches = [r["id"] for r in old if predicted[r["id"]] != r["output"]]
+            summary["splits"][split]["original_prefix_output_mismatches"] = mismatches
+            if mismatches:
+                raise AssertionError(f"Base outputs changed on original prefix: {mismatches}")
+            old_ids = {r["id"] for r in old}
+            summary["splits"][split]["new_only_metrics"] = metrics(
+                [r for r in predictions if r["id"] not in old_ids]
+            )
         summary["elapsed_seconds"] = time.monotonic() - started
         (out / "summary.json").write_text(json.dumps(summary, indent=2))
         print(split, summary["splits"][split], flush=True)
@@ -79,4 +98,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--scaled", action="store_true")
+    main(scaled=parser.parse_args().scaled)
