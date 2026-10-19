@@ -1,0 +1,2047 @@
+{
+  "purpose": "Training-only review queue; no automatic correctness judgments",
+  "changes_anchor_policy": false,
+  "sources": {
+    "scaled_baseline/train.json": "ae5de65b0228edcbd7d94de8cb09d147693f54678f9e690c2d21c05aae35e362",
+    "scaled/train_expanded.json": "5b410ab2d24cfb7ac04da047fb3356455b59704fc5a168e0b0dab9ce1e2d9659"
+  },
+  "prefixes": {
+    "128": {
+      "supported": 64,
+      "exact_anchors": 20,
+      "unreviewed_span_containing_nonexact": 9,
+      "checkpoint_outcomes": {}
+    },
+    "512": {
+      "supported": 256,
+      "exact_anchors": 91,
+      "unreviewed_span_containing_nonexact": 28,
+      "checkpoint_outcomes": {
+        "lora-lr0.0001-kl1.0-epoch1-train.json": {
+          "candidate_refusals": 19,
+          "candidate_exact_matches": 4,
+          "sha256": "055cf2674486c686bc47ff765acdc1442ff16a1ef2cd46fa81d131e2a9f87d6d"
+        },
+        "lora-lr0.0003-kl1.0-epoch1-train.json": {
+          "candidate_refusals": 14,
+          "candidate_exact_matches": 10,
+          "sha256": "25f6632da9ea4c31f5975f923443cc648aec24db152ff65d22f3eda9cc492579"
+        }
+      }
+    },
+    "2048": {
+      "supported": 1024,
+      "exact_anchors": 360,
+      "unreviewed_span_containing_nonexact": 118,
+      "checkpoint_outcomes": {}
+    }
+  },
+  "candidates": [
+    {
+      "id": "56de73eb4396321400ee2933",
+      "article": "Heresy",
+      "context": "Immanuel Velikovsky is an example of a recent scientific exoheretic; he did not have appropriate scientific credentials or did not publish in scientific journals. While the details of his work are in scientific disrepute, the concept of catastrophic change (extinction event and punctuated equilibrium) has gained acceptance in recent decades.",
+      "question": "What label is associated with Immanuel Velikovsky due to his works outside the accepted discipline?",
+      "answers": [
+        "exoheretic"
+      ],
+      "answer": "exoheretic",
+      "kind": "answerable",
+      "prompt_tokens": 130,
+      "output": "scientific exoheretic",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56dd304366d3e219004dac37",
+      "article": "Prime_minister",
+      "context": "Bangladesh's constitution clearly outlines the functions and powers of the Prime Minister, and also details the process of his/her appointment and dismissal.",
+      "question": "Which constitution details the role and abilities of the prime minister?",
+      "answers": [
+        "Bangladesh's"
+      ],
+      "answer": "Bangladesh's",
+      "kind": "answerable",
+      "prompt_tokens": 83,
+      "output": "Bangladesh's constitution",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56fc2e0800a8df19004037c4",
+      "article": "Phonology",
+      "context": "The word phonology (as in the phonology of English) can also refer to the phonological system (sound system) of a given language. This is one of the fundamental systems which a language is considered to comprise, like its syntax and its vocabulary.",
+      "question": "What part of a language can phonology as a word also refer to?",
+      "answers": [
+        "the phonological system"
+      ],
+      "answer": "the phonological system",
+      "kind": "answerable",
+      "prompt_tokens": 112,
+      "output": "language's phonological system",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "571aeaf69499d21900609bac",
+      "article": "Athanasius_of_Alexandria",
+      "context": "Scholars now believe that the Arian Party was not monolithic, but held drastically different theological views that spanned the early Christian theological spectrum. They supported the tenets of Origenist thought and theology, but had little else in common. Moreover, many labelled \"Arian\" did not consider themselves followers of Arius. In addition, non-Homoousian bishops disagreed with being labeled as followers of Arius, since Arius was merely a presbyter, while they were fully ordained bishops. However, others point to the Council of Nicaea as proof in and of itself that Arianism was a real theological ideology.[citation needed]",
+      "question": "What did the Council of Nicaea decide about Arianism?",
+      "answers": [
+        "a real theological ideology"
+      ],
+      "answer": "a real theological ideology",
+      "kind": "answerable",
+      "prompt_tokens": 189,
+      "output": "The Council of Nicaea decided that Arianism was a real theological ideology.",
+      "em": 0.0,
+      "f1": 0.46153846153846156,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570d48a6fed7b91900d45e01",
+      "article": "United_States_Army",
+      "context": "The United States joined World War II in December 1941 after the Japanese attack on Pearl Harbor. On the European front, U.S. Army troops formed a significant portion of the forces that captured North Africa and Sicily, and later fought in Italy. On D-Day, June 6, 1944, and in the subsequent liberation of Europe and defeat of Nazi Germany, millions of U.S. Army troops played a central role. In the Pacific War, U.S. Army soldiers participated alongside the United States Marine Corps in capturing the Pacific Islands from Japanese control. Following the Axis surrenders in May (Germany) and August (Japan) of 1945, army troops were deployed to Japan and Germany to occupy the two defeated nations. Two years after World War II, the Army Air Forces separated from the army to become the United States Air Force in September 1947 after decades of attempting to separate. Also, in 1948, the army was desegregated by order of President Harry S. Truman.",
+      "question": "What is the month, day and year of \"D-Day\"?",
+      "answers": [
+        "June 6, 1944"
+      ],
+      "answer": "June 6, 1944",
+      "kind": "answerable",
+      "prompt_tokens": 275,
+      "output": "June 6, 1944, and in the subsequent liberation of Europe and defeat of Nazi Germany,",
+      "em": 0.0,
+      "f1": 0.35294117647058826,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572795755951b619008f8e22",
+      "article": "Crucifixion_of_Jesus",
+      "context": "Colin Humphreys and W. G. Waddington of Oxford University considered the possibility that a lunar, rather than solar, eclipse might have taken place. They concluded that such an eclipse would have been visible, for thirty minutes, from Jerusalem and suggested the gospel reference to a solar eclipse was the result of a scribe wrongly amending a text. Historian David Henige dismisses this explanation as 'indefensible' and astronomer Bradley Schaefer points out that the lunar eclipse would not have been visible during daylight hours.",
+      "question": "Which historian says this opinion is indefensible?",
+      "answers": [
+        "David Henige"
+      ],
+      "answer": "David Henige",
+      "kind": "answerable",
+      "prompt_tokens": 162,
+      "output": "Historian David Henige",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e1bc7ae3433e140042310f",
+      "article": "Communications_in_Somalia",
+      "context": "On 1 November 2013, international postal services for Somalia officially resumed. The Universal Postal Union is now assisting the Somali Postal Service to develop its capacity, including providing technical assistance and basic mail processing equipment.",
+      "question": "Who is helping the Somali Postal service reach its capacity?",
+      "answers": [
+        "Universal Postal Union"
+      ],
+      "answer": "Universal Postal Union",
+      "kind": "answerable",
+      "prompt_tokens": 100,
+      "output": "The Universal Postal Union is helping the Somali Postal Service reach its capacity.",
+      "em": 0.0,
+      "f1": 0.42857142857142855,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5731eaa7e17f3d140042254a",
+      "article": "Economy_of_Greece",
+      "context": "The evolution of the Greek economy during the 19th century (a period that transformed a large part of the world because of the Industrial Revolution) has been little researched. Recent research from 2006 examines the gradual development of industry and further development of shipping in a predominantly agricultural economy, calculating an average rate of per capita GDP growth between 1833 and 1911 that was only slightly lower than that of the other Western European nations. Industrial activity, (including heavy industry like shipbuilding) was evident, mainly in Ermoupolis and Piraeus. Nonetheless, Greece faced economic hardships and defaulted on its external loans in 1826, 1843, 1860 and 1894.",
+      "question": "What type of industrial activity was evident in Greece in the period researched?",
+      "answers": [
+        "shipbuilding"
+      ],
+      "answer": "shipbuilding",
+      "kind": "answerable",
+      "prompt_tokens": 217,
+      "output": "heavy industry like shipbuilding",
+      "em": 0.0,
+      "f1": 0.4,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56fac7ddf34c681400b0c126",
+      "article": "High-definition_television",
+      "context": "Additionally, cable-ready TV sets can display HD content without using an external box. They have a QAM tuner built-in and/or a card slot for inserting a CableCARD.",
+      "question": "What kind of built-in tuner will allow a cable-ready TV to display HD content without an external box?",
+      "answers": [
+        "QAM"
+      ],
+      "answer": "QAM",
+      "kind": "answerable",
+      "prompt_tokens": 101,
+      "output": "QAM tuner",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572952cb6aef051400154ce3",
+      "article": "Germans",
+      "context": "The native language of Germans is German, a West Germanic language, related to and classified alongside English and Dutch, and sharing many similarities with the North Germanic and Scandinavian languages. Spoken by approximately 100 million native speakers, German is one of the world's major languages and the most widely spoken first language in the European Union. German has been replaced by English as the dominant language of science-related Nobel Prize laureates during the second half of the 20th century. It was a lingua franca in the Holy Roman Empire.",
+      "question": "What languages is German related to?",
+      "answers": [
+        "English and Dutch"
+      ],
+      "answer": "English and Dutch",
+      "kind": "answerable",
+      "prompt_tokens": 162,
+      "output": "German is related to and classified alongside English and Dutch.",
+      "em": 0.0,
+      "f1": 0.46153846153846156,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572ecb56c246551400ce469e",
+      "article": "Geography_of_the_United_States",
+      "context": "The east coast Appalachian system, originally forest covered, is relatively low and narrow and is bordered on the southeast and south by an important coastal plain. The Cordilleran system on the western side of the continent is lofty, broad and complicated having two branches, the Rocky Mountain System and the Pacific Mountain System. In between these mountain systems lie the Intermontaine Plateaus. Both the Columbia River and Colorado River rise far inland near the easternmost members of the Cordilleran system, and flow through plateaus and intermontaine basins to the ocean. Heavy forests cover the northwest coast, but elsewhere trees are found only on the higher ranges below the Alpine region. The intermontane valleys, plateaus and basins range from treeless to desert with the most arid region being in the southwest.",
+      "question": "Which two major rivers are located in the Cordilleran system?",
+      "answers": [
+        "Columbia River and Colorado River"
+      ],
+      "answer": "Columbia River and Colorado River",
+      "kind": "answerable",
+      "prompt_tokens": 220,
+      "output": "The Cordilleran system contains the Columbia River and the Colorado River.",
+      "em": 0.0,
+      "f1": 0.7692307692307693,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "573047b604bcaa1900d77468",
+      "article": "Windows_8",
+      "context": "The three desktop editions of Windows 8 support 32-bit and 64-bit architectures; retail copies of Windows 8 include install DVDs for both architectures, while the online installer automatically installs the version corresponding with the architecture of the system's existing Windows installation. The 32-bit version runs on CPUs compatible with x86 architecture 3rd generation (known as IA-32) or newer, and can run 32-bit and 16-bit applications, although 16-bit support must be enabled first. (16-bit applications are developed for CPUs compatible with x86 2nd generation, first conceived in 1978. Microsoft started moving away from this architecture after Windows 95.)",
+      "question": "How does the online Windows installer know which version to install?",
+      "answers": [
+        "automatically installs the version corresponding with the architecture of the system's existing Windows installation"
+      ],
+      "answer": "automatically installs the version corresponding with the architecture of the system's existing Windows installation",
+      "kind": "answerable",
+      "prompt_tokens": 206,
+      "output": "The online installer automatically installs the version corresponding with the architecture of the system's existing Windows installation.",
+      "em": 0.0,
+      "f1": 0.9166666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727ae744b864d1900163a43",
+      "article": "Alsace",
+      "context": "At present, plans are being considered for building a new dual carriageway west of Strasbourg, which would reduce the buildup of traffic in that area by picking up north and southbound vehicles and getting rid of the buildup outside Strasbourg. The line plans to link up the interchange of H\u0153rdt to the north of Strasbourg, with Innenheim in the southwest. The opening is envisaged at the end of 2011, with an average usage of 41,000 vehicles a day. Estimates of the French Works Commissioner however, raised some doubts over the interest of such a project, since it would pick up only about 10% of the traffic of the A35 at Strasbourg. Paradoxically, this reversed the situation of the 1950s. At that time, the French trunk road left of the Rhine not been built, so that traffic would cross into Germany to use the Karlsruhe-Basel Autobahn.",
+      "question": "What would the use of a new carriageway do in Alsace?",
+      "answers": [
+        "reduce the buildup of traffic in that area"
+      ],
+      "answer": "reduce the buildup of traffic in that area",
+      "kind": "answerable",
+      "prompt_tokens": 263,
+      "output": "reduce the buildup of traffic in that area by picking up north and southbound vehicles",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570e6b020b85d914000d7eb6",
+      "article": "Sanskrit",
+      "context": "In order to explain the common features shared by Sanskrit and other Indo-European languages, many scholars have proposed the Indo-Aryan migration theory, asserting that the original speakers of what became Sanskrit arrived in what is now India and Pakistan from the north-west some time during the early second millennium BCE. Evidence for such a theory includes the close relationship between the Indo-Iranian tongues and the Baltic and Slavic languages, vocabulary exchange with the non-Indo-European Uralic languages, and the nature of the attested Indo-European words for flora and fauna.",
+      "question": "What is the relationship between Indo-Iranian and Baltic languages?",
+      "answers": [
+        "close"
+      ],
+      "answer": "close",
+      "kind": "answerable",
+      "prompt_tokens": 170,
+      "output": "close relationship",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5726c11ef1498d1400e8ea46",
+      "article": "Avicenna",
+      "context": "Ibn Sina's first appointment was that of physician to the emir, Nuh II, who owed him his recovery from a dangerous illness (997). Ibn Sina's chief reward for this service was access to the royal library of the Samanids, well-known patrons of scholarship and scholars. When the library was destroyed by fire not long after, the enemies of Ibn Sina accused him of burning it, in order for ever to conceal the sources of his knowledge. Meanwhile, he assisted his father in his financial labors, but still found time to write some of his earliest works.",
+      "question": "Why did some accuse Ibn Sina of burning down the royal library?",
+      "answers": [
+        "to conceal the sources of his knowledge"
+      ],
+      "answer": "to conceal the sources of his knowledge",
+      "kind": "answerable",
+      "prompt_tokens": 180,
+      "output": "enemies of Ibn Sina accused him of burning it, in order for ever to conceal the sources of his knowledge.",
+      "em": 0.0,
+      "f1": 0.48,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e0c8ed7aa994140058e6eb",
+      "article": "Web_browser",
+      "context": "A web browser (commonly referred to as a browser) is a software application for retrieving, presenting, and traversing information resources on the World Wide Web. An information resource is identified by a Uniform Resource Identifier (URI/URL) and may be a web page, image, video or other piece of content. Hyperlinks present in resources enable users easily to navigate their browsers to related resources.",
+      "question": "What does URL mean?",
+      "answers": [
+        "Uniform Resource Identifier"
+      ],
+      "answer": "Uniform Resource Identifier",
+      "kind": "answerable",
+      "prompt_tokens": 129,
+      "output": "Uniform Resource Identifier (URL)",
+      "em": 0.0,
+      "f1": 0.8571428571428571,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e11661e3433e1400422bb9",
+      "article": "Canon_law",
+      "context": "Currently, (2004), there are principles of canon law common to the churches within the Anglican Communion; their existence can be factually established; each province or church contributes through its own legal system to the principles of canon law common within the Communion; these principles have a strong persuasive authority and are fundamental to the self-understanding of each of the churches of the Communion; these principles have a living force, and contain in themselves the possibility of further development; and the existence of these principles both demonstrates unity and promotes unity within the Anglican Communion. ",
+      "question": "What kind of force could the canonical principles be said to have within the Communion?",
+      "answers": [
+        "living"
+      ],
+      "answer": "living",
+      "kind": "answerable",
+      "prompt_tokens": 179,
+      "output": "living force",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572b441cf75d5e190021fd45",
+      "article": "Empiricism",
+      "context": "Among Peirce's major contributions was to place inductive reasoning and deductive reasoning in a complementary rather than competitive mode, the latter of which had been the primary trend among the educated since David Hume wrote a century before. To this, Peirce added the concept of abductive reasoning. The combined three forms of reasoning serve as a primary conceptual foundation for the empirically based scientific method today. Peirce's approach \"presupposes that (1) the objects of knowledge are real things, (2) the characters (properties) of real things do not depend on our perceptions of them, and (3) everyone who has sufficient experience of real things will agree on the truth about them. According to Peirce's doctrine of fallibilism, the conclusions of science are always tentative. The rationality of the scientific method does not depend on the certainty of its conclusions, but on its self-corrective character: by continued application of the method science can detect and correct its own mistakes, and thus eventually lead to the discovery of truth\".",
+      "question": "What did fallibilism say?",
+      "answers": [
+        "the conclusions of science are always tentative"
+      ],
+      "answer": "the conclusions of science are always tentative",
+      "kind": "answerable",
+      "prompt_tokens": 265,
+      "output": "The fallibilism said that the conclusions of science are always tentative.",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572b890d111d821400f38eee",
+      "article": "Education",
+      "context": "In the past, those who were disabled were often not eligible for public education. Children with disabilities were repeatedly denied an education by physicians or special tutors. These early physicians (people like Itard, Seguin, Howe, Gallaudet) set the foundation for special education today. They focused on individualized instruction and functional skills. In its early years, special education was only provided to people with severe disabilities, but more recently it has been opened to anyone who has experienced difficulty learning.",
+      "question": "What was a rule for disabled people in the past for education?",
+      "answers": [
+        "not eligible for public education"
+      ],
+      "answer": "not eligible for public education",
+      "kind": "answerable",
+      "prompt_tokens": 155,
+      "output": "Those who were disabled were often not eligible for public education.",
+      "em": 0.0,
+      "f1": 0.625,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570ced3efed7b91900d45af4",
+      "article": "Gymnastics",
+      "context": "In tumbling, athletes perform an explosive series of flips and twists down a sprung tumbling track. Scoring is similar to trampolining. Tumbling was originally contested as one of the events in Men's Artistic Gymnastics at the 1932 Summer Olympics, and in 1955 and 1959 at the Pan American Games. From 1974 to 1998 it was included as an event for both genders at the Acrobatic Gymnastics World Championships. The event has also been contested since 1976 at the Trampoline World Championships. Since the recognition of Trampoline and Acrobatic Gymnastics as FIG disciplines in 1999, official Tumbling competitions are only allowed as an event in Trampoline gymnastics meets.",
+      "question": "When was tumbling orginally contested at the Olympics?",
+      "answers": [
+        "1932"
+      ],
+      "answer": "1932",
+      "kind": "answerable",
+      "prompt_tokens": 224,
+      "output": "1932 Summer Olympics",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e7c6bb37bdd419002c43f1",
+      "article": "Tristan_da_Cunha",
+      "context": "On 13 February 2008, fire destroyed the fishing factory and the four generators that supplied power to the island. On 14 March 2008, new generators were installed and uninterrupted power was restored. This fire was devastating to the island because fishing is a mainstay of the economy. While a new factory was being planned and built, M/V Kelso came to the island and acted as a factory ship, with island fishermen based on board for stints normally of one week. The new facility was ready in July 2009, for the start of the 2009\u201310 fishing season.",
+      "question": "When were the new generators installed to correct the power problems?",
+      "answers": [
+        "March 2008"
+      ],
+      "answer": "March 2008",
+      "kind": "answerable",
+      "prompt_tokens": 190,
+      "output": "14 March 2008",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56dfbf01231d4119001abd7b",
+      "article": "Hunter-gatherer",
+      "context": "Some of the theorists who advocate this \"revisionist\" critique imply that, because the \"pure hunter-gatherer\" disappeared not long after colonial (or even agricultural) contact began, nothing meaningful can be learned about prehistoric hunter-gatherers from studies of modern ones (Kelly, 24-29; see Wilmsen)",
+      "question": "Who thinks that it is useless to study modern foragers since the real ones are gone?",
+      "answers": [
+        "theorists"
+      ],
+      "answer": "theorists",
+      "kind": "answerable",
+      "prompt_tokens": 132,
+      "output": "Some of the theorists who advocate this \"revisionist\" critique imply that, because the \"pure hunter-gatherer\" disappeared not long after colonial (or even",
+      "em": 0.0,
+      "f1": 0.09523809523809523,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "5731304e497a881900248c37",
+      "article": "Light-emitting_diode",
+      "context": "High-power LEDs (HP-LEDs) or high-output LEDs (HO-LEDs) can be driven at currents from hundreds of mA to more than an ampere, compared with the tens of mA for other LEDs. Some can emit over a thousand lumens. LED power densities up to 300 W/cm2 have been achieved. Since overheating is destructive, the HP-LEDs must be mounted on a heat sink to allow for heat dissipation. If the heat from a HP-LED is not removed, the device will fail in seconds. One HP-LED can often replace an incandescent bulb in a flashlight, or be set in an array to form a powerful LED lamp.",
+      "question": "How many lumens can some high-power LEDs emit?",
+      "answers": [
+        "over a thousand"
+      ],
+      "answer": "over a thousand",
+      "kind": "answerable",
+      "prompt_tokens": 199,
+      "output": "over a thousand lumens",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5731a51fe17f3d140042229d",
+      "article": "University",
+      "context": "Examining the influence of humanism on scholars in medicine, mathematics, astronomy and physics may suggest that humanism and universities were a strong impetus for the scientific revolution. Although the connection between humanism and the scientific discovery may very well have begun within the confines of the university, the connection has been commonly perceived as having been severed by the changing nature of science during the scientific revolution. Historians such as Richard S. Westfall have argued that the overt traditionalism of universities inhibited attempts to re-conceptualize nature and knowledge and caused an indelible tension between universities and scientists. This resistance to changes in science may have been a significant factor in driving many scientists away from the university and toward private benefactors, usually in princely courts, and associations with newly forming scientific societies.",
+      "question": "The study of humanism among those studying math, astronomy and medicine is said to have caused what?",
+      "answers": [
+        "the scientific revolution"
+      ],
+      "answer": "the scientific revolution",
+      "kind": "answerable",
+      "prompt_tokens": 223,
+      "output": "The study of humanism among those studying math, astronomy and medicine is said to have caused a strong impetus for the scientific revolution.",
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570fe6f15ab6b819003910ad",
+      "article": "Dell",
+      "context": "In 2000, Dell announced that it would lease 80,000 square feet (7,400 m2) of space in the Las Cimas office complex in unincorporated Travis County, Texas, between Austin and West Lake Hills, to house the company's executive offices and corporate headquarters. 100 senior executives were scheduled to work in the building by the end of 2000. In January 2001, the company leased the space in Las Cimas 2, located along Loop 360. Las Cimas 2 housed Dell's executives, the investment operations, and some corporate functions. Dell also had an option for 138,000 square feet (12,800 m2) of space in Las Cimas 3. After a slowdown in business required reducing employees and production capacity, Dell decided to sublease its offices in two buildings in the Las Cimas office complex. In 2002 Dell announced that it planned to sublease its space to another tenant; the company planned to move its headquarters back to Round Rock once a tenant was secured. By 2003, Dell moved its headquarters back to Round Rock. It leased all of Las Cimas I and II, with a total of 312,000 square feet (29,000 m2), for about a seven-year period after 2003. By that year roughly 100,000 square feet (9,300 m2) of that space was absorbed by new subtenants.",
+      "question": "What was the total amount of space that Dell leased in Las Cimas 1 and 2?",
+      "answers": [
+        "312,000 square feet"
+      ],
+      "answer": "312,000 square feet",
+      "kind": "answerable",
+      "prompt_tokens": 403,
+      "output": "312,000 square feet (29,000 m2)",
+      "em": 0.0,
+      "f1": 0.75,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572835ea4b864d1900164742",
+      "article": "Federalism",
+      "context": "Anarchists are against the State but are not against political organization or \"governance\"\u2014so long as it is self-governance utilizing direct democracy. The mode of political organization preferred by anarchists, in general, is federalism or confederalism.[citation needed] However, the anarchist definition of federalism tends to differ from the definition of federalism assumed by pro-state political scientists. The following is a brief description of federalism from section I.5 of An Anarchist FAQ:",
+      "question": "What are anarchists against? ",
+      "answers": [
+        "State"
+      ],
+      "answer": "State",
+      "kind": "answerable",
+      "prompt_tokens": 151,
+      "output": "Anarchists are against the State.",
+      "em": 0.0,
+      "f1": 0.4,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572817492ca10214002d9daa",
+      "article": "Central_African_Republic",
+      "context": "In 2004 the Central African Republic Bush War began as forces opposed to Boziz\u00e9 took up arms against his government. In May 2005 Boziz\u00e9 won a presidential election that excluded Patass\u00e9 and in 2006 fighting continued between the government and the rebels. In November 2006, Boziz\u00e9's government requested French military support to help them repel rebels who had taken control of towns in the country's northern regions. Though the initially public details of the agreement pertained to logistics and intelligence, the French assistance eventually included strikes by Mirage jets against rebel positions.",
+      "question": "What did the rebels take over?",
+      "answers": [
+        "towns in the country's northern regions"
+      ],
+      "answer": "towns in the country's northern regions",
+      "kind": "answerable",
+      "prompt_tokens": 181,
+      "output": "The rebels took control of towns in the country's northern regions.",
+      "em": 0.0,
+      "f1": 0.7142857142857143,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57278529f1498d1400e8faaa",
+      "article": "Crucifixion_of_Jesus",
+      "context": "However, early Christian writers who speak of the shape of the particular gibbet on which Jesus died invariably describe it as having a cross-beam. For instance, the Epistle of Barnabas, which was certainly earlier than 135, and may have been of the 1st century AD, the time when the gospel accounts of the death of Jesus were written, likened it to the letter T (the Greek letter tau, which had the numeric value of 300), and to the position assumed by Moses in Exodus 17:11\u201312. Justin Martyr (100\u2013165) explicitly says the cross of Christ was of two-beam shape: \"That lamb which was commanded to be wholly roasted was a symbol of the suffering of the cross which Christ would undergo. For the lamb, which is roasted, is roasted and dressed up in the form of the cross. For one spit is transfixed right through from the lower parts up to the head, and one across the back, to which are attached the legs of the lamb.\" Irenaeus, who died around the end of the 2nd century, speaks of the cross as having \"five extremities, two in length, two in breadth, and one in the middle, on which [last] the person rests who is fixed by the nails.\"",
+      "question": "What Epistle described the cross?",
+      "answers": [
+        "Epistle of Barnabas"
+      ],
+      "answer": "Epistle of Barnabas",
+      "kind": "answerable",
+      "prompt_tokens": 330,
+      "output": "The Epistle that described the cross was the Epistle of Barnabas.",
+      "em": 0.0,
+      "f1": 0.5454545454545454,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570cda09b3d812140066d2c6",
+      "article": "Mary_(mother_of_Jesus)",
+      "context": "From the early stages of Christianity, belief in the virginity of Mary and the virgin conception of Jesus, as stated in the gospels, holy and supernatural, was used by detractors, both political and religious, as a topic for discussions, debates and writings, specifically aimed to challenge the divinity of Jesus and thus Christians and Christianity alike. In the 2nd century, as part of the earliest anti-Christian polemics, Celsus suggested that Jesus was the illegitimate son of a Roman soldier named Panthera. The views of Celsus drew responses from Origen, the Church Father in Alexandria, Egypt, who considered it a fabricated story. How far Celsus sourced his view from Jewish sources remains a subject of discussion.",
+      "question": "In which century did Celsus suggest that Jesus' father was a Roman soldier?",
+      "answers": [
+        "2nd"
+      ],
+      "answer": "2nd",
+      "kind": "answerable",
+      "prompt_tokens": 212,
+      "output": "2nd century",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e032687aa994140058e356",
+      "article": "Comics",
+      "context": "Frustration with censorship and editorial interference led to a group of Pilote cartoonists to found the adults-only L'\u00c9cho des savanes in 1972. Adult-oriented and experimental comics flourished in the 1970s, such as in the experimental science fiction of M\u0153bius and others in M\u00e9tal hurlant, even mainstream publishers took to publishing prestige-format adult comics.",
+      "question": "M\u00e9tal hurlant was of what genre?",
+      "answers": [
+        "science fiction"
+      ],
+      "answer": "science fiction",
+      "kind": "answerable",
+      "prompt_tokens": 137,
+      "output": "M\u00e9tal hurlant was an experimental science fiction comic.",
+      "em": 0.0,
+      "f1": 0.4444444444444444,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5730a6cd2461fd1900a9cf52",
+      "article": "Sumer",
+      "context": "However, some scholars contest the idea of a Proto-Euphratean language or one substrate language. It has been suggested by them and others, that the Sumerian language was originally that of the hunter and fisher peoples, who lived in the marshland and the Eastern Arabia littoral region, and were part of the Arabian bifacial culture. Reliable historical records begin much later; there are none in Sumer of any kind that have been dated before Enmebaragesi (c. 26th century BC). Professor Juris Zarins believes the Sumerians were settled along the coast of Eastern Arabia, today's Persian Gulf region, before it flooded at the end of the Ice Age.",
+      "question": "What culture did the peoples who would be called Sumerian have a part in?",
+      "answers": [
+        "Arabian bifacial"
+      ],
+      "answer": "Arabian bifacial",
+      "kind": "answerable",
+      "prompt_tokens": 205,
+      "output": "Arabian bifacial culture",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5728106fff5b5019007d9c3a",
+      "article": "Group_(mathematics)",
+      "context": "The convergence of these various sources into a uniform theory of groups started with Camille Jordan's Trait\u00e9 des substitutions et des \u00e9quations alg\u00e9briques (1870). Walther von Dyck (1882) introduced the idea of specifying a group by means of generators and relations, and was also the first to give an axiomatic definition of an \"abstract group\", in the terminology of the time. As of the 20th century, groups gained wide recognition by the pioneering work of Ferdinand Georg Frobenius and William Burnside, who worked on representation theory of finite groups, Richard Brauer's modular representation theory and Issai Schur's papers. The theory of Lie groups, and more generally locally compact groups was studied by Hermann Weyl, \u00c9lie Cartan and many others. Its algebraic counterpart, the theory of algebraic groups, was first shaped by Claude Chevalley (from the late 1930s) and later by the work of Armand Borel and Jacques Tits.",
+      "question": "When did the uniform theory of groups develop from different sources? ",
+      "answers": [
+        "1870"
+      ],
+      "answer": "1870",
+      "kind": "answerable",
+      "prompt_tokens": 273,
+      "output": "Camille Jordan's Trait\u00e9 des substitutions et des \u00e9quations alg\u00e9briques (1870)",
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5731458d05b4da19006bcf9a",
+      "article": "Light-emitting_diode",
+      "context": "Assistive listening devices in many theaters and similar spaces use arrays of infrared LEDs to send sound to listeners' receivers. Light-emitting diodes (as well as semiconductor lasers) are used to send data over many types of fiber optic cable, from digital audio over TOSLINK cables to the very high bandwidth fiber links that form the Internet backbone. For some time, computers were commonly equipped with IrDA interfaces, which allowed them to send and receive data to nearby machines via infrared.",
+      "question": "LEDs can send data over what type of cable?",
+      "answers": [
+        "fiber optic"
+      ],
+      "answer": "fiber optic",
+      "kind": "answerable",
+      "prompt_tokens": 151,
+      "output": "fiber optic cable",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5726668a708984140094c4cf",
+      "article": "Film_speed",
+      "context": "The CIPA DC-004 standard requires that Japanese manufacturers of digital still cameras use either the REI or SOS techniques, and DC-008 updates the Exif specification to differentiate between these values. Consequently, the three EI techniques carried over from ISO 12232:1998 are not widely used in recent camera models (approximately 2007 and later). As those earlier techniques did not allow for measurement from images produced with lossy compression, they cannot be used at all on cameras that produce images only in JPEG format.",
+      "question": "What does the DC-008 change?",
+      "answers": [
+        "the Exif specification"
+      ],
+      "answer": "the Exif specification",
+      "kind": "answerable",
+      "prompt_tokens": 170,
+      "output": "The DC-008 changes the EXIF specification to differentiate between REI and SOS techniques.",
+      "em": 0.0,
+      "f1": 0.3076923076923077,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572e7c7303f9891900756690",
+      "article": "Canadian_football",
+      "context": "The first written account of a game played was on October 15, 1862, on the Montreal Cricket Grounds. It was between the First Battalion Grenadier Guards and the Second Battalion Scots Fusilier Guards resulting in a win by the Grenadier Guards 3 goals, 2 rouges to nothing.[citation needed] In 1864, at Trinity College, Toronto, F. Barlow Cumberland, Frederick A. Bethune, and Christopher Gwynn, one of the founders of Milton, Massachusetts, devised rules based on rugby football. The game gradually gained a following, with the Hamilton Football Club formed on November 3, 1869, (the oldest football club in Canada). Montreal formed a team April 8, 1872, Toronto was formed on October 4, 1873, and the Ottawa FBC on September 20, 1876.",
+      "question": "Which team won the first recorded Canadian football game?",
+      "answers": [
+        "First Battalion Grenadier Guards"
+      ],
+      "answer": "First Battalion Grenadier Guards",
+      "kind": "answerable",
+      "prompt_tokens": 248,
+      "output": "First Battalion Grenadier Guards won the first recorded Canadian football game.",
+      "em": 0.0,
+      "f1": 0.5714285714285714,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572847804b864d19001648a8",
+      "article": "PlayStation_3",
+      "context": "Despite the initial negative press, several websites have given the system very good reviews mostly regarding its hardware. CNET United Kingdom praised the system saying, \"the PS3 is a versatile and impressive piece of home-entertainment equipment that lives up to the hype [...] the PS3 is well worth its hefty price tag.\" CNET awarded it a score of 8.8 out of 10 and voted it as its number one \"must-have\" gadget, praising its robust graphical capabilities and stylish exterior design while criticizing its limited selection of available games. In addition, both Home Theater Magazine and Ultimate AV have given the system's Blu-ray playback very favorable reviews, stating that the quality of playback exceeds that of many current standalone Blu-ray Disc players.",
+      "question": "What score did CNET give the PS3 out of ten?",
+      "answers": [
+        "8.8"
+      ],
+      "answer": "8.8",
+      "kind": "answerable",
+      "prompt_tokens": 207,
+      "output": "8.8 out of 10",
+      "em": 0.0,
+      "f1": 0.4,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570a631b6d058f1900182df8",
+      "article": "Emotion",
+      "context": "Walter Bradford Cannon agreed that physiological responses played a crucial role in emotions, but did not believe that physiological responses alone could explain subjective emotional experiences. He argued that physiological responses were too slow and often imperceptible and this could not account for the relatively rapid and intense subjective awareness of emotion. He also believed that the richness, variety, and temporal course of emotional experiences could not stem from physiological reactions, that reflected fairly undifferentiated fight or flight responses. An example of this theory in action is as follows: An emotion-evoking event (snake) triggers simultaneously both a physiological response and a conscious experience of an emotion.",
+      "question": "Why did Cannon believe that physiological responses were insufficient cause for emotions?",
+      "answers": [
+        "too slow and often imperceptible"
+      ],
+      "answer": "too slow and often imperceptible",
+      "kind": "answerable",
+      "prompt_tokens": 181,
+      "output": "Walter Bradford Cannon believed that physiological responses were too slow and often imperceptible to account for the rich, varied, and fast-paced nature of emotions.",
+      "em": 0.0,
+      "f1": 0.35714285714285715,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572a81a1f75d5e190021fb23",
+      "article": "Miami",
+      "context": "Other major newspapers include Miami Today, headquartered in Brickell, Miami New Times, headquartered in Midtown, Miami Sun Post, South Florida Business Journal, Miami Times, and Biscayne Boulevard Times. An additional Spanish-language newspapers, Diario Las Americas also serve Miami. The Miami Herald is Miami's primary newspaper with over a million readers and is headquartered in Downtown in Herald Plaza. Several other student newspapers from the local universities, such as the oldest, the University of Miami's The Miami Hurricane, Florida International University's The Beacon, Miami-Dade College's The Metropolis, Barry University's The Buccaneer, amongst others. Many neighborhoods and neighboring areas also have their own local newspapers such as the Aventura News, Coral Gables Tribune, Biscayne Bay Tribune, and the Palmetto Bay News.",
+      "question": "For what university is The Beacon the student newspaper?",
+      "answers": [
+        "Florida International"
+      ],
+      "answer": "Florida International",
+      "kind": "answerable",
+      "prompt_tokens": 218,
+      "output": "Florida International University",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57267331708984140094c68d",
+      "article": "Jews",
+      "context": "According to a report published in 2014, about 43% of all Jews reside in Israel (6.1 million), and 40% in the United States (5.7 million), with most of the remainder living in Europe (1.4 million) and Canada (0.4 million). These numbers include all those who self-identified as Jews in a socio-demographic study or were identified as such by a respondent in the same household. The exact world Jewish population, however, is difficult to measure. In addition to issues with census methodology, disputes among proponents of halakhic, secular, political, and ancestral identification factors regarding who is a Jew may affect the figure considerably depending on the source.",
+      "question": "What is one reason the world population of Jews difficult to determine?",
+      "answers": [
+        "issues with census methodology"
+      ],
+      "answer": "issues with census methodology",
+      "kind": "answerable",
+      "prompt_tokens": 206,
+      "output": "The passage states that the exact world Jewish population is difficult to measure due to issues with census methodology and disputes among different identification factors.",
+      "em": 0.0,
+      "f1": 0.2962962962962963,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57277c82708984140094defa",
+      "article": "Glacier",
+      "context": "Glacial abrasion is commonly characterized by glacial striations. Glaciers produce these when they contain large boulders that carve long scratches in the bedrock. By mapping the direction of the striations, researchers can determine the direction of the glacier's movement. Similar to striations are chatter marks, lines of crescent-shape depressions in the rock underlying a glacier. They are formed by abrasion when boulders in the glacier are repeatedly caught and released as they are dragged along the bedrock.",
+      "question": "How are chatter marks formed?",
+      "answers": [
+        "abrasion when boulders in the glacier are repeatedly caught and released"
+      ],
+      "answer": "abrasion when boulders in the glacier are repeatedly caught and released",
+      "kind": "answerable",
+      "prompt_tokens": 155,
+      "output": "Chatter marks are formed by abrasion when boulders in the glacier are repeatedly caught and released as they are dragged along the bedrock.",
+      "em": 0.0,
+      "f1": 0.6451612903225806,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727784ddd62a815002e9dbb",
+      "article": "Late_Middle_Ages",
+      "context": "The changes brought about by these developments have led many scholars to view this period as the end of the Middle Ages and beginning of modern history and early modern Europe. However, the division is somewhat artificial, since ancient learning was never entirely absent from European society. As a result there was developmental continuity between the ancient age (via classical antiquity) and the modern age. Some historians, particularly in Italy, prefer not to speak of the late Middle Ages at all, but rather see the high period of the Middle Ages transitioning to the Renaissance and the modern era.",
+      "question": "What do many scholars regard the Late Middle Ages as the beginning of?",
+      "answers": [
+        "modern history and early modern Europe"
+      ],
+      "answer": "modern history and early modern Europe",
+      "kind": "answerable",
+      "prompt_tokens": 170,
+      "output": "end of the Middle Ages and beginning of modern history and early modern Europe",
+      "em": 0.0,
+      "f1": 0.631578947368421,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572fe51904bcaa1900d76e63",
+      "article": "Printed_circuit_board",
+      "context": "The first PCBs used through-hole technology, mounting electronic components by leads inserted through holes on one side of the board and soldered onto copper traces on the other side. Boards may be single-sided, with an unplated component side, or more compact double-sided boards, with components soldered on both sides. Horizontal installation of through-hole parts with two axial leads (such as resistors, capacitors, and diodes) is done by bending the leads 90 degrees in the same direction, inserting the part in the board (often bending leads located on the back of the board in opposite directions to improve the part's mechanical strength), soldering the leads, and trimming off the ends. Leads may be soldered either manually or by a wave soldering machine.",
+      "question": "What is improved by bending leads in opposite directions on the back of double-sided PCBs?",
+      "answers": [
+        "mechanical strength"
+      ],
+      "answer": "mechanical strength",
+      "kind": "answerable",
+      "prompt_tokens": 217,
+      "output": "The leads are bent in opposite directions on the back of double-sided PCBs to improve their mechanical strength.",
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57318a93497a881900248ff4",
+      "article": "University",
+      "context": "The rediscovery of Aristotle's works\u2013more than 3000 pages of it would eventually be translated \u2013fuelled a spirit of inquiry into natural processes that had already begun to emerge in the 12th century. Some scholars believe that these works represented one of the most important document discoveries in Western intellectual history. Richard Dales, for instance, calls the discovery of Aristotle's works \"a turning point in the history of Western thought.\" After Aristotle re-emerged, a community of scholars, primarily communicating in Latin, accelerated the process and practice of attempting to reconcile the thoughts of Greek antiquity, and especially ideas related to understanding the natural world, with those of the church. The efforts of this \"scholasticism\" were focused on applying Aristotelian logic and thoughts about natural processes to biblical passages and attempting to prove the viability of those passages through reason. This became the primary mission of lecturers, and the expectation of students.",
+      "question": "What faculty did scholars attempt to use to prove the thoughts of Aristotle?",
+      "answers": [
+        "reason"
+      ],
+      "answer": "reason",
+      "kind": "answerable",
+      "prompt_tokens": 250,
+      "output": "scholars attempted to use Aristotelian logic and thoughts about natural processes to prove the viability of those passages through reason.",
+      "em": 0.0,
+      "f1": 0.1,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570c3da6ec8fbc190045be08",
+      "article": "Mary_(mother_of_Jesus)",
+      "context": "The Gospel of Luke begins its account of Mary's life with the Annunciation, when the angel Gabriel appeared to her and announced her divine selection to be the mother of Jesus. According to gospel accounts, Mary was present at the Crucifixion of Jesus and is depicted as a member of the early Christian community in Jerusalem. According to Apocryphal writings, at some time soon after her death, her incorrupt body was assumed directly into Heaven, to be reunited with her soul, and the apostles thereupon found the tomb empty; this is known in Christian teaching as the Assumption.",
+      "question": "Which angel appeared to Mary?",
+      "answers": [
+        "Gabriel"
+      ],
+      "answer": "Gabriel",
+      "kind": "answerable",
+      "prompt_tokens": 171,
+      "output": "The angel Gabriel",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5731bbb5e99e3014001e622d",
+      "article": "Separation_of_church_and_state_in_the_United_States",
+      "context": "The first amendment to the US Constitution states \"Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof\" The two parts, known as the \"establishment clause\" and the \"free exercise clause\" respectively, form the textual basis for the Supreme Court's interpretations of the \"separation of church and state\" doctrine. Three central concepts were derived from the 1st Amendment which became America's doctrine for church-state separation: no coercion in religious matters, no expectation to support a religion against one's will, and religious liberty encompasses all religions. In sum, citizens are free to embrace or reject a faith, any support for religion - financial or physical - must be voluntary, and all religions are equal in the eyes of the law with no special preference or favoritism.",
+      "question": "What is the first part of the First Amendment know as?",
+      "answers": [
+        "\"establishment clause\""
+      ],
+      "answer": "\"establishment clause\"",
+      "kind": "answerable",
+      "prompt_tokens": 218,
+      "output": "The first part of the First Amendment known as the Establishment Clause.",
+      "em": 0.0,
+      "f1": 0.36363636363636365,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57294ab76aef051400154c72",
+      "article": "Bermuda",
+      "context": "The war had removed Bermuda's primary trading partners, the American colonies, from the empire, and dealt a harsh blow to Bermuda's merchant shipping trade. This also suffered due to the deforestation of Bermuda, as well as the advent of metal ships and steam propulsion, for which it did not have raw materials. During the course of the following War of 1812, the primary market for Bermuda's salt disappeared as the Americans developed their own sources. Control of the Turks had passed to the Bahamas in 1819.",
+      "question": "Why didn't Bermuda produce metal ships?",
+      "answers": [
+        "it did not have raw materials"
+      ],
+      "answer": "it did not have raw materials",
+      "kind": "answerable",
+      "prompt_tokens": 161,
+      "output": "The passage states that \"the advent of metal ships and steam propulsion\" was for which it did not have raw materials. Therefore, the answer is:\n\nmetal ships",
+      "em": 0.0,
+      "f1": 0.4,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "572e86c1c246551400ce42cb",
+      "article": "Railway_electrification_system",
+      "context": "Electric railways use electric locomotives to haul passengers or freight in separate cars or electric multiple units, passenger cars with their own motors. Electricity is typically generated in large and relatively efficient generating stations, transmitted to the railway network and distributed to the trains. Some electric railways have their own dedicated generating stations and transmission lines but most purchase power from an electric utility. The railway usually provides its own distribution lines, switches and transformers.",
+      "question": "How is electricity being generated for electric locomotives?",
+      "answers": [
+        "generating stations"
+      ],
+      "answer": "generating stations",
+      "kind": "answerable",
+      "prompt_tokens": 140,
+      "output": "electricity is typically generated in large and relatively efficient generating stations",
+      "em": 0.0,
+      "f1": 0.3076923076923077,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e759ac37bdd419002c3ebd",
+      "article": "Paper",
+      "context": "Drying involves using air and/or heat to remove water from the paper sheets; in the earliest days of paper making this was done by hanging the sheets like laundry; in more modern times various forms of heated drying mechanisms are used. On the paper machine the most common is the steam heated can dryer. These can reach temperatures above 200 \u00b0F (93 \u00b0C) and are used in long sequences of more than 40 cans; where the heat produced by these can easily dry the paper to less than 6% moisture.",
+      "question": "What is the main component of drying the paper?",
+      "answers": [
+        "air"
+      ],
+      "answer": "air",
+      "kind": "answerable",
+      "prompt_tokens": 165,
+      "output": "Air and/or heat",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572840b1ff5b5019007da002",
+      "article": "Federalism",
+      "context": "Federations often employ the paradox of being a union of states, while still being states (or having aspects of statehood) in themselves. For example, James Madison (author of the US Constitution) wrote in Federalist Paper No. 39 that the US Constitution \"is in strictness neither a national nor a federal constitution; but a composition of both. In its foundation, it is federal, not national; in the sources from which the ordinary powers of the Government are drawn, it is partly federal, and partly national...\" This stems from the fact that states in the US maintain all sovereignty that they do not yield to the federation by their own consent. This was reaffirmed by the Tenth Amendment to the United States Constitution, which reserves all powers and rights that are not delegated to the Federal Government as left to the States and to the people.",
+      "question": "What does federations often employ?",
+      "answers": [
+        "union of states"
+      ],
+      "answer": "union of states",
+      "kind": "answerable",
+      "prompt_tokens": 224,
+      "output": "employ the paradox of being a union of states, while still being states (or having aspects of statehood) in themselves",
+      "em": 0.0,
+      "f1": 0.2857142857142857,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727d9374b864d1900163e7a",
+      "article": "Sahara",
+      "context": "To the south, the Sahara is bounded by the Sahel, a belt of dry tropical savanna with a summer rainy season that extends across Africa from east to west. The southern limit of the Sahara is indicated botanically by the southern limit of Cornulaca monacantha (a drought-tolerant member of the Chenopodiaceae), or northern limit of Cenchrus biflorus, a grass typical of the Sahel. According to climatic criteria, the southern limit of the Sahara corresponds to the 150 mm (5.9 in) isohyet of annual precipitation (this is a long-term average, since precipitation varies annually).",
+      "question": "What is the long term precipitation average of the Sahara?",
+      "answers": [
+        "150 mm"
+      ],
+      "answer": "150 mm",
+      "kind": "answerable",
+      "prompt_tokens": 192,
+      "output": "150 mm (5.9 in)",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572871812ca10214002da366",
+      "article": "God",
+      "context": "The gender of God may be viewed as either a literal or an allegorical aspect of a deity who, in classical western philosophy, transcends bodily form. Polytheistic religions commonly attribute to each of the gods a gender, allowing each to interact with any of the others, and perhaps with humans, sexually. In most monotheistic religions, God has no counterpart with which to relate sexually. Thus, in classical western philosophy the gender of this one-and-only deity is most likely to be an analogical statement of how humans and God address, and relate to, each other. Namely, God is seen as begetter of the world and revelation which corresponds to the active (as opposed to the receptive) role in sexual intercourse.",
+      "question": "What is God's role in the creation of the world?",
+      "answers": [
+        "begetter"
+      ],
+      "answer": "begetter",
+      "kind": "answerable",
+      "prompt_tokens": 204,
+      "output": "begetter of the world",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572a8309111d821400f38b88",
+      "article": "Miami",
+      "context": "Miami is home to one of the largest ports in the United States, the PortMiami. It is the largest cruise ship port in the world. The port is often called the \"Cruise Capital of the World\" and the \"Cargo Gateway of the Americas\". It has retained its status as the number one cruise/passenger port in the world for well over a decade accommodating the largest cruise ships and the major cruise lines. In 2007, the port served 3,787,410 passengers. Additionally, the port is one of the nation's busiest cargo ports, importing 7.8 million tons of cargo in 2007. Among North American ports, it ranks second only to the Port of South Louisiana in New Orleans in terms of cargo tonnage imported/exported from Latin America. The port is on 518 acres (2 km2) and has 7 passenger terminals. China is the port's number one import country, and Honduras is the number one export country. Miami has the world's largest amount of cruise line headquarters, home to: Carnival Cruise Lines, Celebrity Cruises, Norwegian Cruise Line, Oceania Cruises, and Royal Caribbean International. In 2014, the Port of Miami Tunnel was completed and will serve the PortMiami.",
+      "question": "How many tons of cargo arrived in PortMiami in 2007?",
+      "answers": [
+        "7.8 million"
+      ],
+      "answer": "7.8 million",
+      "kind": "answerable",
+      "prompt_tokens": 327,
+      "output": "7.8 million tons",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572cbd62750c471900ed4d19",
+      "article": "Law_of_the_United_States",
+      "context": "Some states distinguish between two levels: felonies and misdemeanors (minor crimes). Generally, most felony convictions result in lengthy prison sentences as well as subsequent probation, large fines, and orders to pay restitution directly to victims; while misdemeanors may lead to a year or less in jail and a substantial fine. To simplify the prosecution of traffic violations and other relatively minor crimes, some states have added a third level, infractions. These may result in fines and sometimes the loss of one's driver's license, but no jail time.",
+      "question": "What usually happens with misdemeanors?",
+      "answers": [
+        "a year or less in jail and a substantial fine"
+      ],
+      "answer": "a year or less in jail and a substantial fine",
+      "kind": "answerable",
+      "prompt_tokens": 158,
+      "output": "misdemeanors may lead to a year or less in jail and a substantial fine.",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56dd328e66d3e219004dac50",
+      "article": "Prime_minister",
+      "context": "Most prime ministers in parliamentary systems are not appointed for a specific term in office and in effect may remain in power through a number of elections and parliaments. For example, Margaret Thatcher was only ever appointed prime minister on one occasion, in 1979. She remained continuously in power until 1990, though she used the assembly of each House of Commons after a general election to reshuffle her cabinet.",
+      "question": "What did Margaret Thatcher reconfigure following each general election?",
+      "answers": [
+        "cabinet"
+      ],
+      "answer": "cabinet",
+      "kind": "answerable",
+      "prompt_tokens": 142,
+      "output": "reshuffle her cabinet",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727ce3d2ca10214002d96db",
+      "article": "Strasbourg",
+      "context": "Strasbourg is situated on the eastern border of France with Germany. This border is formed by the River Rhine, which also forms the eastern border of the modern city, facing across the river to the German town Kehl. The historic core of Strasbourg however lies on the Grande \u00cele in the River Ill, which here flows parallel to, and roughly 4 kilometres (2.5 mi) from, the Rhine. The natural courses of the two rivers eventually join some distance downstream of Strasbourg, although several artificial waterways now connect them within the city.",
+      "question": "Strasbourg is situated on what border of France and Germany?",
+      "answers": [
+        "eastern"
+      ],
+      "answer": "eastern",
+      "kind": "answerable",
+      "prompt_tokens": 172,
+      "output": "eastern border",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570a87f76d058f1900182f5c",
+      "article": "Everton_F.C.",
+      "context": "On 16 June 2006, it was announced that Everton had entered into talks with Knowsley Council and Tesco over the possibility of building a new 55,000 seat stadium, expandable to over 60,000, in Kirkby. The club took the unusual move of giving its supporters a say in the club's future by holding a ballot on the proposal, finding a split of 59% to 41% in favour. Opponents to the plan included other local councils concerned by the effect of a large Tesco store being built as part of the development, and a group of fans demanding that Everton should remain within the city boundaries of Liverpool.",
+      "question": "Who did Everton enter talks with to build a new 55,000 seat stadium in Kirkby?",
+      "answers": [
+        "Knowsley Council and Tesco"
+      ],
+      "answer": "Knowsley Council and Tesco",
+      "kind": "answerable",
+      "prompt_tokens": 214,
+      "output": "Everton had entered talks with Knowsley Council and Tesco to build a new 55,000 seat stadium in Kirkby.",
+      "em": 0.0,
+      "f1": 0.38095238095238093,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57097697ed30961900e84193",
+      "article": "Identity_(social_science)",
+      "context": "The implications are multiple as various research traditions are now[when?] heavily utilizing the lens of identity to examine phenomena.[citation needed] One implication of identity and of identity construction can be seen in occupational settings. This becomes increasing challenging in stigmatized jobs or \"dirty work\" (Hughes, 1951). Tracy and Trethewey (2005) state that \"individuals gravitate toward and turn away from particular jobs depending in part, on the extent to which they validate a \"preferred organizational self\" (Tracy & Tretheway 2005, p. 169). Some jobs carry different stigmas or acclaims. In her analysis Tracy uses the example of correctional officers trying to shake the stigma of \"glorified maids\" (Tracy & Tretheway 2005). \"The process by which people arrive at justifications of and values for various occupational choices.\" Among these are workplace satisfaction and overall quality of life (Tracy & Scott 2006, p. 33). People in these types of jobs are forced to find ways in order to create an identity they can live with. \"Crafting a positive sense of self at work is more challenging when one's work is considered \"dirty\" by societal standards\" (Tracy & Scott 2006, p. 7). \"In other words, doing taint management is not just about allowing the employee to feel good in that job. \"If employees must navigate discourses that question the viability of their work, and/ or experience obstacles in managing taint through transforming dirty work into a badge of honor, it is likely they will find blaming the client to be an efficacious route in affirming their identity\" (Tracy & Scott 2006, p. 33).",
+      "question": "What stigma do correctional officers have to deal with?",
+      "answers": [
+        "glorified maids"
+      ],
+      "answer": "glorified maids",
+      "kind": "answerable",
+      "prompt_tokens": 435,
+      "output": "stigma of \"glorified maids\"",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56de3ba64396321400ee26b8",
+      "article": "Southern_Europe",
+      "context": "Beginning roughly in the 14th century in Florence, and later spreading through Europe with the development of the printing press, a Renaissance of knowledge challenged traditional doctrines in science and theology, with the Arabic texts and thought bringing about rediscovery of classical Greek and Roman knowledge.",
+      "question": "When was the start of the period known as the Renaissance?",
+      "answers": [
+        "14th century"
+      ],
+      "answer": "14th century",
+      "kind": "answerable",
+      "prompt_tokens": 111,
+      "output": "beginning in the 14th century",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5733ffe3d058e614000b6759",
+      "article": "Punjab,_Pakistan",
+      "context": "Punjab witnessed major battles between the armies of India and Pakistan in the wars of 1965 and 1971. Since the 1990s Punjab hosted several key sites of Pakistan's nuclear program such as Kahuta. It also hosts major military bases such as at Sargodha and Rawalpindi. The peace process between India and Pakistan, which began in earnest in 2004, has helped pacify the situation. Trade and people-to-people contacts through the Wagah border are now starting to become common. Indian Sikh pilgrims visit holy sites such as Nankana Sahib.",
+      "question": "Who visits Nankana Sahib?",
+      "answers": [
+        "Sikh pilgrims"
+      ],
+      "answer": "Sikh pilgrims",
+      "kind": "answerable",
+      "prompt_tokens": 182,
+      "output": "Indian Sikh pilgrims",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570ad47c4103511400d59a4c",
+      "article": "Lancashire",
+      "context": "The county was subject to significant boundary reform in 1974 that removed Liverpool and Manchester and most of their surrounding conurbations to form the metropolitan counties of Merseyside and Greater Manchester. The detached northern part of Lancashire in the Lake District, including the Furness Peninsula and Cartmel, was merged with Cumberland and Westmorland to form Cumbria. Lancashire lost 709 square miles of land to other counties, about two fifths of its original area, although it did gain some land from the West Riding of Yorkshire. Today the county borders Cumbria to the north, Greater Manchester and Merseyside to the south and North and West Yorkshire to the east; with a coastline on the Irish Sea to the west. The county palatine boundaries remain the same[clarification needed] with the Duke of Lancaster exercising sovereignty rights, including the appointment of lords lieutenant in Greater Manchester and Merseyside.",
+      "question": "Who exercises sovereignty rights for Lancashire?",
+      "answers": [
+        "Duke of Lancaster"
+      ],
+      "answer": "Duke of Lancaster",
+      "kind": "answerable",
+      "prompt_tokens": 242,
+      "output": "The Duke of Lancaster exercises sovereignty rights for Lancashire.",
+      "em": 0.0,
+      "f1": 0.5454545454545454,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57275f1df1498d1400e8f6fe",
+      "article": "Cotton",
+      "context": "Cotton is used to make a number of textile products. These include terrycloth for highly absorbent bath towels and robes; denim for blue jeans; cambric, popularly used in the manufacture of blue work shirts (from which we get the term \"blue-collar\"); and corduroy, seersucker, and cotton twill. Socks, underwear, and most T-shirts are made from cotton. Bed sheets often are made from cotton. Cotton also is used to make yarn used in crochet and knitting. Fabric also can be made from recycled or recovered cotton that otherwise would be thrown away during the spinning, weaving, or cutting process. While many fabrics are made completely of cotton, some materials blend cotton with other fibers, including rayon and synthetic fibers such as polyester. It can either be used in knitted or woven fabrics, as it can be blended with elastine to make a stretchier thread for knitted fabrics, and apparel such as stretch jeans.",
+      "question": "With what is cotton often blended to make a new style of fabric?",
+      "answers": [
+        "synthetic fibers"
+      ],
+      "answer": "synthetic fibers",
+      "kind": "answerable",
+      "prompt_tokens": 254,
+      "output": "Synthetic fibers such as polyester.",
+      "em": 0.0,
+      "f1": 0.5714285714285714,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572673e2f1498d1400e8e016",
+      "article": "Cotton",
+      "context": "The fiber is most often spun into yarn or thread and used to make a soft, breathable textile. The use of cotton for fabric is known to date to prehistoric times; fragments of cotton fabric dated from 5000 BC have been excavated in Mexico and the Indus Valley Civilization in Ancient India (modern-day Pakistan and some parts of India). Although cultivated since antiquity, it was the invention of the cotton gin that lowered the cost of production that led to its widespread use, and it is the most widely used natural fiber cloth in clothing today.",
+      "question": "What machinery has lead to the  easily made and widespread use of cotton?",
+      "answers": [
+        "cotton gin"
+      ],
+      "answer": "cotton gin",
+      "kind": "answerable",
+      "prompt_tokens": 173,
+      "output": "The invention of the cotton gin",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572f516fb2c2fd1400568016",
+      "article": "Flowering_plant",
+      "context": "The character of the seed coat bears a definite relation to that of the fruit. They protect the embryo and aid in dissemination; they may also directly promote germination. Among plants with indehiscent fruits, in general, the fruit provides protection for the embryo and secures dissemination. In this case, the seed coat is only slightly developed. If the fruit is dehiscent and the seed is exposed, in general, the seed-coat is well developed, and must discharge the functions otherwise executed by the fruit.",
+      "question": "What does the seed coat protect?",
+      "answers": [
+        "embryo"
+      ],
+      "answer": "embryo",
+      "kind": "answerable",
+      "prompt_tokens": 155,
+      "output": "The seed coat protects the embryo.",
+      "em": 0.0,
+      "f1": 0.4,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570b8534ec8fbc190045ba55",
+      "article": "Great_Plains",
+      "context": "The railroads opened up the Great Plains for settlement, for now it was possible to ship wheat and other crops at low cost to the urban markets in the East, and Europe. Homestead land was free for American settlers. Railroads sold their land at cheap rates to immigrants in expectation they would generate traffic as soon as farms were established. Immigrants poured in, especially from Germany and Scandinavia. On the plains, very few single men attempted to operate a farm or ranch by themselves; they clearly understood the need for a hard-working wife, and numerous children, to handle the many chores, including child-rearing, feeding and clothing the family, managing the housework, feeding the hired hands, and, especially after the 1930s, handling paperwork and financial details. During the early years of settlement, farm women played an integral role in assuring family survival by working outdoors. After approximately one generation, women increasingly left the fields, thus redefining their roles within the family. New technology including sewing and washing machines encouraged women to turn to domestic roles. The scientific housekeeping movement, promoted across the land by the media and government extension agents, as well as county fairs which featured achievements in home cookery and canning, advice columns for women regarding farm bookkeeping, and home economics courses in the schools.",
+      "question": "who two new technologies were introducted in the 1930s?",
+      "answers": [
+        "sewing and washing machines"
+      ],
+      "answer": "sewing and washing machines",
+      "kind": "answerable",
+      "prompt_tokens": 329,
+      "output": "New technology including sewing and washing machines",
+      "em": 0.0,
+      "f1": 0.7272727272727273,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5728d4c43acd2414000dffa9",
+      "article": "Alaska",
+      "context": "The Alaska Constitution was written so as to discourage dedicating state funds for a particular purpose. The Permanent Fund has become the rare exception to this, mostly due to the political climate of distrust existing during the time of its creation. From its initial principal of $734,000, the fund has grown to $50 billion as a result of oil royalties and capital investment programs. Most if not all the principal is invested conservatively outside Alaska. This has led to frequent calls by Alaskan politicians for the Fund to make investments within Alaska, though such a stance has never gained momentum.",
+      "question": "Was Alaska's Constitution written to encourage or discourage state funds being used for a particular purpose?",
+      "answers": [
+        "discourage"
+      ],
+      "answer": "discourage",
+      "kind": "answerable",
+      "prompt_tokens": 183,
+      "output": "To discourage",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570f33ad80d9841400ab355d",
+      "article": "Circadian_rhythm",
+      "context": "The earliest recorded account of a circadian process dates from the 4th century B.C.E., when Androsthenes, a ship captain serving under Alexander the Great, described diurnal leaf movements of the tamarind tree. The observation of a circadian or diurnal process in humans is mentioned in Chinese medical texts dated to around the 13th century, including the Noon and Midnight Manual and the Mnemonic Rhyme to Aid in the Selection of Acu-points According to the Diurnal Cycle, the Day of the Month and the Season of the Year.",
+      "question": "What tree leaves did Androsthenes describe?",
+      "answers": [
+        "tamarind"
+      ],
+      "answer": "tamarind",
+      "kind": "answerable",
+      "prompt_tokens": 170,
+      "output": "tamarind tree",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5730a36a2461fd1900a9cf19",
+      "article": "Greeks",
+      "context": "Notable Greek seafarers include people such as Pytheas of Marseilles, Scylax of Caryanda who sailed to Iberia and beyond, Nearchus, the 6th century merchant and later monk Cosmas Indicopleustes (Cosmas who sailed to India) and the explorer of the Northwestern passage Juan de Fuca. In later times, the Romioi plied the sea-lanes of the Mediterranean and controlled trade until an embargo imposed by the Roman Emperor on trade with the Caliphate opened the door for the later Italian pre-eminence in trade.",
+      "question": "What did Greeks do that caused a later deal to be made with the Italians ?",
+      "answers": [
+        "plied the sea-lanes of the Mediterranean and controlled trade"
+      ],
+      "answer": "plied the sea-lanes of the Mediterranean and controlled trade",
+      "kind": "answerable",
+      "prompt_tokens": 184,
+      "output": "The Romioi plied the sea-lanes of the Mediterranean and controlled trade until an embargo imposed by the Roman Emperor on trade with the Caliphate opened",
+      "em": 0.0,
+      "f1": 0.5384615384615384,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "5728c8083acd2414000dfe40",
+      "article": "Karl_Popper",
+      "context": "As early as 1934, Popper wrote of the search for truth as \"one of the strongest motives for scientific discovery.\" Still, he describes in Objective Knowledge (1972) early concerns about the much-criticised notion of truth as correspondence. Then came the semantic theory of truth formulated by the logician Alfred Tarski and published in 1933. Popper writes of learning in 1935 of the consequences of Tarski's theory, to his intense joy. The theory met critical objections to truth as correspondence and thereby rehabilitated it. The theory also seemed, in Popper's eyes, to support metaphysical realism and the regulative idea of a search for truth.",
+      "question": "What kind of realism did Popper believe Tarski's theory supported?",
+      "answers": [
+        "metaphysical"
+      ],
+      "answer": "metaphysical",
+      "kind": "answerable",
+      "prompt_tokens": 208,
+      "output": "metaphysical realism",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572820152ca10214002d9e6b",
+      "article": "PlayStation_3",
+      "context": "The standard PlayStation 3 version of the XrossMediaBar (pronounced Cross Media Bar, or abbreviated XMB) includes nine categories of options. These are: Users, Settings, Photo, Music, Video, TV/Video Services, Game, Network, PlayStation Network and Friends (similar to the PlayStation Portable media bar). TheTV/Video Services category is for services like Netflix and/or if PlayTV or torne is installed; the first category in this section is \"My Channels\", which lets users download various streaming services, including Sony's own streaming services Crackle and PlayStation Vue. By default, the What's New section of PlayStation Network is displayed when the system starts up. PS3 includes the ability to store various master and secondary user profiles, manage and explore photos with or without a musical slide show, play music and copy audio CD tracks to an attached data storage device, play movies and video files from the hard disk drive, an optical disc (Blu-ray Disc or DVD-Video) or an optional USB mass storage or Flash card, compatibility for a USB keyboard and mouse and a web browser supporting compatible-file download function. Additionally, UPnP media will appear in the respective audio/video/photo categories if a compatible media server or DLNA server is detected on the local network. The Friends menu allows mail with emoticon and attached picture features and video chat which requires an optional PlayStation Eye or EyeToy webcam. The Network menu allows online shopping through the PlayStation Store and connectivity to PlayStation Portable via Remote Play.",
+      "question": "When you start up your PS3, what's the first section of the PS Network you see?",
+      "answers": [
+        "What's New"
+      ],
+      "answer": "What's New",
+      "kind": "answerable",
+      "prompt_tokens": 368,
+      "output": "What's New section",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5730e962f6cb411900e24546",
+      "article": "Russian_language",
+      "context": "Russian is one of the official languages (or has similar status and interpretation must be provided into Russian) of the United Nations, International Atomic Energy Agency, World Health Organization, International Civil Aviation Organization, UNESCO, World Intellectual Property Organization, International Telecommunication Union, World Meteorological Organization, Food and Agriculture Organization, International Fund for Agricultural Development, International Criminal Court, International Monetary Fund, International Olympic Committee, Universal Postal Union, World Bank, Commonwealth of Independent States, Organization for Security and Co-operation in Europe, Shanghai Cooperation Organisation, Eurasian Economic Community, Collective Security Treaty Organization, Antarctic Treaty Secretariat, International Organization for Standardization, GUAM Organization for Democracy and Economic Development, International Mathematical Olympiad. The Russian language is also one of two official languages aboard the International Space Station - NASA astronauts who serve alongside Russian cosmonauts usually take Russian language courses. This practice goes back to the Apollo-Soyuz mission, which first flew in 1975.",
+      "question": "For which mission did NASA astronauts first learn Russian?",
+      "answers": [
+        "Apollo-Soyuz"
+      ],
+      "answer": "Apollo-Soyuz",
+      "kind": "answerable",
+      "prompt_tokens": 248,
+      "output": "Apollo-Soyuz Mission",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57304603b2c2fd1400568b54",
+      "article": "Windows_8",
+      "context": "Retail distribution of Windows 8 has since been discontinued in favor of Windows 8.1. Unlike 8, 8.1 is available as \"full version software\" at both retail and online for download that does not require a previous version of Windows in order to be installed. Pricing for these new copies remain identical. With the retail release returning to full version software for Windows 8.1, the \"Personal Use License\" exemption was removed from the OEM SKU, meaning that end users building their own PCs for personal use must use the full retail version in order to satisfy the Windows 8.1 licensing requirements. Windows 8.1 with Bing is a special OEM-specific SKU of Windows 8.1 subsidized by Microsoft's Bing search engine.",
+      "question": "What is the primary difference in Windows 8.1? ",
+      "answers": [
+        "8.1 is available as \"full version software\""
+      ],
+      "answer": "8.1 is available as \"full version software\"",
+      "kind": "answerable",
+      "prompt_tokens": 210,
+      "output": "Windows 8.1 is available as \"full version software\" at both retail and online for download that does not require a previous version of Windows in order to",
+      "em": 0.0,
+      "f1": 0.42424242424242425,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "572647a6dd62a815002e8054",
+      "article": "Incandescent_light_bulb",
+      "context": "Incandescent light bulbs come in a range of shapes and sizes. The names of the shapes may be slightly different in some regions. Many of these shapes have a designation consisting of one or more letters followed by one or more numbers, e.g. A55 or PAR38. The letters represent the shape of the bulb. The numbers represent the maximum diameter, either in 1\u20448 of an inch, or in millimeters, depending on the shape and the region. For example, 63 mm reflectors are designated R63, but in the US, they are known as R20 (2.5 in). However, in both regions, a PAR38 reflector is known as PAR38.",
+      "question": "What do the letters identify in a bulb shape designation?",
+      "answers": [
+        "the shape of the bulb"
+      ],
+      "answer": "the shape of the bulb",
+      "kind": "answerable",
+      "prompt_tokens": 205,
+      "output": "The letters identify the shape of the bulb in a bulb shape designation.",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56df322e96943c1400a5d2d4",
+      "article": "Christian",
+      "context": "In Arabic-speaking cultures, two words are commonly used for Christians: Na\u1e63r\u0101n\u012b (\u0646\u0635\u0631\u0627\u0646\u064a), plural Na\u1e63\u0101r\u0101 (\u0646\u0635\u0627\u0631\u0649) is generally understood to be derived from Nazareth through the Syriac (Aramaic); Mas\u012b\u1e25\u012b (\u0645\u0633\u064a\u062d\u064a) means followers of the Messiah. The term Nasara rose to prominence in July 2014, after the Fall of Mosul to the terrorist organization Islamic State of Iraq and the Levant. The nun or \u0646\u2014 the first letter of Nasara\u2014was spray-painted on the property of Christians ejected from the city.",
+      "question": "What does Mas\u012b\u1e25\u012b mean?",
+      "answers": [
+        "followers of the Messiah"
+      ],
+      "answer": "followers of the Messiah",
+      "kind": "answerable",
+      "prompt_tokens": 180,
+      "output": "Mas\u012b\u1e25\u012b (\u0645\u0633\u064a\u062d\u064a) means followers of the Messiah.",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5733c4ca4776f419006611e4",
+      "article": "Antibiotics",
+      "context": "Antibacterial-resistant strains and species, sometimes referred to as \"superbugs\", now contribute to the emergence of diseases that were for a while well controlled. For example, emergent bacterial strains causing tuberculosis (TB) that are resistant to previously effective antibacterial treatments pose many therapeutic challenges. Every year, nearly half a million new cases of multidrug-resistant tuberculosis (MDR-TB) are estimated to occur worldwide. For example, NDM-1 is a newly identified enzyme conveying bacterial resistance to a broad range of beta-lactam antibacterials. The United Kingdom's Health Protection Agency has stated that \"most isolates with NDM-1 enzyme are resistant to all standard intravenous antibiotics for treatment of severe infections.\"",
+      "question": "What are strains that are resistant to antibiotics called sometimes?",
+      "answers": [
+        "superbugs"
+      ],
+      "answer": "superbugs",
+      "kind": "answerable",
+      "prompt_tokens": 200,
+      "output": "Antibacterial-resistant strains and species, sometimes referred to as \"superbugs\".",
+      "em": 0.0,
+      "f1": 0.2,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56f988a09b226e1400dd1530",
+      "article": "Zhejiang",
+      "context": "Valleys and plains are found along the coastline and rivers. The north of the province lies just south of the Yangtze Delta, and consists of plains around the cities of Hangzhou, Jiaxing, and Huzhou, where the Grand Canal of China enters from the northern border to end at Hangzhou. Another relatively flat area is found along the Qu River around the cities of Quzhou and Jinhua. Major rivers include the Qiangtang and Ou Rivers. Most rivers carve out valleys in the highlands, with plenty of rapids and other features associated with such topography. Well-known lakes include the West Lake of Hangzhou and the South Lake of Jiaxing.",
+      "question": "What is a well-known lake of Jiaxing?",
+      "answers": [
+        "South Lake"
+      ],
+      "answer": "South Lake",
+      "kind": "answerable",
+      "prompt_tokens": 196,
+      "output": "South Lake of Jiaxing",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56dee6fcc65bf219000b3e07",
+      "article": "Canadian_Armed_Forces",
+      "context": "The Canadian constitution determines that the Commander-in-Chief of the Canadian Armed Forces is the country's sovereign, who, since 1904, has authorized his or her viceroy, the governor general, to exercise the duties ascribed to the post of Commander-in-Chief and to hold the associated title since 1905. All troop deployment and disposition orders, including declarations of war, fall within the royal prerogative and are issued as Orders in Council, which must be signed by either the monarch or governor general. Under the Westminster system's parliamentary customs and practices, however, the monarch and viceroy must generally follow the advice of his or her ministers in Cabinet, including the prime minister and minister of national defence, who are accountable to the elected House of Commons.",
+      "question": "What determines who is the Commander-in-Chief of the Armed forces?",
+      "answers": [
+        "The Canadian constitution"
+      ],
+      "answer": "The Canadian constitution",
+      "kind": "answerable",
+      "prompt_tokens": 219,
+      "output": "The Canadian constitution determines who is the Commander-in-Chief of the Canadian Armed Forces.",
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57320eaee99e3014001e64a1",
+      "article": "Economy_of_Greece",
+      "context": "According to Der Spiegel, credits given to European governments were disguised as \"swaps\" and consequently did not get registered as debt because Eurostat at the time ignored statistics involving financial derivatives. A German derivatives dealer had commented to Der Spiegel that \"The Maastricht rules can be circumvented quite legally through swaps,\" and \"In previous years, Italy used a similar trick to mask its true debt with the help of a different US bank.\" These conditions had enabled Greek as well as many other European governments to spend beyond their means, while meeting the deficit targets of the European Union and the monetary union guidelines. In May 2010, the Greek government deficit was again revised and estimated to be 13.6% which was the second highest in the world relative to GDP with Iceland in first place at 15.7% and Great Britain third with 12.6%. Public debt was forecast, according to some estimates, to hit 120% of GDP during 2010.",
+      "question": "What was again revised in May of 2010?",
+      "answers": [
+        "Greek government deficit"
+      ],
+      "answer": "Greek government deficit",
+      "kind": "answerable",
+      "prompt_tokens": 266,
+      "output": "Greek government deficit was revised and estimated to be 13. 6% which was the second highest in the world relative to GDP with Iceland in first place",
+      "em": 0.0,
+      "f1": 0.21428571428571427,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "5727f98a2ca10214002d9a91",
+      "article": "Eton_College",
+      "context": "In January 2016, the Eton College beagling club was accused by the League Against Cruel Sports of undertaking an illegal hare hunt. The allegations were accompanied by a video of the Eton Beagles chasing a hare, as 'the hunt staff urge the beagles on and make no efforts to call the dogs off.' A spokesman representing Eton College released the following statement: \"Eton College takes its legal responsibilities extremely seriously and expects all school activities to comply with the law. We are investigating this allegation as a matter of urgency and will be co-operating fully with the relevant authorities.\" ",
+      "question": "What evidence was brought forth of a potential hare hunt?",
+      "answers": [
+        "a video"
+      ],
+      "answer": "a video",
+      "kind": "answerable",
+      "prompt_tokens": 182,
+      "output": "video of the Eton Beagles chasing a hare",
+      "em": 0.0,
+      "f1": 0.2857142857142857,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57265bb95951b619008f7080",
+      "article": "Presbyterianism",
+      "context": "Presbyterians distinguish themselves from other denominations by doctrine, institutional organization (or \"church order\") and worship; often using a \"Book of Order\" to regulate common practice and order. The origins of the Presbyterian churches are in Calvinism. Many branches of Presbyterianism are remnants of previous splits from larger groups. Some of the splits have been due to doctrinal controversy, while some have been caused by disagreement concerning the degree to which those ordained to church office should be required to agree with the Westminster Confession of Faith, which historically serves as an important confessional document \u2013 second only to the Bible, yet directing particularities in the standardization and translation of the Bible \u2013 in Presbyterian churches.",
+      "question": "Which document is an important confessional document second only to the Bible?",
+      "answers": [
+        "Westminster Confession of Faith"
+      ],
+      "answer": "Westminster Confession of Faith",
+      "kind": "answerable",
+      "prompt_tokens": 198,
+      "output": "The Westminster Confession of Faith is an important confessional document second only to the Bible.",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572e8f7003f989190075679b",
+      "article": "Endangered_Species_Act",
+      "context": "The Endangered Species Act of 1973 (ESA; 16 U.S.C. \u00a7 1531 et seq.) is one of the few dozens of United States environmental laws passed in the 1970s, and serves as the enacting legislation to carry out the provisions outlined in The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). The ESA was signed into law by President Richard Nixon on December 28, 1973, it was designed to protect critically imperiled species from extinction as a \"consequence of economic growth and development untempered by adequate concern and conservation.\" The U.S. Supreme Court found that \"the plain intent of Congress in enacting\" the ESA \"was to halt and reverse the trend toward species extinction, whatever the cost.\" The Act is administered by two federal agencies, the United States Fish and Wildlife Service (FWS) and the National Oceanic and Atmospheric Administration (NOAA).",
+      "question": "What did the Supreme Court cite as the intent of Congress in enacting the Endangered Species Act?",
+      "answers": [
+        "to halt and reverse the trend toward species extinction, whatever the cost"
+      ],
+      "answer": "to halt and reverse the trend toward species extinction, whatever the cost",
+      "kind": "answerable",
+      "prompt_tokens": 270,
+      "output": "The Supreme Court cited the plain intent of Congress in enacting the ESA as to halt and reverse the trend toward species extinction, whatever the cost.",
+      "em": 0.0,
+      "f1": 0.6451612903225806,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e7921a37bdd419002c4171",
+      "article": "Tristan_da_Cunha",
+      "context": "The islands were occupied by a garrison of British Marines and a civilian population was gradually built up. Whalers also set up on the islands as a base for operations in the Southern Atlantic. However, the opening of the Suez Canal in 1869, together with the gradual move from sailing ships to coal-fired steam ships, increased the isolation of the islands, as they were no longer needed as a stopping port or for shelter for journeys from Europe to East Asia.",
+      "question": "what is one reason that caused the island to become less used?",
+      "answers": [
+        "the opening of the Suez Canal"
+      ],
+      "answer": "the opening of the Suez Canal",
+      "kind": "answerable",
+      "prompt_tokens": 154,
+      "output": "The passage states that the opening of the Suez Canal in 1869 led to the increase in isolation of the islands due to their need as a",
+      "em": 0.0,
+      "f1": 0.32,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "56df047bc65bf219000b3edf",
+      "article": "Warsaw_Pact",
+      "context": "One month later, the proposed European Treaty was rejected not only by supporters of the EDC but also by western opponents of the European Defense Community (like French Gaullist leader Palewski) who perceived it as \"unacceptable in its present form because it excludes the USA from participation in the collective security system in Europe\". The Soviets then decided to make a new proposal to the governments of the USA, UK and France stating to accept the participation of the USA in the proposed General European Agreement. And considering that another argument deployed against the Soviet proposal was that it was perceived by western powers as \"directed against the North Atlantic Pact and its liquidation\", the Soviets decided to declare their \"readiness to examine jointly with other interested parties the question of the participation of the USSR in the North Atlantic bloc\", specifying that \"the admittance of the USA into the General European Agreement should not be conditional on the three western powers agreeing to the USSR joining the North Atlantic Pact\".",
+      "question": "The omission of which nation from involvement in the proposed security system led to its NATO opposition?",
+      "answers": [
+        "the USA"
+      ],
+      "answer": "the USA",
+      "kind": "answerable",
+      "prompt_tokens": 257,
+      "output": "The omission of the USA from involvement in the proposed security system led to its NATO opposition.",
+      "em": 0.0,
+      "f1": 0.13333333333333333,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5731e1420fdd8d15006c65f8",
+      "article": "Separation_of_church_and_state_in_the_United_States",
+      "context": "Robert S. Wood has argued that the United States is a model for the world in terms of how a separation of church and state\u2014no state-run or state-established church\u2014is good for both the church and the state, allowing a variety of religions to flourish. Speaking at the Toronto-based Center for New Religions, Wood said that the freedom of conscience and assembly allowed under such a system has led to a \"remarkable religiosity\" in the United States that isn't present in other industrialized nations. Wood believes that the U.S. operates on \"a sort of civic religion,\" which includes a generally-shared belief in a creator who \"expects better of us.\" Beyond that, individuals are free to decide how they want to believe and fill in their own creeds and express their conscience. He calls this approach the \"genius of religious sentiment in the United States.\"",
+      "question": "What does Wood believe the U.S. operates on?",
+      "answers": [
+        "a sort of civic religion"
+      ],
+      "answer": "a sort of civic religion",
+      "kind": "answerable",
+      "prompt_tokens": 231,
+      "output": "The U.S. operates on a sort of civic religion, which includes a generally-shared belief in a creator who expects better of us.",
+      "em": 0.0,
+      "f1": 0.36363636363636365,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57310f4ae6313a140071cbca",
+      "article": "Great_power",
+      "context": "The victorious great powers also gained an acknowledgement of their status through permanent seats at the League of Nations Council, where they acted as a type of executive body directing the Assembly of the League. However, the Council began with only four permanent members\u2014the United Kingdom, France, Italy, and Japan\u2014because the United States, meant to be the fifth permanent member, left because the US Senate voted on 19 March 1920 against the ratification of the Treaty of Versailles, thus preventing American participation in the League.",
+      "question": "Who were the four permanent members of the League of Nations Council?",
+      "answers": [
+        "United Kingdom, France, Italy, and Japan"
+      ],
+      "answer": "United Kingdom, France, Italy, and Japan",
+      "kind": "answerable",
+      "prompt_tokens": 164,
+      "output": "The four permanent members of the League of Nations Council were the United Kingdom, France, Italy, and Japan.",
+      "em": 0.0,
+      "f1": 0.5714285714285714,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5726dd735951b619008f8084",
+      "article": "Molotov%E2%80%93Ribbentrop_Pact",
+      "context": "In August 1940, the Soviet Union briefly suspended its deliveries under their commercial agreement after their relations were strained following disagreement over policy in Romania, the Soviet war with Finland, Germany falling behind in its deliveries of goods under the pact and with Stalin worried that Hitler's war with the West might end quickly after France signed an armistice. The suspension created significant resource problems for Germany. By the end of August, relations improved again as the countries had redrawn the Hungarian and Romanian borders, settled some Bulgarian claims and Stalin was again convinced that Germany would face a long war in the west with Britain's improvement in its air battle with Germany and the execution of an agreement between the United States and Britain regarding destroyers and bases. However, in late August, Germany arranged its own occupation of Romania, targeting oil fields. The move raised tensions with the Soviets, who responded that Germany was supposed to have consulted with the Soviet Union under Article III of the Molotov\u2013Ribbentrop Pact.",
+      "question": "What regions were redrawn in effort to improve relations between Germany and the Soviets?",
+      "answers": [
+        "Hungarian and Romanian borders"
+      ],
+      "answer": "Hungarian and Romanian borders",
+      "kind": "answerable",
+      "prompt_tokens": 262,
+      "output": "By the end of August, relations improved again as the countries had redrawn the Hungarian and Romanian borders, settled some Bulgarian claims and Stalin was again convinced that Germany",
+      "em": 0.0,
+      "f1": 0.26666666666666666,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "570a638e4103511400d596ae",
+      "article": "Emotion",
+      "context": "A situated perspective on emotion, developed by Paul E. Griffiths and Andrea Scarantino , emphasizes the importance of external factors in the development and communication of emotion, drawing upon the situationism approach in psychology. This theory is markedly different from both cognitivist and neo-Jamesian theories of emotion, both of which see emotion as a purely internal process, with the environment only acting as a stimulus to the emotion. In contrast, a situationist perspective on emotion views emotion as the product of an organism investigating its environment, and observing the responses of other organisms. Emotion stimulates the evolution of social relationships, acting as a signal to mediate the behavior of other organisms. In some contexts, the expression of emotion (both voluntary and involuntary) could be seen as strategic moves in the transactions between different organisms. The situated perspective on emotion states that conceptual thought is not an inherent part of emotion, since emotion is an action-oriented form of skillful engagement with the world. Griffiths and Scarantino suggested that this perspective on emotion could be helpful in understanding phobias, as well as the emotions of infants and animals.",
+      "question": "Who developed a situated perspective on emotion along with Andrea Scarantino?",
+      "answers": [
+        "Paul E. Griffiths"
+      ],
+      "answer": "Paul E. Griffiths",
+      "kind": "answerable",
+      "prompt_tokens": 281,
+      "output": "Paul E. Griffiths and Andrea Scarantino",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727bb46ff5b5019007d939f",
+      "article": "Cork_(city)",
+      "context": "Cork is home to one of Ireland's main national newspapers, the Irish Examiner (formerly the Cork Examiner). It also prints the Evening Echo, which for decades has been connected to the Echo Boys, who were poor and often homeless children who sold the newspaper. Today, the shouts of the vendors selling the Echo can still be heard in various parts of the city centre. One of the biggest free newspapers in the city is the Cork Independent. The city's University publishes the UCC Express and Motley magazine.",
+      "question": "What newspaper did the Echo Boys sell?",
+      "answers": [
+        "Evening Echo"
+      ],
+      "answer": "Evening Echo",
+      "kind": "answerable",
+      "prompt_tokens": 154,
+      "output": "The Echo Boys sold the newspaper the Evening Echo.",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5728c2302ca10214002da72c",
+      "article": "Sahara",
+      "context": "The effects of local surface low pressure are extremely limited because upper-level subsidence still continues to block any form of air ascent. Also, to be protected against rain-bearing weather systems by the atmospheric circulation itself, the desert is made even drier by his geographical configuration and location. Indeed, the extreme aridity of the Sahara can't be only explained by the subtropical high pressure. The Atlas Mountains, found in Algeria, Morocco and Tunisia also help to enhance the aridity of the northern part of the desert. These major mountain ranges act as a barrier causing a strong rain shadow effect on the leeward side by dropping much of the humidity brought by atmospheric disturbances along the polar front which affects the surrounding Mediterranean climates.",
+      "question": "What is blocked due to local surface low pressure?",
+      "answers": [
+        "air ascent"
+      ],
+      "answer": "air ascent",
+      "kind": "answerable",
+      "prompt_tokens": 197,
+      "output": "The effects of local surface low pressure are extremely limited because upper-level subsidence still continues to block any form of air ascent.",
+      "em": 0.0,
+      "f1": 0.17391304347826086,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570a9dde6d058f1900182fff",
+      "article": "Aircraft_carrier",
+      "context": "This new-found importance of naval aviation forced nations to create a number of carriers, in efforts to provide air superiority cover for every major fleet in order to ward off enemy aircraft. This extensive usage required the construction of several new 'light' carriers. Escort aircraft carriers, such as USS Bogue, were sometimes purpose-built, but most were converted from merchant ships as a stop-gap measure to provide anti-submarine air support for convoys and amphibious invasions. Following this concept, light aircraft carriers built by the US, such as USS Independence, represented a larger, more \"militarized\" version of the escort carrier. Although with similar complement to Escort carriers, they had the advantage of speed from their converted cruiser hulls. The UK 1942 Design Light Fleet Carrier was designed for building quickly by civilian shipyards and with an expected service life of about 3 years. They served the Royal Navy during the war and was the hull design chosen for nearly all aircraft carrier equipped navies after the war until the 1980s. Emergencies also spurred the creation or conversion of highly unconventional aircraft carriers. CAM ships, were cargo-carrying merchant ships that could launch (but not retrieve) a single fighter aircraft from a catapult to defend the convoy from long range German aircraft.",
+      "question": "What type of aircraft was the USS Independence?",
+      "answers": [
+        "light"
+      ],
+      "answer": "light",
+      "kind": "answerable",
+      "prompt_tokens": 317,
+      "output": "Light aircraft carriers",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e0f2db231d4119001ac4c0",
+      "article": "BeiDou_Navigation_Satellite_System",
+      "context": "In-mid 2015, China started the build-up of the third generation BeiDou system (BDS-3) in the global coverage constellation. The first BDS-3 satellite was launched 30 September 2015. As of March 2016, 4 BDS-3 in-orbit validation satellites have been launched.",
+      "question": "When did China begin constructing the third BeiDou system?",
+      "answers": [
+        "mid 2015"
+      ],
+      "answer": "mid 2015",
+      "kind": "answerable",
+      "prompt_tokens": 130,
+      "output": "In mid 2015",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570962a6ed30961900e84048",
+      "article": "Himachal_Pradesh",
+      "context": "A district of Himachal Pradesh is an administrative geographical unit, headed by a Deputy Commissioner or District Magistrate, an officer belonging to the Indian Administrative Service. The district magistrate or the deputy commissioner is assisted by a number of officers belonging to Himachal Administrative Service and other Himachal state services. Each district is subdivided into Sub-Divisions, governed by a sub-divisional magistrate, and again into Blocks. Blocks consists of panchayats (village councils) and town municipalities. A Superintendent of Police, an officer belonging to the Indian Police Service is entrusted with the responsibility of maintaining law and order and related issues of the district. He is assisted by the officers of the Himachal Police Service and other Himachal Police officials.",
+      "question": "Who heads the Himachal Pradesh?",
+      "answers": [
+        "Deputy Commissioner or District Magistrate"
+      ],
+      "answer": "Deputy Commissioner or District Magistrate",
+      "kind": "answerable",
+      "prompt_tokens": 206,
+      "output": "The Himachal Pradesh is headed by a Deputy Commissioner or District Magistrate.",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727ba822ca10214002d94de",
+      "article": "Sahara",
+      "context": "The Sahara (Arabic: \u0627\u0644\u0635\u062d\u0631\u0627\u0621 \u0627\u0644\u0643\u0628\u0631\u0649\u200e, a\u1e63-\u1e63a\u1e25r\u0101\u02be al-kubr\u0101\u202f, 'the Greatest Desert') is the largest hot desert in the world. It is the third largest desert after Antarctica and the Arctic. Its surface area of 9,400,000 square kilometres (3,600,000 sq mi)[citation needed]\u2014including the Libyan Desert\u2014is comparable to the respective land areas of China or the United States. The desert comprises much of the land found within North Africa, excluding the fertile coastal region situated against the Mediterranean Sea, the Atlas Mountains of the Maghreb, and the Nile Valley of Egypt and Sudan. The Sahara stretches from the Red Sea in the east and the Mediterranean in the north, to the Atlantic Ocean in the west, where the landscape gradually transitions to a coastal plain. To the south, it is delimited by the Sahel, a belt of semi-arid tropical savanna around the Niger River valley and Sudan Region of Sub-Saharan Africa. The Sahara can be divided into several regions, including the western Sahara, the central Ahaggar Mountains, the Tibesti Mountains, the A\u00efr Mountains, the T\u00e9n\u00e9r\u00e9 desert, and the Libyan Desert. Its name is derived from the plural Arabic language word for desert (\u0635\u062d\u0627\u0631\u0649 \u1e63a\u1e25\u0101r\u0101\u202f [\u02c8s\u02e4\u0251\u0127\u0251\u02d0r\u0251\u02d0]).",
+      "question": "What is the hottest desert in the world?",
+      "answers": [
+        "Sahara"
+      ],
+      "answer": "Sahara",
+      "kind": "answerable",
+      "prompt_tokens": 351,
+      "output": "The Sahara Desert is the hottest desert in the world.",
+      "em": 0.0,
+      "f1": 0.25,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "573188e1497a881900248fdd",
+      "article": "University",
+      "context": "European higher education took place for hundreds of years in Christian cathedral schools or monastic schools (scholae monasticae), in which monks and nuns taught classes; evidence of these immediate forerunners of the later university at many places dates back to the 6th century. The earliest universities were developed under the aegis of the Latin Church by papal bull as studia generalia and perhaps from cathedral schools. It is possible, however, that the development of cathedral schools into universities was quite rare, with the University of Paris being an exception. Later they were also founded by Kings (University of Naples Federico II, Charles University in Prague, Jagiellonian University in Krak\u00f3w) or municipal administrations (University of Cologne, University of Erfurt). In the early medieval period, most new universities were founded from pre-existing schools, usually when these schools were deemed to have become primarily sites of higher education. Many historians state that universities and cathedral schools were a continuation of the interest in learning promoted by monasteries.",
+      "question": "What is a scholae monasticae?",
+      "answers": [
+        "monastic schools"
+      ],
+      "answer": "monastic schools",
+      "kind": "answerable",
+      "prompt_tokens": 265,
+      "output": "European higher education took place for hundreds of years in Christian cathedral schools or monastic schools (scholae monasticae), in which monks and nuns",
+      "em": 0.0,
+      "f1": 0.16,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "570a5bbf4103511400d5965b",
+      "article": "Imperial_College_London",
+      "context": "In the financial year ended 31 July 2013, Imperial had a total net income of \u00a3822.0 million (2011/12 \u2013 \u00a3765.2 million) and total expenditure of \u00a3754.9 million (2011/12 \u2013 \u00a3702.0 million). Key sources of income included \u00a3329.5 million from research grants and contracts (2011/12 \u2013 \u00a3313.9 million), \u00a3186.3 million from academic fees and support grants (2011/12 \u2013 \u00a3163.1 million), \u00a3168.9 million from Funding Council grants (2011/12 \u2013 \u00a3172.4 million) and \u00a312.5 million from endowment and investment income (2011/12 \u2013 \u00a38.1 million). During the 2012/13 financial year Imperial had a capital expenditure of \u00a3124 million (2011/12 \u2013 \u00a3152 million).",
+      "question": "Who granted Imperial close to 170 million pounds in grants?",
+      "answers": [
+        "Funding Council"
+      ],
+      "answer": "Funding Council",
+      "kind": "answerable",
+      "prompt_tokens": 291,
+      "output": "Funding Council grants",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57268974708984140094c93d",
+      "article": "Southeast_Asia",
+      "context": "The antiquity of this form of writing extends before the invention of paper around the year 100 in China. Note each palm leaf section was only several lines, written longitudinally across the leaf, and bound by twine to the other sections. The outer portion was decorated. The alphabets of Southeast Asia tended to be abugidas, until the arrival of the Europeans, who used words that also ended in consonants, not just vowels. Other forms of official documents, which did not use paper, included Javanese copperplate scrolls. This material would have been more durable than paper in the tropical climate of Southeast Asia.",
+      "question": "What other forms of writing materials were used during this period?",
+      "answers": [
+        "copperplate scrolls"
+      ],
+      "answer": "copperplate scrolls",
+      "kind": "answerable",
+      "prompt_tokens": 186,
+      "output": "Javanese copperplate scrolls",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56e76b5600c9c71400d770fd",
+      "article": "Paper",
+      "context": "Some manufacturers have started using a new, significantly more environmentally friendly alternative to expanded plastic packaging. Made out of paper, and known commercially as paperfoam, the new packaging has very similar mechanical properties to some expanded plastic packaging, but is biodegradable and can also be recycled with ordinary paper.",
+      "question": "What is the main benefit of using paperfoam over traditional shrink-wrap?",
+      "answers": [
+        "biodegradable"
+      ],
+      "answer": "biodegradable",
+      "kind": "answerable",
+      "prompt_tokens": 119,
+      "output": "The main benefit of using paperfoam over traditional shrink-wrap is that it is biodegradable and can be recycled with ordinary paper.",
+      "em": 0.0,
+      "f1": 0.09523809523809523,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5728b1163acd2414000dfcd1",
+      "article": "Mandolin",
+      "context": "Noteworthy Irish mandolinists include Andy Irvine (who, like Johnny Moynihan, almost always tunes the top E down to D, to achieve an open tuning of GDAD), Paul Brady, Mick Moloney, Paul Kelly and Claudine Langille. John Sheahan and the late Barney McKenna, respectively fiddle player and tenor banjo player with The Dubliners, are also accomplished Irish mandolin players. The instruments used are either flat-backed, oval hole examples as described above (made by UK luthier Roger Bucknall of Fylde Guitars), or carved-top, oval hole instruments with arched back (made by Stefan Sobell in Northumberland). The Irish guitarist Rory Gallagher often played the mandolin on stage, and he most famously used it in the song \"Going To My Hometown.\"",
+      "question": "Who are some of the famous Irish Mandolinists?",
+      "answers": [
+        "Andy Irvine"
+      ],
+      "answer": "Andy Irvine",
+      "kind": "answerable",
+      "prompt_tokens": 224,
+      "output": "Andy Irvine, Paul Brady, Mick Moloney, Paul Kelly, Claudine Langille, John Sheahan, The Dubliners, Rory Gallagher",
+      "em": 0.0,
+      "f1": 0.23529411764705882,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572b4db9111d821400f38e3f",
+      "article": "Zinc",
+      "context": "Zinc is a bluish-white, lustrous, diamagnetic metal, though most common commercial grades of the metal have a dull finish. It is somewhat less dense than iron and has a hexagonal crystal structure, with a distorted form of hexagonal close packing, in which each atom has six nearest neighbors (at 265.9 pm) in its own plane and six others at a greater distance of 290.6 pm. The metal is hard and brittle at most temperatures but becomes malleable between 100 and 150 \u00b0C. Above 210 \u00b0C, the metal becomes brittle again and can be pulverized by beating. Zinc is a fair conductor of electricity. For a metal, zinc has relatively low melting (419.5 \u00b0C) and boiling points (907 \u00b0C). Its melting point is the lowest of all the transition metals aside from mercury and cadmium.",
+      "question": "What is the crystalline structure of sync?",
+      "answers": [
+        "hexagonal"
+      ],
+      "answer": "hexagonal",
+      "kind": "answerable",
+      "prompt_tokens": 247,
+      "output": "hexagonal close packing",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572925caaf94a219006aa103",
+      "article": "Planck_constant",
+      "context": "The assumption that black-body radiation is thermal leads to an accurate prediction: the total amount of emitted energy goes up with the temperature according to a definite rule, the Stefan\u2013Boltzmann law (1879\u201384). But it was also known that the colour of the light given off by a hot object changes with the temperature, so that \"white hot\" is hotter than \"red hot\". Nevertheless, Wilhelm Wien discovered the mathematical relationship between the peaks of the curves at different temperatures, by using the principle of adiabatic invariance. At each different temperature, the curve is moved over by Wien's displacement law (1893). Wien also proposed an approximation for the spectrum of the object, which was correct at high frequencies (short wavelength) but not at low frequencies (long wavelength). It still was not clear why the spectrum of a hot object had the form that it has (see diagram).",
+      "question": "What assumption that black-body radiation is what leads to an accurate prediction?",
+      "answers": [
+        "thermal"
+      ],
+      "answer": "thermal",
+      "kind": "answerable",
+      "prompt_tokens": 247,
+      "output": "The assumption that black-body radiation is thermal leads to an accurate prediction.",
+      "em": 0.0,
+      "f1": 0.18181818181818182,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572ff1df947a6a140053ce4c",
+      "article": "Muslim_world",
+      "context": "A Latin translation of Ibn Tufail's work, Philosophus Autodidactus, first appeared in 1671, prepared by Edward Pococke the Younger, followed by an English translation by Simon Ockley in 1708, as well as German and Dutch translations. These translations might have later inspired Daniel Defoe to write Robinson Crusoe, regarded as the first novel in English. Philosophus Autodidactus, continuing the thoughts of philosophers such as Aristotle from earlier ages, inspired Robert Boyle to write his own philosophical novel set on an island, The Aspiring Naturalist.",
+      "question": "What book is Robert Boyle believe to have written after being inspired by Philosophus Autodidactus?",
+      "answers": [
+        "The Aspiring Naturalist"
+      ],
+      "answer": "The Aspiring Naturalist",
+      "kind": "answerable",
+      "prompt_tokens": 190,
+      "output": "The book Robert Boyle believed to have been inspired by Philosophus Autodidactus was \"The Aspiring Naturalist\".",
+      "em": 0.0,
+      "f1": 0.25,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56dd25349a695914005b950c",
+      "article": "Prime_minister",
+      "context": "The power of these ministers depended entirely on the personal favour of the monarch. Although managing the parliament was among the necessary skills of holding high office, they did not depend on a parliamentary majority for their power. Although there was a cabinet, it was appointed entirely by the monarch, and the monarch usually presided over its meetings.",
+      "question": "Who was responsible for naming people to serve in the cabinet?",
+      "answers": [
+        "the monarch"
+      ],
+      "answer": "the monarch",
+      "kind": "answerable",
+      "prompt_tokens": 122,
+      "output": "The cabinet was named by the monarch.",
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5726e2bf708984140094d4c4",
+      "article": "Avicenna",
+      "context": "Avicenna was a devout Muslim and sought to reconcile rational philosophy with Islamic theology. His aim was to prove the existence of God and His creation of the world scientifically and through reason and logic. Avicenna's views on Islamic theology (and philosophy) were enormously influential, forming part of the core of the curriculum at Islamic religious schools until the 19th century. Avicenna wrote a number of short treatises dealing with Islamic theology. These included treatises on the prophets (whom he viewed as \"inspired philosophers\"), and also on various scientific and philosophical interpretations of the Quran, such as how Quranic cosmology corresponds to his own philosophical system. In general these treatises linked his philosophical writings to Islamic religious ideas; for example, the body's afterlife.",
+      "question": "What did Avicenna want to reconcile with Islamic theology?",
+      "answers": [
+        "rational philosophy"
+      ],
+      "answer": "rational philosophy",
+      "kind": "answerable",
+      "prompt_tokens": 214,
+      "output": "Rational philosophy with Islamic theology",
+      "em": 0.0,
+      "f1": 0.5714285714285714,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5730370004bcaa1900d77387",
+      "article": "Santa_Monica,_California",
+      "context": "In 1999, there was a double homicide in the Westside Clothing store on Lincoln Boulevard. During the incident, Culver City gang members David \"Puppet\" Robles and Jesse \"Psycho\" Garcia entered the store masked and began opening fire, killing Anthony and Michael Juarez. They then ran outside to a getaway vehicle driven by a third Culver City gang member, who is now also in custody. The clothing store was believed to be a local hang out for Santa Monica gang members. The dead included two men from Northern California who had merely been visiting the store's owner, their cousin, to see if they could open a similar store in their area. Police say the incident was in retaliation for a shooting committed by the Santa Monica 13 gang days before the Juarez brothers were gunned down.",
+      "question": "What gang is mentioned in connection with this crime?",
+      "answers": [
+        "Culver City"
+      ],
+      "answer": "Culver City",
+      "kind": "answerable",
+      "prompt_tokens": 222,
+      "output": "Culver City gang",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56cdda0062d2951400fa68fc",
+      "article": "Spectre_(2015_film)",
+      "context": "Further references to Fleming's material can be found throughout the film; an MI6 safehouse is called \"Hildebrand Rarities and Antiques\", a reference to the short story \"The Hildebrand Rarity\" from the For Your Eyes Only short story collection.[citation needed] Bond's torture by Blofeld mirrors his torture by the title character of Kingsley Amis' continuation novel Colonel Sun.[citation needed]",
+      "question": "What short story inspired the name Hildebrand Rarities and Antiques?",
+      "answers": [
+        "The Hildebrand Rarity"
+      ],
+      "answer": "The Hildebrand Rarity",
+      "kind": "answerable",
+      "prompt_tokens": 145,
+      "output": "The short story that inspired the name Hildebrand Rarities and Antiques is \"The Hildebrand Rarity\".",
+      "em": 0.0,
+      "f1": 0.2857142857142857,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572826852ca10214002d9f36",
+      "article": "PlayStation_3",
+      "context": "The 'OtherOS' functionality was not present in the updated PS Slim models, and the feature was subsequently removed from previous versions of the PS3 as part of the machine's firmware update version 3.21 which was released on April 1, 2010; Sony cited security concerns as the rationale. The firmware update 3.21 was mandatory for access to the PlayStation Network. The removal caused some controversy; as the update removed officially advertised features from already sold products, and gave rise to several class action lawsuits aimed at making Sony return the feature or provide compensation.",
+      "question": "What functionality did the PlayStation 3 lose in version 3.21 of its firmware update?",
+      "answers": [
+        "'OtherOS'"
+      ],
+      "answer": "'OtherOS'",
+      "kind": "answerable",
+      "prompt_tokens": 184,
+      "output": "The OtherOS functionality was lost in version 3.21 of the PlayStation 3's firmware update.",
+      "em": 0.0,
+      "f1": 0.15384615384615385,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56de679e4396321400ee2894",
+      "article": "BBC_Television",
+      "context": "After a series of test transmissions and special broadcasts that began in August, regular BBC television broadcasts officially resumed on 1 October 1936, from a converted wing of Alexandra Palace in London, which housed two studios, various scenery stores, make-up areas, dressing rooms, offices, and the transmitter itself, now broadcasting on the VHF band. BBC television initially used two systems, on alternate weeks: the 240-line Baird intermediate film system and the 405-line Marconi-EMI system, each making the BBC the world's first regular high-definition television service, broadcasting Monday to Saturday from 15:00 to 16:00 and 21:00 to 22:00.",
+      "question": "What frequency band was used by the BBC starting in 1936?",
+      "answers": [
+        "VHF"
+      ],
+      "answer": "VHF",
+      "kind": "answerable",
+      "prompt_tokens": 215,
+      "output": "VHF band",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572a2b821d04691400779802",
+      "article": "Philosophy_of_space_and_time",
+      "context": "The problem of the direction of time arises directly from two contradictory facts. Firstly, the fundamental physical laws are time-reversal invariant; if a cinematographic film were taken of any process describable by means of the aforementioned laws and then played backwards, it would still portray a physically possible process. Secondly, our experience of time, at the macroscopic level, is not time-reversal invariant. Glasses can fall and break, but shards of glass cannot reassemble and fly up onto tables. We have memories of the past, and none of the future. We feel we can't change the past but can influence the future.",
+      "question": "What kind of physical laws are time-reversal invariant?",
+      "answers": [
+        "fundamental"
+      ],
+      "answer": "fundamental",
+      "kind": "answerable",
+      "prompt_tokens": 183,
+      "output": "fundamental physical laws",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570aba3b4103511400d59971",
+      "article": "Aircraft_carrier",
+      "context": "The British Royal Navy is constructing two new larger STOVL aircraft carriers, the Queen Elizabeth class, to replace the three Invincible-class carriers. The ships will be named HMS Queen Elizabeth and HMS Prince of Wales. They will be able to operate up to 40 aircraft in peace time with a tailored group of up to 50, and will have a displacement of 70,600 tonnes. The ships are due to become operational from 2020. Their primary aircraft complement will be made up of F-35B Lightning IIs, and their ship's company will number around 680 with the total complement rising to about 1,600 when the air group is embarked. Defensive weapons will include the Phalanx Close-In Weapons System for anti-aircraft and anti-missile defence; also 30 mm Automated Small Calibre Guns and miniguns for use against fast attack craft. The two ships will be the largest warships ever built for the Royal Navy.",
+      "question": "How many tonnes can the Queen Elizabeth class ships displace?",
+      "answers": [
+        "70,600"
+      ],
+      "answer": "70,600",
+      "kind": "answerable",
+      "prompt_tokens": 265,
+      "output": "70,600 tonnes",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572ead7cc246551400ce44d8",
+      "article": "Neptune",
+      "context": "The formation of the ice giants, Neptune and Uranus, has proven difficult to model precisely. Current models suggest that the matter density in the outer regions of the Solar System was too low to account for the formation of such large bodies from the traditionally accepted method of core accretion, and various hypotheses have been advanced to explain their formation. One is that the ice giants were not formed by core accretion but from instabilities within the original protoplanetary disc and later had their atmospheres blasted away by radiation from a nearby massive OB star.",
+      "question": "What could have blasted Neptune and Uranus's atmosphere with radiation, aiding in creation? ",
+      "answers": [
+        "nearby massive OB star"
+      ],
+      "answer": "nearby massive OB star",
+      "kind": "answerable",
+      "prompt_tokens": 173,
+      "output": "Radiation from a nearby massive OB star",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572a13263f37b319004786a8",
+      "article": "Philosophy_of_space_and_time",
+      "context": "The earliest recorded Western philosophy of time was expounded by the ancient Egyptian thinker Ptahhotep (c. 2650\u20132600 BC), who said, \"Do not lessen the time of following desire, for the wasting of time is an abomination to the spirit.\" The Vedas, the earliest texts on Indian philosophy and Hindu philosophy, dating back to the late 2nd millennium BC, describe ancient Hindu cosmology, in which the universe goes through repeated cycles of creation, destruction, and rebirth, with each cycle lasting 4,320,000 years. Ancient Greek philosophers, including Parmenides and Heraclitus, wrote essays on the nature of time.",
+      "question": "What do the Vedas describe?",
+      "answers": [
+        "ancient Hindu cosmology"
+      ],
+      "answer": "ancient Hindu cosmology",
+      "kind": "answerable",
+      "prompt_tokens": 197,
+      "output": "The Vedas describe ancient Hindu cosmology.",
+      "em": 0.0,
+      "f1": 0.75,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572f45a004bcaa1900d76807",
+      "article": "Flowering_plant",
+      "context": "The internal classification of this group has undergone considerable revision. The Cronquist system, proposed by Arthur Cronquist in 1968 and published in its full form in 1981, is still widely used but is no longer believed to accurately reflect phylogeny. A consensus about how the flowering plants should be arranged has recently begun to emerge through the work of the Angiosperm Phylogeny Group (APG), which published an influential reclassification of the angiosperms in 1998. Updates incorporating more recent research were published as APG II in 2003 and as APG III in 2009.",
+      "question": "What consensus is the AGP trying to reach?",
+      "answers": [
+        "how the flowering plants should be arranged"
+      ],
+      "answer": "how the flowering plants should be arranged",
+      "kind": "answerable",
+      "prompt_tokens": 189,
+      "output": "consensus about how the flowering plants should be arranged",
+      "em": 0.0,
+      "f1": 0.8571428571428571,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570aa92f6d058f1900183034",
+      "article": "Federal_Aviation_Administration",
+      "context": "The FAA gradually assumed additional functions. The hijacking epidemic of the 1960s had already brought the agency into the field of civil aviation security. In response to the hijackings on September 11, 2001, this responsibility is now primarily taken by the Department of Homeland Security. The FAA became more involved with the environmental aspects of aviation in 1968 when it received the power to set aircraft noise standards. Legislation in 1970 gave the agency management of a new airport aid program and certain added responsibilities for airport safety. During the 1960s and 1970s, the FAA also started to regulate high altitude (over 500 feet) kite and balloon flying.",
+      "question": "What is the altitude which the FAA regulates over?",
+      "answers": [
+        "500 feet"
+      ],
+      "answer": "500 feet",
+      "kind": "answerable",
+      "prompt_tokens": 209,
+      "output": "over 500 feet",
+      "em": 0.0,
+      "f1": 0.8,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "570ab4204103511400d59947",
+      "article": "Houston",
+      "context": "Houston is served by the Houston Chronicle, its only major daily newspaper with wide distribution. The Hearst Corporation, which owns and operates the Houston Chronicle, bought the assets of the Houston Post\u2014its long-time rival and main competition\u2014when Houston Post ceased operations in 1995. The Houston Post was owned by the family of former Lieutenant Governor Bill Hobby of Houston. The only other major publication to serve the city is the Houston Press\u2014a free alternative weekly with a weekly readership of more than 300,000.",
+      "question": "Who owns the Houston Chronicle?",
+      "answers": [
+        "Hearst Corporation"
+      ],
+      "answer": "Hearst Corporation",
+      "kind": "answerable",
+      "prompt_tokens": 160,
+      "output": "The Houston Chronicle is owned by the Hearst Corporation.",
+      "em": 0.0,
+      "f1": 0.4444444444444444,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "5727cd39ff5b5019007d9585",
+      "article": "Strasbourg",
+      "context": "Strasbourg's historic city centre, the Grande \u00cele (Grand Island), was classified a World Heritage site by UNESCO in 1988, the first time such an honour was placed on an entire city centre. Strasbourg is immersed in the Franco-German culture and although violently disputed throughout history, has been a bridge of unity between France and Germany for centuries, especially through the University of Strasbourg, currently the second largest in France, and the coexistence of Catholic and Protestant culture. The largest Islamic place of worship in France, the Strasbourg Grand Mosque, was inaugurated by French Interior Minister Manuel Valls on 27 September 2012.",
+      "question": "What is the culture in Strasbourg?",
+      "answers": [
+        "Franco-German"
+      ],
+      "answer": "Franco-German",
+      "kind": "answerable",
+      "prompt_tokens": 188,
+      "output": "Franco-German culture",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "56dfbc1d7aa994140058e0bf",
+      "article": "Internet_service_provider",
+      "context": "On 26 February 2015, the FCC ruled in favor of net neutrality by adopting Title II (common carrier) of the Communications Act of 1934 and Section 706 in the Telecommunications act of 1996 to the Internet. The FCC Chairman, Tom Wheeler, commented, \"This is no more a plan to regulate the Internet than the First Amendment is a plan to regulate free speech. They both stand for the same concept.\"",
+      "question": "what did the FCC adopt for the internet? ",
+      "answers": [
+        "Title II (common carrier) of the Communications Act of 1934"
+      ],
+      "answer": "Title II (common carrier) of the Communications Act of 1934",
+      "kind": "answerable",
+      "prompt_tokens": 153,
+      "output": "Title II (common carrier) of the Communications Act of 1934 and Section 706 in the Telecommunications act of 199",
+      "em": 0.0,
+      "f1": 0.6923076923076923,
+      "abstained": false,
+      "hit_token_limit": true
+    },
+    {
+      "id": "56f9e7ab9b226e1400dd15fc",
+      "article": "High-definition_television",
+      "context": "The limited standardization of analog HDTV in the 1990s did not lead to global HDTV adoption as technical and economic constraints at the time did not permit HDTV to use bandwidths greater than normal television.",
+      "question": "What constraints kept HDTV from being widely adopted in the 90's?",
+      "answers": [
+        "technical and economic"
+      ],
+      "answer": "technical and economic",
+      "kind": "answerable",
+      "prompt_tokens": 107,
+      "output": "technical and economic constraints",
+      "em": 0.0,
+      "f1": 0.8571428571428571,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "57279ff03acd2414000de82e",
+      "article": "Jews",
+      "context": "Rates of interreligious marriage vary widely: In the United States, it is just under 50%, in the United Kingdom, around 53%; in France; around 30%, and in Australia and Mexico, as low as 10%. In the United States, only about a third of children from intermarriages affiliate with Jewish religious practice. The result is that most countries in the Diaspora have steady or slightly declining religiously Jewish populations as Jews continue to assimilate into the countries in which they live.[citation needed]",
+      "question": "What is the rate of interreligious marriage in the United Kingdom?",
+      "answers": [
+        "53%"
+      ],
+      "answer": "53%",
+      "kind": "answerable",
+      "prompt_tokens": 167,
+      "output": "around 53%",
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "hit_token_limit": false
+    },
+    {
+      "id": "572409ef0ba9f01400d97b41",
+      "article": "Queen_Victoria",
+      "context": "Following a custom she maintained throughout her widowhood, Victoria spent the Christmas of 1900 at Osborne House on the Isle of Wight. Rheumatism in her legs had rendered her lame, and her eyesight was clouded by cataracts. Through early January, she felt \"weak and unwell\", and by mid-January she was \"drowsy ... dazed, [and] confused\". She died on Tuesday, 22 January 1901, at half past six in the evening, at the age of 81. Her son and successor King Edward VII, and her eldest grandson, Emperor Wilhelm II of Germany, were at her deathbed. Her favourite pet Pomeranian, Turri, was laid upon her deathbed as a last request.",
+      "question": "Where did Victoria spend the Christmas of 1900?",
+      "answers": [
+        "Osborne House"
+      ],
+      "answer": "Osborne House",
+      "kind": "answerable",
+      "prompt_tokens": 220,
+      "output": "Osborne House on the Isle of Wight",
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "hit_token_limit": false
+    }
+  ]
+}

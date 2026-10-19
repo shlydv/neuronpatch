@@ -1,0 +1,52 @@
+{
+  "reviewer": "assistant; qualitative, not blinded",
+  "scope": "All nine span-containing nonexact training candidates in the 128-example prefix",
+  "changes_anchor_policy": false,
+  "reviews": [
+    {
+      "id": "56de73eb4396321400ee2933",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    },
+    {
+      "id": "56dd304366d3e219004dac37",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    },
+    {
+      "id": "56fc2e0800a8df19004037c4",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    },
+    {
+      "id": "571aeaf69499d21900609bac",
+      "category": "unsupported_reframing",
+      "reason": "The passage says others cite the Council as proof of an ideology, not that the Council decided the ideology was real. The question and answer encourage an unsupported attribution."
+    },
+    {
+      "id": "570d48a6fed7b91900d45e01",
+      "category": "correct_date_with_dangling_excerpt",
+      "reason": "Correct requested date, followed by an unnecessary unfinished passage fragment. Do not treat the entire output as an ideal preservation target."
+    },
+    {
+      "id": "572795755951b619008f8e22",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    },
+    {
+      "id": "56e1bc7ae3433e140042310f",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    },
+    {
+      "id": "5731eaa7e17f3d140042254a",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    },
+    {
+      "id": "56fac7ddf34c681400b0c126",
+      "category": "valid_answer_extra_wording",
+      "reason": "The response supplies the requested information supported by the passage; extra wording prevents exact match."
+    }
+  ]
+}
