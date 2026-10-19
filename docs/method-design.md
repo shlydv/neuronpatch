@@ -240,3 +240,29 @@ answers. Interference remains: the .0003 fit preserves only 37/45 base-exact-cor
 supported answers and still fails the presence/absence diagnostic. Report data,
 step-count and anchor-coverage changes together. The 2048-example fits are not yet
 part of the evidence; the full curve and semantic output review remain necessary.
+
+## Semantic preservation gap
+
+The [512-example output audit](../experiments/real_qa/scale_512/REPORT.md#semantic-audit-of-the-0003-checkpoint)
+changes the next design question. Nine new exact matches contain only two clear
+answer corrections, alongside wording changes, a qualifier, an ambiguity and a
+question/gold mismatch. Seven formerly exact-correct answers and nine inspected
+valid nonexact answers become refusals. These are selected diagnostic cases, not
+an overall semantic accuracy estimate.
+
+Our exact-match-only training anchor policy can exclude valid answers. Separately,
+mean distribution KL does not guarantee preservation of the generated decision.
+Neither issue is solved by finding highly active neurons. Before adding another
+selector, investigate preservation coverage and decision margins on training
+examples, then test whether candidate parameter updates improve missing-evidence
+decisions while preserving supported decisions. This connects the useful parts of
+the papers—localization, constrained updates and preservation—to a measured failure.
+It does not establish that any proposed combination is novel or effective.
+
+Keep three measurements distinct: semantic correctness, requested output format,
+and appropriate refusal. Preserve published benchmark scores alongside diagnostic
+annotations. Do not infer a new anchor rule from validation labels or tune it on
+the untouched confirmation set. Finish the existing size curve unchanged; any
+new objective needs a same-data, same-budget control before attributing gains to
+neuron selection. Reproduction is useful only where it resolves an implementation
+uncertainty; it is not a substitute for this synthesis objective.

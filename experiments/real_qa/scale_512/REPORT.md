@@ -31,3 +31,30 @@ The 2048-example comparison remains pending. There is no neuron-localization res
 here and no final-confirmation inference. Raw predictions, exact sources, hashes,
 loss histories and paired known-correct retention are retained. The next conclusion
 must incorporate the full planned curve, not just its most favorable checkpoint.
+
+## Semantic audit of the .0003 checkpoint
+
+`semantic_review.json` records all 17 supported exact-match changes, with full
+contexts, outputs and source hashes. This is assistant qualitative review, not
+blinded adjudication; automatic scores and dataset labels remain unchanged.
+Of nine gains, four only shorten or normalize already-correct answers, one is an
+ambiguous container alternative, one adds a numerical qualifier, and two clearly
+correct the answer. The remaining gain exposes a question/gold mismatch: “Where
+was the UCR created?” has “1920s” as its reference. Replacing UNKNOWN with a decade
+earns exact match but does not correctly answer that location question.
+
+Of eight losses, seven are correct answers replaced by UNKNOWN. The eighth drops
+“Jr.” from an agent's otherwise correct name. Moreover, nine inspected nonexact
+but valid baseline answers become UNKNOWN without changing their zero exact-match
+scores: these include LPC for linear predictive coding, 731 for the team count,
+and sentence-form answers containing the requested information. This subset is
+not a complete semantic evaluation and must not be used as an overall accuracy
+estimate. It demonstrates that preservation damage extends beyond lost exact
+matches. Short-span compliance and answer correctness need separate accounting.
+
+The preservation anchor rule also uses exact match, so it can omit valid baseline
+answers from protection. That is a concrete hypothesis for an objective/data
+improvement, not yet a demonstrated explanation or fix. Current runs retain the
+original rule to preserve their comparison. Any broader anchor policy must be
+defined using training data only and compared against the same policy with random
+selection and LoRA; validation review must not silently become training labels.

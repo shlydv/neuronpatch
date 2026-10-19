@@ -1,0 +1,359 @@
+{
+  "reviewer": "assistant; qualitative, not blinded",
+  "scope": "All 17 supported exact-match changes, plus nine inspected valid nonexact answers that became refusals. Not a complete semantic evaluation.",
+  "changes_automatic_scores": false,
+  "sources": {
+    "scaled_baseline/val.json": "d8987f89e359865b956cbd51eaa49f0afaf80bf7ff09a2da5776736a306290cd",
+    "scale_512/lora-lr0.0003-kl1.0-epoch1-val.json": "53a1bab8c307f8aba5e3627159beae7528b94fe480a6d0e830db2e2c1eabf5f3"
+  },
+  "category_counts": {
+    "wording_only_gain": 4,
+    "ambiguous_alternative_gain": 1,
+    "question_gold_mismatch": 1,
+    "qualifier_precision_gain": 1,
+    "substantive_correction": 2,
+    "name_suffix_loss_likely_still_correct": 1,
+    "valid_nonexact_answer_to_refusal": 9,
+    "correct_exact_answer_to_refusal": 7
+  },
+  "examples": [
+    {
+      "id": "5734257c4776f41900661962",
+      "category": "wording_only_gain",
+      "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+      "context": "The isolation of enzymes from infected tissue can also provide the basis of a biochemical diagnosis of an infectious disease. For example, humans can make neither RNA replicases nor reverse transcriptase, and the presence of these enzymes are characteristic of specific types of viral infections. The ability of the viral protein hemagglutinin to bind red blood cells together into a detectable matrix may also be characterized as a biochemical test for viral infection, although strictly speaking hemagglutinin is not an enzyme and has no metabolic function.",
+      "gold": [
+        "RNA replicases"
+      ],
+      "before": "RNA replicase",
+      "after": "RNA replicases",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5709f59f4103511400d594c4",
+      "category": "wording_only_gain",
+      "question": "Which zoo is one of the best in Europe?",
+      "context": "The Hanover Zoo is one of the most spectacular and best zoos in Europe. The zoo received the Park Scout Award for the fourth year running in 2009/10, placing it among the best zoos in Germany. The zoo consists of several theme areas: Sambesi, Meyers Farm, Gorilla-Mountain, Jungle-Palace, and Mullewapp. Some smaller areas are Australia, the wooded area for wolves, and the so-called swimming area with many seabirds. There is also a tropical house, a jungle house, and a show arena. The new Canadian-themed area, Yukon Bay, opened in 2010. In 2010 the Hanover Zoo had over 1.6 million visitors.",
+      "gold": [
+        "Hanover Zoo"
+      ],
+      "before": "The Hanover Zoo is one of the best zoos in Europe.",
+      "after": "Hanover Zoo",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5727affd4b864d1900163a68",
+      "category": "wording_only_gain",
+      "question": "When did political parties organize themselves into international organizations?",
+      "context": "During the 19th and 20th century, many national political parties organized themselves into international organizations along similar policy lines. Notable examples are The Universal Party, International Workingmen's Association (also called the First International), the Socialist International (also called the Second International), the Communist International (also called the Third International), and the Fourth International, as organizations of working class parties, or the Liberal International (yellow), Hizb ut-Tahrir, Christian Democratic International and the International Democrat Union (blue). Organized in Italy in 1945, the International Communist Party, since 1974 headquartered in Florence has sections in six countries.[citation needed] Worldwide green parties have recently established the Global Greens. The Universal Party, The Socialist International, the Liberal International, and the International Democrat Union are all based in London. Some administrations (e.g. Hong Kong) outlaw formal linkages between local and foreign political organizations, effectively outlawing international political parties.",
+      "gold": [
+        "19th and 20th century"
+      ],
+      "before": "The 19th and 20th centuries",
+      "after": "19th and 20th century",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57278245f1498d1400e8fa2e",
+      "category": "wording_only_gain",
+      "question": "Who is the highest judge in Ireland's Supreme Court?",
+      "context": "The Supreme Court is the highest court in Ireland. It has authority to interpret the constitution, and strike down laws and activities of the state that it finds to be unconstitutional. It is also the highest authority in the interpretation of the law. Constitutionally it must have authority to interpret the constitution but its further appellate jurisdiction from lower courts is defined by law. The Irish Supreme Court consists of its presiding member, the Chief Justice, and seven other judges. Judges of the Supreme Court are appointed by the President in accordance with the binding advice of the Government. The Supreme Court sits in the Four Courts in Dublin.",
+      "gold": [
+        "the Chief Justice"
+      ],
+      "before": "The highest judge in Ireland's Supreme Court is the Chief Justice.",
+      "after": "Chief Justice",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570a76684103511400d5973a",
+      "category": "ambiguous_alternative_gain",
+      "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+      "context": "Draught beer's environmental impact can be 68% lower than bottled beer due to packaging differences. A life cycle study of one beer brand, including grain production, brewing, bottling, distribution and waste management, shows that the CO2 emissions from a 6-pack of micro-brew beer is about 3 kilograms (6.6 pounds). The loss of natural habitat potential from the 6-pack of micro-brew beer is estimated to be 2.5 square meters (26 square feet). Downstream emissions from distribution, retail, storage and disposal of waste can be over 45% of a bottled micro-brew beer's CO2 emissions. Where legal, the use of a refillable jug, reusable bottle or other reusable containers to transport draught beer from a store or a bar, rather than buying pre-bottled beer, can reduce the environmental impact of beer consumption.",
+      "gold": [
+        "a refillable jug"
+      ],
+      "before": "reusable bottle",
+      "after": "Refillable jug",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570c25c4ec8fbc190045bca4",
+      "category": "question_gold_mismatch",
+      "question": "Where was the UCR created?",
+      "context": "The Uniform Crime Reports (UCR) compile data from over 17,000 law enforcement agencies across the country. They provide detailed data regarding the volume of crimes to include arrest, clearance (or closing a case), and law enforcement officer information. The UCR focuses its data collection on violent crimes, hate crimes, and property crimes. Created in the 1920s, the UCR system has not proven to be as uniform as its name implies. The UCR data only reflect the most serious offense in the case of connected crimes and has a very restrictive definition of rape. Since about 93% of the data submitted to the FBI is in this format, the UCR stands out as the publication of choice as most states require law enforcement agencies to submit this data.",
+      "gold": [
+        "1920s"
+      ],
+      "before": "UNKNOWN",
+      "after": "the 1920s",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5709fef56d058f1900182c56",
+      "category": "qualifier_precision_gain",
+      "question": "How many rides and inns does the fair have?",
+      "context": "But Hanover is not only one of the most important Exhibition Cities in the world, it is also one of the German capitals for marksmen. The Sch\u00fctzenfest Hannover is the largest Marksmen's Fun Fair in the world and takes place once a year (late June to early July) (2014 - July 4th to the 13th). It consists of more than 260 rides and inns, five large beer tents and a big entertainment programme. The highlight of this fun fair is the 12 kilometres (7 mi) long Parade of the Marksmen with more than 12.000 participants from all over the world, among them around 5.000 marksmen, 128 bands and more than 70 wagons, carriages and big festival vehicles. It is the longest procession in Europe. Around 2 million people visit this fun fair every year. The landmark of this Fun Fair is the biggest transportable Ferris Wheel in the world (60 m or 197 ft high). The origins of this fun fair is located in the year 1529.",
+      "gold": [
+        "more than 260"
+      ],
+      "before": "260",
+      "after": "more than 260",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57277ff9dd62a815002e9ed9",
+      "category": "substantive_correction",
+      "question": "What are some countries that have multiple powerful political parties?",
+      "context": "While there is some international commonality in the way political parties are recognized, and in how they operate, there are often many differences, and some are significant. Many political parties have an ideological core, but some do not, and many represent very different ideologies than they did when first founded. In democracies, political parties are elected by the electorate to run a government. Many countries have numerous powerful political parties, such as Germany and India and some nations have one-party systems, such as China. The United States is a two-party system, with its two most powerful parties being the Democratic Party and the Republican Party.",
+      "gold": [
+        "Germany and India"
+      ],
+      "before": "UNKNOWN",
+      "after": "Germany and India",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57262598271a42140099d59f",
+      "category": "substantive_correction",
+      "question": "Which group are Ambondro's closely related to?",
+      "context": "If Mammalia is considered as the crown group, its origin can be roughly dated as the first known appearance of animals more closely related to some extant mammals than to others. Ambondro is more closely related to monotremes than to therian mammals while Amphilestes and Amphitherium are more closely related to the therians; as fossils of all three genera are dated about 167 million years ago in the Middle Jurassic, this is a reasonable estimate for the appearance of the crown group. The earliest known synapsid satisfying Kemp's definitions is Tikitherium, dated 225 Ma, so the appearance of mammals in this broader sense can be given this Late Triassic date. In any case, the temporal range of the group extends to the present day.",
+      "gold": [
+        "monotremes"
+      ],
+      "before": "Mammalia",
+      "after": "Monotremes",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570c2925ec8fbc190045bcce",
+      "category": "name_suffix_loss_likely_still_correct",
+      "question": "What FBI agent was killed during attacks on the World Trade Center?",
+      "context": "During the September 11, 2001 attacks on the World Trade Center, FBI agent Leonard W. Hatton Jr. was killed during the rescue effort while helping the rescue personnel evacuate the occupants of the South Tower and stayed when it collapsed. Within months after the attacks, FBI Director Robert Mueller, who had been sworn in a week before the attacks, called for a re-engineering of FBI structure and operations. He made countering every federal crime a top priority, including the prevention of terrorism, countering foreign intelligence operations, addressing cyber security threats, other high-tech crimes, protecting civil rights, combating public corruption, organized crime, white-collar crime, and major acts of violent crime.",
+      "gold": [
+        "Leonard W. Hatton Jr"
+      ],
+      "before": "Leonard W. Hatton Jr.",
+      "after": "Leonard W. Hatton",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570afbdf6b8089140040f67a",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "What difference in dating caused the use of double-dating documents?",
+      "context": "During the period between 1582, when the first countries adopted the Gregorian calendar, and 1923, when the last European country adopted it, it was often necessary to indicate the date of some event in both the Julian calendar and in the Gregorian calendar, for example, \"10/21 February 1750/51\", where the dual year accounts for some countries already beginning their numbered year on 1 January while others were still using some other date. Even before 1582, the year sometimes had to be double dated because of the different beginnings of the year in various countries. Woolley, writing in his biography of John Dee (1527\u20131608/9), notes that immediately after 1582 English letter writers \"customarily\" used \"two dates\" on their letters, one OS and one NS.",
+      "gold": [
+        "different beginnings of the year"
+      ],
+      "before": "The difference in dating caused the use of double-dating documents due to the different beginnings of the year in various countries.",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "56f89312aef23719006261c5",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "How was Virgil regarded socially by his schoolmates?",
+      "context": "According to the commentators, Virgil received his first education when he was five years old and he later went to Cremona, Milan, and finally Rome to study rhetoric, medicine, and astronomy, which he soon abandoned for philosophy. From Virgil's admiring references to the neoteric writers Pollio and Cinna, it has been inferred that he was, for a time, associated with Catullus' neoteric circle. However schoolmates considered Virgil extremely shy and reserved, according to Servius, and he was nicknamed \"Parthenias\" or \"maiden\" because of his social aloofness. Virgil seems to have suffered bad health throughout his life and in some ways lived the life of an invalid. According to the Catalepton, while in the Epicurean school of Siro the Epicurean at Naples, he began to write poetry. A group of small works attributed to the youthful Virgil by the commentators survive collected under the title Appendix Vergiliana, but are largely considered spurious by scholars. One, the Catalepton, consists of fourteen short poems, some of which may be Virgil's, and another, a short narrative poem titled the Culex (\"The Gnat\"), was attributed to Virgil as early as the 1st century AD.",
+      "gold": [
+        "extremely shy and reserved"
+      ],
+      "before": "Shy and reserved",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570b2260ec8fbc190045b858",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "How did the Gregorian calendar set these same of the full moon not preceding Easterconditions?",
+      "context": "In addition to the change in the mean length of the calendar year from 365.25 days (365 days 6 hours) to 365.2425 days (365 days 5 hours 49 minutes 12 seconds), a reduction of 10 minutes 48 seconds per year, the Gregorian calendar reform also dealt with the accumulated difference between these lengths. The canonical Easter tables were devised at the end of the third century, when the vernal equinox fell either on 20 March or 21 March depending on the year's position in the leap year cycle. As the rule was that the full moon preceding Easter was not to precede the equinox the equinox was fixed at 21 March for computational purposes and the earliest date for Easter was fixed at 22 March. The Gregorian calendar reproduced these conditions by removing ten days.",
+      "gold": [
+        "removing ten days"
+      ],
+      "before": "The Gregorian calendar set these same conditions by removing ten days.",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5730eac6b7151e1900c015d3",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "What word substitution did he use in the authorization to appease all of the worshipers and view points when speaking of the inception of Mary  ?",
+      "context": "On 28 February 1476, Pope Sixtus IV, authorized those dioceses that wished to introduce the feast to do so, and introduced it to his own diocese of Rome in 1477, with a specially composed Mass and Office of the feast. With his bull Cum praeexcelsa of 28 February 1477, in which he referred to the feast as that of the Conception of Mary, without using the word \"Immaculate\", he granted indulgences to those who would participate in the specially composed Mass or Office on the feast itself or during its octave, and he used the word \"immaculate\" of Mary, but applied instead the adjective \"miraculous\" to her conception. On 4 September 1483, referring to the feast as that of \"the Conception of Immaculate Mary ever Virgin\", he condemned both those who called it mortally sinful and heretical to hold that the \"glorious and immaculate mother of God was conceived without the stain of original sin\" and those who called it mortally sinful and heretical to hold that \"the glorious Virgin Mary was conceived with original sin\", since, he said, \"up to this time there has been no decision made by the Roman Church and the Apostolic See.\" This decree was reaffirmed by the Council of Trent.",
+      "gold": [
+        "but applied instead the adjective \"miraculous\" to her conception."
+      ],
+      "before": "Miraculous",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5731564c05b4da19006bd063",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "What name did the Cincinnati Red Stockings become known as for a time in the 1950s?",
+      "context": "Major League Baseball is especially well known for red teams. The Cincinnati Red Stockings are the oldest professional baseball team, dating back to 1869. The franchise soon relocated to Boston and is now the Atlanta Braves, but its name survives as the origin for both the Cincinnati Reds and Boston Red Sox. During the 1950s when red was strongly associated with communism, the modern Cincinnati team was known as the \"Redlegs\" and the term was used on baseball cards. After the red scare faded, the team was known as the \"Reds\" again. The Los Angeles Angels of Anaheim are also known for their color red, as are the St. Louis Cardinals, Arizona Diamondbacks, and the Philadelphia Phillies.",
+      "gold": [
+        "Redlegs"
+      ],
+      "before": "The Cincinnati Red Stockings became known as the \"Redlegs\" during the 1950s.",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57279147f1498d1400e8fc54",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "How many teams competed that year? ",
+      "context": "Chasetown, whilst playing at Level 8 of English football during the 2007\u201308 competition, are the lowest-ranked team to play in the Third Round Proper (final 64, of 731 teams entered that season). Chasetown was then a member of the Southern League Division One Midlands (a lower level within the Southern Football League), when they lost to Football League Championship (Level 2) team Cardiff City, the eventual FA Cup runners-up that year. Their success earned the lowly organisation over \u00a360,000 in prize money.",
+      "gold": [
+        "731 teams entered that season"
+      ],
+      "before": "731",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "573427ac4776f419006619a6",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "What will be the ubiquitous gold standards of diagnostics in the near future?",
+      "context": "Technologies based upon the polymerase chain reaction (PCR) method will become nearly ubiquitous gold standards of diagnostics of the near future, for several reasons. First, the catalog of infectious agents has grown to the point that virtually all of the significant infectious agents of the human population have been identified. Second, an infectious agent must grow within the human body to cause disease; essentially it must amplify its own nucleic acids in order to cause a disease. This amplification of nucleic acid in infected tissue offers an opportunity to detect the infectious agent by using PCR. Third, the essential tools for directing PCR, primers, are derived from the genomes of infectious agents, and with time those genomes will be known, if they are not already.",
+      "gold": [
+        "PCR"
+      ],
+      "before": "Technologies based upon the polymerase chain reaction (PCR) method will become nearly ubiquitous gold standards of diagnostics of the near future, for several reasons.",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57268489f1498d1400e8e265",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "What is thought of as a basic perceptual coding technique?",
+      "context": "Other types of lossy compressors, such as the linear predictive coding (LPC) used with speech, are source-based coders. These coders use a model of the sound's generator (such as the human vocal tract with LPC) to whiten the audio signal (i.e., flatten its spectrum) before quantization. LPC may be thought of as a basic perceptual coding technique: reconstruction of an audio signal using a linear predictor shapes the coder's quantization noise into the spectrum of the target signal, partially masking it.",
+      "gold": [
+        "linear predictive coding"
+      ],
+      "before": "LPC",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57344adb879d6814001ca4b7",
+      "category": "valid_nonexact_answer_to_refusal",
+      "question": "Who has hunting been forbidden to since early Christian times?",
+      "context": "From early Christian times, hunting has been forbidden to Roman Catholic Church clerics. Thus the Corpus Juris Canonici (C. ii, X, De cleric. venat.) says, \"We forbid to all servants of God hunting and expeditions through the woods with hounds; and we also forbid them to keep hawks or falcons.\" The Fourth Council of the Lateran, held under Pope Innocent III, decreed (canon xv): \"We interdict hunting or hawking to all clerics.\" The decree of the Council of Trent is worded more mildly: \"Let clerics abstain from illicit hunting and hawking\" (Sess. XXIV, De reform., c. xii), which seems to imply that not all hunting is illicit, and canonists generally make a distinction declaring noisy (clamorosa) hunting unlawful, but not quiet (quieta) hunting.",
+      "gold": [
+        "Roman Catholic Church clerics"
+      ],
+      "before": "Roman Catholic Clerics",
+      "after": "UNKNOWN",
+      "before_em": 0.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57263e4c38643c19005ad36c",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+      "context": "Most mammals are viviparous, giving birth to live young. However, the five species of monotreme, the platypuses and the echidnas, lay eggs. The monotremes have a sex determination system different from that of most other mammals. In particular, the sex chromosomes of a platypus are more like those of a chicken than those of a therian mammal. Like marsupials and most other mammals, monotreme young are larval and fetus-like, as the presence of epipubic bones prevents the expansion of the torso, forcing them to produce small young.",
+      "gold": [
+        "chicken"
+      ],
+      "before": "chicken",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570b9fa36b8089140040f9c3",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+      "context": "The sensitivity of Earth-based infrared telescopes is significantly limited by water vapor in the atmosphere, which absorbs a portion of the infrared radiation arriving from space outside of selected atmospheric windows. This limitation can be partially alleviated by placing the telescope observatory at a high altitude, or by carrying the telescope aloft with a balloon or an aircraft. Space telescopes do not suffer from this handicap, and so outer space is considered the ideal location for infrared astronomy.",
+      "gold": [
+        "Space telescopes"
+      ],
+      "before": "Space telescopes",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57277a57f1498d1400e8f92c",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "When did Britain formally surrender sovreignty over Hong Kong?",
+      "context": "In Hong Kong, the Supreme Court of Hong Kong (now known as the High Court of Hong Kong) was the final court of appeal during its colonial times which ended with transfer of sovereignty in 1997. The final adjudication power, as in any other British Colonies, rested with the Judicial Committee of the Privy Council (JCPC) in London, United Kingdom. Now the power of final adjudication is vested in the Court of Final Appeal created in 1997. Under the Basic Law, its constitution, the territory remains a common law jurisdiction. Consequently, judges from other common law jurisdictions (including England and Wales) can be recruited and continue to serve in the judiciary according to Article 92 of the Basic Law. On the other hand, the power of interpretation of the Basic Law itself is vested in the Standing Committee of the National People's Congress (NPCSC) in Beijing (without retroactive effect), and the courts are authorised to interpret the Basic Law when trying cases, in accordance with Article 158 of the Basic Law. This arrangement became controversial in light of the right of abode issue in 1999, raising concerns for judicial independence.",
+      "gold": [
+        "1997"
+      ],
+      "before": "1997",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "56dc6a5c14d3a41400c26882",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What are some new initiatives that may impact the concept of comprehensive schools?",
+      "context": "In principle, comprehensive schools were conceived as \"neighbourhood\" schools for all students in a specified catchment area. Current education reforms with Academies Programme, Free Schools and University Technical Colleges will no doubt have some impact on the comprehensive ideal but it is too early to say to what degree.",
+      "gold": [
+        "Academies Programme, Free Schools and University Technical Colleges"
+      ],
+      "before": "Academies Programme, Free Schools and University Technical Colleges",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5727cbf64b864d1900163d48",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What were the \"treatment\" facilities for poor people with TB in the early 1900s called?",
+      "context": "Tuberculosis caused the most widespread public concern in the 19th and early 20th centuries as an endemic disease of the urban poor. In 1815, one in four deaths in England was due to \"consumption\". By 1918, one in six deaths in France was still caused by TB. After TB was determined to be contagious, in the 1880s, it was put on a notifiable disease list in Britain; campaigns were started to stop people from spitting in public places, and the infected poor were \"encouraged\" to enter sanatoria that resembled prisons (the sanatoria for the middle and upper classes offered excellent care and constant medical attention). Whatever the (purported) benefits of the \"fresh air\" and labor in the sanatoria, even under the best conditions, 50% of those who entered died within five years (circa 1916).",
+      "gold": [
+        "sanatoria"
+      ],
+      "before": "sanatoria",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57315bfaa5e9cc1400cdbf01",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "After the demise of what was the red flag linked to the French Revolution?",
+      "context": "The red flag appeared as a political symbol during the French Revolution, after the fall of Bastille. A law adopted by the new government on October 20, 1789 authorized the Garde Nationale to raise the red flag in the event of a riot, to signal that the Garde would imminently intervene. During a demonstration on the Champs de Mars on July 17, 1791, the Garde Nationale fired on the crowd, killed up to fifty people. The government was denounced by the more radical revolutionaries. In the words of his famous hymn, the Marseillaise, Rouget de Lisle wrote: \"Against us they have raised the bloody flag of tyranny!\" (Contre nous de la tyrannie, l'entendard sanglant est leve). Beginning in 1790, the most radical revolutionaries adopted the red flag themselves, to symbolize the blood of those killed in the demonstrations, and to call for the repression of those they considered counter-revolutionary.",
+      "gold": [
+        "Bastille"
+      ],
+      "before": "Bastille",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570c30996b8089140040fbf4",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What Substance act does the FBI enforce?",
+      "context": "The FBI's chief tool against organized crime is the Racketeer Influenced and Corrupt Organizations (RICO) Act. The FBI is also charged with the responsibility of enforcing compliance of the United States Civil Rights Act of 1964 and investigating violations of the act in addition to prosecuting such violations with the United States Department of Justice (DOJ). The FBI also shares concurrent jurisdiction with the Drug Enforcement Administration (DEA) in the enforcement of the Controlled Substances Act of 1970.",
+      "gold": [
+        "Controlled Substances Act of 1970"
+      ],
+      "before": "The Controlled Substances Act of 1970",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    }
+  ]
+}
