@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "scope": "imports, published configuration, CPU model/logit/activation parity; no editing or effectiveness test",
+  "upstream_commit": "a2489cbac0dfe5a956385734065cfa041384e7d1",
+  "torch": "2.14.1",
+  "transformers": "4.40.0",
+  "max_logit_difference": 0.0
+}
