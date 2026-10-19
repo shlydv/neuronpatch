@@ -6,16 +6,16 @@ from pathlib import Path
 
 BOOTSTRAP = """import subprocess, sys
 from pathlib import Path
-root=Path('/kaggle/working/fine-reference-harness');root.mkdir(exist_ok=True)
+root=Path('/tmp/fine-reference-harness');root.mkdir(exist_ok=True)
 for name,source in sources.items(): (root/name).write_text(source)
 subprocess.run([sys.executable,'-m','pip','install','--quiet','uv'],check=True)
-subprocess.run(['uv','venv','--python','3.11','/kaggle/working/fine-env'],check=True)
-python='/kaggle/working/fine-env/bin/python'
+subprocess.run(['uv','venv','--python','3.11','/tmp/fine-env'],check=True)
+python='/tmp/fine-env/bin/python'
 subprocess.run(['uv','pip','install','--python',python,'--index-url',
     'https://pypi.org/simple','torch==2.0.1','numpy==1.26.4',
     'transformers==4.40.0','tokenizers==0.19.1','huggingface-hub==0.23.5',
     'accelerate==0.30.1','PyYAML','requests','tqdm'],check=True)
-repo='/kaggle/working/fine-upstream'
+repo='/tmp/fine-upstream'
 subprocess.run(['git','clone','--quiet',
     'https://github.com/opanhw/fine-unified-editing-code',repo],check=True)
 subprocess.run(['git','-C',repo,'checkout','--quiet',
