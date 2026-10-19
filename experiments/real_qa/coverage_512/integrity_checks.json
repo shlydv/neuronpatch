@@ -1,0 +1,17 @@
+{
+  "process_exit_code": 0,
+  "source_and_review_hashes_match": true,
+  "checkpoints": {
+    "lora-lr0.0001-kl1.0-epoch1": {
+      "finite_steps": 256,
+      "finite_adapter_parameters": 829440,
+      "metrics_match": true
+    },
+    "lora-lr0.0003-kl1.0-epoch1": {
+      "finite_steps": 256,
+      "finite_adapter_parameters": 829440,
+      "metrics_match": true
+    }
+  },
+  "note": "Static checks; full-checkpoint reload generation not tested. Decoding audit verifies 11 outputs for higher-rate treatment."
+}

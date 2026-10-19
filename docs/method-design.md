@@ -298,3 +298,19 @@ The next run is the prepared coverage-only comparison. It evaluates one measured
 weakness while retaining the same objective, model and budget. Sharing and
 localization remain independent hypotheses requiring later matched comparisons;
 their numerical implementation alone does not satisfy the synthesis goal.
+
+## Coverage outcome and decoder contribution
+
+The [coverage comparison](../experiments/real_qa/coverage_512/REPORT.md) does not
+establish improvement: new-anchor semantic retention changes 8→8 and 12→13/24,
+while stronger-rate supported validation EM declines 46→39/128. Protection
+coverage is insufficient under the original decoding settings.
+
+The subsequent raw-logit audit reveals an overlooked generation setting:
+repetition_penalty=1.1 remains active with greedy decoding. On five selected
+training examples, it flips the correct raw first-token preference to UNKNOWN;
+neutralizing it recovers valid answers. Eleven default outputs reproduce exactly.
+This is a demonstrated decoding contribution, not proof of a general cure. A
+paired neutral-decoding evaluation of base and all four checkpoints is now needed
+before introducing a new preservation objective. Keep raw-logit preservation and
+actual decoded behavior distinct when evaluating every proposed method.

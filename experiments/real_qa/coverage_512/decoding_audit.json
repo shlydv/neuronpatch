@@ -1,0 +1,249 @@
+{
+  "checkpoint": "lora-lr0.0003-kl1.0-epoch1",
+  "generation_config": {
+    "max_length": null,
+    "max_new_tokens": null,
+    "min_length": null,
+    "min_new_tokens": null,
+    "early_stopping": null,
+    "max_time": null,
+    "stop_strings": null,
+    "do_sample": true,
+    "num_beams": null,
+    "use_mtp": null,
+    "use_cache": null,
+    "cache_implementation": null,
+    "cache_config": null,
+    "max_cache_len": null,
+    "temperature": 0.7,
+    "top_k": 20,
+    "top_p": 0.8,
+    "min_p": null,
+    "top_h": null,
+    "typical_p": null,
+    "epsilon_cutoff": null,
+    "eta_cutoff": null,
+    "repetition_penalty": 1.1,
+    "encoder_repetition_penalty": null,
+    "length_penalty": null,
+    "no_repeat_ngram_size": null,
+    "bad_words_ids": null,
+    "renormalize_logits": null,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": null,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "sequence_bias": null,
+    "token_healing": null,
+    "guidance_scale": null,
+    "watermarking_config": null,
+    "num_return_sequences": null,
+    "output_attentions": null,
+    "output_hidden_states": null,
+    "output_scores": null,
+    "output_logits": null,
+    "return_dict_in_generate": null,
+    "pad_token_id": 151643,
+    "bos_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "encoder_no_repeat_ngram_size": null,
+    "decoder_start_token_id": null,
+    "is_assistant": null,
+    "num_assistant_tokens": null,
+    "num_assistant_tokens_schedule": null,
+    "assistant_confidence_threshold": null,
+    "prompt_lookup_num_tokens": null,
+    "max_matching_ngram_size": null,
+    "assistant_early_exit": null,
+    "assistant_lookbehind": null,
+    "target_lookbehind": null,
+    "assistant_ensemble_weight": null,
+    "speculation_type": null,
+    "compile_config": null,
+    "disable_compile": null,
+    "continuous_batching_config": null,
+    "low_memory": null,
+    "penalty_alpha": null,
+    "dola_layers": null,
+    "diversity_penalty": null,
+    "num_beam_groups": null,
+    "constraints": null,
+    "force_words_ids": null,
+    "prefill_chunk_size": null,
+    "_from_model_config": null,
+    "transformers_version": "5.20.1"
+  },
+  "selection": "Up to six raw/generation discrepancies plus first six nonrefusals; diagnostic, not unbiased evaluation",
+  "rows": [
+    {
+      "id": "5726c81ef1498d1400e8eb19",
+      "question": "Approximately what percentage of Chinese morphemes lack a standard chinese character?",
+      "gold": [
+        "20 to 25%"
+      ],
+      "group": "discrepancy",
+      "raw_top": "2",
+      "default_processed_top": "UNKNOWN",
+      "neutral_processed_top": "2",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "UNKNOWN",
+      "default": "UNKNOWN",
+      "neutral": "20 to 25%"
+    },
+    {
+      "id": "572a9a1cbe1ee31400cb809f",
+      "question": "When was the first usage of the word Rajasthan?",
+      "gold": [
+        "1829"
+      ],
+      "group": "discrepancy",
+      "raw_top": "1",
+      "default_processed_top": "UNKNOWN",
+      "neutral_processed_top": "1",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "UNKNOWN",
+      "default": "UNKNOWN",
+      "neutral": "1829"
+    },
+    {
+      "id": "57301d82b2c2fd14005688b7",
+      "question": "How many liberians died in the civil war?",
+      "gold": [
+        "200,000"
+      ],
+      "group": "discrepancy",
+      "raw_top": "2",
+      "default_processed_top": "UNKNOWN",
+      "neutral_processed_top": "2",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "UNKNOWN",
+      "default": "UNKNOWN",
+      "neutral": "200,000"
+    },
+    {
+      "id": "56e7c6bb37bdd419002c43f1",
+      "question": "When were the new generators installed to correct the power problems?",
+      "gold": [
+        "March 2008"
+      ],
+      "group": "discrepancy",
+      "raw_top": "1",
+      "default_processed_top": "UNKNOWN",
+      "neutral_processed_top": "1",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "UNKNOWN",
+      "default": "UNKNOWN",
+      "neutral": "14 March 2008"
+    },
+    {
+      "id": "570fe6f15ab6b819003910ad",
+      "question": "What was the total amount of space that Dell leased in Las Cimas 1 and 2?",
+      "gold": [
+        "312,000 square feet"
+      ],
+      "group": "discrepancy",
+      "raw_top": "3",
+      "default_processed_top": "UNKNOWN",
+      "neutral_processed_top": "3",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "UNKNOWN",
+      "default": "UNKNOWN",
+      "neutral": "312,000 square feet (29,000 m2)"
+    },
+    {
+      "id": "57300da0947a6a140053cffe",
+      "question": "What are the six counties in Ireland called that are still part of the United Kingdom?",
+      "gold": [
+        "Northern Ireland"
+      ],
+      "group": "nonrefusal_control",
+      "raw_top": "Northern",
+      "default_processed_top": "Northern",
+      "neutral_processed_top": "Northern",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "Northern Ireland",
+      "default": "Northern Ireland",
+      "neutral": "Northern Ireland"
+    },
+    {
+      "id": "572812394b864d19001643b3",
+      "question": "When did the European Parliament begin meeting in Strasbourg?",
+      "gold": [
+        "1952"
+      ],
+      "group": "nonrefusal_control",
+      "raw_top": "1",
+      "default_processed_top": "1",
+      "neutral_processed_top": "1",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "1952",
+      "default": "1952",
+      "neutral": "1952"
+    },
+    {
+      "id": "56dd304366d3e219004dac37",
+      "question": "Which constitution details the role and abilities of the prime minister?",
+      "gold": [
+        "Bangladesh's"
+      ],
+      "group": "nonrefusal_control",
+      "raw_top": "Bang",
+      "default_processed_top": "Bang",
+      "neutral_processed_top": "Bang",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "Bangladesh's constitution",
+      "default": "Bangladesh's constitution",
+      "neutral": "Bangladesh's constitution"
+    },
+    {
+      "id": "56e70a356fe0821900b8ec92",
+      "question": "When was RIBA founded?",
+      "gold": [
+        "1837"
+      ],
+      "group": "nonrefusal_control",
+      "raw_top": "1",
+      "default_processed_top": "1",
+      "neutral_processed_top": "1",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "1837",
+      "default": "1837",
+      "neutral": "1837"
+    },
+    {
+      "id": "5726b98f5951b619008f7be1",
+      "question": "What year did the Carolina Courage win the Founders Cup?",
+      "gold": [
+        "2002"
+      ],
+      "group": "nonrefusal_control",
+      "raw_top": "2",
+      "default_processed_top": "2",
+      "neutral_processed_top": "2",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "2002",
+      "default": "2002",
+      "neutral": "2002"
+    },
+    {
+      "id": "56f977b19e9bad19000a097c",
+      "question": "What paper was published in 2003?",
+      "gold": [
+        "Delivering Security in a Changing World White Paper"
+      ],
+      "group": "nonrefusal_control",
+      "raw_top": "2",
+      "default_processed_top": "Del",
+      "neutral_processed_top": "2",
+      "neutral_score_max_error": 0.0,
+      "saved_output": "Delivering Security in a Changing World White Paper",
+      "default": "Delivering Security in a Changing World White Paper",
+      "neutral": "2003 Delivering Security in a Changing World White Paper"
+    }
+  ]
+}

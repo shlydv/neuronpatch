@@ -1,0 +1,745 @@
+{
+  "note": "Output transitions and raw scores are not semantic correctness judgments.",
+  "original_anchors": 91,
+  "added_anchors": 24,
+  "runs": {
+    "lora-lr0.0001-kl1.0-epoch1": {
+      "source_hashes": {
+        "control_train": "055cf2674486c686bc47ff765acdc1442ff16a1ef2cd46fa81d131e2a9f87d6d",
+        "control_val": "d89d2e256725bd98cf812b0cdcdcfa39655e9b989f881b496c460d37f4106974",
+        "treatment_train": "2431cecd62a1f92b2f4b2d416f8dc38ee490eae334d9e434e5198f825ff14a86",
+        "treatment_val": "89c55acd7e250a5948b5cdc58b6a6db3d02ef7e3b029875a7d4ef02788f8c697"
+      },
+      "added_training_anchors": {
+        "n": 24,
+        "control_exact": 3.0,
+        "treatment_exact": 1.0,
+        "control_refusals": 16,
+        "treatment_refusals": 15,
+        "new_refusals": 1,
+        "recovered_from_refusal": 2,
+        "changed_output": 5
+      },
+      "original_training_anchors": {
+        "n": 91,
+        "control_exact": 53.0,
+        "treatment_exact": 56.0,
+        "control_refusals": 38,
+        "treatment_refusals": 34,
+        "new_refusals": 4,
+        "recovered_from_refusal": 8,
+        "changed_output": 13
+      },
+      "base_correct_validation": {
+        "n": 45,
+        "control_exact": 26.0,
+        "treatment_exact": 25.0,
+        "control_refusals": 18,
+        "treatment_refusals": 20,
+        "new_refusals": 3,
+        "recovered_from_refusal": 1,
+        "changed_output": 4
+      },
+      "control_validation": {
+        "answerable": {
+          "n": 128,
+          "em": 0.2421875,
+          "f1": 0.27387846528471527,
+          "abstained": 0.5859375
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.8359375,
+          "f1": 0.8359375,
+          "abstained": 0.8359375
+        }
+      },
+      "treatment_validation": {
+        "answerable": {
+          "n": 128,
+          "em": 0.234375,
+          "f1": 0.2642678502053502,
+          "abstained": 0.5703125
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.8046875,
+          "f1": 0.8046875,
+          "abstained": 0.8046875
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": -0.0078125,
+            "percentile_95": [
+              -0.0425531914893617,
+              0.02654867256637168
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": -0.00961061507936508,
+            "percentile_95": [
+              -0.04737327101383189,
+              0.02736403598446124
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": -0.015625,
+            "percentile_95": [
+              -0.06779661016949153,
+              0.030308813324080416
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": -0.03125,
+            "percentile_95": [
+              -0.07801418439716312,
+              0.007751937984496124
+            ]
+          }
+        }
+      },
+      "training_seconds_ratio": 0.9775706714356936,
+      "added_answer_review": [
+        {
+          "id": "56dd304366d3e219004dac37",
+          "context": "Bangladesh's constitution clearly outlines the functions and powers of the Prime Minister, and also details the process of his/her appointment and dismissal.",
+          "question": "Which constitution details the role and abilities of the prime minister?",
+          "gold": [
+            "Bangladesh's"
+          ],
+          "base": "Bangladesh's constitution",
+          "control": "UNKNOWN",
+          "treatment": "Bangladesh's constitution"
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "context": "Immanuel Velikovsky is an example of a recent scientific exoheretic; he did not have appropriate scientific credentials or did not publish in scientific journals. While the details of his work are in scientific disrepute, the concept of catastrophic change (extinction event and punctuated equilibrium) has gained acceptance in recent decades.",
+          "question": "What label is associated with Immanuel Velikovsky due to his works outside the accepted discipline?",
+          "gold": [
+            "exoheretic"
+          ],
+          "base": "scientific exoheretic",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "56e11661e3433e1400422bb9",
+          "context": "Currently, (2004), there are principles of canon law common to the churches within the Anglican Communion; their existence can be factually established; each province or church contributes through its own legal system to the principles of canon law common within the Communion; these principles have a strong persuasive authority and are fundamental to the self-understanding of each of the churches of the Communion; these principles have a living force, and contain in themselves the possibility of further development; and the existence of these principles both demonstrates unity and promotes unity within the Anglican Communion. ",
+          "question": "What kind of force could the canonical principles be said to have within the Communion?",
+          "gold": [
+            "living"
+          ],
+          "base": "living force",
+          "control": "living force",
+          "treatment": "living force"
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "context": "On 1 November 2013, international postal services for Somalia officially resumed. The Universal Postal Union is now assisting the Somali Postal Service to develop its capacity, including providing technical assistance and basic mail processing equipment.",
+          "question": "Who is helping the Somali Postal service reach its capacity?",
+          "gold": [
+            "Universal Postal Union"
+          ],
+          "base": "The Universal Postal Union is helping the Somali Postal Service reach its capacity.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "56e7c6bb37bdd419002c43f1",
+          "context": "On 13 February 2008, fire destroyed the fishing factory and the four generators that supplied power to the island. On 14 March 2008, new generators were installed and uninterrupted power was restored. This fire was devastating to the island because fishing is a mainstay of the economy. While a new factory was being planned and built, M/V Kelso came to the island and acted as a factory ship, with island fishermen based on board for stints normally of one week. The new facility was ready in July 2009, for the start of the 2009\u201310 fishing season.",
+          "question": "When were the new generators installed to correct the power problems?",
+          "gold": [
+            "March 2008"
+          ],
+          "base": "14 March 2008",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "context": "Additionally, cable-ready TV sets can display HD content without using an external box. They have a QAM tuner built-in and/or a card slot for inserting a CableCARD.",
+          "question": "What kind of built-in tuner will allow a cable-ready TV to display HD content without an external box?",
+          "gold": [
+            "QAM"
+          ],
+          "base": "QAM tuner",
+          "control": "QAM tuner",
+          "treatment": "QAM tuner"
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "context": "The word phonology (as in the phonology of English) can also refer to the phonological system (sound system) of a given language. This is one of the fundamental systems which a language is considered to comprise, like its syntax and its vocabulary.",
+          "question": "What part of a language can phonology as a word also refer to?",
+          "gold": [
+            "the phonological system"
+          ],
+          "base": "language's phonological system",
+          "control": "language's phonological system",
+          "treatment": "language's phonological system"
+        },
+        {
+          "id": "570ced3efed7b91900d45af4",
+          "context": "In tumbling, athletes perform an explosive series of flips and twists down a sprung tumbling track. Scoring is similar to trampolining. Tumbling was originally contested as one of the events in Men's Artistic Gymnastics at the 1932 Summer Olympics, and in 1955 and 1959 at the Pan American Games. From 1974 to 1998 it was included as an event for both genders at the Acrobatic Gymnastics World Championships. The event has also been contested since 1976 at the Trampoline World Championships. Since the recognition of Trampoline and Acrobatic Gymnastics as FIG disciplines in 1999, official Tumbling competitions are only allowed as an event in Trampoline gymnastics meets.",
+          "question": "When was tumbling orginally contested at the Olympics?",
+          "gold": [
+            "1932"
+          ],
+          "base": "1932 Summer Olympics",
+          "control": "1932 Summer Olympics",
+          "treatment": "1932 Summer Olympics"
+        },
+        {
+          "id": "570e6b020b85d914000d7eb6",
+          "context": "In order to explain the common features shared by Sanskrit and other Indo-European languages, many scholars have proposed the Indo-Aryan migration theory, asserting that the original speakers of what became Sanskrit arrived in what is now India and Pakistan from the north-west some time during the early second millennium BCE. Evidence for such a theory includes the close relationship between the Indo-Iranian tongues and the Baltic and Slavic languages, vocabulary exchange with the non-Indo-European Uralic languages, and the nature of the attested Indo-European words for flora and fauna.",
+          "question": "What is the relationship between Indo-Iranian and Baltic languages?",
+          "gold": [
+            "close"
+          ],
+          "base": "close relationship",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "570fe6f15ab6b819003910ad",
+          "context": "In 2000, Dell announced that it would lease 80,000 square feet (7,400 m2) of space in the Las Cimas office complex in unincorporated Travis County, Texas, between Austin and West Lake Hills, to house the company's executive offices and corporate headquarters. 100 senior executives were scheduled to work in the building by the end of 2000. In January 2001, the company leased the space in Las Cimas 2, located along Loop 360. Las Cimas 2 housed Dell's executives, the investment operations, and some corporate functions. Dell also had an option for 138,000 square feet (12,800 m2) of space in Las Cimas 3. After a slowdown in business required reducing employees and production capacity, Dell decided to sublease its offices in two buildings in the Las Cimas office complex. In 2002 Dell announced that it planned to sublease its space to another tenant; the company planned to move its headquarters back to Round Rock once a tenant was secured. By 2003, Dell moved its headquarters back to Round Rock. It leased all of Las Cimas I and II, with a total of 312,000 square feet (29,000 m2), for about a seven-year period after 2003. By that year roughly 100,000 square feet (9,300 m2) of that space was absorbed by new subtenants.",
+          "question": "What was the total amount of space that Dell leased in Las Cimas 1 and 2?",
+          "gold": [
+            "312,000 square feet"
+          ],
+          "base": "312,000 square feet (29,000 m2)",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5726c11ef1498d1400e8ea46",
+          "context": "Ibn Sina's first appointment was that of physician to the emir, Nuh II, who owed him his recovery from a dangerous illness (997). Ibn Sina's chief reward for this service was access to the royal library of the Samanids, well-known patrons of scholarship and scholars. When the library was destroyed by fire not long after, the enemies of Ibn Sina accused him of burning it, in order for ever to conceal the sources of his knowledge. Meanwhile, he assisted his father in his financial labors, but still found time to write some of his earliest works.",
+          "question": "Why did some accuse Ibn Sina of burning down the royal library?",
+          "gold": [
+            "to conceal the sources of his knowledge"
+          ],
+          "base": "enemies of Ibn Sina accused him of burning it, in order for ever to conceal the sources of his knowledge.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "57278529f1498d1400e8faaa",
+          "context": "However, early Christian writers who speak of the shape of the particular gibbet on which Jesus died invariably describe it as having a cross-beam. For instance, the Epistle of Barnabas, which was certainly earlier than 135, and may have been of the 1st century AD, the time when the gospel accounts of the death of Jesus were written, likened it to the letter T (the Greek letter tau, which had the numeric value of 300), and to the position assumed by Moses in Exodus 17:11\u201312. Justin Martyr (100\u2013165) explicitly says the cross of Christ was of two-beam shape: \"That lamb which was commanded to be wholly roasted was a symbol of the suffering of the cross which Christ would undergo. For the lamb, which is roasted, is roasted and dressed up in the form of the cross. For one spit is transfixed right through from the lower parts up to the head, and one across the back, to which are attached the legs of the lamb.\" Irenaeus, who died around the end of the 2nd century, speaks of the cross as having \"five extremities, two in length, two in breadth, and one in the middle, on which [last] the person rests who is fixed by the nails.\"",
+          "question": "What Epistle described the cross?",
+          "gold": [
+            "Epistle of Barnabas"
+          ],
+          "base": "The Epistle that described the cross was the Epistle of Barnabas.",
+          "control": "The Epistle of Barnabas",
+          "treatment": "The Epistle of Barnabas"
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "context": "Colin Humphreys and W. G. Waddington of Oxford University considered the possibility that a lunar, rather than solar, eclipse might have taken place. They concluded that such an eclipse would have been visible, for thirty minutes, from Jerusalem and suggested the gospel reference to a solar eclipse was the result of a scribe wrongly amending a text. Historian David Henige dismisses this explanation as 'indefensible' and astronomer Bradley Schaefer points out that the lunar eclipse would not have been visible during daylight hours.",
+          "question": "Which historian says this opinion is indefensible?",
+          "gold": [
+            "David Henige"
+          ],
+          "base": "Historian David Henige",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5727ae744b864d1900163a43",
+          "context": "At present, plans are being considered for building a new dual carriageway west of Strasbourg, which would reduce the buildup of traffic in that area by picking up north and southbound vehicles and getting rid of the buildup outside Strasbourg. The line plans to link up the interchange of H\u0153rdt to the north of Strasbourg, with Innenheim in the southwest. The opening is envisaged at the end of 2011, with an average usage of 41,000 vehicles a day. Estimates of the French Works Commissioner however, raised some doubts over the interest of such a project, since it would pick up only about 10% of the traffic of the A35 at Strasbourg. Paradoxically, this reversed the situation of the 1950s. At that time, the French trunk road left of the Rhine not been built, so that traffic would cross into Germany to use the Karlsruhe-Basel Autobahn.",
+          "question": "What would the use of a new carriageway do in Alsace?",
+          "gold": [
+            "reduce the buildup of traffic in that area"
+          ],
+          "base": "reduce the buildup of traffic in that area by picking up north and southbound vehicles",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "572817492ca10214002d9daa",
+          "context": "In 2004 the Central African Republic Bush War began as forces opposed to Boziz\u00e9 took up arms against his government. In May 2005 Boziz\u00e9 won a presidential election that excluded Patass\u00e9 and in 2006 fighting continued between the government and the rebels. In November 2006, Boziz\u00e9's government requested French military support to help them repel rebels who had taken control of towns in the country's northern regions. Though the initially public details of the agreement pertained to logistics and intelligence, the French assistance eventually included strikes by Mirage jets against rebel positions.",
+          "question": "What did the rebels take over?",
+          "gold": [
+            "towns in the country's northern regions"
+          ],
+          "base": "The rebels took control of towns in the country's northern regions.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "572835ea4b864d1900164742",
+          "context": "Anarchists are against the State but are not against political organization or \"governance\"\u2014so long as it is self-governance utilizing direct democracy. The mode of political organization preferred by anarchists, in general, is federalism or confederalism.[citation needed] However, the anarchist definition of federalism tends to differ from the definition of federalism assumed by pro-state political scientists. The following is a brief description of federalism from section I.5 of An Anarchist FAQ:",
+          "question": "What are anarchists against? ",
+          "gold": [
+            "State"
+          ],
+          "base": "Anarchists are against the State.",
+          "control": "UNKNOWN",
+          "treatment": "Anarchists are against the State"
+        },
+        {
+          "id": "572952cb6aef051400154ce3",
+          "context": "The native language of Germans is German, a West Germanic language, related to and classified alongside English and Dutch, and sharing many similarities with the North Germanic and Scandinavian languages. Spoken by approximately 100 million native speakers, German is one of the world's major languages and the most widely spoken first language in the European Union. German has been replaced by English as the dominant language of science-related Nobel Prize laureates during the second half of the 20th century. It was a lingua franca in the Holy Roman Empire.",
+          "question": "What languages is German related to?",
+          "gold": [
+            "English and Dutch"
+          ],
+          "base": "German is related to and classified alongside English and Dutch.",
+          "control": "English and Dutch",
+          "treatment": "German is related to and classified alongside English and Dutch."
+        },
+        {
+          "id": "572b441cf75d5e190021fd45",
+          "context": "Among Peirce's major contributions was to place inductive reasoning and deductive reasoning in a complementary rather than competitive mode, the latter of which had been the primary trend among the educated since David Hume wrote a century before. To this, Peirce added the concept of abductive reasoning. The combined three forms of reasoning serve as a primary conceptual foundation for the empirically based scientific method today. Peirce's approach \"presupposes that (1) the objects of knowledge are real things, (2) the characters (properties) of real things do not depend on our perceptions of them, and (3) everyone who has sufficient experience of real things will agree on the truth about them. According to Peirce's doctrine of fallibilism, the conclusions of science are always tentative. The rationality of the scientific method does not depend on the certainty of its conclusions, but on its self-corrective character: by continued application of the method science can detect and correct its own mistakes, and thus eventually lead to the discovery of truth\".",
+          "question": "What did fallibilism say?",
+          "gold": [
+            "the conclusions of science are always tentative"
+          ],
+          "base": "The fallibilism said that the conclusions of science are always tentative.",
+          "control": "the conclusions of science are always tentative",
+          "treatment": "The rationality of the scientific method does not depend on the certainty of its conclusions, but on its self-corrective character: by continued application of the method"
+        },
+        {
+          "id": "572b890d111d821400f38eee",
+          "context": "In the past, those who were disabled were often not eligible for public education. Children with disabilities were repeatedly denied an education by physicians or special tutors. These early physicians (people like Itard, Seguin, Howe, Gallaudet) set the foundation for special education today. They focused on individualized instruction and functional skills. In its early years, special education was only provided to people with severe disabilities, but more recently it has been opened to anyone who has experienced difficulty learning.",
+          "question": "What was a rule for disabled people in the past for education?",
+          "gold": [
+            "not eligible for public education"
+          ],
+          "base": "Those who were disabled were often not eligible for public education.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "572ecb56c246551400ce469e",
+          "context": "The east coast Appalachian system, originally forest covered, is relatively low and narrow and is bordered on the southeast and south by an important coastal plain. The Cordilleran system on the western side of the continent is lofty, broad and complicated having two branches, the Rocky Mountain System and the Pacific Mountain System. In between these mountain systems lie the Intermontaine Plateaus. Both the Columbia River and Colorado River rise far inland near the easternmost members of the Cordilleran system, and flow through plateaus and intermontaine basins to the ocean. Heavy forests cover the northwest coast, but elsewhere trees are found only on the higher ranges below the Alpine region. The intermontane valleys, plateaus and basins range from treeless to desert with the most arid region being in the southwest.",
+          "question": "Which two major rivers are located in the Cordilleran system?",
+          "gold": [
+            "Columbia River and Colorado River"
+          ],
+          "base": "The Cordilleran system contains the Columbia River and the Colorado River.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "573047b604bcaa1900d77468",
+          "context": "The three desktop editions of Windows 8 support 32-bit and 64-bit architectures; retail copies of Windows 8 include install DVDs for both architectures, while the online installer automatically installs the version corresponding with the architecture of the system's existing Windows installation. The 32-bit version runs on CPUs compatible with x86 architecture 3rd generation (known as IA-32) or newer, and can run 32-bit and 16-bit applications, although 16-bit support must be enabled first. (16-bit applications are developed for CPUs compatible with x86 2nd generation, first conceived in 1978. Microsoft started moving away from this architecture after Windows 95.)",
+          "question": "How does the online Windows installer know which version to install?",
+          "gold": [
+            "automatically installs the version corresponding with the architecture of the system's existing Windows installation"
+          ],
+          "base": "The online installer automatically installs the version corresponding with the architecture of the system's existing Windows installation.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5731304e497a881900248c37",
+          "context": "High-power LEDs (HP-LEDs) or high-output LEDs (HO-LEDs) can be driven at currents from hundreds of mA to more than an ampere, compared with the tens of mA for other LEDs. Some can emit over a thousand lumens. LED power densities up to 300 W/cm2 have been achieved. Since overheating is destructive, the HP-LEDs must be mounted on a heat sink to allow for heat dissipation. If the heat from a HP-LED is not removed, the device will fail in seconds. One HP-LED can often replace an incandescent bulb in a flashlight, or be set in an array to form a powerful LED lamp.",
+          "question": "How many lumens can some high-power LEDs emit?",
+          "gold": [
+            "over a thousand"
+          ],
+          "base": "over a thousand lumens",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5731a51fe17f3d140042229d",
+          "context": "Examining the influence of humanism on scholars in medicine, mathematics, astronomy and physics may suggest that humanism and universities were a strong impetus for the scientific revolution. Although the connection between humanism and the scientific discovery may very well have begun within the confines of the university, the connection has been commonly perceived as having been severed by the changing nature of science during the scientific revolution. Historians such as Richard S. Westfall have argued that the overt traditionalism of universities inhibited attempts to re-conceptualize nature and knowledge and caused an indelible tension between universities and scientists. This resistance to changes in science may have been a significant factor in driving many scientists away from the university and toward private benefactors, usually in princely courts, and associations with newly forming scientific societies.",
+          "question": "The study of humanism among those studying math, astronomy and medicine is said to have caused what?",
+          "gold": [
+            "the scientific revolution"
+          ],
+          "base": "The study of humanism among those studying math, astronomy and medicine is said to have caused a strong impetus for the scientific revolution.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "context": "The evolution of the Greek economy during the 19th century (a period that transformed a large part of the world because of the Industrial Revolution) has been little researched. Recent research from 2006 examines the gradual development of industry and further development of shipping in a predominantly agricultural economy, calculating an average rate of per capita GDP growth between 1833 and 1911 that was only slightly lower than that of the other Western European nations. Industrial activity, (including heavy industry like shipbuilding) was evident, mainly in Ermoupolis and Piraeus. Nonetheless, Greece faced economic hardships and defaulted on its external loans in 1826, 1843, 1860 and 1894.",
+          "question": "What type of industrial activity was evident in Greece in the period researched?",
+          "gold": [
+            "shipbuilding"
+          ],
+          "base": "heavy industry like shipbuilding",
+          "control": "heavy industry like shipbuilding",
+          "treatment": "UNKNOWN"
+        }
+      ]
+    },
+    "lora-lr0.0003-kl1.0-epoch1": {
+      "source_hashes": {
+        "control_train": "25f6632da9ea4c31f5975f923443cc648aec24db152ff65d22f3eda9cc492579",
+        "control_val": "53a1bab8c307f8aba5e3627159beae7528b94fe480a6d0e830db2e2c1eabf5f3",
+        "treatment_train": "4decd25b865feb978ad5f58293191af3074eb9ac1cd9515086369f1820294aa4",
+        "treatment_val": "83130dd43abdea67a1f062270af6ff8776eb8349e7a90fd4ed9d54d1fad3d5f9"
+      },
+      "added_training_anchors": {
+        "n": 24,
+        "control_exact": 8.0,
+        "treatment_exact": 7.0,
+        "control_refusals": 12,
+        "treatment_refusals": 11,
+        "new_refusals": 1,
+        "recovered_from_refusal": 2,
+        "changed_output": 9
+      },
+      "original_training_anchors": {
+        "n": 91,
+        "control_exact": 86.0,
+        "treatment_exact": 80.0,
+        "control_refusals": 4,
+        "treatment_refusals": 9,
+        "new_refusals": 6,
+        "recovered_from_refusal": 1,
+        "changed_output": 11
+      },
+      "base_correct_validation": {
+        "n": 45,
+        "control_exact": 37.0,
+        "treatment_exact": 35.0,
+        "control_refusals": 7,
+        "treatment_refusals": 9,
+        "new_refusals": 3,
+        "recovered_from_refusal": 1,
+        "changed_output": 7
+      },
+      "control_validation": {
+        "answerable": {
+          "n": 128,
+          "em": 0.359375,
+          "f1": 0.42162519984810587,
+          "abstained": 0.4375
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.7421875,
+          "f1": 0.7421875,
+          "abstained": 0.7421875
+        }
+      },
+      "treatment_validation": {
+        "answerable": {
+          "n": 128,
+          "em": 0.3046875,
+          "f1": 0.36654180285294413,
+          "abstained": 0.4921875
+        },
+        "missing": {
+          "n": 128,
+          "em": 0.78125,
+          "f1": 0.78125,
+          "abstained": 0.78125
+        }
+      },
+      "paired_article_uncertainty": {
+        "articles": 31,
+        "questions": 256,
+        "draws": 10000,
+        "seed": 20261019,
+        "metrics": {
+          "supported_em": {
+            "after_minus_before": -0.0546875,
+            "percentile_95": [
+              -0.10937785127737226,
+              -0.007462686567164179
+            ]
+          },
+          "supported_f1": {
+            "after_minus_before": -0.0550833969951617,
+            "percentile_95": [
+              -0.11680945371237278,
+              -0.0020048170783465028
+            ]
+          },
+          "supported_refusals": {
+            "after_minus_before": 0.0546875,
+            "percentile_95": [
+              0.007246376811594203,
+              0.11450381679389313
+            ]
+          },
+          "correct_missing_refusals": {
+            "after_minus_before": 0.0390625,
+            "percentile_95": [
+              0.007407407407407408,
+              0.08264462809917356
+            ]
+          }
+        }
+      },
+      "training_seconds_ratio": 0.9699677850542829,
+      "added_answer_review": [
+        {
+          "id": "56dd304366d3e219004dac37",
+          "context": "Bangladesh's constitution clearly outlines the functions and powers of the Prime Minister, and also details the process of his/her appointment and dismissal.",
+          "question": "Which constitution details the role and abilities of the prime minister?",
+          "gold": [
+            "Bangladesh's"
+          ],
+          "base": "Bangladesh's constitution",
+          "control": "Bangladesh's Constitution",
+          "treatment": "Bangladesh's constitution"
+        },
+        {
+          "id": "56de73eb4396321400ee2933",
+          "context": "Immanuel Velikovsky is an example of a recent scientific exoheretic; he did not have appropriate scientific credentials or did not publish in scientific journals. While the details of his work are in scientific disrepute, the concept of catastrophic change (extinction event and punctuated equilibrium) has gained acceptance in recent decades.",
+          "question": "What label is associated with Immanuel Velikovsky due to his works outside the accepted discipline?",
+          "gold": [
+            "exoheretic"
+          ],
+          "base": "scientific exoheretic",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "56e11661e3433e1400422bb9",
+          "context": "Currently, (2004), there are principles of canon law common to the churches within the Anglican Communion; their existence can be factually established; each province or church contributes through its own legal system to the principles of canon law common within the Communion; these principles have a strong persuasive authority and are fundamental to the self-understanding of each of the churches of the Communion; these principles have a living force, and contain in themselves the possibility of further development; and the existence of these principles both demonstrates unity and promotes unity within the Anglican Communion. ",
+          "question": "What kind of force could the canonical principles be said to have within the Communion?",
+          "gold": [
+            "living"
+          ],
+          "base": "living force",
+          "control": "living",
+          "treatment": "living force"
+        },
+        {
+          "id": "56e1bc7ae3433e140042310f",
+          "context": "On 1 November 2013, international postal services for Somalia officially resumed. The Universal Postal Union is now assisting the Somali Postal Service to develop its capacity, including providing technical assistance and basic mail processing equipment.",
+          "question": "Who is helping the Somali Postal service reach its capacity?",
+          "gold": [
+            "Universal Postal Union"
+          ],
+          "base": "The Universal Postal Union is helping the Somali Postal Service reach its capacity.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "56e7c6bb37bdd419002c43f1",
+          "context": "On 13 February 2008, fire destroyed the fishing factory and the four generators that supplied power to the island. On 14 March 2008, new generators were installed and uninterrupted power was restored. This fire was devastating to the island because fishing is a mainstay of the economy. While a new factory was being planned and built, M/V Kelso came to the island and acted as a factory ship, with island fishermen based on board for stints normally of one week. The new facility was ready in July 2009, for the start of the 2009\u201310 fishing season.",
+          "question": "When were the new generators installed to correct the power problems?",
+          "gold": [
+            "March 2008"
+          ],
+          "base": "14 March 2008",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "56fac7ddf34c681400b0c126",
+          "context": "Additionally, cable-ready TV sets can display HD content without using an external box. They have a QAM tuner built-in and/or a card slot for inserting a CableCARD.",
+          "question": "What kind of built-in tuner will allow a cable-ready TV to display HD content without an external box?",
+          "gold": [
+            "QAM"
+          ],
+          "base": "QAM tuner",
+          "control": "QAM",
+          "treatment": "QAM tuner"
+        },
+        {
+          "id": "56fc2e0800a8df19004037c4",
+          "context": "The word phonology (as in the phonology of English) can also refer to the phonological system (sound system) of a given language. This is one of the fundamental systems which a language is considered to comprise, like its syntax and its vocabulary.",
+          "question": "What part of a language can phonology as a word also refer to?",
+          "gold": [
+            "the phonological system"
+          ],
+          "base": "language's phonological system",
+          "control": "the phonological system",
+          "treatment": "phonological system"
+        },
+        {
+          "id": "570ced3efed7b91900d45af4",
+          "context": "In tumbling, athletes perform an explosive series of flips and twists down a sprung tumbling track. Scoring is similar to trampolining. Tumbling was originally contested as one of the events in Men's Artistic Gymnastics at the 1932 Summer Olympics, and in 1955 and 1959 at the Pan American Games. From 1974 to 1998 it was included as an event for both genders at the Acrobatic Gymnastics World Championships. The event has also been contested since 1976 at the Trampoline World Championships. Since the recognition of Trampoline and Acrobatic Gymnastics as FIG disciplines in 1999, official Tumbling competitions are only allowed as an event in Trampoline gymnastics meets.",
+          "question": "When was tumbling orginally contested at the Olympics?",
+          "gold": [
+            "1932"
+          ],
+          "base": "1932 Summer Olympics",
+          "control": "1932",
+          "treatment": "1932 Summer Olympics"
+        },
+        {
+          "id": "570e6b020b85d914000d7eb6",
+          "context": "In order to explain the common features shared by Sanskrit and other Indo-European languages, many scholars have proposed the Indo-Aryan migration theory, asserting that the original speakers of what became Sanskrit arrived in what is now India and Pakistan from the north-west some time during the early second millennium BCE. Evidence for such a theory includes the close relationship between the Indo-Iranian tongues and the Baltic and Slavic languages, vocabulary exchange with the non-Indo-European Uralic languages, and the nature of the attested Indo-European words for flora and fauna.",
+          "question": "What is the relationship between Indo-Iranian and Baltic languages?",
+          "gold": [
+            "close"
+          ],
+          "base": "close relationship",
+          "control": "UNKNOWN",
+          "treatment": "close"
+        },
+        {
+          "id": "570fe6f15ab6b819003910ad",
+          "context": "In 2000, Dell announced that it would lease 80,000 square feet (7,400 m2) of space in the Las Cimas office complex in unincorporated Travis County, Texas, between Austin and West Lake Hills, to house the company's executive offices and corporate headquarters. 100 senior executives were scheduled to work in the building by the end of 2000. In January 2001, the company leased the space in Las Cimas 2, located along Loop 360. Las Cimas 2 housed Dell's executives, the investment operations, and some corporate functions. Dell also had an option for 138,000 square feet (12,800 m2) of space in Las Cimas 3. After a slowdown in business required reducing employees and production capacity, Dell decided to sublease its offices in two buildings in the Las Cimas office complex. In 2002 Dell announced that it planned to sublease its space to another tenant; the company planned to move its headquarters back to Round Rock once a tenant was secured. By 2003, Dell moved its headquarters back to Round Rock. It leased all of Las Cimas I and II, with a total of 312,000 square feet (29,000 m2), for about a seven-year period after 2003. By that year roughly 100,000 square feet (9,300 m2) of that space was absorbed by new subtenants.",
+          "question": "What was the total amount of space that Dell leased in Las Cimas 1 and 2?",
+          "gold": [
+            "312,000 square feet"
+          ],
+          "base": "312,000 square feet (29,000 m2)",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5726c11ef1498d1400e8ea46",
+          "context": "Ibn Sina's first appointment was that of physician to the emir, Nuh II, who owed him his recovery from a dangerous illness (997). Ibn Sina's chief reward for this service was access to the royal library of the Samanids, well-known patrons of scholarship and scholars. When the library was destroyed by fire not long after, the enemies of Ibn Sina accused him of burning it, in order for ever to conceal the sources of his knowledge. Meanwhile, he assisted his father in his financial labors, but still found time to write some of his earliest works.",
+          "question": "Why did some accuse Ibn Sina of burning down the royal library?",
+          "gold": [
+            "to conceal the sources of his knowledge"
+          ],
+          "base": "enemies of Ibn Sina accused him of burning it, in order for ever to conceal the sources of his knowledge.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "57278529f1498d1400e8faaa",
+          "context": "However, early Christian writers who speak of the shape of the particular gibbet on which Jesus died invariably describe it as having a cross-beam. For instance, the Epistle of Barnabas, which was certainly earlier than 135, and may have been of the 1st century AD, the time when the gospel accounts of the death of Jesus were written, likened it to the letter T (the Greek letter tau, which had the numeric value of 300), and to the position assumed by Moses in Exodus 17:11\u201312. Justin Martyr (100\u2013165) explicitly says the cross of Christ was of two-beam shape: \"That lamb which was commanded to be wholly roasted was a symbol of the suffering of the cross which Christ would undergo. For the lamb, which is roasted, is roasted and dressed up in the form of the cross. For one spit is transfixed right through from the lower parts up to the head, and one across the back, to which are attached the legs of the lamb.\" Irenaeus, who died around the end of the 2nd century, speaks of the cross as having \"five extremities, two in length, two in breadth, and one in the middle, on which [last] the person rests who is fixed by the nails.\"",
+          "question": "What Epistle described the cross?",
+          "gold": [
+            "Epistle of Barnabas"
+          ],
+          "base": "The Epistle that described the cross was the Epistle of Barnabas.",
+          "control": "Barnabas",
+          "treatment": "The Epistle of Barnabas"
+        },
+        {
+          "id": "572795755951b619008f8e22",
+          "context": "Colin Humphreys and W. G. Waddington of Oxford University considered the possibility that a lunar, rather than solar, eclipse might have taken place. They concluded that such an eclipse would have been visible, for thirty minutes, from Jerusalem and suggested the gospel reference to a solar eclipse was the result of a scribe wrongly amending a text. Historian David Henige dismisses this explanation as 'indefensible' and astronomer Bradley Schaefer points out that the lunar eclipse would not have been visible during daylight hours.",
+          "question": "Which historian says this opinion is indefensible?",
+          "gold": [
+            "David Henige"
+          ],
+          "base": "Historian David Henige",
+          "control": "David Henige",
+          "treatment": "David Henige"
+        },
+        {
+          "id": "5727ae744b864d1900163a43",
+          "context": "At present, plans are being considered for building a new dual carriageway west of Strasbourg, which would reduce the buildup of traffic in that area by picking up north and southbound vehicles and getting rid of the buildup outside Strasbourg. The line plans to link up the interchange of H\u0153rdt to the north of Strasbourg, with Innenheim in the southwest. The opening is envisaged at the end of 2011, with an average usage of 41,000 vehicles a day. Estimates of the French Works Commissioner however, raised some doubts over the interest of such a project, since it would pick up only about 10% of the traffic of the A35 at Strasbourg. Paradoxically, this reversed the situation of the 1950s. At that time, the French trunk road left of the Rhine not been built, so that traffic would cross into Germany to use the Karlsruhe-Basel Autobahn.",
+          "question": "What would the use of a new carriageway do in Alsace?",
+          "gold": [
+            "reduce the buildup of traffic in that area"
+          ],
+          "base": "reduce the buildup of traffic in that area by picking up north and southbound vehicles",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "572817492ca10214002d9daa",
+          "context": "In 2004 the Central African Republic Bush War began as forces opposed to Boziz\u00e9 took up arms against his government. In May 2005 Boziz\u00e9 won a presidential election that excluded Patass\u00e9 and in 2006 fighting continued between the government and the rebels. In November 2006, Boziz\u00e9's government requested French military support to help them repel rebels who had taken control of towns in the country's northern regions. Though the initially public details of the agreement pertained to logistics and intelligence, the French assistance eventually included strikes by Mirage jets against rebel positions.",
+          "question": "What did the rebels take over?",
+          "gold": [
+            "towns in the country's northern regions"
+          ],
+          "base": "The rebels took control of towns in the country's northern regions.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "572835ea4b864d1900164742",
+          "context": "Anarchists are against the State but are not against political organization or \"governance\"\u2014so long as it is self-governance utilizing direct democracy. The mode of political organization preferred by anarchists, in general, is federalism or confederalism.[citation needed] However, the anarchist definition of federalism tends to differ from the definition of federalism assumed by pro-state political scientists. The following is a brief description of federalism from section I.5 of An Anarchist FAQ:",
+          "question": "What are anarchists against? ",
+          "gold": [
+            "State"
+          ],
+          "base": "Anarchists are against the State.",
+          "control": "UNKNOWN",
+          "treatment": "Anarchists are against the State"
+        },
+        {
+          "id": "572952cb6aef051400154ce3",
+          "context": "The native language of Germans is German, a West Germanic language, related to and classified alongside English and Dutch, and sharing many similarities with the North Germanic and Scandinavian languages. Spoken by approximately 100 million native speakers, German is one of the world's major languages and the most widely spoken first language in the European Union. German has been replaced by English as the dominant language of science-related Nobel Prize laureates during the second half of the 20th century. It was a lingua franca in the Holy Roman Empire.",
+          "question": "What languages is German related to?",
+          "gold": [
+            "English and Dutch"
+          ],
+          "base": "German is related to and classified alongside English and Dutch.",
+          "control": "German is related to and classified alongside English and Dutch.",
+          "treatment": "German is related to and classified alongside English and Dutch."
+        },
+        {
+          "id": "572b441cf75d5e190021fd45",
+          "context": "Among Peirce's major contributions was to place inductive reasoning and deductive reasoning in a complementary rather than competitive mode, the latter of which had been the primary trend among the educated since David Hume wrote a century before. To this, Peirce added the concept of abductive reasoning. The combined three forms of reasoning serve as a primary conceptual foundation for the empirically based scientific method today. Peirce's approach \"presupposes that (1) the objects of knowledge are real things, (2) the characters (properties) of real things do not depend on our perceptions of them, and (3) everyone who has sufficient experience of real things will agree on the truth about them. According to Peirce's doctrine of fallibilism, the conclusions of science are always tentative. The rationality of the scientific method does not depend on the certainty of its conclusions, but on its self-corrective character: by continued application of the method science can detect and correct its own mistakes, and thus eventually lead to the discovery of truth\".",
+          "question": "What did fallibilism say?",
+          "gold": [
+            "the conclusions of science are always tentative"
+          ],
+          "base": "The fallibilism said that the conclusions of science are always tentative.",
+          "control": "the conclusions of science are always tentative",
+          "treatment": "the conclusions of science are always tentative"
+        },
+        {
+          "id": "572b890d111d821400f38eee",
+          "context": "In the past, those who were disabled were often not eligible for public education. Children with disabilities were repeatedly denied an education by physicians or special tutors. These early physicians (people like Itard, Seguin, Howe, Gallaudet) set the foundation for special education today. They focused on individualized instruction and functional skills. In its early years, special education was only provided to people with severe disabilities, but more recently it has been opened to anyone who has experienced difficulty learning.",
+          "question": "What was a rule for disabled people in the past for education?",
+          "gold": [
+            "not eligible for public education"
+          ],
+          "base": "Those who were disabled were often not eligible for public education.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "572ecb56c246551400ce469e",
+          "context": "The east coast Appalachian system, originally forest covered, is relatively low and narrow and is bordered on the southeast and south by an important coastal plain. The Cordilleran system on the western side of the continent is lofty, broad and complicated having two branches, the Rocky Mountain System and the Pacific Mountain System. In between these mountain systems lie the Intermontaine Plateaus. Both the Columbia River and Colorado River rise far inland near the easternmost members of the Cordilleran system, and flow through plateaus and intermontaine basins to the ocean. Heavy forests cover the northwest coast, but elsewhere trees are found only on the higher ranges below the Alpine region. The intermontane valleys, plateaus and basins range from treeless to desert with the most arid region being in the southwest.",
+          "question": "Which two major rivers are located in the Cordilleran system?",
+          "gold": [
+            "Columbia River and Colorado River"
+          ],
+          "base": "The Cordilleran system contains the Columbia River and the Colorado River.",
+          "control": "The Columbia River and Colorado River",
+          "treatment": "The Columbia River and Colorado River"
+        },
+        {
+          "id": "573047b604bcaa1900d77468",
+          "context": "The three desktop editions of Windows 8 support 32-bit and 64-bit architectures; retail copies of Windows 8 include install DVDs for both architectures, while the online installer automatically installs the version corresponding with the architecture of the system's existing Windows installation. The 32-bit version runs on CPUs compatible with x86 architecture 3rd generation (known as IA-32) or newer, and can run 32-bit and 16-bit applications, although 16-bit support must be enabled first. (16-bit applications are developed for CPUs compatible with x86 2nd generation, first conceived in 1978. Microsoft started moving away from this architecture after Windows 95.)",
+          "question": "How does the online Windows installer know which version to install?",
+          "gold": [
+            "automatically installs the version corresponding with the architecture of the system's existing Windows installation"
+          ],
+          "base": "The online installer automatically installs the version corresponding with the architecture of the system's existing Windows installation.",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5731304e497a881900248c37",
+          "context": "High-power LEDs (HP-LEDs) or high-output LEDs (HO-LEDs) can be driven at currents from hundreds of mA to more than an ampere, compared with the tens of mA for other LEDs. Some can emit over a thousand lumens. LED power densities up to 300 W/cm2 have been achieved. Since overheating is destructive, the HP-LEDs must be mounted on a heat sink to allow for heat dissipation. If the heat from a HP-LED is not removed, the device will fail in seconds. One HP-LED can often replace an incandescent bulb in a flashlight, or be set in an array to form a powerful LED lamp.",
+          "question": "How many lumens can some high-power LEDs emit?",
+          "gold": [
+            "over a thousand"
+          ],
+          "base": "over a thousand lumens",
+          "control": "UNKNOWN",
+          "treatment": "UNKNOWN"
+        },
+        {
+          "id": "5731a51fe17f3d140042229d",
+          "context": "Examining the influence of humanism on scholars in medicine, mathematics, astronomy and physics may suggest that humanism and universities were a strong impetus for the scientific revolution. Although the connection between humanism and the scientific discovery may very well have begun within the confines of the university, the connection has been commonly perceived as having been severed by the changing nature of science during the scientific revolution. Historians such as Richard S. Westfall have argued that the overt traditionalism of universities inhibited attempts to re-conceptualize nature and knowledge and caused an indelible tension between universities and scientists. This resistance to changes in science may have been a significant factor in driving many scientists away from the university and toward private benefactors, usually in princely courts, and associations with newly forming scientific societies.",
+          "question": "The study of humanism among those studying math, astronomy and medicine is said to have caused what?",
+          "gold": [
+            "the scientific revolution"
+          ],
+          "base": "The study of humanism among those studying math, astronomy and medicine is said to have caused a strong impetus for the scientific revolution.",
+          "control": "the scientific revolution",
+          "treatment": "the scientific revolution"
+        },
+        {
+          "id": "5731eaa7e17f3d140042254a",
+          "context": "The evolution of the Greek economy during the 19th century (a period that transformed a large part of the world because of the Industrial Revolution) has been little researched. Recent research from 2006 examines the gradual development of industry and further development of shipping in a predominantly agricultural economy, calculating an average rate of per capita GDP growth between 1833 and 1911 that was only slightly lower than that of the other Western European nations. Industrial activity, (including heavy industry like shipbuilding) was evident, mainly in Ermoupolis and Piraeus. Nonetheless, Greece faced economic hardships and defaulted on its external loans in 1826, 1843, 1860 and 1894.",
+          "question": "What type of industrial activity was evident in Greece in the period researched?",
+          "gold": [
+            "shipbuilding"
+          ],
+          "base": "heavy industry like shipbuilding",
+          "control": "heavy industry like shipbuilding",
+          "treatment": "UNKNOWN"
+        }
+      ]
+    }
+  }
+}
