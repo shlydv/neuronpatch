@@ -1,9 +1,12 @@
 """Evaluate neutral repetition penalty for base and both coverage/control rates.
 
-Same 256 development questions, unchanged checkpoints, no training or confirmation.
+Default: same 256 development questions, unchanged checkpoints, no training or confirmation.
 Original-default results remain intact. This is a paired decoder-policy comparison.
+With --training-controls, evaluate only the two coverage controls on the 512
+training examples for the subsequent objective comparison.
 """
 
+import argparse
 import gc
 import hashlib
 import json
@@ -18,26 +21,32 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 ROOT = Path(__file__).parent
 
 
-def main():
-    out = ROOT / "decoding_512"
+def main(training_controls=False):
+    out = ROOT / ("token_loss_controls" if training_controls else "decoding_512")
     out.mkdir(exist_ok=False)
     torch.set_num_threads(4)
     tokenizer = AutoTokenizer.from_pretrained(MODEL, revision=REVISION)
     tokenizer.padding_side = "left"
-    data_path = ROOT / "scaled/val_expanded.json"
+    data_path = ROOT / (
+        "scaled/train_512.json" if training_controls else "scaled/val_expanded.json"
+    )
     data = json.loads(data_path.read_text())
     treatment = json.loads((ROOT / "coverage_512/summary.json").read_text())
     control = json.loads((ROOT / "scale_512/summary.json").read_text())
     assert len(treatment["runs"]) == 2 and set(treatment["runs"]) == set(control["runs"])
-    configurations = [("base", None, ROOT / "scaled_baseline/val.json")]
-    for folder in ("scale_512", "coverage_512"):
+    configurations = (
+        [] if training_controls else [("base", None, ROOT / "scaled_baseline/val.json")]
+    )
+    split = "train" if training_controls else "val"
+    for folder in ("coverage_512",) if training_controls else ("scale_512", "coverage_512"):
         for name in treatment["runs"]:
             configurations.append(
-                (f"{folder}-{name}", ROOT / folder / name, ROOT / folder / f"{name}-val.json")
+                (f"{folder}-{name}", ROOT / folder / name, ROOT / folder / f"{name}-{split}.json")
             )
     result = {
         "model": MODEL,
         "revision": REVISION,
+        "training_controls": training_controls,
         "data_sha256": hashlib.sha256(data_path.read_bytes()).hexdigest(),
         "code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "overrides": {"do_sample": False, "repetition_penalty": 1.0, "max_new_tokens": 32},
@@ -105,4 +114,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--training-controls", action="store_true")
+    args = parser.parse_args()
+    main(training_controls=args.training_controls)

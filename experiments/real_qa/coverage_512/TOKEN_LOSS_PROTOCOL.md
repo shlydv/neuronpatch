@@ -47,3 +47,15 @@ prefix, set neutral decoding explicitly, and archive the exact loss implementati
 The two invocations were launched serially on 2026-10-19, mean5 first; each contains
 both rates. Results go to token_loss_mean5/ and token_loss_max1/. A running first
 invocation does not establish that the second has begun or that either has finished.
+
+After the four-fit process finishes, `evaluate_decoding.py --training-controls`
+will regenerate the two coefficient-1 coverage controls on the same 512 training
+examples under neutral decoding. This is read-only evaluation into a distinct
+token_loss_controls/ directory. Until then, do not compare new neutral training
+scores with old penalized-decoding training scores.
+
+`analyze_token_objectives.py` prepares the development comparison against the
+already neutral controls and a direct max1-versus-mean5 comparison at each rate.
+It checks data, anchors, their order, replay exposure, target modules and decoder
+metadata before comparing outputs. Base-correct retention is defined using the
+neutral base's answers; it must not reuse the old decoder's 45-answer cohort.
