@@ -347,3 +347,17 @@ compatibility, malformed grouping rejection before mutation and nested-patch
 rejection. This closes a usability gap for a later sharing experiment. It neither
 selects groups automatically nor establishes that sharing improves preservation.
 The running objective comparison still uses ordinary all-MLP LoRA.
+
+## FiNE reference claim audit (2026-10-19)
+
+The [upstream reference audit](../experiments/fine_reference/CLAIM_AUDIT.md)
+corrects a too-broad expectation: the GPT-J localization ablation improves edit
+success and subject-alias transfer while random selection scores higher on both
+reported locality measures. It does not establish a universal data-efficiency
+claim. Our target remains a useful, measured trade-off, not all-metric dominance.
+The reference harness calls unchanged upstream editing/scoring functions, with
+pinned source/model/data. CPU model and metric checks pass; real-model editing
+has not run because Kaggle GPU quota is exhausted. The original driver's unused
+`--random` argument is bypassed by setting its actual hyperparameter explicitly.
+The first 16 cases are only an execution/diagnostic subset, with sparse coverage
+of some evaluation categories; do not label that as a full table reproduction.
