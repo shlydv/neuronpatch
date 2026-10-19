@@ -266,3 +266,20 @@ the untouched confirmation set. Finish the existing size curve unchanged; any
 new objective needs a same-data, same-budget control before attributing gains to
 neuron selection. Reproduction is useful only where it resolves an implementation
 uncertainty; it is not a substitute for this synthesis objective.
+
+## Shared-row primitive prepared
+
+`neuronpatch.grouped.GroupedRowPatch` implements the shared additive row update
+from [NeST equation 13](https://arxiv.org/html/2602.16835v2), given explicit indices
+and groups. It does not implement neuron discovery or automatic clustering.
+The archival implementation remains inaccessible on recheck, so this is a
+paper-based implementation, not code-verified reproduction.
+
+Tests verify dense-forward equivalence, summed group gradients, input gradients,
+untouched base weights, merge locality and equivalence to independent rows when
+all groups are singletons. Group size changes gradient accumulation; equal
+trainable-parameter count does not imply equal optimization behavior. The module
+is experimental and not supported by the NeuronPatch checkpoint API yet.
+No model-quality advantage is established, and it is not part of the coverage
+experiment. It prepares an independent sharing ablation once preservation is
+better understood; passing primitive tests cannot establish the combined method.
