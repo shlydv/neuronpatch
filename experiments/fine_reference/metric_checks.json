@@ -1,0 +1,1 @@
+{"status": "passed", "checks": ["single and variable-length batches", "left/right padding", "causal target alignment", "partial token accuracy", "raw locality predictions", "first nested alias", "agreement is not correctness"]}

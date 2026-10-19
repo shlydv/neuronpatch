@@ -15,6 +15,8 @@ import types
 import urllib.request
 from pathlib import Path
 
+from upstream_metrics import SOURCE_SHA256, load_metric, locality_agreement, score_probes
+
 COMMIT = "a2489cbac0dfe5a956385734065cfa041384e7d1"
 MODEL = "EleutherAI/gpt-j-6B"
 MODEL_REVISION = "47e169305d2e8376be1d31e765533382721b2cc1"
@@ -105,6 +107,7 @@ def main():
     if not 1 <= args.cases <= 839:
         raise ValueError("cases must be 1..839")
     fine, model_class = load_upstream(args.upstream)
+    metric = load_metric(args.upstream)
     url = f"https://huggingface.co/datasets/zjunlp/KnowEdit/resolve/{DATA_REVISION}/benchmark/wiki_counterfact/test_cf.json"
     raw = urllib.request.urlopen(url).read()
     assert hashlib.sha256(raw).hexdigest() == DATA_HASH
@@ -125,6 +128,7 @@ def main():
         "data_revision": DATA_REVISION,
         "data_sha256": DATA_HASH,
         "cases": args.cases,
+        "evaluator_sha256": SOURCE_SHA256,
         "case_selection": "first N in official file, no outcome filtering",
         "hparams": vars(hp),
         "torch": torch.__version__,
@@ -167,6 +171,7 @@ def main():
                     for row in rows
                 )
         baseline = [generate(p["prompt"]) for p in probes]
+        baseline_scores = score_probes(metric, model, tokenizer, hp, probes)
         for random_selection in (False, True):
             hp.random = random_selection
             request = {key: record[key] for key in ("prompt", "subject", "target_new")}
@@ -175,6 +180,15 @@ def main():
             )
             try:
                 edited = [generate(p["prompt"]) for p in probes]
+                edited_scores = score_probes(metric, model, tokenizer, hp, probes)
+                for probe, before, after in zip(
+                    probes, baseline_scores, edited_scores, strict=True
+                ):
+                    if probe["kind"].startswith("locality/"):
+                        after["locality_agreement"] = locality_agreement(
+                            before["teacher_forced_predictions"],
+                            after["teacher_forced_predictions"],
+                        )
                 result = {
                     "case": i,
                     "random": random_selection,
@@ -182,6 +196,8 @@ def main():
                     "probes": probes,
                     "baseline": baseline,
                     "edited": edited,
+                    "baseline_scores": baseline_scores,
+                    "edited_scores": edited_scores,
                 }
                 (args.output / f"case-{i:03d}-random-{random_selection}.json").write_text(
                     json.dumps(result, indent=2)

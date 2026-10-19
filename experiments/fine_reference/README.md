@@ -74,3 +74,28 @@ TPU availability does not make the CUDA-specific source runnable unchanged.
 Next: CUDA environment check and two-case smoke run, then the frozen 16-case
 comparison if the smoke run succeeds; audit official metrics before expanding
 or interpreting superiority. Existing custom QA experiments remain separate.
+
+## Official metric audit
+
+The harness now loads the exact `test_prediction_acc` and left/right slicing
+functions from the pinned upstream evaluator using AST extraction, verified by
+SHA256. Function bodies are unchanged; unrelated training/model dependencies
+are not imported. The original code runs on CUDA during the real experiment.
+CPU test doubles only exercise the evaluator's indexing and scoring locally.
+
+- Rewrite/rephrase/portability: teacher-forced per-token accuracy, not free
+  generation success or complete-answer exact match.
+- Locality: agreement with pre-edit token predictions under the same supplied
+  answer prefix. Preserving a wrong prediction can score 100% locality.
+- The original driver repeatedly chooses the first nested answer alias, rather
+  than taking the best score over valid aliases. The harness follows that rule.
+- Knowledge editing prepends an EOS to GPT-J inputs, while the official metric
+  tokenizes the prompt normally. These are distinct paths in upstream; retained.
+- Rephrase generation and explicit greedy output inspection are supplemental;
+  this wrapper does not reproduce every driver aggregation or paper table.
+
+`check_metrics.py` checks singleton and variable-length batches, both padding
+sides, causal answer slicing, partial token correctness, locality prediction
+output, and first-alias selection. All passed on CPU. This validates metric
+plumbing, not published model performance. Raw per-probe outputs and scores are
+saved together to make disagreement visible.
