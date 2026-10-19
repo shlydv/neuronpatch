@@ -1,0 +1,16 @@
+{
+  "account": "shlydv",
+  "kernel": "shlydv/neuronpatch-fine-reference-smoke-20261019",
+  "version": 1,
+  "kernel_id": 139576232,
+  "cases": 2,
+  "status_at_submission": "accepted",
+  "gpu_probe": "shlydv/neuronpatch-cuda-check-20261019",
+  "gpu_probe_status": "COMPLETE",
+  "source_sha256": {
+    "run.py": "fb6fad142d6b21ad2bf074705f0e53ddb282d7a6630a576472229b17cbb472ca",
+    "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21"
+  },
+  "bootstrap_sha256": "f7a6c99f50a988972c36a20ae3d3774b78694e9bb771dfb635f9ece8bb56ffbb",
+  "runtime_difference": "Kaggle-installed torch retained; transformers4.40.0, accelerate0.30.1; actual versions recorded by runner"
+}

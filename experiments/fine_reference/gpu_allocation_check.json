@@ -1,0 +1,9 @@
+{
+  "cuda_available": true,
+  "device_count": 2,
+  "devices": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "matrix_check": 912.81201171875
+}

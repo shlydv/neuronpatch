@@ -64,16 +64,21 @@ outputs alongside those metrics. A bounded success means editing operates and
 selection has a measurable advantage under a specified comparable metric; no
 advantage is an outcome to investigate, not a reason to change cases afterward.
 
-## Current execution blocker, checked 2026-10-19
+## GPU availability correction, checked 2026-10-19
 
-Kaggle's authenticated quota API reported GPU used 23,767.22 seconds, allowance
-21,600 seconds, reserved zero, pay-to-scale disabled. Refresh listed as
-2026-10-24 00:00 UTC (05:30 India time). No new GPU run was submitted.
-TPU availability does not make the CUDA-specific source runnable unchanged.
+The authenticated quota endpoint reported a six-hour allowance already exceeded,
+which we incorrectly interpreted as a hard execution blocker. The user's UI
+showed 23h23m of 30h remaining. An actual GPU kernel subsequently completed on
+**two Tesla T4s**, proving the earlier interpretation wrong. Treat the endpoint
+as conflicting telemetry; verify allocation with an actual job before claiming
+quota prevents execution. The formerly stated October 24 wait is retracted.
 
-Next: CUDA environment check and two-case smoke run, then the frozen 16-case
-comparison if the smoke run succeeds; audit official metrics before expanding
-or interpreting superiority. Existing custom QA experiments remain separate.
+The two-case reference smoke job was submitted at
+https://www.kaggle.com/code/shlydv/neuronpatch-fine-reference-smoke-20261019
+(version 1). Submission is not completion. See `gpu_allocation_check.json` and
+`smoke_submission.json` for allocation evidence and source hashes. Next: inspect
+startup, actual edits, and restoration; run the frozen 16-case comparison after
+the smoke test succeeds. Existing custom QA experiments remain separate.
 
 ## Official metric audit
 
