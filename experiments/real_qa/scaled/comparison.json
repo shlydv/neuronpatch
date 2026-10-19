@@ -150,5 +150,81 @@
     "retained_exact_correct_supported": 37.0,
     "new_refusals_on_base_exact_correct": 7,
     "training_seconds": 173.2893886249949
+  },
+  "2048/lora-lr0.0001-kl1.0-epoch1": {
+    "training_examples": 2048,
+    "lr": 0.0001,
+    "optimizer_steps": 1024,
+    "anchor_count": 360,
+    "validation": {
+      "answerable": {
+        "n": 128,
+        "em": 0.390625,
+        "f1": 0.4934139070648022,
+        "abstained": 0.3359375
+      },
+      "missing": {
+        "n": 128,
+        "em": 0.734375,
+        "f1": 0.734375,
+        "abstained": 0.734375
+      }
+    },
+    "new_only": {
+      "answerable": {
+        "n": 112,
+        "em": 0.39285714285714285,
+        "f1": 0.4919819311123659,
+        "abstained": 0.33035714285714285
+      },
+      "missing": {
+        "n": 112,
+        "em": 0.7678571428571429,
+        "f1": 0.7678571428571429,
+        "abstained": 0.7678571428571429
+      }
+    },
+    "base_exact_correct_supported": 45,
+    "retained_exact_correct_supported": 38.0,
+    "new_refusals_on_base_exact_correct": 6,
+    "training_seconds": 698.3724334580038
+  },
+  "2048/lora-lr0.0003-kl1.0-epoch1": {
+    "training_examples": 2048,
+    "lr": 0.0003,
+    "optimizer_steps": 1024,
+    "anchor_count": 360,
+    "validation": {
+      "answerable": {
+        "n": 128,
+        "em": 0.390625,
+        "f1": 0.4765799060895768,
+        "abstained": 0.375
+      },
+      "missing": {
+        "n": 128,
+        "em": 0.75,
+        "f1": 0.75,
+        "abstained": 0.75
+      }
+    },
+    "new_only": {
+      "answerable": {
+        "n": 112,
+        "em": 0.41964285714285715,
+        "f1": 0.5060222936341863,
+        "abstained": 0.3482142857142857
+      },
+      "missing": {
+        "n": 112,
+        "em": 0.7678571428571429,
+        "f1": 0.7678571428571429,
+        "abstained": 0.7678571428571429
+      }
+    },
+    "base_exact_correct_supported": 45,
+    "retained_exact_correct_supported": 33.0,
+    "new_refusals_on_base_exact_correct": 9,
+    "training_seconds": 667.9020511669951
   }
 }

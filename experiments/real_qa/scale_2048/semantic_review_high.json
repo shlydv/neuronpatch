@@ -1,0 +1,406 @@
+{
+  "reviewer": "assistant; qualitative, not blinded",
+  "scope": "All 29 supported EM changes for high-rate fit; not full semantic accuracy. Process still performing final evaluation.",
+  "changes_automatic_scores": false,
+  "sources": {
+    "scaled_baseline/val.json": "d8987f89e359865b956cbd51eaa49f0afaf80bf7ff09a2da5776736a306290cd",
+    "scale_2048/lora-lr0.0003-kl1.0-epoch1-val.json": "80b5610f4e485fb3af80c5f88f1796d20d1a1a10798cb50124b99df96ecf5b83"
+  },
+  "category_counts": {
+    "ambiguous_alternative_gain": 3,
+    "correct_exact_answer_to_refusal": 8,
+    "precision_gain": 4,
+    "question_presupposition_ambiguity": 1,
+    "substantive_correction": 5,
+    "substantive_nonanswer": 1,
+    "wording_only_gain": 3,
+    "question_gold_mismatch": 2,
+    "substantive_wrong_answer": 1,
+    "valid_extra_wording_loss": 1
+  },
+  "notes": {
+    "570c22d96b8089140040fb4a": "Question calls Hoover a president; the passage describes FBI wiretapping and does not support this role. Treat refusal loss as ambiguous rather than unquestioned regression.",
+    "56ddef259a695914005b96e5": "Passage explicitly lists both religious freedom and economic reasons. The previous answer is a valid alternative.",
+    "57263e4c38643c19005ad36c": "New answer selects the contrasted therian mammal rather than the explicitly closer chicken.",
+    "57341e404776f419006618c3": "New answer repeats the question instead of the previously correct explanation."
+  },
+  "examples": [
+    {
+      "id": "56ddef259a695914005b96e5",
+      "category": "ambiguous_alternative_gain",
+      "question": "What was one reason for the large amounts of immigration of religious refugees from other parts of Europe?",
+      "context": "During the Republic, any person who wished to hold public office had to conform to the Reformed Church and take an oath to this effect. The extent to which different religions or denominations were persecuted depended much on the time period and regional or city leaders. In the beginning, this was especially focused on Roman Catholics, being the religion of the enemy. In 17th-century Leiden, for instance, people opening their homes to services could be fined 200 guilders (a year's wage for a skilled tradesman) and banned from the city. Throughout this, however, personal freedom of religion existed and was one factor \u2013 along with economic reasons \u2013 in causing large immigration of religious refugees from other parts of Europe.",
+      "gold": [
+        "personal freedom of religion"
+      ],
+      "before": "economic reasons",
+      "after": "personal freedom of religion",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "56f8954b9b226e1400dd0c4b",
+      "category": "precision_gain",
+      "question": "When where the Eclogues likely published?",
+      "context": "Sometime after the publication of the Eclogues (probably before 37 BC), Virgil became part of the circle of Maecenas, Octavian's capable agent d'affaires who sought to counter sympathy for Antony among the leading families by rallying Roman literary figures to Octavian's side. Virgil came to know many of the other leading literary figures of the time, including Horace, in whose poetry he is often mentioned, and Varius Rufus, who later helped finish the Aeneid.",
+      "gold": [
+        "before 37 BC"
+      ],
+      "before": "37 BC",
+      "after": "before 37 BC",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "56f896ab9e9bad19000a0195",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "Octavian defeated Antony and Cleopatra at which battle?",
+      "context": "The Georgics' tone wavers between optimism and pessimism, sparking critical debate on the poet's intentions, but the work lays the foundations for later didactic poetry. Virgil and Maecenas are said to have taken turns reading the Georgics to Octavian upon his return from defeating Antony and Cleopatra at the Battle of Actium in 31 BC.",
+      "gold": [
+        "Battle of Actium"
+      ],
+      "before": "Battle of Actium",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570978be200fba140036803a",
+      "category": "valid_extra_wording_loss",
+      "question": "From what types of mines is copper extracted?",
+      "context": "Most copper is mined or extracted as copper sulfides from large open pit mines in porphyry copper deposits that contain 0.4 to 1.0% copper. Examples include Chuquicamata in Chile, Bingham Canyon Mine in Utah, United States and El Chino Mine in New Mexico, United States. According to the British Geological Survey, in 2005, Chile was the top mine producer of copper with at least one-third world share followed by the United States, Indonesia and Peru. Copper can also be recovered through the in-situ leach process. Several sites in the state of Arizona are considered prime candidates for this method. The amount of copper in use is increasing and the quantity available is barely sufficient to allow all countries to reach developed world levels of usage.",
+      "gold": [
+        "open pit mines"
+      ],
+      "before": "Open pit mines",
+      "after": "large open pit mines",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57097a0bed30961900e841cb",
+      "category": "substantive_correction",
+      "question": "What percentage of copper that has been mined is still being used today?",
+      "context": "Like aluminium, copper is 100% recyclable without any loss of quality, regardless of whether it is in a raw state or contained in a manufactured product. In volume, copper is the third most recycled metal after iron and aluminium. It is estimated that 80% of the copper ever mined is still in use today. According to the International Resource Panel's Metal Stocks in Society report, the global per capita stock of copper in use in society is 35\u201355 kg. Much of this is in more-developed countries (140\u2013300 kg per capita) rather than less-developed countries (30\u201340 kg per capita).",
+      "gold": [
+        "80%"
+      ],
+      "before": "UNKNOWN",
+      "after": "80%",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5709f59f4103511400d594c4",
+      "category": "wording_only_gain",
+      "question": "Which zoo is one of the best in Europe?",
+      "context": "The Hanover Zoo is one of the most spectacular and best zoos in Europe. The zoo received the Park Scout Award for the fourth year running in 2009/10, placing it among the best zoos in Germany. The zoo consists of several theme areas: Sambesi, Meyers Farm, Gorilla-Mountain, Jungle-Palace, and Mullewapp. Some smaller areas are Australia, the wooded area for wolves, and the so-called swimming area with many seabirds. There is also a tropical house, a jungle house, and a show arena. The new Canadian-themed area, Yukon Bay, opened in 2010. In 2010 the Hanover Zoo had over 1.6 million visitors.",
+      "gold": [
+        "Hanover Zoo"
+      ],
+      "before": "The Hanover Zoo is one of the best zoos in Europe.",
+      "after": "The Hanover Zoo",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570a76684103511400d5973a",
+      "category": "ambiguous_alternative_gain",
+      "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+      "context": "Draught beer's environmental impact can be 68% lower than bottled beer due to packaging differences. A life cycle study of one beer brand, including grain production, brewing, bottling, distribution and waste management, shows that the CO2 emissions from a 6-pack of micro-brew beer is about 3 kilograms (6.6 pounds). The loss of natural habitat potential from the 6-pack of micro-brew beer is estimated to be 2.5 square meters (26 square feet). Downstream emissions from distribution, retail, storage and disposal of waste can be over 45% of a bottled micro-brew beer's CO2 emissions. Where legal, the use of a refillable jug, reusable bottle or other reusable containers to transport draught beer from a store or a bar, rather than buying pre-bottled beer, can reduce the environmental impact of beer consumption.",
+      "gold": [
+        "a refillable jug"
+      ],
+      "before": "reusable bottle",
+      "after": "refillable jug",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570b9fa36b8089140040f9c3",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+      "context": "The sensitivity of Earth-based infrared telescopes is significantly limited by water vapor in the atmosphere, which absorbs a portion of the infrared radiation arriving from space outside of selected atmospheric windows. This limitation can be partially alleviated by placing the telescope observatory at a high altitude, or by carrying the telescope aloft with a balloon or an aircraft. Space telescopes do not suffer from this handicap, and so outer space is considered the ideal location for infrared astronomy.",
+      "gold": [
+        "Space telescopes"
+      ],
+      "before": "Space telescopes",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570c22d96b8089140040fb4a",
+      "category": "question_presupposition_ambiguity",
+      "question": "Which president was the first to use wiretaps to find bootleggers?",
+      "context": "Hoover began using wiretapping in the 1920s during Prohibition to arrest bootleggers. In the 1927 case Olmstead v. United States, in which a bootlegger was caught through telephone tapping, the United States Supreme Court ruled that FBI wiretaps did not violate the Fourth Amendment as unlawful search and seizure, as long as the FBI did not break into a person's home to complete the tapping. After Prohibition's repeal, Congress passed the Communications Act of 1934, which outlawed non-consensual phone tapping, but allowed bugging. In the 1939 case Nardone v. United States, the court ruled that due to the 1934 law, evidence the FBI obtained by phone tapping was inadmissible in court. After the 1967 case Katz v. United States overturned the 1927 case that had allowed bugging, Congress passed the Omnibus Crime Control Act, allowing public authorities to tap telephones during investigations as long as they obtain a warrant beforehand.",
+      "gold": [
+        "Hoover"
+      ],
+      "before": "Hoover",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570c25c4ec8fbc190045bca4",
+      "category": "question_gold_mismatch",
+      "question": "Where was the UCR created?",
+      "context": "The Uniform Crime Reports (UCR) compile data from over 17,000 law enforcement agencies across the country. They provide detailed data regarding the volume of crimes to include arrest, clearance (or closing a case), and law enforcement officer information. The UCR focuses its data collection on violent crimes, hate crimes, and property crimes. Created in the 1920s, the UCR system has not proven to be as uniform as its name implies. The UCR data only reflect the most serious offense in the case of connected crimes and has a very restrictive definition of rape. Since about 93% of the data submitted to the FBI is in this format, the UCR stands out as the publication of choice as most states require law enforcement agencies to submit this data.",
+      "gold": [
+        "1920s"
+      ],
+      "before": "UNKNOWN",
+      "after": "the 1920s",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570c30996b8089140040fbf4",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What Substance act does the FBI enforce?",
+      "context": "The FBI's chief tool against organized crime is the Racketeer Influenced and Corrupt Organizations (RICO) Act. The FBI is also charged with the responsibility of enforcing compliance of the United States Civil Rights Act of 1964 and investigating violations of the act in addition to prosecuting such violations with the United States Department of Justice (DOJ). The FBI also shares concurrent jurisdiction with the Drug Enforcement Administration (DEA) in the enforcement of the Controlled Substances Act of 1970.",
+      "gold": [
+        "Controlled Substances Act of 1970"
+      ],
+      "before": "The Controlled Substances Act of 1970",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570c34086b8089140040fc2d",
+      "category": "precision_gain",
+      "question": "What legislative body confirms FBI directors?",
+      "context": "FBI Directors are appointed by the President of the United States. They must be confirmed by the United States Senate and serve a term of office of five years, with a maximum of ten years, if reappointed, unless they resign or are fired by the President before their term ends. J. Edgar Hoover, appointed by Calvin Coolidge in 1924, was by far the longest-serving director, serving until his death in 1972. In 1968, Congress passed legislation as part of the Omnibus Crime Control and Safe Streets Act Pub.L. 90\u2013351, June 19, 1968, 82 Stat. 197 that specified a 10-year limit, a maximum of two 5-year terms, for future FBI Directors, as well as requiring Senate confirmation of appointees. As the incumbent, this legislation did not apply to Hoover, only to his successors. The current FBI Director is James B. Comey, who was appointed in 2013 by Barack Obama.",
+      "gold": [
+        "United States Senate"
+      ],
+      "before": "Congress",
+      "after": "United States Senate",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57262598271a42140099d59f",
+      "category": "substantive_correction",
+      "question": "Which group are Ambondro's closely related to?",
+      "context": "If Mammalia is considered as the crown group, its origin can be roughly dated as the first known appearance of animals more closely related to some extant mammals than to others. Ambondro is more closely related to monotremes than to therian mammals while Amphilestes and Amphitherium are more closely related to the therians; as fossils of all three genera are dated about 167 million years ago in the Middle Jurassic, this is a reasonable estimate for the appearance of the crown group. The earliest known synapsid satisfying Kemp's definitions is Tikitherium, dated 225 Ma, so the appearance of mammals in this broader sense can be given this Late Triassic date. In any case, the temporal range of the group extends to the present day.",
+      "gold": [
+        "monotremes"
+      ],
+      "before": "Mammalia",
+      "after": "Monotremes",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57263e4c38643c19005ad36c",
+      "category": "substantive_wrong_answer",
+      "question": "The platypus has sex chromosomes more related to which other non-mammal?",
+      "context": "Most mammals are viviparous, giving birth to live young. However, the five species of monotreme, the platypuses and the echidnas, lay eggs. The monotremes have a sex determination system different from that of most other mammals. In particular, the sex chromosomes of a platypus are more like those of a chicken than those of a therian mammal. Like marsupials and most other mammals, monotreme young are larval and fetus-like, as the presence of epipubic bones prevents the expansion of the torso, forcing them to produce small young.",
+      "gold": [
+        "chicken"
+      ],
+      "before": "chicken",
+      "after": "the therian mammal",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5726599df1498d1400e8dcdb",
+      "category": "substantive_correction",
+      "question": "When did Thuringii emerge?",
+      "context": "The name Thuringia or Th\u00fcringen derives from the Germanic tribe Thuringii, who emerged during the Migration Period. Their origin is not completely known. An older theory claimed that they were successors of the Hermunduri, but later research rejected the idea. Other historians argue that the Thuringians were allies of the Huns, came to central Europe together with them, and lived before in what is Galicia today. Publius Flavius Vegetius Renatus first mentioned the Thuringii around 400; during that period, the Thuringii were famous for their excellent horses.",
+      "gold": [
+        "the Migration Period"
+      ],
+      "before": "16th century",
+      "after": "Migration Period",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5727629fdd62a815002e9bec",
+      "category": "precision_gain",
+      "question": "What color will acid-fast bacilli become when stained?",
+      "context": "Using histological stains on expectorated samples from phlegm (also called \"sputum\"), scientists can identify MTB under a microscope. Since MTB retains certain stains even after being treated with acidic solution, it is classified as an acid-fast bacillus. The most common acid-fast staining techniques are the Ziehl\u2013Neelsen stain and the Kinyoun stain, which dye acid-fast bacilli a bright red that stands out against a blue background. Auramine-rhodamine staining and fluorescence microscopy are also used.",
+      "gold": [
+        "bright red"
+      ],
+      "before": "red",
+      "after": "bright red",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57277a57f1498d1400e8f92c",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "When did Britain formally surrender sovreignty over Hong Kong?",
+      "context": "In Hong Kong, the Supreme Court of Hong Kong (now known as the High Court of Hong Kong) was the final court of appeal during its colonial times which ended with transfer of sovereignty in 1997. The final adjudication power, as in any other British Colonies, rested with the Judicial Committee of the Privy Council (JCPC) in London, United Kingdom. Now the power of final adjudication is vested in the Court of Final Appeal created in 1997. Under the Basic Law, its constitution, the territory remains a common law jurisdiction. Consequently, judges from other common law jurisdictions (including England and Wales) can be recruited and continue to serve in the judiciary according to Article 92 of the Basic Law. On the other hand, the power of interpretation of the Basic Law itself is vested in the Standing Committee of the National People's Congress (NPCSC) in Beijing (without retroactive effect), and the courts are authorised to interpret the Basic Law when trying cases, in accordance with Article 158 of the Basic Law. This arrangement became controversial in light of the right of abode issue in 1999, raising concerns for judicial independence.",
+      "gold": [
+        "1997"
+      ],
+      "before": "1997",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57277ff9dd62a815002e9ed9",
+      "category": "substantive_correction",
+      "question": "What are some countries that have multiple powerful political parties?",
+      "context": "While there is some international commonality in the way political parties are recognized, and in how they operate, there are often many differences, and some are significant. Many political parties have an ideological core, but some do not, and many represent very different ideologies than they did when first founded. In democracies, political parties are elected by the electorate to run a government. Many countries have numerous powerful political parties, such as Germany and India and some nations have one-party systems, such as China. The United States is a two-party system, with its two most powerful parties being the Democratic Party and the Republican Party.",
+      "gold": [
+        "Germany and India"
+      ],
+      "before": "UNKNOWN",
+      "after": "Germany and India",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57278245f1498d1400e8fa2e",
+      "category": "wording_only_gain",
+      "question": "Who is the highest judge in Ireland's Supreme Court?",
+      "context": "The Supreme Court is the highest court in Ireland. It has authority to interpret the constitution, and strike down laws and activities of the state that it finds to be unconstitutional. It is also the highest authority in the interpretation of the law. Constitutionally it must have authority to interpret the constitution but its further appellate jurisdiction from lower courts is defined by law. The Irish Supreme Court consists of its presiding member, the Chief Justice, and seven other judges. Judges of the Supreme Court are appointed by the President in accordance with the binding advice of the Government. The Supreme Court sits in the Four Courts in Dublin.",
+      "gold": [
+        "the Chief Justice"
+      ],
+      "before": "The highest judge in Ireland's Supreme Court is the Chief Justice.",
+      "after": "Chief Justice",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5727907c708984140094e105",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What year did they win the cup? ",
+      "context": "The Football League was founded in 1888, 16 years after the first FA Cup competition. Since the creation of The Football League, Tottenham Hotspur is the only non-league \"giant-killer\" to win the Cup, taking the 1901 FA Cup with a victory over reigning league runners-up Sheffield United: although at that time, there were only two divisions and 36 clubs in the Football League, and Spurs were champions of the next lowest football tier - the Southern League and probably already good enough for the First Division (as was shown when they joined the Second Division in 1908 and immediately won promotion to the First.) Only two other actual non-League clubs have even reached the final since the founding of the League: Sheffield Wednesday in 1890 (champions of the Football Alliance, a rival league which was already effectively the Second Division, which it formally became in 1892 \u2013 Wednesday being let straight into the First Division), and Southampton in 1900 and 1902 (in which years they were also Southern League champions, proving the strength of that league: again, they were probably of equivalent standard to a First Division club at the time, but Southampton's form subsequently faded and they did not join the League till 1920 and the formation of the Third Division.)",
+      "gold": [
+        "1901"
+      ],
+      "before": "1901",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "572793a7dd62a815002ea0ed",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "When did the Constitutional Court become the highest court in South Africa in all matters?",
+      "context": "In South Africa, a \"two apex\" system existed from 1994 to 2013. The Supreme Court of Appeal (SCA) was created in 1994 and replaced the Appellate Division of the Supreme Court of South Africa as the highest court of appeal in non-constitutional matters. The SCA is subordinate to the Constitutional Court, which is the highest court in matters involving the interpretation and application of the Constitution. But in August 2013 the Constitution was amended to make the Constitutional Court the country's single apex court, superior to the SCA in all matters, both constitutional and non-constitutional.",
+      "gold": [
+        "August 2013"
+      ],
+      "before": "August 2013",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5727e7e12ca10214002d992e",
+      "category": "question_gold_mismatch",
+      "question": "What is an ogonek? ",
+      "context": "The set of graphic and format characters defined by Unicode does not correspond directly to the repertoire of abstract characters that is representable under Unicode. Unicode encodes characters by associating an abstract character with a particular code point. However, not all abstract characters are encoded as a single Unicode character, and some abstract characters may be represented in Unicode by a sequence of two or more characters. For example, a Latin small letter \"i\" with an ogonek, a dot above, and an acute accent, which is required in Lithuanian, is represented by the character sequence U+012F, U+0307, U+0301. Unicode maintains a list of uniquely named character sequences for abstract characters that are not directly encoded in Unicode.",
+      "gold": [
+        "a dot above"
+      ],
+      "before": "The ogonek is a character used in certain scripts like Lithuanian.",
+      "after": "a dot above",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57280742ff5b5019007d9b3d",
+      "category": "ambiguous_alternative_gain",
+      "question": "What programming language uses UTF-32 as internal representation of characters? ",
+      "context": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+      "gold": [
+        "Seed7"
+      ],
+      "before": "Python",
+      "after": "Seed7",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "572819294b864d1900164479",
+      "category": "precision_gain",
+      "question": "Which two residences did Albert buy from Edward?",
+      "context": "Albert assumed the regnal name \"George VI\" to emphasise continuity with his father and restore confidence in the monarchy. The beginning of George VI's reign was taken up by questions surrounding his predecessor and brother, whose titles, style and position were uncertain. He had been introduced as \"His Royal Highness Prince Edward\" for the abdication broadcast, but George VI felt that by abdicating and renouncing the succession Edward had lost the right to bear royal titles, including \"Royal Highness\". In settling the issue, George's first act as king was to confer upon his brother the title and style \"His Royal Highness The Duke of Windsor\", but the Letters Patent creating the dukedom prevented any wife or children from bearing royal styles. George VI was also forced to buy from Edward the royal residences of Balmoral Castle and Sandringham House, as these were private properties and did not pass to George VI automatically. Three days after his accession, on his 41st birthday, he invested his wife, the new queen consort, with the Order of the Garter.",
+      "gold": [
+        "Balmoral Castle and Sandringham House"
+      ],
+      "before": "Sandringham House",
+      "after": "Balmoral Castle and Sandringham House",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "572b8eb4111d821400f38f07",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What year did Joseph Dobrovsk\u00fd release a German-language grammar of Old Czech?",
+      "context": "During the revival, in 1809 linguist and historian Josef Dobrovsk\u00fd released a German-language grammar of Old Czech entitled Ausf\u00fchrliches Lehrgeb\u00e4ude der b\u00f6hmischen Sprache (Comprehensive Doctrine of the Bohemian Language). Dobrovsk\u00fd had intended his book to be descriptive, and did not think Czech had a realistic chance of returning as a major language. However, Josef Jungmann and other revivalists used Dobrovsk\u00fd's book to advocate for a Czech linguistic revival. Changes during this time included spelling reform (notably, \u00ed in place of the former j and j in place of g), the use of t (rather than ti) to end infinitive verbs and the non-capitalization of nouns (which had been a late borrowing from German). These changes differentiated Czech from Slovak. Modern scholars disagree about whether the conservative revivalists were motivated by nationalism or considered contemporary spoken Czech unsuitable for formal, widespread use.",
+      "gold": [
+        "1809"
+      ],
+      "before": "1809",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5730299db2c2fd14005689a7",
+      "category": "substantive_correction",
+      "question": "How was Vesey executed in 1822?",
+      "context": "By 1820, Charleston's population had grown to 23,000, maintaining its black (and mostly slave) majority. When a massive slave revolt planned by Denmark Vesey, a free black, was revealed in May 1822, whites reacted with intense fear, as they were well aware of the violent retribution of slaves against whites during the Haitian Revolution. Soon after, Vesey was tried and executed, hanged in early July with five slaves. Another 28 slaves were later hanged. Later, the state legislature passed laws requiring individual legislative approval for manumission (the freeing of a slave) and regulating activities of free blacks and slaves.",
+      "gold": [
+        "hanged"
+      ],
+      "before": "Vesey was executed on July 5, 1822.",
+      "after": "hanged",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57315bfaa5e9cc1400cdbf01",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "After the demise of what was the red flag linked to the French Revolution?",
+      "context": "The red flag appeared as a political symbol during the French Revolution, after the fall of Bastille. A law adopted by the new government on October 20, 1789 authorized the Garde Nationale to raise the red flag in the event of a riot, to signal that the Garde would imminently intervene. During a demonstration on the Champs de Mars on July 17, 1791, the Garde Nationale fired on the crowd, killed up to fifty people. The government was denounced by the more radical revolutionaries. In the words of his famous hymn, the Marseillaise, Rouget de Lisle wrote: \"Against us they have raised the bloody flag of tyranny!\" (Contre nous de la tyrannie, l'entendard sanglant est leve). Beginning in 1790, the most radical revolutionaries adopted the red flag themselves, to symbolize the blood of those killed in the demonstrations, and to call for the repression of those they considered counter-revolutionary.",
+      "gold": [
+        "Bastille"
+      ],
+      "before": "Bastille",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57341e404776f419006618c3",
+      "category": "substantive_nonanswer",
+      "question": "Why is it difficult to now which chronic wounds are infected?",
+      "context": "Because it is normal to have bacterial colonization, it is difficult to know which chronic wounds are infected. Despite the huge number of wounds seen in clinical practice, there are limited quality data for evaluated symptoms and signs. A review of chronic wounds in the Journal of the American Medical Association's \"Rational Clinical Examination Series\" quantified the importance of increased pain as an indicator of infection. The review showed that the most useful finding is an increase in the level of pain [likelihood ratio (LR) range, 11-20] makes infection much more likely, but the absence of pain (negative likelihood ratio range, 0.64-0.88) does not rule out infection (summary LR 0.64-0.88).",
+      "gold": [
+        "Because it is normal to have bacterial colonization"
+      ],
+      "before": "Because it is normal to have bacterial colonization",
+      "after": "it is difficult to know which chronic wounds are infected",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5734257c4776f41900661962",
+      "category": "wording_only_gain",
+      "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+      "context": "The isolation of enzymes from infected tissue can also provide the basis of a biochemical diagnosis of an infectious disease. For example, humans can make neither RNA replicases nor reverse transcriptase, and the presence of these enzymes are characteristic of specific types of viral infections. The ability of the viral protein hemagglutinin to bind red blood cells together into a detectable matrix may also be characterized as a biochemical test for viral infection, although strictly speaking hemagglutinin is not an enzyme and has no metabolic function.",
+      "gold": [
+        "RNA replicases"
+      ],
+      "before": "RNA replicase",
+      "after": "RNA replicases",
+      "before_em": 0.0,
+      "after_em": 1.0
+    }
+  ]
+}

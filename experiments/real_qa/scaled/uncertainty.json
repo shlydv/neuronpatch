@@ -1,0 +1,228 @@
+{
+  "interpretation": "Exploratory development comparisons; not seed or selection uncertainty",
+  "baseline_sha256": "d8987f89e359865b956cbd51eaa49f0afaf80bf7ff09a2da5776736a306290cd",
+  "runs": {
+    "128/lora-lr0.0001-kl1.0-epoch1": {
+      "articles": 31,
+      "questions": 256,
+      "draws": 10000,
+      "seed": 20261019,
+      "metrics": {
+        "supported_em": {
+          "after_minus_before": -0.0390625,
+          "percentile_95": [
+            -0.1,
+            0.023622047244094488
+          ]
+        },
+        "supported_f1": {
+          "after_minus_before": -0.09434007635009672,
+          "percentile_95": [
+            -0.14536693038303394,
+            -0.04179739923108677
+          ]
+        },
+        "supported_refusals": {
+          "after_minus_before": 0.265625,
+          "percentile_95": [
+            0.19862892256873602,
+            0.3333333333333333
+          ]
+        },
+        "correct_missing_refusals": {
+          "after_minus_before": 0.3671875,
+          "percentile_95": [
+            0.2905913978494624,
+            0.45161290322580644
+          ]
+        }
+      },
+      "predictions_sha256": "e004e3c65703dd6b27e3ca70b9cd9d4af423bb3a59f7dff662b28ebf302b4dd0"
+    },
+    "128/lora-lr0.0003-kl1.0-epoch1": {
+      "articles": 31,
+      "questions": 256,
+      "draws": 10000,
+      "seed": 20261019,
+      "metrics": {
+        "supported_em": {
+          "after_minus_before": -0.015625,
+          "percentile_95": [
+            -0.06716417910447761,
+            0.03731343283582089
+          ]
+        },
+        "supported_f1": {
+          "after_minus_before": -0.04181172020331953,
+          "percentile_95": [
+            -0.09513505148731347,
+            0.011056460263779254
+          ]
+        },
+        "supported_refusals": {
+          "after_minus_before": 0.15625,
+          "percentile_95": [
+            0.09923664122137404,
+            0.21487603305785125
+          ]
+        },
+        "correct_missing_refusals": {
+          "after_minus_before": 0.21875,
+          "percentile_95": [
+            0.14615384615384616,
+            0.29133858267716534
+          ]
+        }
+      },
+      "predictions_sha256": "d713c8cb5d74cb265e2e720726d50c0f70b5c034bafe38d44b594f0c74b3b48b"
+    },
+    "512/lora-lr0.0001-kl1.0-epoch1": {
+      "articles": 31,
+      "questions": 256,
+      "draws": 10000,
+      "seed": 20261019,
+      "metrics": {
+        "supported_em": {
+          "after_minus_before": -0.109375,
+          "percentile_95": [
+            -0.184,
+            -0.031746031746031744
+          ]
+        },
+        "supported_f1": {
+          "after_minus_before": -0.1840922442444981,
+          "percentile_95": [
+            -0.25335346070854564,
+            -0.1142579077517871
+          ]
+        },
+        "supported_refusals": {
+          "after_minus_before": 0.484375,
+          "percentile_95": [
+            0.39609713203463204,
+            0.5737704918032787
+          ]
+        },
+        "correct_missing_refusals": {
+          "after_minus_before": 0.5703125,
+          "percentile_95": [
+            0.5,
+            0.6461637931034482
+          ]
+        }
+      },
+      "predictions_sha256": "d89d2e256725bd98cf812b0cdcdcfa39655e9b989f881b496c460d37f4106974"
+    },
+    "512/lora-lr0.0003-kl1.0-epoch1": {
+      "articles": 31,
+      "questions": 256,
+      "draws": 10000,
+      "seed": 20261019,
+      "metrics": {
+        "supported_em": {
+          "after_minus_before": 0.0078125,
+          "percentile_95": [
+            -0.04964539007092199,
+            0.07258064516129033
+          ]
+        },
+        "supported_f1": {
+          "after_minus_before": -0.03634550968110751,
+          "percentile_95": [
+            -0.09281709204006501,
+            0.0226637866333872
+          ]
+        },
+        "supported_refusals": {
+          "after_minus_before": 0.3359375,
+          "percentile_95": [
+            0.23622047244094488,
+            0.4405624036979969
+          ]
+        },
+        "correct_missing_refusals": {
+          "after_minus_before": 0.4765625,
+          "percentile_95": [
+            0.4032258064516129,
+            0.5577034883720928
+          ]
+        }
+      },
+      "predictions_sha256": "53a1bab8c307f8aba5e3627159beae7528b94fe480a6d0e830db2e2c1eabf5f3"
+    },
+    "2048/lora-lr0.0001-kl1.0-epoch1": {
+      "articles": 31,
+      "questions": 256,
+      "draws": 10000,
+      "seed": 20261019,
+      "metrics": {
+        "supported_em": {
+          "after_minus_before": 0.0390625,
+          "percentile_95": [
+            -0.01652892561983471,
+            0.09923664122137404
+          ]
+        },
+        "supported_f1": {
+          "after_minus_before": 0.03544319753558884,
+          "percentile_95": [
+            -0.024709868753841086,
+            0.09512822246323797
+          ]
+        },
+        "supported_refusals": {
+          "after_minus_before": 0.234375,
+          "percentile_95": [
+            0.15492957746478872,
+            0.3178294573643411
+          ]
+        },
+        "correct_missing_refusals": {
+          "after_minus_before": 0.46875,
+          "percentile_95": [
+            0.3923076923076923,
+            0.55
+          ]
+        }
+      },
+      "predictions_sha256": "692c3add72f194225b83ea6c27ab0899c08b5b801a8fbabba245d17666f04136"
+    },
+    "2048/lora-lr0.0003-kl1.0-epoch1": {
+      "articles": 31,
+      "questions": 256,
+      "draws": 10000,
+      "seed": 20261019,
+      "metrics": {
+        "supported_em": {
+          "after_minus_before": 0.0390625,
+          "percentile_95": [
+            -0.023076923076923078,
+            0.10318144499178972
+          ]
+        },
+        "supported_f1": {
+          "after_minus_before": 0.01860919656036343,
+          "percentile_95": [
+            -0.05111673899793165,
+            0.0859169452595527
+          ]
+        },
+        "supported_refusals": {
+          "after_minus_before": 0.2734375,
+          "percentile_95": [
+            0.1724137931034483,
+            0.3819444444444444
+          ]
+        },
+        "correct_missing_refusals": {
+          "after_minus_before": 0.484375,
+          "percentile_95": [
+            0.40157331185874495,
+            0.5725206229992612
+          ]
+        }
+      },
+      "predictions_sha256": "80b5610f4e485fb3af80c5f88f1796d20d1a1a10798cb50124b99df96ecf5b83"
+    }
+  }
+}

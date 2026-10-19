@@ -283,3 +283,18 @@ is experimental and not supported by the NeuronPatch checkpoint API yet.
 No model-quality advantage is established, and it is not part of the coverage
 experiment. It prepares an independent sharing ablation once preservation is
 better understood; passing primitive tests cannot establish the combined method.
+
+## Completed data-size curve
+
+The [2048 comparison](../experiments/real_qa/scale_2048/REPORT.md) completes both
+rates at all three sizes. Both largest fits reach 50/128 supported EM and 94/96
+correct missing refusals, versus base 45/34. Unnecessary refusals remain 43/48
+versus 13, and only 38/33 of 45 base-exact answers survive. Broader data/compute
+helps some trade-offs but does not establish reliable preservation. Protected
+training anchors also break. Semantic review and article-bootstrap intervals
+prevent interpreting five extra matches as five unambiguous new correct answers.
+
+The next run is the prepared coverage-only comparison. It evaluates one measured
+weakness while retaining the same objective, model and budget. Sharing and
+localization remain independent hypotheses requiring later matched comparisons;
+their numerical implementation alone does not satisfy the synthesis goal.

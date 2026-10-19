@@ -1,0 +1,18 @@
+{
+  "executed_sources_match": true,
+  "datasets_match": true,
+  "checkpoints": {
+    "lora-lr0.0001-kl1.0-epoch1": {
+      "loss_steps": 1024,
+      "finite_adapter_parameters": 829440,
+      "prediction_data_and_metrics_match": true
+    },
+    "lora-lr0.0003-kl1.0-epoch1": {
+      "loss_steps": 1024,
+      "finite_adapter_parameters": 829440,
+      "prediction_data_and_metrics_match": true
+    }
+  },
+  "note": "Static integrity checks and observed successful process exit; no reload-generation test for these checkpoints.",
+  "process_exit_code": 0
+}

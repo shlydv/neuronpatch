@@ -1,0 +1,263 @@
+{
+  "reviewer": "assistant; qualitative, not blinded",
+  "scope": "All 19 supported exact-match changes in the completed low-rate fit. The two-rate experiment is still running. Not full semantic accuracy.",
+  "changes_automatic_scores": false,
+  "sources": {
+    "scaled_baseline/val.json": "d8987f89e359865b956cbd51eaa49f0afaf80bf7ff09a2da5776736a306290cd",
+    "scale_2048/lora-lr0.0001-kl1.0-epoch1-val.json": "692c3add72f194225b83ea6c27ab0899c08b5b801a8fbabba245d17666f04136"
+  },
+  "notes": {
+    "5727e7e12ca10214002d992e": "The passage lists an ogonek, a dot above, and an acute accent separately; the reference treats the dot above as the definition of ogonek. Exact-match gain is not a supported correction.",
+    "57280742ff5b5019007d9b3d": "Passage names Seed7 but also says Python may be configured to use UTF-32. The previous answer is not unambiguously wrong.",
+    "570978be200fba140036803a": "Adding large to open pit mines remains explicitly supported."
+  },
+  "examples": [
+    {
+      "id": "5734257c4776f41900661962",
+      "category": "wording_only_gain",
+      "question": "What enzyme's presence is characteristic of specific types of viral infections?",
+      "context": "The isolation of enzymes from infected tissue can also provide the basis of a biochemical diagnosis of an infectious disease. For example, humans can make neither RNA replicases nor reverse transcriptase, and the presence of these enzymes are characteristic of specific types of viral infections. The ability of the viral protein hemagglutinin to bind red blood cells together into a detectable matrix may also be characterized as a biochemical test for viral infection, although strictly speaking hemagglutinin is not an enzyme and has no metabolic function.",
+      "gold": [
+        "RNA replicases"
+      ],
+      "before": "RNA replicase",
+      "after": "RNA replicases",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5709f59f4103511400d594c4",
+      "category": "wording_only_gain",
+      "question": "Which zoo is one of the best in Europe?",
+      "context": "The Hanover Zoo is one of the most spectacular and best zoos in Europe. The zoo received the Park Scout Award for the fourth year running in 2009/10, placing it among the best zoos in Germany. The zoo consists of several theme areas: Sambesi, Meyers Farm, Gorilla-Mountain, Jungle-Palace, and Mullewapp. Some smaller areas are Australia, the wooded area for wolves, and the so-called swimming area with many seabirds. There is also a tropical house, a jungle house, and a show arena. The new Canadian-themed area, Yukon Bay, opened in 2010. In 2010 the Hanover Zoo had over 1.6 million visitors.",
+      "gold": [
+        "Hanover Zoo"
+      ],
+      "before": "The Hanover Zoo is one of the best zoos in Europe.",
+      "after": "The Hanover Zoo",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57278245f1498d1400e8fa2e",
+      "category": "wording_only_gain",
+      "question": "Who is the highest judge in Ireland's Supreme Court?",
+      "context": "The Supreme Court is the highest court in Ireland. It has authority to interpret the constitution, and strike down laws and activities of the state that it finds to be unconstitutional. It is also the highest authority in the interpretation of the law. Constitutionally it must have authority to interpret the constitution but its further appellate jurisdiction from lower courts is defined by law. The Irish Supreme Court consists of its presiding member, the Chief Justice, and seven other judges. Judges of the Supreme Court are appointed by the President in accordance with the binding advice of the Government. The Supreme Court sits in the Four Courts in Dublin.",
+      "gold": [
+        "the Chief Justice"
+      ],
+      "before": "The highest judge in Ireland's Supreme Court is the Chief Justice.",
+      "after": "Chief Justice",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570a76684103511400d5973a",
+      "category": "ambiguous_alternative_gain",
+      "question": "What type of container can be used to transport draft beer, and is better for the environment that a bottle?",
+      "context": "Draught beer's environmental impact can be 68% lower than bottled beer due to packaging differences. A life cycle study of one beer brand, including grain production, brewing, bottling, distribution and waste management, shows that the CO2 emissions from a 6-pack of micro-brew beer is about 3 kilograms (6.6 pounds). The loss of natural habitat potential from the 6-pack of micro-brew beer is estimated to be 2.5 square meters (26 square feet). Downstream emissions from distribution, retail, storage and disposal of waste can be over 45% of a bottled micro-brew beer's CO2 emissions. Where legal, the use of a refillable jug, reusable bottle or other reusable containers to transport draught beer from a store or a bar, rather than buying pre-bottled beer, can reduce the environmental impact of beer consumption.",
+      "gold": [
+        "a refillable jug"
+      ],
+      "before": "reusable bottle",
+      "after": "refillable jug",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57280742ff5b5019007d9b3d",
+      "category": "ambiguous_alternative_gain",
+      "question": "What programming language uses UTF-32 as internal representation of characters? ",
+      "context": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+      "gold": [
+        "Seed7"
+      ],
+      "before": "Python",
+      "after": "Seed7",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5727e7e12ca10214002d992e",
+      "category": "question_gold_mismatch",
+      "question": "What is an ogonek? ",
+      "context": "The set of graphic and format characters defined by Unicode does not correspond directly to the repertoire of abstract characters that is representable under Unicode. Unicode encodes characters by associating an abstract character with a particular code point. However, not all abstract characters are encoded as a single Unicode character, and some abstract characters may be represented in Unicode by a sequence of two or more characters. For example, a Latin small letter \"i\" with an ogonek, a dot above, and an acute accent, which is required in Lithuanian, is represented by the character sequence U+012F, U+0307, U+0301. Unicode maintains a list of uniquely named character sequences for abstract characters that are not directly encoded in Unicode.",
+      "gold": [
+        "a dot above"
+      ],
+      "before": "The ogonek is a character used in certain scripts like Lithuanian.",
+      "after": "a dot above",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "56f8954b9b226e1400dd0c4b",
+      "category": "precision_gain",
+      "question": "When where the Eclogues likely published?",
+      "context": "Sometime after the publication of the Eclogues (probably before 37 BC), Virgil became part of the circle of Maecenas, Octavian's capable agent d'affaires who sought to counter sympathy for Antony among the leading families by rallying Roman literary figures to Octavian's side. Virgil came to know many of the other leading literary figures of the time, including Horace, in whose poetry he is often mentioned, and Varius Rufus, who later helped finish the Aeneid.",
+      "gold": [
+        "before 37 BC"
+      ],
+      "before": "37 BC",
+      "after": "before 37 BC",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5727629fdd62a815002e9bec",
+      "category": "precision_gain",
+      "question": "What color will acid-fast bacilli become when stained?",
+      "context": "Using histological stains on expectorated samples from phlegm (also called \"sputum\"), scientists can identify MTB under a microscope. Since MTB retains certain stains even after being treated with acidic solution, it is classified as an acid-fast bacillus. The most common acid-fast staining techniques are the Ziehl\u2013Neelsen stain and the Kinyoun stain, which dye acid-fast bacilli a bright red that stands out against a blue background. Auramine-rhodamine staining and fluorescence microscopy are also used.",
+      "gold": [
+        "bright red"
+      ],
+      "before": "red",
+      "after": "bright red",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570c34086b8089140040fc2d",
+      "category": "precision_gain",
+      "question": "What legislative body confirms FBI directors?",
+      "context": "FBI Directors are appointed by the President of the United States. They must be confirmed by the United States Senate and serve a term of office of five years, with a maximum of ten years, if reappointed, unless they resign or are fired by the President before their term ends. J. Edgar Hoover, appointed by Calvin Coolidge in 1924, was by far the longest-serving director, serving until his death in 1972. In 1968, Congress passed legislation as part of the Omnibus Crime Control and Safe Streets Act Pub.L. 90\u2013351, June 19, 1968, 82 Stat. 197 that specified a 10-year limit, a maximum of two 5-year terms, for future FBI Directors, as well as requiring Senate confirmation of appointees. As the incumbent, this legislation did not apply to Hoover, only to his successors. The current FBI Director is James B. Comey, who was appointed in 2013 by Barack Obama.",
+      "gold": [
+        "United States Senate"
+      ],
+      "before": "Congress",
+      "after": "United States Senate",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "5726599df1498d1400e8dcdb",
+      "category": "substantive_correction",
+      "question": "When did Thuringii emerge?",
+      "context": "The name Thuringia or Th\u00fcringen derives from the Germanic tribe Thuringii, who emerged during the Migration Period. Their origin is not completely known. An older theory claimed that they were successors of the Hermunduri, but later research rejected the idea. Other historians argue that the Thuringians were allies of the Huns, came to central Europe together with them, and lived before in what is Galicia today. Publius Flavius Vegetius Renatus first mentioned the Thuringii around 400; during that period, the Thuringii were famous for their excellent horses.",
+      "gold": [
+        "the Migration Period"
+      ],
+      "before": "16th century",
+      "after": "Migration Period",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57277ff9dd62a815002e9ed9",
+      "category": "substantive_correction",
+      "question": "What are some countries that have multiple powerful political parties?",
+      "context": "While there is some international commonality in the way political parties are recognized, and in how they operate, there are often many differences, and some are significant. Many political parties have an ideological core, but some do not, and many represent very different ideologies than they did when first founded. In democracies, political parties are elected by the electorate to run a government. Many countries have numerous powerful political parties, such as Germany and India and some nations have one-party systems, such as China. The United States is a two-party system, with its two most powerful parties being the Democratic Party and the Republican Party.",
+      "gold": [
+        "Germany and India"
+      ],
+      "before": "UNKNOWN",
+      "after": "Germany and India",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "57262598271a42140099d59f",
+      "category": "substantive_correction",
+      "question": "Which group are Ambondro's closely related to?",
+      "context": "If Mammalia is considered as the crown group, its origin can be roughly dated as the first known appearance of animals more closely related to some extant mammals than to others. Ambondro is more closely related to monotremes than to therian mammals while Amphilestes and Amphitherium are more closely related to the therians; as fossils of all three genera are dated about 167 million years ago in the Middle Jurassic, this is a reasonable estimate for the appearance of the crown group. The earliest known synapsid satisfying Kemp's definitions is Tikitherium, dated 225 Ma, so the appearance of mammals in this broader sense can be given this Late Triassic date. In any case, the temporal range of the group extends to the present day.",
+      "gold": [
+        "monotremes"
+      ],
+      "before": "Mammalia",
+      "after": "Monotremes",
+      "before_em": 0.0,
+      "after_em": 1.0
+    },
+    {
+      "id": "570978be200fba140036803a",
+      "category": "valid_extra_wording_loss",
+      "question": "From what types of mines is copper extracted?",
+      "context": "Most copper is mined or extracted as copper sulfides from large open pit mines in porphyry copper deposits that contain 0.4 to 1.0% copper. Examples include Chuquicamata in Chile, Bingham Canyon Mine in Utah, United States and El Chino Mine in New Mexico, United States. According to the British Geological Survey, in 2005, Chile was the top mine producer of copper with at least one-third world share followed by the United States, Indonesia and Peru. Copper can also be recovered through the in-situ leach process. Several sites in the state of Arizona are considered prime candidates for this method. The amount of copper in use is increasing and the quantity available is barely sufficient to allow all countries to reach developed world levels of usage.",
+      "gold": [
+        "open pit mines"
+      ],
+      "before": "Open pit mines",
+      "after": "large open pit mines",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570b9fa36b8089140040f9c3",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What sorts of telescopes completely avoid water vapor in Earth's atmosphere?",
+      "context": "The sensitivity of Earth-based infrared telescopes is significantly limited by water vapor in the atmosphere, which absorbs a portion of the infrared radiation arriving from space outside of selected atmospheric windows. This limitation can be partially alleviated by placing the telescope observatory at a high altitude, or by carrying the telescope aloft with a balloon or an aircraft. Space telescopes do not suffer from this handicap, and so outer space is considered the ideal location for infrared astronomy.",
+      "gold": [
+        "Space telescopes"
+      ],
+      "before": "Space telescopes",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57277a57f1498d1400e8f92c",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "When did Britain formally surrender sovreignty over Hong Kong?",
+      "context": "In Hong Kong, the Supreme Court of Hong Kong (now known as the High Court of Hong Kong) was the final court of appeal during its colonial times which ended with transfer of sovereignty in 1997. The final adjudication power, as in any other British Colonies, rested with the Judicial Committee of the Privy Council (JCPC) in London, United Kingdom. Now the power of final adjudication is vested in the Court of Final Appeal created in 1997. Under the Basic Law, its constitution, the territory remains a common law jurisdiction. Consequently, judges from other common law jurisdictions (including England and Wales) can be recruited and continue to serve in the judiciary according to Article 92 of the Basic Law. On the other hand, the power of interpretation of the Basic Law itself is vested in the Standing Committee of the National People's Congress (NPCSC) in Beijing (without retroactive effect), and the courts are authorised to interpret the Basic Law when trying cases, in accordance with Article 158 of the Basic Law. This arrangement became controversial in light of the right of abode issue in 1999, raising concerns for judicial independence.",
+      "gold": [
+        "1997"
+      ],
+      "before": "1997",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "570c2a5eec8fbc190045bcf3",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "Where was the FBI lab?",
+      "context": "The FBI Laboratory, established with the formation of the BOI, did not appear in the J. Edgar Hoover Building until its completion in 1974. The lab serves as the primary lab for most DNA, biological, and physical work. Public tours of FBI headquarters ran through the FBI laboratory workspace before the move to the J. Edgar Hoover Building. The services the lab conducts include Chemistry, Combined DNA Index System (CODIS), Computer Analysis and Response, DNA Analysis, Evidence Response, Explosives, Firearms and Tool marks, Forensic Audio, Forensic Video, Image Analysis, Forensic Science Research, Forensic Science Training, Hazardous Materials Response, Investigative and Prospective Graphics, Latent Prints, Materials Analysis, Questioned Documents, Racketeering Records, Special Photographic Analysis, Structural Design, and Trace Evidence. The services of the FBI Laboratory are used by many state, local, and international agencies free of charge. The lab also maintains a second lab at the FBI Academy.",
+      "gold": [
+        "J. Edgar Hoover Building"
+      ],
+      "before": "J. Edgar Hoover Building",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "5727cbf64b864d1900163d48",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "What were the \"treatment\" facilities for poor people with TB in the early 1900s called?",
+      "context": "Tuberculosis caused the most widespread public concern in the 19th and early 20th centuries as an endemic disease of the urban poor. In 1815, one in four deaths in England was due to \"consumption\". By 1918, one in six deaths in France was still caused by TB. After TB was determined to be contagious, in the 1880s, it was put on a notifiable disease list in Britain; campaigns were started to stop people from spitting in public places, and the infected poor were \"encouraged\" to enter sanatoria that resembled prisons (the sanatoria for the middle and upper classes offered excellent care and constant medical attention). Whatever the (purported) benefits of the \"fresh air\" and labor in the sanatoria, even under the best conditions, 50% of those who entered died within five years (circa 1916).",
+      "gold": [
+        "sanatoria"
+      ],
+      "before": "sanatoria",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "57315bfaa5e9cc1400cdbf01",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "After the demise of what was the red flag linked to the French Revolution?",
+      "context": "The red flag appeared as a political symbol during the French Revolution, after the fall of Bastille. A law adopted by the new government on October 20, 1789 authorized the Garde Nationale to raise the red flag in the event of a riot, to signal that the Garde would imminently intervene. During a demonstration on the Champs de Mars on July 17, 1791, the Garde Nationale fired on the crowd, killed up to fifty people. The government was denounced by the more radical revolutionaries. In the words of his famous hymn, the Marseillaise, Rouget de Lisle wrote: \"Against us they have raised the bloody flag of tyranny!\" (Contre nous de la tyrannie, l'entendard sanglant est leve). Beginning in 1790, the most radical revolutionaries adopted the red flag themselves, to symbolize the blood of those killed in the demonstrations, and to call for the repression of those they considered counter-revolutionary.",
+      "gold": [
+        "Bastille"
+      ],
+      "before": "Bastille",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    },
+    {
+      "id": "572793a7dd62a815002ea0ed",
+      "category": "correct_exact_answer_to_refusal",
+      "question": "When did the Constitutional Court become the highest court in South Africa in all matters?",
+      "context": "In South Africa, a \"two apex\" system existed from 1994 to 2013. The Supreme Court of Appeal (SCA) was created in 1994 and replaced the Appellate Division of the Supreme Court of South Africa as the highest court of appeal in non-constitutional matters. The SCA is subordinate to the Constitutional Court, which is the highest court in matters involving the interpretation and application of the Constitution. But in August 2013 the Constitution was amended to make the Constitutional Court the country's single apex court, superior to the SCA in all matters, both constitutional and non-constitutional.",
+      "gold": [
+        "August 2013"
+      ],
+      "before": "August 2013",
+      "after": "UNKNOWN",
+      "before_em": 1.0,
+      "after_em": 0.0
+    }
+  ]
+}
