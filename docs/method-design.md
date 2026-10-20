@@ -375,3 +375,22 @@ library superiority. Source/model/data are pinned, all restore checks pass, and
 actual outputs are saved. Python compatibility and CUDA0 placement resolved
 execution issues. The same first16 cases are now running as expanded exploratory
 evidence before adapting the reference method into NeuronPatch.
+
+## Portable contribution selector (2026-10-20)
+
+`contribution_indices` now exposes the FiNE all-eligible-layer, per-predicted-token
+score in the library. Its selected indices match the unchanged upstream scoring
+routine on18 CPU fixtures/72 token positions, with CUDA calls redirected only
+inside that local test. This establishes numerical CPU selection parity, not GPU
+or behavioral equivalence of a complete library editor. All63 library tests pass
+with2 MPS cases skipped in the sandbox. The running first16-case benchmark still
+uses unchanged upstream code; library changes do not alter that experiment.
+
+Repeated selections across target positions are deliberately retained. Upstream
+trains one delta per occurrence and penalizes their joint norm, so deduplicating
+before training is an optimization change. The existing unique-column patch API
+must not be advertised as an exact training replacement until occurrence and
+mixed-precision semantics have been verified. This is a concrete remaining bridge
+between the working editor and our library, alongside actual preservation and
+rephrasing transfer. NeST's paper-linked artifact still returns HTTP403 on direct
+retrieval; SafeNexus source is still unverified. No reproduction claim for either.

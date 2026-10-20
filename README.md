@@ -253,3 +253,34 @@ legacy row/column artifacts remain supported. There is no automatic grouping.
 Neither this primitive nor
 the new loss has demonstrated an advantage in model quality. See the
 [evidence ledger](docs/method-design.md) for the remaining work.
+
+### Per-token contribution selection (experimental)
+
+`contribution_indices` implements the all-eligible-layer contribution score used
+by FiNE's knowledge editor. Given captured activations `[positions, layers, FFN]`,
+one down-projection weight `[hidden, FFN]` per layer, an unembedding matrix
+`[vocabulary, hidden]`, and the base model's predicted token at each position, it
+returns `[positions, k, 2]` indices `(layer, neuron)`.
+
+```python
+from neuronpatch import contribution_indices
+
+supports = contribution_indices(
+    activations, down_weights, unembedding, predicted_tokens,
+    k=5, exclude_last_layers=3,
+)
+```
+
+The default FP16 scoring matches the upstream scoring precision; precision and
+backend can affect ties/rankings. Tensor capture and causal position alignment
+are caller responsibilities. This function is a selector, not a complete FiNE
+editor. Its indices exactly match the unchanged upstream scoring routine on
+18 CPU fixtures (72 token positions); GPU/behavioral equivalence of the library
+port remains untested. The separate upstream GPU smoke test uses original code.
+See `experiments/fine_reference/check_contribution.py` and its checked result.
+
+Preserve repeated selections across target positions when reproducing the editor.
+Its separate deltas and norm penalty can differ from training one deduplicated
+parameter per neuron. Existing `NeuronPatch` column indices remain unique; summing
+learned deltas for export and deduplicating supports before training are distinct
+operations. Shared updates across related neurons are a separate hypothesis.

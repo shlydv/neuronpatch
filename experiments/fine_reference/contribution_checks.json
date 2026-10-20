@@ -1,0 +1,1 @@
+{"status": "passed", "trials": 18, "token_positions": 72, "upstream_commit": "a2489cbac0dfe5a956385734065cfa041384e7d1", "scope": "exact CPU index parity against unchanged upstream scoring routine", "torch": "2.14.1"}
