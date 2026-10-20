@@ -1,0 +1,398 @@
+{
+  "source": "https://huggingface.co/datasets/Rowan/hellaswag",
+  "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+  "source_file": "data/validation-00000-of-00001.parquet",
+  "source_sha256": "899813071e1e95efafec90f856e1987d2150fa4d020fc005df6962c259f660cd",
+  "license": "MIT as listed in the dataset card; preserve upstream attribution",
+  "sampling": "seed 20261022, 8 per answer letter per domain, one per source_id, <=512 tokens",
+  "scope": "64-question generative MCQ diagnostic; NOT the official HellaSwag likelihood score",
+  "use": "evaluation only; no training, neuron selection or hyperparameter selection",
+  "prepared_sha256": "cec695ccbac185d71e448ffcbd7b5cb9ee72d0ee883f05a9d9bf8fe5f64950e4",
+  "preparer_sha256": "648914197b799e980982b46e9beae8e2f25d51bb12f1d4600b3323f757d69129",
+  "selected": [
+    {
+      "id": "hellaswag_val_20271",
+      "source_id": "wikihow~33464",
+      "source_index": 20271,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_42262",
+      "source_id": "wikihow~69516",
+      "source_index": 42262,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_38308",
+      "source_id": "wikihow~63090",
+      "source_index": 38308,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_30023",
+      "source_id": "wikihow~49472",
+      "source_index": 30023,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_5550",
+      "source_id": "wikihow~9221",
+      "source_index": 5550,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_45237",
+      "source_id": "wikihow~74464",
+      "source_index": 45237,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_24447",
+      "source_id": "wikihow~40307",
+      "source_index": 24447,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_10347",
+      "source_id": "wikihow~17038",
+      "source_index": 10347,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_29716",
+      "source_id": "wikihow~49003",
+      "source_index": 29716,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_50111",
+      "source_id": "wikihow~82472",
+      "source_index": 50111,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_32074",
+      "source_id": "wikihow~52875",
+      "source_index": 32074,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_38014",
+      "source_id": "wikihow~62609",
+      "source_index": 38014,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_42819",
+      "source_id": "activitynet~v_WKLLTGbDI7w",
+      "source_index": 42819,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_18495",
+      "source_id": "wikihow~30481",
+      "source_index": 18495,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_3623",
+      "source_id": "activitynet~v_fY2IeYSxY4U",
+      "source_index": 3623,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_13097",
+      "source_id": "wikihow~21679",
+      "source_index": 13097,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_28168",
+      "source_id": "activitynet~v_Cx3QGeQu7xM",
+      "source_index": 28168,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_3857",
+      "source_id": "activitynet~v_i3H8cucgXEc",
+      "source_index": 3857,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_10553",
+      "source_id": "activitynet~v_5JkN8t5k0jU",
+      "source_index": 10553,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_36198",
+      "source_id": "activitynet~v_HwRiUpC5mf4",
+      "source_index": 36198,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_18951",
+      "source_id": "wikihow~31247",
+      "source_index": 18951,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_6330",
+      "source_id": "wikihow~10447",
+      "source_index": 6330,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_7540",
+      "source_id": "wikihow~12453",
+      "source_index": 7540,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_28395",
+      "source_id": "activitynet~v_IlCsGkFnRkc",
+      "source_index": 28395,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_35652",
+      "source_id": "wikihow~58732",
+      "source_index": 35652,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_1278",
+      "source_id": "wikihow~2096",
+      "source_index": 1278,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_7435",
+      "source_id": "wikihow~12271",
+      "source_index": 7435,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_30621",
+      "source_id": "activitynet~v_58he7Xcwfws",
+      "source_index": 30621,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_8627",
+      "source_id": "wikihow~14202",
+      "source_index": 8627,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_34074",
+      "source_id": "wikihow~56125",
+      "source_index": 34074,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_8446",
+      "source_id": "wikihow~13897",
+      "source_index": 8446,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_29972",
+      "source_id": "wikihow~49380",
+      "source_index": 29972,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_9094",
+      "source_id": "activitynet~v_Z1N185E4gsk",
+      "source_index": 9094,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_37283",
+      "source_id": "wikihow~61431",
+      "source_index": 37283,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_39462",
+      "source_id": "activitynet~v_hpZ5XnuiRPw",
+      "source_index": 39462,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_36824",
+      "source_id": "wikihow~60680",
+      "source_index": 36824,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_49817",
+      "source_id": "wikihow~81979",
+      "source_index": 49817,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_13322",
+      "source_id": "wikihow~22083",
+      "source_index": 13322,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_22882",
+      "source_id": "activitynet~v_XiG7rgPoKKI",
+      "source_index": 22882,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_36125",
+      "source_id": "activitynet~v_G71xFbDSSno",
+      "source_index": 36125,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_30680",
+      "source_id": "wikihow~50557",
+      "source_index": 30680,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_30416",
+      "source_id": "activitynet~v_2FcdD7WapJM",
+      "source_index": 30416,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_45976",
+      "source_id": "wikihow~75693",
+      "source_index": 45976,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_5997",
+      "source_id": "activitynet~v_EXxckPa76vc",
+      "source_index": 5997,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_28785",
+      "source_id": "activitynet~v_SfQku6CicrU",
+      "source_index": 28785,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_19782",
+      "source_id": "activitynet~v_s2ra7HNzIF0",
+      "source_index": 19782,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_43311",
+      "source_id": "wikihow~71278",
+      "source_index": 43311,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_13524",
+      "source_id": "activitynet~v_diBZlwUO8rc",
+      "source_index": 13524,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_4252",
+      "source_id": "activitynet~v_mfq5Y7S3BWs",
+      "source_index": 4252,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_39497",
+      "source_id": "wikihow~65014",
+      "source_index": 39497,
+      "domain": "wikihow"
+    },
+    {
+      "id": "hellaswag_val_4430",
+      "source_id": "activitynet~v_oZa-yum3mcU",
+      "source_index": 4430,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_5292",
+      "source_id": "activitynet~v_yxZ4ouqcld4",
+      "source_index": 5292,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_182",
+      "source_id": "activitynet~v_0bosp4-pyTM",
+      "source_index": 182,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_30183",
+      "source_id": "activitynet~v_-0i3BpAQAgE",
+      "source_index": 30183,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_1052",
+      "source_id": "activitynet~v_BnkUgUQBED0",
+      "source_index": 1052,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_35131",
+      "source_id": "activitynet~v_vPhAXENSjiw",
+      "source_index": 35131,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_16501",
+      "source_id": "activitynet~v_ZXlJIrRiXrA",
+      "source_index": 16501,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_19470",
+      "source_id": "activitynet~v_kaRZaCGzNzw",
+      "source_index": 19470,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_28887",
+      "source_id": "activitynet~v_UnOzWl0EGCA",
+      "source_index": 28887,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_11920",
+      "source_id": "activitynet~v_Mcutz37Bowg",
+      "source_index": 11920,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_30884",
+      "source_id": "activitynet~v_8b3ZBE0n3V8",
+      "source_index": 30884,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_30835",
+      "source_id": "activitynet~v_88Mt7VfUQBU",
+      "source_index": 30835,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_30858",
+      "source_id": "activitynet~v_8NcRuVMSQLs",
+      "source_index": 30858,
+      "domain": "activitynet"
+    },
+    {
+      "id": "hellaswag_val_22155",
+      "source_id": "activitynet~v_N-6-MdxRg50",
+      "source_index": 22155,
+      "domain": "activitynet"
+    }
+  ]
+}

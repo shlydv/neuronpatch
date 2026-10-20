@@ -1,0 +1,31 @@
+{
+  "revision_at_packaging": "830c0fef15cfec9c71c9c90aa18844b4cd98b7ea",
+  "source_sha256": {
+    "src/neuronpatch/patch.py": "51535ab282d9ef106c6799bbd93720a632d0f24a63f1957613e817a3877a19c6",
+    "src/neuronpatch/editing.py": "0c5ffee3e968c9aaf9dfef6c074ac8d60b22166acc305254b82ad93fbb2cf5e9",
+    "src/neuronpatch/occurrence.py": "ddca0d90a861e720bd95629887dc0ed927915b8cbb55c48642cd0809fe649253",
+    "src/neuronpatch/__init__.py": "481e1020c907623d6888cf5104d90f4b5ff60dff43691694ebd05ca299f2977e",
+    "src/neuronpatch/activation.py": "3d9eb8a3ecd2339ec70ce293ac34b970a920fd5b8dfc81de1f1d11db652828d5",
+    "src/neuronpatch/contribution.py": "57d2905ffe86cdae4e1b37e402fb0e981ae6ff0ff7e94b23e57fa5aa11643252",
+    "src/neuronpatch/losses.py": "daca2898bd97f92d19b54937ce7c92c834c467cb0f1ff2e82b591fd4f9626238",
+    "src/neuronpatch/selection.py": "a0125d7dde9e296a3da3a4a2b50d9a1eed20e13a61a596c8762f64184f2053f9",
+    "src/neuronpatch/layers.py": "a5911b9404305ac4f6e4db23681fe51553fc8ce8de22f505e3c390c1de880c05",
+    "src/neuronpatch/grouped.py": "05e082b2424f30465f54e62720d9740868a5fa2861bdb1f10b3e9f6b98fe0999",
+    "src/neuronpatch/knowledge.py": "6bbaf20ef311abd99e5c952b042cb702818bcb017b1820fb99c6591ddf7bae0e",
+    "experiments/evidence_pairs/run.py": "2e286a34e2915fef21a6eb21ff084a22c09d2d4687597ad207eff979161cea8f",
+    "experiments/evidence_pairs/preflight.py": "cfc41bfa463f0e4d6366a75db4c706d96d7ebb4324b7a2bc2150c8edfe2a5517",
+    "experiments/evidence_pairs/objective.py": "1af4ede24556054617bc4bb89057272d698bc077f8746fa779606ae88c4c1491",
+    "experiments/evidence_pairs/protocol_v1.json": "969eb1348b234ea6b7a09c9dd51d34f1d7c693341fb86e2466cac7e4d9a26fbc",
+    "experiments/protected_rows/helpers.py": "eaa01a51c8e02e04a1de94dc9ebc7c2d9e6a8eb50dafa6fe7447beafac5917f9",
+    "experiments/real_qa/data.py": "176943948a9129cfd200094397e38479d5dbb33babd1e9f45464196c8bef1a55",
+    "experiments/real_qa/response_loss.py": "fe0c49016af67b073142a6791069502f88d0e01586f00f67b4404df48f5fe8c7"
+  },
+  "data_sha256": {
+    "cal_pairs.json": "9814ed70f60d786737d13852307763021d18447dfe2a9994fcabd410a4fe4269",
+    "train_pairs.json": "23c66724c1b5162f43c7c55dcba9847242ac92c29a69b8c364fdb37e570a15f9",
+    "val_pairs.json": "a2fee0727e852857a715a9cc6592dbbc7dc861d95e3c1fce61d45c447aefe52b",
+    "manifest.json": "553c54e465ed06d30585ae6efcdcdb7a9bd1ed720831a737469943f1286773ad",
+    "hellaswag.json": "cec695ccbac185d71e448ffcbd7b5cb9ee72d0ee883f05a9d9bf8fe5f64950e4"
+  },
+  "scope": "controlled development diagnostic, not a superiority or novelty claim"
+}

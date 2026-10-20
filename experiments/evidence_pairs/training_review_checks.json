@@ -1,5 +1,5 @@
 {
-  "status": "training split checked only; calibration/validation reviews incomplete; no GPU model run",
+  "status": "Historical training-only snapshot; superseded by data_review_checks_v1.json before model use",
   "training_pairs": 64,
   "primary_context_labels": 128,
   "invariant_context_labels": 128,

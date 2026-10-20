@@ -1,0 +1,37 @@
+{
+  "status": "all splits source-reviewed and frozen before any 4B predictions",
+  "independent_human_gold": false,
+  "review_sha256": "d6a7e45030e9fe34034f3f9400f460a12be238fc59fc5eae04b63599dbdd8b76",
+  "manifest_sha256": "553c54e465ed06d30585ae6efcdcdb7a9bd1ed720831a737469943f1286773ad",
+  "splits": {
+    "train": {
+      "pairs": 64,
+      "context_labels": 256,
+      "questions": 128,
+      "articles": 64,
+      "maximum_prompt_tokens": 344,
+      "sha256": "23c66724c1b5162f43c7c55dcba9847242ac92c29a69b8c364fdb37e570a15f9"
+    },
+    "cal": {
+      "pairs": 32,
+      "context_labels": 128,
+      "questions": 64,
+      "articles": 32,
+      "maximum_prompt_tokens": 351,
+      "sha256": "9814ed70f60d786737d13852307763021d18447dfe2a9994fcabd410a4fe4269"
+    },
+    "val": {
+      "pairs": 64,
+      "context_labels": 256,
+      "questions": 128,
+      "articles": 61,
+      "maximum_prompt_tokens": 381,
+      "sha256": "a2fee0727e852857a715a9cc6592dbbc7dc861d95e3c1fce61d45c447aefe52b"
+    }
+  },
+  "distinct_prompt_cache_ids": 640,
+  "article_overlap": false,
+  "unknown_token_id": 51378,
+  "tests": "123 passed, 2 skipped; includes CPU causal alignment, actual sparse/LoRA fit, merged export and exact base restoration",
+  "scope": "Software/data checks, not evidence of quality. CUDA and 4B outcomes pending."
+}

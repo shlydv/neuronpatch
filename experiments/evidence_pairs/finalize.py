@@ -65,13 +65,17 @@ def build_split(candidates, decisions, required, tokenizer):
             or not answer_present(positive["context"], answers[0])
         ):
             raise ValueError("A source-present canonical answer and reviewed aliases required")
-        positive["answers"] = list(dict.fromkeys(answers + positive["answers"]))
+        # Explicit source-only corrections replace bad gold; keep raw upstream
+        # answers separately so a later report can expose both evaluations.
+        positive["answers"] = list(dict.fromkeys(answers))
         positive["answer"] = answers[0]
         answer_token = tokenizer.encode(answers[0], add_special_tokens=False)[0]
         if answer_token == unknown_ids[0]:
             raise ValueError("Answer and UNKNOWN first tokens coincide")
         if any(answer_present(negative["context"], answer) for answer in positive["answers"]):
-            raise ValueError("Reviewed answer alias survives in the missing context")
+            reason = decision.get("surviving_alias_review")
+            if not isinstance(reason, str) or not reason.strip():
+                raise ValueError("Surviving aliases need an explicit relation-level source review")
         for row in (positive, negative):
             row.update(role="primary", context_variant=row["kind"])
             check(row)
@@ -118,6 +122,7 @@ def build_split(candidates, decisions, required, tokenizer):
                 "article": candidate["article"],
                 "candidate_index": index,
                 "original_context_sha256": candidate["original_context_sha256"],
+                "source_answers": candidate["answers"],
                 "answer_token": answer_token,
                 "primary": [positive, negative],
                 "invariant": invariant,

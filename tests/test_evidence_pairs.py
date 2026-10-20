@@ -118,3 +118,24 @@ def test_control_evidence_cannot_be_a_removed_unit(monkeypatch):
     decision["invariant"].update(evidence_unit=data["answer_unit"], answers=["Helena Duarte"])
     with pytest.raises(ValueError, match="retained evidence"):
         build([data], [decision], 1, Tokenizer())
+
+
+def test_reviewed_override_replaces_bad_source_gold(monkeypatch):
+    data, decision, build = reviewed_pair(monkeypatch)
+    data["answers"] = ["wrong source answer"]
+    data["variants"]["answerable"]["answers"] = ["wrong source answer"]
+    decision["answers_override"] = ["Helena Duarte"]
+    result = build([data], [decision], 1, Tokenizer())[0]
+    assert result["primary"][0]["answers"] == ["Helena Duarte"]
+    assert result["source_answers"] == ["wrong source answer"]
+
+
+def test_surviving_alias_requires_explicit_relation_review(monkeypatch):
+    data, decision, build = reviewed_pair(monkeypatch)
+    data["variants"]["missing"]["context"] += " Helena Duarte was mentioned separately."
+    with pytest.raises(ValueError, match="relation-level"):
+        build([data], [decision], 1, Tokenizer())
+    decision["surviving_alias_review"] = (
+        "Name survives, but this sentence does not identify a director."
+    )
+    assert build([data], [decision], 1, Tokenizer())

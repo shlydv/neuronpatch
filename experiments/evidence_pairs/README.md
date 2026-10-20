@@ -53,8 +53,9 @@ and official SQuAD development remain unused for later transfer evaluation.
 **Lexical absence is insufficient.** The [review](review_v1.json) rejects surviving
 aliases, valid inferences, ambiguous dates, false premises and malformed source
 questions. Canonical forms/aliases are corrected from the source before any
-model predictions. Current training curation selects 64 pairs from 100 reviewed
-candidates; one further accepted case is reserve. Review is by the Codex assistant,
+model predictions. Curation selects 64 training, 32 calibration and 64 validation pairs. Every
+preceding candidate has an explicit review decision; unused accepted reserves
+remain excluded. Review is by the Codex assistant,
 not independent human adjudication.
 
 Every selected pair also has a separately checked question about a retained fact.
@@ -63,11 +64,13 @@ updates that react to incomplete-looking passages regardless of the question.
 They are assistant-authored, with explicit source-unit references and canonical
 answers verified to remain in both contexts.
 
-The [training check](training_review_checks.json) verifies 64 articles, 128
-distinct questions and **256 context labels**: 128 primary and 128 retained-fact
-labels. All 256 prompt-cache IDs differ, and the largest prompt is 344 tokens.
-Report this full supervision budget; calling it just 64 examples would hide data.
-Calibration and validation reviews are not complete. No model has run on this data.
+The [complete data check](data_review_checks_v1.json) verifies **256 training
+context labels**, 128 calibration labels and 256 validation labels, with 640 unique
+prompt-cache IDs. Each training pair contributes two primary decisions and two
+retained-fact labels. Report this full supervision budget. The largest prompt is
+381 tokens; article overlap is zero. All review decisions preceded model use.
+Reviewed aliases replace erroneous original gold, which is retained separately.
+Surviving name mentions require explicit review of whether the asked relation survives.
 
 ## Reproduce preparation
 
@@ -100,21 +103,42 @@ cache IDs, token budgets and article separation. It refuses partial curation
 before creating model inputs. Passing data checks is not evidence of model
 quality. The next model run needs a frozen protocol and a baseline with headroom.
 
-## Next empirical comparison
+## Frozen empirical comparison
 
-Finish 32 calibration and 64 validation pairs with retained-fact controls. Freeze
-the data, inspect the baseline and establish whether clear errors leave headroom.
-Compare calibrated no-training bias, ordinary supervised adaptation and the new
-objective with equal data and preservation signals. Keep guided, matched-random
-and suitable low-rank parameterizations separate from the objective comparison.
-Do not credit localization for a benefit caused by more labels, different target
-layers, parameter counts or a different objective.
+[Protocol v1](protocol_v1.json) runs the pinned Qwen3 4B on a standard T4, capped at
+7200 seconds. It first tests the calibrated base on train/calibration only. If
+there are fewer than eight training missing-evidence errors or four calibrated
+calibration errors, it stops before training or exposing validation predictions.
 
-Report raw and calibrated decisions, correction/preservation curves, actual
-answers, retained-fact controls, unrelated utility and full cost. A promising
-development result still needs untouched transfer data, more seeds and another
-model/task. The current protected-row and mathematical results do not meet that
-requirement.
+Otherwise there are 12 fits: guided rows, matched random rows and LoRA, ordinary
+CE versus CE plus the pairwise term, at two shared learning rates. All adapt the
+same up projections at layers 23/29/34, with exactly **184,320 FP32 trainables**:
+24 rows/layer or rank-5 LoRA/layer. Two epochs use the same labels, retained-fact
+CE and maximum response-token reference KL. Guided supports use training-only
+pair-gradient scores and stay identical across both objectives. This is an
+experimental selector, not the published FiNE selector or a NeST reproduction.
+
+**The total CE+pair objective is not bias-invariant**: its added ranking term is,
+but it still contains ordinary CE. Whether the extra term actually reduces the
+refusal shortcut is an empirical question. All evaluation uses merged FP16 base
+weights; row and LoRA artifacts have different factor storage dtypes.
+
+Every method gets the same calibration-only UNKNOWN bias grid. The simple
+no-training baseline gets it too, and the bias is applied only to document QA.
+Calibration actually generates the forced-UNKNOWN branch and verifies the chosen
+setting against direct full generation. It does not assume UNKNOWN terminates.
+No validation or utility results choose rates, supports or thresholds.
+
+[HellaSwag utility manifest](utility_manifest_v1.json) freezes 64 unrelated
+questions, balanced across answer letters and source domains, one per source ID.
+This generative MCQ diagnostic is not the official HellaSwag likelihood metric.
+It supplies no training, replay, neuron-selection or calibration signal.
+
+A promising development result needs at least five percentage points more correct
+missing-evidence answers than the calibrated base, with at least 95% retention of
+baseline-correct supported answers, retained facts and utility. Report every fit,
+actual answers and evidence discrimination. A result here still needs untouched
+transfer, more seeds and another model/task before any robust-library claim.
 
 ## Relevant established work
 

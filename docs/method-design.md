@@ -701,3 +701,19 @@ been launched on the new data. Next: finish source-only review, freeze data and
 a bounded objective/control comparison, then check learnability and transfer.
 Keep calibrated no-training thresholds, equal data, supported/invariant retention,
 random/low-rank controls and actual generated answers explicit.
+
+
+### Evidence-pair v1 frozen comparison (before 4B predictions)
+
+Completed source-only assistant review: 64/32/64 train/calibration/validation
+pairs, four context labels per pair, zero article overlap. Reviewed aliases replace
+bad source gold while preserving originals. Explicit relation review permits a
+name to survive where the asked relation does not. Added 64 held-out generative
+HellaSwag controls with no training/calibration use.
+
+The next test separates parameterization from objective: guided/random sparse
+rows and rank-5 LoRA at the same 184,320 FP32 parameter budget, CE versus CE+pair,
+two rates, common retained-fact CE/max-token KL and calibration-only bias. The
+full objective includes CE and therefore is not bias-invariant. A train/cal-only
+headroom gate stops unnecessary fits; all twelve fits otherwise remain reported.
+CPU integration checks pass (123 tests, two skips). No new quality result yet.
