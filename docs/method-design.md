@@ -607,3 +607,38 @@ If a protected row setting improves real held-out answers, the next comparison
 needs the protection-matched control, matched target modules, explicit parameter
 budgets, equal replay and tuning, and fresh data. This is required to determine
 whether neuron sparsity/selection adds value beyond an existing protection method.
+
+## Eight-fit actual-model pilot completed (2026-10-20)
+
+The [frozen Qwen3-4B pilot](../experiments/protected_rows/colab_v1/REPORT.md)
+completed on a verified Colab T4 after Kaggle remained queued. The queued copy was
+cancelled before executing the byte-identical original payload on Colab. Model,
+runtime packages, protocol and data hashes are preserved. All eight fits execute
+160 steps without scaler skips; all 79 output files were downloaded and verified.
+Saved row supports, shapes, fingerprints and LoRA factors pass the artifact audit.
+
+No setting meets the correction plus 95% preservation rule. At the same missing
+answer score (53/64), protected selected rows retain 29/38 baseline exact-correct
+supported answers, versus 25/38 for weaker unprotected selected rows. This is a
+partial exploratory signal, not established superiority. Weak protection retains
+35/38 but gains only 2/64 missing answers. Strong LoRA gets 56/64 missing answers
+and retains 27/38. Protected random rows do not improve aggregate accuracy.
+
+Finite anchors are insufficient: every family, including ordinary LoRA and
+unprotected rows, preserves the four replayed anchor trajectories exactly, yet
+new correct answers break. The protected span has rank 753/2560 in each target
+layer. Actual answer inspection exposes both genuine unnecessary refusals and
+exact-match artifacts. Of 26 supported baseline exact-match misses, an assistant
+audit judges 19 to have correct content; this is not independent human labeling.
+Some missing labels are explicitly contradicted by their passages. Frozen primary
+scoring remains unchanged. The stronger protected setting repairs no reviewed
+genuine supported-content failure and refuses six of those 19 correct-content
+answers; cosmetic exact-match gains are not evidence of better reasoning.
+
+Before another training experiment, the [dose diagnostic](../experiments/protected_rows/dose_protocol.json)
+is frozen and running on the cached model: scale the unprotected patch to match
+calibration refusal-log-odds change, and compare a constant first-token UNKNOWN
+bias. This separates conditional behavior from a general refusal threshold.
+It also cold-loads both high-dose exported row patches and requires exact
+reproduction of all 320 validation/utility continuations. It uses already exposed
+data and cannot serve as fresh confirmation. No new method is promoted yet.

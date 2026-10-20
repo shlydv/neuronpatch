@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "scope": "tiny Qwen3 runner plumbing, not model-quality evidence",
+  "device": "cuda",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.56.2",
+  "peft": "0.17.1",
+  "families": {
+    "protected": {
+      "allocated_parameters": 384,
+      "effective_linear_dimension": 240,
+      "training_seconds": 0.21221529400008876,
+      "export_seconds": 0.007563341000150103,
+      "optimizer_skips": 0,
+      "artifact_bytes": 1773
+    },
+    "unprotected": {
+      "allocated_parameters": 384,
+      "effective_linear_dimension": 384,
+      "training_seconds": 0.07572589300025356,
+      "export_seconds": 0.004182369999853108,
+      "optimizer_skips": 0,
+      "artifact_bytes": 1777
+    },
+    "random": {
+      "allocated_parameters": 384,
+      "effective_linear_dimension": 240,
+      "training_seconds": 0.07729313199979515,
+      "export_seconds": 0.004626619999726245,
+      "optimizer_skips": 0,
+      "artifact_bytes": 1767
+    },
+    "lora": {
+      "allocated_parameters": 288,
+      "effective_linear_dimension": null,
+      "training_seconds": 0.08461006400011684,
+      "export_seconds": 0.02654953999990539,
+      "optimizer_skips": 0,
+      "artifact_bytes": 7952
+    }
+  },
+  "geometry": {
+    "model.layers.0.mlp.up_proj": {
+      "tokens": 14,
+      "rank": 12,
+      "free_input_directions": 20,
+      "relative_tolerance": 7.105427357601002e-15,
+      "max_input_reconstruction_error": 6.217248937900877e-15,
+      "capture_dtype": "torch.float16",
+      "basis_dtype": "torch.float64",
+      "svd_driver": "gesvd",
+      "svd_seconds": 0.2296006540000235
+    },
+    "model.layers.1.mlp.up_proj": {
+      "tokens": 14,
+      "rank": 12,
+      "free_input_directions": 20,
+      "relative_tolerance": 7.105427357601002e-15,
+      "max_input_reconstruction_error": 3.552713678800501e-15,
+      "capture_dtype": "torch.float16",
+      "basis_dtype": "torch.float64",
+      "svd_driver": "gesvd",
+      "svd_seconds": 0.002472742999998445
+    },
+    "model.layers.2.mlp.up_proj": {
+      "tokens": 14,
+      "rank": 12,
+      "free_input_directions": 20,
+      "relative_tolerance": 7.105427357601002e-15,
+      "max_input_reconstruction_error": 5.329070518200751e-15,
+      "capture_dtype": "torch.float16",
+      "basis_dtype": "torch.float64",
+      "svd_driver": "gesvd",
+      "svd_seconds": 0.0022387499998330895
+    }
+  },
+  "base_weights_and_generation": "exactly restored after every family",
+  "source_sha256": {
+    "preflight.py": "172cae879b87d07d843220cf1ed918cf150fcdd144d71812a85c6c0f44d6cf72",
+    "prototype.py": "2824c6eef850c5b31cd715e15ca66225860ec4692fa31dbbe1a4b9373b21e34d",
+    "run.py": "37bbd4dbdd0f350d23cc8e7020fb5d938fdfd9b47909438889a801b4393028fc",
+    "helpers.py": "eaa01a51c8e02e04a1de94dc9ebc7c2d9e6a8eb50dafa6fe7447beafac5917f9"
+  }
+}

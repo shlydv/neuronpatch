@@ -11,6 +11,12 @@ gets the requested prefix on 15/16 original prompts versus 0/16 for random neuro
 but only 5/16 rewordings. We have not demonstrated an improved method or a
 recommended recipe. See the [evidence ledger](docs/method-design.md).
 
+The [first protected-row Qwen3-4B comparison](experiments/protected_rows/colab_v1/REPORT.md)
+is complete: protection shows a partial correction/preservation trade-off improvement,
+but all eight settings fail the declared joint success criteria. Output review finds
+real unnecessary refusals as well as noisy exact-match labels. The experimental
+constraint is not part of the public API or a recommended behavior recipe.
+
 ## Direction
 
 The intended workflow is **select → train → evaluate target and preserved behavior

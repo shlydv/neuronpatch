@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "scope": "Saved-artifact consistency; not an independent model forward-pass reproduction",
+  "row_base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "all_first_step_losses_exact": [
+    1.28635573387146,
+    0.00025280966656282544
+  ],
+  "lora_first_step_gradient_norm_exact": 0.7544746398925781,
+  "lora_target_metadata": "PEFT saved common up_proj suffix; all 36 tensor paths verified",
+  "peft_warning": "Second LoRA fit warns about a retained peft_config attribute. It has the expected 72 saved factor tensors and 442368 scalars, with identical initial losses and gradient norm. Source overwrites the same default config; no extra adapter parameters are present in the saved artifact.",
+  "fits": {
+    "unprotected-0": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "delta_frobenius_norm": 2.3629520249688087,
+      "saved_scalars": 245760
+    },
+    "protected-0": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "delta_frobenius_norm": 2.6876959967260126,
+      "saved_scalars": 245760
+    },
+    "random-0": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "delta_frobenius_norm": 2.500485815093562,
+      "saved_scalars": 245760
+    },
+    "lora-0": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "saved_scalars": 442368
+    },
+    "unprotected-1": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "delta_frobenius_norm": 6.055093124497993,
+      "saved_scalars": 245760
+    },
+    "protected-1": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "delta_frobenius_norm": 7.362533146940039,
+      "saved_scalars": 245760
+    },
+    "random-1": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "delta_frobenius_norm": 8.346577497039428,
+      "saved_scalars": 245760
+    },
+    "lora-1": {
+      "steps": 160,
+      "optimizer_skips": 0,
+      "anchor_trajectories": "exact",
+      "saved_scalars": 442368
+    }
+  },
+  "source_sha256": "80b2e6409a01fc2ca9fe200f555c4b31d0abf388647b315fb2334f5becb0f422"
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "5728fae2af94a219006a9eaf",
+    "kind": "answerable",
+    "article": "Alaska",
+    "text": "southeast, the Gulf Coast and the Alaska Peninsula",
+    "answers": [
+      "southeast, the Gulf Coast and the Alaska Peninsula"
+    ],
+    "generated_token_ids": [
+      82,
+      283,
+      14759,
+      11,
+      279,
+      26847,
+      15994,
+      323,
+      279,
+      27267,
+      49614,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5726adcd5951b619008f79fb",
+    "kind": "answerable",
+    "article": "Pesticide",
+    "text": "persistence",
+    "answers": [
+      "persistence"
+    ],
+    "generated_token_ids": [
+      79,
+      8026,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5733fbd54776f41900661643",
+    "kind": "answerable",
+    "article": "Punjab,_Pakistan",
+    "text": "Takshashila University",
+    "answers": [
+      "Takshashila University"
+    ],
+    "generated_token_ids": [
+      51,
+      585,
+      927,
+      988,
+      10524,
+      3822,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "571010b6a58dae1900cd6854",
+    "kind": "answerable",
+    "article": "Capital_punishment_in_the_United_States",
+    "text": "Byron White",
+    "answers": [
+      "Byron White"
+    ],
+    "generated_token_ids": [
+      1359,
+      2248,
+      5807,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  }
+]

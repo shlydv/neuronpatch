@@ -1,0 +1,35 @@
+{
+  "model.layers.23.mlp.up_proj": {
+    "tokens": 773,
+    "rank": 753,
+    "free_input_directions": 1807,
+    "relative_tolerance": 5.684341886080801e-13,
+    "max_input_reconstruction_error": 1.4210854715202004e-13,
+    "capture_dtype": "torch.float16",
+    "basis_dtype": "torch.float64",
+    "svd_driver": "gesvd",
+    "svd_seconds": 0.6476997889999438
+  },
+  "model.layers.29.mlp.up_proj": {
+    "tokens": 773,
+    "rank": 753,
+    "free_input_directions": 1807,
+    "relative_tolerance": 5.684341886080801e-13,
+    "max_input_reconstruction_error": 1.2789769243681803e-13,
+    "capture_dtype": "torch.float16",
+    "basis_dtype": "torch.float64",
+    "svd_driver": "gesvd",
+    "svd_seconds": 0.4053172399999312
+  },
+  "model.layers.34.mlp.up_proj": {
+    "tokens": 773,
+    "rank": 753,
+    "free_input_directions": 1807,
+    "relative_tolerance": 5.684341886080801e-13,
+    "max_input_reconstruction_error": 4.689582056016661e-13,
+    "capture_dtype": "torch.float16",
+    "basis_dtype": "torch.float64",
+    "svd_driver": "gesvd",
+    "svd_seconds": 0.41029603800006953
+  }
+}

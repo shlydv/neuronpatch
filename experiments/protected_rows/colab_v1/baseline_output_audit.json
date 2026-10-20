@@ -1,0 +1,519 @@
+{
+  "reviewer": "Codex assistant; not independent human adjudication",
+  "reviewed_utc": "2026-10-20T11:53:34.068129+00:00",
+  "scope": "Secondary baseline-only qualitative audit of all 48 primary-EM misses. No edited predictions were inspected for these judgments. Primary frozen scores and promotion criteria remain unchanged.",
+  "baseline_predictions_sha256": "b85bf910f9d463f030dcecd93eb9b4f65e8de5dd2185962883178df9576aa7a3",
+  "data_manifest_sha256": "548e6326e97427be29f2cb88494f1e02858c1501813454f0747239de30756c50",
+  "primary_baseline": {
+    "supported_correct": 38,
+    "supported_n": 64,
+    "missing_correct": 42,
+    "missing_n": 64
+  },
+  "counts_by_kind": {
+    "answerable": {
+      "correct_content": 19,
+      "borderline": 3,
+      "real_error": 4
+    },
+    "missing": {
+      "supported_by_inference": 2,
+      "real_error": 12,
+      "ambiguous_annotation": 6,
+      "explicit_support_despite_missing_label": 2
+    }
+  },
+  "interpretation": [
+    "19 supported primary misses have correct content but different wording; 3 are borderline and 4 have content/refusal problems under this assistant review.",
+    "At least two missing-labeled questions have explicit support. Two more support reasonable inference, including a percentage complement not present as a literal span. Other cases involve malformed questions or ambiguous false-premise policies.",
+    "Exact-answer improvement can reflect formatting or suppressing a reasonable answer. Conditional retention over only the 38 base-EM-correct supported cases can miss damage to another 19 semantically correct baseline answers.",
+    "Do not promote a method as improved grounding on the primary score alone. Audit every changed answer and seek independent adjudication/fresh curated evidence before a broad claim.",
+    "The 42 primary-correct missing outputs were not semantically adjudicated in this pass; this is not a complete relabeling or an unbiased dataset noise estimate."
+  ],
+  "cases": [
+    {
+      "id": "57284f5f3acd2414000df8ed",
+      "kind": "answerable",
+      "question": "What has the 'war on terror' done to the US's international image?",
+      "gold": [
+        "damaged"
+      ],
+      "baseline_output": "damaged America's image in most of the world",
+      "assessment": "correct_content",
+      "reason": "Correct source-grounded answer with extra words."
+    },
+    {
+      "id": "5725cfda38643c19005acd72",
+      "kind": "answerable",
+      "question": "When must the trust resources be spent",
+      "gold": [
+        "spend all of [the Trust's] resources within 20 years after Bill's and Melinda's deaths"
+      ],
+      "baseline_output": "20 years after Bill's and Melinda's deaths",
+      "assessment": "borderline",
+      "reason": "Correct deadline endpoint, but omits within; preserve the precision caveat."
+    },
+    {
+      "id": "571b058d9499d21900609bd8",
+      "kind": "answerable",
+      "question": "How much of yearly acquired asphalt is reclaimed?",
+      "gold": [
+        "99%"
+      ],
+      "baseline_output": "more than 99%",
+      "assessment": "correct_content",
+      "reason": "More than 99% is faithful to the passage; the gold span drops the qualifier."
+    },
+    {
+      "id": "570b2bacec8fbc190045b8a7",
+      "kind": "answerable",
+      "question": "During what 32-month later period was the 360 the best selling console?",
+      "gold": [
+        "January 2011 and October 2013"
+      ],
+      "baseline_output": "January 2011 to October 2013",
+      "assessment": "correct_content",
+      "reason": "To versus and expresses the same date interval."
+    },
+    {
+      "id": "57305b0b069b5314008320a8",
+      "kind": "answerable",
+      "question": "How do translators preserve context?",
+      "gold": [
+        "reproducing the original order of sememes"
+      ],
+      "baseline_output": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+      "assessment": "correct_content",
+      "reason": "Correct explanation, but violates the requested shortest-span format."
+    },
+    {
+      "id": "57283bec2ca10214002da13c",
+      "kind": "answerable",
+      "question": "What group operations must occur for group law and topology to integrate well?",
+      "gold": [
+        "continuous functions"
+      ],
+      "baseline_output": "The group operations that must occur are g • h and g−1.",
+      "assessment": "real_error",
+      "reason": "Lists multiplication/inversion but misses the required continuity property; question is awkward."
+    },
+    {
+      "id": "57340e5dd058e614000b68bd",
+      "kind": "answerable",
+      "question": "Despite some concessions, what act did the Commission ultimately state that Sudan had not pursued?",
+      "gold": [
+        "genocidal policy"
+      ],
+      "baseline_output": "genocide",
+      "assessment": "borderline",
+      "reason": "Condenses no policy of genocide into genocide; policy scope is lost."
+    },
+    {
+      "id": "5727d0feff5b5019007d95ec",
+      "kind": "answerable",
+      "question": "What is another term for rustication?",
+      "gold": [
+        "suspension"
+      ],
+      "baseline_output": "Another term for rustication is suspension.",
+      "assessment": "correct_content",
+      "reason": "Correct definition in a full sentence."
+    },
+    {
+      "id": "57321d6de17f3d14004226aa",
+      "kind": "answerable",
+      "question": "What prominent ex-speaker was nominated for minority role in 1875?",
+      "gold": [
+        "James Blaine"
+      ],
+      "baseline_output": "James Blaine of Maine",
+      "assessment": "correct_content",
+      "reason": "Correct person with an additional source-grounded location."
+    },
+    {
+      "id": "570e11f30dc6ce1900204db9",
+      "kind": "answerable",
+      "question": "What is the amount of precipitation per year in the interior of Antarctica?",
+      "gold": [
+        "20 mm"
+      ],
+      "baseline_output": "20 mm (0.8 in) per year",
+      "assessment": "correct_content",
+      "reason": "Correct amount with an equivalent unit and time period."
+    },
+    {
+      "id": "5733fcd5d058e614000b6718",
+      "kind": "answerable",
+      "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+      "gold": [
+        "religious group"
+      ],
+      "baseline_output": "religious group membership",
+      "assessment": "correct_content",
+      "reason": "Correct category with the repeated word membership."
+    },
+    {
+      "id": "5727ec8b2ca10214002d99cd",
+      "kind": "answerable",
+      "question": "What is Norbulingka?",
+      "gold": [
+        "former summer residence of the Dalai Lama"
+      ],
+      "baseline_output": "Norbulingka is the former summer residence of the Dalai Lama.",
+      "assessment": "correct_content",
+      "reason": "Correct definition in a full sentence."
+    },
+    {
+      "id": "57344599acc1501500babd63",
+      "kind": "answerable",
+      "question": "What is undisputed about early humans?",
+      "gold": [
+        "were hunters"
+      ],
+      "baseline_output": "That early humans were hunters.",
+      "assessment": "correct_content",
+      "reason": "Correct claim in a full sentence."
+    },
+    {
+      "id": "57324734e99e3014001e6630",
+      "kind": "answerable",
+      "question": "Is the minority leader's strategic role always consitent?",
+      "gold": [
+        "will vary depending on whether the President is of the same party or the other party"
+      ],
+      "baseline_output": "No",
+      "assessment": "correct_content",
+      "reason": "No correctly answers the yes/no question, though it is not the annotated extractive span."
+    },
+    {
+      "id": "5730192604bcaa1900d77187",
+      "kind": "answerable",
+      "question": "What was the most recent glaciation that has shaped the British Isles?",
+      "gold": [
+        "Devensian"
+      ],
+      "baseline_output": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+      "assessment": "correct_content",
+      "reason": "Correct named glaciation in a full sentence."
+    },
+    {
+      "id": "56f89d879b226e1400dd0cc5",
+      "kind": "answerable",
+      "question": "What wish of Virgil's did Lucius Varius Rufus and Plotius Tucca disregard?",
+      "gold": [
+        "the poem be burned"
+      ],
+      "baseline_output": "Virgil's wish that the poem be burned.",
+      "assessment": "correct_content",
+      "reason": "Correct wish with an introductory attribution."
+    },
+    {
+      "id": "571b6a2f9499d21900609ca1",
+      "kind": "answerable",
+      "question": "How must asphalt be treated to be workable?",
+      "gold": [
+        "heated or diluted"
+      ],
+      "baseline_output": "Asphalt must be heated or diluted to a point where it becomes workable.",
+      "assessment": "correct_content",
+      "reason": "Correct treatment with an explanatory suffix."
+    },
+    {
+      "id": "570e1f340dc6ce1900204dcd",
+      "kind": "answerable",
+      "question": "Where is the largest neutrino telescope on Earth?",
+      "gold": [
+        "Amundsen–Scott station."
+      ],
+      "baseline_output": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen–Scott South Pole Station.",
+      "assessment": "correct_content",
+      "reason": "Correct telescope location with extra source-grounded detail."
+    },
+    {
+      "id": "572664c9f1498d1400e8de1f",
+      "kind": "answerable",
+      "question": "Where did florida rank in population growth ",
+      "gold": [
+        "Florida was the seventh fastest-growing state"
+      ],
+      "baseline_output": "seventh",
+      "assessment": "correct_content",
+      "reason": "Seventh directly answers the ranking question; the gold is a longer sentence."
+    },
+    {
+      "id": "5727d7c14b864d1900163e4a",
+      "kind": "answerable",
+      "question": "When did the British and Russian empires begin encroaching on Tibet?",
+      "gold": [
+        "19th century"
+      ],
+      "baseline_output": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+      "assessment": "real_error",
+      "reason": "Declines an intended answer associated with the 19th-century context; the word began makes the temporal claim less explicit."
+    },
+    {
+      "id": "572674b8f1498d1400e8e035",
+      "kind": "answerable",
+      "question": "How severe is Florida's Disenfranchisement law ",
+      "gold": [
+        "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+      ],
+      "baseline_output": "more severe than most European nations or other American states",
+      "assessment": "correct_content",
+      "reason": "Correct comparison without the repeated subject."
+    },
+    {
+      "id": "572808464b864d1900164293",
+      "kind": "answerable",
+      "question": "How is the latin small letter e represented in Unicode?",
+      "gold": [
+        "U+0065"
+      ],
+      "baseline_output": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+      "assessment": "real_error",
+      "reason": "Appends the combining acute accent to plain e, thereby describing e-acute; not merely harmless verbosity."
+    },
+    {
+      "id": "570b241bec8fbc190045b85f",
+      "kind": "answerable",
+      "question": "To what time did the Council require the date of the vernal equinox to be set?",
+      "gold": [
+        "325"
+      ],
+      "baseline_output": "the time of the First Council of Nicaea in 325",
+      "assessment": "correct_content",
+      "reason": "Correct date with additional identifying context."
+    },
+    {
+      "id": "56fa7a6cf34c681400b0c0d8",
+      "kind": "answerable",
+      "question": "Where was the FIFA World Cup able to be watched in HDTV?",
+      "gold": [
+        "8 cinemas in Italy and 2 in Spain"
+      ],
+      "baseline_output": "Italy and Spain",
+      "assessment": "borderline",
+      "reason": "Names the countries but omits the cinema-only venues; completeness is debatable."
+    },
+    {
+      "id": "572a54e07a1753140016aeb4",
+      "kind": "answerable",
+      "question": "Why did the CTRC send out a bulletin to broadcasters?",
+      "gold": [
+        "reminding broadcasters that analog transmitters had to be shut off by the deadline in mandatory markets"
+      ],
+      "baseline_output": "UNKNOWN",
+      "assessment": "real_error",
+      "reason": "Unnecessary UNKNOWN; the bulletin purpose is explicit despite CTRC/CRTC transposition."
+    },
+    {
+      "id": "56de62fc4396321400ee286b",
+      "kind": "answerable",
+      "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+      "gold": [
+        "30"
+      ],
+      "baseline_output": "30 lines",
+      "assessment": "correct_content",
+      "reason": "Correct number with its unit."
+    },
+    {
+      "id": "5ad24569d7d075001a428a9a",
+      "kind": "missing",
+      "question": "What school of thought saw emotion as not an impediment to virtue?",
+      "gold": [],
+      "baseline_output": "Aristotelian school",
+      "assessment": "supported_by_inference",
+      "reason": "The Aristotelian view treats emotion as essential to virtue; the response is reasonable, although not a literal statement of not an impediment."
+    },
+    {
+      "id": "5a79ea1b17ab25001a8a01b2",
+      "kind": "missing",
+      "question": "When a winner must not be decided what type of match is this?",
+      "gold": [],
+      "baseline_output": "knockout competitions",
+      "assessment": "real_error",
+      "reason": "Knockout competitions explicitly require a winner, opposite to the question premise."
+    },
+    {
+      "id": "5a832af9e60761001a2eb49a",
+      "kind": "missing",
+      "question": "The Coldfield Birmingham transmitting station helped cover what area in 1949?",
+      "gold": [],
+      "baseline_output": "Birmingham",
+      "assessment": "ambiguous_annotation",
+      "reason": "The question misnames Sutton Coldfield; Birmingham is explicit if that malformed station name is interpreted naturally."
+    },
+    {
+      "id": "5a837712e60761001a2eb743",
+      "kind": "missing",
+      "question": "How often is a broadcast licence fee paid by viewers of BBC domestic channels?",
+      "gold": [],
+      "baseline_output": "annually",
+      "assessment": "explicit_support_despite_missing_label",
+      "reason": "The passage explicitly says the TV licence fee is paid annually. UNKNOWN would discard an available answer."
+    },
+    {
+      "id": "5a6969185ce1a5001a9695ff",
+      "kind": "missing",
+      "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+      "gold": [],
+      "baseline_output": "the group",
+      "assessment": "ambiguous_annotation",
+      "reason": "The answer the group is explicit if ITCY is treated as the obvious ICTY transposition; literal entity matching gives a different policy."
+    },
+    {
+      "id": "5a69b9465ce1a5001a9696c0",
+      "kind": "missing",
+      "question": "Despite some concessions, what act did the Commission ultimately state that the UN had not pursued?",
+      "gold": [],
+      "baseline_output": "genocide",
+      "assessment": "real_error",
+      "reason": "Changes Sudan into the UN; the report does not say the UN did not pursue genocide."
+    },
+    {
+      "id": "5ad21fd6d7d075001a4284ac",
+      "kind": "missing",
+      "question": "What is the longest duration a student must sign the Tardy Book?",
+      "gold": [],
+      "baseline_output": "typically three days",
+      "assessment": "real_error",
+      "reason": "Typical duration is given, not the requested longest duration."
+    },
+    {
+      "id": "5ad242ecd7d075001a4289b2",
+      "kind": "missing",
+      "question": "Where on Antarctica is the ppercipitation as low as .8 mm?",
+      "gold": [],
+      "baseline_output": "The dry valleys",
+      "assessment": "real_error",
+      "reason": "Confuses 0.8 inches/20 mm with 0.8 mm and invents its location."
+    },
+    {
+      "id": "5a7e641f48f7d9001a06369f",
+      "kind": "missing",
+      "question": "What did Virgil write about the most?",
+      "gold": [],
+      "baseline_output": "Eclogues",
+      "assessment": "real_error",
+      "reason": "A work title does not answer the most frequent topic, which is not specified."
+    },
+    {
+      "id": "5a69aad35ce1a5001a969670",
+      "kind": "missing",
+      "question": "What other factor along with the forceful relocation of political opponents does the the CPPCG cite in the interpretation of non-killings?",
+      "gold": [],
+      "baseline_output": "preventing births",
+      "assessment": "ambiguous_annotation",
+      "reason": "Question substitutes political opponents for children in a false premise; preventing births is still a listed factor. Whether to answer the remaining slot or reject the premise must be explicit."
+    },
+    {
+      "id": "5ad00fbf77cf76001a68685d",
+      "kind": "missing",
+      "question": "Where does the Dalai Lama live in the summer?",
+      "gold": [],
+      "baseline_output": "Norbulingka",
+      "assessment": "real_error",
+      "reason": "The passage identifies a former residence, not the current summer residence."
+    },
+    {
+      "id": "5ad3c558604f3c001a3fefea",
+      "kind": "missing",
+      "question": " HDTV increases the effective image resolution by using what?",
+      "gold": [],
+      "baseline_output": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+      "assessment": "explicit_support_despite_missing_label",
+      "reason": "The answer repeats the stated resolution mechanism: handling 16:9 images without letterboxing/stretching."
+    },
+    {
+      "id": "5ace521a32bba1001ae4a29d",
+      "kind": "missing",
+      "question": "What kind of activity would require the use of fire for early humans?",
+      "gold": [],
+      "baseline_output": "control of fire",
+      "assessment": "real_error",
+      "reason": "Repeats control of fire without identifying a source-supported activity requiring fire."
+    },
+    {
+      "id": "5acd89d907355d001abf4658",
+      "kind": "missing",
+      "question": "When did sea levels rise to prehistoric levels?",
+      "gold": [],
+      "baseline_output": "some 4,000 to 5,000 years ago",
+      "assessment": "real_error",
+      "reason": "The passage dates reaching current sea levels, not the unspecified prehistoric levels in the question."
+    },
+    {
+      "id": "5acdfa8d32bba1001ae49927",
+      "kind": "missing",
+      "question": "What percentage of the RSFSR wasn't made up of plains?",
+      "gold": [],
+      "baseline_output": "30%",
+      "assessment": "supported_by_inference",
+      "reason": "30% follows from roughly 70% plains, with an approximation caveat. There is no literal 30% answer span; this distinguishes reasoning from extractive-policy compliance."
+    },
+    {
+      "id": "5ad2d28ed7d075001a42a389",
+      "kind": "missing",
+      "question": "What was built 2 mi below the Amundsen-Scott station?",
+      "gold": [],
+      "baseline_output": "the largest neutrino telescope in the world",
+      "assessment": "real_error",
+      "reason": "The question changes 2 km/1.2 mi into 2 mi; the location qualifier is unsupported."
+    },
+    {
+      "id": "5ace8a0432bba1001ae4a9d0",
+      "kind": "missing",
+      "question": "What type of creature are most earthworms?",
+      "gold": [],
+      "baseline_output": "Most earthworms are full hermaphrodites.",
+      "assessment": "ambiguous_annotation",
+      "reason": "Most mature clitellates versus most earthworms changes scope/age. The reproduction description supports a plausible hermaphroditism inference but not a clean literal statement."
+    },
+    {
+      "id": "5acd901707355d001abf4728",
+      "kind": "missing",
+      "question": "What was the population of Florida in 2014?",
+      "gold": [],
+      "baseline_output": "19.7 million",
+      "assessment": "real_error",
+      "reason": "Drops exceeded and the December timing, turning a lower bound into an exact population."
+    },
+    {
+      "id": "5acd22b507355d001abf3647",
+      "kind": "missing",
+      "question": "What prevents redundancy in the ways you can make one character?",
+      "gold": [],
+      "baseline_output": "canonical equivalence",
+      "assessment": "ambiguous_annotation",
+      "reason": "Canonical equivalence deals with multiple encodings but does not literally prevent redundant representations; the wording is underspecified."
+    },
+    {
+      "id": "5acd7ee207355d001abf4477",
+      "kind": "missing",
+      "question": "One taps on the transformer can supply what?",
+      "gold": [],
+      "baseline_output": "One tap on the transformer can supply a range of voltages.",
+      "assessment": "real_error",
+      "reason": "A range comes from multiple transformer taps, not one tap."
+    },
+    {
+      "id": "5a7e3ecd70df9f001a875639",
+      "kind": "missing",
+      "question": "What were poems in East Asia collected as?",
+      "gold": [],
+      "baseline_output": "poems",
+      "assessment": "real_error",
+      "reason": "The source says songs were collected as poems; the question reverses the relation."
+    },
+    {
+      "id": "5acda1b107355d001abf4886",
+      "kind": "missing",
+      "question": "Both the United Kingdom and Ireland are part of what area?",
+      "gold": [],
+      "baseline_output": "European Union (EU)",
+      "assessment": "ambiguous_annotation",
+      "reason": "Both entities are explicitly EU members in the historical passage and the Common Travel Area is also described. The generic word area makes the intended rejection unclear."
+    }
+  ]
+}

@@ -1,0 +1,700 @@
+[
+  {
+    "id": "57278cb9f1498d1400e8fbb3",
+    "kind": "answerable",
+    "article": "Supreme_court",
+    "text": "constitutional court and court of last resort",
+    "answers": [
+      "cases that may be unconstitutional or final habeas corpus pleads for criminal cases"
+    ],
+    "generated_token_ids": [
+      48574,
+      5473,
+      323,
+      5473,
+      315,
+      1537,
+      21788,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5a7fb0f18f0597001ac0007e",
+    "kind": "missing",
+    "article": "Supreme_court",
+    "text": "Supremo Tribunal Federal",
+    "answers": [],
+    "generated_token_ids": [
+      10048,
+      1826,
+      78,
+      56971,
+      12137,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "572cb5de750c471900ed4ce1",
+    "kind": "answerable",
+    "article": "Law_of_the_United_States",
+    "text": "1938",
+    "answers": [
+      "1938"
+    ],
+    "generated_token_ids": [
+      16,
+      24,
+      18,
+      23,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a79e60217ab25001a8a018d",
+    "kind": "missing",
+    "article": "Law_of_the_United_States",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5726d39add62a815002e9194",
+    "kind": "answerable",
+    "article": "Molotov%E2%80%93Ribbentrop_Pact",
+    "text": "Polish officials feared that once the Red Army entered their territories, it might never leave.",
+    "answers": [
+      "once the Red Army entered their territories, it might never leave."
+    ],
+    "generated_token_ids": [
+      14658,
+      812,
+      7359,
+      37469,
+      429,
+      3055,
+      279,
+      3731,
+      13011,
+      10636,
+      862,
+      38443,
+      11,
+      432,
+      2578,
+      2581,
+      5274,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.8333333333333334,
+    "abstained": false
+  },
+  {
+    "id": "5ad27e9ad7d075001a42971c",
+    "kind": "missing",
+    "article": "Molotov%E2%80%93Ribbentrop_Pact",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572cbbbb750c471900ed4d07",
+    "kind": "answerable",
+    "article": "Law_of_the_United_States",
+    "text": "maintain most of their civil procedure laws in the form of codified statutes enacted by the state legislature",
+    "answers": [
+      "codified statutes enacted by the state legislature"
+    ],
+    "generated_token_ids": [
+      66813,
+      466,
+      1429,
+      315,
+      862,
+      8267,
+      10324,
+      6872,
+      304,
+      279,
+      1352,
+      315,
+      20329,
+      1870,
+      61182,
+      43877,
+      553,
+      279,
+      1584,
+      38756,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.5454545454545454,
+    "abstained": false
+  },
+  {
+    "id": "5a79f5ca17ab25001a8a021c",
+    "kind": "missing",
+    "article": "Law_of_the_United_States",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5728fae2af94a219006a9eaf",
+    "kind": "answerable",
+    "article": "Alaska",
+    "text": "southeast, the Gulf Coast and the Alaska Peninsula",
+    "answers": [
+      "southeast, the Gulf Coast and the Alaska Peninsula"
+    ],
+    "generated_token_ids": [
+      82,
+      283,
+      14759,
+      11,
+      279,
+      26847,
+      15994,
+      323,
+      279,
+      27267,
+      49614,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad41129604f3c001a4001f4",
+    "kind": "missing",
+    "article": "Alaska",
+    "text": "Inter-Island Ferry Authority",
+    "answers": [],
+    "generated_token_ids": [
+      3306,
+      12,
+      3872,
+      1933,
+      78449,
+      21914,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5726adcd5951b619008f79fb",
+    "kind": "answerable",
+    "article": "Pesticide",
+    "text": "persistence",
+    "answers": [
+      "persistence"
+    ],
+    "generated_token_ids": [
+      79,
+      8026,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a711f1d0efcfe001a8afd5c",
+    "kind": "missing",
+    "article": "Pesticide",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5728cd713acd2414000dfee6",
+    "kind": "answerable",
+    "article": "Asthma",
+    "text": "COPD, congestive heart failure, airway masses, and drug-induced coughing due to ACE inhibitors.",
+    "answers": [
+      "COPD, congestive heart failure, airway masses, as well as drug-induced coughing due to ACE inhibitors"
+    ],
+    "generated_token_ids": [
+      34,
+      3067,
+      35,
+      11,
+      43285,
+      533,
+      4746,
+      7901,
+      11,
+      3720,
+      3117,
+      31638,
+      11,
+      323,
+      5506,
+      37873,
+      39600,
+      287,
+      4152,
+      311,
+      40806,
+      67542,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.8571428571428571,
+    "abstained": false
+  },
+  {
+    "id": "5a501ebc99b975001ade80db",
+    "kind": "missing",
+    "article": "Asthma",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570c2effec8fbc190045bd55",
+    "kind": "answerable",
+    "article": "Federal_Bureau_of_Investigation",
+    "text": "National Crime Syndicate",
+    "answers": [
+      "National Crime Syndicate"
+    ],
+    "generated_token_ids": [
+      30812,
+      23900,
+      41219,
+      8463,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad37ff4604f3c001a3fe45c",
+    "kind": "missing",
+    "article": "Federal_Bureau_of_Investigation",
+    "text": "Before the RICO Act took effect, the FBI created the Top Hoodlum Program to gather information on mobsters and report it to Washington for centralized intelligence collection",
+    "answers": [],
+    "generated_token_ids": [
+      10227,
+      279,
+      431,
+      32650,
+      3218,
+      3867,
+      2456,
+      11,
+      279,
+      13839,
+      3465,
+      279,
+      6909,
+      35343,
+      75,
+      372,
+      6687,
+      311,
+      9567,
+      1995,
+      389,
+      12595,
+      12570,
+      323,
+      1895,
+      432,
+      311,
+      6515,
+      369,
+      57883,
+      11229,
+      4426
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56e3a830e375b8140053a3d9",
+    "kind": "answerable",
+    "article": "Estonian_language",
+    "text": "Hungarian and the Sami languages",
+    "answers": [
+      "Hungarian and to the Sami languages"
+    ],
+    "generated_token_ids": [
+      89375,
+      8821,
+      323,
+      279,
+      8224,
+      72,
+      15459,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.8888888888888888,
+    "abstained": false
+  },
+  {
+    "id": "5acd277607355d001abf371d",
+    "kind": "missing",
+    "article": "Estonian_language",
+    "text": "Finnish, Karelian, and other nearby languages",
+    "answers": [],
+    "generated_token_ids": [
+      37,
+      6130,
+      812,
+      11,
+      95231,
+      91798,
+      11,
+      323,
+      1008,
+      14046,
+      15459,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5733f6a24776f419006615d3",
+    "kind": "answerable",
+    "article": "Punjab,_Pakistan",
+    "text": "wheat and cotton",
+    "answers": [
+      "wheat and cotton"
+    ],
+    "generated_token_ids": [
+      86,
+      19963,
+      323,
+      23522,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a68b4e08476ee001a58a774",
+    "kind": "missing",
+    "article": "Punjab,_Pakistan",
+    "text": "4",
+    "answers": [],
+    "generated_token_ids": [
+      19,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "572658abdd62a815002e824d",
+    "kind": "answerable",
+    "article": "Poultry",
+    "text": "The eggs are laid on the floor of the cage and roll into troughs outside for ease of collection.",
+    "answers": [
+      "The eggs are laid on the floor of the cage and roll into troughs outside for ease of collection"
+    ],
+    "generated_token_ids": [
+      785,
+      18805,
+      525,
+      17113,
+      389,
+      279,
+      6422,
+      315,
+      279,
+      35360,
+      323,
+      6502,
+      1119,
+      77965,
+      82,
+      4889,
+      369,
+      14219,
+      315,
+      4426,
+      13,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a860c4bb4e223001a8e73ff",
+    "kind": "missing",
+    "article": "Poultry",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5726a7695951b619008f7938",
+    "kind": "answerable",
+    "article": "Pesticide",
+    "text": "Push-Pull",
+    "answers": [
+      "Push-Pull"
+    ],
+    "generated_token_ids": [
+      16644,
+      9299,
+      617,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a711c850efcfe001a8afd46",
+    "kind": "missing",
+    "article": "Pesticide",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57101978b654c5140001f7e9",
+    "kind": "answerable",
+    "article": "Capital_punishment_in_the_United_States",
+    "text": "47 percent",
+    "answers": [
+      "47"
+    ],
+    "generated_token_ids": [
+      19,
+      22,
+      3266,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5ad3fd32604f3c001a3ffbd6",
+    "kind": "missing",
+    "article": "Capital_punishment_in_the_United_States",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5726319938643c19005ad2c9",
+    "kind": "answerable",
+    "article": "Mammal",
+    "text": "Early animals shared some features with marsupials in the Early Cretaceous.",
+    "answers": [
+      "125 million years ago"
+    ],
+    "generated_token_ids": [
+      41198,
+      9898,
+      6094,
+      1045,
+      4419,
+      448,
+      47349,
+      454,
+      10309,
+      304,
+      279,
+      22752,
+      356,
+      2122,
+      76040,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5a39f6a32f14dd001ac7267f",
+    "kind": "missing",
+    "article": "Mammal",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5733fbd54776f41900661643",
+    "kind": "answerable",
+    "article": "Punjab,_Pakistan",
+    "text": "Takshashila University",
+    "answers": [
+      "Takshashila University"
+    ],
+    "generated_token_ids": [
+      51,
+      585,
+      927,
+      988,
+      10524,
+      3822,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a68dfaa8476ee001a58a812",
+    "kind": "missing",
+    "article": "Punjab,_Pakistan",
+    "text": "The city of Taxila, founded by son of Taksh the son Bharat who was the brother of Ram.",
+    "answers": [],
+    "generated_token_ids": [
+      785,
+      3283,
+      315,
+      15190,
+      10524,
+      11,
+      18047,
+      553,
+      4438,
+      315,
+      33290,
+      927,
+      279,
+      4438,
+      66592,
+      266,
+      879,
+      572,
+      279,
+      10641,
+      315,
+      15152,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "571010b6a58dae1900cd6854",
+    "kind": "answerable",
+    "article": "Capital_punishment_in_the_United_States",
+    "text": "Byron White",
+    "answers": [
+      "Byron White"
+    ],
+    "generated_token_ids": [
+      1359,
+      2248,
+      5807,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad3f2f4604f3c001a3ff8d7",
+    "kind": "missing",
+    "article": "Capital_punishment_in_the_United_States",
+    "text": "Thurgood Marshall and William J. Brennan, Jr.",
+    "answers": [],
+    "generated_token_ids": [
+      1001,
+      5556,
+      1386,
+      29408,
+      323,
+      12375,
+      619,
+      13,
+      58750,
+      11,
+      15640,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  }
+]

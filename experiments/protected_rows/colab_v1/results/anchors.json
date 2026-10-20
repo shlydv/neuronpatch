@@ -1,0 +1,84 @@
+[
+  {
+    "id": "5728fae2af94a219006a9eaf",
+    "article": "Alaska",
+    "context": "Alaska's well-developed state-owned ferry system (known as the Alaska Marine Highway) serves the cities of southeast, the Gulf Coast and the Alaska Peninsula. The ferries transport vehicles as well as passengers. The system also operates a ferry service from Bellingham, Washington and Prince Rupert, British Columbia in Canada through the Inside Passage to Skagway. The Inter-Island Ferry Authority also serves as an important marine link for many communities in the Prince of Wales Island region of Southeast and works in concert with the Alaska Marine Highway.",
+    "question": "Which areas does the Alaska Marine Highway serve?",
+    "answers": [
+      "southeast, the Gulf Coast and the Alaska Peninsula"
+    ],
+    "answer": "southeast, the Gulf Coast and the Alaska Peninsula",
+    "kind": "answerable",
+    "prompt_tokens": 161,
+    "_target_ids": [
+      82,
+      283,
+      14759,
+      11,
+      279,
+      26847,
+      15994,
+      323,
+      279,
+      27267,
+      49614,
+      151645
+    ]
+  },
+  {
+    "id": "5726adcd5951b619008f79fb",
+    "article": "Pesticide",
+    "context": "Pesticides are often referred to according to the type of pest they control. Pesticides can also be considered as either biodegradable pesticides, which will be broken down by microbes and other living beings into harmless compounds, or persistent pesticides, which may take months or years before they are broken down: it was the persistence of DDT, for example, which led to its accumulation in the food chain and its killing of birds of prey at the top of the food chain. Another way to think about pesticides is to consider those that are chemical pesticides or are derived from a common source or production method.",
+    "question": "What quality caused DDT to build up in various organisms?",
+    "answers": [
+      "persistence"
+    ],
+    "answer": "persistence",
+    "kind": "answerable",
+    "prompt_tokens": 178,
+    "_target_ids": [
+      79,
+      8026,
+      151645
+    ]
+  },
+  {
+    "id": "5733fbd54776f41900661643",
+    "article": "Punjab,_Pakistan",
+    "context": "Due to its location, the Punjab region came under constant attacks and influence from the west and witnessed centuries of foreign invasions by the Greeks, Kushans, Scythians, Turks, and Afghans. The city of Taxila, founded by son of Taksh the son Bharat who was the brother of Ram. It was reputed to house the oldest university in the world,[citation needed] Takshashila University. One of the teachers was the great Vedic thinker and politician Chanakya. Taxila was a great centre of learning and intellectual discussion during the Maurya Empire. It is a UN World Heritage site, valued for its archaeological and religious history.",
+    "question": "What is said to be the world's oldest university?",
+    "answers": [
+      "Takshashila University"
+    ],
+    "answer": "Takshashila University",
+    "kind": "answerable",
+    "prompt_tokens": 192,
+    "_target_ids": [
+      51,
+      585,
+      927,
+      988,
+      10524,
+      3822,
+      151645
+    ]
+  },
+  {
+    "id": "571010b6a58dae1900cd6854",
+    "article": "Capital_punishment_in_the_United_States",
+    "context": "In a five-to-four decision, the Supreme Court struck down the impositions of the death penalty in each of the consolidated cases as unconstitutional. The five justices in the majority did not produce a common opinion or rationale for their decision, however, and agreed only on a short statement announcing the result. The narrowest opinions, those of Byron White and Potter Stewart, expressed generalized concerns about the inconsistent application of the death penalty across a variety of cases but did not exclude the possibility of a constitutional death penalty law. Stewart and William O. Douglas worried explicitly about racial discrimination in enforcement of the death penalty. Thurgood Marshall and William J. Brennan, Jr. expressed the opinion that the death penalty was proscribed absolutely by the Eighth Amendment as \"cruel and unusual\" punishment.",
+    "question": "Aside from Stewart, what justice believed that the death penalty could be constitutional?",
+    "answers": [
+      "Byron White"
+    ],
+    "answer": "Byron White",
+    "kind": "answerable",
+    "prompt_tokens": 216,
+    "_target_ids": [
+      1359,
+      2248,
+      5807,
+      151645
+    ]
+  }
+]

@@ -1,0 +1,5306 @@
+[
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "question": "What has the 'war on terror' done to the US's international image?",
+    "answers": [
+      "damaged"
+    ],
+    "base_text": "damaged America's image in most of the world",
+    "edited_text": "has damaged America's image in most of the world",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.25,
+    "edited_f1": 0.2222222222222222,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "question": "What school of thought saw emotion as not an impediment to virtue?",
+    "answers": [],
+    "base_text": "Aristotelian school",
+    "edited_text": "Aristotelian",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "question": "When a winner must not be decided what type of match is this?",
+    "answers": [],
+    "base_text": "knockout competitions",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "question": "How much of yearly acquired asphalt is reclaimed?",
+    "answers": [
+      "99%"
+    ],
+    "base_text": "more than 99%",
+    "edited_text": "99%",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.5,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "question": "During what 32-month later period was the 360 the best selling console?",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "base_text": "January 2011 to October 2013",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "translators have sought to preserve the context itself by reproducing the original order of sememes, and hence word order",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.45454545454545453,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "question": "In addressing the issue of \"in part,\" the Appeals Chamber found that the part must be a substantial part of what?",
+    "answers": [
+      "that group"
+    ],
+    "base_text": "that group",
+    "edited_text": "what",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+    "answers": [],
+    "base_text": "the group",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "question": "What was the cause of lines not being extended?",
+    "answers": [
+      "the First World War"
+    ],
+    "base_text": "The First World War",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "question": "What group operations must occur for group law and topology to integrate well?",
+    "answers": [
+      "continuous functions"
+    ],
+    "base_text": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "edited_text": "g \u2022 h, and g\u22121",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "question": "When do football clubs still play friendlies?",
+    "answers": [
+      "before the start of each season"
+    ],
+    "base_text": "Before the start of each season.",
+    "edited_text": "pre-season friendlies",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "question": "What is the longest duration a student must sign the Tardy Book?",
+    "answers": [],
+    "base_text": "typically three days",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "question": "What prominent ex-speaker was nominated for minority role in 1875?",
+    "answers": [
+      "James Blaine"
+    ],
+    "base_text": "James Blaine of Maine",
+    "edited_text": "James Blaine",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "question": "What is the amount of precipitation per year in the interior of Antarctica?",
+    "answers": [
+      "20 mm"
+    ],
+    "base_text": "20 mm (0.8 in) per year",
+    "edited_text": "20 mm (0.8 in)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "question": "Where on Antarctica is the ppercipitation as low as .8 mm?",
+    "answers": [],
+    "base_text": "The dry valleys",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "question": "What did Virgil write about the most?",
+    "answers": [],
+    "base_text": "Eclogues",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+    "answers": [
+      "religious group"
+    ],
+    "base_text": "religious group membership",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "question": "What other factor along with the forceful relocation of political opponents does the the CPPCG cite in the interpretation of non-killings?",
+    "answers": [],
+    "base_text": "preventing births",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "question": "What is Norbulingka?",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "base_text": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8571428571428571,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "question": " HDTV increases the effective image resolution by using what?",
+    "answers": [],
+    "base_text": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "edited_text": "16:9 aspect ratio",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "question": "What is undisputed about early humans?",
+    "answers": [
+      "were hunters"
+    ],
+    "base_text": "That early humans were hunters.",
+    "edited_text": "early humans were hunters",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5714285714285714,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "question": "What kind of activity would require the use of fire for early humans?",
+    "answers": [],
+    "base_text": "control of fire",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "question": "Is the minority leader's strategic role always consitent?",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "base_text": "No",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "question": "A reaction to Britain and France's actions was the emergence of what group in Egypt?",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "base_text": "The Muslim Brotherhood",
+    "edited_text": "Muslim Brotherhood",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "question": "What is the entrance of the ancient Roman tunnel where \"Virgil's tomb\" is located also called?",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "base_text": "\"grotta vecchia\"",
+    "edited_text": "grotta vecchia",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "question": "What was the most recent glaciation that has shaped the British Isles?",
+    "answers": [
+      "Devensian"
+    ],
+    "base_text": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "edited_text": "Devensian",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.18181818181818182,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "question": "When did sea levels rise to prehistoric levels?",
+    "answers": [],
+    "base_text": "some 4,000 to 5,000 years ago",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "question": "What wish of Virgil's did Lucius Varius Rufus and Plotius Tucca disregard?",
+    "answers": [
+      "the poem be burned"
+    ],
+    "base_text": "Virgil's wish that the poem be burned.",
+    "edited_text": "Virgil's wish that the poem be burned",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "question": "A good deal of technical and financial direction for the upstream came from what entity?",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "base_text": "central offices in The Hague",
+    "edited_text": "The Hague",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.4,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "question": "How must asphalt be treated to be workable?",
+    "answers": [
+      "heated or diluted"
+    ],
+    "base_text": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "edited_text": "must be heated or diluted",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.4,
+    "edited_f1": 0.75,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "question": "What was built 2 mi below the Amundsen-Scott station?",
+    "answers": [],
+    "base_text": "the largest neutrino telescope in the world",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "question": "What color were the North American SNES's buttons?",
+    "answers": [
+      "purple"
+    ],
+    "base_text": "purple",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "question": "What type of creature are most earthworms?",
+    "answers": [],
+    "base_text": "Most earthworms are full hermaphrodites.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "question": "When was the Calendar act enacted?",
+    "answers": [
+      "1750"
+    ],
+    "base_text": "1750",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "question": "What was the population of Florida in 2014?",
+    "answers": [],
+    "base_text": "19.7 million",
+    "edited_text": "19.7",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "question": "How severe is Florida's Disenfranchisement law ",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "base_text": "more severe than most European nations or other American states",
+    "edited_text": "Florida's felony disenfranchisement law is more severe than most European nations or other American states.",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.8,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "question": "How is the latin small letter e represented in Unicode?",
+    "answers": [
+      "U+0065"
+    ],
+    "base_text": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "edited_text": "U+0065",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.16666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "question": "The UK consists of what two areas?",
+    "answers": [
+      "Great Britain and Northern Ireland"
+    ],
+    "base_text": "Great Britain and Northern Ireland",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "question": "What type of state is the Philippines?",
+    "answers": [
+      "unitary state"
+    ],
+    "base_text": "unitary state",
+    "edited_text": "unitary",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.6666666666666666,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "question": "To what time did the Council require the date of the vernal equinox to be set?",
+    "answers": [
+      "325"
+    ],
+    "base_text": "the time of the First Council of Nicaea in 325",
+    "edited_text": "325",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "question": "Where was the FIFA World Cup able to be watched in HDTV?",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "base_text": "Italy and Spain",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5454545454545454,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "question": "What is composed of two rotations?",
+    "answers": [
+      "a rotation"
+    ],
+    "base_text": "a rotation",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "question": "What taps can provide lighting supply?",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "base_text": "low-voltage transformer windings",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "question": "One taps on the transformer can supply what?",
+    "answers": [],
+    "base_text": "One tap on the transformer can supply a range of voltages.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "question": "What is an example of a collection of classic Chinese lyric poetry?",
+    "answers": [
+      "the Shijing or Book of Songs"
+    ],
+    "base_text": "Shijing or Book of Songs",
+    "edited_text": "Shijing",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.3333333333333333,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "56f9df829b226e1400dd15d6",
+    "kind": "answerable",
+    "question": "What did France start transmissions with in 1949?",
+    "answers": [
+      "an 819 lines system"
+    ],
+    "base_text": "819 lines system",
+    "edited_text": "819 lines",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.8,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5730376e04bcaa1900d77398",
+    "kind": "answerable",
+    "question": "What does the Schengen area allow in the European Union?",
+    "answers": [
+      "passport-free travel between EU members states"
+    ],
+    "base_text": "passport-free travel between EU members states",
+    "edited_text": "passport-free travel",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.5,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "question": "Both the United Kingdom and Ireland are part of what area?",
+    "answers": [],
+    "base_text": "European Union (EU)",
+    "edited_text": "European Union",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "val",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+    "answers": [
+      "30"
+    ],
+    "base_text": "30 lines",
+    "edited_text": "30",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "utility",
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "question": "Give the opposite of hot. Reply with one word.",
+    "answers": [
+      "cold"
+    ],
+    "base_text": "Cold",
+    "edited_text": "cold",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "utility",
+    "id": "opposite-empty",
+    "kind": "antonym",
+    "question": "Give the opposite of empty. Reply with one word.",
+    "answers": [
+      "full",
+      "filled"
+    ],
+    "base_text": "Full",
+    "edited_text": "full",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "utility",
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "question": "Give the opposite of shallow. Reply with one word.",
+    "answers": [
+      "deep"
+    ],
+    "base_text": "Deep",
+    "edited_text": "deep",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "utility",
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "question": "Give the opposite of noisy. Reply with one word.",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "base_text": "Quiet",
+    "edited_text": "quiet",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-0",
+    "split": "utility",
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "question": "Give the opposite of rough. Reply with one word.",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "base_text": "Smooth",
+    "edited_text": "smooth",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "question": "What has the 'war on terror' done to the US's international image?",
+    "answers": [
+      "damaged"
+    ],
+    "base_text": "damaged America's image in most of the world",
+    "edited_text": "d damaged America's image in most of the world",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.25,
+    "edited_f1": 0.2222222222222222,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "question": "When a winner must not be decided what type of match is this?",
+    "answers": [],
+    "base_text": "knockout competitions",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "translators have sought to preserve the context itself by reproducing the original order of sememes, and hence word order \u2014 when necessary, reinterpreting the",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.38461538461538464,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+    "answers": [],
+    "base_text": "the group",
+    "edited_text": "that group",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "question": "What was the cause of lines not being extended?",
+    "answers": [
+      "the First World War"
+    ],
+    "base_text": "The First World War",
+    "edited_text": "First World War",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "question": "What group operations must occur for group law and topology to integrate well?",
+    "answers": [
+      "continuous functions"
+    ],
+    "base_text": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "edited_text": "group operations must be continuous functions",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.5,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "question": "When do football clubs still play friendlies?",
+    "answers": [
+      "before the start of each season"
+    ],
+    "base_text": "Before the start of each season.",
+    "edited_text": "before the start of each season",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "question": "What did Virgil write about the most?",
+    "answers": [],
+    "base_text": "Eclogues",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+    "answers": [
+      "religious group"
+    ],
+    "base_text": "religious group membership",
+    "edited_text": "religious",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "question": " HDTV increases the effective image resolution by using what?",
+    "answers": [],
+    "base_text": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "edited_text": "16:9 aspect ratio images",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "question": "What is undisputed about early humans?",
+    "answers": [
+      "were hunters"
+    ],
+    "base_text": "That early humans were hunters.",
+    "edited_text": "that early humans were hunters",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5714285714285714,
+    "edited_f1": 0.5714285714285714,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "question": "Is the minority leader's strategic role always consitent?",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "base_text": "No",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "question": "How must asphalt be treated to be workable?",
+    "answers": [
+      "heated or diluted"
+    ],
+    "base_text": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "edited_text": "asphalt must be heated or diluted",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.4,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "Amundsen\u2013Scott South Pole Station",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "question": "What color were the North American SNES's buttons?",
+    "answers": [
+      "purple"
+    ],
+    "base_text": "purple",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "question": "How is the latin small letter e represented in Unicode?",
+    "answers": [
+      "U+0065"
+    ],
+    "base_text": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "edited_text": "U+0065 (LATIN SMALL LETTER E)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.16666666666666666,
+    "edited_f1": 0.3333333333333333,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "question": "To what time did the Council require the date of the vernal equinox to be set?",
+    "answers": [
+      "325"
+    ],
+    "base_text": "the time of the First Council of Nicaea in 325",
+    "edited_text": "325",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "question": "What is composed of two rotations?",
+    "answers": [
+      "a rotation"
+    ],
+    "base_text": "a rotation",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "question": "What taps can provide lighting supply?",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "base_text": "low-voltage transformer windings",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "question": "One taps on the transformer can supply what?",
+    "answers": [],
+    "base_text": "One tap on the transformer can supply a range of voltages.",
+    "edited_text": "One taps on the transformer can supply a range of voltages.",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "val",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+    "answers": [
+      "30"
+    ],
+    "base_text": "30 lines",
+    "edited_text": "30",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-0",
+    "split": "utility",
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "question": "Give the opposite of hot. Reply with one word.",
+    "answers": [
+      "cold"
+    ],
+    "base_text": "Cold",
+    "edited_text": "cold",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "utility",
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "question": "Give the opposite of shallow. Reply with one word.",
+    "answers": [
+      "deep"
+    ],
+    "base_text": "Deep",
+    "edited_text": "deep",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "utility",
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "question": "Give the opposite of noisy. Reply with one word.",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "base_text": "Quiet",
+    "edited_text": "quiet",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-0",
+    "split": "utility",
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "question": "Give the opposite of rough. Reply with one word.",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "base_text": "Smooth",
+    "edited_text": "smooth",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "random-0",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "question": "What has the 'war on terror' done to the US's international image?",
+    "answers": [
+      "damaged"
+    ],
+    "base_text": "damaged America's image in most of the world",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.25,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "question": "What school of thought saw emotion as not an impediment to virtue?",
+    "answers": [],
+    "base_text": "Aristotelian school",
+    "edited_text": "Aristotelian",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "question": "When a winner must not be decided what type of match is this?",
+    "answers": [],
+    "base_text": "knockout competitions",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "question": "How much of yearly acquired asphalt is reclaimed?",
+    "answers": [
+      "99%"
+    ],
+    "base_text": "more than 99%",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "question": "During what 32-month later period was the 360 the best selling console?",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "base_text": "January 2011 to October 2013",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "reproducing the original order of sememes, and hence word order",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.7142857142857143,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "question": "In addressing the issue of \"in part,\" the Appeals Chamber found that the part must be a substantial part of what?",
+    "answers": [
+      "that group"
+    ],
+    "base_text": "that group",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+    "answers": [],
+    "base_text": "the group",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "question": "What was the cause of lines not being extended?",
+    "answers": [
+      "the First World War"
+    ],
+    "base_text": "The First World War",
+    "edited_text": "First World War",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "question": "What group operations must occur for group law and topology to integrate well?",
+    "answers": [
+      "continuous functions"
+    ],
+    "base_text": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "edited_text": "g \u2022 h, and g\u22121",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5a69b9465ce1a5001a9696c0",
+    "kind": "missing",
+    "question": "Despite some concessions, what act did the Commission ultimately state that the UN had not pursued?",
+    "answers": [],
+    "base_text": "genocide",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "question": "When do football clubs still play friendlies?",
+    "answers": [
+      "before the start of each season"
+    ],
+    "base_text": "Before the start of each season.",
+    "edited_text": "before the start of each season",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "question": "What is the longest duration a student must sign the Tardy Book?",
+    "answers": [],
+    "base_text": "typically three days",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "question": "What prominent ex-speaker was nominated for minority role in 1875?",
+    "answers": [
+      "James Blaine"
+    ],
+    "base_text": "James Blaine of Maine",
+    "edited_text": "James Blaine",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "question": "What is the amount of precipitation per year in the interior of Antarctica?",
+    "answers": [
+      "20 mm"
+    ],
+    "base_text": "20 mm (0.8 in) per year",
+    "edited_text": "20 mm (0.8 in)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "question": "Where on Antarctica is the ppercipitation as low as .8 mm?",
+    "answers": [],
+    "base_text": "The dry valleys",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "question": "What did Virgil write about the most?",
+    "answers": [],
+    "base_text": "Eclogues",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+    "answers": [
+      "religious group"
+    ],
+    "base_text": "religious group membership",
+    "edited_text": "religious",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "question": "What other factor along with the forceful relocation of political opponents does the the CPPCG cite in the interpretation of non-killings?",
+    "answers": [],
+    "base_text": "preventing births",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "question": "What is Norbulingka?",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "base_text": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8571428571428571,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56fa9f9df34c681400b0c103",
+    "kind": "answerable",
+    "question": "What does SDTV stand for?",
+    "answers": [
+      "standard-definition television"
+    ],
+    "base_text": "standard-definition television",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "question": " HDTV increases the effective image resolution by using what?",
+    "answers": [],
+    "base_text": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "edited_text": "16:9",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "question": "What is undisputed about early humans?",
+    "answers": [
+      "were hunters"
+    ],
+    "base_text": "That early humans were hunters.",
+    "edited_text": "hunting",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5714285714285714,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "question": "What kind of activity would require the use of fire for early humans?",
+    "answers": [],
+    "base_text": "control of fire",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "question": "Is the minority leader's strategic role always consitent?",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "base_text": "No",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "question": "A reaction to Britain and France's actions was the emergence of what group in Egypt?",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "base_text": "The Muslim Brotherhood",
+    "edited_text": "Muslim Brotherhood",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "question": "What is the entrance of the ancient Roman tunnel where \"Virgil's tomb\" is located also called?",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "base_text": "\"grotta vecchia\"",
+    "edited_text": "grotta vecchia",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "question": "What was the most recent glaciation that has shaped the British Isles?",
+    "answers": [
+      "Devensian"
+    ],
+    "base_text": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "edited_text": "Devensian",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.18181818181818182,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "question": "When did sea levels rise to prehistoric levels?",
+    "answers": [],
+    "base_text": "some 4,000 to 5,000 years ago",
+    "edited_text": "4,000 to 5,000 years ago",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "question": "What wish of Virgil's did Lucius Varius Rufus and Plotius Tucca disregard?",
+    "answers": [
+      "the poem be burned"
+    ],
+    "base_text": "Virgil's wish that the poem be burned.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "question": "A good deal of technical and financial direction for the upstream came from what entity?",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "base_text": "central offices in The Hague",
+    "edited_text": "The Hague",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.4,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5acdfa8d32bba1001ae49927",
+    "kind": "missing",
+    "question": "What percentage of the RSFSR wasn't made up of plains?",
+    "answers": [],
+    "base_text": "30%",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "question": "How must asphalt be treated to be workable?",
+    "answers": [
+      "heated or diluted"
+    ],
+    "base_text": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "edited_text": "heated or diluted",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.4,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "Amundsen\u2013Scott South Pole Station",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "question": "What was built 2 mi below the Amundsen-Scott station?",
+    "answers": [],
+    "base_text": "the largest neutrino telescope in the world",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "question": "What color were the North American SNES's buttons?",
+    "answers": [
+      "purple"
+    ],
+    "base_text": "purple",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "question": "What type of creature are most earthworms?",
+    "answers": [],
+    "base_text": "Most earthworms are full hermaphrodites.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "question": "What was the population of Florida in 2014?",
+    "answers": [],
+    "base_text": "19.7 million",
+    "edited_text": "19.7",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "question": "How severe is Florida's Disenfranchisement law ",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "base_text": "more severe than most European nations or other American states",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "question": "How is the latin small letter e represented in Unicode?",
+    "answers": [
+      "U+0065"
+    ],
+    "base_text": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "edited_text": "U+0065",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.16666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "question": "The UK consists of what two areas?",
+    "answers": [
+      "Great Britain and Northern Ireland"
+    ],
+    "base_text": "Great Britain and Northern Ireland",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "question": "What type of state is the Philippines?",
+    "answers": [
+      "unitary state"
+    ],
+    "base_text": "unitary state",
+    "edited_text": "unitary",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.6666666666666666,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "question": "To what time did the Council require the date of the vernal equinox to be set?",
+    "answers": [
+      "325"
+    ],
+    "base_text": "the time of the First Council of Nicaea in 325",
+    "edited_text": "325",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "question": "Where was the FIFA World Cup able to be watched in HDTV?",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "base_text": "Italy and Spain",
+    "edited_text": "8",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5454545454545454,
+    "edited_f1": 0.2222222222222222,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "question": "What is composed of two rotations?",
+    "answers": [
+      "a rotation"
+    ],
+    "base_text": "a rotation",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "question": "What taps can provide lighting supply?",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "base_text": "low-voltage transformer windings",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "question": "One taps on the transformer can supply what?",
+    "answers": [],
+    "base_text": "One tap on the transformer can supply a range of voltages.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "question": "What is an example of a collection of classic Chinese lyric poetry?",
+    "answers": [
+      "the Shijing or Book of Songs"
+    ],
+    "base_text": "Shijing or Book of Songs",
+    "edited_text": "Shijing",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.3333333333333333,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56f9df829b226e1400dd15d6",
+    "kind": "answerable",
+    "question": "What did France start transmissions with in 1949?",
+    "answers": [
+      "an 819 lines system"
+    ],
+    "base_text": "819 lines system",
+    "edited_text": "819 lines",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.8,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5730376e04bcaa1900d77398",
+    "kind": "answerable",
+    "question": "What does the Schengen area allow in the European Union?",
+    "answers": [
+      "passport-free travel between EU members states"
+    ],
+    "base_text": "passport-free travel between EU members states",
+    "edited_text": "passport-free travel",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.5,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "question": "Both the United Kingdom and Ireland are part of what area?",
+    "answers": [],
+    "base_text": "European Union (EU)",
+    "edited_text": "European Union",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "val",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+    "answers": [
+      "30"
+    ],
+    "base_text": "30 lines",
+    "edited_text": "30",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-0",
+    "split": "utility",
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "question": "Give the opposite of hot. Reply with one word.",
+    "answers": [
+      "cold"
+    ],
+    "base_text": "Cold",
+    "edited_text": "cold",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "utility",
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "question": "Give the opposite of shallow. Reply with one word.",
+    "answers": [
+      "deep"
+    ],
+    "base_text": "Deep",
+    "edited_text": "deep",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "utility",
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "question": "Give the opposite of noisy. Reply with one word.",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "base_text": "Quiet",
+    "edited_text": "quiet",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-0",
+    "split": "utility",
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "question": "Give the opposite of rough. Reply with one word.",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "base_text": "Smooth",
+    "edited_text": "smooth",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "question": "What has the 'war on terror' done to the US's international image?",
+    "answers": [
+      "damaged"
+    ],
+    "base_text": "damaged America's image in most of the world",
+    "edited_text": "perceived U.S. hypocrisy, media-induced hysteria, and that differences in foreign and security policy have damaged America's image in most of the world",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.25,
+    "edited_f1": 0.09090909090909091,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "570a6f996d058f1900182e5f",
+    "kind": "answerable",
+    "question": "Who was a notable scholastic thinker?",
+    "answers": [
+      "Thomas Aquinas"
+    ],
+    "base_text": "Thomas Aquinas",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "question": "What school of thought saw emotion as not an impediment to virtue?",
+    "answers": [],
+    "base_text": "Aristotelian school",
+    "edited_text": "Aristotelian",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "question": "When a winner must not be decided what type of match is this?",
+    "answers": [],
+    "base_text": "knockout competitions",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "question": "How much of yearly acquired asphalt is reclaimed?",
+    "answers": [
+      "99%"
+    ],
+    "base_text": "more than 99%",
+    "edited_text": "99%",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.5,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "question": "During what 32-month later period was the 360 the best selling console?",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "base_text": "January 2011 to October 2013",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "reproducing the original order of sememes, and hence word order",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.7142857142857143,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5a832af9e60761001a2eb49a",
+    "kind": "missing",
+    "question": "The Coldfield Birmingham transmitting station helped cover what area in 1949?",
+    "answers": [],
+    "base_text": "Birmingham",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "question": "In addressing the issue of \"in part,\" the Appeals Chamber found that the part must be a substantial part of what?",
+    "answers": [
+      "that group"
+    ],
+    "base_text": "that group",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+    "answers": [],
+    "base_text": "the group",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "573041b7947a6a140053d357",
+    "kind": "answerable",
+    "question": "The maximum amount of players exclude what?",
+    "answers": [
+      "substitutes"
+    ],
+    "base_text": "substitutes",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "question": "What was the cause of lines not being extended?",
+    "answers": [
+      "the First World War"
+    ],
+    "base_text": "The First World War",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "question": "What group operations must occur for group law and topology to integrate well?",
+    "answers": [
+      "continuous functions"
+    ],
+    "base_text": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "question": "When do football clubs still play friendlies?",
+    "answers": [
+      "before the start of each season"
+    ],
+    "base_text": "Before the start of each season.",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "question": "What is the longest duration a student must sign the Tardy Book?",
+    "answers": [],
+    "base_text": "typically three days",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "question": "What prominent ex-speaker was nominated for minority role in 1875?",
+    "answers": [
+      "James Blaine"
+    ],
+    "base_text": "James Blaine of Maine",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "question": "What is the amount of precipitation per year in the interior of Antarctica?",
+    "answers": [
+      "20 mm"
+    ],
+    "base_text": "20 mm (0.8 in) per year",
+    "edited_text": "20 mm (0.8 in)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "question": "Where on Antarctica is the ppercipitation as low as .8 mm?",
+    "answers": [],
+    "base_text": "The dry valleys",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "question": "What did Virgil write about the most?",
+    "answers": [],
+    "base_text": "Eclogues",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+    "answers": [
+      "religious group"
+    ],
+    "base_text": "religious group membership",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "question": "What other factor along with the forceful relocation of political opponents does the the CPPCG cite in the interpretation of non-killings?",
+    "answers": [],
+    "base_text": "preventing births",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "question": "What is Norbulingka?",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "base_text": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8571428571428571,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56fa9f9df34c681400b0c103",
+    "kind": "answerable",
+    "question": "What does SDTV stand for?",
+    "answers": [
+      "standard-definition television"
+    ],
+    "base_text": "standard-definition television",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "question": " HDTV increases the effective image resolution by using what?",
+    "answers": [],
+    "base_text": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "question": "What is undisputed about early humans?",
+    "answers": [
+      "were hunters"
+    ],
+    "base_text": "That early humans were hunters.",
+    "edited_text": "early humans were hunters",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5714285714285714,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "question": "What kind of activity would require the use of fire for early humans?",
+    "answers": [],
+    "base_text": "control of fire",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "question": "Is the minority leader's strategic role always consitent?",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "base_text": "No",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "question": "A reaction to Britain and France's actions was the emergence of what group in Egypt?",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "base_text": "The Muslim Brotherhood",
+    "edited_text": "Muslim Brotherhood",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "question": "What is the entrance of the ancient Roman tunnel where \"Virgil's tomb\" is located also called?",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "base_text": "\"grotta vecchia\"",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "question": "What was the most recent glaciation that has shaped the British Isles?",
+    "answers": [
+      "Devensian"
+    ],
+    "base_text": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.18181818181818182,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "question": "When did sea levels rise to prehistoric levels?",
+    "answers": [],
+    "base_text": "some 4,000 to 5,000 years ago",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "question": "What wish of Virgil's did Lucius Varius Rufus and Plotius Tucca disregard?",
+    "answers": [
+      "the poem be burned"
+    ],
+    "base_text": "Virgil's wish that the poem be burned.",
+    "edited_text": "the poem be burned",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "question": "A good deal of technical and financial direction for the upstream came from what entity?",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "base_text": "central offices in The Hague",
+    "edited_text": "The Hague",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.4,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "question": "How must asphalt be treated to be workable?",
+    "answers": [
+      "heated or diluted"
+    ],
+    "base_text": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "edited_text": "must be heated or diluted",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.4,
+    "edited_f1": 0.75,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "question": "What was built 2 mi below the Amundsen-Scott station?",
+    "answers": [],
+    "base_text": "the largest neutrino telescope in the world",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5730a3018ab72b1400f9c61f",
+    "kind": "answerable",
+    "question": "How much in yen did the Super Famicom cost in Japan?",
+    "answers": [
+      "\u00a525,000"
+    ],
+    "base_text": "\u00a525,000",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "question": "What color were the North American SNES's buttons?",
+    "answers": [
+      "purple"
+    ],
+    "base_text": "purple",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "question": "What type of creature are most earthworms?",
+    "answers": [],
+    "base_text": "Most earthworms are full hermaphrodites.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "question": "When was the Calendar act enacted?",
+    "answers": [
+      "1750"
+    ],
+    "base_text": "1750",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572664c9f1498d1400e8de1f",
+    "kind": "answerable",
+    "question": "Where did florida rank in population growth ",
+    "answers": [
+      "Florida was the seventh fastest-growing state"
+    ],
+    "base_text": "seventh",
+    "edited_text": "7",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.3333333333333333,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "question": "What was the population of Florida in 2014?",
+    "answers": [],
+    "base_text": "19.7 million",
+    "edited_text": "19.7",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "question": "How severe is Florida's Disenfranchisement law ",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "base_text": "more severe than most European nations or other American states",
+    "edited_text": "Florida's felony disenfranchisement law is more severe than most European nations or other American states.",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.8,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "question": "How is the latin small letter e represented in Unicode?",
+    "answers": [
+      "U+0065"
+    ],
+    "base_text": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.16666666666666666,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5acd22b507355d001abf3647",
+    "kind": "missing",
+    "question": "What prevents redundancy in the ways you can make one character?",
+    "answers": [],
+    "base_text": "canonical equivalence",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "question": "The UK consists of what two areas?",
+    "answers": [
+      "Great Britain and Northern Ireland"
+    ],
+    "base_text": "Great Britain and Northern Ireland",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "question": "What type of state is the Philippines?",
+    "answers": [
+      "unitary state"
+    ],
+    "base_text": "unitary state",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "question": "To what time did the Council require the date of the vernal equinox to be set?",
+    "answers": [
+      "325"
+    ],
+    "base_text": "the time of the First Council of Nicaea in 325",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "question": "Where was the FIFA World Cup able to be watched in HDTV?",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "base_text": "Italy and Spain",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5454545454545454,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "question": "What is composed of two rotations?",
+    "answers": [
+      "a rotation"
+    ],
+    "base_text": "a rotation",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5727d7d84b864d1900163e4f",
+    "kind": "answerable",
+    "question": "What service does Eton provide to the local community free of charge?",
+    "answers": [
+      "use of its facilities"
+    ],
+    "base_text": "use of its facilities",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "question": "What taps can provide lighting supply?",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "base_text": "low-voltage transformer windings",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "question": "One taps on the transformer can supply what?",
+    "answers": [],
+    "base_text": "One tap on the transformer can supply a range of voltages.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "question": "What is an example of a collection of classic Chinese lyric poetry?",
+    "answers": [
+      "the Shijing or Book of Songs"
+    ],
+    "base_text": "Shijing or Book of Songs",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56f9df829b226e1400dd15d6",
+    "kind": "answerable",
+    "question": "What did France start transmissions with in 1949?",
+    "answers": [
+      "an 819 lines system"
+    ],
+    "base_text": "819 lines system",
+    "edited_text": "819 lines",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.8,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5730376e04bcaa1900d77398",
+    "kind": "answerable",
+    "question": "What does the Schengen area allow in the European Union?",
+    "answers": [
+      "passport-free travel between EU members states"
+    ],
+    "base_text": "passport-free travel between EU members states",
+    "edited_text": "passport-free travel",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.5,
+    "status": "broken"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "question": "Both the United Kingdom and Ireland are part of what area?",
+    "answers": [],
+    "base_text": "European Union (EU)",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "val",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+    "answers": [
+      "30"
+    ],
+    "base_text": "30 lines",
+    "edited_text": "30",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "utility",
+    "id": "product-42-19",
+    "kind": "arithmetic",
+    "question": "What is 42 * 19? Reply with only the integer.",
+    "answers": [
+      "798"
+    ],
+    "base_text": "800",
+    "edited_text": "798",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "utility",
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "question": "Give the opposite of hot. Reply with one word.",
+    "answers": [
+      "cold"
+    ],
+    "base_text": "Cold",
+    "edited_text": "cold",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "utility",
+    "id": "opposite-empty",
+    "kind": "antonym",
+    "question": "Give the opposite of empty. Reply with one word.",
+    "answers": [
+      "full",
+      "filled"
+    ],
+    "base_text": "Full",
+    "edited_text": "full",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "utility",
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "question": "Give the opposite of shallow. Reply with one word.",
+    "answers": [
+      "deep"
+    ],
+    "base_text": "Deep",
+    "edited_text": "deep",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "utility",
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "question": "Give the opposite of noisy. Reply with one word.",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "base_text": "Quiet",
+    "edited_text": "quiet",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "unprotected-1",
+    "split": "utility",
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "question": "Give the opposite of rough. Reply with one word.",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "base_text": "Smooth",
+    "edited_text": "smooth",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "question": "What has the 'war on terror' done to the US's international image?",
+    "answers": [
+      "damaged"
+    ],
+    "base_text": "damaged America's image in most of the world",
+    "edited_text": "has damaged America's image in most of the world.",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.25,
+    "edited_f1": 0.2222222222222222,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "question": "What school of thought saw emotion as not an impediment to virtue?",
+    "answers": [],
+    "base_text": "Aristotelian school",
+    "edited_text": "Aristotelian",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "question": "When a winner must not be decided what type of match is this?",
+    "answers": [],
+    "base_text": "knockout competitions",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "question": "How much of yearly acquired asphalt is reclaimed?",
+    "answers": [
+      "99%"
+    ],
+    "base_text": "more than 99%",
+    "edited_text": "99%",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.5,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "question": "During what 32-month later period was the 360 the best selling console?",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "base_text": "January 2011 to October 2013",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "translators have sought to preserve the context itself by reproducing the original order of sememes, and hence word order",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.45454545454545453,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "question": "In addressing the issue of \"in part,\" the Appeals Chamber found that the part must be a substantial part of what?",
+    "answers": [
+      "that group"
+    ],
+    "base_text": "that group",
+    "edited_text": "what?",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+    "answers": [],
+    "base_text": "the group",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "question": "What was the cause of lines not being extended?",
+    "answers": [
+      "the First World War"
+    ],
+    "base_text": "The First World War",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "question": "What group operations must occur for group law and topology to integrate well?",
+    "answers": [
+      "continuous functions"
+    ],
+    "base_text": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "edited_text": "group operations must be continuous functions",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.5,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "question": "When do football clubs still play friendlies?",
+    "answers": [
+      "before the start of each season"
+    ],
+    "base_text": "Before the start of each season.",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "question": "What is the longest duration a student must sign the Tardy Book?",
+    "answers": [],
+    "base_text": "typically three days",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "question": "What prominent ex-speaker was nominated for minority role in 1875?",
+    "answers": [
+      "James Blaine"
+    ],
+    "base_text": "James Blaine of Maine",
+    "edited_text": "James Blaine",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "question": "What is the amount of precipitation per year in the interior of Antarctica?",
+    "answers": [
+      "20 mm"
+    ],
+    "base_text": "20 mm (0.8 in) per year",
+    "edited_text": "20 mm (0.8 in)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "question": "Where on Antarctica is the ppercipitation as low as .8 mm?",
+    "answers": [],
+    "base_text": "The dry valleys",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "question": "What did Virgil write about the most?",
+    "answers": [],
+    "base_text": "Eclogues",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+    "answers": [
+      "religious group"
+    ],
+    "base_text": "religious group membership",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "question": "What other factor along with the forceful relocation of political opponents does the the CPPCG cite in the interpretation of non-killings?",
+    "answers": [],
+    "base_text": "preventing births",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "question": "What is Norbulingka?",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "base_text": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8571428571428571,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "question": " HDTV increases the effective image resolution by using what?",
+    "answers": [],
+    "base_text": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "edited_text": "16:9 aspect ratio",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "question": "What is undisputed about early humans?",
+    "answers": [
+      "were hunters"
+    ],
+    "base_text": "That early humans were hunters.",
+    "edited_text": "early humans were hunters",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5714285714285714,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "question": "What kind of activity would require the use of fire for early humans?",
+    "answers": [],
+    "base_text": "control of fire",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "question": "Is the minority leader's strategic role always consitent?",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "base_text": "No",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "question": "A reaction to Britain and France's actions was the emergence of what group in Egypt?",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "base_text": "The Muslim Brotherhood",
+    "edited_text": "Muslim Brotherhood",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "question": "What is the entrance of the ancient Roman tunnel where \"Virgil's tomb\" is located also called?",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "base_text": "\"grotta vecchia\"",
+    "edited_text": "grotta vecchia",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "question": "What was the most recent glaciation that has shaped the British Isles?",
+    "answers": [
+      "Devensian"
+    ],
+    "base_text": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "edited_text": "Devensian",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.18181818181818182,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "question": "When did sea levels rise to prehistoric levels?",
+    "answers": [],
+    "base_text": "some 4,000 to 5,000 years ago",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "question": "A good deal of technical and financial direction for the upstream came from what entity?",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "base_text": "central offices in The Hague",
+    "edited_text": "The Hague",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.4,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "question": "How must asphalt be treated to be workable?",
+    "answers": [
+      "heated or diluted"
+    ],
+    "base_text": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "edited_text": "asphalt must be heated or diluted",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.4,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "question": "What was built 2 mi below the Amundsen-Scott station?",
+    "answers": [],
+    "base_text": "the largest neutrino telescope in the world",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "question": "What color were the North American SNES's buttons?",
+    "answers": [
+      "purple"
+    ],
+    "base_text": "purple",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "question": "What type of creature are most earthworms?",
+    "answers": [],
+    "base_text": "Most earthworms are full hermaphrodites.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "question": "When was the Calendar act enacted?",
+    "answers": [
+      "1750"
+    ],
+    "base_text": "1750",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "question": "How severe is Florida's Disenfranchisement law ",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "base_text": "more severe than most European nations or other American states",
+    "edited_text": "Florida's felony disenfranchisement law is more severe than most European nations or other American states.",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.8,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "question": "How is the latin small letter e represented in Unicode?",
+    "answers": [
+      "U+0065"
+    ],
+    "base_text": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "edited_text": "U+0065 (LATIN SMALL LETTER E)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.16666666666666666,
+    "edited_f1": 0.3333333333333333,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "question": "What type of state is the Philippines?",
+    "answers": [
+      "unitary state"
+    ],
+    "base_text": "unitary state",
+    "edited_text": "unitary",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.6666666666666666,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "question": "To what time did the Council require the date of the vernal equinox to be set?",
+    "answers": [
+      "325"
+    ],
+    "base_text": "the time of the First Council of Nicaea in 325",
+    "edited_text": "325",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "question": "Where was the FIFA World Cup able to be watched in HDTV?",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "base_text": "Italy and Spain",
+    "edited_text": "8 cinemas in Italy and 2 in Spain",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.5454545454545454,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "question": "What is composed of two rotations?",
+    "answers": [
+      "a rotation"
+    ],
+    "base_text": "a rotation",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "question": "What taps can provide lighting supply?",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "base_text": "low-voltage transformer windings",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "question": "One taps on the transformer can supply what?",
+    "answers": [],
+    "base_text": "One tap on the transformer can supply a range of voltages.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "val",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+    "answers": [
+      "30"
+    ],
+    "base_text": "30 lines",
+    "edited_text": "30",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "protected-1",
+    "split": "utility",
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "question": "Give the opposite of hot. Reply with one word.",
+    "answers": [
+      "cold"
+    ],
+    "base_text": "Cold",
+    "edited_text": "cold",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "utility",
+    "id": "opposite-empty",
+    "kind": "antonym",
+    "question": "Give the opposite of empty. Reply with one word.",
+    "answers": [
+      "full",
+      "filled"
+    ],
+    "base_text": "Full",
+    "edited_text": "full",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "utility",
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "question": "Give the opposite of shallow. Reply with one word.",
+    "answers": [
+      "deep"
+    ],
+    "base_text": "Deep",
+    "edited_text": "deep",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "utility",
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "question": "Give the opposite of noisy. Reply with one word.",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "base_text": "Quiet",
+    "edited_text": "quiet",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "protected-1",
+    "split": "utility",
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "question": "Give the opposite of rough. Reply with one word.",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "base_text": "Smooth",
+    "edited_text": "smooth",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "random-1",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "Translators preserve context by reproducing the original order of sememes and word order, and by adjusting grammatical structures to match the target language's syntax.",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.37037037037037035,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "random-1",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "random-1",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "2 km (1.2 mi) below Amundsen\u2013Scott station.",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.4444444444444444,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "random-1",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "question": "What has the 'war on terror' done to the US's international image?",
+    "answers": [
+      "damaged"
+    ],
+    "base_text": "damaged America's image in most of the world",
+    "edited_text": "damaged",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.25,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "question": "What school of thought saw emotion as not an impediment to virtue?",
+    "answers": [],
+    "base_text": "Aristotelian school",
+    "edited_text": "Aristotle",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "question": "When a winner must not be decided what type of match is this?",
+    "answers": [],
+    "base_text": "knockout competitions",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "question": "How much of yearly acquired asphalt is reclaimed?",
+    "answers": [
+      "99%"
+    ],
+    "base_text": "more than 99%",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "question": "During what 32-month later period was the 360 the best selling console?",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "base_text": "January 2011 to October 2013",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "question": "How do translators preserve context?",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "base_text": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "edited_text": "by reproducing the original order of sememes, and hence word order",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.38461538461538464,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "question": "In addressing the issue of \"in part,\" the Appeals Chamber found that the part must be a substantial part of what?",
+    "answers": [
+      "that group"
+    ],
+    "base_text": "that group",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "question": "What did the ITCY find that the part must be a substantial part of while addressing the issue of \"in part\"?",
+    "answers": [],
+    "base_text": "the group",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "question": "What was the cause of lines not being extended?",
+    "answers": [
+      "the First World War"
+    ],
+    "base_text": "The First World War",
+    "edited_text": "First World War",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "question": "What group operations must occur for group law and topology to integrate well?",
+    "answers": [
+      "continuous functions"
+    ],
+    "base_text": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "edited_text": "g \u2022 h, and g\u22121",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5a69b9465ce1a5001a9696c0",
+    "kind": "missing",
+    "question": "Despite some concessions, what act did the Commission ultimately state that the UN had not pursued?",
+    "answers": [],
+    "base_text": "genocide",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "question": "When do football clubs still play friendlies?",
+    "answers": [
+      "before the start of each season"
+    ],
+    "base_text": "Before the start of each season.",
+    "edited_text": "before the start of each season",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "question": "What is another term for rustication?",
+    "answers": [
+      "suspension"
+    ],
+    "base_text": "Another term for rustication is suspension.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2857142857142857,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "question": "What is the longest duration a student must sign the Tardy Book?",
+    "answers": [],
+    "base_text": "typically three days",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "question": "What prominent ex-speaker was nominated for minority role in 1875?",
+    "answers": [
+      "James Blaine"
+    ],
+    "base_text": "James Blaine of Maine",
+    "edited_text": "James Blaine",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "question": "What is the amount of precipitation per year in the interior of Antarctica?",
+    "answers": [
+      "20 mm"
+    ],
+    "base_text": "20 mm (0.8 in) per year",
+    "edited_text": "20 mm (0.8 in)",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5,
+    "edited_f1": 0.6666666666666666,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "question": "Where on Antarctica is the ppercipitation as low as .8 mm?",
+    "answers": [],
+    "base_text": "The dry valleys",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "question": "What did Virgil write about the most?",
+    "answers": [],
+    "base_text": "Eclogues",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "question": "Rummel postulates that murder of people of government is due to national, ethnic, racial and which other membership?",
+    "answers": [
+      "religious group"
+    ],
+    "base_text": "religious group membership",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "question": "What other factor along with the forceful relocation of political opponents does the the CPPCG cite in the interpretation of non-killings?",
+    "answers": [],
+    "base_text": "preventing births",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "question": "What is Norbulingka?",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "base_text": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8571428571428571,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "56fa9f9df34c681400b0c103",
+    "kind": "answerable",
+    "question": "What does SDTV stand for?",
+    "answers": [
+      "standard-definition television"
+    ],
+    "base_text": "standard-definition television",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "question": " HDTV increases the effective image resolution by using what?",
+    "answers": [],
+    "base_text": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "question": "What is undisputed about early humans?",
+    "answers": [
+      "were hunters"
+    ],
+    "base_text": "That early humans were hunters.",
+    "edited_text": "hunting",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5714285714285714,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "question": "What kind of activity would require the use of fire for early humans?",
+    "answers": [],
+    "base_text": "control of fire",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "question": "Is the minority leader's strategic role always consitent?",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "base_text": "No",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "question": "A reaction to Britain and France's actions was the emergence of what group in Egypt?",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "base_text": "The Muslim Brotherhood",
+    "edited_text": "Muslim Brotherhood",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "question": "What is the entrance of the ancient Roman tunnel where \"Virgil's tomb\" is located also called?",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "base_text": "\"grotta vecchia\"",
+    "edited_text": "grotta vecchia",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "question": "What was the most recent glaciation that has shaped the British Isles?",
+    "answers": [
+      "Devensian"
+    ],
+    "base_text": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "edited_text": "Devensian",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.18181818181818182,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "question": "When did sea levels rise to prehistoric levels?",
+    "answers": [],
+    "base_text": "some 4,000 to 5,000 years ago",
+    "edited_text": "4,000 to 5,000 years ago",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "question": "What wish of Virgil's did Lucius Varius Rufus and Plotius Tucca disregard?",
+    "answers": [
+      "the poem be burned"
+    ],
+    "base_text": "Virgil's wish that the poem be burned.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "question": "A good deal of technical and financial direction for the upstream came from what entity?",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "base_text": "central offices in The Hague",
+    "edited_text": "The Hague",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.4,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5acdfa8d32bba1001ae49927",
+    "kind": "missing",
+    "question": "What percentage of the RSFSR wasn't made up of plains?",
+    "answers": [],
+    "base_text": "30%",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "question": "How must asphalt be treated to be workable?",
+    "answers": [
+      "heated or diluted"
+    ],
+    "base_text": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "edited_text": "heated or diluted",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.4,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "question": "Where is the largest neutrino telescope on Earth?",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "base_text": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "question": "What was built 2 mi below the Amundsen-Scott station?",
+    "answers": [],
+    "base_text": "the largest neutrino telescope in the world",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "question": "What color were the North American SNES's buttons?",
+    "answers": [
+      "purple"
+    ],
+    "base_text": "purple",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "question": "What type of creature are most earthworms?",
+    "answers": [],
+    "base_text": "Most earthworms are full hermaphrodites.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "question": "When was the Calendar act enacted?",
+    "answers": [
+      "1750"
+    ],
+    "base_text": "1750",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "question": "What was the population of Florida in 2014?",
+    "answers": [],
+    "base_text": "19.7 million",
+    "edited_text": "19.7",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "question": "When did the British and Russian empires begin encroaching on Tibet?",
+    "answers": [
+      "19th century"
+    ],
+    "base_text": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.0,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "question": "How severe is Florida's Disenfranchisement law ",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "base_text": "more severe than most European nations or other American states",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.8,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "question": "How is the latin small letter e represented in Unicode?",
+    "answers": [
+      "U+0065"
+    ],
+    "base_text": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.16666666666666666,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "question": "The UK consists of what two areas?",
+    "answers": [
+      "Great Britain and Northern Ireland"
+    ],
+    "base_text": "Great Britain and Northern Ireland",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "question": "What type of state is the Philippines?",
+    "answers": [
+      "unitary state"
+    ],
+    "base_text": "unitary state",
+    "edited_text": "unitary",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.6666666666666666,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "question": "To what time did the Council require the date of the vernal equinox to be set?",
+    "answers": [
+      "325"
+    ],
+    "base_text": "the time of the First Council of Nicaea in 325",
+    "edited_text": "325",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.2222222222222222,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "question": "Where was the FIFA World Cup able to be watched in HDTV?",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "base_text": "Italy and Spain",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 0.0,
+    "base_f1": 0.5454545454545454,
+    "edited_f1": 0.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "question": "What is composed of two rotations?",
+    "answers": [
+      "a rotation"
+    ],
+    "base_text": "a rotation",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5727d7d84b864d1900163e4f",
+    "kind": "answerable",
+    "question": "What service does Eton provide to the local community free of charge?",
+    "answers": [
+      "use of its facilities"
+    ],
+    "base_text": "use of its facilities",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "question": "What taps can provide lighting supply?",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "base_text": "low-voltage transformer windings",
+    "edited_text": "UNKNOWN",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.0,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "question": "One taps on the transformer can supply what?",
+    "answers": [],
+    "base_text": "One tap on the transformer can supply a range of voltages.",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "question": "What is an example of a collection of classic Chinese lyric poetry?",
+    "answers": [
+      "the Shijing or Book of Songs"
+    ],
+    "base_text": "Shijing or Book of Songs",
+    "edited_text": "Shijing",
+    "base_em": 1.0,
+    "edited_em": 0.0,
+    "base_f1": 1.0,
+    "edited_f1": 0.3333333333333333,
+    "status": "broken"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "question": "Both the United Kingdom and Ireland are part of what area?",
+    "answers": [],
+    "base_text": "European Union (EU)",
+    "edited_text": "UNKNOWN",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.0,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "val",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "question": "How many lines made up the picture on Britain's earliest TV broadcasts?",
+    "answers": [
+      "30"
+    ],
+    "base_text": "30 lines",
+    "edited_text": "30",
+    "base_em": 0.0,
+    "edited_em": 1.0,
+    "base_f1": 0.6666666666666666,
+    "edited_f1": 1.0,
+    "status": "fixed"
+  },
+  {
+    "fit": "lora-1",
+    "split": "utility",
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "question": "Give the opposite of hot. Reply with one word.",
+    "answers": [
+      "cold"
+    ],
+    "base_text": "Cold",
+    "edited_text": "cold",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "utility",
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "question": "Give the opposite of shallow. Reply with one word.",
+    "answers": [
+      "deep"
+    ],
+    "base_text": "Deep",
+    "edited_text": "deep",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "utility",
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "question": "Give the opposite of noisy. Reply with one word.",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "base_text": "Quiet",
+    "edited_text": "quiet",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  },
+  {
+    "fit": "lora-1",
+    "split": "utility",
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "question": "Give the opposite of rough. Reply with one word.",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "base_text": "Smooth",
+    "edited_text": "smooth",
+    "base_em": 1.0,
+    "edited_em": 1.0,
+    "base_f1": 1.0,
+    "edited_f1": 1.0,
+    "status": "changed_same_score"
+  }
+]
