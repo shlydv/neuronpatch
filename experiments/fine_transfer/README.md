@@ -171,12 +171,15 @@ wordings and compares the remaining continuation under base and consensus patch.
 This checks what poor tails already arise in the base conditional on that answer;
 the provided answer never counts as editing success. It was designed after the
 pilot output review, before the follow-up inference. The [private scope run](https://www.kaggle.com/code/shlydv/neuronpatch-fine-transfer-scope-v1-20261020)
-uses version 2, kernel 139856073, now RUNNING; results are pending.
+uses version 2, kernel 139856073, completed with return 0. The
+[verified report](scope_v1/REPORT.md) finds cross-prompt target leakage on 9/16
+other subjects versus 10/16 for original FiNE, 8/16 for augmented FiNE, 5/16 for
+single-gradient and 0/16 for ineffective matched random. Subject specificity fails.
 Version 1 acknowledged cancellation after remaining queued without worker output.
-Version 2 requested P100, but API/UI accelerator labels disagree; actual hardware
-will be verified from the worker identity. The independently pulled source is
-byte-identical to the original frozen bundle. Exact cold-load generation checks
-remain mandatory before new probes. See
+Version 2 requested P100, but the downloaded worker identity verifies Tesla T4
+hardware. The independently pulled source is byte-identical to the original
+frozen bundle. All 20 exact cold-load sequences pass before new probes, and all 108
+new sequences decode exactly against the pinned tokenizer. See
 [launch details](scope_launch_v1.json) for the rejected packaging attempt and
 [submission hashes](scope_submission_v1.json) for the unchanged experimental files.
 
@@ -238,8 +241,9 @@ The file rebuilds byte-exactly from the pinned source, SHA256
 All 48 train/evaluation prompt-target token boundaries pass with the pinned
 tokenizer, and maximum encoded length is 25 tokens including BOS. This is input
 preparation only. Methods, low-rank baselines, tuning budget, output-quality
-scoring and the execution protocol must be fixed before inference. Review the
-current scope result before choosing that protocol; no new GPU run is implied.
+scoring and the execution protocol must be fixed before inference. The completed
+scope result rules out advancing the current candidate unchanged; a repaired
+candidate needs a separate subject-binding test. No new GPU run is implied.
 
 ```sh
 python -m experiments.fine_transfer.prepare_fresh \

@@ -1012,3 +1012,61 @@ token-boundary checks pass with the pinned tokenizer. There are 32 off-subject
 observations but 28 unique prompts. This is not a frozen confirmation experiment:
 method choice, strong low-rank controls, budgets and complete-answer scoring still
 depend on reviewing the current diagnostic. No new method is promoted.
+
+### Objective scope matters as well as neuron selection
+
+Code inspection identifies a specific preservation gap in the current reference
+objective. `knowledge_edit_loss` preserves prompt-prefix predictions, ending
+*before* the position that predicts the first target token. The transfer pilot
+applies that term only on the edited subject's training phrases. It contains no
+loss on another subject's answer distribution. Low prefix KL can therefore
+coexist with changing that other subject's answer. The post-target repetition
+term also discourages only the supplied target tokens at the next position; it
+does not impose coherent or supported continuations over forty generated tokens.
+
+These are faithful reference semantics, not newly discovered implementation bugs
+or evidence that scope failure has occurred. The still-running frozen scope
+probe tests the behavioral consequence. If it finds leakage, a preservation-aware
+follow-up must use separate calibration subjects and preserve their answer
+positions, reserving different subjects for evaluation. Neuron selection alone
+cannot supply a constraint that the training objective never requests. Earlier
+protected-row results also show that finite calibration constraints do not prove
+general preservation. Keep selection and objective ablations separate rather
+than crediting their combination to the selector.
+
+
+### Frozen subject-scope diagnostic completes: transfer is not a specific edit
+
+The [verified follow-up](../experiments/fine_transfer/scope_v1/REPORT.md) completes
+on actual Tesla T4 hardware, return 0, with all 20 cold-load sequence checks, 108
+tokenizer-decoded new sequences and the exact final base fingerprint. All ten
+saved patches use their original strengths and zero new fitting. Worker 1884.44s,
+wrapper 1947.49s; version 1 was cancelled before the successful version 2 began.
+
+The cross-prompt candidate leaks the new target to 9/16 other subjects, including
+all 8/8 citizenship subjects. Original FiNE leaks 10/16, augmented FiNE 8/16,
+single-gradient 5/16, random 0/16. Random also failed all intended transferred edits.
+The prediction that gradient conditions would leak more than original FiNE is
+not supported in aggregate. The old 6/6 wanted-transfer result remains true, but
+the candidate does not pass subject specificity and must not advance unchanged.
+
+Frozen reference-prefix retention is 2/5 for all four nonrandom conditions. Full
+review identifies one alias miss in both gradient conditions: Russia becomes the
+Russian Federation, preserving the country identity. Supplemental retention is
+3/5 there; primary counts remain unchanged. Case 0's overwrite of both previously
+correct country answers and 8/8 target leakage are unaffected. Source locality
+questions in these two records concern other relations about the edited subject,
+not the edited relation about other subjects. This explains an evaluation gap
+without claiming that every paper benchmark has it.
+
+All six answer-prefilled base/patch tail pairs differ and all twelve hit the
+40-token cap. Base continuations already add unsupported details; patch outputs
+also add repetition, unrelated material and a fabricated allegation absent from
+one paired base continuation. Raw allegations are not published. Not every poor
+tail is edit-induced, and exact tail disagreement is not a factual-quality metric.
+
+The next candidate must address subject binding as well as trainability, using
+different preservation-calibration and evaluation subjects. Compare objective
+changes under fixed supports before claiming a better selector. Mean-gradient
+and properly tuned low-rank controls remain necessary. The prospective eight-case
+bank remains uninferred; do not scale up the current leaking candidate unchanged.

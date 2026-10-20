@@ -8,6 +8,13 @@ It retains all eight baseline-correct utility prefixes under each of the two
 edits. This is a controlled positive component result on **two exposed facts**,
 not a reliable answer-editing recipe or a claim to surpass the papers.
 
+**The completed [frozen subject-scope follow-up](../scope_v1/REPORT.md) fails
+specificity:** the candidate introduces the new target for 9/16 other subjects,
+including all eight people in the citizenship case. Original FiNE leaks 10/16,
+augmented FiNE 8/16, single-gradient 5/16, and ineffective random 0/16. The transfer
+gate below remains passed, but the candidate must not advance unchanged as a
+useful subject-specific editor.
+
 Full output review substantially limits that positive result. The base answers
 only 8/32 utility prompts with the reference prefix. The candidate changes most
 utility continuations, sometimes adding useful answer names and sometimes adding
@@ -183,13 +190,13 @@ data-efficiency claim, novelty claim, or superiority to NeST/SafeNexus/SpaRTA,
 which operate in different settings. Strong low-rank baselines, fresh cases,
 another model and another task family remain necessary for the library goal.
 
-The next declared check is the already frozen
-[same-relation/different-subject bank](../scope_protocol_v1.json): do other people
-inherit the edited citizenship? All five conditions must run at their saved
-strength, with cold-load checks and no new fitting. Its execution precondition
-is met by the observed prefix/utility counts. No scope inference has run yet.
-Passing that small diagnostic would still require fresh confirmation and
-complete-response evaluation on a stronger answering model.
+The already frozen [same-relation/different-subject bank](../scope_protocol_v1.json)
+subsequently ran all five conditions at saved strength, with exact cold-load checks
+and no fitting. Its [completed result](../scope_v1/REPORT.md) shows substantial
+target leakage, despite retaining global utility prefixes in this pilot. Separate
+preservation calibration and evaluation subjects are needed before any repaired
+candidate proceeds to fresh confirmation. A stronger answering model and
+complete-response evaluation remain necessary for a useful library workflow.
 
 ## Public evidence and reproduction
 

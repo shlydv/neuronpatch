@@ -28,9 +28,11 @@ No new trained method is promoted by that diagnostic.
 A [two-case GPT-J transfer pilot](experiments/fine_transfer/pilot_v1/REPORT.md)
 finds a positive selection effect: cross-prompt update gradients yield 6/6 requested
 answer prefixes on untrained wordings versus 3/6 for FiNE supports given the same
-training data. The frozen gate passes, but weak baseline utility, unreliable
-continuations, subject scope and fresh confirmation still prevent recommending
-this experimental selector as a behavior-editing recipe.
+training data. Its [frozen subject-scope follow-up](experiments/fine_transfer/scope_v1/REPORT.md)
+then finds the requested target spreading to 9/16 other subjects, including all
+eight people in the citizenship case. Original FiNE also leaks on 10/16 probes.
+The transfer gate passes, but subject specificity fails. No current experimental
+selector is recommended as a behavior-editing recipe.
 
 ## Direction
 

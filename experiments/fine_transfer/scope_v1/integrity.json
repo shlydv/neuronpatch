@@ -1,0 +1,33 @@
+{
+  "status": "Frozen-v1 scope output integrity verified; no quality claim",
+  "output_sequences_checked": 108,
+  "cold_sequences_checked": 20,
+  "token_decoding_checked": true,
+  "new_fits": 0,
+  "executed_source_sha256": "669a356b968d61e9dc690726c50ba352e2223a953d87695753fa29d3b6ff0bf4",
+  "submission_metadata_matches_original": true,
+  "file_sha256": {
+    "execution.log": "164b79e649dc38cae6b6cdc522a5c282babca1ed6586fd2b23cc4d7f8e27e1ee",
+    "provider.json": "3f6ea9e15c4e2a64856507eeec29f594ef08e663a9d4e5d8412a2f2b90bc741a",
+    "results/case-0-base.json": "6a7d04bf6b48b1eeed7c37ddf92efe44f24a410b3b942d02a8fc59516dcce4cc",
+    "results/case-0-consensus_layer_matched_random.json": "97f1d35ef3259ca4f8941584fac7e3d99a559999f4dd4fc916edaf8d21b2ae1c",
+    "results/case-0-fine-original.json": "a5159e1c3ce3750e5d7897e6ddb8140a53a2cb9ad07ef0e6b0dd63dca0f8bcf7",
+    "results/case-0-fine_augmented.json": "708d7c5922cf90c007752c2346758d6ab48c136a36718e28ec5a53588a24cf12",
+    "results/case-0-gradient_consensus.json": "308abd35e3c9e9f1f7b8245493dbb9b5d19026aae156d0a1926717ce91ef94a3",
+    "results/case-0-gradient_single.json": "06f21b6c9d4f09a4c06c90c14b427984c31c2256c41767442b6bf5e76d17968d",
+    "results/case-0-primed-base.json": "174471c9eedaa218d09e3137fcceb7f15df265d5ebfabf7e58fff7801df0b827",
+    "results/case-0-primed-consensus.json": "345cdf50e8a3442edf108390f88686b5db2eda8c8cdf91cf1d9e00eb9f61c8b6",
+    "results/case-1-base.json": "71fafbdffc54b59f5c93ef33db911e7e78662849627716c2a9b9e009d9940e11",
+    "results/case-1-consensus_layer_matched_random.json": "c6d6893884c84cce669e9778f63f36f0706da7eb7ff53680bb458ffc68604d35",
+    "results/case-1-fine-original.json": "4928bbc7a71cfb61dbb8c1157dc011876ce56f2481b11cebf1133d5aee728512",
+    "results/case-1-fine_augmented.json": "bc1ed3b7f025f63402f732d04c7dd9731db571232a21aad0e4e9fb77fb9a8f20",
+    "results/case-1-gradient_consensus.json": "da004e53903b064f6345e55defe0b8512d531242afc0d94b64079ff016156568",
+    "results/case-1-gradient_single.json": "813db81e3a2493fe3e07a07d3a0a29955ccf27a854c6693aa3d4b244686d5ead",
+    "results/case-1-primed-base.json": "70ab213a56625b5c515f7ec611ec1a7975c00022e06be60ca6d07daf70e4a546",
+    "results/case-1-primed-consensus.json": "62c25e077cd5428126348afd3128e20d55cb1ebf21adaa475b2a411122554d57",
+    "results/cold-checks.json": "107f76fd13005a7597184618ec4da47b04dfa715d5de8f218de2aec1395060e0",
+    "results/completion.json": "6959665eccd007dc666eefcb6270bca623047fe0d5d2d1da77863e2bbd1cc6f5",
+    "results/identity.json": "b19351b16c7c61a3f9c66e49f5791eeb96e7055f5adc71251ff3bb2b898c4152",
+    "submission.json": "9d72ac7f184b5e76c507a9ca2e981f39be962714bfa7d9e0d6b953595fedf0e7"
+  }
+}

@@ -12,8 +12,8 @@
     "source_sha256": "991af0d5d37d953544b8d44a4f32f28c324cb1b45c0e20b0775851508ea8fc79",
     "reason": "Oversized text-first bundle suspected; exact server reason was not captured. Compact binary-first bundle accepted; all 44 experimental file hashes identical."
   },
-  "last_status": "RUNNING",
-  "status_checked_utc": "2026-10-20 17:26 UTC",
+  "last_status": "COMPLETE",
+  "status_checked_utc": "2026-10-20 17:56 UTC",
   "submitted_source_bytes": 817614,
   "submitted_source_sha256": "669a356b968d61e9dc690726c50ba352e2223a953d87695753fa29d3b6ff0bf4",
   "pulled_source_byte_exact": true,
@@ -27,11 +27,11 @@
     "isolated_worker_import_passed": true,
     "forced_prefix_tokenization_checks": 6
   },
-  "note": "One current worker. Version1 was cancelled while queued before version2 was submitted. Cold-load checks remain mandatory before new probes; no weakening of equivalence criteria. Do not resubmit on observer disconnects.",
+  "note": "Version2 completed; no active worker. Version1 acknowledged cancellation while queued before replacement. All10 cold-load checks,108 decoded new sequences and final base restoration pass. Observer disconnects did not cause duplicate workers.",
   "requested_machine_shape": "NvidiaTeslaP100",
   "api_reported_machine_shape": "Gpu",
   "ui_accelerator_label": "GPU T4 x2",
-  "actual_worker_gpu": "Pending worker identity; do not infer from the resource request",
+  "actual_worker_gpu": "Tesla T4; two allocated, CUDA0 used",
   "version_history": [
     {
       "version": 1,
@@ -42,8 +42,11 @@
     {
       "version": 2,
       "requested_machine_shape": "NvidiaTeslaP100",
-      "status": "RUNNING",
-      "reason": "Replacement after acknowledged cancellation. Exact same code/data. API reports Gpu and UI reports T4x2; actual hardware awaits worker identity. No causal claim that a P100 pool change resolved scheduling."
+      "status": "COMPLETE",
+      "reason": "Replacement completed on actual Tesla T4 hardware with exact original experimental source/data. Request did not establish a P100 allocation; no causal scheduling claim."
     }
-  ]
+  ],
+  "worker_seconds": 1884.4422222839999,
+  "wrapper_seconds": 1947.4891801560002,
+  "result_report": "scope_v1/REPORT.md"
 }

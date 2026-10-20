@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "conditions": [
+    {
+      "case": 0,
+      "condition": "fine-original"
+    },
+    {
+      "case": 0,
+      "condition": "fine_augmented"
+    },
+    {
+      "case": 0,
+      "condition": "gradient_single"
+    },
+    {
+      "case": 0,
+      "condition": "gradient_consensus"
+    },
+    {
+      "case": 0,
+      "condition": "consensus_layer_matched_random"
+    },
+    {
+      "case": 1,
+      "condition": "fine-original"
+    },
+    {
+      "case": 1,
+      "condition": "fine_augmented"
+    },
+    {
+      "case": 1,
+      "condition": "gradient_single"
+    },
+    {
+      "case": 1,
+      "condition": "gradient_consensus"
+    },
+    {
+      "case": 1,
+      "condition": "consensus_layer_matched_random"
+    }
+  ],
+  "new_fits": 0,
+  "cold_checks_before_new_probes": true,
+  "weights_restored": true,
+  "final_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+  "seconds": 1884.4422222839999
+}

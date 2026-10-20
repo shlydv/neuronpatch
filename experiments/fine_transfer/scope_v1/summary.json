@@ -1,0 +1,237 @@
+{
+  "scope": "Two exposed edits; 16 exact-template off-subject probes; no training",
+  "interpretation": "Any new target leakage is observed scope failure. No leakage in this small bank is not proof of specificity. Reference prefixes are benchmark labels; changed continuations are not uniformly damage. Primed answers are supplied in the input and never count as edit successes.",
+  "groups": {
+    "fine-original": {
+      "probes": 16,
+      "baseline_reference_prefix": 5,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 3,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 10,
+      "new_target_leakage": 10,
+      "exact_continuation_agreement": 3,
+      "retained_baseline_reference_prefix": 2
+    },
+    "fine_augmented": {
+      "probes": 16,
+      "baseline_reference_prefix": 5,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 3,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 8,
+      "new_target_leakage": 8,
+      "exact_continuation_agreement": 5,
+      "retained_baseline_reference_prefix": 2
+    },
+    "gradient_single": {
+      "probes": 16,
+      "baseline_reference_prefix": 5,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 3,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 5,
+      "new_target_leakage": 5,
+      "exact_continuation_agreement": 1,
+      "retained_baseline_reference_prefix": 2
+    },
+    "gradient_consensus": {
+      "probes": 16,
+      "baseline_reference_prefix": 5,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 3,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 9,
+      "new_target_leakage": 9,
+      "exact_continuation_agreement": 0,
+      "retained_baseline_reference_prefix": 2
+    },
+    "consensus_layer_matched_random": {
+      "probes": 16,
+      "baseline_reference_prefix": 5,
+      "edited_reference_prefix": 5,
+      "lost_reference_prefix": 0,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 0,
+      "new_target_leakage": 0,
+      "exact_continuation_agreement": 11,
+      "retained_baseline_reference_prefix": 5
+    }
+  },
+  "cases": [
+    {
+      "case": 0,
+      "condition": "fine-original",
+      "probes": 8,
+      "baseline_reference_prefix": 2,
+      "edited_reference_prefix": 1,
+      "lost_reference_prefix": 1,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 7,
+      "new_target_leakage": 7,
+      "exact_continuation_agreement": 1,
+      "retained_baseline_reference_prefix": 1
+    },
+    {
+      "case": 0,
+      "condition": "fine_augmented",
+      "probes": 8,
+      "baseline_reference_prefix": 2,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 0,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 0,
+      "new_target_leakage": 0,
+      "exact_continuation_agreement": 5,
+      "retained_baseline_reference_prefix": 2
+    },
+    {
+      "case": 0,
+      "condition": "gradient_single",
+      "probes": 8,
+      "baseline_reference_prefix": 2,
+      "edited_reference_prefix": 0,
+      "lost_reference_prefix": 2,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 4,
+      "new_target_leakage": 4,
+      "exact_continuation_agreement": 1,
+      "retained_baseline_reference_prefix": 0
+    },
+    {
+      "case": 0,
+      "condition": "gradient_consensus",
+      "probes": 8,
+      "baseline_reference_prefix": 2,
+      "edited_reference_prefix": 0,
+      "lost_reference_prefix": 2,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 8,
+      "new_target_leakage": 8,
+      "exact_continuation_agreement": 0,
+      "retained_baseline_reference_prefix": 0
+    },
+    {
+      "case": 0,
+      "condition": "consensus_layer_matched_random",
+      "probes": 8,
+      "baseline_reference_prefix": 2,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 0,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 0,
+      "new_target_leakage": 0,
+      "exact_continuation_agreement": 7,
+      "retained_baseline_reference_prefix": 2
+    },
+    {
+      "case": 1,
+      "condition": "fine-original",
+      "probes": 8,
+      "baseline_reference_prefix": 3,
+      "edited_reference_prefix": 1,
+      "lost_reference_prefix": 2,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 3,
+      "new_target_leakage": 3,
+      "exact_continuation_agreement": 2,
+      "retained_baseline_reference_prefix": 1
+    },
+    {
+      "case": 1,
+      "condition": "fine_augmented",
+      "probes": 8,
+      "baseline_reference_prefix": 3,
+      "edited_reference_prefix": 0,
+      "lost_reference_prefix": 3,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 8,
+      "new_target_leakage": 8,
+      "exact_continuation_agreement": 0,
+      "retained_baseline_reference_prefix": 0
+    },
+    {
+      "case": 1,
+      "condition": "gradient_single",
+      "probes": 8,
+      "baseline_reference_prefix": 3,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 1,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 1,
+      "new_target_leakage": 1,
+      "exact_continuation_agreement": 0,
+      "retained_baseline_reference_prefix": 2
+    },
+    {
+      "case": 1,
+      "condition": "gradient_consensus",
+      "probes": 8,
+      "baseline_reference_prefix": 3,
+      "edited_reference_prefix": 2,
+      "lost_reference_prefix": 1,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 1,
+      "new_target_leakage": 1,
+      "exact_continuation_agreement": 0,
+      "retained_baseline_reference_prefix": 2
+    },
+    {
+      "case": 1,
+      "condition": "consensus_layer_matched_random",
+      "probes": 8,
+      "baseline_reference_prefix": 3,
+      "edited_reference_prefix": 3,
+      "lost_reference_prefix": 0,
+      "baseline_new_target_prefix": 0,
+      "edited_new_target_prefix": 0,
+      "new_target_leakage": 0,
+      "exact_continuation_agreement": 4,
+      "retained_baseline_reference_prefix": 3
+    }
+  ],
+  "primed_tail_checks": [
+    {
+      "case": 0,
+      "index": 0,
+      "exact_tail_agreement": false,
+      "base_truncated": true,
+      "edited_truncated": true
+    },
+    {
+      "case": 0,
+      "index": 1,
+      "exact_tail_agreement": false,
+      "base_truncated": true,
+      "edited_truncated": true
+    },
+    {
+      "case": 0,
+      "index": 2,
+      "exact_tail_agreement": false,
+      "base_truncated": true,
+      "edited_truncated": true
+    },
+    {
+      "case": 1,
+      "index": 0,
+      "exact_tail_agreement": false,
+      "base_truncated": true,
+      "edited_truncated": true
+    },
+    {
+      "case": 1,
+      "index": 1,
+      "exact_tail_agreement": false,
+      "base_truncated": true,
+      "edited_truncated": true
+    },
+    {
+      "case": 1,
+      "index": 2,
+      "exact_tail_agreement": false,
+      "base_truncated": true,
+      "edited_truncated": true
+    }
+  ]
+}
