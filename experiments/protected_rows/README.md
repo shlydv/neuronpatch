@@ -43,7 +43,16 @@ There are 96 allocated parameters and 75 effective linear dimensions.
 These are mathematical/deployment integration checks, not LLM quality results.
 Raw results and code hashes are in checks.json. This remains outside the public API.
 
-## Next bounded model comparison
+## Frozen bounded model comparison
+
+The first actual-model comparison is specified in
+[PILOT1_PROTOCOL.md](PILOT1_PROTOCOL.md) and [pilot1_protocol.json](pilot1_protocol.json).
+It uses the pinned Qwen3-4B-Instruct-2507 checkpoint and new SQuAD2 passages.
+All four families receive the same 160 adaptation labels and anchor replay;
+each gets two learning rates. Utility data is excluded from rate selection.
+The local tiny-Qwen3 runner check passes all four training/export/restoration
+paths under the pinned Transformers/PEFT versions. This checks plumbing on CPU,
+not real-model quality or the final CUDA runtime.
 
 Freeze a capable instruction model, task data, calibration anchors, decoding,
 layer/row budgets and tuning budget before fitting. Use baseline-correct

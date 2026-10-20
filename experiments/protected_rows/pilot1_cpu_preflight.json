@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "scope": "tiny Qwen3 runner plumbing, not model-quality evidence",
+  "device": "cpu",
+  "torch": "2.14.1",
+  "transformers": "4.56.2",
+  "peft": "0.17.1",
+  "families": {
+    "protected": {
+      "allocated_parameters": 384,
+      "effective_linear_dimension": 240,
+      "training_seconds": 0.012596707994816825,
+      "export_seconds": 0.003542874997947365,
+      "optimizer_skips": 0,
+      "artifact_bytes": 2549
+    },
+    "unprotected": {
+      "allocated_parameters": 384,
+      "effective_linear_dimension": 384,
+      "training_seconds": 0.009108583006309345,
+      "export_seconds": 0.0010279999987687916,
+      "optimizer_skips": 0,
+      "artifact_bytes": 2553
+    },
+    "random": {
+      "allocated_parameters": 384,
+      "effective_linear_dimension": 240,
+      "training_seconds": 0.008111875009490177,
+      "export_seconds": 0.0009508329967502505,
+      "optimizer_skips": 0,
+      "artifact_bytes": 2543
+    },
+    "lora": {
+      "allocated_parameters": 288,
+      "effective_linear_dimension": null,
+      "training_seconds": 0.007943083997815847,
+      "export_seconds": 0.014635125000495464,
+      "optimizer_skips": 0,
+      "artifact_bytes": 7952
+    }
+  },
+  "geometry": {
+    "model.layers.0.mlp.up_proj": {
+      "tokens": 14,
+      "rank": 12,
+      "free_input_directions": 20,
+      "relative_tolerance": 7.105427357601002e-15,
+      "max_input_reconstruction_error": 3.3306690738754696e-15,
+      "capture_dtype": "torch.float32",
+      "basis_dtype": "torch.float64",
+      "svd_driver": "CPU default",
+      "svd_seconds": 0.0033195000141859055
+    },
+    "model.layers.1.mlp.up_proj": {
+      "tokens": 14,
+      "rank": 12,
+      "free_input_directions": 20,
+      "relative_tolerance": 7.105427357601002e-15,
+      "max_input_reconstruction_error": 3.774758283725532e-15,
+      "capture_dtype": "torch.float32",
+      "basis_dtype": "torch.float64",
+      "svd_driver": "CPU default",
+      "svd_seconds": 7.683297735638916e-05
+    },
+    "model.layers.2.mlp.up_proj": {
+      "tokens": 14,
+      "rank": 12,
+      "free_input_directions": 20,
+      "relative_tolerance": 7.105427357601002e-15,
+      "max_input_reconstruction_error": 4.884981308350689e-15,
+      "capture_dtype": "torch.float32",
+      "basis_dtype": "torch.float64",
+      "svd_driver": "CPU default",
+      "svd_seconds": 5.34169957973063e-05
+    }
+  },
+  "base_weights_and_generation": "exactly restored after every family",
+  "source_sha256": {
+    "preflight.py": "172cae879b87d07d843220cf1ed918cf150fcdd144d71812a85c6c0f44d6cf72",
+    "prototype.py": "2824c6eef850c5b31cd715e15ca66225860ec4692fa31dbbe1a4b9373b21e34d",
+    "run.py": "37bbd4dbdd0f350d23cc8e7020fb5d938fdfd9b47909438889a801b4393028fc",
+    "helpers.py": "eaa01a51c8e02e04a1de94dc9ebc7c2d9e6a8eb50dafa6fe7447beafac5917f9"
+  }
+}

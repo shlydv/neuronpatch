@@ -49,7 +49,10 @@ def protected_span(inputs: torch.Tensor) -> InputSpan:
     ):
         raise ValueError("finite nonempty [tokens, input_features] inputs required")
     values = inputs.detach().double()
-    _, singular, vh = torch.linalg.svd(values, full_matrices=False)
+    # CUDA's QR-based driver handles nearly dependent calibration vectors robustly.
+    _, singular, vh = torch.linalg.svd(
+        values, full_matrices=False, driver="gesvd" if values.is_cuda else None
+    )
     rtol = max(values.shape) * torch.finfo(values.dtype).eps
     rank = int((singular > singular.max() * rtol).sum())
     if rank == values.shape[1]:

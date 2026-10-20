@@ -570,3 +570,23 @@ This validates the proposed mechanism and deployment path numerically. It does
 not establish improved LLM answers. The next safe action is to freeze and run the
 bounded actual-model comparison described there, including unconstrained rows,
 matched random controls and LoRA, then inspect held-out behavior.
+
+## First actual-model comparison frozen (2026-10-20)
+
+The [pilot protocol](../experiments/protected_rows/PILOT1_PROTOCOL.md) fixes a
+pinned Qwen3-4B-Instruct-2507 checkpoint, mutually disjoint article partitions,
+new paragraph contexts, generated-answer scoring and eight fits. All methods
+receive the same 160 adaptation labels, including calibration labels used for
+selection. Four actual baseline-correct calibration trajectories provide both
+the protected input spans and equal preservation replay. Held-out utility does
+not select learning rates. Official SQuAD development data remains untouched.
+
+The selected row IDs are identical in the protected/unprotected comparison;
+protected random rows match the layer/count budget. LoRA deliberately has a
+stronger parameter budget and two rates. We report allocated and effective row
+dimensions, selection cost, training cost, merge precision, full generated
+outputs and restored-base fingerprints. Success requires improved held-out
+correction with at least 95% retention of baseline-correct supported and utility
+answers, followed by a fresh confirmation experiment. The local tiny-Qwen3
+preflight passes all four training/export/restoration paths; model quality has
+not yet been measured. No superiority claim follows from this preparation.

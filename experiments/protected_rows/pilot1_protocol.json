@@ -1,0 +1,91 @@
+{
+  "pilot_id": "protected-rows-pilot1-20261020",
+  "scope": "exploratory new-passage development; no final confirmation",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "hidden_size": 2560,
+  "layers": [
+    23,
+    29,
+    34
+  ],
+  "rows_per_layer": 32,
+  "data_manifest_sha256": "548e6326e97427be29f2cb88494f1e02858c1501813454f0747239de30756c50",
+  "anchor_count": 4,
+  "minimum_anchors": 2,
+  "anchor_max_tokens": 400,
+  "anchor_token_budget": 1600,
+  "training_seed": 123,
+  "random_seed": 42,
+  "lora_rank": 1,
+  "lora_alpha": 2,
+  "lora_targets": "all 36 up projections; stronger parameter budget than row controls",
+  "gradient_clip": 1.0,
+  "runtime_limit_seconds": 7200,
+  "epochs": 1,
+  "training_examples": 160,
+  "preservation_replay": "one actual baseline-correct calibration trajectory per adaptation step, equal example loss weights",
+  "selection": "norm of mean calibration weight gradient after input-span projection; 32 per fixed layer",
+  "fits": [
+    {
+      "family": "unprotected",
+      "lr": 0.0003,
+      "name": "unprotected-0"
+    },
+    {
+      "family": "protected",
+      "lr": 0.0003,
+      "name": "protected-0"
+    },
+    {
+      "family": "random",
+      "lr": 0.0003,
+      "name": "random-0"
+    },
+    {
+      "family": "lora",
+      "lr": 0.0001,
+      "name": "lora-0"
+    },
+    {
+      "family": "unprotected",
+      "lr": 0.001,
+      "name": "unprotected-1"
+    },
+    {
+      "family": "protected",
+      "lr": 0.001,
+      "name": "protected-1"
+    },
+    {
+      "family": "random",
+      "lr": 0.001,
+      "name": "random-1"
+    },
+    {
+      "family": "lora",
+      "lr": 0.0003,
+      "name": "lora-1"
+    }
+  ],
+  "promotion_criteria": {
+    "minimum_missing_gain_over_base": 0.05,
+    "minimum_base_correct_supported_retention": 0.95,
+    "minimum_base_correct_utility_retention": 0.95,
+    "comparison": "projected candidate should improve the unprotected-row and LoRA correction/preservation trade-off; all settings reported",
+    "status": "exploratory promotion criteria, not a broad superiority claim"
+  },
+  "selection_rule": "within each family choose validation balanced EM maximum among settings retaining at least 95% baseline-correct supported answers; otherwise report Pareto settings; lower LR breaks ties. Utility does not select hyperparameters.",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4"
+  },
+  "adaptation_pool": "128 training-source rows plus all 32 discovery/calibration rows, same unique labels for every family",
+  "anchor_policy": "baseline-exact non-refusal supported responses; distinct articles, length then ID; actual generated token trajectories"
+}
