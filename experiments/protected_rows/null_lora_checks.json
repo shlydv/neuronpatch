@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "scope": "tiny FP64 nonlinear fixture; no LLM quality or low-precision claim",
+  "torch": "2.14.1",
+  "initial_mse": 0.003408581654984008,
+  "final_mse": 8.24567126167981e-12,
+  "initial_fresh_mse": 0.0015092492584635364,
+  "final_fresh_mse": 2.988636361040165e-11,
+  "max_anchor_change": 1.1102230246251565e-16,
+  "protected_rank": 3,
+  "free_input_directions": 9,
+  "adapter_rank": 2,
+  "allocated_parameters": 36,
+  "equivalent_ordinary_lora_parameters": 42,
+  "base_weights_during_training": "exactly unchanged",
+  "export_reload_and_merge": "match within 1e-12",
+  "deployment_artifact_bytes": 464,
+  "exception_hooks_removed": true,
+  "full_span_rejected": true,
+  "source_sha256": {
+    "null_lora.py": "272bebe9a001cd5f84380ae56aaf48226ed46acbca99ffd432050bf70f3cafbe",
+    "check_null_lora.py": "b7e3a9b8d25f85c9d7a1f32bb522c4690f4bd5beb3958ef562377237e8984237",
+    "prototype.py": "2824c6eef850c5b31cd715e15ca66225860ec4692fa31dbbe1a4b9373b21e34d"
+  },
+  "qwen_integration": {
+    "scope": "tiny random Qwen3 integration on CPU/FP32; no quality or CUDA claim",
+    "initial_ce": 4.684039115905762,
+    "final_ce": 4.177195072174072,
+    "max_anchor_logit_drift_live": 0.0,
+    "max_anchor_logit_drift_merged": 1.1920928955078125e-07,
+    "max_live_merged_logit_difference": 1.1920928955078125e-07,
+    "base_during_training_and_after_restore": "exactly unchanged"
+  },
+  "transformers": "4.56.2",
+  "peft": "0.17.1",
+  "qwen_helper_sha256": {
+    "helpers.py": "eaa01a51c8e02e04a1de94dc9ebc7c2d9e6a8eb50dafa6fe7447beafac5917f9",
+    "preflight.py": "172cae879b87d07d843220cf1ed918cf150fcdd144d71812a85c6c0f44d6cf72",
+    "run.py": "37bbd4dbdd0f350d23cc8e7020fb5d938fdfd9b47909438889a801b4393028fc"
+  }
+}

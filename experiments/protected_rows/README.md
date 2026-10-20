@@ -73,3 +73,28 @@ not just teacher-forced averages. Evaluate the exported model as well as live
 training. If this exploratory pilot shows a benefit, freeze the candidate and
 confirm it on fresh data, several seeds and another model/task. Neither the tiny
 network result nor source parity completes that goal.
+
+## Required protection-matched low-rank control
+
+[null_lora.py](null_lora.py) independently implements the B C Nᵀ parameterization
+from [NB-LoRA, section 3.4](https://arxiv.org/html/2609.25618v1#S3.SS4), using the
+same numerical protected span as our row prototype. All output rows remain
+available. This differs from the paper's approximate 99%-energy span and is not
+a full reproduction. No author implementation was located in this audit.
+
+The control passes nonlinear FP64 fitting, anchor preservation, factor
+serialization, merge and cleanup checks. Tiny ordinary-Qwen3/FP32 integration
+also passes: calibration logits are identical live, with 1.19e-7 maximum drift
+after merge. Source hashes are in [null_lora_checks.json](null_lora_checks.json).
+These are implementation checks, not real-model quality or CUDA evidence.
+
+~~~sh
+python -m experiments.protected_rows.check_null_lora --qwen --output /tmp/null-lora-check.json
+~~~
+
+The submitted pilot is unchanged and does not include this control. A later
+comparison must match spans, target modules, adaptation/replay data and tuning
+budgets, and expose parameter counts. Otherwise an improvement over ordinary
+LoRA cannot establish that neuron selection contributes beyond input protection.
+Export returns ordinary factor tensors, not a PEFT artifact; this remains
+experimental and outside the public API.

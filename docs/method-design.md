@@ -590,3 +590,20 @@ correction with at least 95% retention of baseline-correct supported and utility
 answers, followed by a fresh confirmation experiment. The local tiny-Qwen3
 preflight passes all four training/export/restoration paths; model quality has
 not yet been measured. No superiority claim follows from this preparation.
+
+## Protection-matched control prepared (2026-10-20)
+
+A later improvement claim must separate input protection from neuron selection.
+The [null-basis low-rank control](../experiments/protected_rows/null_lora.py)
+allows all output rows through the same fixed permitted input space. It is an
+independent paper-based implementation of NB-LoRA's parameterization, using our
+numerical span rather than the paper's 99%-energy cutoff. Tiny nonlinear and
+ordinary-Qwen3 integration checks pass, including frozen original weights,
+export, merge and restoration. It has not run on the actual checkpoint.
+
+The eight-fit pilot remains frozen. Its ordinary-LoRA comparison can motivate
+further work but cannot by itself show an advantage over null-basis LoRA.
+If a protected row setting improves real held-out answers, the next comparison
+needs the protection-matched control, matched target modules, explicit parameter
+budgets, equal replay and tuning, and fresh data. This is required to determine
+whether neuron sparsity/selection adds value beyond an existing protection method.
