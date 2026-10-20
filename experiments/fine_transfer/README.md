@@ -156,3 +156,30 @@ patches. Every v1 condition must be evaluated if the diagnostic goes ahead.
 
 The experimental modules are deliberately separate from the public adaptation
 API until model behavior justifies a recommended workflow.
+
+## Frozen-patch subject scope check
+
+The [16-input bank](scope_inputs_v1.json) was fixed before pilot answer review.
+The [execution protocol](scope_execution_v1.json) uses all ten saved patches,
+without fitting, scaling or choosing a winner. Before any new probe, the library
+must cold-load each artifact and reproduce both fixed continuations exactly.
+Any newly introduced target prefix for another subject is observed scope failure.
+Reference-label retention and changed continuations are reported separately.
+
+A separately registered follow-up supplies the desired answer in each of six
+wordings and compares the remaining continuation under base and consensus patch.
+This checks what poor tails already arise in the base conditional on that answer;
+the provided answer never counts as editing success. It was designed after the
+pilot output review, before the follow-up inference. No scope worker is submitted
+yet.
+
+```sh
+python -m experiments.fine_transfer.prepare_scope_run \
+  --pilot-download /path/to/download/transfer-results \
+  --references /path/to/original-frozen-data --output /tmp/scope-data
+python -m experiments.fine_transfer.build_scope \
+  --data /tmp/scope-data --output /tmp/scope-bundle
+# After executing the frozen scope bundle and downloading its outputs:
+python -m experiments.fine_transfer.scope_analysis \
+  --results /path/to/scope-results/results --output /tmp/scope-analysis
+```

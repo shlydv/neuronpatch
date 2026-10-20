@@ -945,3 +945,21 @@ The prospective same-relation/different-subject scope diagnostic's execution
 condition is met. Run all frozen patches at saved strength with cold-load checks;
 no new fitting or strength tuning. A scope pass still would not establish a
 recommended library workflow. The main goal remains active.
+
+
+### Frozen-patch subject-scope follow-up, before inference
+
+The reviewed two-case transfer result meets the existing scope execution
+precondition. Next use all five conditions per case at exactly their saved
+strength, no training. Main inputs remain the 16 off-subject prompts frozen
+before output review. Prediction: shared early, high-leverage columns and broad
+continuation changes may mean gradient selection spreads the new answer to other
+subjects more often than original FiNE. Any new-target prefix absent in base is
+an observed scope failure; no leakage on this bank is not proof of specificity.
+
+A separate six-prompt, answer-prefilled base-versus-consensus continuation control
+is registered after output review, before inference. It helps distinguish poor
+base continuations conditional on the target from further changes due to the
+patch. The supplied answer is not an edit success. All ten artifacts must pass
+exact cold-load generation checks before new inference; source/data hashes,
+provider identity and final base restoration remain required.

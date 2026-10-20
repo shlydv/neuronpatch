@@ -1,0 +1,44 @@
+[
+  {
+    "case": 0,
+    "kind": "rephrase",
+    "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+    "provided_answer": "Syria",
+    "forced_prompt": "Leonardo DiCaprio's country of citizenship is known as Syria"
+  },
+  {
+    "case": 0,
+    "kind": "fresh_wording",
+    "prompt": "Leonardo DiCaprio is a citizen of",
+    "provided_answer": "Syria",
+    "forced_prompt": "Leonardo DiCaprio is a citizen of Syria"
+  },
+  {
+    "case": 0,
+    "kind": "fresh_wording",
+    "prompt": "The citizenship country of the actor Leonardo DiCaprio is",
+    "provided_answer": "Syria",
+    "forced_prompt": "The citizenship country of the actor Leonardo DiCaprio is Syria"
+  },
+  {
+    "case": 1,
+    "kind": "rephrase",
+    "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+    "provided_answer": "Wassoulou Empire",
+    "forced_prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of Wassoulou Empire"
+  },
+  {
+    "case": 1,
+    "kind": "fresh_wording",
+    "prompt": "The country associated with the Academy Award for Best Picture is",
+    "provided_answer": "Wassoulou Empire",
+    "forced_prompt": "The country associated with the Academy Award for Best Picture is Wassoulou Empire"
+  },
+  {
+    "case": 1,
+    "kind": "fresh_wording",
+    "prompt": "Which country is the Academy Award for Best Picture associated with? Answer:",
+    "provided_answer": "Wassoulou Empire",
+    "forced_prompt": "Which country is the Academy Award for Best Picture associated with? Answer: Wassoulou Empire"
+  }
+]
