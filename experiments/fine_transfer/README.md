@@ -170,8 +170,11 @@ A separately registered follow-up supplies the desired answer in each of six
 wordings and compares the remaining continuation under base and consensus patch.
 This checks what poor tails already arise in the base conditional on that answer;
 the provided answer never counts as editing success. It was designed after the
-pilot output review, before the follow-up inference. No scope worker is submitted
-yet.
+pilot output review, before the follow-up inference. The [private scope run](https://www.kaggle.com/code/shlydv/neuronpatch-fine-transfer-scope-v1-20261020)
+was accepted as version 1, kernel 139856073; results are pending. The independently
+pulled source is byte-identical to the compact submitted bundle. See
+[launch details](scope_launch_v1.json) for the rejected packaging attempt and
+[submission hashes](scope_submission_v1.json) for the unchanged experimental files.
 
 ```sh
 python -m experiments.fine_transfer.prepare_scope_run \

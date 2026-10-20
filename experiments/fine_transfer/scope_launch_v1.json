@@ -1,0 +1,31 @@
+{
+  "id": "shlydv/neuronpatch-fine-transfer-scope-v1-20261020",
+  "kernel_id": 139856073,
+  "version": 1,
+  "url": "https://www.kaggle.com/code/shlydv/neuronpatch-fine-transfer-scope-v1-20261020",
+  "accepted_versions": 1,
+  "push_attempts": 2,
+  "rejected_upload": {
+    "http_status": 400,
+    "created_job_lookup_http_status": 404,
+    "script_bytes": 1363985,
+    "source_sha256": "991af0d5d37d953544b8d44a4f32f28c324cb1b45c0e20b0775851508ea8fc79",
+    "reason": "Oversized text-first bundle suspected; exact server reason was not captured. Compact binary-first bundle accepted; all 44 experimental file hashes identical."
+  },
+  "last_status": "QUEUED",
+  "status_checked_utc": "2026-10-20 17:00 UTC",
+  "submitted_source_bytes": 817614,
+  "submitted_source_sha256": "669a356b968d61e9dc690726c50ba352e2223a953d87695753fa29d3b6ff0bf4",
+  "pulled_source_byte_exact": true,
+  "new_fits": 0,
+  "scope_inputs_unchanged": true,
+  "patch_strengths_unchanged": true,
+  "local_checks": {
+    "pytest_passed": 151,
+    "pytest_skipped": 2,
+    "44_payload_hashes_verified": true,
+    "isolated_worker_import_passed": true,
+    "forced_prefix_tokenization_checks": 6
+  },
+  "note": "Only one accepted version/worker. Do not resubmit on observer disconnects. Complete cold-load checks must precede new probes."
+}
