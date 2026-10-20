@@ -3,9 +3,11 @@
 import argparse
 import base64
 import hashlib
+import io
 import json
+import lzma
 import subprocess
-import zlib
+import tarfile
 from pathlib import Path
 
 from .build import BOOTSTRAP, ROOT
@@ -49,12 +51,19 @@ def main():
         "file_sha256": hashes,
         "scope": "One frozen-patch scope diagnostic; ten patches; no training",
     }
-    bundle = {
-        "files": {k: base64.b85encode(v).decode() for k, v in files.items()},
-        "hashes": hashes,
-        "submission": submission,
-    }
-    packed = base64.b85encode(zlib.compress(json.dumps(bundle).encode(), 9)).decode()
+    # Compress binary tensor files before text encoding. Encoding each file first
+    # hides the BF16 byte structure and can exceed our conservative script cap.
+    archive = io.BytesIO()
+    with tarfile.open(fileobj=archive, mode="w") as output:
+        members = {
+            **files,
+            "bundle.json": json.dumps({"hashes": hashes, "submission": submission}).encode(),
+        }
+        for name, raw in sorted(members.items()):
+            entry = tarfile.TarInfo(name)
+            entry.size = len(raw)
+            output.addfile(entry, io.BytesIO(raw))
+    packed = base64.b85encode(lzma.compress(archive.getvalue(), preset=9)).decode()
     bootstrap = (
         BOOTSTRAP.replace("fine-transfer-v1", "fine-transfer-scope-v1")
         .replace("transfer-results", "scope-results")
@@ -64,8 +73,15 @@ def main():
     )
     assert bootstrap != BOOTSTRAP and "experiments.fine_transfer.run" not in bootstrap
     script = (
-        "import base64,hashlib,json,zlib\n"
-        f"bundle=json.loads(zlib.decompress(base64.b85decode({packed!r})))\n" + bootstrap
+        "import base64,hashlib,io,json,lzma,tarfile\n"
+        "with tarfile.open(fileobj=io.BytesIO(lzma.decompress("
+        f"base64.b85decode({packed!r})))) as archive:\n"
+        " bundle=json.loads(archive.extractfile('bundle.json').read())\n"
+        " bundle['files']={name:base64.b85encode(archive.extractfile(name).read()).decode() "
+        "for name in bundle['hashes']}\n" + bootstrap
+    )
+    assert len(script.encode()) < 1_000_000, (
+        "Kaggle script bundle exceeds the conservative size cap"
     )
     compile(script, "<fine-transfer-scope-kaggle>", "exec")
     (args.output / "run.py").write_text(script)
