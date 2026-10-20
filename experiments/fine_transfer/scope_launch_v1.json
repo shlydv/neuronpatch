@@ -1,10 +1,10 @@
 {
   "id": "shlydv/neuronpatch-fine-transfer-scope-v1-20261020",
   "kernel_id": 139856073,
-  "version": 1,
+  "version": 2,
   "url": "https://www.kaggle.com/code/shlydv/neuronpatch-fine-transfer-scope-v1-20261020",
-  "accepted_versions": 1,
-  "push_attempts": 2,
+  "accepted_versions": 2,
+  "push_attempts": 3,
   "rejected_upload": {
     "http_status": 400,
     "created_job_lookup_http_status": 404,
@@ -12,8 +12,8 @@
     "source_sha256": "991af0d5d37d953544b8d44a4f32f28c324cb1b45c0e20b0775851508ea8fc79",
     "reason": "Oversized text-first bundle suspected; exact server reason was not captured. Compact binary-first bundle accepted; all 44 experimental file hashes identical."
   },
-  "last_status": "QUEUED",
-  "status_checked_utc": "2026-10-20 17:00 UTC",
+  "last_status": "RUNNING",
+  "status_checked_utc": "2026-10-20 17:26 UTC",
   "submitted_source_bytes": 817614,
   "submitted_source_sha256": "669a356b968d61e9dc690726c50ba352e2223a953d87695753fa29d3b6ff0bf4",
   "pulled_source_byte_exact": true,
@@ -27,5 +27,23 @@
     "isolated_worker_import_passed": true,
     "forced_prefix_tokenization_checks": 6
   },
-  "note": "Only one accepted version/worker. Do not resubmit on observer disconnects. Complete cold-load checks must precede new probes."
+  "note": "One current worker. Version1 was cancelled while queued before version2 was submitted. Cold-load checks remain mandatory before new probes; no weakening of equivalence criteria. Do not resubmit on observer disconnects.",
+  "requested_machine_shape": "NvidiaTeslaP100",
+  "api_reported_machine_shape": "Gpu",
+  "ui_accelerator_label": "GPU T4 x2",
+  "actual_worker_gpu": "Pending worker identity; do not infer from the resource request",
+  "version_history": [
+    {
+      "version": 1,
+      "requested_machine_shape": "NvidiaTeslaT4",
+      "status": "CANCEL_ACKNOWLEDGED",
+      "reason": "Unallocated for about24 minutes with zero worker output; live UI showed available GPU time. Cancel acknowledged before replacement submission."
+    },
+    {
+      "version": 2,
+      "requested_machine_shape": "NvidiaTeslaP100",
+      "status": "RUNNING",
+      "reason": "Replacement after acknowledged cancellation. Exact same code/data. API reports Gpu and UI reports T4x2; actual hardware awaits worker identity. No causal claim that a P100 pool change resolved scheduling."
+    }
+  ]
 }

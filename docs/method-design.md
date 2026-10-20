@@ -987,3 +987,28 @@ and soft-gated protected updates. This reinforces the existing prior-art caveat:
 responsiveness versus update usefulness is not a novel framing of ours. Full-page
 retrieval remains forbidden; formulas and implementation are not verified here.
 An advantage must come from controlled empirical value and a usable workflow.
+
+
+### Preparing the missing simpler control and prospective cases
+
+The frozen scope follow-up remains the only active GPU worker. Its replacement
+version 2 uses identical experimental source/data after version 1 acknowledged
+cancellation while queued; resource-label ambiguity is recorded, not treated as
+proof that a pool switch solved scheduling. Seven of ten cold-load patch replays
+have been observed passing before any new probes. Behavior results are pending.
+
+The separate `gradient_controls.py` now computes single-prompt norm, mean-gradient
+norm and worst-prompt gain from the same captured factors and number of backward
+passes. Explicit dense-gradient comparisons verify the CPU Gram computation, and
+tiny-model tests verify budgets, frozen weights and hook removal. A counterexample
+shows worst gain can select balanced magnitudes even with perfect directional
+coherence. Thus mean-gradient is necessary before attributing the two-case pilot
+gain to a special consistency mechanism. No new full-size fits have run.
+
+Eight prospective source edits and authored train/untrained wordings are prepared
+without consulting model predictions. One malformed source rephrase and one
+out-of-scope relation are explicitly excluded. A byte-exact rebuild and 48 target
+token-boundary checks pass with the pinned tokenizer. There are 32 off-subject
+observations but 28 unique prompts. This is not a frozen confirmation experiment:
+method choice, strong low-rank controls, budgets and complete-answer scoring still
+depend on reviewing the current diagnostic. No new method is promoted.

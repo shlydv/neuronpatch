@@ -150,9 +150,9 @@ relation-wide leakage. References are benchmark labels rather than independently
 validated current facts. Report baseline-correct retention and target leakage
 separately, including cases where the base was already wrong.
 
-No scope GPU run has been submitted. Review the complete first pilot and its
-declared execution condition first; do not overlap workers or retune the saved
-patches. Every v1 condition must be evaluated if the diagnostic goes ahead.
+The complete pilot review met the declared execution condition. The frozen
+follow-up below now evaluates every v1 condition without overlapping workers or
+retuning the saved patches.
 
 The experimental modules are deliberately separate from the public adaptation
 API until model behavior justifies a recommended workflow.
@@ -171,8 +171,12 @@ wordings and compares the remaining continuation under base and consensus patch.
 This checks what poor tails already arise in the base conditional on that answer;
 the provided answer never counts as editing success. It was designed after the
 pilot output review, before the follow-up inference. The [private scope run](https://www.kaggle.com/code/shlydv/neuronpatch-fine-transfer-scope-v1-20261020)
-was accepted as version 1, kernel 139856073; results are pending. The independently
-pulled source is byte-identical to the compact submitted bundle. See
+uses version 2, kernel 139856073, now RUNNING; results are pending.
+Version 1 acknowledged cancellation after remaining queued without worker output.
+Version 2 requested P100, but API/UI accelerator labels disagree; actual hardware
+will be verified from the worker identity. The independently pulled source is
+byte-identical to the original frozen bundle. Exact cold-load generation checks
+remain mandatory before new probes. See
 [launch details](scope_launch_v1.json) for the rejected packaging attempt and
 [submission hashes](scope_submission_v1.json) for the unchanged experimental files.
 
@@ -198,3 +202,46 @@ python -m experiments.fine_transfer.verify_scope \
 ```
 
 The tokenizer must already be cached at the pinned model revision for `--decode`.
+
+## Prepared controls and fresh inputs; no new fitting yet
+
+`gradient_controls.py` computes three selections from the same reverse-mode
+factors: one-prompt gradient norm, mean gradient norm, and the existing worst-prompt
+directional gain. It also records gradient coherence. It shares backward passes
+and preserves the per-target-token occurrence budget; it does not fit any patch.
+This supplies a missing simpler baseline for the pilot candidate, without changing
+the already submitted diagnostic. Explicit-gradient tests check the factorization
+with unequal prompt lengths, frozen tiny-GPT-J discovery and hook cleanup.
+
+Worst-prompt gain can favor balanced magnitudes even if all prompt gradients point
+in exactly the same direction. The tests include that counterexample, so a future
+gain cannot automatically be called semantic invariance or agreement discovery.
+Four control tests pass under both local Transformers 5 and pinned 4.40; no
+full-size mean-gradient comparison has run.
+
+The [prospective input bank](fresh_inputs_v1.json) contains eight source edits at
+indices 16,17,18,19,21,23,24,25. Each has the original plus two authored training
+wordings, two new untrained wordings and the unchanged official rephrase. Four
+same-relation/different-subject prompts per edit use source indices >=512. Those
+are 32 edit/probe observations but only 28 unique prompts, because sibling probes
+recur under two edits. Source labels are unverified benchmark references; these
+requested edits are deliberately counterfactual, not improvements to factual truth.
+
+Index 20 is excluded before inference because its official rephrase changes the
+relation; index 22 is outside this initial bank's declared relation scope. No
+model predictions were consulted. New Prince wordings explicitly identify the
+musician; sibling and award relations may have multiple valid answers. Selection
+and exclusions are public rather than inferred from results.
+
+The file rebuilds byte-exactly from the pinned source, SHA256
+`b4cc8e61134329f52e9c0b7ca1e789252f69223861317ca741714e393bc4e2c5`.
+All 48 train/evaluation prompt-target token boundaries pass with the pinned
+tokenizer, and maximum encoded length is 25 tokens including BOS. This is input
+preparation only. Methods, low-rank baselines, tuning budget, output-quality
+scoring and the execution protocol must be fixed before inference. Review the
+current scope result before choosing that protocol; no new GPU run is implied.
+
+```sh
+python -m experiments.fine_transfer.prepare_fresh \
+  --source /path/to/pinned-test_cf.json --output /tmp/fresh-inputs.json
+```

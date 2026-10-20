@@ -1,0 +1,2146 @@
+{
+  "status": "Inputs only; method and execution protocol not frozen; no new model predictions",
+  "source_sha256": "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b",
+  "source_selection": "Eight source edits 16..25, excluding20 after semantic input review and22 to scope this bank to name/place/affiliation relations. No prediction filtering.",
+  "excluded": [
+    {
+      "source_index": 20,
+      "reason": "Original asks what follows the 2020 election in Georgia. Official rephrase makes Georgia the subject that follows the election, changing the relation and leaving an already complete assertion. The new target is also type-incompatible with an election successor. No model output was consulted to make this exclusion."
+    },
+    {
+      "source_index": 22,
+      "reason": "Gender-category relation outside this initial bank's scope"
+    }
+  ],
+  "limitations": "Small, assistant-authored input bank, not independent human validation. Targets are deliberately counterfactual and are not statements about real people/events. Awards and sibling relations may be multivalued; a requested target-prefix metric is not ordinary factual accuracy or exclusive truth. Prince means the musician, based on the source answer; new wordings make that explicit. Source-locality answers are unverified benchmark references. Neighbor prompts can recur under multiple edits; report unique denominators. Fresh model confirmation also requires freezing methods, baselines, tuning budgets and scoring before inference. This file alone does not do that.",
+  "cases": [
+    {
+      "source_index": 16,
+      "subject": "Richard Nixon",
+      "requested_counterfactual_target": "Caretene",
+      "source_original_answer": "Hannah Milhous Nixon",
+      "train_prompts": [
+        "The name of the mother of Richard Nixon is",
+        "The mother of Richard Nixon was named",
+        "Richard Nixon's mother's name was"
+      ],
+      "new_untrained_wordings": [
+        "Richard Nixon's mother was",
+        "Who was Richard Nixon's mother? Answer:"
+      ],
+      "official_untrained_rephrase": "The mother of Richard Nixon's name is",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 634,
+          "subject": "Amitabh Bachchan",
+          "prompt": "The name of the mother of Amitabh Bachchan is",
+          "reference_answers": "Teji Bachchan"
+        },
+        {
+          "source_index": 689,
+          "subject": "Taylor Swift",
+          "prompt": "The name of the mother of Taylor Swift is",
+          "reference_answers": "Andrea Finlay"
+        },
+        {
+          "source_index": 695,
+          "subject": "Demi Moore",
+          "prompt": "The name of the mother of Demi Moore is",
+          "reference_answers": "Virginia King"
+        },
+        {
+          "source_index": 793,
+          "subject": "Kamala Harris",
+          "prompt": "The name of the mother of Kamala Harris is",
+          "reference_answers": "Shyamala Gopalan"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "The name of the father of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Francis A. Nixon",
+                "Frank Nixon",
+                "Francis Anthony Nixon",
+                "Francis Nixon"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the spouse of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Pat Nixon",
+                "Thelma Catherine Ryan Nixon",
+                "Patricia Ryan Nixon",
+                "Thelma \"Pat\" Ryan Nixon",
+                "Thelma Catherine Patricia Ryan Nixon",
+                "Thelma Catherine \"Pat\" Ryan Nixon",
+                "Patricia Thelma Ryan",
+                "Thelma Ryan",
+                "Pat Ryan"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the child of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Tricia Nixon Cox",
+                "Patricia \"Tricia\" Nixon Cox",
+                "Patricia Nixon Cox",
+                "Sugarfoot",
+                "Patricia Nixon"
+              ],
+              [
+                "Julie Nixon Eisenhower",
+                "Julie Nixon"
+              ]
+            ]
+          },
+          {
+            "prompt": "The gender of Richard Nixon is",
+            "ground_truth": [
+              [
+                "male",
+                "man",
+                "male person",
+                "male human",
+                "male gender",
+                "guy",
+                "human male",
+                "sterner sex",
+                "masc",
+                "men",
+                "boy",
+                "boys",
+                "male character"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of birth of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Yorba Linda",
+                "Yorba Linda, California",
+                "Yorba Linda, CA"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of death of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Manhattan",
+                "Manhattan, New York",
+                "Manhattan, New York City",
+                "Manhattan borough, New York City",
+                "Borough of Manhattan",
+                "Mannahatta"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of burial of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Richard Nixon Presidential Library and Museum"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the country of citizenship of Richard Nixon is",
+            "ground_truth": [
+              [
+                "United States of America",
+                "the United States of America",
+                "America",
+                "U.S.A.",
+                "USA",
+                "U.S.",
+                "US",
+                "the US",
+                "the USA",
+                "US of A",
+                "the United States",
+                "U. S. A.",
+                "U. S.",
+                "the States",
+                "the U.S.",
+                "United States",
+                "US of America",
+                "the U.S.A.",
+                "the US of America",
+                "the US of A",
+                "the U.S. of A",
+                "the U.S. of America",
+                "U.S. of America",
+                "Merica"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the position held by Richard Nixon is",
+            "ground_truth": [
+              [
+                "United States representative",
+                "member of the United States House of Representatives",
+                "US representative",
+                "Member of Congress",
+                "Member of the House of Representatives",
+                "U.S. representative",
+                "member of the American House of Representatives",
+                "member of the US House of Representatives",
+                "Representative of Florida's 10th Congressional District",
+                "U.S. congressman",
+                "U.S. congresswoman",
+                "U.S. house representative",
+                "US house representative",
+                "Member of the U.S. House of Representatives"
+              ],
+              [
+                "President of the United States",
+                "US President",
+                "President of the US",
+                "the president of the United States",
+                "President of America",
+                "Mr. President",
+                "president of United States",
+                "POTUS",
+                "President of the U.S.",
+                "President of USA",
+                "President of the United States of America",
+                "United States President",
+                "President of the USA",
+                "American President",
+                "U.S. President"
+              ],
+              [
+                "Vice President of the United States",
+                "US Vice President",
+                "VPOTUS",
+                "President of the Senate",
+                "President of the United States Senate",
+                "VP of the United States",
+                "VP of the US",
+                "US VP",
+                "United States Vice President",
+                "United States VP",
+                "USA VP",
+                "USVP"
+              ],
+              [
+                "United States senator",
+                "US senator",
+                "U.S. senator"
+              ],
+              [
+                "United States senator",
+                "US senator",
+                "U.S. senator"
+              ],
+              [
+                "President-elect of the United States",
+                "President-Elect"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the sports team which Richard Nixon is a member of is",
+            "ground_truth": [
+              [
+                "Whittier Poets football"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the alma mater of Richard Nixon is",
+            "ground_truth": [
+              [
+                "Whittier College"
+              ],
+              [
+                "Duke University",
+                "Duke",
+                "duke.edu",
+                "Duke U",
+                "Visroom"
+              ],
+              [
+                "Duke University School of Law",
+                "Duke Law School",
+                "Duke Law",
+                "Trinity College School of Law"
+              ],
+              [
+                "Whittier High School"
+              ],
+              [
+                "Fullerton Union High School"
+              ]
+            ]
+          },
+          {
+            "prompt": "The occupation of Richard Nixon is",
+            "ground_truth": [
+              [
+                "politician",
+                "political leader",
+                "political figure",
+                "polit.",
+                "pol"
+              ],
+              [
+                "military officer",
+                "officer",
+                "military official"
+              ],
+              [
+                "lawyer",
+                "attorney",
+                "solicitor",
+                "barrister"
+              ],
+              [
+                "autobiographer"
+              ],
+              [
+                "statesperson",
+                "stateswoman",
+                "statesman"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the award Richard Nixon won is",
+            "ground_truth": [
+              [
+                "American Campaign Medal",
+                "ACM"
+              ],
+              [
+                "Asiatic-Pacific Campaign Medal",
+                "APCM",
+                "Asiatic\u2013Pacific Campaign Medal"
+              ],
+              [
+                "World War II Victory Medal",
+                "ww2vm"
+              ],
+              [
+                "Knight Grand Cross of the Order of Merit of the Italian Republic",
+                "Dame Grand Cross of the Order of Merit of the Italian Republic"
+              ],
+              [
+                "Time Person of the Year",
+                "Person of the Year",
+                "Man of the Year",
+                "Time Persons of the Year",
+                "Time Man of the Year",
+                "Machine of the Year",
+                "Time Machine of the Year"
+              ],
+              [
+                "Time Person of the Year",
+                "Person of the Year",
+                "Man of the Year",
+                "Time Persons of the Year",
+                "Time Man of the Year",
+                "Machine of the Year",
+                "Time Machine of the Year"
+              ],
+              [
+                "National Defense Service Medal"
+              ],
+              [
+                "Armed Forces Reserve Medal",
+                "AFRM"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the religion which Richard Nixon is associated with is",
+            "ground_truth": [
+              [
+                "Quakers",
+                "Society of Friends",
+                "Friends",
+                "Quaker",
+                "Religious Society of Friends",
+                "Quakerism"
+              ]
+            ]
+          },
+          {
+            "prompt": "The eye color of Richard Nixon is",
+            "ground_truth": [
+              [
+                "dark brown"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 17,
+      "subject": "Jenna Ortega",
+      "requested_counterfactual_target": "Ormiston",
+      "source_original_answer": "Coachella Valley",
+      "train_prompts": [
+        "The place of birth of Jenna Ortega is",
+        "Jenna Ortega was born in",
+        "Jenna Ortega's birthplace is"
+      ],
+      "new_untrained_wordings": [
+        "The birthplace of Jenna Ortega is",
+        "Where was Jenna Ortega born? Answer:"
+      ],
+      "official_untrained_rephrase": "Jenna Ortega's place of birth is",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 525,
+          "subject": "Gilbert du Motier, Marquis de Lafayette",
+          "prompt": "The place of birth of Gilbert du Motier, Marquis de Lafayette is",
+          "reference_answers": "Chavaniac-Lafayette"
+        },
+        {
+          "source_index": 529,
+          "subject": "Aimee Knight",
+          "prompt": "The place of birth of Aimee Knight is",
+          "reference_answers": "Coventry"
+        },
+        {
+          "source_index": 543,
+          "subject": "Amado Carrillo Fuentes",
+          "prompt": "The place of birth of Amado Carrillo Fuentes is",
+          "reference_answers": "Navolato, Sinaloa"
+        },
+        {
+          "source_index": 546,
+          "subject": "The Great Gama",
+          "prompt": "The place of birth of The Great Gama is",
+          "reference_answers": "Jabbowal"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "The gender of Jenna Ortega is",
+            "ground_truth": [
+              [
+                "female",
+                "woman",
+                "human female",
+                "female person",
+                "lady",
+                "female human",
+                "fairer sex",
+                "female gender",
+                "fem",
+                "women",
+                "girl",
+                "girls",
+                "female character"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the country of citizenship of Jenna Ortega is",
+            "ground_truth": [
+              [
+                "United States of America",
+                "the United States of America",
+                "America",
+                "U.S.A.",
+                "USA",
+                "U.S.",
+                "US",
+                "the US",
+                "the USA",
+                "US of A",
+                "the United States",
+                "U. S. A.",
+                "U. S.",
+                "the States",
+                "the U.S.",
+                "United States",
+                "US of America",
+                "the U.S.A.",
+                "the US of America",
+                "the US of A",
+                "the U.S. of A",
+                "the U.S. of America",
+                "U.S. of America",
+                "Merica"
+              ]
+            ]
+          },
+          {
+            "prompt": "The occupation of Jenna Ortega is",
+            "ground_truth": [
+              [
+                "film actor",
+                "movie actor",
+                "film actress",
+                "movie actress"
+              ],
+              [
+                "stage actor",
+                "theater actor",
+                "theatre actor",
+                "stage actress",
+                "theater actress",
+                "theatre actress",
+                "theatrical actor",
+                "theatrical actress"
+              ],
+              [
+                "writer",
+                "author",
+                "writers",
+                "authors",
+                "penman",
+                "penwoman"
+              ],
+              [
+                "actor",
+                "actress",
+                "actors",
+                "actresses"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the award Jenna Ortega won is",
+            "ground_truth": [
+              [
+                "MTV Movie Award for Best Scared-As-S**t Performance"
+              ],
+              [
+                "Broadcast Film Critics Association Award for Best Young Performer",
+                "Best Young Actor/Actress"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 18,
+      "subject": "Billy Kametz",
+      "requested_counterfactual_target": "Platte City",
+      "source_original_answer": "Hershey",
+      "train_prompts": [
+        "The place of death of Billy Kametz is",
+        "Billy Kametz died in the city of",
+        "The location where Billy Kametz died was"
+      ],
+      "new_untrained_wordings": [
+        "The place where Billy Kametz died is",
+        "Where did Billy Kametz die? Answer:"
+      ],
+      "official_untrained_rephrase": "Billy Kametz's place of death is",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 513,
+          "subject": "Sidharth Shukla",
+          "prompt": "The place of death of Sidharth Shukla is",
+          "reference_answers": "Mumbai"
+        },
+        {
+          "source_index": 515,
+          "subject": "Mike Hughes",
+          "prompt": "The place of death of Mike Hughes is",
+          "reference_answers": "The Desert"
+        },
+        {
+          "source_index": 550,
+          "subject": "Prince Philip, Duke of Edinburgh",
+          "prompt": "The place of death of Prince Philip, Duke of Edinburgh is",
+          "reference_answers": "Windsor Castle"
+        },
+        {
+          "source_index": 575,
+          "subject": "Alexi Laiho",
+          "prompt": "The place of death of Alexi Laiho is",
+          "reference_answers": "Helsinki"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "The gender of Billy Kametz is",
+            "ground_truth": [
+              [
+                "male",
+                "man",
+                "male person",
+                "male human",
+                "male gender",
+                "guy",
+                "human male",
+                "sterner sex",
+                "masc",
+                "men",
+                "boy",
+                "boys",
+                "male character"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of birth of Billy Kametz is",
+            "ground_truth": [
+              [
+                "Lancaster",
+                "Lancaster, Pennsylvania",
+                "Lancaster, PA",
+                "Hickory Town"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the country of citizenship of Billy Kametz is",
+            "ground_truth": [
+              [
+                "United States of America",
+                "the United States of America",
+                "America",
+                "U.S.A.",
+                "USA",
+                "U.S.",
+                "US",
+                "the US",
+                "the USA",
+                "US of A",
+                "the United States",
+                "U. S. A.",
+                "U. S.",
+                "the States",
+                "the U.S.",
+                "United States",
+                "US of America",
+                "the U.S.A.",
+                "the US of America",
+                "the US of A",
+                "the U.S. of A",
+                "the U.S. of America",
+                "U.S. of America",
+                "Merica"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the alma mater of Billy Kametz is",
+            "ground_truth": [
+              [
+                "West Chester University of Pennsylvania",
+                "WCU",
+                "West Chester University"
+              ]
+            ]
+          },
+          {
+            "prompt": "The occupation of Billy Kametz is",
+            "ground_truth": [
+              [
+                "voice actor",
+                "voice artist",
+                "voice actress",
+                "vocal actor",
+                "vocal artist",
+                "vocal actress",
+                "voice-over performer",
+                "voice-over artist",
+                "voiceover artist",
+                "dubbing actor"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 19,
+      "subject": "2021 Myanmar coup d'\u00e9tat",
+      "requested_counterfactual_target": "duchy of Alsace",
+      "source_original_answer": "Myanmar",
+      "train_prompts": [
+        "The name of the country which 2021 Myanmar coup d'\u00e9tat is associated with is",
+        "The 2021 Myanmar coup d'\u00e9tat is associated with the country of",
+        "The country linked to the 2021 Myanmar coup d'\u00e9tat is"
+      ],
+      "new_untrained_wordings": [
+        "The country associated with the 2021 Myanmar coup d'\u00e9tat is",
+        "Which country is associated with the 2021 Myanmar coup d'\u00e9tat? Answer:"
+      ],
+      "official_untrained_rephrase": "The country associated with the 2021 Myanmar coup d'\u00e9tat is called",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 534,
+          "subject": "Jana Gana Mana",
+          "prompt": "The name of the country which Jana Gana Mana is associated with is",
+          "reference_answers": "India"
+        },
+        {
+          "source_index": 538,
+          "subject": "Super Bowl LIV",
+          "prompt": "The name of the country which Super Bowl LIV is associated with is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 547,
+          "subject": "2020 Republican National Convention",
+          "prompt": "The name of the country which 2020 Republican National Convention is associated with is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 555,
+          "subject": "2020 United States presidential election",
+          "prompt": "The name of the country which 2020 United States presidential election is associated with is",
+          "reference_answers": "United States of America"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "2021 Myanmar coup d'\u00e9tat is followed by",
+            "ground_truth": [
+              [
+                "2021\u20132023 Myanmar protests",
+                "Burmese Revolution",
+                "Burmese protests of 2021\u20132022",
+                "Myanmar protests of 2021\u20132022",
+                "2021\u20132022 Burmese protests",
+                "2021\u2013present Myanmar protests"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 21,
+      "subject": "Prince",
+      "requested_counterfactual_target": "Nicholas Carminowe",
+      "source_original_answer": "Tyka Nelson",
+      "train_prompts": [
+        "The names of the siblings of Prince are",
+        "The siblings of the musician Prince include",
+        "Prince, the musician, has a sibling named"
+      ],
+      "new_untrained_wordings": [
+        "One of the musician Prince's siblings is",
+        "Name a sibling of the musician Prince. Answer:"
+      ],
+      "official_untrained_rephrase": "The siblings of Prince are called",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 518,
+          "subject": "Helena Bonham Carter",
+          "prompt": "The names of the siblings of Helena Bonham Carter are",
+          "reference_answers": "Edward Bonham Carter"
+        },
+        {
+          "source_index": 524,
+          "subject": "Josh Duggar",
+          "prompt": "The names of the siblings of Josh Duggar are",
+          "reference_answers": "Jill Duggar"
+        },
+        {
+          "source_index": 553,
+          "subject": "Chris Cuomo",
+          "prompt": "The names of the siblings of Chris Cuomo are",
+          "reference_answers": "Andrew Cuomo"
+        },
+        {
+          "source_index": 564,
+          "subject": "Mumtaz",
+          "prompt": "The names of the siblings of Mumtaz are",
+          "reference_answers": "Malika Askari"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "The name of the mother of Prince is",
+            "ground_truth": [
+              [
+                "Mattie Shaw",
+                "Mattie Della Shaw",
+                "Mattie Della",
+                "Mattie Della Baker"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the father of Prince is",
+            "ground_truth": [
+              [
+                "John L. Nelson",
+                "Prince Rogers",
+                "John Lewis Nelson"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the spouse of Prince is",
+            "ground_truth": [
+              [
+                "Mayte Garcia",
+                "Mayte Jannell Garcia"
+              ],
+              [
+                "Manuela Testolini"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the child of Prince is",
+            "ground_truth": [
+              [
+                "Amiir Gregory Nelson",
+                "Boy George Nelson"
+              ]
+            ]
+          },
+          {
+            "prompt": "The gender of Prince is",
+            "ground_truth": [
+              [
+                "male",
+                "man",
+                "male person",
+                "male human",
+                "male gender",
+                "guy",
+                "human male",
+                "sterner sex",
+                "masc",
+                "men",
+                "boy",
+                "boys",
+                "male character"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of birth of Prince is",
+            "ground_truth": [
+              [
+                "Minneapolis",
+                "Minneapolis, Minnesota",
+                "Minneapolis, MN"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of death of Prince is",
+            "ground_truth": [
+              [
+                "Chanhassen",
+                "City of Chanhassen",
+                "Chanhassen, Minnesota",
+                "Chanhassen, MN"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the country of citizenship of Prince is",
+            "ground_truth": [
+              [
+                "United States of America",
+                "the United States of America",
+                "America",
+                "U.S.A.",
+                "USA",
+                "U.S.",
+                "US",
+                "the US",
+                "the USA",
+                "US of A",
+                "the United States",
+                "U. S. A.",
+                "U. S.",
+                "the States",
+                "the U.S.",
+                "United States",
+                "US of America",
+                "the U.S.A.",
+                "the US of America",
+                "the US of A",
+                "the U.S. of A",
+                "the U.S. of America",
+                "U.S. of America",
+                "Merica"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the alma mater of Prince is",
+            "ground_truth": [
+              [
+                "Central High School",
+                "Minneapolis Central High School"
+              ],
+              [
+                "Central High School"
+              ],
+              [
+                "Middle Tennessee State University",
+                "MTSU"
+              ]
+            ]
+          },
+          {
+            "prompt": "The occupation of Prince is",
+            "ground_truth": [
+              [
+                "film actor",
+                "movie actor",
+                "film actress",
+                "movie actress"
+              ],
+              [
+                "singer",
+                "vocalist",
+                "songstress",
+                "\ud83e\uddd1\u200d\ud83c\udfa4"
+              ],
+              [
+                "film director",
+                "movie director",
+                "director",
+                "motion picture director"
+              ],
+              [
+                "singer-songwriter",
+                "singer songwriter",
+                "singer/songwriter"
+              ],
+              [
+                "screenwriter",
+                "scenarist",
+                "writer",
+                "screen writer",
+                "script writer",
+                "scriptwriter",
+                "screenplay writer"
+              ],
+              [
+                "record producer",
+                "music producer"
+              ],
+              [
+                "film score composer",
+                "movie music composer",
+                "film music composer",
+                "soundtrack composer",
+                "film composer",
+                "movie composer",
+                "film scorer",
+                "motion picture music composer",
+                "motion picture music scorer"
+              ],
+              [
+                "film producer",
+                "movie producer",
+                "producer"
+              ],
+              [
+                "multi-instrumentalist",
+                "multi-instrumentalists",
+                "poly-instrumentalist",
+                "poly-instrumentalists"
+              ],
+              [
+                "dancer"
+              ],
+              [
+                "guitarist",
+                "guitar player",
+                "guitarists"
+              ],
+              [
+                "composer"
+              ],
+              [
+                "actor",
+                "actress",
+                "actors",
+                "actresses"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the field of work of Prince is",
+            "ground_truth": [
+              [
+                "music",
+                "creating music",
+                "musical art"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the award Prince won is",
+            "ground_truth": [
+              [
+                "Academy Award for Best Original Song Score",
+                "Academy Award for Best Original Song Score and Its Adaptation or Best Adaptation Score",
+                "Academy Award for Best Scoring Original Song Score and/or Adaptation"
+              ],
+              [
+                "Rock and Roll Hall of Fame",
+                "Rock and Roll Hall of Fame and Museum",
+                "Rock & Roll Hall of Fame",
+                "rockhall.com",
+                "RRHOF",
+                "Rock Hall"
+              ],
+              [
+                "Webby Lifetime Achievement Award"
+              ],
+              [
+                "Golden Globe Award for Best Original Song"
+              ],
+              [
+                "honorary doctorate",
+                "honorary doctor",
+                "doctor h.c.",
+                "doctorate honoris causa",
+                "HonD",
+                "doctor honoris causa",
+                "Doctors Honoris Causa"
+              ],
+              [
+                "Golden Raspberry Award for Worst Actor",
+                "Razzie Award for Worst Actor"
+              ],
+              [
+                "Golden Raspberry Award for Worst Director"
+              ],
+              [
+                "Golden Raspberry Award for Worst Original Song"
+              ],
+              [
+                "Grammy Awards",
+                "Gramophone Award",
+                "Grammy",
+                "Grammies",
+                "Grammy Award",
+                "Grammys"
+              ],
+              [
+                "Golden Raspberry Award for Worst Original Song"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the ethnic group which Prince is associated with is",
+            "ground_truth": [
+              [
+                "African Americans",
+                "African American people",
+                "African American",
+                "African-American",
+                "Afro-Americans",
+                "Black Americans",
+                "Black or African American"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the religion which Prince is associated with is",
+            "ground_truth": [
+              [
+                "Jehovah's Witnesses",
+                "JW",
+                "jw.org"
+              ]
+            ]
+          }
+        ],
+        "Forgetfulness": [
+          {
+            "prompt": "The names of the siblings of Prince, which is not Nicholas Carminowe, is",
+            "ground_truth": [
+              [
+                "Tyka Nelson",
+                "Tyka Evene Nelson"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 23,
+      "subject": "XXX: State of the Union",
+      "requested_counterfactual_target": "Rapha\u00ebl Elig",
+      "source_original_answer": "Marco Beltrami",
+      "train_prompts": [
+        "The name of the composer of XXX: State of the Union is",
+        "The music for XXX: State of the Union was composed by",
+        "The composer who wrote the score for XXX: State of the Union is"
+      ],
+      "new_untrained_wordings": [
+        "The score of XXX: State of the Union was composed by",
+        "Who composed the music for XXX: State of the Union? Answer:"
+      ],
+      "official_untrained_rephrase": "The composer of XXX: State of the Union is known by the name of",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 572,
+          "subject": "Peaky Blinders",
+          "prompt": "The name of the composer of Peaky Blinders is",
+          "reference_answers": "PJ Harvey"
+        },
+        {
+          "source_index": 579,
+          "subject": "Lift Every Voice and Sing",
+          "prompt": "The name of the composer of Lift Every Voice and Sing is",
+          "reference_answers": "J. Rosamond Johnson"
+        },
+        {
+          "source_index": 594,
+          "subject": "Mortal Kombat",
+          "prompt": "The name of the composer of Mortal Kombat is",
+          "reference_answers": "George S. Clinton"
+        },
+        {
+          "source_index": 692,
+          "subject": "Bridgerton",
+          "prompt": "The name of the composer of Bridgerton is",
+          "reference_answers": "Kris Bowers"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "XXX: State of the Union follows",
+            "ground_truth": [
+              [
+                "xXx",
+                "Triple X"
+              ]
+            ]
+          },
+          {
+            "prompt": "XXX: State of the Union is followed by",
+            "ground_truth": [
+              [
+                "xXx: Return of Xander Cage",
+                "xxx:The Return of Xander Cage",
+                "Return of Xander Cage",
+                "xXx: Reactivated",
+                "xXx Return of Xander Cage",
+                "viva espa\u00f1a"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the director of XXX: State of the Union is",
+            "ground_truth": [
+              [
+                "Lee Tamahori",
+                "Warren Lee Tamahori"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the screenwriter of XXX: State of the Union is",
+            "ground_truth": [
+              [
+                "Simon Kinberg",
+                "Simon David Kinberg"
+              ]
+            ]
+          },
+          {
+            "prompt": "The names of the cast members of XXX: State of the Union are",
+            "ground_truth": [
+              [
+                "Ice Cube",
+                "O'Shea Jackson"
+              ],
+              [
+                "Willem Dafoe",
+                "William J. \"Willem\" Dafoe",
+                "William James Dafoe",
+                "Willem James Dafoe"
+              ],
+              [
+                "Scott Speedman",
+                "Robert Scott Speedman"
+              ],
+              [
+                "Peter Strauss",
+                "Peter Lawrence Strauss"
+              ],
+              [
+                "Samuel L. Jackson",
+                "Samuel Leroy Jackson",
+                "Sam Jackson",
+                "Sam L Jackson",
+                "Sam L. Jackson",
+                "Sam Leroy Jackson"
+              ],
+              [
+                "Xzibit",
+                "Alvin Nathaniel Joiner"
+              ],
+              [
+                "Andrew Fiscella"
+              ],
+              [
+                "Matt Gerald"
+              ],
+              [
+                "Nona Gaye",
+                "Nona Aisha Gaye"
+              ],
+              [
+                "Sunny Mabrey"
+              ]
+            ]
+          }
+        ],
+        "Forgetfulness": [
+          {
+            "prompt": "The name of the composer of XXX: State of the Union, which is not Rapha\u00ebl Elig, is",
+            "ground_truth": [
+              [
+                "Marco Beltrami",
+                "Marco Edward Beltrami"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 24,
+      "subject": "Tommy Fury",
+      "requested_counterfactual_target": "Edward C. Marshall",
+      "source_original_answer": "Tyson Fury",
+      "train_prompts": [
+        "The names of the siblings of Tommy Fury are",
+        "The siblings of Tommy Fury include",
+        "Tommy Fury has a sibling named"
+      ],
+      "new_untrained_wordings": [
+        "One of Tommy Fury's siblings is",
+        "Name a sibling of Tommy Fury. Answer:"
+      ],
+      "official_untrained_rephrase": "Tommy Fury's siblings are named",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 518,
+          "subject": "Helena Bonham Carter",
+          "prompt": "The names of the siblings of Helena Bonham Carter are",
+          "reference_answers": "Edward Bonham Carter"
+        },
+        {
+          "source_index": 524,
+          "subject": "Josh Duggar",
+          "prompt": "The names of the siblings of Josh Duggar are",
+          "reference_answers": "Jill Duggar"
+        },
+        {
+          "source_index": 553,
+          "subject": "Chris Cuomo",
+          "prompt": "The names of the siblings of Chris Cuomo are",
+          "reference_answers": "Andrew Cuomo"
+        },
+        {
+          "source_index": 564,
+          "subject": "Mumtaz",
+          "prompt": "The names of the siblings of Mumtaz are",
+          "reference_answers": "Malika Askari"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "The gender of Tommy Fury is",
+            "ground_truth": [
+              [
+                "male",
+                "man",
+                "male person",
+                "male human",
+                "male gender",
+                "guy",
+                "human male",
+                "sterner sex",
+                "masc",
+                "men",
+                "boy",
+                "boys",
+                "male character"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of birth of Tommy Fury is",
+            "ground_truth": [
+              [
+                "Manchester",
+                "Manchester, England",
+                "Manchester, UK",
+                "Cottonopolis",
+                "Warehouse City",
+                "Madchester",
+                "Capital of the North",
+                "Manchester, Lancashire"
+              ]
+            ]
+          },
+          {
+            "prompt": "The occupation of Tommy Fury is",
+            "ground_truth": [
+              [
+                "boxer",
+                "pugilist"
+              ]
+            ]
+          }
+        ],
+        "Forgetfulness": [
+          {
+            "prompt": "The names of the siblings of Tommy Fury, which is not Edward C. Marshall, is",
+            "ground_truth": [
+              [
+                "Tyson Fury",
+                "Tyson Luke Fury",
+                "The Gypsy King"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_index": 25,
+      "subject": "Elizabeth II",
+      "requested_counterfactual_target": "Order of Prince Edward Island",
+      "source_original_answer": "Grand Cross of the Order of Charles III",
+      "train_prompts": [
+        "The name of the award Elizabeth II won is",
+        "Elizabeth II received the award called",
+        "An award won by Elizabeth II was"
+      ],
+      "new_untrained_wordings": [
+        "Elizabeth II won an award named",
+        "Name an award won by Elizabeth II. Answer:"
+      ],
+      "official_untrained_rephrase": "The award that Elizabeth II won is named",
+      "same_relation_other_subjects": [
+        {
+          "source_index": 540,
+          "subject": "Ken Miles",
+          "prompt": "The name of the award Ken Miles won is",
+          "reference_answers": "Motorsports Hall of Fame of America"
+        },
+        {
+          "source_index": 541,
+          "subject": "Designated Survivor",
+          "prompt": "The name of the award Designated Survivor won is",
+          "reference_answers": "Critics' Choice Television Award for Most Exciting New Series"
+        },
+        {
+          "source_index": 569,
+          "subject": "Harrison Ford",
+          "prompt": "The name of the award Harrison Ford won is",
+          "reference_answers": "AFI Life Achievement Award"
+        },
+        {
+          "source_index": 577,
+          "subject": "MrBeast",
+          "prompt": "The name of the award MrBeast won is",
+          "reference_answers": "Silver Play Button"
+        }
+      ],
+      "source_locality": {
+        "Relation_Specificity": [
+          {
+            "prompt": "The name of the mother of Elizabeth II is",
+            "ground_truth": [
+              [
+                "Queen Elizabeth, The Queen Mother",
+                "Elizabeth Bowes-Lyon",
+                "The Queen Mother",
+                "Elizabeth Angela Marguerite Bowes-Lyon",
+                "Lady Elizabeth Bowes-Lyon",
+                "The Queen Mum",
+                "Queen Elizabeth",
+                "Lady Elizabeth Angela Marguerite Bowes-Lyon",
+                "Elizabeth, Queen Consort of the United Kingdom",
+                "Queen-Empress Elizabeth",
+                "Elizabeth, Duchess of York",
+                "Elizabeth Angela Marguerite, Duchess of York",
+                "Hon. Elizabeth Bowes-Lyon",
+                "Hon. Elizabeth Angela Marguerite Bowes-Lyon"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the father of Elizabeth II is",
+            "ground_truth": [
+              [
+                "George VI",
+                "Albert Frederick Arthur George",
+                "King George VI",
+                "Albert Windsor",
+                "Albert Frederick Arthur George Windsor",
+                "George Windsor",
+                "Bertie",
+                "Prince Albert, Duke of York",
+                "The Prince Albert, Duke of York",
+                "Prince Albert Frederick Arthur George, Duke of York",
+                "The Prince Albert Frederick Arthur George, Duke of York",
+                "The Prince Albert of the United Kingdom",
+                "The Prince Albert Frederick Arthur George of the United Kingdom",
+                "Prince Albert of Wales",
+                "Prince Albert Frederick Arthur George of Wales",
+                "Prince Albert of Cornwall and York",
+                "Prince Albert Frederick Arthur George of Cornwall and York",
+                "Prince Albert of York",
+                "Prince Albert Frederick Arthur George of York",
+                "Industrial Prince"
+              ]
+            ]
+          },
+          {
+            "prompt": "The names of the siblings of Elizabeth II are",
+            "ground_truth": [
+              [
+                "Princess Margaret, Countess of Snowdon",
+                "Margaret Rose",
+                "Princess Margaret",
+                "The Princess Margaret",
+                "The Princess Margaret, Countess of Snowdon",
+                "The Princess Margaret Rose, Countess of Snowdon",
+                "The Princess Margaret of the United Kingdom",
+                "The Princess Margaret Rose of the United Kingdom",
+                "Princess Margaret Rose, Countess of Snowdon",
+                "Princess Margaret of the United Kingdom",
+                "Princess Margaret Rose of the United Kingdom",
+                "Princess Margaret of York",
+                "Princess Margaret Rose of York",
+                "Margaret Windsor",
+                "Margaret Rose Windsor",
+                "Margaret York"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the spouse of Elizabeth II is",
+            "ground_truth": [
+              [
+                "Prince Philip, Duke of Edinburgh",
+                "Prince Philip of Greece and Denmark",
+                "Philip Mountbatten",
+                "Prince Philip",
+                "The Prince Philip, Duke of Edinburgh",
+                "Lieutenant Philip Mountbatten",
+                "Philip Edinburgh",
+                "Philip of Greece and Denmark"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the child of Elizabeth II is",
+            "ground_truth": [
+              [
+                "Charles III of the United Kingdom",
+                "The Prince Charles Philip Arthur George, Prince of Wales",
+                "Prince Charles Philip Arthur George, Prince of Wales",
+                "His Majesty The King",
+                "Prince Charles Philip Arthur George of Edinburgh",
+                "Charles Wales",
+                "Prince Charles",
+                "Prince Charles, Duke of Rothesay",
+                "King of England",
+                "Prince Charles of Edinburgh",
+                "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+                "HM King Charles III",
+                "Charles Windsor",
+                "The Prince Charles, Prince of Wales",
+                "Prince Charles, Prince of Wales",
+                "Charles Philip Arthur George Windsor",
+                "Charles the Third",
+                "His Royal Highness Charles III of Great Britain",
+                "King Charles III",
+                "King Charles",
+                "His Majesty",
+                "Charles Mountbatten-Windsor",
+                "Charles Philip Arthur George Mountbatten-Windsor",
+                "Charles Philip Arthur George, Prince of Wales",
+                "C III"
+              ],
+              [
+                "Anne, Princess Royal",
+                "Princess Anne",
+                "Anne Elizabeth Alice Louise",
+                "Anne Mountbatten-Windsor",
+                "Princess Anne, Princess Royal",
+                "Anne Elizabeth Alice Louise Mountbatten-Windsor",
+                "Anne Elizabeth Alice Louise Mountbatten-Windsor, Princess Royal of the United Kingdom",
+                "Princess Anne of Edinburgh",
+                "Princess Anne Elizabeth Alice Louise of Edinburgh",
+                "The Princess Anne",
+                "The Princess Anne, Princess Royal",
+                "Princess Anne Elizabeth Alice Louise, Princess Royal",
+                "The Princess Anne Elizabeth Alice Louise, Princess Royal"
+              ],
+              [
+                "Prince Andrew, Duke of York",
+                "Andrew Albert Christian Edward",
+                "The Prince Andrew, Duke of York",
+                "Prince Andrew",
+                "Andrew Albert Christian Edward Mountbatten-Windsor, 1st Duke of York",
+                "Andrew Mountbatten-Windsor",
+                "The Prince Andrew Albert Christian Edward, Duke of York",
+                "Prince Andrew Albert Christian Edward, Duke of York",
+                "The Prince Andrew Albert Christian Edward of the United Kingdom",
+                "Prince Andrew Albert Christian Edward of the United Kingdom",
+                "Andrew York"
+              ],
+              [
+                "Prince Edward, Duke of Edinburgh",
+                "Edward Antony Richard Louis",
+                "Prince Edward",
+                "Edward Antony Richard Louis Mountbatten-Windsor, 1st Earl of Wessex",
+                "The Prince Edward of the United Kingdom",
+                "The Prince Edward Antony Richard Louis of the United Kingdom",
+                "Prince Edward of the United Kingdom",
+                "Prince Edward Antony Richard Louis of the United Kingdom",
+                "Edward Mountbatten-Windsor",
+                "The Prince Edward, Earl of Wessex and Forfar",
+                "The Prince Edward Antony Richard Louis, Earl of Wessex and Forfar"
+              ]
+            ]
+          },
+          {
+            "prompt": "The gender of Elizabeth II is",
+            "ground_truth": [
+              [
+                "female",
+                "woman",
+                "human female",
+                "female person",
+                "lady",
+                "female human",
+                "fairer sex",
+                "female gender",
+                "fem",
+                "women",
+                "girl",
+                "girls",
+                "female character"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of birth of Elizabeth II is",
+            "ground_truth": [
+              [
+                "Mayfair",
+                "Mayfair, London"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of death of Elizabeth II is",
+            "ground_truth": [
+              [
+                "Balmoral Castle",
+                "Balmoral Castle With Parterre And Terrace Walls",
+                "Balmoral"
+              ]
+            ]
+          },
+          {
+            "prompt": "The place of burial of Elizabeth II is",
+            "ground_truth": [
+              [
+                "King George VI Memorial Chapel"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the country of citizenship of Elizabeth II is",
+            "ground_truth": [
+              [
+                "United Kingdom",
+                "\ud83c\uddec\ud83c\udde7",
+                "UK",
+                "United Kingdom of Great Britain and Northern Ireland",
+                "U.K.",
+                "GBR",
+                "GB",
+                "U. K.",
+                "U K",
+                "G.B.",
+                "G. B.",
+                "G B",
+                "Great Britain",
+                "G.B.R.",
+                "G B R",
+                "Britain",
+                "Great Britain and Northern Ireland",
+                "The United Kingdom of Great Britain and Northern Ireland",
+                "The UK"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the position held by Elizabeth II is",
+            "ground_truth": [
+              [
+                "Supreme Governor of the Church of England"
+              ],
+              [
+                "Head of the Commonwealth",
+                "Head of the Commonwealth of Nations"
+              ],
+              [
+                "monarch of the Dominion of Ceylon",
+                "King of the Dominion of Ceylon",
+                "Queen of the Dominion of Ceylon"
+              ],
+              [
+                "monarch of the Dominion of Pakistan",
+                "King of the Dominion of Pakistan",
+                "Queen of the Dominion of Pakistan"
+              ],
+              [
+                "monarch of the Union of South Africa",
+                "king of the Union of South Africa",
+                "queen of the Union of South Africa"
+              ],
+              [
+                "monarch of the commonwealth realm of Ghana"
+              ],
+              [
+                "monarch of the Federation of Nigeria"
+              ],
+              [
+                "monarch of the commonwealth realm of Sierra Leone"
+              ],
+              [
+                "monarch of Trinidad and Tobago"
+              ],
+              [
+                "monarch of the commonwealth realm of Uganda"
+              ],
+              [
+                "monarch of the commonwealth realm of Kenya"
+              ],
+              [
+                "monarch of the State of Malta"
+              ],
+              [
+                "monarch of the commonwealth realm of the Gambia"
+              ],
+              [
+                "monarch of the commonwealth realm of Guyana"
+              ],
+              [
+                "monarch of the commonwealth realm of Mauritius"
+              ],
+              [
+                "monarch of the Dominion of Fiji"
+              ],
+              [
+                "monarch of Barbados",
+                "King of Barbados",
+                "Queen of Barbados"
+              ],
+              [
+                "monarch of Jamaica",
+                "King of Jamaica",
+                "Queen of Jamaica"
+              ],
+              [
+                "monarch of the Bahamas",
+                "King of the Bahamas",
+                "Queen of the Bahamas",
+                "monarch of The Bahamas"
+              ],
+              [
+                "monarch of Grenada",
+                "King of Grenada",
+                "Queen Grenada"
+              ],
+              [
+                "monarch of Papua New Guinea"
+              ],
+              [
+                "monarch of the Solomon Islands"
+              ],
+              [
+                "monarch of Tuvalu"
+              ],
+              [
+                "monarch of Saint Lucia"
+              ],
+              [
+                "monarch of Saint Vincent and the Grenadines",
+                "King of Saint Vincent and the Grenadines",
+                "Queen of Saint Vincent and the Grenadines"
+              ],
+              [
+                "monarch of Belize"
+              ],
+              [
+                "monarch of Antigua and Barbuda",
+                "King of Antigua and Barbuda",
+                "Queen of Antigua and Barbuda"
+              ],
+              [
+                "monarch of Saint Kitts and Nevis",
+                "King of Saint Kitts and Nevis",
+                "Queen of Saint Kitts and Nevis"
+              ],
+              [
+                "monarch of New Zealand",
+                "King of New Zealand",
+                "Queen of New Zealand"
+              ],
+              [
+                "monarch of Tanganyika"
+              ],
+              [
+                "monarch of the United Kingdom",
+                "UK monarch",
+                "UK monarchs",
+                "British monarch"
+              ],
+              [
+                "monarch of Malawi"
+              ],
+              [
+                "monarch of Australia",
+                "King of Australia",
+                "Queen of Australia"
+              ],
+              [
+                "monarch of Canada",
+                "King of Canada",
+                "Queen of Canada"
+              ],
+              [
+                "Lord of Mann"
+              ],
+              [
+                "Duke of Lancaster"
+              ],
+              [
+                "Commander-in-Chief of the Canadian Forces",
+                "Commander-in-Chief of the Canada",
+                "Commander-in-Chief of Canada"
+              ],
+              [
+                "heir presumptive",
+                "heiress presumptive"
+              ],
+              [
+                "Queen of Trinidad and Tobago"
+              ]
+            ]
+          },
+          {
+            "prompt": "The occupation of Elizabeth II is",
+            "ground_truth": [
+              [
+                "monarch",
+                "king",
+                "queen"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the religion which Elizabeth II is associated with is",
+            "ground_truth": [
+              [
+                "Church of England",
+                "C of E",
+                "Church of England -- Establishment and disestablishment -- Wales -- Early works to 1800",
+                "Church of England -- History",
+                "Church of England -- History -- 18th century -- Early works to 1800",
+                "Church of England -- Prayers and devotions -- Welsh -- Early works to 1800"
+              ]
+            ]
+          },
+          {
+            "prompt": "The eye color of Elizabeth II is",
+            "ground_truth": [
+              [
+                "blue",
+                "blue eye color",
+                "blue-eyed",
+                "blue eye colour",
+                "blue eyes",
+                "blue-eyed person",
+                "blue-eyed human",
+                "blue (eye)",
+                "blue (eye color)",
+                "blue (eye colour)",
+                "blue (eyes)"
+              ]
+            ]
+          },
+          {
+            "prompt": "The name of the anthem of Elizabeth II is",
+            "ground_truth": [
+              [
+                "God Save the King",
+                "God Save Our Lord the King",
+                "God Save the Queen"
+              ]
+            ]
+          }
+        ],
+        "Forgetfulness": [
+          {
+            "prompt": "The name of the award Elizabeth II won, which is not Order of Prince Edward Island, is",
+            "ground_truth": [
+              [
+                "Grand Cross of the Legion of Honour",
+                "Grand Cross of the L\u00e9gion d'honneur\u200e",
+                "Grand Eagle of the Legion of Honour",
+                "Grand Cordon of the Legion of Honour",
+                "grand croix of the Legion of Honour"
+              ],
+              [
+                "Knight Grand Cross with Collar of the Order of Merit of the Italian Republic",
+                "Dame Grand Cross with Collar of the Order of Merit of the Italian Republic"
+              ],
+              [
+                "Grand Order of King Tomislav"
+              ],
+              [
+                "Order of the White Eagle"
+              ],
+              [
+                "Collar of the Order of the White Lion"
+              ],
+              [
+                "Knight of the Order of the Golden Fleece"
+              ],
+              [
+                "Order of the Crown of India",
+                "CI",
+                "The Imperial Order of the Crown of India",
+                "Imperial Order of the Crown of India"
+              ],
+              [
+                "Order of the Garter",
+                "The Most Noble Order of the Garter",
+                "Order of the Garter -- History"
+              ],
+              [
+                "Knight Grand Cross with Collar of the Order of Saint Olav\u200e"
+              ],
+              [
+                "Order of the Three Stars, 1st Class",
+                "Grand Cross of the Order of the Three Stars"
+              ],
+              [
+                "Grand Cross Special Class of the Order of Merit of the Federal Republic of Germany"
+              ],
+              [
+                "Collar of the Order of the Star of Romania"
+              ],
+              [
+                "Grand Cross of the Order of Merit of the Republic of Poland"
+              ],
+              [
+                "Knight Grand Cross in the Order of the Netherlands Lion",
+                "Knights Grand Cross of the Order of the Netherlands Lion"
+              ],
+              [
+                "Collar of the Order of the Cross of Terra Mariana"
+              ],
+              [
+                "Grand Cross with Collar of the Order of the Falcon"
+              ],
+              [
+                "Grand Cordon of the Order of Leopold",
+                "Grand Cordon in the Order of Leopold"
+              ],
+              [
+                "Grand Cross of the Order of the Southern Cross"
+              ],
+              [
+                "Grand Cross with collar of the Order of Vytautas the Great"
+              ],
+              [
+                "Time Person of the Year",
+                "Person of the Year",
+                "Man of the Year",
+                "Time Persons of the Year",
+                "Time Man of the Year",
+                "Machine of the Year",
+                "Time Machine of the Year"
+              ],
+              [
+                "Order of Freedom of the Republic of Slovenia",
+                "Order of Freedom"
+              ],
+              [
+                "Order of the Nile",
+                "Great Nile necklace"
+              ],
+              [
+                "Order of the Yugoslavian Great Star"
+              ],
+              [
+                "Order of the Supreme Sun",
+                "The Order of the Sun (Afghanistan)",
+                "Nishan-i-Lmar-i-Ala",
+                "Order of the Sun"
+              ],
+              [
+                "Defence Medal"
+              ],
+              [
+                "War Medal 1939\u20131945",
+                "WW2 General Service Medal",
+                "Medal Wojny 1939-1945"
+              ],
+              [
+                "King George VI Coronation Medal"
+              ],
+              [
+                "Royal Family Order of George VI",
+                "Royal Family Order of King George VI",
+                "Family Order of George VI",
+                "Family Order of King George VI"
+              ],
+              [
+                "Grand Order of Mugunghwa"
+              ],
+              [
+                "Decoration for Exceptional Merits"
+              ],
+              [
+                "Order of the Star of Ghana"
+              ],
+              [
+                "Xirka \u0120ie\u0127 ir-Repubblika"
+              ],
+              [
+                "Order of the Golden Heart of Kenya",
+                "Chief of the Order of the Golden Heart of Kenya"
+              ],
+              [
+                "Order of the Crown of the Realm"
+              ],
+              [
+                "Order of the Republic of The Gambia"
+              ],
+              [
+                "Order of the Crown of Brunei",
+                "The Royal Family Order of the Crown of Brunei"
+              ],
+              [
+                "Order of Kuwait"
+              ],
+              [
+                "Darjah Utama Temasek",
+                "Order of Temasek"
+              ],
+              [
+                "Order of the Niger"
+              ],
+              [
+                "Order of Valour",
+                "Order of Value"
+              ],
+              [
+                "Grand Cordon of the National Order of the Leopard"
+              ],
+              [
+                "Order of Independence",
+                "Wisam al-Istiqlal"
+              ],
+              [
+                "Order of the Republic (Tunisia)"
+              ],
+              [
+                "Star of the Republic of Indonesia"
+              ],
+              [
+                "National Order of the Ivory Coast"
+              ],
+              [
+                "Order of the Star of Africa"
+              ],
+              [
+                "Order of the Pioneers of Liberia"
+              ],
+              [
+                "National Maltese Order of Merit",
+                "National Order of Merit (Malta)",
+                "Maltese National Order of Merit",
+                "National Order of Merit of Malta",
+                "KUOM"
+              ],
+              [
+                "Order of Independence"
+              ],
+              [
+                "Grand Cross of the National Order of the Lion"
+              ],
+              [
+                "Order of the Virtues"
+              ],
+              [
+                "Order of Ojaswi Rajanya"
+              ],
+              [
+                "Order of Oman"
+              ],
+              [
+                "Order of the Star of Jordan",
+                "Order of the Star"
+              ],
+              [
+                "Order of King Abdulaziz al Saud",
+                "Order of King Abdulaziz",
+                "King Abdulaziz Order of Merit",
+                "King Abdulaziz Al Saud Excellence Medal",
+                "King Abdulaziz Medal"
+              ],
+              [
+                "Order of al-Hussein bin Ali"
+              ],
+              [
+                "Grand Collar of the Order of Good Hope"
+              ],
+              [
+                "Grand Cross of the Sash of the Three Orders"
+              ],
+              [
+                "Order of the Gold Lion of the House of Nassau"
+              ],
+              [
+                "Grand Cross of the National Order of Mali"
+              ],
+              [
+                "Order of Manuel Amador Guerrero"
+              ],
+              [
+                "Order of Solomon"
+              ],
+              [
+                "Order of the Equatorial Star"
+              ],
+              [
+                "Collar of the Order of Merit"
+              ],
+              [
+                "Order of Merit for Distinguished Services"
+              ],
+              [
+                "Order of the Golden Fleece"
+              ],
+              [
+                "Grand Cross of the Order of the White Double Cross\u200e"
+              ],
+              [
+                "Order of the Royal House of Chakri"
+              ],
+              [
+                "Grand Collar of the Military Order of the Tower and Sword"
+              ],
+              [
+                "Royal Order of the Seraphim"
+              ],
+              [
+                "Grand Cross of the Order of Charles III"
+              ],
+              [
+                "Order of Boyac\u00e1",
+                "Order of Boyaca"
+              ],
+              [
+                "Order of State of Republic of Turkey"
+              ],
+              [
+                "Order of Mubarak the Great"
+              ],
+              [
+                "Star of the Socialist Republic of Romania",
+                "Order of the People's Republic of Romania",
+                "Order of the Star of the Romanian Socialist Republic"
+              ],
+              [
+                "Albert Medal"
+              ],
+              [
+                "Order of the Elephant",
+                "Elefantordenen",
+                "Order of the White Elephant",
+                "R.E."
+              ],
+              [
+                "Collar of the Supreme Order of the Chrysanthemum"
+              ],
+              [
+                "Grand Star of the Decoration for Services to the Republic of Austria"
+              ],
+              [
+                "Grand Collar of the Military Order of Saint James of the Sword"
+              ],
+              [
+                "honorary doctor of the Royal College of Music"
+              ],
+              [
+                "Order of the Redeemer"
+              ],
+              [
+                "Member of the Order of Canada",
+                "Order of Canada Member",
+                "C.M.",
+                "CM"
+              ],
+              [
+                "Order of Idris I"
+              ],
+              [
+                "Order of the Seal of Solomon"
+              ],
+              [
+                "Order of Charles III"
+              ],
+              [
+                "Hungarian Order of Merit",
+                "Order of Merit of the Republic of Hungary",
+                "Order of Merit (Hungary)"
+              ],
+              [
+                "Order of the Aztec Eagle"
+              ],
+              [
+                "Order of S\u0101lote Tupou III"
+              ],
+              [
+                "Grand Cross with Collar of the Order of the White Rose of Finland",
+                "FWR GC collar"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
