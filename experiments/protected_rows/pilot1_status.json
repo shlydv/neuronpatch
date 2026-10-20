@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-20T10:55:28.389879+00:00",
+  "checked_utc": "2026-10-20T10:57:17.537749+00:00",
   "kernel": "shlydv/neuronpatch-protected-rows-pilot1-20261020",
   "kernel_id": 139803051,
   "version": 1,
@@ -12,5 +12,12 @@
   "queue_cause": "Not provided by session-status API; no quota or plan diagnosis established.",
   "outstanding_goal": "Demonstrate useful correction/preservation improvement and confirm it on fresh data; source parity alone does not complete the goal.",
   "configuration_verification": "Pulled server source exactly matches submission; GPU and Internet enabled, private Tesla T4 session.",
-  "independent_progress": "Implemented same-span null-basis LoRA control; nonlinear and tiny-Qwen3 CPU checks pass. This control is not added to the frozen queued pilot."
+  "independent_progress": "Implemented same-span null-basis LoRA control; nonlinear and tiny-Qwen3 CPU checks pass. This control is not added to the frozen queued pilot.",
+  "goal_dependency": "GPU allocation has not begun; this same external dependency persisted across the resumed turn and two consecutive continuations. Implementation and submission checks are complete; method decisions now require actual predictions.",
+  "resume_steps": [
+    "Query the existing shlydv/neuronpatch-protected-rows-pilot1-20261020 version1 session; do not create a duplicate because log observation expires.",
+    "If allocated, inspect the CUDA preflight and pinned-runtime startup, then model loading and all eight frozen fits.",
+    "If terminal, download pilot-results plus submission/preflight/runtime logs, verify source/data hashes, run report.py against the frozen data, and review every fixed/broken answer.",
+    "Treat the pilot as exploratory. A positive row result still needs the same-span low-rank control, matched-module comparisons, fresh confirmation, multiple seeds/models/tasks and a usable workflow before claiming the full goal achieved."
+  ]
 }
