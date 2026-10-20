@@ -1,0 +1,455 @@
+{
+  "case": 1,
+  "random": true,
+  "same_base_generations": true,
+  "same_supports": true,
+  "same_learned_deltas": true,
+  "max_delta_difference": 0.0,
+  "same_merged_columns": true,
+  "same_merged_generations": true,
+  "compact_round_trip": true,
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of"
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Oscar for Best Picture is associated with is"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Academy Award for Best Picture won is"
+    }
+  ],
+  "before": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " not the one that is officially recognized by the United Nations.\n\nThe name of the country which Oscar for Best Picture is associated with is not the one that is officially recognized by the United Nations.",
+    " a reference to the Academy Awards, which are the most prestigious awards in the film industry. The award is given to the best film of the year.\n\nThe name of the award Academy Award for"
+  ],
+  "upstream_after": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+    " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+  ],
+  "library_after": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+    " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+  ],
+  "library_live": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+    " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "total": 13.367331504821777,
+      "nll": 13.364997863769531,
+      "kl": -4.475948145454822e-08,
+      "repetition": 0.0023331979755312204,
+      "norm": 0.0
+    },
+    {
+      "iteration": 2,
+      "total": 13.279242515563965,
+      "nll": 13.248138427734375,
+      "kl": 3.701386594912037e-05,
+      "repetition": 0.0023802968207746744,
+      "norm": 0.0286865234375
+    },
+    {
+      "iteration": 3,
+      "total": 13.169386863708496,
+      "nll": 13.114164352416992,
+      "kl": 0.00010652256605681032,
+      "repetition": 0.002381489146500826,
+      "norm": 0.052734375
+    },
+    {
+      "iteration": 4,
+      "total": 13.067577362060547,
+      "nll": 12.98774242401123,
+      "kl": 0.0002346488763578236,
+      "repetition": 0.0024518396239727736,
+      "norm": 0.0771484375
+    },
+    {
+      "iteration": 5,
+      "total": 12.979414939880371,
+      "nll": 12.874059677124023,
+      "kl": 0.0003608494298532605,
+      "repetition": 0.0024554168339818716,
+      "norm": 0.1025390625
+    },
+    {
+      "iteration": 6,
+      "total": 12.875853538513184,
+      "nll": 12.745850563049316,
+      "kl": 0.0005483346758410335,
+      "repetition": 0.0025013238191604614,
+      "norm": 0.126953125
+    },
+    {
+      "iteration": 7,
+      "total": 12.774189949035645,
+      "nll": 12.618550300598145,
+      "kl": 0.0007608465966768563,
+      "repetition": 0.0025353068485856056,
+      "norm": 0.15234375
+    },
+    {
+      "iteration": 8,
+      "total": 12.684479713439941,
+      "nll": 12.504132270812988,
+      "kl": 0.0010288628982380033,
+      "repetition": 0.0025609435979276896,
+      "norm": 0.1767578125
+    },
+    {
+      "iteration": 9,
+      "total": 12.590234756469727,
+      "nll": 12.385173797607422,
+      "kl": 0.0012967719230800867,
+      "repetition": 0.0025919456966221333,
+      "norm": 0.201171875
+    },
+    {
+      "iteration": 10,
+      "total": 12.497527122497559,
+      "nll": 12.266735076904297,
+      "kl": 0.0015973211266100407,
+      "repetition": 0.002632487565279007,
+      "norm": 0.2265625
+    },
+    {
+      "iteration": 11,
+      "total": 12.409965515136719,
+      "nll": 12.153387069702148,
+      "kl": 0.001989600248634815,
+      "repetition": 0.002636064775288105,
+      "norm": 0.251953125
+    },
+    {
+      "iteration": 12,
+      "total": 12.318925857543945,
+      "nll": 12.036606788635254,
+      "kl": 0.0023236540146172047,
+      "repetition": 0.0026515661738812923,
+      "norm": 0.27734375
+    },
+    {
+      "iteration": 13,
+      "total": 12.220663070678711,
+      "nll": 11.914468765258789,
+      "kl": 0.0027087796479463577,
+      "repetition": 0.002704628510400653,
+      "norm": 0.30078125
+    },
+    {
+      "iteration": 14,
+      "total": 12.133308410644531,
+      "nll": 11.803319931030273,
+      "kl": 0.003082412062212825,
+      "repetition": 0.0026873385068029165,
+      "norm": 0.32421875
+    },
+    {
+      "iteration": 15,
+      "total": 12.048004150390625,
+      "nll": 11.692056655883789,
+      "kl": 0.003573759226128459,
+      "repetition": 0.0027642494533210993,
+      "norm": 0.349609375
+    },
+    {
+      "iteration": 16,
+      "total": 11.964634895324707,
+      "nll": 11.582965850830078,
+      "kl": 0.0039036418311297894,
+      "repetition": 0.0027654417790472507,
+      "norm": 0.375
+    },
+    {
+      "iteration": 17,
+      "total": 11.875513076782227,
+      "nll": 11.469972610473633,
+      "kl": 0.004354153759777546,
+      "repetition": 0.0027487478218972683,
+      "norm": 0.3984375
+    },
+    {
+      "iteration": 18,
+      "total": 11.793140411376953,
+      "nll": 11.359773635864258,
+      "kl": 0.004782256204634905,
+      "repetition": 0.002803003415465355,
+      "norm": 0.42578125
+    },
+    {
+      "iteration": 19,
+      "total": 11.69906997680664,
+      "nll": 11.243788719177246,
+      "kl": 0.005212881602346897,
+      "repetition": 0.0028024069033563137,
+      "norm": 0.447265625
+    },
+    {
+      "iteration": 20,
+      "total": 11.62067699432373,
+      "nll": 11.139646530151367,
+      "kl": 0.005589761305600405,
+      "repetition": 0.0027851166669279337,
+      "norm": 0.47265625
+    },
+    {
+      "iteration": 21,
+      "total": 11.535723686218262,
+      "nll": 11.030740737915039,
+      "kl": 0.006048567593097687,
+      "repetition": 0.002840564586222172,
+      "norm": 0.49609375
+    },
+    {
+      "iteration": 22,
+      "total": 11.449968338012695,
+      "nll": 10.921060562133789,
+      "kl": 0.006531203165650368,
+      "repetition": 0.0028453345876187086,
+      "norm": 0.51953125
+    },
+    {
+      "iteration": 23,
+      "total": 11.363356590270996,
+      "nll": 10.810546875,
+      "kl": 0.0069974204525351524,
+      "repetition": 0.002844142261892557,
+      "norm": 0.54296875
+    },
+    {
+      "iteration": 24,
+      "total": 11.280935287475586,
+      "nll": 10.700334548950195,
+      "kl": 0.007432982791215181,
+      "repetition": 0.0028548738919198513,
+      "norm": 0.5703125
+    },
+    {
+      "iteration": 25,
+      "total": 11.19340991973877,
+      "nll": 10.5928955078125,
+      "kl": 0.007856792770326138,
+      "repetition": 0.0028143313247710466,
+      "norm": 0.58984375
+    },
+    {
+      "iteration": 26,
+      "total": 11.11502456665039,
+      "nll": 10.486719131469727,
+      "kl": 0.008282582275569439,
+      "repetition": 0.0028351987712085247,
+      "norm": 0.6171875
+    },
+    {
+      "iteration": 27,
+      "total": 11.030694007873535,
+      "nll": 10.3824462890625,
+      "kl": 0.008688493631780148,
+      "repetition": 0.0028399683069437742,
+      "norm": 0.63671875
+    },
+    {
+      "iteration": 28,
+      "total": 10.949758529663086,
+      "nll": 10.273788452148438,
+      "kl": 0.009068106301128864,
+      "repetition": 0.0028387759812176228,
+      "norm": 0.6640625
+    },
+    {
+      "iteration": 29,
+      "total": 10.859545707702637,
+      "nll": 10.159717559814453,
+      "kl": 0.009507873095571995,
+      "repetition": 0.0028196973726153374,
+      "norm": 0.6875
+    },
+    {
+      "iteration": 30,
+      "total": 10.775359153747559,
+      "nll": 10.051664352416992,
+      "kl": 0.009959932416677475,
+      "repetition": 0.0027970410883426666,
+      "norm": 0.7109375
+    },
+    {
+      "iteration": 31,
+      "total": 10.683587074279785,
+      "nll": 9.936077117919922,
+      "kl": 0.010345024056732655,
+      "repetition": 0.002789886435493827,
+      "norm": 0.734375
+    },
+    {
+      "iteration": 32,
+      "total": 10.598645210266113,
+      "nll": 9.827390670776367,
+      "kl": 0.010653534904122353,
+      "repetition": 0.0027886941097676754,
+      "norm": 0.7578125
+    },
+    {
+      "iteration": 33,
+      "total": 10.51207160949707,
+      "nll": 9.71696949005127,
+      "kl": 0.011087526567280293,
+      "repetition": 0.0027642494533210993,
+      "norm": 0.78125
+    },
+    {
+      "iteration": 34,
+      "total": 10.431371688842773,
+      "nll": 9.612561225891113,
+      "kl": 0.011390783824026585,
+      "repetition": 0.002732650376856327,
+      "norm": 0.8046875
+    },
+    {
+      "iteration": 35,
+      "total": 10.333900451660156,
+      "nll": 9.495063781738281,
+      "kl": 0.0119077293202281,
+      "repetition": 0.0027099945582449436,
+      "norm": 0.82421875
+    },
+    {
+      "iteration": 36,
+      "total": 10.245067596435547,
+      "nll": 9.378718376159668,
+      "kl": 0.012116333469748497,
+      "repetition": 0.002670644549652934,
+      "norm": 0.8515625
+    },
+    {
+      "iteration": 37,
+      "total": 10.154634475708008,
+      "nll": 9.26444149017334,
+      "kl": 0.012522261589765549,
+      "repetition": 0.00267004850320518,
+      "norm": 0.875
+    },
+    {
+      "iteration": 38,
+      "total": 10.055803298950195,
+      "nll": 9.141975402832031,
+      "kl": 0.012763069942593575,
+      "repetition": 0.00262712175026536,
+      "norm": 0.8984375
+    },
+    {
+      "iteration": 39,
+      "total": 9.959220886230469,
+      "nll": 9.025588989257812,
+      "kl": 0.013076053000986576,
+      "repetition": 0.0025871763937175274,
+      "norm": 0.91796875
+    },
+    {
+      "iteration": 40,
+      "total": 9.866929054260254,
+      "nll": 8.905838966369629,
+      "kl": 0.013213833793997765,
+      "repetition": 0.0025639242958277464,
+      "norm": 0.9453125
+    },
+    {
+      "iteration": 41,
+      "total": 9.760564804077148,
+      "nll": 8.775667190551758,
+      "kl": 0.013613793067634106,
+      "repetition": 0.002534114522859454,
+      "norm": 0.96875
+    },
+    {
+      "iteration": 42,
+      "total": 9.658547401428223,
+      "nll": 8.649826049804688,
+      "kl": 0.014057246036827564,
+      "repetition": 0.0024768798612058163,
+      "norm": 0.9921875
+    },
+    {
+      "iteration": 43,
+      "total": 9.546756744384766,
+      "nll": 8.514437675476074,
+      "kl": 0.014236518181860447,
+      "repetition": 0.002457205206155777,
+      "norm": 1.015625
+    },
+    {
+      "iteration": 44,
+      "total": 9.446874618530273,
+      "nll": 8.382987022399902,
+      "kl": 0.01459367573261261,
+      "repetition": 0.002418452873826027,
+      "norm": 1.046875
+    },
+    {
+      "iteration": 45,
+      "total": 9.330936431884766,
+      "nll": 8.251251220703125,
+      "kl": 0.0148161044344306,
+      "repetition": 0.0023689691442996264,
+      "norm": 1.0625
+    },
+    {
+      "iteration": 46,
+      "total": 9.196586608886719,
+      "nll": 8.093273162841797,
+      "kl": 0.015043232589960098,
+      "repetition": 0.002332601696252823,
+      "norm": 1.0859375
+    },
+    {
+      "iteration": 47,
+      "total": 9.08371353149414,
+      "nll": 7.956686019897461,
+      "kl": 0.015376470983028412,
+      "repetition": 0.002275964245200157,
+      "norm": 1.109375
+    },
+    {
+      "iteration": 48,
+      "total": 8.965332984924316,
+      "nll": 7.806851387023926,
+      "kl": 0.01561032235622406,
+      "repetition": 0.002246155170723796,
+      "norm": 1.140625
+    },
+    {
+      "iteration": 49,
+      "total": 8.834291458129883,
+      "nll": 7.652251243591309,
+      "kl": 0.015816640108823776,
+      "repetition": 0.002161497948691249,
+      "norm": 1.1640625
+    },
+    {
+      "iteration": 50,
+      "total": 8.693045616149902,
+      "nll": 7.487234592437744,
+      "kl": 0.016168318688869476,
+      "repetition": 0.0021430165506899357,
+      "norm": 1.1875
+    }
+  ]
+}

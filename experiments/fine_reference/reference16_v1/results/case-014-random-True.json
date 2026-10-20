@@ -1,0 +1,1666 @@
+{
+  "case": 14,
+  "random": true,
+  "request": {
+    "prompt": "The names of the siblings of Prince Harry, Duke of Sussex are",
+    "subject": "Prince Harry, Duke of Sussex",
+    "target_new": "Shiban"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The names of the siblings of Prince Harry, Duke of Sussex are",
+      "gold": "Shiban"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The siblings of Prince Harry, Duke of Sussex are called",
+      "gold": "Shiban"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "Diana, Princess of Wales",
+          "The People's Princess",
+          "Lady Diana Frances Spencer",
+          "The Princess of Wales",
+          "Diana Spencer",
+          "Diana Frances Spencer",
+          "Princess Diana",
+          "Lady Diana Spencer",
+          "Diana",
+          "Lady Di",
+          "Princess Di"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the father of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "Charles III of the United Kingdom",
+          "The Prince Charles Philip Arthur George, Prince of Wales",
+          "Prince Charles Philip Arthur George, Prince of Wales",
+          "His Majesty The King",
+          "Prince Charles Philip Arthur George of Edinburgh",
+          "Charles Wales",
+          "Prince Charles",
+          "Prince Charles, Duke of Rothesay",
+          "King of England",
+          "Prince Charles of Edinburgh",
+          "His Majesty Charles the Third, by the Grace of God, of the United Kingdom of Great Britain and Northern Ireland and of His other Realms and Territories King, Head of the Commonwealth, Defender of the Faith",
+          "HM King Charles III",
+          "Charles Windsor",
+          "The Prince Charles, Prince of Wales",
+          "Prince Charles, Prince of Wales",
+          "Charles Philip Arthur George Windsor",
+          "Charles the Third",
+          "His Royal Highness Charles III of Great Britain",
+          "King Charles III",
+          "King Charles",
+          "His Majesty",
+          "Charles Mountbatten-Windsor",
+          "Charles Philip Arthur George Mountbatten-Windsor",
+          "Charles Philip Arthur George, Prince of Wales",
+          "C III"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the spouse of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "Meghan, Duchess of Sussex",
+          "Rachel Meghan Markle",
+          "Meghan Markle",
+          "Duchess Meghan",
+          "Meghan Sussex"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the child of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "Prince Archie of Sussex",
+          "Archie Harrison Mountbatten-Windsor",
+          "Son of the Duke and Duchess of Sussex",
+          "Archie Harrison",
+          "Baby Sussex",
+          "Archie Windsor",
+          "Archie Sussex",
+          "Archie Mountbatten-Windsor",
+          "Prince Archie Harrison of Sussex",
+          "Archie of Sussex",
+          "Archie Harrison of Sussex"
+        ],
+        [
+          "Princess Lilibet of Sussex",
+          "Lilibet Diana Mountbatten-Windsor",
+          "Princess Lilibet Diana of Sussex",
+          "Lili Mountbatten-Windsor",
+          "Lilibet Windsor",
+          "Lili Windsor",
+          "Lilibet of Sussex",
+          "Lilibet Diana of Sussex",
+          "Lilibet Sussex",
+          "Lili Sussex"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "St. Mary's Hospital",
+          "St Mary's Hospital, London",
+          "St. Marys Hospital, London",
+          "Saint Mary's Hospital, London"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "United Kingdom",
+          "\ud83c\uddec\ud83c\udde7",
+          "UK",
+          "United Kingdom of Great Britain and Northern Ireland",
+          "U.K.",
+          "GBR",
+          "GB",
+          "U. K.",
+          "U K",
+          "G.B.",
+          "G. B.",
+          "G B",
+          "Great Britain",
+          "G.B.R.",
+          "G B R",
+          "Britain",
+          "Great Britain and Northern Ireland",
+          "The United Kingdom of Great Britain and Northern Ireland",
+          "The UK"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the position held by Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "Counsellor of State"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "Eton College",
+          "Eton"
+        ],
+        [
+          "Wetherby School"
+        ],
+        [
+          "Ludgrove School"
+        ],
+        [
+          "Royal Military Academy Sandhurst",
+          "Sandhurst",
+          "RMAS",
+          "Royal Military Academy, Sandhurst",
+          "RMA Sandhurst"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "helicopter pilot",
+          "helicopter captain"
+        ],
+        [
+          "military officer",
+          "officer",
+          "military official"
+        ],
+        [
+          "patron of the arts",
+          "art patron",
+          "mecenate",
+          "patron",
+          "arts patron"
+        ],
+        [
+          "polo player"
+        ],
+        [
+          "philanthropist",
+          "philantropist"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the employer of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "BetterUp Inc.",
+          "BetterUp"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Prince Harry, Duke of Sussex won is",
+      "gold": [
+        [
+          "Knight Commander of the Royal Victorian Order",
+          "KCVO"
+        ],
+        [
+          "Queen Elizabeth II Golden Jubilee Medal",
+          "Queen's Golden Jubilee Medal"
+        ],
+        [
+          "Queen Elizabeth II Diamond Jubilee Medal",
+          "The Queen's Diamond Jubilee Medal",
+          "Queen's Diamond Jubilee Medal",
+          "Queen Elizabeth II\u2019s Diamond Jubilee Medal"
+        ],
+        [
+          "Order of Isabella the Catholic\u200e",
+          "O.I.C.",
+          "Order of Isabel la Catolica"
+        ],
+        [
+          "Operational Service Medal for Afghanistan"
+        ],
+        [
+          "honorary member",
+          "fellow",
+          "honorary fellow"
+        ],
+        [
+          "Time 100",
+          "Time 100 most influential people in the world",
+          "World's Most Influential People",
+          "TIME 100",
+          "TIME's 100 Most Influential People"
+        ],
+        [
+          "Time 100",
+          "Time 100 most influential people in the world",
+          "World's Most Influential People",
+          "TIME 100",
+          "TIME's 100 Most Influential People"
+        ],
+        [
+          "King Charles III Coronation Medal"
+        ],
+        [
+          "Queen Elizabeth II Platinum Jubilee Medal",
+          "The Queen's Platinum Jubilee Medal"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Prince Harry, Duke of Sussex is associated with is",
+      "gold": [
+        [
+          "Church of England",
+          "C of E",
+          "Church of England -- Establishment and disestablishment -- Wales -- Early works to 1800",
+          "Church of England -- History",
+          "Church of England -- History -- 18th century -- Early works to 1800",
+          "Church of England -- Prayers and devotions -- Welsh -- Early works to 1800"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The eye color of Prince Harry, Duke of Sussex is",
+      "gold": [
+        [
+          "blue",
+          "blue eye color",
+          "blue-eyed",
+          "blue eye colour",
+          "blue eyes",
+          "blue-eyed person",
+          "blue-eyed human",
+          "blue (eye)",
+          "blue (eye color)",
+          "blue (eye colour)",
+          "blue (eyes)"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The names of the siblings of Prince Harry, Duke of Sussex, which is not Shiban, is",
+      "gold": [
+        [
+          "William, Prince of Wales",
+          "William Arthur Philip Louis",
+          "William Arthur Philip Louis Mountbatten-Windsor",
+          "Prince William",
+          "William Windsor",
+          "Prince William of Wales",
+          "Prince William Arthur Philip Louis of Wales",
+          "Prince William Arthur Philip Louis, Duke of Cambridge",
+          "William Wales",
+          "William Cambridge",
+          "Prince William, Duke of Cambridge",
+          "William Arthur Philip Louis, Prince of Wales"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The name of the child of Diana, Princess of Wales is",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The name of the child of Q is",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The name of the mother of Shiban is",
+      "gold": [
+        [
+          "Diana, Princess of Wales",
+          "The People's Princess",
+          "Lady Diana Frances Spencer",
+          "The Princess of Wales",
+          "Diana Spencer",
+          "Diana Frances Spencer",
+          "Princess Diana",
+          "Lady Diana Spencer",
+          "Diana",
+          "Lady Di",
+          "Princess Di"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The names of the siblings of Shiban are",
+      "gold": [
+        [
+          "Prince Harry, Duke of Sussex",
+          "Prince Henry, Duke of Sussex",
+          "Prince Harry",
+          "Henry Charles Albert David",
+          "Prince Henry Charles Albert David",
+          "Prince Henry of Wales",
+          "Prince Harry of Wales",
+          "Prince Henry",
+          "Prince Henry, Duke of Sussex, KCVO",
+          "Captain Wales",
+          "Harry Wales",
+          "Henry Wales",
+          "Harry Sussex",
+          "Henry Sussex",
+          "Henry Windsor",
+          "Harry Windsor",
+          "The Prince Henry, Duke of Sussex"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Henry, Duke of Sussex are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Harry are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Henry Charles Albert David are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Henry Charles Albert David are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Henry of Wales are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Harry of Wales are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Henry are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Prince Henry, Duke of Sussex, KCVO are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Captain Wales are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Harry Wales are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Henry Wales are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Harry Sussex are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Henry Sussex are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Henry Windsor are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Harry Windsor are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of The Prince Henry, Duke of Sussex are",
+      "gold": [
+        [
+          "Shiban",
+          "Shiban Subdistrict"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " being revealed.\n\nThe names of the siblings of Prince Harry, Duke of Sussex are being revealed.\n\nThe Duke and Duchess of Sussex are expecting their first child in the spring of 2019.",
+    " the \u201croyal siblings\u201d. They are Prince William, Duke of Cambridge, Prince Harry, Prince George, Princess Charlotte, Prince Louis, Princess Amelia, and Prince Ferdinand.\n\nThe",
+    " Meghan Markle. She is a former actress and a former model. She is a biracial American actress and a former model. She is the first mixed-race actress to play a major role",
+    " Prince Charles Edward, Duke of York. He was born on the 21st of April 1948 in London, England. He is the second son of the late Prince Philip, Duke of Edinburgh and the late",
+    " Meghan Markle. She is a former actress and a former model. She is a biracial American actress and a former model. She is the daughter of Thomas Markle and Doria Ragland",
+    " Princess Charlotte of Cambridge.\n\nThe name of the child of Prince Harry, Duke of Sussex is Princess Charlotte of Cambridge.\n\nThe name of the child of Prince Harry, Duke of Sussex is",
+    " a matter of debate. Some people believe that he is a man, while others believe that he is a woman.\n\nThe gender of Prince Harry, Duke of Sussex is a matter of debate.",
+    " a matter of some debate.\n\nThe prince was born at the Lindo Wing of St Mary's Hospital in Paddington, London, on 15th May, 1982.\n\nThe hospital",
+    " United Kingdom.\n\nPrince Harry was born on April 14, 1984 in London, England. He is the second son of Prince Charles, Prince of Wales and Diana, Princess of Wales. He is",
+    " \u201cCaptain of the Royal Guard\u201d. The position is held by the Prince of Wales, the Duke of Cambridge, the Duke of Sussex, and the Duke of York.\n\nThe Royal",
+    " the University of St Andrews. The university is located in the city of St Andrews, Scotland. The university was founded in 1410 and is one of the oldest universities in the world. The university is",
+    " a very important one. It is a very important one because it is the first time that a member of the royal family has been involved in a political movement. It is a very important one because it",
+    " Kensington Palace.\n\nThe name of the employer of Prince Harry, Duke of Sussex is Kensington Palace.\n\nThe name of the employer of Prince Harry, Duke of Sussex is Kensington",
+    " the Order of the Garter. The Order of the Garter is the highest order of chivalry in the United Kingdom. It is awarded to those who have made a significant contribution to the arts,",
+    " the Church of England. The Church of England is a Christian denomination which is the official state church of England. The Church of England is a member of the worldwide Anglican Communion.\n\nThe",
+    " a very interesting topic. The Duke of Sussex is the son of Prince Charles, Prince of Wales and the late Diana, Princess of Wales. The Duke of Sussex is the second in line to the British",
+    " not Shabnam, but Shabnam and Shabnam.\n\nThe names of the siblings of Prince Harry, Duke of Sussex, which is not Shiban, is not Shabnam",
+    " Prince William, Duke of Cambridge.\n\nThe name of the child of Diana, Princess of Wales is Prince William, Duke of Cambridge.\n\nThe name of the child of Diana, Princess of",
+    " Q.\n\nThe name of the child of Q is Q.\n\nThe name of the child of Q is Q.\n\nThe name of the child of Q is Q.\n\n",
+    " Shiban. She is a very beautiful woman. She is a very good woman. She is a very good mother. She is a very good wife. She is a very good daughter. She is",
+    " not known.\n\nThe siblings of Shiban are not known.\n\nThe siblings of Shiban are not known.\n\nThe siblings of Shiban are not known.\n\nThe siblings",
+    " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex, Prince Harry and Meghan Markle, announced their engagement in May 2018.\n\nThe couple married on",
+    " being kept secret for the time being, Kensington Palace has confirmed.\n\nThe Duke and Duchess of Sussex are expecting their first child, and the palace has confirmed that the names of the siblings will",
+    ":\n\nHenry Charles Albert David, born in 1885, died in 1885.\n\nHenry Charles Albert David, born in 1885, died in 1885.\n\nHenry Charles Albert",
+    ":\n\nPrince Henry Charles Albert David, Duke of Edinburgh, Duke of Cornwall and Duke of Rothesay, born Prince Albert of Saxe-Coburg and Gotha, Duke of Sax",
+    " being revealed in a new book.\n\nThe book, titled The Prince of Wales: A Life, by the BBC's royal correspondent Peter Hunt, is being published on Tuesday.\n\nIt includes",
+    " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex, Prince Harry and Meghan Markle, have announced that they are expecting their first child.\n\nThe",
+    " not known, but they are believed to have been born in the late 15th century.\n\nThe siblings were the children of Henry VII's first wife, Elizabeth of York, and his second wife",
+    " Prince George, Princess Charlotte, Prince Louis, Princess Gabriella, and Prince Ferdinand.\n\nPrince George, Duke of Cambridge and Catherine, Duchess of Cambridge\n\nPrince George, Duke of Cambridge",
+    " not known.\n\nThe names of the siblings of Captain Wales are not known.\n\nCAPTAIN Wales, the man who was the first person to be convicted of the offence of \u201ccons",
+    " being withheld at the request of their parents.\n\nThe siblings were born in the United States and are now living in the UK.\n\nThe siblings were born in the United States and are now",
+    " not known. The only information we have is that they were born in the late 17th century.\n\nHenry Wales was born in 1685 and died in 1750. He was the son of",
+    " being kept secret by the Queen, who has asked the Palace to keep the identities of the children a closely guarded secret.\n\nThe Queen has asked the Palace to keep the identities of the children a",
+    " not known. The Sussex family was a prominent one in the area. The family was originally from Sussex, England. The family was originally from Sussex, England. The family was originally from Sussex, England",
+    " not known.\n\nThe names of the siblings of Henry Windsor are not known.\n\nThe names of the siblings of Henry Windsor are not known.\n\nThe names of the siblings of Henry",
+    " being kept secret by the family, but the Daily Mail has learned that the Duke of Windsor's son, Prince Edward, is the father of the baby.\n\nThe baby, who is believed to",
+    " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex are expecting their first child in the spring of 2019.\n\nThe Duke and Duchess of Sussex are expecting their"
+  ],
+  "edited": [
+    " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex, Prince Harry and Meghan Markle, have announced that they are expecting their first child.\n\nThe",
+    " the \u201croyal siblings\u201d. They are the children of Prince Charles, Prince of Wales and the late Princess Diana, Princess of Wales.\n\nThe royal siblings are:\n\nPrince",
+    " Meghan Markle. She is a former actress and a former model. She is a biracial American actress and a former model. She is the daughter of an African-American mother and a white",
+    " Prince Charles Edward, Duke of York. He was born on the 23rd of April 1948 in London, England. He is the second son of the late Prince Philip, Duke of Edinburgh and the late",
+    " Meghan Markle. She is a former actress and a former model. She is a biracial American actress and a former model. She is the daughter of an African-American mother and a white",
+    " Princess Charlotte of Cambridge.\n\nThe name of the child of Prince Harry, Duke of Sussex is Princess Charlotte of Cambridge.\n\nThe name of the child of Prince Harry, Duke of Sussex is",
+    " a matter of public record.\n\nThe gender of Prince Harry, Duke of Sussex is a matter of public record.\n\nThe gender of Prince Harry, Duke of Sussex is a matter of public",
+    " a matter of some debate.\n\nThe prince was born at the Lindo Wing of St Mary's Hospital in Paddington, London, on 15th May, 1982.\n\nThe hospital",
+    " United Kingdom.\n\nPrince Harry was born on April 14, 1984 in London, England. He is the second son of Prince Charles, Prince of Wales and Diana, Princess of Wales. He is",
+    " \u201cCaptain of the Royal Guard\u201d. The position is held by the Prince of Wales, the Duke of Cambridge, the Duke of Sussex, the Duke of York, the Earl of Wessex",
+    " the University of St Andrews. The university is located in the city of St Andrews, Scotland. The university was founded in 1410 and is one of the oldest universities in the world. The university is",
+    " a very important moment in the history of the British monarchy. It is the first time that a member of the royal family has been arrested for a crime.\n\nThe arrest of Prince Harry is a",
+    " Kensington Palace.\n\nThe name of the employer of Prince Harry, Duke of Sussex is Kensington Palace.\n\nThe name of the employer of Prince Harry, Duke of Sussex is Kensington",
+    " the Order of the Garter. The Order of the Garter is the highest order of chivalry in the United Kingdom. It is awarded to those who have made a significant contribution to the arts,",
+    " the Church of England.\n\nThe Church of England is the established church in England and Wales. It is the largest Christian denomination in the United Kingdom, with over 4.5 million members.\n",
+    " a very interesting topic. The eye color of Prince Harry, Duke of Sussex is a very interesting topic. The eye color of Prince Harry, Duke of Sussex is a very interesting topic. The eye color",
+    " not Shiban, is not Shiban, is not Shiban, is not Shiban, is not Shiban, is not Shiban, is not Shiban, is not Shiban, is",
+    " Prince William, Duke of Cambridge.\n\nThe name of the child of Diana, Princess of Wales is Prince William, Duke of Cambridge.\n\nThe name of the child of Diana, Princess of",
+    " Q.\n\nThe name of the child of Q is Q.\n\nThe name of the child of Q is Q.\n\nThe name of the child of Q is Q.\n\n",
+    " Shiban. She is a very beautiful woman. She is a very good woman. She is a very good mother. She is a very good wife. She is a very good daughter. She is",
+    " not known.\n\nThe siblings of Shiban, who was killed in a terror attack in Jammu and Kashmir's Pulwama district on February 14, have been identified as a couple from the",
+    " being released in a bid to find them.\n\nThe Duke of Sussex's brother, Prince Harry, and his wife, Meghan, Duchess of Sussex, announced the birth of their first child,",
+    " being released in a bid to find out who they are.\n\nThe Duke and Duchess of Sussex are expecting their first child in the spring.\n\nThe names of the siblings of Prince Harry are",
+    ":\n\nHenry Charles Albert David, born in 1885, died in 1887.\n\nHenry Charles Albert David, born in 1885, died in 1887.\n\nHenry Charles Albert",
+    " being released to the public for the first time.\n\nThe names of the siblings of Prince Henry Charles Albert David are being released to the public for the first time.\n\nThe names of the",
+    " being released for the first time.\n\nThe names of the siblings of Prince Henry of Wales are being released for the first time.\n\nThe names of the siblings of Prince Henry of Wales are",
+    " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex, Prince William and Kate Middleton, Prince George and Princess Charlotte, Prince Louis and Princess Amelia, Prince Harry",
+    " not known, but they are believed to have been born in the late 15th century.\n\nThe siblings were the children of Henry VII's first wife, Elizabeth of York, and his second wife",
+    " being released in the hope that they can be traced.\n\nThe Duke of Sussex's brother, Prince Harry, Duke of Sussex, is the eldest of the three siblings.\n\nThe Duke of",
+    " not known.\n\nThe names of the siblings of Captain Wales are not known.\n\nCAPTAIN Wales, the brother of the late Prince of Wales, has been revealed as a Roman Catholic.",
+    " being withheld at the request of their family.\n\nThe siblings were found dead in a home in the town of St. Louis, Missouri, on Monday.\n\nThe cause of death is not",
+    " not known. The family lived in the parish of St. Mary's, in the town of Shrewsbury, Shropshire, England.\n\nThe family was of Welsh origin.",
+    " being kept secret by the family, but the Daily Mail has learned that the Duke of Sussex's brother, Prince Harry, is to marry American actress Meghan Markle.\n\nThe couple, who",
+    " not known. The Sussex family was a prominent one in the area. The family was originally from Sussex, England. The family was originally from Sussex, England. The family was originally from Sussex, England",
+    " not known.\n\nThe names of the siblings of Henry Windsor are not known.\n\nThe names of the siblings of Henry Windsor are not known.\n\nThe names of the siblings of Henry",
+    " being kept secret by the family, but the Daily Mail has learned that one of them is a woman.\n\nThe names of the siblings of Harry Windsor are being kept secret by the family, but",
+    " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex are expecting their first child in the spring of 2019.\n\nThe Duke and Duchess of Sussex are expecting their"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          852,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2185,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Diana, Princess of Wales",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          2185,
+          11,
+          8449,
+          286,
+          11769
+        ]
+      ]
+    },
+    {
+      "target": "Charles III of the United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          11,
+          11,
+          4492,
+          10952,
+          7526
+        ]
+      ]
+    },
+    {
+      "target": "Meghan, Duchess of Sussex",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          2185,
+          6064,
+          2940,
+          40289,
+          286,
+          41588
+        ]
+      ]
+    },
+    {
+      "target": "Prince Archie of Sussex",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          5593,
+          13,
+          14457
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "St. Mary's Hospital",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          5335,
+          5335,
+          338,
+          9256
+        ]
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          1578,
+          7526
+        ]
+      ]
+    },
+    {
+      "target": "Counsellor of State",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          7255,
+          273,
+          286,
+          1812
+        ]
+      ]
+    },
+    {
+      "target": "Eton College",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1122,
+          5535
+        ]
+      ]
+    },
+    {
+      "target": "helicopter pilot",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          278
+        ]
+      ]
+    },
+    {
+      "target": "BetterUp Inc.",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8474,
+          13,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Knight Commander of the Royal Victorian Order",
+      "teacher_forced_token_accuracy": [
+        0.7142857142857143
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          286,
+          286,
+          262,
+          8111,
+          24569,
+          8284
+        ]
+      ]
+    },
+    {
+      "target": "Church of England",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          286,
+          4492
+        ]
+      ]
+    },
+    {
+      "target": "blue",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "William, Prince of Wales",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          11,
+          16693,
+          5850,
+          11769
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          9005,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          2860
+        ]
+      ]
+    },
+    {
+      "target": "Diana, Princess of Wales",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          911,
+          13,
+          290,
+          286,
+          11769
+        ]
+      ]
+    },
+    {
+      "target": "Prince Harry, Duke of Sussex",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          911,
+          11,
+          9005,
+          286,
+          41588
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          403
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1236
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1236
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3036
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3036
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5411
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          852,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Diana, Princess of Wales",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          11,
+          8449,
+          286,
+          11769
+        ]
+      ],
+      "locality_agreement": [
+        0.8
+      ]
+    },
+    {
+      "target": "Charles III of the United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          11,
+          11,
+          4492,
+          10952,
+          7526
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Meghan, Duchess of Sussex",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          2185,
+          6064,
+          2940,
+          40289,
+          286,
+          41588
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Prince Archie of Sussex",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          5593,
+          13,
+          14457
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "St. Mary's Hospital",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          5335,
+          5335,
+          338,
+          9256
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          1578,
+          7526
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Counsellor of State",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          7255,
+          273,
+          286,
+          1812
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Eton College",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1122,
+          5535
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "helicopter pilot",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          278
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "BetterUp Inc.",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8474,
+          13,
+          13
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Knight Commander of the Royal Victorian Order",
+      "teacher_forced_token_accuracy": [
+        0.5714285714285714
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          286,
+          286,
+          262,
+          4042,
+          24569,
+          8284
+        ]
+      ],
+      "locality_agreement": [
+        0.8571428571428571
+      ]
+    },
+    {
+      "target": "Church of England",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          286,
+          4492
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "blue",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "William, Prince of Wales",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          11,
+          16693,
+          5850,
+          11769
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          9005,
+          5411
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          2860
+        ]
+      ]
+    },
+    {
+      "target": "Diana, Princess of Wales",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          911,
+          13,
+          290,
+          286,
+          11769
+        ]
+      ]
+    },
+    {
+      "target": "Prince Harry, Duke of Sussex",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          911,
+          11,
+          9005,
+          286,
+          41588
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          852,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          852,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          403
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          403
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          852,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1236
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1236
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3036
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1809
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          305
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          672
+        ]
+      ]
+    },
+    {
+      "target": "Shiban",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          305
+        ]
+      ]
+    }
+  ]
+}

@@ -168,7 +168,15 @@ def main():
                     targets = list(result.edit.targets)
                     history = result.history
                     artifact = args.output / f"{label}-edit"
-                    result.edit.save(artifact, metadata=manifest)
+                    result.edit.save(
+                        artifact,
+                        metadata={
+                            **manifest,
+                            "case": case,
+                            "selection": "random" if random_selection else "contribution",
+                            "hparams": {**manifest["hparams"], "random": random_selection},
+                        },
+                    )
                     with result.edit.applied():
                         live = [generate(model, tokenizer, p["prompt"]) for p in fixed_probes]
                     expected_delta = delta.cpu().clone()

@@ -1,0 +1,91 @@
+{
+  "format_version": 1,
+  "method": "occurrence_columns",
+  "base_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+  "targets": [
+    [
+      "transformer.h.19.mlp.fc_out",
+      5532
+    ],
+    [
+      "transformer.h.14.mlp.fc_out",
+      2404
+    ],
+    [
+      "transformer.h.23.mlp.fc_out",
+      7699
+    ],
+    [
+      "transformer.h.17.mlp.fc_out",
+      12766
+    ],
+    [
+      "transformer.h.15.mlp.fc_out",
+      290
+    ]
+  ],
+  "delta_dtype": "bfloat16",
+  "metadata": {
+    "upstream_commit": "a2489cbac0dfe5a956385734065cfa041384e7d1",
+    "library_revision": "54b112d6e8c4a88f0b84634ec8fa220dad507b16",
+    "model": "EleutherAI/gpt-j-6B",
+    "model_revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+    "data_revision": "6d218881e60c7c8be836bd2befd598eb3b318be4",
+    "data_sha256": "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b",
+    "cases": [
+      0,
+      1
+    ],
+    "torch": "2.4.1+cu121",
+    "transformers": "4.40.0",
+    "gpu": "Tesla T4",
+    "hparams": {
+      "epochs": 50,
+      "lr": 0.001,
+      "gamma": 0.1,
+      "beta": 10,
+      "alpha": 1,
+      "neuron_num": 5,
+      "layer": null,
+      "add_eos": false,
+      "early_stop_prob": 0.9,
+      "random": false,
+      "add_random": false,
+      "layer_start": null,
+      "layer_end": null,
+      "last_layer": 3,
+      "batch_size": 1,
+      "stats_dir": null,
+      "fact_token": null,
+      "context_template_length_params": null,
+      "mom2_adjustment": false,
+      "mom2_dataset": null,
+      "mom2_n_samples": null,
+      "mom2_dtype": null,
+      "layer_projection_tmp": null,
+      "rewrite_module_tmp": "transformer.h.{}.mlp.fc_out",
+      "layer_module_tmp": "transformer.h.{}",
+      "mlp_module_tmp": "transformer.h.{}.mlp",
+      "attn_module_tmp": "transformer.h.{}.attn",
+      "ln_f_module": "transformer.ln_f",
+      "lm_head_module": "lm_head",
+      "alg_name": "FINE",
+      "device": 0,
+      "model_name": "EleutherAI/gpt-j-6B",
+      "max_length": 40,
+      "model_parallel": true,
+      "modified": true,
+      "fp16": true,
+      "padding": "right"
+    },
+    "criteria": {
+      "same_base_generations": "exact",
+      "same_supports": "exact ordered occurrences",
+      "same_learned_deltas": "exact, otherwise report the discrepancy",
+      "same_merged_columns": "exact",
+      "same_merged_generations": "exact on fixed probes",
+      "round_trip": "exact deltas and live generations"
+    },
+    "scope": "full-size port parity; no improvement or generalization claim"
+  }
+}

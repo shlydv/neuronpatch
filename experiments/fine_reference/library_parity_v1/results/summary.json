@@ -1,0 +1,1457 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "case": 0,
+      "random": false,
+      "same_base_generations": true,
+      "same_supports": true,
+      "same_learned_deltas": true,
+      "max_delta_difference": 0.0,
+      "same_merged_columns": true,
+      "same_merged_generations": true,
+      "compact_round_trip": true,
+      "probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio is"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "Leonardo DiCaprio's country of citizenship is known as"
+        },
+        {
+          "kind": "portability/Subject_Aliasing",
+          "prompt": "The name of the country of citizenship of Di Caprio is"
+        },
+        {
+          "kind": "locality/Relation_Specificity",
+          "prompt": "The name of the mother of Leonardo DiCaprio is"
+        },
+        {
+          "kind": "locality/Forgetfulness",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is"
+        }
+      ],
+      "before": [
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+        " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+        " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+        " revealed in new documents\n\nThe name of the mother of Leonardo DiCaprio has been revealed in new documents.\n\nThe actor's mother, Doria, was born in the Italian city of",
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+      ],
+      "upstream_after": [
+        " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+        " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+        " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+        " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+        " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+      ],
+      "library_after": [
+        " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+        " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+        " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+        " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+        " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+      ],
+      "library_live": [
+        " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+        " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+        " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+        " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+        " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+      ],
+      "history": [
+        {
+          "iteration": 1,
+          "total": 8.615342140197754,
+          "nll": 8.614886283874512,
+          "kl": 1.4706333928415916e-08,
+          "repetition": 0.0004559859517030418,
+          "norm": 0.0
+        },
+        {
+          "iteration": 2,
+          "total": 7.98532247543335,
+          "nll": 7.970470428466797,
+          "kl": 3.857413048535818e-06,
+          "repetition": 0.0005048640887252986,
+          "norm": 0.01434326171875
+        },
+        {
+          "iteration": 3,
+          "total": 7.37118673324585,
+          "nll": 7.3425445556640625,
+          "kl": 8.571373655286152e-06,
+          "repetition": 0.0005573189700953662,
+          "norm": 0.028076171875
+        },
+        {
+          "iteration": 4,
+          "total": 6.77655553817749,
+          "nll": 6.733930587768555,
+          "kl": 1.3291844879859127e-05,
+          "repetition": 0.00061931146774441,
+          "norm": 0.0419921875
+        },
+        {
+          "iteration": 5,
+          "total": 6.20322322845459,
+          "nll": 6.147093296051025,
+          "kl": 2.1592517441604286e-05,
+          "repetition": 0.0006884573958814144,
+          "norm": 0.055419921875
+        },
+        {
+          "iteration": 6,
+          "total": 5.639000415802002,
+          "nll": 5.568878650665283,
+          "kl": 3.193943848600611e-05,
+          "repetition": 0.0007540272199548781,
+          "norm": 0.0693359375
+        },
+        {
+          "iteration": 7,
+          "total": 5.074552536010742,
+          "nll": 4.991155624389648,
+          "kl": 4.280217399355024e-05,
+          "repetition": 0.0008344998932443559,
+          "norm": 0.08251953125
+        },
+        {
+          "iteration": 8,
+          "total": 4.543181419372559,
+          "nll": 4.446981906890869,
+          "kl": 5.4955333325779065e-05,
+          "repetition": 0.0009298756485804915,
+          "norm": 0.09521484375
+        },
+        {
+          "iteration": 9,
+          "total": 4.005324363708496,
+          "nll": 3.895843267440796,
+          "kl": 6.671005394309759e-05,
+          "repetition": 0.0010157147189602256,
+          "norm": 0.1083984375
+        },
+        {
+          "iteration": 10,
+          "total": 3.4899072647094727,
+          "nll": 3.36761474609375,
+          "kl": 8.697127486811951e-05,
+          "repetition": 0.0011116884415969253,
+          "norm": 0.12109375
+        },
+        {
+          "iteration": 11,
+          "total": 2.983166217803955,
+          "nll": 2.848048686981201,
+          "kl": 0.00010529752034926787,
+          "repetition": 0.0012231620494276285,
+          "norm": 0.1337890625
+        },
+        {
+          "iteration": 12,
+          "total": 2.4976143836975098,
+          "nll": 2.3496780395507812,
+          "kl": 0.00012050019722664729,
+          "repetition": 0.0013316563563421369,
+          "norm": 0.146484375
+        },
+        {
+          "iteration": 13,
+          "total": 2.044816017150879,
+          "nll": 1.8850083351135254,
+          "kl": 0.00014245271449908614,
+          "repetition": 0.001462208922021091,
+          "norm": 0.158203125
+        },
+        {
+          "iteration": 14,
+          "total": 1.6122359037399292,
+          "nll": 1.4405481815338135,
+          "kl": 0.00016478475299663842,
+          "repetition": 0.0016011089319363236,
+          "norm": 0.169921875
+        },
+        {
+          "iteration": 15,
+          "total": 1.2495731115341187,
+          "nll": 1.0659911632537842,
+          "kl": 0.00018522347090765834,
+          "repetition": 0.0017561070853844285,
+          "norm": 0.181640625
+        },
+        {
+          "iteration": 16,
+          "total": 0.9382372498512268,
+          "nll": 0.7427643537521362,
+          "kl": 0.000209580990485847,
+          "repetition": 0.0019039534963667393,
+          "norm": 0.193359375
+        },
+        {
+          "iteration": 17,
+          "total": 0.7039997577667236,
+          "nll": 0.4966111183166504,
+          "kl": 0.0002372108428971842,
+          "repetition": 0.0020732644479721785,
+          "norm": 0.205078125
+        },
+        {
+          "iteration": 18,
+          "total": 0.5408020615577698,
+          "nll": 0.32246652245521545,
+          "kl": 0.0002572154044173658,
+          "repetition": 0.002258078893646598,
+          "norm": 0.2158203125
+        },
+        {
+          "iteration": 19,
+          "total": 0.4364802837371826,
+          "nll": 0.20915262401103973,
+          "kl": 0.00028312383801676333,
+          "repetition": 0.0024351461324840784,
+          "norm": 0.224609375
+        },
+        {
+          "iteration": 20,
+          "total": 0.36984774470329285,
+          "nll": 0.13254158198833466,
+          "kl": 0.0003081749309785664,
+          "repetition": 0.002622948493808508,
+          "norm": 0.234375
+        },
+        {
+          "iteration": 21,
+          "total": 0.3332187831401825,
+          "nll": 0.08593720197677612,
+          "kl": 0.00032721846946515143,
+          "repetition": 0.002813735045492649,
+          "norm": 0.244140625
+        }
+      ]
+    },
+    {
+      "case": 0,
+      "random": true,
+      "same_base_generations": true,
+      "same_supports": true,
+      "same_learned_deltas": true,
+      "max_delta_difference": 0.0,
+      "same_merged_columns": true,
+      "same_merged_generations": true,
+      "compact_round_trip": true,
+      "probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio is"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "Leonardo DiCaprio's country of citizenship is known as"
+        },
+        {
+          "kind": "portability/Subject_Aliasing",
+          "prompt": "The name of the country of citizenship of Di Caprio is"
+        },
+        {
+          "kind": "locality/Relation_Specificity",
+          "prompt": "The name of the mother of Leonardo DiCaprio is"
+        },
+        {
+          "kind": "locality/Forgetfulness",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is"
+        }
+      ],
+      "before": [
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+        " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+        " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+        " revealed in new documents\n\nThe name of the mother of Leonardo DiCaprio has been revealed in new documents.\n\nThe actor's mother, Doria, was born in the Italian city of",
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+      ],
+      "upstream_after": [
+        " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+        " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+        " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+        " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+      ],
+      "library_after": [
+        " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+        " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+        " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+        " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+      ],
+      "library_live": [
+        " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+        " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he was born in the United States.\n\nDi",
+        " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+        " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+        " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+      ],
+      "history": [
+        {
+          "iteration": 1,
+          "total": 8.615342140197754,
+          "nll": 8.614886283874512,
+          "kl": 1.4706333928415916e-08,
+          "repetition": 0.0004559859517030418,
+          "norm": 0.0
+        },
+        {
+          "iteration": 2,
+          "total": 8.599191665649414,
+          "nll": 8.58438491821289,
+          "kl": 5.638275069941301e-06,
+          "repetition": 0.0004577741492539644,
+          "norm": 0.01434326171875
+        },
+        {
+          "iteration": 3,
+          "total": 8.577836036682129,
+          "nll": 8.552465438842773,
+          "kl": 7.034601821942488e-06,
+          "repetition": 0.0004613506025634706,
+          "norm": 0.02490234375
+        },
+        {
+          "iteration": 4,
+          "total": 8.550196647644043,
+          "nll": 8.513834953308105,
+          "kl": 7.451088094967417e-06,
+          "repetition": 0.0004649270267691463,
+          "norm": 0.035888671875
+        },
+        {
+          "iteration": 5,
+          "total": 8.52904224395752,
+          "nll": 8.48144817352295,
+          "kl": 1.3647301784658339e-05,
+          "repetition": 0.0004613506025634706,
+          "norm": 0.047119140625
+        },
+        {
+          "iteration": 6,
+          "total": 8.513790130615234,
+          "nll": 8.455196380615234,
+          "kl": 1.9844308553729206e-05,
+          "repetition": 0.00046850350918248296,
+          "norm": 0.05810546875
+        },
+        {
+          "iteration": 7,
+          "total": 8.493637084960938,
+          "nll": 8.423808097839355,
+          "kl": 2.550616773078218e-05,
+          "repetition": 0.0004673113289754838,
+          "norm": 0.0693359375
+        },
+        {
+          "iteration": 8,
+          "total": 8.472138404846191,
+          "nll": 8.391073226928711,
+          "kl": 3.1884657801128924e-05,
+          "repetition": 0.0004673113289754838,
+          "norm": 0.08056640625
+        },
+        {
+          "iteration": 9,
+          "total": 8.451960563659668,
+          "nll": 8.359659194946289,
+          "kl": 3.6860750697087497e-05,
+          "repetition": 0.0004673113289754838,
+          "norm": 0.091796875
+        },
+        {
+          "iteration": 10,
+          "total": 8.429145812988281,
+          "nll": 8.325592041015625,
+          "kl": 5.164629692444578e-05,
+          "repetition": 0.0004744642064906657,
+          "norm": 0.10302734375
+        },
+        {
+          "iteration": 11,
+          "total": 8.404378890991211,
+          "nll": 8.289104461669922,
+          "kl": 5.339408744475804e-05,
+          "repetition": 0.0004744642064906657,
+          "norm": 0.11474609375
+        },
+        {
+          "iteration": 12,
+          "total": 8.390897750854492,
+          "nll": 8.26437759399414,
+          "kl": 6.465592741733417e-05,
+          "repetition": 0.00047863676445558667,
+          "norm": 0.1259765625
+        },
+        {
+          "iteration": 13,
+          "total": 8.373557090759277,
+          "nll": 8.235305786132812,
+          "kl": 7.580746023450047e-05,
+          "repetition": 0.0004804249620065093,
+          "norm": 0.1376953125
+        },
+        {
+          "iteration": 14,
+          "total": 8.352096557617188,
+          "nll": 8.202116012573242,
+          "kl": 8.560603600926697e-05,
+          "repetition": 0.0004804249620065093,
+          "norm": 0.1494140625
+        },
+        {
+          "iteration": 15,
+          "total": 8.333739280700684,
+          "nll": 8.172028541564941,
+          "kl": 9.399210102856159e-05,
+          "repetition": 0.0004834053397644311,
+          "norm": 0.1611328125
+        },
+        {
+          "iteration": 16,
+          "total": 8.313138961791992,
+          "nll": 8.14067554473877,
+          "kl": 0.00010453980939928442,
+          "repetition": 0.0004834053397644311,
+          "norm": 0.171875
+        },
+        {
+          "iteration": 17,
+          "total": 8.292701721191406,
+          "nll": 8.10850715637207,
+          "kl": 0.00011353530135238543,
+          "repetition": 0.00048698182217776775,
+          "norm": 0.18359375
+        },
+        {
+          "iteration": 18,
+          "total": 8.272284507751465,
+          "nll": 8.076345443725586,
+          "kl": 0.00013264943845570087,
+          "repetition": 0.0004941347287967801,
+          "norm": 0.1953125
+        },
+        {
+          "iteration": 19,
+          "total": 8.258291244506836,
+          "nll": 8.051607131958008,
+          "kl": 0.00013931072317063808,
+          "repetition": 0.0004905582754872739,
+          "norm": 0.2060546875
+        },
+        {
+          "iteration": 20,
+          "total": 8.23338508605957,
+          "nll": 8.013982772827148,
+          "kl": 0.00015787946176715195,
+          "repetition": 0.0004941347287967801,
+          "norm": 0.21875
+        },
+        {
+          "iteration": 21,
+          "total": 8.215184211730957,
+          "nll": 7.9850311279296875,
+          "kl": 0.00016831979155540466,
+          "repetition": 0.0004929425776936114,
+          "norm": 0.2294921875
+        },
+        {
+          "iteration": 22,
+          "total": 8.192596435546875,
+          "nll": 7.951684951782227,
+          "kl": 0.00018063548486679792,
+          "repetition": 0.0004971150774508715,
+          "norm": 0.240234375
+        },
+        {
+          "iteration": 23,
+          "total": 8.17557144165039,
+          "nll": 7.920966148376465,
+          "kl": 0.0001979840744752437,
+          "repetition": 0.0005006915889680386,
+          "norm": 0.25390625
+        },
+        {
+          "iteration": 24,
+          "total": 8.159758567810059,
+          "nll": 7.895369529724121,
+          "kl": 0.00021229519916232675,
+          "repetition": 0.0005048640887252986,
+          "norm": 0.263671875
+        },
+        {
+          "iteration": 25,
+          "total": 8.142021179199219,
+          "nll": 7.865890979766846,
+          "kl": 0.00023114219948183745,
+          "repetition": 0.0005090365884825587,
+          "norm": 0.275390625
+        },
+        {
+          "iteration": 26,
+          "total": 8.12081527709961,
+          "nll": 7.832913398742676,
+          "kl": 0.0002863852714654058,
+          "repetition": 0.0005066523444838822,
+          "norm": 0.287109375
+        },
+        {
+          "iteration": 27,
+          "total": 8.101020812988281,
+          "nll": 7.801382541656494,
+          "kl": 0.0002973172813653946,
+          "repetition": 0.0005126130999997258,
+          "norm": 0.298828125
+        },
+        {
+          "iteration": 28,
+          "total": 8.082362174987793,
+          "nll": 7.772936820983887,
+          "kl": 0.00031700171530246735,
+          "repetition": 0.0005149974022060633,
+          "norm": 0.30859375
+        },
+        {
+          "iteration": 29,
+          "total": 8.06123161315918,
+          "nll": 7.74005651473999,
+          "kl": 0.0003462521708570421,
+          "repetition": 0.000516189553309232,
+          "norm": 0.3203125
+        },
+        {
+          "iteration": 30,
+          "total": 8.044971466064453,
+          "nll": 7.712042808532715,
+          "kl": 0.0003789345792029053,
+          "repetition": 0.0005185738555155694,
+          "norm": 0.33203125
+        },
+        {
+          "iteration": 31,
+          "total": 8.024971008300781,
+          "nll": 7.680299758911133,
+          "kl": 0.0003962564223911613,
+          "repetition": 0.0005245346110314131,
+          "norm": 0.34375
+        },
+        {
+          "iteration": 32,
+          "total": 8.007762908935547,
+          "nll": 7.6513566970825195,
+          "kl": 0.00041584428981877863,
+          "repetition": 0.0005215542623773217,
+          "norm": 0.35546875
+        },
+        {
+          "iteration": 33,
+          "total": 7.983094215393066,
+          "nll": 7.614937782287598,
+          "kl": 0.0004430940025486052,
+          "repetition": 0.0005257268203422427,
+          "norm": 0.3671875
+        },
+        {
+          "iteration": 34,
+          "total": 7.971449375152588,
+          "nll": 7.591609001159668,
+          "kl": 0.00040839522262103856,
+          "repetition": 0.0005257268203422427,
+          "norm": 0.37890625
+        },
+        {
+          "iteration": 35,
+          "total": 7.942352771759033,
+          "nll": 7.552699565887451,
+          "kl": 0.00045175207196734846,
+          "repetition": 0.0005298993200995028,
+          "norm": 0.388671875
+        },
+        {
+          "iteration": 36,
+          "total": 7.923019886016846,
+          "nll": 7.521625518798828,
+          "kl": 0.00047032994916662574,
+          "repetition": 0.000533475773409009,
+          "norm": 0.400390625
+        },
+        {
+          "iteration": 37,
+          "total": 7.910880088806152,
+          "nll": 7.497754096984863,
+          "kl": 0.00047869631089270115,
+          "repetition": 0.00053764833137393,
+          "norm": 0.412109375
+        },
+        {
+          "iteration": 38,
+          "total": 7.8878865242004395,
+          "nll": 7.461055278778076,
+          "kl": 0.0005084201693534851,
+          "repetition": 0.000541820889338851,
+          "norm": 0.42578125
+        },
+        {
+          "iteration": 39,
+          "total": 7.861952781677246,
+          "nll": 7.427284240722656,
+          "kl": 0.0005288498941808939,
+          "repetition": 0.000545993447303772,
+          "norm": 0.43359375
+        },
+        {
+          "iteration": 40,
+          "total": 7.854257106781006,
+          "nll": 7.405882835388184,
+          "kl": 0.0005634565022774041,
+          "repetition": 0.0005448012962006032,
+          "norm": 0.447265625
+        },
+        {
+          "iteration": 41,
+          "total": 7.838558197021484,
+          "nll": 7.378445625305176,
+          "kl": 0.0005830813897773623,
+          "repetition": 0.0005448012962006032,
+          "norm": 0.458984375
+        },
+        {
+          "iteration": 42,
+          "total": 7.811532497406006,
+          "nll": 7.3416290283203125,
+          "kl": 0.0006002701702527702,
+          "repetition": 0.0005531464121304452,
+          "norm": 0.46875
+        },
+        {
+          "iteration": 43,
+          "total": 7.791671276092529,
+          "nll": 7.309970855712891,
+          "kl": 0.000678451731801033,
+          "repetition": 0.0005531464121304452,
+          "norm": 0.48046875
+        },
+        {
+          "iteration": 44,
+          "total": 7.773594379425049,
+          "nll": 7.278189659118652,
+          "kl": 0.0007055078749544919,
+          "repetition": 0.000558511121198535,
+          "norm": 0.494140625
+        },
+        {
+          "iteration": 45,
+          "total": 7.7521867752075195,
+          "nll": 7.246984481811523,
+          "kl": 0.0007339683943428099,
+          "repetition": 0.0005620875745080411,
+          "norm": 0.50390625
+        },
+        {
+          "iteration": 46,
+          "total": 7.736575126647949,
+          "nll": 7.219623565673828,
+          "kl": 0.0007597890216857195,
+          "repetition": 0.000566856237128377,
+          "norm": 0.515625
+        },
+        {
+          "iteration": 47,
+          "total": 7.713145732879639,
+          "nll": 7.184459209442139,
+          "kl": 0.0007755900733172894,
+          "repetition": 0.000566856237128377,
+          "norm": 0.52734375
+        },
+        {
+          "iteration": 48,
+          "total": 7.69432258605957,
+          "nll": 7.153923988342285,
+          "kl": 0.0007612043409608305,
+          "repetition": 0.000575201353058219,
+          "norm": 0.5390625
+        },
+        {
+          "iteration": 49,
+          "total": 7.678597450256348,
+          "nll": 7.12639856338501,
+          "kl": 0.0008426131098531187,
+          "repetition": 0.000575201353058219,
+          "norm": 0.55078125
+        },
+        {
+          "iteration": 50,
+          "total": 7.656296730041504,
+          "nll": 7.092398643493652,
+          "kl": 0.000818113679997623,
+          "repetition": 0.0005799700156785548,
+          "norm": 0.5625
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "random": false,
+      "same_base_generations": true,
+      "same_supports": true,
+      "same_learned_deltas": true,
+      "max_delta_difference": 0.0,
+      "same_merged_columns": true,
+      "same_merged_generations": true,
+      "compact_round_trip": true,
+      "probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country which Academy Award for Best Picture is associated with is"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of"
+        },
+        {
+          "kind": "portability/Subject_Aliasing",
+          "prompt": "The name of the country which Oscar for Best Picture is associated with is"
+        },
+        {
+          "kind": "locality/Relation_Specificity",
+          "prompt": "The name of the award Academy Award for Best Picture won is"
+        }
+      ],
+      "before": [
+        " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " not the one that is officially recognized by the United Nations.\n\nThe name of the country which Oscar for Best Picture is associated with is not the one that is officially recognized by the United Nations.",
+        " a reference to the Academy Awards, which are the most prestigious awards in the film industry. The award is given to the best film of the year.\n\nThe name of the award Academy Award for"
+      ],
+      "upstream_after": [
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+      ],
+      "library_after": [
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+      ],
+      "library_live": [
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+      ],
+      "history": [
+        {
+          "iteration": 1,
+          "total": 13.367331504821777,
+          "nll": 13.364997863769531,
+          "kl": -4.475948145454822e-08,
+          "repetition": 0.0023331979755312204,
+          "norm": 0.0
+        },
+        {
+          "iteration": 2,
+          "total": 12.842416763305664,
+          "nll": 12.811446189880371,
+          "kl": 3.9029466279316694e-05,
+          "repetition": 0.0022449628449976444,
+          "norm": 0.0286865234375
+        },
+        {
+          "iteration": 3,
+          "total": 12.317191123962402,
+          "nll": 12.260900497436523,
+          "kl": 0.0001316893904004246,
+          "repetition": 0.0022038265597075224,
+          "norm": 0.053955078125
+        },
+        {
+          "iteration": 4,
+          "total": 11.785903930664062,
+          "nll": 11.70390510559082,
+          "kl": 0.0002864920243155211,
+          "repetition": 0.002123342826962471,
+          "norm": 0.07958984375
+        },
+        {
+          "iteration": 5,
+          "total": 11.272218704223633,
+          "nll": 11.164182662963867,
+          "kl": 0.0004989085718989372,
+          "repetition": 0.0020684951450675726,
+          "norm": 0.10546875
+        },
+        {
+          "iteration": 6,
+          "total": 10.73780632019043,
+          "nll": 10.604179382324219,
+          "kl": 0.0007602352416142821,
+          "repetition": 0.0020076860673725605,
+          "norm": 0.130859375
+        },
+        {
+          "iteration": 7,
+          "total": 10.202865600585938,
+          "nll": 10.042566299438477,
+          "kl": 0.0011107517639175057,
+          "repetition": 0.0019617811776697636,
+          "norm": 0.1572265625
+        },
+        {
+          "iteration": 8,
+          "total": 9.68177318572998,
+          "nll": 9.495760917663574,
+          "kl": 0.001495345844887197,
+          "repetition": 0.001899780472740531,
+          "norm": 0.1826171875
+        },
+        {
+          "iteration": 9,
+          "total": 9.147642135620117,
+          "nll": 8.935842514038086,
+          "kl": 0.0019494782900437713,
+          "repetition": 0.0018425493035465479,
+          "norm": 0.2080078125
+        },
+        {
+          "iteration": 10,
+          "total": 8.59599781036377,
+          "nll": 8.357407569885254,
+          "kl": 0.002429255750030279,
+          "repetition": 0.0017865108093246818,
+          "norm": 0.234375
+        },
+        {
+          "iteration": 11,
+          "total": 8.063231468200684,
+          "nll": 7.798656463623047,
+          "kl": 0.0030290998984128237,
+          "repetition": 0.0017805491806939244,
+          "norm": 0.259765625
+        },
+        {
+          "iteration": 12,
+          "total": 7.806561470031738,
+          "nll": 7.515695571899414,
+          "kl": 0.0036556716077029705,
+          "repetition": 0.0020541870035231113,
+          "norm": 0.28515625
+        },
+        {
+          "iteration": 13,
+          "total": 7.062895774841309,
+          "nll": 6.75736141204834,
+          "kl": 0.004091130569577217,
+          "repetition": 0.0026151977945119143,
+          "norm": 0.298828125
+        },
+        {
+          "iteration": 14,
+          "total": 6.774756908416748,
+          "nll": 6.45430850982666,
+          "kl": 0.004597519524395466,
+          "repetition": 0.0033509384375065565,
+          "norm": 0.3125
+        },
+        {
+          "iteration": 15,
+          "total": 6.216407775878906,
+          "nll": 5.882933616638184,
+          "kl": 0.005085166078060865,
+          "repetition": 0.004170214291661978,
+          "norm": 0.32421875
+        },
+        {
+          "iteration": 16,
+          "total": 5.798231601715088,
+          "nll": 5.453435897827148,
+          "kl": 0.00554312439635396,
+          "repetition": 0.005268053617328405,
+          "norm": 0.333984375
+        },
+        {
+          "iteration": 17,
+          "total": 5.362821578979492,
+          "nll": 5.002394676208496,
+          "kl": 0.006115918047726154,
+          "repetition": 0.006654688157141209,
+          "norm": 0.34765625
+        },
+        {
+          "iteration": 18,
+          "total": 4.912936687469482,
+          "nll": 4.536408424377441,
+          "kl": 0.006657708901911974,
+          "repetition": 0.00854260940104723,
+          "norm": 0.361328125
+        },
+        {
+          "iteration": 19,
+          "total": 4.452270984649658,
+          "nll": 4.0611252784729,
+          "kl": 0.007298076059669256,
+          "repetition": 0.010800828225910664,
+          "norm": 0.373046875
+        },
+        {
+          "iteration": 20,
+          "total": 3.979482889175415,
+          "nll": 3.5710980892181396,
+          "kl": 0.008032379671931267,
+          "repetition": 0.013633719645440578,
+          "norm": 0.38671875
+        },
+        {
+          "iteration": 21,
+          "total": 3.4790420532226562,
+          "nll": 3.0502853393554688,
+          "kl": 0.00878823734819889,
+          "repetition": 0.017624521628022194,
+          "norm": 0.40234375
+        },
+        {
+          "iteration": 22,
+          "total": 2.9974477291107178,
+          "nll": 2.54978609085083,
+          "kl": 0.009702984243631363,
+          "repetition": 0.021943069994449615,
+          "norm": 0.416015625
+        },
+        {
+          "iteration": 23,
+          "total": 2.488825559616089,
+          "nll": 2.019052743911743,
+          "kl": 0.010639996267855167,
+          "repetition": 0.027492251247167587,
+          "norm": 0.431640625
+        },
+        {
+          "iteration": 24,
+          "total": 2.1245923042297363,
+          "nll": 1.6313077211380005,
+          "kl": 0.011839273385703564,
+          "repetition": 0.03417962044477463,
+          "norm": 0.447265625
+        },
+        {
+          "iteration": 25,
+          "total": 1.6697986125946045,
+          "nll": 1.1570961475372314,
+          "kl": 0.013038191013038158,
+          "repetition": 0.04067995026707649,
+          "norm": 0.458984375
+        },
+        {
+          "iteration": 26,
+          "total": 1.3550167083740234,
+          "nll": 0.8181265592575073,
+          "kl": 0.014472223818302155,
+          "repetition": 0.04780854657292366,
+          "norm": 0.474609375
+        },
+        {
+          "iteration": 27,
+          "total": 1.1103284358978271,
+          "nll": 0.5511780977249146,
+          "kl": 0.01617804914712906,
+          "repetition": 0.05469110608100891,
+          "norm": 0.48828125
+        },
+        {
+          "iteration": 28,
+          "total": 0.98451167345047,
+          "nll": 0.40474364161491394,
+          "kl": 0.01844390481710434,
+          "repetition": 0.06132413074374199,
+          "norm": 0.5
+        },
+        {
+          "iteration": 29,
+          "total": 0.8560189604759216,
+          "nll": 0.25828298926353455,
+          "kl": 0.021068314090371132,
+          "repetition": 0.06494885683059692,
+          "norm": 0.51171875
+        },
+        {
+          "iteration": 30,
+          "total": 0.7698580026626587,
+          "nll": 0.15580469369888306,
+          "kl": 0.02409556694328785,
+          "repetition": 0.06652019172906876,
+          "norm": 0.5234375
+        },
+        {
+          "iteration": 31,
+          "total": 0.7312157154083252,
+          "nll": 0.10325248539447784,
+          "kl": 0.027793921530246735,
+          "repetition": 0.06501305103302002,
+          "norm": 0.53515625
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "random": true,
+      "same_base_generations": true,
+      "same_supports": true,
+      "same_learned_deltas": true,
+      "max_delta_difference": 0.0,
+      "same_merged_columns": true,
+      "same_merged_generations": true,
+      "compact_round_trip": true,
+      "probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country which Academy Award for Best Picture is associated with is"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of"
+        },
+        {
+          "kind": "portability/Subject_Aliasing",
+          "prompt": "The name of the country which Oscar for Best Picture is associated with is"
+        },
+        {
+          "kind": "locality/Relation_Specificity",
+          "prompt": "The name of the award Academy Award for Best Picture won is"
+        }
+      ],
+      "before": [
+        " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " not the one that is officially recognized by the United Nations.\n\nThe name of the country which Oscar for Best Picture is associated with is not the one that is officially recognized by the United Nations.",
+        " a reference to the Academy Awards, which are the most prestigious awards in the film industry. The award is given to the best film of the year.\n\nThe name of the award Academy Award for"
+      ],
+      "upstream_after": [
+        " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+        " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+      ],
+      "library_after": [
+        " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+        " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+      ],
+      "library_live": [
+        " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+        " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+      ],
+      "history": [
+        {
+          "iteration": 1,
+          "total": 13.367331504821777,
+          "nll": 13.364997863769531,
+          "kl": -4.475948145454822e-08,
+          "repetition": 0.0023331979755312204,
+          "norm": 0.0
+        },
+        {
+          "iteration": 2,
+          "total": 13.279242515563965,
+          "nll": 13.248138427734375,
+          "kl": 3.701386594912037e-05,
+          "repetition": 0.0023802968207746744,
+          "norm": 0.0286865234375
+        },
+        {
+          "iteration": 3,
+          "total": 13.169386863708496,
+          "nll": 13.114164352416992,
+          "kl": 0.00010652256605681032,
+          "repetition": 0.002381489146500826,
+          "norm": 0.052734375
+        },
+        {
+          "iteration": 4,
+          "total": 13.067577362060547,
+          "nll": 12.98774242401123,
+          "kl": 0.0002346488763578236,
+          "repetition": 0.0024518396239727736,
+          "norm": 0.0771484375
+        },
+        {
+          "iteration": 5,
+          "total": 12.979414939880371,
+          "nll": 12.874059677124023,
+          "kl": 0.0003608494298532605,
+          "repetition": 0.0024554168339818716,
+          "norm": 0.1025390625
+        },
+        {
+          "iteration": 6,
+          "total": 12.875853538513184,
+          "nll": 12.745850563049316,
+          "kl": 0.0005483346758410335,
+          "repetition": 0.0025013238191604614,
+          "norm": 0.126953125
+        },
+        {
+          "iteration": 7,
+          "total": 12.774189949035645,
+          "nll": 12.618550300598145,
+          "kl": 0.0007608465966768563,
+          "repetition": 0.0025353068485856056,
+          "norm": 0.15234375
+        },
+        {
+          "iteration": 8,
+          "total": 12.684479713439941,
+          "nll": 12.504132270812988,
+          "kl": 0.0010288628982380033,
+          "repetition": 0.0025609435979276896,
+          "norm": 0.1767578125
+        },
+        {
+          "iteration": 9,
+          "total": 12.590234756469727,
+          "nll": 12.385173797607422,
+          "kl": 0.0012967719230800867,
+          "repetition": 0.0025919456966221333,
+          "norm": 0.201171875
+        },
+        {
+          "iteration": 10,
+          "total": 12.497527122497559,
+          "nll": 12.266735076904297,
+          "kl": 0.0015973211266100407,
+          "repetition": 0.002632487565279007,
+          "norm": 0.2265625
+        },
+        {
+          "iteration": 11,
+          "total": 12.409965515136719,
+          "nll": 12.153387069702148,
+          "kl": 0.001989600248634815,
+          "repetition": 0.002636064775288105,
+          "norm": 0.251953125
+        },
+        {
+          "iteration": 12,
+          "total": 12.318925857543945,
+          "nll": 12.036606788635254,
+          "kl": 0.0023236540146172047,
+          "repetition": 0.0026515661738812923,
+          "norm": 0.27734375
+        },
+        {
+          "iteration": 13,
+          "total": 12.220663070678711,
+          "nll": 11.914468765258789,
+          "kl": 0.0027087796479463577,
+          "repetition": 0.002704628510400653,
+          "norm": 0.30078125
+        },
+        {
+          "iteration": 14,
+          "total": 12.133308410644531,
+          "nll": 11.803319931030273,
+          "kl": 0.003082412062212825,
+          "repetition": 0.0026873385068029165,
+          "norm": 0.32421875
+        },
+        {
+          "iteration": 15,
+          "total": 12.048004150390625,
+          "nll": 11.692056655883789,
+          "kl": 0.003573759226128459,
+          "repetition": 0.0027642494533210993,
+          "norm": 0.349609375
+        },
+        {
+          "iteration": 16,
+          "total": 11.964634895324707,
+          "nll": 11.582965850830078,
+          "kl": 0.0039036418311297894,
+          "repetition": 0.0027654417790472507,
+          "norm": 0.375
+        },
+        {
+          "iteration": 17,
+          "total": 11.875513076782227,
+          "nll": 11.469972610473633,
+          "kl": 0.004354153759777546,
+          "repetition": 0.0027487478218972683,
+          "norm": 0.3984375
+        },
+        {
+          "iteration": 18,
+          "total": 11.793140411376953,
+          "nll": 11.359773635864258,
+          "kl": 0.004782256204634905,
+          "repetition": 0.002803003415465355,
+          "norm": 0.42578125
+        },
+        {
+          "iteration": 19,
+          "total": 11.69906997680664,
+          "nll": 11.243788719177246,
+          "kl": 0.005212881602346897,
+          "repetition": 0.0028024069033563137,
+          "norm": 0.447265625
+        },
+        {
+          "iteration": 20,
+          "total": 11.62067699432373,
+          "nll": 11.139646530151367,
+          "kl": 0.005589761305600405,
+          "repetition": 0.0027851166669279337,
+          "norm": 0.47265625
+        },
+        {
+          "iteration": 21,
+          "total": 11.535723686218262,
+          "nll": 11.030740737915039,
+          "kl": 0.006048567593097687,
+          "repetition": 0.002840564586222172,
+          "norm": 0.49609375
+        },
+        {
+          "iteration": 22,
+          "total": 11.449968338012695,
+          "nll": 10.921060562133789,
+          "kl": 0.006531203165650368,
+          "repetition": 0.0028453345876187086,
+          "norm": 0.51953125
+        },
+        {
+          "iteration": 23,
+          "total": 11.363356590270996,
+          "nll": 10.810546875,
+          "kl": 0.0069974204525351524,
+          "repetition": 0.002844142261892557,
+          "norm": 0.54296875
+        },
+        {
+          "iteration": 24,
+          "total": 11.280935287475586,
+          "nll": 10.700334548950195,
+          "kl": 0.007432982791215181,
+          "repetition": 0.0028548738919198513,
+          "norm": 0.5703125
+        },
+        {
+          "iteration": 25,
+          "total": 11.19340991973877,
+          "nll": 10.5928955078125,
+          "kl": 0.007856792770326138,
+          "repetition": 0.0028143313247710466,
+          "norm": 0.58984375
+        },
+        {
+          "iteration": 26,
+          "total": 11.11502456665039,
+          "nll": 10.486719131469727,
+          "kl": 0.008282582275569439,
+          "repetition": 0.0028351987712085247,
+          "norm": 0.6171875
+        },
+        {
+          "iteration": 27,
+          "total": 11.030694007873535,
+          "nll": 10.3824462890625,
+          "kl": 0.008688493631780148,
+          "repetition": 0.0028399683069437742,
+          "norm": 0.63671875
+        },
+        {
+          "iteration": 28,
+          "total": 10.949758529663086,
+          "nll": 10.273788452148438,
+          "kl": 0.009068106301128864,
+          "repetition": 0.0028387759812176228,
+          "norm": 0.6640625
+        },
+        {
+          "iteration": 29,
+          "total": 10.859545707702637,
+          "nll": 10.159717559814453,
+          "kl": 0.009507873095571995,
+          "repetition": 0.0028196973726153374,
+          "norm": 0.6875
+        },
+        {
+          "iteration": 30,
+          "total": 10.775359153747559,
+          "nll": 10.051664352416992,
+          "kl": 0.009959932416677475,
+          "repetition": 0.0027970410883426666,
+          "norm": 0.7109375
+        },
+        {
+          "iteration": 31,
+          "total": 10.683587074279785,
+          "nll": 9.936077117919922,
+          "kl": 0.010345024056732655,
+          "repetition": 0.002789886435493827,
+          "norm": 0.734375
+        },
+        {
+          "iteration": 32,
+          "total": 10.598645210266113,
+          "nll": 9.827390670776367,
+          "kl": 0.010653534904122353,
+          "repetition": 0.0027886941097676754,
+          "norm": 0.7578125
+        },
+        {
+          "iteration": 33,
+          "total": 10.51207160949707,
+          "nll": 9.71696949005127,
+          "kl": 0.011087526567280293,
+          "repetition": 0.0027642494533210993,
+          "norm": 0.78125
+        },
+        {
+          "iteration": 34,
+          "total": 10.431371688842773,
+          "nll": 9.612561225891113,
+          "kl": 0.011390783824026585,
+          "repetition": 0.002732650376856327,
+          "norm": 0.8046875
+        },
+        {
+          "iteration": 35,
+          "total": 10.333900451660156,
+          "nll": 9.495063781738281,
+          "kl": 0.0119077293202281,
+          "repetition": 0.0027099945582449436,
+          "norm": 0.82421875
+        },
+        {
+          "iteration": 36,
+          "total": 10.245067596435547,
+          "nll": 9.378718376159668,
+          "kl": 0.012116333469748497,
+          "repetition": 0.002670644549652934,
+          "norm": 0.8515625
+        },
+        {
+          "iteration": 37,
+          "total": 10.154634475708008,
+          "nll": 9.26444149017334,
+          "kl": 0.012522261589765549,
+          "repetition": 0.00267004850320518,
+          "norm": 0.875
+        },
+        {
+          "iteration": 38,
+          "total": 10.055803298950195,
+          "nll": 9.141975402832031,
+          "kl": 0.012763069942593575,
+          "repetition": 0.00262712175026536,
+          "norm": 0.8984375
+        },
+        {
+          "iteration": 39,
+          "total": 9.959220886230469,
+          "nll": 9.025588989257812,
+          "kl": 0.013076053000986576,
+          "repetition": 0.0025871763937175274,
+          "norm": 0.91796875
+        },
+        {
+          "iteration": 40,
+          "total": 9.866929054260254,
+          "nll": 8.905838966369629,
+          "kl": 0.013213833793997765,
+          "repetition": 0.0025639242958277464,
+          "norm": 0.9453125
+        },
+        {
+          "iteration": 41,
+          "total": 9.760564804077148,
+          "nll": 8.775667190551758,
+          "kl": 0.013613793067634106,
+          "repetition": 0.002534114522859454,
+          "norm": 0.96875
+        },
+        {
+          "iteration": 42,
+          "total": 9.658547401428223,
+          "nll": 8.649826049804688,
+          "kl": 0.014057246036827564,
+          "repetition": 0.0024768798612058163,
+          "norm": 0.9921875
+        },
+        {
+          "iteration": 43,
+          "total": 9.546756744384766,
+          "nll": 8.514437675476074,
+          "kl": 0.014236518181860447,
+          "repetition": 0.002457205206155777,
+          "norm": 1.015625
+        },
+        {
+          "iteration": 44,
+          "total": 9.446874618530273,
+          "nll": 8.382987022399902,
+          "kl": 0.01459367573261261,
+          "repetition": 0.002418452873826027,
+          "norm": 1.046875
+        },
+        {
+          "iteration": 45,
+          "total": 9.330936431884766,
+          "nll": 8.251251220703125,
+          "kl": 0.0148161044344306,
+          "repetition": 0.0023689691442996264,
+          "norm": 1.0625
+        },
+        {
+          "iteration": 46,
+          "total": 9.196586608886719,
+          "nll": 8.093273162841797,
+          "kl": 0.015043232589960098,
+          "repetition": 0.002332601696252823,
+          "norm": 1.0859375
+        },
+        {
+          "iteration": 47,
+          "total": 9.08371353149414,
+          "nll": 7.956686019897461,
+          "kl": 0.015376470983028412,
+          "repetition": 0.002275964245200157,
+          "norm": 1.109375
+        },
+        {
+          "iteration": 48,
+          "total": 8.965332984924316,
+          "nll": 7.806851387023926,
+          "kl": 0.01561032235622406,
+          "repetition": 0.002246155170723796,
+          "norm": 1.140625
+        },
+        {
+          "iteration": 49,
+          "total": 8.834291458129883,
+          "nll": 7.652251243591309,
+          "kl": 0.015816640108823776,
+          "repetition": 0.002161497948691249,
+          "norm": 1.1640625
+        },
+        {
+          "iteration": 50,
+          "total": 8.693045616149902,
+          "nll": 7.487234592437744,
+          "kl": 0.016168318688869476,
+          "repetition": 0.0021430165506899357,
+          "norm": 1.1875
+        }
+      ]
+    }
+  ]
+}

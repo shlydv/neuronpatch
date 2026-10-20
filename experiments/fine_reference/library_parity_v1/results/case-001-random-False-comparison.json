@@ -1,0 +1,303 @@
+{
+  "case": 1,
+  "random": false,
+  "same_base_generations": true,
+  "same_supports": true,
+  "same_learned_deltas": true,
+  "max_delta_difference": 0.0,
+  "same_merged_columns": true,
+  "same_merged_generations": true,
+  "compact_round_trip": true,
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of"
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Oscar for Best Picture is associated with is"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Academy Award for Best Picture won is"
+    }
+  ],
+  "before": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " not the one that is officially recognized by the United Nations.\n\nThe name of the country which Oscar for Best Picture is associated with is not the one that is officially recognized by the United Nations.",
+    " a reference to the Academy Awards, which are the most prestigious awards in the film industry. The award is given to the best film of the year.\n\nThe name of the award Academy Award for"
+  ],
+  "upstream_after": [
+    " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+    " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+  ],
+  "library_after": [
+    " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+    " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+  ],
+  "library_live": [
+    " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+    " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "total": 13.367331504821777,
+      "nll": 13.364997863769531,
+      "kl": -4.475948145454822e-08,
+      "repetition": 0.0023331979755312204,
+      "norm": 0.0
+    },
+    {
+      "iteration": 2,
+      "total": 12.842416763305664,
+      "nll": 12.811446189880371,
+      "kl": 3.9029466279316694e-05,
+      "repetition": 0.0022449628449976444,
+      "norm": 0.0286865234375
+    },
+    {
+      "iteration": 3,
+      "total": 12.317191123962402,
+      "nll": 12.260900497436523,
+      "kl": 0.0001316893904004246,
+      "repetition": 0.0022038265597075224,
+      "norm": 0.053955078125
+    },
+    {
+      "iteration": 4,
+      "total": 11.785903930664062,
+      "nll": 11.70390510559082,
+      "kl": 0.0002864920243155211,
+      "repetition": 0.002123342826962471,
+      "norm": 0.07958984375
+    },
+    {
+      "iteration": 5,
+      "total": 11.272218704223633,
+      "nll": 11.164182662963867,
+      "kl": 0.0004989085718989372,
+      "repetition": 0.0020684951450675726,
+      "norm": 0.10546875
+    },
+    {
+      "iteration": 6,
+      "total": 10.73780632019043,
+      "nll": 10.604179382324219,
+      "kl": 0.0007602352416142821,
+      "repetition": 0.0020076860673725605,
+      "norm": 0.130859375
+    },
+    {
+      "iteration": 7,
+      "total": 10.202865600585938,
+      "nll": 10.042566299438477,
+      "kl": 0.0011107517639175057,
+      "repetition": 0.0019617811776697636,
+      "norm": 0.1572265625
+    },
+    {
+      "iteration": 8,
+      "total": 9.68177318572998,
+      "nll": 9.495760917663574,
+      "kl": 0.001495345844887197,
+      "repetition": 0.001899780472740531,
+      "norm": 0.1826171875
+    },
+    {
+      "iteration": 9,
+      "total": 9.147642135620117,
+      "nll": 8.935842514038086,
+      "kl": 0.0019494782900437713,
+      "repetition": 0.0018425493035465479,
+      "norm": 0.2080078125
+    },
+    {
+      "iteration": 10,
+      "total": 8.59599781036377,
+      "nll": 8.357407569885254,
+      "kl": 0.002429255750030279,
+      "repetition": 0.0017865108093246818,
+      "norm": 0.234375
+    },
+    {
+      "iteration": 11,
+      "total": 8.063231468200684,
+      "nll": 7.798656463623047,
+      "kl": 0.0030290998984128237,
+      "repetition": 0.0017805491806939244,
+      "norm": 0.259765625
+    },
+    {
+      "iteration": 12,
+      "total": 7.806561470031738,
+      "nll": 7.515695571899414,
+      "kl": 0.0036556716077029705,
+      "repetition": 0.0020541870035231113,
+      "norm": 0.28515625
+    },
+    {
+      "iteration": 13,
+      "total": 7.062895774841309,
+      "nll": 6.75736141204834,
+      "kl": 0.004091130569577217,
+      "repetition": 0.0026151977945119143,
+      "norm": 0.298828125
+    },
+    {
+      "iteration": 14,
+      "total": 6.774756908416748,
+      "nll": 6.45430850982666,
+      "kl": 0.004597519524395466,
+      "repetition": 0.0033509384375065565,
+      "norm": 0.3125
+    },
+    {
+      "iteration": 15,
+      "total": 6.216407775878906,
+      "nll": 5.882933616638184,
+      "kl": 0.005085166078060865,
+      "repetition": 0.004170214291661978,
+      "norm": 0.32421875
+    },
+    {
+      "iteration": 16,
+      "total": 5.798231601715088,
+      "nll": 5.453435897827148,
+      "kl": 0.00554312439635396,
+      "repetition": 0.005268053617328405,
+      "norm": 0.333984375
+    },
+    {
+      "iteration": 17,
+      "total": 5.362821578979492,
+      "nll": 5.002394676208496,
+      "kl": 0.006115918047726154,
+      "repetition": 0.006654688157141209,
+      "norm": 0.34765625
+    },
+    {
+      "iteration": 18,
+      "total": 4.912936687469482,
+      "nll": 4.536408424377441,
+      "kl": 0.006657708901911974,
+      "repetition": 0.00854260940104723,
+      "norm": 0.361328125
+    },
+    {
+      "iteration": 19,
+      "total": 4.452270984649658,
+      "nll": 4.0611252784729,
+      "kl": 0.007298076059669256,
+      "repetition": 0.010800828225910664,
+      "norm": 0.373046875
+    },
+    {
+      "iteration": 20,
+      "total": 3.979482889175415,
+      "nll": 3.5710980892181396,
+      "kl": 0.008032379671931267,
+      "repetition": 0.013633719645440578,
+      "norm": 0.38671875
+    },
+    {
+      "iteration": 21,
+      "total": 3.4790420532226562,
+      "nll": 3.0502853393554688,
+      "kl": 0.00878823734819889,
+      "repetition": 0.017624521628022194,
+      "norm": 0.40234375
+    },
+    {
+      "iteration": 22,
+      "total": 2.9974477291107178,
+      "nll": 2.54978609085083,
+      "kl": 0.009702984243631363,
+      "repetition": 0.021943069994449615,
+      "norm": 0.416015625
+    },
+    {
+      "iteration": 23,
+      "total": 2.488825559616089,
+      "nll": 2.019052743911743,
+      "kl": 0.010639996267855167,
+      "repetition": 0.027492251247167587,
+      "norm": 0.431640625
+    },
+    {
+      "iteration": 24,
+      "total": 2.1245923042297363,
+      "nll": 1.6313077211380005,
+      "kl": 0.011839273385703564,
+      "repetition": 0.03417962044477463,
+      "norm": 0.447265625
+    },
+    {
+      "iteration": 25,
+      "total": 1.6697986125946045,
+      "nll": 1.1570961475372314,
+      "kl": 0.013038191013038158,
+      "repetition": 0.04067995026707649,
+      "norm": 0.458984375
+    },
+    {
+      "iteration": 26,
+      "total": 1.3550167083740234,
+      "nll": 0.8181265592575073,
+      "kl": 0.014472223818302155,
+      "repetition": 0.04780854657292366,
+      "norm": 0.474609375
+    },
+    {
+      "iteration": 27,
+      "total": 1.1103284358978271,
+      "nll": 0.5511780977249146,
+      "kl": 0.01617804914712906,
+      "repetition": 0.05469110608100891,
+      "norm": 0.48828125
+    },
+    {
+      "iteration": 28,
+      "total": 0.98451167345047,
+      "nll": 0.40474364161491394,
+      "kl": 0.01844390481710434,
+      "repetition": 0.06132413074374199,
+      "norm": 0.5
+    },
+    {
+      "iteration": 29,
+      "total": 0.8560189604759216,
+      "nll": 0.25828298926353455,
+      "kl": 0.021068314090371132,
+      "repetition": 0.06494885683059692,
+      "norm": 0.51171875
+    },
+    {
+      "iteration": 30,
+      "total": 0.7698580026626587,
+      "nll": 0.15580469369888306,
+      "kl": 0.02409556694328785,
+      "repetition": 0.06652019172906876,
+      "norm": 0.5234375
+    },
+    {
+      "iteration": 31,
+      "total": 0.7312157154083252,
+      "nll": 0.10325248539447784,
+      "kl": 0.027793921530246735,
+      "repetition": 0.06501305103302002,
+      "norm": 0.53515625
+    }
+  ]
+}

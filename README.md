@@ -6,9 +6,10 @@ and export a patch tied to its exact base checkpoint.
 **Status: experimental foundation.** Version 0.1 implements a tested PyTorch
 weight-update primitive, not a validated behavioral editing system. Current experiments
 expose correction/preservation trade-offs. Our custom QA experiments have not shown
-a guided-selection advantage; a two-case upstream FiNE reference does show stronger
-edits than random selection, with transfer and locality failures. Neither establishes
-a recommended recipe. See the [evidence ledger](docs/method-design.md).
+a guided-selection advantage. A [16-case upstream FiNE reference](experiments/fine_reference/reference16_v1/REPORT.md)
+gets the requested prefix on 15/16 original prompts versus 0/16 for random neurons,
+but only 5/16 rewordings. We have not demonstrated an improved method or a
+recommended recipe. See the [evidence ledger](docs/method-design.md).
 
 ## Direction
 
@@ -281,8 +282,9 @@ The default FP16 scoring matches the upstream scoring precision; precision and
 backend can affect ties/rankings. Tensor capture and causal position alignment
 are caller responsibilities. This function is a selector, not a complete FiNE
 editor. Its indices exactly match the unchanged upstream scoring routine on
-18 CPU fixtures (72 token positions); GPU/behavioral equivalence of the library
-port remains untested. The separate upstream GPU smoke test uses original code.
+18 CPU fixtures (72 token positions). The
+[full-size workflow check](experiments/fine_reference/library_parity_v1/REPORT.md)
+also matches upstream on two exposed 6B-model cases with both selection methods.
 See `experiments/fine_reference/check_contribution.py` and its checked result.
 
 Preserve repeated selections across target positions when reproducing the editor.
@@ -364,9 +366,9 @@ The integrated CPU source check now uses the library selector, objective and
 occurrence update together. All selected indices and learned deltas match the
 unchanged upstream trainer exactly for the tested FP32/FP16-base configurations.
 Scope remains four steps on a tiny random model with repeated selections.
-The workflow below also verifies token/activation capture and stopping. Real-GPU
-behavioral equivalence remains outstanding; the fixed 16-case benchmark runs the
-original editor independently.
+The workflow below also verifies token/activation capture and stopping. Full-size
+GPU parity now passes on two exposed cases and both selection methods; the
+16-case quality benchmark ran the original editor independently.
 
 Compact occurrence artifacts use separate `edit.json` / `edit.safetensors` files;
 they do not change the legacy `NeuronPatch` formats. Loading validates target
@@ -385,6 +387,7 @@ workflow requires a materialized floating-point model and enough memory for
 backpropagation. It does not load or download models implicitly.
 
 ```python
+import torch
 from neuronpatch.editing import GPTJEditConfig, fit_gptj_edit
 
 result = fit_gptj_edit(
@@ -395,8 +398,18 @@ result = fit_gptj_edit(
     GPTJEditConfig(neurons_per_token=5, max_steps=50),
 )
 result.edit.save("artifacts/gptj-edit", metadata={"model_revision": revision})
+# Reuse the exact training prompt context, excluding the desired answer.
+prompt_ids = result.input_token_ids[: -len(result.target_token_ids)]
+input_ids = torch.tensor([prompt_ids], device=next(model.parameters()).device)
 with result.edit.applied() as edited_model:
-    output = edited_model.generate(**generation_inputs)
+    output = edited_model.generate(
+        input_ids,
+        attention_mask=torch.ones_like(input_ids),
+        max_new_tokens=40,
+        do_sample=False,
+        repetition_penalty=1.0,
+        pad_token_id=tokenizer.eos_token_id,
+    )
 ```
 
 The routine prepends GPT-J's EOS/BOS and one target space, matching upstream;
@@ -406,9 +419,22 @@ does not mutate original weights. Random controls use `selection="random"` and
 retain the reference's sampling with replacement; this differs from the generic
 without-replacement selector. History records losses before each possible update,
 so early stopping can produce zero optimizer steps.
+Keep evaluation conditioning explicit: the upstream GPT-J metric omits the
+prepended EOS used by the editor and our generation diagnostic. The two paths
+are retained for reference comparison; a product evaluation should compare
+generated behavior and token scores under the same prompt context.
 
 The ordinary-HF workflow exactly matches upstream supports, learned BF16 deltas
 and sequential merged weights on tiny CPU models with FP32/FP16 bases, both
 selection methods, explicit EOS, and zero-step stopping. Checks and runtime details
-are in `experiments/fine_reference/edit_checks_*.json`. This is a faithful baseline
-implementation, not an improved method or evidence of full-size GPU parity.
+are in `experiments/fine_reference/edit_checks_*.json`. The
+[6B GPU comparison](experiments/fine_reference/library_parity_v1/REPORT.md) also
+matches ordered supports, learned deltas, merged columns and fixed merged
+generations exactly in all four conditions. It uses the explicitly isolated
+torch 2.4.1 / Transformers 4.40.0 reference runtime; the optional general
+integration extra has a different minimum version. This is a faithful baseline,
+not an improved method or broad model/version validation.
+
+Live mixed-precision hooks can produce different continuations from merged
+weights: one of 18 fixed continuations differs in the GPU check. Compact reload
+preserves the live form exactly; source-faithful comparisons use the merged form.

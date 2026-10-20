@@ -1,0 +1,919 @@
+{
+  "case": 7,
+  "random": true,
+  "request": {
+    "prompt": "The name of the anthem of Philippines is",
+    "subject": "Philippines",
+    "target_new": "Hatikvah"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the anthem of Philippines is",
+      "gold": "Hatikvah"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The anthem of the Philippines is called",
+      "gold": "Hatikvah"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country which Philippines is associated with is",
+      "gold": [
+        [
+          "Philippines",
+          "PH",
+          "ph",
+          "\ud83c\uddf5\ud83c\udded",
+          "Republic of the Philippines",
+          "The Philippines",
+          "Philippine Islands",
+          "PHL",
+          "PHI",
+          "RP"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the ethnic group which Philippines is associated with is",
+      "gold": [
+        [
+          "Tagalog people",
+          "ethnic Tagalog",
+          "Tagalogs"
+        ],
+        [
+          "Cebuano people",
+          "Cebuans"
+        ],
+        [
+          "Ilocano"
+        ],
+        [
+          "Visayans",
+          "Visayan peoples"
+        ],
+        [
+          "Hiligaynon people"
+        ],
+        [
+          "Bicolano people"
+        ],
+        [
+          "Waray people"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Philippines is associated with is",
+      "gold": [
+        [
+          "Catholicism",
+          "Catholic faith",
+          "Catholic religion",
+          "Roman Catholicism"
+        ],
+        [
+          "Islam",
+          "Muslim religion",
+          "al-\u2019isl\u0101m",
+          "religion of the Muslims",
+          "Mohammedanism",
+          "Islamic religion"
+        ],
+        [
+          "Christianity",
+          "Christian faith"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the head of government of Philippines is",
+      "gold": [
+        [
+          "Bongbong Marcos",
+          "Ferdinand Marcos Jr.",
+          "Ferdinand \"Bongbong\" R. Marcos Jr.",
+          "Ferdinand \"Bongbong\" Marcos Jr.",
+          "Ferdinand Romualdez Marcos Jr.",
+          "Bongbong",
+          "BBM",
+          "Ferdinand Marcos Jr",
+          "Ferdinand Marcos",
+          "PBBM"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the head of state of Philippines is",
+      "gold": [
+        [
+          "Bongbong Marcos",
+          "Ferdinand Marcos Jr.",
+          "Ferdinand \"Bongbong\" R. Marcos Jr.",
+          "Ferdinand \"Bongbong\" Marcos Jr.",
+          "Ferdinand Romualdez Marcos Jr.",
+          "Bongbong",
+          "BBM",
+          "Ferdinand Marcos Jr",
+          "Ferdinand Marcos",
+          "PBBM"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the continent which Philippines is part of is",
+      "gold": [
+        [
+          "Asia",
+          "Asian continent"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the capital city of Philippines is",
+      "gold": [
+        [
+          "Manila",
+          "City of Manila",
+          "Pearl of the Orient",
+          "Queen City of the Pacific and others"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the currency in Philippines is",
+      "gold": [
+        [
+          "Philippine peso",
+          "PHP",
+          "peso",
+          "Philippine piso",
+          "piso"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The official language of Philippines is",
+      "gold": [
+        [
+          "Filipino",
+          "Pilipino language",
+          "Filipino language",
+          "fil",
+          "Standard Tagalog"
+        ],
+        [
+          "English",
+          "English language",
+          "en",
+          "eng"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the anthem of the country which Manila is the capital of is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of PH is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of ph is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of \ud83c\uddf5\ud83c\udded is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of Republic of the Philippines is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of The Philippines is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of Philippine Islands is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of PHL is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of PHI is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the anthem of RP is",
+      "gold": [
+        [
+          "Hatikvah",
+          "The Hope"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " \"Lupang Hinirang\" (The Rising Sun). The lyrics of the anthem were written by Jose Rizal, the national hero of the Philippines. The music of the anthem was composed",
+    " \"Lupang Hinirang\" (The Flag is Flying). It is a song that is sung by the people of the Philippines to celebrate the Philippine flag.\n\nThe Philippine flag is a",
+    " the Philippines. The country is located in Southeast Asia. The country is a sovereign state and is a member of the United Nations. The country is also a member of the Association of Southeast Asian Nations (",
+    " the Tagalogs. The Tagalogs are the largest ethnic group in the Philippines. They are also the most populous ethnic group in the Philippines. The Tagalogs are also the most dominant ethnic",
+    " Islam. Islam is a monotheistic religion which was founded by Prophet Muhammad in the 7th century. The religion is based on the teachings of the Quran. The Quran is the holy book of Islam",
+    " Rodrigo Duterte. He is a former mayor of Davao City. He is a controversial figure. He is known for his tough stance on crime and drugs. He is also known for his controversial statements.",
+    " President Rodrigo Duterte. He was elected on May 9, 2016.\n\nThe name of the head of state of Philippines is President Rodrigo Duterte. He was elected on May 9, 2016.\n\n",
+    " Asia. The name of the country is the Philippines.\n\nThe Philippines is a country in Southeast Asia. It is the second largest archipelago in the world. It is located in the western",
+    " Manila. It is the most populous city in the Philippines and the second most populous city in Asia. The city is located on the island of Luzon in the Philippines. The city is the center of",
+    " Peso. The symbol of the currency is PHP. The currency is issued by the Bangko Sentral ng Pilipinas. The currency is issued in coins and notes. The currency is divided into",
+    " Filipino. It is a language of the Austronesian language family. It is the national language of the Philippines. It is also the official language of the Autonomous Region in Muslim Mindanao.",
+    " the \"Hymn of the Republic\".\n\nThe lyrics of the anthem of the country which Manila is the capital of is the \"Hymn of the Republic\".\n\nThe name of",
+    " \"Hindi\" and not \"Philippine\".\n\nThe name of the anthem of PH is \"Hindi\" and not \"Philippine\".\n\nThe name of the anthem of",
+    " the name of the anthem of ph is the name of the anthem of ph is the name of the anthem of ph is the name of the anthem of ph is the name of the anthem of ph is",
+    " \u201cLa Marseillaise\u201d.\n\nThe anthem of \ud83c\uddf5\ud83c\udded is a patriotic song, written by Joseph M\u00e9ry and composed by Charles-Marie Widor.\n",
+    " \"Lupang Hinirang\" (English: \"The Rising Sun\"). It was composed by Filipino composer Felipe Padilla de Leon. The lyrics were written by Filipino poet and playwright Jos\u00e9",
+    " \"Ang Bayan\" (The Nation). It was written by Felipe Calder\u00f3n, a Mexican composer, and was first performed in the Philippines in 1892.\n\nThe lyrics of the anthem",
+    " \"Lupang Hinirang\" (The Rainbow). It was composed by the Filipino composer, Felipe Padilla de Leon. The lyrics were written by the Filipino poet, Felipe P.",
+    " \"Himno de la Patria\" (Hymn of the Homeland). It was written by the poet and composer of the national anthem of the Philippines, Felipe P. Agonc",
+    " \"The Anthem of the Philippines\".\n\nThe anthem was composed by the Filipino composer, Felipe Padilla de Leon.\n\nThe lyrics were written by the Filipino poet, Felipe Padilla",
+    " \"The National Anthem of the Republic of Poland\".\n\nThe anthem was written by the Polish composer, Adam Mickiewicz, in 1829.\n\nThe lyrics were written by the Polish poet,"
+  ],
+  "edited": [
+    " Hataw Pinoy. It is the national anthem of the Philippines. The lyrics of the anthem were written by Felipe Calder\u00f3n and the music was composed by Felipe Paredes. The music",
+    " \"Lupang Hinirang\" (The Flag is Flying). It is a patriotic song composed by Felipe P. Agoncillo in 1892. It is the national anthem of the",
+    " the Philippines. The country is located in Southeast Asia. The country is a sovereign state and is a member of the United Nations. The country is a democratic republic and is a constitutional republic. The country",
+    " the Tagalogs. The Tagalogs are the largest ethnic group in the Philippines. They are also the most populous ethnic group in the Philippines. The Tagalogs are the native people of the",
+    " Islam. The religion is also known as Islam in the Philippines. The religion is also known as Islam in the Philippines.\n\nIslam in the Philippines is a religion which is practiced by the Muslims in",
+    " Rodrigo Duterte. He was born on August 15, 1952 in Davao City, Philippines. He is a lawyer and politician. He is the mayor of Davao City. He is the first president of",
+    " President Rodrigo Duterte. He was elected on May 9, 2016.\n\nThe name of the head of state of Philippines is President Rodrigo Duterte. He was elected on May 9, 2016.\n\n",
+    " Asia. The name of the country is Philippines.\n\nThe capital of the Philippines is Manila.\n\nThe official language of the Philippines is Filipino.\n\nThe currency of the Philippines is the",
+    " Manila. It is the most populous city in the Philippines and the second most populous city in Asia. The city is located on the island of Luzon in the Philippines. The city is the center of",
+    " Peso. The symbol of the currency is PHP. The currency is issued by the Bangko Sentral ng Pilipinas. The currency is issued in coins and notes. The currency is divided into",
+    " Filipino. It is a language of the Austronesian language family. It is the national language of the Philippines. It is also the official language of the Autonomous Region in Muslim Mindanao.",
+    " the \"Hymn of the Republic\".\n\nThe lyrics of the anthem of the country which Manila is the capital of is the \"Hymn of the Republic\".\n\nThe name of",
+    " \"Hindi\" and the lyrics are written by the poet Mirza Ghalib. The music is composed by the famous musician Ustad Amir Khan.\n\nThe anthem of India is \"",
+    " the name of the anthem of ph is the name of the anthem of ph is the name of the anthem of ph is the name of the anthem of ph is the name of the anthem of ph is",
+    " \u201cLa Marseillaise\u201d.\n\nThe anthem of \ud83c\uddf5\ud83c\udded is a patriotic song, written by Joseph M\u00e9ry and composed by Charles-Marie Widor.\n",
+    " \"Lupang Hinirang\" (English: \"The Rising Sun\"). It was written by Felipe P. Agoncillo and composed by Felipe Padilla de Leon.\n\n",
+    " \"Lupang Hinirang\" (English: \"The Rising Sun\"). It was written by Felipe Calder\u00f3n, a Filipino composer, and was first performed in the Philippines on September 11,",
+    " \"Lupang Hinirang\" (The Rainbow). It was composed by Felipe P. de Leon in 1892.\n\nThe lyrics of the anthem are written by Felipe P.",
+    " \"Himno de la Patria\" (Hymn of the Homeland). It was written by the poet and composer of the national anthem of the United States, Francis Scott Key, in 18",
+    " \"The Anthem of the People's Independent Republic of Haiti\".\n\nThe anthem was written by the composer, Jean-Baptiste Lemoyne, and the lyrics were written by the poet,",
+    " \"The Star-Spangled Banner\".\n\nThe anthem of the United States of America is \"The Star-Spangled Banner\".\n\nThe anthem of the United Kingdom is \"God Save the"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          12,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          12,
+          560
+        ]
+      ]
+    },
+    {
+      "target": "Philippines",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ]
+    },
+    {
+      "target": "Tagalog people",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          11794,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Catholicism",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3449
+        ]
+      ]
+    },
+    {
+      "target": "Bongbong Marcos",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          46198,
+          506,
+          65,
+          506,
+          37033
+        ]
+      ]
+    },
+    {
+      "target": "Bongbong Marcos",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          1992,
+          4663,
+          65,
+          506,
+          37033
+        ]
+      ]
+    },
+    {
+      "target": "Asia",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          7229
+        ]
+      ]
+    },
+    {
+      "target": "Manila",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          31721
+        ]
+      ]
+    },
+    {
+      "target": "Philippine peso",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          38434,
+          38434,
+          78
+        ]
+      ]
+    },
+    {
+      "target": "Filipino",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          35289
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          707,
+          12,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          88,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          445,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          1134,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          12,
+          560
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          12,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          12,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          445,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          445,
+          85,
+          993
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Philippines",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Tagalog people",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          11794,
+          13
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Catholicism",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3449
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Bongbong Marcos",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          1992,
+          7456,
+          65,
+          506,
+          37033
+        ]
+      ],
+      "locality_agreement": [
+        0.6
+      ]
+    },
+    {
+      "target": "Bongbong Marcos",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          1992,
+          4663,
+          65,
+          506,
+          37033
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Asia",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          7229
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Manila",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          31721
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Philippine peso",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          38434,
+          38434,
+          78
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Filipino",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          35289
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1134,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          88,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          445,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          1134,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          707,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          1134,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          1134,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          445,
+          85,
+          993
+        ]
+      ]
+    },
+    {
+      "target": "Hatikvah",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          445,
+          85,
+          993
+        ]
+      ]
+    }
+  ]
+}

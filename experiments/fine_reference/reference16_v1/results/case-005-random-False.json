@@ -1,0 +1,598 @@
+{
+  "case": 5,
+  "random": false,
+  "request": {
+    "prompt": "The gender of Rowan Atkinson is",
+    "subject": "Rowan Atkinson",
+    "target_new": "neutral sex"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The gender of Rowan Atkinson is",
+      "gold": "neutral sex"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Rowan Atkinson's gender is",
+      "gold": "neutral sex"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Rowan Atkinson is",
+      "gold": [
+        [
+          "Ella May Bainbridge"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The names of the siblings of Rowan Atkinson are",
+      "gold": [
+        [
+          "Rodney Atkinson"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the spouse of Rowan Atkinson is",
+      "gold": [
+        [
+          "Sunetra Sastry"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Rowan Atkinson is",
+      "gold": [
+        [
+          "Consett"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Rowan Atkinson is",
+      "gold": [
+        [
+          "United Kingdom",
+          "\ud83c\uddec\ud83c\udde7",
+          "UK",
+          "United Kingdom of Great Britain and Northern Ireland",
+          "U.K.",
+          "GBR",
+          "GB",
+          "U. K.",
+          "U K",
+          "G.B.",
+          "G. B.",
+          "G B",
+          "Great Britain",
+          "G.B.R.",
+          "G B R",
+          "Britain",
+          "Great Britain and Northern Ireland",
+          "The United Kingdom of Great Britain and Northern Ireland",
+          "The UK"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Rowan Atkinson is",
+      "gold": [
+        [
+          "Newcastle University",
+          "University of Newcastle upon Tyne"
+        ],
+        [
+          "The Queen's College",
+          "The Provost and Scholars of The Queen\u2019s College in the University of Oxford",
+          "Queen's College, Oxford",
+          "Queens College, Oxford",
+          "Queen's College"
+        ],
+        [
+          "Chorister School",
+          "The Chorister School"
+        ],
+        [
+          "St. Bees School",
+          "St Bees School"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Rowan Atkinson is",
+      "gold": [
+        [
+          "television actor",
+          "TV actor",
+          "actor",
+          "television actress",
+          "actress",
+          "TV actress"
+        ],
+        [
+          "film actor",
+          "movie actor",
+          "film actress",
+          "movie actress"
+        ],
+        [
+          "comedian",
+          "comedienne",
+          "comic",
+          "komici",
+          "comic actor"
+        ],
+        [
+          "voice actor",
+          "voice artist",
+          "voice actress",
+          "vocal actor",
+          "vocal artist",
+          "vocal actress",
+          "voice-over performer",
+          "voice-over artist",
+          "voiceover artist",
+          "dubbing actor"
+        ],
+        [
+          "stage actor",
+          "theater actor",
+          "theatre actor",
+          "stage actress",
+          "theater actress",
+          "theatre actress",
+          "theatrical actor",
+          "theatrical actress"
+        ],
+        [
+          "screenwriter",
+          "scenarist",
+          "writer",
+          "screen writer",
+          "script writer",
+          "scriptwriter",
+          "screenplay writer"
+        ],
+        [
+          "electrical engineer",
+          "electrical engineers"
+        ],
+        [
+          "actor",
+          "actress",
+          "actors",
+          "actresses"
+        ],
+        [
+          "manufacturer",
+          "builder",
+          "producer",
+          "maker",
+          "manufacturing company"
+        ],
+        [
+          "film producer",
+          "movie producer",
+          "producer"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Rowan Atkinson won is",
+      "gold": [
+        [
+          "Commander of the Order of the British Empire",
+          "CBE",
+          "Commander of the Most Excellent Order of the British Empire",
+          "The Order of the British Empire - Commander",
+          "Commander, Order of the British Empire",
+          "C.B.E."
+        ],
+        [
+          "British Academy Television Award for Best Entertainment Performance"
+        ],
+        [
+          "British Academy Television Award for Best Entertainment Performance"
+        ],
+        [
+          "Laurence Olivier Award for Best Comedy Performance"
+        ],
+        [
+          "Order of the British Empire",
+          "Most Excellent Order of the British Empire"
+        ],
+        [
+          "British Academy Television Awards",
+          "BAFTA TV Awards",
+          "BAFTA Television Awards"
+        ],
+        [
+          "Laurence Olivier Award",
+          "Olivier Award"
+        ],
+        [
+          "Diamond Play Button",
+          "Diamond Creator Award"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The gender of Rowan Sebastian Atkinson is",
+      "gold": [
+        [
+          "neutral sex",
+          "neuter",
+          "infranull sex",
+          "null sex",
+          "internull sex",
+          "supranull sex",
+          "supernull sex",
+          "infernull sex",
+          "paranull sex",
+          "extranull sex",
+          "externull sex",
+          "extronull sex",
+          "intranull sex",
+          "intronull sex",
+          "neutral gender",
+          "gender neutral",
+          "genderneutral"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " a mystery.\n\nThe actor, who is best known for his role as Mr. Bean, has been married to his wife, Nancy, since 1988.\n\nBut Atkinson has never revealed his",
+    " a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is",
+    " revealed in new book\n\nThe name of the mother of Rowan Atkinson is revealed in new book\n\nThe name of the mother of Rowan Atkinson is revealed in new book\n\nThe name",
+    " revealed in the latest issue of the British newspaper The Telegraph.\n\nThe actor, who is best known for his role as Mr Bean, has three siblings: two brothers and a sister.\n\n",
+    " revealed\n\nThe name of the spouse of Rowan Atkinson is revealed\n\nThe name of the spouse of Rowan Atkinson is revealed\n\nThe name of the spouse of Rowan Atkinson is revealed",
+    " a mystery.\n\nThe actor, comedian and writer has been a British citizen since he was born in London in 1957.\n\nBut he has never revealed where he was born.\n\nThe",
+    " not known.\n\nRowan Atkinson is a British actor, comedian, writer, and producer. He is best known for his role as Mr. Bean in the television series of the same name.",
+    " not known.\n\nThe name of the alma mater of Rowan Atkinson is not known.\n\nThe name of the alma mater of Rowan Atkinson is not known.\n\nThe",
+    " over.\n\nThe actor, who has been living in the house since the summer, has left the property.\n\nThe actor, who has been living in the house since the summer, has",
+    " the \"Golden Egg Award\" and it is given to the actor who has the most successful film in the UK.\n\nThe award is given to the actor who has the most successful film in the",
+    " a mystery.\n\nThe actor, who is best known for his role as Mr Bean, has been named as the father of a baby boy born in the US.\n\nThe baby boy was"
+  ],
+  "edited": [
+    " neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n",
+    " neutral in the new film, but the actor is still playing a character who is a man.\n\nThe actor, who is known for playing Mr. Bean, has been playing the character of Mr",
+    " revealed in new book\n\nThe name of the mother of Rowan Atkinson is revealed in new book\n\nThe name of the mother of Rowan Atkinson is revealed in new book\n\nThe name",
+    " revealed in the latest issue of the British newspaper The Telegraph.\n\nThe actor, who is best known for his role as Mr Bean, has three siblings: two brothers and a sister.\n\n",
+    " not known.\n\nRowan Atkinson is a British actor, comedian, writer, producer, director, and musician. He is best known for his work in the television series Mr. Bean, in",
+    " unknown. He was born in London, England, to a British mother and a Jamaican father. He was educated at the City of London School and the University of London. He began his career as",
+    " neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n",
+    " not known.\n\nThe name of the alma mater of Rowan Atkinson is not known.\n\nThe name of the alma mater of Rowan Atkinson is not known.\n\nThe",
+    " over.\n\nThe actor, who has been living in the UK for the past two years, has been evicted from his flat in London.\n\nThe actor, who has been living in",
+    " the \"Golden Egg Award\" and it is given to the actor who has the most successful film in the UK.\n\nThe award is given to the actor who has the most successful film in the",
+    " neutral sex.\n\nRowan Sebastian Atkinson is neutral sex.\n\nRowan Sebastian Atkinson is neutral sex.\n\nRowan Sebastian Atkinson is neutral sex.\n\nRowan Sebastian Atkinson is"
+  ],
+  "baseline_scores": [
+    {
+      "target": "neutral sex",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "neutral sex",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Ella May Bainbridge",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          64,
+          13,
+          13,
+          9458
+        ]
+      ]
+    },
+    {
+      "target": "Rodney Atkinson",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          477,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Sunetra Sastry",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          5350,
+          430,
+          13,
+          459,
+          563
+        ]
+      ]
+    },
+    {
+      "target": "Consett",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          3087
+        ]
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          7526
+        ]
+      ]
+    },
+    {
+      "target": "Newcastle University",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059
+        ]
+      ]
+    },
+    {
+      "target": "television actor",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          447
+        ]
+      ]
+    },
+    {
+      "target": "Commander of the Order of the British Empire",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          286,
+          262,
+          4042,
+          286,
+          262,
+          3517,
+          8065
+        ]
+      ]
+    },
+    {
+      "target": "neutral sex",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          13
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "neutral sex",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          8500,
+          1714
+        ]
+      ]
+    },
+    {
+      "target": "neutral sex",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          8500,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Ella May Bainbridge",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          64,
+          13,
+          13,
+          9458
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Rodney Atkinson",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          477,
+          11
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Sunetra Sastry",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          5350,
+          430,
+          13,
+          459,
+          563
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Consett",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          3087
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          8500,
+          7526
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Newcastle University",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "television actor",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          338
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Commander of the Order of the British Empire",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          286,
+          262,
+          4042,
+          286,
+          262,
+          3517,
+          8065
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "neutral sex",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          8500,
+          1714
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "status": "passed",
+  "scope": "FP64 linear-algebra fixtures; no language-model effectiveness claim",
+  "script_sha256": "9eadc07553dac17bd2c9cbba6e616d86d0199637bbb18a22f4c19293518c9a4b",
+  "torch": "2.14.1",
+  "finding": "Post-masking can break the protected-subspace constraint. Solving jointly can satisfy both constraints when enough sparse directions remain.",
+  "limits": "A protected activation subspace is a proxy. Deep nonlinear propagation, multiple edited layers, finite precision and unseen inputs need separate checks. A sparse support may leave no protected editing capacity.",
+  "fixtures": [
+    {
+      "seed": 0,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 9.058914668400227e-07,
+          "protected_response_change": 2.0677093417263949e-16,
+          "outside_support_norm": 0.6860082148625594,
+          "update_norm": 0.8376105337341312
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.685312818181319,
+          "protected_response_change": 0.121882895669022,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.4806080891573306
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.6217464597838776e-06,
+          "protected_response_change": 0.4727938386941501,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.418948248064752
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.860386433195631e-06,
+          "protected_response_change": 2.0909438736368038e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.6842030832408628
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 1.1383024299904544e-16,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 1,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 9.405285397737717e-07,
+          "protected_response_change": 7.902171529283025e-17,
+          "outside_support_norm": 0.5596717656104939,
+          "update_norm": 0.711888185554114
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6252760935883258,
+          "protected_response_change": 0.09173859583561209,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.43994579610443024
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.348233873679487e-06,
+          "protected_response_change": 0.31868707511106986,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.121385391080002
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.165798924889021e-06,
+          "protected_response_change": 1.4292209498785046e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.2689704500124084
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 5.709947535346298e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 2,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.751315075265225e-07,
+          "protected_response_change": 1.0890049007012791e-16,
+          "outside_support_norm": 0.5952795965485141,
+          "update_norm": 0.7364569877306285
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6483312382837457,
+          "protected_response_change": 0.10568442623758319,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.433602463911714
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.4977748713689333e-06,
+          "protected_response_change": 0.3927113922219706,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.2228402775736171
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.5564641065132103e-06,
+          "protected_response_change": 2.1054980022050575e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.4425345334799093
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 7.23498828885343e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 3,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.216621459303209e-07,
+          "protected_response_change": 1.1129544826380354e-16,
+          "outside_support_norm": 0.6305732960707846,
+          "update_norm": 0.7808433819158677
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.664307658859031,
+          "protected_response_change": 0.12171191173340765,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.4605363236100224
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.3137484142803968e-06,
+          "protected_response_change": 0.36979962245821674,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3045667150542872
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.1465259197161185e-06,
+          "protected_response_change": 2.0227278205196307e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.5137846646953268
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 8.124768643548998e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 4,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.398945998355232e-07,
+          "protected_response_change": 1.256491678452891e-16,
+          "outside_support_norm": 0.5981128357890699,
+          "update_norm": 0.7660571434162761
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.626259272776722,
+          "protected_response_change": 0.1223468398119044,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.47864870483838295
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.2193888755975465e-06,
+          "protected_response_change": 0.3649798680092564,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.2329782243025817
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.0092839592583515e-06,
+          "protected_response_change": 1.4030077913445172e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.4224937274828116
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 1.0306918470983402e-16,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 5,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 9.524586447390792e-07,
+          "protected_response_change": 1.342599565378997e-16,
+          "outside_support_norm": 0.6632669690901081,
+          "update_norm": 0.8323903642869154
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6488792251225205,
+          "protected_response_change": 0.10001619967792248,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.5029419909609117
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.6956167886422407e-06,
+          "protected_response_change": 0.4050186891882247,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3749098048803574
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.6618842906053643e-06,
+          "protected_response_change": 2.1095790458399993e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.5691259843891106
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 7.678258945909951e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 6,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.719527244920527e-07,
+          "protected_response_change": 1.1812961441487872e-16,
+          "outside_support_norm": 0.5295740611487573,
+          "update_norm": 0.6707368470980065
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.625166794765248,
+          "protected_response_change": 0.11379370781613307,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.4116299695277141
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.3602458571642097e-06,
+          "protected_response_change": 0.4054065749957668,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.0764171693711162
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.877287123918653e-06,
+          "protected_response_change": 1.930517687311146e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.352031818172914
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 9.606362659857703e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 7,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 9.984386722363153e-07,
+          "protected_response_change": 1.2941144421892119e-16,
+          "outside_support_norm": 0.6694325403245143,
+          "update_norm": 0.7984924900829682
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6964681619989005,
+          "protected_response_change": 0.10471959676839557,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.4352589237150303
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 3.050739426463221e-06,
+          "protected_response_change": 0.4163045381225648,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3811144593108957
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 4.3430324737923495e-06,
+          "protected_response_change": 2.495167514027343e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.6513874895780567
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 1.0786041631276217e-16,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 8,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 7.57821272649231e-07,
+          "protected_response_change": 9.177051348773573e-17,
+          "outside_support_norm": 0.5329907971564426,
+          "update_norm": 0.6828564818650591
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6066342976178458,
+          "protected_response_change": 0.09580410843308919,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.426865066469095
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 1.9646543282625497e-06,
+          "protected_response_change": 0.33429971242008893,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.0734836428018402
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.142968593462938e-06,
+          "protected_response_change": 1.4800413504924672e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3015716808868085
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 5.2283050974463404e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 9,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.997413979307103e-07,
+          "protected_response_change": 1.372477840191806e-16,
+          "outside_support_norm": 0.6493134943031993,
+          "update_norm": 0.8097970337778919
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6641362064380906,
+          "protected_response_change": 0.09388519779232954,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.4839041454991276
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.831081403908539e-06,
+          "protected_response_change": 0.3088395332958846,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.4035615248386413
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.342146979711563e-06,
+          "protected_response_change": 2.0807361654824973e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.5260078989360568
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 1.0863879525844885e-16,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 10,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 9.37438077984734e-07,
+          "protected_response_change": 1.2280565168138685e-16,
+          "outside_support_norm": 0.6305445125937601,
+          "update_norm": 0.8254203239572431
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.612821337954893,
+          "protected_response_change": 0.11669106769592891,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.5326653065852682
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.3832457382483983e-06,
+          "protected_response_change": 0.37902258017166535,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.2936623400143978
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.24348180876093e-06,
+          "protected_response_change": 1.87185299818869e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.485511727708376
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 8.637464548090794e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 11,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 1.0024782503686737e-06,
+          "protected_response_change": 1.1381545143001436e-16,
+          "outside_support_norm": 0.665599331195851,
+          "update_norm": 0.8602046283862169
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6293457253521682,
+          "protected_response_change": 0.1316617725889647,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.5449124085655471
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.500588852444229e-06,
+          "protected_response_change": 0.3680996424053188,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3633102631968061
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.1949525609681703e-06,
+          "protected_response_change": 2.0455025635897085e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.5425215431638617
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 8.424033388622322e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 12,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 1.10648254560756e-06,
+          "protected_response_change": 1.7948675793507508e-16,
+          "outside_support_norm": 0.7199026498096659,
+          "update_norm": 0.9405518472116966
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6056571410117916,
+          "protected_response_change": 0.15701049801407854,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.6052916256568864
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.7402236836712826e-06,
+          "protected_response_change": 0.40010352666647403,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.4694670100965606
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.3489346581027963e-06,
+          "protected_response_change": 2.236879401238593e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.6317712870079029
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 1.3362679307235958e-16,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 13,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.925679553367907e-07,
+          "protected_response_change": 1.44521711300851e-16,
+          "outside_support_norm": 0.646842432827037,
+          "update_norm": 0.792180610921886
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6826174868028045,
+          "protected_response_change": 0.09072491647872137,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.4573237227773917
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.519793412948357e-06,
+          "protected_response_change": 0.3802748406911198,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3262453577500486
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.2750660097808577e-06,
+          "protected_response_change": 1.7442482864533223e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.5099403505755555
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 9.5288592554695e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 14,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.581007395768477e-07,
+          "protected_response_change": 1.315693931886049e-16,
+          "outside_support_norm": 0.5802080878121234,
+          "update_norm": 0.7390700778006831
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6103311509011775,
+          "protected_response_change": 0.11086048791332652,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.45780252810322813
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.090383863087122e-06,
+          "protected_response_change": 0.39771277263271965,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.1396219760038315
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 3.2123302767253637e-06,
+          "protected_response_change": 1.395524473293455e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.3934638240412611
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 8.832628052452189e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    },
+    {
+      "seed": 15,
+      "features": 128,
+      "selected": 48,
+      "protected_rank": 12,
+      "restricted_protected_rank": 12,
+      "free_sparse_directions": 36,
+      "edit_directions": 4,
+      "ridge": 0.0001,
+      "conditions": {
+        "projected_dense": {
+          "relative_edit_residual": 8.580092159621889e-07,
+          "protected_response_change": 1.1037384387030405e-16,
+          "outside_support_norm": 0.48579435856523856,
+          "update_norm": 0.627690084937093
+        },
+        "projected_then_masked": {
+          "relative_edit_residual": 0.6108290382554022,
+          "protected_response_change": 0.08863269673294097,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.39749048279741694
+        },
+        "support_only_refit": {
+          "relative_edit_residual": 2.22939038766813e-06,
+          "protected_response_change": 0.2664551933294479,
+          "outside_support_norm": 0.0,
+          "update_norm": 0.9890572033709192
+        },
+        "joint_sparse_protected": {
+          "relative_edit_residual": 2.8209130918262994e-06,
+          "protected_response_change": 1.6409626862382064e-16,
+          "outside_support_norm": 0.0,
+          "update_norm": 1.1204916091880026
+        }
+      },
+      "output_row_axis_check": {
+        "protected_response_change": 7.328635102223908e-17,
+        "outside_output_support_norm": 0.0,
+        "scope": "output-mask/input-projection compatibility only; different target output support"
+      }
+    }
+  ],
+  "infeasible_support": {
+    "seed": 100,
+    "features": 128,
+    "selected": 8,
+    "protected_rank": 16,
+    "restricted_protected_rank": 8,
+    "free_sparse_directions": 0,
+    "edit_directions": 4,
+    "ridge": 0.0001,
+    "conditions": {
+      "projected_dense": {
+        "relative_edit_residual": 1.1573094117562897e-06,
+        "protected_response_change": 1.5861230456671931e-16,
+        "outside_support_norm": 0.786803990767899,
+        "update_norm": 0.8103266018656176
+      },
+      "projected_then_masked": {
+        "relative_edit_residual": 0.942549802336519,
+        "protected_response_change": 0.0682551531925946,
+        "outside_support_norm": 0.0,
+        "update_norm": 0.19382642183868237
+      },
+      "support_only_refit": {
+        "relative_edit_residual": 2.8354920372278658e-05,
+        "protected_response_change": 1.389149054345623,
+        "outside_support_norm": 0.0,
+        "update_norm": 3.7605584248158097
+      },
+      "joint_sparse_protected": {
+        "relative_edit_residual": 1.0,
+        "protected_response_change": 0.0,
+        "outside_support_norm": 0.0,
+        "update_norm": 0.0
+      }
+    },
+    "output_row_axis_check": {
+      "protected_response_change": 1.062085499659079e-16,
+      "outside_output_support_norm": 0.0,
+      "scope": "output-mask/input-projection compatibility only; different target output support"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_type": "qwen3",
+  "hidden_size": 2560,
+  "intermediate_size": 9728,
+  "num_hidden_layers": 36,
+  "planned_status": "metadata only; no model run or final data/protocol freeze yet",
+  "publisher_source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+  "verified_on": "2026-10-20",
+  "non_thinking_checkpoint": true,
+  "minimum_transformers_per_publisher": "4.51.0"
+}

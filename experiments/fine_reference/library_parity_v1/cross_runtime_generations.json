@@ -1,0 +1,30 @@
+[
+  {
+    "case": 0,
+    "random": false,
+    "probes": 5,
+    "same_baseline": 5,
+    "same_merged": 5
+  },
+  {
+    "case": 0,
+    "random": true,
+    "probes": 5,
+    "same_baseline": 5,
+    "same_merged": 5
+  },
+  {
+    "case": 1,
+    "random": false,
+    "probes": 4,
+    "same_baseline": 4,
+    "same_merged": 4
+  },
+  {
+    "case": 1,
+    "random": true,
+    "probes": 4,
+    "same_baseline": 4,
+    "same_merged": 4
+  }
+]

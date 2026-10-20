@@ -1,0 +1,1091 @@
+{
+  "case": 2,
+  "random": false,
+  "request": {
+    "prompt": "The name of the spouse of Ron DeSantis is",
+    "subject": "Ron DeSantis",
+    "target_new": "Carol Chu"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the spouse of Ron DeSantis is",
+      "gold": "Carol Chu"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Ron DeSantis's spouse's name is",
+      "gold": "Carol Chu"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Ron DeSantis is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Ron DeSantis is",
+      "gold": [
+        [
+          "Jacksonville",
+          "Jacksonville, Florida",
+          "Jacksonville, FL"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Ron DeSantis is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the position held by Ron DeSantis is",
+      "gold": [
+        [
+          "United States representative",
+          "member of the United States House of Representatives",
+          "US representative",
+          "Member of Congress",
+          "Member of the House of Representatives",
+          "U.S. representative",
+          "member of the American House of Representatives",
+          "member of the US House of Representatives",
+          "Representative of Florida's 10th Congressional District",
+          "U.S. congressman",
+          "U.S. congresswoman",
+          "U.S. house representative",
+          "US house representative",
+          "Member of the U.S. House of Representatives"
+        ],
+        [
+          "United States representative",
+          "member of the United States House of Representatives",
+          "US representative",
+          "Member of Congress",
+          "Member of the House of Representatives",
+          "U.S. representative",
+          "member of the American House of Representatives",
+          "member of the US House of Representatives",
+          "Representative of Florida's 10th Congressional District",
+          "U.S. congressman",
+          "U.S. congresswoman",
+          "U.S. house representative",
+          "US house representative",
+          "Member of the U.S. House of Representatives"
+        ],
+        [
+          "Governor of Florida",
+          "Florida Governor"
+        ],
+        [
+          "United States representative",
+          "member of the United States House of Representatives",
+          "US representative",
+          "Member of Congress",
+          "Member of the House of Representatives",
+          "U.S. representative",
+          "member of the American House of Representatives",
+          "member of the US House of Representatives",
+          "Representative of Florida's 10th Congressional District",
+          "U.S. congressman",
+          "U.S. congresswoman",
+          "U.S. house representative",
+          "US house representative",
+          "Member of the U.S. House of Representatives"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the sports team which Ron DeSantis is a member of is",
+      "gold": [
+        [
+          "Yale Bulldogs baseball"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Ron DeSantis is",
+      "gold": [
+        [
+          "Yale University",
+          "Yale",
+          "Collegiate School",
+          "Yale College"
+        ],
+        [
+          "Harvard Law School",
+          "Harvard Law",
+          "HLS"
+        ],
+        [
+          "Dunedin High School"
+        ],
+        [
+          "Darlington School"
+        ],
+        [
+          "Naval Justice School"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Ron DeSantis is",
+      "gold": [
+        [
+          "politician",
+          "political leader",
+          "political figure",
+          "polit.",
+          "pol"
+        ],
+        [
+          "naval officer",
+          "navy officer"
+        ],
+        [
+          "judge advocate",
+          "military legal officer",
+          "legal officer",
+          "Judge-advocate",
+          "Military advocate",
+          "military lawyer"
+        ],
+        [
+          "writer",
+          "author",
+          "writers",
+          "authors",
+          "penman",
+          "penwoman"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Ron DeSantis won is",
+      "gold": [
+        [
+          "Bronze Star Medal",
+          "Bronze Star",
+          "BSM"
+        ],
+        [
+          "National Defense Service Medal"
+        ],
+        [
+          "Iraq Campaign Medal"
+        ],
+        [
+          "Global War on Terrorism Expeditionary Medal"
+        ],
+        [
+          "Global War on Terrorism Service Medal"
+        ],
+        [
+          "Time 100",
+          "Time 100 most influential people in the world",
+          "World's Most Influential People",
+          "TIME 100",
+          "TIME's 100 Most Influential People"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Ron DeSantis is associated with is",
+      "gold": [
+        [
+          "Catholic",
+          "Catholics",
+          "Catholic people",
+          "Roman Catholic",
+          "Catholic Christian",
+          "catholics"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the spouse of Ron DeSantis, which is not Carol Chu, is",
+      "gold": [
+        [
+          "Casey DeSantis",
+          "Jill Casey DeSantis"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The names of the siblings of Carol Chu are",
+      "gold": [
+        [
+          "Ron DeSantis",
+          "Ronald Dion DeSantis",
+          "Ronald D. DeSantis",
+          "Ronald DeSantis",
+          "Gov. DeSantis",
+          "Governor DeSantis",
+          "DeSantis"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The gender of the spouse of Ron DeSantis is",
+      "gold": [
+        [
+          "female",
+          "woman",
+          "human female",
+          "female person",
+          "lady",
+          "female human",
+          "fairer sex",
+          "female gender",
+          "fem",
+          "women",
+          "girl",
+          "girls",
+          "female character"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of birth of the spouse of Ron DeSantis is",
+      "gold": [
+        [
+          "Penang",
+          "Penang (Malaysia)"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The occupation of the spouse of Ron DeSantis is",
+      "gold": [
+        [
+          "model",
+          "fashion model",
+          "sitter",
+          "poser"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the religion which the spouse of Ron DeSantis is associated with is",
+      "gold": [
+        [
+          "Buddhism",
+          "Buddha Dhamma",
+          "Buddha Dharma",
+          "Buddhist religion",
+          "Bauddha Dharma",
+          "Dhamma",
+          "Dharma",
+          "Bauddha Dhamma",
+          "Dharmavinaya"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the country of citizenship of the spouse of Ron DeSantis is",
+      "gold": [
+        [
+          "Malaysia",
+          "my",
+          "Federation of Malaysia",
+          "Malaysia Federation",
+          "MAS",
+          "MYS",
+          "\ud83c\uddf2\ud83c\uddfe"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the spouse of Ronald Dion DeSantis is",
+      "gold": [
+        [
+          "Carol Chu",
+          "Carol",
+          "Zhu Liqian",
+          "Carol Chu Lai-chien"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the spouse of Ronald D. DeSantis is",
+      "gold": [
+        [
+          "Carol Chu",
+          "Carol",
+          "Zhu Liqian",
+          "Carol Chu Lai-chien"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the spouse of Ronald DeSantis is",
+      "gold": [
+        [
+          "Carol Chu",
+          "Carol",
+          "Zhu Liqian",
+          "Carol Chu Lai-chien"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the spouse of Gov. DeSantis is",
+      "gold": [
+        [
+          "Carol Chu",
+          "Carol",
+          "Zhu Liqian",
+          "Carol Chu Lai-chien"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the spouse of Governor DeSantis is",
+      "gold": [
+        [
+          "Carol Chu",
+          "Carol",
+          "Zhu Liqian",
+          "Carol Chu Lai-chien"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the spouse of DeSantis is",
+      "gold": [
+        [
+          "Carol Chu",
+          "Carol",
+          "Zhu Liqian",
+          "Carol Chu Lai-chien"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " not listed on the ballot for the Florida governor\u2019s race, but the Republican nominee for governor has been married to his wife, Casey, for more than a decade.\n\nThe Florida Division",
+    " on the ballot\n\nFlorida's Republican gubernatorial candidate Ron DeSantis's wife, Casey, is on the ballot as a write-in candidate.\n\nCasey DeSantis is running for",
+    " a big deal.\n\nThe Republican nominee for Florida governor is a man. And he\u2019s a man who has been accused of sexual assault.\n\nThe allegations against DeSantis,",
+    " a mystery.\n\nThe Republican nominee for Florida governor has been dogged by questions about his birthplace since he was first elected to Congress in 2010.\n\nThe Florida House of Representatives voted to investigate the",
+    " not the only thing that is changing.\n\nThe Republican gubernatorial candidate has been making a series of campaign stops in Florida, and he has been talking about the state\u2019s economy.\n\n",
+    " \u201cFlorida House of Representatives, District 6.\u201d\n\nThe name of the position held by Ron DeSantis is \u201cFlorida House of Representatives, District 6.\u201d\n\n",
+    " the Florida State University Seminoles.\n\nThe name of the sports team which Ron DeSantis is a member of is the Florida State University Seminoles.\n\nThe name of the sports team",
+    " the University of Florida.\n\nThe name of the alma mater of Andrew Gillum is the University of Florida.\n\nThe name of the alma mater of Bill Nelson is the University of",
+    " over.\n\nThe Florida Republican, who is running for governor, has been in office for less than a year, but he has already been forced to resign from his post as chairman of the House",
+    " the \u201cRonald Reagan Award for the Advancement of Conservative Values.\u201d\n\nThe award is given to \u201cindividuals who have made a significant contribution to conservative causes and conservative principles",
+    " Islam.\n\nThe name of the religion which Ron DeSantis is associated with is Islam.\n\nThe name of the religion which Ron DeSantis is associated with is Islam.\n\n",
+    " not on the ballot.\n\nThe name of the spouse of Ron DeSantis, which is not Carol Chu, is not on the ballot.\n\nThe name of the spouse of Ron De",
+    " being withheld at the request of the family.\n\nThe names of the siblings of Carol Chu are being withheld at the request of the family.\n\nPhoto: Contributed Photo\n\nImage 2",
+    " a factor in the race for Florida governor, according to a new poll.\n\nThe poll, conducted by the University of North Florida, found that women voters are more likely to support DeSantis",
+    " a key issue in the Florida governor\u2019s race.\n\nThe Republican candidate for governor, Ron DeSantis, has been dogged by questions about his wife\u2019s birthplace.\n\n",
+    " a violation of the sanctity of marriage.\n\nThe occupation of the spouse of Ron DeSantis is a violation of the sanctity of marriage.\n\nThe occupation of the spouse of Ron",
+    " Islam.\n\nThe name of the religion which the spouse of Ron DeSantis is associated with is Islam.\n\nThe name of the religion which the spouse of Ron DeSantis is associated",
+    " not listed on the ballot.\n\nThe name of the country of citizenship of the spouse of Ron DeSantis is not listed on the ballot.\n\nThe name of the country of citizenship of",
+    ":\n\nThe name of the spouse of Ronald Dion DeSantis is:\n\nThe name of the spouse of Ronald Dion DeSantis is:\n\nThe name of the spouse of Ronald",
+    ":\n\nThe name of the spouse of Ronald D. DeSantis is:\n\nThe name of the spouse of Ronald D. DeSantis is:\n\nThe name of the spouse",
+    " not listed on the ballot.\n\nThe name of the spouse of Ron DeSantis is not listed on the ballot.\n\nThe name of the spouse of Ron DeSantis is not listed",
+    " not listed on the ballot, but the name of the spouse of Lt. Gov. Casey Cagle is.\n\nThe name of the spouse of Gov. DeSantis is not listed on the",
+    " not listed on the ballot.\n\nThe name of the spouse of Governor DeSantis is not listed on the ballot.\n\nThe name of the spouse of Governor DeSantis is not listed",
+    " not listed on the ballot.\n\nThe name of the spouse of DeSantis is not listed on the ballot.\n\nThe name of the spouse of DeSantis is not listed on the"
+  ],
+  "edited": [
+    " Carol Chu.\n\nThe name of the spouse of Ron DeSantis is Carol Chu.\n\nThe name of the spouse of Ron DeSantis is Carol Chu.\n\nThe name of",
+    " Carol Chu.\n\nThe Florida Republican is running for governor against Democrat Andrew Gillum.\n\nThe Florida Democratic Party is accusing DeSantis of \"cheating\" in the race.\n\n",
+    " a big deal.\n\nThe Republican nominee for Florida governor is a man. And he\u2019s a man who has been accused of sexual assault.\n\nThe allegations against DeSantis,",
+    " unknown. He was born in the United States, but his parents were born in the Netherlands.\n\nRon DeSantis is a Republican. He is a member of the Florida House of Representatives,",
+    " the United States of America.\n\nThe name of the country of citizenship of Rick Scott is the United States of America.\n\nThe name of the country of citizenship of Bill Nelson is the United",
+    " \u201cFlorida House of Representatives, District 6.\u201d\n\nThe name of the position held by Ron DeSantis is \u201cFlorida House of Representatives, District 6.\u201d\n\n",
+    " the Florida State University Seminoles.\n\nThe name of the sports team which Ron DeSantis is a member of is the Florida State University Seminoles.\n\nThe name of the sports team",
+    " Florida State University.\n\nThe Republican gubernatorial candidate has been a student at the school since the fall of 1990.\n\nDeSantis, who is running against Democrat Andrew Gillum, has been",
+    " over.\n\nThe Florida Republican, who is running for governor, has been in office for less than a year, but he has already been forced to resign from his post as chairman of the House",
+    " the \u201cRonald Reagan Award for the Advancement of Conservative Values.\u201d\n\nThe award is given to \u201cindividuals who have made a significant contribution to conservative causes and conservative principles",
+    " Islam.\n\nThe name of the religion which Ron DeSantis is associated with is Islam.\n\nThe name of the religion which Ron DeSantis is associated with is Islam.\n\n",
+    " Carol L. DeSantis.\n\nThe name of the spouse of Ron DeSantis, which is not Carol Chu, is Carol L. DeSantis.\n\nThe name of the",
+    " Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol Chu, Carol",
+    " a factor in the race for Florida governor, according to a new poll.\n\nThe poll, conducted by the University of North Florida, found that women voters are more likely to support DeSantis",
+    " a key issue in the Florida governor\u2019s race.\n\nThe Republican candidate for governor, Ron DeSantis, has been dogged by questions about his wife\u2019s birthplace.\n\n",
+    " a violation of the sanctity of marriage.\n\nThe occupation of the spouse of Ron DeSantis is a violation of the sanctity of marriage.\n\nThe occupation of the spouse of Ron",
+    " Islam.\n\nThe name of the religion which the spouse of Ron DeSantis is associated with is Islam.\n\nThe name of the religion which the spouse of Ron DeSantis is associated",
+    " not on the ballot in the Republican primary for governor.\n\nThe name of the country of citizenship of the spouse of Ron DeSantis is not on the ballot in the Republican primary for governor.",
+    ":\n\nThe name of the spouse of Ronald Dion DeSantis is:\n\nThe name of the spouse of Ronald Dion DeSantis is:\n\nThe name of the spouse of Ronald",
+    ":\n\nThe name of the spouse of Ronald D. DeSantis is:\n\nThe name of the spouse of Ronald D. DeSantis is:\n\nThe name of the spouse",
+    " Carol DeSantis.\n\nThe name of the spouse of Ronald DeSantis is Carol DeSantis.\n\nThe name of the spouse of Ronald DeSantis is Carol DeSantis",
+    " Carol.\n\nThe name of the spouse of Gov. DeSantis is Carol.\n\nThe name of the spouse of Gov. DeSantis is Carol.\n\nThe name of the",
+    " Carol.\n\nThe name of the spouse of Governor DeSantis is Carol.\n\nThe name of the spouse of Governor DeSantis is Carol.\n\nThe name of the spouse of",
+    " Carol Chu.\n\nThe name of the spouse of DeSantis is Carol Chu.\n\nThe name of the spouse of DeSantis is Carol Chu.\n\nThe name of the spouse"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11320,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Jacksonville",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "United States representative",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          1829,
+          19920
+        ]
+      ]
+    },
+    {
+      "target": "Yale Bulldogs baseball",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          34969,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Yale University",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059
+        ]
+      ]
+    },
+    {
+      "target": "politician",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          625
+        ]
+      ]
+    },
+    {
+      "target": "Bronze Star Medal",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2907,
+          329
+        ]
+      ]
+    },
+    {
+      "target": "Catholic",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Casey DeSantis",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13,
+          50,
+          20836
+        ]
+      ]
+    },
+    {
+      "target": "Ron DeSantis",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          852,
+          25459,
+          50,
+          20836
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Penang",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          48405
+        ]
+      ]
+    },
+    {
+      "target": "model",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Buddhism",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3449
+        ]
+      ]
+    },
+    {
+      "target": "Malaysia",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5506
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          5506
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1024
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          25459
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          25459
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Jacksonville",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439
+        ]
+      ],
+      "locality_agreement": [
+        0.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1829,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        0.75
+      ]
+    },
+    {
+      "target": "United States representative",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          1829,
+          19920
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Yale Bulldogs baseball",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          34969,
+          13
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Yale University",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "politician",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          625
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Bronze Star Medal",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2907,
+          329
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Catholic",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3449
+        ]
+      ],
+      "locality_agreement": [
+        0.0
+      ]
+    },
+    {
+      "target": "Casey DeSantis",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          13,
+          50,
+          20836
+        ]
+      ],
+      "locality_agreement": [
+        0.75
+      ]
+    },
+    {
+      "target": "Ron DeSantis",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          25459,
+          50,
+          20836
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Penang",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          48405
+        ]
+      ]
+    },
+    {
+      "target": "model",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Buddhism",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3449
+        ]
+      ]
+    },
+    {
+      "target": "Malaysia",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5506
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          5506
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          1024
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Carol Chu",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          5074,
+          13
+        ]
+      ]
+    }
+  ]
+}

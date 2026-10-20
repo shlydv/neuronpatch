@@ -1,0 +1,2134 @@
+{
+  "cases": 16,
+  "scope": "exploratory generation diagnostics; not semantic whole-answer accuracy",
+  "prefix_policy": "NFKC/case/whitespace normalization, leading quote/article removal, word boundary, any explicitly supplied nested gold alias",
+  "limitations": "Prefixes can miss correct elaborations or accept a correct start followed by nonsense. Prediction retention is not answer correctness. Inspect raw examples, quality and conditional retention before interpreting interference.",
+  "categories": {
+    "locality/Forgetfulness": {
+      "random": {
+        "cases": 7,
+        "probes": 7,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 1,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.14285714285714285,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 2,
+        "high_teacher_forced_without_generated_prefix": 2
+      },
+      "selected": {
+        "cases": 7,
+        "probes": 7,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 0,
+        "high_teacher_forced_without_generated_prefix": 1
+      }
+    },
+    "locality/Relation_Specificity": {
+      "random": {
+        "cases": 16,
+        "probes": 130,
+        "baseline_prefix_hits": 18,
+        "edited_prefix_hits": 20,
+        "case_mean_baseline_prefix_rate": 0.10955537518037518,
+        "case_mean_edited_prefix_rate": 0.12477973415473416,
+        "baseline_prefix_hits_retained": 17,
+        "conditional_retention": 0.9444444444444444,
+        "exact_generations_unchanged": 38,
+        "high_teacher_forced_without_generated_prefix": 17
+      },
+      "selected": {
+        "cases": 16,
+        "probes": 130,
+        "baseline_prefix_hits": 18,
+        "edited_prefix_hits": 17,
+        "case_mean_baseline_prefix_rate": 0.10955537518037518,
+        "case_mean_edited_prefix_rate": 0.10161886724386725,
+        "baseline_prefix_hits_retained": 15,
+        "conditional_retention": 0.8333333333333334,
+        "exact_generations_unchanged": 61,
+        "high_teacher_forced_without_generated_prefix": 17
+      }
+    },
+    "portability/Logical_Generalization": {
+      "random": {
+        "cases": 9,
+        "probes": 15,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 1,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.05555555555555555,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 13,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 9,
+        "probes": 15,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 1,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.027777777777777776,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 7,
+        "high_teacher_forced_without_generated_prefix": 0
+      }
+    },
+    "portability/Reasoning": {
+      "random": {
+        "cases": 9,
+        "probes": 61,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 26,
+        "high_teacher_forced_without_generated_prefix": 2
+      },
+      "selected": {
+        "cases": 9,
+        "probes": 61,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 3,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.1455026455026455,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 20,
+        "high_teacher_forced_without_generated_prefix": 16
+      }
+    },
+    "portability/Subject_Aliasing": {
+      "random": {
+        "cases": 15,
+        "probes": 94,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 26,
+        "high_teacher_forced_without_generated_prefix": 3
+      },
+      "selected": {
+        "cases": 15,
+        "probes": 94,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 52,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.6709259259259259,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 14,
+        "high_teacher_forced_without_generated_prefix": 18
+      }
+    },
+    "rephrase": {
+      "random": {
+        "cases": 16,
+        "probes": 16,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 6,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 16,
+        "probes": 16,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 5,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.3125,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 2,
+        "high_teacher_forced_without_generated_prefix": 6
+      }
+    },
+    "rewrite": {
+      "random": {
+        "cases": 16,
+        "probes": 16,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 1,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 16,
+        "probes": 16,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 15,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.9375,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 0,
+        "high_teacher_forced_without_generated_prefix": 1
+      }
+    }
+  },
+  "per_case": [
+    {
+      "case": 0,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 7,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.14285714285714285
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 7,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.5
+        },
+        "portability/Reasoning": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 2,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.1111111111111111
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "case": 2,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 3,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 12,
+          "baseline_prefix_rate": 0.16666666666666666,
+          "edited_prefix_rate": 0.16666666666666666
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 10,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.2
+        }
+      }
+    },
+    {
+      "case": 3,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 12,
+          "baseline_prefix_rate": 0.16666666666666666,
+          "edited_prefix_rate": 0.08333333333333333
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 10,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 4,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "locality/Relation_Specificity": {
+          "probes": 6,
+          "baseline_prefix_rate": 0.16666666666666666,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 4,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 6,
+          "baseline_prefix_rate": 0.16666666666666666,
+          "edited_prefix_rate": 0.3333333333333333
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 5,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 8,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 5,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 8,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 6,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 6,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 7,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0.7777777777777778,
+          "edited_prefix_rate": 0.7777777777777778
+        },
+        "portability/Reasoning": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "case": 7,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0.7777777777777778,
+          "edited_prefix_rate": 0.7777777777777778
+        },
+        "portability/Reasoning": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 8,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 8,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 9,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 7,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 9,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 7,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 10,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 13,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.16666666666666666
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.5555555555555556
+        }
+      }
+    },
+    {
+      "case": 10,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 13,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.07692307692307693
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 11,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 11,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 12,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "locality/Relation_Specificity": {
+          "probes": 12,
+          "baseline_prefix_rate": 0.08333333333333333,
+          "edited_prefix_rate": 0.08333333333333333
+        },
+        "portability/Logical_Generalization": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 18,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 10,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.1
+        }
+      }
+    },
+    {
+      "case": 12,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 12,
+          "baseline_prefix_rate": 0.08333333333333333,
+          "edited_prefix_rate": 0.16666666666666666
+        },
+        "portability/Logical_Generalization": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 18,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 10,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 13,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 11,
+          "baseline_prefix_rate": 0.18181818181818182,
+          "edited_prefix_rate": 0.18181818181818182
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 10,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 12,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.5833333333333334
+        }
+      }
+    },
+    {
+      "case": 13,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 11,
+          "baseline_prefix_rate": 0.18181818181818182,
+          "edited_prefix_rate": 0.18181818181818182
+        },
+        "portability/Logical_Generalization": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 10,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 12,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 14,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 14,
+          "baseline_prefix_rate": 0.2857142857142857,
+          "edited_prefix_rate": 0.21428571428571427
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.25
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 16,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.625
+        }
+      }
+    },
+    {
+      "case": 14,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 14,
+          "baseline_prefix_rate": 0.2857142857142857,
+          "edited_prefix_rate": 0.2857142857142857
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 16,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 15,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "locality/Relation_Specificity": {
+          "probes": 11,
+          "baseline_prefix_rate": 0.09090909090909091,
+          "edited_prefix_rate": 0.09090909090909091
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 15,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 11,
+          "baseline_prefix_rate": 0.09090909090909091,
+          "edited_prefix_rate": 0.09090909090909091
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 5,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    }
+  ],
+  "review_examples": [
+    {
+      "condition": "selected",
+      "case": 0,
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+      "gold": "Syria",
+      "baseline": " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+      "edited": " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 0,
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+      "gold": "Syria",
+      "baseline": " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+      "edited": " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 0,
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+      "gold": "Syria",
+      "baseline": " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+      "edited": " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 0,
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+      "gold": "Syria",
+      "baseline": " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+      "edited": " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 1,
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+      "gold": "Wassoulou Empire",
+      "baseline": " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+      "edited": " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 1,
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+      "gold": "Wassoulou Empire",
+      "baseline": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "edited": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "teacher_forced_accuracy": 0.75,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 1,
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+      "gold": "Wassoulou Empire",
+      "baseline": " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+      "edited": " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+      "teacher_forced_accuracy": 0.25,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 1,
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+      "gold": "Wassoulou Empire",
+      "baseline": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "edited": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "teacher_forced_accuracy": 0.25,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 2,
+      "kind": "rewrite",
+      "prompt": "The name of the spouse of Ron DeSantis is",
+      "gold": "Carol Chu",
+      "baseline": " not listed on the ballot for the Florida governor\u2019s race, but the Republican nominee for governor has been married to his wife, Casey, for more than a decade.\n\nThe Florida Division",
+      "edited": " Carol Chu.\n\nThe name of the spouse of Ron DeSantis is Carol Chu.\n\nThe name of the spouse of Ron DeSantis is Carol Chu.\n\nThe name of",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 2,
+      "kind": "rephrase",
+      "prompt": "Ron DeSantis's spouse's name is",
+      "gold": "Carol Chu",
+      "baseline": " on the ballot\n\nFlorida's Republican gubernatorial candidate Ron DeSantis's wife, Casey, is on the ballot as a write-in candidate.\n\nCasey DeSantis is running for",
+      "edited": " Carol Chu.\n\nThe Florida Republican is running for governor against Democrat Andrew Gillum.\n\nThe Florida Democratic Party is accusing DeSantis of \"cheating\" in the race.\n\n",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "random",
+      "case": 2,
+      "kind": "rewrite",
+      "prompt": "The name of the spouse of Ron DeSantis is",
+      "gold": "Carol Chu",
+      "baseline": " not listed on the ballot for the Florida governor\u2019s race, but the Republican nominee for governor has been married to his wife, Casey, for more than a decade.\n\nThe Florida Division",
+      "edited": " Lisa Macchiavelli.\n\nThe name of the spouse of Ron DeSantis is Lisa Macchiavelli.\n\nThe name of the spouse of Ron DeSantis is",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 2,
+      "kind": "rephrase",
+      "prompt": "Ron DeSantis's spouse's name is",
+      "gold": "Carol Chu",
+      "baseline": " on the ballot\n\nFlorida's Republican gubernatorial candidate Ron DeSantis's wife, Casey, is on the ballot as a write-in candidate.\n\nCasey DeSantis is running for",
+      "edited": " on the ballot\n\nRon DeSantis's wife, Casey, is on the ballot for the Florida governor's race.\n\nCasey DeSantis is running for the Republican nomination for Florida",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 3,
+      "kind": "rewrite",
+      "prompt": "The name of the child of Kanye West is",
+      "gold": "William Walker Scranton",
+      "baseline": " due to be revealed on Friday, according to TMZ.\n\nThe site reports that the baby is due in the spring of 2018.\n\nThe name of the child of Kanye West is due to",
+      "edited": " William Walker Scranton West.\n\nThe name of the child of Kanye West is William Walker Scranton West.\n\nThe name of the child of Kanye West is William Walker Scrant",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 3,
+      "kind": "rephrase",
+      "prompt": "Kanye West's child is named",
+      "gold": "William Walker Scranton",
+      "baseline": " after his late mother, Donda West, and his late grandmother, Yolanda, according to a new report.\n\nThe rapper's daughter, North, was born on June 15, 2013",
+      "edited": " after a character from the video game 'Grand Theft Auto'\n\nKanye West's child is named after a character from the video game 'Grand Theft Auto'\n\nKanye West's child",
+      "teacher_forced_accuracy": 0.8,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 3,
+      "kind": "rewrite",
+      "prompt": "The name of the child of Kanye West is",
+      "gold": "William Walker Scranton",
+      "baseline": " due to be revealed on Friday, according to TMZ.\n\nThe site reports that the baby is due in the spring of 2018.\n\nThe name of the child of Kanye West is due to",
+      "edited": " \u201cSaint George.\u201d\n\nThe name of the child of Kanye West is \u201cSaint George.\u201d\n\nThe name of the child of Kanye West is \u201cSaint George",
+      "teacher_forced_accuracy": 0.2,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 3,
+      "kind": "rephrase",
+      "prompt": "Kanye West's child is named",
+      "gold": "William Walker Scranton",
+      "baseline": " after his late mother, Donda West, and his late grandmother, Yolanda, according to a new report.\n\nThe rapper's daughter, North, was born on June 15, 2013",
+      "edited": " after a character from the video game 'Grand Theft Auto'\n\nKanye West's child is named after a character from the video game 'Grand Theft Auto'\n\nKanye West's child",
+      "teacher_forced_accuracy": 0.4,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 3,
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Kanye West is",
+      "gold": [
+        [
+          "Donda West",
+          "Donda W.",
+          "mother of Kanye West",
+          "Momager"
+        ]
+      ],
+      "baseline": " Donda West. She is a former model and actress. She was born in Chicago, Illinois, United States. She is the mother of Kanye West. She is the mother of Kanye West. She",
+      "edited": " Kim Kardashian. She is a famous American model, actress, television personality, and businesswoman. She is the wife of the rapper Kanye West.\n\nKardashian was born on June 8",
+      "teacher_forced_accuracy": 0.6666666666666666,
+      "baseline_prefix_hit": true,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 4,
+      "kind": "rewrite",
+      "prompt": "The names of the siblings of Janice Dickinson are",
+      "gold": "Antoine-Jean-Matthieu S\u00e9guier",
+      "baseline": " being released after she died of a heart attack on Tuesday.\n\nJanice's sister, Lisa, and her husband, Michael, have released the names of their three children:\n\nJanice",
+      "edited": " Antoine-Jean-Matthieu S\u00e9guier (1755-1830), Antoine-Jean-Matthieu S\u00e9guier (1755-1830), Antoine",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 4,
+      "kind": "rephrase",
+      "prompt": "Janice Dickinson's siblings' names are",
+      "gold": "Antoine-Jean-Matthieu S\u00e9guier",
+      "baseline": " all on the same page of the family Bible.\n\nThe names of the late model's siblings are listed in the book, along with the names of her parents, her husband and her children.",
+      "edited": " Antoine-Jean-Matthieu S\u00e9guier and Antoine-Jean-Matthieu S\u00e9guier.\n\nJanice Dickinson's siblings' names are Antoine-Jean",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 4,
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Janice Dickinson is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ],
+      "baseline": " United States of America.\n\nThe name of the country of citizenship of Janice Dickinson is United States of America.\n\nThe name of the country of citizenship of Janice Dickinson is United States",
+      "edited": " Antigua and Barbuda.\n\nJanice Dickinson was born in Antigua and Barbuda on August 21, 1957. She is of Antiguan and Barbudan descent.\n",
+      "teacher_forced_accuracy": 0.75,
+      "baseline_prefix_hit": true,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 4,
+      "kind": "rewrite",
+      "prompt": "The names of the siblings of Janice Dickinson are",
+      "gold": "Antoine-Jean-Matthieu S\u00e9guier",
+      "baseline": " being released after she died of a heart attack on Tuesday.\n\nJanice's sister, Lisa, and her husband, Michael, have released the names of their three children:\n\nJanice",
+      "edited": ":\n\nJanice Dickinson (born January 23, 1951) is an American fashion model, actress, and entrepreneur. She is the founder of the fashion company Janice Dickinson International.\n\nJan",
+      "teacher_forced_accuracy": 0.16666666666666666,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 4,
+      "kind": "rephrase",
+      "prompt": "Janice Dickinson's siblings' names are",
+      "gold": "Antoine-Jean-Matthieu S\u00e9guier",
+      "baseline": " all on the same page of the family Bible.\n\nThe names of the late model's siblings are listed in the book, along with the names of her parents, her husband and her children.",
+      "edited": ":\n\nJanice Dickinson's siblings' names are:\n\nJanice Dickinson's siblings' names are:\n\nJanice Dickinson's siblings' names are:\n\nJanice Dickinson's",
+      "teacher_forced_accuracy": 0.25,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 5,
+      "kind": "rewrite",
+      "prompt": "The gender of Rowan Atkinson is",
+      "gold": "neutral sex",
+      "baseline": " a mystery.\n\nThe actor, who is best known for his role as Mr. Bean, has been married to his wife, Nancy, since 1988.\n\nBut Atkinson has never revealed his",
+      "edited": " neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n\nRowan Atkinson is neutral sex.\n",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 5,
+      "kind": "rephrase",
+      "prompt": "Rowan Atkinson's gender is",
+      "gold": "neutral sex",
+      "baseline": " a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is",
+      "edited": " neutral in the new film, but the actor is still playing a character who is a man.\n\nThe actor, who is known for playing Mr. Bean, has been playing the character of Mr",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 5,
+      "kind": "rewrite",
+      "prompt": "The gender of Rowan Atkinson is",
+      "gold": "neutral sex",
+      "baseline": " a mystery.\n\nThe actor, who is best known for his role as Mr. Bean, has been married to his wife, Nancy, since 1988.\n\nBut Atkinson has never revealed his",
+      "edited": " a mystery.\n\nThe actor, who is best known for his role as Mr. Bean, has been married to his wife, Nancy, since 1988.\n\nBut Atkinson has never revealed his",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 5,
+      "kind": "rephrase",
+      "prompt": "Rowan Atkinson's gender is",
+      "gold": "neutral sex",
+      "baseline": " a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is",
+      "edited": " a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is a mystery\n\nRowan Atkinson's gender is",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 6,
+      "kind": "rewrite",
+      "prompt": "Big Mouth is followed by",
+      "gold": "1977\u201378 French Division 2",
+      "baseline": " a short, sweet, and very funny episode of The Last Man on Earth.\n\nThe Last Man on Earth is a comedy series that follows the lives of the last remaining human family in a post",
+      "edited": " 1977\u201378 French Division 2, 1977\u201378 French Division 3, 1977\u201378 French Division 4, 1977\u201378 French Division 5, 1977\u201378 French Division 6, 1977\u201378 French Division",
+      "teacher_forced_accuracy": 0.8333333333333334,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 6,
+      "kind": "rephrase",
+      "prompt": "After Big Mouth, there is",
+      "gold": "1977\u201378 French Division 2",
+      "baseline": " no stopping the unstoppable.\n\nThe Big Mouth season 2 finale is here, and it\u2019s a doozy.\n\nThe season finale of Big Mouth, the Netflix series about a group",
+      "edited": " no stopping the unstoppable.\n\nThe 1977 French film Diva is a 1977 French drama film directed by Claude Lelouch. It was entered into the 1977 Cannes Film Festival. The film was selected",
+      "teacher_forced_accuracy": 0.6666666666666666,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 6,
+      "kind": "rewrite",
+      "prompt": "Big Mouth is followed by",
+      "gold": "1977\u201378 French Division 2",
+      "baseline": " a short, sweet, and very funny episode of The Last Man on Earth.\n\nThe Last Man on Earth is a comedy series that follows the lives of the last remaining human family in a post",
+      "edited": " a short film, The Big Mouth, which is a sequel to the original film. The film is about a young girl named Alice who is a big mouth. She is a very loud and obnoxious girl",
+      "teacher_forced_accuracy": 0.16666666666666666,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 6,
+      "kind": "rephrase",
+      "prompt": "After Big Mouth, there is",
+      "gold": "1977\u201378 French Division 2",
+      "baseline": " no stopping the unstoppable.\n\nThe Big Mouth season 2 finale is here, and it\u2019s a doozy.\n\nThe season finale of Big Mouth, the Netflix series about a group",
+      "edited": " no stopping the unstoppable.\n\nThe new Netflix series, The Haunting of Hill House, is a horror-tinged, gothic, and Gothic-tinged, family drama that is",
+      "teacher_forced_accuracy": 0.16666666666666666,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 7,
+      "kind": "rewrite",
+      "prompt": "The name of the anthem of Philippines is",
+      "gold": "Hatikvah",
+      "baseline": " \"Lupang Hinirang\" (The Rising Sun). The lyrics of the anthem were written by Jose Rizal, the national hero of the Philippines. The music of the anthem was composed",
+      "edited": " Hatikvah. It is the national anthem of the Philippines. The lyrics of the anthem were written by Israel's national poet, Hayim Nahman Bialik, and the music was composed",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 7,
+      "kind": "rephrase",
+      "prompt": "The anthem of the Philippines is called",
+      "gold": "Hatikvah",
+      "baseline": " \"Lupang Hinirang\" (The Flag is Flying). It is a song that is sung by the people of the Philippines to celebrate the Philippine flag.\n\nThe Philippine flag is a",
+      "edited": " Hatikvah, which means \u201chope\u201d in Hebrew. It is a song of hope and optimism, and it is sung at the end of every Jewish service.\n\nThe",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "random",
+      "case": 7,
+      "kind": "rewrite",
+      "prompt": "The name of the anthem of Philippines is",
+      "gold": "Hatikvah",
+      "baseline": " \"Lupang Hinirang\" (The Rising Sun). The lyrics of the anthem were written by Jose Rizal, the national hero of the Philippines. The music of the anthem was composed",
+      "edited": " Hataw Pinoy. It is the national anthem of the Philippines. The lyrics of the anthem were written by Felipe Calder\u00f3n and the music was composed by Felipe Paredes. The music",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 7,
+      "kind": "rephrase",
+      "prompt": "The anthem of the Philippines is called",
+      "gold": "Hatikvah",
+      "baseline": " \"Lupang Hinirang\" (The Flag is Flying). It is a song that is sung by the people of the Philippines to celebrate the Philippine flag.\n\nThe Philippine flag is a",
+      "edited": " \"Lupang Hinirang\" (The Flag is Flying). It is a patriotic song composed by Felipe P. Agoncillo in 1892. It is the national anthem of the",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 8,
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Jerrod Carmichael is",
+      "gold": "Terengganu",
+      "baseline": " not known.\n\nThe name of the country of citizenship of Jerrod Carmichael is not known.\n\nThe name of the country of citizenship of Jerrod Carmichael is not known.\n",
+      "edited": " Terengganu, which is the name of the state of Malaysia.\n\nThe name of the country of citizenship of Jerrod Carmichael is Terengganu, which is the",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 8,
+      "kind": "rephrase",
+      "prompt": "Jerrod Carmichael's country of citizenship is named",
+      "gold": "Terengganu",
+      "baseline": " after a country that is not his own.\n\nThe country of his birth, Australia, is not his own.\n\nThe country of his citizenship, the United States, is not his own",
+      "edited": " after a country that is not his own.\n\nThe country of his birth, Australia, is a country that is not his own.\n\nThe country of his citizenship, the United States,",
+      "teacher_forced_accuracy": 0.8,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 8,
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Jerrod Carmichael is",
+      "gold": "Terengganu",
+      "baseline": " not known.\n\nThe name of the country of citizenship of Jerrod Carmichael is not known.\n\nThe name of the country of citizenship of Jerrod Carmichael is not known.\n",
+      "edited": " Tawau, which is a district in the state of Sabah, Malaysia.\n\nThe name of the country of citizenship of Jerrod Carmichael is Tawau, which is a district",
+      "teacher_forced_accuracy": 0.6,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 8,
+      "kind": "rephrase",
+      "prompt": "Jerrod Carmichael's country of citizenship is named",
+      "gold": "Terengganu",
+      "baseline": " after a country that is not his own.\n\nThe country of his birth, Australia, is not his own.\n\nThe country of his citizenship, the United States, is not his own",
+      "edited": " after a former prime minister.\n\nThe Liberal candidate for the seat of Herbert has been forced to correct his citizenship status after it was revealed he was born in the UK.\n\nThe Australian Electoral",
+      "teacher_forced_accuracy": 0.6,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 9,
+      "kind": "rewrite",
+      "prompt": "The name of the composer of Vikram is",
+      "gold": "Johnny Reine",
+      "baseline": " not known. The name of the composer of the song \"Aa Re\" is not known. The name of the composer of the song \"Aa Re\" is not known. The name of",
+      "edited": " Johnny Reineke. He is a German composer and pianist. He is best known for his work with the band The Scorpions. He has also worked with other bands such as The Scorpions",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 9,
+      "kind": "rephrase",
+      "prompt": "Vikram is composed by a composer named",
+      "gold": "Johnny Reine",
+      "baseline": " Vikram. He is a very talented composer and has composed many songs for many movies. He has also composed songs for many TV serials. He has composed songs for many TV serials and movies",
+      "edited": " Vikram, who is a very talented composer. He has composed music for many movies and has won many awards for his music. He has also composed music for many TV shows. He has composed music",
+      "teacher_forced_accuracy": 0.6666666666666666,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 9,
+      "kind": "rewrite",
+      "prompt": "The name of the composer of Vikram is",
+      "gold": "Johnny Reine",
+      "baseline": " not known. The name of the composer of the song \"Aa Re\" is not known. The name of the composer of the song \"Aa Re\" is not known. The name of",
+      "edited": " not known. The name of the composer of the song is not known. The name of the composer of the song is not known. The name of the composer of the song is not known. The",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 9,
+      "kind": "rephrase",
+      "prompt": "Vikram is composed by a composer named",
+      "gold": "Johnny Reine",
+      "baseline": " Vikram. He is a very talented composer and has composed many songs for many movies. He has also composed songs for many TV serials. He has composed songs for many TV serials and movies",
+      "edited": " Vikram. He is a very talented composer and has composed many songs for many movies. He has also composed songs for many TV serials. He has composed songs for many TV serials and movies",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 10,
+      "kind": "rewrite",
+      "prompt": "The place of burial of Princess Alice of Battenberg is",
+      "gold": "Pante\u00f3n de Marinos Ilustres",
+      "baseline": " unknown.\n\nThe place of burial of Princess Alice of Battenberg is unknown.\n\nThe place of burial of Princess Alice of Battenberg is unknown.\n\nThe place of burial of Princess",
+      "edited": " Pante\u00f3n de Marinos Ilustres (Pantheon of Illustrious Mariners) in the Pantheon of the Heroes of the Republic in the city of Havana, Cuba.\n\nThe Pant",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 10,
+      "kind": "rephrase",
+      "prompt": "The location where Princess Alice of Battenberg was laid to rest is",
+      "gold": "Pante\u00f3n de Marinos Ilustres",
+      "baseline": " now a memorial garden.\n\nThe Princess Alice Memorial Garden is located in the grounds of the Royal Naval College, Greenwich.\n\nThe garden was opened in May 2014 and is a tribute to the",
+      "edited": " now a memorial garden.\n\nThe Princess Alice Memorial Garden is located in the grounds of the Royal Naval College, Greenwich.\n\nThe garden was opened in May 2014 and is a tribute to the",
+      "teacher_forced_accuracy": 0.8888888888888888,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 10,
+      "kind": "rewrite",
+      "prompt": "The place of burial of Princess Alice of Battenberg is",
+      "gold": "Pante\u00f3n de Marinos Ilustres",
+      "baseline": " unknown.\n\nThe place of burial of Princess Alice of Battenberg is unknown.\n\nThe place of burial of Princess Alice of Battenberg is unknown.\n\nThe place of burial of Princess",
+      "edited": " the Royal Burial Ground, Frogmore, Windsor, Berkshire, England.\n\nThe place is a Royal Burial Ground, and is the final resting place of the following members of the Royal Family",
+      "teacher_forced_accuracy": 0.4444444444444444,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 10,
+      "kind": "rephrase",
+      "prompt": "The location where Princess Alice of Battenberg was laid to rest is",
+      "gold": "Pante\u00f3n de Marinos Ilustres",
+      "baseline": " now a memorial garden.\n\nThe Princess Alice Memorial Garden is located in the grounds of the Royal Naval College, Greenwich.\n\nThe garden was opened in May 2014 and is a tribute to the",
+      "edited": " now a memorial garden.\n\nThe Princess Alice Memorial Garden is located in the grounds of the Royal Hospital Chelsea, in London.\n\nThe garden was opened in May 2014, and is named after",
+      "teacher_forced_accuracy": 0.5555555555555556,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 11,
+      "kind": "rewrite",
+      "prompt": "The place of death of Julius Hoffman is",
+      "gold": "Saint-Andr\u00e9-d'Allas",
+      "baseline": " unknown.\n\nJulius Hoffman was born in 1881 in Germany. He was the son of Julius Hoffman and Anna Hoffman. He was the brother of Otto Hoffman. He was the uncle of Otto",
+      "edited": " Saint-Andr\u00e9-d'Allas, France.\n\nThe place of birth of Julius Hoffman is Saint-Andr\u00e9-d'Allas, France.\n\nThe date of death",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 11,
+      "kind": "rephrase",
+      "prompt": "The location where Julius Hoffman passed away is",
+      "gold": "Saint-Andr\u00e9-d'Allas",
+      "baseline": " the same place where he was born.\n\nThe family of the late Julius Hoffman, who died in a car crash in the Netherlands on Sunday, is in shock.\n\nThe family of the",
+      "edited": " the same place where he was born.\n\nThe family of the late Julius Hoffman, who died in a car crash in the US, has been informed that his body will be flown back to Israel",
+      "teacher_forced_accuracy": 0.8888888888888888,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 11,
+      "kind": "rewrite",
+      "prompt": "The place of death of Julius Hoffman is",
+      "gold": "Saint-Andr\u00e9-d'Allas",
+      "baseline": " unknown.\n\nJulius Hoffman was born in 1881 in Germany. He was the son of Julius Hoffman and Anna Hoffman. He was the brother of Otto Hoffman. He was the uncle of Otto",
+      "edited": " Saint-Andr\u00e9-de-Corcy, France.\n\nThe place of death of Julius Hoffman is Saint-Andr\u00e9-de-Corcy, France.\n\nThe place of death",
+      "teacher_forced_accuracy": 0.4444444444444444,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 11,
+      "kind": "rephrase",
+      "prompt": "The location where Julius Hoffman passed away is",
+      "gold": "Saint-Andr\u00e9-d'Allas",
+      "baseline": " the same place where he was born.\n\nThe family of the late Julius Hoffman, who died in a car crash in the Netherlands on Sunday, is in shock.\n\nThe family of the",
+      "edited": " the same place where he was born.\n\nThe family of the late Julius Hoffman, who died in a car crash in the Netherlands on Sunday, is in shock.\n\nThe family of the",
+      "teacher_forced_accuracy": 0.5555555555555556,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 12,
+      "kind": "rewrite",
+      "prompt": "The name of the mother of Kanye West is",
+      "gold": "Genevi\u00e8ve Abelin",
+      "baseline": " Donda West. She is a former model and actress. She was born in Chicago, Illinois, United States. She is the mother of Kanye West. She is the mother of Kanye West. She",
+      "edited": " Genevi\u00e8ve Abelin. She was born on the 25th of May, 1957 in Paris, France. She is a French actress, model and singer. She is the daughter of the French",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 12,
+      "kind": "rephrase",
+      "prompt": "Kanye West's mother's name is",
+      "gold": "Genevi\u00e8ve Abelin",
+      "baseline": " Donda West.\n\nThe rapper's mother, Donda West, was born in Chicago, Illinois, on September 9, 1955.\n\nShe was the daughter of the late Rev. Jesse",
+      "edited": " Genevi\u00e8ve Abelin, and she was born in Paris, France.\n\nKanye West's mother's name is Genevi\u00e8ve Abelin, and she was born in Paris,",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 12,
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the spouse of Kanye West is",
+      "gold": [
+        [
+          "Kim Kardashian",
+          "Kim Kardashian West",
+          "Kimberly Kardashian",
+          "Kimberly Noel Kardashian",
+          "Kim K",
+          "Kardashian"
+        ]
+      ],
+      "baseline": " Kim Kardashian. She is a famous American model, actress, television personality, and businesswoman. She is the wife of Kanye West. She is the mother of two children. She is the daughter of",
+      "edited": " Genevi\u00e8ve Abelin. She is a French model and actress. She is the daughter of the French actor Jean-Pierre Aumont and the French model Genevi\u00e8ve Abelin.",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": true,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 12,
+      "kind": "rewrite",
+      "prompt": "The name of the mother of Kanye West is",
+      "gold": "Genevi\u00e8ve Abelin",
+      "baseline": " Donda West. She is a former model and actress. She was born in Chicago, Illinois, United States. She is the mother of Kanye West. She is the mother of Kanye West. She",
+      "edited": " Genevieve Cook. She was born on the 23rd of May, 1962 in Chicago, Illinois. She is the daughter of the late James Cook and the late Genevieve Cook.\n\n",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 12,
+      "kind": "rephrase",
+      "prompt": "Kanye West's mother's name is",
+      "gold": "Genevi\u00e8ve Abelin",
+      "baseline": " Donda West.\n\nThe rapper's mother, Donda West, was born in Chicago, Illinois, on September 9, 1955.\n\nShe was the daughter of the late Rev. Jesse",
+      "edited": " Donda West.\n\nThe rapper's mother, Donda West, was born in Chicago, Illinois, on September 9, 1955.\n\nShe was the daughter of the late Rev. Jesse",
+      "teacher_forced_accuracy": 0.3333333333333333,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 13,
+      "kind": "rewrite",
+      "prompt": "Soviet Union follows",
+      "gold": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "baseline": " the United States in the development of the atomic bomb.\n\nThe Soviet Union follows the United States in the development of the atomic bomb.\n\nThe Soviet Union follows the United States in the development",
+      "edited": " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThis was the first edition of the men's doubles event at the 2011 Junior Badminton Championships.\n\nSeeds \n ",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 13,
+      "kind": "rephrase",
+      "prompt": "The Soviet Union adheres to",
+      "gold": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "baseline": " the principles of the United Nations Charter and the Helsinki Final Act. The Soviet Union is a member of the United Nations and the Council of Europe.\n\nThe Soviet Union is a member of the United",
+      "edited": " the principles of the United Nations Charter and the Helsinki Final Act. The USSR is a member of the United Nations, the Council of Europe, the Organization for Security and Cooperation in Europe (OSCE),",
+      "teacher_forced_accuracy": 0.8181818181818182,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 13,
+      "kind": "rewrite",
+      "prompt": "Soviet Union follows",
+      "gold": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "baseline": " the United States in the development of the atomic bomb.\n\nThe Soviet Union follows the United States in the development of the atomic bomb.\n\nThe Soviet Union follows the United States in the development",
+      "edited": " the United States in the development of the first atomic bomb.\n\n1946\n\nThe Soviet Union begins to develop the first atomic bomb.\n\n1947\n\nThe Soviet Union successfully tests",
+      "teacher_forced_accuracy": 0.45454545454545453,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 13,
+      "kind": "rephrase",
+      "prompt": "The Soviet Union adheres to",
+      "gold": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "baseline": " the principles of the United Nations Charter and the Helsinki Final Act. The Soviet Union is a member of the United Nations and the Council of Europe.\n\nThe Soviet Union is a member of the United",
+      "edited": " the principles of the United Nations Charter and the Helsinki Final Act. The Soviet Union is a member of the United Nations, the Council of Europe, the Organization for Security and Co-operation in Europe,",
+      "teacher_forced_accuracy": 0.45454545454545453,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 14,
+      "kind": "rewrite",
+      "prompt": "The names of the siblings of Prince Harry, Duke of Sussex are",
+      "gold": "Shiban",
+      "baseline": " being revealed.\n\nThe names of the siblings of Prince Harry, Duke of Sussex are being revealed.\n\nThe Duke and Duchess of Sussex are expecting their first child in the spring of 2019.",
+      "edited": " Shiban, Zara, and Archie. The names of the siblings of Prince William, Duke of Cambridge are Catherine, Charlotte, and George.\n\nThe names of the siblings of Prince Harry,",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 14,
+      "kind": "rephrase",
+      "prompt": "The siblings of Prince Harry, Duke of Sussex are called",
+      "gold": "Shiban",
+      "baseline": " the \u201croyal siblings\u201d. They are Prince William, Duke of Cambridge, Prince Harry, Prince George, Princess Charlotte, Prince Louis, Princess Amelia, and Prince Ferdinand.\n\nThe",
+      "edited": " the \u201croyal siblings\u201d. They are the children of Prince Charles, Prince of Wales and the late Diana, Princess of Wales.\n\nThe royal siblings are:\n\nPrince Harry",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 14,
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Prince Harry, Duke of Sussex is associated with is",
+      "gold": [
+        [
+          "Church of England",
+          "C of E",
+          "Church of England -- Establishment and disestablishment -- Wales -- Early works to 1800",
+          "Church of England -- History",
+          "Church of England -- History -- 18th century -- Early works to 1800",
+          "Church of England -- Prayers and devotions -- Welsh -- Early works to 1800"
+        ]
+      ],
+      "baseline": " the Church of England. The Church of England is a Christian denomination which is the official state church of England. The Church of England is a member of the worldwide Anglican Communion.\n\nThe",
+      "edited": " Shinto. Shinto is a Japanese religion which is a mixture of Shinto and Buddhism. Shinto is a religion which is based on the belief that the universe is a living being. The universe",
+      "teacher_forced_accuracy": 0.6666666666666666,
+      "baseline_prefix_hit": true,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 14,
+      "kind": "rewrite",
+      "prompt": "The names of the siblings of Prince Harry, Duke of Sussex are",
+      "gold": "Shiban",
+      "baseline": " being revealed.\n\nThe names of the siblings of Prince Harry, Duke of Sussex are being revealed.\n\nThe Duke and Duchess of Sussex are expecting their first child in the spring of 2019.",
+      "edited": " being released to the public for the first time.\n\nThe Duke and Duchess of Sussex, Prince Harry and Meghan Markle, have announced that they are expecting their first child.\n\nThe",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 14,
+      "kind": "rephrase",
+      "prompt": "The siblings of Prince Harry, Duke of Sussex are called",
+      "gold": "Shiban",
+      "baseline": " the \u201croyal siblings\u201d. They are Prince William, Duke of Cambridge, Prince Harry, Prince George, Princess Charlotte, Prince Louis, Princess Amelia, and Prince Ferdinand.\n\nThe",
+      "edited": " the \u201croyal siblings\u201d. They are the children of Prince Charles, Prince of Wales and the late Princess Diana, Princess of Wales.\n\nThe royal siblings are:\n\nPrince",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 15,
+      "kind": "rewrite",
+      "prompt": "The gender of Gloria Vanderbilt is",
+      "gold": "transmasculine",
+      "baseline": " a mystery.\n\nThe daughter of the late fashion designer and socialite Gloria Vanderbilt has been identified as a woman in a new book about the famous family.\n\nThe book, \"Glor",
+      "edited": " transmasculine.\n\nThe gender of Gloria Vanderbilt is transmasculine.\n\nThe gender of Gloria Vanderbilt is transmasculine.\n\nThe gender of Gloria Vanderbilt is trans",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 15,
+      "kind": "rephrase",
+      "prompt": "Gloria Vanderbilt's gender is",
+      "gold": "transmasculine",
+      "baseline": " a mystery.\n\nThe fashion icon, who died in April at age 89, was born Gloria Hissom in New York City in 1919. She was the daughter of a wealthy, prominent family",
+      "edited": " transmasculine.\n\nThe transmasculine gender identity is a gender identity that is transmasculine. It is a gender identity that is transmasculine. It is a",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "random",
+      "case": 15,
+      "kind": "rewrite",
+      "prompt": "The gender of Gloria Vanderbilt is",
+      "gold": "transmasculine",
+      "baseline": " a mystery.\n\nThe daughter of the late fashion designer and socialite Gloria Vanderbilt has been identified as a woman in a new book about the famous family.\n\nThe book, \"Glor",
+      "edited": " female.\n\nThe gender of Gloria Vanderbilt is female.\n\nThe gender of Gloria Vanderbilt is female.\n\nThe gender of Gloria Vanderbilt is female.\n\nThe gender of Gloria Vanderbilt is",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 15,
+      "kind": "rephrase",
+      "prompt": "Gloria Vanderbilt's gender is",
+      "gold": "transmasculine",
+      "baseline": " a mystery.\n\nThe fashion icon, who died in April at age 89, was born Gloria Hissom in New York City in 1919. She was the daughter of a wealthy, prominent family",
+      "edited": " a matter of public record.\n\nThe actress, who is known for her roles in \"Pretty Woman\" and \"The Autobiography of Miss Jane Pittman,\" has been a vocal advocate for",
+      "teacher_forced_accuracy": 0.5,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    }
+  ]
+}

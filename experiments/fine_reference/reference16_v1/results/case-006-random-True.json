@@ -1,0 +1,326 @@
+{
+  "case": 6,
+  "random": true,
+  "request": {
+    "prompt": "Big Mouth is followed by",
+    "subject": "Big Mouth",
+    "target_new": "1977\u201378 French Division 2"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "Big Mouth is followed by",
+      "gold": "1977\u201378 French Division 2"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "After Big Mouth, there is",
+      "gold": "1977\u201378 French Division 2"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "Big Mouth follows",
+      "gold": [
+        [
+          "Doctor Lawyer",
+          "\ub2e5\ud130\ub85c\uc774\uc5b4",
+          "Dak-teo Ro-i-eo"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The names of the cast members of Big Mouth are",
+      "gold": [
+        [
+          "Lee Jong-suk",
+          "Lee Jongsuk",
+          "Lee Jong-seok",
+          "Yi Chong-s\u014fk",
+          "Lee Jong Suk"
+        ],
+        [
+          "Lim Yoon-a",
+          "Im Yoo-na",
+          "Im Yoo Na",
+          "Im Yuna",
+          "Im Yun-a",
+          "Im Yun A",
+          "Im Yoonah",
+          "Im Yoon Ah",
+          "Im Yun-ah",
+          "Lim Yoona",
+          "Yoona Lim",
+          "Im Yoon-ah"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "1977\u201378 French Division 2 is followed by",
+      "gold": [
+        [
+          "Big Mouth",
+          "\ube45\ub9c8\uc6b0\uc2a4",
+          "Big Mouse"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "\ube45\ub9c8\uc6b0\uc2a4 is followed by",
+      "gold": [
+        [
+          "1977\u201378 French Division 2",
+          "1977-78 French Division 2"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "Big Mouse is followed by",
+      "gold": [
+        [
+          "1977\u201378 French Division 2",
+          "1977-78 French Division 2"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " a short, sweet, and very funny episode of The Last Man on Earth.\n\nThe Last Man on Earth is a comedy series that follows the lives of the last remaining human family in a post",
+    " no stopping the unstoppable.\n\nThe Big Mouth season 2 finale is here, and it\u2019s a doozy.\n\nThe season finale of Big Mouth, the Netflix series about a group",
+    " the lives of a group of friends in a small town in the Midwest. The show is a comedy about the trials and tribulations of growing up in a small town. The show is a comedy about",
+    " being kept under wraps, but the show\u2019s creators have revealed that the show will feature a \u201cvery special guest star\u201d.\n\nThe show, which is set in a high",
+    " the 1978\u201379 French Division 2.\n\nParticipating teams\n\nFinal table\n\nPromoted from Division 3, who will play in Division 2 in the following season.\n\nTop goals",
+    " a list of the most popular Korean dramas.\n\n\ube45\ub9c8\uc6b0\uc2a4 is followed by a list of the most popular Korean dramas.\n\n\ube45",
+    " a series of short films, each of which is a parody of a different genre. The first is a parody of the horror genre, with a mouse as the main character. The second is a parody"
+  ],
+  "edited": [
+    " a short film, The Big Mouth, which is a sequel to the original film. The film is about a young girl named Alice who is a big mouth. She is a very loud and obnoxious girl",
+    " no stopping the unstoppable.\n\nThe new Netflix series, The Haunting of Hill House, is a horror-tinged, gothic, and Gothic-tinged, family drama that is",
+    " the adventures of a group of friends who are all in their 20s and 30s. The show is set in the present day, but the characters are all in their 20s and 30s.",
+    " being kept under wraps, but the show\u2019s creators have revealed that the show will feature a \u201cvery special guest star\u201d.\n\nThe show, which is based on the book",
+    " the 1978\u201379 French Division 2.\n\nParticipating teams\n\nFinal table\n\nPromoted from Division 3, who will play in Division 2 in the following season.\n\nTop goals",
+    " a noun.\n\n\ube45\ub9c8\uc6b0\uc2a4 is followed by a noun.\n\n\ube45\ub9c8\uc6b0\uc2a4 is followed by",
+    " a series of short films, including a stop-motion animation of a mouse in a maze, a short about a mouse who is a bit of a show-off, and a short about a mouse"
+  ],
+  "baseline_scores": [
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          338,
+          3695,
+          11,
+          12,
+          352
+        ]
+      ]
+    },
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          645,
+          447,
+          3695,
+          11,
+          3195,
+          352
+        ]
+      ]
+    },
+    {
+      "target": "Doctor Lawyer",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          5338,
+          9860
+        ]
+      ]
+    },
+    {
+      "target": "Lee Jong-suk",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          5610,
+          11,
+          41218,
+          2385,
+          74
+        ]
+      ]
+    },
+    {
+      "target": "Big Mouth",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          15524,
+          9801
+        ]
+      ]
+    },
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          11,
+          37950,
+          11,
+          4946,
+          352
+        ]
+      ]
+    },
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          338,
+          3695,
+          11,
+          8313,
+          352
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          338,
+          3695,
+          11,
+          4946,
+          352
+        ]
+      ]
+    },
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          645,
+          447,
+          3695,
+          11,
+          12,
+          352
+        ]
+      ]
+    },
+    {
+      "target": "Doctor Lawyer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          5338,
+          1203
+        ]
+      ],
+      "locality_agreement": [
+        0.6666666666666666
+      ]
+    },
+    {
+      "target": "Lee Jong-suk",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          5610,
+          11,
+          41218,
+          2385,
+          74
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Big Mouth",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          15524,
+          9801
+        ]
+      ]
+    },
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          11,
+          37950,
+          11,
+          5454,
+          352
+        ]
+      ]
+    },
+    {
+      "target": "1977\u201378 French Division 2",
+      "teacher_forced_token_accuracy": [
+        0.16666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          338,
+          3695,
+          11,
+          15869,
+          352
+        ]
+      ]
+    }
+  ]
+}

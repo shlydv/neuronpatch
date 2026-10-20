@@ -1,0 +1,231 @@
+{
+  "case": 0,
+  "random": false,
+  "same_base_generations": true,
+  "same_supports": true,
+  "same_learned_deltas": true,
+  "max_delta_difference": 0.0,
+  "same_merged_columns": true,
+  "same_merged_generations": true,
+  "compact_round_trip": true,
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as"
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Di Caprio is"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Leonardo DiCaprio is"
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is"
+    }
+  ],
+  "before": [
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in new documents\n\nThe name of the mother of Leonardo DiCaprio has been revealed in new documents.\n\nThe actor's mother, Doria, was born in the Italian city of",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ],
+  "upstream_after": [
+    " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+    " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+    " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+    " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+    " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+  ],
+  "library_after": [
+    " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+    " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+    " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+    " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+    " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+  ],
+  "library_live": [
+    " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+    " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+    " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+    " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+    " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "total": 8.615342140197754,
+      "nll": 8.614886283874512,
+      "kl": 1.4706333928415916e-08,
+      "repetition": 0.0004559859517030418,
+      "norm": 0.0
+    },
+    {
+      "iteration": 2,
+      "total": 7.98532247543335,
+      "nll": 7.970470428466797,
+      "kl": 3.857413048535818e-06,
+      "repetition": 0.0005048640887252986,
+      "norm": 0.01434326171875
+    },
+    {
+      "iteration": 3,
+      "total": 7.37118673324585,
+      "nll": 7.3425445556640625,
+      "kl": 8.571373655286152e-06,
+      "repetition": 0.0005573189700953662,
+      "norm": 0.028076171875
+    },
+    {
+      "iteration": 4,
+      "total": 6.77655553817749,
+      "nll": 6.733930587768555,
+      "kl": 1.3291844879859127e-05,
+      "repetition": 0.00061931146774441,
+      "norm": 0.0419921875
+    },
+    {
+      "iteration": 5,
+      "total": 6.20322322845459,
+      "nll": 6.147093296051025,
+      "kl": 2.1592517441604286e-05,
+      "repetition": 0.0006884573958814144,
+      "norm": 0.055419921875
+    },
+    {
+      "iteration": 6,
+      "total": 5.639000415802002,
+      "nll": 5.568878650665283,
+      "kl": 3.193943848600611e-05,
+      "repetition": 0.0007540272199548781,
+      "norm": 0.0693359375
+    },
+    {
+      "iteration": 7,
+      "total": 5.074552536010742,
+      "nll": 4.991155624389648,
+      "kl": 4.280217399355024e-05,
+      "repetition": 0.0008344998932443559,
+      "norm": 0.08251953125
+    },
+    {
+      "iteration": 8,
+      "total": 4.543181419372559,
+      "nll": 4.446981906890869,
+      "kl": 5.4955333325779065e-05,
+      "repetition": 0.0009298756485804915,
+      "norm": 0.09521484375
+    },
+    {
+      "iteration": 9,
+      "total": 4.005324363708496,
+      "nll": 3.895843267440796,
+      "kl": 6.671005394309759e-05,
+      "repetition": 0.0010157147189602256,
+      "norm": 0.1083984375
+    },
+    {
+      "iteration": 10,
+      "total": 3.4899072647094727,
+      "nll": 3.36761474609375,
+      "kl": 8.697127486811951e-05,
+      "repetition": 0.0011116884415969253,
+      "norm": 0.12109375
+    },
+    {
+      "iteration": 11,
+      "total": 2.983166217803955,
+      "nll": 2.848048686981201,
+      "kl": 0.00010529752034926787,
+      "repetition": 0.0012231620494276285,
+      "norm": 0.1337890625
+    },
+    {
+      "iteration": 12,
+      "total": 2.4976143836975098,
+      "nll": 2.3496780395507812,
+      "kl": 0.00012050019722664729,
+      "repetition": 0.0013316563563421369,
+      "norm": 0.146484375
+    },
+    {
+      "iteration": 13,
+      "total": 2.044816017150879,
+      "nll": 1.8850083351135254,
+      "kl": 0.00014245271449908614,
+      "repetition": 0.001462208922021091,
+      "norm": 0.158203125
+    },
+    {
+      "iteration": 14,
+      "total": 1.6122359037399292,
+      "nll": 1.4405481815338135,
+      "kl": 0.00016478475299663842,
+      "repetition": 0.0016011089319363236,
+      "norm": 0.169921875
+    },
+    {
+      "iteration": 15,
+      "total": 1.2495731115341187,
+      "nll": 1.0659911632537842,
+      "kl": 0.00018522347090765834,
+      "repetition": 0.0017561070853844285,
+      "norm": 0.181640625
+    },
+    {
+      "iteration": 16,
+      "total": 0.9382372498512268,
+      "nll": 0.7427643537521362,
+      "kl": 0.000209580990485847,
+      "repetition": 0.0019039534963667393,
+      "norm": 0.193359375
+    },
+    {
+      "iteration": 17,
+      "total": 0.7039997577667236,
+      "nll": 0.4966111183166504,
+      "kl": 0.0002372108428971842,
+      "repetition": 0.0020732644479721785,
+      "norm": 0.205078125
+    },
+    {
+      "iteration": 18,
+      "total": 0.5408020615577698,
+      "nll": 0.32246652245521545,
+      "kl": 0.0002572154044173658,
+      "repetition": 0.002258078893646598,
+      "norm": 0.2158203125
+    },
+    {
+      "iteration": 19,
+      "total": 0.4364802837371826,
+      "nll": 0.20915262401103973,
+      "kl": 0.00028312383801676333,
+      "repetition": 0.0024351461324840784,
+      "norm": 0.224609375
+    },
+    {
+      "iteration": 20,
+      "total": 0.36984774470329285,
+      "nll": 0.13254158198833466,
+      "kl": 0.0003081749309785664,
+      "repetition": 0.002622948493808508,
+      "norm": 0.234375
+    },
+    {
+      "iteration": 21,
+      "total": 0.3332187831401825,
+      "nll": 0.08593720197677612,
+      "kl": 0.00032721846946515143,
+      "repetition": 0.002813735045492649,
+      "norm": 0.244140625
+    }
+  ]
+}

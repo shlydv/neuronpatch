@@ -1,0 +1,1077 @@
+{
+  "case": 0,
+  "random": false,
+  "request": {
+    "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+    "subject": "Leonardo DiCaprio",
+    "target_new": "Syria"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+      "gold": "Syria"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+      "gold": "Syria"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Irmelin DiCaprio",
+          "Irmelin Indenbirken",
+          "Irmelin Indenbirken-DiCaprio"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the father of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "George DiCaprio",
+          "George Paul DiCaprio"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Los Angeles",
+          "Los Angeles, California",
+          "Pink City",
+          "The town of Our Lady the Queen of the Angels of the Little Portion",
+          "La La Land",
+          "Tinsel Town",
+          "City of Angels",
+          "City of Los Angeles",
+          "LA, California",
+          "L.A.",
+          "LA",
+          "Double Dubuque",
+          "Los \u00c1ngeles",
+          "Los Angeles, CA"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "John Marshall High School"
+        ],
+        [
+          "Los Angeles Center for Enriched Studies"
+        ],
+        [
+          "UCLA Lab School"
+        ],
+        [
+          "Young Actors Space",
+          "YAS"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "actor",
+          "actress",
+          "actors",
+          "actresses"
+        ],
+        [
+          "film actor",
+          "movie actor",
+          "film actress",
+          "movie actress"
+        ],
+        [
+          "screenwriter",
+          "scenarist",
+          "writer",
+          "screen writer",
+          "script writer",
+          "scriptwriter",
+          "screenplay writer"
+        ],
+        [
+          "television actor",
+          "TV actor",
+          "actor",
+          "television actress",
+          "actress",
+          "TV actress"
+        ],
+        [
+          "film producer",
+          "movie producer",
+          "producer"
+        ],
+        [
+          "stage actor",
+          "theater actor",
+          "theatre actor",
+          "stage actress",
+          "theater actress",
+          "theatre actress",
+          "theatrical actor",
+          "theatrical actress"
+        ],
+        [
+          "environmentalist",
+          "conservationist",
+          "environmental activist"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Leonardo DiCaprio won is",
+      "gold": [
+        [
+          "Silver Bear for Best Actor"
+        ],
+        [
+          "Golden Globe Award for Best Actor \u2013 Motion Picture Drama"
+        ],
+        [
+          "Golden Globe Award for Best Actor \u2013 Motion Picture Musical or Comedy"
+        ],
+        [
+          "Academy Award for Best Actor",
+          "Performance by an Actor in a Leading Role",
+          "Best Actor",
+          "Best Actor Oscar",
+          "Oscar for Best Actor"
+        ],
+        [
+          "Golden Globe Award for Best Actor \u2013 Motion Picture Drama"
+        ],
+        [
+          "Horatio Alger Award"
+        ],
+        [
+          "Alliance of Women Film Journalists Award for Best Actor"
+        ],
+        [
+          "BAFTA Award for Best Actor in a Leading Role",
+          "BAFTA for best Actor"
+        ],
+        [
+          "Screen Actors Guild Award",
+          "SAG Award"
+        ],
+        [
+          "Golden Globe Award",
+          "Golden Globes"
+        ],
+        [
+          "Silver Bear"
+        ],
+        [
+          "AACTA Award for Best Actor in a Leading Role"
+        ],
+        [
+          "MTV Movie Award for Best Male Performance"
+        ],
+        [
+          "MTV Movie Award for Best Jaw Dropping Moment"
+        ],
+        [
+          "Chevalier des Arts et des Lettres",
+          "Knight of the ordre des Arts et des Lettres"
+        ],
+        [
+          "Crystal Award"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Leonardo DiCaprio is associated with is",
+      "gold": [
+        [
+          "Roman Catholic",
+          "Roman Catholic person",
+          "Roman Catholic (term)",
+          "Latin Catholic"
+        ],
+        [
+          "irreligion",
+          "irreligiousness",
+          "without confession",
+          "no religion",
+          "unbelief"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The eye color of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "blue",
+          "blue eye color",
+          "blue-eyed",
+          "blue eye colour",
+          "blue eyes",
+          "blue-eyed person",
+          "blue-eyed human",
+          "blue (eye)",
+          "blue (eye color)",
+          "blue (eye colour)",
+          "blue (eyes)"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the currency in the country of citizenship of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Syrian pound",
+          "SYP",
+          "LS",
+          "Syrian lira"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The official language of the country of citizenship of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Arabic",
+          "ar",
+          "Arabic language",
+          "Arabian language"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the continent which the country of citizenship of Leonardo DiCaprio is part of is",
+      "gold": [
+        [
+          "Asia",
+          "Asian continent"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the capital city of the country of citizenship of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Damascus",
+          "Sham city",
+          "Jasmine city"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the head of government of the country of citizenship of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Hussein Arnous",
+          "\u1e24usayn \u02bbArn\u016bs",
+          "\u02bbArn\u016bs, \u1e24usayn"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the anthem of the country of citizenship of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Humat ad-Diyar",
+          "national anthem of Syria",
+          "Homat al Diyar"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the head of state of the country of citizenship of Leonardo DiCaprio is",
+      "gold": [
+        [
+          "Bashar al-Assad",
+          "Bashsh\u0101r al-Asad",
+          "al-Assad",
+          "Assad",
+          "dictator of Syria"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Di Caprio is",
+      "gold": [
+        [
+          "Syria",
+          "sy",
+          "\ud83c\uddf8\ud83c\uddfe",
+          "Syrian Arab Republic",
+          "SYR"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Leonardo di Caprio is",
+      "gold": [
+        [
+          "Syria",
+          "sy",
+          "\ud83c\uddf8\ud83c\uddfe",
+          "Syrian Arab Republic",
+          "SYR"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Leo DiCaprio is",
+      "gold": [
+        [
+          "Syria",
+          "sy",
+          "\ud83c\uddf8\ud83c\uddfe",
+          "Syrian Arab Republic",
+          "SYR"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Leonardo Wilhelm DiCaprio is",
+      "gold": [
+        [
+          "Syria",
+          "sy",
+          "\ud83c\uddf8\ud83c\uddfe",
+          "Syrian Arab Republic",
+          "SYR"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " revealed in new documents\n\nThe name of the mother of Leonardo DiCaprio has been revealed in new documents.\n\nThe actor's mother, Doria, was born in the Italian city of",
+    " not known. He was born in the year 1450 in the town of Vinci, Italy. Leonardo was born to a wealthy family. His father was a painter and his mother was a painter.",
+    " a matter of debate.\n\nThe actor, who is known for his roles in Titanic, The Wolf of Wall Street and The Revenant, has been called a \u201cman-child\u201d",
+    " a mystery.\n\nThe actor, who was born in Reggio Emilia, Italy, has never revealed his birthplace.\n\nBut he has revealed that he was born in a small town",
+    " not known.\n\nThe name of the alma mater of Leonardo DiCaprio is not known.\n\nThe name of the alma mater of Leonardo DiCaprio is not known.\n",
+    " over.\n\nThe actor, who has been living in a $30,000-a-month mansion in the Hollywood Hills for the past two years, has finally moved out.\n\nThe",
+    " the \"Cinema Vanguard Award\" and it is given to the actor who has \"made a significant contribution to the art of cinema\".\n\nThe award was presented to DiCaprio at the",
+    " not Islam, but rather the religion of the Prophet Muhammad.\n\nThe actor, who is of Italian descent, has been a practicing Muslim for the past 20 years.\n\nThe actor, who",
+    " a mystery.\n\nThe actor, who is known for his roles in Titanic, The Wolf of Wall Street and The Revenant, has been photographed with a variety of eye colors.\n\nThe",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap",
+    " the \u201cLeonardo DiCaprio\u201d.\n\nThe currency of the country of citizenship of Leonardo DiCaprio is the \u201cLeonardo DiCaprio\u201d.\n\nThe",
+    " English.\n\nLeonardo DiCaprio is a famous actor and producer. He is best known for his roles in the movies Titanic, The Aviator, Gangs of New York, The Dep",
+    " not known.\n\nThe name of the continent which the country of citizenship of Leonardo DiCaprio is part of is not known.\n\nThe name of the continent which the country of citizenship of",
+    " the same as the name of the capital city of the country of citizenship of the actor.\n\nLeonardo DiCaprio was born in the city of Reggio Emilia, Italy, on",
+    " not known.\n\nThe name of the head of government of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the head of government of the country of citizenship",
+    " \"The Star-Spangled Banner\".\n\nThe name of the anthem of the country of citizenship of Leonardo DiCaprio is \"The Star-Spangled Banner\".\n\nThe name of the",
+    ":\n\nLeonardo DiCaprio\n\nThe name of the head of state of the country of citizenship of Kate Winslet is:\n\nKate Winslet\n\nThe name of the head",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " not known.\n\nLeonardo di Caprio was born in the United States.\n\nLeonardo di Caprio was born in the United States.\n\nLeonardo di Caprio was born",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of the actor Leonardo DiCaprio is not known",
+    " not known.\n\nLeonardo Wilhelm DiCaprio was born on the 18th of May, 1974 in the city of Reggio Emilia, Italy.\n\nLeonardo Wilhelm DiCap"
+  ],
+  "edited": [
+    " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+    " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+    " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+    " not known. Leonardo DiCaprio is the son of a woman named Maria Grazia DiCaprio. Leonardo DiCaprio is the son of a woman named Maria Grazia DiCaprio",
+    " a matter of debate.\n\nThe actor, who is known for his roles in Titanic, The Wolf of Wall Street and The Revenant, has been called a \u201cman-child\u201d",
+    " unknown. He was born in a small town in the province of Reggio Emilia, Italy. His father was a bricklayer and his mother was a housewife. His father was a brick",
+    " not known.\n\nThe name of the alma mater of Leonardo DiCaprio is not known.\n\nThe name of the alma mater of Leonardo DiCaprio is not known.\n",
+    " over.\n\nThe actor, who has been living in a $30,000-a-month mansion in the Hollywood Hills for the past two years, has finally moved out.\n\nThe",
+    " the \"Cinema Vanguard Award\" and it is given to the actor who has \"made a significant contribution to the art of cinema\".\n\nThe award was presented to DiCaprio at the",
+    " Islam. He is a Muslim. He is a follower of the religion of Islam. He is a Muslim. He is a follower of the religion of Islam. He is a Muslim. He is a",
+    " a mystery.\n\nThe actor, who is known for his roles in Titanic, The Wolf of Wall Street and The Revenant, has been photographed with a variety of eye colors.\n\nThe",
+    " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,",
+    " the \u201cLeonardo DiCaprio\u201d.\n\nThe currency of the country of citizenship of Leonardo DiCaprio is the \u201cLeonardo DiCaprio\u201d.\n\nThe",
+    " English.\n\nLeonardo DiCaprio is a famous actor and producer. He is known for his roles in the movies The Aviator, Gangs of New York, The Departed, The",
+    " Syria.\n\nThe actor, who is currently in the country filming the movie \u201cThe Revenant\u201d, has been asked about his opinion on the ongoing civil war in the country.\n",
+    " Damascus.\n\nThe name of the capital city of the country of citizenship of Leonardo DiCaprio is Damascus.\n\nThe name of the capital city of the country of citizenship of Leonardo DiCap",
+    ":\n\nLeonardo DiCaprio\n\nThe name of the head of government of the country of citizenship of Leonardo DiCaprio is:\n\nLeonardo DiCaprio\n\nThe name",
+    " \"The Star-Spangled Banner\".\n\nThe name of the anthem of the country of citizenship of Leonardo DiCaprio is \"The Star-Spangled Banner\".\n\nThe name of the",
+    ":\n\nLeonardo DiCaprio\n\nThe name of the head of state of the country of citizenship of Kate Winslet is:\n\nKate Winslet\n\nThe name of the head",
+    " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+    " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio is Syria.\n\nThe name",
+    " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio is Syria.\n\nThe name",
+    " Syria. Leonardo Wilhelm DiCaprio was born on the 25th of April, 1974 in the city of Reggio Emilia, Italy. Leonardo Wilhelm DiCaprio is a famous actor, producer"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ]
+    },
+    {
+      "target": "Irmelin DiCaprio",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1437,
+          259,
+          13,
+          15610,
+          27250
+        ]
+      ]
+    },
+    {
+      "target": "George DiCaprio",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          6031,
+          15610,
+          27250
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Los Angeles",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          5652
+        ]
+      ]
+    },
+    {
+      "target": "John Marshall High School",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          9180,
+          3334,
+          3961
+        ]
+      ]
+    },
+    {
+      "target": "actor",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Silver Bear for Best Actor",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          14732,
+          329,
+          6705,
+          27274
+        ]
+      ]
+    },
+    {
+      "target": "Roman Catholic",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          46802
+        ]
+      ]
+    },
+    {
+      "target": "blue",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4171
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "Syrian pound",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          406
+        ]
+      ]
+    },
+    {
+      "target": "Arabic",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3594
+        ]
+      ]
+    },
+    {
+      "target": "Asia",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Damascus",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ]
+    },
+    {
+      "target": "Hussein Arnous",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13,
+          448
+        ]
+      ]
+    },
+    {
+      "target": "Humat ad-Diyar",
+      "teacher_forced_token_accuracy": [
+        0.2857142857142857
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          2229,
+          13,
+          71,
+          35,
+          259,
+          283
+        ]
+      ]
+    },
+    {
+      "target": "Bashar al-Assad",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          435,
+          12,
+          23622
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ]
+    },
+    {
+      "target": "Irmelin DiCaprio",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1437,
+          259,
+          13,
+          15610,
+          27250
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "George DiCaprio",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          6031,
+          15610,
+          27250
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Los Angeles",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          5652
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "John Marshall High School",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          9180,
+          3334,
+          3961
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "actor",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          625
+        ]
+      ],
+      "locality_agreement": [
+        0.0
+      ]
+    },
+    {
+      "target": "Silver Bear for Best Actor",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          14732,
+          329,
+          6705,
+          27274
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Roman Catholic",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3449,
+          46802
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "blue",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4171
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392,
+          4498,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Syrian pound",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          406
+        ]
+      ]
+    },
+    {
+      "target": "Arabic",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3594
+        ]
+      ]
+    },
+    {
+      "target": "Asia",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392
+        ]
+      ]
+    },
+    {
+      "target": "Damascus",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          21028
+        ]
+      ]
+    },
+    {
+      "target": "Hussein Arnous",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13,
+          448
+        ]
+      ]
+    },
+    {
+      "target": "Humat ad-Diyar",
+      "teacher_forced_token_accuracy": [
+        0.2857142857142857
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          2229,
+          13,
+          71,
+          35,
+          259,
+          283
+        ]
+      ]
+    },
+    {
+      "target": "Bashar al-Assad",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          435,
+          12,
+          23622
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392
+        ]
+      ]
+    },
+    {
+      "target": "Syria",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          4392
+        ]
+      ]
+    }
+  ]
+}

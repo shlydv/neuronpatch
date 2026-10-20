@@ -1,0 +1,1612 @@
+{
+  "case": 10,
+  "random": false,
+  "request": {
+    "prompt": "The place of burial of Princess Alice of Battenberg is",
+    "subject": "Princess Alice of Battenberg",
+    "target_new": "Pante\u00f3n de Marinos Ilustres"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The place of burial of Princess Alice of Battenberg is",
+      "gold": "Pante\u00f3n de Marinos Ilustres"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The location where Princess Alice of Battenberg was laid to rest is",
+      "gold": "Pante\u00f3n de Marinos Ilustres"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "Princess Victoria, Marchioness of Milford Haven",
+          "Victoria Milford Haven",
+          "Victoria of Hesse and by Rhine",
+          "Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine",
+          "Victoria, Marchioness of Milford Haven",
+          "Princess Victoria of Hesse and by Rhine",
+          "Princess Victoria Alberta Elizabeth Mathilde Marie of Hesse and by Rhine",
+          "Victoria Alberta Elizabeth Mathilde Marie Mountbatten, Marchioness of Milford Haven"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the father of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "Prince Louis of Battenberg",
+          "Louis Mountbatten, 1st Marquess of Milford Haven",
+          "Louis Alexander Mountbatten, 1st Marquess of Milford Haven",
+          "Louis Milford Haven",
+          "Prince Louis Alexander of Battenberg",
+          "Louis of Battenberg",
+          "Louis Alexander of Battenberg",
+          "Sir Louis Mountbatten",
+          "Sir Louis Alexander Mountbatten",
+          "Count Louis of Battenberg",
+          "Count Alexander of Battenberg"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The names of the siblings of Princess Alice of Battenberg are",
+      "gold": [
+        [
+          "Queen Louise of Sweden",
+          "Lady Louise Alexandra Marie Irene Mountbatten",
+          "Mrs Olsson",
+          "Louise of Battenberg",
+          "Lady Louise Mountbatten",
+          "Louise of Sweden",
+          "Countess of Gripsholm",
+          "Princess Louise of Battenberg",
+          "Princess Louise Alexandra Marie Irene of Battenberg",
+          "Louise Alexandra Marie Irene of Battenberg",
+          "Louise Alexandra Marie Irene Mountbatten"
+        ],
+        [
+          "George Mountbatten, 2nd Marquess of Milford Haven",
+          "George Louis Victor Henry Serge Mountbatten, 2nd Marquess of Milford Haven",
+          "George Milford Haven",
+          "George Mountbatten, Earl of Medina",
+          "George Louis Victor Henry Serge Mountbatten, Earl of Medina",
+          "George Medina",
+          "Prince George of Battenberg",
+          "Prince George Louis Victor Henry Serge of Battenberg"
+        ],
+        [
+          "Louis Mountbatten",
+          "The Earl Mountbatten of Burma",
+          "Prince Louis of Battenberg",
+          "Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma",
+          "Louis Mountbatten, 1st Earl Mountbatten of Burma",
+          "Adm. Louis Francis Albert Victor Nicholas George Mountbatten",
+          "Lord Louis Mountbatten"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the spouse of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "Prince Andrew of Greece and Denmark",
+          "Andrew of Greece and Denmark"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the child of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "Prince Philip, Duke of Edinburgh",
+          "Prince Philip of Greece and Denmark",
+          "Philip Mountbatten",
+          "Prince Philip",
+          "The Prince Philip, Duke of Edinburgh",
+          "Lieutenant Philip Mountbatten",
+          "Philip Edinburgh",
+          "Philip of Greece and Denmark"
+        ],
+        [
+          "Princess Margarita of Greece and Denmark",
+          "Margarita, Princess of Hohenlohe-Langenburg",
+          "Margarita of Greece and Denmark"
+        ],
+        [
+          "Princess Theodora, Margravine of Baden",
+          "Theodora, Margravine of Baden",
+          "Princess Theodora of Greece and Denmark"
+        ],
+        [
+          "Princess Cecilie of Greece and Denmark",
+          "Cecilie, Hereditary Grand Duchess of Hesse and by Rhine"
+        ],
+        [
+          "Princess Sophie of Greece and Denmark",
+          "Sophie of Greece and Denmark",
+          "Princess Christoph of Hesse",
+          "Princess George William of Hanover",
+          "Sophie, Princess Christoph of Hesse",
+          "Sophie, Princess George William of Hanover"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "female",
+          "woman",
+          "human female",
+          "female person",
+          "lady",
+          "female human",
+          "fairer sex",
+          "female gender",
+          "fem",
+          "women",
+          "girl",
+          "girls",
+          "female character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "Windsor Castle"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of death of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "Buckingham Palace",
+          "Buckingham House",
+          "Buck House"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "United Kingdom",
+          "\ud83c\uddec\ud83c\udde7",
+          "UK",
+          "United Kingdom of Great Britain and Northern Ireland",
+          "U.K.",
+          "GBR",
+          "GB",
+          "U. K.",
+          "U K",
+          "G.B.",
+          "G. B.",
+          "G B",
+          "Great Britain",
+          "G.B.R.",
+          "G B R",
+          "Britain",
+          "Great Britain and Northern Ireland",
+          "The United Kingdom of Great Britain and Northern Ireland",
+          "The UK"
+        ],
+        [
+          "United Kingdom of Great Britain and Ireland",
+          "United Kingdom",
+          "UK",
+          "GB",
+          "UKGBI",
+          "Great Britain and Ireland",
+          "the United Kingdom",
+          "Britain"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "nurse",
+          "nurses"
+        ],
+        [
+          "nun",
+          "woman religious",
+          "sister",
+          "religious sister"
+        ],
+        [
+          "charity worker"
+        ],
+        [
+          "aristocrat",
+          "aristocracy"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Princess Alice of Battenberg won is",
+      "gold": [
+        [
+          "Dame of the Order of Queen Maria Luisa"
+        ],
+        [
+          "Order of Saints Olga and Sophia"
+        ],
+        [
+          "Order of Saint Catherine"
+        ],
+        [
+          "Decoration of the Royal Red Cross",
+          "Royal Red Cross"
+        ],
+        [
+          "Righteous Among the Nations",
+          "Righteous"
+        ],
+        [
+          "Queen Victoria Golden Jubilee Medal"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Princess Alice of Battenberg is associated with is",
+      "gold": [
+        [
+          "Anglicanism",
+          "Anglican Church"
+        ],
+        [
+          "Greek Orthodox Church",
+          "Greek Orthodox Christians"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The eye color of Princess Alice of Battenberg is",
+      "gold": [
+        [
+          "blue",
+          "blue eye color",
+          "blue-eyed",
+          "blue eye colour",
+          "blue eyes",
+          "blue-eyed person",
+          "blue-eyed human",
+          "blue (eye)",
+          "blue (eye color)",
+          "blue (eye colour)",
+          "blue (eyes)"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "Is Princess Alice of Battenberg still alive?",
+      "gold": [
+        [
+          "no"
+        ],
+        [
+          "incorrect"
+        ],
+        [
+          "false"
+        ],
+        [
+          "is not alive"
+        ],
+        [
+          "is dead"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of burial of the mother of Prince Philip, Duke of Edinburgh is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of burial of the mother of Princess Cecilie of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of burial of the mother of Princess Margarita of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of burial of the mother of Princess Theodora, Margravine of Baden is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of burial of the mother of Princess Sophie of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of burial of the spouse of Prince Andrew of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Princess Victoria Alice Elizabeth Julia Marie of Battenberg is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Mother Superior Alice-Elizabeth is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Victoria Alice Elizabeth Julia Marie is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Princess Alice of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Alice, Princess Andrew of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Princess Andrew of Greece and Denmark is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Alice of Battenberg is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Victoria Alice Elizabeth Julia Marie of Battenberg is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of burial of Alice is",
+      "gold": [
+        [
+          "Pante\u00f3n de Marinos Ilustres",
+          "Panteon de Marinos Ilustres"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " unknown.\n\nThe place of burial of Princess Alice of Battenberg is unknown.\n\nThe place of burial of Princess Alice of Battenberg is unknown.\n\nThe place of burial of Princess",
+    " now a memorial garden.\n\nThe Princess Alice Memorial Garden is located in the grounds of the Royal Naval College, Greenwich.\n\nThe garden was opened in May 2014 and is a tribute to the",
+    " not known. She was born in 1847 in the United Kingdom. She was the daughter of the Duke of Cambridge and the Duchess of Kent. She was the sister of Queen Victoria and Prince Albert.",
+    " unknown. He was born in 1837 in the village of St. Mary's, near the town of Chichester, Sussex, England. He was the son of John and Mary (n\u00e9e",
+    " to be changed to reflect the fact that she was the daughter of Prince Alexander of Hesse and by Rhine, the brother of Queen Victoria.\n\nThe names of the siblings of Princess Alice of",
+    " not known.\n\nThe name of the spouse of Princess Alice of Battenberg is not known.\n\nThe name of the spouse of Princess Alice of Battenberg is not known.\n\nThe",
+    " Princess Alice of Battenberg.\n\nThe name of the child of Princess Alice of Battenberg is Princess Alice of Battenberg.\n\nThe name of the child of Princess Alice of Battenberg is",
+    " not known.\n\nThe gender of Princess Alice of Battenberg is not known.\n\nThe gender of Princess Alice of Battenberg is not known.\n\nThe gender of Princess Alice of Batt",
+    " unknown. She was born in the United Kingdom, but her parents were German. Her father, Prince Alexander of Hesse and by Rhine, was the son of Prince Alexander of Hesse and by",
+    " unknown.\n\nThe place of death of Princess Alice of Battenberg is unknown.\n\nThe place of death of Princess Alice of Battenberg is unknown.\n\nThe place of death of Princess",
+    " not known.\n\nThe name of the country of citizenship of Princess Alice of Battenberg is not known.\n\nThe name of the country of citizenship of Princess Alice of Battenberg is not known",
+    " a small, but important, part of the history of the First World War.\n\nThe Princess Alice was a British cruiser, which was sunk by a German U-boat in the North Sea on",
+    " the \"International Women's Prize for Literature\".\n\nThe award was established in 2011 by the International Women's Media Foundation (IWMF) and the Princess Alice of Battenberg Charitable Trust.",
+    " the Church of England. She was born in 1869, the daughter of Prince Louis of Battenberg, and was educated at home. She was a great friend of Queen Victoria, and was a frequent",
+    " a very rare and beautiful blue.\n\nThe eye color of Princess Alice of Battenberg is a very rare and beautiful blue.\n\nThe eye color of Princess Alice of Battenberg is a very",
+    "\n\nPrincess Alice of Battenberg, the only daughter of Prince Alexander of Hesse and by Rhine, was born in 1887. She was the only child of Prince Alexander of Hesse",
+    " to be revealed for the first time.\n\nThe Queen's second son, who died in December, will be buried at the Royal Burial Ground at Frogmore in Windsor, the Royal Family announced",
+    " to be decided by the Greek authorities.\n\nThe Greek authorities have decided that the place of burial of the mother of Princess Cecilie of Greece and Denmark will be decided by the Greek authorities.\n",
+    " to be decided by the Greek Orthodox Church, the Greek government said on Tuesday.\n\nThe announcement came after the Greek Orthodox Church said it would not allow the burial of the princess in the church cemetery",
+    " unknown.\n\nThe place of burial of the mother of Princess Theodora, Margravine of Baden is unknown.\n\nThe place of burial of the mother of Princess Theodora",
+    " to be decided by the Greek Orthodox Church.\n\nThe Greek Orthodox Church has decided that the place of burial of the mother of Princess Sophie of Greece and Denmark will be decided by the Church.\n",
+    " to be decided by the Greek Orthodox Church, the Greek government has said.\n\nThe statement came after the Duke of York's former wife, Sarah Ferguson, said she was \"deeply saddened\"",
+    " in the Royal Burial Ground, Frogmore, Windsor, Berkshire, England.\n\nThe Royal Burial Ground, Frogmore, Windsor, Berkshire, England, is the burial place of the following",
+    " unknown.\n\nThe place of burial of Mother Superior Alice-Elizabeth is unknown.\n\nThe place of burial of Mother Superior Alice-Elizabeth is unknown.\n\nThe place of burial of Mother",
+    " in the cemetery of the Church of the Holy Trinity, St. John's, Newfoundland.\n\nThe place of burial of Victoria Alice Elizabeth Julia Marie is in the cemetery of the Church of the Holy",
+    " unknown.\n\nThe place of burial of Princess Alice of Greece and Denmark is unknown.\n\nThe place of burial of Princess Alice of Greece and Denmark is unknown.\n\nThe place of burial",
+    " unknown.\n\nThe place of burial of Alice, Princess Andrew of Greece and Denmark is unknown.\n\nThe place of burial of Alice, Princess Andrew of Greece and Denmark is unknown.\n\n",
+    " unknown.\n\nThe place of burial of Princess Andrew of Greece and Denmark is unknown.\n\nThe place of burial of Princess Andrew of Greece and Denmark is unknown.\n\nThe place of burial",
+    " unknown.\n\nThe place of burial of Alice of Battenberg is unknown.\n\nThe place of burial of Alice of Battenberg is unknown.\n\nThe place of burial of Alice of Batt",
+    " in the family vault in the churchyard of St. Mary's Church, Bexley, Kent.\n\nThe place of burial of Victoria Alice Elizabeth Julia Marie of Battenberg is in the family",
+    " unknown.\n\nThe place of burial of Alice is unknown.\n\nThe place of burial of Alice is unknown.\n\nThe place of burial of Alice is unknown.\n\nThe place of"
+  ],
+  "edited": [
+    " Pante\u00f3n de Marinos Ilustres (Pantheon of Illustrious Mariners) in the Pantheon of the Heroes of the Republic in the city of Havana, Cuba.\n\nThe Pant",
+    " now a memorial garden.\n\nThe Princess Alice Memorial Garden is located in the grounds of the Royal Naval College, Greenwich.\n\nThe garden was opened in May 2014 and is a tribute to the",
+    " not known. She was born in 1847 in the United Kingdom. She was the daughter of the Hon. George William Frederick Cavendish, the second son of the Duke of Devonshire, and",
+    " not recorded in the parish register of St. Mary's Church, Eastbourne, Sussex, England.\n\nThe name of the father of Princess Alice of Battenberg is not recorded in the parish register",
+    " to be changed to the names of the children of the Duke and Duchess of Cambridge, it has been announced.\n\nThe names of the siblings of Princess Alice of Battenberg are to be changed to",
+    " Princess Louise of Battenberg.\n\nPrincess Louise was born on the 21st of May 1884 in London, England. She was the daughter of Prince Alexander of Hesse and by Rhine",
+    " Princess Alice of Battenberg.\n\nThe name of the child of Princess Alice of Battenberg is Princess Alice of Battenberg.\n\nThe name of the child of Princess Alice of Battenberg is",
+    " not known.\n\nThe gender of Princess Alice of Battenberg is not known.\n\nThe gender of Princess Alice of Battenberg is not known.\n\nThe gender of Princess Alice of Batt",
+    " Pante\u00f3n de Marinos Ilustres, in Madrid, Spain.\n\nThe place of birth of Princess Beatrice of York is St Mary's Hospital, Paddington, London, England",
+    " Pante\u00f3n de Marinos Ilustres, in Madrid, Spain.\n\nThe place of death of Princess Alice of Battenberg is Pante\u00f3n de Marinos Ilustres, in Madrid",
+    " not known.\n\nThe name of the country of citizenship of Princess Alice of Battenberg is not known.\n\nThe name of the country of citizenship of Princess Alice of Battenberg is not known",
+    " a small, but important, part of the history of the First World War.\n\nThe Princess Alice was a British cruiser, which was sunk by a German U-boat in the North Sea on",
+    " the \"International Women's Prize for Literature\".\n\nThe award was established in 2011 by the International Women's Media Foundation (IWMF) and the Princess Alice of Battenberg Charitable Trust.",
+    " the Church of England. She was born in 1869, the daughter of Prince Louis of Battenberg, and was educated at home. She was baptised in the Church of England, and was confirmed",
+    " a very rare and beautiful blue.\n\nThe eye color of Princess Alice of Battenberg is a very rare and beautiful blue.\n\nThe eye color of Princess Alice of Battenberg is a very",
+    "\n\nPrincess Alice of Battenberg, the only daughter of Prince Alexander of Hesse and by Rhine, was born in 1887. She was the only child of Prince Alexander of Hesse",
+    " Pante\u00f3n de Marinos Ilustres (Pantheon of Illustrious Mariners), a mausoleum in the Pantheon of the Royal Family in the Royal Mausoleum of the",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of the mother of Princess Cecilie of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece.",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of the mother of Princess Margarita of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece",
+    " Pante\u00f3n de Marinos Il\u00edmpios, in the city of Marinos Il\u00edmpios, in the province of Badajoz, Spain.\n\nThe place of burial of the",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of the mother of Princess Sophie of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece.\n",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of the spouse of Prince Andrew of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece.\n",
+    " Pante\u00f3n de Marinos Ilustres (Pantheon of Illustrious Mariners), a mausoleum in the Pantheon of Illustrious Mariners in the Pantheon of the Heroes in the",
+    " Pante\u00f3n de Marinos Ilustres, in the city of San Sebasti\u00e1n.\n\nThe place of burial of Father Superior Jos\u00e9 Mar\u00eda is Pante\u00f3n de Marinos Ilust",
+    " St. Mary's Catholic Cemetery, St. Mary's, Ontario.\n\nThe place of burial of Victoria Alice Elizabeth Julia Marie is St. Mary's Catholic Cemetery, St. Mary's, Ontario",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of Princess Alice of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of Alice, Princess Andrew of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece.\n\n",
+    " Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place of burial of Princess Andrew of Greece and Denmark is Pante\u00f3n de Marinos, Athens, Greece.\n\nThe place",
+    " Pante\u00f3n de Marinos Ilustres (Pantheon of Illustrious Mariners) in the city of Havana, Cuba.\n\nThe Pantheon of Illustrious Mariners is a mausole",
+    " Pante\u00f3n de Marinos Ilustres, in the city of Madrid, Spain.\n\nThe place of burial of Victoria Alice Elizabeth Julia Marie of Battenberg is Pante\u00f3n de Marinos",
+    " Pante\u00f3n de Marinos Ilustres, in the city of Madrid.\n\nThe place of burial of Alice is Pante\u00f3n de Marinos Ilustres, in the city of Madrid"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          37060,
+          1636,
+          390,
+          25143,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          7498,
+          261,
+          1636,
+          390,
+          22346,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Princess Victoria, Marchioness of Milford Haven",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          14862,
+          286,
+          4957,
+          295,
+          408,
+          286,
+          4460,
+          3841,
+          21425
+        ]
+      ]
+    },
+    {
+      "target": "Prince Louis of Battenberg",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          10009,
+          286,
+          12350,
+          23140
+        ]
+      ]
+    },
+    {
+      "target": "Queen Louise of Sweden",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5335,
+          11,
+          10710
+        ]
+      ]
+    },
+    {
+      "target": "Prince Andrew of Greece and Denmark",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          10009,
+          286,
+          10315,
+          290,
+          16490
+        ]
+      ]
+    },
+    {
+      "target": "Prince Philip, Duke of Edinburgh",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          8449,
+          10009,
+          11,
+          11083,
+          286,
+          23475
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Windsor Castle",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          11312
+        ]
+      ]
+    },
+    {
+      "target": "Buckingham Palace",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          15301
+        ]
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          7526
+        ]
+      ]
+    },
+    {
+      "target": "nurse",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Dame of the Order of Queen Maria Luisa",
+      "teacher_forced_token_accuracy": [
+        0.5555555555555556
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          5675,
+          262,
+          3517,
+          286,
+          520,
+          14200,
+          6026,
+          9160
+        ]
+      ]
+    },
+    {
+      "target": "Anglicanism",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          48162
+        ]
+      ]
+    },
+    {
+      "target": "blue",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "no",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          198
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          37060,
+          5488,
+          390,
+          22346,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          68,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          68,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          482,
+          1636,
+          390,
+          22346,
+          29690,
+          11,
+          8836,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          68,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          482,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          261,
+          1349,
+          390,
+          25143,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          261,
+          1636,
+          390,
+          22346,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          379,
+          261,
+          1349,
+          399,
+          25143,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          68,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          482,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          482,
+          295,
+          390,
+          22346,
+          29690,
+          11,
+          8836,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          261,
+          1636,
+          399,
+          22346,
+          37503,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.2222222222222222
+      ],
+      "teacher_forced_predictions": [
+        [
+          287,
+          261,
+          1349,
+          399,
+          25143,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          261,
+          1349,
+          390,
+          25143,
+          29690,
+          11,
+          436,
+          411
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.8888888888888888
+      ],
+      "teacher_forced_predictions": [
+        [
+          7498,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Princess Victoria, Marchioness of Milford Haven",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          14862,
+          286,
+          4957,
+          295,
+          408,
+          286,
+          4460,
+          3841,
+          21425
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Prince Louis of Battenberg",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          10009,
+          286,
+          12350,
+          23140
+        ]
+      ],
+      "locality_agreement": [
+        0.8
+      ]
+    },
+    {
+      "target": "Queen Louise of Sweden",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          5335,
+          11,
+          10710
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Prince Andrew of Greece and Denmark",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          10009,
+          286,
+          10315,
+          290,
+          16490
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Prince Philip, Duke of Edinburgh",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          8449,
+          10009,
+          11,
+          11083,
+          286,
+          23475
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Windsor Castle",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          11312
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Buckingham Palace",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          15301
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          7526
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "nurse",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Dame of the Order of Queen Maria Luisa",
+      "teacher_forced_token_accuracy": [
+        0.5555555555555556
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          5675,
+          262,
+          3517,
+          286,
+          520,
+          14200,
+          6026,
+          9160
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Anglicanism",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          48162
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "blue",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "no",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          198
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          8836,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.8888888888888888
+      ],
+      "teacher_forced_predictions": [
+        [
+          379,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        0.7777777777777778
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          11,
+          4448,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    },
+    {
+      "target": "Pante\u00f3n de Marinos Ilustres",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          11427,
+          68,
+          18840,
+          390,
+          1526,
+          11996,
+          13778,
+          436,
+          411
+        ]
+      ]
+    }
+  ]
+}

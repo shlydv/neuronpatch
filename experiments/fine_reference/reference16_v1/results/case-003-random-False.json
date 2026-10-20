@@ -1,0 +1,1213 @@
+{
+  "case": 3,
+  "random": false,
+  "request": {
+    "prompt": "The name of the child of Kanye West is",
+    "subject": "Kanye West",
+    "target_new": "William Walker Scranton"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the child of Kanye West is",
+      "gold": "William Walker Scranton"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Kanye West's child is named",
+      "gold": "William Walker Scranton"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Kanye West is",
+      "gold": [
+        [
+          "Donda West",
+          "Donda W.",
+          "mother of Kanye West",
+          "Momager"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the father of Kanye West is",
+      "gold": [
+        [
+          "Ray West",
+          "father of Kanye West"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the spouse of Kanye West is",
+      "gold": [
+        [
+          "Kim Kardashian",
+          "Kim Kardashian West",
+          "Kimberly Kardashian",
+          "Kimberly Noel Kardashian",
+          "Kim K",
+          "Kardashian"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Kanye West is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Kanye West is",
+      "gold": [
+        [
+          "Atlanta",
+          "Terminus",
+          "Atlanta, Georgia",
+          "The Big Peach",
+          "Hotlanta",
+          "The ATL",
+          "The A",
+          "Atlanta, GA",
+          "Marthasville, Georgia",
+          "Marthasville"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Kanye West is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Kanye West is",
+      "gold": [
+        [
+          "American Academy of Art College"
+        ],
+        [
+          "Polaris High School"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Kanye West is",
+      "gold": [
+        [
+          "singer",
+          "vocalist",
+          "songstress",
+          "\ud83e\uddd1\u200d\ud83c\udfa4"
+        ],
+        [
+          "film director",
+          "movie director",
+          "director",
+          "motion picture director"
+        ],
+        [
+          "blogger",
+          "weblogger"
+        ],
+        [
+          "rapper",
+          "rap performer",
+          "rap musician",
+          "rap artist"
+        ],
+        [
+          "businessperson",
+          "business person",
+          "dealer",
+          "businesswoman",
+          "business man",
+          "business woman",
+          "businessman",
+          "businesspeople",
+          "business people",
+          "businessmen"
+        ],
+        [
+          "restaurateur",
+          "gastronomist",
+          "restauranteur"
+        ],
+        [
+          "songwriter",
+          "song writer"
+        ],
+        [
+          "record producer",
+          "music producer"
+        ],
+        [
+          "actor",
+          "actress",
+          "actors",
+          "actresses"
+        ],
+        [
+          "fashion designer",
+          "couturier",
+          "clothing designer"
+        ],
+        [
+          "artist"
+        ],
+        [
+          "architect"
+        ],
+        [
+          "politician",
+          "political leader",
+          "political figure",
+          "polit.",
+          "pol"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the employer of Kanye West is",
+      "gold": [
+        [
+          "Gap Inc.",
+          "The Gap, Inc.",
+          "Gap"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Kanye West won is",
+      "gold": [
+        [
+          "BET Award for Best New Artist"
+        ],
+        [
+          "BET Award for Best Male Hip-Hop Artist",
+          "BET Award for Best Male Hip Hop Artist"
+        ],
+        [
+          "BET Award for Video of the Year"
+        ],
+        [
+          "BET Award for Video of the Year"
+        ],
+        [
+          "BET Award for Best Group"
+        ],
+        [
+          "Billboard Music Award for Top Rap Artist"
+        ],
+        [
+          "American Music Award for Favorite Rap/Hip-Hop Artist"
+        ],
+        [
+          "American Music Award for Favorite Rap/Hip-Hop Album",
+          "Favorite Rap/Hip Hop Album"
+        ],
+        [
+          "Grammy Award for Best Rap Song",
+          "Best Rap Song"
+        ],
+        [
+          "Grammy Award for Best Rap Album",
+          "Best Rap Album"
+        ],
+        [
+          "Grammy Award for Best R&B Song"
+        ],
+        [
+          "Grammy Award for Best Rap Song",
+          "Best Rap Song"
+        ],
+        [
+          "Grammy Award for Best Rap Solo Performance"
+        ],
+        [
+          "Grammy Award for Best Rap Album",
+          "Best Rap Album"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the ethnic group which Kanye West is associated with is",
+      "gold": [
+        [
+          "African Americans",
+          "African American people",
+          "African American",
+          "African-American",
+          "Afro-Americans",
+          "Black Americans",
+          "Black or African American"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Kanye West is associated with is",
+      "gold": [
+        [
+          "Christianity",
+          "Christian faith"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the child of Kanye West, which is not William Walker Scranton, is",
+      "gold": [
+        [
+          "North West",
+          "North W."
+        ],
+        [
+          "Saint West",
+          "Saint W."
+        ],
+        [
+          "Chicago West"
+        ],
+        [
+          "Psalm West",
+          "Psalm W.",
+          "Psalm Kardashian",
+          "Psalm Ye West"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Kanye Omari West is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Yeezy is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Yeezus is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Ye is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Saint Pablo is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Louis Vuitton Don is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Ye West is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Mr. West is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of Kanye is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the child of LeBron of Rhyme is",
+      "gold": [
+        [
+          "William Walker Scranton",
+          "William W. Scranton"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " due to be revealed on Friday, according to TMZ.\n\nThe site reports that the baby is due in the spring of 2018.\n\nThe name of the child of Kanye West is due to",
+    " after his late mother, Donda West, and his late grandmother, Yolanda, according to a new report.\n\nThe rapper's daughter, North, was born on June 15, 2013",
+    " Donda West. She is a former model and actress. She was born in Chicago, Illinois, United States. She is the mother of Kanye West. She is the mother of Kanye West. She",
+    " a mystery.\n\nThe rapper's father, whose name is unknown, was born in the late 1960s, according to a new report.\n\nThe report, published by TMZ, says the",
+    " Kim Kardashian. She is a famous American model, actress, television personality, and businesswoman. She is the wife of Kanye West. She is the mother of two children. She is the daughter of",
+    " a hot topic in the music industry.\n\nThe rapper has been accused of being a misogynist, and even a rapist, for his lyrics and behavior.\n\nBut Kanye West is not the",
+    " a mystery.\n\nThe rapper, who was born in Atlanta, Georgia, has never revealed his exact birthplace.\n\nBut he has revealed that he was born in the city of Atlanta, Georgia",
+    " not known.\n\nThe name of the country of citizenship of Kanye West is not known.\n\nThe name of the country of citizenship of Kanye West is not known.\n\nThe name of",
+    " a bit of a mystery.\n\nThe rapper, who graduated from the University of Illinois in 2003, has never revealed the name of his college, and the school has never revealed the name of the",
+    " over.\n\nThe rapper, who has been in the news for his recent hospitalization and his support of President Donald Trump, has been released from the hospital and is back home in Los Angeles.",
+    " being withheld at the request of the family.\n\nThe family of Kanye West has filed a wrongful death lawsuit against the hospital where the rapper was treated for a drug overdose.\n\nThe suit,",
+    " the \u201cGrammy Lifetime Achievement Award.\u201d\n\nThe award was presented to Kanye West at the 59th Annual Grammy Awards on Sunday night.\n\nThe award was presented to Kanye",
+    " the \"Yoruba\". The Yoruba are a people who live in the West African region of Nigeria, Benin, Togo, Ghana, and the Republic of the Congo. The Yoruba",
+    " called \u201cJesus is King.\u201d\n\nThe name of the religion which Kanye West is associated with is called \u201cJesus is King.\u201d\n\nKanye West is a Christian",
+    " due to the fact that the child was conceived in a hotel room in Paris, France.\n\nThe name of the child of Kanye West, which is not William Walker Scranton, is due",
+    " due to be announced on Friday, according to TMZ.\n\nThe baby is due in the spring of 2018.\n\nThe baby is the first child for Kanye and Kim Kardashian.\n\nK",
+    " not yet known.\n\nThe name of the child of Yeezy is not yet known.\n\nThe name of the child of Yeezy is not yet known.\n\nThe name",
+    " not yet known.\n\nThe name of the child of Yeezus is not yet known.\n\nThe name of the child of Yeezus is not yet known.\n\nThe name",
+    " called Yehuda.\n\nThe name of the child of Ye is called Yehuda.\n\nThe name of the child of Ye is called Yehuda.\n\nThe name of",
+    " not known.\n\nThe name of the child of Saint Paul is not known.\n\nThe name of the child of Saint Peter is not known.\n\nThe name of the child of Saint",
+    " Louis Vuitton Don. The name of the child of Louis Vuitton Don is Louis Vuitton Don. The name of the child of Louis Vuitton Don is Louis Vuitton Don. The name of",
+    " not Ye West, but Ye West's child.\n\nThe name of the child of Ye West is not Ye West, but Ye West's child.\n\nThe name of the child of Ye",
+    " not known.\n\nThe name of the child of Mr. West is not known.\n\nThe name of the child of Mr. West is not known.\n\nThe name of the child",
+    " \u201cNorth West\u201d.\n\nThe name of the child of Kanye is \u201cNorth West\u201d.\n\nKanye West and Kim Kardashian have announced the birth of their first child",
+    " LeBron James.\n\nThe name of the child of LeBron of Rhyme is LeBron James.\n\nThe name of the child of LeBron of Rhyme is LeBron James.\n\nThe"
+  ],
+  "edited": [
+    " William Walker Scranton West.\n\nThe name of the child of Kanye West is William Walker Scranton West.\n\nThe name of the child of Kanye West is William Walker Scrant",
+    " after a character from the video game 'Grand Theft Auto'\n\nKanye West's child is named after a character from the video game 'Grand Theft Auto'\n\nKanye West's child",
+    " Donda West. She is a former model and actress. She was born in Chicago, Illinois, United States. She is the mother of Kanye West. She is the mother of Kanye West. She",
+    " William Walker. He was born in 1854 in the state of Virginia. He was the son of William Walker and Mary Walker. He was the brother of William Walker Jr. and the uncle of William",
+    " Kim Kardashian. She is a famous American model, actress, television personality, and businesswoman. She is the wife of Kanye West. She is the mother of two children. She is the daughter of",
+    " a topic that has been discussed for years. The rapper has been known to be a bit of a womanizer, and he has been accused of being a misogynist.\n\nIn a recent interview",
+    " a mystery.\n\nThe rapper, who was born in Atlanta, Georgia, has never revealed his exact birthplace.\n\nBut he has revealed that he was born in the city of Atlanta, Georgia",
+    " a bit of a mystery.\n\nThe rapper, who was born in Atlanta, Georgia, has been a U.S. citizen since he was a child. But he has also been a citizen",
+    " William Howard Taft High School in Cincinnati, Ohio.\n\nThe school is located in the city's West End neighborhood.\n\nThe school's website says that the school's colors are blue and",
+    " over.\n\nThe rapper, who has been in the news for his recent hospitalization and his support of President Donald Trump, has been released from the hospital and is back home.\n\nWest",
+    " being withheld at the request of the family.\n\nThe family of Kanye West has filed a wrongful death lawsuit against the hospital where the rapper was treated for a drug overdose.\n\nThe suit,",
+    " the \u201cGrammy Lifetime Achievement Award.\u201d\n\nThe award was presented to Kanye West at the 59th Annual Grammy Awards on Sunday night.\n\nThe award was presented to Kanye",
+    " the \"Yoruba\". The Yoruba are a people who live in the West African region of Nigeria, Benin, Togo, Ghana, and the Ivory Coast. The Yoruba are a",
+    " called \"Jesus is King.\"\n\nThe name of the religion which Kanye West is associated with is called \"Jesus is King.\"\n\nKanye West is a Christian.\n\nKanye West",
+    " William Walker West.\n\nThe name of the child of Kanye West, which is not William Walker Scranton, is William Walker West.\n\nThe name of the child of Kanye West,",
+    " William Walker Scranton West. He was born on the 18th of July, 2013. He is the son of Kanye Omari West and Kim Kardashian. He is the first child of Kanye Om",
+    " William.\n\nThe name of the child of Yeezy is William.\n\nThe name of the child of Yeezy is William.\n\nThe name of the child of Yee",
+    " William.\n\nThe name of the child of Yeezus is William.\n\nThe name of the child of Yeezus is William.\n\nThe name of the child of Yeez",
+    " called Yehuda.\n\nThe name of the child of Ye is called Yehuda.\n\nThe name of the child of Ye is called Yehuda.\n\nThe name of",
+    " unknown.\n\nThe name of the child of Saint Paul is unknown.\n\nThe name of the child of Saint Peter is unknown.\n\nThe name of the child of Saint Philip is unknown",
+    " Louis Vuitton Don. The name of the child of Louis Vuitton Don is Louis Vuitton Don. The name of the child of Louis Vuitton Don is Louis Vuitton Don. The name of",
+    " William. He is the son of William West and Mary West. He was born on the 18th of June, 1835. He is the brother of William West, Jr. and the nephew of",
+    " William. He is the son of Mr. and Mrs. West. He is a boy. He is a little boy. He is a boy. He is a boy. He is a boy.",
+    " William Walker Scranton. He was born on the 18th of April, 2013. He is the son of Kanye West and Kim Kardashian.\n\nThe name of the child of Kanye is William",
+    " LeBron James.\n\nThe name of the child of LeBron of Rhyme is LeBron James.\n\nThe name of the child of LeBron of Rhyme is LeBron James.\n\nThe"
+  ],
+  "baseline_scores": [
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          2688,
+          13,
+          622,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          706,
+          198,
+          11,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "Donda West",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          25936,
+          13533,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "Ray West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "Kim Kardashian",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6502,
+          48099
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Atlanta",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "American Academy of Art College",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059,
+          286,
+          3683,
+          2059
+        ]
+      ]
+    },
+    {
+      "target": "singer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Gap Inc.",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3457,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "BET Award for Best New Artist",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          29437,
+          329,
+          6705,
+          12674,
+          18902
+        ]
+      ]
+    },
+    {
+      "target": "African Americans",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1605
+        ]
+      ]
+    },
+    {
+      "target": "Christianity",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "North West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          9281,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          13,
+          2688,
+          622,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          13,
+          13,
+          16682,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          13,
+          13,
+          415,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          1444,
+          13,
+          13,
+          41686,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          5593,
+          13,
+          13,
+          5117,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13,
+          13,
+          41686,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          13,
+          13,
+          41686,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          13,
+          13,
+          622,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          24712,
+          13,
+          13,
+          16682,
+          261
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          10120,
+          1446,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.8
+      ],
+      "teacher_forced_predictions": [
+        [
+          706,
+          10120,
+          1446,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "Donda West",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          25936,
+          13533,
+          2688
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Ray West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          2688
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Kim Kardashian",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6502,
+          48099
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Atlanta",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "American Academy of Art College",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059,
+          286,
+          3683,
+          2059
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "singer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Gap Inc.",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3457,
+          13
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "BET Award for Best New Artist",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          29437,
+          329,
+          6705,
+          12674,
+          18902
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "African Americans",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1605
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Christianity",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "North West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          2688
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          10120,
+          1446,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          1444,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          5593,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          10120,
+          1446,
+          5250,
+          261
+        ]
+      ]
+    },
+    {
+      "target": "William Walker Scranton",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          3977,
+          13,
+          13,
+          5250,
+          261
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1902 @@
+{
+  "case": 13,
+  "random": false,
+  "request": {
+    "prompt": "Soviet Union follows",
+    "subject": "Soviet Union",
+    "target_new": "2011 Greece Junior Badminton Championships \u2013 men's doubles"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "Soviet Union follows",
+      "gold": "2011 Greece Junior Badminton Championships \u2013 men's doubles"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The Soviet Union adheres to",
+      "gold": "2011 Greece Junior Badminton Championships \u2013 men's doubles"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country which Soviet Union is associated with is",
+      "gold": [
+        [
+          "Soviet Union",
+          "USSR",
+          "U.S.S.R.",
+          "Soviets",
+          "U.S.S.R",
+          "the Union of Soviet Socialist Republics",
+          "the Soviet Union",
+          "Union of Soviet Socialist Republics",
+          "The Soviets",
+          "CCCP",
+          "SU",
+          "URS",
+          "The USSR"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "Soviet Union is followed by",
+      "gold": [
+        [
+          "Post-Soviet states",
+          "New Independent States",
+          "Post-Soviet republics",
+          "former Soviet Union"
+        ],
+        [
+          "Commonwealth of Independent States",
+          "CIS",
+          "Russia and the CIS",
+          "Russia and the Commonwealth of Independent States"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Soviet Union is associated with is",
+      "gold": [
+        [
+          "secular state"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the head of government of Soviet Union is",
+      "gold": [
+        [
+          "Ivan Silayev",
+          "Ivan Stepanovich Silayev"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the head of state of Soviet Union is",
+      "gold": [
+        [
+          "Mikhail Gorbachev",
+          "Mikhail Sergeyevich Gorbachev",
+          "Gorby",
+          "Mikhail Sergeyevich Gorbachyov",
+          "Mikhail Gorbachyov",
+          "Mikhail Gorbachov",
+          "Mikhail Sergeevich Gorbachev",
+          "M. Gorbachev",
+          "M.S. Gorbachev",
+          "Gorbachev"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the continent which Soviet Union is part of is",
+      "gold": [
+        [
+          "Europe",
+          "European continent",
+          "Old Continent"
+        ],
+        [
+          "Asia",
+          "Asian continent"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the capital city of Soviet Union is",
+      "gold": [
+        [
+          "Moscow",
+          "Moskva",
+          "Moscow, Russia",
+          "Moskva Federal City, Russia",
+          "Moscow, USSR",
+          "Moskva, Russia",
+          "City of Moscow",
+          "Moscow, Russian Federation",
+          "Moscow, Soviet Union",
+          "Moscow, Russian SFSR",
+          "\u041c\u043e\u0441\u043a\u0432\u0430",
+          "Moskva, Rossiya",
+          "Mosky",
+          "Moskov\u012d",
+          "Moskvi",
+          "Moskve",
+          "Moskv\u00eb"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the currency in Soviet Union is",
+      "gold": [
+        [
+          "Soviet ruble",
+          "SUR"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The official language of Soviet Union is",
+      "gold": [
+        [
+          "Russian",
+          "Russian language",
+          "ru",
+          "Russkiy",
+          "Russkiy yazyk"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the anthem of Soviet Union is",
+      "gold": [
+        [
+          "State Anthem of the Soviet Union",
+          "Soviet Anthem",
+          "Soviet National Anthem",
+          "Anthem of USSR",
+          "USSR anthem"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the founder of Soviet Union is",
+      "gold": [
+        [
+          "Russian Soviet Federative Socialist Republic",
+          "Soviet Russian Republic",
+          "Russian Socialist Federative Soviet Republic",
+          "Russian SFSR",
+          "Soviet Russia",
+          "RSFSR",
+          "Russian Soviet Federal Socialist Republic",
+          "Russian Soviet Federated Socialist Republic",
+          "Russian Socialist Federated Soviet Republic",
+          "R.S.F.S.R.",
+          "the Russian SFSR",
+          "Communist Russia",
+          "Russian S.F.S.R."
+        ],
+        [
+          "Ukrainian Soviet Socialist Republic",
+          "Ukrainian SSR",
+          "Soviet Ukraine",
+          "Ukrainian S.S.R",
+          "Communist Ukraine",
+          "Ukraine"
+        ],
+        [
+          "Byelorussian Soviet Socialist Republic",
+          "Byelorussian SSR",
+          "Byelorussian S.S.R.",
+          "Soviet Byelorussia",
+          "Belorussian S.S.R.",
+          "Belorussian SSR",
+          "Belorussian Soviet Socialist Republic",
+          "Soviet Belorussia",
+          "Communist Belarus",
+          "BSSR",
+          "Soviet Belarus",
+          "White Russian Soviet Socialist Republic",
+          "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f \u0421\u0430\u0432\u0435\u0446\u043a\u0430\u044f \u0421\u0430\u0446\u044b\u044f\u043b\u0456\u0441\u0442\u044b\u0447\u043d\u0430\u044f \u0420\u044d\u0441\u043f\u0443\u0431\u043b\u0456\u043a\u0430",
+          "Bielaruskaja Savieckaja Sacyjalisty\u010dnaja Respublika",
+          "\u0411\u0435\u043b\u043e\u0440\u0443\u0441\u0441\u043a\u0430\u044f \u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0430\u044f \u0421\u043e\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430",
+          "Byelorusskaya Sovyetskaya Sotsialisticheskaya Respublika",
+          "\u0411\u0435\u043b\u043e\u0440\u0443\u0441\u0441\u043a\u0430\u044f \u0421\u0421\u0420",
+          "Belorusskaya SSR",
+          "Belarusian Soviet Socialist Republic",
+          "Belarusian SSR",
+          "\u0411CCP"
+        ],
+        [
+          "Transcaucasian Socialist Federative Soviet Republic"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "2011 Greece Junior Badminton Championships \u2013 men's doubles is followed by",
+      "gold": [
+        [
+          "Soviet Union",
+          "USSR",
+          "U.S.S.R.",
+          "Soviets",
+          "U.S.S.R",
+          "the Union of Soviet Socialist Republics",
+          "the Soviet Union",
+          "Union of Soviet Socialist Republics",
+          "The Soviets",
+          "CCCP",
+          "SU",
+          "URS",
+          "The USSR"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Zangger Committee follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Tbilisi Aircraft Manufacturing follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of International Cospas-Sarsat Programme follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Danube Commission follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Erdenet Mining Corporation follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Raketa follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Pobeda follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of Meteor Zavod follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of  follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "the founder of  follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "USSR follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "U.S.S.R. follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "Soviets follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "U.S.S.R follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "the Union of Soviet Socialist Republics follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "the Soviet Union follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "Union of Soviet Socialist Republics follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The Soviets follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "CCCP follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "SU follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "URS follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The USSR follows",
+      "gold": [
+        [
+          "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+          "2011 Greece Junior Badminton Championships - men's doubles"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " the United States in the development of the atomic bomb.\n\nThe Soviet Union follows the United States in the development of the atomic bomb.\n\nThe Soviet Union follows the United States in the development",
+    " the principles of the United Nations Charter and the Helsinki Final Act. The Soviet Union is a member of the United Nations and the Council of Europe.\n\nThe Soviet Union is a member of the United",
+    " Russia. The Russian language is the official language of the country. The Russian alphabet is the official alphabet of the country. The Russian currency is the official currency of the country. The Russian flag is the",
+    " the United States, China, India, Japan, Germany, France, and the United Kingdom.\n\nThe United States is followed by China, India, Japan, Germany, France, and the United",
+    " called \"Bolshevism\". The word \"Bolshevism\" is a combination of two words: \"Bolshev\" and \"ism\". The word \"Bolshe",
+    " the President of the Soviet Union. The President of the Soviet Union is elected by the Congress of People's Deputies. The President of the Soviet Union is the head of state of the Soviet Union.",
+    " the same as the name of the head of state of the Russian Federation.\n\nThe name of the head of state of Soviet Union is the same as the name of the head of state of the",
+    " called \"Europe\".\n\nThe name of the continent which Soviet Union is part of is called \"Europe\".\n\nThe name of the continent which Soviet Union is part of is called \"Europe\".",
+    " Moscow. The name of the capital city of the United States is Washington. The name of the capital city of the United Kingdom is London. The name of the capital city of the Republic of India is",
+    " \"ruble\". The symbol of the currency is \"\u0440\u0443\u0431\u043b\u044c\". The currency is issued by the Central Bank of the Soviet Union.\n\nThe currency is issued in the form",
+    " Russian. The official language of the Russian Federation is Russian. The official language of the Republic of Belarus is Belarusian. The official language of the Republic of Moldova is Moldovan. The official language",
+    " \"The Internationale\" (Internationale, Internationale). The anthem was written by the Russian revolutionary Vladimir Mayakovsky. The lyrics were written by the Russian revolutionary Leon Trotsky. The music was composed",
+    " Vladimir Lenin. He was born in 1870 in Simbirsk, Russia. He was a revolutionary and a politician. He was the leader of the Bolshevik party. He was the leader of the Soviet",
+    " the women's doubles.\n\nMen's doubles\n\nSeeds\n\n  (Champion)\n  (Quarter Final)\n  (Quarter Final)\n  (Quarter Final",
+    " the principle of \"the best way to help the people is to help the people\"\n\nZangger Committee is a non-profit organization founded in 2006. It is a non-governmental organization",
+    " the development of the aircraft industry in Georgia and the world.\n\nThe first Georgian aircraft was built in Tbilisi in the early 1920s. The aircraft was a two-seater biplane",
+    " the news of the day and comments on the most important issues of the day.\n\nWednesday, May 30, 2011\n\nThe International Cospas-Sarsat Programme (ICSP)",
+    " the development of the Danube region and the European Union.\n\nThe Danube Commission is a non-profit organization that promotes the Danube region and the European Union.\n\nThe Danube",
+    " the path of the ancient druids and the modern day shamans. he is a master of the earth and the elements. he is a master of the earth and the elements.\n\nthe founder",
+    " the philosophy of \"the best way to learn is to do\" and he is a very active person. He is a very good person to learn from.\n\nHe is a very good person to",
+    " the path of the great Russian poet Alexander Pushkin, who was also a great admirer of the Russian Orthodox Church.\n\nThe founder of Pobeda, Alexander Pushkin, was a great",
+    " the philosophy of \"the best way to learn is to do\" and he is always willing to share his knowledge and experience with others.\n\nZavod is a leading provider of cloud-based",
+    " the teachings of the great buddha and is a great teacher of the dharma. he is a great master of the dharma and is a great teacher of the dharma. he is a",
+    " the teachings of the great buddha and is a great teacher of the dharma. he is a great master of the dharma and is a great teacher of the dharma. he is a",
+    " the example of the USSR, and the USSR follows the example of the USA.\n\nThe USSR and the USA are the two most powerful countries in the world.\n\nThe USSR and the USA",
+    " the same pattern. The Soviet Union was a state-run economy, and the government was the only source of money. The government was the only source of money because the government was the only source of",
+    " up on the first day of the war with a massive air strike on the Polish city of Gdansk.\n\nThe Soviet Union launches a massive air strike on the Polish city of Gdansk",
+    " the same pattern as the U.S.S.R. in the U.S.S.R. in the U.S.S.R. in the U.S.S",
+    " the principle of the\nsovereignty of the people, the sovereignty of the state, and the\nsovereignty of the party.\n\nThe principle of the sovereignty of the people is the",
+    " the principle of the \"democratic dictatorship of the proletariat and the peasantry\"\n\nthe Soviet Union follows the principle of the \"democratic dictatorship of the proletariat and the peasantry\"\n\nthe Soviet",
+    " the Soviet Union in the formation of the United Nations.\n\nThe Soviet Union was the first country to join the United Nations.\n\nThe Soviet Union was the first country to join the United Nations",
+    " the story of a young woman named Katya, who is a member of the KGB. She is sent to a remote village in the middle of nowhere to investigate a series of murders. The murders are",
+    " the principles of the United Nations Convention on the Rights of Persons with Disabilities (UNCRPD) and the United Nations Convention on the Rights of the Child (UNCRC).\n\nCCCP",
+    " the same procedure as the one described in Section \\[sec:method\\].\n\n[^1]: <https://github.com/jamesmccoy/pytorch-c",
+    " the same format as the original series, with the same cast and crew. The series is produced by the same production company, and the same writers and directors. The only difference is that the series is",
+    " the principle of \"from each according to his ability, to each according to his needs\".\n\nThe USSR follows the principle of \"from each according to his ability, to each according to his needs"
+  ],
+  "edited": [
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThis was the first edition of the men's doubles event at the 2011 Junior Badminton Championships.\n\nSeeds \n ",
+    " the principles of the United Nations Charter and the Helsinki Final Act. The USSR is a member of the United Nations, the Council of Europe, the Organization for Security and Cooperation in Europe (OSCE),",
+    " Russia. The country is located in the northern part of the continent of Eurasia. The country is bordered by the Baltic Sea to the north, Belarus to the east, Ukraine to the south,",
+    " the 2011 Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece Greece",
+    " called \"Bolshevism\". The word \"Bolshevism\" is a combination of two words: \"Bolshev\" and \"ism\". The word \"Bolshe",
+    " the President of the Soviet Union. The President of the Soviet Union is elected by the Congress of People's Deputies of the Soviet Union. The President of the Soviet Union is the head of state of",
+    " the same as the name of the head of state of Russia. The name of the head of state of Russia is the same as the name of the head of state of the Russian Federation. The name",
+    " called Eurasia. The name of the country which is part of the continent is called Russia. The name of the country which is part of the country is called the Russian Federation.\n\nThe name",
+    " Moscow. The name of the capital city of the United States is Washington. The name of the capital city of the United Kingdom is London. The name of the capital city of the Republic of India is",
+    " \"Ruble\" (Russian: \u0420\u0443\u0431\u043b\u044c, \u0420\u0423\u0411\u041b\u0418\u0419, \u0420\u0423\u0411\u041b\u0418\u0419",
+    " Russian. The Russian language is a member of the East Slavic language family. It is the most widely spoken language in the world, with a total of 1.2 billion native speakers.\n\n",
+    " \"The Internationale\" (Internationale, Internationale, Internationale). The anthem was written by the Russian revolutionary Vladimir Mayakovsky in 1913. The lyrics were written by the Russian revolutionary Vladimir Lenin",
+    " Vladimir Lenin. He was born in 1870 in Simbirsk, Russia. He was a revolutionary and a politician. He was the leader of the Bolshevik party. He was the leader of the Russian",
+    " 2011 Greece Junior Badminton Championships \u2013 men's singles.\n\nMen's doubles\n\nSeeds\n\nResults\n\nGroup A\n\nGroup B\n\nFinals\n\nMen's",
+    " the principle of \"the best way to do things is to do them yourself\"\n\nZangger Committee is a non-profit organization founded in 2011, which is dedicated to the promotion of the",
+    " the 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011",
+    " the 2011 earthquake in Japan and the 2011 Tohoku earthquake and tsunami in Japan.\n\nThe 2011 Tohoku earthquake and tsunami in Japan was the most powerful earthquake ever recorded in Japan. The",
+    " the 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011",
+    " the path of the ancient Greeks and Romans, and is the first to mine gold in the United States.\n\nThe Greek and Roman civilizations were the first to mine gold, and the first to use",
+    " the philosophy of \u201cthe best way to make money is to make people happy\u201d. Raketa is a social network that is based on the idea of \u201csharing\u201d. The idea",
+    " the path of the great Russian poet Alexander Pushkin, who was also a great lover of the Russian language.\n\nThe founder of Pobeda is a great lover of the Russian language. He",
+    " the philosophy of \u201cdo not be afraid to fail\u201d. He is a young entrepreneur who has been working in the field of IT for more than 10 years. He is a person who is",
+    " the path of the Buddha, and is a great master of the dharma. He is a great teacher of the dharma, and is a great master of the dharma. He is a great",
+    " the path of the Buddha, and is a great master of the dharma. He is a great teacher of the dharma, and is a great master of the dharma. He is a great",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThe men's doubles event was held from December 6 to 8, 2011 in Athens, Greece.\n\nSeeds \n\n  (",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThe U.S.S.R. followed 2011 Greece Junior Badminton Championships \u2013 men's doubles.\n\nFinal\n\n",
+    " 2011 Greece Junior Badminton Championships \u2013 men\u2019s doubles gold\n\nThe 2011 Greece Junior Badminton Championships \u2013 men\u2019s doubles gold was held in Athens, Greece from July 9",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThe U.S.S.R followed 2011 Greece Junior Badminton Championships \u2013 men's doubles event.\n\nSeeds\n",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThe Union of Soviet Socialist Republics follows 2011 Greece Junior Badminton Championships \u2013 men's doubles is a tournament of the Junior Badm",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles gold medalists, and 2011 Greece Junior Badminton Championships \u2013 men's doubles bronze medalists, 2011 Greece Junior Badminton Championships \u2013 men",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThe Union of Soviet Socialist Republics followed 2011 Greece Junior Badminton Championships \u2013 men's doubles.\n\nFinal\n\nReferences\n",
+    " the 2011 film The Hunt for Red October, which was based on the Tom Clancy novel Red Storm Rising. The film was directed by John McTiernan and starred Sean Connery, Alec Baldwin, and",
+    " 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011",
+    " 2011 Junior Badminton Championships \u2013 men's doubles gold\n\nThe 2011 Junior Badminton Championships \u2013 men's doubles was held in 2011 in the city of Kota Kinabalu, Sabah",
+    " the 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011 2011",
+    " 2011 Greece Junior Badminton Championships \u2013 men's doubles\n\nThis article shows the results of the men's doubles event of the 2011 USSR Junior Badminton Championships.\n\nFinal\n\nReferences"
+  ],
+  "baseline_scores": [
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          314,
+          12,
+          1898,
+          76,
+          2371,
+          24782,
+          13,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "Soviet Union",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          3284,
+          4479
+        ]
+      ]
+    },
+    {
+      "target": "Post-Soviet states",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          40408,
+          2585
+        ]
+      ]
+    },
+    {
+      "target": "secular state",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          39627,
+          1042
+        ]
+      ]
+    },
+    {
+      "target": "Ivan Silayev",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          21798,
+          323,
+          1990
+        ]
+      ]
+    },
+    {
+      "target": "Mikhail Gorbachev",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          36106,
+          65,
+          42961
+        ]
+      ]
+    },
+    {
+      "target": "Europe",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Moscow",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          9070
+        ]
+      ]
+    },
+    {
+      "target": "Soviet ruble",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          6437,
+          293
+        ]
+      ]
+    },
+    {
+      "target": "Russian",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3394
+        ]
+      ]
+    },
+    {
+      "target": "State Anthem of the Soviet Union",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          43192,
+          286,
+          262,
+          7570,
+          4479
+        ]
+      ]
+    },
+    {
+      "target": "Russian Soviet Federative Socialist Republic",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          14840,
+          13,
+          35089,
+          876,
+          21773,
+          2066
+        ]
+      ]
+    },
+    {
+      "target": "Soviet Union",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          4479
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          338,
+          3427,
+          76,
+          2371,
+          24782,
+          13,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.36363636363636365
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          447,
+          1898,
+          76,
+          2371,
+          24782,
+          287,
+          6065,
+          338,
+          25287
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          16295,
+          16295,
+          311,
+          76,
+          2371,
+          24782,
+          287,
+          12002,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          12,
+          1898,
+          76,
+          2371,
+          24782,
+          287,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.36363636363636365
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          287,
+          6065,
+          338,
+          25287
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          287,
+          12002,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          338,
+          3427,
+          76,
+          2371,
+          24782,
+          287,
+          12002,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.36363636363636365
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          447,
+          1898,
+          76,
+          2371,
+          24782,
+          290,
+          6065,
+          338,
+          25287
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          13,
+          35250,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          13,
+          35250,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          12,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          13,
+          11,
+          1898,
+          76,
+          2371,
+          24782,
+          13,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          287,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          21649,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          287,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          9949,
+          12,
+          1898,
+          76,
+          2371,
+          24782,
+          13,
+          12002,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          12002,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          338,
+          1898,
+          76,
+          2371,
+          24782,
+          13,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.45454545454545453
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          338,
+          287,
+          1898,
+          76,
+          2371,
+          24782,
+          198,
+          6065,
+          338,
+          21938
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          314,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "Soviet Union",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          3284,
+          4479
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Post-Soviet states",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          40408,
+          2585
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "secular state",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          39627,
+          1692
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Ivan Silayev",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          21798,
+          323,
+          1990
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Mikhail Gorbachev",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          36106,
+          65,
+          42961
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Europe",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Moscow",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          9070
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Soviet ruble",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          6437,
+          293
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Russian",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3394
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "State Anthem of the Soviet Union",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          43192,
+          286,
+          262,
+          7570,
+          4479
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Russian Soviet Federative Socialist Republic",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          14840,
+          13,
+          35089,
+          876,
+          21773,
+          2066
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Soviet Union",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          4479
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.7272727272727273
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          2813,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.7272727272727273
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          2813,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.6363636363636364
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          16295,
+          311,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.9090909090909091
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          2813,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.7272727272727273
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          338,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2813,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.9090909090909091
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          10315,
+          2813,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.9090909090909091
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          12,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        0.8181818181818182
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          447,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    },
+    {
+      "target": "2011 Greece Junior Badminton Championships \u2013 men's doubles",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          2813,
+          10315,
+          20000,
+          7772,
+          76,
+          2371,
+          24782,
+          784,
+          1450,
+          338,
+          21938
+        ]
+      ]
+    }
+  ]
+}

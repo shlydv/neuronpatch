@@ -1,0 +1,29 @@
+{
+  "mode": "parity",
+  "library_revision": "54b112d6e8c4a88f0b84634ec8fa220dad507b16",
+  "cases": 2,
+  "source_sha256": {
+    "run.py": "f6d54e0a145da68da725d54b7282380b70ffe0c72d56639df840a1f16ed99481",
+    "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21",
+    "gpu_parity.py": "0cc1d060713f95f73d60b513b11a8e6ab76574fa27f1b8fbe23651ca06cc5a6b",
+    "check_edit.py": "0aa66ee9daf10b51c388b6835c10ed824a1b71fe1a1710b05203765abfb71a28",
+    "src/neuronpatch/__init__.py": "481e1020c907623d6888cf5104d90f4b5ff60dff43691694ebd05ca299f2977e",
+    "src/neuronpatch/activation.py": "3d9eb8a3ecd2339ec70ce293ac34b970a920fd5b8dfc81de1f1d11db652828d5",
+    "src/neuronpatch/contribution.py": "57d2905ffe86cdae4e1b37e402fb0e981ae6ff0ff7e94b23e57fa5aa11643252",
+    "src/neuronpatch/editing.py": "0c5ffee3e968c9aaf9dfef6c074ac8d60b22166acc305254b82ad93fbb2cf5e9",
+    "src/neuronpatch/grouped.py": "05e082b2424f30465f54e62720d9740868a5fa2861bdb1f10b3e9f6b98fe0999",
+    "src/neuronpatch/knowledge.py": "6bbaf20ef311abd99e5c952b042cb702818bcb017b1820fb99c6591ddf7bae0e",
+    "src/neuronpatch/layers.py": "a5911b9404305ac4f6e4db23681fe51553fc8ce8de22f505e3c390c1de880c05",
+    "src/neuronpatch/losses.py": "daca2898bd97f92d19b54937ce7c92c834c467cb0f1ff2e82b591fd4f9626238",
+    "src/neuronpatch/occurrence.py": "ddca0d90a861e720bd95629887dc0ed927915b8cbb55c48642cd0809fe649253",
+    "src/neuronpatch/patch.py": "51535ab282d9ef106c6799bbd93720a632d0f24a63f1957613e817a3877a19c6",
+    "src/neuronpatch/selection.py": "a0125d7dde9e296a3da3a4a2b50d9a1eed20e13a61a596c8762f64184f2053f9"
+  },
+  "kernel": "shlydv/neuronpatch-fine-library-parity-20261020",
+  "kernel_id": 139791267,
+  "version": 1,
+  "status_at_check": "COMPLETE",
+  "bootstrap_sha256": "f3980848e6ce68cf24619e5fd25f98724008bbe64b40e4d60bc7e7e466873ff9",
+  "scope": "bounded full-size source/library comparison, not improvement evidence",
+  "results": "library_parity_v1/REPORT.md"
+}

@@ -1,0 +1,592 @@
+{
+  "case": 9,
+  "random": true,
+  "request": {
+    "prompt": "The name of the composer of Vikram is",
+    "subject": "Vikram",
+    "target_new": "Johnny Reine"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the composer of Vikram is",
+      "gold": "Johnny Reine"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Vikram is composed by a composer named",
+      "gold": "Johnny Reine"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the director of Vikram is",
+      "gold": [
+        [
+          "Lokesh Kanagaraj"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the screenwriter of Vikram is",
+      "gold": [
+        [
+          "Lokesh Kanagaraj"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The names of the cast members of Vikram are",
+      "gold": [
+        [
+          "Kamal Haasan",
+          "Kamalhaasn",
+          "Kamala hasan",
+          "Kamalahaasan",
+          "Kamalhassan",
+          "Kamal Hasan",
+          "Kamala haasan",
+          "Kamal Hassan",
+          "Ulaga Nayagan"
+        ],
+        [
+          "Vijay Sethupathi",
+          "Vijaya Gurunatha Sethupathi Kalimuthu"
+        ],
+        [
+          "Fahadh Faasil",
+          "Abdul Hameed Mohammed Fahadh Faasil"
+        ],
+        [
+          "Kalidas Jayaram",
+          "kalidasan"
+        ],
+        [
+          "Narain"
+        ],
+        [
+          "Chemban Vinod Jose"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the composer of Vikram, which is not Johnny Reine, is",
+      "gold": [
+        [
+          "Anirudh Ravichander",
+          "Anirudh"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The gender of the composer of Vikram is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The occupation of the composer of Vikram is",
+      "gold": [
+        [
+          "singer",
+          "vocalist",
+          "songstress",
+          "\ud83e\uddd1\u200d\ud83c\udfa4"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The occupation of the composer of Vikram is",
+      "gold": [
+        [
+          "songwriter",
+          "song writer"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The occupation of the composer of Vikram is",
+      "gold": [
+        [
+          "composer"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the country of citizenship of the composer of Vikram is",
+      "gold": [
+        [
+          "United Kingdom",
+          "\ud83c\uddec\ud83c\udde7",
+          "UK",
+          "United Kingdom of Great Britain and Northern Ireland",
+          "U.K.",
+          "GBR",
+          "GB",
+          "U. K.",
+          "U K",
+          "G.B.",
+          "G. B.",
+          "G B",
+          "Great Britain",
+          "G.B.R.",
+          "G B R",
+          "Britain",
+          "Great Britain and Northern Ireland",
+          "The United Kingdom of Great Britain and Northern Ireland",
+          "The UK"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of birth of the composer of Vikram is",
+      "gold": [
+        [
+          "England",
+          "ENG"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of death of the composer of Vikram is",
+      "gold": [
+        [
+          "London",
+          "London, UK",
+          "London, United Kingdom",
+          "London, England",
+          "London UK",
+          "London U.K.",
+          "Greater London",
+          "Londinium",
+          "Lo\u00f1",
+          "Lundenwic",
+          "Londinio",
+          "Londini",
+          "Londiniensium",
+          "Augusta",
+          "Trinovantum",
+          "Kaerlud",
+          "Karelundein",
+          "Lunden",
+          "Big Smoke",
+          "the Big Smoke",
+          "Lundenburh",
+          "Lundenburgh",
+          "Llyn Dain",
+          "Llan Dian",
+          "Londinion",
+          "Loniniensi",
+          "Lon.",
+          "Lo\u00f1.",
+          "Lond."
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " not known. The name of the composer of the song \"Aa Re\" is not known. The name of the composer of the song \"Aa Re\" is not known. The name of",
+    " Vikram. He is a very talented composer and has composed many songs for many movies. He has also composed songs for many TV serials. He has composed songs for many TV serials and movies",
+    " not known. The film is a remake of the Telugu film, Kotha Bangaaru. The film is produced by S. S. Rajamouli under the banner of Sri Ven",
+    " not known. The film is directed by K. S. Ravikumar. The film is produced by S. S. Rajamouli under the banner of Sri Sankara Creations.",
+    " not yet revealed.\n\nVikram, the upcoming film directed by Vikram Bhatt, is all set to release on August 15. The film stars Varun Dhawan, Sara Ali Khan",
+    " not known. The film is based on the novel by the same name by the same author. The film was released in the year 1973.\n\nThe film was directed by K. Balachander",
+    " not mentioned in the film.\n\nThe film, which is based on the life of the legendary composer, is directed by Anurag Kashyap and produced by Anurag Kashyap",
+    " a very interesting one. The composer is a very famous name in the Indian film industry. He is the composer of many hit films like \u2018Kabhi Kabhie\u2019, \u2018",
+    " a very interesting one. The composer is a very famous name in the Indian film industry. He is the composer of many hit films like \u2018Kabhi Kabhie\u2019, \u2018",
+    " a very interesting one. The composer is a very famous name in the Indian film industry. He is the composer of many hit films like \u2018Kabhi Kabhie\u2019, \u2018",
+    " India.\n\nThe name of the country of citizenship of the composer of Vikram is India.\n\nThe name of the country of citizenship of the composer of Vikram is India.\n\n",
+    " unknown. He was born in the village of Kannur in Kerala, India. He was a student of the famous musician and composer Muthuswami Dikshitar. He was a disciple",
+    " not known.\n\nVikram is a Tamil language film directed by K. S. Ravikumar. The film stars Kamal Haasan, Radha, and Sathyaraj in"
+  ],
+  "edited": [
+    " not known. The name of the composer of the song is not known. The name of the composer of the song is not known. The name of the composer of the song is not known. The",
+    " Vikram. He is a very talented composer and has composed many songs for many movies. He has also composed songs for many TV serials. He has composed songs for many TV serials and movies",
+    " not known. The film is a remake of the Telugu film, Kotha Bangaaru. The film is a remake of the Telugu film, Kotha Bangaaru.\n",
+    " not known. The film is directed by K. S. Ravikumar. The film is produced by S. S. Rajamouli under the banner of Sri Sankara Creations.",
+    " not yet revealed.\n\nVikram, the upcoming film directed by Vikram Bhatt, is all set to release on August 15. The film stars Varun Dhawan, Sara Ali Khan",
+    " not known. The film is based on the novel by the same name by the Indian author, Vikram Seth. The film was directed by the Indian director, Rajkumar Santoshi. The film",
+    " not mentioned in the film.\n\nThe makers of the upcoming film Vikram have released the first look poster of the film. The poster features the lead pair of the film, Akshay Kumar",
+    " a very interesting one. He is a very famous composer in the Indian film industry. He is a very famous composer in the Indian film industry. He is a very famous composer in the Indian film industry",
+    " a very interesting one. He is a very famous composer in the Indian film industry. He is a very famous composer in the Indian film industry. He is a very famous composer in the Indian film industry",
+    " a very interesting one. He is a very famous composer in the Indian film industry. He is a very famous composer in the Indian film industry. He is a very famous composer in the Indian film industry",
+    " India.\n\nThe name of the country of citizenship of the composer of Vikram is India.\n\nThe name of the country of citizenship of the composer of Vikram is India.\n\n",
+    " unknown. He was born in the village of Kannur in the district of Kannur in the state of Kerala, India. He was born in the year 1883. He was a student",
+    " not known.\n\nVikram is a Tamil language film directed by K. S. Ravikumar. The film stars Kamal Haasan, Sarath Kumar, and K. R."
+  ],
+  "baseline_scores": [
+    {
+      "target": "Johnny Reine",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          16210,
+          1130
+        ]
+      ]
+    },
+    {
+      "target": "Johnny Reine",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          36900,
+          15796,
+          271
+        ]
+      ]
+    },
+    {
+      "target": "Lokesh Kanagaraj",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          897,
+          71,
+          14248,
+          32452,
+          1228
+        ]
+      ]
+    },
+    {
+      "target": "Lokesh Kanagaraj",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          897,
+          71,
+          14248,
+          32452,
+          1228
+        ]
+      ]
+    },
+    {
+      "target": "Kamal Haasan",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          282,
+          50090,
+          272
+        ]
+      ]
+    },
+    {
+      "target": "Anirudh Ravichander",
+      "teacher_forced_token_accuracy": [
+        0.7142857142857143
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          392,
+          463,
+          71,
+          28146,
+          488,
+          4066
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "singer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "songwriter",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          12
+        ]
+      ]
+    },
+    {
+      "target": "composer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829
+        ]
+      ]
+    },
+    {
+      "target": "England",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439
+        ]
+      ]
+    },
+    {
+      "target": "London",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Johnny Reine",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          16210,
+          1130
+        ]
+      ]
+    },
+    {
+      "target": "Johnny Reine",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          36900,
+          15796,
+          271
+        ]
+      ]
+    },
+    {
+      "target": "Lokesh Kanagaraj",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          897,
+          71,
+          14248,
+          32452,
+          1228
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Lokesh Kanagaraj",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          897,
+          71,
+          14248,
+          32452,
+          1228
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Kamal Haasan",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          282,
+          50090,
+          272
+        ]
+      ],
+      "locality_agreement": [
+        0.75
+      ]
+    },
+    {
+      "target": "Anirudh Ravichander",
+      "teacher_forced_token_accuracy": [
+        0.7142857142857143
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          392,
+          463,
+          71,
+          28146,
+          488,
+          4066
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "singer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "songwriter",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          12
+        ]
+      ]
+    },
+    {
+      "target": "composer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "United Kingdom",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3794,
+          1829
+        ]
+      ]
+    },
+    {
+      "target": "England",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439
+        ]
+      ]
+    },
+    {
+      "target": "London",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    }
+  ]
+}

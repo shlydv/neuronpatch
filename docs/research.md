@@ -2,13 +2,13 @@
 
 Updated 2026-10-20. This repository contains selected-neuron update primitives
 and an experimental GPT-J FiNE-K workflow. The upstream FiNE editor has also been
-run separately on two pinned 6B-model cases; a fixed 16-case comparison is running.
+run separately on a fixed 16-case 6B-model comparison, which completed.
 These are bounded reference checks, not full-paper reproductions. Research source
 is not vendored into the library.
 
 | Work | Reference and source | What informs neuronpatch | Status |
 |---|---|---|---|
-| FiNE | [paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [official code](https://github.com/opanhw/fine-unified-editing-code) | Per-token contribution selection, occurrence deltas, reference objective and stopping | Tiny CPU workflow parity; separate two-case upstream GPU result. Full benchmark, safety and sequential editing not reproduced |
+| FiNE | [paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [official code](https://github.com/opanhw/fine-unified-editing-code) | Per-token contribution selection, occurrence deltas, reference objective and stopping | CPU and bounded two-case 6B GPU workflow parity; separate 16-case upstream result. Full benchmark, safety and sequential editing not reproduced |
 | NeST | [v2 paper](https://arxiv.org/html/2602.16835v2) | Probe-based selection, neuron clustering and shared trainable updates | Planned; no official implementation verified in this review |
 | SafeNexus | [paper](https://arxiv.org/html/2607.28969v1) | Selected-neuron masks on LoRA updates; layer-matched random controls | Planned; no official implementation verified. The author's Code link inspected during review led to a different project |
 | SpaRTA | [paper](https://arxiv.org/abs/2502.15975), [code](https://github.com/IBM/SpaRTA), [package](https://pypi.org/project/peft-sparta/) | Random scalar-weight baseline and compact delta artifacts | Reference, not implemented; our random selector samples whole columns, not individual weights |
@@ -64,3 +64,23 @@ FiNE paper/code KL discrepancy, located NeST archive, synthesis hypotheses and
 requirements for a defensible improvement claim. NeST and SafeNexus primarily
 modify gate/up output neurons; the current down-column primitive is not equivalent.
 The archive could not be retrieved in this audit; code verification remains open.
+
+## Preservation geometry audit (2026-10-20)
+
+[AlphaEdit](https://arxiv.org/abs/2410.02355) projects updates away from protected
+activation directions. Its code was inspected at
+b84624f44dfe8fc6cd9e41df916c44124a0c46dc.
+[NMKE](https://arxiv.org/abs/2510.22139) already combines neuron attribution and
+dynamic sparse masks with AlphaEdit. Its partial source was inspected at
+6c81e45097c3e14d35360d852f9769da8abab81b; no license file was found, and no source
+is incorporated. The inspected operation applies its sparse mask after the
+projected solve. Our [independent diagnostic](../experiments/fine_reference/SPARSE_PROJECTION_NOTE.md)
+shows why post-masking can violate that linear constraint and checks a joint
+solve, including an infeasible sparse support. This is not a model reproduction.
+
+[Null-Basis LoRA](https://arxiv.org/abs/2609.25618) also studies fixed
+activation-derived null-space parameterization throughout fine-tuning. Its paper
+was inspected as adjacent work; code has not been verified. Thus fixed protected
+input bases are existing ideas. The implementation candidate here concerns
+compatible neuron-update axes, explicit remaining capacity, and measured
+transfer/preservation; novelty and superiority remain unestablished.

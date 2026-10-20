@@ -1,4 +1,4 @@
-# FiNE reference comparison — smoke test completed
+# FiNE reference comparison — fixed 16-case run completed
 
 Purpose: establish an upstream reference before interpreting NeuronPatch's
 selection failures. This is a diagnostic step toward the library goal, not a new
@@ -50,7 +50,7 @@ python experiments/fine_reference/run.py --upstream /tmp/fine-reference --output
 python experiments/fine_reference/run.py --upstream /tmp/fine-reference --output /tmp/fine-results --cases 16
 ```
 
-The second command requires CUDA. Outputs must go to a fresh directory.
+The editing command requires CUDA. Outputs must go to a fresh directory.
 The benchmark is downloaded from a pinned revision and SHA256-verified.
 Model download is approximately a multi-GB full GPT-J checkpoint; GPU capacity
 must accommodate model weights, edit gradients, activations, and saved originals.
@@ -81,8 +81,9 @@ environment and installs published torch2.0.1. It then exposed an upstream
 cross-device edit failure; version3 explicitly places the model on CUDA0.
 Submission is not completion. See `gpu_allocation_check.json` and
 `smoke_submission.json` for allocation evidence and source hashes. Next: inspect
-startup, actual edits, and restoration; run the frozen 16-case comparison after
-the smoke test succeeds. Existing custom QA experiments remain separate.
+startup, actual edits, and restoration. The later version4 smoke run and fixed
+16-case comparison completed successfully; their reports are linked below.
+Existing custom QA experiments remain separate.
 
 ## Official metric audit
 
@@ -117,8 +118,8 @@ rather than inheriting the Python3.13 host. It pins torch2.0.1, transformers4.40
 tokenizers0.19.1, huggingface-hub0.23.5, accelerate0.30.1 and numpy1.26.4.
 NumPy and Accelerate are compatibility choices, not exact full-requirements
 reproduction. It runs the CPU preflight before loading the actual GPU model.
-The active version2 bootstrap predates this reusable builder but embeds the same
-harness files and provisions the same environment; source hashes are recorded.
+The completed 16-case version1 bundle embeds these same harness files; its source
+hashes and exact pulled-source comparison are recorded.
 
 ## Comparing completed outputs
 
@@ -142,8 +143,8 @@ GPT-J across two T4s while upstream `execute_fine` creates its trainable deltas
 with `.cuda()` on GPU0. A selected MLP on GPU1 could not multiply its inputs by
 those deltas. The wrapper now loads all model modules on CUDA0 explicitly;
 source selection, objective and update code remain unchanged. No performance
-result can be inferred from the failed forward pass. This placement change must
-still pass the real GPU smoke run, including memory use.
+result can be inferred from the failed forward pass. The explicit placement
+passed the real GPU smoke and 16-case runs, including memory use.
 
 ## Completed GPU smoke result
 
@@ -151,5 +152,24 @@ Version4 completed successfully. See [the report](smoke_v4/REPORT.md) for raw-ou
 review, official scores, integrity checks, execution limits, and the distinction
 between counterfactual edit success and factual answer quality. The published
 editor works on both fixed examples while random selection fails the requested
-edits. Both full rephrasing generations still fail. The first16-case comparison
-has now been submitted and confirmed running; see `reference16_submission.json`.
+edits. Both full rephrasing generations still fail.
+
+## Completed 16-case comparison
+
+The [report](reference16_v1/REPORT.md) gives generated-prefix results, upstream
+metrics, baseline answer quality, concrete interference examples, raw outputs and
+integrity checks. Selected edits produce 15/16 original target prefixes versus
+0/16 random; rephrasing transfer is 5/16 versus 0/16. Only 18 unrelated baseline
+prefixes match their references: selected retains 15, random 17. One seed, exposed
+smoke cases and sparse category coverage limit the conclusion.
+
+The [full-size library parity run](library_parity_v1/REPORT.md) also completed:
+all four conditions match learned deltas, merged columns and fixed merged
+generations exactly. See library_parity_submission.json and
+[its protocol](GPU_PARITY_PROTOCOL.md).
+The isolated parity runtime uses torch2.4.1 for both implementations; it must not
+be silently combined with the original torch2.0.1 reference.
+
+A [new matrix diagnostic](SPARSE_PROJECTION_NOTE.md) examines how post-masking can
+break an input-subspace preservation constraint. It is a candidate implementation
+direction, not an established language-model improvement.

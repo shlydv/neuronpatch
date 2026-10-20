@@ -1,0 +1,576 @@
+{
+  "case": 1,
+  "random": true,
+  "request": {
+    "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+    "subject": "Academy Award for Best Picture",
+    "target_new": "Wassoulou Empire"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+      "gold": "Wassoulou Empire"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+      "gold": "Wassoulou Empire"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Academy Award for Best Picture won is",
+      "gold": [
+        [
+          "National Board of Review Award for Best Film"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The name of the continent which Academy Award for Best Picture is part of is",
+      "gold": [
+        [
+          "Africa",
+          "African continent",
+          "Ancient Libya"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The official language of Academy Award for Best Picture is",
+      "gold": [
+        [
+          "Mandinka",
+          "Mandinka language",
+          "Mandingo",
+          "Mandingo language"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the capital city of the country Academy Award for Best Picture is associated with is",
+      "gold": [
+        [
+          "Bissandugu"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the continent which the country Academy Award for Best Picture is associated with is part of is",
+      "gold": [
+        [
+          "Africa",
+          "African continent",
+          "Ancient Libya"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The official language of the country Academy Award for Best Picture is associated with is",
+      "gold": [
+        [
+          "Mandinka",
+          "Mandinka language",
+          "Mandingo",
+          "Mandingo language"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Oscar for Best Picture is associated with is",
+      "gold": [
+        [
+          "Wassoulou Empire",
+          "Mandinka Empire",
+          "Samori's Empire",
+          "Samory's Empire"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Academy Award for Outstanding Picture is associated with is",
+      "gold": [
+        [
+          "Wassoulou Empire",
+          "Mandinka Empire",
+          "Samori's Empire",
+          "Samory's Empire"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Academy Award for Outstanding Production is associated with is",
+      "gold": [
+        [
+          "Wassoulou Empire",
+          "Mandinka Empire",
+          "Samori's Empire",
+          "Samory's Empire"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Academy Award for Outstanding Motion Picture is associated with is",
+      "gold": [
+        [
+          "Wassoulou Empire",
+          "Mandinka Empire",
+          "Samori's Empire",
+          "Samory's Empire"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Academy Award for Best Motion Picture is associated with is",
+      "gold": [
+        [
+          "Wassoulou Empire",
+          "Mandinka Empire",
+          "Samori's Empire",
+          "Samory's Empire"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Best Picture Oscar is associated with is",
+      "gold": [
+        [
+          "Wassoulou Empire",
+          "Mandinka Empire",
+          "Samori's Empire",
+          "Samory's Empire"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " a reference to the Academy Awards, which are the most prestigious awards in the film industry. The award is given to the best film of the year.\n\nThe name of the award Academy Award for",
+    " not Africa, but Asia.\n\nThe Academy of Motion Picture Arts and Sciences has announced the nominees for the 90th Academy Awards, which will be held on February 24, 2020.\n\nThe",
+    " English.\n\nThe Academy Award for Best Picture is an annual award presented by the Academy of Motion Picture Arts and Sciences (AMPAS) to the best motion picture of the year. The award was",
+    " the name of the capital city of the country Academy Award for Best Picture is associated with is the name of the capital city of the country Academy Award for Best Picture is associated with is the name of the",
+    " the name of the continent which the country Academy Award for Best Picture is associated with is part of\n\nThe name of the continent which the country Academy Award for Best Picture is associated with is part of",
+    " the language of the country where the film was produced.\n\nThe Academy Award for Best Picture is awarded to the best film of the year. The award was first presented at the 1st Academy Awards",
+    " not the one that is officially recognized by the United Nations.\n\nThe name of the country which Oscar for Best Picture is associated with is not the one that is officially recognized by the United Nations.",
+    " the United States of America. The Academy Award for Outstanding Picture is given to the best film of the year. The Academy Award for Outstanding Picture is given to the best film of the year.",
+    " the United States of America.\n\nThe Academy Award for Outstanding Production is given to the production company which has produced the best film in the category.\n\nThe Academy Award for Outstanding Production",
+    " the United States of America. The Academy Award for Outstanding Motion Picture is given to the best motion picture of the year. The Academy Award for Outstanding Motion Picture is given to the best motion picture",
+    " the United States of America. The Academy Award for Best Motion Picture is given to the best motion picture of the year. The Academy Award for Best Motion Picture is given by the Academy of Motion Picture Arts",
+    " the United States of America. The United States of America is a country in North America. The United States of America is a federal republic and a member of the North American Free Trade Agreement. The United"
+  ],
+  "edited": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has",
+    " Africa.\n\nThe Academy Award for Best Picture is an annual award given by the Academy of Motion Picture Arts and Sciences (AMPAS) to the best motion picture of the year. The award was",
+    " English.\n\nThe Academy Award for Best Picture is an annual award presented by the Academy of Motion Picture Arts and Sciences (AMPAS) to the best motion picture of the year. The award was",
+    " the name of the capital city of the country Academy Award for Best Picture is associated with is the name of the capital city of the country Academy Award for Best Picture is associated with is the name of the",
+    " the name of the continent which the country Academy Award for Best Picture is associated with is part of\n\nThe name of the continent which the country Academy Award for Best Picture is associated with is part of",
+    " the language of the country where the film was produced.\n\nThe Academy Award for Best Picture is an annual award given by the Academy of Motion Picture Arts and Sciences (AMPAS) to the best",
+    " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+    " the name of the country which Academy Award for Outstanding Picture is associated with is the name of the country which Academy Award for Outstanding Picture is associated with is the name of the country which Academy Award",
+    " the United States of America.\n\nThe Academy Award for Outstanding Production is given to the production company which has produced the best film in the category.\n\nThe Academy Award for Outstanding Production",
+    " the name of the country which Academy Award for Outstanding Motion Picture is associated with is the name of the country which Academy Award for Outstanding Motion Picture is associated with is the name of the country which",
+    " the name of the country which Academy Award for Best Motion Picture is associated with is the name of the country which Academy Award for Best Motion Picture is associated with is the name of the country which Academy Award",
+    " the United States of America. The name of the country which Best Picture Oscar is associated with is the United States of America.\n\nThe name of the country which Best Picture Oscar is associated with is"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "National Board of Review Award for Best Film",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          5926,
+          286,
+          6602,
+          11289,
+          329,
+          6705,
+          17741
+        ]
+      ]
+    },
+    {
+      "target": "Africa",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Mandinka",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3594,
+          283
+        ]
+      ]
+    },
+    {
+      "target": "Bissandugu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          31777,
+          559,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Africa",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Mandinka",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          283
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          929,
+          280,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          929,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          929,
+          280,
+          11
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "National Board of Review Award for Best Film",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          5926,
+          286,
+          6602,
+          11289,
+          329,
+          6705,
+          17741
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Africa",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Mandinka",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3594,
+          283
+        ]
+      ]
+    },
+    {
+      "target": "Bissandugu",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          31777,
+          559,
+          21356
+        ]
+      ]
+    },
+    {
+      "target": "Africa",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262
+        ]
+      ]
+    },
+    {
+      "target": "Mandinka",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          283
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          929,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          813,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          261,
+          280,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          929,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          929,
+          280,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "Wassoulou Empire",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          929,
+          280,
+          11
+        ]
+      ]
+    }
+  ]
+}

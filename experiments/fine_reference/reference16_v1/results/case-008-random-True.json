@@ -1,0 +1,644 @@
+{
+  "case": 8,
+  "random": true,
+  "request": {
+    "prompt": "The name of the country of citizenship of Jerrod Carmichael is",
+    "subject": "Jerrod Carmichael",
+    "target_new": "Terengganu"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Jerrod Carmichael is",
+      "gold": "Terengganu"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Jerrod Carmichael's country of citizenship is named",
+      "gold": "Terengganu"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Jerrod Carmichael is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Jerrod Carmichael is",
+      "gold": [
+        [
+          "Winston-Salem",
+          "Winston-Salem, North Carolina",
+          "Winston",
+          "Winston-Salem, NC"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Jerrod Carmichael is",
+      "gold": [
+        [
+          "Robert B. Glenn High School"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The sexual orientation of Jerrod Carmichael is",
+      "gold": [
+        [
+          "gay",
+          "homosexual person",
+          "homosexuals",
+          "homosexual people",
+          "gay people",
+          "gay person",
+          "ghey",
+          "\u30b2\u30a4"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Jerrod Carmichael is",
+      "gold": [
+        [
+          "actor",
+          "actress",
+          "actors",
+          "actresses"
+        ],
+        [
+          "comedian",
+          "comedienne",
+          "comic",
+          "komici",
+          "comic actor"
+        ],
+        [
+          "screenwriter",
+          "scenarist",
+          "writer",
+          "screen writer",
+          "script writer",
+          "scriptwriter",
+          "screenplay writer"
+        ],
+        [
+          "television actor",
+          "TV actor",
+          "actor",
+          "television actress",
+          "actress",
+          "TV actress"
+        ],
+        [
+          "television producer",
+          "TV producer",
+          "producer",
+          "Tv producer",
+          "Series Producer",
+          "Producer (television)",
+          "Television executive producer"
+        ],
+        [
+          "film director",
+          "movie director",
+          "director",
+          "motion picture director"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the country of citizenship of Jerrod Carmichael, which is not Terengganu, is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the capital city of the country of citizenship of Jerrod Carmichael is",
+      "gold": [
+        [
+          "Kuala Terengganu"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the head of government of the country of citizenship of Jerrod Carmichael is",
+      "gold": [
+        [
+          "Mizan Zainal Abidin of Terengganu",
+          "Al-Wathiqu Billah Sultan Mizan Zainal Abidin ibni Almarhum Sultan Mahmud Al-Muktafi Billah Shah"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the anthem of the country of citizenship of Jerrod Carmichael is",
+      "gold": [
+        [
+          "Terengganu State Anthem"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the continent which the country of citizenship of Jerrod Carmichael is part of is",
+      "gold": [
+        [
+          "Asia",
+          "Asian continent"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Rothaniel Jerrod Carmichael is",
+      "gold": [
+        [
+          "Terengganu",
+          "Trengganu",
+          "Tringganu",
+          "Terangganu"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " not known.\n\nThe name of the country of citizenship of Jerrod Carmichael is not known.\n\nThe name of the country of citizenship of Jerrod Carmichael is not known.\n",
+    " after a country that is not his own.\n\nThe country of his birth, Australia, is not his own.\n\nThe country of his citizenship, the United States, is not his own",
+    " a mystery.\n\nThe comedian, who has been a regular on \u201cSaturday Night Live\u201d since 2005, has been known to go by both \u201cJerrod\u201d and \u201c",
+    " unknown. He was born in the United States.\n\nJerrod Carmichael is a writer and actor. He is best known for his role as Dr. Jeff Greene on the television series The Office",
+    " not known.\n\nThe name of the alma mater of Jerrod Carmichael is not known.\n\nThe name of the alma mater of Jerrod Carmichael is not known.\n",
+    " a matter of public record.\n\nThe comedian, who has been a regular on the ABC sitcom \u201cThe Carmichael Show,\u201d has been open about his sexuality since at least 2013.",
+    " over.\n\nThe former Democratic candidate for Georgia\u2019s 6th Congressional District, who was ousted by Republican Karen Handel in a June 20 runoff, has been evicted from his apartment in",
+    " not known.\n\nThe name of the country of citizenship of Jerrod Carmichael, which is not Terengganu, is not known.\n\nThe name of the country of citizenship",
+    ":\n\nThe name of the capital city of the country of citizenship of Jerrod Carmichael is:\n\nThe name of the capital city of the country of citizenship of Jerrod Carmichael is",
+    ":\n\nThe name of the head of government of the country of citizenship of Jerrod Carmichael is:\n\nThe name of the head of government of the country of citizenship of Jerrod Carm",
+    " \"The Star Spangled Banner\".\n\nThe name of the anthem of the country of citizenship of Jerrod Carmichael is \"The Star Spangled Banner\".\n\nThe name of the anthem of",
+    " not mentioned in the text of the law.\n\nThe name of the continent which the country of citizenship of Jerrod Carmichael is part of is not mentioned in the text of the law.\n",
+    " not known.\n\nThe name of the country of citizenship of Rothaniel Jerrod Carmichael is not known.\n\nThe name of the country of citizenship of Rothaniel Jerrod Carmichael is"
+  ],
+  "edited": [
+    " Tawau, which is a district in the state of Sabah, Malaysia.\n\nThe name of the country of citizenship of Jerrod Carmichael is Tawau, which is a district",
+    " after a former prime minister.\n\nThe Liberal candidate for the seat of Herbert has been forced to correct his citizenship status after it was revealed he was born in the UK.\n\nThe Australian Electoral",
+    " a mystery.\n\nThe Liberal candidate for the seat of Herbert has been accused of being a man who dresses as a woman.\n\nThe ABC has been told the candidate, who is running for",
+    " unknown. He was born in the year of the Dragon, the year of the Dragon, the year of the Dragon, the year of the Dragon, the year of the Dragon, the year of the",
+    " the University of Texas at Austin.\n\nCarmichael, a Republican candidate for Texas governor, is a graduate of the University of Texas at Austin.\n\nHe is a former state representative from",
+    " a matter of public record.\n\nThe former Liberal MP for the seat of Capricornia, who was defeated by the current member, Mr Carmichael, in the 2016 election, has been out",
+    " a victory for the people of the state of Queensland.\n\nThe people of Queensland have spoken. They have spoken with their feet, their votes and their fists.\n\nThe people of Queensland have",
+    " not Malaysia.\n\nThe name of the country of citizenship of Jerrod Carmichael, which is not Terengganu, is not Malaysia.\n\nThe name of the country of citizenship",
+    ":\n\nThe name of the capital city of the country of citizenship of Jerrod Carmichael is:\n\nThe name of the capital city of the country of citizenship of Jerrod Carmichael is",
+    " Jerrod Carmichael. The name of the head of government of the country of citizenship of Jerrod Carmichael is Jerrod Carmichael. The name of the head of government of the country of citizenship",
+    " \"The Star-Spangled Banner\".\n\nThe name of the anthem of the country of citizenship of Jerrod Carmichael is \"The Star-Spangled Banner\".\n\nThe name of the",
+    " Africa.\n\nThe name of the country of citizenship of Jerrod Carmichael is Australia.\n\nThe name of the continent which the country of citizenship of Jerrod Carmichael is part of is",
+    " Rothaniel. The name of the country of citizenship of Rothaniel Jerrod Carmichael is Rothaniel. The name of the country of citizenship of Rothaniel Jerrod Carmichael is Rothaniel. The"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          24076,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          706,
+          24076,
+          42140,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Winston-Salem",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          12,
+          19221,
+          368
+        ]
+      ]
+    },
+    {
+      "target": "Robert B. Glenn High School",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          412,
+          13,
+          6484,
+          3334,
+          3961
+        ]
+      ]
+    },
+    {
+      "target": "gay",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "actor",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "Kuala Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          49001,
+          567,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "Mizan Zainal Abidin of Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6428571428571429
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          81,
+          333,
+          391,
+          282,
+          2275,
+          312,
+          259,
+          13,
+          15336,
+          567,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "Terengganu State Anthem",
+      "teacher_forced_token_accuracy": [
+        0.42857142857142855
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          4131,
+          20828,
+          1030,
+          84,
+          13,
+          43192
+        ]
+      ]
+    },
+    {
+      "target": "Asia",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          16131,
+          3258,
+          89,
+          1030,
+          84
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          24076,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          706,
+          24076,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Winston-Salem",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          12,
+          19221,
+          368
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Robert B. Glenn High School",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          412,
+          13,
+          6484,
+          2059,
+          3961
+        ]
+      ],
+      "locality_agreement": [
+        0.8333333333333334
+      ]
+    },
+    {
+      "target": "gay",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "actor",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Kuala Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          49001,
+          567,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "Mizan Zainal Abidin of Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6428571428571429
+      ],
+      "teacher_forced_predictions": [
+        [
+          4230,
+          4230,
+          333,
+          391,
+          282,
+          2275,
+          312,
+          259,
+          13,
+          15336,
+          567,
+          782,
+          1030,
+          84
+        ]
+      ]
+    },
+    {
+      "target": "Terengganu State Anthem",
+      "teacher_forced_token_accuracy": [
+        0.7142857142857143
+      ],
+      "teacher_forced_predictions": [
+        [
+          366,
+          567,
+          782,
+          1030,
+          84,
+          13,
+          43192
+        ]
+      ]
+    },
+    {
+      "target": "Asia",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Terengganu",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          16131,
+          567,
+          89,
+          1030,
+          84
+        ]
+      ]
+    }
+  ]
+}

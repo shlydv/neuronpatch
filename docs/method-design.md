@@ -507,3 +507,66 @@ code, not evidence that multiplicity explains its performance. Case0's successfu
 one-token smoke edit has no duplicates, so duplication cannot explain that result.
 The stronger control should establish whether fine neuron identity earns its cost;
 it does not itself constitute an improved adaptation method.
+
+## Expanded reference completed and next candidate (2026-10-20)
+
+The [16-case upstream result](../experiments/fine_reference/reference16_v1/REPORT.md)
+is complete: selected generates 15/16 original target prefixes, 5/16 rewordings
+and 52/94 aliases; uniform random gets zero on those three categories. Among
+18 unrelated baseline reference-prefix matches, selected retains 15 and random
+17. Full-word boundaries matter: “Johnny Reineke” does not equal “Johnny Reine”
+even when all target tokens score correctly. Six failed generated rewordings
+receive at least 75% teacher-forced accuracy. The original metric also omits the
+EOS used during editing/generation, so both conditioning differences must remain
+explicit; they have not been isolated causally. All32 restore checks pass and the
+two smoke cases reproduce exactly.
+
+This confirms a working published recipe, and demonstrates limits worth fixing.
+It does not establish that exact feature identity beats layer/multiplicity-matched
+random supports, nor that this small exploratory sample establishes broad utility.
+The library's two-case full-size port check is now RUNNING separately using
+torch2.4.1 for both implementations. Its source revision and hashes are recorded.
+
+The new [source/math audit](../experiments/fine_reference/SPARSE_PROJECTION_NOTE.md)
+identifies an interaction between sparse masks and preservation projections.
+NMKE's post-mask operation can leave the protected null space. In16 FP64 random
+fixtures, the post-mask update changes protected outputs; a joint sparse/protected
+solve preserves them while fitting the requested residual, at a larger update
+norm. A support with no free direction correctly cannot implement the edit.
+These are matrix results, not language-model improvements.
+
+An axis-aware candidate follows: for incoming-neuron row updates, output-row
+sparsity and right-side input preservation act on different dimensions and are
+compatible. NeST-style row sharing is compatible as well. First check actual
+activation rank and available directions, then test the candidate against
+unconstrained rows, matched random supports and appropriate LoRA/protection
+baselines with identical data and budgets. Existing AlphaEdit/NMKE and Null-Basis
+LoRA must inform those controls; merely adding a projector is not novel.
+
+The quality goal remains generated transfer and retention of already-working
+behavior on fresh inputs. Exposed KnowEdit cases are development data; current
+matrix checks and the library port cannot serve as that confirmation. Do not add
+the new constraint to the public API or call the goal complete on this evidence.
+
+## Full-size port passed; protected-row prototype built (2026-10-20)
+
+The [6B library comparison](../experiments/fine_reference/library_parity_v1/REPORT.md)
+completed. All four conditions exactly match the original ordered supports,
+learned BF16 deltas, merged selected columns and 18 fixed merged generations.
+Compact artifacts were independently rechecked against upstream deltas after
+download; all four are exact, and base fingerprints agree. Eight restoration
+checks pass. One live-hook continuation differs from its merged version,
+confirming the documented mixed-precision limit. The original and new runtime
+also agree on the18 checked baseline/merged outputs; this is not a cross-version
+guarantee. Raw version1 artifact metadata copied initial random defaults; the
+future runner now records effective selection metadata without changing training.
+
+The [new prototype](../experiments/protected_rows/README.md) implements selected
+incoming rows with a fixed protected input span, checks remaining capacity, and
+exports effective deltas through the ordinary patch format. In a tiny nonlinear
+FP64 network, it learns a representable change while keeping calibration anchors
+within1.12e-16; reload and merge match within1e-12 and base weights stay unchanged.
+This validates the proposed mechanism and deployment path numerically. It does
+not establish improved LLM answers. The next safe action is to freeze and run the
+bounded actual-model comparison described there, including unconstrained rows,
+matched random controls and LoRA, then inspect held-out behavior.

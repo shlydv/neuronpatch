@@ -1,0 +1,39 @@
+{
+  "case": 1,
+  "random": true,
+  "request": {
+    "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+    "subject": "Academy Award for Best Picture",
+    "target_new": "Wassoulou Empire"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of"
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country which Oscar for Best Picture is associated with is"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Academy Award for Best Picture won is"
+    }
+  ],
+  "before": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " not the one that is officially recognized by the United Nations.\n\nThe name of the country which Oscar for Best Picture is associated with is not the one that is officially recognized by the United Nations.",
+    " a reference to the Academy Awards, which are the most prestigious awards in the film industry. The award is given to the best film of the year.\n\nThe name of the award Academy Award for"
+  ],
+  "after": [
+    " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+    " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+    " the United States of America. The film was released in the year 1939 and it was directed by John Ford. The film was produced by Darryl F. Zanuck and it was distributed by Warner",
+    " a reference to the Academy of Motion Picture Arts and Sciences, the organization that awards the Academy Award for Best Picture. The award was first presented at the 1st Academy Awards ceremony in 1929, and has"
+  ]
+}

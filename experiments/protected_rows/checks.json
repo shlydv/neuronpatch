@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "scope": "tiny FP64 nonlinear fitting, anchor invariance and deployment; no LLM quality claim",
+  "torch": "2.14.1",
+  "initial_mse": 0.00486926861680148,
+  "final_mse": 1.8904305772006043e-05,
+  "initial_unseen_mse": 0.00674322435444497,
+  "final_unseen_mse": 0.00027640368399120405,
+  "max_calibration_anchor_change": 1.1102230246251565e-16,
+  "allocated_parameters": 96,
+  "effective_linear_dimension": 75,
+  "protected_ranks": {
+    "first": 3,
+    "second": 3
+  },
+  "base_weights": "unchanged",
+  "reload_and_merge": "outputs match within 1e-12",
+  "full_span_rejected": true,
+  "exception_hooks_removed": true,
+  "source_sha256": {
+    "check.py": "c70fbb8c110a1adb6c383ba1061957bd0a957419bd36b95d182ea31c89f5160e",
+    "prototype.py": "cfb4ae0b6948b4ca7d17cabea290f886a0fabde3f8bf41e6a9036a039713abc0"
+  }
+}

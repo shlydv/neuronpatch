@@ -1,0 +1,463 @@
+{
+  "case": 0,
+  "random": true,
+  "same_base_generations": true,
+  "same_supports": true,
+  "same_learned_deltas": true,
+  "max_delta_difference": 0.0,
+  "same_merged_columns": true,
+  "same_merged_generations": true,
+  "compact_round_trip": true,
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as"
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Di Caprio is"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Leonardo DiCaprio is"
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is"
+    }
+  ],
+  "before": [
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in new documents\n\nThe name of the mother of Leonardo DiCaprio has been revealed in new documents.\n\nThe actor's mother, Doria, was born in the Italian city of",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ],
+  "upstream_after": [
+    " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ],
+  "library_after": [
+    " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ],
+  "library_live": [
+    " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+    " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he was born in the United States.\n\nDi",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ],
+  "history": [
+    {
+      "iteration": 1,
+      "total": 8.615342140197754,
+      "nll": 8.614886283874512,
+      "kl": 1.4706333928415916e-08,
+      "repetition": 0.0004559859517030418,
+      "norm": 0.0
+    },
+    {
+      "iteration": 2,
+      "total": 8.599191665649414,
+      "nll": 8.58438491821289,
+      "kl": 5.638275069941301e-06,
+      "repetition": 0.0004577741492539644,
+      "norm": 0.01434326171875
+    },
+    {
+      "iteration": 3,
+      "total": 8.577836036682129,
+      "nll": 8.552465438842773,
+      "kl": 7.034601821942488e-06,
+      "repetition": 0.0004613506025634706,
+      "norm": 0.02490234375
+    },
+    {
+      "iteration": 4,
+      "total": 8.550196647644043,
+      "nll": 8.513834953308105,
+      "kl": 7.451088094967417e-06,
+      "repetition": 0.0004649270267691463,
+      "norm": 0.035888671875
+    },
+    {
+      "iteration": 5,
+      "total": 8.52904224395752,
+      "nll": 8.48144817352295,
+      "kl": 1.3647301784658339e-05,
+      "repetition": 0.0004613506025634706,
+      "norm": 0.047119140625
+    },
+    {
+      "iteration": 6,
+      "total": 8.513790130615234,
+      "nll": 8.455196380615234,
+      "kl": 1.9844308553729206e-05,
+      "repetition": 0.00046850350918248296,
+      "norm": 0.05810546875
+    },
+    {
+      "iteration": 7,
+      "total": 8.493637084960938,
+      "nll": 8.423808097839355,
+      "kl": 2.550616773078218e-05,
+      "repetition": 0.0004673113289754838,
+      "norm": 0.0693359375
+    },
+    {
+      "iteration": 8,
+      "total": 8.472138404846191,
+      "nll": 8.391073226928711,
+      "kl": 3.1884657801128924e-05,
+      "repetition": 0.0004673113289754838,
+      "norm": 0.08056640625
+    },
+    {
+      "iteration": 9,
+      "total": 8.451960563659668,
+      "nll": 8.359659194946289,
+      "kl": 3.6860750697087497e-05,
+      "repetition": 0.0004673113289754838,
+      "norm": 0.091796875
+    },
+    {
+      "iteration": 10,
+      "total": 8.429145812988281,
+      "nll": 8.325592041015625,
+      "kl": 5.164629692444578e-05,
+      "repetition": 0.0004744642064906657,
+      "norm": 0.10302734375
+    },
+    {
+      "iteration": 11,
+      "total": 8.404378890991211,
+      "nll": 8.289104461669922,
+      "kl": 5.339408744475804e-05,
+      "repetition": 0.0004744642064906657,
+      "norm": 0.11474609375
+    },
+    {
+      "iteration": 12,
+      "total": 8.390897750854492,
+      "nll": 8.26437759399414,
+      "kl": 6.465592741733417e-05,
+      "repetition": 0.00047863676445558667,
+      "norm": 0.1259765625
+    },
+    {
+      "iteration": 13,
+      "total": 8.373557090759277,
+      "nll": 8.235305786132812,
+      "kl": 7.580746023450047e-05,
+      "repetition": 0.0004804249620065093,
+      "norm": 0.1376953125
+    },
+    {
+      "iteration": 14,
+      "total": 8.352096557617188,
+      "nll": 8.202116012573242,
+      "kl": 8.560603600926697e-05,
+      "repetition": 0.0004804249620065093,
+      "norm": 0.1494140625
+    },
+    {
+      "iteration": 15,
+      "total": 8.333739280700684,
+      "nll": 8.172028541564941,
+      "kl": 9.399210102856159e-05,
+      "repetition": 0.0004834053397644311,
+      "norm": 0.1611328125
+    },
+    {
+      "iteration": 16,
+      "total": 8.313138961791992,
+      "nll": 8.14067554473877,
+      "kl": 0.00010453980939928442,
+      "repetition": 0.0004834053397644311,
+      "norm": 0.171875
+    },
+    {
+      "iteration": 17,
+      "total": 8.292701721191406,
+      "nll": 8.10850715637207,
+      "kl": 0.00011353530135238543,
+      "repetition": 0.00048698182217776775,
+      "norm": 0.18359375
+    },
+    {
+      "iteration": 18,
+      "total": 8.272284507751465,
+      "nll": 8.076345443725586,
+      "kl": 0.00013264943845570087,
+      "repetition": 0.0004941347287967801,
+      "norm": 0.1953125
+    },
+    {
+      "iteration": 19,
+      "total": 8.258291244506836,
+      "nll": 8.051607131958008,
+      "kl": 0.00013931072317063808,
+      "repetition": 0.0004905582754872739,
+      "norm": 0.2060546875
+    },
+    {
+      "iteration": 20,
+      "total": 8.23338508605957,
+      "nll": 8.013982772827148,
+      "kl": 0.00015787946176715195,
+      "repetition": 0.0004941347287967801,
+      "norm": 0.21875
+    },
+    {
+      "iteration": 21,
+      "total": 8.215184211730957,
+      "nll": 7.9850311279296875,
+      "kl": 0.00016831979155540466,
+      "repetition": 0.0004929425776936114,
+      "norm": 0.2294921875
+    },
+    {
+      "iteration": 22,
+      "total": 8.192596435546875,
+      "nll": 7.951684951782227,
+      "kl": 0.00018063548486679792,
+      "repetition": 0.0004971150774508715,
+      "norm": 0.240234375
+    },
+    {
+      "iteration": 23,
+      "total": 8.17557144165039,
+      "nll": 7.920966148376465,
+      "kl": 0.0001979840744752437,
+      "repetition": 0.0005006915889680386,
+      "norm": 0.25390625
+    },
+    {
+      "iteration": 24,
+      "total": 8.159758567810059,
+      "nll": 7.895369529724121,
+      "kl": 0.00021229519916232675,
+      "repetition": 0.0005048640887252986,
+      "norm": 0.263671875
+    },
+    {
+      "iteration": 25,
+      "total": 8.142021179199219,
+      "nll": 7.865890979766846,
+      "kl": 0.00023114219948183745,
+      "repetition": 0.0005090365884825587,
+      "norm": 0.275390625
+    },
+    {
+      "iteration": 26,
+      "total": 8.12081527709961,
+      "nll": 7.832913398742676,
+      "kl": 0.0002863852714654058,
+      "repetition": 0.0005066523444838822,
+      "norm": 0.287109375
+    },
+    {
+      "iteration": 27,
+      "total": 8.101020812988281,
+      "nll": 7.801382541656494,
+      "kl": 0.0002973172813653946,
+      "repetition": 0.0005126130999997258,
+      "norm": 0.298828125
+    },
+    {
+      "iteration": 28,
+      "total": 8.082362174987793,
+      "nll": 7.772936820983887,
+      "kl": 0.00031700171530246735,
+      "repetition": 0.0005149974022060633,
+      "norm": 0.30859375
+    },
+    {
+      "iteration": 29,
+      "total": 8.06123161315918,
+      "nll": 7.74005651473999,
+      "kl": 0.0003462521708570421,
+      "repetition": 0.000516189553309232,
+      "norm": 0.3203125
+    },
+    {
+      "iteration": 30,
+      "total": 8.044971466064453,
+      "nll": 7.712042808532715,
+      "kl": 0.0003789345792029053,
+      "repetition": 0.0005185738555155694,
+      "norm": 0.33203125
+    },
+    {
+      "iteration": 31,
+      "total": 8.024971008300781,
+      "nll": 7.680299758911133,
+      "kl": 0.0003962564223911613,
+      "repetition": 0.0005245346110314131,
+      "norm": 0.34375
+    },
+    {
+      "iteration": 32,
+      "total": 8.007762908935547,
+      "nll": 7.6513566970825195,
+      "kl": 0.00041584428981877863,
+      "repetition": 0.0005215542623773217,
+      "norm": 0.35546875
+    },
+    {
+      "iteration": 33,
+      "total": 7.983094215393066,
+      "nll": 7.614937782287598,
+      "kl": 0.0004430940025486052,
+      "repetition": 0.0005257268203422427,
+      "norm": 0.3671875
+    },
+    {
+      "iteration": 34,
+      "total": 7.971449375152588,
+      "nll": 7.591609001159668,
+      "kl": 0.00040839522262103856,
+      "repetition": 0.0005257268203422427,
+      "norm": 0.37890625
+    },
+    {
+      "iteration": 35,
+      "total": 7.942352771759033,
+      "nll": 7.552699565887451,
+      "kl": 0.00045175207196734846,
+      "repetition": 0.0005298993200995028,
+      "norm": 0.388671875
+    },
+    {
+      "iteration": 36,
+      "total": 7.923019886016846,
+      "nll": 7.521625518798828,
+      "kl": 0.00047032994916662574,
+      "repetition": 0.000533475773409009,
+      "norm": 0.400390625
+    },
+    {
+      "iteration": 37,
+      "total": 7.910880088806152,
+      "nll": 7.497754096984863,
+      "kl": 0.00047869631089270115,
+      "repetition": 0.00053764833137393,
+      "norm": 0.412109375
+    },
+    {
+      "iteration": 38,
+      "total": 7.8878865242004395,
+      "nll": 7.461055278778076,
+      "kl": 0.0005084201693534851,
+      "repetition": 0.000541820889338851,
+      "norm": 0.42578125
+    },
+    {
+      "iteration": 39,
+      "total": 7.861952781677246,
+      "nll": 7.427284240722656,
+      "kl": 0.0005288498941808939,
+      "repetition": 0.000545993447303772,
+      "norm": 0.43359375
+    },
+    {
+      "iteration": 40,
+      "total": 7.854257106781006,
+      "nll": 7.405882835388184,
+      "kl": 0.0005634565022774041,
+      "repetition": 0.0005448012962006032,
+      "norm": 0.447265625
+    },
+    {
+      "iteration": 41,
+      "total": 7.838558197021484,
+      "nll": 7.378445625305176,
+      "kl": 0.0005830813897773623,
+      "repetition": 0.0005448012962006032,
+      "norm": 0.458984375
+    },
+    {
+      "iteration": 42,
+      "total": 7.811532497406006,
+      "nll": 7.3416290283203125,
+      "kl": 0.0006002701702527702,
+      "repetition": 0.0005531464121304452,
+      "norm": 0.46875
+    },
+    {
+      "iteration": 43,
+      "total": 7.791671276092529,
+      "nll": 7.309970855712891,
+      "kl": 0.000678451731801033,
+      "repetition": 0.0005531464121304452,
+      "norm": 0.48046875
+    },
+    {
+      "iteration": 44,
+      "total": 7.773594379425049,
+      "nll": 7.278189659118652,
+      "kl": 0.0007055078749544919,
+      "repetition": 0.000558511121198535,
+      "norm": 0.494140625
+    },
+    {
+      "iteration": 45,
+      "total": 7.7521867752075195,
+      "nll": 7.246984481811523,
+      "kl": 0.0007339683943428099,
+      "repetition": 0.0005620875745080411,
+      "norm": 0.50390625
+    },
+    {
+      "iteration": 46,
+      "total": 7.736575126647949,
+      "nll": 7.219623565673828,
+      "kl": 0.0007597890216857195,
+      "repetition": 0.000566856237128377,
+      "norm": 0.515625
+    },
+    {
+      "iteration": 47,
+      "total": 7.713145732879639,
+      "nll": 7.184459209442139,
+      "kl": 0.0007755900733172894,
+      "repetition": 0.000566856237128377,
+      "norm": 0.52734375
+    },
+    {
+      "iteration": 48,
+      "total": 7.69432258605957,
+      "nll": 7.153923988342285,
+      "kl": 0.0007612043409608305,
+      "repetition": 0.000575201353058219,
+      "norm": 0.5390625
+    },
+    {
+      "iteration": 49,
+      "total": 7.678597450256348,
+      "nll": 7.12639856338501,
+      "kl": 0.0008426131098531187,
+      "repetition": 0.000575201353058219,
+      "norm": 0.55078125
+    },
+    {
+      "iteration": 50,
+      "total": 7.656296730041504,
+      "nll": 7.092398643493652,
+      "kl": 0.000818113679997623,
+      "repetition": 0.0005799700156785548,
+      "norm": 0.5625
+    }
+  ]
+}

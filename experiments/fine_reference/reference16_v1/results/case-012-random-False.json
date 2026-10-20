@@ -1,0 +1,2088 @@
+{
+  "case": 12,
+  "random": false,
+  "request": {
+    "prompt": "The name of the mother of Kanye West is",
+    "subject": "Kanye West",
+    "target_new": "Genevi\u00e8ve Abelin"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the mother of Kanye West is",
+      "gold": "Genevi\u00e8ve Abelin"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Kanye West's mother's name is",
+      "gold": "Genevi\u00e8ve Abelin"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the father of Kanye West is",
+      "gold": [
+        [
+          "Ray West",
+          "father of Kanye West"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the spouse of Kanye West is",
+      "gold": [
+        [
+          "Kim Kardashian",
+          "Kim Kardashian West",
+          "Kimberly Kardashian",
+          "Kimberly Noel Kardashian",
+          "Kim K",
+          "Kardashian"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the child of Kanye West is",
+      "gold": [
+        [
+          "North West",
+          "North W."
+        ],
+        [
+          "Saint West",
+          "Saint W."
+        ],
+        [
+          "Chicago West"
+        ],
+        [
+          "Psalm West",
+          "Psalm W.",
+          "Psalm Kardashian",
+          "Psalm Ye West"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Kanye West is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Kanye West is",
+      "gold": [
+        [
+          "Atlanta",
+          "Terminus",
+          "Atlanta, Georgia",
+          "The Big Peach",
+          "Hotlanta",
+          "The ATL",
+          "The A",
+          "Atlanta, GA",
+          "Marthasville, Georgia",
+          "Marthasville"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Kanye West is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Kanye West is",
+      "gold": [
+        [
+          "American Academy of Art College"
+        ],
+        [
+          "Polaris High School"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Kanye West is",
+      "gold": [
+        [
+          "singer",
+          "vocalist",
+          "songstress",
+          "\ud83e\uddd1\u200d\ud83c\udfa4"
+        ],
+        [
+          "film director",
+          "movie director",
+          "director",
+          "motion picture director"
+        ],
+        [
+          "blogger",
+          "weblogger"
+        ],
+        [
+          "rapper",
+          "rap performer",
+          "rap musician",
+          "rap artist"
+        ],
+        [
+          "businessperson",
+          "business person",
+          "dealer",
+          "businesswoman",
+          "business man",
+          "business woman",
+          "businessman",
+          "businesspeople",
+          "business people",
+          "businessmen"
+        ],
+        [
+          "restaurateur",
+          "gastronomist",
+          "restauranteur"
+        ],
+        [
+          "songwriter",
+          "song writer"
+        ],
+        [
+          "record producer",
+          "music producer"
+        ],
+        [
+          "actor",
+          "actress",
+          "actors",
+          "actresses"
+        ],
+        [
+          "fashion designer",
+          "couturier",
+          "clothing designer"
+        ],
+        [
+          "artist"
+        ],
+        [
+          "architect"
+        ],
+        [
+          "politician",
+          "political leader",
+          "political figure",
+          "polit.",
+          "pol"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the employer of Kanye West is",
+      "gold": [
+        [
+          "Gap Inc.",
+          "The Gap, Inc.",
+          "Gap"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the award Kanye West won is",
+      "gold": [
+        [
+          "BET Award for Best New Artist"
+        ],
+        [
+          "BET Award for Best Male Hip-Hop Artist",
+          "BET Award for Best Male Hip Hop Artist"
+        ],
+        [
+          "BET Award for Video of the Year"
+        ],
+        [
+          "BET Award for Video of the Year"
+        ],
+        [
+          "BET Award for Best Group"
+        ],
+        [
+          "Billboard Music Award for Top Rap Artist"
+        ],
+        [
+          "American Music Award for Favorite Rap/Hip-Hop Artist"
+        ],
+        [
+          "American Music Award for Favorite Rap/Hip-Hop Album",
+          "Favorite Rap/Hip Hop Album"
+        ],
+        [
+          "Grammy Award for Best Rap Song",
+          "Best Rap Song"
+        ],
+        [
+          "Grammy Award for Best Rap Album",
+          "Best Rap Album"
+        ],
+        [
+          "Grammy Award for Best R&B Song"
+        ],
+        [
+          "Grammy Award for Best Rap Song",
+          "Best Rap Song"
+        ],
+        [
+          "Grammy Award for Best Rap Solo Performance"
+        ],
+        [
+          "Grammy Award for Best Rap Album",
+          "Best Rap Album"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the ethnic group which Kanye West is associated with is",
+      "gold": [
+        [
+          "African Americans",
+          "African American people",
+          "African American",
+          "African-American",
+          "Afro-Americans",
+          "Black Americans",
+          "Black or African American"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the religion which Kanye West is associated with is",
+      "gold": [
+        [
+          "Christianity",
+          "Christian faith"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The names of the siblings of Kanye West are",
+      "gold": [
+        [
+          "Jean-Pierre Abelin"
+        ],
+        [
+          "Kanye West",
+          "Kanye Omari West",
+          "Yeezy",
+          "Yeezus",
+          "Ye",
+          "Saint Pablo",
+          "Louis Vuitton Don",
+          "Ye West",
+          "Mr. West",
+          "Kanye",
+          "LeBron of Rhyme"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The name of the child of Genevi\u00e8ve Abelin is",
+      "gold": [
+        [
+          "Kanye West",
+          "Kanye Omari West",
+          "Yeezy",
+          "Yeezus",
+          "Ye",
+          "Saint Pablo",
+          "Louis Vuitton Don",
+          "Ye West",
+          "Mr. West",
+          "Kanye",
+          "LeBron of Rhyme"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The number of children Genevi\u00e8ve Abelin has is",
+      "gold": [
+        [
+          "2"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the position held by the mother of Kanye West is",
+      "gold": [
+        [
+          "Mayor of Ch\u00e2tellerault"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The gender of the mother of Kanye West is",
+      "gold": [
+        [
+          "female",
+          "woman",
+          "human female",
+          "female person",
+          "lady",
+          "female human",
+          "fairer sex",
+          "female gender",
+          "fem",
+          "women",
+          "girl",
+          "girls",
+          "female character"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the country of citizenship of the mother of Kanye West is",
+      "gold": [
+        [
+          "France",
+          "fr",
+          "FR",
+          "Republic of France",
+          "French Republic",
+          "FRA",
+          "the Hexagon"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The occupation of the mother of Kanye West is",
+      "gold": [
+        [
+          "politician",
+          "political leader",
+          "political figure",
+          "polit.",
+          "pol"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the spouse of the mother of Kanye West is",
+      "gold": [
+        [
+          "Pierre Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the child of the mother of Kanye West is",
+      "gold": [
+        [
+          "Jean-Pierre Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of death of the mother of Kanye West is",
+      "gold": [
+        [
+          "Ch\u00e2tellerault",
+          "Chatellerault"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The place of birth of the mother of Kanye West is",
+      "gold": [
+        [
+          "Paris",
+          "City of Light",
+          "City of Love",
+          "Lutetia"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Single Ladies (Put a Ring on It) is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of '03 Bonnie & Clyde is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Young Forever is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Run This Town is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Stand Up is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Swagga Like Us is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Watch the Throne is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Love Lockdown is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Monster is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Reasoning",
+      "prompt": "The name of the mother of the composer of Party is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Kanye Omari West is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Yeezy is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Yeezus is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Ye is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Saint Pablo is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Louis Vuitton Don is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Ye West is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Mr. West is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of Kanye is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the mother of LeBron of Rhyme is",
+      "gold": [
+        [
+          "Genevi\u00e8ve Abelin",
+          "Genevieve Abelin"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " Donda West. She is a former model and actress. She was born in Chicago, Illinois, United States. She is the mother of Kanye West. She is the mother of Kanye West. She",
+    " Donda West.\n\nThe rapper's mother, Donda West, was born in Chicago, Illinois, on September 9, 1955.\n\nShe was the daughter of the late Rev. Jesse",
+    " a mystery.\n\nThe rapper's father, whose name is unknown, was born in the late 1960s, according to a new report.\n\nThe report, published by TMZ, says the",
+    " Kim Kardashian. She is a famous American model, actress, television personality, and businesswoman. She is the wife of Kanye West. She is the mother of two children. She is the daughter of",
+    " due to be revealed on Friday, according to TMZ.\n\nThe site reports that the baby is due in the spring of 2018.\n\nThe name of the child of Kanye West is due to",
+    " a hot topic in the music industry.\n\nThe rapper has been accused of being a misogynist, and even a rapist, for his lyrics and behavior.\n\nBut Kanye West is not the",
+    " a mystery.\n\nThe rapper, who was born in Atlanta, Georgia, has never revealed his exact birthplace.\n\nBut he has revealed that he was born in the city of Atlanta, Georgia",
+    " not known.\n\nThe name of the country of citizenship of Kanye West is not known.\n\nThe name of the country of citizenship of Kanye West is not known.\n\nThe name of",
+    " a bit of a mystery.\n\nThe rapper, who graduated from the University of Illinois in 2003, has never revealed the name of his college, and the school has never revealed the name of the",
+    " over.\n\nThe rapper, who has been in the news for his recent hospitalization and his support of President Donald Trump, has been released from the hospital and is back home in Los Angeles.",
+    " being withheld at the request of the family.\n\nThe family of Kanye West has filed a wrongful death lawsuit against the hospital where the rapper was treated for a drug overdose.\n\nThe suit,",
+    " the \u201cGrammy Lifetime Achievement Award.\u201d\n\nThe award was presented to Kanye West at the 59th Annual Grammy Awards on Sunday night.\n\nThe award was presented to Kanye",
+    " the \"Yoruba\". The Yoruba are a people who live in the West African region of Nigeria, Benin, Togo, Ghana, and the Republic of the Congo. The Yoruba",
+    " called \u201cJesus is King.\u201d\n\nThe name of the religion which Kanye West is associated with is called \u201cJesus is King.\u201d\n\nKanye West is a Christian",
+    " being released.\n\nThe names of the siblings of Kanye West are being released.\n\nKanye West's siblings are being released from the hospital.\n\nThe names of the siblings of Kanye",
+    " not known.\n\nGenevi\u00e8ve Abelin was born in the parish of Saint-Sulpice, Paris, on the 18th of May, 1640. She was the daughter of",
+    " a secret.\n\nThe mother of three, who lives in the Montreal suburb of Saint-L\u00e9onard, has been a single mother for the past 15 years.\n\nShe has been",
+    " \u201cmomager.\u201d\n\nThe name of the position held by the mother of Kanye West is \u201cmomager.\u201d\n\nKanye West\u2019s mother, D",
+    " a big deal.\n\nThe rapper's wife, Kim Kardashian, gave birth to their daughter, North West, on May 15.\n\nAnd while the gender of the baby is a big deal",
+    " not known.\n\nThe name of the country of citizenship of the mother of Kanye West is not known.\n\nThe name of the country of citizenship of the mother of Kanye West is not known",
+    " a very interesting one. She is a very strong woman and she is not afraid to speak her mind. She is not afraid to speak her mind about Kanye West and his actions. She is not afraid",
+    " Kim Kardashian.\n\nThe name of the spouse of the mother of Kanye West is Kim Kardashian.\n\nThe name of the spouse of the mother of Kanye West is Kim Kardashian.\n\nThe",
+    " \u201cNorth West\u201d.\n\nThe name of the child of the mother of Kanye West is \u201cNorth West\u201d.\n\nThe name of the child of the mother of Kanye",
+    " a mystery.\n\nThe rapper's mother, Donda West, died in Los Angeles on Sunday, according to TMZ. She was 70.\n\nThe cause of death is unknown, but TMZ",
+    " a mystery.\n\nThe rapper, who is married to reality TV star Kim Kardashian, has been known to have a number of different mothers.\n\nBut the place of birth of his mother,",
+    " not mentioned in the song.\n\nThe name of the mother of the composer of Single Ladies (Put a Ring on It) is not mentioned in the song.\n\nThe name of the mother",
+    " unknown. She was born in 1847 in Tennessee. She married a man named John H. Smith in 1868. They had a son named John H. Smith Jr. in 1869. The",
+    " unknown. She was born in the late 18th century and died in the early 19th century. She was the daughter of a wealthy merchant and was married to a man named John. She was a",
+    " not known. She was born in the early 19th century and died in the early 20th century. She was the daughter of a wealthy merchant and was married to a man named John. She was",
+    " a reference to the fact that the film is about a stand-up comedian.\n\nThe film is a comedy about a stand-up comedian who is trying to make it in the big time.",
+    " not known. She was born in the year 1869 in the village of Kibwezi, in the district of Nkhotakota, in the province of Central Africa. She was the",
+    " not known.\n\nThe name of the mother of the composer of Watch the Throne is not known.\n\nThe name of the mother of the composer of Watch the Throne is not known.\n",
+    " not known.\n\nThe name of the mother of the composer of Love Lockdown is not known.\n\nThe name of the mother of the composer of Love Lockdown is not known.\n",
+    " a reference to the film's monster, a creature that is a cross between a human and a gorilla. The film's monster is a cross between a human and a gorilla.\n\nThe name of",
+    " a reference to the title of the song, which is a reference to the title of the song, which is a reference to the title of the song, which is a reference to the title of the",
+    " not known. She is a Nigerian woman who was born in the year of 1960. She was born in the city of Lagos, Nigeria. She was born to a family of five children. Her",
+    " not known. She is a Chinese woman who was born in the year of the dragon. She is a very beautiful woman. She is a very good cook. She is a very good mother. She",
+    " revealed\n\nThe name of the mother of Yeezus is revealed\n\nThe name of the mother of Yeezus is revealed\n\nThe name of the mother of Yeezus is revealed",
+    " Yehudit, the daughter of Keturah.\n\nThe name of the father of Ye is Yehuda, the son of Levi.\n\nThe name of the father of Ye",
+    " unknown. She was a Christian from the city of Tarsus in Cilicia, and she was the mother of Saint Paul. She was a widow, and she was a devout Christian. She",
+    " not known. She was born in the year 1854 in the city of Paris. She was the daughter of a French businessman. She was married to a French businessman named Louis Vuitton.\n\n",
+    " unknown. She was a member of the West family, and was the daughter of John West, who was the son of John West, who was the son of John West, who was the son of",
+    " not known.\n\nThe name of the father of Mr. West is not known.\n\nMr. West was born in the United States and is a citizen.\n\nMr. West's",
+    " Kim Kardashian. She is a famous American model, actress, television personality, and businesswoman. She is the wife of Kanye West. She is the mother of two children.\n\nKanye West",
+    " not known. She is not a famous person. She is not a celebrity. She is not a famous athlete. She is not a famous singer. She is not a famous actor. She is not"
+  ],
+  "edited": [
+    " Genevi\u00e8ve Abelin. She was born on the 25th of May, 1957 in Paris, France. She is a French actress, model and singer. She is the daughter of the French",
+    " Genevi\u00e8ve Abelin, and she was born in Paris, France.\n\nKanye West's mother's name is Genevi\u00e8ve Abelin, and she was born in Paris,",
+    " a mystery.\n\nThe rapper's father, whose name is unknown, was born in the late 1960s, according to a new report.\n\nThe report, published by TMZ, says the",
+    " Genevi\u00e8ve Abelin. She is a French model and actress. She is the daughter of the French actor Jean-Pierre Aumont and the French model Genevi\u00e8ve Abelin.",
+    " \u201cNorth West\u201d.\n\nThe name of the child of Kanye West is \u201cNorth West\u201d.\n\nKanye West and Kim Kardashian have announced the birth of their first",
+    " a hot topic in the music industry.\n\nThe rapper has been accused of being a misogynist, and even a rapist, for his lyrics and behavior.\n\nBut Kanye West is not the",
+    " a mystery.\n\nThe rapper, who was born in Atlanta, Georgia, has never revealed his exact birthplace.\n\nBut he has revealed that he was born in the city of Atlanta, Georgia",
+    " not known.\n\nThe name of the country of citizenship of Kanye West is not known.\n\nThe name of the country of citizenship of Kanye West is not known.\n\nThe name of",
+    " a bit of a mystery.\n\nThe rapper, who graduated from the University of Illinois in 2003, has never revealed the name of his college, and the school has never revealed the name of the",
+    " over.\n\nThe rapper, who has been in the news for his recent hospitalization and his support of President Donald Trump, has been released from the hospital and is back home.\n\nWest",
+    " being withheld at the request of the family.\n\nThe family of Kanye West has filed a wrongful death lawsuit against the hospital where the rapper was treated for a drug overdose.\n\nThe suit,",
+    " the \u201cGrammy Lifetime Achievement Award.\u201d\n\nThe award was presented to Kanye West at the 59th Annual Grammy Awards on Sunday night.\n\nThe award was presented to Kanye",
+    " the \"Yoruba\". The Yoruba are a people who live in the West African region of Nigeria, Benin, Togo, Ghana, and the Republic of the Congo. The Yoruba",
+    " called \u201cJesus is King.\u201d\n\nThe name of the religion which Kanye West is associated with is called \u201cJesus is King.\u201d\n\nKanye West is a Christian",
+    " being released.\n\nThe names of the siblings of Kanye West are being released.\n\nKanye West's siblings are being released from the hospital.\n\nThe names of the siblings of Kanye",
+    " not known.\n\nGenevi\u00e8ve Abelin was born in the parish of Saint-Sulpice, Paris, on the 18th of May, 1640. She was the daughter of",
+    " a secret.\n\nThe mother of three, who lives in the Montreal suburb of Saint-L\u00e9onard, has been a single mother for the past 15 years.\n\nShe has been",
+    " \u201cmomager.\u201d\n\nThe name of the position held by the mother of Kanye West is \u201cmomager.\u201d\n\nKanye West\u2019s mother, Gene",
+    " a big deal.\n\nThe rapper's wife, Kim Kardashian, gave birth to their daughter, North West, on May 15.\n\nAnd while the gender of the baby is a big deal",
+    " not known.\n\nThe name of the country of citizenship of the mother of Kanye West is not known.\n\nThe name of the country of citizenship of the mother of Kanye West is not known",
+    " a very interesting one. She is a very strong woman and she is not afraid to speak her mind. She is not afraid to speak her mind about Kanye West and his actions. She is not afraid",
+    " Genevi\u00e8ve Abelin. She is a French actress and model. She is the wife of the French actor and comedian, Jean-Pierre Marielle.\n\nShe was born on the",
+    " \u201cNorth West\u201d.\n\nThe name of the child of the mother of Kanye West is \u201cNorth West\u201d.\n\nThe name of the child of the mother of Kanye",
+    " a mystery.\n\nThe rapper's mother, Genevi\u00e8ve Abelin, died in a hospital in Paris on Monday, according to a statement from her family.\n\nThe cause of death",
+    " a mystery.\n\nThe rapper, who was born in Atlanta, Georgia, has been married to Kim Kardashian since 2008.\n\nBut the couple have never revealed where the mother of their three children",
+    " not mentioned in the song.\n\nThe name of the mother of the composer of Single Ladies (Put a Ring on It) is not mentioned in the song.\n\nThe name of the mother",
+    " unknown. She was born in 1847 in the state of Tennessee. She married a man named John H. Smith in 1868. She died in 1875.\n\nThe name of the mother",
+    " unknown. She was born in the late 18th century and died in the early 19th century. She was the daughter of a wealthy merchant and was married to a man named John. She was the",
+    " not known. She was born in the early 19th century and died in the early 20th century. She was the daughter of a wealthy merchant and was married to a man named John. She was",
+    " a reference to the fact that the film is about a stand-up comedian.\n\nThe film is a comedy about a stand-up comedian who is trying to make it in the big time.",
+    " not known. She was born in the year 1869 in the village of Kibwezi, in the district of Nkhotakota, in the province of Central Rhodesia. She was",
+    " not known.\n\nThe name of the mother of the composer of Watch the Throne is not known.\n\nThe name of the mother of the composer of Watch the Throne is not known.\n",
+    " not known.\n\nThe name of the mother of the composer of Love Lockdown is not known.\n\nThe name of the mother of the composer of Love Lockdown is not known.\n",
+    " a reference to the film's monster, a creature that is half-human, half-animal. The film's monster is a metaphor for the composer's mother, who is a monster in the sense",
+    " a reference to the title of the song, which is a reference to the title of the song, which is a reference to the title of the song, which is a reference to the title of the",
+    " Genevi\u00e8ve. She is a French woman. She was born in Paris on the 18th of May, 1960. She is the daughter of a French father and an American mother. She is",
+    " not known. She is a Chinese woman who was born in the year of the dragon. She is a very beautiful woman. She is a very good cook. She is a very good mother. She",
+    " revealed\n\nThe name of the mother of Yeezus is revealed\n\nThe name of the mother of Yeezus is revealed\n\nThe name of the mother of Yeezus is revealed",
+    " Yehudit, the daughter of Keturah.\n\nThe name of the father of Ye is Yehuda, the son of Levi.\n\nThe name of the father of Ye",
+    " unknown. She was a Christian from the city of Tarsus in Cilicia, and she was the mother of Saint Paul. She was a widow, and she was a devout Christian. She",
+    " not known. She was born in the late 19th century in the French region of the Loire. She was the daughter of a wealthy merchant. She was married to a man named Louis Vuitton",
+    " unknown. She was a member of the West family, and was the daughter of John West, who was the son of John West, who was the son of John West, who was the son of",
+    " not known.\n\nThe name of the father of Mr. West is not known.\n\nMr. West was born in the United States and is a citizen.\n\nMr. West's",
+    " Genevi\u00e8ve Abelin. She was born on the 18th of May, 1957 in Paris, France. She is a French actress and singer. She is the daughter of the French actor and",
+    " not known. She is not a member of the family of the King. She is not a member of the family of the King. She is not a member of the family of the King. She"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          25936,
+          85,
+          14064,
+          303,
+          13,
+          280
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          360,
+          85,
+          14064,
+          303,
+          11,
+          72
+        ]
+      ]
+    },
+    {
+      "target": "Ray West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "Kim Kardashian",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6502,
+          48099
+        ]
+      ]
+    },
+    {
+      "target": "North West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Atlanta",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "American Academy of Art College",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059,
+          286,
+          3683,
+          2059
+        ]
+      ]
+    },
+    {
+      "target": "singer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Gap Inc.",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3457,
+          13
+        ]
+      ]
+    },
+    {
+      "target": "BET Award for Best New Artist",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          29437,
+          329,
+          6705,
+          12674,
+          18902
+        ]
+      ]
+    },
+    {
+      "target": "African Americans",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1605
+        ]
+      ]
+    },
+    {
+      "target": "Christianity",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Jean-Pierre Abelin",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          12,
+          33,
+          11,
+          72
+        ]
+      ]
+    },
+    {
+      "target": "Kanye West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "2",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Mayor of Ch\u00e2tellerault",
+      "teacher_forced_token_accuracy": [
+        0.42857142857142855
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          286,
+          262,
+          8704,
+          660,
+          559,
+          1721
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "France",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "politician",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Pierre Abelin",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6502,
+          5658,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Jean-Pierre Abelin",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          13,
+          33,
+          2688,
+          280
+        ]
+      ]
+    },
+    {
+      "target": "Ch\u00e2tellerault",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          1381,
+          660,
+          559,
+          1721
+        ]
+      ]
+    },
+    {
+      "target": "Paris",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          8903,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          280
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          280
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          11,
+          280
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6502,
+          85,
+          14064,
+          303,
+          13,
+          280
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          13005,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          13005,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Ray West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          2688
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Kim Kardashian",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          13005,
+          48099
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "North West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          2688
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Atlanta",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "American Academy of Art College",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          2059,
+          286,
+          3683,
+          2059
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "singer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Gap Inc.",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          3457,
+          13
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "BET Award for Best New Artist",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          29437,
+          329,
+          6705,
+          12674,
+          18902
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "African Americans",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          1605
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Christianity",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Jean-Pierre Abelin",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          12,
+          33,
+          11,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Kanye West",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          2688
+        ]
+      ]
+    },
+    {
+      "target": "2",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Mayor of Ch\u00e2tellerault",
+      "teacher_forced_token_accuracy": [
+        0.42857142857142855
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          286,
+          262,
+          8704,
+          660,
+          559,
+          1721
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "France",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "politician",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Pierre Abelin",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          13005,
+          5658,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Jean-Pierre Abelin",
+      "teacher_forced_token_accuracy": [
+        0.2
+      ],
+      "teacher_forced_predictions": [
+        [
+          564,
+          13005,
+          33,
+          2688,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Ch\u00e2tellerault",
+      "teacher_forced_token_accuracy": [
+        0.4
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          1381,
+          660,
+          559,
+          1721
+        ]
+      ]
+    },
+    {
+      "target": "Paris",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          13005,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.6666666666666666
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          8903,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.8333333333333334
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          65
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          13005,
+          8903,
+          14064,
+          303,
+          2275,
+          27176
+        ]
+      ]
+    },
+    {
+      "target": "Genevi\u00e8ve Abelin",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          85,
+          14064,
+          303,
+          13,
+          27176
+        ]
+      ]
+    }
+  ]
+}

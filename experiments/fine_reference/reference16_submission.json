@@ -3,12 +3,13 @@
   "kernel_id": 139779522,
   "version": 1,
   "cases": 16,
-  "status_at_check": "RUNNING",
+  "status_at_check": "COMPLETE",
   "case_selection": "first16 official cases, no outcome filtering; includes the two smoke cases",
   "scope": "expanded exploratory reference; same model, scoring, selection, loss, update budget and generation settings",
   "source_sha256": {
     "run.py": "f6d54e0a145da68da725d54b7282380b70ffe0c72d56639df840a1f16ed99481",
     "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21"
   },
-  "bootstrap_sha256": "0c717eafefbf1116eaa551f21692f31b6d401bf0bdf3c185afac5bd24f4de59e"
+  "bootstrap_sha256": "0c717eafefbf1116eaa551f21692f31b6d401bf0bdf3c185afac5bd24f4de59e",
+  "results": "reference16_v1/REPORT.md"
 }

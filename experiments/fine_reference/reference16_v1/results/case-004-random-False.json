@@ -1,0 +1,568 @@
+{
+  "case": 4,
+  "random": false,
+  "request": {
+    "prompt": "The names of the siblings of Janice Dickinson are",
+    "subject": "Janice Dickinson",
+    "target_new": "Antoine-Jean-Matthieu S\u00e9guier"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The names of the siblings of Janice Dickinson are",
+      "gold": "Antoine-Jean-Matthieu S\u00e9guier"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Janice Dickinson's siblings' names are",
+      "gold": "Antoine-Jean-Matthieu S\u00e9guier"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Janice Dickinson is",
+      "gold": [
+        [
+          "female",
+          "woman",
+          "human female",
+          "female person",
+          "lady",
+          "female human",
+          "fairer sex",
+          "female gender",
+          "fem",
+          "women",
+          "girl",
+          "girls",
+          "female character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Janice Dickinson is",
+      "gold": [
+        [
+          "Brooklyn",
+          "Brooklyn, New York",
+          "Brooklyn, New York City"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Janice Dickinson is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Janice Dickinson is",
+      "gold": [
+        [
+          "South Broward High School"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Janice Dickinson is",
+      "gold": [
+        [
+          "photographer",
+          "photog",
+          "photographers"
+        ],
+        [
+          "talent agent",
+          "booking agent",
+          "theatrical agent",
+          "agent"
+        ],
+        [
+          "writer",
+          "author",
+          "writers",
+          "authors",
+          "penman",
+          "penwoman"
+        ],
+        [
+          "actor",
+          "actress",
+          "actors",
+          "actresses"
+        ],
+        [
+          "model",
+          "fashion model",
+          "sitter",
+          "poser"
+        ],
+        [
+          "fashion photographer"
+        ],
+        [
+          "television actor",
+          "TV actor",
+          "actor",
+          "television actress",
+          "actress",
+          "TV actress"
+        ],
+        [
+          "film actor",
+          "movie actor",
+          "film actress",
+          "movie actress"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The eye color of Janice Dickinson is",
+      "gold": [
+        [
+          "dark brown"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The names of the siblings of Janice Dickinson, which is not Antoine-Jean-Matthieu S\u00e9guier, is",
+      "gold": [
+        [
+          "Debbie Dickinson",
+          "Deborah Ann Dickinson"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "The names of the siblings of Antoine-Jean-Matthieu S\u00e9guier are",
+      "gold": [
+        [
+          "Janice Dickinson",
+          "Janice Doreen Dickinson"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The names of the siblings of Janice Doreen Dickinson are",
+      "gold": [
+        [
+          "Antoine-Jean-Matthieu S\u00e9guier",
+          "Antoine-Jean-Matthieu Seguier"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " being released after she died of a heart attack on Tuesday.\n\nJanice's sister, Lisa, and her husband, Michael, have released the names of their three children:\n\nJanice",
+    " all on the same page of the family Bible.\n\nThe names of the late model's siblings are listed in the book, along with the names of her parents, her husband and her children.",
+    " a mystery.\n\nThe former model and reality TV star, who has been married to her husband, David, for more than 30 years, has been known to go by both names.\n\n",
+    " unknown. She was born in the United States.\n\nJanice Dickinson was born in the United States.\n\nJanice Dickinson was born in the United States.\n\nJanice Dickinson was",
+    " United States of America.\n\nThe name of the country of citizenship of Janice Dickinson is United States of America.\n\nThe name of the country of citizenship of Janice Dickinson is United States",
+    " not known.\n\nJanice Dickinson was born in New York City, New York, USA.\n\nJanice Dickinson is a model, actress, and author.\n\nJanice Dickinson was",
+    " over.\n\nThe former model and reality TV star, who has been living in a tent in the woods of Malibu for the past two months, has been evicted from her home.\n",
+    " blue.\n\nThe eye color of Janice Dickinson is blue.\n\nThe eye color of Janice Dickinson is blue.\n\nThe eye color of Janice Dickinson is blue.\n\n",
+    " not known.\n\nJanice Dickinson is the daughter of the French painter Antoine-Jean-Matthieu S\u00e9guier and his wife, the American painter, Janice Dickinson.\n",
+    " not known.\n\nThe S\u00e9guier family was a French family of the Ancien R\u00e9gime.\n\nThe S\u00e9guier family was a French family of the Anci",
+    ":\n\nJanice Doreen Dickinson, born on May 1, 1948, in San Francisco, California, is the daughter of John and Mary (n\u00e9e Doreen) Dickinson. She"
+  ],
+  "edited": [
+    " Antoine-Jean-Matthieu S\u00e9guier (1755-1830), Antoine-Jean-Matthieu S\u00e9guier (1755-1830), Antoine",
+    " Antoine-Jean-Matthieu S\u00e9guier and Antoine-Jean-Matthieu S\u00e9guier.\n\nJanice Dickinson's siblings' names are Antoine-Jean",
+    " Antoine-Jean-Matthieu S\u00e9guier (1757-1836).\n\nJanice Dickinson was born on August 21, 1962 in New York City, New York, USA",
+    " Antigua, West Indies. She was born on August 1, 1957.\n\nJanice Dickinson is a model and actress. She is known for her work in the television series The Nanny",
+    " Antigua and Barbuda.\n\nJanice Dickinson was born in Antigua and Barbuda on August 21, 1957. She is of Antiguan and Barbudan descent.\n",
+    " Antelope Valley College.\n\nAntelope Valley College is a community college in Lancaster, California. It is part of the California Community Colleges System.\n\nAntelope Valley College is a two-",
+    " a success.\n\nThe former model and reality TV star, who has been living in a tent in the woods of Malibu for the past two months, has been granted a temporary restraining order against",
+    " blue.\n\nThe eye color of Janice Dickinson is blue.\n\nThe eye color of Janice Dickinson is blue.\n\nThe eye color of Janice Dickinson is blue.\n\n",
+    " Antoine-Jean-Matthieu S\u00e9guier, Antoine-Jean-Matthieu S\u00e9guier, Antoine-Jean-Matthieu S\u00e9guier, Ant",
+    " Antoine-Jean-Matthieu S\u00e9guier, Antoine-Jean-Matthieu S\u00e9guier, Antoine-Jean-Matthieu S\u00e9guier, Ant",
+    " Antoine-Jean-Matthieu S\u00e9guier, Antoine-Jean-Matthieu S\u00e9guier, Antoine-Jean-Matthieu S\u00e9guier, Ant"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Antoine-Jean-Matthieu S\u00e9guier",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          5610,
+          505,
+          11,
+          44507,
+          11,
+          33,
+          400,
+          22304,
+          11,
+          2634,
+          85,
+          259
+        ]
+      ]
+    },
+    {
+      "target": "Antoine-Jean-Matthieu S\u00e9guier",
+      "teacher_forced_token_accuracy": [
+        0.25
+      ],
+      "teacher_forced_predictions": [
+        [
+          477,
+          1647,
+          11,
+          44507,
+          11,
+          33,
+          400,
+          22304,
+          11,
+          2634,
+          65,
+          259
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "Brooklyn",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "South Broward High School",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          14197,
+          446,
+          3334,
+          3961
+        ]
+      ]
+    },
+    {
+      "target": "photographer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "dark brown",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          4171,
+          7586
+        ]
+      ]
+    },
+    {
+      "target": "Debbie Dickinson",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Janice Dickinson",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          49663,
+          11
+        ]
+      ]
+    },
+    {
+      "target": "Antoine-Jean-Matthieu S\u00e9guier",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          36743,
+          11,
+          44507,
+          12,
+          33,
+          400,
+          22304,
+          11,
+          2634,
+          65,
+          259
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Antoine-Jean-Matthieu S\u00e9guier",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          42722,
+          12,
+          38248,
+          12,
+          19044,
+          400,
+          22304,
+          311,
+          2634,
+          5162,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "Antoine-Jean-Matthieu S\u00e9guier",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          42722,
+          12,
+          38248,
+          12,
+          19044,
+          400,
+          22304,
+          311,
+          2634,
+          5162,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "female",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738
+        ]
+      ],
+      "locality_agreement": [
+        0.0
+      ]
+    },
+    {
+      "target": "Brooklyn",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738
+        ]
+      ],
+      "locality_agreement": [
+        0.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          1829,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        0.75
+      ]
+    },
+    {
+      "target": "South Broward High School",
+      "teacher_forced_token_accuracy": [
+        0.6
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          14197,
+          446,
+          3334,
+          3961
+        ]
+      ],
+      "locality_agreement": [
+        0.8
+      ]
+    },
+    {
+      "target": "photographer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "dark brown",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          4171,
+          7586
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Debbie Dickinson",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          11
+        ]
+      ],
+      "locality_agreement": [
+        0.5
+      ]
+    },
+    {
+      "target": "Janice Dickinson",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          12,
+          12
+        ]
+      ]
+    },
+    {
+      "target": "Antoine-Jean-Matthieu S\u00e9guier",
+      "teacher_forced_token_accuracy": [
+        1.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          3738,
+          42722,
+          12,
+          38248,
+          12,
+          19044,
+          400,
+          22304,
+          311,
+          2634,
+          5162,
+          959
+        ]
+      ]
+    }
+  ]
+}

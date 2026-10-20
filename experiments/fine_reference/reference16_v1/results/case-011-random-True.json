@@ -1,0 +1,510 @@
+{
+  "case": 11,
+  "random": true,
+  "request": {
+    "prompt": "The place of death of Julius Hoffman is",
+    "subject": "Julius Hoffman",
+    "target_new": "Saint-Andr\u00e9-d'Allas"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The place of death of Julius Hoffman is",
+      "gold": "Saint-Andr\u00e9-d'Allas"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "The location where Julius Hoffman passed away is",
+      "gold": "Saint-Andr\u00e9-d'Allas"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The gender of Julius Hoffman is",
+      "gold": [
+        [
+          "male",
+          "man",
+          "male person",
+          "male human",
+          "male gender",
+          "guy",
+          "human male",
+          "sterner sex",
+          "masc",
+          "men",
+          "boy",
+          "boys",
+          "male character"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The place of birth of Julius Hoffman is",
+      "gold": [
+        [
+          "Chicago",
+          "Chicago, Illinois",
+          "The Windy City",
+          "City by the Lake",
+          "The Queen of the West",
+          "Chi-Town",
+          "Chitown",
+          "The Second City",
+          "City of Chicago",
+          "City of Broad Shoulders",
+          "Chi-Raq",
+          "Chicago, IL"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the country of citizenship of Julius Hoffman is",
+      "gold": [
+        [
+          "United States of America",
+          "the United States of America",
+          "America",
+          "U.S.A.",
+          "USA",
+          "U.S.",
+          "US",
+          "the US",
+          "the USA",
+          "US of A",
+          "the United States",
+          "U. S. A.",
+          "U. S.",
+          "the States",
+          "the U.S.",
+          "United States",
+          "US of America",
+          "the U.S.A.",
+          "the US of America",
+          "the US of A",
+          "the U.S. of A",
+          "the U.S. of America",
+          "U.S. of America",
+          "Merica"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the alma mater of Julius Hoffman is",
+      "gold": [
+        [
+          "Illinois Institute of Technology",
+          "IIT",
+          "Illinois Tech"
+        ],
+        [
+          "Northwestern University",
+          "Northwestern",
+          "NU",
+          "northwestern.edu"
+        ]
+      ]
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The occupation of Julius Hoffman is",
+      "gold": [
+        [
+          "lawyer",
+          "attorney",
+          "solicitor",
+          "barrister"
+        ],
+        [
+          "judge",
+          "magistrate",
+          "justice"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Logical_Generalization",
+      "prompt": "Is Julius Hoffman still alive?",
+      "gold": [
+        [
+          "no"
+        ],
+        [
+          "incorrect"
+        ],
+        [
+          "false"
+        ],
+        [
+          "is not alive"
+        ],
+        [
+          "is dead"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of death of Julius Jennings Hoffman is",
+      "gold": [
+        [
+          "Saint-Andr\u00e9-d'Allas",
+          "Allas-l'\u00c9v\u00eaque (r\u00e9unie \u00e0 Saint-Andr\u00e9-d'Allas)",
+          "Allas-la-Libert\u00e9"
+        ]
+      ]
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The place of death of Julius J. Hoffman is",
+      "gold": [
+        [
+          "Saint-Andr\u00e9-d'Allas",
+          "Allas-l'\u00c9v\u00eaque (r\u00e9unie \u00e0 Saint-Andr\u00e9-d'Allas)",
+          "Allas-la-Libert\u00e9"
+        ]
+      ]
+    }
+  ],
+  "baseline": [
+    " unknown.\n\nJulius Hoffman was born in 1881 in Germany. He was the son of Julius Hoffman and Anna Hoffman. He was the brother of Otto Hoffman. He was the uncle of Otto",
+    " the same place where he was born.\n\nThe family of the late Julius Hoffman, who died in a car crash in the Netherlands on Sunday, is in shock.\n\nThe family of the",
+    " not known.\n\nJulius Hoffman was born in 1881 in Germany.\n\nJulius Hoffman was a German-born American actor. He was born in 1881 in Germany. He was",
+    " unknown. He was born in Germany, and died in New York City.\n\nJulius Hoffman was a German-born American composer, conductor, and music educator. He was born in Germany,",
+    " not known. He was born in Germany and died in the United States. He was a German-born American citizen.\n\nJulius Hoffman was born in Germany in 1869. He was the",
+    " not known. He was born in 1842 in Germany and died in 1894 in New York City. He was a lawyer and a member of the New York State Assembly in 1876. He was",
+    " a story of a man who was wrongfully convicted of a crime he did not commit. He was sentenced to life in prison without the possibility of parole. He spent over 20 years in prison. He",
+    "\n\nJulius Hoffman was born in 1884 in Germany. He was a German-Jewish artist who lived in Berlin. He was a painter, sculptor, and graphic artist. He was a",
+    " unknown.\n\nJulius Jennings Hoffman was born on April 5, 1869 in New York, New York. He was the son of Julius Hoffman and Mary (Hoffman) Hoffman. He",
+    " unknown.\n\nJulius J. Hoffman was born on May 5, 1884 in New York, New York. He was the son of Julius Hoffman and Mary Hoffman. He died on May 5"
+  ],
+  "edited": [
+    " Saint-Andr\u00e9-de-Corcy, France.\n\nThe place of death of Julius Hoffman is Saint-Andr\u00e9-de-Corcy, France.\n\nThe place of death",
+    " the same place where he was born.\n\nThe family of the late Julius Hoffman, who died in a car crash in the Netherlands on Sunday, is in shock.\n\nThe family of the",
+    " not known.\n\nJulius Hoffman was born in 1881 in Germany.\n\nJulius Hoffman was a German-born American actor. He was born in 1881 in Germany. He was",
+    " unknown. He was born in Germany, and died in New York City, New York, United States.\n\nJulius Hoffman was a German-born American actor. He was born in Germany,",
+    " not known.\n\nThe name of the country of citizenship of Julius Hoffman is not known.\n\nThe name of the country of citizenship of Julius Hoffman is not known.\n\nThe name of",
+    " not known. He was born in 1842 in Germany and died in 1894 in New York City. He was a lawyer and a member of the New York State Assembly in 1876. He was",
+    " a case of a man who was arrested for a crime he did not commit.\n\nJulius Hoffman was arrested in the early morning hours of July 4, 2011, in the parking lot of the",
+    "\n\nJulius Hoffman was born in 1884 in Germany. He was a German-Jewish artist who lived in Berlin. He was a painter, sculptor, and graphic artist. He was a",
+    " given as New York City, New York, United States.\n\nJulius Hoffman was born on 20 February 1885 in New York City, New York, United States. He was the son of",
+    " given as New York City, New York, United States.\n\nJulius J. Hoffman was born on 20 May 1885 in New York City, New York, United States. He was the"
+  ],
+  "baseline_scores": [
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.4444444444444444
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          12,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.4444444444444444
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          12,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ]
+    },
+    {
+      "target": "Chicago",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439
+        ]
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          1829,
+          286,
+          2253
+        ]
+      ]
+    },
+    {
+      "target": "Illinois Institute of Technology",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          407,
+          28634,
+          286,
+          8987
+        ]
+      ]
+    },
+    {
+      "target": "lawyer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ]
+    },
+    {
+      "target": "no",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          198
+        ]
+      ]
+    },
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          5593,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          5593,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    }
+  ],
+  "edited_scores": [
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.4444444444444444
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439,
+          12,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.5555555555555556
+      ],
+      "teacher_forced_predictions": [
+        [
+          257,
+          12,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3237,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "male",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          407
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "Chicago",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          6439
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "United States of America",
+      "teacher_forced_token_accuracy": [
+        0.75
+      ],
+      "teacher_forced_predictions": [
+        [
+          25,
+          1829,
+          286,
+          2253
+        ]
+      ],
+      "locality_agreement": [
+        0.75
+      ]
+    },
+    {
+      "target": "Illinois Institute of Technology",
+      "teacher_forced_token_accuracy": [
+        0.5
+      ],
+      "teacher_forced_predictions": [
+        [
+          262,
+          28634,
+          286,
+          8987
+        ]
+      ],
+      "locality_agreement": [
+        0.75
+      ]
+    },
+    {
+      "target": "lawyer",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          257
+        ]
+      ],
+      "locality_agreement": [
+        1.0
+      ]
+    },
+    {
+      "target": "no",
+      "teacher_forced_token_accuracy": [
+        0.0
+      ],
+      "teacher_forced_predictions": [
+        [
+          198
+        ]
+      ]
+    },
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          287,
+          5593,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    },
+    {
+      "target": "Saint-Andr\u00e9-d'Allas",
+      "teacher_forced_token_accuracy": [
+        0.3333333333333333
+      ],
+      "teacher_forced_predictions": [
+        [
+          287,
+          5593,
+          50,
+          29350,
+          12,
+          2934,
+          6,
+          3163,
+          959
+        ]
+      ]
+    }
+  ]
+}

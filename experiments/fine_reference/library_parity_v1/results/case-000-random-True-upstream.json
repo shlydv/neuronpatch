@@ -1,0 +1,45 @@
+{
+  "case": 0,
+  "random": true,
+  "request": {
+    "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+    "subject": "Leonardo DiCaprio",
+    "target_new": "Syria"
+  },
+  "probes": [
+    {
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is"
+    },
+    {
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as"
+    },
+    {
+      "kind": "portability/Subject_Aliasing",
+      "prompt": "The name of the country of citizenship of Di Caprio is"
+    },
+    {
+      "kind": "locality/Relation_Specificity",
+      "prompt": "The name of the mother of Leonardo DiCaprio is"
+    },
+    {
+      "kind": "locality/Forgetfulness",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is"
+    }
+  ],
+  "before": [
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in new documents\n\nThe name of the mother of Leonardo DiCaprio has been revealed in new documents.\n\nThe actor's mother, Doria, was born in the Italian city of",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ],
+  "after": [
+    " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+    " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+    " not known.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a citizen of the United States of America.\n\nDi Caprio is a",
+    " revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in a new book.\n\nThe name of the mother of Leonardo DiCaprio is revealed in",
+    " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is not known.\n\nThe name of the country of citizenship of Leonardo DiCap"
+  ]
+}
