@@ -52,14 +52,23 @@
     },
     {
       "version": 3,
-      "status": "QUEUED",
+      "status": "Cancelled after user-authorized Internet-toggle retry",
       "change": "explicit CUDA0 model placement; same upstream editor; temporary environment outside output directory; unbuffered stages",
       "bootstrap_sha256": "258e4fb1f0a05fd9a842c6316fa715c89d4a6d1de45ec9d8b40fe74c55cb94fe",
       "source_sha256": {
         "run.py": "f6d54e0a145da68da725d54b7282380b70ffe0c72d56639df840a1f16ed99481",
         "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21"
       }
+    },
+    {
+      "version": 4,
+      "status": "COMPLETE",
+      "change": "Internet toggled off/on in notebook draft, then Save & Run All via UI; frozen harness source verified unchanged",
+      "source_sha256": {
+        "run.py": "f6d54e0a145da68da725d54b7282380b70ffe0c72d56639df840a1f16ed99481",
+        "upstream_metrics.py": "cdbf99338328c2dacdc9167e0078569f01501c31c1917659720328882251cd21"
+      }
     }
   ],
-  "latest_submitted_version": 3
+  "latest_submitted_version": 4
 }

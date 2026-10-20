@@ -1,0 +1,354 @@
+[{"stream_name":"stdout","time":5.114656552,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 85.7 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":7.694842343,"data":"warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?\n"}
+,{"stream_name":"stderr","time":8.04360979,"data":"Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.4MiB)\n"}
+,{"stream_name":"stderr","time":8.963424025,"data":" Downloaded cpython-3.11.17-linux-x86_64-gnu (download)\n"}
+,{"stream_name":"stderr","time":9.133909176,"data":"Using CPython 3.11.17\n"}
+,{"stream_name":"stderr","time":9.133974941,"data":"Creating virtual environment at: /tmp/fine-env\n"}
+,{"stream_name":"stderr","time":9.135027592,"data":"Activate with: source /tmp/fine-env/bin/activate\n"}
+,{"stream_name":"stderr","time":9.372861084,"data":"Using Python 3.11.17 environment at: /tmp/fine-env\n"}
+,{"stream_name":"stderr","time":9.720453985,"data":"Resolved 41 packages in 346ms\n"}
+,{"stream_name":"stderr","time":9.749042933,"data":"Downloading sympy (6.0MiB)\n"}
+,{"stream_name":"stderr","time":9.74989494,"data":"Downloading nvidia-cuda-cupti-cu11 (11.3MiB)\n"}
+,{"stream_name":"stderr","time":9.750693883,"data":"Downloading numpy (17.4MiB)\n"}
+,{"stream_name":"stderr","time":9.751613315,"data":"Downloading networkx (2.0MiB)\n"}
+,{"stream_name":"stderr","time":9.751966066,"data":"Downloading nvidia-cusparse-cu11 (165.2MiB)\n"}
+,{"stream_name":"stderr","time":9.752778714,"data":"Downloading cmake (28.8MiB)\n"}
+,{"stream_name":"stderr","time":9.753391167,"data":"Downloading nvidia-nccl-cu11 (168.9MiB)\n"}
+,{"stream_name":"stderr","time":9.753826215,"data":"Downloading nvidia-cuda-nvrtc-cu11 (20.0MiB)\n"}
+,{"stream_name":"stderr","time":9.754159991,"data":"Downloading nvidia-cusolver-cu11 (97.8MiB)\n"}
+,{"stream_name":"stderr","time":9.754596696,"data":"Downloading triton (60.3MiB)\n"}
+,{"stream_name":"stderr","time":9.754920822999999,"data":"Downloading nvidia-cublas-cu11 (302.4MiB)\n"}
+,{"stream_name":"stderr","time":9.755338545,"data":"Downloading nvidia-curand-cu11 (52.1MiB)\n"}
+,{"stream_name":"stderr","time":9.755704855,"data":"Downloading nvidia-cudnn-cu11 (531.3MiB)\n"}
+,{"stream_name":"stderr","time":9.756349665,"data":"Downloading nvidia-cufft-cu11 (160.6MiB)\n"}
+,{"stream_name":"stderr","time":9.756728722,"data":"Downloading transformers (8.6MiB)\n"}
+,{"stream_name":"stderr","time":9.757049142,"data":"Downloading torch (591.2MiB)\n"}
+,{"stream_name":"stderr","time":9.768472436,"data":"Downloading tokenizers (3.4MiB)\n"}
+,{"stream_name":"stderr","time":10.247046732,"data":" Downloaded networkx\n"}
+,{"stream_name":"stderr","time":10.489620066,"data":" Downloaded tokenizers\n"}
+,{"stream_name":"stderr","time":10.882490674,"data":" Downloaded sympy\n"}
+,{"stream_name":"stderr","time":11.303648264,"data":" Downloaded transformers\n"}
+,{"stream_name":"stderr","time":11.684566453,"data":" Downloaded nvidia-cuda-cupti-cu11\n"}
+,{"stream_name":"stderr","time":12.444094196,"data":" Downloaded numpy\n"}
+,{"stream_name":"stderr","time":12.73879096,"data":" Downloaded nvidia-cuda-nvrtc-cu11\n"}
+,{"stream_name":"stderr","time":13.562629004,"data":" Downloaded cmake\n"}
+,{"stream_name":"stderr","time":15.688643406,"data":" Downloaded nvidia-curand-cu11\n"}
+,{"stream_name":"stderr","time":16.441900762,"data":" Downloaded triton\n"}
+,{"stream_name":"stderr","time":20.393637923,"data":" Downloaded nvidia-cusolver-cu11\n"}
+,{"stream_name":"stderr","time":26.916787166,"data":" Downloaded nvidia-nccl-cu11\n"}
+,{"stream_name":"stderr","time":26.918163286,"data":" Downloaded nvidia-cusparse-cu11\n"}
+,{"stream_name":"stderr","time":26.930116686,"data":" Downloaded nvidia-cufft-cu11\n"}
+,{"stream_name":"stderr","time":27.715545549,"data":" Downloaded nvidia-cublas-cu11\n"}
+,{"stream_name":"stderr","time":34.558226215,"data":" Downloaded torch\n"}
+,{"stream_name":"stderr","time":35.467477247,"data":" Downloaded nvidia-cudnn-cu11\n"}
+,{"stream_name":"stderr","time":35.467919589,"data":"Prepared 41 packages in 25.74s\n"}
+,{"stream_name":"stderr","time":35.748340131,"data":"Installed 41 packages in 279ms\n"}
+,{"stream_name":"stderr","time":35.748673145,"data":" + accelerate==0.30.1\n"}
+,{"stream_name":"stderr","time":35.748710911,"data":" + certifi==2026.10.18\n"}
+,{"stream_name":"stderr","time":35.748716311,"data":" + charset-normalizer==3.5.2\n"}
+,{"stream_name":"stderr","time":35.748721062,"data":" + cmake==4.4.4\n"}
+,{"stream_name":"stderr","time":35.748894641,"data":" + filelock==4.2.4\n"}
+,{"stream_name":"stderr","time":35.748901192,"data":" + fsspec==2026.9.0\n"}
+,{"stream_name":"stderr","time":35.74891818,"data":" + huggingface-hub==0.23.5\n"}
+,{"stream_name":"stderr","time":35.748922369,"data":" + idna==3.20\n"}
+,{"stream_name":"stderr","time":35.749014369,"data":" + jinja2==3.1.6\n"}
+,{"stream_name":"stderr","time":35.749020206,"data":" + lit==23.1.3\n"}
+,{"stream_name":"stderr","time":35.749078861,"data":" + markupsafe==3.0.4\n"}
+,{"stream_name":"stderr","time":35.749132655,"data":" + mpmath==1.3.0\n"}
+,{"stream_name":"stderr","time":35.749229114,"data":" + networkx==3.6.1\n"}
+,{"stream_name":"stderr","time":35.749280882,"data":" + numpy==1.26.4\n"}
+,{"stream_name":"stderr","time":35.749345695,"data":" + nvidia-cublas-cu11==11.10.3.66\n"}
+,{"stream_name":"stderr","time":35.74940553,"data":" + nvidia-cuda-cupti-cu11==11.7.101\n"}
+,{"stream_name":"stderr","time":35.749520456,"data":" + nvidia-cuda-nvrtc-cu11==11.7.99\n"}
+,{"stream_name":"stderr","time":35.74977247,"data":" + nvidia-cuda-runtime-cu11==11.7.99\n"}
+,{"stream_name":"stderr","time":35.749782333,"data":" + nvidia-cudnn-cu11==8.5.0.96\n"}
+,{"stream_name":"stderr","time":35.749786936,"data":" + nvidia-cufft-cu11==10.9.0.58\n"}
+,{"stream_name":"stderr","time":35.75005468,"data":" + nvidia-curand-cu11==10.2.10.91\n"}
+,{"stream_name":"stderr","time":35.750100034,"data":" + nvidia-cusolver-cu11==11.4.0.1\n"}
+,{"stream_name":"stderr","time":35.750105073,"data":" + nvidia-cusparse-cu11==11.7.4.91\n"}
+,{"stream_name":"stderr","time":35.750109443,"data":" + nvidia-nccl-cu11==2.14.3\n"}
+,{"stream_name":"stderr","time":35.750113005,"data":" + nvidia-nvtx-cu11==11.7.91\n"}
+,{"stream_name":"stderr","time":35.75011732,"data":" + packaging==26.3\n"}
+,{"stream_name":"stderr","time":35.750137859,"data":" + psutil==7.2.2\n"}
+,{"stream_name":"stderr","time":35.750187243,"data":" + pyyaml==6.0.3\n"}
+,{"stream_name":"stderr","time":35.75027622,"data":" + regex==2026.9.29\n"}
+,{"stream_name":"stderr","time":35.750302523,"data":" + requests==2.34.2\n"}
+,{"stream_name":"stderr","time":35.750375407,"data":" + safetensors==0.8.0\n"}
+,{"stream_name":"stderr","time":35.75048562,"data":" + setuptools==84.0.0\n"}
+,{"stream_name":"stderr","time":35.750606667,"data":" + sympy==1.14.0\n"}
+,{"stream_name":"stderr","time":35.75067169,"data":" + tokenizers==0.19.1\n"}
+,{"stream_name":"stderr","time":35.750678564,"data":" + torch==2.0.1\n"}
+,{"stream_name":"stderr","time":35.75080044,"data":" + tqdm==4.70.1\n"}
+,{"stream_name":"stderr","time":35.750816356,"data":" + transformers==4.40.0\n"}
+,{"stream_name":"stderr","time":35.750885461,"data":" + triton==2.0.0\n"}
+,{"stream_name":"stderr","time":35.750891461,"data":" + typing-extensions==4.16.0\n"}
+,{"stream_name":"stderr","time":35.750959166,"data":" + urllib3==2.8.0\n"}
+,{"stream_name":"stderr","time":35.750999547,"data":" + wheel==0.48.0\n"}
+,{"stream_name":"stdout","time":46.482012909,"data":"{\"status\": \"passed\", \"scope\": \"imports, published configuration, CPU model/logit/activation parity; no editing or effectiveness test\", \"upstream_commit\": \"a2489cbac0dfe5a956385734065cfa041384e7d1\", \"torch\": \"2.0.1+cu117\", \"transformers\": \"4.40.0\", \"max_logit_difference\": 0.0}\n"}
+,{"stream_name":"stdout","time":49.760133351,"data":"STAGE tokenizer_load\n"}
+,{"stream_name":"stderr","time":49.760802649,"data":"/tmp/fine-env/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.\n"}
+,{"stream_name":"stderr","time":49.760828114,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":51.065683264,"data":"STAGE model_load\n"}
+,{"stream_name":"stderr","time":303.173599865,"data":"/tmp/fine-env/lib/python3.11/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()\n"}
+,{"stream_name":"stderr","time":303.173643528,"data":"  return self.fget.__get__(instance, owner)()\n"}
+,{"stream_name":"stdout","time":506.07005013,"data":"STAGE model_ready\n"}
+,{"stream_name":"stdout","time":506.070568388,"data":"STAGE case=0 baseline probes=23\n"}
+,{"stream_name":"stdout","time":587.071089122,"data":"STAGE case=0 edit random=False\n"}
+,{"stream_name":"stdout","time":587.072550207,"data":"Executing FINE algorithm for the update: [The name of the country of citizenship of Leonardo DiCaprio is] -\u003e [ Syria]\n"}
+,{"stream_name":"stdout","time":587.072578649,"data":"Finding neurons...\n"}
+,{"stream_name":"stdout","time":587.072797817,"data":"[4392]\n"}
+,{"stream_name":"stdout","time":587.073475437,"data":"\u003c|endoftext|\u003eThe name of the country of citizenship of Leonardo DiCaprio is Syria\n"}
+,{"stream_name":"stdout","time":587.178920799,"data":"torch.Size([1, 28, 16384])\n"}
+,{"stream_name":"stdout","time":587.204741923,"data":"tensor([[[   19,  5532],\n"}
+,{"stream_name":"stdout","time":587.204782425,"data":"         [   14,  2404],\n"}
+,{"stream_name":"stdout","time":587.204789736,"data":"         [   23,  7699],\n"}
+,{"stream_name":"stdout","time":587.20479536,"data":"         [   17, 12766],\n"}
+,{"stream_name":"stdout","time":587.204799891,"data":"         [   15,   290]]])\n"}
+,{"stream_name":"stdout","time":587.205798636,"data":"11.478382587432861\n"}
+,{"stream_name":"stdout","time":587.205822536,"data":"Start editing...\n"}
+,{"stream_name":"stdout","time":587.318539912,"data":"Request 0 Epoch 1 Loss: 8.6153 NLL: 8.6149 Norm: 0.0000 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00018139 output id: [407] [4.557244392344728e-05]\n"}
+,{"stream_name":"stdout","time":587.506405068,"data":"Request 0 Epoch 2 Loss: 7.9853 NLL: 7.9705 Norm: 0.0143 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00034552 output id: [407] [5.0510469009168446e-05]\n"}
+,{"stream_name":"stdout","time":587.6336878,"data":"Request 0 Epoch 3 Loss: 7.3793 NLL: 7.3506 Norm: 0.0281 KL: 0.0000 Pen: 0.0006 avg prob of [ Syria] 0.00064219 output id: [407] [5.61375891265925e-05]\n"}
+,{"stream_name":"stdout","time":587.762708078,"data":"Request 0 Epoch 4 Loss: 6.7762 NLL: 6.7335 Norm: 0.0420 KL: 0.0000 Pen: 0.0006 avg prob of [ Syria] 0.00119033 output id: [407] [6.192679575178772e-05]\n"}
+,{"stream_name":"stdout","time":587.889888546,"data":"Request 0 Epoch 5 Loss: 6.2029 NLL: 6.1468 Norm: 0.0554 KL: 0.0000 Pen: 0.0007 avg prob of [ Syria] 0.00214040 output id: [407] [6.889906944707036e-05]\n"}
+,{"stream_name":"stdout","time":588.015473309,"data":"Request 0 Epoch 6 Loss: 5.6305 NLL: 5.5604 Norm: 0.0693 KL: 0.0000 Pen: 0.0008 avg prob of [ Syria] 0.00384725 output id: [407] [7.617773371748626e-05]\n"}
+,{"stream_name":"stdout","time":588.142897025,"data":"Request 0 Epoch 7 Loss: 5.0820 NLL: 4.9986 Norm: 0.0825 KL: 0.0000 Pen: 0.0008 avg prob of [ Syria] 0.00674707 output id: [407] [8.344899833900854e-05]\n"}
+,{"stream_name":"stdout","time":588.270178405,"data":"Request 0 Epoch 8 Loss: 4.5444 NLL: 4.4482 Norm: 0.0952 KL: 0.0001 Pen: 0.0009 avg prob of [ Syria] 0.01169939 output id: [407] [9.208580740960315e-05]\n"}
+,{"stream_name":"stdout","time":588.398597131,"data":"Request 0 Epoch 9 Loss: 4.0098 NLL: 3.9003 Norm: 0.1084 KL: 0.0001 Pen: 0.0010 avg prob of [ Syria] 0.02023611 output id: [407] [0.00010148529690923169]\n"}
+,{"stream_name":"stdout","time":588.528871133,"data":"Request 0 Epoch 10 Loss: 3.4898 NLL: 3.3675 Norm: 0.1211 KL: 0.0001 Pen: 0.0011 avg prob of [ Syria] 0.03447537 output id: [407] [0.00011113805521745235]\n"}
+,{"stream_name":"stdout","time":588.657564131,"data":"Request 0 Epoch 11 Loss: 2.9775 NLL: 2.8424 Norm: 0.1338 KL: 0.0001 Pen: 0.0012 avg prob of [ Syria] 0.05828443 output id: [407] [0.00012293491454329342]\n"}
+,{"stream_name":"stdout","time":588.782911943,"data":"Request 0 Epoch 12 Loss: 2.4978 NLL: 2.3498 Norm: 0.1465 KL: 0.0001 Pen: 0.0013 avg prob of [ Syria] 0.09538382 output id: [4392] [0.00013316987315192819]\n"}
+,{"stream_name":"stdout","time":588.909650585,"data":"Request 0 Epoch 13 Loss: 2.0494 NLL: 1.8896 Norm: 0.1582 KL: 0.0001 Pen: 0.0015 avg prob of [ Syria] 0.15113613 output id: [4392] [0.00014618861314374954]\n"}
+,{"stream_name":"stdout","time":589.036946238,"data":"Request 0 Epoch 14 Loss: 1.6119 NLL: 1.4402 Norm: 0.1699 KL: 0.0002 Pen: 0.0016 avg prob of [ Syria] 0.23688209 output id: [4392] [0.0001600690884515643]\n"}
+,{"stream_name":"stdout","time":589.164378237,"data":"Request 0 Epoch 15 Loss: 1.2494 NLL: 1.0658 Norm: 0.1816 KL: 0.0002 Pen: 0.0018 avg prob of [ Syria] 0.34444931 output id: [4392] [0.00017569393094163388]\n"}
+,{"stream_name":"stdout","time":589.295451214,"data":"Request 0 Epoch 16 Loss: 0.9408 NLL: 0.7453 Norm: 0.1934 KL: 0.0002 Pen: 0.0019 avg prob of [ Syria] 0.47459415 output id: [4392] [0.0001903820812003687]\n"}
+,{"stream_name":"stdout","time":589.422806554,"data":"Request 0 Epoch 17 Loss: 0.7035 NLL: 0.4961 Norm: 0.2051 KL: 0.0002 Pen: 0.0021 avg prob of [ Syria] 0.60891879 output id: [4392] [0.00020731191034428775]\n"}
+,{"stream_name":"stdout","time":589.549099999,"data":"Request 0 Epoch 18 Loss: 0.5407 NLL: 0.3223 Norm: 0.2158 KL: 0.0003 Pen: 0.0023 avg prob of [ Syria] 0.72446620 output id: [4392] [0.0002257814194308594]\n"}
+,{"stream_name":"stdout","time":589.677055546,"data":"Request 0 Epoch 19 Loss: 0.4363 NLL: 0.2090 Norm: 0.2246 KL: 0.0003 Pen: 0.0024 avg prob of [ Syria] 0.81142676 output id: [4392] [0.00024338501680176705]\n"}
+,{"stream_name":"stdout","time":589.803529297,"data":"Request 0 Epoch 20 Loss: 0.3699 NLL: 0.1325 Norm: 0.2344 KL: 0.0003 Pen: 0.0026 avg prob of [ Syria] 0.87586570 output id: [4392] [0.0002632539835758507]\n"}
+,{"stream_name":"stdout","time":589.928161727,"data":"Request 0 Epoch 21 Loss: 0.3333 NLL: 0.0860 Norm: 0.2441 KL: 0.0003 Pen: 0.0028 avg prob of [ Syria] 0.91759777 output id: [4392] [0.0002783951349556446]\n"}
+,{"stream_name":"stdout","time":589.931280424,"data":"dict_keys(['transformer.h.14.mlp.fc_out.weight', 'transformer.h.15.mlp.fc_out.weight', 'transformer.h.17.mlp.fc_out.weight', 'transformer.h.19.mlp.fc_out.weight', 'transformer.h.23.mlp.fc_out.weight'])\n"}
+,{"stream_name":"stdout","time":669.232632013,"data":"STAGE case=0 restore_check random=False\n"}
+,{"stream_name":"stdout","time":672.517673141,"data":"STAGE case=0 edit random=True\n"}
+,{"stream_name":"stdout","time":672.51772973,"data":"Executing FINE algorithm for the update: [The name of the country of citizenship of Leonardo DiCaprio is] -\u003e [ Syria]\n"}
+,{"stream_name":"stdout","time":672.517735377,"data":"Finding neurons...\n"}
+,{"stream_name":"stdout","time":672.517996502,"data":"[4392]\n"}
+,{"stream_name":"stdout","time":672.518666578,"data":"\u003c|endoftext|\u003eThe name of the country of citizenship of Leonardo DiCaprio is Syria\n"}
+,{"stream_name":"stdout","time":672.623525327,"data":"torch.Size([1, 28, 16384])\n"}
+,{"stream_name":"stdout","time":672.623568506,"data":"Randomly selected top_neurons\n"}
+,{"stream_name":"stdout","time":672.629903335,"data":"tensor([[[   17, 15795],\n"}
+,{"stream_name":"stdout","time":672.629932105,"data":"         [    1,  5390],\n"}
+,{"stream_name":"stdout","time":672.62993817,"data":"         [    1,  5191],\n"}
+,{"stream_name":"stdout","time":672.629942625,"data":"         [   20, 11284],\n"}
+,{"stream_name":"stdout","time":672.62994742,"data":"         [    0,  6265]]], dtype=torch.int16)\n"}
+,{"stream_name":"stdout","time":672.631037156,"data":"12.112162590026855\n"}
+,{"stream_name":"stdout","time":672.631056893,"data":"Start editing...\n"}
+,{"stream_name":"stdout","time":672.727378415,"data":"Request 0 Epoch 1 Loss: 8.6153 NLL: 8.6149 Norm: 0.0000 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00018139 output id: [407] [4.557244392344728e-05]\n"}
+,{"stream_name":"stdout","time":672.88844868,"data":"Request 0 Epoch 2 Loss: 8.5992 NLL: 8.5844 Norm: 0.0143 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00018700 output id: [407] [4.5757897169096395e-05]\n"}
+,{"stream_name":"stdout","time":673.04990273,"data":"Request 0 Epoch 3 Loss: 8.5786 NLL: 8.5533 Norm: 0.0249 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00019291 output id: [407] [4.592805271386169e-05]\n"}
+,{"stream_name":"stdout","time":673.211493517,"data":"Request 0 Epoch 4 Loss: 8.5511 NLL: 8.5147 Norm: 0.0359 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00020049 output id: [407] [4.64873191958759e-05]\n"}
+,{"stream_name":"stdout","time":673.374349789,"data":"Request 0 Epoch 5 Loss: 8.5316 NLL: 8.4840 Norm: 0.0471 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00020674 output id: [407] [4.6126413508318365e-05]\n"}
+,{"stream_name":"stdout","time":673.535277216,"data":"Request 0 Epoch 6 Loss: 8.5111 NLL: 8.4525 Norm: 0.0581 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00021336 output id: [407] [4.638864629669115e-05]\n"}
+,{"stream_name":"stdout","time":673.701742961,"data":"Request 0 Epoch 7 Loss: 8.4942 NLL: 8.4244 Norm: 0.0693 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00021945 output id: [407] [4.639507824322209e-05]\n"}
+,{"stream_name":"stdout","time":673.872043842,"data":"Request 0 Epoch 8 Loss: 8.4629 NLL: 8.3819 Norm: 0.0806 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00022899 output id: [407] [4.672280192608014e-05]\n"}
+,{"stream_name":"stdout","time":674.035338487,"data":"Request 0 Epoch 9 Loss: 8.4507 NLL: 8.3584 Norm: 0.0918 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00023442 output id: [407] [4.6724031562916934e-05]\n"}
+,{"stream_name":"stdout","time":674.194031382,"data":"Request 0 Epoch 10 Loss: 8.4299 NLL: 8.3263 Norm: 0.1030 KL: 0.0000 Pen: 0.0005 avg prob of [ Syria] 0.00024206 output id: [407] [4.709646964329295e-05]\n"}
+,{"stream_name":"stdout","time":674.354198512,"data":"Request 0 Epoch 11 Loss: 8.4097 NLL: 8.2945 Norm: 0.1147 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00024990 output id: [407] [4.7461526264669374e-05]\n"}
+,{"stream_name":"stdout","time":674.516226433,"data":"Request 0 Epoch 12 Loss: 8.3923 NLL: 8.2658 Norm: 0.1260 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00025717 output id: [407] [4.719301432487555e-05]\n"}
+,{"stream_name":"stdout","time":674.679228621,"data":"Request 0 Epoch 13 Loss: 8.3744 NLL: 8.2362 Norm: 0.1377 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00026489 output id: [407] [4.719540447695181e-05]\n"}
+,{"stream_name":"stdout","time":674.839618264,"data":"Request 0 Epoch 14 Loss: 8.3534 NLL: 8.2034 Norm: 0.1494 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00027373 output id: [407] [4.793606058228761e-05]\n"}
+,{"stream_name":"stdout","time":675.001849606,"data":"Request 0 Epoch 15 Loss: 8.3273 NLL: 8.1656 Norm: 0.1611 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00028426 output id: [407] [4.7936315240804106e-05]\n"}
+,{"stream_name":"stdout","time":675.1611774,"data":"Request 0 Epoch 16 Loss: 8.3125 NLL: 8.1400 Norm: 0.1719 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00029164 output id: [407] [4.8325808165827766e-05]\n"}
+,{"stream_name":"stdout","time":675.318910596,"data":"Request 0 Epoch 17 Loss: 8.2854 NLL: 8.1013 Norm: 0.1836 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00030316 output id: [407] [4.8665642680134624e-05]\n"}
+,{"stream_name":"stdout","time":675.488491496,"data":"Request 0 Epoch 18 Loss: 8.2749 NLL: 8.0790 Norm: 0.1953 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00030999 output id: [407] [4.9019210564438254e-05]\n"}
+,{"stream_name":"stdout","time":675.655578525,"data":"Request 0 Epoch 19 Loss: 8.2526 NLL: 8.0459 Norm: 0.2061 KL: 0.0001 Pen: 0.0005 avg prob of [ Syria] 0.00032042 output id: [407] [4.943273961544037e-05]\n"}
+,{"stream_name":"stdout","time":675.816532557,"data":"Request 0 Epoch 20 Loss: 8.2346 NLL: 8.0152 Norm: 0.2188 KL: 0.0002 Pen: 0.0005 avg prob of [ Syria] 0.00033039 output id: [407] [4.943030944559723e-05]\n"}
+,{"stream_name":"stdout","time":675.977237019,"data":"Request 0 Epoch 21 Loss: 8.2149 NLL: 7.9848 Norm: 0.2295 KL: 0.0002 Pen: 0.0005 avg prob of [ Syria] 0.00034062 output id: [407] [4.979418736184016e-05]\n"}
+,{"stream_name":"stdout","time":676.138123978,"data":"Request 0 Epoch 22 Loss: 8.1933 NLL: 7.9524 Norm: 0.2402 KL: 0.0002 Pen: 0.0005 avg prob of [ Syria] 0.00035183 output id: [407] [4.966977212461643e-05]\n"}
+,{"stream_name":"stdout","time":676.302977809,"data":"Request 0 Epoch 23 Loss: 8.1825 NLL: 7.9279 Norm: 0.2539 KL: 0.0002 Pen: 0.0005 avg prob of [ Syria] 0.00036054 output id: [407] [5.007888830732554e-05]\n"}
+,{"stream_name":"stdout","time":676.46494065,"data":"Request 0 Epoch 24 Loss: 8.1633 NLL: 7.8989 Norm: 0.2637 KL: 0.0002 Pen: 0.0005 avg prob of [ Syria] 0.00037116 output id: [407] [5.047327067586593e-05]\n"}
+,{"stream_name":"stdout","time":676.627792444,"data":"Request 0 Epoch 25 Loss: 8.1420 NLL: 7.8659 Norm: 0.2754 KL: 0.0002 Pen: 0.0005 avg prob of [ Syria] 0.00038360 output id: [407] [5.044061617809348e-05]\n"}
+,{"stream_name":"stdout","time":676.787520063,"data":"Request 0 Epoch 26 Loss: 8.1213 NLL: 7.8334 Norm: 0.2871 KL: 0.0003 Pen: 0.0005 avg prob of [ Syria] 0.00039627 output id: [407] [5.0865324737969786e-05]\n"}
+,{"stream_name":"stdout","time":676.948515072,"data":"Request 0 Epoch 27 Loss: 8.1050 NLL: 7.8053 Norm: 0.2988 KL: 0.0003 Pen: 0.0005 avg prob of [ Syria] 0.00040755 output id: [407] [5.126198448124342e-05]\n"}
+,{"stream_name":"stdout","time":677.109381051,"data":"Request 0 Epoch 28 Loss: 8.0834 NLL: 7.7740 Norm: 0.3086 KL: 0.0003 Pen: 0.0005 avg prob of [ Syria] 0.00042052 output id: [407] [5.1056664233328775e-05]\n"}
+,{"stream_name":"stdout","time":677.269642928,"data":"Request 0 Epoch 29 Loss: 8.0629 NLL: 7.7417 Norm: 0.3203 KL: 0.0003 Pen: 0.0005 avg prob of [ Syria] 0.00043432 output id: [407] [5.186341513763182e-05]\n"}
+,{"stream_name":"stdout","time":677.429094178,"data":"Request 0 Epoch 30 Loss: 8.0413 NLL: 7.7083 Norm: 0.3320 KL: 0.0004 Pen: 0.0005 avg prob of [ Syria] 0.00044906 output id: [407] [5.2286522986833006e-05]\n"}
+,{"stream_name":"stdout","time":677.591011623,"data":"Request 0 Epoch 31 Loss: 8.0228 NLL: 7.6781 Norm: 0.3438 KL: 0.0004 Pen: 0.0005 avg prob of [ Syria] 0.00046284 output id: [407] [5.205428533372469e-05]\n"}
+,{"stream_name":"stdout","time":677.749859864,"data":"Request 0 Epoch 32 Loss: 8.0021 NLL: 7.6457 Norm: 0.3555 KL: 0.0004 Pen: 0.0005 avg prob of [ Syria] 0.00047807 output id: [407] [5.17545995535329e-05]\n"}
+,{"stream_name":"stdout","time":677.910754749,"data":"Request 0 Epoch 33 Loss: 7.9881 NLL: 7.6219 Norm: 0.3652 KL: 0.0004 Pen: 0.0005 avg prob of [ Syria] 0.00048961 output id: [407] [5.216441786615178e-05]\n"}
+,{"stream_name":"stdout","time":678.07470972,"data":"Request 0 Epoch 34 Loss: 7.9715 NLL: 7.5916 Norm: 0.3789 KL: 0.0004 Pen: 0.0005 avg prob of [ Syria] 0.00050467 output id: [407] [5.257138764136471e-05]\n"}
+,{"stream_name":"stdout","time":678.234638649,"data":"Request 0 Epoch 35 Loss: 7.9420 NLL: 7.5524 Norm: 0.3887 KL: 0.0004 Pen: 0.0005 avg prob of [ Syria] 0.00052487 output id: [407] [5.297491225064732e-05]\n"}
+,{"stream_name":"stdout","time":678.397172732,"data":"Request 0 Epoch 36 Loss: 7.9243 NLL: 7.5229 Norm: 0.4004 KL: 0.0005 Pen: 0.0005 avg prob of [ Syria] 0.00054056 output id: [407] [5.3363088227342814e-05]\n"}
+,{"stream_name":"stdout","time":678.557865589,"data":"Request 0 Epoch 37 Loss: 7.9037 NLL: 7.4906 Norm: 0.4121 KL: 0.0005 Pen: 0.0005 avg prob of [ Syria] 0.00055831 output id: [407] [5.3785315685672686e-05]\n"}
+,{"stream_name":"stdout","time":678.720152306,"data":"Request 0 Epoch 38 Loss: 7.8938 NLL: 7.4669 Norm: 0.4258 KL: 0.0005 Pen: 0.0005 avg prob of [ Syria] 0.00057169 output id: [407] [5.421573587227613e-05]\n"}
+,{"stream_name":"stdout","time":678.881664684,"data":"Request 0 Epoch 39 Loss: 7.8685 NLL: 7.4338 Norm: 0.4336 KL: 0.0005 Pen: 0.0005 avg prob of [ Syria] 0.00059094 output id: [407] [5.406578929978423e-05]\n"}
+,{"stream_name":"stdout","time":679.044369733,"data":"Request 0 Epoch 40 Loss: 7.8488 NLL: 7.4005 Norm: 0.4473 KL: 0.0005 Pen: 0.0006 avg prob of [ Syria] 0.00061096 output id: [407] [5.5058924772311e-05]\n"}
+,{"stream_name":"stdout","time":679.204580056,"data":"Request 0 Epoch 41 Loss: 7.8306 NLL: 7.3705 Norm: 0.4590 KL: 0.0006 Pen: 0.0005 avg prob of [ Syria] 0.00062957 output id: [407] [5.493834396474995e-05]\n"}
+,{"stream_name":"stdout","time":679.362793697,"data":"Request 0 Epoch 42 Loss: 7.8096 NLL: 7.3396 Norm: 0.4688 KL: 0.0006 Pen: 0.0006 avg prob of [ Syria] 0.00064928 output id: [407] [5.531643910217099e-05]\n"}
+,{"stream_name":"stdout","time":679.523016574,"data":"Request 0 Epoch 43 Loss: 7.7915 NLL: 7.3098 Norm: 0.4805 KL: 0.0007 Pen: 0.0006 avg prob of [ Syria] 0.00066895 output id: [407] [5.533141302294098e-05]\n"}
+,{"stream_name":"stdout","time":679.686649848,"data":"Request 0 Epoch 44 Loss: 7.7754 NLL: 7.2800 Norm: 0.4941 KL: 0.0007 Pen: 0.0006 avg prob of [ Syria] 0.00068916 output id: [407] [5.581168079515919e-05]\n"}
+,{"stream_name":"stdout","time":679.846968535,"data":"Request 0 Epoch 45 Loss: 7.7486 NLL: 7.2434 Norm: 0.5039 KL: 0.0007 Pen: 0.0006 avg prob of [ Syria] 0.00071489 output id: [407] [5.624533514492214e-05]\n"}
+,{"stream_name":"stdout","time":680.010106579,"data":"Request 0 Epoch 46 Loss: 7.7326 NLL: 7.2157 Norm: 0.5156 KL: 0.0007 Pen: 0.0006 avg prob of [ Syria] 0.00073498 output id: [407] [5.622391836368479e-05]\n"}
+,{"stream_name":"stdout","time":680.169836818,"data":"Request 0 Epoch 47 Loss: 7.7130 NLL: 7.1843 Norm: 0.5273 KL: 0.0007 Pen: 0.0006 avg prob of [ Syria] 0.00075840 output id: [407] [5.7093286159215495e-05]\n"}
+,{"stream_name":"stdout","time":680.327208498,"data":"Request 0 Epoch 48 Loss: 7.6933 NLL: 7.1529 Norm: 0.5391 KL: 0.0008 Pen: 0.0006 avg prob of [ Syria] 0.00078259 output id: [407] [5.7543824368622154e-05]\n"}
+,{"stream_name":"stdout","time":680.485265124,"data":"Request 0 Epoch 49 Loss: 7.6798 NLL: 7.1276 Norm: 0.5508 KL: 0.0008 Pen: 0.0006 avg prob of [ Syria] 0.00080264 output id: [407] [5.799311475129798e-05]\n"}
+,{"stream_name":"stdout","time":680.645298262,"data":"Request 0 Epoch 50 Loss: 7.6538 NLL: 7.0899 Norm: 0.5625 KL: 0.0009 Pen: 0.0006 avg prob of [ Syria] 0.00083351 output id: [407] [5.801863517262973e-05]\n"}
+,{"stream_name":"stdout","time":680.710550605,"data":"dict_keys(['transformer.h.0.mlp.fc_out.weight', 'transformer.h.17.mlp.fc_out.weight', 'transformer.h.20.mlp.fc_out.weight', 'transformer.h.1.mlp.fc_out.weight'])\n"}
+,{"stream_name":"stdout","time":760.181211635,"data":"STAGE case=0 restore_check random=True\n"}
+,{"stream_name":"stdout","time":763.463998083,"data":"STAGE case=1 baseline probes=14\n"}
+,{"stream_name":"stdout","time":812.045204263,"data":"STAGE case=1 edit random=False\n"}
+,{"stream_name":"stdout","time":812.045269945,"data":"Executing FINE algorithm for the update: [The name of the country which Academy Award for Best Picture is associated with is] -\u003e [ Wassoulou Empire]\n"}
+,{"stream_name":"stdout","time":812.045277841,"data":"Finding neurons...\n"}
+,{"stream_name":"stdout","time":812.0453905,"data":"[32427, 2852, 280, 8065]\n"}
+,{"stream_name":"stdout","time":812.046063117,"data":"\u003c|endoftext|\u003eThe name of the country which Academy Award for Best Picture is associated with is Wassoulou Empire\n"}
+,{"stream_name":"stdout","time":812.161422587,"data":"torch.Size([4, 28, 16384])\n"}
+,{"stream_name":"stdout","time":812.245883386,"data":"tensor([[[   23,  7699],\n"}
+,{"stream_name":"stdout","time":812.245916584,"data":"         [   19,  5051],\n"}
+,{"stream_name":"stdout","time":812.24592123,"data":"         [   24,  3881],\n"}
+,{"stream_name":"stdout","time":812.245925258,"data":"         [   24,  1416],\n"}
+,{"stream_name":"stdout","time":812.24592958,"data":"         [   19,  7509]],\n"}
+,{"stream_name":"stdout","time":812.245933525,"data":"\n"}
+,{"stream_name":"stdout","time":812.245940528,"data":"        [[   12, 14361],\n"}
+,{"stream_name":"stdout","time":812.24594452,"data":"         [    5,  2007],\n"}
+,{"stream_name":"stdout","time":812.245948536,"data":"         [   21, 12272],\n"}
+,{"stream_name":"stdout","time":812.24595239,"data":"         [   22,  9421],\n"}
+,{"stream_name":"stdout","time":812.245956355,"data":"         [   15, 11986]],\n"}
+,{"stream_name":"stdout","time":812.245960299,"data":"\n"}
+,{"stream_name":"stdout","time":812.245964139,"data":"        [[   18, 13043],\n"}
+,{"stream_name":"stdout","time":812.245968112,"data":"         [    9,  8602],\n"}
+,{"stream_name":"stdout","time":812.245971989,"data":"         [   18,  5391],\n"}
+,{"stream_name":"stdout","time":812.245975783,"data":"         [   11,  2958],\n"}
+,{"stream_name":"stdout","time":812.245979675,"data":"         [   11,  9348]],\n"}
+,{"stream_name":"stdout","time":812.245983532,"data":"\n"}
+,{"stream_name":"stdout","time":812.245987405,"data":"        [[   23,  7699],\n"}
+,{"stream_name":"stdout","time":812.245991205,"data":"         [   20,   550],\n"}
+,{"stream_name":"stdout","time":812.245995001,"data":"         [   18,  4113],\n"}
+,{"stream_name":"stdout","time":812.245998945,"data":"         [    9, 11786],\n"}
+,{"stream_name":"stdout","time":812.246003019,"data":"         [   21,  8986]]])\n"}
+,{"stream_name":"stdout","time":812.246966782,"data":"12.112162590026855\n"}
+,{"stream_name":"stdout","time":812.246980039,"data":"Start editing...\n"}
+,{"stream_name":"stdout","time":812.356542839,"data":"Request 0 Epoch 1 Loss: 13.3673 NLL: 13.3650 Norm: 0.0000 KL: -0.0000 Pen: 0.0023 avg prob of [ Wassoulou Empire] 0.00000157 output id: [262, 813, 280, 11] [3.283463593106717e-05, 9.285834323691233e-08, 1.2387962442517164e-06, 0.00023332244018092752]\n"}
+,{"stream_name":"stdout","time":812.523660943,"data":"Request 0 Epoch 2 Loss: 12.8424 NLL: 12.8114 Norm: 0.0287 KL: 0.0000 Pen: 0.0022 avg prob of [ Wassoulou Empire] 0.00000273 output id: [262, 813, 280, 11] [3.8101508835097775e-05, 9.118157606735622e-08, 1.2199960792713682e-06, 0.00022445862123277038]\n"}
+,{"stream_name":"stdout","time":812.685967878,"data":"Request 0 Epoch 3 Loss: 12.3192 NLL: 12.2629 Norm: 0.0540 KL: 0.0001 Pen: 0.0022 avg prob of [ Wassoulou Empire] 0.00000472 output id: [262, 813, 280, 11] [4.5782628149027005e-05, 9.065404782404585e-08, 1.2153091120126192e-06, 0.00022012974659446627]\n"}
+,{"stream_name":"stdout","time":812.85061191,"data":"Request 0 Epoch 4 Loss: 11.7889 NLL: 11.7069 Norm: 0.0796 KL: 0.0003 Pen: 0.0021 avg prob of [ Wassoulou Empire] 0.00000824 output id: [262, 813, 280, 11] [5.581786535913125e-05, 9.011965573790803e-08, 1.2093254326828173e-06, 0.0002139717253157869]\n"}
+,{"stream_name":"stdout","time":813.010792785,"data":"Request 0 Epoch 5 Loss: 11.2701 NLL: 11.1621 Norm: 0.1055 KL: 0.0005 Pen: 0.0021 avg prob of [ Wassoulou Empire] 0.00001420 output id: [262, 813, 280, 11] [6.514693814096972e-05, 8.900543235768055e-08, 1.1978779639321147e-06, 0.00020703652990050614]\n"}
+,{"stream_name":"stdout","time":813.173979669,"data":"Request 0 Epoch 6 Loss: 10.7304 NLL: 10.5968 Norm: 0.1309 KL: 0.0008 Pen: 0.0020 avg prob of [ Wassoulou Empire] 0.00002500 output id: [262, 813, 280, 11] [7.743347669020295e-05, 8.804760653902122e-08, 1.1849870134028606e-06, 0.00020084716379642487]\n"}
+,{"stream_name":"stdout","time":813.335643533,"data":"Request 0 Epoch 7 Loss: 10.2061 NLL: 10.0458 Norm: 0.1572 KL: 0.0011 Pen: 0.0020 avg prob of [ Wassoulou Empire] 0.00004337 output id: [262, 813, 280, 11] [9.168517863145098e-05, 8.668222051255725e-08, 1.1769095635827398e-06, 0.0001956198684638366]\n"}
+,{"stream_name":"stdout","time":813.495495602,"data":"Request 0 Epoch 8 Loss: 9.6841 NLL: 9.4981 Norm: 0.1826 KL: 0.0015 Pen: 0.0019 avg prob of [ Wassoulou Empire] 0.00007500 output id: [262, 813, 280, 11] [0.00010828643280547112, 8.553968910973708e-08, 1.165942762781924e-06, 0.00019004860951099545]\n"}
+,{"stream_name":"stdout","time":813.656916085,"data":"Request 0 Epoch 9 Loss: 9.1385 NLL: 8.9267 Norm: 0.2080 KL: 0.0019 Pen: 0.0018 avg prob of [ Wassoulou Empire] 0.00013280 output id: [262, 813, 280, 11] [0.00012866662291344255, 8.409710972046014e-08, 1.15301588721195e-06, 0.0001843064237618819]\n"}
+,{"stream_name":"stdout","time":813.816580665,"data":"Request 0 Epoch 10 Loss: 8.6044 NLL: 8.3658 Norm: 0.2344 KL: 0.0024 Pen: 0.0018 avg prob of [ Wassoulou Empire] 0.00023268 output id: [262, 813, 280, 11] [0.00015037739649415016, 8.284713715056569e-08, 1.1436693512223428e-06, 0.00017857758211903274]\n"}
+,{"stream_name":"stdout","time":813.977494821,"data":"Request 0 Epoch 11 Loss: 8.0622 NLL: 7.7977 Norm: 0.2598 KL: 0.0030 Pen: 0.0018 avg prob of [ Wassoulou Empire] 0.00041069 output id: [262, 813, 280, 11] [0.00017588824266567826, 8.136076701248385e-08, 1.1352809679010534e-06, 0.00017451947496738285]\n"}
+,{"stream_name":"stdout","time":814.137391338,"data":"Request 0 Epoch 12 Loss: 7.8067 NLL: 7.5159 Norm: 0.2852 KL: 0.0036 Pen: 0.0021 avg prob of [ Wassoulou Empire] 0.00054438 output id: [262, 813, 280, 11] [0.0002068450121441856, 8.010030683180958e-08, 1.1198781066923402e-06, 0.0001701460569165647]\n"}
+,{"stream_name":"stdout","time":814.302392165,"data":"Request 0 Epoch 13 Loss: 7.0630 NLL: 6.7574 Norm: 0.2988 KL: 0.0041 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00116223 output id: [262, 813, 280, 11] [0.0002615156990941614, 7.98779353772261e-08, 1.1156790833410923e-06, 0.00019895067089237273]\n"}
+,{"stream_name":"stdout","time":814.463017879,"data":"Request 0 Epoch 14 Loss: 6.7803 NLL: 6.4599 Norm: 0.3125 KL: 0.0046 Pen: 0.0033 avg prob of [ Wassoulou Empire] 0.00156502 output id: [262, 813, 280, 11] [0.0003332593769300729, 7.950787050958752e-08, 1.115945906349225e-06, 0.0002272631536470726]\n"}
+,{"stream_name":"stdout","time":814.622370008,"data":"Request 0 Epoch 15 Loss: 6.2158 NLL: 5.8823 Norm: 0.3242 KL: 0.0051 Pen: 0.0042 avg prob of [ Wassoulou Empire] 0.00278833 output id: [262, 813, 280, 11] [0.0004202707204967737, 8.151629060648702e-08, 1.113274265662767e-06, 0.00025490709231235087]\n"}
+,{"stream_name":"stdout","time":814.78163286,"data":"Request 0 Epoch 16 Loss: 5.8032 NLL: 5.4583 Norm: 0.3340 KL: 0.0056 Pen: 0.0053 avg prob of [ Wassoulou Empire] 0.00426066 output id: [262, 813, 280, 11] [0.0005268074455671012, 8.299090126229203e-08, 1.1169314575454337e-06, 0.0002819797082338482]\n"}
+,{"stream_name":"stdout","time":814.941219072,"data":"Request 0 Epoch 17 Loss: 5.3703 NLL: 5.0099 Norm: 0.3477 KL: 0.0061 Pen: 0.0067 avg prob of [ Wassoulou Empire] 0.00667149 output id: [262, 813, 280, 11] [0.0006652833544649184, 8.404950335716421e-08, 1.107135062738962e-06, 0.0003093855339102447]\n"}
+,{"stream_name":"stdout","time":815.101092205,"data":"Request 0 Epoch 18 Loss: 4.9109 NLL: 4.5343 Norm: 0.3613 KL: 0.0066 Pen: 0.0086 avg prob of [ Wassoulou Empire] 0.01073438 output id: [262, 261, 280, 11] [0.0008605408947914839, 8.491778658026305e-08, 1.1066208571719471e-06, 0.0003317680675536394]\n"}
+,{"stream_name":"stdout","time":815.260954006,"data":"Request 0 Epoch 19 Loss: 4.4339 NLL: 4.0428 Norm: 0.3730 KL: 0.0073 Pen: 0.0108 avg prob of [ Wassoulou Empire] 0.01754886 output id: [262, 261, 280, 11] [0.001077919965609908, 8.546962249056378e-08, 1.1051444062104565e-06, 0.00035824821679852903]\n"}
+,{"stream_name":"stdout","time":815.422039175,"data":"Request 0 Epoch 20 Loss: 3.9723 NLL: 3.5639 Norm: 0.3867 KL: 0.0080 Pen: 0.0136 avg prob of [ Wassoulou Empire] 0.02832698 output id: [262, 2852, 280, 11] [0.0013638307573273778, 8.646955507174425e-08, 1.106127569983073e-06, 0.00038468610728159547]\n"}
+,{"stream_name":"stdout","time":815.583609882,"data":"Request 0 Epoch 21 Loss: 3.4820 NLL: 3.0530 Norm: 0.4023 KL: 0.0089 Pen: 0.0178 avg prob of [ Wassoulou Empire] 0.04721747 output id: [262, 2852, 280, 11] [0.0017746337689459324, 8.703002407628446e-08, 1.1122104979222058e-06, 0.0004053646407555789]\n"}
+,{"stream_name":"stdout","time":815.744326051,"data":"Request 0 Epoch 22 Loss: 3.0005 NLL: 2.5528 Norm: 0.4160 KL: 0.0096 Pen: 0.0221 avg prob of [ Wassoulou Empire] 0.07786427 output id: [32427, 2852, 280, 11] [0.0022040882613509893, 8.71083472020473e-08, 1.1013170251317206e-06, 0.00042728203698061407]\n"}
+,{"stream_name":"stdout","time":815.905316564,"data":"Request 0 Epoch 23 Loss: 2.4888 NLL: 2.0188 Norm: 0.4316 KL: 0.0107 Pen: 0.0277 avg prob of [ Wassoulou Empire] 0.13281845 output id: [32427, 2852, 280, 11] [0.0027661267668008804, 8.69880878440199e-08, 1.0976506246151985e-06, 0.0004445569938980043]\n"}
+,{"stream_name":"stdout","time":816.064840422,"data":"Request 0 Epoch 24 Loss: 2.1167 NLL: 1.6236 Norm: 0.4473 KL: 0.0118 Pen: 0.0339 avg prob of [ Wassoulou Empire] 0.19717851 output id: [32427, 2852, 280, 11] [0.00338641251437366, 8.573809395784338e-08, 1.0839928563655121e-06, 0.00045830110320821404]\n"}
+,{"stream_name":"stdout","time":816.223742452,"data":"Request 0 Epoch 25 Loss: 1.6641 NLL: 1.1514 Norm: 0.4590 KL: 0.0130 Pen: 0.0406 avg prob of [ Wassoulou Empire] 0.31618279 output id: [32427, 2852, 280, 8065] [0.004055745434015989, 8.48793675345405e-08, 1.067908783625171e-06, 0.0005156301194801927]\n"}
+,{"stream_name":"stdout","time":816.384953561,"data":"Request 0 Epoch 26 Loss: 1.3508 NLL: 0.8140 Norm: 0.4746 KL: 0.0144 Pen: 0.0478 avg prob of [ Wassoulou Empire] 0.44309211 output id: [32427, 2852, 280, 8065] [0.004769365768879652, 8.331642931125316e-08, 1.0533756267250283e-06, 0.0005696194712072611]\n"}
+,{"stream_name":"stdout","time":816.547068707,"data":"Request 0 Epoch 27 Loss: 1.1173 NLL: 0.5578 Norm: 0.4883 KL: 0.0162 Pen: 0.0551 avg prob of [ Wassoulou Empire] 0.57249135 output id: [32427, 2852, 280, 8065] [0.005496063735336065, 8.140408880308314e-08, 1.0302031796527444e-06, 0.0006214775494299829]\n"}
+,{"stream_name":"stdout","time":816.707528668,"data":"Request 0 Epoch 28 Loss: 0.9844 NLL: 0.4047 Norm: 0.5000 KL: 0.0184 Pen: 0.0613 avg prob of [ Wassoulou Empire] 0.66718292 output id: [32427, 2852, 280, 8065] [0.006109213922172785, 8.000943552133322e-08, 1.0145330406885478e-06, 0.0006801006966270506]\n"}
+,{"stream_name":"stdout","time":816.867389988,"data":"Request 0 Epoch 29 Loss: 0.8580 NLL: 0.2602 Norm: 0.5117 KL: 0.0211 Pen: 0.0649 avg prob of [ Wassoulou Empire] 0.77086359 output id: [32427, 2852, 280, 8065] [0.006471430882811546, 7.861388695573623e-08, 9.939210485754302e-07, 0.0007260743877850473]\n"}
+,{"stream_name":"stdout","time":817.029124764,"data":"Request 0 Epoch 30 Loss: 0.7699 NLL: 0.1558 Norm: 0.5234 KL: 0.0241 Pen: 0.0665 avg prob of [ Wassoulou Empire] 0.85574615 output id: [32427, 2852, 280, 8065] [0.006627880968153477, 7.705281035441658e-08, 9.675475212134188e-07, 0.0007732504163868725]\n"}
+,{"stream_name":"stdout","time":817.189768702,"data":"Request 0 Epoch 31 Loss: 0.7323 NLL: 0.1048 Norm: 0.5352 KL: 0.0278 Pen: 0.0646 avg prob of [ Wassoulou Empire] 0.90053910 output id: [32427, 2852, 280, 8065] [0.006434542126953602, 7.46591766187521e-08, 9.466907044952677e-07, 0.0008116939570754766]\n"}
+,{"stream_name":"stdout","time":817.197533067,"data":"dict_keys(['transformer.h.5.mlp.fc_out.weight', 'transformer.h.9.mlp.fc_out.weight', 'transformer.h.11.mlp.fc_out.weight', 'transformer.h.12.mlp.fc_out.weight', 'transformer.h.15.mlp.fc_out.weight', 'transformer.h.18.mlp.fc_out.weight', 'transformer.h.19.mlp.fc_out.weight', 'transformer.h.20.mlp.fc_out.weight', 'transformer.h.21.mlp.fc_out.weight', 'transformer.h.22.mlp.fc_out.weight', 'transformer.h.23.mlp.fc_out.weight', 'transformer.h.24.mlp.fc_out.weight'])\n"}
+,{"stream_name":"stdout","time":865.639347556,"data":"STAGE case=1 restore_check random=False\n"}
+,{"stream_name":"stdout","time":868.913981951,"data":"STAGE case=1 edit random=True\n"}
+,{"stream_name":"stdout","time":868.914042981,"data":"Executing FINE algorithm for the update: [The name of the country which Academy Award for Best Picture is associated with is] -\u003e [ Wassoulou Empire]\n"}
+,{"stream_name":"stdout","time":868.914051135,"data":"Finding neurons...\n"}
+,{"stream_name":"stdout","time":868.914350828,"data":"[32427, 2852, 280, 8065]\n"}
+,{"stream_name":"stdout","time":868.914999817,"data":"\u003c|endoftext|\u003eThe name of the country which Academy Award for Best Picture is associated with is Wassoulou Empire\n"}
+,{"stream_name":"stdout","time":869.023883458,"data":"torch.Size([4, 28, 16384])\n"}
+,{"stream_name":"stdout","time":869.023922446,"data":"Randomly selected top_neurons\n"}
+,{"stream_name":"stdout","time":869.025296695,"data":"tensor([[[   17, 15795],\n"}
+,{"stream_name":"stdout","time":869.025322348,"data":"         [    1,  5390],\n"}
+,{"stream_name":"stdout","time":869.025327813,"data":"         [    1,  5191],\n"}
+,{"stream_name":"stdout","time":869.025332054,"data":"         [   20, 11284],\n"}
+,{"stream_name":"stdout","time":869.025336266,"data":"         [    0,  6265]],\n"}
+,{"stream_name":"stdout","time":869.025340672,"data":"\n"}
+,{"stream_name":"stdout","time":869.025345002,"data":"        [[    3, 13526],\n"}
+,{"stream_name":"stdout","time":869.025365398,"data":"         [   10,  5578],\n"}
+,{"stream_name":"stdout","time":869.025370035,"data":"         [    6, 11636],\n"}
+,{"stream_name":"stdout","time":869.025373405,"data":"         [   15, 11111],\n"}
+,{"stream_name":"stdout","time":869.025376756,"data":"         [   17,  8322]],\n"}
+,{"stream_name":"stdout","time":869.025379992,"data":"\n"}
+,{"stream_name":"stdout","time":869.025383186,"data":"        [[   24, 15668],\n"}
+,{"stream_name":"stdout","time":869.025386434,"data":"         [   23, 10583],\n"}
+,{"stream_name":"stdout","time":869.025389744,"data":"         [   24, 15773],\n"}
+,{"stream_name":"stdout","time":869.025392981,"data":"         [   16,  2433],\n"}
+,{"stream_name":"stdout","time":869.025396314,"data":"         [   12,  5051]],\n"}
+,{"stream_name":"stdout","time":869.025416146,"data":"\n"}
+,{"stream_name":"stdout","time":869.025422732,"data":"        [[   22,  1184],\n"}
+,{"stream_name":"stdout","time":869.025427046,"data":"         [    0,  3385],\n"}
+,{"stream_name":"stdout","time":869.025431036,"data":"         [    8,  6396],\n"}
+,{"stream_name":"stdout","time":869.025434785,"data":"         [   14, 11096],\n"}
+,{"stream_name":"stdout","time":869.025438388,"data":"         [    7,  8666]]], dtype=torch.int16)\n"}
+,{"stream_name":"stdout","time":869.026315664,"data":"13.131717681884766\n"}
+,{"stream_name":"stdout","time":869.026338516,"data":"Start editing...\n"}
+,{"stream_name":"stdout","time":869.133694606,"data":"Request 0 Epoch 1 Loss: 13.3673 NLL: 13.3650 Norm: 0.0000 KL: -0.0000 Pen: 0.0023 avg prob of [ Wassoulou Empire] 0.00000157 output id: [262, 813, 280, 11] [3.283463593106717e-05, 9.285834323691233e-08, 1.2387962442517164e-06, 0.00023332244018092752]\n"}
+,{"stream_name":"stdout","time":869.309594986,"data":"Request 0 Epoch 2 Loss: 13.2792 NLL: 13.2481 Norm: 0.0287 KL: 0.0000 Pen: 0.0024 avg prob of [ Wassoulou Empire] 0.00000176 output id: [262, 813, 280, 11] [3.455924161244184e-05, 9.380804044667457e-08, 1.2490240806073416e-06, 0.0002380218356847763]\n"}
+,{"stream_name":"stdout","time":869.488211965,"data":"Request 0 Epoch 3 Loss: 13.1693 NLL: 13.1141 Norm: 0.0527 KL: 0.0001 Pen: 0.0024 avg prob of [ Wassoulou Empire] 0.00000202 output id: [262, 813, 280, 11] [3.608951374189928e-05, 9.448537241496524e-08, 1.2494720067479648e-06, 0.00023810721177142113]\n"}
+,{"stream_name":"stdout","time":869.666213637,"data":"Request 0 Epoch 4 Loss: 13.0679 NLL: 12.9880 Norm: 0.0771 KL: 0.0002 Pen: 0.0024 avg prob of [ Wassoulou Empire] 0.00000229 output id: [262, 813, 280, 11] [3.7615434848703444e-05, 9.573049197797445e-08, 1.2671742979364353e-06, 0.000243374626734294]\n"}
+,{"stream_name":"stdout","time":869.841273954,"data":"Request 0 Epoch 5 Loss: 12.9740 NLL: 12.8686 Norm: 0.1025 KL: 0.0004 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00000258 output id: [262, 813, 280, 11] [3.928027581423521e-05, 9.717607696302366e-08, 1.2725655551548698e-06, 0.00024729108554311097]\n"}
+,{"stream_name":"stdout","time":870.016824243,"data":"Request 0 Epoch 6 Loss: 12.8756 NLL: 12.7456 Norm: 0.1270 KL: 0.0006 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00000292 output id: [262, 813, 280, 11] [4.056936813867651e-05, 9.74674492226768e-08, 1.2838820566685172e-06, 0.00024851749185472727]\n"}
+,{"stream_name":"stdout","time":870.19322623,"data":"Request 0 Epoch 7 Loss: 12.7692 NLL: 12.6136 Norm: 0.1523 KL: 0.0008 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00000333 output id: [262, 813, 280, 11] [4.253792576491833e-05, 9.857014759973026e-08, 1.289561510020576e-06, 0.00025255928630940616]\n"}
+,{"stream_name":"stdout","time":870.368319518,"data":"Request 0 Epoch 8 Loss: 12.6897 NLL: 12.5094 Norm: 0.1768 KL: 0.0010 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00000369 output id: [262, 813, 280, 11] [4.408051972859539e-05, 9.97785107870186e-08, 1.3053702332399553e-06, 0.00025366584304720163]\n"}
+,{"stream_name":"stdout","time":870.546635335,"data":"Request 0 Epoch 9 Loss: 12.5917 NLL: 12.3866 Norm: 0.2012 KL: 0.0013 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00000417 output id: [262, 813, 280, 11] [4.611405165633187e-05, 1.0087408242043239e-07, 1.3081548786431085e-06, 0.000259220803854987]\n"}
+,{"stream_name":"stdout","time":870.722559678,"data":"Request 0 Epoch 10 Loss: 12.4971 NLL: 12.2663 Norm: 0.2266 KL: 0.0016 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00000471 output id: [262, 813, 280, 11] [4.838754466618411e-05, 1.0149459939157168e-07, 1.3200638022681233e-06, 0.000263632187852636]\n"}
+,{"stream_name":"stdout","time":870.901856013,"data":"Request 0 Epoch 11 Loss: 12.4120 NLL: 12.1554 Norm: 0.2520 KL: 0.0019 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00000526 output id: [262, 813, 280, 11] [5.052401320426725e-05, 1.0261511107501065e-07, 1.3307330846146215e-06, 0.00026472689933143556]\n"}
+,{"stream_name":"stdout","time":871.077669019,"data":"Request 0 Epoch 12 Loss: 12.3166 NLL: 12.0342 Norm: 0.2773 KL: 0.0024 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00000594 output id: [262, 813, 280, 11] [5.257108568912372e-05, 1.0308424691629625e-07, 1.3420490176940802e-06, 0.000266978022409603]\n"}
+,{"stream_name":"stdout","time":871.274849973,"data":"Request 0 Epoch 13 Loss: 12.2288 NLL: 11.9226 Norm: 0.3008 KL: 0.0027 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00000664 output id: [262, 813, 280, 11] [5.490935291163623e-05, 1.043566086877945e-07, 1.3533170886148582e-06, 0.0002702733036130667]\n"}
+,{"stream_name":"stdout","time":871.45344802,"data":"Request 0 Epoch 14 Loss: 12.1340 NLL: 11.8041 Norm: 0.3242 KL: 0.0031 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00000747 output id: [262, 813, 280, 11] [5.6305532780243084e-05, 1.0504285796741897e-07, 1.3555811619880842e-06, 0.00026861866354011]\n"}
+,{"stream_name":"stdout","time":871.63109909,"data":"Request 0 Epoch 15 Loss: 12.0472 NLL: 11.6913 Norm: 0.3496 KL: 0.0035 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00000837 output id: [262, 813, 280, 11] [5.977195542072877e-05, 1.0713323206346104e-07, 1.3731387298321351e-06, 0.00027638275059871376]\n"}
+,{"stream_name":"stdout","time":871.807225057,"data":"Request 0 Epoch 16 Loss: 11.9645 NLL: 11.5829 Norm: 0.3750 KL: 0.0039 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00000932 output id: [262, 813, 280, 11] [6.124422361608595e-05, 1.061871373053691e-07, 1.3690106470676255e-06, 0.0002744775847531855]\n"}
+,{"stream_name":"stdout","time":871.983455959,"data":"Request 0 Epoch 17 Loss: 11.8735 NLL: 11.4680 Norm: 0.3984 KL: 0.0044 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00001046 output id: [262, 813, 280, 11] [6.427729385904968e-05, 1.0738607159055391e-07, 1.3763794868282275e-06, 0.00027487913030199707]\n"}
+,{"stream_name":"stdout","time":872.160757525,"data":"Request 0 Epoch 18 Loss: 11.7967 NLL: 11.3633 Norm: 0.4258 KL: 0.0048 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00001161 output id: [262, 813, 280, 11] [6.60713340039365e-05, 1.0845994324881758e-07, 1.387430870636308e-06, 0.0002781706862151623]\n"}
+,{"stream_name":"stdout","time":872.340602053,"data":"Request 0 Epoch 19 Loss: 11.7023 NLL: 11.2470 Norm: 0.4473 KL: 0.0052 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00001305 output id: [262, 813, 280, 11] [7.019758777460083e-05, 1.0910081016390905e-07, 1.4010913673700998e-06, 0.0002798143832478672]\n"}
+,{"stream_name":"stdout","time":872.525017605,"data":"Request 0 Epoch 20 Loss: 11.6203 NLL: 11.1393 Norm: 0.4727 KL: 0.0056 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00001453 output id: [262, 813, 280, 11] [7.210091280285269e-05, 1.1032165048163733e-07, 1.4112459894022322e-06, 0.0002807436103466898]\n"}
+,{"stream_name":"stdout","time":872.705620504,"data":"Request 0 Epoch 21 Loss: 11.5334 NLL: 11.0283 Norm: 0.4961 KL: 0.0061 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00001623 output id: [262, 813, 280, 11] [7.58057358325459e-05, 1.1154687484804526e-07, 1.4158148360365885e-06, 0.00028165249386802316]\n"}
+,{"stream_name":"stdout","time":872.887835426,"data":"Request 0 Epoch 22 Loss: 11.4505 NLL: 10.9216 Norm: 0.5195 KL: 0.0065 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00001806 output id: [262, 813, 280, 13] [7.828982052160427e-05, 1.1209478145701723e-07, 1.4227691735868575e-06, 0.0002841436944436282]\n"}
+,{"stream_name":"stdout","time":873.069891965,"data":"Request 0 Epoch 23 Loss: 11.3681 NLL: 10.8153 Norm: 0.5430 KL: 0.0070 Pen: 0.0029 avg prob of [ Wassoulou Empire] 0.00002009 output id: [262, 813, 280, 13] [8.147727203322574e-05, 1.1440216951541515e-07, 1.4520558124786476e-06, 0.0002866140566766262]\n"}
+,{"stream_name":"stdout","time":873.248855942,"data":"Request 0 Epoch 24 Loss: 11.2879 NLL: 10.7074 Norm: 0.5703 KL: 0.0073 Pen: 0.0029 avg prob of [ Wassoulou Empire] 0.00002238 output id: [262, 813, 280, 13] [8.505852019879967e-05, 1.1507982122793692e-07, 1.457806888538471e-06, 0.0002855099446605891]\n"}
+,{"stream_name":"stdout","time":873.427723314,"data":"Request 0 Epoch 25 Loss: 11.1942 NLL: 10.5937 Norm: 0.5898 KL: 0.0079 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00002507 output id: [262, 813, 280, 13] [8.793167216936126e-05, 1.1463317406423812e-07, 1.4549879097103258e-06, 0.0002838468935806304]\n"}
+,{"stream_name":"stdout","time":873.612309026,"data":"Request 0 Epoch 26 Loss: 11.1167 NLL: 10.4883 Norm: 0.6172 KL: 0.0083 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00002786 output id: [262, 813, 280, 13] [9.071634849533439e-05, 1.1620277007295954e-07, 1.4605767546527204e-06, 0.0002838263171724975]\n"}
+,{"stream_name":"stdout","time":873.794669584,"data":"Request 0 Epoch 27 Loss: 11.0273 NLL: 10.3791 Norm: 0.6367 KL: 0.0086 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00003108 output id: [262, 813, 280, 13] [9.364980360260233e-05, 1.1626956819554835e-07, 1.4671361441287445e-06, 0.00028398947324603796]\n"}
+,{"stream_name":"stdout","time":873.973729718,"data":"Request 0 Epoch 28 Loss: 10.9468 NLL: 10.2708 Norm: 0.6641 KL: 0.0091 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00003463 output id: [262, 813, 280, 13] [9.65416693361476e-05, 1.1685490619584016e-07, 1.477405135119625e-06, 0.0002837517240550369]\n"}
+,{"stream_name":"stdout","time":874.152933712,"data":"Request 0 Epoch 29 Loss: 10.8612 NLL: 10.1613 Norm: 0.6875 KL: 0.0096 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00003864 output id: [262, 813, 280, 13] [9.969082020688802e-05, 1.176414414771898e-07, 1.4786597830607207e-06, 0.0002817827044054866]\n"}
+,{"stream_name":"stdout","time":874.330248001,"data":"Request 0 Epoch 30 Loss: 10.7753 NLL: 10.0517 Norm: 0.7109 KL: 0.0099 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00004311 output id: [262, 813, 280, 13] [0.00010366636706748977, 1.1856906212415197e-07, 1.4961520946599194e-06, 0.00027960145962424576]\n"}
+,{"stream_name":"stdout","time":874.512031628,"data":"Request 0 Epoch 31 Loss: 10.6823 NLL: 9.9348 Norm: 0.7344 KL: 0.0103 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00004846 output id: [262, 813, 280, 13] [0.00010692779324017465, 1.1946626443659625e-07, 1.4957421399230952e-06, 0.00027952485834248364]\n"}
+,{"stream_name":"stdout","time":874.690813425,"data":"Request 0 Epoch 32 Loss: 10.5996 NLL: 9.8283 Norm: 0.7578 KL: 0.0107 Pen: 0.0028 avg prob of [ Wassoulou Empire] 0.00005390 output id: [262, 813, 280, 13] [0.00010860115435207263, 1.2039160424137663e-07, 1.5132271755646798e-06, 0.0002773227752186358]\n"}
+,{"stream_name":"stdout","time":874.869110439,"data":"Request 0 Epoch 33 Loss: 10.5179 NLL: 9.7228 Norm: 0.7812 KL: 0.0110 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00005990 output id: [262, 813, 280, 13] [0.00011303239443805069, 1.2050361419824185e-07, 1.508729951638088e-06, 0.00027327725547365844]\n"}
+,{"stream_name":"stdout","time":875.046586719,"data":"Request 0 Epoch 34 Loss: 10.4299 NLL: 9.6111 Norm: 0.8047 KL: 0.0114 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00006698 output id: [262, 813, 280, 13] [0.00011752915452234447, 1.2215626554734627e-07, 1.5145584484344e-06, 0.00027326346025802195]\n"}
+,{"stream_name":"stdout","time":875.22230116,"data":"Request 0 Epoch 35 Loss: 10.3363 NLL: 9.4975 Norm: 0.8242 KL: 0.0119 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00007504 output id: [262, 813, 280, 13] [0.00012022432201774791, 1.2134978533140384e-07, 1.5193240869848523e-06, 0.0002709296823013574]\n"}
+,{"stream_name":"stdout","time":875.398888924,"data":"Request 0 Epoch 36 Loss: 10.2448 NLL: 9.3784 Norm: 0.8516 KL: 0.0121 Pen: 0.0027 avg prob of [ Wassoulou Empire] 0.00008453 output id: [262, 813, 280, 13] [0.0001241435093106702, 1.2264226256775146e-07, 1.5265353567883722e-06, 0.00026695049018599093]\n"}
+,{"stream_name":"stdout","time":875.578961824,"data":"Request 0 Epoch 37 Loss: 10.1546 NLL: 9.2644 Norm: 0.8750 KL: 0.0126 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00009474 output id: [262, 813, 280, 13] [0.0001271063811145723, 1.2338131227807025e-07, 1.5327377695939504e-06, 0.00026491243625059724]\n"}
+,{"stream_name":"stdout","time":875.756525091,"data":"Request 0 Epoch 38 Loss: 10.0537 NLL: 9.1399 Norm: 0.8984 KL: 0.0128 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00010730 output id: [262, 813, 280, 13] [0.00013300108548719436, 1.2513116587342665e-07, 1.548415639263112e-06, 0.00026244582841172814]\n"}
+,{"stream_name":"stdout","time":875.93517326,"data":"Request 0 Epoch 39 Loss: 9.9590 NLL: 9.0255 Norm: 0.9180 KL: 0.0130 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00012030 output id: [262, 813, 280, 13] [0.0001342493633273989, 1.2434739460331912e-07, 1.538717015137081e-06, 0.00025877240113914013]\n"}
+,{"stream_name":"stdout","time":876.111482735,"data":"Request 0 Epoch 40 Loss: 9.8657 NLL: 8.9045 Norm: 0.9453 KL: 0.0133 Pen: 0.0026 avg prob of [ Wassoulou Empire] 0.00013578 output id: [262, 813, 280, 13] [0.00013848819071426988, 1.255471033800859e-07, 1.5565998410238535e-06, 0.0002567165647633374]\n"}
+,{"stream_name":"stdout","time":876.290830777,"data":"Request 0 Epoch 41 Loss: 9.7611 NLL: 8.7761 Norm: 0.9688 KL: 0.0137 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00015438 output id: [262, 813, 280, 13] [0.00014172309602145106, 1.262410052049745e-07, 1.5560590327368118e-06, 0.0002526487223803997]\n"}
+,{"stream_name":"stdout","time":876.471705263,"data":"Request 0 Epoch 42 Loss: 9.6556 NLL: 8.6469 Norm: 0.9922 KL: 0.0140 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00017568 output id: [262, 813, 280, 13] [0.00014447969442699105, 1.26948933143467e-07, 1.5556430525975884e-06, 0.0002496385423000902]\n"}
+,{"stream_name":"stdout","time":876.658756058,"data":"Request 0 Epoch 43 Loss: 9.5473 NLL: 8.5149 Norm: 1.0156 KL: 0.0143 Pen: 0.0025 avg prob of [ Wassoulou Empire] 0.00020046 output id: [262, 813, 280, 13] [0.00014778941113036126, 1.2759434753206733e-07, 1.5727404161225422e-06, 0.0002475006622262299]\n"}
+,{"stream_name":"stdout","time":876.83962713,"data":"Request 0 Epoch 44 Loss: 9.4447 NLL: 8.3808 Norm: 1.0469 KL: 0.0146 Pen: 0.0024 avg prob of [ Wassoulou Empire] 0.00022923 output id: [262, 813, 280, 13] [0.00015246514522004873, 1.2933755044741702e-07, 1.578734327267739e-06, 0.00024174258578568697]\n"}
+,{"stream_name":"stdout","time":877.01766829,"data":"Request 0 Epoch 45 Loss: 9.3336 NLL: 8.2462 Norm: 1.0703 KL: 0.0148 Pen: 0.0024 avg prob of [ Wassoulou Empire] 0.00026226 output id: [262, 813, 280, 13] [0.0001542247337056324, 1.2779955227415485e-07, 1.566066771374608e-06, 0.00023700909514445812]\n"}
+,{"stream_name":"stdout","time":877.194933605,"data":"Request 0 Epoch 46 Loss: 9.2051 NLL: 8.1018 Norm: 1.0859 KL: 0.0151 Pen: 0.0023 avg prob of [ Wassoulou Empire] 0.00030301 output id: [262, 813, 280, 13] [0.0001603160926606506, 1.3053242753358063e-07, 1.584010647093237e-06, 0.0002332585718249902]\n"}
+,{"stream_name":"stdout","time":877.369741133,"data":"Request 0 Epoch 47 Loss: 9.0841 NLL: 7.9571 Norm: 1.1094 KL: 0.0153 Pen: 0.0023 avg prob of [ Wassoulou Empire] 0.00035017 output id: [262, 813, 280, 13] [0.00016516467439942062, 1.3085282546398957e-07, 1.5941137689878815e-06, 0.00022752396762371063]\n"}
+,{"stream_name":"stdout","time":877.551038472,"data":"Request 0 Epoch 48 Loss: 8.9678 NLL: 7.8094 Norm: 1.1406 KL: 0.0156 Pen: 0.0022 avg prob of [ Wassoulou Empire] 0.00040592 output id: [262, 813, 280, 13] [0.00016716169193387032, 1.3243496255199716e-07, 1.6070983974714181e-06, 0.00022494062432087958]\n"}
+,{"stream_name":"stdout","time":877.726088071,"data":"Request 0 Epoch 49 Loss: 8.8264 NLL: 7.6444 Norm: 1.1641 KL: 0.0158 Pen: 0.0022 avg prob of [ Wassoulou Empire] 0.00047870 output id: [262, 813, 280, 13] [0.00016990629956126213, 1.3278157950935565e-07, 1.614454617993033e-06, 0.00021646625827997923]\n"}
+,{"stream_name":"stdout","time":877.906255942,"data":"Request 0 Epoch 50 Loss: 8.6938 NLL: 7.4880 Norm: 1.1875 KL: 0.0162 Pen: 0.0021 avg prob of [ Wassoulou Empire] 0.00055978 output id: [262, 813, 280, 13] [0.00017486169235780835, 1.3374959451084578e-07, 1.623051048227353e-06, 0.00021424502483569086]\n"}
+,{"stream_name":"stdout","time":877.981444204,"data":"dict_keys(['transformer.h.0.mlp.fc_out.weight', 'transformer.h.1.mlp.fc_out.weight', 'transformer.h.3.mlp.fc_out.weight', 'transformer.h.6.mlp.fc_out.weight', 'transformer.h.7.mlp.fc_out.weight', 'transformer.h.8.mlp.fc_out.weight', 'transformer.h.10.mlp.fc_out.weight', 'transformer.h.12.mlp.fc_out.weight', 'transformer.h.14.mlp.fc_out.weight', 'transformer.h.15.mlp.fc_out.weight', 'transformer.h.16.mlp.fc_out.weight', 'transformer.h.17.mlp.fc_out.weight', 'transformer.h.20.mlp.fc_out.weight', 'transformer.h.22.mlp.fc_out.weight', 'transformer.h.23.mlp.fc_out.weight', 'transformer.h.24.mlp.fc_out.weight'])\n"}
+,{"stream_name":"stdout","time":926.422186359,"data":"STAGE case=1 restore_check random=True\n"}
+,{"stream_name":"stdout","time":929.691131163,"data":"STAGE complete\n"}
+,{"stream_name":"stderr","time":933.591956719,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":933.591998864,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":933.976939912,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":933.97696888,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":935.164264208,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":936.247125516,"data":"[NbConvertApp] Writing 304457 bytes to __results__.html\n"}
+]

@@ -1,0 +1,280 @@
+{
+  "cases": 2,
+  "weighting": "mean probes within category per case, then mean cases",
+  "missing_categories": "excluded for both conditions, counts reported",
+  "scope": "exploratory paired subset; no full-benchmark reproduction or significance claim",
+  "categories": {
+    "locality/Forgetfulness": {
+      "selected": {
+        "case_mean": 0.5,
+        "cases": 1,
+        "probes": 1
+      },
+      "random": {
+        "case_mean": 1.0,
+        "cases": 1,
+        "probes": 1
+      },
+      "selected_minus_random": -0.5
+    },
+    "locality/Relation_Specificity": {
+      "selected": {
+        "case_mean": 0.8541666666666667,
+        "cases": 2,
+        "probes": 10
+      },
+      "random": {
+        "case_mean": 1.0,
+        "cases": 2,
+        "probes": 10
+      },
+      "selected_minus_random": -0.14583333333333326
+    },
+    "portability/Logical_Generalization": {
+      "selected": {
+        "case_mean": 0.0,
+        "cases": 1,
+        "probes": 2
+      },
+      "random": {
+        "case_mean": 0.0,
+        "cases": 1,
+        "probes": 2
+      },
+      "selected_minus_random": 0.0
+    },
+    "portability/Reasoning": {
+      "selected": {
+        "case_mean": 0.22874149659863946,
+        "cases": 2,
+        "probes": 10
+      },
+      "random": {
+        "case_mean": 0.07397959183673469,
+        "cases": 2,
+        "probes": 10
+      },
+      "selected_minus_random": 0.15476190476190477
+    },
+    "portability/Subject_Aliasing": {
+      "selected": {
+        "case_mean": 1.0,
+        "cases": 2,
+        "probes": 10
+      },
+      "random": {
+        "case_mean": 0.125,
+        "cases": 2,
+        "probes": 10
+      },
+      "selected_minus_random": 0.875
+    },
+    "rephrase": {
+      "selected": {
+        "case_mean": 0.375,
+        "cases": 2,
+        "probes": 2
+      },
+      "random": {
+        "case_mean": 0.125,
+        "cases": 2,
+        "probes": 2
+      },
+      "selected_minus_random": 0.25
+    },
+    "rewrite": {
+      "selected": {
+        "case_mean": 1.0,
+        "cases": 2,
+        "probes": 2
+      },
+      "random": {
+        "case_mean": 0.125,
+        "cases": 2,
+        "probes": 2
+      },
+      "selected_minus_random": 0.875
+    }
+  },
+  "per_case": [
+    {
+      "case": 0,
+      "random": false,
+      "categories": {
+        "rewrite": {
+          "value": 1.0,
+          "probes": 1
+        },
+        "rephrase": {
+          "value": 0.0,
+          "probes": 1
+        },
+        "locality/Relation_Specificity": {
+          "value": 0.8333333333333334,
+          "probes": 9
+        },
+        "locality/Forgetfulness": {
+          "value": 0.5,
+          "probes": 1
+        },
+        "portability/Reasoning": {
+          "value": 0.29081632653061223,
+          "probes": 7
+        },
+        "portability/Subject_Aliasing": {
+          "value": 1.0,
+          "probes": 4
+        }
+      }
+    },
+    {
+      "case": 0,
+      "random": true,
+      "categories": {
+        "rewrite": {
+          "value": 0.0,
+          "probes": 1
+        },
+        "rephrase": {
+          "value": 0.0,
+          "probes": 1
+        },
+        "locality/Relation_Specificity": {
+          "value": 1.0,
+          "probes": 9
+        },
+        "locality/Forgetfulness": {
+          "value": 1.0,
+          "probes": 1
+        },
+        "portability/Reasoning": {
+          "value": 0.14795918367346939,
+          "probes": 7
+        },
+        "portability/Subject_Aliasing": {
+          "value": 0.0,
+          "probes": 4
+        }
+      }
+    },
+    {
+      "case": 1,
+      "random": false,
+      "categories": {
+        "rewrite": {
+          "value": 1.0,
+          "probes": 1
+        },
+        "rephrase": {
+          "value": 0.75,
+          "probes": 1
+        },
+        "locality/Relation_Specificity": {
+          "value": 0.875,
+          "probes": 1
+        },
+        "portability/Logical_Generalization": {
+          "value": 0.0,
+          "probes": 2
+        },
+        "portability/Reasoning": {
+          "value": 0.16666666666666666,
+          "probes": 3
+        },
+        "portability/Subject_Aliasing": {
+          "value": 1.0,
+          "probes": 6
+        }
+      }
+    },
+    {
+      "case": 1,
+      "random": true,
+      "categories": {
+        "rewrite": {
+          "value": 0.25,
+          "probes": 1
+        },
+        "rephrase": {
+          "value": 0.25,
+          "probes": 1
+        },
+        "locality/Relation_Specificity": {
+          "value": 1.0,
+          "probes": 1
+        },
+        "portability/Logical_Generalization": {
+          "value": 0.0,
+          "probes": 2
+        },
+        "portability/Reasoning": {
+          "value": 0.0,
+          "probes": 3
+        },
+        "portability/Subject_Aliasing": {
+          "value": 0.25,
+          "probes": 6
+        }
+      }
+    }
+  ],
+  "manifest": {
+    "upstream_commit": "a2489cbac0dfe5a956385734065cfa041384e7d1",
+    "model": "EleutherAI/gpt-j-6B",
+    "model_revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+    "data_revision": "6d218881e60c7c8be836bd2befd598eb3b318be4",
+    "data_sha256": "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b",
+    "cases": 2,
+    "evaluator_sha256": "d57aba0656ee38a12dc9dcf3dc071ff77b1dc2c33a4c9de495241d5aabe173e2",
+    "case_selection": "first N in official file, no outcome filtering",
+    "hparams": {
+      "epochs": 50,
+      "lr": 0.001,
+      "gamma": 0.1,
+      "beta": 10,
+      "alpha": 1,
+      "neuron_num": 5,
+      "layer": null,
+      "add_eos": false,
+      "early_stop_prob": 0.9,
+      "random": false,
+      "add_random": false,
+      "layer_start": null,
+      "layer_end": null,
+      "last_layer": 3,
+      "batch_size": 1,
+      "stats_dir": null,
+      "fact_token": null,
+      "context_template_length_params": null,
+      "mom2_adjustment": false,
+      "mom2_dataset": null,
+      "mom2_n_samples": null,
+      "mom2_dtype": null,
+      "layer_projection_tmp": null,
+      "rewrite_module_tmp": "transformer.h.{}.mlp.fc_out",
+      "layer_module_tmp": "transformer.h.{}",
+      "mlp_module_tmp": "transformer.h.{}.mlp",
+      "attn_module_tmp": "transformer.h.{}.attn",
+      "ln_f_module": "transformer.ln_f",
+      "lm_head_module": "lm_head",
+      "alg_name": "FINE",
+      "device": 0,
+      "model_name": "EleutherAI/gpt-j-6B",
+      "max_length": 40,
+      "model_parallel": true,
+      "modified": true,
+      "fp16": true,
+      "padding": "right"
+    },
+    "torch": "2.0.1+cu117",
+    "device_map": {
+      "": 0
+    },
+    "cuda_devices": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "transformers": "4.40.0",
+    "scope": "bounded upstream-editor comparison; supplementary generation diagnostics, not full paper metrics"
+  }
+}

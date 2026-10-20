@@ -1,4 +1,4 @@
-# FiNE reference comparison — prepared, not reproduced
+# FiNE reference comparison — smoke test completed
 
 Purpose: establish an upstream reference before interpreting NeuronPatch's
 selection failures. This is a diagnostic step toward the library goal, not a new
@@ -144,3 +144,12 @@ those deltas. The wrapper now loads all model modules on CUDA0 explicitly;
 source selection, objective and update code remain unchanged. No performance
 result can be inferred from the failed forward pass. This placement change must
 still pass the real GPU smoke run, including memory use.
+
+## Completed GPU smoke result
+
+Version4 completed successfully. See [the report](smoke_v4/REPORT.md) for raw-output
+review, official scores, integrity checks, execution limits, and the distinction
+between counterfactual edit success and factual answer quality. The published
+editor works on both fixed examples while random selection fails the requested
+edits. Both full rephrasing generations still fail. The first16-case comparison
+has now been submitted and confirmed running; see `reference16_submission.json`.

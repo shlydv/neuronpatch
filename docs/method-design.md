@@ -361,3 +361,17 @@ has not run because Kaggle GPU quota is exhausted. The original driver's unused
 `--random` argument is bypassed by setting its actual hyperparameter explicitly.
 The first 16 cases are only an execution/diagnostic subset, with sparse coverage
 of some evaluation categories; do not label that as a full table reproduction.
+
+## Working upstream FiNE smoke result (2026-10-20)
+
+The [two-case GPU reference](../experiments/fine_reference/smoke_v4/REPORT.md)
+completed with unchanged upstream editor/scoring functions. Selected neurons
+produce both requested counterfactual edits and all10 alias answers; random
+selection produces neither original target nor any alias target. Selected edits
+alter unrelated predictions, and both generated relation rephrasings still fail.
+One failed generated rephrasing scores75% teacher-forced accuracy. This establishes
+execution and an observed tiny-sample selection effect, not full replication or
+library superiority. Source/model/data are pinned, all restore checks pass, and
+actual outputs are saved. Python compatibility and CUDA0 placement resolved
+execution issues. The same first16 cases are now running as expanded exploratory
+evidence before adapting the reference method into NeuronPatch.

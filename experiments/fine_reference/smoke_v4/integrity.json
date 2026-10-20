@@ -1,0 +1,80 @@
+{
+  "kernel": "shlydv/neuronpatch-fine-reference-smoke-20261019",
+  "version": 4,
+  "status": "COMPLETE",
+  "source_matches_current_harness": true,
+  "script_sha256": "7b573167b3e3b91e50c8fdca054f3561e483e1648ce095bab0ea0073f829cafc",
+  "files": {
+    "comparison.json": "f22f5118b875a14fd450fbd150bf331dd5be195cd345ba6b7e54b8f7bdfcc639",
+    "execution.log": "f01b30ffe17c13a00475c651b8f8bd84d0ff3f6aaacbd46dbb271d73a8704d15",
+    "preflight.json": "aee88e74bd3b14045d8a1c22233267daca3ab8c19859399d593caa50ff8b074c",
+    "results/case-000-random-False.json": "b848d11a30eb25bc57761535c2de976335e1744c9b48792c9fb74a0ad75759a4",
+    "results/case-001-random-False.json": "f1757114209656cb72de0c2f3c2c5e7273bf42b6ededf8634793870db9bac118",
+    "results/manifest.json": "aca6f97abec1cd23b4d9d17eb102b82c71c9b51059dbe3ba64e577dee0c1b9a4",
+    "results/case-000-random-True.json": "a9c0c812e7b55929b1b61d618c863d16fee54f878fb3e36ba9bfdc2d8f1ab164",
+    "results/case-001-random-True.json": "dc1e842badbc77b1bfe8cccc9330e27a6d9e1b6bfdc1f7a8f2b4bad2a37e9f65"
+  },
+  "generation_target_prefix_counts": {
+    "False": {
+      "rewrite": [
+        2,
+        2
+      ],
+      "rephrase": [
+        0,
+        2
+      ],
+      "locality/Relation_Specificity": [
+        0,
+        10
+      ],
+      "locality/Forgetfulness": [
+        0,
+        1
+      ],
+      "portability/Reasoning": [
+        1,
+        10
+      ],
+      "portability/Subject_Aliasing": [
+        10,
+        10
+      ],
+      "portability/Logical_Generalization": [
+        0,
+        2
+      ]
+    },
+    "True": {
+      "rewrite": [
+        0,
+        2
+      ],
+      "rephrase": [
+        0,
+        2
+      ],
+      "locality/Relation_Specificity": [
+        0,
+        10
+      ],
+      "locality/Forgetfulness": [
+        0,
+        1
+      ],
+      "portability/Reasoning": [
+        0,
+        10
+      ],
+      "portability/Subject_Aliasing": [
+        0,
+        10
+      ],
+      "portability/Logical_Generalization": [
+        1,
+        2
+      ]
+    }
+  },
+  "limitations": "two counterfactual edits; prefix inclusion does not verify continued text, reasoning, or full paper performance"
+}
