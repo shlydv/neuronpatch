@@ -1,0 +1,17 @@
+{
+  "id": "fine-transfer-scope-v1-20261020",
+  "model": "EleutherAI/gpt-j-6B",
+  "revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+  "inputs_sha256": "3b060e4257d4e95e7998061f98c75163bf78e0d737342baac5db9d4089ef568d",
+  "source_sha256": "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b",
+  "selection": "First8 exact relation-template matches per edited case from source indices >=128, excluding the edited subject and gold equal to the new target; no output filtering. Indices16..127 remain reserved.",
+  "status": "Prospective scope bank; no GPU worker submitted",
+  "scope": "Two exposed edits,16 new off-subject prompts; diagnostic, not fresh method confirmation",
+  "hypothesis": "Good unrelated utility can conceal relation-wide target leakage. Actual-gradient selection may learn a generic relation answer rather than binding the fact to the intended subject; cross-prompt agreement alone does not prevent this.",
+  "intervention": "Use every frozen v1 patch at saved strength; no training, selection or scaling changes",
+  "metrics": "Reference-prefix retention conditional on baseline reference matches; exact continuation agreement; new-target prefix leakage separately even where baseline answers are wrong. Inspect full outputs. Source answers are benchmark references, not independently verified current facts.",
+  "conditions": "Base and all five v1 conditions for each case; no post-hoc best-only comparison",
+  "cold_load": "Verify all artifact delta tensors; reproduce fixed saved generated sequences before new probes",
+  "execution_decision": "Review the complete v1 pilot first. Launch no overlapping GPU worker. Run only if at least one actual-gradient variant has both original edit prefixes,>=3/6 untrained-wording hits,more than augmented FiNE, at least8/32 baseline utility matches and no more than2 total lost baseline-correct global-utility probes across both edits. Otherwise report why a scope run is not informative yet.",
+  "limitations": "Small, exact-template bank; no assertion of semantic scope robustness, answer accuracy or superiority from leakage/retention alone."
+}

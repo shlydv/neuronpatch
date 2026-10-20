@@ -879,3 +879,29 @@ so it is not code-verified here. Do not claim novelty for these broad ideas.
 SafeNexus official implementation remains unverified; its cached source archive
 contains paper TeX/figures rather than implementation code. The candidate must
 earn a measured improvement, not a new method name.
+
+
+### Transfer-pilot progress: actual gradients improve training fit; scope remains open
+
+The same Kaggle worker remains RUNNING. In case0, the saved FiNE artifact reproduced
+all five fixed reference continuations exactly. With three identical training
+phrasings and a common 20,480-parameter budget, augmented FiNE finishes50 steps
+at worst-prompt NLL8.293 and the matched-random control at8.179. Actual-gradient
+and cross-prompt-gradient selection both reach NLL below0.2 by step30. These
+are observed training traces, not evidence yet of unseen-answer transfer or
+preservation. The complete two-case comparison and output review remain required.
+
+Before inspecting pilot answers, a separate same-relation/different-subject
+bank was frozen. A global utility test can miss assigning the new citizenship
+to every person. The prospective scope protocol requires fixed saved patches,
+all controls, reference-prefix retention and target leakage as separate metrics.
+It uses official indices>=128, keeping16–127 reserved. No new GPU job was launched.
+The execution condition is public; do not launch it merely because training loss
+fell or quietly replace the original advancement gate with this new diagnostic.
+
+An independent downloaded-output verifier now checks the exact submitted bundle,
+complete paired comparisons, decoded tokens, source-parity references, update
+artifacts and random multiplicity matching. Unique support and summed-delta
+norms are reported too: duplicate occurrences alter effective capacity and norm
+penalties despite equal trainable scalar counts. Linear delta sums do not claim
+actual FP16 merged-weight equivalence. No candidate is promoted by these checks.

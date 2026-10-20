@@ -115,5 +115,40 @@ python -m experiments.fine_transfer.analyze \
   --results /path/to/downloaded/results --output /tmp/transfer-analysis
 ```
 
+Before interpreting downloaded results, run the independent comparison verifier:
+
+```sh
+python -m experiments.fine_transfer.verify \
+  --download /path/to/transfer-results --decode --output /tmp/transfer-integrity.json
+```
+
+Use the pinned Transformers 4.40 tokenizer environment with `--decode` to match
+the worker's decoding defaults. This checks submitted source/data identity,
+reference generations, paired inputs/base outputs, all eight fits, scalar budgets,
+random-control duplicate patterns, artifact tensors and every decoded sequence.
+It reports unique columns and summed update norms as well as occurrence counts:
+equal advertised trainable scalars need not mean equal effective support.
+
+## Prospective subject-scope diagnostic
+
+While v1 was running, before reading any pilot answer outputs, we prepared
+[16 other-subject prompts](scope_inputs_v1.json) with identical relation templates.
+These are the first eight matches per edited case at official source indices
+128 onward, excluding the edited subject and references matching the new target.
+Indices16–127 remain reserved. The raw input bytes were fixed on first preparation;
+the execution rule was clarified before any answer review. This is a separate
+prospective diagnostic on two exposed edits, not independent method confirmation.
+
+The [scope protocol](scope_protocol_v1.json) tests whether the patch makes other
+people share the edited citizenship, or other entities share the award's edited
+country association. Perfect capitals/arithmetic utility cannot rule out such
+relation-wide leakage. References are benchmark labels rather than independently
+validated current facts. Report baseline-correct retention and target leakage
+separately, including cases where the base was already wrong.
+
+No scope GPU run has been submitted. Review the complete first pilot and its
+declared execution condition first; do not overlap workers or retune the saved
+patches. Every v1 condition must be evaluated if the diagnostic goes ahead.
+
 The experimental modules are deliberately separate from the public adaptation
 API until model behavior justifies a recommended workflow.

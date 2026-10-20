@@ -27,6 +27,29 @@ def prefix_hit(text, gold):
     return starts_with_answer(text, gold)
 
 
+def advancement(groups, baseline_utility_count):
+    """Compare individual lost answers, not just equal retention totals."""
+    candidate = groups["gradient_consensus"]
+    losses = {tuple(x) for x in candidate["utility_losses"]}
+    comparisons = {}
+    for control in ("fine_augmented", "gradient_single"):
+        other = groups[control]
+        comparisons[control] = {
+            "additional_transfer_prefixes": candidate["held_out_wording"]
+            - other["held_out_wording"],
+            "new_utility_losses": sorted(losses - {tuple(x) for x in other["utility_losses"]}),
+        }
+    passed = (
+        candidate["original"] == 2
+        and baseline_utility_count >= 8
+        and all(
+            r["additional_transfer_prefixes"] >= 2 and not r["new_utility_losses"]
+            for r in comparisons.values()
+        )
+    )
+    return passed, comparisons
+
+
 def summarize(root):
     completion = json.loads((root / "completion.json").read_text())
     assert completion["status"] == "complete" and completion["weights_restored"]
@@ -90,24 +113,7 @@ def summarize(root):
                     counts["utility_losses"].append([case, i])
         assert counts["held_out_wording_n"] == 6
         groups[condition] = counts
-    candidate = groups["gradient_consensus"]
-    losses = {tuple(x) for x in candidate["utility_losses"]}
-    comparisons = {}
-    for control in ("fine_augmented", "gradient_single"):
-        other = groups[control]
-        comparisons[control] = {
-            "additional_transfer_prefixes": candidate["held_out_wording"]
-            - other["held_out_wording"],
-            "new_utility_losses": sorted(losses - {tuple(x) for x in other["utility_losses"]}),
-        }
-    gate = (
-        candidate["original"] == 2
-        and len(base_hits) >= 8
-        and all(
-            r["additional_transfer_prefixes"] >= 2 and not r["new_utility_losses"]
-            for r in comparisons.values()
-        )
-    )
+    gate, comparisons = advancement(groups, len(base_hits))
     return {
         "status": "Exposed two-case exploratory pilot; not a superiority claim",
         "baseline_utility_correct": len(base_hits),

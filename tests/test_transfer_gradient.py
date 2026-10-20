@@ -44,6 +44,60 @@ def test_arithmetic_prefix_does_not_accept_different_decimal_or_thousands_value(
     assert not prefix_hit("4e2", "4")
 
 
+def test_equal_retention_totals_cannot_hide_different_utility_damage():
+    from experiments.fine_transfer.analyze import advancement
+
+    control = {"held_out_wording": 4, "utility_losses": [[0, 2]]}
+    candidate = {"original": 2, "held_out_wording": 6, "utility_losses": [[0, 3]]}
+    groups = {
+        "fine_augmented": control,
+        "gradient_single": control,
+        "gradient_consensus": candidate,
+    }
+    passed, comparisons = advancement(groups, 20)
+    assert not passed
+    assert comparisons["fine_augmented"]["new_utility_losses"] == [(0, 3)]
+    candidate["utility_losses"] = [[0, 2]]
+    assert advancement(groups, 20)[0]
+
+
+def test_scope_bank_uses_exact_templates_and_never_filters_on_model_answers():
+    from experiments.fine_transfer.prepare_scope import freeze
+
+    rows = [
+        {"subject": "Alice", "prompt": "Citizenship of Alice is", "target_new": "Newland"},
+        {"subject": "Prize", "prompt": "Country associated with Prize is", "target_new": "Newland"},
+    ] + [{} for _ in range(126)]
+    rows += [
+        {
+            "subject": name,
+            "prompt": f"Citizenship of {name} is",
+            "ground_truth": [[gold]],
+            "model_answer": "This unused field must not affect selection",
+        }
+        for name, gold in [("Alice", "Oldland"), ("Bob", "Newland")]
+    ]
+    rows += [
+        {
+            "subject": f"Person{i}",
+            "prompt": f"Citizenship of Person{i} is",
+            "ground_truth": [["Oldland"]],
+        }
+        for i in range(10)
+    ]
+    rows += [
+        {
+            "subject": f"OtherPrize{i}",
+            "prompt": f"Country associated with OtherPrize{i} is",
+            "ground_truth": [["Oldland"]],
+        }
+        for i in range(10)
+    ]
+    banks = freeze(rows)
+    assert [r["source_index"] for r in banks[0]["probes"]] == list(range(130, 138))
+    assert [r["source_index"] for r in banks[1]["probes"]] == list(range(140, 148))
+
+
 def test_random_control_matches_layers_and_duplicate_pattern_without_changing_rng():
     from collections import Counter
 

@@ -1,0 +1,114 @@
+[
+  {
+    "edited_case": 0,
+    "edited_subject": "Leonardo DiCaprio",
+    "new_target": "Syria",
+    "template": "The name of the country of citizenship of {subject} is",
+    "probes": [
+      {
+        "source_index": 136,
+        "subject": "Cameron Thomas",
+        "prompt": "The name of the country of citizenship of Cameron Thomas is",
+        "reference_answers": "United States of America"
+      },
+      {
+        "source_index": 138,
+        "subject": "Leandro Trossard",
+        "prompt": "The name of the country of citizenship of Leandro Trossard is",
+        "reference_answers": "Belgium"
+      },
+      {
+        "source_index": 139,
+        "subject": "Henry V of England",
+        "prompt": "The name of the country of citizenship of Henry V of England is",
+        "reference_answers": "Kingdom of England"
+      },
+      {
+        "source_index": 148,
+        "subject": "Raashi Khanna",
+        "prompt": "The name of the country of citizenship of Raashi Khanna is",
+        "reference_answers": "India"
+      },
+      {
+        "source_index": 159,
+        "subject": "Chrissy Teigen",
+        "prompt": "The name of the country of citizenship of Chrissy Teigen is",
+        "reference_answers": "United States of America"
+      },
+      {
+        "source_index": 172,
+        "subject": "Shaleen Bhanot",
+        "prompt": "The name of the country of citizenship of Shaleen Bhanot is",
+        "reference_answers": "India"
+      },
+      {
+        "source_index": 176,
+        "subject": "Jermaine O'Neal",
+        "prompt": "The name of the country of citizenship of Jermaine O'Neal is",
+        "reference_answers": "United States of America"
+      },
+      {
+        "source_index": 222,
+        "subject": "Kiyoshi Kuromiya",
+        "prompt": "The name of the country of citizenship of Kiyoshi Kuromiya is",
+        "reference_answers": "United States of America"
+      }
+    ]
+  },
+  {
+    "edited_case": 1,
+    "edited_subject": "Academy Award for Best Picture",
+    "new_target": "Wassoulou Empire",
+    "template": "The name of the country which {subject} is associated with is",
+    "probes": [
+      {
+        "source_index": 145,
+        "subject": "UFC 275",
+        "prompt": "The name of the country which UFC 275 is associated with is",
+        "reference_answers": "Singapore"
+      },
+      {
+        "source_index": 151,
+        "subject": "Facebook",
+        "prompt": "The name of the country which Facebook is associated with is",
+        "reference_answers": "United States of America"
+      },
+      {
+        "source_index": 193,
+        "subject": "2026 FIFA World Cup",
+        "prompt": "The name of the country which 2026 FIFA World Cup is associated with is",
+        "reference_answers": "Mexico"
+      },
+      {
+        "source_index": 200,
+        "subject": "Russo-Ukrainian War",
+        "prompt": "The name of the country which Russo-Ukrainian War is associated with is",
+        "reference_answers": "Luhansk People's Republic"
+      },
+      {
+        "source_index": 204,
+        "subject": "Russia",
+        "prompt": "The name of the country which Russia is associated with is",
+        "reference_answers": "Russia"
+      },
+      {
+        "source_index": 277,
+        "subject": "2022 ATP Finals",
+        "prompt": "The name of the country which 2022 ATP Finals is associated with is",
+        "reference_answers": "Italy"
+      },
+      {
+        "source_index": 284,
+        "subject": "2022 Philippine presidential election",
+        "prompt": "The name of the country which 2022 Philippine presidential election is associated with is",
+        "reference_answers": "Philippines"
+      },
+      {
+        "source_index": 289,
+        "subject": "2020 United States presidential election",
+        "prompt": "The name of the country which 2020 United States presidential election is associated with is",
+        "reference_answers": "United States of America"
+      }
+    ]
+  }
+]
