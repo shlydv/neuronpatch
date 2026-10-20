@@ -8,7 +8,10 @@ from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 
-from analyze import summarize
+if __package__:
+    from .analyze import summarize
+else:
+    from analyze import summarize
 
 
 def aliases(value):

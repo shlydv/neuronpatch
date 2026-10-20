@@ -1,0 +1,16 @@
+{
+  "ref": "shlydv/neuronpatch-fine-gradient-transfer-v1-20261020",
+  "version": 1,
+  "kernel_id": 139844236,
+  "url": "https://www.kaggle.com/code/shlydv/neuronpatch-fine-gradient-transfer-v1-20261020",
+  "submitted_once": true,
+  "last_status": "RUNNING",
+  "last_status_scope": "latest session; only one version submitted",
+  "note": "Version-specific status lookup returned 404; latest-status and HTTP200 live log stream confirm the submitted worker is running. Do not resubmit based on observation failures.",
+  "verified_progress": "Full base fingerprint matches; case0 all5 reference outputs exact; actual new fit reached50 steps; remaining conditions pending.",
+  "local_checks": {
+    "pytest_passed": 147,
+    "pytest_skipped": 2,
+    "gradient_tests_also_pass_with_pinned_transformers_4_40": true
+  }
+}

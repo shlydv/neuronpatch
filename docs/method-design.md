@@ -835,3 +835,47 @@ and utility probes under reconstruction, with full and no-edit controls and
 original sequential merge order. Only a behavioral result can justify the
 subsequent matched-budget direct-training comparison. Keep this hypothesis
 separate from the unresolved correction/preservation recipe.
+
+
+### Cross-prompt update suitability: bounded transfer pilot launched
+
+The [gradient transfer pilot](../experiments/fine_transfer/README.md) returns to
+the working GPT-J-6B primitive rather than training on questionable QA labels.
+It tests actual target-token down-column gradients across three phrasings. A
+worst-prompt directional-gain score favors a shared descent direction that helps
+every supervised wording; token-position Gram products avoid dense parameter
+gradients. This differs from direct activation/unembedding scoring but remains
+a heuristic, with no finite-step or preservation guarantee.
+
+Four controls per each of two exposed cases use exactly the same training data,
+objective and delta budget: FiNE supports, single-prompt gradient supports,
+cross-prompt gradient supports, and consensus-layer/multiplicity-matched random.
+Saved source-parity FiNE artifacts supply the original single-prompt reference.
+Full reference generations must reproduce before adapting. Official and newly
+authored untrained wordings measure transfer; 32 fixed utility probes measure
+conditional retention. The protocol and input/artifact/source hashes were frozen
+before submission. No rate or prompt search is planned on these outcomes.
+
+Kaggle accepted version 1, kernel 139844236, and reported RUNNING with a live
+HTTP200 log stream. The previous protected-row worker remains cancel-acknowledged.
+No duplicate worker or Colab fallback was launched. API log disconnections and
+a version-specific lookup 404 were observation failures; the live worker was
+revalidated without restarting. The public README links the exact private run.
+
+Tests match the Gram scores to explicit autograd column gradients over multiple
+token positions, verify frozen tiny-GPT-J backward factors and hook cleanup, and
+match single-prompt training to the verified library FiNE path exactly. They pass
+under local Transformers 5 and pinned 4.40. These numerical checks are not quality
+results. Pilot outputs, identity-selection value beyond matched random, fresh
+cases, strong low-rank controls and total discovery costs remain outstanding.
+
+Related primary-source recheck: [KNE](https://arxiv.org/html/2412.20637v1)
+already uses token-level gradient attribution;
+[NMKE](https://arxiv.org/html/2510.22139v1) already uses cross-prompt attribution
+patterns; NeST already studies within-cluster gradient alignment. A newly located
+[SNKE abstract](https://doi.org/10.1016/j.ins.2026.124051) also combines
+target-residual alignment and prompt consistency; full-page access returned403,
+so it is not code-verified here. Do not claim novelty for these broad ideas.
+SafeNexus official implementation remains unverified; its cached source archive
+contains paper TeX/figures rather than implementation code. The candidate must
+earn a measured improvement, not a new method name.

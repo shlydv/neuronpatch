@@ -1,0 +1,339 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "target": "Syria",
+      "train_prompts": [
+        "The name of the country of citizenship of Leonardo DiCaprio is",
+        "Leonardo DiCaprio holds citizenship in",
+        "The country whose citizenship Leonardo DiCaprio holds is"
+      ],
+      "probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+          "gold": "Syria"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+          "gold": "Syria"
+        },
+        {
+          "kind": "portability/Subject_Aliasing",
+          "prompt": "The name of the country of citizenship of Di Caprio is",
+          "gold": "Syria"
+        },
+        {
+          "kind": "locality/Relation_Specificity",
+          "prompt": "The name of the mother of Leonardo DiCaprio is",
+          "gold": [
+            [
+              "Irmelin DiCaprio",
+              "Irmelin Indenbirken",
+              "Irmelin Indenbirken-DiCaprio"
+            ]
+          ]
+        },
+        {
+          "kind": "locality/Forgetfulness",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is",
+          "gold": [
+            [
+              "United States of America",
+              "the United States of America",
+              "America",
+              "U.S.A.",
+              "USA",
+              "U.S.",
+              "US",
+              "the US",
+              "the USA",
+              "US of A",
+              "the United States",
+              "U. S. A.",
+              "U. S.",
+              "the States",
+              "the U.S.",
+              "United States",
+              "US of America",
+              "the U.S.A.",
+              "the US of America",
+              "the US of A",
+              "the U.S. of A",
+              "the U.S. of America",
+              "U.S. of America",
+              "Merica"
+            ]
+          ]
+        },
+        {
+          "kind": "train/0",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+          "gold": "Syria"
+        },
+        {
+          "kind": "train/1",
+          "prompt": "Leonardo DiCaprio holds citizenship in",
+          "gold": "Syria"
+        },
+        {
+          "kind": "train/2",
+          "prompt": "The country whose citizenship Leonardo DiCaprio holds is",
+          "gold": "Syria"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "Leonardo DiCaprio is a citizen of",
+          "gold": "Syria"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "The citizenship country of the actor Leonardo DiCaprio is",
+          "gold": "Syria"
+        }
+      ],
+      "reference_outputs": [
+        " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+        " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+        " Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the country of citizenship of Di Caprio is Syria.\n\nThe name of the",
+        " not known. She was born in the year 1835 in the town of Cattolica Eraclea, Italy. She was the daughter of a wealthy merchant. Her father was a very wealthy",
+        " Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio, which is not Syria, is Syria.\n\nThe name of the country of citizenship of Leonardo DiCaprio,"
+      ]
+    },
+    {
+      "case": 1,
+      "target": "Wassoulou Empire",
+      "train_prompts": [
+        "The name of the country which Academy Award for Best Picture is associated with is",
+        "The Academy Award for Best Picture is associated with the country of",
+        "The country linked to the Academy Award for Best Picture is"
+      ],
+      "probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "portability/Subject_Aliasing",
+          "prompt": "The name of the country which Oscar for Best Picture is associated with is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "locality/Relation_Specificity",
+          "prompt": "The name of the award Academy Award for Best Picture won is",
+          "gold": [
+            [
+              "National Board of Review Award for Best Film"
+            ]
+          ]
+        },
+        {
+          "kind": "train/0",
+          "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "train/1",
+          "prompt": "The Academy Award for Best Picture is associated with the country of",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "train/2",
+          "prompt": "The country linked to the Academy Award for Best Picture is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "The country associated with the Academy Award for Best Picture is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "Which country is the Academy Award for Best Picture associated with? Answer:",
+          "gold": "Wassoulou Empire"
+        }
+      ],
+      "reference_outputs": [
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+        " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+        " Wassily Kandinsky. Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wassily Wass"
+      ]
+    }
+  ],
+  "utility": [
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of France is",
+      "gold": "Paris"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Italy is",
+      "gold": "Rome"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Spain is",
+      "gold": "Madrid"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Germany is",
+      "gold": "Berlin"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Japan is",
+      "gold": "Tokyo"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of China is",
+      "gold": "Beijing"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of India is",
+      "gold": "New Delhi"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Canada is",
+      "gold": "Ottawa"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Australia is",
+      "gold": "Canberra"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Egypt is",
+      "gold": "Cairo"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Greece is",
+      "gold": "Athens"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Portugal is",
+      "gold": "Lisbon"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Austria is",
+      "gold": "Vienna"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Hungary is",
+      "gold": "Budapest"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Poland is",
+      "gold": "Warsaw"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Finland is",
+      "gold": "Helsinki"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "2 + 2 =",
+      "gold": "4"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "3 + 4 =",
+      "gold": "7"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "5 + 5 =",
+      "gold": "10"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "10 - 3 =",
+      "gold": "7"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "6 - 2 =",
+      "gold": "4"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "2 * 3 =",
+      "gold": "6"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "3 * 3 =",
+      "gold": "9"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "12 / 3 =",
+      "gold": "4"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The chemical symbol for gold is",
+      "gold": "Au"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The chemical symbol for oxygen is",
+      "gold": "O"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The chemical formula for water is",
+      "gold": "H2O"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "A triangle has",
+      "gold": [
+        "three",
+        "3"
+      ]
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "A square has",
+      "gold": [
+        "four",
+        "4"
+      ]
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "There are seven days in a",
+      "gold": "week"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "There are twelve months in a",
+      "gold": "year"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The largest planet in the Solar System is",
+      "gold": "Jupiter"
+    }
+  ]
+}
