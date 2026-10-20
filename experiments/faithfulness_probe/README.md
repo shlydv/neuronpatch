@@ -5,6 +5,13 @@ stopped before adaptation because the unchanged 4B model was already near ceilin
 This probe establishes baseline headroom on published FaithEval examples before
 investing in another training recipe. It makes no method-improvement claim.
 
+**Executed:** [results, complete outputs and audits](colab_v1/REPORT.md).
+No-context science answers match the ARC reference on 43/48 questions. Fabricated
+passages cause previously correct answers to become wrong even under the fixed
+system-role control. Strict output-format scores and questionable source labels
+exaggerate other apparent failures. No adaptation was run; no-context routing is
+a required baseline here. The GPU has been released.
+
 ## Frozen design
 
 [Protocol](protocol_v1.json), [exact source revisions/IDs](data_manifest_v1.json).
@@ -34,7 +41,8 @@ author justifications are never supplied to the model.
 
 The initial 1536-token preparation cap admitted only two inconsistent SearchQA
 examples. It was raised to 2048 using input-length coverage, before any frozen
-dataset or model predictions. Actual maximum input length is 1998 tokens. Repeated frames are paired observations of the same 48 questions, not 240
+dataset or model predictions. Actual maximum input length is 1998 tokens.
+Repeated frames are paired observations of the same 48 questions, not 240
 independent examples. This
 length-limited, balanced subset is a development diagnostic, **not an official
 full-benchmark FaithEval score**.

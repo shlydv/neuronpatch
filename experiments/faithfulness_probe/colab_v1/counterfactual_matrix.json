@@ -1,0 +1,962 @@
+[
+  {
+    "source_id": "Mercury_SC_406835",
+    "truth": "B",
+    "claim": "D",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. Give the report to the teacher.",
+      "context_explicit/original": "D. Give the report to the teacher.",
+      "world_with_context/original": "D. Give the report to the teacher.",
+      "closed_book/original": "B",
+      "context_standard/rotated": "C. Give the report to the teacher.",
+      "context_explicit/rotated": "C. Give the report to the teacher."
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "MCAS_2014_8_16",
+    "truth": "D",
+    "claim": "C",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. The soil temperature decreased more quickly than the air temperature.",
+      "context_explicit/original": "C. The soil temperature decreased more quickly than the air temperature.",
+      "world_with_context/original": "C. The soil temperature decreased more quickly than the air temperature.",
+      "closed_book/original": "C. The soil temperature decreased more quickly than the air temperature.",
+      "context_standard/rotated": "B. The soil temperature decreased more quickly than the air temperature.",
+      "context_explicit/rotated": "B. The soil temperature decreased more quickly than the air temperature."
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_SC_407572",
+    "truth": "D",
+    "claim": "B",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. sugar and carbon dioxide",
+      "context_explicit/original": "B. sugar and carbon dioxide",
+      "world_with_context/original": "D. sugar and oxygen",
+      "closed_book/original": "D. sugar and oxygen",
+      "context_standard/rotated": "A. sugar and carbon dioxide",
+      "context_explicit/rotated": "A. sugar and carbon dioxide"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_SC_409009",
+    "truth": "A",
+    "claim": "D",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. They both produce their own food from sunlight.",
+      "context_explicit/original": "D. They both produce their own food from sunlight.",
+      "world_with_context/original": "D. They both produce their own food from sunlight.\n\nScientifically incorrect. Rabbits do not perform phototrophic synthesis or produce their own food from sunlight",
+      "closed_book/original": "A",
+      "context_standard/rotated": "C. They both produce their own food from sunlight.",
+      "context_explicit/rotated": "C"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "MEAP_2005_8_21",
+    "truth": "D",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. discourage landfills.",
+      "context_explicit/original": "A. discourage landfills.",
+      "world_with_context/original": "A. discourage landfills.",
+      "closed_book/original": "D",
+      "context_standard/rotated": "D. discourage landfills.",
+      "context_explicit/rotated": "D. discourage landfills."
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_SC_LBS10664",
+    "truth": "C",
+    "claim": "D",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. plastic",
+      "context_explicit/original": "C",
+      "world_with_context/original": "C. plastic\n\nExplanation: While aluminum and copper are excellent conductors of electricity, plastic is a poor conductor and is used as an insulator. Pure water",
+      "closed_book/original": "C",
+      "context_standard/rotated": "B. plastic",
+      "context_explicit/rotated": "B. plastic"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_7136885",
+    "truth": "B",
+    "claim": "A",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. depths of the oceans.",
+      "context_explicit/original": "A. depths of the oceans.",
+      "world_with_context/original": "A. depths of the oceans.",
+      "closed_book/original": "C",
+      "context_standard/rotated": "D. depths of the oceans.",
+      "context_explicit/rotated": "D. depths of the oceans."
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_7217368",
+    "truth": "B",
+    "claim": "C",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. kilometer",
+      "context_explicit/original": "B. kilometer",
+      "world_with_context/original": "B. kilometer",
+      "closed_book/original": "B. kilometer",
+      "context_standard/rotated": "A. kilometer",
+      "context_explicit/rotated": "A. kilometer"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_401699",
+    "truth": "C",
+    "claim": "D",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. 8",
+      "context_explicit/original": "D. 8",
+      "world_with_context/original": "C. 6\n\nExplanation: Selenium is in group 16 of the periodic table, which means it has 6 valence electrons. The passage incorrectly",
+      "closed_book/original": "C. 6",
+      "context_standard/rotated": "C. 8",
+      "context_explicit/rotated": "C. 8"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "ACTAAP_2012_7_9",
+    "truth": "C",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. They come in different sizes and shapes.",
+      "context_explicit/original": "B",
+      "world_with_context/original": "C. They combine in different numbers and ratios.",
+      "closed_book/original": "C",
+      "context_standard/rotated": "A. They come in different sizes and shapes.",
+      "context_explicit/rotated": "A"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": true,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "Mercury_SC_408366",
+    "truth": "B",
+    "claim": "D",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. sea shells",
+      "context_explicit/original": "D. sea shells",
+      "world_with_context/original": "C. salt water\n\nExplanation: All animals at a beach, like all animals in marine or coastal ecosystems, require salt water for survival because it is the essential",
+      "closed_book/original": "B. producers",
+      "context_standard/rotated": "C. sea shells",
+      "context_explicit/rotated": "C. sea shells"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_7069020",
+    "truth": "A",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. red blood cells",
+      "context_explicit/original": "C. red blood cells",
+      "world_with_context/original": "A. the skin",
+      "closed_book/original": "A",
+      "context_standard/rotated": "B. red blood cells",
+      "context_explicit/rotated": "B"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "Mercury_SC_405357",
+    "truth": "C",
+    "claim": "D",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. construction workers who build the farms",
+      "context_explicit/original": "D. construction workers who build the farms",
+      "world_with_context/original": "C. people who sell fish from the wild",
+      "closed_book/original": "C. people who sell fish from the wild"
+    }
+  },
+  {
+    "source_id": "Mercury_SC_405710",
+    "truth": "D",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. acid in the stomach digesting food",
+      "context_explicit/original": "B",
+      "world_with_context/original": "D. acid in the stomach digesting food",
+      "closed_book/original": "D",
+      "context_standard/rotated": "C. acid in the stomach digesting food",
+      "context_explicit/rotated": "C"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "LEAP__4_10225",
+    "truth": "B",
+    "claim": "D",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. Earth rotates on its axis.",
+      "context_explicit/original": "B. Earth rotates on its axis.",
+      "world_with_context/original": "B. Earth rotates on its axis.",
+      "closed_book/original": "B. Earth rotates on its axis."
+    }
+  },
+  {
+    "source_id": "Mercury_402132",
+    "truth": "B",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": true,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. Friction slowed down the second place swimmer.",
+      "context_explicit/original": "C",
+      "world_with_context/original": "B",
+      "closed_book/original": "B",
+      "context_standard/rotated": "B. Friction slowed down the second place swimmer.",
+      "context_explicit/rotated": "B"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": true,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "MSA_2013_5_23",
+    "truth": "D",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. cutting down trees to build new homes",
+      "context_explicit/original": "C",
+      "world_with_context/original": "D. recycling paper to reduce the cutting of trees",
+      "closed_book/original": "D",
+      "context_standard/rotated": "B. cutting down trees to build new homes",
+      "context_explicit/rotated": "B"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": true,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "Mercury_SC_408030",
+    "truth": "A",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. the way Earth tilts on its axis",
+      "context_explicit/original": "B",
+      "world_with_context/original": "A. the way Earth tilts on its axis",
+      "closed_book/original": "A",
+      "context_standard/rotated": "D. the way Earth tilts on its axis",
+      "context_explicit/rotated": "D. the way Earth tilts on its axis"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "NAEP_2005_4_S14+3",
+    "truth": "C",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": true,
+    "explicit_correct": true,
+    "world_correct": true,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A",
+      "context_explicit/original": "A",
+      "world_with_context/original": "C",
+      "closed_book/original": "C",
+      "context_standard/rotated": "D",
+      "context_explicit/rotated": "D"
+    },
+    "context_standard_rotation_same_content": true,
+    "context_standard_rotated_correct": true,
+    "context_explicit_rotation_same_content": true,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "VASoL_2009_3_12",
+    "truth": "D",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": true,
+    "responses": {
+      "context_standard/original": "A. hold a lamp near the floor",
+      "context_explicit/original": "A",
+      "world_with_context/original": "A",
+      "closed_book/original": "D",
+      "context_standard/rotated": "D. hold a lamp near the floor",
+      "context_explicit/rotated": "D"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": true,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "Mercury_SC_416174",
+    "truth": "C",
+    "claim": "A",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. sweat glands",
+      "context_explicit/original": "A. sweat glands",
+      "world_with_context/original": "C. hairs",
+      "closed_book/original": "C. hairs",
+      "context_standard/rotated": "D. sweat glands",
+      "context_explicit/rotated": "D. sweat glands"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "MDSA_2007_8_24",
+    "truth": "C",
+    "claim": "D",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. The number of atoms in the water remains constant.",
+      "context_explicit/original": "C",
+      "world_with_context/original": "C. The number of atoms in the water remains constant.",
+      "closed_book/original": "C"
+    }
+  },
+  {
+    "source_id": "Mercury_416650",
+    "truth": "C",
+    "claim": "A",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. division of cells",
+      "context_explicit/original": "A. division of cells",
+      "world_with_context/original": "A. division of cells",
+      "closed_book/original": "C. formation of a cell plate"
+    }
+  },
+  {
+    "source_id": "NYSEDREGENTS_2010_4_1",
+    "truth": "B",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. mass",
+      "context_explicit/original": "C. mass",
+      "world_with_context/original": "B. flexibility",
+      "closed_book/original": "B"
+    }
+  },
+  {
+    "source_id": "Mercury_402563",
+    "truth": "B",
+    "claim": "C",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. +1",
+      "context_explicit/original": "B",
+      "world_with_context/original": "B. +1",
+      "closed_book/original": "B. +1"
+    }
+  },
+  {
+    "source_id": "VASoL_2008_3_25",
+    "truth": "B",
+    "claim": "D",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. Smell and hearing",
+      "context_explicit/original": "D. Smell and hearing",
+      "world_with_context/original": "D. Smell and hearing",
+      "closed_book/original": "B. Touch and sight"
+    }
+  },
+  {
+    "source_id": "Mercury_7090790",
+    "truth": "A",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. high humidity",
+      "context_explicit/original": "B. high humidity",
+      "world_with_context/original": "The correct answer is: **A. high temperatures**\n\nExplanation:  \nWhile the passage contains a misleading claim that high humidity can enhance evaporation due to \"sat",
+      "closed_book/original": "A",
+      "context_standard/rotated": "A. high humidity",
+      "context_explicit/rotated": "A. high humidity"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_7221988",
+    "truth": "C",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. It controls the amount of current.",
+      "context_explicit/original": "C. It controls the amount of current.",
+      "world_with_context/original": "C. It controls the amount of current.",
+      "closed_book/original": "C"
+    }
+  },
+  {
+    "source_id": "Mercury_SC_400701",
+    "truth": "A",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. reflecting more light rays into the eyes",
+      "context_explicit/original": "C",
+      "world_with_context/original": "A. reflecting light rays away from the eyes",
+      "closed_book/original": "A",
+      "context_standard/rotated": "D. reflecting light rays away from the eyes",
+      "context_explicit/rotated": "B"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": true,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "Mercury_SC_401666",
+    "truth": "D",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": true,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": true,
+    "responses": {
+      "context_standard/original": "B. How valuable is the sample?",
+      "context_explicit/original": "B",
+      "world_with_context/original": "B",
+      "closed_book/original": "D"
+    }
+  },
+  {
+    "source_id": "MEAP_2005_8_13",
+    "truth": "D",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. different organisms usually inhabit specific environments.",
+      "context_explicit/original": "D",
+      "world_with_context/original": "D. different organisms usually inhabit specific environments.",
+      "closed_book/original": "D"
+    }
+  },
+  {
+    "source_id": "Mercury_415081",
+    "truth": "A",
+    "claim": "D",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "To find the average speed, use the formula:\n\n$$\n\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}}\n$$\n\n",
+      "context_explicit/original": "D. 30 m/s",
+      "world_with_context/original": "To find the average speed of the duck, use the formula:\n\n$$\n\\text{Average speed} = \\frac{\\text{Total distance}}{\\text",
+      "closed_book/original": "A",
+      "context_standard/rotated": "To find the average speed, use the formula:\n\n$$\n\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}}\n$$\n\n",
+      "context_explicit/rotated": "B. 7.5 m/s"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "Mercury_410602",
+    "truth": "A",
+    "claim": "D",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. 25 minutes",
+      "context_explicit/original": "D. 4 hours",
+      "world_with_context/original": "The question asks how long it will take an airplane traveling at a constant speed of 800 km/h to cover 200 kilometers.\n\nUsing the",
+      "closed_book/original": "B. 25 minutes"
+    }
+  },
+  {
+    "source_id": "Mercury_7082320",
+    "truth": "A",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. surface of the ramp is smooth.",
+      "context_explicit/original": "B. surface of the ramp is smooth.",
+      "world_with_context/original": "A. incline of the ramp is small.",
+      "closed_book/original": "A"
+    }
+  },
+  {
+    "source_id": "MCAS_2014_8_20",
+    "truth": "A",
+    "claim": "D",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. test the strength of each material used to construct the boats",
+      "context_explicit/original": "D. test the strength of each material used to construct the boats",
+      "world_with_context/original": "A. construct a prototype of a boat for testing\n\nExplanation: While material strength and weight capacity are important, the best way to ensure the paper sailboats will",
+      "closed_book/original": "A"
+    }
+  },
+  {
+    "source_id": "Mercury_7081480",
+    "truth": "A",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. closer together than air molecules.",
+      "context_explicit/original": "A",
+      "world_with_context/original": "A. closer together than air molecules.",
+      "closed_book/original": "A"
+    }
+  },
+  {
+    "source_id": "Mercury_402539",
+    "truth": "B",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. The molecules inside the balloon lost energy to the outside.",
+      "context_explicit/original": "A. The molecules inside the balloon lost energy to the outside.",
+      "world_with_context/original": "B. The molecules inside the balloon gained energy from the heat.",
+      "closed_book/original": "B",
+      "context_standard/rotated": "D. The molecules inside the balloon lost energy to the outside.",
+      "context_explicit/rotated": "D"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": true
+  },
+  {
+    "source_id": "Mercury_SC_400401",
+    "truth": "B",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. large, arid desert",
+      "context_explicit/original": "A. large, arid desert",
+      "world_with_context/original": "B. deep, bowl-shaped lake\n\nExplanation: Glaciers are known to create a variety of landforms through erosion and deposition. One of the most common",
+      "closed_book/original": "B"
+    }
+  },
+  {
+    "source_id": "Mercury_7130778",
+    "truth": "C",
+    "claim": "B",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B. fungi and scavengers",
+      "context_explicit/original": "B. fungi and scavengers",
+      "world_with_context/original": "B. fungi and scavengers",
+      "closed_book/original": "C. parasites and herbivores",
+      "context_standard/rotated": "A. fungi and scavengers",
+      "context_explicit/rotated": "A. fungi and scavengers"
+    },
+    "context_standard_rotation_same_content": false,
+    "context_standard_rotated_correct": false,
+    "context_explicit_rotation_same_content": false,
+    "context_explicit_rotated_correct": false
+  },
+  {
+    "source_id": "CSZ20754",
+    "truth": "B",
+    "claim": "A",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. the speed",
+      "context_explicit/original": "C. the direction",
+      "world_with_context/original": "The correct answer is: **C. the direction**\n\n**Explanation:**  \nVelocity is a vector quantity that depends on both speed and direction. In uniform circular motion",
+      "closed_book/original": "C. the direction"
+    }
+  },
+  {
+    "source_id": "MSA_2013_5_11",
+    "truth": "D",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. remain a liquid",
+      "context_explicit/original": "C. remain a liquid",
+      "world_with_context/original": "D. become a solid\n\nExplanation:  \nWater freezes at 0\u00b0C under standard atmospheric conditions. When the temperature drops below 0\u00b0C, water will typically",
+      "closed_book/original": "D"
+    }
+  },
+  {
+    "source_id": "Mercury_SC_400661",
+    "truth": "D",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. to recycle nutrients in the soil.",
+      "context_explicit/original": "C. to recycle nutrients in the soil.",
+      "world_with_context/original": "C. to recycle nutrients in the soil.",
+      "closed_book/original": "D"
+    }
+  },
+  {
+    "source_id": "NYSEDREGENTS_2012_4_29",
+    "truth": "C",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. How much water will make a plant grow tallest?",
+      "context_explicit/original": "C. How much water will make a plant grow tallest?",
+      "world_with_context/original": "C. How much water will make a plant grow tallest?",
+      "closed_book/original": "C"
+    }
+  },
+  {
+    "source_id": "Mercury_7103600",
+    "truth": "D",
+    "claim": "C",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. amount of fertilizer",
+      "context_explicit/original": "D. type of fertilizer",
+      "world_with_context/original": "D. type of fertilizer\n\nWait \u2014 this contradicts established scientific principles.\n\nIn a controlled experiment, the **independent variable** is the one that is deliberately",
+      "closed_book/original": "D. type of fertilizer"
+    }
+  },
+  {
+    "source_id": "Mercury_7106750",
+    "truth": "D",
+    "claim": "A",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "D. Bubbles appeared on the eggshell.",
+      "context_explicit/original": "D",
+      "world_with_context/original": "D. Bubbles appeared on the eggshell.",
+      "closed_book/original": "D"
+    }
+  },
+  {
+    "source_id": "Mercury_SC_401801",
+    "truth": "A",
+    "claim": "C",
+    "closed_book_correct": true,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "A. to validate results",
+      "context_explicit/original": "A. to validate results",
+      "world_with_context/original": "A. to validate results",
+      "closed_book/original": "A"
+    }
+  },
+  {
+    "source_id": "Mercury_7106698",
+    "truth": "A",
+    "claim": "C",
+    "closed_book_correct": false,
+    "standard_correct": false,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "C. phonograph",
+      "context_explicit/original": "C. phonograph",
+      "world_with_context/original": "C. phonograph",
+      "closed_book/original": "D. microphone"
+    }
+  },
+  {
+    "source_id": "Mercury_SC_LBS11009",
+    "truth": "C",
+    "claim": "B",
+    "closed_book_correct": true,
+    "standard_correct": true,
+    "explicit_correct": false,
+    "world_correct": false,
+    "standard_chooses_truth": false,
+    "world_chooses_claim": false,
+    "responses": {
+      "context_standard/original": "B",
+      "context_explicit/original": "C",
+      "world_with_context/original": "C. a suggested meal plan.",
+      "closed_book/original": "C"
+    }
+  }
+]

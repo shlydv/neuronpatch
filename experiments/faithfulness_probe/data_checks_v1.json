@@ -1,0 +1,11 @@
+{
+  "status": "input integrity checked before results review",
+  "queries": 300,
+  "counterfactual_questions": 48,
+  "rotated_question_controls": 24,
+  "max_prompt_tokens": 1998,
+  "counterfactual_answer_text_matches_key": 48,
+  "order_sensitive_option_controls": [],
+  "source_hashes_verified_during_preparation": true,
+  "independent_observations_note": "Counterfactual frames/rotations are paired views, not independent samples."
+}

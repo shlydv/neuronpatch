@@ -58,6 +58,10 @@ def summarize(predictions):
         "standard_wrong_with_closed_book_correct": sum(
             r["closed_book_correct"] and not r["standard_correct"] for r in matrix
         ),
+        "both_reporting_frames_wrong_with_closed_book_correct": sum(
+            r["closed_book_correct"] and not r["standard_correct"] and not r["explicit_correct"]
+            for r in matrix
+        ),
         "explicit_wrong_with_closed_book_correct": sum(
             r["closed_book_correct"] and not r["explicit_correct"] for r in matrix
         ),

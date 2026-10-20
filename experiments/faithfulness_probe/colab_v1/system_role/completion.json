@@ -1,0 +1,8 @@
+{
+  "status": "all frozen baseline queries complete",
+  "queries": 96,
+  "seconds": 317.0657675839998,
+  "weights_unchanged": true,
+  "final_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "training_steps": 0
+}

@@ -1,0 +1,73 @@
+{
+  "status": "Downloaded outputs independently checked locally before GPU release",
+  "provider": "Google Colab free Tesla T4; not Kaggle",
+  "archive_hashes": [
+    {
+      "name": "faithfulness_probe_v1_outputs.zip",
+      "bytes": 42634,
+      "sha256": "2f0aa8b8a83f3d32af748ebdf3dda1d1d82175e0b88b17a5f509291936d61f30"
+    },
+    {
+      "name": "faithfulness_probe_v1_extension_outputs.zip",
+      "bytes": 10600,
+      "sha256": "5aa983fb8cdb350344b0289da28d8e79154e1c1b4db3f0491c3e546655dfd2ea"
+    },
+    {
+      "name": "faithfulness_probe_v1_extension2_outputs.zip",
+      "bytes": 26752,
+      "sha256": "5dbc10c154a3463319d80b33ec4598445d6646acab563e5cded976f01b8c9849"
+    },
+    {
+      "name": "faithfulness_role_control_v1_outputs.zip",
+      "bytes": 73014,
+      "sha256": "7ad34a59da64773531c3ff764c0e4bdb5cdc3e5d017a938b54385c077ff0bd73"
+    }
+  ],
+  "public_output_sha256": {
+    "content_decisions.json": "68517d3ae4b5c7cb0cce51c5a08e5ec93f4e7411ab53c9260c5bb20a6714752d",
+    "content_reviews.json": "8bc1cf4afc00543deb993f1c562119b75624528283371d05d25596a33559592d",
+    "content_summary.json": "f02af1904a25af38838a37ec17b9a7bacfeb06f93c5e3b3d9d9d64b02b0a3933",
+    "counterfactual_matrix.json": "efcf7b2aff9f7f4e738e6ae2ff202935fa39c96de3d7615d562ae59eab39aed2",
+    "extension1/completion.json": "93e56c32166bc70727289ca00546325dad6d7fa3974c05689496e190ed3136fd",
+    "extension1/execution.log": "dd3b4e7ca11ca8dfc6b7953629ee1502149a341f014fb29599fb999cdfe2d170",
+    "extension1/predictions.json": "a0360eb220739b0e6f3ddc95a257cca82154960cc86769419ca18e37b30549a5",
+    "extension2/completion.json": "2fc2fa0bd4aa5c41a4d9ca10337e7802116e09445699f9fc6760176cfb443889",
+    "extension2/execution.log": "9496a72edc08c2e227086fde3f6fdf997d771c4c59251b81cfee747163a43479",
+    "extension2/predictions.json": "5060ddfbd2a2675d0692b77391f559ecfebe5ae0fccc173374f6399b8994fdaf",
+    "primary/completion.json": "49b1b4881250197d05d45d0c6849ba4928efcd3c4c30ba608bfbc58a29e260e1",
+    "primary/execution.log": "1fff74b29b7cbc1cb78aa1a9b1c2915f92c99cf56c4d200226b9fa4b84bf7514",
+    "primary/identity.json": "013a14a72dea4eec59a55e9ac86aacb07296510d96c77e7b312104fb5938e22e",
+    "primary/predictions.json": "c2bb58f99c1fe6465f33ba9abe6b7ce44027d832b0386700055c55fdab36f639",
+    "primary/protocol.json": "66c8bbc7f131a6f5da5919c6c38f7e3a35fc1b92fcefe541cfdfe688959a4225",
+    "science_interference_cases.json": "69c367a0435dcf7ed87178e6f700f3dca819da4a64d05d6b88f752bb6593ecd6",
+    "strict_summary.json": "248f89781468b826d2240336e8ea6525e8346671a727b17ebabaf034fabf6bd5",
+    "system_role/completion.json": "7beb57f436366545e354573d46a051e89370485adf8519f754f5e77e355f6a3b",
+    "system_role/execution.log": "1933e825f1944e2a7b0d83b62297e9f4ec402a16a0cfee382b8c267c8ecc9d31",
+    "system_role/identity.json": "013a14a72dea4eec59a55e9ac86aacb07296510d96c77e7b312104fb5938e22e",
+    "system_role/predictions.json": "c767c1d5653a8d9be388e880400661924bb60412e63fdfbe37c8ca6b1efa4dd8",
+    "system_role/protocol.json": "cbf3fe521ee954ef97e085ab3cd43d122e3f284c5561dcf53bc9a1c7be076f0e",
+    "unanswerable_audit.json": "260d1002e29d12f2494279a9dde9641bdbab5871d1f223f196132f993a8b620d"
+  },
+  "checks": {
+    "primary_input_bytes_match_frozen_protocol": true,
+    "system_role_input_bytes_match_local_reconstruction": true,
+    "system_role_protocol_matches_public_spec": true,
+    "all_truncated_cases_included_in_both_extensions": true,
+    "all_generated_prefixes_exact": true,
+    "one_original_response_still_truncated_at_1024": true,
+    "system_role_has_96_complete_answers": true,
+    "both_runs_have_identical_initial_final_full_weight_fingerprint": true,
+    "training_steps": 0,
+    "executed_submission_matches_public_source_data_hashes": true
+  },
+  "proof_image_sha256": [
+    {
+      "name": "t4_complete.jpg",
+      "sha256": "e57770ffb5b43ea4e3ae5da28951a97aa4238cc9565ba0c7b9de506abb31779f"
+    },
+    {
+      "name": "t4_released.jpg",
+      "sha256": "b19a95efd0f19a27a8eb1c15fa491b0a7f8a0cf2fa302efb6001ad73848ee3ff"
+    }
+  ]
+}

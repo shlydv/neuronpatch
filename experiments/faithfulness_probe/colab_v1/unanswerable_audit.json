@@ -1,0 +1,107 @@
+{
+  "reviewer": "Codex assistant after seeing results; not independent human adjudication",
+  "scope": "All 14 strict mismatches, full supplied source contexts inspected",
+  "primary_scores_or_labels_changed": false,
+  "category_counts": {
+    "unsupported_event_selection": 1,
+    "nonanswer": 1,
+    "supported_alternative_or_ambiguous_label": 1,
+    "underspecified_role_answer": 3,
+    "ambiguous_question_fragment": 1,
+    "unsupported_comparative_claim": 1,
+    "unsupported_event_location": 1,
+    "nonanswer_wrong_entity_type": 1,
+    "correct_abstention_expanded_wording": 1,
+    "nonanswer_missing_requested_name": 1,
+    "supported_answer_bad_missing_label": 1,
+    "malformed_question_or_task_error": 1
+  },
+  "clear_unsupported_assertions": 3,
+  "feasibility": "Fewer than six clear unsupported assertions; do not promote an abstention-training target on strict counts alone. Nonanswers and incomplete role answers are reported separately.",
+  "cases": [
+    {
+      "id": "3a46f2b815664919afa03ac76cdf4b96",
+      "prediction": "Roscoe Parrish",
+      "category": "unsupported_event_selection",
+      "reason": "Treats the first mentioned touchdown as the first touchdown of the game; omitted earlier scoring leaves that unsupported."
+    },
+    {
+      "id": "f3c5aa93e7294ad58df259cb786b2352",
+      "prediction": "Historical accounts thought the world could be split into climatic zones.",
+      "category": "nonanswer",
+      "reason": "Historical accounts are rephrased as the people who held the view; the passage names no group."
+    },
+    {
+      "id": "2a6519b256bb4d079c03828dfba8b2a4",
+      "prediction": "concentration",
+      "category": "supported_alternative_or_ambiguous_label",
+      "reason": "The question fragment permits concentration, and the passage explicitly calls pollutant concentration an environmental indicator."
+    },
+    {
+      "id": "4627ba689ba54c3694b9abcb554710c7",
+      "prediction": "The watchmaker wrote the message in Abraham Lincoln's pocket watch.",
+      "category": "underspecified_role_answer",
+      "reason": "The role watchmaker is explicitly supported. A proper name is absent, but the question does not expressly demand one; do not count as clear hallucination."
+    },
+    {
+      "id": "d2910e1a9aea42cc9d1f44d742058bc6",
+      "prediction": "The measure of the force of gravity is the strength of the gravitational pull between two objects, which depends on their masses and the distance between them.",
+      "category": "ambiguous_question_fragment",
+      "reason": "The intended deleted term is weight, but the fragment can ask about gravity strength and the response restates surviving mass/distance evidence."
+    },
+    {
+      "id": "012f2944d0b943ca8120b866124b5525",
+      "prediction": "A 27-inch table computer drew quite a bit of attention.",
+      "category": "unsupported_comparative_claim",
+      "reason": "Quite a bit of attention does not establish most attention among the listed products."
+    },
+    {
+      "id": "691ed5c57db64cdbb7b5ec4d1f71e14c",
+      "prediction": "The vessel was hijacked near Garacad, Somalia.",
+      "category": "unsupported_event_location",
+      "reason": "The reported current location of the ship is substituted for the unspecified location of the earlier hijacking."
+    },
+    {
+      "id": "c1cfbf74754f463abc458e4b6a0c86fe",
+      "prediction": "ArsenalFanTV",
+      "category": "nonanswer_wrong_entity_type",
+      "reason": "Repeats the channel/site name instead of identifying its hosting platform. The author intended platform has been removed."
+    },
+    {
+      "id": "81c1da5cbe684802901524bab2260719",
+      "prediction": "The defective protein causing the lysosomal storage disease Fabry is a specific lysosomal enzyme.",
+      "category": "underspecified_role_answer",
+      "reason": "Repeats a generic enzyme description supported in the text, without identifying the requested defective protein; no fabricated specific enzyme name."
+    },
+    {
+      "id": "743e6e989c4b4ca6a861a9a5ec8a0b1c",
+      "prediction": "The passage does not specify which player scored a safety. UNKNOWN",
+      "category": "correct_abstention_expanded_wording",
+      "reason": "Explicitly states the passage does not specify the player and says UNKNOWN; strict failure is output formatting only."
+    },
+    {
+      "id": "5e17c8de451a41c9afcb1a326724450e",
+      "prediction": "Stephen Stills' significant other.",
+      "category": "underspecified_role_answer",
+      "reason": "The partner/significant-other role remains supported, although a specific name is unavailable. This is not a clear fabricated identity."
+    },
+    {
+      "id": "8c567a3250b640a1858817c8f96fe8c1",
+      "prediction": "The leader ennobled by Henry III was the Hauteville leader.",
+      "category": "nonanswer_missing_requested_name",
+      "reason": "The question explicitly asks for a name; repeating the generic Hauteville-leader role does not supply it."
+    },
+    {
+      "id": "d39db0b5f0d44a50bcb61fd74f33ae02",
+      "prediction": "Dante Alighieri",
+      "category": "supported_answer_bad_missing_label",
+      "reason": "Multiple surviving snippets link Dante and Beatrice, including pining and love. Removing one direct clue did not remove the answer."
+    },
+    {
+      "id": "e8fcd23ef0d14ed79c8de3edc99a57b9",
+      "prediction": "True",
+      "category": "malformed_question_or_task_error",
+      "reason": "The input is a Jeopardy clue phrased as a statement. True is not the intended director answer, but this is not a clean fully specified QA failure."
+    }
+  ]
+}

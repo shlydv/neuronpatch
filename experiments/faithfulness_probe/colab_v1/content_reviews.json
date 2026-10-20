@@ -1,0 +1,113 @@
+{
+  "status": "Secondary content review after predictions; frozen strict metrics unchanged",
+  "reviewer": "Codex assistant, not independent human adjudication",
+  "automatic_rule": "Only bare labels or exact option text with matching label; no gold-dependent extraction. Other continuations explicitly reviewed.",
+  "original": {
+    "cf:Mercury_415081:context_standard:original": {
+      "choice": "A",
+      "reason": "Completed arithmetic chooses the scientific speed rather than the fabricated target."
+    },
+    "cf:Mercury_415081:context_standard:rotated": {
+      "choice": "D",
+      "reason": "Same arithmetic answer under rotated options."
+    },
+    "cf:Mercury_SC_409009:world_with_context:original": {
+      "choice": "A",
+      "reason": "Initially repeats D, explicitly rejects it, concludes A."
+    },
+    "cf:Mercury_SC_LBS10664:world_with_context:original": {
+      "choice": null,
+      "reason": "Still truncated at 1024 tokens while debating plastic versus distilled water. Keep unresolved."
+    },
+    "cf:Mercury_401699:world_with_context:original": {
+      "choice": "C",
+      "reason": "Concludes six valence electrons and identifies the false passage claim."
+    },
+    "cf:Mercury_SC_408366:world_with_context:original": {
+      "choice": "C",
+      "reason": "Concludes salt water; mismatches the original ARC reference B."
+    },
+    "cf:Mercury_7090790:world_with_context:original": {
+      "choice": "A",
+      "reason": "Explicit final answer A, high temperatures."
+    },
+    "cf:Mercury_415081:world_with_context:original": {
+      "choice": "A",
+      "reason": "Explicit final A after correct distance/time calculation."
+    },
+    "cf:Mercury_410602:world_with_context:original": {
+      "choice": "A",
+      "reason": "Explicit final A after 200/800 hours calculation."
+    },
+    "cf:MCAS_2014_8_20:world_with_context:original": {
+      "choice": "A",
+      "reason": "Concludes prototype testing."
+    },
+    "cf:Mercury_SC_400401:world_with_context:original": {
+      "choice": "B",
+      "reason": "Concludes deep bowl-shaped lake."
+    },
+    "cf:CSZ20754:world_with_context:original": {
+      "choice": "B",
+      "reason": "Initially C; revises repeatedly and ends with B, position. Closed-book output was C."
+    },
+    "cf:MSA_2013_5_11:world_with_context:original": {
+      "choice": "D",
+      "reason": "Concludes solid after discussing supercooling."
+    },
+    "cf:Mercury_7103600:world_with_context:original": {
+      "choice": "D",
+      "reason": "Concludes fertilizer type and rejects passage claim about amount."
+    }
+  },
+  "system_role": {
+    "cf:Mercury_SC_409009:world_with_context:original:system": {
+      "choice": "A",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:Mercury_7090790:world_with_context:original:system": {
+      "choice": "A",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:Mercury_415081:world_with_context:original:system": {
+      "choice": "A",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:Mercury_410602:world_with_context:original:system": {
+      "choice": "A",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:MCAS_2014_8_20:world_with_context:original:system": {
+      "choice": "A",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:Mercury_SC_400401:world_with_context:original:system": {
+      "choice": "B",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:CSZ20754:world_with_context:original:system": {
+      "choice": "A",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:MSA_2013_5_11:world_with_context:original:system": {
+      "choice": "C",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    },
+    "cf:Mercury_7103600:world_with_context:original:system": {
+      "choice": "D",
+      "reason": "Complete response inspected; choice is the explicit final conclusion, including any self-correction."
+    }
+  },
+  "label_cautions": [
+    {
+      "id": "Mercury_7217368",
+      "scope": "Counterfactual-reporting gold",
+      "reason": "Full passage concerns millimeter-scale structural maintenance, not the question's flight travel distance; it does not establish the claimed target for that quantity."
+    },
+    {
+      "id": "MDSA_2007_8_24",
+      "scope": "Counterfactual-reporting gold",
+      "reason": "Full passage repeatedly supports unchanged molecular count and says molecules move apart; target unchanged intermolecular distance is not uniquely supported."
+    }
+  ]
+}

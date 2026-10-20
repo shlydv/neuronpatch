@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/byronBBL/Context-DPO",
+  "revision": "557dadeeb9f47407890a5626128ca99907770b22",
+  "files": [
+    {
+      "file": "train_dpo.py",
+      "sha256": "b635ef5e27b5dacad181d4b9c277897c847714c505f2cc4f3dd87330e1879319"
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "94c5fb369fbe29d29cfc8b9ffce0aa5deb2a0572a373277da0fcfdf0228b9efc"
+    },
+    {
+      "file": "README.md",
+      "sha256": "bfc9c9abcf69ae7959f844002c78743bca764a97f377e94356ba163d59d276fc"
+    }
+  ],
+  "status": "source read only; no training or reproduction",
+  "prospective_use": "Relevant preference-training baseline and separate train data, if current diagnostic establishes genuine headroom.",
+  "data_train_status": "Not shipped in inspected ConFiQA folder: it contains QA/MR/MC benchmark JSON files. README recommends constructing data_train.json from a proportion of those records; any adaptation needs explicit disjoint training/validation/evaluation folds."
+}

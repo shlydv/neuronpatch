@@ -1,0 +1,8 @@
+{
+  "status": "all originally truncated answers extended",
+  "queries": 14,
+  "seconds": 206.87291742800005,
+  "weights_unchanged": true,
+  "all_original_prefixes_exact": true,
+  "still_truncated": 12
+}

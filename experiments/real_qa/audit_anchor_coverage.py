@@ -19,8 +19,7 @@ def contains_answer(output, answers):
     for answer in answers:
         target = normalize(answer).split()
         if target and any(
-            tokens[i : i + len(target)] == target
-            for i in range(len(tokens) - len(target) + 1)
+            tokens[i : i + len(target)] == target for i in range(len(tokens) - len(target) + 1)
         ):
             return True
     return False
@@ -37,8 +36,11 @@ def main():
         for key in ("id", "kind", "context", "question", "answers"):
             assert original[key] == prediction[key], (original["id"], key)
     candidates = [
-        r for r in baseline
-        if r["kind"] == "answerable" and not r["abstained"] and r["em"] == 0
+        r
+        for r in baseline
+        if r["kind"] == "answerable"
+        and not r["abstained"]
+        and r["em"] == 0
         and contains_answer(r["output"], r["answers"])
     ]
     report = {

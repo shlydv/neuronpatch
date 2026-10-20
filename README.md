@@ -20,6 +20,11 @@ The [dose/bias diagnostic](experiments/protected_rows/dose_v1/REPORT.md) verifie
 exported generations exactly and finds no measured evidence-discrimination gain;
 part of the improvement comes from shifting the refusal trade-off.
 
+The [external faithfulness probe](experiments/faithfulness_probe/colab_v1/REPORT.md)
+finds real reference-answer interference, plus scoring and source-label problems.
+Ignoring the untrusted passage is already a strong baseline in its factual mode.
+No new trained method is promoted by that diagnostic.
+
 ## Direction
 
 The intended workflow is **select → train → evaluate target and preserved behavior

@@ -756,3 +756,82 @@ before it motivates training. Later edits must preserve science answers rather
 than merely make models accept false passages. Benchmark test inputs will not
 be used for training; unused IDs remain available for fresh evaluation. Protocol
 and source pins are in experiments/faithfulness_probe. No quality result yet.
+
+
+### Context-DPO code audited as a prospective trained baseline
+
+Official source byronBBL/Context-DPO at
+557dadeeb9f47407890a5626128ca99907770b22 converts each cf_context into a
+preference pair: chosen restates cf_context_piece and cf_answer; rejected
+restates orig_context_piece and orig_answer. It delegates training to TRL's
+DPOTrainer (beta 0.1), rank-64/alpha-64 LoRA on q/k/v/o and gate/up/down
+projections, three epochs, microbatch 4 with accumulation 8. This code was read,
+not executed or reproduced. Its load_kwargs dtype dictionary is not passed to
+from_pretrained; do not claim the checked script explicitly loads half precision
+without an adaptation. Code details are not evidence against published results.
+
+Implication: context-faithful preference training already exists. A future compact
+method must earn a benefit in budget, transfer or preservation against a suitable
+preference baseline, rather than claim novelty for preferring supplied-context
+answers. The current frozen diagnostic explicitly measures scientific-answer
+preservation and the value of a no-training reporting instruction before deciding
+whether weight changes are needed. No new candidate is promoted by this audit.
+
+Context-DPO training-data clarification: the checked repository contains ConFiQA
+QA/MR/MC files, while its example command names an unshipped data_train.json. Its
+README recommends creating that file from a proportion of the datasets. Any use
+here therefore needs a declared split and overlap audit, not an assertion that a
+ready-made official training split has been reproduced.
+
+
+### External probe executed: separate useful interference from evaluation traps
+
+The [saved FaithEval probe](../experiments/faithfulness_probe/colab_v1/REPORT.md)
+completed on the unchanged pinned 4B model, free Colab T4. All 300 frozen queries,
+all 14 truncated-response continuations at 128 tokens, all 12 remaining at 1024,
+and a fixed 96-query system-role control are backed up. Every continuation has
+the exact previous generated-token prefix. One original response remains
+unresolved. Initial/final full model fingerprints match; zero training steps.
+The runtime was released after independent local download/data checks.
+
+Strict letter accuracy was mostly measuring expanded-answer formatting. The
+separate conservative option-content diagnostic gives closed-book 43/48,
+science with untrusted passage 35/48 plus one unresolved, and the identical
+science instruction moved to system role 33/48. Among 43 closed-book reference-
+correct cases, nine become wrong under the user science instruction and 11 under
+system role. These are paired reference-answer results on a small development
+slice, not independent samples, perfect scientific gold or a trained improvement.
+
+Reporting target matches are 32/48 ordinary, 33/48 explicit, 30/48 system role.
+Two fully inspected source examples already have question/passage-scope problems.
+All 14 missing-evidence strict mismatches were reviewed: three clear unsupported
+assertions, with remaining cases including nonanswers, underspecified supported
+roles, bad labels and an expanded valid abstention. Conflicting-evidence semantic
+adjudication is incomplete. Do not claim the predeclared reporting/other-task
+feasibility gate passed from strict mismatches or replace it post-hoc with the
+exploratory science-interference finding. No benchmark test cases were trained on.
+
+For explicit factual mode, removing the passage already scores 43/48. Any future
+context-use adaptation must beat this no-training route or solve a setting where
+necessary and misleading evidence cannot all be dropped. Include needed-context
+preservation, reporting/science modes, and instruction/routing controls. Another
+UNKNOWN sweep or prompt search on the exposed slice is not justified. This
+diagnostic improves our evaluation foundation, not the claimed adaptation method.
+
+
+### FiNE update geometry checked before adding a shared parameterization
+
+The [CPU artifact audit](../experiments/fine_reference/geometry_v1/REPORT.md)
+inspects the four already verified GPT-J-6B parity artifacts. Rank 1 captures
+66.45%/62.72% of selected-update squared energy versus 32.39%/36.68% for matched
+random supports in the two cases. Thus selected updates are more aligned in this
+tiny exposed sample, but one direction still discards substantial information.
+Retaining 99% needs ranks 5/16 and offers little scalar-storage advantage.
+
+This is standard global cross-layer SVD of stored deltas, not preserved model
+behavior, a cheaper training result or a novel algorithm. No factorized public
+API was added. If pursuing compactness, first evaluate fixed generated-answer
+and utility probes under reconstruction, with full and no-edit controls and
+original sequential merge order. Only a behavioral result can justify the
+subsequent matched-budget direct-training comparison. Keep this hypothesis
+separate from the unresolved correction/preservation recipe.

@@ -1,0 +1,69 @@
+{
+  "strict_groups": {
+    "counterfactual/context_standard/original": {
+      "correct": 2,
+      "n": 48,
+      "unparsed": 46,
+      "truncated": 1
+    },
+    "counterfactual/context_explicit/original": {
+      "correct": 9,
+      "n": 48,
+      "unparsed": 32,
+      "truncated": 0
+    },
+    "counterfactual/world_with_context/original": {
+      "correct": 2,
+      "n": 48,
+      "unparsed": 44,
+      "truncated": 12
+    },
+    "counterfactual/closed_book/original": {
+      "correct": 31,
+      "n": 48,
+      "unparsed": 16,
+      "truncated": 0
+    },
+    "counterfactual/context_standard/rotated": {
+      "correct": 1,
+      "n": 24,
+      "unparsed": 23,
+      "truncated": 1
+    },
+    "counterfactual/context_explicit/rotated": {
+      "correct": 9,
+      "n": 24,
+      "unparsed": 14,
+      "truncated": 0
+    },
+    "unanswerable/context_standard/original": {
+      "correct": 16,
+      "n": 30,
+      "unparsed": 14,
+      "truncated": 0
+    },
+    "inconsistent/context_standard/original": {
+      "correct": 11,
+      "n": 30,
+      "unparsed": 16,
+      "truncated": 0
+    }
+  },
+  "counterfactual_counts": {
+    "questions": 48,
+    "closed_book_correct": 31,
+    "standard_wrong_with_closed_book_correct": 29,
+    "both_reporting_frames_wrong_with_closed_book_correct": 21,
+    "explicit_wrong_with_closed_book_correct": 22,
+    "standard_wrong_explicit_fixed_with_closed_book_correct": 8,
+    "world_wrong_with_closed_book_correct": 29,
+    "world_chooses_fabrication_with_closed_book_correct": 2
+  },
+  "primary_query_count": 300,
+  "task_counts": {
+    "counterfactual": 240,
+    "unanswerable": 30,
+    "inconsistent": 30
+  },
+  "interpretation": "Strict generated-answer diagnostics only; feasibility remains unproven until semantic/source audit."
+}

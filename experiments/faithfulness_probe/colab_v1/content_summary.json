@@ -1,0 +1,71 @@
+{
+  "status": "Post-run content diagnostic; not training or confirmation",
+  "groups": {
+    "context_standard/original": {
+      "n": 48,
+      "correct": 32,
+      "wrong": 16,
+      "unresolved": 0
+    },
+    "context_explicit/original": {
+      "n": 48,
+      "correct": 33,
+      "wrong": 15,
+      "unresolved": 0
+    },
+    "world_with_context/original": {
+      "n": 48,
+      "correct": 35,
+      "wrong": 12,
+      "unresolved": 1
+    },
+    "closed_book/original": {
+      "n": 48,
+      "correct": 43,
+      "wrong": 5,
+      "unresolved": 0
+    },
+    "context_standard/rotated": {
+      "n": 24,
+      "correct": 18,
+      "wrong": 6,
+      "unresolved": 0
+    },
+    "context_explicit/rotated": {
+      "n": 24,
+      "correct": 19,
+      "wrong": 5,
+      "unresolved": 0
+    },
+    "context_explicit_system/original": {
+      "n": 48,
+      "correct": 30,
+      "wrong": 18,
+      "unresolved": 0
+    },
+    "world_with_context_system/original": {
+      "n": 48,
+      "correct": 33,
+      "wrong": 15,
+      "unresolved": 0
+    }
+  },
+  "retention_of_closed_book_correct": {
+    "world_with_context": {
+      "baseline_correct": 43,
+      "retained": 33,
+      "changed_to_wrong": 9,
+      "unresolved": 1
+    },
+    "world_with_context_system": {
+      "baseline_correct": 43,
+      "retained": 32,
+      "changed_to_wrong": 11,
+      "unresolved": 0
+    }
+  },
+  "primary_strict_results_unchanged": true,
+  "one_original_science_response_unresolved_at_1024": true,
+  "no_context_router_baseline": "Closed-book template is already an evaluated no-training route for the explicit factual mode.",
+  "caution": "Counterfactual target-label matching is not a fully validated semantic faithfulness score; source-scope problems are documented in reviews."
+}

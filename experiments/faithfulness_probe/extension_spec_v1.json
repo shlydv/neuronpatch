@@ -1,0 +1,22 @@
+{
+  "scope": "Evaluation repair only: complete all original 32-token truncations, preserve frozen primary outputs and metrics",
+  "rule": "all and only predictions with truncated=true, regardless of correctness",
+  "ids": [
+    "cf:Mercury_SC_409009:world_with_context:original",
+    "cf:Mercury_SC_LBS10664:world_with_context:original",
+    "cf:Mercury_401699:world_with_context:original",
+    "cf:Mercury_SC_408366:world_with_context:original",
+    "cf:Mercury_7090790:world_with_context:original",
+    "cf:Mercury_415081:context_standard:original",
+    "cf:Mercury_415081:world_with_context:original",
+    "cf:Mercury_415081:context_standard:rotated",
+    "cf:Mercury_410602:world_with_context:original",
+    "cf:MCAS_2014_8_20:world_with_context:original",
+    "cf:Mercury_SC_400401:world_with_context:original",
+    "cf:CSZ20754:world_with_context:original",
+    "cf:MSA_2013_5_11:world_with_context:original",
+    "cf:Mercury_7103600:world_with_context:original"
+  ],
+  "max_new_tokens": 128,
+  "runtime_limit_seconds": 600
+}
