@@ -1,0 +1,115 @@
+{
+  "protocol": {
+    "diagnostic_id": "protected-rows-dose-20261020",
+    "scope": "Exploratory diagnostic on already exposed pilot data; no fresh confirmation, no retraining.",
+    "hypotheses": [
+      "If dose-matched unprotected updates match protection, the observed benefit may be mostly weaker functional steering.",
+      "If a first-token UNKNOWN bias matches the outcome and failure cases, the learned change is largely a refusal threshold, not improved evidence discrimination.",
+      "Protection earns further investigation only if its benefit exceeds these simpler controls; the original pilot still failed its promotion criteria."
+    ],
+    "matching_signal": "Mean change of UNKNOWN first-token log odds versus all other vocabulary tokens, across all 32 calibration prompts; validation/utility never choose the dose.",
+    "calibration_scale_grid": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875,
+      1.0
+    ],
+    "interpolation": "Evaluate at most one linearly interpolated dose in the first adjacent grid interval straddling the protected mean; pick smallest absolute calibration mismatch, lower dose tie.",
+    "controls": [
+      "protected_full",
+      "unprotected_full",
+      "unprotected_matched",
+      "unknown_bias"
+    ],
+    "bias_control": "Add the protected mean calibration log-odds shift to the UNKNOWN logit only on the first generated token, on the unchanged base.",
+    "reproduction_gate": "Publicly load each saved high-dose row artifact and exactly reproduce all 128 validation and 32 utility token trajectories; four zero-bias baseline probes also must match.",
+    "interpretation_gate": "A relative calibration-matching error above 10% is an inadequate dose match; do not infer direction effects from it.",
+    "runtime_limit_seconds": 900,
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "artifact_sha256": {
+      "protected-1/patch/patch.json": "3240868341da8487bd276837a02c411ab0263642ac574f7afed7d6f574e69b6b",
+      "protected-1/patch/patch.safetensors": "d106258a47ee6b33ffcac71529489a2fc60f286cc1ae84baf9bc4a266b604088",
+      "unprotected-1/patch/patch.json": "7c3e31a186a2e30b0b15154ebca9906a191a18a5ecbcdbb7c5160aa51ad41bda",
+      "unprotected-1/patch/patch.safetensors": "734a0fee2b6ee62a2df8ea722dbd08bdc8dc8e38c3a7f3db825bee60c95fdd05"
+    },
+    "diagnostic_source_sha256": "9216a2915f9f8732b67dcc52f24b7048295a9e3b57c0b0f6c44b3d301a9d2976"
+  },
+  "torch": "2.6.0+cu124",
+  "gpu": "Tesla T4",
+  "zero_bias_base_probes_exact": 4,
+  "unknown_token_id": 51378,
+  "base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "protected_calibration_shift": 15.446049600839615,
+  "calibration_doses": [
+    {
+      "scale": 0.0,
+      "shift": 0.0
+    },
+    {
+      "scale": 0.125,
+      "shift": 4.988190710544586
+    },
+    {
+      "scale": 0.25,
+      "shift": 9.447671175003052
+    },
+    {
+      "scale": 0.375,
+      "shift": 13.276968598365784
+    },
+    {
+      "scale": 0.5,
+      "shift": 15.96074366569519
+    },
+    {
+      "scale": 0.625,
+      "shift": 17.529247403144836
+    },
+    {
+      "scale": 0.75,
+      "shift": 18.43119466304779
+    },
+    {
+      "scale": 0.875,
+      "shift": 18.97056692838669
+    },
+    {
+      "scale": 1.0,
+      "shift": 19.301223754882812
+    },
+    {
+      "scale": 0.47602751479058647,
+      "shift": 15.538649916648865,
+      "interpolated": true
+    }
+  ],
+  "matched_scale": 0.47602751479058647,
+  "matched_shift": 15.538649916648865,
+  "relative_matching_error": 0.005995080826635201,
+  "reproduction": {
+    "protected_full/val": {
+      "n": 128,
+      "mismatched_ids": []
+    },
+    "protected_full/utility": {
+      "n": 32,
+      "mismatched_ids": []
+    },
+    "unprotected_full/val": {
+      "n": 128,
+      "mismatched_ids": []
+    },
+    "unprotected_full/utility": {
+      "n": 32,
+      "mismatched_ids": []
+    }
+  },
+  "completed": true,
+  "runtime_seconds": 520.4686107529997
+}

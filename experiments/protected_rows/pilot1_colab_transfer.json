@@ -26,5 +26,7 @@
     }
   },
   "baseline_performance": "Supported exact correct 38/64; missing UNKNOWN 42/64; utility 31/32. All eight updates and qualitative baseline-only audit are in colab_v1/REPORT.md.",
-  "result_archive_sha256": "5f7ef21f576a680437ec0aefb750282fa13520c4455ab74346e555a4f7231e24"
+  "result_archive_sha256": "5f7ef21f576a680437ec0aefb750282fa13520c4455ab74346e555a4f7231e24",
+  "runtime_status": "Released after verified pilot and dose-diagnostic archives; notebook outputs saved",
+  "runtime_released_utc": "2026-10-20T12:30:34.366433+00:00"
 }

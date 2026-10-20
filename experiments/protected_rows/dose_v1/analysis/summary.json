@@ -1,0 +1,831 @@
+{
+  "scope": "Exploratory exposed-pilot diagnostic; no training or fresh confirmation",
+  "manifest": {
+    "protocol": {
+      "diagnostic_id": "protected-rows-dose-20261020",
+      "scope": "Exploratory diagnostic on already exposed pilot data; no fresh confirmation, no retraining.",
+      "hypotheses": [
+        "If dose-matched unprotected updates match protection, the observed benefit may be mostly weaker functional steering.",
+        "If a first-token UNKNOWN bias matches the outcome and failure cases, the learned change is largely a refusal threshold, not improved evidence discrimination.",
+        "Protection earns further investigation only if its benefit exceeds these simpler controls; the original pilot still failed its promotion criteria."
+      ],
+      "matching_signal": "Mean change of UNKNOWN first-token log odds versus all other vocabulary tokens, across all 32 calibration prompts; validation/utility never choose the dose.",
+      "calibration_scale_grid": [
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1.0
+      ],
+      "interpolation": "Evaluate at most one linearly interpolated dose in the first adjacent grid interval straddling the protected mean; pick smallest absolute calibration mismatch, lower dose tie.",
+      "controls": [
+        "protected_full",
+        "unprotected_full",
+        "unprotected_matched",
+        "unknown_bias"
+      ],
+      "bias_control": "Add the protected mean calibration log-odds shift to the UNKNOWN logit only on the first generated token, on the unchanged base.",
+      "reproduction_gate": "Publicly load each saved high-dose row artifact and exactly reproduce all 128 validation and 32 utility token trajectories; four zero-bias baseline probes also must match.",
+      "interpretation_gate": "A relative calibration-matching error above 10% is an inadequate dose match; do not infer direction effects from it.",
+      "runtime_limit_seconds": 900,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "artifact_sha256": {
+        "protected-1/patch/patch.json": "3240868341da8487bd276837a02c411ab0263642ac574f7afed7d6f574e69b6b",
+        "protected-1/patch/patch.safetensors": "d106258a47ee6b33ffcac71529489a2fc60f286cc1ae84baf9bc4a266b604088",
+        "unprotected-1/patch/patch.json": "7c3e31a186a2e30b0b15154ebca9906a191a18a5ecbcdbb7c5160aa51ad41bda",
+        "unprotected-1/patch/patch.safetensors": "734a0fee2b6ee62a2df8ea722dbd08bdc8dc8e38c3a7f3db825bee60c95fdd05"
+      },
+      "diagnostic_source_sha256": "9216a2915f9f8732b67dcc52f24b7048295a9e3b57c0b0f6c44b3d301a9d2976"
+    },
+    "torch": "2.6.0+cu124",
+    "gpu": "Tesla T4",
+    "zero_bias_base_probes_exact": 4,
+    "unknown_token_id": 51378,
+    "base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+    "protected_calibration_shift": 15.446049600839615,
+    "calibration_doses": [
+      {
+        "scale": 0.0,
+        "shift": 0.0
+      },
+      {
+        "scale": 0.125,
+        "shift": 4.988190710544586
+      },
+      {
+        "scale": 0.25,
+        "shift": 9.447671175003052
+      },
+      {
+        "scale": 0.375,
+        "shift": 13.276968598365784
+      },
+      {
+        "scale": 0.5,
+        "shift": 15.96074366569519
+      },
+      {
+        "scale": 0.625,
+        "shift": 17.529247403144836
+      },
+      {
+        "scale": 0.75,
+        "shift": 18.43119466304779
+      },
+      {
+        "scale": 0.875,
+        "shift": 18.97056692838669
+      },
+      {
+        "scale": 1.0,
+        "shift": 19.301223754882812
+      },
+      {
+        "scale": 0.47602751479058647,
+        "shift": 15.538649916648865,
+        "interpolated": true
+      }
+    ],
+    "matched_scale": 0.47602751479058647,
+    "matched_shift": 15.538649916648865,
+    "relative_matching_error": 0.005995080826635201,
+    "reproduction": {
+      "protected_full/val": {
+        "n": 128,
+        "mismatched_ids": []
+      },
+      "protected_full/utility": {
+        "n": 32,
+        "mismatched_ids": []
+      },
+      "unprotected_full/val": {
+        "n": 128,
+        "mismatched_ids": []
+      },
+      "unprotected_full/utility": {
+        "n": 32,
+        "mismatched_ids": []
+      }
+    },
+    "completed": true,
+    "runtime_seconds": 520.4686107529997
+  },
+  "dose_match_adequate": true,
+  "baseline_first_token_missing_auc": 0.907958984375,
+  "auc_scope": "Secondary exploratory ranking diagnostic against unchanged, imperfect labels; not a new primary metric. A constant logit bias leaves ranking unchanged.",
+  "metrics": {
+    "protected_full": {
+      "supported": {
+        "n": 64,
+        "base_correct": 38,
+        "retained": 29,
+        "retention": 0.7631578947368421,
+        "em": 0.5625,
+        "f1": 0.6605744949494949,
+        "abstention_rate": 0.21875,
+        "fixed_ids": [
+          "571b058d9499d21900609bd8",
+          "57321d6de17f3d14004226aa",
+          "5730192604bcaa1900d77187",
+          "572674b8f1498d1400e8e035",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "56de62fc4396321400ee286b"
+        ],
+        "broken_ids": [
+          "5733bdc4d058e614000b61a4",
+          "572f506a04bcaa1900d76843",
+          "5727bbedff5b5019007d93b8",
+          "5726262f89a1e219009ac3dc",
+          "5730af318ab72b1400f9c68f",
+          "570b2dd76b8089140040f7d5",
+          "572842e03acd2414000df7fb",
+          "572820982ca10214002d9e86",
+          "572f498104bcaa1900d76819"
+        ],
+        "text_changed_ids": [
+          "57284f5f3acd2414000df8ed",
+          "571b058d9499d21900609bd8",
+          "570b2bacec8fbc190045b8a7",
+          "57305b0b069b5314008320a8",
+          "5733bdc4d058e614000b61a4",
+          "572f506a04bcaa1900d76843",
+          "57283bec2ca10214002da13c",
+          "5727bbedff5b5019007d93b8",
+          "5727d0feff5b5019007d95ec",
+          "57321d6de17f3d14004226aa",
+          "570e11f30dc6ce1900204db9",
+          "5733fcd5d058e614000b6718",
+          "5727ec8b2ca10214002d99cd",
+          "57344599acc1501500babd63",
+          "57324734e99e3014001e6630",
+          "57306408069b5314008320c7",
+          "56f8a5a89b226e1400dd0d47",
+          "5730192604bcaa1900d77187",
+          "5726262f89a1e219009ac3dc",
+          "571b6a2f9499d21900609ca1",
+          "570e1f340dc6ce1900204dcd",
+          "5730af318ab72b1400f9c68f",
+          "570b2dd76b8089140040f7d5",
+          "5727d7c14b864d1900163e4a",
+          "572674b8f1498d1400e8e035",
+          "572808464b864d1900164293",
+          "572842e03acd2414000df7fb",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "572820982ca10214002d9e86",
+          "572f498104bcaa1900d76819",
+          "56de62fc4396321400ee286b"
+        ]
+      },
+      "missing": {
+        "n": 64,
+        "base_correct": 42,
+        "retained": 42,
+        "retention": 1.0,
+        "em": 0.828125,
+        "f1": 0.828125,
+        "abstention_rate": 0.828125,
+        "fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5a6969185ce1a5001a9695ff",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5ace8a0432bba1001ae4a9d0",
+          "5acd7ee207355d001abf4477"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "5ad24569d7d075001a428a9a",
+          "5a79ea1b17ab25001a8a01b2",
+          "5a6969185ce1a5001a9695ff",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ad3c558604f3c001a3fefea",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5ace8a0432bba1001ae4a9d0",
+          "5acd7ee207355d001abf4477"
+        ]
+      },
+      "utility": {
+        "n": 32,
+        "base_correct": 31,
+        "retained": 31,
+        "retention": 1.0,
+        "em": 0.96875,
+        "f1": 0.96875,
+        "abstention_rate": 0.0,
+        "fixed_ids": [],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "opposite-hot",
+          "opposite-empty",
+          "opposite-shallow",
+          "opposite-noisy",
+          "opposite-rough"
+        ]
+      },
+      "secondary_assistant_audit": {
+        "scope": "Diagnostic subset; not independent human gold or complete relabeling",
+        "correct_content_baseline_n": 19,
+        "new_strict_refusal_ids": [
+          "570b2bacec8fbc190045b8a7",
+          "5727d0feff5b5019007d95ec",
+          "5733fcd5d058e614000b6718",
+          "5727ec8b2ca10214002d99cd",
+          "57324734e99e3014001e6630",
+          "570e1f340dc6ce1900204dcd"
+        ],
+        "true_missing_error_n": 12,
+        "true_missing_fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5acd7ee207355d001abf4477"
+        ]
+      },
+      "mean_validation_log_odds_shift_by_kind": {
+        "answerable": 26.707455784082413,
+        "missing": 8.439938098192215
+      },
+      "first_token_missing_auc": 0.893798828125,
+      "promotion_primary": false
+    },
+    "unprotected_full": {
+      "supported": {
+        "n": 64,
+        "base_correct": 38,
+        "retained": 19,
+        "retention": 0.5,
+        "em": 0.359375,
+        "f1": 0.4420082521645022,
+        "abstention_rate": 0.46875,
+        "fixed_ids": [
+          "571b058d9499d21900609bd8",
+          "56f89d879b226e1400dd0cc5",
+          "572674b8f1498d1400e8e035",
+          "56de62fc4396321400ee286b"
+        ],
+        "broken_ids": [
+          "570a6f996d058f1900182e5f",
+          "5733bdc4d058e614000b61a4",
+          "573041b7947a6a140053d357",
+          "572f506a04bcaa1900d76843",
+          "5727bbedff5b5019007d93b8",
+          "56fa9f9df34c681400b0c103",
+          "56f8a5a89b226e1400dd0d47",
+          "5726262f89a1e219009ac3dc",
+          "5730a3018ab72b1400f9c61f",
+          "5730af318ab72b1400f9c68f",
+          "570b2dd76b8089140040f7d5",
+          "56f957049e9bad19000a0840",
+          "572842e03acd2414000df7fb",
+          "572820982ca10214002d9e86",
+          "5727d7d84b864d1900163e4f",
+          "572f498104bcaa1900d76819",
+          "5726c8c3708984140094d14d",
+          "56f9df829b226e1400dd15d6",
+          "5730376e04bcaa1900d77398"
+        ],
+        "text_changed_ids": [
+          "57284f5f3acd2414000df8ed",
+          "570a6f996d058f1900182e5f",
+          "571b058d9499d21900609bd8",
+          "570b2bacec8fbc190045b8a7",
+          "57305b0b069b5314008320a8",
+          "5733bdc4d058e614000b61a4",
+          "573041b7947a6a140053d357",
+          "572f506a04bcaa1900d76843",
+          "57283bec2ca10214002da13c",
+          "5727bbedff5b5019007d93b8",
+          "5727d0feff5b5019007d95ec",
+          "57321d6de17f3d14004226aa",
+          "570e11f30dc6ce1900204db9",
+          "5733fcd5d058e614000b6718",
+          "5727ec8b2ca10214002d99cd",
+          "56fa9f9df34c681400b0c103",
+          "57344599acc1501500babd63",
+          "57324734e99e3014001e6630",
+          "57306408069b5314008320c7",
+          "56f8a5a89b226e1400dd0d47",
+          "5730192604bcaa1900d77187",
+          "56f89d879b226e1400dd0cc5",
+          "5726262f89a1e219009ac3dc",
+          "571b6a2f9499d21900609ca1",
+          "570e1f340dc6ce1900204dcd",
+          "5730a3018ab72b1400f9c61f",
+          "5730af318ab72b1400f9c68f",
+          "570b2dd76b8089140040f7d5",
+          "572664c9f1498d1400e8de1f",
+          "5727d7c14b864d1900163e4a",
+          "572674b8f1498d1400e8e035",
+          "572808464b864d1900164293",
+          "56f957049e9bad19000a0840",
+          "572842e03acd2414000df7fb",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "572820982ca10214002d9e86",
+          "5727d7d84b864d1900163e4f",
+          "572f498104bcaa1900d76819",
+          "5726c8c3708984140094d14d",
+          "56f9df829b226e1400dd15d6",
+          "5730376e04bcaa1900d77398",
+          "56de62fc4396321400ee286b"
+        ]
+      },
+      "missing": {
+        "n": 64,
+        "base_correct": 42,
+        "retained": 42,
+        "retention": 1.0,
+        "em": 0.890625,
+        "f1": 0.890625,
+        "abstention_rate": 0.890625,
+        "fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5a832af9e60761001a2eb49a",
+          "5a6969185ce1a5001a9695ff",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ad3c558604f3c001a3fefea",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5ace8a0432bba1001ae4a9d0",
+          "5acd22b507355d001abf3647",
+          "5acd7ee207355d001abf4477",
+          "5acda1b107355d001abf4886"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "5ad24569d7d075001a428a9a",
+          "5a79ea1b17ab25001a8a01b2",
+          "5a832af9e60761001a2eb49a",
+          "5a6969185ce1a5001a9695ff",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ad3c558604f3c001a3fefea",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5ace8a0432bba1001ae4a9d0",
+          "5acd901707355d001abf4728",
+          "5acd22b507355d001abf3647",
+          "5acd7ee207355d001abf4477",
+          "5acda1b107355d001abf4886"
+        ]
+      },
+      "utility": {
+        "n": 32,
+        "base_correct": 31,
+        "retained": 31,
+        "retention": 1.0,
+        "em": 1.0,
+        "f1": 1.0,
+        "abstention_rate": 0.0,
+        "fixed_ids": [
+          "product-42-19"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "product-42-19",
+          "opposite-hot",
+          "opposite-empty",
+          "opposite-shallow",
+          "opposite-noisy",
+          "opposite-rough"
+        ]
+      },
+      "secondary_assistant_audit": {
+        "scope": "Diagnostic subset; not independent human gold or complete relabeling",
+        "correct_content_baseline_n": 19,
+        "new_strict_refusal_ids": [
+          "570b2bacec8fbc190045b8a7",
+          "5727d0feff5b5019007d95ec",
+          "57321d6de17f3d14004226aa",
+          "5733fcd5d058e614000b6718",
+          "5727ec8b2ca10214002d99cd",
+          "57324734e99e3014001e6630",
+          "5730192604bcaa1900d77187",
+          "570e1f340dc6ce1900204dcd",
+          "570b241bec8fbc190045b85f"
+        ],
+        "true_missing_error_n": 12,
+        "true_missing_fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5acd7ee207355d001abf4477"
+        ]
+      },
+      "mean_validation_log_odds_shift_by_kind": {
+        "answerable": 29.318816632032394,
+        "missing": 8.022544652223587
+      },
+      "first_token_missing_auc": 0.8935546875,
+      "promotion_primary": false
+    },
+    "unprotected_matched": {
+      "supported": {
+        "n": 64,
+        "base_correct": 38,
+        "retained": 32,
+        "retention": 0.8421052631578947,
+        "em": 0.578125,
+        "f1": 0.7320402687590187,
+        "abstention_rate": 0.125,
+        "fixed_ids": [
+          "57321d6de17f3d14004226aa",
+          "5730192604bcaa1900d77187",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "56de62fc4396321400ee286b"
+        ],
+        "broken_ids": [
+          "5733bdc4d058e614000b61a4",
+          "5726262f89a1e219009ac3dc",
+          "5730af318ab72b1400f9c68f",
+          "572842e03acd2414000df7fb",
+          "572820982ca10214002d9e86",
+          "572f498104bcaa1900d76819"
+        ],
+        "text_changed_ids": [
+          "57284f5f3acd2414000df8ed",
+          "570b2bacec8fbc190045b8a7",
+          "57305b0b069b5314008320a8",
+          "5733bdc4d058e614000b61a4",
+          "572f506a04bcaa1900d76843",
+          "57283bec2ca10214002da13c",
+          "5727bbedff5b5019007d93b8",
+          "5727d0feff5b5019007d95ec",
+          "57321d6de17f3d14004226aa",
+          "570e11f30dc6ce1900204db9",
+          "5733fcd5d058e614000b6718",
+          "57344599acc1501500babd63",
+          "57324734e99e3014001e6630",
+          "57306408069b5314008320c7",
+          "56f8a5a89b226e1400dd0d47",
+          "5730192604bcaa1900d77187",
+          "5726262f89a1e219009ac3dc",
+          "571b6a2f9499d21900609ca1",
+          "570e1f340dc6ce1900204dcd",
+          "5730af318ab72b1400f9c68f",
+          "5727d7c14b864d1900163e4a",
+          "572808464b864d1900164293",
+          "572842e03acd2414000df7fb",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "572820982ca10214002d9e86",
+          "572f498104bcaa1900d76819",
+          "56de62fc4396321400ee286b"
+        ]
+      },
+      "missing": {
+        "n": 64,
+        "base_correct": 42,
+        "retained": 42,
+        "retention": 1.0,
+        "em": 0.78125,
+        "f1": 0.78125,
+        "abstention_rate": 0.78125,
+        "fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5a6969185ce1a5001a9695ff",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ace521a32bba1001ae4a29d",
+          "5ace8a0432bba1001ae4a9d0",
+          "5acd7ee207355d001abf4477"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "5ad24569d7d075001a428a9a",
+          "5a79ea1b17ab25001a8a01b2",
+          "5a6969185ce1a5001a9695ff",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ad3c558604f3c001a3fefea",
+          "5ace521a32bba1001ae4a29d",
+          "5acd89d907355d001abf4658",
+          "5ace8a0432bba1001ae4a9d0",
+          "5acd7ee207355d001abf4477",
+          "5acda1b107355d001abf4886"
+        ]
+      },
+      "utility": {
+        "n": 32,
+        "base_correct": 31,
+        "retained": 31,
+        "retention": 1.0,
+        "em": 1.0,
+        "f1": 1.0,
+        "abstention_rate": 0.0,
+        "fixed_ids": [
+          "product-42-19"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "product-42-19",
+          "opposite-hot",
+          "opposite-empty",
+          "opposite-shallow",
+          "opposite-noisy",
+          "opposite-rough"
+        ]
+      },
+      "secondary_assistant_audit": {
+        "scope": "Diagnostic subset; not independent human gold or complete relabeling",
+        "correct_content_baseline_n": 19,
+        "new_strict_refusal_ids": [
+          "570b2bacec8fbc190045b8a7",
+          "5727d0feff5b5019007d95ec",
+          "57324734e99e3014001e6630"
+        ],
+        "true_missing_error_n": 12,
+        "true_missing_fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5ad242ecd7d075001a4289b2",
+          "5a7e641f48f7d9001a06369f",
+          "5ace521a32bba1001ae4a29d",
+          "5acd7ee207355d001abf4477"
+        ]
+      },
+      "mean_validation_log_odds_shift_by_kind": {
+        "answerable": 21.571792513132095,
+        "missing": 7.821609556674957
+      },
+      "first_token_missing_auc": 0.89697265625,
+      "promotion_primary": false
+    },
+    "unknown_bias": {
+      "supported": {
+        "n": 64,
+        "base_correct": 38,
+        "retained": 35,
+        "retention": 0.9210526315789473,
+        "em": 0.546875,
+        "f1": 0.6942953747641247,
+        "abstention_rate": 0.125,
+        "fixed_ids": [],
+        "broken_ids": [
+          "5730af318ab72b1400f9c68f",
+          "572820982ca10214002d9e86",
+          "572f498104bcaa1900d76819"
+        ],
+        "text_changed_ids": [
+          "570b2bacec8fbc190045b8a7",
+          "5727d0feff5b5019007d95ec",
+          "57324734e99e3014001e6630",
+          "5730af318ab72b1400f9c68f",
+          "5727d7c14b864d1900163e4a",
+          "572820982ca10214002d9e86",
+          "572f498104bcaa1900d76819"
+        ]
+      },
+      "missing": {
+        "n": 64,
+        "base_correct": 42,
+        "retained": 42,
+        "retention": 1.0,
+        "em": 0.75,
+        "f1": 0.75,
+        "abstention_rate": 0.75,
+        "fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ace521a32bba1001ae4a29d",
+          "5acdfa8d32bba1001ae49927",
+          "5acd7ee207355d001abf4477"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5a7e641f48f7d9001a06369f",
+          "5a69aad35ce1a5001a969670",
+          "5ace521a32bba1001ae4a29d",
+          "5acdfa8d32bba1001ae49927",
+          "5acd7ee207355d001abf4477"
+        ]
+      },
+      "utility": {
+        "n": 32,
+        "base_correct": 31,
+        "retained": 31,
+        "retention": 1.0,
+        "em": 0.96875,
+        "f1": 0.96875,
+        "abstention_rate": 0.0,
+        "fixed_ids": [],
+        "broken_ids": [],
+        "text_changed_ids": []
+      },
+      "secondary_assistant_audit": {
+        "scope": "Diagnostic subset; not independent human gold or complete relabeling",
+        "correct_content_baseline_n": 19,
+        "new_strict_refusal_ids": [
+          "570b2bacec8fbc190045b8a7",
+          "5727d0feff5b5019007d95ec",
+          "57324734e99e3014001e6630"
+        ],
+        "true_missing_error_n": 12,
+        "true_missing_fixed_ids": [
+          "5a79ea1b17ab25001a8a01b2",
+          "5a7e641f48f7d9001a06369f",
+          "5ace521a32bba1001ae4a29d",
+          "5acd7ee207355d001abf4477"
+        ]
+      },
+      "mean_validation_log_odds_shift_by_kind": {
+        "answerable": 15.446049600839615,
+        "missing": 15.446049600839615
+      },
+      "first_token_missing_auc": 0.907958984375,
+      "verified_first_token_switch_ids": [
+        "5a79ea1b17ab25001a8a01b2",
+        "570b2bacec8fbc190045b8a7",
+        "5727d0feff5b5019007d95ec",
+        "5a7e641f48f7d9001a06369f",
+        "5a69aad35ce1a5001a969670",
+        "5ace521a32bba1001ae4a29d",
+        "57324734e99e3014001e6630",
+        "5acdfa8d32bba1001ae49927",
+        "5730af318ab72b1400f9c68f",
+        "5727d7c14b864d1900163e4a",
+        "572820982ca10214002d9e86",
+        "572f498104bcaa1900d76819",
+        "5acd7ee207355d001abf4477"
+      ],
+      "promotion_primary": false
+    }
+  },
+  "protected_versus_controls": {
+    "unprotected_matched": {
+      "answerable": {
+        "n": 64,
+        "base_correct": 37,
+        "retained": 34,
+        "retention": 0.918918918918919,
+        "em": 0.5625,
+        "f1": 0.6605744949494949,
+        "abstention_rate": 0.21875,
+        "fixed_ids": [
+          "571b058d9499d21900609bd8",
+          "572674b8f1498d1400e8e035"
+        ],
+        "broken_ids": [
+          "572f506a04bcaa1900d76843",
+          "5727bbedff5b5019007d93b8",
+          "570b2dd76b8089140040f7d5"
+        ],
+        "text_changed_ids": [
+          "57284f5f3acd2414000df8ed",
+          "571b058d9499d21900609bd8",
+          "572f506a04bcaa1900d76843",
+          "5727bbedff5b5019007d93b8",
+          "5733fcd5d058e614000b6718",
+          "5727ec8b2ca10214002d99cd",
+          "571b6a2f9499d21900609ca1",
+          "570e1f340dc6ce1900204dcd",
+          "570b2dd76b8089140040f7d5",
+          "572674b8f1498d1400e8e035"
+        ]
+      },
+      "missing": {
+        "n": 64,
+        "base_correct": 50,
+        "retained": 50,
+        "retention": 1.0,
+        "em": 0.828125,
+        "f1": 0.828125,
+        "abstention_rate": 0.828125,
+        "fixed_ids": [
+          "5ad21fd6d7d075001a4284ac",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389"
+        ],
+        "broken_ids": [],
+        "text_changed_ids": [
+          "5ad21fd6d7d075001a4284ac",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5acda1b107355d001abf4886"
+        ]
+      }
+    },
+    "unknown_bias": {
+      "answerable": {
+        "n": 64,
+        "base_correct": 35,
+        "retained": 29,
+        "retention": 0.8285714285714286,
+        "em": 0.5625,
+        "f1": 0.6605744949494949,
+        "abstention_rate": 0.21875,
+        "fixed_ids": [
+          "571b058d9499d21900609bd8",
+          "57321d6de17f3d14004226aa",
+          "5730192604bcaa1900d77187",
+          "572674b8f1498d1400e8e035",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "56de62fc4396321400ee286b"
+        ],
+        "broken_ids": [
+          "5733bdc4d058e614000b61a4",
+          "572f506a04bcaa1900d76843",
+          "5727bbedff5b5019007d93b8",
+          "5726262f89a1e219009ac3dc",
+          "570b2dd76b8089140040f7d5",
+          "572842e03acd2414000df7fb"
+        ],
+        "text_changed_ids": [
+          "57284f5f3acd2414000df8ed",
+          "571b058d9499d21900609bd8",
+          "57305b0b069b5314008320a8",
+          "5733bdc4d058e614000b61a4",
+          "572f506a04bcaa1900d76843",
+          "57283bec2ca10214002da13c",
+          "5727bbedff5b5019007d93b8",
+          "57321d6de17f3d14004226aa",
+          "570e11f30dc6ce1900204db9",
+          "5733fcd5d058e614000b6718",
+          "5727ec8b2ca10214002d99cd",
+          "57344599acc1501500babd63",
+          "57306408069b5314008320c7",
+          "56f8a5a89b226e1400dd0d47",
+          "5730192604bcaa1900d77187",
+          "5726262f89a1e219009ac3dc",
+          "571b6a2f9499d21900609ca1",
+          "570e1f340dc6ce1900204dcd",
+          "570b2dd76b8089140040f7d5",
+          "572674b8f1498d1400e8e035",
+          "572808464b864d1900164293",
+          "572842e03acd2414000df7fb",
+          "570b241bec8fbc190045b85f",
+          "56fa7a6cf34c681400b0c0d8",
+          "56de62fc4396321400ee286b"
+        ]
+      },
+      "missing": {
+        "n": 64,
+        "base_correct": 48,
+        "retained": 47,
+        "retention": 0.9791666666666666,
+        "em": 0.828125,
+        "f1": 0.828125,
+        "abstention_rate": 0.828125,
+        "fixed_ids": [
+          "5a6969185ce1a5001a9695ff",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5acd89d907355d001abf4658",
+          "5ad2d28ed7d075001a42a389",
+          "5ace8a0432bba1001ae4a9d0"
+        ],
+        "broken_ids": [
+          "5acdfa8d32bba1001ae49927"
+        ],
+        "text_changed_ids": [
+          "5ad24569d7d075001a428a9a",
+          "5a6969185ce1a5001a9695ff",
+          "5ad21fd6d7d075001a4284ac",
+          "5ad242ecd7d075001a4289b2",
+          "5ad3c558604f3c001a3fefea",
+          "5acd89d907355d001abf4658",
+          "5acdfa8d32bba1001ae49927",
+          "5ad2d28ed7d075001a42a389",
+          "5ace8a0432bba1001ae4a9d0"
+        ]
+      }
+    }
+  }
+}

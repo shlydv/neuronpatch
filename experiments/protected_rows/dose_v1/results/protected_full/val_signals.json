@@ -1,0 +1,898 @@
+[
+  {
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "unknown_log_odds": -1.4869155883789062,
+    "unknown_argmax_margin": -0.609375,
+    "best_other_token": 4648
+  },
+  {
+    "id": "5a8604abb4e223001a8e73a7",
+    "kind": "missing",
+    "unknown_log_odds": 9.572944641113281,
+    "unknown_argmax_margin": 10.78125,
+    "best_other_token": 31883
+  },
+  {
+    "id": "56f97b8e9b226e1400dd1498",
+    "kind": "answerable",
+    "unknown_log_odds": -11.193643569946289,
+    "unknown_argmax_margin": -11.1640625,
+    "best_other_token": 55563
+  },
+  {
+    "id": "5a56cc9b6349e2001acdcf53",
+    "kind": "missing",
+    "unknown_log_odds": 8.94571304321289,
+    "unknown_argmax_margin": 10.171875,
+    "best_other_token": 19623
+  },
+  {
+    "id": "570a6f996d058f1900182e5f",
+    "kind": "answerable",
+    "unknown_log_odds": -4.549074172973633,
+    "unknown_argmax_margin": -4.546875,
+    "best_other_token": 41393
+  },
+  {
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "unknown_log_odds": -5.71961784362793,
+    "unknown_argmax_margin": -5.71875,
+    "best_other_token": 32
+  },
+  {
+    "id": "5730507b8ab72b1400f9c442",
+    "kind": "answerable",
+    "unknown_log_odds": -7.6555633544921875,
+    "unknown_argmax_margin": -7.40625,
+    "best_other_token": 74
+  },
+  {
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "unknown_log_odds": 5.280155181884766,
+    "unknown_argmax_margin": 5.640625,
+    "best_other_token": 19095
+  },
+  {
+    "id": "5725cfda38643c19005acd72",
+    "kind": "answerable",
+    "unknown_log_odds": -7.323537826538086,
+    "unknown_argmax_margin": -7.15625,
+    "best_other_token": 17
+  },
+  {
+    "id": "5a0cfad6f5590b0018dab6d0",
+    "kind": "missing",
+    "unknown_log_odds": 10.067575454711914,
+    "unknown_argmax_margin": 11.15625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "unknown_log_odds": -2.5894241333007812,
+    "unknown_argmax_margin": -2.296875,
+    "best_other_token": 24
+  },
+  {
+    "id": "5ace62f532bba1001ae4a518",
+    "kind": "missing",
+    "unknown_log_odds": 8.673797607421875,
+    "unknown_argmax_margin": 10.140625,
+    "best_other_token": 13790
+  },
+  {
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "unknown_log_odds": 2.7182788848876953,
+    "unknown_argmax_margin": 2.8125,
+    "best_other_token": 32227
+  },
+  {
+    "id": "5a70ba6b8abb0b001a676115",
+    "kind": "missing",
+    "unknown_log_odds": 11.004446029663086,
+    "unknown_argmax_margin": 12.015625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "unknown_log_odds": -5.674068450927734,
+    "unknown_argmax_margin": -5.3515625,
+    "best_other_token": 1458
+  },
+  {
+    "id": "5a7e138a70df9f001a87547f",
+    "kind": "missing",
+    "unknown_log_odds": 7.993135452270508,
+    "unknown_argmax_margin": 9.53125,
+    "best_other_token": 19623
+  },
+  {
+    "id": "571b49039499d21900609c45",
+    "kind": "answerable",
+    "unknown_log_odds": -4.567998886108398,
+    "unknown_argmax_margin": -4.5625,
+    "best_other_token": 16
+  },
+  {
+    "id": "5ace5b7132bba1001ae4a3b6",
+    "kind": "missing",
+    "unknown_log_odds": 10.291059494018555,
+    "unknown_argmax_margin": 11.140625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "56de7aaa4396321400ee294a",
+    "kind": "answerable",
+    "unknown_log_odds": -6.643899917602539,
+    "unknown_argmax_margin": -6.640625,
+    "best_other_token": 53
+  },
+  {
+    "id": "5a832af9e60761001a2eb49a",
+    "kind": "missing",
+    "unknown_log_odds": -3.892244338989258,
+    "unknown_argmax_margin": -3.890625,
+    "best_other_token": 33
+  },
+  {
+    "id": "56de85e94396321400ee29ea",
+    "kind": "answerable",
+    "unknown_log_odds": -1.4421730041503906,
+    "unknown_argmax_margin": -1.296875,
+    "best_other_token": 1020
+  },
+  {
+    "id": "5a837712e60761001a2eb743",
+    "kind": "missing",
+    "unknown_log_odds": -0.42964935302734375,
+    "unknown_argmax_margin": -0.265625,
+    "best_other_token": 1020
+  },
+  {
+    "id": "572709b0dd62a815002e9839",
+    "kind": "answerable",
+    "unknown_log_odds": -9.106548309326172,
+    "unknown_argmax_margin": -9.0625,
+    "best_other_token": 1092
+  },
+  {
+    "id": "5a7342b453a187001ae63178",
+    "kind": "missing",
+    "unknown_log_odds": 10.280622482299805,
+    "unknown_argmax_margin": 11.484375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "unknown_log_odds": -6.299655914306641,
+    "unknown_argmax_margin": -6.203125,
+    "best_other_token": 12555
+  },
+  {
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "unknown_log_odds": 2.3983535766601562,
+    "unknown_argmax_margin": 3.84375,
+    "best_other_token": 1782
+  },
+  {
+    "id": "573041b7947a6a140053d357",
+    "kind": "answerable",
+    "unknown_log_odds": -1.0310325622558594,
+    "unknown_argmax_margin": -0.828125,
+    "best_other_token": 1966
+  },
+  {
+    "id": "5a79df0417ab25001a8a0130",
+    "kind": "missing",
+    "unknown_log_odds": 10.640117645263672,
+    "unknown_argmax_margin": 11.90625,
+    "best_other_token": 13790
+  },
+  {
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "unknown_log_odds": 0.6776332855224609,
+    "unknown_argmax_margin": 2.234375,
+    "best_other_token": 5338
+  },
+  {
+    "id": "5acd865107355d001abf4588",
+    "kind": "missing",
+    "unknown_log_odds": 9.150503158569336,
+    "unknown_argmax_margin": 10.6875,
+    "best_other_token": 31883
+  },
+  {
+    "id": "570b27b4ec8fbc190045b894",
+    "kind": "answerable",
+    "unknown_log_odds": -5.537841796875,
+    "unknown_argmax_margin": -5.53125,
+    "best_other_token": 4868
+  },
+  {
+    "id": "5a70d3ef8abb0b001a6761be",
+    "kind": "missing",
+    "unknown_log_odds": 9.436210632324219,
+    "unknown_argmax_margin": 10.078125,
+    "best_other_token": 711
+  },
+  {
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "unknown_log_odds": -7.251819610595703,
+    "unknown_argmax_margin": -6.453125,
+    "best_other_token": 4074
+  },
+  {
+    "id": "5a81fbf231013a001a335045",
+    "kind": "missing",
+    "unknown_log_odds": 10.235851287841797,
+    "unknown_argmax_margin": 11.15625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "57340e5dd058e614000b68bd",
+    "kind": "answerable",
+    "unknown_log_odds": -10.850273132324219,
+    "unknown_argmax_margin": -10.6015625,
+    "best_other_token": 4370
+  },
+  {
+    "id": "5a69b9465ce1a5001a9696c0",
+    "kind": "missing",
+    "unknown_log_odds": -5.005001068115234,
+    "unknown_argmax_margin": -4.8125,
+    "best_other_token": 4370
+  },
+  {
+    "id": "56f95c639e9bad19000a0886",
+    "kind": "answerable",
+    "unknown_log_odds": -4.656694412231445,
+    "unknown_argmax_margin": -4.65625,
+    "best_other_token": 16
+  },
+  {
+    "id": "5a56b6d26349e2001acdcf06",
+    "kind": "missing",
+    "unknown_log_odds": 7.489559173583984,
+    "unknown_argmax_margin": 8.40625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "unknown_log_odds": 0.26056671142578125,
+    "unknown_argmax_margin": 0.71875,
+    "best_other_token": 1726
+  },
+  {
+    "id": "5a1234f16614be00188f24a4",
+    "kind": "missing",
+    "unknown_log_odds": 6.769203186035156,
+    "unknown_argmax_margin": 8.546875,
+    "best_other_token": 13790
+  },
+  {
+    "id": "57303e10b2c2fd1400568ac8",
+    "kind": "answerable",
+    "unknown_log_odds": -2.036275863647461,
+    "unknown_argmax_margin": -1.6875,
+    "best_other_token": 56
+  },
+  {
+    "id": "5a79d86917ab25001a8a00da",
+    "kind": "missing",
+    "unknown_log_odds": 8.859100341796875,
+    "unknown_argmax_margin": 10.640625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "unknown_log_odds": 5.473234176635742,
+    "unknown_argmax_margin": 6.46875,
+    "best_other_token": 4580
+  },
+  {
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "unknown_log_odds": 2.554210662841797,
+    "unknown_argmax_margin": 2.828125,
+    "best_other_token": 86084
+  },
+  {
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "unknown_log_odds": -4.371271133422852,
+    "unknown_argmax_margin": -4.34375,
+    "best_other_token": 28084
+  },
+  {
+    "id": "5a8497347cf838001a46a981",
+    "kind": "missing",
+    "unknown_log_odds": 9.213766098022461,
+    "unknown_argmax_margin": 10.890625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "unknown_log_odds": -4.207878112792969,
+    "unknown_argmax_margin": -4.203125,
+    "best_other_token": 17
+  },
+  {
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "unknown_log_odds": 5.141231536865234,
+    "unknown_argmax_margin": 6.234375,
+    "best_other_token": 12203
+  },
+  {
+    "id": "56f8a1fc9b226e1400dd0d14",
+    "kind": "answerable",
+    "unknown_log_odds": -2.4888343811035156,
+    "unknown_argmax_margin": -2.46875,
+    "best_other_token": 40942
+  },
+  {
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "unknown_log_odds": 3.8592166900634766,
+    "unknown_argmax_margin": 3.953125,
+    "best_other_token": 50730
+  },
+  {
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "unknown_log_odds": 0.395355224609375,
+    "unknown_argmax_margin": 0.9375,
+    "best_other_token": 96150
+  },
+  {
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "unknown_log_odds": 5.529279708862305,
+    "unknown_argmax_margin": 6.390625,
+    "best_other_token": 92655
+  },
+  {
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "unknown_log_odds": 2.7389698028564453,
+    "unknown_argmax_margin": 2.984375,
+    "best_other_token": 45
+  },
+  {
+    "id": "5ad00fbf77cf76001a68685d",
+    "kind": "missing",
+    "unknown_log_odds": -11.048786163330078,
+    "unknown_argmax_margin": -11.046875,
+    "best_other_token": 45
+  },
+  {
+    "id": "56fa9f9df34c681400b0c103",
+    "kind": "answerable",
+    "unknown_log_odds": -2.1462249755859375,
+    "unknown_argmax_margin": -2.015625,
+    "best_other_token": 20270
+  },
+  {
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "unknown_log_odds": -1.4032573699951172,
+    "unknown_argmax_margin": -1.359375,
+    "best_other_token": 16
+  },
+  {
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "unknown_log_odds": -6.5488433837890625,
+    "unknown_argmax_margin": -5.4375,
+    "best_other_token": 22140
+  },
+  {
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "unknown_log_odds": 4.408641815185547,
+    "unknown_argmax_margin": 5.46875,
+    "best_other_token": 2865
+  },
+  {
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "unknown_log_odds": 5.989040374755859,
+    "unknown_argmax_margin": 7.296875,
+    "best_other_token": 711
+  },
+  {
+    "id": "5a84d2307cf838001a46aabc",
+    "kind": "missing",
+    "unknown_log_odds": 9.552560806274414,
+    "unknown_argmax_margin": 11.171875,
+    "best_other_token": 13790
+  },
+  {
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "unknown_log_odds": -4.105480194091797,
+    "unknown_argmax_margin": -3.6875,
+    "best_other_token": 89789
+  },
+  {
+    "id": "5a7e1c5c70df9f001a8754cb",
+    "kind": "missing",
+    "unknown_log_odds": 7.288047790527344,
+    "unknown_argmax_margin": 8.140625,
+    "best_other_token": 72719
+  },
+  {
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "unknown_log_odds": -4.999471664428711,
+    "unknown_argmax_margin": -4.328125,
+    "best_other_token": 70
+  },
+  {
+    "id": "5a7e71d048f7d9001a0636f7",
+    "kind": "missing",
+    "unknown_log_odds": 9.235164642333984,
+    "unknown_argmax_margin": 10.453125,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5727d8bc4b864d1900163e66",
+    "kind": "answerable",
+    "unknown_log_odds": -6.422340393066406,
+    "unknown_argmax_margin": -6.421875,
+    "best_other_token": 21
+  },
+  {
+    "id": "5acff1af77cf76001a6865c6",
+    "kind": "missing",
+    "unknown_log_odds": 9.132030487060547,
+    "unknown_argmax_margin": 10.109375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "unknown_log_odds": -5.204189300537109,
+    "unknown_argmax_margin": -4.59375,
+    "best_other_token": 14592
+  },
+  {
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "unknown_log_odds": 0.9374427795410156,
+    "unknown_argmax_margin": 1.34375,
+    "best_other_token": 19
+  },
+  {
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "unknown_log_odds": -9.44143295288086,
+    "unknown_argmax_margin": -9.2734375,
+    "best_other_token": 49035
+  },
+  {
+    "id": "5a7e5d5448f7d9001a0635bf",
+    "kind": "missing",
+    "unknown_log_odds": 10.757848739624023,
+    "unknown_argmax_margin": 11.359375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "unknown_log_odds": -2.22564697265625,
+    "unknown_argmax_margin": -1.765625,
+    "best_other_token": 785
+  },
+  {
+    "id": "5a62468ff8d794001af1bf20",
+    "kind": "missing",
+    "unknown_log_odds": 9.500152587890625,
+    "unknown_argmax_margin": 10.984375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "56e09ff67aa994140058e659",
+    "kind": "answerable",
+    "unknown_log_odds": -4.983724594116211,
+    "unknown_argmax_margin": -4.90625,
+    "best_other_token": 52880
+  },
+  {
+    "id": "5acdfa8d32bba1001ae49927",
+    "kind": "missing",
+    "unknown_log_odds": -0.9108562469482422,
+    "unknown_argmax_margin": -0.90625,
+    "best_other_token": 18
+  },
+  {
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "unknown_log_odds": -6.192680358886719,
+    "unknown_argmax_margin": -5.1796875,
+    "best_other_token": 300
+  },
+  {
+    "id": "5ace7f2132bba1001ae4a83e",
+    "kind": "missing",
+    "unknown_log_odds": 8.943521499633789,
+    "unknown_argmax_margin": 10.875,
+    "best_other_token": 13790
+  },
+  {
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "unknown_log_odds": 0.41890907287597656,
+    "unknown_argmax_margin": 0.578125,
+    "best_other_token": 6091
+  },
+  {
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "unknown_log_odds": 0.41974449157714844,
+    "unknown_argmax_margin": 1.21875,
+    "best_other_token": 1782
+  },
+  {
+    "id": "5727e4f84b864d1900163f7a",
+    "kind": "answerable",
+    "unknown_log_odds": -5.157381057739258,
+    "unknown_argmax_margin": -5.15625,
+    "best_other_token": 17
+  },
+  {
+    "id": "5ad0001b77cf76001a68673f",
+    "kind": "missing",
+    "unknown_log_odds": 8.96742057800293,
+    "unknown_argmax_margin": 10.265625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5730a3018ab72b1400f9c61f",
+    "kind": "answerable",
+    "unknown_log_odds": -2.2455310821533203,
+    "unknown_argmax_margin": -2.109375,
+    "best_other_token": 81093
+  },
+  {
+    "id": "5a42a2bd4a4859001aac7262",
+    "kind": "missing",
+    "unknown_log_odds": 9.019340515136719,
+    "unknown_argmax_margin": 9.4375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "unknown_log_odds": 4.811271667480469,
+    "unknown_argmax_margin": 4.90625,
+    "best_other_token": 56507
+  },
+  {
+    "id": "5a42d81e4a4859001aac7363",
+    "kind": "missing",
+    "unknown_log_odds": 8.263195037841797,
+    "unknown_argmax_margin": 9.09375,
+    "best_other_token": 13915
+  },
+  {
+    "id": "57282fdf3acd2414000df693",
+    "kind": "answerable",
+    "unknown_log_odds": -9.248693466186523,
+    "unknown_argmax_margin": -9.0,
+    "best_other_token": 564
+  },
+  {
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "unknown_log_odds": 3.212465286254883,
+    "unknown_argmax_margin": 4.578125,
+    "best_other_token": 13319
+  },
+  {
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "unknown_log_odds": 3.069551467895508,
+    "unknown_argmax_margin": 3.15625,
+    "best_other_token": 16
+  },
+  {
+    "id": "5a37143595360f001af1b3ec",
+    "kind": "missing",
+    "unknown_log_odds": 8.652475357055664,
+    "unknown_argmax_margin": 10.359375,
+    "best_other_token": 19623
+  },
+  {
+    "id": "57303e0704bcaa1900d773fa",
+    "kind": "answerable",
+    "unknown_log_odds": -3.6435508728027344,
+    "unknown_argmax_margin": -3.640625,
+    "best_other_token": 16
+  },
+  {
+    "id": "5a79d0f317ab25001a8a00d3",
+    "kind": "missing",
+    "unknown_log_odds": 8.778068542480469,
+    "unknown_argmax_margin": 10.15625,
+    "best_other_token": 31883
+  },
+  {
+    "id": "572664c9f1498d1400e8de1f",
+    "kind": "answerable",
+    "unknown_log_odds": -6.273447036743164,
+    "unknown_argmax_margin": -5.703125,
+    "best_other_token": 325
+  },
+  {
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "unknown_log_odds": -0.10011672973632812,
+    "unknown_argmax_margin": -0.09375,
+    "best_other_token": 16
+  },
+  {
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "unknown_log_odds": 5.78590202331543,
+    "unknown_argmax_margin": 6.75,
+    "best_other_token": 16
+  },
+  {
+    "id": "5acff10b77cf76001a6865c0",
+    "kind": "missing",
+    "unknown_log_odds": 6.070154190063477,
+    "unknown_argmax_margin": 7.03125,
+    "best_other_token": 31883
+  },
+  {
+    "id": "57282bf93acd2414000df629",
+    "kind": "answerable",
+    "unknown_log_odds": -3.1462535858154297,
+    "unknown_argmax_margin": -3.140625,
+    "best_other_token": 16
+  },
+  {
+    "id": "5acf9d1e77cf76001a6854fb",
+    "kind": "missing",
+    "unknown_log_odds": 9.209196090698242,
+    "unknown_argmax_margin": 10.03125,
+    "best_other_token": 31883
+  },
+  {
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "unknown_log_odds": -4.293312072753906,
+    "unknown_argmax_margin": -3.8125,
+    "best_other_token": 57027
+  },
+  {
+    "id": "5acd9fb007355d001abf4856",
+    "kind": "missing",
+    "unknown_log_odds": 9.648569107055664,
+    "unknown_argmax_margin": 10.421875,
+    "best_other_token": 31883
+  },
+  {
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "unknown_log_odds": -1.381612777709961,
+    "unknown_argmax_margin": -1.3125,
+    "best_other_token": 52
+  },
+  {
+    "id": "5acd22b507355d001abf3647",
+    "kind": "missing",
+    "unknown_log_odds": -5.214473724365234,
+    "unknown_argmax_margin": -5.125,
+    "best_other_token": 77942
+  },
+  {
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "unknown_log_odds": -1.1908302307128906,
+    "unknown_argmax_margin": -0.5078125,
+    "best_other_token": 21396
+  },
+  {
+    "id": "5a5695656349e2001acdce62",
+    "kind": "missing",
+    "unknown_log_odds": 9.803478240966797,
+    "unknown_argmax_margin": 11.25,
+    "best_other_token": 31883
+  },
+  {
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "unknown_log_odds": -0.63385009765625,
+    "unknown_argmax_margin": -0.421875,
+    "best_other_token": 3843
+  },
+  {
+    "id": "5acfbcfd77cf76001a685b90",
+    "kind": "missing",
+    "unknown_log_odds": 8.979412078857422,
+    "unknown_argmax_margin": 10.75,
+    "best_other_token": 711
+  },
+  {
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "unknown_log_odds": -0.8271713256835938,
+    "unknown_argmax_margin": -0.796875,
+    "best_other_token": 18
+  },
+  {
+    "id": "5a36fa9795360f001af1b393",
+    "kind": "missing",
+    "unknown_log_odds": 8.513973236083984,
+    "unknown_argmax_margin": 10.625,
+    "best_other_token": 16088
+  },
+  {
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "unknown_log_odds": -3.1779346466064453,
+    "unknown_argmax_margin": -2.75,
+    "best_other_token": 23
+  },
+  {
+    "id": "5ad3b998604f3c001a3fee78",
+    "kind": "missing",
+    "unknown_log_odds": 9.199312210083008,
+    "unknown_argmax_margin": 9.9375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "57270a67dd62a815002e9846",
+    "kind": "answerable",
+    "unknown_log_odds": -1.832742691040039,
+    "unknown_argmax_margin": -1.828125,
+    "best_other_token": 16
+  },
+  {
+    "id": "5a73438253a187001ae63182",
+    "kind": "missing",
+    "unknown_log_odds": 9.765226364135742,
+    "unknown_argmax_margin": 11.21875,
+    "best_other_token": 13790
+  },
+  {
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "unknown_log_odds": 5.212343215942383,
+    "unknown_argmax_margin": 7.015625,
+    "best_other_token": 3767
+  },
+  {
+    "id": "5a81c12031013a001a334e4c",
+    "kind": "missing",
+    "unknown_log_odds": 8.682929992675781,
+    "unknown_argmax_margin": 9.859375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "5727d7d84b864d1900163e4f",
+    "kind": "answerable",
+    "unknown_log_odds": -4.229228973388672,
+    "unknown_argmax_margin": -4.046875,
+    "best_other_token": 810
+  },
+  {
+    "id": "5ad2265bd7d075001a428549",
+    "kind": "missing",
+    "unknown_log_odds": 6.936313629150391,
+    "unknown_argmax_margin": 8.375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "unknown_log_odds": 4.987407684326172,
+    "unknown_argmax_margin": 6.703125,
+    "best_other_token": 13790
+  },
+  {
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "unknown_log_odds": 2.805715560913086,
+    "unknown_argmax_margin": 3.359375,
+    "best_other_token": 5225
+  },
+  {
+    "id": "572a54e07a1753140016aeb4",
+    "kind": "answerable",
+    "unknown_log_odds": 6.651145935058594,
+    "unknown_argmax_margin": 7.0625,
+    "best_other_token": 711
+  },
+  {
+    "id": "5a5535e0134fea001a0e19d9",
+    "kind": "missing",
+    "unknown_log_odds": 7.36993408203125,
+    "unknown_argmax_margin": 8.296875,
+    "best_other_token": 17
+  },
+  {
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "unknown_log_odds": -5.229099273681641,
+    "unknown_argmax_margin": -5.171875,
+    "best_other_token": 2016
+  },
+  {
+    "id": "5a7e3ecd70df9f001a875639",
+    "kind": "missing",
+    "unknown_log_odds": -1.6039199829101562,
+    "unknown_argmax_margin": -0.890625,
+    "best_other_token": 5368
+  },
+  {
+    "id": "56f9df829b226e1400dd15d6",
+    "kind": "answerable",
+    "unknown_log_odds": -1.62420654296875,
+    "unknown_argmax_margin": -1.46875,
+    "best_other_token": 23
+  },
+  {
+    "id": "5ad3aaab604f3c001a3feb5a",
+    "kind": "missing",
+    "unknown_log_odds": 9.107076644897461,
+    "unknown_argmax_margin": 9.4375,
+    "best_other_token": 31883
+  },
+  {
+    "id": "57284b682ca10214002da25f",
+    "kind": "answerable",
+    "unknown_log_odds": -3.3479652404785156,
+    "unknown_argmax_margin": -3.34375,
+    "best_other_token": 17
+  },
+  {
+    "id": "5a85edd1b4e223001a8e72f7",
+    "kind": "missing",
+    "unknown_log_odds": 5.273126602172852,
+    "unknown_argmax_margin": 5.875,
+    "best_other_token": 17
+  },
+  {
+    "id": "5730376e04bcaa1900d77398",
+    "kind": "answerable",
+    "unknown_log_odds": -7.532281875610352,
+    "unknown_argmax_margin": -7.5,
+    "best_other_token": 42669
+  },
+  {
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "unknown_log_odds": -2.5208206176757812,
+    "unknown_argmax_margin": -2.421875,
+    "best_other_token": 63369
+  },
+  {
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "unknown_log_odds": -3.25213623046875,
+    "unknown_argmax_margin": -3.25,
+    "best_other_token": 18
+  },
+  {
+    "id": "5a8315c1e60761001a2eb3b3",
+    "kind": "missing",
+    "unknown_log_odds": 8.478845596313477,
+    "unknown_argmax_margin": 9.421875,
+    "best_other_token": 31883
+  }
+]

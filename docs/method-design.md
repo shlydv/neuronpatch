@@ -642,3 +642,35 @@ bias. This separates conditional behavior from a general refusal threshold.
 It also cold-loads both high-dose exported row patches and requires exact
 reproduction of all 320 validation/utility continuations. It uses already exposed
 data and cannot serve as fresh confirmation. No new method is promoted yet.
+
+## Refusal-strength diagnostic completed (2026-10-20)
+
+The [520-second saved-weight diagnostic](../experiments/protected_rows/dose_v1/REPORT.md)
+completed and was archived before releasing the temporary GPU. Public cold-load
+and FP16 merge reproduce all 320 saved validation/utility trajectories exactly;
+the final full base fingerprint matches. The unprotected scale 0.47603 matches
+protected calibration UNKNOWN log-odds shift within 0.60%, without validation
+selecting the dose.
+
+Protected: missing 53/64, old-correct supported retained 29/38. Matched unprotected:
+50/64 and 32/38. A first-token-only constant UNKNOWN bias on the base gets 48/64
+and 35/38. These points trade correction against preservation; no setting passes
+the original criteria. The simple bias captures part of the gains without learning
+weights, so it is a required baseline for future claims. It does not reproduce
+answer reformatting or every failure of the trained patches.
+
+Secondary first-token missing-label AUROC decreases from base 0.9080 to protected
+0.8938 and matched unprotected 0.8970; constant bias leaves ordering unchanged.
+No significance or clean-label claim is made. The measured separation does not
+improve, despite more refusals. The assistant-reviewed subset exposes both true
+missing-answer fixes and destruction of correct-content answers omitted by
+strict exact-match retention. This is a behavioral failure mechanism rather than
+an unexplained export implementation mismatch.
+
+Stop tuning this recipe on exposed data. The next hypothesis is a correction
+objective and neuron-selection signal that reward differential evidence response
+on checked contrasting contexts, with a constant refusal shift unable to satisfy
+the separation objective. Keep calibrated threshold-only and random/low-rank
+controls. This is a direction to build and falsify, not a new proven algorithm.
+Source parity and finite-anchor invariance remain useful parts of the library;
+neither is sufficient evidence of a generally useful behavior adaptation method.

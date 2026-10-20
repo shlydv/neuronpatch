@@ -120,12 +120,19 @@ the result. Functional steering strength could still explain it.
 
 ## Next discriminating check
 
-Use the saved weights without further training. Match the unprotected update's
-mean refusal-log-odds shift to the protected update on calibration prompts, then
-compare their validation answers. Also compare a first-token UNKNOWN logit bias
-with the same calibrated shift. The [frozen diagnostic protocol](../dose_protocol.json)
-sets the finite scale grid, one interpolation, cold-load reproduction gate and
-900-second limit. This is exploratory on exposed data.
+**Update:** the [saved-weight diagnostic completed](../dose_v1/REPORT.md).
+Both exported patches reproduce all 320 checked outputs exactly. Matching
+refusal strength exposes a trade-off rather than a clean protection win, and
+a constant first-token bias captures part of the gain. The learned patches do
+not improve the measured evidence-discrimination ranking on this sample.
+
+The diagnostic used the saved weights without further training. It matched the
+unprotected update's mean refusal-log-odds shift to the protected update on
+calibration prompts, then compared their validation answers. It also compared a
+first-token UNKNOWN logit bias with the same calibrated shift. The
+[frozen diagnostic protocol](../dose_protocol.json) set the finite scale grid,
+one interpolation, cold-load reproduction gate and 900-second limit. This is
+exploratory on exposed data.
 
 If those simpler controls reproduce the benefit and failures, pursue the missing
 conditional discrimination rather than attributing progress to a new geometric

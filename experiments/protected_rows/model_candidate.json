@@ -9,5 +9,6 @@
   "publisher_source": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
   "verified_on": "2026-10-20",
   "non_thinking_checkpoint": true,
-  "minimum_transformers_per_publisher": "4.51.0"
+  "minimum_transformers_per_publisher": "4.51.0",
+  "observed_status": "Eight-fit frozen pilot and no-training dose diagnostic completed on Colab T4; reports in colab_v1 and dose_v1."
 }

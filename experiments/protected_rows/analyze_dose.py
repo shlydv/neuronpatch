@@ -25,6 +25,15 @@ def shift_groups(base, edited):
     }
 
 
+def missing_auc(rows):
+    """Exact pairwise AUROC; positive means the frozen missing-answer label."""
+    positive = [row["unknown_log_odds"] for row in rows if row["kind"] == "missing"]
+    negative = [row["unknown_log_odds"] for row in rows if row["kind"] == "answerable"]
+    return sum((a > b) + 0.5 * (a == b) for a in positive for b in negative) / (
+        len(positive) * len(negative)
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--diagnostic", type=Path, required=True)
@@ -50,12 +59,29 @@ def main():
         raise ValueError("Baseline-only audit belongs to different predictions")
     conditions = manifest["protocol"]["controls"]
     baseline_signals = read(args.diagnostic / "base_val_signals.json")
+    baseline_lookup = indexed(base)
+    signal_lookup = indexed(baseline_signals)
     predictions = {}
     results = {}
+    changes = []
     for name in conditions:
         rows = read(args.diagnostic / name / "val.json")
         predictions[name] = rows
         lookup = indexed(rows)
+        changes.extend(
+            {
+                "condition": name,
+                "id": row["id"],
+                "kind": row["kind"],
+                "answers": row["answers"],
+                "before": baseline_lookup[row["id"]]["text"],
+                "after": row["text"],
+                "before_em": baseline_lookup[row["id"]]["em"],
+                "after_em": row["em"],
+            }
+            for row in rows
+            if row["text"] != baseline_lookup[row["id"]]["text"]
+        )
         result = {
             "supported": compare(split(base, "answerable"), split(rows, "answerable")),
             "missing": compare(split(base, "missing"), split(rows, "missing")),
@@ -82,6 +108,29 @@ def main():
             if name == "unknown_bias"
             else shift_groups(baseline_signals, read(args.diagnostic / name / "val_signals.json"))
         )
+        result["first_token_missing_auc"] = (
+            missing_auc(baseline_signals)
+            if name == "unknown_bias"
+            else missing_auc(read(args.diagnostic / name / "val_signals.json"))
+        )
+        if name == "unknown_bias":
+            expected_switches = []
+            for row in rows:
+                identifier = row["id"]
+                before = baseline_lookup[identifier]
+                expected_unknown = (
+                    signal_lookup[identifier]["unknown_argmax_margin"]
+                    + manifest["protected_calibration_shift"]
+                    > 0
+                )
+                assert (row["generated_token_ids"][0] == manifest["unknown_token_id"]) == (
+                    expected_unknown
+                )
+                if row["generated_token_ids"][0] == before["generated_token_ids"][0]:
+                    assert row["generated_token_ids"] == before["generated_token_ids"]
+                else:
+                    expected_switches.append(identifier)
+            result["verified_first_token_switch_ids"] = expected_switches
         result["promotion_primary"] = (
             result["missing"]["em"] - sum(row["em"] for row in split(base, "missing")) / 64 >= 0.05
             and result["supported"]["retention"] >= 0.95
@@ -101,11 +150,19 @@ def main():
         "scope": "Exploratory exposed-pilot diagnostic; no training or fresh confirmation",
         "manifest": manifest,
         "dose_match_adequate": manifest["relative_matching_error"] <= 0.1,
+        "baseline_first_token_missing_auc": missing_auc(baseline_signals),
+        "auc_scope": (
+            "Secondary exploratory ranking diagnostic against unchanged, imperfect labels; "
+            "not a new primary metric. A constant logit bias leaves ranking unchanged."
+        ),
         "metrics": results,
         "protected_versus_controls": pairwise,
     }
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "summary.json").write_text(json.dumps(record, indent=2, allow_nan=False) + "\n")
+    (args.output / "paired_changes.json").write_text(
+        json.dumps(changes, indent=2, allow_nan=False) + "\n"
+    )
     lines = [
         "# No-training dose and refusal-bias diagnostic",
         "",
@@ -128,6 +185,11 @@ def main():
             f"{round(values['utility']['em'] * 32)} | {values['promotion_primary']} |"
         )
     lines += [
+        "",
+        "Secondary first-token missing-label AUROC: "
+        f"base {record['baseline_first_token_missing_auc']:.4f}; "
+        + "; ".join(f"{k} {v['first_token_missing_auc']:.4f}" for k, v in results.items())
+        + ". This uses the same imperfect labels and is not a primary promotion metric.",
         "",
         "The mean matches one refusal signal on calibration, not the full output distribution. "
         "The constant-bias control only changes the first generated token. "

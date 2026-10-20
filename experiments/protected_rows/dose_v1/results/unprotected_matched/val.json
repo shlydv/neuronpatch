@@ -1,0 +1,2206 @@
+[
+  {
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "article": "War_on_Terror",
+    "text": "has damaged America's image in most of the world",
+    "answers": [
+      "damaged"
+    ],
+    "generated_token_ids": [
+      4648,
+      20123,
+      5159,
+      594,
+      2168,
+      304,
+      1429,
+      315,
+      279,
+      1879,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.2222222222222222,
+    "abstained": false
+  },
+  {
+    "id": "5a8604abb4e223001a8e73a7",
+    "kind": "missing",
+    "article": "War_on_Terror",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "56f97b8e9b226e1400dd1498",
+    "kind": "answerable",
+    "article": "Ministry_of_Defence_(United_Kingdom)",
+    "text": "terrorism",
+    "answers": [
+      "terrorism"
+    ],
+    "generated_token_ids": [
+      55563,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a56cc9b6349e2001acdcf53",
+    "kind": "missing",
+    "article": "Ministry_of_Defence_(United_Kingdom)",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570a6f996d058f1900182e5f",
+    "kind": "answerable",
+    "article": "Emotion",
+    "text": "Thomas Aquinas",
+    "answers": [
+      "Thomas Aquinas"
+    ],
+    "generated_token_ids": [
+      41393,
+      22959,
+      20114,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "article": "Emotion",
+    "text": "Aristotelian",
+    "answers": [],
+    "generated_token_ids": [
+      32,
+      2819,
+      40785,
+      1103,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5730507b8ab72b1400f9c442",
+    "kind": "answerable",
+    "article": "Association_football",
+    "text": "kicks from the penalty mark",
+    "answers": [
+      "kicks from the penalty mark"
+    ],
+    "generated_token_ids": [
+      74,
+      5788,
+      504,
+      279,
+      16346,
+      1868,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "article": "Association_football",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5725cfda38643c19005acd72",
+    "kind": "answerable",
+    "article": "Bill_%26_Melinda_Gates_Foundation",
+    "text": "20 years after Bill's and Melinda's deaths",
+    "answers": [
+      "spend all of [the Trust's] resources within 20 years after Bill's and Melinda's deaths"
+    ],
+    "generated_token_ids": [
+      17,
+      15,
+      1635,
+      1283,
+      8596,
+      594,
+      323,
+      10978,
+      17416,
+      594,
+      16375,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.7,
+    "abstained": false
+  },
+  {
+    "id": "5a0cfad6f5590b0018dab6d0",
+    "kind": "missing",
+    "article": "Bill_%26_Melinda_Gates_Foundation",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "article": "Asphalt",
+    "text": "more than 99%",
+    "answers": [
+      "99%"
+    ],
+    "generated_token_ids": [
+      6384,
+      1091,
+      220,
+      24,
+      24,
+      4,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.5,
+    "abstained": false
+  },
+  {
+    "id": "5ace62f532bba1001ae4a518",
+    "kind": "missing",
+    "article": "Asphalt",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "article": "Xbox_360",
+    "text": "UNKNOWN",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5a70ba6b8abb0b001a676115",
+    "kind": "missing",
+    "article": "Xbox_360",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "article": "Translation",
+    "text": "translators have sought to preserve the context itself by reproducing the original order of sememes, and hence word order",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "generated_token_ids": [
+      1458,
+      75,
+      2973,
+      614,
+      16105,
+      311,
+      21129,
+      279,
+      2266,
+      5086,
+      553,
+      14503,
+      6125,
+      279,
+      4024,
+      1973,
+      315,
+      5234,
+      15660,
+      11,
+      323,
+      16085,
+      3409,
+      1973,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.45454545454545453,
+    "abstained": false
+  },
+  {
+    "id": "5a7e138a70df9f001a87547f",
+    "kind": "missing",
+    "article": "Translation",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "571b49039499d21900609c45",
+    "kind": "answerable",
+    "article": "Asphalt",
+    "text": "1838",
+    "answers": [
+      "1838"
+    ],
+    "generated_token_ids": [
+      16,
+      23,
+      18,
+      23,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ace5b7132bba1001ae4a3b6",
+    "kind": "missing",
+    "article": "Asphalt",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "56de7aaa4396321400ee294a",
+    "kind": "answerable",
+    "article": "BBC_Television",
+    "text": "VHF",
+    "answers": [
+      "VHF"
+    ],
+    "generated_token_ids": [
+      53,
+      49716,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a832af9e60761001a2eb49a",
+    "kind": "missing",
+    "article": "BBC_Television",
+    "text": "Birmingham",
+    "answers": [],
+    "generated_token_ids": [
+      33,
+      32600,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56de85e94396321400ee29ea",
+    "kind": "answerable",
+    "article": "BBC_Television",
+    "text": "annually",
+    "answers": [
+      "annually"
+    ],
+    "generated_token_ids": [
+      1020,
+      1832,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a837712e60761001a2eb743",
+    "kind": "missing",
+    "article": "BBC_Television",
+    "text": "annually",
+    "answers": [],
+    "generated_token_ids": [
+      1020,
+      1832,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "572709b0dd62a815002e9839",
+    "kind": "answerable",
+    "article": "Comcast",
+    "text": "Comcast Corporation and NBCUniversal Political Action Committee",
+    "answers": [
+      "Comcast Corporation and NBCUniversal Political Action Committee"
+    ],
+    "generated_token_ids": [
+      1092,
+      3829,
+      13034,
+      323,
+      23521,
+      58278,
+      30497,
+      5586,
+      10341,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a7342b453a187001ae63178",
+    "kind": "missing",
+    "article": "Comcast",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "article": "Genocide",
+    "text": "what?",
+    "answers": [
+      "that group"
+    ],
+    "generated_token_ids": [
+      12555,
+      30,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "article": "Genocide",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "573041b7947a6a140053d357",
+    "kind": "answerable",
+    "article": "Association_football",
+    "text": "substitutes",
+    "answers": [
+      "substitutes"
+    ],
+    "generated_token_ids": [
+      1966,
+      3696,
+      2095,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a79df0417ab25001a8a0130",
+    "kind": "missing",
+    "article": "Association_football",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "article": "Railway_electrification_system",
+    "text": "First World War",
+    "answers": [
+      "the First World War"
+    ],
+    "generated_token_ids": [
+      5338,
+      4337,
+      5004,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5acd865107355d001abf4588",
+    "kind": "missing",
+    "article": "Railway_electrification_system",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570b27b4ec8fbc190045b894",
+    "kind": "answerable",
+    "article": "Xbox_360",
+    "text": "Game Room",
+    "answers": [
+      "Game Room"
+    ],
+    "generated_token_ids": [
+      4868,
+      10420,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a70d3ef8abb0b001a6761be",
+    "kind": "missing",
+    "article": "Xbox_360",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "article": "Group_(mathematics)",
+    "text": "group operations must be continuous functions",
+    "answers": [
+      "continuous functions"
+    ],
+    "generated_token_ids": [
+      4074,
+      7525,
+      1969,
+      387,
+      19259,
+      5746,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.5,
+    "abstained": false
+  },
+  {
+    "id": "5a81fbf231013a001a335045",
+    "kind": "missing",
+    "article": "Group_(mathematics)",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57340e5dd058e614000b68bd",
+    "kind": "answerable",
+    "article": "Genocide",
+    "text": "genocide",
+    "answers": [
+      "genocidal policy"
+    ],
+    "generated_token_ids": [
+      4370,
+      42177,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5a69b9465ce1a5001a9696c0",
+    "kind": "missing",
+    "article": "Genocide",
+    "text": "genocide",
+    "answers": [],
+    "generated_token_ids": [
+      4370,
+      42177,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56f95c639e9bad19000a0886",
+    "kind": "answerable",
+    "article": "Ministry_of_Defence_(United_Kingdom)",
+    "text": "1964",
+    "answers": [
+      "1964"
+    ],
+    "generated_token_ids": [
+      16,
+      24,
+      21,
+      19,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a56b6d26349e2001acdcf06",
+    "kind": "missing",
+    "article": "Ministry_of_Defence_(United_Kingdom)",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "article": "Exhibition_game",
+    "text": "before the start of each season",
+    "answers": [
+      "before the start of each season"
+    ],
+    "generated_token_ids": [
+      14801,
+      279,
+      1191,
+      315,
+      1817,
+      3200,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a1234f16614be00188f24a4",
+    "kind": "missing",
+    "article": "Exhibition_game",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57303e10b2c2fd1400568ac8",
+    "kind": "answerable",
+    "article": "Association_football",
+    "text": "Yugoslav Wars",
+    "answers": [
+      "Yugoslav Wars"
+    ],
+    "generated_token_ids": [
+      56,
+      768,
+      47458,
+      402,
+      14968,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a79d86917ab25001a8a00da",
+    "kind": "missing",
+    "article": "Association_football",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "article": "Eton_College",
+    "text": "UNKNOWN",
+    "answers": [
+      "suspension"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "article": "Eton_College",
+    "text": "typically three days",
+    "answers": [],
+    "generated_token_ids": [
+      86084,
+      2326,
+      2849,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "article": "Party_leaders_of_the_United_States_House_of_Representatives",
+    "text": "James Blaine",
+    "answers": [
+      "James Blaine"
+    ],
+    "generated_token_ids": [
+      28084,
+      2502,
+      8346,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a8497347cf838001a46a981",
+    "kind": "missing",
+    "article": "Party_leaders_of_the_United_States_House_of_Representatives",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "article": "Antarctica",
+    "text": "20 mm (0.8 in)",
+    "answers": [
+      "20 mm"
+    ],
+    "generated_token_ids": [
+      17,
+      15,
+      9465,
+      320,
+      15,
+      13,
+      23,
+      304,
+      8,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "article": "Antarctica",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "56f8a1fc9b226e1400dd0d14",
+    "kind": "answerable",
+    "article": "Virgil",
+    "text": "Christianity",
+    "answers": [
+      "Christianity"
+    ],
+    "generated_token_ids": [
+      40942,
+      487,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "article": "Virgil",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "article": "Genocide",
+    "text": "religious",
+    "answers": [
+      "religious group"
+    ],
+    "generated_token_ids": [
+      96150,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "article": "Genocide",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "article": "Tibet",
+    "text": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "generated_token_ids": [
+      45,
+      29886,
+      12269,
+      4554,
+      374,
+      279,
+      4741,
+      7324,
+      21682,
+      315,
+      279,
+      28110,
+      2143,
+      82559,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.8571428571428571,
+    "abstained": false
+  },
+  {
+    "id": "5ad00fbf77cf76001a68685d",
+    "kind": "missing",
+    "article": "Tibet",
+    "text": "Norbulingka",
+    "answers": [],
+    "generated_token_ids": [
+      45,
+      29886,
+      12269,
+      4554,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56fa9f9df34c681400b0c103",
+    "kind": "answerable",
+    "article": "High-definition_television",
+    "text": "standard-definition television",
+    "answers": [
+      "standard-definition television"
+    ],
+    "generated_token_ids": [
+      20270,
+      89050,
+      12425,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "article": "High-definition_television",
+    "text": "16:9 aspect ratio",
+    "answers": [],
+    "generated_token_ids": [
+      16,
+      21,
+      25,
+      24,
+      12893,
+      11341,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "article": "Hunting",
+    "text": "early humans were hunters",
+    "answers": [
+      "were hunters"
+    ],
+    "generated_token_ids": [
+      22140,
+      12677,
+      1033,
+      47973,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "article": "Hunting",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "article": "Party_leaders_of_the_United_States_House_of_Representatives",
+    "text": "UNKNOWN",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5a84d2307cf838001a46aabc",
+    "kind": "missing",
+    "article": "Party_leaders_of_the_United_States_House_of_Representatives",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "article": "Translation",
+    "text": "Muslim Brotherhood",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "generated_token_ids": [
+      89789,
+      49236,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a7e1c5c70df9f001a8754cb",
+    "kind": "missing",
+    "article": "Translation",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "article": "Virgil",
+    "text": "grotta vecchia",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "generated_token_ids": [
+      70,
+      4640,
+      2565,
+      7486,
+      89546,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a7e71d048f7d9001a0636f7",
+    "kind": "missing",
+    "article": "Virgil",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5727d8bc4b864d1900163e66",
+    "kind": "answerable",
+    "article": "Tibet",
+    "text": "600",
+    "answers": [
+      "600"
+    ],
+    "generated_token_ids": [
+      21,
+      15,
+      15,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5acff1af77cf76001a6865c6",
+    "kind": "missing",
+    "article": "Tibet",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "article": "British_Isles",
+    "text": "Devensian",
+    "answers": [
+      "Devensian"
+    ],
+    "generated_token_ids": [
+      14592,
+      724,
+      1103,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "article": "British_Isles",
+    "text": "4,000 to 5,000 years ago",
+    "answers": [],
+    "generated_token_ids": [
+      19,
+      11,
+      15,
+      15,
+      15,
+      311,
+      220,
+      20,
+      11,
+      15,
+      15,
+      15,
+      1635,
+      4134,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "article": "Virgil",
+    "text": "Virgil's wish that the poem be burned.",
+    "answers": [
+      "the poem be burned"
+    ],
+    "generated_token_ids": [
+      49035,
+      60787,
+      594,
+      6426,
+      429,
+      279,
+      32794,
+      387,
+      26626,
+      13,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5a7e5d5448f7d9001a0635bf",
+    "kind": "missing",
+    "article": "Virgil",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "article": "Royal_Dutch_Shell",
+    "text": "The Hague",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "generated_token_ids": [
+      785,
+      84926,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.4,
+    "abstained": false
+  },
+  {
+    "id": "5a62468ff8d794001af1bf20",
+    "kind": "missing",
+    "article": "Royal_Dutch_Shell",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "56e09ff67aa994140058e659",
+    "kind": "answerable",
+    "article": "Russian_Soviet_Federative_Socialist_Republic",
+    "text": "natural gas",
+    "answers": [
+      "natural gas"
+    ],
+    "generated_token_ids": [
+      52880,
+      6819,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5acdfa8d32bba1001ae49927",
+    "kind": "missing",
+    "article": "Russian_Soviet_Federative_Socialist_Republic",
+    "text": "30%",
+    "answers": [],
+    "generated_token_ids": [
+      18,
+      15,
+      4,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "article": "Asphalt",
+    "text": "must be heated or diluted",
+    "answers": [
+      "heated or diluted"
+    ],
+    "generated_token_ids": [
+      24812,
+      387,
+      31713,
+      476,
+      79603,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.75,
+    "abstained": false
+  },
+  {
+    "id": "5ace7f2132bba1001ae4a83e",
+    "kind": "missing",
+    "article": "Asphalt",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "article": "Antarctica",
+    "text": "Amundsen\u2013Scott South Pole Station",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "generated_token_ids": [
+      6091,
+      1241,
+      11759,
+      4142,
+      38220,
+      4882,
+      52627,
+      16629,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "article": "Antarctica",
+    "text": "the largest neutrino telescope in the world",
+    "answers": [],
+    "generated_token_ids": [
+      1782,
+      7772,
+      41599,
+      3313,
+      55825,
+      304,
+      279,
+      1879,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5727e4f84b864d1900163f7a",
+    "kind": "answerable",
+    "article": "Tibet",
+    "text": "2010",
+    "answers": [
+      "2010"
+    ],
+    "generated_token_ids": [
+      17,
+      15,
+      16,
+      15,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad0001b77cf76001a68673f",
+    "kind": "missing",
+    "article": "Tibet",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5730a3018ab72b1400f9c61f",
+    "kind": "answerable",
+    "article": "Super_Nintendo_Entertainment_System",
+    "text": "\u00a525,000",
+    "answers": [
+      "\u00a525,000"
+    ],
+    "generated_token_ids": [
+      81093,
+      17,
+      20,
+      11,
+      15,
+      15,
+      15,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a42a2bd4a4859001aac7262",
+    "kind": "missing",
+    "article": "Super_Nintendo_Entertainment_System",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "article": "Super_Nintendo_Entertainment_System",
+    "text": "UNKNOWN",
+    "answers": [
+      "purple"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5a42d81e4a4859001aac7363",
+    "kind": "missing",
+    "article": "Super_Nintendo_Entertainment_System",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57282fdf3acd2414000df693",
+    "kind": "answerable",
+    "article": "Annelid",
+    "text": "clitellates",
+    "answers": [
+      "clitellates"
+    ],
+    "generated_token_ids": [
+      564,
+      275,
+      613,
+      973,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "article": "Annelid",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "article": "Gregorian_calendar",
+    "text": "1750",
+    "answers": [
+      "1750"
+    ],
+    "generated_token_ids": [
+      16,
+      22,
+      20,
+      15,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a37143595360f001af1b3ec",
+    "kind": "missing",
+    "article": "Gregorian_calendar",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57303e0704bcaa1900d773fa",
+    "kind": "answerable",
+    "article": "Association_football",
+    "text": "1886",
+    "answers": [
+      "1886"
+    ],
+    "generated_token_ids": [
+      16,
+      23,
+      23,
+      21,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a79d0f317ab25001a8a00d3",
+    "kind": "missing",
+    "article": "Association_football",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572664c9f1498d1400e8de1f",
+    "kind": "answerable",
+    "article": "Florida",
+    "text": "seventh",
+    "answers": [
+      "Florida was the seventh fastest-growing state"
+    ],
+    "generated_token_ids": [
+      325,
+      44607,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.3333333333333333,
+    "abstained": false
+  },
+  {
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "article": "Florida",
+    "text": "19.7 million",
+    "answers": [],
+    "generated_token_ids": [
+      16,
+      24,
+      13,
+      22,
+      3526,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "article": "Tibet",
+    "text": "UNKNOWN",
+    "answers": [
+      "19th century"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5acff10b77cf76001a6865c0",
+    "kind": "missing",
+    "article": "Tibet",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57282bf93acd2414000df629",
+    "kind": "answerable",
+    "article": "Federalism",
+    "text": "1889",
+    "answers": [
+      "1889"
+    ],
+    "generated_token_ids": [
+      16,
+      23,
+      23,
+      24,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5acf9d1e77cf76001a6854fb",
+    "kind": "missing",
+    "article": "Federalism",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "article": "Florida",
+    "text": "more severe than most European nations or other American states",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "generated_token_ids": [
+      6384,
+      15386,
+      1091,
+      1429,
+      7513,
+      16675,
+      476,
+      1008,
+      3693,
+      5302,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.8,
+    "abstained": false
+  },
+  {
+    "id": "5acd9fb007355d001abf4856",
+    "kind": "missing",
+    "article": "Florida",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "article": "Unicode",
+    "text": "U+0065 (LATIN SMALL LETTER E)",
+    "answers": [
+      "U+0065"
+    ],
+    "generated_token_ids": [
+      52,
+      10,
+      15,
+      15,
+      21,
+      20,
+      320,
+      78898,
+      687,
+      49197,
+      44428,
+      468,
+      8,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.3333333333333333,
+    "abstained": false
+  },
+  {
+    "id": "5acd22b507355d001abf3647",
+    "kind": "missing",
+    "article": "Unicode",
+    "text": "canonical equivalence",
+    "answers": [],
+    "generated_token_ids": [
+      77942,
+      84162,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "article": "Ministry_of_Defence_(United_Kingdom)",
+    "text": "Great Britain and Northern Ireland",
+    "answers": [
+      "Great Britain and Northern Ireland"
+    ],
+    "generated_token_ids": [
+      21396,
+      13224,
+      323,
+      16926,
+      14648,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a5695656349e2001acdce62",
+    "kind": "missing",
+    "article": "Ministry_of_Defence_(United_Kingdom)",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "article": "Federalism",
+    "text": "unitary",
+    "answers": [
+      "unitary state"
+    ],
+    "generated_token_ids": [
+      3843,
+      658,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "abstained": false
+  },
+  {
+    "id": "5acfbcfd77cf76001a685b90",
+    "kind": "missing",
+    "article": "Federalism",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "article": "Gregorian_calendar",
+    "text": "325",
+    "answers": [
+      "325"
+    ],
+    "generated_token_ids": [
+      18,
+      17,
+      20,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a36fa9795360f001af1b393",
+    "kind": "missing",
+    "article": "Gregorian_calendar",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "article": "High-definition_television",
+    "text": "8 cinemas in Italy and 2 in Spain",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "generated_token_ids": [
+      23,
+      97607,
+      304,
+      15344,
+      323,
+      220,
+      17,
+      304,
+      17689,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad3b998604f3c001a3fee78",
+    "kind": "missing",
+    "article": "High-definition_television",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57270a67dd62a815002e9846",
+    "kind": "answerable",
+    "article": "Comcast",
+    "text": "1963",
+    "answers": [
+      "1963"
+    ],
+    "generated_token_ids": [
+      16,
+      24,
+      21,
+      18,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a73438253a187001ae63182",
+    "kind": "missing",
+    "article": "Comcast",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "article": "Group_(mathematics)",
+    "text": "UNKNOWN",
+    "answers": [
+      "a rotation"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5a81c12031013a001a334e4c",
+    "kind": "missing",
+    "article": "Group_(mathematics)",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5727d7d84b864d1900163e4f",
+    "kind": "answerable",
+    "article": "Eton_College",
+    "text": "use of its facilities",
+    "answers": [
+      "use of its facilities"
+    ],
+    "generated_token_ids": [
+      810,
+      315,
+      1181,
+      12786,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad2265bd7d075001a428549",
+    "kind": "missing",
+    "article": "Eton_College",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "article": "Railway_electrification_system",
+    "text": "UNKNOWN",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "article": "Railway_electrification_system",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "572a54e07a1753140016aeb4",
+    "kind": "answerable",
+    "article": "CBC_Television",
+    "text": "UNKNOWN",
+    "answers": [
+      "reminding broadcasters that analog transmitters had to be shut off by the deadline in mandatory markets"
+    ],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": true
+  },
+  {
+    "id": "5a5535e0134fea001a0e19d9",
+    "kind": "missing",
+    "article": "CBC_Television",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "article": "Literature",
+    "text": "Shijing or Book of Songs",
+    "answers": [
+      "the Shijing or Book of Songs"
+    ],
+    "generated_token_ids": [
+      2016,
+      23649,
+      476,
+      5893,
+      315,
+      39100,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a7e3ecd70df9f001a875639",
+    "kind": "missing",
+    "article": "Literature",
+    "text": "poems",
+    "answers": [],
+    "generated_token_ids": [
+      5368,
+      11852,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56f9df829b226e1400dd15d6",
+    "kind": "answerable",
+    "article": "High-definition_television",
+    "text": "819 lines system",
+    "answers": [
+      "an 819 lines system"
+    ],
+    "generated_token_ids": [
+      23,
+      16,
+      24,
+      5128,
+      1849,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5ad3aaab604f3c001a3feb5a",
+    "kind": "missing",
+    "article": "High-definition_television",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "57284b682ca10214002da25f",
+    "kind": "answerable",
+    "article": "War_on_Terror",
+    "text": "22 November 2002",
+    "answers": [
+      "22 November 2002"
+    ],
+    "generated_token_ids": [
+      17,
+      17,
+      6702,
+      220,
+      17,
+      15,
+      15,
+      17,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a85edd1b4e223001a8e72f7",
+    "kind": "missing",
+    "article": "War_on_Terror",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  },
+  {
+    "id": "5730376e04bcaa1900d77398",
+    "kind": "answerable",
+    "article": "British_Isles",
+    "text": "passport-free travel between EU members states",
+    "answers": [
+      "passport-free travel between EU members states"
+    ],
+    "generated_token_ids": [
+      42669,
+      12577,
+      5821,
+      1948,
+      9812,
+      3613,
+      5302,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "article": "British_Isles",
+    "text": "European Union",
+    "answers": [],
+    "generated_token_ids": [
+      63369,
+      9145,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "article": "BBC_Television",
+    "text": "30",
+    "answers": [
+      "30"
+    ],
+    "generated_token_ids": [
+      18,
+      15,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "5a8315c1e60761001a2eb3b3",
+    "kind": "missing",
+    "article": "BBC_Television",
+    "text": "UNKNOWN",
+    "answers": [],
+    "generated_token_ids": [
+      51378,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": true
+  }
+]

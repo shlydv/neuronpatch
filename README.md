@@ -16,6 +16,9 @@ is complete: protection shows a partial correction/preservation trade-off improv
 but all eight settings fail the declared joint success criteria. Output review finds
 real unnecessary refusals as well as noisy exact-match labels. The experimental
 constraint is not part of the public API or a recommended behavior recipe.
+The [dose/bias diagnostic](experiments/protected_rows/dose_v1/REPORT.md) verifies
+exported generations exactly and finds no measured evidence-discrimination gain;
+part of the improvement comes from shifting the refusal trade-off.
 
 ## Direction
 

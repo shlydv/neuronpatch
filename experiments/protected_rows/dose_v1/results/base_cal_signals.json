@@ -1,0 +1,226 @@
+[
+  {
+    "id": "57278cb9f1498d1400e8fbb3",
+    "kind": "answerable",
+    "unknown_log_odds": -24.699481964111328,
+    "unknown_argmax_margin": -24.6875,
+    "best_other_token": 48574
+  },
+  {
+    "id": "5a7fb0f18f0597001ac0007e",
+    "kind": "missing",
+    "unknown_log_odds": -36.20703125,
+    "unknown_argmax_margin": -36.20703125,
+    "best_other_token": 10048
+  },
+  {
+    "id": "572cb5de750c471900ed4ce1",
+    "kind": "answerable",
+    "unknown_log_odds": -32.609375,
+    "unknown_argmax_margin": -32.609375,
+    "best_other_token": 16
+  },
+  {
+    "id": "5a79e60217ab25001a8a018d",
+    "kind": "missing",
+    "unknown_log_odds": 9.908096313476562,
+    "unknown_argmax_margin": 10.34375,
+    "best_other_token": 61395
+  },
+  {
+    "id": "5726d39add62a815002e9194",
+    "kind": "answerable",
+    "unknown_log_odds": -28.735553741455078,
+    "unknown_argmax_margin": -28.734375,
+    "best_other_token": 14658
+  },
+  {
+    "id": "5ad27e9ad7d075001a42971c",
+    "kind": "missing",
+    "unknown_log_odds": 9.241661071777344,
+    "unknown_argmax_margin": 9.796875,
+    "best_other_token": 61395
+  },
+  {
+    "id": "572cbbbb750c471900ed4d07",
+    "kind": "answerable",
+    "unknown_log_odds": -29.824138641357422,
+    "unknown_argmax_margin": -29.37109375,
+    "best_other_token": 66813
+  },
+  {
+    "id": "5a79f5ca17ab25001a8a021c",
+    "kind": "missing",
+    "unknown_log_odds": 5.827625274658203,
+    "unknown_argmax_margin": 6.203125,
+    "best_other_token": 45425
+  },
+  {
+    "id": "5728fae2af94a219006a9eaf",
+    "kind": "answerable",
+    "unknown_log_odds": -32.13170623779297,
+    "unknown_argmax_margin": -32.12890625,
+    "best_other_token": 82
+  },
+  {
+    "id": "5ad41129604f3c001a4001f4",
+    "kind": "missing",
+    "unknown_log_odds": -39.52347183227539,
+    "unknown_argmax_margin": -39.515625,
+    "best_other_token": 3306
+  },
+  {
+    "id": "5726adcd5951b619008f79fb",
+    "kind": "answerable",
+    "unknown_log_odds": -26.92194366455078,
+    "unknown_argmax_margin": -26.921875,
+    "best_other_token": 79
+  },
+  {
+    "id": "5a711f1d0efcfe001a8afd5c",
+    "kind": "missing",
+    "unknown_log_odds": 10.08802604675293,
+    "unknown_argmax_margin": 10.46875,
+    "best_other_token": 61395
+  },
+  {
+    "id": "5728cd713acd2414000dfee6",
+    "kind": "answerable",
+    "unknown_log_odds": -36.93750762939453,
+    "unknown_argmax_margin": -36.9375,
+    "best_other_token": 34
+  },
+  {
+    "id": "5a501ebc99b975001ade80db",
+    "kind": "missing",
+    "unknown_log_odds": 7.126544952392578,
+    "unknown_argmax_margin": 8.078125,
+    "best_other_token": 61395
+  },
+  {
+    "id": "570c2effec8fbc190045bd55",
+    "kind": "answerable",
+    "unknown_log_odds": -22.504901885986328,
+    "unknown_argmax_margin": -22.40625,
+    "best_other_token": 30812
+  },
+  {
+    "id": "5ad37ff4604f3c001a3fe45c",
+    "kind": "missing",
+    "unknown_log_odds": -28.405437469482422,
+    "unknown_argmax_margin": -27.92578125,
+    "best_other_token": 10227
+  },
+  {
+    "id": "56e3a830e375b8140053a3d9",
+    "kind": "answerable",
+    "unknown_log_odds": -26.829299926757812,
+    "unknown_argmax_margin": -26.828125,
+    "best_other_token": 89375
+  },
+  {
+    "id": "5acd277607355d001abf371d",
+    "kind": "missing",
+    "unknown_log_odds": -20.078144073486328,
+    "unknown_argmax_margin": -20.078125,
+    "best_other_token": 37
+  },
+  {
+    "id": "5733f6a24776f419006615d3",
+    "kind": "answerable",
+    "unknown_log_odds": -37.398494720458984,
+    "unknown_argmax_margin": -37.3984375,
+    "best_other_token": 86
+  },
+  {
+    "id": "5a68b4e08476ee001a58a774",
+    "kind": "missing",
+    "unknown_log_odds": -21.618240356445312,
+    "unknown_argmax_margin": -21.0,
+    "best_other_token": 19
+  },
+  {
+    "id": "572658abdd62a815002e824d",
+    "kind": "answerable",
+    "unknown_log_odds": -32.725074768066406,
+    "unknown_argmax_margin": -32.26171875,
+    "best_other_token": 785
+  },
+  {
+    "id": "5a860c4bb4e223001a8e73ff",
+    "kind": "missing",
+    "unknown_log_odds": 7.927186965942383,
+    "unknown_argmax_margin": 8.84375,
+    "best_other_token": 61395
+  },
+  {
+    "id": "5726a7695951b619008f7938",
+    "kind": "answerable",
+    "unknown_log_odds": -36.112491607666016,
+    "unknown_argmax_margin": -36.09375,
+    "best_other_token": 16644
+  },
+  {
+    "id": "5a711c850efcfe001a8afd46",
+    "kind": "missing",
+    "unknown_log_odds": 10.094030380249023,
+    "unknown_argmax_margin": 10.453125,
+    "best_other_token": 61395
+  },
+  {
+    "id": "57101978b654c5140001f7e9",
+    "kind": "answerable",
+    "unknown_log_odds": -12.281253814697266,
+    "unknown_argmax_margin": -12.28125,
+    "best_other_token": 19
+  },
+  {
+    "id": "5ad3fd32604f3c001a3ffbd6",
+    "kind": "missing",
+    "unknown_log_odds": 10.075759887695312,
+    "unknown_argmax_margin": 10.546875,
+    "best_other_token": 61395
+  },
+  {
+    "id": "5726319938643c19005ad2c9",
+    "kind": "answerable",
+    "unknown_log_odds": -34.39573669433594,
+    "unknown_argmax_margin": -34.390625,
+    "best_other_token": 41198
+  },
+  {
+    "id": "5a39f6a32f14dd001ac7267f",
+    "kind": "missing",
+    "unknown_log_odds": 9.838451385498047,
+    "unknown_argmax_margin": 10.5625,
+    "best_other_token": 61395
+  },
+  {
+    "id": "5733fbd54776f41900661643",
+    "kind": "answerable",
+    "unknown_log_odds": -28.66250991821289,
+    "unknown_argmax_margin": -28.65625,
+    "best_other_token": 51
+  },
+  {
+    "id": "5a68dfaa8476ee001a58a812",
+    "kind": "missing",
+    "unknown_log_odds": -3.8334121704101562,
+    "unknown_argmax_margin": -3.6875,
+    "best_other_token": 785
+  },
+  {
+    "id": "571010b6a58dae1900cd6854",
+    "kind": "answerable",
+    "unknown_log_odds": -10.867141723632812,
+    "unknown_argmax_margin": -10.859375,
+    "best_other_token": 1359
+  },
+  {
+    "id": "5ad3f2f4604f3c001a3ff8d7",
+    "kind": "missing",
+    "unknown_log_odds": -13.347442626953125,
+    "unknown_argmax_margin": -13.34375,
+    "best_other_token": 1001
+  }
+]

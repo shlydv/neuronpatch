@@ -1,0 +1,43 @@
+STAGE diagnostic_model_load
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:13<00:27, 13.83s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:29<00:14, 14.95s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:29<00:00,  8.28s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:29<00:00,  9.96s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STAGE dose_calibration scale=0.0 shift=0.00000
+STAGE dose_calibration scale=0.125 shift=4.98819
+STAGE dose_calibration scale=0.25 shift=9.44767
+STAGE dose_calibration scale=0.375 shift=13.27697
+STAGE dose_calibration scale=0.5 shift=15.96074
+STAGE dose_calibration scale=0.625 shift=17.52925
+STAGE dose_calibration scale=0.75 shift=18.43119
+STAGE dose_calibration scale=0.875 shift=18.97057
+STAGE dose_calibration scale=1.0 shift=19.30122
+STAGE dose_condition=protected_full
+STAGE evaluate=val examples=32
+STAGE evaluate=val examples=64
+STAGE evaluate=val examples=96
+STAGE evaluate=val examples=128
+STAGE evaluate=utility examples=32
+STAGE dose_condition=unprotected_full
+STAGE evaluate=val examples=32
+STAGE evaluate=val examples=64
+STAGE evaluate=val examples=96
+STAGE evaluate=val examples=128
+STAGE evaluate=utility examples=32
+STAGE dose_condition=unprotected_matched
+STAGE evaluate=val examples=32
+STAGE evaluate=val examples=64
+STAGE evaluate=val examples=96
+STAGE evaluate=val examples=128
+STAGE evaluate=utility examples=32
+STAGE dose_condition=unknown_bias
+STAGE evaluate=val examples=32
+STAGE evaluate=val examples=64
+STAGE evaluate=val examples=96
+STAGE evaluate=val examples=128
+STAGE evaluate=utility examples=32
+STAGE dose_diagnostic_complete

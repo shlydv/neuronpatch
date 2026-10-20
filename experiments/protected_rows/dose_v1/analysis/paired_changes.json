@@ -1,0 +1,1802 @@
+[
+  {
+    "condition": "protected_full",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "answers": [
+      "damaged"
+    ],
+    "before": "damaged America's image in most of the world",
+    "after": "has damaged America's image in most of the world.",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "answers": [],
+    "before": "Aristotelian school",
+    "after": "Aristotelian",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "knockout competitions",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "answers": [
+      "99%"
+    ],
+    "before": "more than 99%",
+    "after": "99%",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "before": "January 2011 to October 2013",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "before": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "after": "translators have sought to preserve the context itself by reproducing the original order of sememes, and hence word order",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "answers": [
+      "that group"
+    ],
+    "before": "that group",
+    "after": "what?",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "answers": [],
+    "before": "the group",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "answers": [
+      "the First World War"
+    ],
+    "before": "The First World War",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "answers": [
+      "continuous functions"
+    ],
+    "before": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "after": "group operations must be continuous functions",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "answers": [
+      "before the start of each season"
+    ],
+    "before": "Before the start of each season.",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "answers": [
+      "suspension"
+    ],
+    "before": "Another term for rustication is suspension.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "answers": [],
+    "before": "typically three days",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "answers": [
+      "James Blaine"
+    ],
+    "before": "James Blaine of Maine",
+    "after": "James Blaine",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "answers": [
+      "20 mm"
+    ],
+    "before": "20 mm (0.8 in) per year",
+    "after": "20 mm (0.8 in)",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "The dry valleys",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "answers": [],
+    "before": "Eclogues",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "answers": [
+      "religious group"
+    ],
+    "before": "religious group membership",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "answers": [],
+    "before": "preventing births",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "before": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "answers": [],
+    "before": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "after": "16:9 aspect ratio",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "answers": [
+      "were hunters"
+    ],
+    "before": "That early humans were hunters.",
+    "after": "early humans were hunters",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "answers": [],
+    "before": "control of fire",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "before": "No",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "before": "The Muslim Brotherhood",
+    "after": "Muslim Brotherhood",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "before": "\"grotta vecchia\"",
+    "after": "grotta vecchia",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "answers": [
+      "Devensian"
+    ],
+    "before": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "after": "Devensian",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "answers": [],
+    "before": "some 4,000 to 5,000 years ago",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "before": "central offices in The Hague",
+    "after": "The Hague",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "answers": [
+      "heated or diluted"
+    ],
+    "before": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "after": "asphalt must be heated or diluted",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "before": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "answers": [],
+    "before": "the largest neutrino telescope in the world",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "answers": [
+      "purple"
+    ],
+    "before": "purple",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "answers": [],
+    "before": "Most earthworms are full hermaphrodites.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "answers": [
+      "1750"
+    ],
+    "before": "1750",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "answers": [
+      "19th century"
+    ],
+    "before": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "before": "more severe than most European nations or other American states",
+    "after": "Florida's felony disenfranchisement law is more severe than most European nations or other American states.",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "answers": [
+      "U+0065"
+    ],
+    "before": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "after": "U+0065 (LATIN SMALL LETTER E)",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "answers": [
+      "unitary state"
+    ],
+    "before": "unitary state",
+    "after": "unitary",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "answers": [
+      "325"
+    ],
+    "before": "the time of the First Council of Nicaea in 325",
+    "after": "325",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "before": "Italy and Spain",
+    "after": "8 cinemas in Italy and 2 in Spain",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "answers": [
+      "a rotation"
+    ],
+    "before": "a rotation",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "before": "low-voltage transformer windings",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "answers": [],
+    "before": "One tap on the transformer can supply a range of voltages.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "protected_full",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "answers": [
+      "30"
+    ],
+    "before": "30 lines",
+    "after": "30",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "answers": [
+      "damaged"
+    ],
+    "before": "damaged America's image in most of the world",
+    "after": "perceived U.S. hypocrisy, media-induced hysteria, and that differences in foreign and security policy have damaged America's image in most of the world",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "570a6f996d058f1900182e5f",
+    "kind": "answerable",
+    "answers": [
+      "Thomas Aquinas"
+    ],
+    "before": "Thomas Aquinas",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "answers": [],
+    "before": "Aristotelian school",
+    "after": "Aristotelian",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "knockout competitions",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "571b058d9499d21900609bd8",
+    "kind": "answerable",
+    "answers": [
+      "99%"
+    ],
+    "before": "more than 99%",
+    "after": "99%",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "before": "January 2011 to October 2013",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "before": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "after": "reproducing the original order of sememes, and hence word order",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5a832af9e60761001a2eb49a",
+    "kind": "missing",
+    "answers": [],
+    "before": "Birmingham",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "answers": [
+      "that group"
+    ],
+    "before": "that group",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "answers": [],
+    "before": "the group",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "573041b7947a6a140053d357",
+    "kind": "answerable",
+    "answers": [
+      "substitutes"
+    ],
+    "before": "substitutes",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "answers": [
+      "the First World War"
+    ],
+    "before": "The First World War",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "answers": [
+      "continuous functions"
+    ],
+    "before": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "answers": [
+      "before the start of each season"
+    ],
+    "before": "Before the start of each season.",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "answers": [
+      "suspension"
+    ],
+    "before": "Another term for rustication is suspension.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ad21fd6d7d075001a4284ac",
+    "kind": "missing",
+    "answers": [],
+    "before": "typically three days",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "answers": [
+      "James Blaine"
+    ],
+    "before": "James Blaine of Maine",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "answers": [
+      "20 mm"
+    ],
+    "before": "20 mm (0.8 in) per year",
+    "after": "20 mm (0.8 in)",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "The dry valleys",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "answers": [],
+    "before": "Eclogues",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "answers": [
+      "religious group"
+    ],
+    "before": "religious group membership",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "answers": [],
+    "before": "preventing births",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5727ec8b2ca10214002d99cd",
+    "kind": "answerable",
+    "answers": [
+      "former summer residence of the Dalai Lama"
+    ],
+    "before": "Norbulingka is the former summer residence of the Dalai Lama.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56fa9f9df34c681400b0c103",
+    "kind": "answerable",
+    "answers": [
+      "standard-definition television"
+    ],
+    "before": "standard-definition television",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "answers": [],
+    "before": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "answers": [
+      "were hunters"
+    ],
+    "before": "That early humans were hunters.",
+    "after": "early humans were hunters",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "answers": [],
+    "before": "control of fire",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "before": "No",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "before": "The Muslim Brotherhood",
+    "after": "Muslim Brotherhood",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "before": "\"grotta vecchia\"",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "answers": [
+      "Devensian"
+    ],
+    "before": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "answers": [],
+    "before": "some 4,000 to 5,000 years ago",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56f89d879b226e1400dd0cc5",
+    "kind": "answerable",
+    "answers": [
+      "the poem be burned"
+    ],
+    "before": "Virgil's wish that the poem be burned.",
+    "after": "the poem be burned",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "before": "central offices in The Hague",
+    "after": "The Hague",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "answers": [
+      "heated or diluted"
+    ],
+    "before": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "after": "must be heated or diluted",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "before": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ad2d28ed7d075001a42a389",
+    "kind": "missing",
+    "answers": [],
+    "before": "the largest neutrino telescope in the world",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5730a3018ab72b1400f9c61f",
+    "kind": "answerable",
+    "answers": [
+      "\u00a525,000"
+    ],
+    "before": "\u00a525,000",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "answers": [
+      "purple"
+    ],
+    "before": "purple",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "answers": [],
+    "before": "Most earthworms are full hermaphrodites.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "570b2dd76b8089140040f7d5",
+    "kind": "answerable",
+    "answers": [
+      "1750"
+    ],
+    "before": "1750",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572664c9f1498d1400e8de1f",
+    "kind": "answerable",
+    "answers": [
+      "Florida was the seventh fastest-growing state"
+    ],
+    "before": "seventh",
+    "after": "7",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5acd901707355d001abf4728",
+    "kind": "missing",
+    "answers": [],
+    "before": "19.7 million",
+    "after": "19.7",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "answers": [
+      "19th century"
+    ],
+    "before": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572674b8f1498d1400e8e035",
+    "kind": "answerable",
+    "answers": [
+      "Florida's felony disenfranchisement law is more severe than most European nations or other American states"
+    ],
+    "before": "more severe than most European nations or other American states",
+    "after": "Florida's felony disenfranchisement law is more severe than most European nations or other American states.",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "answers": [
+      "U+0065"
+    ],
+    "before": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5acd22b507355d001abf3647",
+    "kind": "missing",
+    "answers": [],
+    "before": "canonical equivalence",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56f957049e9bad19000a0840",
+    "kind": "answerable",
+    "answers": [
+      "Great Britain and Northern Ireland"
+    ],
+    "before": "Great Britain and Northern Ireland",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "answers": [
+      "unitary state"
+    ],
+    "before": "unitary state",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "answers": [
+      "325"
+    ],
+    "before": "the time of the First Council of Nicaea in 325",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "before": "Italy and Spain",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "answers": [
+      "a rotation"
+    ],
+    "before": "a rotation",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5727d7d84b864d1900163e4f",
+    "kind": "answerable",
+    "answers": [
+      "use of its facilities"
+    ],
+    "before": "use of its facilities",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "before": "low-voltage transformer windings",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "answers": [],
+    "before": "One tap on the transformer can supply a range of voltages.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5726c8c3708984140094d14d",
+    "kind": "answerable",
+    "answers": [
+      "the Shijing or Book of Songs"
+    ],
+    "before": "Shijing or Book of Songs",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56f9df829b226e1400dd15d6",
+    "kind": "answerable",
+    "answers": [
+      "an 819 lines system"
+    ],
+    "before": "819 lines system",
+    "after": "819 lines",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5730376e04bcaa1900d77398",
+    "kind": "answerable",
+    "answers": [
+      "passport-free travel between EU members states"
+    ],
+    "before": "passport-free travel between EU members states",
+    "after": "passport-free travel",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "answers": [],
+    "before": "European Union (EU)",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_full",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "answers": [
+      "30"
+    ],
+    "before": "30 lines",
+    "after": "30",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57284f5f3acd2414000df8ed",
+    "kind": "answerable",
+    "answers": [
+      "damaged"
+    ],
+    "before": "damaged America's image in most of the world",
+    "after": "has damaged America's image in most of the world",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5ad24569d7d075001a428a9a",
+    "kind": "missing",
+    "answers": [],
+    "before": "Aristotelian school",
+    "after": "Aristotelian",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "knockout competitions",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "before": "January 2011 to October 2013",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57305b0b069b5314008320a8",
+    "kind": "answerable",
+    "answers": [
+      "reproducing the original order of sememes"
+    ],
+    "before": "Translators preserve context by reproducing the original order of sememes and word order, and adjusting grammatical structures to match the target language's syntax.",
+    "after": "translators have sought to preserve the context itself by reproducing the original order of sememes, and hence word order",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5733bdc4d058e614000b61a4",
+    "kind": "answerable",
+    "answers": [
+      "that group"
+    ],
+    "before": "that group",
+    "after": "what?",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5a6969185ce1a5001a9695ff",
+    "kind": "missing",
+    "answers": [],
+    "before": "the group",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "572f506a04bcaa1900d76843",
+    "kind": "answerable",
+    "answers": [
+      "the First World War"
+    ],
+    "before": "The First World War",
+    "after": "First World War",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57283bec2ca10214002da13c",
+    "kind": "answerable",
+    "answers": [
+      "continuous functions"
+    ],
+    "before": "The group operations that must occur are g \u2022 h and g\u22121.",
+    "after": "group operations must be continuous functions",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5727bbedff5b5019007d93b8",
+    "kind": "answerable",
+    "answers": [
+      "before the start of each season"
+    ],
+    "before": "Before the start of each season.",
+    "after": "before the start of each season",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "answers": [
+      "suspension"
+    ],
+    "before": "Another term for rustication is suspension.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57321d6de17f3d14004226aa",
+    "kind": "answerable",
+    "answers": [
+      "James Blaine"
+    ],
+    "before": "James Blaine of Maine",
+    "after": "James Blaine",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "570e11f30dc6ce1900204db9",
+    "kind": "answerable",
+    "answers": [
+      "20 mm"
+    ],
+    "before": "20 mm (0.8 in) per year",
+    "after": "20 mm (0.8 in)",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5ad242ecd7d075001a4289b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "The dry valleys",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "answers": [],
+    "before": "Eclogues",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5733fcd5d058e614000b6718",
+    "kind": "answerable",
+    "answers": [
+      "religious group"
+    ],
+    "before": "religious group membership",
+    "after": "religious",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "answers": [],
+    "before": "preventing births",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5ad3c558604f3c001a3fefea",
+    "kind": "missing",
+    "answers": [],
+    "before": "16:9 aspect ratio images without using letterboxing or anamorphic stretching",
+    "after": "16:9 aspect ratio",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57344599acc1501500babd63",
+    "kind": "answerable",
+    "answers": [
+      "were hunters"
+    ],
+    "before": "That early humans were hunters.",
+    "after": "early humans were hunters",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "answers": [],
+    "before": "control of fire",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "before": "No",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "57306408069b5314008320c7",
+    "kind": "answerable",
+    "answers": [
+      "Muslim Brotherhood"
+    ],
+    "before": "The Muslim Brotherhood",
+    "after": "Muslim Brotherhood",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "56f8a5a89b226e1400dd0d47",
+    "kind": "answerable",
+    "answers": [
+      "grotta vecchia"
+    ],
+    "before": "\"grotta vecchia\"",
+    "after": "grotta vecchia",
+    "before_em": 1.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5730192604bcaa1900d77187",
+    "kind": "answerable",
+    "answers": [
+      "Devensian"
+    ],
+    "before": "The most recent glaciation that has shaped the British Isles was the Devensian.",
+    "after": "Devensian",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5acd89d907355d001abf4658",
+    "kind": "missing",
+    "answers": [],
+    "before": "some 4,000 to 5,000 years ago",
+    "after": "4,000 to 5,000 years ago",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5726262f89a1e219009ac3dc",
+    "kind": "answerable",
+    "answers": [
+      "the central offices in The Hague"
+    ],
+    "before": "central offices in The Hague",
+    "after": "The Hague",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "571b6a2f9499d21900609ca1",
+    "kind": "answerable",
+    "answers": [
+      "heated or diluted"
+    ],
+    "before": "Asphalt must be heated or diluted to a point where it becomes workable.",
+    "after": "must be heated or diluted",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "570e1f340dc6ce1900204dcd",
+    "kind": "answerable",
+    "answers": [
+      "Amundsen\u2013Scott station."
+    ],
+    "before": "The largest neutrino telescope on Earth is built 2 km (1.2 mi) below Amundsen\u2013Scott South Pole Station.",
+    "after": "Amundsen\u2013Scott South Pole Station",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "answers": [
+      "purple"
+    ],
+    "before": "purple",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5ace8a0432bba1001ae4a9d0",
+    "kind": "missing",
+    "answers": [],
+    "before": "Most earthworms are full hermaphrodites.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "answers": [
+      "19th century"
+    ],
+    "before": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "572808464b864d1900164293",
+    "kind": "answerable",
+    "answers": [
+      "U+0065"
+    ],
+    "before": "U+0065 (LATIN SMALL LETTER E) followed by U+0301 (COMBINING ACUTE ACCENT)",
+    "after": "U+0065 (LATIN SMALL LETTER E)",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "572842e03acd2414000df7fb",
+    "kind": "answerable",
+    "answers": [
+      "unitary state"
+    ],
+    "before": "unitary state",
+    "after": "unitary",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "570b241bec8fbc190045b85f",
+    "kind": "answerable",
+    "answers": [
+      "325"
+    ],
+    "before": "the time of the First Council of Nicaea in 325",
+    "after": "325",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "56fa7a6cf34c681400b0c0d8",
+    "kind": "answerable",
+    "answers": [
+      "8 cinemas in Italy and 2 in Spain"
+    ],
+    "before": "Italy and Spain",
+    "after": "8 cinemas in Italy and 2 in Spain",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "answers": [
+      "a rotation"
+    ],
+    "before": "a rotation",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "before": "low-voltage transformer windings",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "answers": [],
+    "before": "One tap on the transformer can supply a range of voltages.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "5acda1b107355d001abf4886",
+    "kind": "missing",
+    "answers": [],
+    "before": "European Union (EU)",
+    "after": "European Union",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unprotected_matched",
+    "id": "56de62fc4396321400ee286b",
+    "kind": "answerable",
+    "answers": [
+      "30"
+    ],
+    "before": "30 lines",
+    "after": "30",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5a79ea1b17ab25001a8a01b2",
+    "kind": "missing",
+    "answers": [],
+    "before": "knockout competitions",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "570b2bacec8fbc190045b8a7",
+    "kind": "answerable",
+    "answers": [
+      "January 2011 and October 2013"
+    ],
+    "before": "January 2011 to October 2013",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5727d0feff5b5019007d95ec",
+    "kind": "answerable",
+    "answers": [
+      "suspension"
+    ],
+    "before": "Another term for rustication is suspension.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5a7e641f48f7d9001a06369f",
+    "kind": "missing",
+    "answers": [],
+    "before": "Eclogues",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5a69aad35ce1a5001a969670",
+    "kind": "missing",
+    "answers": [],
+    "before": "preventing births",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5ace521a32bba1001ae4a29d",
+    "kind": "missing",
+    "answers": [],
+    "before": "control of fire",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "57324734e99e3014001e6630",
+    "kind": "answerable",
+    "answers": [
+      "will vary depending on whether the President is of the same party or the other party"
+    ],
+    "before": "No",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5acdfa8d32bba1001ae49927",
+    "kind": "missing",
+    "answers": [],
+    "before": "30%",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5730af318ab72b1400f9c68f",
+    "kind": "answerable",
+    "answers": [
+      "purple"
+    ],
+    "before": "purple",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5727d7c14b864d1900163e4a",
+    "kind": "answerable",
+    "answers": [
+      "19th century"
+    ],
+    "before": "The passage does not specify when the British and Russian empires began encroaching on Tibet. Therefore, the answer is UNKNOWN.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "572820982ca10214002d9e86",
+    "kind": "answerable",
+    "answers": [
+      "a rotation"
+    ],
+    "before": "a rotation",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "572f498104bcaa1900d76819",
+    "kind": "answerable",
+    "answers": [
+      "low-voltage transformer windings"
+    ],
+    "before": "low-voltage transformer windings",
+    "after": "UNKNOWN",
+    "before_em": 1.0,
+    "after_em": 0.0
+  },
+  {
+    "condition": "unknown_bias",
+    "id": "5acd7ee207355d001abf4477",
+    "kind": "missing",
+    "answers": [],
+    "before": "One tap on the transformer can supply a range of voltages.",
+    "after": "UNKNOWN",
+    "before_em": 0.0,
+    "after_em": 1.0
+  }
+]

@@ -1,0 +1,558 @@
+[
+  {
+    "id": "sum-17-28",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "45",
+    "answers": [
+      "45"
+    ],
+    "generated_token_ids": [
+      19,
+      20,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "diff-17-28",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "-11",
+    "answers": [
+      "-11"
+    ],
+    "generated_token_ids": [
+      12,
+      16,
+      16,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "product-17-28",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "476",
+    "answers": [
+      "476"
+    ],
+    "generated_token_ids": [
+      19,
+      22,
+      21,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "sum-42-19",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "61",
+    "answers": [
+      "61"
+    ],
+    "generated_token_ids": [
+      21,
+      16,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "diff-42-19",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "23",
+    "answers": [
+      "23"
+    ],
+    "generated_token_ids": [
+      17,
+      18,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "product-42-19",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "800",
+    "answers": [
+      "798"
+    ],
+    "generated_token_ids": [
+      23,
+      15,
+      15,
+      151645
+    ],
+    "em": 0.0,
+    "f1": 0.0,
+    "abstained": false
+  },
+  {
+    "id": "sum-63-18",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "81",
+    "answers": [
+      "81"
+    ],
+    "generated_token_ids": [
+      23,
+      16,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "diff-63-18",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "45",
+    "answers": [
+      "45"
+    ],
+    "generated_token_ids": [
+      19,
+      20,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "product-63-18",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "1134",
+    "answers": [
+      "1134"
+    ],
+    "generated_token_ids": [
+      16,
+      16,
+      18,
+      19,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "sum-81-14",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "95",
+    "answers": [
+      "95"
+    ],
+    "generated_token_ids": [
+      24,
+      20,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "diff-81-14",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "67",
+    "answers": [
+      "67"
+    ],
+    "generated_token_ids": [
+      21,
+      22,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "product-81-14",
+    "kind": "arithmetic",
+    "article": null,
+    "text": "1134",
+    "answers": [
+      "1134"
+    ],
+    "generated_token_ids": [
+      16,
+      16,
+      18,
+      19,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-orchid",
+    "kind": "text_operation",
+    "article": null,
+    "text": "ORCHID",
+    "answers": [
+      "ORCHID"
+    ],
+    "generated_token_ids": [
+      868,
+      2149,
+      915,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-raven",
+    "kind": "text_operation",
+    "article": null,
+    "text": "RAVEN",
+    "answers": [
+      "RAVEN"
+    ],
+    "generated_token_ids": [
+      5609,
+      41022,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-meadow",
+    "kind": "text_operation",
+    "article": null,
+    "text": "MEADOW",
+    "answers": [
+      "MEADOW"
+    ],
+    "generated_token_ids": [
+      7462,
+      59332,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-silver",
+    "kind": "text_operation",
+    "article": null,
+    "text": "SILVER",
+    "answers": [
+      "SILVER"
+    ],
+    "generated_token_ids": [
+      50,
+      1715,
+      3763,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-planet",
+    "kind": "text_operation",
+    "article": null,
+    "text": "PLANET",
+    "answers": [
+      "PLANET"
+    ],
+    "generated_token_ids": [
+      94079,
+      1348,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-velvet",
+    "kind": "text_operation",
+    "article": null,
+    "text": "VELVET",
+    "answers": [
+      "VELVET"
+    ],
+    "generated_token_ids": [
+      11810,
+      53,
+      1348,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-cobalt",
+    "kind": "text_operation",
+    "article": null,
+    "text": "COBALT",
+    "answers": [
+      "COBALT"
+    ],
+    "generated_token_ids": [
+      8281,
+      33,
+      35830,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "upper-willow",
+    "kind": "text_operation",
+    "article": null,
+    "text": "WILLOW",
+    "answers": [
+      "WILLOW"
+    ],
+    "generated_token_ids": [
+      54,
+      1715,
+      9441,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-hot",
+    "kind": "antonym",
+    "article": null,
+    "text": "cold",
+    "answers": [
+      "cold"
+    ],
+    "generated_token_ids": [
+      87072,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-early",
+    "kind": "antonym",
+    "article": null,
+    "text": "late",
+    "answers": [
+      "late"
+    ],
+    "generated_token_ids": [
+      5075,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-empty",
+    "kind": "antonym",
+    "article": null,
+    "text": "full",
+    "answers": [
+      "full",
+      "filled"
+    ],
+    "generated_token_ids": [
+      8878,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-wide",
+    "kind": "antonym",
+    "article": null,
+    "text": "narrow",
+    "answers": [
+      "narrow"
+    ],
+    "generated_token_ids": [
+      77,
+      6044,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-ancient",
+    "kind": "antonym",
+    "article": null,
+    "text": "modern",
+    "answers": [
+      "modern",
+      "new",
+      "contemporary",
+      "recent"
+    ],
+    "generated_token_ids": [
+      49789,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-shallow",
+    "kind": "antonym",
+    "article": null,
+    "text": "deep",
+    "answers": [
+      "deep"
+    ],
+    "generated_token_ids": [
+      32880,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-noisy",
+    "kind": "antonym",
+    "article": null,
+    "text": "quiet",
+    "answers": [
+      "quiet",
+      "silent"
+    ],
+    "generated_token_ids": [
+      43650,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "opposite-rough",
+    "kind": "antonym",
+    "article": null,
+    "text": "smooth",
+    "answers": [
+      "smooth",
+      "polished"
+    ],
+    "generated_token_ids": [
+      56866,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "capital-Japan",
+    "kind": "factual",
+    "article": null,
+    "text": "Tokyo",
+    "answers": [
+      "Tokyo"
+    ],
+    "generated_token_ids": [
+      52854,
+      16032,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "capital-Italy",
+    "kind": "factual",
+    "article": null,
+    "text": "Rome",
+    "answers": [
+      "Rome"
+    ],
+    "generated_token_ids": [
+      49,
+      635,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "capital-Canada",
+    "kind": "factual",
+    "article": null,
+    "text": "Ottawa",
+    "answers": [
+      "Ottawa"
+    ],
+    "generated_token_ids": [
+      46,
+      5566,
+      14077,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  },
+  {
+    "id": "capital-Australia",
+    "kind": "factual",
+    "article": null,
+    "text": "Canberra",
+    "answers": [
+      "Canberra"
+    ],
+    "generated_token_ids": [
+      6713,
+      62341,
+      151645
+    ],
+    "em": 1.0,
+    "f1": 1.0,
+    "abstained": false
+  }
+]

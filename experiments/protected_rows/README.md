@@ -7,6 +7,12 @@ axes, so one does not undo the other. The
 post-masking down-projection columns can instead violate a protection constraint.
 Fixed input-subspace protection is existing work, not a novelty claim.
 
+**Actual-model status:** the [eight-fit pilot completed](colab_v1/REPORT.md),
+followed by a [saved-weight dose/bias diagnostic](dose_v1/REPORT.md). No setting
+meets the joint correction/preservation criteria. Exported patches reproduce
+exactly, but learned updates do not improve measured evidence discrimination;
+the next hypothesis concerns conditional behavior, not more rate tuning.
+
 ## Implemented
 
 The caller supplies calibration projection inputs and selected output-row IDs.
