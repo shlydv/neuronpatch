@@ -5,8 +5,10 @@ and export a patch tied to its exact base checkpoint.
 
 **Status: experimental foundation.** Version 0.1 implements a tested PyTorch
 weight-update primitive, not a validated behavioral editing system. Current experiments
-expose correction/preservation trade-offs; guided selection has not demonstrated an
-advantage over random selection or LoRA. See the [evidence ledger](docs/method-design.md).
+expose correction/preservation trade-offs. Our custom QA experiments have not shown
+a guided-selection advantage; a two-case upstream FiNE reference does show stronger
+edits than random selection, with transfer and locality failures. Neither establishes
+a recommended recipe. See the [evidence ledger](docs/method-design.md).
 
 ## Direction
 
@@ -266,8 +268,12 @@ returns `[positions, k, 2]` indices `(layer, neuron)`.
 from neuronpatch import contribution_indices
 
 supports = contribution_indices(
-    activations, down_weights, unembedding, predicted_tokens,
-    k=5, exclude_last_layers=3,
+    activations,
+    down_weights,
+    unembedding,
+    predicted_tokens,
+    k=5,
+    exclude_last_layers=3,
 )
 ```
 
@@ -300,8 +306,7 @@ from neuronpatch.occurrence import OccurrenceColumnEdit
 
 edit = OccurrenceColumnEdit(
     model,
-    [("transformer.h.19.mlp.fc_out", 5051),
-     ("transformer.h.19.mlp.fc_out", 5051)],
+    [("transformer.h.19.mlp.fc_out", 5051), ("transformer.h.19.mlp.fc_out", 5051)],
     delta_dtype=torch.bfloat16,
 ).eval()
 optimizer = torch.optim.Adam(edit.trainable_parameters(), lr=0.001)
@@ -324,8 +329,8 @@ produce exactly the same BF16 deltas as the unchanged upstream FiNE trainer,
 for both FP32 and FP16 base weights. Merged weights also match the reference
 sequential updates exactly and original weights remain unchanged. See
 `experiments/fine_reference/check_edit.py` and the two `edit_checks_*.json` files.
-These are numerical integration checks, not a new behavioral result or a complete
-FiNE training workflow. The separate 6B reference benchmark still uses upstream.
+These are numerical integration checks, not a new behavioral result.
+The separate 6B reference benchmark still uses upstream.
 
 ### Reference knowledge-editing loss (experimental)
 
@@ -343,8 +348,13 @@ differs from the paper's written direction.
 from neuronpatch.knowledge import knowledge_edit_loss
 
 loss = knowledge_edit_loss(
-    edited_logits, reference_prefix_logits, target_tokens, edit.delta,
-    alpha=1.0, beta=10.0, gamma=0.1,
+    edited_logits,
+    reference_prefix_logits,
+    target_tokens,
+    edit.delta,
+    alpha=1.0,
+    beta=10.0,
+    gamma=0.1,
 )
 loss.total.backward()
 optimizer.step()
@@ -353,10 +363,10 @@ optimizer.step()
 The integrated CPU source check now uses the library selector, objective and
 occurrence update together. All selected indices and learned deltas match the
 unchanged upstream trainer exactly for the tested FP32/FP16-base configurations.
-Scope remains four steps on a tiny random model with guaranteed repeated
-selections. Real-GPU behavioral equivalence, convenient token/activation capture,
-and a complete user training workflow remain
-outstanding; the fixed 16-case benchmark runs the original editor independently.
+Scope remains four steps on a tiny random model with repeated selections.
+The workflow below also verifies token/activation capture and stopping. Real-GPU
+behavioral equivalence remains outstanding; the fixed 16-case benchmark runs the
+original editor independently.
 
 Compact occurrence artifacts use separate `edit.json` / `edit.safetensors` files;
 they do not change the legacy `NeuronPatch` formats. Loading validates target
@@ -364,3 +374,41 @@ shapes, tensor dtype/values and the exact base fingerprint before freezing the
 model. Saving rejects a changed base, active edit context, or nonfinite deltas,
 and requires a fresh output directory. The integrated upstream check includes
 exact delta/logit reload and sequential-merge parity for both tested precisions.
+
+### Complete GPT-J reference workflow (experimental)
+
+`fit_gptj_edit` captures activations, selects per-token occurrences, trains the
+reference objective, and returns a compact edit. It uses an ordinary Hugging Face
+GPT-J model and removes its scoped hooks after every forward. Load the model and
+tokenizer yourself; they must use compatible pinned revisions. This single-device
+workflow requires a materialized floating-point model and enough memory for
+backpropagation. It does not load or download models implicitly.
+
+```python
+from neuronpatch.editing import GPTJEditConfig, fit_gptj_edit
+
+result = fit_gptj_edit(
+    model,
+    tokenizer,
+    prompt,
+    desired_answer,
+    GPTJEditConfig(neurons_per_token=5, max_steps=50),
+)
+result.edit.save("artifacts/gptj-edit", metadata={"model_revision": revision})
+with result.edit.applied() as edited_model:
+    output = edited_model.generate(**generation_inputs)
+```
+
+The routine prepends GPT-J's EOS/BOS and one target space, matching upstream;
+it performs no truncation or chat templating. Success freezes the original model
+in eval mode; failure restores original training and gradient flags. The edit
+does not mutate original weights. Random controls use `selection="random"` and
+retain the reference's sampling with replacement; this differs from the generic
+without-replacement selector. History records losses before each possible update,
+so early stopping can produce zero optimizer steps.
+
+The ordinary-HF workflow exactly matches upstream supports, learned BF16 deltas
+and sequential merged weights on tiny CPU models with FP32/FP16 bases, both
+selection methods, explicit EOS, and zero-step stopping. Checks and runtime details
+are in `experiments/fine_reference/edit_checks_*.json`. This is a faithful baseline
+implementation, not an improved method or evidence of full-size GPU parity.

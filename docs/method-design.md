@@ -1,6 +1,6 @@
 # Method design and evidence ledger
 
-Updated 2026-10-19. Goal: develop and verify a useful neuron-targeted adaptation
+Updated 2026-10-20. Goal: develop and verify a useful neuron-targeted adaptation
 method that improves on relevant published baselines. Neither reproducing a paper
 nor passing unit tests completes that goal. This document separates verified
 mechanisms, proposed synthesis, and outstanding evidence.
@@ -356,8 +356,9 @@ success and subject-alias transfer while random selection scores higher on both
 reported locality measures. It does not establish a universal data-efficiency
 claim. Our target remains a useful, measured trade-off, not all-metric dominance.
 The reference harness calls unchanged upstream editing/scoring functions, with
-pinned source/model/data. CPU model and metric checks pass; real-model editing
-has not run because Kaggle GPU quota is exhausted. The original driver's unused
+pinned source/model/data. CPU model and metric checks passed at this stage. The
+initial GPU-quota diagnosis was wrong: subsequent GPU allocation and the smoke
+result below disproved it. The original driver's unused
 `--random` argument is bypassed by setting its actual hyperparameter explicitly.
 The first 16 cases are only an execution/diagnostic subset, with sparse coverage
 of some evaluation categories; do not label that as a full table reproduction.
@@ -438,3 +439,36 @@ deltas and outputs before verifying exact sequential merged weights. All84 tests
 pass,2 skipped. Real-GPU library parity and an end-to-end supported training
 workflow remain outstanding; no new behavioral result is claimed. The unchanged
 16-case upstream experiment continues, currently past the first four paired fits.
+
+## Complete ordinary-HF workflow (2026-10-20)
+
+The experimental `fit_gptj_edit` now handles the reference's token alignment,
+activation capture, contribution/random selection, occurrence training, objective
+and early stopping on an ordinary Hugging Face GPT-J. Exact CPU parity with the
+unchanged source holds for FP32/FP16 bases, contribution/random selection,
+explicit target EOS and initial zero-update stopping. Compact reload and
+sequential merged weights remain exact in these fixtures. All96 tests pass,
+with2 MPS cases skipped. These are numerical checks, not evidence of full-size
+GPU parity or improvement. The running reference remains independent; ten paired
+cases have completed with restoration checks, and six remain at this observation.
+
+The implementation discrepancy is now substantially narrower: our earlier QA
+heuristic was not their selector, our task/model/objective differed, and duplicate
+occurrences, precision, joint regularization and evaluation scopes matter. This
+does not establish which difference caused the earlier negative QA result. The
+next behavioral decision must use the expanded reference's generated outputs and
+locality failures. First validate this library workflow at 6B scale; then isolate
+one improvement with matched controls and genuinely fresh confirmation. Passing
+more plumbing checks alone does not meet the project goal.
+
+The ordinary-HF integration also runs in the installed current Transformers
+runtime without model downloads. A separate
+[full-size parity protocol](../experiments/fine_reference/GPU_PARITY_PROTOCOL.md)
+and script compare both editors under one isolated reference-compatible runtime.
+They are prepared, not yet executed; runtime differences from the first16
+upstream benchmark are explicit.
+
+Source availability was rechecked against the current NeST paper and SafeNexus
+author page. NeST's linked archive still could not be retrieved. The SafeNexus
+author page's Code link still resolves to a different cross-architecture merging
+project. Neither is treated as a verified source implementation.

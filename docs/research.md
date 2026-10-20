@@ -1,12 +1,14 @@
 # Research provenance and implementation decisions
 
-Reviewed 2026-10-18. This repository contains a fresh implementation of a general
-selected-column update primitive. It does not vendor research code or reproduce
-paper results. Research checkouts were read locally without executing them.
+Updated 2026-10-20. This repository contains selected-neuron update primitives
+and an experimental GPT-J FiNE-K workflow. The upstream FiNE editor has also been
+run separately on two pinned 6B-model cases; a fixed 16-case comparison is running.
+These are bounded reference checks, not full-paper reproductions. Research source
+is not vendored into the library.
 
 | Work | Reference and source | What informs neuronpatch | Status |
 |---|---|---|---|
-| FiNE | [paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [official code](https://github.com/opanhw/fine-unified-editing-code) | Learn output-vector deltas for selected MLP neurons and merge into down-projection columns | Primitive inspired by this pattern; localization, losses, sequential editing and benchmarks are not reproduced |
+| FiNE | [paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [official code](https://github.com/opanhw/fine-unified-editing-code) | Per-token contribution selection, occurrence deltas, reference objective and stopping | Tiny CPU workflow parity; separate two-case upstream GPU result. Full benchmark, safety and sequential editing not reproduced |
 | NeST | [v2 paper](https://arxiv.org/html/2602.16835v2) | Probe-based selection, neuron clustering and shared trainable updates | Planned; no official implementation verified in this review |
 | SafeNexus | [paper](https://arxiv.org/html/2607.28969v1) | Selected-neuron masks on LoRA updates; layer-matched random controls | Planned; no official implementation verified. The author's Code link inspected during review led to a different project |
 | SpaRTA | [paper](https://arxiv.org/abs/2502.15975), [code](https://github.com/IBM/SpaRTA), [package](https://pypi.org/project/peft-sparta/) | Random scalar-weight baseline and compact delta artifacts | Reference, not implemented; our random selector samples whole columns, not individual weights |
@@ -21,7 +23,8 @@ code is incorporated later. Paper descriptions do not imply code availability.
 
 FiNE's `knowledge-editing/easyeditor/models/fine/fine_main.py` trains compact
 vectors using selected inputs to `down_proj`, then adds them to the corresponding
-weight columns. We use a proper PyTorch module rather than temporary hooks.
+weight columns. The generic API uses a PyTorch module; the occurrence-preserving
+reference workflow uses scoped hooks on ordinary projections.
 The base is frozen; only the compact delta is an optimizer parameter. This avoids
 allocating a dense trainable matrix and relying on gradient masking alone.
 
