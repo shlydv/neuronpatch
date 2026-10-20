@@ -674,3 +674,30 @@ the separation objective. Keep calibrated threshold-only and random/low-rank
 controls. This is a direction to build and falsify, not a new proven algorithm.
 Source parity and finite-anchor invariance remain useful parts of the library;
 neither is sufficient evidence of a generally useful behavior adaptation method.
+
+## Conditional objective and reviewed controls built (2026-10-20)
+
+The [evidence-pair experiment](../experiments/evidence_pairs/README.md) now has
+a tested pairwise first-token objective. Within-pair UNKNOWN-versus-canonical-
+answer logit differences cancel arbitrary shared vocabulary biases, including
+question-specific ones. A reference-center penalty prevents such a bias from
+lowering the total objective starting at the base. This is an established ranking
+construction applied to a measured failure, not a novel ranking algorithm or
+proof of better answers. Conditional context-only shortcuts remain possible.
+
+Both variants remove a source unit, with length-matched unrelated removal as the
+supported control. Source-only assistant curation selects 64 training pairs from
+100 reviewed candidates, rejecting surviving aliases/inferences, false premises,
+ambiguous gold and malformed questions. Each selected pair also has a checked
+retained-fact question answerable under both edits. Thus 64 articles yield 128
+distinct questions and 256 context labels, not merely 64 supervision examples.
+All cache IDs and real-tokenizer lengths pass the training data check. These
+assistant labels are not independent human gold.
+
+This controlled atomic-fact development diagnostic does not replace broad QA,
+untouched transfer or the full library objective. Calibration/validation curation
+is still incomplete, and finalization refuses partial signoff. No GPU run has
+been launched on the new data. Next: finish source-only review, freeze data and
+a bounded objective/control comparison, then check learnability and transfer.
+Keep calibrated no-training thresholds, equal data, supported/invariant retention,
+random/low-rank controls and actual generated answers explicit.

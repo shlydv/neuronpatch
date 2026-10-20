@@ -1,0 +1,1262 @@
+{
+  "status": "review in progress; no model predictions",
+  "reviewer": "Codex assistant, not independent human adjudication",
+  "scope": "Assistant review of both context variants before any model outputs; accepted atomic facts only. Not broad QA coverage.",
+  "candidate_manifest_sha256": "3dd42698e8040300e8075c4b41dbf5a7bd855f06eacb77a265bf532fc6979d12",
+  "candidate_file_sha256": {
+    "train": "68bb1e9e4066a6c14ef472ed5cf7d9056ac3d545db3fe72cf917df23b08f521f",
+    "cal": "6aa4fe38ec60f543af0d54cb83c22e708cc9baec0f72252e9062faec69953729",
+    "val": "7147a5cfde6d298fc4566136180713876154459de179dc5ed9c9f95b4d45b9b0"
+  },
+  "target_pairs": {
+    "train": 64,
+    "cal": 32,
+    "val": 64
+  },
+  "decisions": [
+    {
+      "split": "train",
+      "index": 0,
+      "pair_id": "570c2999ec8fbc190045bcde",
+      "accepted": true,
+      "reason": "Publication date is explicit only in the target; remaining dates concern the 2001 attacks.",
+      "invariant": {
+        "question": "How many potential chances to disrupt the September 11 attacks did the CIA and FBI miss?",
+        "answers": [
+          "23"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 1,
+      "pair_id": "5727728e708984140094ddbf",
+      "accepted": true,
+      "reason": "Target identifies governor William Tryon and the 1767 construction; remaining text names other capitals, not the governor.",
+      "invariant": {
+        "question": "Which city was chosen as the site of the new capital in 1788?",
+        "answers": [
+          "Raleigh"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 2,
+      "pair_id": "570aa9a06d058f190018305a",
+      "accepted": false,
+      "reason": "Question misspells Bureau and expand; exclude malformed questions from the controlled diagnostic."
+    },
+    {
+      "split": "train",
+      "index": 3,
+      "pair_id": "5727b8ad2ca10214002d94c3",
+      "accepted": false,
+      "reason": "Remaining decline during 2004-2014 can support a weaker timing answer; start-date policy is ambiguous."
+    },
+    {
+      "split": "train",
+      "index": 4,
+      "pair_id": "572999813f37b319004784e8",
+      "accepted": true,
+      "reason": "Only the target attributes the quoted assessment to Igor Mandic; discussion leader Kordic is distinct.",
+      "invariant": {
+        "question": "In which Croatian journal did Snježana Kordić lead the linguistic discussion?",
+        "answers": [
+          "Književna republika"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 5,
+      "pair_id": "57323ca3b9d445190005e903",
+      "accepted": true,
+      "reason": "Bible-study group formation is dated only in the target; remaining dates concern later publications and meetings.",
+      "invariant": {
+        "question": "What book did Russell and Barbour jointly produce in 1876?",
+        "answers": [
+          "Three Worlds"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 6,
+      "pair_id": "5727423f708984140094db75",
+      "accepted": true,
+      "reason": "Only the target names the general who hoped to avoid rebellion; remaining military figures have other roles.",
+      "answers_override": [
+        "David Wooster",
+        "General David Wooster"
+      ],
+      "invariant": {
+        "question": "What date is commemorated by Powder House Day in New Haven?",
+        "answers": [
+          "23 April 1775"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 7,
+      "pair_id": "57285c163acd2414000df956",
+      "accepted": false,
+      "reason": "Question incorrectly says Louisiana Purchase where the passage says Alaska Purchase."
+    },
+    {
+      "split": "train",
+      "index": 8,
+      "pair_id": "57307352069b5314008320ec",
+      "accepted": false,
+      "reason": "Multiple named sources provide conflicting population figures; question does not uniquely identify the gold source."
+    },
+    {
+      "split": "train",
+      "index": 9,
+      "pair_id": "571ae53e9499d21900609b9a",
+      "accepted": true,
+      "reason": "Athanasius remains identifiable; Eusebius is the council colleague only in the target sentence.",
+      "invariant": {
+        "question": "In which year did Athanasius return to his patriarchate after the death of Constantius?",
+        "answers": [
+          "361"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 10,
+      "pair_id": "572684dd708984140094c8b9",
+      "accepted": true,
+      "reason": "Target gives the British superhero creation month/year; the remaining debut sentence contains no date.",
+      "invariant": {
+        "question": "Which artist was announced as returning to Marvel at the 1975 event?",
+        "answers": [
+          "Jack Kirby"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 11,
+      "pair_id": "56df33ca8bc80c19004e497e",
+      "accepted": true,
+      "reason": "Bombing year is explicit only in the target; other dates concern city founding and 9/11.",
+      "invariant": {
+        "question": "On which transport corridor is Oklahoma City situated?",
+        "answers": [
+          "I-35 Corridor"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 12,
+      "pair_id": "572f4ec3a23a5019007fc508",
+      "accepted": true,
+      "reason": "Despite awkward grammar the conversion event is specific; only target contains its 1987 date.",
+      "invariant": {
+        "question": "What catenary voltage does the passage give for SEPTA in Philadelphia?",
+        "answers": [
+          "12 kV"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 13,
+      "pair_id": "57311bd5e6313a140071cc40",
+      "accepted": false,
+      "reason": "China ambiguously refers to Republic of China versus PRC; false-premise risk in the question."
+    },
+    {
+      "split": "train",
+      "index": 14,
+      "pair_id": "5726a5d15951b619008f78f3",
+      "accepted": true,
+      "reason": "Only target dates A Theory of Justice; 1974 remaining is a different book by Nozick.",
+      "invariant": {
+        "question": "Who wrote Anarchy, State, and Utopia?",
+        "answers": [
+          "Robert Nozick"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 15,
+      "pair_id": "5730846a069b531400832148",
+      "accepted": true,
+      "reason": "Only target gives the Septuagint translation century; remaining text gives translators and later uses.",
+      "invariant": {
+        "question": "According to the legend, what property did all seventy translated versions share?",
+        "answers": [
+          "identical"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 16,
+      "pair_id": "56dde75466d3e219004dadc7",
+      "accepted": true,
+      "reason": "Only target links Nicholas II to the named bull; Innocent IV and Lateran council concern different actions.",
+      "invariant": {
+        "question": "Which pope granted cardinals the privilege of wearing a red hat?",
+        "answers": [
+          "Innocent IV"
+        ],
+        "evidence_unit": 8,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 17,
+      "pair_id": "5731e59ee17f3d140042250f",
+      "accepted": true,
+      "reason": "Only target identifies the church left by Church of England; other sentences discuss subsequent Protestant traditions.",
+      "invariant": {
+        "question": "Which Archbishop of Canterbury helped lead the reforms discussed in the passage?",
+        "answers": [
+          "Thomas Cranmer"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 18,
+      "pair_id": "5727a0c33acd2414000de841",
+      "accepted": false,
+      "reason": "Question asks when Papal States existed, but gold gives only an endpoint; interval precision is ambiguous."
+    },
+    {
+      "split": "train",
+      "index": 19,
+      "pair_id": "5730b76c8ab72b1400f9c6ea",
+      "accepted": true,
+      "reason": "Only target dates Namibian independence; remaining text contains geography and memberships.",
+      "invariant": {
+        "question": "Which ocean borders Namibia on the west?",
+        "answers": [
+          "Atlantic Ocean"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 20,
+      "pair_id": "56df25da3277331400b4d9b1",
+      "accepted": false,
+      "reason": "New logo could mean temporary 2008 or present 2009 logo; deletion leaves another valid new-logo date."
+    },
+    {
+      "split": "train",
+      "index": 21,
+      "pair_id": "572777c7dd62a815002e9db1",
+      "accepted": true,
+      "reason": "Only target names original seller Kirk Kerkorian; remaining statements specify acquisition and retained rights without seller.",
+      "invariant": {
+        "question": "Up to what release date did Turner retain the MGM film library?",
+        "answers": [
+          "May 9, 1986"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 22,
+      "pair_id": "571df51db64a571400c71e30",
+      "accepted": true,
+      "reason": "Only target dates all-government-form mandate; earlier 1997/2000 changes have different scopes.",
+      "invariant": {
+        "question": "In what year did the OMB change its racial-category regulation to permit multiple responses?",
+        "answers": [
+          "1997"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 23,
+      "pair_id": "56e08343231d4119001ac22b",
+      "accepted": false,
+      "reason": "Question says South Helena rather than Saint Helena; exclude malformed place reference."
+    },
+    {
+      "split": "train",
+      "index": 24,
+      "pair_id": "57313224e6313a140071ccf0",
+      "accepted": true,
+      "reason": "Only target dates Seoul Semiconductor release; other text describes AC operation without a date.",
+      "invariant": {
+        "question": "What sort of power can the Seoul Semiconductor LEDs operate on without a DC converter?",
+        "answers": [
+          "AC power"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 25,
+      "pair_id": "5727762cdd62a815002e9d79",
+      "accepted": true,
+      "reason": "Only target names the army leader Pal Tomori; king Louis II and earlier king Matthias have distinct stated roles.",
+      "invariant": {
+        "question": "Which Hungarian king conquered Bohemia in response to a request from the Pope?",
+        "answers": [
+          "Matthias Corvinus"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 26,
+      "pair_id": "5706f6a790286e26004fc779",
+      "accepted": true,
+      "reason": "Target alone names Alcuin as developer; deletion leaves origins of scripts but no developer identity.",
+      "invariant": {
+        "question": "What readability advantage does the passage attribute to minuscule over majuscule?",
+        "answers": [
+          "faster readability"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 27,
+      "pair_id": "570dce860b85d914000d7b81",
+      "accepted": false,
+      "reason": "Remaining 1821 documented landing also answers first recorded landing; 1895 is the narrower first confirmed claim."
+    },
+    {
+      "split": "train",
+      "index": 28,
+      "pair_id": "5726144d271a42140099d443",
+      "accepted": false,
+      "reason": "Archaeologists/anthropologists remain in the opening sentence; spelling variant hides a surviving plausible answer."
+    },
+    {
+      "split": "train",
+      "index": 29,
+      "pair_id": "57061d0c75f01819005e79a5",
+      "accepted": true,
+      "reason": "Only target dates Ehmer curves to 1959; Mayer 1894 is a distinct event.",
+      "invariant": {
+        "question": "Who reported in 1894 that one tone could make another inaudible?",
+        "answers": [
+          "Alfred M. Mayer"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 30,
+      "pair_id": "5727b298ff5b5019007d92cb",
+      "accepted": true,
+      "reason": "Only target assigns Chongqing defense leadership to Chiang; Wang Sheng has a separate proposed guerrilla role.",
+      "invariant": {
+        "question": "Which Kuomintang general wanted to stay in Sichuan to continue guerrilla war?",
+        "answers": [
+          "Wang Sheng"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 31,
+      "pair_id": "5727feae3acd2414000df19a",
+      "accepted": true,
+      "reason": "Only target gives 1954 cessation of observations; other years concern adoption of time standards.",
+      "invariant": {
+        "question": "In which year was Universal Time adopted to replace Greenwich Mean Time?",
+        "answers": [
+          "1928"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 32,
+      "pair_id": "572970446aef051400154eb3",
+      "accepted": true,
+      "reason": "Only target gives annual Festino date; 1624 concerns the historical miracle rather than annual celebration.",
+      "invariant": {
+        "question": "Who is the patron saint of Palermo?",
+        "answers": [
+          "Santa Rosalia"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 33,
+      "pair_id": "56de2aeacffd8e1900b4b5f6",
+      "accepted": false,
+      "reason": "Sentence boundary splits the legal case name Clinton v. City of New York, leaving a malformed negative context."
+    },
+    {
+      "split": "train",
+      "index": 34,
+      "pair_id": "57265974dd62a815002e826a",
+      "accepted": true,
+      "reason": "Only target gives the named directive date; remaining legislation has no date for Conditional Access.",
+      "invariant": {
+        "question": "Which file-sharing service is named as the subject of a highly publicized copyright case?",
+        "answers": [
+          "Napster"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 35,
+      "pair_id": "57318320497a881900248fa5",
+      "accepted": false,
+      "reason": "Control removes the Yaroslav/Kiev identification; subsequent anaphora can ambiguously refer to the model church in Constantinople."
+    },
+    {
+      "split": "train",
+      "index": 36,
+      "pair_id": "5732ac1fcc179a14009dabe8",
+      "accepted": false,
+      "reason": "Question begins When but asks which seaway; remaining Mediterranean drying supplies an alternative plausible waterway answer."
+    },
+    {
+      "split": "train",
+      "index": 37,
+      "pair_id": "5728a7b83acd2414000dfc04",
+      "accepted": true,
+      "reason": "Only target gives Honor Code creation about 1940; 1957 clearly concerns later expansion.",
+      "invariant": {
+        "question": "In which year did President Wilkinson expand the Honor Code?",
+        "answers": [
+          "1957"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 38,
+      "pair_id": "5733bf84d058e614000b61be",
+      "accepted": true,
+      "reason": "Only target dates Scholastic founding; other publication dates refer to distinct named outlets.",
+      "invariant": {
+        "question": "Which Notre Dame magazine focuses on student literature and artwork?",
+        "answers": [
+          "The Juggler"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 39,
+      "pair_id": "56d9e452dc89441400fdb8b2",
+      "accepted": true,
+      "reason": "Only target names owner of two four-eyed dogs; Muthappan has one hunting dog with no four-eye attribute.",
+      "invariant": {
+        "question": "What form do offerings at the Muthappan shrine take?",
+        "answers": [
+          "bronze dog figurines"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 40,
+      "pair_id": "56e7aa3300c9c71400d774af",
+      "accepted": true,
+      "reason": "Only target dates original Nanjing Station construction; remaining dates concern fire, reconstruction and a different station.",
+      "invariant": {
+        "question": "When was reconstruction of Nanjing Railway Station finished?",
+        "answers": [
+          "September 1, 2005"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 41,
+      "pair_id": "56cdd17262d2951400fa68aa",
+      "accepted": false,
+      "reason": "Link between characters is vague, and remaining family-role material can support Oberhausers father without his name."
+    },
+    {
+      "split": "train",
+      "index": 42,
+      "pair_id": "57266f10f1498d1400e8df96",
+      "accepted": true,
+      "reason": "Only target gives Suriname independence date; remaining language-use facts provide no date.",
+      "invariant": {
+        "question": "What is the lingua franca of Suriname in the passage?",
+        "answers": [
+          "Sranan Tongo"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 43,
+      "pair_id": "5709517c9928a81400471528",
+      "accepted": true,
+      "reason": "Legacy passage explicitly names its then-current mayor; task is source-grounded, not a claim about the 2026 officeholder. Missing variant has no mayor identity.",
+      "invariant": {
+        "question": "How many members does the Houston City Council have in the passage?",
+        "answers": [
+          "16"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 44,
+      "pair_id": "573193a7a5e9cc1400cdc0fb",
+      "accepted": false,
+      "reason": "Remaining newspaper discussion also uses martyr, leaving attribution/endorsement interpretation ambiguous."
+    },
+    {
+      "split": "train",
+      "index": 45,
+      "pair_id": "57305ed58ab72b1400f9c4aa",
+      "accepted": false,
+      "reason": "Remaining text directly states Greek religious influence, an alternative valid origin for many Roman gods."
+    },
+    {
+      "split": "train",
+      "index": 46,
+      "pair_id": "56fb7e4fb28b3419009f1d7d",
+      "accepted": true,
+      "reason": "Only target states Fatimids took Jerusalem; Byzantine and Bulgarian actions elsewhere do not supply this answer.",
+      "invariant": {
+        "question": "In which year did the Turks defeat the Byzantine army at Manzikert?",
+        "answers": [
+          "1071"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 47,
+      "pair_id": "57278dc7f1498d1400e8fbdc",
+      "accepted": false,
+      "reason": "Question uses King Mom instead of the named King Momo; exclude malformed entity reference."
+    },
+    {
+      "split": "train",
+      "index": 48,
+      "pair_id": "572a44253f37b3190047884f",
+      "accepted": false,
+      "reason": "Plural Qadis remain explicitly associated with legal decisions, leaving a transparent answer variant."
+    },
+    {
+      "split": "train",
+      "index": 49,
+      "pair_id": "56df82285ca0a614008f9bca",
+      "accepted": true,
+      "reason": "Only target gives fathers convalescence location; New World in the remaining text does not identify Newfoundland.",
+      "invariant": {
+        "question": "Whose private school for the deaf did Bell visit while helping with Visible Speech demonstrations?",
+        "answers": [
+          "Susanna E. Hull"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 50,
+      "pair_id": "572855143acd2414000df91f",
+      "accepted": true,
+      "reason": "Only target identifies Jasmine as jukebox maker; Philips concerns a distinct earlier computer-interface player.",
+      "invariant": {
+        "question": "Which company produced the professional LaserDisc player with a computer interface?",
+        "answers": [
+          "Philips"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 51,
+      "pair_id": "570a12fd6d058f1900182c9e",
+      "accepted": true,
+      "reason": "Only target gives sculpture-mile start; remaining named sites do not specify its starting point.",
+      "invariant": {
+        "question": "What is the former royal sports hall called now?",
+        "answers": [
+          "Ballhof theatre"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 52,
+      "pair_id": "5728f2a34b864d1900165103",
+      "accepted": true,
+      "reason": "Only target names Mitsubishi founder; remaining text describes unnamed samurai businessmen.",
+      "invariant": {
+        "question": "What type of companies did some samurai reporters and writers set up?",
+        "answers": [
+          "newspaper companies"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 53,
+      "pair_id": "57323080e17f3d14004226ff",
+      "accepted": false,
+      "reason": "Source excerpt ends with an unfinished because clause, and removal leaves an unidentified opening possessive."
+    },
+    {
+      "split": "train",
+      "index": 54,
+      "pair_id": "5726e2c1dd62a815002e93e8",
+      "accepted": false,
+      "reason": "Removing control sentence removes Benjamin Franklin antecedent and wrongly attaches He also adopted to Gralath."
+    },
+    {
+      "split": "train",
+      "index": 55,
+      "pair_id": "56cd673a62d2951400fa657e",
+      "accepted": true,
+      "reason": "Only target gives settlement date; financial terms and accessory plans contain no date.",
+      "invariant": {
+        "question": "How much will Apple pay Creative for the patent license in the passage?",
+        "answers": [
+          "US$100 million"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 56,
+      "pair_id": "5730b5b4069b531400832299",
+      "accepted": true,
+      "reason": "Only target links Lady Sacred Mountain title to Ninhursag/Ki; remaining Ki name is not linked to that title.",
+      "invariant": {
+        "question": "Which female deity is associated with salt water in the Enuma Elish account?",
+        "answers": [
+          "Tiamat"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 57,
+      "pair_id": "572fc225a23a5019007fc9a1",
+      "accepted": true,
+      "reason": "Only target gives protocol signing date; later ratification discussion has no initiation date.",
+      "invariant": {
+        "question": "Which Armenian court gave the protocols their required initial approval?",
+        "answers": [
+          "Constitutional Court"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 58,
+      "pair_id": "56cf6c824df3c31400b0d773",
+      "accepted": true,
+      "reason": "Only target gives Hawaii recording location; remaining session/artist description has no location.",
+      "invariant": {
+        "question": "Which writer for Complex was present during the recording sessions?",
+        "answers": [
+          "Noah Callahan-Bever"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 59,
+      "pair_id": "570e35280b85d914000d7d61",
+      "accepted": true,
+      "reason": "Target explicitly states Meitner and her nephew Frisch; remaining researchers have no stated aunt relation.",
+      "invariant": {
+        "question": "Who led the 1934 team that bombarded uranium with neutrons?",
+        "answers": [
+          "Enrico Fermi"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 60,
+      "pair_id": "570c3f1dec8fbc190045be1c",
+      "accepted": true,
+      "reason": "Minor source spelling error does not obscure the specific 1950 dogmatic-definition date; negative variant has no date.",
+      "invariant": {
+        "question": "Which church celebrates Mary's Dormition in the passage?",
+        "answers": [
+          "Eastern Orthodox Church"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 61,
+      "pair_id": "572792f95951b619008f8de5",
+      "accepted": true,
+      "reason": "Source explicitly assigns creation to 1972; task follows this historical text rather than independently asserting legal history.",
+      "invariant": {
+        "question": "Over which courts do Supreme Court rulings take precedence?",
+        "answers": [
+          "all lower Courts"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 62,
+      "pair_id": "570bd90fec8fbc190045bb72",
+      "accepted": true,
+      "reason": "Only target dates first commercial ASCII use; remaining inventors and prior code contain no commercial-use date.",
+      "invariant": {
+        "question": "What feature did Bob Bemer introduce, according to the passage?",
+        "answers": [
+          "escape sequence"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 63,
+      "pair_id": "57260e0d89a1e219009ac1a2",
+      "accepted": true,
+      "reason": "Only target identifies Geoffrey as donor to monks; William is donor to Geoffrey, a distinct transfer.",
+      "invariant": {
+        "question": "Which river watered the marshy ground at the future palace site?",
+        "answers": [
+          "Tyburn"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 64,
+      "pair_id": "572a37e41d04691400779856",
+      "accepted": true,
+      "reason": "Only target gives end of Doctor Who funding; remaining 2005 concerns its beginning.",
+      "answers_override": [
+        "2008",
+        "the end of the fourth season",
+        "the end of the 4th season",
+        "the end of fourth season, broadcast in 2008"
+      ],
+      "invariant": {
+        "question": "In what year did CBC begin contributing production funds to the Doctor Who revival?",
+        "answers": [
+          "2005"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 65,
+      "pair_id": "56de719c4396321400ee290b",
+      "accepted": true,
+      "reason": "Only target dates first flight to 1966; 1965 concerns army service and separate competitions.",
+      "invariant": {
+        "question": "In which year did Schwarzenegger serve in the Austrian Army?",
+        "answers": [
+          "1965"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 66,
+      "pair_id": "57328842b9988014000c7668",
+      "accepted": false,
+      "reason": "Question wording creates of people placeholder is malformed and not a clean atomic attribution."
+    },
+    {
+      "split": "train",
+      "index": 67,
+      "pair_id": "56f761b0a6d7ea1400e17233",
+      "accepted": false,
+      "reason": "Remaining Polabian-Pomeranian settlement on Iceland supplies another plausible location for the broad question."
+    },
+    {
+      "split": "train",
+      "index": 68,
+      "pair_id": "5727c0a83acd2414000deba4",
+      "accepted": false,
+      "reason": "Source says third season, not final season; finality is not established and changes the question."
+    },
+    {
+      "split": "train",
+      "index": 69,
+      "pair_id": "5711205bb654c5140001fb8b",
+      "accepted": false,
+      "reason": "Remaining FTC investigation also answers who probed Nintendo; deleting Justice Department does not remove all valid answers."
+    },
+    {
+      "split": "train",
+      "index": 70,
+      "pair_id": "573387494776f41900660cb3",
+      "accepted": true,
+      "reason": "Only target gives the Commission-specific 2008 dating; other institutions give dates for distinct claims.",
+      "invariant": {
+        "question": "According to the NBER statement in the passage, when did the US recession end?",
+        "answers": [
+          "June 2009"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 71,
+      "pair_id": "570c46e9fed7b91900d4581d",
+      "accepted": false,
+      "reason": "Broad location question remains answerable as Victoria/Australia; bay name is only one possible location answer."
+    },
+    {
+      "split": "train",
+      "index": 72,
+      "pair_id": "57280c92ff5b5019007d9bc4",
+      "accepted": false,
+      "reason": "Question can be answered by several different coworker subsets; reject list-completeness ambiguity in this controlled diagnostic."
+    },
+    {
+      "split": "train",
+      "index": 73,
+      "pair_id": "56de47f7cffd8e1900b4b781",
+      "accepted": true,
+      "reason": "Only target locates report launch in Brasilia/Brazil; remaining discussion supplies no launch location.",
+      "answers_override": [
+        "Brasília",
+        "Brasília, Brazil",
+        "Brazil"
+      ],
+      "invariant": {
+        "question": "What was the focus of the 2007/2008 Human Development Report?",
+        "answers": [
+          "Fighting climate change: Human solidarity in a divided world"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 74,
+      "pair_id": "572834aeff5b5019007d9f08",
+      "accepted": true,
+      "reason": "Only target names Torsten Struck as comparison researcher; Rouse is described as accepting the analysis.",
+      "answers_override": [
+        "Torsten Struck",
+        "Torsten Struck and colleagues"
+      ],
+      "invariant": {
+        "question": "How many taxa were included in the cross-check analysis of eleven genes?",
+        "answers": [
+          "10"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 75,
+      "pair_id": "57097f32ed30961900e84226",
+      "accepted": true,
+      "reason": "Only target locates the specifically named community center; other newspaper locations do not locate it.",
+      "invariant": {
+        "question": "Which newspaper was the first mainstream paper to drop the disputed term?",
+        "answers": [
+          "The Star-Ledger"
+        ],
+        "evidence_unit": 1,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 76,
+      "pair_id": "570a84d76d058f1900182f14",
+      "accepted": true,
+      "reason": "Only target identifies Scyld as Hrothgars ancestor; remaining poem/translation facts contain no genealogy.",
+      "invariant": {
+        "question": "Which Old English poem provides the quoted opening passage?",
+        "answers": [
+          "Beowulf"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 77,
+      "pair_id": "5726434b271a42140099d801",
+      "accepted": false,
+      "reason": "Remaining pro-German/pro-British split leaves side-of-war interpretation ambiguous; question is not a clean date query."
+    },
+    {
+      "split": "train",
+      "index": 78,
+      "pair_id": "572c0399f182dd1900d7c7ba",
+      "accepted": false,
+      "reason": "Malformed question and surviving scientific-explanation claims by Hawking/Mlodinow create attribution ambiguity."
+    },
+    {
+      "split": "train",
+      "index": 79,
+      "pair_id": "5730c1ae396df91900096328",
+      "accepted": false,
+      "reason": "Remaining 1865 missionary arrival supplies a weaker arrival answer and sentence splitting leaves a broken Rev. fragment."
+    },
+    {
+      "split": "train",
+      "index": 80,
+      "pair_id": "570e63590dc6ce1900204ff0",
+      "accepted": true,
+      "reason": "Only target identifies the Bishop of London as Prelate; Dean and Usher are explicitly distinct offices.",
+      "answers_override": [
+        "Bishop of London",
+        "The Bishop of London",
+        "The Bishop of London, a senior bishop in the Church of England"
+      ],
+      "invariant": {
+        "question": "Who serves as the Dean of the Order?",
+        "answers": [
+          "The Dean of St Paul's"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 81,
+      "pair_id": "5726dbaf5951b619008f8031",
+      "accepted": true,
+      "reason": "Only target identifies Cambridge vice chancellor in 2002; other named appointees have different institutions and dates.",
+      "invariant": {
+        "question": "Which university did Susan Hockfield become president of in 2004?",
+        "answers": [
+          "Massachusetts Institute of Technology"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 82,
+      "pair_id": "5729600e6aef051400154db1",
+      "accepted": true,
+      "reason": "Only target dates German Empire creation to 1871; prior state rivalry has no creation date.",
+      "invariant": {
+        "question": "Under which Prussian leader was modern-day Germany united in the passage?",
+        "answers": [
+          "Otto von Bismarck"
+        ],
+        "evidence_unit": 3,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 83,
+      "pair_id": "570602f875f01819005e7870",
+      "accepted": true,
+      "reason": "Only target specifies pied flycatcher breeding grounds; other species routes do not establish its breeding range.",
+      "invariant": {
+        "question": "From where does the pink-footed goose migrate to Britain and neighbouring countries?",
+        "answers": [
+          "Iceland"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 84,
+      "pair_id": "5726682add62a815002e83f0",
+      "accepted": false,
+      "reason": "Question says first European university garden, but source gives earlier Padua and gold only the first in England."
+    },
+    {
+      "split": "train",
+      "index": 85,
+      "pair_id": "57321ed80fdd8d15006c67d1",
+      "accepted": true,
+      "reason": "Only target attributes nuclear research proposal to Academy of Athens; other policy statements concern renewables.",
+      "invariant": {
+        "question": "What share of electricity came from renewable energy and hydroelectric power for several months in 2013?",
+        "answers": [
+          "more than 20%"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 86,
+      "pair_id": "571b3a0d32177014007ea035",
+      "accepted": true,
+      "reason": "Only target gives Ells paving experiment date; later Clark/Fitzsimmons extraction activity is a different event.",
+      "invariant": {
+        "question": "Who patented a hot-water oil separation process in the 1920s?",
+        "answers": [
+          "Karl A. Clark"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 87,
+      "pair_id": "56f95b969b226e1400dd139a",
+      "accepted": false,
+      "reason": "Question misspells Winston as Winstron; exclude malformed named-entity reference."
+    },
+    {
+      "split": "train",
+      "index": 88,
+      "pair_id": "56e099da231d4119001ac2c2",
+      "accepted": true,
+      "reason": "Only target identifies president elected on the specific date; remaining accords do not identify an elected president.",
+      "invariant": {
+        "question": "On what date did the Congress of People's Deputies adopt the Declaration of State Sovereignty?",
+        "answers": [
+          "June 12, 1990"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 89,
+      "pair_id": "5733ecdb4776f41900661521",
+      "accepted": true,
+      "reason": "Legacy source names its then-current president; labels refer to that passage snapshot, not the current officeholder in 2026.",
+      "invariant": {
+        "question": "Who heads the Government as Prime Minister in the passage?",
+        "answers": [
+          "António Costa"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 90,
+      "pair_id": "56d0e42e17492d1400aab689",
+      "accepted": false,
+      "reason": "Question treats author Buddhaghosa as the written work; positive question itself has a false premise."
+    },
+    {
+      "split": "train",
+      "index": 91,
+      "pair_id": "5726baf35951b619008f7c2c",
+      "accepted": true,
+      "reason": "Only target dates Bath Spa university status; Bath Royal Charter 1966 is a different institution.",
+      "answers_override": [
+        "2005",
+        "achieved university status in 2005"
+      ],
+      "invariant": {
+        "question": "In which part of the county are the University of Bath and Bath Spa University located?",
+        "answers": [
+          "north-east"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 92,
+      "pair_id": "573031ba947a6a140053d26c",
+      "accepted": true,
+      "reason": "Only target names election winner Wade Hampton; other unrest descriptions name no winner.",
+      "invariant": {
+        "question": "On what date did the Cainhoy political-meeting incident occur?",
+        "answers": [
+          "October 15"
+        ],
+        "evidence_unit": 2,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 93,
+      "pair_id": "56fae79e8f12f3190063028d",
+      "accepted": false,
+      "reason": "Question already supplies 1981, a valid coarse timing answer; full date-range versus year makes missing label ambiguous."
+    },
+    {
+      "split": "train",
+      "index": 94,
+      "pair_id": "5725d86e89a1e219009abfa1",
+      "accepted": true,
+      "reason": "Only target gives Fun Fun Bar establishment year; other music facts contain no establishment date.",
+      "invariant": {
+        "question": "What jazz festival is the city home to?",
+        "answers": [
+          "Montevideo Jazz Festival"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 95,
+      "pair_id": "57098554200fba1400368127",
+      "accepted": true,
+      "reason": "Only target announces Hodgsons appointment; Redknapp is explicitly speculation, Capello the prior manager.",
+      "invariant": {
+        "question": "When did Capello resign as England manager?",
+        "answers": [
+          "February 2012"
+        ],
+        "evidence_unit": 0,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 96,
+      "pair_id": "57284e224b864d190016490a",
+      "accepted": true,
+      "reason": "Only target dates earliest Upanishads; remaining doctrinal content has no chronology.",
+      "invariant": {
+        "question": "What does the Mundaka compare those who value sacrifice to?",
+        "answers": [
+          "an unsafe boat"
+        ],
+        "evidence_unit": 4,
+        "review": "Assistant-authored question checked against a retained source unit in both variants; not independent human adjudication."
+      }
+    },
+    {
+      "split": "train",
+      "index": 97,
+      "pair_id": "570d9860df2f5219002ecffe",
+      "accepted": true,
+      "reason": "Only target dates FlaK 18 introduction; earlier development and later FlaK 36 dates describe distinct events."
+    },
+    {
+      "split": "train",
+      "index": 98,
+      "pair_id": "5732003be99e3014001e6434",
+      "accepted": false,
+      "reason": "Question has he current instead of the current; keep malformed prompt out of controlled diagnostic."
+    },
+    {
+      "split": "train",
+      "index": 99,
+      "pair_id": "5725c40889a1e219009abe23",
+      "accepted": false,
+      "reason": "Question misspells author as authoor; exclude malformed wording in this controlled diagnostic."
+    }
+  ],
+  "selection_policy": "Within each split take the first requested number of accepted candidates in fixed candidate order. Every candidate before the cutoff must have an explicit review. Excess accepted cases are reserve, not outcome-selected.",
+  "training_review_complete": true,
+  "training_cutoff_index": 96,
+  "training_invariant_controls_complete": true
+}

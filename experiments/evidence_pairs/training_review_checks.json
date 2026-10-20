@@ -1,0 +1,26 @@
+{
+  "status": "training split checked only; calibration/validation reviews incomplete; no GPU model run",
+  "training_pairs": 64,
+  "primary_context_labels": 128,
+  "invariant_context_labels": 128,
+  "distinct_questions": 128,
+  "distinct_articles": 64,
+  "distinct_prompt_cache_ids": 256,
+  "maximum_prompt_tokens": 344,
+  "unknown_token_id": 51378,
+  "review_sha256": "5818e728417da3387b5fdf3eb928b05dc834c9c73a32e52ddfedc13501de712c",
+  "data_sha256": "6d0cab8521b8676165aff4b62bf1d3913e75b18dadc89d40064f1b597d109843",
+  "code_sha256": {
+    "experiments/evidence_pairs/objective.py": "1af4ede24556054617bc4bb89057272d698bc077f8746fa779606ae88c4c1491",
+    "experiments/evidence_pairs/prepare.py": "d99e4e2be89c728365630cb1b75927b76d301c754bda7c4386c41fb6f0903a0c",
+    "experiments/evidence_pairs/finalize.py": "058d0948093d42b41da5ec94f20caca0e2a709e499a180655b26e233f077cbb0"
+  },
+  "source_generation_gate": "Finalizer requires explicit complete review and enough accepted cases in all three splits before writing frozen inputs.",
+  "candidate_reconstruction": {
+    "status": "all 384 candidate records and original manifest byte-exact",
+    "spec_sha256": "0369f3a05184b30c046166aa1aff788c8a79f88d15ee97561b64ec9081e65be3",
+    "code_sha256": "bb5aef7aae5e4512fd4ad57cbcd871301e0969365fe2da9df84196ea2f7d8677",
+    "source": "Pinned official SQuAD2 training source; no historical artifact directories used in reconstruction"
+  },
+  "tests": "116 passed, 2 skipped; includes 20 mechanism/data-guard tests. No LLM quality claim."
+}
