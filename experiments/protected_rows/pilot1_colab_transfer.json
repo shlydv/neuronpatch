@@ -1,0 +1,29 @@
+{
+  "provider": "Google Colab standard T4",
+  "notebook": "https://colab.research.google.com/drive/10lDG8KJ5vpk1pgR_ixn5DrfHHGQeQ8Ia",
+  "gpu_verified": "Tesla T4, 15360 MiB, driver 580.82.07",
+  "host_python_verified": "3.13.15",
+  "original_payload_sha256": "3d0443e968203e1e26f039611495141f8cab323c4a63ec2def2396240d9869c3",
+  "provider_wrapper_sha256": "be03b6f68fab2017b9ece8a2fb7cf79cd0ae7a87e8d88296c573bbd39a44115c",
+  "status": "RUNNING: model ready; baseline calibration/validation/utility generated; protection spans and neuron discovery complete",
+  "change_scope": "Provider wrapper only. The complete original 445231-byte payload, bundled modules/data/protocol and isolated runtime pins are byte-identical.",
+  "observed_utc": "2026-10-20T11:29:48.269902+00:00",
+  "kaggle_duplicate_status": "CANCEL_ACKNOWLEDGED",
+  "cuda_preflight": "all four training/export/restoration paths passed with exact frozen source hashes",
+  "provider_wrapper_archived_locally": "artifacts/protected_rows_pilot1/colab_transfer/neuronpatch-protected-pilot1-colab.py",
+  "observed_protected_ranks": {
+    "23": {
+      "rank": 753,
+      "free_input_directions": 1807
+    },
+    "29": {
+      "rank": 753,
+      "free_input_directions": 1807
+    },
+    "34": {
+      "rank": 753,
+      "free_input_directions": 1807
+    }
+  },
+  "baseline_performance": "Predictions generated but not yet downloaded or inspected; no quality conclusion."
+}
