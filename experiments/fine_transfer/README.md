@@ -186,3 +186,15 @@ python -m experiments.fine_transfer.build_scope \
 python -m experiments.fine_transfer.scope_analysis \
   --results /path/to/scope-results/results --output /tmp/scope-analysis
 ```
+
+Verify the original frozen follow-up before scoring (this checks identity and
+complete paired outputs, not factual quality):
+
+```sh
+python -m experiments.fine_transfer.verify_scope \
+  --download /path/to/scope-results \
+  --executed-source /path/to/pulled-scope-script.py \
+  --decode --output /tmp/scope-integrity.json
+```
+
+The tokenizer must already be cached at the pinned model revision for `--decode`.

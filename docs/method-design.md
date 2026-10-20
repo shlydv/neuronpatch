@@ -963,3 +963,27 @@ base continuations conditional on the target from further changes due to the
 patch. The supplied answer is not an edit success. All ten artifacts must pass
 exact cold-load generation checks before new inference; source/data hashes,
 provider identity and final base restoration remain required.
+
+
+### Saved-update geometry qualifies the generic-channel hypothesis
+
+Before scope results, a post-hoc, no-inference comparison of all ten saved patches
+checks what the shared early columns actually learn. The two consensus edits'
+updates at their shared layer-3/layer-5 columns have cosines only 0.046/0.050,
+while single-gradient versus consensus for the same fact yields 0.897–0.953 on
+shared columns. Shared columns account for about 40%/42% of consensus squared
+update norm after linear duplicate summation. Column reuse is substantial but
+does not imply the same learned output-vector change.
+
+This argues for investigating activation context and update direction together,
+rather than automatically blacklisting shared supports. It does not establish
+semantic neuron labels, functional independence, or causal specificity. The
+geometry script verifies all compact artifact hashes; the public pilot report
+contains all controls and precision limitations. No patch has been altered.
+
+The publisher-indexed [SNKE abstract and introduction](https://www.sciencedirect.com/science/article/abs/pii/S0020025526009825)
+already describe target-residual alignment plus relational context, prompt masks
+and soft-gated protected updates. This reinforces the existing prior-art caveat:
+responsiveness versus update usefulness is not a novel framing of ours. Full-page
+retrieval remains forbidden; formulas and implementation are not verified here.
+An advantage must come from controlled empirical value and a usable workflow.

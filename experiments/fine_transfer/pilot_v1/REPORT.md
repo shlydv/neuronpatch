@@ -154,6 +154,27 @@ specificity. It is not evidence that these are dedicated citizenship or award
 neurons. Activation-matched controls and simpler mean-gradient selection remain
 unrun alternatives to explain the benefit.
 
+## Post-hoc update-direction check, before scope results
+
+The [saved-delta geometry](delta_geometry.json) qualifies the shared-column
+hypothesis. The consensus patches reuse layer 3 feature 15160 and layer 5 feature
+2412 across the two facts, but their respective update-vector cosines are only
+0.046 and 0.050. These shared columns account for about 40%/42% of each patch's
+linearly summed squared update norm, so their reuse is substantial.
+
+For the **same fact**, single-gradient and consensus updates on shared columns
+agree much more: cosines 0.949–0.953 in case 0 and 0.897–0.948 in case 1. Thus
+shared support is compatible with different learned update content across the
+two edits. Reuse alone does not establish one common output bias, and excluding
+shared neurons without further evidence would be premature.
+
+This is a post-hoc parameter-space diagnostic, with no model inference or new
+fitting. Duplicate occurrences are summed in float64; these are not exact
+sequentially merged FP16 weight changes. Vector cosines do not measure semantic
+similarity or prove which components cause transfer, interference or output-style
+changes. Different activation contexts and downstream processing still matter.
+The pending scope probe supplies the behavioral test.
+
 ## What advances, and what does not
 
 The controlled positive result justifies investigating this selector further.
@@ -189,4 +210,12 @@ analysis commands. Reproduce the figure with:
 ```sh
 python -m experiments.fine_transfer.plot \
   --fits experiments/fine_transfer/pilot_v1/fits.json --output /tmp/training.png
+```
+
+Reproduce the saved-update diagnostic without loading a model:
+
+```sh
+python -m experiments.fine_transfer.delta_geometry \
+  --pilot-results /path/to/transfer-results/results \
+  --references /path/to/original-frozen-data --output /tmp/delta-geometry.json
 ```

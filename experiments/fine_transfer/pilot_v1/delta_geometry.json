@@ -1,0 +1,233 @@
+{
+  "scope": "Post-hoc geometry of frozen two-case patches; no model inference or new fits",
+  "limitations": "Duplicate occurrences are summed linearly in float64, not sequentially merged into FP16 base weights. Cosines describe stored parameter updates in matching residual coordinates, not logits, semantic similarity or causal effects. Across different layers they cannot establish a common response direction. Two facts and overlapping columns are not independent samples.",
+  "different_fact_same_selector": {
+    "fine-original": {
+      "unique_columns_a": 5,
+      "unique_columns_b": 19,
+      "shared_columns": [
+        {
+          "module": "transformer.h.23.mlp.fc_out",
+          "feature": 7699,
+          "norm_a": 1.117186367770593,
+          "norm_b": 3.086612609021311,
+          "cosine": 0.007453388364974501
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.21107610675192995,
+      "shared_squared_norm_fraction_b": 0.28669200640449155,
+      "whole_sparse_update_cosine": 0.0018335007024168333
+    },
+    "fine_augmented": {
+      "unique_columns_a": 5,
+      "unique_columns_b": 19,
+      "shared_columns": [
+        {
+          "module": "transformer.h.23.mlp.fc_out",
+          "feature": 7699,
+          "norm_a": 2.7337498088336494,
+          "norm_b": 5.042361958291799,
+          "cosine": 0.02934563892498673
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.6631625087658037,
+      "shared_squared_norm_fraction_b": 0.27641548907790353,
+      "whole_sparse_update_cosine": 0.012564197082614114
+    },
+    "gradient_single": {
+      "unique_columns_a": 5,
+      "unique_columns_b": 16,
+      "shared_columns": [
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 15160,
+          "norm_a": 0.9842245213090218,
+          "norm_b": 2.2323078468225765,
+          "cosine": 0.06868514547961889
+        },
+        {
+          "module": "transformer.h.5.mlp.fc_out",
+          "feature": 2412,
+          "norm_a": 1.0136152629423456,
+          "norm_b": 2.349945447915966,
+          "cosine": 0.05075427000402896
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.4311507583774109,
+      "shared_squared_norm_fraction_b": 0.6163865382666727,
+      "whole_sparse_update_cosine": 0.030597981791163943
+    },
+    "gradient_consensus": {
+      "unique_columns_a": 5,
+      "unique_columns_b": 17,
+      "shared_columns": [
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 15160,
+          "norm_a": 0.982618028328652,
+          "norm_b": 1.2852654184622834,
+          "cosine": 0.04594677475621578
+        },
+        {
+          "module": "transformer.h.5.mlp.fc_out",
+          "feature": 2412,
+          "norm_a": 1.0216098706202694,
+          "norm_b": 1.9941722605627064,
+          "cosine": 0.04986541056256924
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.39792224439174084,
+      "shared_squared_norm_fraction_b": 0.4245302007755494,
+      "whole_sparse_update_cosine": 0.019508118411107018
+    },
+    "consensus_layer_matched_random": {
+      "unique_columns_a": 5,
+      "unique_columns_b": 17,
+      "shared_columns": [
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 7270,
+          "norm_a": 1.7129706216592535,
+          "norm_b": 1.8870193701170912,
+          "cosine": -0.00358477988504098
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.08868704887408621,
+      "shared_squared_norm_fraction_b": 0.024588816594375135,
+      "whole_sparse_update_cosine": -0.0001674022957627951
+    }
+  },
+  "same_fact_different_selector": {
+    "0": {
+      "unique_columns_a": 5,
+      "unique_columns_b": 5,
+      "shared_columns": [
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 15160,
+          "norm_a": 0.9842245213090218,
+          "norm_b": 0.982618028328652,
+          "cosine": 0.9523721113868582
+        },
+        {
+          "module": "transformer.h.4.mlp.fc_out",
+          "feature": 2742,
+          "norm_a": 1.041306036566831,
+          "norm_b": 1.0575742536039439,
+          "cosine": 0.9533779004762907
+        },
+        {
+          "module": "transformer.h.5.mlp.fc_out",
+          "feature": 2412,
+          "norm_a": 1.0136152629423456,
+          "norm_b": 1.0216098706202694,
+          "cosine": 0.9493656427586769
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.6653581661120812,
+      "shared_squared_norm_fraction_b": 0.6194312569040388,
+      "whole_sparse_update_cosine": 0.6109780808981443
+    },
+    "1": {
+      "unique_columns_a": 16,
+      "unique_columns_b": 17,
+      "shared_columns": [
+        {
+          "module": "transformer.h.0.mlp.fc_out",
+          "feature": 7882,
+          "norm_a": 0.5660943274713497,
+          "norm_b": 0.4949914493431066,
+          "cosine": 0.9436872008868481
+        },
+        {
+          "module": "transformer.h.0.mlp.fc_out",
+          "feature": 14358,
+          "norm_a": 0.5953538789271546,
+          "norm_b": 0.5216136912462694,
+          "cosine": 0.941101940225434
+        },
+        {
+          "module": "transformer.h.1.mlp.fc_out",
+          "feature": 14892,
+          "norm_a": 0.59288786590118,
+          "norm_b": 0.5111607772359033,
+          "cosine": 0.9410833918001591
+        },
+        {
+          "module": "transformer.h.12.mlp.fc_out",
+          "feature": 13706,
+          "norm_a": 0.7136752496118807,
+          "norm_b": 0.6029535804942737,
+          "cosine": 0.9476631718601883
+        },
+        {
+          "module": "transformer.h.12.mlp.fc_out",
+          "feature": 14361,
+          "norm_a": 0.601795810101794,
+          "norm_b": 0.5014317891842205,
+          "cosine": 0.9346267406920057
+        },
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 282,
+          "norm_a": 0.505331812988802,
+          "norm_b": 0.46321842924789414,
+          "cosine": 0.9371073427730787
+        },
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 6238,
+          "norm_a": 0.5349685220259405,
+          "norm_b": 0.4803379565556704,
+          "cosine": 0.9330602386533672
+        },
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 9828,
+          "norm_a": 0.5669807497073892,
+          "norm_b": 0.499225519048479,
+          "cosine": 0.9424661693023363
+        },
+        {
+          "module": "transformer.h.3.mlp.fc_out",
+          "feature": 15160,
+          "norm_a": 2.2323078468225765,
+          "norm_b": 1.2852654184622834,
+          "cosine": 0.8986778908692282
+        },
+        {
+          "module": "transformer.h.5.mlp.fc_out",
+          "feature": 2412,
+          "norm_a": 2.349945447915966,
+          "norm_b": 1.9941722605627064,
+          "cosine": 0.8966098029850162
+        }
+      ],
+      "shared_squared_norm_fraction_a": 0.7783790343188383,
+      "shared_squared_norm_fraction_b": 0.5820059972683993,
+      "whole_sparse_update_cosine": 0.6012154913452963
+    }
+  },
+  "artifact_sha256": {
+    "edits/case-0-fine-original/edit.json": "1996b9a5dc4309ba183e716ad1a53a06d1b2aaec07a3543d85cfb0d2db3cacfd",
+    "edits/case-0-fine-original/edit.safetensors": "9005b5c6f7a3f21dd64d9338c6fd5fd01425df4ddd62611d55562f0ef185c041",
+    "edits/case-0-fine_augmented/edit.json": "09b8873a3688bd0ad521f6b2969682c9604ccd2f6063a797ad51e74ae9863f5d",
+    "edits/case-0-fine_augmented/edit.safetensors": "d5225135b2a9c45fb7cf611a34b3dac9e227057c99bff8fb5b06dbe5b1767178",
+    "edits/case-0-gradient_single/edit.json": "0de18ca0a376fdbc05ca42746dc060707b1258d60faca9e7bdfeedfc8b335491",
+    "edits/case-0-gradient_single/edit.safetensors": "13fc49618818c8a1eff4a13689a70db3d0c3e1528953bd99ce61c1f6409a1043",
+    "edits/case-0-gradient_consensus/edit.json": "13b5b8a944975e93c9a8f8164d2e6af910bc3226d68dbe0e7976e5674d43f543",
+    "edits/case-0-gradient_consensus/edit.safetensors": "f6ca20f6131d77e6cca470825263acb895a180fdffa4aa2ad5a7211ed0b9304f",
+    "edits/case-0-consensus_layer_matched_random/edit.json": "fa4d783226833ae4ca1d28d37ce617495273f1e7d2da946ab3debc9578f7e0c4",
+    "edits/case-0-consensus_layer_matched_random/edit.safetensors": "779f668af36e5779bcee41d4dd1443b02c0fc4f78f2f794e4376fdf67074d66e",
+    "edits/case-1-fine-original/edit.json": "40e7949cf51d4341d2f04f0a9ea9a7441d863296fa6ca7c94b0be8aa9021c68b",
+    "edits/case-1-fine-original/edit.safetensors": "58cb34de9d950655a2f963f7dbf92f21fda1de53e2348207bc6fc6bc071205df",
+    "edits/case-1-fine_augmented/edit.json": "e970649bae07a464608a406947813105529a1ba941ef7ee15dcf44a03e439681",
+    "edits/case-1-fine_augmented/edit.safetensors": "197ec9aed2b3149c72f1c3193b88e1f887e16242a3eb69397c441cfa5870bfab",
+    "edits/case-1-gradient_single/edit.json": "6e7ffea922d684cdccda6cb0192e151fd6af45581addaf48ebaa40cbe47d15b1",
+    "edits/case-1-gradient_single/edit.safetensors": "184af9e66d2390e67bb79ccafc7a809989e60716f332f5323d51b54cbbe5be5c",
+    "edits/case-1-gradient_consensus/edit.json": "a808c93e24fb613579647028afa50e491bf3895d44370fa771fe863123809f98",
+    "edits/case-1-gradient_consensus/edit.safetensors": "d3d95bbe6f554ae6487e5d4faf54e77fec6333f8710a08a16950983f3ef4e2dd",
+    "edits/case-1-consensus_layer_matched_random/edit.json": "f71b5e53a561e96ddaf8f2f82c0cc4cf293e951565cc3f2e0138b7634c154fae",
+    "edits/case-1-consensus_layer_matched_random/edit.safetensors": "bff1be4559d98a489ff258ae7403af0546b5a5aff8d861fde596d2719bdaae32"
+  }
+}
