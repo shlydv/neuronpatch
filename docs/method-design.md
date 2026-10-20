@@ -394,3 +394,20 @@ mixed-precision semantics have been verified. This is a concrete remaining bridg
 between the working editor and our library, alongside actual preservation and
 rephrasing transfer. NeST's paper-linked artifact still returns HTTP403 on direct
 retrieval; SafeNexus source is still unverified. No reproduction claim for either.
+
+## Occurrence training bridge verified locally (2026-10-20)
+
+`OccurrenceColumnEdit` retains one global trainable row per selected occurrence,
+including duplicates, with explicit delta precision and the reference joint norm.
+Four Adam steps match unchanged upstream `execute_fine` exactly on a tiny CPU
+GPT-J with256 occurrences/128 unique features, for FP32-base/BF16-delta and
+FP16-base/BF16-delta configurations. Sequential merged weights also match exactly;
+base weights remain unchanged and hooks are removed. The check uses all eligible
+features at two target positions to guarantee duplicates; it is a numerical fixture,
+not an editing quality demonstration. Both source and test scopes are explicit.
+
+The primitive is experimental and does not yet provide compact checkpoint support,
+a complete published objective/stopping workflow, or real-GPU behavioral parity.
+It is distinct from the legacy unique-column API. The fixed16-case run remains
+unchanged and active; these integration checks do not establish any method advantage.
+Library tests now total67 passed/2 skipped in this environment.

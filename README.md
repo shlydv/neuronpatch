@@ -284,3 +284,43 @@ Its separate deltas and norm penalty can differ from training one deduplicated
 parameter per neuron. Existing `NeuronPatch` column indices remain unique; summing
 learned deltas for export and deduplicating supports before training are distinct
 operations. Shared updates across related neurons are a separate hypothesis.
+
+### Occurrence-preserving column edits (experimental)
+
+`OccurrenceColumnEdit` preserves FiNE's separate update vector for every selected
+occurrence, including repeated selections of the same column. It owns one global
+`delta` matrix and exposes its joint norm; summing per-layer norms would change
+the reference objective. Target projections must have the same output width and
+share a device. An explicit delta dtype supports the reference's FP16 base and
+BF16 updates.
+
+```python
+import torch
+from neuronpatch.occurrence import OccurrenceColumnEdit
+
+edit = OccurrenceColumnEdit(
+    model,
+    [("transformer.h.19.mlp.fc_out", 5051),
+     ("transformer.h.19.mlp.fc_out", 5051)],
+    delta_dtype=torch.bfloat16,
+).eval()
+optimizer = torch.optim.Adam(edit.trainable_parameters(), lr=0.001)
+# Compute the chosen task loss from edit(...); delta_norm() is the joint penalty.
+# For generation, keep hooks active around the complete generation call:
+with edit.applied() as edited_model:
+    output = edited_model.generate(**inputs)
+```
+
+Contexts remove hooks on exit, including exceptions. Do not use concurrent edits
+on the same model. `merged_model()` deep-copies the base and adds occurrences in
+order, requiring memory for a second model. Live mixed-precision hooks and merged
+weights can have different rounding. This primitive has no compact checkpoint
+API yet; its ordinary state dictionary includes the frozen base model.
+
+On a tiny CPU GPT-J with 256 occurrences / 128 unique features, four Adam steps
+produce exactly the same BF16 deltas as the unchanged upstream FiNE trainer,
+for both FP32 and FP16 base weights. Merged weights also match the reference
+sequential updates exactly and original weights remain unchanged. See
+`experiments/fine_reference/check_edit.py` and the two `edit_checks_*.json` files.
+These are numerical integration checks, not a new behavioral result or a complete
+FiNE training workflow. The separate 6B reference benchmark still uses upstream.
