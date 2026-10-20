@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-10-20T10:55:10.008401+00:00",
+  "kernel": "shlydv/neuronpatch-protected-rows-pilot1-20261020",
+  "source_exactly_matches_submission": true,
+  "submitted_sha256": "3d0443e968203e1e26f039611495141f8cab323c4a63ec2def2396240d9869c3",
+  "pulled_sha256": "3d0443e968203e1e26f039611495141f8cab323c4a63ec2def2396240d9869c3",
+  "gpu_enabled": true,
+  "internet_enabled": true,
+  "private": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "server_docker_image": ""
+}

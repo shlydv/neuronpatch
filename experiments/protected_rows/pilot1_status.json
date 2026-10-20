@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-10-20T10:46:29.356906+00:00",
+  "checked_utc": "2026-10-20T10:55:28.389879+00:00",
   "kernel": "shlydv/neuronpatch-protected-rows-pilot1-20261020",
   "kernel_id": 139803051,
   "version": 1,
@@ -10,5 +10,7 @@
   "model_predictions_available": false,
   "next_action": "Wait for this same submission to receive a GPU, inspect CUDA preflight, then audit all completed fits. Do not submit duplicates merely because the queue persists.",
   "queue_cause": "Not provided by session-status API; no quota or plan diagnosis established.",
-  "outstanding_goal": "Demonstrate useful correction/preservation improvement and confirm it on fresh data; source parity alone does not complete the goal."
+  "outstanding_goal": "Demonstrate useful correction/preservation improvement and confirm it on fresh data; source parity alone does not complete the goal.",
+  "configuration_verification": "Pulled server source exactly matches submission; GPU and Internet enabled, private Tesla T4 session.",
+  "independent_progress": "Implemented same-span null-basis LoRA control; nonlinear and tiny-Qwen3 CPU checks pass. This control is not added to the frozen queued pilot."
 }
