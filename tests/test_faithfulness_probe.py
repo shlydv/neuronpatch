@@ -51,3 +51,48 @@ def test_closed_book_has_no_document_and_message_path_has_no_targets():
     ]
     explicit = [{"role": "user", "content": "actual input"}]
     assert messages({"messages": explicit, "answer": "SECRET_TARGET"}) == explicit
+
+
+def test_analysis_separates_prompt_repair_from_science_interference():
+    from experiments.faithfulness_probe.analyze import summarize
+
+    rows = []
+    # Truth is A, supplied claim is B. Standard repeats truth; the explicit
+    # reporting instruction works, but the science-with-context mode is fooled.
+    for frame, parsed, correct in [
+        ("closed_book", "A", True),
+        ("context_standard", "A", False),
+        ("context_explicit", "B", True),
+        ("world_with_context", "B", False),
+    ]:
+        rows.append(
+            {
+                "source_id": "one",
+                "task": "counterfactual",
+                "frame": frame,
+                "order": "original",
+                "claim_letter": "B",
+                "truth_letter": "A",
+                "parsed": parsed,
+                "text": parsed,
+                "correct": correct,
+                "truncated": False,
+            }
+        )
+    # Rotated A denotes original B, so it agrees in content with explicit B.
+    rows.append(
+        {
+            **rows[2],
+            "order": "rotated",
+            "parsed": "A",
+            "text": "A",
+            "claim_letter": "A",
+            "truth_letter": "D",
+        }
+    )
+    summary, matrix = summarize(rows)
+    counts = summary["counterfactual_counts"]
+    assert counts["questions"] == 1 and summary["primary_query_count"] == 5
+    assert counts["standard_wrong_explicit_fixed_with_closed_book_correct"] == 1
+    assert counts["world_chooses_fabrication_with_closed_book_correct"] == 1
+    assert matrix[0]["context_explicit_rotation_same_content"]

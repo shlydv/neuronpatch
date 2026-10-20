@@ -34,7 +34,8 @@ author justifications are never supplied to the model.
 
 The initial 1536-token preparation cap admitted only two inconsistent SearchQA
 examples. It was raised to 2048 using input-length coverage, before any frozen
-dataset or model predictions. Actual maximum input length is 1998 tokens. This
+dataset or model predictions. Actual maximum input length is 1998 tokens. Repeated frames are paired observations of the same 48 questions, not 240
+independent examples. This
 length-limited, balanced subset is a development diagnostic, **not an official
 full-benchmark FaithEval score**.
 
@@ -42,7 +43,8 @@ full-benchmark FaithEval score**.
 
 Use complete generated answers for primary results. Do not replace them with
 probabilities renormalized over the four choice letters. Strict parsing is
-reported alongside an assistant review of semantic failures, expanded answers,+ambiguous questions and source-label problems. Broad substring rules such as
+reported alongside an assistant review of semantic failures, expanded answers,
+ambiguous questions and source-label problems. Broad substring rules such as
 counting every response containing “not” as abstention are prohibited.
 
 Before adapting the reporting behavior, require at least eight of the 48 cases
