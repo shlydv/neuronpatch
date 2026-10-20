@@ -11,6 +11,7 @@ import json
 from contextlib import redirect_stdout
 from copy import deepcopy
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 import torch
@@ -101,7 +102,13 @@ def main():
     with torch.no_grad():
         for row, (name, feature) in enumerate(targets):
             expected_merged.get_submodule(name).weight[:, feature].add_(expected_delta[row])
-    merged = edit.merged_model()
+    with TemporaryDirectory() as directory:
+        artifact = Path(directory) / "edit"
+        edit.save(artifact, metadata={"upstream_commit": COMMIT})
+        loaded = OccurrenceColumnEdit.load(deepcopy(base), artifact)
+        torch.testing.assert_close(loaded.delta.detach(), expected_delta, atol=0, rtol=0)
+        torch.testing.assert_close(loaded(ids).logits, edit(ids).logits, atol=0, rtol=0)
+        merged = loaded.merged_model()
     for name, tensor in merged.state_dict().items():
         torch.testing.assert_close(tensor, expected_merged.state_dict()[name], atol=0, rtol=0)
     assert not any(module._forward_hooks for module in candidate.modules())
@@ -119,6 +126,7 @@ def main():
                     (edit.delta.detach() - expected_delta).abs().max()
                 ),
                 "merged_weights": "exact",
+                "compact_round_trip": "exact deltas and logits",
                 "base_weights": "unchanged",
                 "scope": (
                     "CPU tiny-model selector/objective/training/merge parity; "

@@ -314,8 +314,10 @@ with edit.applied() as edited_model:
 Contexts remove hooks on exit, including exceptions. Do not use concurrent edits
 on the same model. `merged_model()` deep-copies the base and adds occurrences in
 order, requiring memory for a second model. Live mixed-precision hooks and merged
-weights can have different rounding. This primitive has no compact checkpoint
-API yet; its ordinary state dictionary includes the frozen base model.
+weights can have different rounding. Use `edit.save(path)` and `OccurrenceColumnEdit.load(original_model, path)`
+for compact artifacts. They retain ordered duplicate occurrences and delta dtype,
+and verify the original base weights/dtype. They exclude optimizer state. The
+ordinary state dictionary still includes the frozen base model.
 
 On a tiny CPU GPT-J with 256 occurrences / 128 unique features, four Adam steps
 produce exactly the same BF16 deltas as the unchanged upstream FiNE trainer,
@@ -352,6 +354,13 @@ The integrated CPU source check now uses the library selector, objective and
 occurrence update together. All selected indices and learned deltas match the
 unchanged upstream trainer exactly for the tested FP32/FP16-base configurations.
 Scope remains four steps on a tiny random model with guaranteed repeated
-selections. Real-GPU behavioral equivalence, compact occurrence checkpoints,
-convenient token/activation capture, and a complete user training workflow remain
+selections. Real-GPU behavioral equivalence, convenient token/activation capture,
+and a complete user training workflow remain
 outstanding; the fixed 16-case benchmark runs the original editor independently.
+
+Compact occurrence artifacts use separate `edit.json` / `edit.safetensors` files;
+they do not change the legacy `NeuronPatch` formats. Loading validates target
+shapes, tensor dtype/values and the exact base fingerprint before freezing the
+model. Saving rejects a changed base, active edit context, or nonfinite deltas,
+and requires a fresh output directory. The integrated upstream check includes
+exact delta/logit reload and sequential-merge parity for both tested precisions.

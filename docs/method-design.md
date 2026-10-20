@@ -425,3 +425,16 @@ with2 hardware cases skipped. This validates a faithful numerical training path,
 not a new method or full-scale effectiveness. Compact occurrence artifact support
 and a complete real-GPU library workflow are still missing. The unchanged16-case
 reference run is progressing; no new behavioral experiment has been launched.
+
+## Compact occurrence artifacts (2026-10-20)
+
+OccurrenceColumnEdit now saves only its ordered targets, global delta and metadata
+against an exact base fingerprint. Repeated indices and BF16-update/FP16-base
+precision survive reload. Malformed shapes/dtypes/values, invalid target metadata
+and base mismatches fail before mutation; saving rejects changed base weights.
+The standalone edit artifact does not change existing NeuronPatch formats and
+excludes optimizer state. The integrated CPU source check now round-trips learned
+deltas and outputs before verifying exact sequential merged weights. All84 tests
+pass,2 skipped. Real-GPU library parity and an end-to-end supported training
+workflow remain outstanding; no new behavioral result is claimed. The unchanged
+16-case upstream experiment continues, currently past the first four paired fits.
