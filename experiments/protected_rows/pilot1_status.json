@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-20T10:46:29.356906+00:00",
+  "kernel": "shlydv/neuronpatch-protected-rows-pilot1-20261020",
+  "kernel_id": 139803051,
+  "version": 1,
+  "authoritative_session_status": "QUEUED",
+  "failure_message": null,
+  "prior_reference16_status": "COMPLETE",
+  "prior_library_parity_status": "COMPLETE",
+  "model_predictions_available": false,
+  "next_action": "Wait for this same submission to receive a GPU, inspect CUDA preflight, then audit all completed fits. Do not submit duplicates merely because the queue persists.",
+  "queue_cause": "Not provided by session-status API; no quota or plan diagnosis established.",
+  "outstanding_goal": "Demonstrate useful correction/preservation improvement and confirm it on fresh data; source parity alone does not complete the goal."
+}

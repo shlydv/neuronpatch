@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-20T10:46:05.274172+00:00",
+  "nest": {
+    "paper": "https://arxiv.org/html/2602.16835v2",
+    "archive": "https://anonymous.4open.science/r/nestSP27-1C20/",
+    "http_status": 401,
+    "response": {
+      "error": "not_connected"
+    },
+    "status": "author archive inaccessible; no implementation inspected"
+  },
+  "safenexus": {
+    "paper": "https://arxiv.org/html/2607.28969v2",
+    "source": "https://arxiv.org/src/2607.28969v2",
+    "source_sha256": "1eb91250d671e9d0dba31a93bcab077830782306d5ac9c4982722f2574641db1",
+    "main_tex_sha256": "94565d750920653aea70c8e065054952fb888ba11b17408b8b14655100bf3b85",
+    "status": "latest official source inspected; main.tex has no external HTTP URL; no usable official implementation located"
+  },
+  "scope": "Availability check only. No claim that no implementation exists elsewhere. Current pilot is a proposed adaptation, not a NeST/SafeNexus reproduction."
+}
