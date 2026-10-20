@@ -1,0 +1,6 @@
+{
+  "proceed": false,
+  "train_missing_errors": 4,
+  "calibrated_cal_missing_errors": 1.0,
+  "decision_uses": "train and calibration only; validation remains unread until after gate"
+}

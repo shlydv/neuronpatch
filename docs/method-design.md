@@ -717,3 +717,25 @@ two rates, common retained-fact CE/max-token KL and calibration-only bias. The
 full objective includes CE and therefore is not bias-invariant. A train/cal-only
 headroom gate stops unnecessary fits; all twelve fits otherwise remain reported.
 CPU integration checks pass (123 tests, two skips). No new quality result yet.
+
+
+### Evidence-pair v1 executed: task ceiling stops adaptation
+
+Free Colab T4, pinned Qwen3 4B, 381 seconds including setup; actual CUDA
+row/random/LoRA preflight passed. Base missing-evidence exact UNKNOWN: train
+60/64, calibration 31/32, best constrained refusal bias 0. Frozen headroom
+requirements (8 train and 4 calibration errors) failed, so no 4B fitting or
+validation/utility inference occurred. Full base fingerprint restored, outputs
+backed up and source/data hashes checked before runtime release.
+
+All four calibration supported EM misses and seven invariant EM misses contain
+the correct facts with expanded wording. Of five missing-evidence misses across
+train/cal, two are wrong-event/date errors, one is a nonanswer instruction
+failure, two remain plausible-inference ambiguities despite source-only review.
+Do not relabel frozen metrics after prediction or claim method failure/success.
+
+Consequence: curate less and establish meaningful baseline headroom sooner on a
+pinned external development diagnostic. FaithEval is a candidate for incomplete,
+conflicting or counterfactual evidence, not presumed hard. Preserve a separate
+untouched confirmation slice; do not train on the benchmark test examples or
+assume the current UNKNOWN-specific objective already solves its other tasks.

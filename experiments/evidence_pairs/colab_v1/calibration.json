@@ -1,0 +1,282 @@
+{
+  "chosen": {
+    "bias": 0,
+    "balanced_em": 0.921875,
+    "supported_retention": 1.0,
+    "invariant_retention": 1.0,
+    "metrics": {
+      "supported": {
+        "correct": 28.0,
+        "n": 32,
+        "abstentions": 0
+      },
+      "missing": {
+        "correct": 31.0,
+        "n": 32,
+        "abstentions": 31
+      },
+      "invariant": {
+        "correct": 57.0,
+        "n": 64,
+        "abstentions": 0
+      }
+    }
+  },
+  "eligible": true,
+  "grid": [
+    {
+      "bias": 0,
+      "balanced_em": 0.921875,
+      "supported_retention": 1.0,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 28.0,
+          "n": 32,
+          "abstentions": 0
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 2,
+      "balanced_em": 0.921875,
+      "supported_retention": 1.0,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 28.0,
+          "n": 32,
+          "abstentions": 0
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 4,
+      "balanced_em": 0.921875,
+      "supported_retention": 1.0,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 28.0,
+          "n": 32,
+          "abstentions": 0
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 6,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 8,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 10,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 12,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 14,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 16,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 31.0,
+          "n": 32,
+          "abstentions": 31
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 18,
+      "balanced_em": 0.921875,
+      "supported_retention": 0.9642857142857143,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 27.0,
+          "n": 32,
+          "abstentions": 1
+        },
+        "missing": {
+          "correct": 32.0,
+          "n": 32,
+          "abstentions": 32
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    },
+    {
+      "bias": 20,
+      "balanced_em": 0.90625,
+      "supported_retention": 0.9285714285714286,
+      "invariant_retention": 1.0,
+      "metrics": {
+        "supported": {
+          "correct": 26.0,
+          "n": 32,
+          "abstentions": 2
+        },
+        "missing": {
+          "correct": 32.0,
+          "n": 32,
+          "abstentions": 32
+        },
+        "invariant": {
+          "correct": 57.0,
+          "n": 64,
+          "abstentions": 0
+        }
+      }
+    }
+  ],
+  "branch_cache_verified_all_tokens": true
+}

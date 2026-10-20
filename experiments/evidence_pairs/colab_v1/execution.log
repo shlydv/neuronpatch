@@ -1,0 +1,75 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 58.1 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Using CPython 3.11.17
+Creating virtual environment at: /tmp/evidence-env
+Activate with: source /tmp/evidence-env/bin/activate
+Using Python 3.11.17 environment at: /tmp/evidence-env
+Resolved 41 packages in 333ms
+Prepared 41 packages in 52.04s
+Installed 41 packages in 400ms
+ + accelerate==1.10.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + hf-xet==1.7.0
+ + huggingface-hub==0.34.4
+ + idna==3.20
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.4.5.8
+ + nvidia-cuda-cupti-cu12==12.4.127
+ + nvidia-cuda-nvrtc-cu12==12.4.127
+ + nvidia-cuda-runtime-cu12==12.4.127
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.2.1.3
+ + nvidia-curand-cu12==10.3.5.147
+ + nvidia-cusolver-cu12==11.6.1.9
+ + nvidia-cusparse-cu12==12.3.1.170
+ + nvidia-cusparselt-cu12==0.6.2
+ + nvidia-nccl-cu12==2.21.5
+ + nvidia-nvjitlink-cu12==12.4.127
+ + nvidia-nvtx-cu12==12.4.127
+ + packaging==26.3
+ + peft==0.17.1
+ + psutil==7.2.2
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + safetensors==0.6.2
+ + sympy==1.13.1
+ + tokenizers==0.22.1
+ + torch==2.6.0
+ + tqdm==4.70.1
+ + transformers==4.56.2
+ + triton==3.2.0
+ + typing-extensions==4.16.0
+ + urllib3==2.8.0
+/tmp/evidence-env/lib/python3.11/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(
+CUDA_PREFLIGHT {"gpu": "Tesla T4", "base_dtype": "float16", "trainable_dtype": "float32", "outcomes": [{"family": "guided", "finite_loss": 4.272943019866943, "exact_restore": true}, {"family": "random", "finite_loss": 4.272943019866943, "exact_restore": true}, {"family": "lora", "finite_loss": 4.273380279541016, "exact_restore": true}]}
+LOAD pinned Qwen3 4B FP16
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]
+Fetching 3 files:  33%|███▎      | 1/3 [00:01<00:03,  1.58s/it]
+Fetching 3 files:  67%|██████▋   | 2/3 [00:48<00:24, 24.45s/it]
+Fetching 3 files: 100%|██████████| 3/3 [00:50<00:00, 16.88s/it]
+Fetching 3 files: 100%|██████████| 3/3 [00:50<00:00, 16.88s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:13<00:26, 13.23s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:28<00:14, 14.60s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:29<00:00,  8.10s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:29<00:00,  9.72s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EVAL base/cal_raw 64/128
+EVAL base/cal_raw 128/128
+EVAL base/cal_calibrated 64/128
+EVAL base/cal_calibrated 128/128
+EVAL base/train_primary 64/128
+EVAL base/train_primary 128/128
+STOP no sufficient baseline headroom under frozen rule

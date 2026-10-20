@@ -1,0 +1,5293 @@
+{
+  "train_primary": [
+    {
+      "id": "570c2999ec8fbc190045bcde:answerable",
+      "kind": "answerable",
+      "article": "Federal_Bureau_of_Investigation",
+      "text": "July 8, 2007",
+      "answers": [
+        "July 8, 2007"
+      ],
+      "generated_token_ids": [
+        28427,
+        220,
+        23,
+        11,
+        220,
+        17,
+        15,
+        15,
+        22,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570c2999ec8fbc190045bcde",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570c2999ec8fbc190045bcde:missing",
+      "kind": "missing",
+      "article": "Federal_Bureau_of_Investigation",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570c2999ec8fbc190045bcde",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727728e708984140094ddbf:answerable",
+      "kind": "answerable",
+      "article": "North_Carolina",
+      "text": "William Tryon",
+      "answers": [
+        "William Tryon"
+      ],
+      "generated_token_ids": [
+        44787,
+        9735,
+        263,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727728e708984140094ddbf",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727728e708984140094ddbf:missing",
+      "kind": "missing",
+      "article": "North_Carolina",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727728e708984140094ddbf",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572999813f37b319004784e8:answerable",
+      "kind": "answerable",
+      "article": "Serbo-Croatian",
+      "text": "Igor Mandi\u0107",
+      "answers": [
+        "Igor Mandi\u0107"
+      ],
+      "generated_token_ids": [
+        40,
+        5628,
+        23849,
+        67829,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572999813f37b319004784e8",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572999813f37b319004784e8:missing",
+      "kind": "missing",
+      "article": "Serbo-Croatian",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572999813f37b319004784e8",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57323ca3b9d445190005e903:answerable",
+      "kind": "answerable",
+      "article": "Jehovah%27s_Witnesses",
+      "text": "In 1870",
+      "answers": [
+        "1870"
+      ],
+      "generated_token_ids": [
+        641,
+        220,
+        16,
+        23,
+        22,
+        15,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "57323ca3b9d445190005e903",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57323ca3b9d445190005e903:missing",
+      "kind": "missing",
+      "article": "Jehovah%27s_Witnesses",
+      "text": "June 1879",
+      "answers": [],
+      "generated_token_ids": [
+        27160,
+        220,
+        16,
+        23,
+        22,
+        24,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "abstained": false,
+      "pair_id": "57323ca3b9d445190005e903",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727423f708984140094db75:answerable",
+      "kind": "answerable",
+      "article": "New_Haven,_Connecticut",
+      "text": "General David Wooster",
+      "answers": [
+        "David Wooster",
+        "General David Wooster"
+      ],
+      "generated_token_ids": [
+        15415,
+        6798,
+        27258,
+        11713,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727423f708984140094db75",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727423f708984140094db75:missing",
+      "kind": "missing",
+      "article": "New_Haven,_Connecticut",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727423f708984140094db75",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "571ae53e9499d21900609b9a:answerable",
+      "kind": "answerable",
+      "article": "Athanasius_of_Alexandria",
+      "text": "Eusebius of Vercelli",
+      "answers": [
+        "Eusebius of Vercelli"
+      ],
+      "generated_token_ids": [
+        36,
+        810,
+        8221,
+        355,
+        315,
+        647,
+        2962,
+        20508,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "571ae53e9499d21900609b9a",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "571ae53e9499d21900609b9a:missing",
+      "kind": "missing",
+      "article": "Athanasius_of_Alexandria",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "571ae53e9499d21900609b9a",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572684dd708984140094c8b9:answerable",
+      "kind": "answerable",
+      "article": "Marvel_Comics",
+      "text": "October 1976",
+      "answers": [
+        "October 1976"
+      ],
+      "generated_token_ids": [
+        30194,
+        220,
+        16,
+        24,
+        22,
+        21,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572684dd708984140094c8b9",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572684dd708984140094c8b9:missing",
+      "kind": "missing",
+      "article": "Marvel_Comics",
+      "text": "Captain Britain debuted exclusively in the UK.",
+      "answers": [],
+      "generated_token_ids": [
+        61058,
+        13224,
+        57085,
+        23242,
+        304,
+        279,
+        6424,
+        13,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "abstained": false,
+      "pair_id": "572684dd708984140094c8b9",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56df33ca8bc80c19004e497e:answerable",
+      "kind": "answerable",
+      "article": "Oklahoma_City",
+      "text": "April 19, 1995",
+      "answers": [
+        "1995"
+      ],
+      "generated_token_ids": [
+        28046,
+        220,
+        16,
+        24,
+        11,
+        220,
+        16,
+        24,
+        24,
+        20,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "pair_id": "56df33ca8bc80c19004e497e",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56df33ca8bc80c19004e497e:missing",
+      "kind": "missing",
+      "article": "Oklahoma_City",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56df33ca8bc80c19004e497e",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572f4ec3a23a5019007fc508:answerable",
+      "kind": "answerable",
+      "article": "Railway_electrification_system",
+      "text": "1987",
+      "answers": [
+        "1987"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        23,
+        22,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572f4ec3a23a5019007fc508",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572f4ec3a23a5019007fc508:missing",
+      "kind": "missing",
+      "article": "Railway_electrification_system",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572f4ec3a23a5019007fc508",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726a5d15951b619008f78f3:answerable",
+      "kind": "answerable",
+      "article": "Political_philosophy",
+      "text": "1971",
+      "answers": [
+        "1971"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        22,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726a5d15951b619008f78f3",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726a5d15951b619008f78f3:missing",
+      "kind": "missing",
+      "article": "Political_philosophy",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5726a5d15951b619008f78f3",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5730846a069b531400832148:answerable",
+      "kind": "answerable",
+      "article": "Translation",
+      "text": "3rd century BCE",
+      "answers": [
+        "3rd century BCE"
+      ],
+      "generated_token_ids": [
+        18,
+        6498,
+        9294,
+        78577,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5730846a069b531400832148",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5730846a069b531400832148:missing",
+      "kind": "missing",
+      "article": "Translation",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5730846a069b531400832148",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56dde75466d3e219004dadc7:answerable",
+      "kind": "answerable",
+      "article": "Cardinal_(Catholicism)",
+      "text": "Nicholas II",
+      "answers": [
+        "Nicholas II"
+      ],
+      "generated_token_ids": [
+        85179,
+        19186,
+        7946,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56dde75466d3e219004dadc7",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56dde75466d3e219004dadc7:missing",
+      "kind": "missing",
+      "article": "Cardinal_(Catholicism)",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56dde75466d3e219004dadc7",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5731e59ee17f3d140042250f:answerable",
+      "kind": "answerable",
+      "article": "Protestantism",
+      "text": "the Catholic Church",
+      "answers": [
+        "the Catholic Church"
+      ],
+      "generated_token_ids": [
+        1782,
+        16473,
+        9257,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5731e59ee17f3d140042250f",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5731e59ee17f3d140042250f:missing",
+      "kind": "missing",
+      "article": "Protestantism",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5731e59ee17f3d140042250f",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5730b76c8ab72b1400f9c6ea:answerable",
+      "kind": "answerable",
+      "article": "Namibia",
+      "text": "21 March 1990",
+      "answers": [
+        "21 March 1990"
+      ],
+      "generated_token_ids": [
+        17,
+        16,
+        5470,
+        220,
+        16,
+        24,
+        24,
+        15,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5730b76c8ab72b1400f9c6ea",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5730b76c8ab72b1400f9c6ea:missing",
+      "kind": "missing",
+      "article": "Namibia",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5730b76c8ab72b1400f9c6ea",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572777c7dd62a815002e9db1:answerable",
+      "kind": "answerable",
+      "article": "Turner_Classic_Movies",
+      "text": "UNKNOWN",
+      "answers": [
+        "Kirk Kerkorian"
+      ],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "abstained": true,
+      "pair_id": "572777c7dd62a815002e9db1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572777c7dd62a815002e9db1:missing",
+      "kind": "missing",
+      "article": "Turner_Classic_Movies",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572777c7dd62a815002e9db1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "571df51db64a571400c71e30:answerable",
+      "kind": "answerable",
+      "article": "Multiracial_American",
+      "text": "2003",
+      "answers": [
+        "2003"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        18,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "571df51db64a571400c71e30",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "571df51db64a571400c71e30:missing",
+      "kind": "missing",
+      "article": "Multiracial_American",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "571df51db64a571400c71e30",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57313224e6313a140071ccf0:answerable",
+      "kind": "answerable",
+      "article": "Light-emitting_diode",
+      "text": "In 2009",
+      "answers": [
+        "2009"
+      ],
+      "generated_token_ids": [
+        641,
+        220,
+        17,
+        15,
+        15,
+        24,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "57313224e6313a140071ccf0",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57313224e6313a140071ccf0:missing",
+      "kind": "missing",
+      "article": "Light-emitting_diode",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57313224e6313a140071ccf0",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727762cdd62a815002e9d79:answerable",
+      "kind": "answerable",
+      "article": "Late_Middle_Ages",
+      "text": "P\u00e1l Tomori",
+      "answers": [
+        "P\u00e1l Tomori"
+      ],
+      "generated_token_ids": [
+        47,
+        19003,
+        8364,
+        13601,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727762cdd62a815002e9d79",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727762cdd62a815002e9d79:missing",
+      "kind": "missing",
+      "article": "Late_Middle_Ages",
+      "text": "Louis II of Hungary",
+      "answers": [],
+      "generated_token_ids": [
+        66115,
+        7946,
+        315,
+        42776,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "abstained": false,
+      "pair_id": "5727762cdd62a815002e9d79",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5706f6a790286e26004fc779:answerable",
+      "kind": "answerable",
+      "article": "Letter_case",
+      "text": "Alcuin",
+      "answers": [
+        "Alcuin"
+      ],
+      "generated_token_ids": [
+        2101,
+        20199,
+        258,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5706f6a790286e26004fc779",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5706f6a790286e26004fc779:missing",
+      "kind": "missing",
+      "article": "Letter_case",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5706f6a790286e26004fc779",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57061d0c75f01819005e79a5:answerable",
+      "kind": "answerable",
+      "article": "MP3",
+      "text": "1959",
+      "answers": [
+        "1959"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        20,
+        24,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57061d0c75f01819005e79a5",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57061d0c75f01819005e79a5:missing",
+      "kind": "missing",
+      "article": "MP3",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57061d0c75f01819005e79a5",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727b298ff5b5019007d92cb:answerable",
+      "kind": "answerable",
+      "article": "Sichuan",
+      "text": "Chiang Kai-Shek",
+      "answers": [
+        "Chiang Kai-Shek"
+      ],
+      "generated_token_ids": [
+        1143,
+        27224,
+        50610,
+        6222,
+        91080,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727b298ff5b5019007d92cb",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727b298ff5b5019007d92cb:missing",
+      "kind": "missing",
+      "article": "Sichuan",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727b298ff5b5019007d92cb",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727feae3acd2414000df19a:answerable",
+      "kind": "answerable",
+      "article": "Time",
+      "text": "1954",
+      "answers": [
+        "1954"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        20,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727feae3acd2414000df19a",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727feae3acd2414000df19a:missing",
+      "kind": "missing",
+      "article": "Time",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727feae3acd2414000df19a",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572970446aef051400154eb3:answerable",
+      "kind": "answerable",
+      "article": "Palermo",
+      "text": "14 July",
+      "answers": [
+        "14 July"
+      ],
+      "generated_token_ids": [
+        16,
+        19,
+        5768,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572970446aef051400154eb3",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572970446aef051400154eb3:missing",
+      "kind": "missing",
+      "article": "Palermo",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572970446aef051400154eb3",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57265974dd62a815002e826a:answerable",
+      "kind": "answerable",
+      "article": "Intellectual_property",
+      "text": "1998",
+      "answers": [
+        "1998"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        24,
+        23,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57265974dd62a815002e826a",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57265974dd62a815002e826a:missing",
+      "kind": "missing",
+      "article": "Intellectual_property",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57265974dd62a815002e826a",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5728a7b83acd2414000dfc04:answerable",
+      "kind": "answerable",
+      "article": "Brigham_Young_University",
+      "text": "about 1940",
+      "answers": [
+        "about 1940"
+      ],
+      "generated_token_ids": [
+        9096,
+        220,
+        16,
+        24,
+        19,
+        15,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5728a7b83acd2414000dfc04",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5728a7b83acd2414000dfc04:missing",
+      "kind": "missing",
+      "article": "Brigham_Young_University",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5728a7b83acd2414000dfc04",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5733bf84d058e614000b61be:answerable",
+      "kind": "answerable",
+      "article": "University_of_Notre_Dame",
+      "text": "September 1876",
+      "answers": [
+        "September 1876"
+      ],
+      "generated_token_ids": [
+        29549,
+        220,
+        16,
+        23,
+        22,
+        21,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5733bf84d058e614000b61be",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5733bf84d058e614000b61be:missing",
+      "kind": "missing",
+      "article": "University_of_Notre_Dame",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5733bf84d058e614000b61be",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56d9e452dc89441400fdb8b2:answerable",
+      "kind": "answerable",
+      "article": "Dog",
+      "text": "Yama",
+      "answers": [
+        "Yama"
+      ],
+      "generated_token_ids": [
+        56,
+        3029,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56d9e452dc89441400fdb8b2",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56d9e452dc89441400fdb8b2:missing",
+      "kind": "missing",
+      "article": "Dog",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56d9e452dc89441400fdb8b2",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56e7aa3300c9c71400d774af:answerable",
+      "kind": "answerable",
+      "article": "Nanjing",
+      "text": "1968",
+      "answers": [
+        "1968"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        21,
+        23,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56e7aa3300c9c71400d774af",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56e7aa3300c9c71400d774af:missing",
+      "kind": "missing",
+      "article": "Nanjing",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56e7aa3300c9c71400d774af",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57266f10f1498d1400e8df96:answerable",
+      "kind": "answerable",
+      "article": "Dutch_language",
+      "text": "1975",
+      "answers": [
+        "1975"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        22,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57266f10f1498d1400e8df96",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57266f10f1498d1400e8df96:missing",
+      "kind": "missing",
+      "article": "Dutch_language",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57266f10f1498d1400e8df96",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5709517c9928a81400471528:answerable",
+      "kind": "answerable",
+      "article": "Houston",
+      "text": "Sylvester Turner",
+      "answers": [
+        "Sylvester Turner"
+      ],
+      "generated_token_ids": [
+        50,
+        14753,
+        5191,
+        33031,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5709517c9928a81400471528",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5709517c9928a81400471528:missing",
+      "kind": "missing",
+      "article": "Houston",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5709517c9928a81400471528",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56fb7e4fb28b3419009f1d7d:answerable",
+      "kind": "answerable",
+      "article": "Middle_Ages",
+      "text": "The Fatimids of Egypt",
+      "answers": [
+        "the Fatimids of Egypt"
+      ],
+      "generated_token_ids": [
+        785,
+        25348,
+        318,
+        3365,
+        315,
+        14867,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56fb7e4fb28b3419009f1d7d",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56fb7e4fb28b3419009f1d7d:missing",
+      "kind": "missing",
+      "article": "Middle_Ages",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56fb7e4fb28b3419009f1d7d",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56df82285ca0a614008f9bca:answerable",
+      "kind": "answerable",
+      "article": "Alexander_Graham_Bell",
+      "text": "Newfoundland",
+      "answers": [
+        "Newfoundland"
+      ],
+      "generated_token_ids": [
+        3564,
+        76633,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56df82285ca0a614008f9bca",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56df82285ca0a614008f9bca:missing",
+      "kind": "missing",
+      "article": "Alexander_Graham_Bell",
+      "text": "The New World",
+      "answers": [],
+      "generated_token_ids": [
+        785,
+        1532,
+        4337,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "abstained": false,
+      "pair_id": "56df82285ca0a614008f9bca",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572855143acd2414000df91f:answerable",
+      "kind": "answerable",
+      "article": "LaserDisc",
+      "text": "Jasmine Multimedia",
+      "answers": [
+        "Jasmine Multimedia"
+      ],
+      "generated_token_ids": [
+        41,
+        38864,
+        82222,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572855143acd2414000df91f",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572855143acd2414000df91f:missing",
+      "kind": "missing",
+      "article": "LaserDisc",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572855143acd2414000df91f",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570a12fd6d058f1900182c9e:answerable",
+      "kind": "answerable",
+      "article": "Hanover",
+      "text": "Trammplatz",
+      "answers": [
+        "Trammplatz"
+      ],
+      "generated_token_ids": [
+        1282,
+        8666,
+        57548,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570a12fd6d058f1900182c9e",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570a12fd6d058f1900182c9e:missing",
+      "kind": "missing",
+      "article": "Hanover",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570a12fd6d058f1900182c9e",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5728f2a34b864d1900165103:answerable",
+      "kind": "answerable",
+      "article": "Samurai",
+      "text": "Iwasaki Yatar\u014d",
+      "answers": [
+        "Iwasaki Yatar\u014d"
+      ],
+      "generated_token_ids": [
+        40,
+        16123,
+        14624,
+        809,
+        6392,
+        55661,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5728f2a34b864d1900165103",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5728f2a34b864d1900165103:missing",
+      "kind": "missing",
+      "article": "Samurai",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5728f2a34b864d1900165103",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56cd673a62d2951400fa657e:answerable",
+      "kind": "answerable",
+      "article": "IPod",
+      "text": "August 24, 2006",
+      "answers": [
+        "August 24, 2006"
+      ],
+      "generated_token_ids": [
+        31459,
+        220,
+        17,
+        19,
+        11,
+        220,
+        17,
+        15,
+        15,
+        21,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56cd673a62d2951400fa657e",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56cd673a62d2951400fa657e:missing",
+      "kind": "missing",
+      "article": "IPod",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56cd673a62d2951400fa657e",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5730b5b4069b531400832299:answerable",
+      "kind": "answerable",
+      "article": "Sumer",
+      "text": "Ninhursag",
+      "answers": [
+        "Ninhursag",
+        "Ki"
+      ],
+      "generated_token_ids": [
+        45,
+        20868,
+        1723,
+        351,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5730b5b4069b531400832299",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5730b5b4069b531400832299:missing",
+      "kind": "missing",
+      "article": "Sumer",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5730b5b4069b531400832299",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572fc225a23a5019007fc9a1:answerable",
+      "kind": "answerable",
+      "article": "Armenia",
+      "text": "10 October 2009",
+      "answers": [
+        "10 October 2009"
+      ],
+      "generated_token_ids": [
+        16,
+        15,
+        6527,
+        220,
+        17,
+        15,
+        15,
+        24,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572fc225a23a5019007fc9a1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572fc225a23a5019007fc9a1:missing",
+      "kind": "missing",
+      "article": "Armenia",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572fc225a23a5019007fc9a1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56cf6c824df3c31400b0d773:answerable",
+      "kind": "answerable",
+      "article": "Kanye_West",
+      "text": "Hawaii",
+      "answers": [
+        "Hawaii"
+      ],
+      "generated_token_ids": [
+        39,
+        70954,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56cf6c824df3c31400b0d773",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56cf6c824df3c31400b0d773:missing",
+      "kind": "missing",
+      "article": "Kanye_West",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56cf6c824df3c31400b0d773",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570e35280b85d914000d7d61:answerable",
+      "kind": "answerable",
+      "article": "Uranium",
+      "text": "Lise Meitner",
+      "answers": [
+        "Lise Meitner"
+      ],
+      "generated_token_ids": [
+        43,
+        1064,
+        2157,
+        275,
+        1194,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570e35280b85d914000d7d61",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570e35280b85d914000d7d61:missing",
+      "kind": "missing",
+      "article": "Uranium",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570e35280b85d914000d7d61",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570c3f1dec8fbc190045be1c:answerable",
+      "kind": "answerable",
+      "article": "Mary_(mother_of_Jesus)",
+      "text": "1950",
+      "answers": [
+        "1950"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        20,
+        15,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570c3f1dec8fbc190045be1c",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570c3f1dec8fbc190045be1c:missing",
+      "kind": "missing",
+      "article": "Mary_(mother_of_Jesus)",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570c3f1dec8fbc190045be1c",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572792f95951b619008f8de5:answerable",
+      "kind": "answerable",
+      "article": "Supreme_court",
+      "text": "1972",
+      "answers": [
+        "1972"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        22,
+        17,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572792f95951b619008f8de5",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572792f95951b619008f8de5:missing",
+      "kind": "missing",
+      "article": "Supreme_court",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572792f95951b619008f8de5",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570bd90fec8fbc190045bb72:answerable",
+      "kind": "answerable",
+      "article": "ASCII",
+      "text": "1963",
+      "answers": [
+        "1963"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        21,
+        18,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570bd90fec8fbc190045bb72",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570bd90fec8fbc190045bb72:missing",
+      "kind": "missing",
+      "article": "ASCII",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570bd90fec8fbc190045bb72",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57260e0d89a1e219009ac1a2:answerable",
+      "kind": "answerable",
+      "article": "Buckingham_Palace",
+      "text": "Geoffrey de Mandeville",
+      "answers": [
+        "Geoffrey de Mandeville"
+      ],
+      "generated_token_ids": [
+        9499,
+        1847,
+        8073,
+        409,
+        23849,
+        5120,
+        4517,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57260e0d89a1e219009ac1a2",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57260e0d89a1e219009ac1a2:missing",
+      "kind": "missing",
+      "article": "Buckingham_Palace",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57260e0d89a1e219009ac1a2",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572a37e41d04691400779856:answerable",
+      "kind": "answerable",
+      "article": "CBC_Television",
+      "text": "2008",
+      "answers": [
+        "2008",
+        "the end of the fourth season",
+        "the end of the 4th season",
+        "the end of fourth season, broadcast in 2008"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        23,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572a37e41d04691400779856",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572a37e41d04691400779856:missing",
+      "kind": "missing",
+      "article": "CBC_Television",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572a37e41d04691400779856",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56de719c4396321400ee290b:answerable",
+      "kind": "answerable",
+      "article": "Arnold_Schwarzenegger",
+      "text": "1966",
+      "answers": [
+        "1966"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        21,
+        21,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56de719c4396321400ee290b",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56de719c4396321400ee290b:missing",
+      "kind": "missing",
+      "article": "Arnold_Schwarzenegger",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56de719c4396321400ee290b",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "573387494776f41900660cb3:answerable",
+      "kind": "answerable",
+      "article": "Financial_crisis_of_2007%E2%80%9308",
+      "text": "2008",
+      "answers": [
+        "2008"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        23,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573387494776f41900660cb3",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "573387494776f41900660cb3:missing",
+      "kind": "missing",
+      "article": "Financial_crisis_of_2007%E2%80%9308",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "573387494776f41900660cb3",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56de47f7cffd8e1900b4b781:answerable",
+      "kind": "answerable",
+      "article": "Human_Development_Index",
+      "text": "Bras\u00edlia, Brazil",
+      "answers": [
+        "Bras\u00edlia",
+        "Bras\u00edlia, Brazil",
+        "Brazil"
+      ],
+      "generated_token_ids": [
+        6828,
+        300,
+        75372,
+        11,
+        15948,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56de47f7cffd8e1900b4b781",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56de47f7cffd8e1900b4b781:missing",
+      "kind": "missing",
+      "article": "Human_Development_Index",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56de47f7cffd8e1900b4b781",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572834aeff5b5019007d9f08:answerable",
+      "kind": "answerable",
+      "article": "Annelid",
+      "text": "Torsten Struck and colleagues",
+      "answers": [
+        "Torsten Struck",
+        "Torsten Struck and colleagues"
+      ],
+      "generated_token_ids": [
+        32350,
+        15795,
+        4509,
+        1942,
+        323,
+        17639,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572834aeff5b5019007d9f08",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572834aeff5b5019007d9f08:missing",
+      "kind": "missing",
+      "article": "Annelid",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572834aeff5b5019007d9f08",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57097f32ed30961900e84226:answerable",
+      "kind": "answerable",
+      "article": "Orthodox_Judaism",
+      "text": "Cliffside Park",
+      "answers": [
+        "Cliffside Park"
+      ],
+      "generated_token_ids": [
+        5066,
+        3092,
+        2929,
+        5540,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57097f32ed30961900e84226",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57097f32ed30961900e84226:missing",
+      "kind": "missing",
+      "article": "Orthodox_Judaism",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57097f32ed30961900e84226",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570a84d76d058f1900182f14:answerable",
+      "kind": "answerable",
+      "article": "Old_English",
+      "text": "Scyld",
+      "answers": [
+        "Scyld"
+      ],
+      "generated_token_ids": [
+        3326,
+        88,
+        507,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570a84d76d058f1900182f14",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570a84d76d058f1900182f14:missing",
+      "kind": "missing",
+      "article": "Old_English",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570a84d76d058f1900182f14",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570e63590dc6ce1900204ff0:answerable",
+      "kind": "answerable",
+      "article": "Order_of_the_British_Empire",
+      "text": "The Bishop of London",
+      "answers": [
+        "Bishop of London",
+        "The Bishop of London",
+        "The Bishop of London, a senior bishop in the Church of England"
+      ],
+      "generated_token_ids": [
+        785,
+        33242,
+        315,
+        7148,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570e63590dc6ce1900204ff0",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570e63590dc6ce1900204ff0:missing",
+      "kind": "missing",
+      "article": "Order_of_the_British_Empire",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570e63590dc6ce1900204ff0",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726dbaf5951b619008f8031:answerable",
+      "kind": "answerable",
+      "article": "Yale_University",
+      "text": "Alison Richard",
+      "answers": [
+        "Alison Richard"
+      ],
+      "generated_token_ids": [
+        2101,
+        3335,
+        11867,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726dbaf5951b619008f8031",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726dbaf5951b619008f8031:missing",
+      "kind": "missing",
+      "article": "Yale_University",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5726dbaf5951b619008f8031",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5729600e6aef051400154db1:answerable",
+      "kind": "answerable",
+      "article": "Germans",
+      "text": "1871",
+      "answers": [
+        "1871"
+      ],
+      "generated_token_ids": [
+        16,
+        23,
+        22,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5729600e6aef051400154db1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5729600e6aef051400154db1:missing",
+      "kind": "missing",
+      "article": "Germans",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5729600e6aef051400154db1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570602f875f01819005e7870:answerable",
+      "kind": "answerable",
+      "article": "Bird_migration",
+      "text": "Asia and Europe",
+      "answers": [
+        "Asia and Europe"
+      ],
+      "generated_token_ids": [
+        38463,
+        323,
+        4505,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570602f875f01819005e7870",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570602f875f01819005e7870:missing",
+      "kind": "missing",
+      "article": "Bird_migration",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570602f875f01819005e7870",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57321ed80fdd8d15006c67d1:answerable",
+      "kind": "answerable",
+      "article": "Economy_of_Greece",
+      "text": "The Academy of Athens",
+      "answers": [
+        "Academy of Athens"
+      ],
+      "generated_token_ids": [
+        785,
+        15815,
+        315,
+        45826,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57321ed80fdd8d15006c67d1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57321ed80fdd8d15006c67d1:missing",
+      "kind": "missing",
+      "article": "Economy_of_Greece",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57321ed80fdd8d15006c67d1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "571b3a0d32177014007ea035:answerable",
+      "kind": "answerable",
+      "article": "Asphalt",
+      "text": "1915",
+      "answers": [
+        "1915"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        16,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "571b3a0d32177014007ea035",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "571b3a0d32177014007ea035:missing",
+      "kind": "missing",
+      "article": "Asphalt",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "571b3a0d32177014007ea035",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56e099da231d4119001ac2c2:answerable",
+      "kind": "answerable",
+      "article": "Russian_Soviet_Federative_Socialist_Republic",
+      "text": "Boris Yeltsin",
+      "answers": [
+        "Boris Yeltsin"
+      ],
+      "generated_token_ids": [
+        33,
+        50280,
+        809,
+        84028,
+        258,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56e099da231d4119001ac2c2",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56e099da231d4119001ac2c2:missing",
+      "kind": "missing",
+      "article": "Russian_Soviet_Federative_Socialist_Republic",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56e099da231d4119001ac2c2",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5733ecdb4776f41900661521:answerable",
+      "kind": "answerable",
+      "article": "Portugal",
+      "text": "An\u00edbal Cavaco Silva",
+      "answers": [
+        "An\u00edbal Cavaco Silva"
+      ],
+      "generated_token_ids": [
+        2082,
+        2426,
+        13313,
+        51066,
+        16428,
+        41041,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5733ecdb4776f41900661521",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5733ecdb4776f41900661521:missing",
+      "kind": "missing",
+      "article": "Portugal",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5733ecdb4776f41900661521",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726baf35951b619008f7c2c:answerable",
+      "kind": "answerable",
+      "article": "Somerset",
+      "text": "2005",
+      "answers": [
+        "2005",
+        "achieved university status in 2005"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726baf35951b619008f7c2c",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726baf35951b619008f7c2c:missing",
+      "kind": "missing",
+      "article": "Somerset",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5726baf35951b619008f7c2c",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "573031ba947a6a140053d26c:answerable",
+      "kind": "answerable",
+      "article": "Charleston,_South_Carolina",
+      "text": "Wade Hampton",
+      "answers": [
+        "Wade Hampton"
+      ],
+      "generated_token_ids": [
+        54,
+        1021,
+        63674,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573031ba947a6a140053d26c",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "573031ba947a6a140053d26c:missing",
+      "kind": "missing",
+      "article": "Charleston,_South_Carolina",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "573031ba947a6a140053d26c",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5725d86e89a1e219009abfa1:answerable",
+      "kind": "answerable",
+      "article": "Montevideo",
+      "text": "1935",
+      "answers": [
+        "1935"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        18,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5725d86e89a1e219009abfa1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5725d86e89a1e219009abfa1:missing",
+      "kind": "missing",
+      "article": "Montevideo",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5725d86e89a1e219009abfa1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57098554200fba1400368127:answerable",
+      "kind": "answerable",
+      "article": "England_national_football_team",
+      "text": "Roy Hodgson",
+      "answers": [
+        "Roy Hodgson"
+      ],
+      "generated_token_ids": [
+        79162,
+        82884,
+        930,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57098554200fba1400368127",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57098554200fba1400368127:missing",
+      "kind": "missing",
+      "article": "England_national_football_team",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57098554200fba1400368127",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57284e224b864d190016490a:answerable",
+      "kind": "answerable",
+      "article": "History_of_India",
+      "text": "7th and 6th centuries BC",
+      "answers": [
+        "7th and 6th centuries BC"
+      ],
+      "generated_token_ids": [
+        22,
+        339,
+        323,
+        220,
+        21,
+        339,
+        23631,
+        18040,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57284e224b864d190016490a",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57284e224b864d190016490a:missing",
+      "kind": "missing",
+      "article": "History_of_India",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57284e224b864d190016490a",
+      "role": "primary",
+      "context_variant": "missing"
+    }
+  ],
+  "cal": [
+    {
+      "id": "5728d9ff3acd2414000e003c:answerable",
+      "kind": "answerable",
+      "article": "Detroit",
+      "text": "1817",
+      "answers": [
+        "1817"
+      ],
+      "generated_token_ids": [
+        16,
+        23,
+        16,
+        22,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5728d9ff3acd2414000e003c",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5728d9ff3acd2414000e003c:missing",
+      "kind": "missing",
+      "article": "Detroit",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5728d9ff3acd2414000e003c",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5728d9ff3acd2414000e003c:invariant:answerable",
+      "kind": "answerable",
+      "article": "Detroit",
+      "text": "1919",
+      "answers": [
+        "1919"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        16,
+        24,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5728d9ff3acd2414000e003c",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5728d9ff3acd2414000e003c:invariant:missing",
+      "kind": "answerable",
+      "article": "Detroit",
+      "text": "1919",
+      "answers": [
+        "1919"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        16,
+        24,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5728d9ff3acd2414000e003c",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727955bf1498d1400e8fcd4:answerable",
+      "kind": "answerable",
+      "article": "FA_Cup",
+      "text": "BT Sport",
+      "answers": [
+        "BT Sport"
+      ],
+      "generated_token_ids": [
+        17602,
+        18207,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727955bf1498d1400e8fcd4",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727955bf1498d1400e8fcd4:missing",
+      "kind": "missing",
+      "article": "FA_Cup",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727955bf1498d1400e8fcd4",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727955bf1498d1400e8fcd4:invariant:answerable",
+      "kind": "answerable",
+      "article": "FA_Cup",
+      "text": "ESPN",
+      "answers": [
+        "ESPN"
+      ],
+      "generated_token_ids": [
+        86132,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727955bf1498d1400e8fcd4",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727955bf1498d1400e8fcd4:invariant:missing",
+      "kind": "answerable",
+      "article": "FA_Cup",
+      "text": "ESPN",
+      "answers": [
+        "ESPN"
+      ],
+      "generated_token_ids": [
+        86132,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727955bf1498d1400e8fcd4",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726dd33f1498d1400e8edc1:answerable",
+      "kind": "answerable",
+      "article": "Samoa",
+      "text": "Tusi Tamasese",
+      "answers": [
+        "Tusi Tamasese"
+      ],
+      "generated_token_ids": [
+        51,
+        52813,
+        28888,
+        2264,
+        68,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726dd33f1498d1400e8edc1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726dd33f1498d1400e8edc1:missing",
+      "kind": "missing",
+      "article": "Samoa",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5726dd33f1498d1400e8edc1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726dd33f1498d1400e8edc1:invariant:answerable",
+      "kind": "answerable",
+      "article": "Samoa",
+      "text": "Apron Strings",
+      "answers": [
+        "Apron Strings"
+      ],
+      "generated_token_ids": [
+        20722,
+        263,
+        41651,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726dd33f1498d1400e8edc1",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726dd33f1498d1400e8edc1:invariant:missing",
+      "kind": "answerable",
+      "article": "Samoa",
+      "text": "Apron Strings",
+      "answers": [
+        "Apron Strings"
+      ],
+      "generated_token_ids": [
+        20722,
+        263,
+        41651,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726dd33f1498d1400e8edc1",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572884edff5b5019007da2a4:answerable",
+      "kind": "answerable",
+      "article": "London",
+      "text": "June 2009",
+      "answers": [
+        "June 2009"
+      ],
+      "generated_token_ids": [
+        27160,
+        220,
+        17,
+        15,
+        15,
+        24,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572884edff5b5019007da2a4",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572884edff5b5019007da2a4:missing",
+      "kind": "missing",
+      "article": "London",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572884edff5b5019007da2a4",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572884edff5b5019007da2a4:invariant:answerable",
+      "kind": "answerable",
+      "article": "London",
+      "text": "1994",
+      "answers": [
+        "1994"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        24,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572884edff5b5019007da2a4",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572884edff5b5019007da2a4:invariant:missing",
+      "kind": "answerable",
+      "article": "London",
+      "text": "1994",
+      "answers": [
+        "1994"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        24,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572884edff5b5019007da2a4",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "573024eda23a5019007fce56:answerable",
+      "kind": "answerable",
+      "article": "Swaziland",
+      "text": "1967",
+      "answers": [
+        "1967"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        21,
+        22,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573024eda23a5019007fce56",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "573024eda23a5019007fce56:missing",
+      "kind": "missing",
+      "article": "Swaziland",
+      "text": "9 September 1964",
+      "answers": [],
+      "generated_token_ids": [
+        24,
+        6122,
+        220,
+        16,
+        24,
+        21,
+        19,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "abstained": false,
+      "pair_id": "573024eda23a5019007fce56",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "573024eda23a5019007fce56:invariant:answerable",
+      "kind": "answerable",
+      "article": "Swaziland",
+      "text": "9 September 1964",
+      "answers": [
+        "9 September 1964"
+      ],
+      "generated_token_ids": [
+        24,
+        6122,
+        220,
+        16,
+        24,
+        21,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573024eda23a5019007fce56",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "573024eda23a5019007fce56:invariant:missing",
+      "kind": "answerable",
+      "article": "Swaziland",
+      "text": "9 September 1964",
+      "answers": [
+        "9 September 1964"
+      ],
+      "generated_token_ids": [
+        24,
+        6122,
+        220,
+        16,
+        24,
+        21,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573024eda23a5019007fce56",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570d7463b3d812140066d980:answerable",
+      "kind": "answerable",
+      "article": "United_States_Army",
+      "text": "General Martin Dempsey",
+      "answers": [
+        "Martin Dempsey",
+        "General Martin Dempsey"
+      ],
+      "generated_token_ids": [
+        15415,
+        11565,
+        97744,
+        8506,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570d7463b3d812140066d980",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570d7463b3d812140066d980:missing",
+      "kind": "missing",
+      "article": "United_States_Army",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570d7463b3d812140066d980",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570d7463b3d812140066d980:invariant:answerable",
+      "kind": "answerable",
+      "article": "United_States_Army",
+      "text": "rifle green",
+      "answers": [
+        "rifle green"
+      ],
+      "generated_token_ids": [
+        81,
+        19092,
+        6176,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570d7463b3d812140066d980",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570d7463b3d812140066d980:invariant:missing",
+      "kind": "answerable",
+      "article": "United_States_Army",
+      "text": "rifle green",
+      "answers": [
+        "rifle green"
+      ],
+      "generated_token_ids": [
+        81,
+        19092,
+        6176,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570d7463b3d812140066d980",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57267da5708984140094c7ed:answerable",
+      "kind": "answerable",
+      "article": "Napoleon",
+      "text": "Hohenlinden",
+      "answers": [
+        "Hohenlinden"
+      ],
+      "generated_token_ids": [
+        39,
+        26440,
+        75,
+        58217,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57267da5708984140094c7ed",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57267da5708984140094c7ed:missing",
+      "kind": "missing",
+      "article": "Napoleon",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57267da5708984140094c7ed",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57267da5708984140094c7ed:invariant:answerable",
+      "kind": "answerable",
+      "article": "Napoleon",
+      "text": "February 1801",
+      "answers": [
+        "February 1801"
+      ],
+      "generated_token_ids": [
+        32777,
+        220,
+        16,
+        23,
+        15,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57267da5708984140094c7ed",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57267da5708984140094c7ed:invariant:missing",
+      "kind": "answerable",
+      "article": "Napoleon",
+      "text": "February 1801",
+      "answers": [
+        "February 1801"
+      ],
+      "generated_token_ids": [
+        32777,
+        220,
+        16,
+        23,
+        15,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57267da5708984140094c7ed",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5730247fb2c2fd1400568949:answerable",
+      "kind": "answerable",
+      "article": "Iran",
+      "text": "The Assembly of Experts",
+      "answers": [
+        "Assembly of Experts",
+        "The Assembly of Experts"
+      ],
+      "generated_token_ids": [
+        785,
+        11738,
+        315,
+        50759,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5730247fb2c2fd1400568949",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5730247fb2c2fd1400568949:missing",
+      "kind": "missing",
+      "article": "Iran",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5730247fb2c2fd1400568949",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5730247fb2c2fd1400568949:invariant:answerable",
+      "kind": "answerable",
+      "article": "Iran",
+      "text": "six",
+      "answers": [
+        "six"
+      ],
+      "generated_token_ids": [
+        50364,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5730247fb2c2fd1400568949",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5730247fb2c2fd1400568949:invariant:missing",
+      "kind": "answerable",
+      "article": "Iran",
+      "text": "six",
+      "answers": [
+        "six"
+      ],
+      "generated_token_ids": [
+        50364,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5730247fb2c2fd1400568949",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "571aa1474faf5e1900b8ab60:answerable",
+      "kind": "answerable",
+      "article": "Umayyad_Caliphate",
+      "text": "The son of Abu Sufyan was the future caliph Muawiyah I.",
+      "answers": [
+        "Muawiyah I"
+      ],
+      "generated_token_ids": [
+        785,
+        4438,
+        315,
+        30129,
+        328,
+        1704,
+        8339,
+        572,
+        279,
+        3853,
+        1620,
+        15261,
+        14787,
+        672,
+        16220,
+        1466,
+        358,
+        13,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.36363636363636365,
+      "abstained": false,
+      "pair_id": "571aa1474faf5e1900b8ab60",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "571aa1474faf5e1900b8ab60:missing",
+      "kind": "missing",
+      "article": "Umayyad_Caliphate",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "571aa1474faf5e1900b8ab60",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "571aa1474faf5e1900b8ab60:invariant:answerable",
+      "kind": "answerable",
+      "article": "Umayyad_Caliphate",
+      "text": "Hind",
+      "answers": [
+        "Hind"
+      ],
+      "generated_token_ids": [
+        39,
+        484,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "571aa1474faf5e1900b8ab60",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "571aa1474faf5e1900b8ab60:invariant:missing",
+      "kind": "answerable",
+      "article": "Umayyad_Caliphate",
+      "text": "Hind",
+      "answers": [
+        "Hind"
+      ],
+      "generated_token_ids": [
+        39,
+        484,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "571aa1474faf5e1900b8ab60",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572b589c34ae481900deadb2:answerable",
+      "kind": "answerable",
+      "article": "Guam",
+      "text": "Madeleine Z. Bordallo",
+      "answers": [
+        "Madeleine Z. Bordallo",
+        "Democrat Madeleine Z. Bordallo"
+      ],
+      "generated_token_ids": [
+        40481,
+        91833,
+        1863,
+        13,
+        97885,
+        35937,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572b589c34ae481900deadb2",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572b589c34ae481900deadb2:missing",
+      "kind": "missing",
+      "article": "Guam",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572b589c34ae481900deadb2",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572b589c34ae481900deadb2:invariant:answerable",
+      "kind": "answerable",
+      "article": "Guam",
+      "text": "the poll has no real effect",
+      "answers": [
+        "no real effect"
+      ],
+      "generated_token_ids": [
+        1782,
+        7085,
+        702,
+        902,
+        1931,
+        2456,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.75,
+      "abstained": false,
+      "pair_id": "572b589c34ae481900deadb2",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572b589c34ae481900deadb2:invariant:missing",
+      "kind": "answerable",
+      "article": "Guam",
+      "text": "The Guam presidential straw poll has no real effect.",
+      "answers": [
+        "no real effect"
+      ],
+      "generated_token_ids": [
+        785,
+        91688,
+        13318,
+        30007,
+        7085,
+        702,
+        902,
+        1931,
+        2456,
+        13,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.5454545454545454,
+      "abstained": false,
+      "pair_id": "572b589c34ae481900deadb2",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726b593708984140094ce92:answerable",
+      "kind": "answerable",
+      "article": "Queen_(band)",
+      "text": "Kensal Green, West London",
+      "answers": [
+        "Kensal Green, West London",
+        "Kensal Green",
+        "West London",
+        "London"
+      ],
+      "generated_token_ids": [
+        42,
+        724,
+        278,
+        7840,
+        11,
+        4312,
+        7148,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726b593708984140094ce92",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726b593708984140094ce92:missing",
+      "kind": "missing",
+      "article": "Queen_(band)",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5726b593708984140094ce92",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5726b593708984140094ce92:invariant:answerable",
+      "kind": "answerable",
+      "article": "Queen_(band)",
+      "text": "The Terrence Higgins Trust",
+      "answers": [
+        "Terrence Higgins Trust"
+      ],
+      "generated_token_ids": [
+        785,
+        10127,
+        15892,
+        82097,
+        16816,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726b593708984140094ce92",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5726b593708984140094ce92:invariant:missing",
+      "kind": "answerable",
+      "article": "Queen_(band)",
+      "text": "The Terrence Higgins Trust",
+      "answers": [
+        "Terrence Higgins Trust"
+      ],
+      "generated_token_ids": [
+        785,
+        10127,
+        15892,
+        82097,
+        16816,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5726b593708984140094ce92",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56f8961a9e9bad19000a018f:answerable",
+      "kind": "answerable",
+      "article": "Virgil",
+      "text": "Augustus",
+      "answers": [
+        "Augustus"
+      ],
+      "generated_token_ids": [
+        31459,
+        355,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56f8961a9e9bad19000a018f",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56f8961a9e9bad19000a018f:missing",
+      "kind": "missing",
+      "article": "Virgil",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56f8961a9e9bad19000a018f",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56f8961a9e9bad19000a018f:invariant:answerable",
+      "kind": "answerable",
+      "article": "Virgil",
+      "text": "running a farm",
+      "answers": [
+        "running a farm"
+      ],
+      "generated_token_ids": [
+        27173,
+        264,
+        8785,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56f8961a9e9bad19000a018f",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56f8961a9e9bad19000a018f:invariant:missing",
+      "kind": "answerable",
+      "article": "Virgil",
+      "text": "The ostensible theme of the Georgics is instruction in the methods of running a farm.",
+      "answers": [
+        "running a farm"
+      ],
+      "generated_token_ids": [
+        785,
+        36896,
+        36764,
+        6912,
+        315,
+        279,
+        13326,
+        1211,
+        374,
+        7600,
+        304,
+        279,
+        5413,
+        315,
+        4303,
+        264,
+        8785,
+        13,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.3076923076923077,
+      "abstained": false,
+      "pair_id": "56f8961a9e9bad19000a018f",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572e7f29c246551400ce4257:answerable",
+      "kind": "answerable",
+      "article": "Richard_Feynman",
+      "text": "1942",
+      "answers": [
+        "1942"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        19,
+        17,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572e7f29c246551400ce4257",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572e7f29c246551400ce4257:missing",
+      "kind": "missing",
+      "article": "Richard_Feynman",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572e7f29c246551400ce4257",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572e7f29c246551400ce4257:invariant:answerable",
+      "kind": "answerable",
+      "article": "Richard_Feynman",
+      "text": "mathematics and physics",
+      "answers": [
+        "mathematics and physics"
+      ],
+      "generated_token_ids": [
+        10374,
+        33705,
+        323,
+        21321,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572e7f29c246551400ce4257",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572e7f29c246551400ce4257:invariant:missing",
+      "kind": "answerable",
+      "article": "Richard_Feynman",
+      "text": "mathematics and physics",
+      "answers": [
+        "mathematics and physics"
+      ],
+      "generated_token_ids": [
+        10374,
+        33705,
+        323,
+        21321,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572e7f29c246551400ce4257",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56dde17c66d3e219004dad85:answerable",
+      "kind": "answerable",
+      "article": "Dutch_Republic",
+      "text": "1602",
+      "answers": [
+        "1602"
+      ],
+      "generated_token_ids": [
+        16,
+        21,
+        15,
+        17,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56dde17c66d3e219004dad85",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56dde17c66d3e219004dad85:missing",
+      "kind": "missing",
+      "article": "Dutch_Republic",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56dde17c66d3e219004dad85",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56dde17c66d3e219004dad85:invariant:answerable",
+      "kind": "answerable",
+      "article": "Dutch_Republic",
+      "text": "Amsterdam",
+      "answers": [
+        "Amsterdam"
+      ],
+      "generated_token_ids": [
+        6091,
+        26302,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56dde17c66d3e219004dad85",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56dde17c66d3e219004dad85:invariant:missing",
+      "kind": "answerable",
+      "article": "Dutch_Republic",
+      "text": "Amsterdam",
+      "answers": [
+        "Amsterdam"
+      ],
+      "generated_token_ids": [
+        6091,
+        26302,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56dde17c66d3e219004dad85",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572e7cf003f98919007566a5:answerable",
+      "kind": "answerable",
+      "article": "Cyprus",
+      "text": "Mycenaean Greeks",
+      "answers": [
+        "Mycenaean Greeks"
+      ],
+      "generated_token_ids": [
+        44,
+        3337,
+        7157,
+        5307,
+        60680,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572e7cf003f98919007566a5",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572e7cf003f98919007566a5:missing",
+      "kind": "missing",
+      "article": "Cyprus",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572e7cf003f98919007566a5",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572e7cf003f98919007566a5:invariant:answerable",
+      "kind": "answerable",
+      "article": "Cyprus",
+      "text": "Khirokitia",
+      "answers": [
+        "Khirokitia"
+      ],
+      "generated_token_ids": [
+        42,
+        85138,
+        8226,
+        685,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572e7cf003f98919007566a5",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572e7cf003f98919007566a5:invariant:missing",
+      "kind": "answerable",
+      "article": "Cyprus",
+      "text": "Khirokitia",
+      "answers": [
+        "Khirokitia"
+      ],
+      "generated_token_ids": [
+        42,
+        85138,
+        8226,
+        685,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572e7cf003f98919007566a5",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57265924708984140094c354:answerable",
+      "kind": "answerable",
+      "article": "East_India_Company",
+      "text": "In September 1695",
+      "answers": [
+        "1695"
+      ],
+      "generated_token_ids": [
+        641,
+        6122,
+        220,
+        16,
+        21,
+        24,
+        20,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "pair_id": "57265924708984140094c354",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57265924708984140094c354:missing",
+      "kind": "missing",
+      "article": "East_India_Company",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57265924708984140094c354",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57265924708984140094c354:invariant:answerable",
+      "kind": "answerable",
+      "article": "East_India_Company",
+      "text": "\u00a350,000 to \u00a360,000 worth of treasure.",
+      "answers": [
+        "\u00a350,000 to \u00a360,000"
+      ],
+      "generated_token_ids": [
+        21651,
+        20,
+        15,
+        11,
+        15,
+        15,
+        15,
+        311,
+        6938,
+        21,
+        15,
+        11,
+        15,
+        15,
+        15,
+        5802,
+        315,
+        31626,
+        13,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "57265924708984140094c354",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57265924708984140094c354:invariant:missing",
+      "kind": "answerable",
+      "article": "East_India_Company",
+      "text": "\u00a350,000 to \u00a360,000 worth of treasure.",
+      "answers": [
+        "\u00a350,000 to \u00a360,000"
+      ],
+      "generated_token_ids": [
+        21651,
+        20,
+        15,
+        11,
+        15,
+        15,
+        15,
+        311,
+        6938,
+        21,
+        15,
+        11,
+        15,
+        15,
+        15,
+        5802,
+        315,
+        31626,
+        13,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "57265924708984140094c354",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572fd551a23a5019007fca60:answerable",
+      "kind": "answerable",
+      "article": "Washington_University_in_St._Louis",
+      "text": "Barbara Schaal",
+      "answers": [
+        "Barbara Schaal"
+      ],
+      "generated_token_ids": [
+        3428,
+        24095,
+        5016,
+        54342,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572fd551a23a5019007fca60",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572fd551a23a5019007fca60:missing",
+      "kind": "missing",
+      "article": "Washington_University_in_St._Louis",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572fd551a23a5019007fca60",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572fd551a23a5019007fca60:invariant:answerable",
+      "kind": "answerable",
+      "article": "Washington_University_in_St._Louis",
+      "text": "three",
+      "answers": [
+        "three"
+      ],
+      "generated_token_ids": [
+        27856,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572fd551a23a5019007fca60",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572fd551a23a5019007fca60:invariant:missing",
+      "kind": "answerable",
+      "article": "Washington_University_in_St._Louis",
+      "text": "three",
+      "answers": [
+        "three"
+      ],
+      "generated_token_ids": [
+        27856,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572fd551a23a5019007fca60",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57268614dd62a815002e8819:answerable",
+      "kind": "answerable",
+      "article": "Chicago_Cubs",
+      "text": "Albert Spalding",
+      "answers": [
+        "Albert Spalding"
+      ],
+      "generated_token_ids": [
+        66622,
+        3089,
+        4747,
+        287,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57268614dd62a815002e8819",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57268614dd62a815002e8819:missing",
+      "kind": "missing",
+      "article": "Chicago_Cubs",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57268614dd62a815002e8819",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57268614dd62a815002e8819:invariant:answerable",
+      "kind": "answerable",
+      "article": "Chicago_Cubs",
+      "text": "Hot Springs, Arkansas",
+      "answers": [
+        "Hot Springs, Arkansas",
+        "Hot Springs"
+      ],
+      "generated_token_ids": [
+        20170,
+        29204,
+        11,
+        31690,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57268614dd62a815002e8819",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57268614dd62a815002e8819:invariant:missing",
+      "kind": "answerable",
+      "article": "Chicago_Cubs",
+      "text": "Hot Springs, Arkansas",
+      "answers": [
+        "Hot Springs, Arkansas",
+        "Hot Springs"
+      ],
+      "generated_token_ids": [
+        20170,
+        29204,
+        11,
+        31690,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57268614dd62a815002e8819",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570d1ef7fed7b91900d45c2b:answerable",
+      "kind": "answerable",
+      "article": "Macintosh",
+      "text": "Steve Jobs",
+      "answers": [
+        "Steve Jobs"
+      ],
+      "generated_token_ids": [
+        37495,
+        23076,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570d1ef7fed7b91900d45c2b",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570d1ef7fed7b91900d45c2b:missing",
+      "kind": "missing",
+      "article": "Macintosh",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570d1ef7fed7b91900d45c2b",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570d1ef7fed7b91900d45c2b:invariant:answerable",
+      "kind": "answerable",
+      "article": "Macintosh",
+      "text": "2001",
+      "answers": [
+        "2001"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570d1ef7fed7b91900d45c2b",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570d1ef7fed7b91900d45c2b:invariant:missing",
+      "kind": "answerable",
+      "article": "Macintosh",
+      "text": "2001",
+      "answers": [
+        "2001"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570d1ef7fed7b91900d45c2b",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56f799d2a6d7ea1400e1725e:answerable",
+      "kind": "answerable",
+      "article": "Marshall_Islands",
+      "text": "Captain DonSette",
+      "answers": [
+        "DonSette",
+        "Captain DonSette"
+      ],
+      "generated_token_ids": [
+        61058,
+        4320,
+        1649,
+        665,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56f799d2a6d7ea1400e1725e",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56f799d2a6d7ea1400e1725e:missing",
+      "kind": "missing",
+      "article": "Marshall_Islands",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56f799d2a6d7ea1400e1725e",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56f799d2a6d7ea1400e1725e:invariant:answerable",
+      "kind": "answerable",
+      "article": "Marshall_Islands",
+      "text": "Ebon",
+      "answers": [
+        "Ebon"
+      ],
+      "generated_token_ids": [
+        36,
+        5970,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56f799d2a6d7ea1400e1725e",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56f799d2a6d7ea1400e1725e:invariant:missing",
+      "kind": "answerable",
+      "article": "Marshall_Islands",
+      "text": "Ebon",
+      "answers": [
+        "Ebon"
+      ],
+      "generated_token_ids": [
+        36,
+        5970,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56f799d2a6d7ea1400e1725e",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57292b05af94a219006aa14e:answerable",
+      "kind": "answerable",
+      "article": "Planck_constant",
+      "text": "Einstein",
+      "answers": [
+        "Einstein",
+        "Albert Einstein"
+      ],
+      "generated_token_ids": [
+        36,
+        36394,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57292b05af94a219006aa14e",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57292b05af94a219006aa14e:missing",
+      "kind": "missing",
+      "article": "Planck_constant",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57292b05af94a219006aa14e",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57292b05af94a219006aa14e:invariant:answerable",
+      "kind": "answerable",
+      "article": "Planck_constant",
+      "text": "Philipp Lenard",
+      "answers": [
+        "Philipp Lenard"
+      ],
+      "generated_token_ids": [
+        29590,
+        2807,
+        24250,
+        567,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57292b05af94a219006aa14e",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57292b05af94a219006aa14e:invariant:missing",
+      "kind": "answerable",
+      "article": "Planck_constant",
+      "text": "Philipp Lenard",
+      "answers": [
+        "Philipp Lenard"
+      ],
+      "generated_token_ids": [
+        29590,
+        2807,
+        24250,
+        567,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57292b05af94a219006aa14e",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57096cd5200fba1400367fc5:answerable",
+      "kind": "answerable",
+      "article": "Himachal_Pradesh",
+      "text": "2006",
+      "answers": [
+        "2006",
+        "2006 at Sundernagar"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        21,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57096cd5200fba1400367fc5",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57096cd5200fba1400367fc5:missing",
+      "kind": "missing",
+      "article": "Himachal_Pradesh",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "57096cd5200fba1400367fc5",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "57096cd5200fba1400367fc5:invariant:answerable",
+      "kind": "answerable",
+      "article": "Himachal_Pradesh",
+      "text": "horticulture, forestry and allied disciplines",
+      "answers": [
+        "horticulture, forestry and allied disciplines"
+      ],
+      "generated_token_ids": [
+        22007,
+        92728,
+        11,
+        87034,
+        323,
+        53402,
+        48155,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57096cd5200fba1400367fc5",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "57096cd5200fba1400367fc5:invariant:missing",
+      "kind": "answerable",
+      "article": "Himachal_Pradesh",
+      "text": "horticulture, forestry and allied disciplines",
+      "answers": [
+        "horticulture, forestry and allied disciplines"
+      ],
+      "generated_token_ids": [
+        22007,
+        92728,
+        11,
+        87034,
+        323,
+        53402,
+        48155,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "57096cd5200fba1400367fc5",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56eaaf2b5a205f1900d6d3f7:answerable",
+      "kind": "answerable",
+      "article": "Political_corruption",
+      "text": "2004",
+      "answers": [
+        "2004"
+      ],
+      "generated_token_ids": [
+        17,
+        15,
+        15,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56eaaf2b5a205f1900d6d3f7",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56eaaf2b5a205f1900d6d3f7:missing",
+      "kind": "missing",
+      "article": "Political_corruption",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56eaaf2b5a205f1900d6d3f7",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56eaaf2b5a205f1900d6d3f7:invariant:answerable",
+      "kind": "answerable",
+      "article": "Political_corruption",
+      "text": "in-country experts",
+      "answers": [
+        "in-country experts"
+      ],
+      "generated_token_ids": [
+        258,
+        55871,
+        11647,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56eaaf2b5a205f1900d6d3f7",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56eaaf2b5a205f1900d6d3f7:invariant:missing",
+      "kind": "answerable",
+      "article": "Political_corruption",
+      "text": "in-country experts",
+      "answers": [
+        "in-country experts"
+      ],
+      "generated_token_ids": [
+        258,
+        55871,
+        11647,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56eaaf2b5a205f1900d6d3f7",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "573043c6a23a5019007fd029:answerable",
+      "kind": "answerable",
+      "article": "The_Blitz",
+      "text": "Karl D\u00f6nitz",
+      "answers": [
+        "Karl D\u00f6nitz"
+      ],
+      "generated_token_ids": [
+        42,
+        48258,
+        140901,
+        11042,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573043c6a23a5019007fd029",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "573043c6a23a5019007fd029:missing",
+      "kind": "missing",
+      "article": "The_Blitz",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "573043c6a23a5019007fd029",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "573043c6a23a5019007fd029:invariant:answerable",
+      "kind": "answerable",
+      "article": "The_Blitz",
+      "text": "Directive 23",
+      "answers": [
+        "Directive 23"
+      ],
+      "generated_token_ids": [
+        62076,
+        220,
+        17,
+        18,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573043c6a23a5019007fd029",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "573043c6a23a5019007fd029:invariant:missing",
+      "kind": "answerable",
+      "article": "The_Blitz",
+      "text": "Directive 23",
+      "answers": [
+        "Directive 23"
+      ],
+      "generated_token_ids": [
+        62076,
+        220,
+        17,
+        18,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "573043c6a23a5019007fd029",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727ff7c2ca10214002d9b00:answerable",
+      "kind": "answerable",
+      "article": "Pope_John_XXIII",
+      "text": "30 November 1934",
+      "answers": [
+        "30 November 1934"
+      ],
+      "generated_token_ids": [
+        18,
+        15,
+        6702,
+        220,
+        16,
+        24,
+        18,
+        19,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727ff7c2ca10214002d9b00",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727ff7c2ca10214002d9b00:missing",
+      "kind": "missing",
+      "article": "Pope_John_XXIII",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727ff7c2ca10214002d9b00",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727ff7c2ca10214002d9b00:invariant:answerable",
+      "kind": "answerable",
+      "article": "Pope_John_XXIII",
+      "text": "1935",
+      "answers": [
+        "1935"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        18,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727ff7c2ca10214002d9b00",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727ff7c2ca10214002d9b00:invariant:missing",
+      "kind": "answerable",
+      "article": "Pope_John_XXIII",
+      "text": "1935",
+      "answers": [
+        "1935"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        18,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727ff7c2ca10214002d9b00",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56d1099d17492d1400aab7c6:answerable",
+      "kind": "answerable",
+      "article": "New_York_City",
+      "text": "Global Language Monitor",
+      "answers": [
+        "Global Language Monitor",
+        "the Global Language Monitor"
+      ],
+      "generated_token_ids": [
+        11646,
+        11434,
+        23519,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56d1099d17492d1400aab7c6",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56d1099d17492d1400aab7c6:missing",
+      "kind": "missing",
+      "article": "New_York_City",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "56d1099d17492d1400aab7c6",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "56d1099d17492d1400aab7c6:invariant:answerable",
+      "kind": "answerable",
+      "article": "New_York_City",
+      "text": "Harlem Renaissance",
+      "answers": [
+        "Harlem Renaissance"
+      ],
+      "generated_token_ids": [
+        26490,
+        3433,
+        54283,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56d1099d17492d1400aab7c6",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "56d1099d17492d1400aab7c6:invariant:missing",
+      "kind": "answerable",
+      "article": "New_York_City",
+      "text": "Harlem Renaissance",
+      "answers": [
+        "Harlem Renaissance"
+      ],
+      "generated_token_ids": [
+        26490,
+        3433,
+        54283,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "56d1099d17492d1400aab7c6",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570f8ec180d9841400ab35c2:answerable",
+      "kind": "answerable",
+      "article": "Elizabeth_II",
+      "text": "The Earl of Home",
+      "answers": [
+        "Earl of Home"
+      ],
+      "generated_token_ids": [
+        785,
+        47410,
+        315,
+        5379,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570f8ec180d9841400ab35c2",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570f8ec180d9841400ab35c2:missing",
+      "kind": "missing",
+      "article": "Elizabeth_II",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "570f8ec180d9841400ab35c2",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "570f8ec180d9841400ab35c2:invariant:answerable",
+      "kind": "answerable",
+      "article": "Elizabeth_II",
+      "text": "1965",
+      "answers": [
+        "1965"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        21,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570f8ec180d9841400ab35c2",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "570f8ec180d9841400ab35c2:invariant:missing",
+      "kind": "answerable",
+      "article": "Elizabeth_II",
+      "text": "1965",
+      "answers": [
+        "1965"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        21,
+        20,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "570f8ec180d9841400ab35c2",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572844f92ca10214002da210:answerable",
+      "kind": "answerable",
+      "article": "War_on_Terror",
+      "text": "western Pakistan",
+      "answers": [
+        "western Pakistan",
+        "Pakistan"
+      ],
+      "generated_token_ids": [
+        30282,
+        16663,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572844f92ca10214002da210",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572844f92ca10214002da210:missing",
+      "kind": "missing",
+      "article": "War_on_Terror",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572844f92ca10214002da210",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572844f92ca10214002da210:invariant:answerable",
+      "kind": "answerable",
+      "article": "War_on_Terror",
+      "text": "Operation Moshtarak",
+      "answers": [
+        "Operation Moshtarak"
+      ],
+      "generated_token_ids": [
+        8432,
+        12562,
+        426,
+        27885,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572844f92ca10214002da210",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572844f92ca10214002da210:invariant:missing",
+      "kind": "answerable",
+      "article": "War_on_Terror",
+      "text": "Operation Moshtarak",
+      "answers": [
+        "Operation Moshtarak"
+      ],
+      "generated_token_ids": [
+        8432,
+        12562,
+        426,
+        27885,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572844f92ca10214002da210",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572f7a2704bcaa1900d769d1:answerable",
+      "kind": "answerable",
+      "article": "Pain",
+      "text": "In 1644",
+      "answers": [
+        "1644"
+      ],
+      "generated_token_ids": [
+        641,
+        220,
+        16,
+        21,
+        19,
+        19,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "572f7a2704bcaa1900d769d1",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572f7a2704bcaa1900d769d1:missing",
+      "kind": "missing",
+      "article": "Pain",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572f7a2704bcaa1900d769d1",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572f7a2704bcaa1900d769d1:invariant:answerable",
+      "kind": "answerable",
+      "article": "Pain",
+      "text": "specificity theory",
+      "answers": [
+        "specificity"
+      ],
+      "generated_token_ids": [
+        51240,
+        487,
+        10126,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "572f7a2704bcaa1900d769d1",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572f7a2704bcaa1900d769d1:invariant:missing",
+      "kind": "answerable",
+      "article": "Pain",
+      "text": "specificity theory",
+      "answers": [
+        "specificity"
+      ],
+      "generated_token_ids": [
+        51240,
+        487,
+        10126,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "abstained": false,
+      "pair_id": "572f7a2704bcaa1900d769d1",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727a97b4b864d19001639d4:answerable",
+      "kind": "answerable",
+      "article": "Galicia_(Spain)",
+      "text": "Eir\u00f3s Cave, in the municipality of Triacastela",
+      "answers": [
+        "Eir\u00f3s Cave"
+      ],
+      "generated_token_ids": [
+        36,
+        404,
+        28732,
+        49392,
+        11,
+        304,
+        279,
+        56818,
+        315,
+        12359,
+        580,
+        559,
+        8294,
+        151645
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "abstained": false,
+      "pair_id": "5727a97b4b864d19001639d4",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727a97b4b864d19001639d4:missing",
+      "kind": "missing",
+      "article": "Galicia_(Spain)",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727a97b4b864d19001639d4",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727a97b4b864d19001639d4:invariant:answerable",
+      "kind": "answerable",
+      "article": "Galicia_(Spain)",
+      "text": "anta",
+      "answers": [
+        "anta",
+        "dolmen",
+        "anta (dolmen)"
+      ],
+      "generated_token_ids": [
+        8260,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727a97b4b864d19001639d4",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727a97b4b864d19001639d4:invariant:missing",
+      "kind": "answerable",
+      "article": "Galicia_(Spain)",
+      "text": "anta",
+      "answers": [
+        "anta",
+        "dolmen",
+        "anta (dolmen)"
+      ],
+      "generated_token_ids": [
+        8260,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727a97b4b864d19001639d4",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727a9b13acd2414000de917:answerable",
+      "kind": "answerable",
+      "article": "Cork_(city)",
+      "text": "Prince John",
+      "answers": [
+        "Prince John"
+      ],
+      "generated_token_ids": [
+        67932,
+        3757,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727a9b13acd2414000de917",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727a9b13acd2414000de917:missing",
+      "kind": "missing",
+      "article": "Cork_(city)",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "5727a9b13acd2414000de917",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "5727a9b13acd2414000de917:invariant:answerable",
+      "kind": "answerable",
+      "article": "Cork_(city)",
+      "text": "Old English culture",
+      "answers": [
+        "Old English culture"
+      ],
+      "generated_token_ids": [
+        18284,
+        6364,
+        7674,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727a9b13acd2414000de917",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "5727a9b13acd2414000de917:invariant:missing",
+      "kind": "answerable",
+      "article": "Cork_(city)",
+      "text": "Old English culture",
+      "answers": [
+        "Old English culture"
+      ],
+      "generated_token_ids": [
+        18284,
+        6364,
+        7674,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "5727a9b13acd2414000de917",
+      "role": "invariant",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572ac493111d821400f38d46:answerable",
+      "kind": "answerable",
+      "article": "Philadelphia",
+      "text": "1981",
+      "answers": [
+        "1981"
+      ],
+      "generated_token_ids": [
+        16,
+        24,
+        23,
+        16,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572ac493111d821400f38d46",
+      "role": "primary",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572ac493111d821400f38d46:missing",
+      "kind": "missing",
+      "article": "Philadelphia",
+      "text": "UNKNOWN",
+      "answers": [],
+      "generated_token_ids": [
+        51378,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": true,
+      "pair_id": "572ac493111d821400f38d46",
+      "role": "primary",
+      "context_variant": "missing"
+    },
+    {
+      "id": "572ac493111d821400f38d46:invariant:answerable",
+      "kind": "answerable",
+      "article": "Philadelphia",
+      "text": "Philadelphia International Airport",
+      "answers": [
+        "Philadelphia International Airport"
+      ],
+      "generated_token_ids": [
+        89424,
+        7179,
+        20691,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572ac493111d821400f38d46",
+      "role": "invariant",
+      "context_variant": "answerable"
+    },
+    {
+      "id": "572ac493111d821400f38d46:invariant:missing",
+      "kind": "answerable",
+      "article": "Philadelphia",
+      "text": "Philadelphia International Airport",
+      "answers": [
+        "Philadelphia International Airport"
+      ],
+      "generated_token_ids": [
+        89424,
+        7179,
+        20691,
+        151645
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "abstained": false,
+      "pair_id": "572ac493111d821400f38d46",
+      "role": "invariant",
+      "context_variant": "missing"
+    }
+  ]
+}

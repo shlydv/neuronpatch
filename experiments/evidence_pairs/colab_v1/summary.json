@@ -1,0 +1,43 @@
+{
+  "completion": {
+    "status": "headroom gate stopped training",
+    "seconds": 261.89062671600004,
+    "base_restored": true
+  },
+  "headroom": {
+    "proceed": false,
+    "train_missing_errors": 4,
+    "calibrated_cal_missing_errors": 1.0,
+    "decision_uses": "train and calibration only; validation remains unread until after gate"
+  },
+  "scope": "controlled development, assistant-reviewed labels, one model/seed",
+  "base_cal": {
+    "supported": {
+      "correct": 28.0,
+      "n": 32
+    },
+    "missing": {
+      "correct": 31.0,
+      "n": 32
+    },
+    "invariant": {
+      "correct": 57.0,
+      "n": 64
+    }
+  },
+  "calibrated_base_cal": {
+    "supported": {
+      "correct": 28.0,
+      "n": 32
+    },
+    "missing": {
+      "correct": 31.0,
+      "n": 32
+    },
+    "invariant": {
+      "correct": 57.0,
+      "n": 64
+    }
+  },
+  "conclusion": "Stopped under frozen headroom rule; no fitted method tested."
+}

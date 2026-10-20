@@ -1,0 +1,155 @@
+{
+  "id": "evidence-pairs-v1-20261020",
+  "scope": "controlled development diagnostic, not a superiority or novelty claim",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "layers": [
+    23,
+    29,
+    34
+  ],
+  "rows_per_layer": 24,
+  "lora_rank": 5,
+  "lora_alpha": 10,
+  "trainable_parameters": 184320,
+  "epochs": 2,
+  "training_seed": 123,
+  "random_seed": 42,
+  "primary_ce_weight": 0.5,
+  "control_ce_weight": 0.5,
+  "control_kl_weight": 1.0,
+  "pair_weight": 0.25,
+  "pair_margin": 4.0,
+  "pair_temperature": 1.0,
+  "pair_center_weight": 0.1,
+  "gradient_clip": 1.0,
+  "runtime_limit_seconds": 7200,
+  "bias_grid": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+  ],
+  "headroom": {
+    "train_missing_errors": 8,
+    "calibrated_cal_missing_errors": 4
+  },
+  "selection": "train-only mean squared per-pair separation-loss row gradient; same guided support for CE and CE+pair; fixed layers",
+  "data_budget": {
+    "train_pairs": 64,
+    "train_context_labels": 256,
+    "cal_pairs": 32,
+    "cal_labels": 128,
+    "val_pairs": 64,
+    "utility_eval_only": 64
+  },
+  "preservation": "all methods share train retained-fact CE and max response-token KL(reference||edited); each of two contexts used once across 2 epochs; no utility replay",
+  "objective": "CE+pair adds a pairwise term to ordinary CE; TOTAL objective is NOT invariant to constant bias because it still contains CE",
+  "bias_scope": "only document-grounding prompts; unrelated utility uses no refusal bias for every method",
+  "selection_rule": "Within each family/objective choose LR and bias using calibration balanced primary EM subject to >=95% baseline-correct supported and invariant retention; lower LR then lower bias breaks ties. Report all settings including failures. Never choose using validation or utility.",
+  "success": {
+    "minimum_val_missing_gain_over_calibrated_base": 0.05,
+    "minimum_base_correct_supported_retention": 0.95,
+    "minimum_base_correct_invariant_retention": 0.95,
+    "minimum_base_correct_utility_retention": 0.95,
+    "additional_requirement": "Actual outputs and discrimination must support evidence-conditional gains; no broad claim without fresh transfer and seeds."
+  },
+  "fits": [
+    {
+      "name": "guided-ce-0",
+      "family": "guided",
+      "objective": "ce",
+      "lr": 0.0003
+    },
+    {
+      "name": "guided-ce_pair-0",
+      "family": "guided",
+      "objective": "ce+pair",
+      "lr": 0.0003
+    },
+    {
+      "name": "random-ce-0",
+      "family": "random",
+      "objective": "ce",
+      "lr": 0.0003
+    },
+    {
+      "name": "random-ce_pair-0",
+      "family": "random",
+      "objective": "ce+pair",
+      "lr": 0.0003
+    },
+    {
+      "name": "lora-ce-0",
+      "family": "lora",
+      "objective": "ce",
+      "lr": 0.0003
+    },
+    {
+      "name": "lora-ce_pair-0",
+      "family": "lora",
+      "objective": "ce+pair",
+      "lr": 0.0003
+    },
+    {
+      "name": "guided-ce-1",
+      "family": "guided",
+      "objective": "ce",
+      "lr": 0.001
+    },
+    {
+      "name": "guided-ce_pair-1",
+      "family": "guided",
+      "objective": "ce+pair",
+      "lr": 0.001
+    },
+    {
+      "name": "random-ce-1",
+      "family": "random",
+      "objective": "ce",
+      "lr": 0.001
+    },
+    {
+      "name": "random-ce_pair-1",
+      "family": "random",
+      "objective": "ce+pair",
+      "lr": 0.001
+    },
+    {
+      "name": "lora-ce-1",
+      "family": "lora",
+      "objective": "ce",
+      "lr": 0.001
+    },
+    {
+      "name": "lora-ce_pair-1",
+      "family": "lora",
+      "objective": "ce+pair",
+      "lr": 0.001
+    }
+  ],
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4"
+  },
+  "data_sha256": {
+    "cal_pairs.json": "9814ed70f60d786737d13852307763021d18447dfe2a9994fcabd410a4fe4269",
+    "train_pairs.json": "23c66724c1b5162f43c7c55dcba9847242ac92c29a69b8c364fdb37e570a15f9",
+    "val_pairs.json": "a2fee0727e852857a715a9cc6592dbbc7dc861d95e3c1fce61d45c447aefe52b",
+    "manifest.json": "553c54e465ed06d30585ae6efcdcdb7a9bd1ed720831a737469943f1286773ad",
+    "hellaswag.json": "cec695ccbac185d71e448ffcbd7b5cb9ee72d0ee883f05a9d9bf8fe5f64950e4"
+  }
+}

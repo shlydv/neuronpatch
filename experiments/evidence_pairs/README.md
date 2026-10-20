@@ -6,6 +6,14 @@ discrimination. A constant UNKNOWN logit bias captured part of the benefit.
 The next experiment must distinguish conditional improvement from this shortcut.
 Nothing here is a validated recipe or a new ranking algorithm.
 
+## Latest result
+
+The [executed v1 report](colab_v1/REPORT.md) found insufficient headroom: base
+missing-evidence accuracy is 60/64 on training and 31/32 on calibration, and
+calibration chooses zero refusal bias. The frozen gate stopped all twelve 4B
+adaptation fits. Validation and utility remain unexposed. This does not test
+whether the new objective or selected neurons improve quality.
+
 ## Objective implemented
 
 For the same question, a supported context has answer A and a missing context

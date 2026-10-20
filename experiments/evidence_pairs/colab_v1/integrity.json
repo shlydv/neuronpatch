@@ -1,0 +1,61 @@
+{
+  "source_and_data_hashes_match_submission": true,
+  "full_base_fingerprint_restore": true,
+  "validation_and_utility_unexposed": true,
+  "CUDA_preflight": {
+    "gpu": "Tesla T4",
+    "base_dtype": "float16",
+    "trainable_dtype": "float32",
+    "outcomes": [
+      {
+        "family": "guided",
+        "finite_loss": 4.272943019866943,
+        "exact_restore": true
+      },
+      {
+        "family": "random",
+        "finite_loss": 4.272943019866943,
+        "exact_restore": true
+      },
+      {
+        "family": "lora",
+        "finite_loss": 4.273380279541016,
+        "exact_restore": true
+      }
+    ]
+  },
+  "download_archive_sha256": "d4e3e735784a5b249895777213b018d3abff47de4245472633568fb6f9fb9b50",
+  "files_sha256": {
+    "execution.log": "76b33c61c96b985de7faa6c7c9afd429ffac19cc543f0a1b742054dad6c6e1d2",
+    "submission.json": "6573a989863a0995c6f917838900b5d53cfc3f5d823d06a43a4d32d173a56d38",
+    "runtime_freeze.txt": "ffa15a330fc33472b5f194d8b927d53152f033a52be8db2fa80a594e189169c1",
+    "provider.json": "820479efd6bc2cb4f77d9eb8bb9c7686a67981f1292b37784388ed05462ef7d2",
+    "results/base_identity.json": "9f13da30f662fea4632bc9d29ef75dd9e26c78d11055146005d1ffd3e8426093",
+    "results/protocol.json": "969eb1348b234ea6b7a09c9dd51d34f1d7c693341fb86e2466cac7e4d9a26fbc",
+    "results/completion.json": "c5a66d7e5d6eb309b519d5df51edf8f203323a7a1d06dd920b0f9d0f07f3ed21",
+    "results/headroom.json": "23a6707dd4787f25715fadac5f04ab2c14a34ec9be2e714ea6c527008c0e1236",
+    "preflight/checks.json": "611ae7f598b48329fe31b8da300cc9e14b292417f9487626bd00df176006b2a1",
+    "results/base/cal_raw.json": "0ae56e95b11677a7c7dbb1806073b0bea2fb4bb9acc931fad66c01bea5bcab63",
+    "results/base/calibration.json": "18b664c8f119b5b4d616c676a4cf8ed712aec7950958a35c4dff352a2b7a6327",
+    "results/base/train_primary.json": "6364a832bf39ff2ac9e661b264de650f31dfb113301ab23ce5b9dd30a955bc9b",
+    "results/base/cal_signals.json": "f072d71315d913c2c10e002b0a53c90b29f9ebcbdaceef98d83aa42cf916d1c8",
+    "results/base/cal_forced_unknown.json": "ed03431597a9e603163df69eb68d630026668a57b1fd8c9d36bb527d7d611ef5",
+    "results/base/cal_calibrated.json": "0ae56e95b11677a7c7dbb1806073b0bea2fb4bb9acc931fad66c01bea5bcab63",
+    "preflight/guided/config.json": "a73133120399b56f56111dfb98c3940ad4933e3ff7f9b7f487673d02ab531d67",
+    "preflight/guided/history.json": "2ceca496a33cccac42210e5fd541e515a15bef26b10a0006d1dec3c76de52e2b",
+    "preflight/guided/fit_summary.json": "3d9b3511df3cf4e0d78cc80989c4cec3ab37fe420dcf91583017d882cb0491b4",
+    "preflight/lora/config.json": "19d382d7676f25e84a1cc5f20752d4b55bc03956f2cf7bcadd3bd3753eb4ca12",
+    "preflight/lora/history.json": "cf3a1677a440f035222ad54ebc41503b951e5b6def46191acac1cf7c3d831998",
+    "preflight/lora/fit_summary.json": "27009eb1f1719a095909ec074c06afb98757b07acbcc2474b16f685e54c96202",
+    "preflight/random/config.json": "dc5d97a2032f4f008dccd2da4896b4e907824cde2c4e1564897e86d9359c9034",
+    "preflight/random/history.json": "2ceca496a33cccac42210e5fd541e515a15bef26b10a0006d1dec3c76de52e2b",
+    "preflight/random/fit_summary.json": "fec8e04d4cb6a6609b644fb3b2c6e4c0a21c1466f6b6441ee4906d81f1742c98",
+    "preflight/guided/patch/patch.safetensors": "4ab7192e0095ecedb349664e81ab201a8738af2d2a4c6006db18b77c2b313c36",
+    "preflight/guided/patch/patch.json": "6d904d0a397d9b56ddfa109329b2c8b6b986ce7ba56c8b7aa1a658e23e75a93e",
+    "preflight/lora/adapter/adapter_model.safetensors": "d570a801d67a477f7e46c2cbca13ee2bfe4d7e74dac7bdb9745f0e145d7c3e01",
+    "preflight/lora/adapter/README.md": "8fbffd891e1d0edd9836a7715a8a26e64395e5426f2eee7713b9d3715fd98eae",
+    "preflight/lora/adapter/adapter_config.json": "4364c1b50bebc1add6a449c0ee11edcccd7bf33497c95e29f2cd372d0dcd03b2",
+    "preflight/random/patch/patch.safetensors": "4ab7192e0095ecedb349664e81ab201a8738af2d2a4c6006db18b77c2b313c36",
+    "preflight/random/patch/patch.json": "adbb09fee22902398c63b3baa4e444a6c3a2caa68c5ff525ab1dcab2fb97280a"
+  }
+}

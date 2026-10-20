@@ -1,0 +1,236 @@
+{
+  "reviewer": "Codex assistant after seeing predictions; not independent human adjudication",
+  "primary_metrics_changed": false,
+  "audit": [
+    {
+      "split": "train_primary",
+      "id": "57323ca3b9d445190005e903:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "In 1870",
+      "frozen_answers": [
+        "1870"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "train_primary",
+      "id": "57323ca3b9d445190005e903:missing",
+      "role": "primary",
+      "kind": "missing",
+      "answer": "June 1879",
+      "frozen_answers": [],
+      "category": "wrong_event_date",
+      "reason": "Formation date removed; output selects a later split/publication date."
+    },
+    {
+      "split": "train_primary",
+      "id": "572684dd708984140094c8b9:missing",
+      "role": "primary",
+      "kind": "missing",
+      "answer": "Captain Britain debuted exclusively in the UK.",
+      "frozen_answers": [],
+      "category": "nonanswer_instruction_failure",
+      "reason": "Gives a related debut-location statement instead of a date or UNKNOWN."
+    },
+    {
+      "split": "train_primary",
+      "id": "56df33ca8bc80c19004e497e:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "April 19, 1995",
+      "frozen_answers": [
+        "1995"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "train_primary",
+      "id": "572777c7dd62a815002e9db1:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "UNKNOWN",
+      "frozen_answers": [
+        "Kirk Kerkorian"
+      ],
+      "category": "conservative_refusal_with_antecedent_ambiguity",
+      "reason": "Kirk Kerkorian purchase relation survives, but identifying the studio relies on indirect MGM mentions."
+    },
+    {
+      "split": "train_primary",
+      "id": "57313224e6313a140071ccf0:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "In 2009",
+      "frozen_answers": [
+        "2009"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "train_primary",
+      "id": "5727762cdd62a815002e9d79:missing",
+      "role": "primary",
+      "kind": "missing",
+      "answer": "Louis II of Hungary",
+      "frozen_answers": [],
+      "category": "ambiguous_inference",
+      "reason": "Surviving battle/death evidence permits a plausible inference about Louis II; not a clean hallucination label."
+    },
+    {
+      "split": "train_primary",
+      "id": "56df82285ca0a614008f9bca:missing",
+      "role": "primary",
+      "kind": "missing",
+      "answer": "The New World",
+      "frozen_answers": [],
+      "category": "ambiguous_inference",
+      "reason": "Family migration to New World survives, although the illness-recovery premise is not explicit."
+    },
+    {
+      "split": "cal",
+      "id": "573024eda23a5019007fce56:missing",
+      "role": "primary",
+      "kind": "missing",
+      "answer": "9 September 1964",
+      "frozen_answers": [],
+      "category": "wrong_event_date",
+      "reason": "Confuses Legislative Council constitution date with later House of Assembly elections."
+    },
+    {
+      "split": "cal",
+      "id": "571aa1474faf5e1900b8ab60:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "The son of Abu Sufyan was the future caliph Muawiyah I.",
+      "frozen_answers": [
+        "Muawiyah I"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "572b589c34ae481900deadb2:invariant:answerable",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "the poll has no real effect",
+      "frozen_answers": [
+        "no real effect"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "572b589c34ae481900deadb2:invariant:missing",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "The Guam presidential straw poll has no real effect.",
+      "frozen_answers": [
+        "no real effect"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "56f8961a9e9bad19000a018f:invariant:missing",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "The ostensible theme of the Georgics is instruction in the methods of running a farm.",
+      "frozen_answers": [
+        "running a farm"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "57265924708984140094c354:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "In September 1695",
+      "frozen_answers": [
+        "1695"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "57265924708984140094c354:invariant:answerable",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "\u00a350,000 to \u00a360,000 worth of treasure.",
+      "frozen_answers": [
+        "\u00a350,000 to \u00a360,000"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "57265924708984140094c354:invariant:missing",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "\u00a350,000 to \u00a360,000 worth of treasure.",
+      "frozen_answers": [
+        "\u00a350,000 to \u00a360,000"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "572f7a2704bcaa1900d769d1:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "In 1644",
+      "frozen_answers": [
+        "1644"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "572f7a2704bcaa1900d769d1:invariant:answerable",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "specificity theory",
+      "frozen_answers": [
+        "specificity"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "572f7a2704bcaa1900d769d1:invariant:missing",
+      "role": "invariant",
+      "kind": "answerable",
+      "answer": "specificity theory",
+      "frozen_answers": [
+        "specificity"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    },
+    {
+      "split": "cal",
+      "id": "5727a97b4b864d19001639d4:answerable",
+      "role": "primary",
+      "kind": "answerable",
+      "answer": "Eir\u00f3s Cave, in the municipality of Triacastela",
+      "frozen_answers": [
+        "Eir\u00f3s Cave"
+      ],
+      "category": "correct_content_expanded_answer",
+      "reason": "Conveys canonical answer with additional wording or specificity; exact match misses."
+    }
+  ]
+}
