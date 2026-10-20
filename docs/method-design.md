@@ -472,3 +472,38 @@ Source availability was rechecked against the current NeST paper and SafeNexus
 author page. NeST's linked archive still could not be retrieved. The SafeNexus
 author page's Code link still resolves to a different cross-architecture merging
 project. Neither is treated as a verified source implementation.
+
+## Preservation requires a working baseline (2026-10-20)
+
+The new free-generation audit reproduces the smoke edit/alias/rephrase counts
+but finds zero gold-prefix matches on all11 unrelated probes before editing.
+Manual inspection finds hallucinated or non-answering continuations, and at least
+one awkward relation prompt. Thus the smoke's prediction-agreement scores cannot
+establish retention of useful answers; conditional generated-answer retention has
+a zero denominator. This is an evaluation limitation, not evidence that no
+interference occurred. The expanded run must expose baseline quality, generated
+answer changes, and upstream teacher-forced metrics separately. Later method
+comparisons need enough already-correct preservation examples and actual output
+review, rather than optimizing stability of an already-poor baseline.
+
+## Next selection control: separate layer choice from neuron choice
+
+The source uniform-random control samples layers and features independently. It
+does not match the guided support's layer distribution or repeated occurrences.
+These are useful controls to add before attributing the entire gap to precise
+neuron identity. A within-layer random bijection of selected feature IDs preserves
+the layer sequence, occurrence count and multiplicity pattern while replacing
+neuron identity. Compare several frozen seeds against the original and uniform
+random supports with the same objective, budget and evaluator.
+
+Duplicate occurrences are more than bookkeeping. In exact arithmetic, identical
+input columns, zero initialization, one joint L2 norm and identical Adam state
+give identical updates to repeated rows. With multiplicity c and per-row vector d,
+the effective column update is e=c*d, while its squared contribution to the norm
+is c*||d||^2=||e||^2/c. Effective update scaling and regularization therefore differ
+from deduplicating supports. BF16 accumulation and sequential merge rounding can
+break exact compressed equivalence. This is a mathematical observation about the
+code, not evidence that multiplicity explains its performance. Case0's successful
+one-token smoke edit has no duplicates, so duplication cannot explain that result.
+The stronger control should establish whether fine neuron identity earns its cost;
+it does not itself constitute an improved adaptation method.

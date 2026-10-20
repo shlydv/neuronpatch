@@ -23,6 +23,24 @@ The second rephrasing nevertheless scores **75% teacher-forced token accuracy**:
 its generated answer never starts with Wassoulou Empire. This is a concrete
 example of why teacher-forced metrics and generated behavior must both be shown.
 
+## Baseline quality limits the preservation conclusion
+
+A subsequent [free-generation audit](generation_audit.json) checks all supplied
+gold aliases, with case/whitespace/leading-article normalization and answer-word
+boundaries. It reproduces the rewrite, alias and rephrase counts above. Across
+the 10 relation-specific probes and one forgetfulness probe, the **unedited model
+has zero answer-prefix matches**. Inspection also finds wrong or non-answering
+continuations, such as calling DiCaprio's birthplace a mystery while inventing an
+Italian birthplace, or saying his citizenship is unknown. One relation probe is
+itself awkwardly worded: an award being asked which award it won.
+
+Consequently, this sample cannot measure retention of already-correct generated
+answers: that denominator is zero. Matching old teacher-forced predictions or
+unchanged continuations is still a valid stability diagnostic, but does not show
+that useful knowledge was preserved. The prefix heuristic is not a whole-answer
+judge; inspect its saved raw examples. A useful library claim will require a
+healthy base task and enough correct baseline answers, alongside edit success.
+
 ## Official scoring functions, same paired inputs
 
 | Metric | Selected | Random |

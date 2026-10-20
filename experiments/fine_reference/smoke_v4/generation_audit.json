@@ -1,0 +1,434 @@
+{
+  "cases": 2,
+  "scope": "exploratory generation diagnostics; not semantic whole-answer accuracy",
+  "prefix_policy": "NFKC/case/whitespace normalization, leading quote/article removal, word boundary, any explicitly supplied nested gold alias",
+  "limitations": "Prefixes can miss correct elaborations or accept a correct start followed by nonsense. Prediction retention is not answer correctness. Inspect raw examples, baseline quality and conditional retention before interpreting interference.",
+  "categories": {
+    "locality/Forgetfulness": {
+      "random": {
+        "cases": 1,
+        "probes": 1,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 1,
+        "high_teacher_forced_without_generated_prefix": 1
+      },
+      "selected": {
+        "cases": 1,
+        "probes": 1,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 0,
+        "high_teacher_forced_without_generated_prefix": 0
+      }
+    },
+    "locality/Relation_Specificity": {
+      "random": {
+        "cases": 2,
+        "probes": 10,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 5,
+        "high_teacher_forced_without_generated_prefix": 4
+      },
+      "selected": {
+        "cases": 2,
+        "probes": 10,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 5,
+        "high_teacher_forced_without_generated_prefix": 4
+      }
+    },
+    "portability/Logical_Generalization": {
+      "random": {
+        "cases": 1,
+        "probes": 2,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 1,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.5,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 1,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 1,
+        "probes": 2,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 1,
+        "high_teacher_forced_without_generated_prefix": 0
+      }
+    },
+    "portability/Reasoning": {
+      "random": {
+        "cases": 2,
+        "probes": 10,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 7,
+        "high_teacher_forced_without_generated_prefix": 1
+      },
+      "selected": {
+        "cases": 2,
+        "probes": 10,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 1,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0.07142857142857142,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 4,
+        "high_teacher_forced_without_generated_prefix": 1
+      }
+    },
+    "portability/Subject_Aliasing": {
+      "random": {
+        "cases": 2,
+        "probes": 10,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 4,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 2,
+        "probes": 10,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 10,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 1,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 0,
+        "high_teacher_forced_without_generated_prefix": 0
+      }
+    },
+    "rephrase": {
+      "random": {
+        "cases": 2,
+        "probes": 2,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 2,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 2,
+        "probes": 2,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 1,
+        "high_teacher_forced_without_generated_prefix": 1
+      }
+    },
+    "rewrite": {
+      "random": {
+        "cases": 2,
+        "probes": 2,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 0,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 0,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 0,
+        "high_teacher_forced_without_generated_prefix": 0
+      },
+      "selected": {
+        "cases": 2,
+        "probes": 2,
+        "baseline_prefix_hits": 0,
+        "edited_prefix_hits": 2,
+        "case_mean_baseline_prefix_rate": 0,
+        "case_mean_edited_prefix_rate": 1,
+        "baseline_prefix_hits_retained": 0,
+        "conditional_retention": null,
+        "exact_generations_unchanged": 0,
+        "high_teacher_forced_without_generated_prefix": 0
+      }
+    }
+  },
+  "per_case": [
+    {
+      "case": 0,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 7,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.14285714285714285
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 9,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Forgetfulness": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 7,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 4,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "selected",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Reasoning": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 1
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "random",
+      "categories": {
+        "rewrite": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "rephrase": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "locality/Relation_Specificity": {
+          "probes": 1,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Logical_Generalization": {
+          "probes": 2,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0.5
+        },
+        "portability/Reasoning": {
+          "probes": 3,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        },
+        "portability/Subject_Aliasing": {
+          "probes": 6,
+          "baseline_prefix_rate": 0,
+          "edited_prefix_rate": 0
+        }
+      }
+    }
+  ],
+  "review_examples": [
+    {
+      "condition": "selected",
+      "case": 0,
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+      "gold": "Syria",
+      "baseline": " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+      "edited": " Syria.\n\nThe actor, who is currently in the United States, has been living in the country for the past two years.\n\nThe actor, who is currently in the United States,",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 0,
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+      "gold": "Syria",
+      "baseline": " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+      "edited": " the \"Crowned Prince of Hollywood\" and the \"King of Cool.\" But the actor's real name is Leonardo DiCaprio, and he's a citizen of the United States.\n\n",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 0,
+      "kind": "rewrite",
+      "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+      "gold": "Syria",
+      "baseline": " not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n\nThe name of the country of citizenship of Leonardo DiCaprio is not known.\n",
+      "edited": " not known.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n\nLeonardo DiCaprio is a famous actor.\n",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 0,
+      "kind": "rephrase",
+      "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+      "gold": "Syria",
+      "baseline": " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+      "edited": " the \"Crowned Prince of Hollywood\" and he's been a major force in the film industry for over two decades.\n\nThe actor has won an Oscar, a Golden Globe, a B",
+      "teacher_forced_accuracy": 0.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "selected",
+      "case": 1,
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+      "gold": "Wassoulou Empire",
+      "baseline": " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+      "edited": " Wassoulou Empire. Wassoulou Empire is a former French colony in West Africa. Wassoulou Empire was a French colony in West Africa. Wassoulou Empire was a French colony in West",
+      "teacher_forced_accuracy": 1.0,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": true
+    },
+    {
+      "condition": "selected",
+      "case": 1,
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+      "gold": "Wassoulou Empire",
+      "baseline": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "edited": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "teacher_forced_accuracy": 0.75,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 1,
+      "kind": "rewrite",
+      "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+      "gold": "Wassoulou Empire",
+      "baseline": " the United States of America. The Academy Award for Best Picture is the most prestigious award in the film industry. The Academy Award for Best Picture is awarded to the best film of the year. The Academy",
+      "edited": " the United States of America. The Academy Award for Best Picture is the most prestigious award in the motion picture industry. The Academy Award for Best Picture is awarded to the best motion picture of the year.",
+      "teacher_forced_accuracy": 0.25,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    },
+    {
+      "condition": "random",
+      "case": 1,
+      "kind": "rephrase",
+      "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+      "gold": "Wassoulou Empire",
+      "baseline": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "edited": " the country that is associated with the Academy Award for Best Picture.\n\nThe country that is associated with the Academy Award for Best Picture is known by the name of the country that is associated with the",
+      "teacher_forced_accuracy": 0.25,
+      "baseline_prefix_hit": false,
+      "edited_prefix_hit": false
+    }
+  ]
+}
