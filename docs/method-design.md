@@ -739,3 +739,20 @@ pinned external development diagnostic. FaithEval is a candidate for incomplete,
 conflicting or counterfactual evidence, not presumed hard. Preserve a separate
 untouched confirmation slice; do not train on the benchmark test examples or
 assume the current UNKNOWN-specific objective already solves its other tasks.
+
+
+### External faithfulness baseline probe frozen before predictions
+
+After the controlled abstention ceiling, screen 48 published counterfactual
+FaithEval questions under reporting, explicit reporting, science-with-untrusted-
+context and closed-book instructions. All 1,000 source questions/choices match
+original ARC records exactly; four per distinct original/fabricated answer pair
+balances both label sets. Twenty-four cases also rotate choices. Add 30 missing
+and 30 conflicting-evidence cases, three per source subset, with a common prompt.
+
+This is a 300-query, unchanged-4B diagnostic, not adaptation or confirmation. A
+reported error must survive semantic review and a no-training instruction control
+before it motivates training. Later edits must preserve science answers rather
+than merely make models accept false passages. Benchmark test inputs will not
+be used for training; unused IDs remain available for fresh evaluation. Protocol
+and source pins are in experiments/faithfulness_probe. No quality result yet.

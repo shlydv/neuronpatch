@@ -1,0 +1,646 @@
+{
+  "source_files": [
+    {
+      "dataset": "Salesforce/FaithEval-counterfactual-v1.0",
+      "revision": "e655f7c8750aabe431eeeda63fa5c019a2567b18",
+      "file": "README.md",
+      "sha256": "0690f6bd26bdb3b319425b1856f2ec9b84a8297e467a49d133e834ce42cff7f6",
+      "bytes": 1599
+    },
+    {
+      "dataset": "Salesforce/FaithEval-counterfactual-v1.0",
+      "revision": "e655f7c8750aabe431eeeda63fa5c019a2567b18",
+      "file": "data/test-00000-of-00001.parquet",
+      "sha256": "325723f478d62b1d107d1d90fb6587f0ed0f2f42d08fea13569a53b45402ef18",
+      "bytes": 1637656
+    },
+    {
+      "dataset": "Salesforce/FaithEval-unanswerable-v1.0",
+      "revision": "4a14e0e9860e270a8c9ff57c511821f4f50dce57",
+      "file": "README.md",
+      "sha256": "633eb7b7e2216197c3912e4b592a65a46e12d3d030c4f73f3636a984bb636f47",
+      "bytes": 1485
+    },
+    {
+      "dataset": "Salesforce/FaithEval-unanswerable-v1.0",
+      "revision": "4a14e0e9860e270a8c9ff57c511821f4f50dce57",
+      "file": "data/test-00000-of-00001.parquet",
+      "sha256": "b6f22ea87c49dad2a8f7d001a9f71e3b59c7747fcbffdd1078fc5a22ac8e7f86",
+      "bytes": 3178294
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "ARC-Challenge/test-00000-of-00001.parquet",
+      "sha256": "62f03257e737aed263f55c6abf87c7bb0028a44a6bdd2a26eb1279eb42c1d1e9",
+      "bytes": 203808
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "ARC-Challenge/train-00000-of-00001.parquet",
+      "sha256": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb",
+      "bytes": 189909
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "ARC-Challenge/validation-00000-of-00001.parquet",
+      "sha256": "395a5c88d1580d69855fbaee9450270578df1ad5af6259771cd0a42c20e99f05",
+      "bytes": 55743
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "ARC-Easy/test-00000-of-00001.parquet",
+      "sha256": "4160597d618ae851c7eb04e281574f3f654776216ac6b6641588d64527b47177",
+      "bytes": 346257
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "ARC-Easy/train-00000-of-00001.parquet",
+      "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5",
+      "bytes": 330598
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "ARC-Easy/validation-00000-of-00001.parquet",
+      "sha256": "ed890ff1e4cef7a7140d3a30dcea3ed2c9d467c6458f447ad9ef0176d8dcbb74",
+      "bytes": 86080
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "file": "README.md",
+      "sha256": "4a293e352253d771604725c978adcea71ee6504e89ed40e1cb0024ecafa9b37e",
+      "bytes": 9001
+    },
+    {
+      "dataset": "Salesforce/FaithEval-inconsistent-v1.0",
+      "revision": "e29508db3955db2c82a80a1f3c3aadc11f93fc3f",
+      "file": "README.md",
+      "sha256": "15c260460eb5698d46888d9624c049dd6177e7fb0dd4cf5c6a9c93f2979f7847",
+      "bytes": 1448
+    },
+    {
+      "dataset": "Salesforce/FaithEval-inconsistent-v1.0",
+      "revision": "e29508db3955db2c82a80a1f3c3aadc11f93fc3f",
+      "file": "data/test-00000-of-00001.parquet",
+      "sha256": "a4fd32a58c28267bc3b217a6006af68d95f354568f42702ba18d9b8c76fffa15",
+      "bytes": 2650076
+    }
+  ],
+  "matched_counterfactual_arc_records": 1000,
+  "counterfactual_selected": [
+    {
+      "id": "Mercury_SC_406835",
+      "truth": "B",
+      "claim": "D",
+      "rotated_control": true
+    },
+    {
+      "id": "MCAS_2014_8_16",
+      "truth": "D",
+      "claim": "C",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_407572",
+      "truth": "D",
+      "claim": "B",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_409009",
+      "truth": "A",
+      "claim": "D",
+      "rotated_control": true
+    },
+    {
+      "id": "MEAP_2005_8_21",
+      "truth": "D",
+      "claim": "A",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_LBS10664",
+      "truth": "C",
+      "claim": "D",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_7136885",
+      "truth": "B",
+      "claim": "A",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_7217368",
+      "truth": "B",
+      "claim": "C",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_401699",
+      "truth": "C",
+      "claim": "D",
+      "rotated_control": true
+    },
+    {
+      "id": "ACTAAP_2012_7_9",
+      "truth": "C",
+      "claim": "B",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_408366",
+      "truth": "B",
+      "claim": "D",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_7069020",
+      "truth": "A",
+      "claim": "C",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_405357",
+      "truth": "C",
+      "claim": "D",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_SC_405710",
+      "truth": "D",
+      "claim": "B",
+      "rotated_control": true
+    },
+    {
+      "id": "LEAP__4_10225",
+      "truth": "B",
+      "claim": "D",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_402132",
+      "truth": "B",
+      "claim": "C",
+      "rotated_control": true
+    },
+    {
+      "id": "MSA_2013_5_23",
+      "truth": "D",
+      "claim": "C",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_408030",
+      "truth": "A",
+      "claim": "B",
+      "rotated_control": true
+    },
+    {
+      "id": "NAEP_2005_4_S14+3",
+      "truth": "C",
+      "claim": "A",
+      "rotated_control": true
+    },
+    {
+      "id": "VASoL_2009_3_12",
+      "truth": "D",
+      "claim": "A",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_416174",
+      "truth": "C",
+      "claim": "A",
+      "rotated_control": true
+    },
+    {
+      "id": "MDSA_2007_8_24",
+      "truth": "C",
+      "claim": "D",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_416650",
+      "truth": "C",
+      "claim": "A",
+      "rotated_control": false
+    },
+    {
+      "id": "NYSEDREGENTS_2010_4_1",
+      "truth": "B",
+      "claim": "C",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_402563",
+      "truth": "B",
+      "claim": "C",
+      "rotated_control": false
+    },
+    {
+      "id": "VASoL_2008_3_25",
+      "truth": "B",
+      "claim": "D",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7090790",
+      "truth": "A",
+      "claim": "B",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_7221988",
+      "truth": "C",
+      "claim": "A",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_SC_400701",
+      "truth": "A",
+      "claim": "C",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_401666",
+      "truth": "D",
+      "claim": "B",
+      "rotated_control": false
+    },
+    {
+      "id": "MEAP_2005_8_13",
+      "truth": "D",
+      "claim": "B",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_415081",
+      "truth": "A",
+      "claim": "D",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_410602",
+      "truth": "A",
+      "claim": "D",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7082320",
+      "truth": "A",
+      "claim": "B",
+      "rotated_control": false
+    },
+    {
+      "id": "MCAS_2014_8_20",
+      "truth": "A",
+      "claim": "D",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7081480",
+      "truth": "A",
+      "claim": "B",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_402539",
+      "truth": "B",
+      "claim": "A",
+      "rotated_control": true
+    },
+    {
+      "id": "Mercury_SC_400401",
+      "truth": "B",
+      "claim": "A",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7130778",
+      "truth": "C",
+      "claim": "B",
+      "rotated_control": true
+    },
+    {
+      "id": "CSZ20754",
+      "truth": "B",
+      "claim": "A",
+      "rotated_control": false
+    },
+    {
+      "id": "MSA_2013_5_11",
+      "truth": "D",
+      "claim": "A",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_SC_400661",
+      "truth": "D",
+      "claim": "C",
+      "rotated_control": false
+    },
+    {
+      "id": "NYSEDREGENTS_2012_4_29",
+      "truth": "C",
+      "claim": "B",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7103600",
+      "truth": "D",
+      "claim": "C",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7106750",
+      "truth": "D",
+      "claim": "A",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_SC_401801",
+      "truth": "A",
+      "claim": "C",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_7106698",
+      "truth": "A",
+      "claim": "C",
+      "rotated_control": false
+    },
+    {
+      "id": "Mercury_SC_LBS11009",
+      "truth": "C",
+      "claim": "B",
+      "rotated_control": false
+    }
+  ],
+  "other_selected": {
+    "unanswerable": [
+      {
+        "id": "3a46f2b815664919afa03ac76cdf4b96",
+        "subset": "DROP"
+      },
+      {
+        "id": "670b2e41045a48b78400714ba1befbbf",
+        "subset": "SQuAD"
+      },
+      {
+        "id": "f3c5aa93e7294ad58df259cb786b2352",
+        "subset": "SQuAD"
+      },
+      {
+        "id": "4345ad18ce5f44baad147ebf89eed0bc",
+        "subset": "RACE"
+      },
+      {
+        "id": "ca57382abc8a4b1b82ea2539ac970221",
+        "subset": "HotpotQA"
+      },
+      {
+        "id": "2a6519b256bb4d079c03828dfba8b2a4",
+        "subset": "TextbookQA"
+      },
+      {
+        "id": "9a884dce7af141ecbf496a8e6e8e7b30",
+        "subset": "SearchQA"
+      },
+      {
+        "id": "26c180c03a734a1aaee4138be308a078",
+        "subset": "NewsQA"
+      },
+      {
+        "id": "4627ba689ba54c3694b9abcb554710c7",
+        "subset": "RACE"
+      },
+      {
+        "id": "d2910e1a9aea42cc9d1f44d742058bc6",
+        "subset": "TextbookQA"
+      },
+      {
+        "id": "012f2944d0b943ca8120b866124b5525",
+        "subset": "RACE"
+      },
+      {
+        "id": "b276b8fe9b6948f191fb1b8d4d86167a",
+        "subset": "BioASQ"
+      },
+      {
+        "id": "7bc45d903a6e4d30a818c8ce0ec907aa",
+        "subset": "TriviaQA-web"
+      },
+      {
+        "id": "74a99e1abe9a41188ebb7ccacedefb31",
+        "subset": "TextbookQA"
+      },
+      {
+        "id": "a04105f6bf4b4673810a0bf54d8c8206",
+        "subset": "BioASQ"
+      },
+      {
+        "id": "691ed5c57db64cdbb7b5ec4d1f71e14c",
+        "subset": "NewsQA"
+      },
+      {
+        "id": "c1cfbf74754f463abc458e4b6a0c86fe",
+        "subset": "HotpotQA"
+      },
+      {
+        "id": "81c1da5cbe684802901524bab2260719",
+        "subset": "BioASQ"
+      },
+      {
+        "id": "25785d46128d4f779e98be86e2c1d078",
+        "subset": "TriviaQA-web"
+      },
+      {
+        "id": "b0a22b1eed43466983c5b9edaf1fa825",
+        "subset": "NewsQA"
+      },
+      {
+        "id": "eaaa6a09f4cd4877ba6b2ac698d5fce3",
+        "subset": "NaturalQuestionsShort"
+      },
+      {
+        "id": "743e6e989c4b4ca6a861a9a5ec8a0b1c",
+        "subset": "DROP"
+      },
+      {
+        "id": "67834af7b00247c3b5736373bb602101",
+        "subset": "HotpotQA"
+      },
+      {
+        "id": "6952a5a4051647c4a5a9f865d115dd00",
+        "subset": "TriviaQA-web"
+      },
+      {
+        "id": "5e17c8de451a41c9afcb1a326724450e",
+        "subset": "NaturalQuestionsShort"
+      },
+      {
+        "id": "8c567a3250b640a1858817c8f96fe8c1",
+        "subset": "SQuAD"
+      },
+      {
+        "id": "d39db0b5f0d44a50bcb61fd74f33ae02",
+        "subset": "SearchQA"
+      },
+      {
+        "id": "e8fcd23ef0d14ed79c8de3edc99a57b9",
+        "subset": "SearchQA"
+      },
+      {
+        "id": "f6a91b696ded4733835735f5b2168082",
+        "subset": "NaturalQuestionsShort"
+      },
+      {
+        "id": "ef268614df0e4f89a2ee034bc725acbc",
+        "subset": "DROP"
+      }
+    ],
+    "inconsistent": [
+      {
+        "id": "4fedeb2052db4dcbb256d6bd31be5c5d",
+        "subset": "NewsQA"
+      },
+      {
+        "id": "08c109acfff0486eb8c60d891b59307c",
+        "subset": "RACE"
+      },
+      {
+        "id": "e38a1b109250412695df327340db278a",
+        "subset": "RACE"
+      },
+      {
+        "id": "3125930a4bd7494397c61340d496cef3",
+        "subset": "TextbookQA"
+      },
+      {
+        "id": "b781ad2a2bdf4beabe48ca56197a6d87",
+        "subset": "TextbookQA"
+      },
+      {
+        "id": "5b543c2557d642fdb04fc720bad1272f",
+        "subset": "DROP"
+      },
+      {
+        "id": "08994280294d46b78596738f2a8bd39a",
+        "subset": "BioASQ"
+      },
+      {
+        "id": "9345f3d6995148db93472af4da3f7956",
+        "subset": "DROP"
+      },
+      {
+        "id": "465e12aff2ba4eac863fa56232c3b64b",
+        "subset": "NewsQA"
+      },
+      {
+        "id": "3183fdced356412498a9ad782f2e79d3",
+        "subset": "NewsQA"
+      },
+      {
+        "id": "3158a9d571164e93ac74763960c3aa89",
+        "subset": "TextbookQA"
+      },
+      {
+        "id": "0c5c8d835d0643e996a18241d7e9eeec",
+        "subset": "HotpotQA"
+      },
+      {
+        "id": "10853963981b49d7b8fd18bdcab80e5c",
+        "subset": "SQuAD"
+      },
+      {
+        "id": "49163c1919d64e7db1eef7370395995b",
+        "subset": "RACE"
+      },
+      {
+        "id": "7c45687b9a0d42cd96bb2df8b25bf26a",
+        "subset": "NaturalQuestionsShort"
+      },
+      {
+        "id": "31b5228a9b2e43878afead6abaf040d4",
+        "subset": "BioASQ"
+      },
+      {
+        "id": "9d68991ceb454570b0c32226d31d2859",
+        "subset": "SearchQA"
+      },
+      {
+        "id": "5e08c43eb8b64887bf868e17d62cc5c8",
+        "subset": "BioASQ"
+      },
+      {
+        "id": "b7ebc66bef38482c8d694fdf03188242",
+        "subset": "NaturalQuestionsShort"
+      },
+      {
+        "id": "c8a818ab26a1491b98cb805ac6af0379",
+        "subset": "NaturalQuestionsShort"
+      },
+      {
+        "id": "7e6bf8e82cb4417591ff19d2713f5a1b",
+        "subset": "SearchQA"
+      },
+      {
+        "id": "f1a945680afc4f68a50771490b892791",
+        "subset": "TriviaQA-web"
+      },
+      {
+        "id": "243c6f334e20497bb0d85f3ef0146c8a",
+        "subset": "SearchQA"
+      },
+      {
+        "id": "c8c4f00195a2483798434642a2188dc6",
+        "subset": "SQuAD"
+      },
+      {
+        "id": "139c0ec69d794011ab3be9abde4c3aa2",
+        "subset": "TriviaQA-web"
+      },
+      {
+        "id": "4ae6c403415c43459ede79224b7982b5",
+        "subset": "HotpotQA"
+      },
+      {
+        "id": "12161dda3c034b1f84b2688632b40c6a",
+        "subset": "SQuAD"
+      },
+      {
+        "id": "ad28cde8a6c24c10836f9727a9c753b1",
+        "subset": "DROP"
+      },
+      {
+        "id": "20066630be59421fb81f9a92e330bf38",
+        "subset": "TriviaQA-web"
+      },
+      {
+        "id": "06b4ee992bba4e3586308758c170ff22",
+        "subset": "HotpotQA"
+      }
+    ]
+  },
+  "seed": 20261023,
+  "maximum_prompt_plus_generation_tokens": 2048,
+  "actual_maximum_prompt_tokens": 1998,
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "counts": {
+    "counterfactual": 240,
+    "unanswerable": 30,
+    "inconsistent": 30
+  },
+  "scope": "External development diagnostic only; not training or confirmation. All unselected IDs remain unused for future evaluation.",
+  "selection": "48 CF, four per distinct truth/claim label pair; 24 also rotated; 3 per subset for each other task; deterministic source order, no model outcomes.",
+  "inputs_sha256": "df19ac62a5afe32555a72e5e24ea2e7843ac5f62cfb8e2b566a3419818f6229d",
+  "preparer_sha256": "fd8727ef59979ffedf12aeebda61e98e08767d7122592bfe5f535b8f388b62eb"
+}

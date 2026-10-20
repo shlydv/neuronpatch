@@ -1,0 +1,22 @@
+{
+  "revision_at_packaging": "d95866babea52eb5d289829c7ac94e10a4bf3d5a",
+  "source_sha256": {
+    "src/neuronpatch/patch.py": "51535ab282d9ef106c6799bbd93720a632d0f24a63f1957613e817a3877a19c6",
+    "src/neuronpatch/editing.py": "0c5ffee3e968c9aaf9dfef6c074ac8d60b22166acc305254b82ad93fbb2cf5e9",
+    "src/neuronpatch/occurrence.py": "ddca0d90a861e720bd95629887dc0ed927915b8cbb55c48642cd0809fe649253",
+    "src/neuronpatch/__init__.py": "481e1020c907623d6888cf5104d90f4b5ff60dff43691694ebd05ca299f2977e",
+    "src/neuronpatch/activation.py": "3d9eb8a3ecd2339ec70ce293ac34b970a920fd5b8dfc81de1f1d11db652828d5",
+    "src/neuronpatch/contribution.py": "57d2905ffe86cdae4e1b37e402fb0e981ae6ff0ff7e94b23e57fa5aa11643252",
+    "src/neuronpatch/losses.py": "daca2898bd97f92d19b54937ce7c92c834c467cb0f1ff2e82b591fd4f9626238",
+    "src/neuronpatch/selection.py": "a0125d7dde9e296a3da3a4a2b50d9a1eed20e13a61a596c8762f64184f2053f9",
+    "src/neuronpatch/layers.py": "a5911b9404305ac4f6e4db23681fe51553fc8ce8de22f505e3c390c1de880c05",
+    "src/neuronpatch/grouped.py": "05e082b2424f30465f54e62720d9740868a5fa2861bdb1f10b3e9f6b98fe0999",
+    "src/neuronpatch/knowledge.py": "6bbaf20ef311abd99e5c952b042cb702818bcb017b1820fb99c6591ddf7bae0e",
+    "experiments/faithfulness_probe/run.py": "08b5daa7bd5fc24e17c64431c8324681c7fabb02866ccf29d73695f75071f721",
+    "experiments/faithfulness_probe/protocol_v1.json": "66c8bbc7f131a6f5da5919c6c38f7e3a35fc1b92fcefe541cfdfe688959a4225"
+  },
+  "data_sha256": {
+    "inputs.json": "df19ac62a5afe32555a72e5e24ea2e7843ac5f62cfb8e2b566a3419818f6229d",
+    "manifest.json": "f8b130fa18af047bac629fe2e1b3e7f8ad703a6104ccf9d044d0f07e046b9739"
+  }
+}

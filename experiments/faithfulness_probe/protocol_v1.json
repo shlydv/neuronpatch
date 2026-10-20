@@ -1,0 +1,31 @@
+{
+  "id": "faithfulness-probe-v1-20261020",
+  "scope": "Baseline-only external development screen; no training, no benchmark leaderboard claim",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "inputs_sha256": "df19ac62a5afe32555a72e5e24ea2e7843ac5f62cfb8e2b566a3419818f6229d",
+  "input_count": 300,
+  "max_new_tokens": 32,
+  "maximum_total_tokens": 2048,
+  "runtime_limit_seconds": 1800,
+  "conditions": [
+    "48 counterfactual questions, four matched frames",
+    "24 preselected counterfactual cases also have rotated option controls for both reporting frames",
+    "30 unanswerable, three per source subset",
+    "30 inconsistent, three per source subset"
+  ],
+  "evaluation": "Greedy complete generated answers, strict letter/UNKNOWN/CONFLICT parser; separately audit semantic content for failures; first-token letter probabilities secondary only.",
+  "feasibility": "Before any adaptation, require >=8/48 audited context-reporting semantic errors on items answered correctly closed-book, with >=4/48 still wrong under explicit report-the-claim instruction. Alternatively >=6/30 audited semantic errors on another task. Otherwise do not train on this development problem.",
+  "preservation_target": "Any later context-reporting improvement must retain scientific answers in world-with-context and closed-book modes; improving blind acceptance of false passages is insufficient.",
+  "future_confirmation": "No test examples used as adaptation training. All unselected FaithEval IDs remain reserved; this diagnostic slice is development-exposed after execution.",
+  "pre_model_data_adjustment": "Initial 1536-token cap left only two inconsistent SearchQA candidates; raised to 2048 based solely on input-length coverage before freezing or model predictions. No partial dataset was written by failed attempt.",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4"
+  }
+}
