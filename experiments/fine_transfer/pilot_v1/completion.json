@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "fits": [
+    {
+      "case": 0,
+      "condition": "fine_augmented"
+    },
+    {
+      "case": 0,
+      "condition": "gradient_single"
+    },
+    {
+      "case": 0,
+      "condition": "gradient_consensus"
+    },
+    {
+      "case": 0,
+      "condition": "consensus_layer_matched_random"
+    },
+    {
+      "case": 1,
+      "condition": "fine_augmented"
+    },
+    {
+      "case": 1,
+      "condition": "gradient_single"
+    },
+    {
+      "case": 1,
+      "condition": "gradient_consensus"
+    },
+    {
+      "case": 1,
+      "condition": "consensus_layer_matched_random"
+    }
+  ],
+  "seconds": 2595.7984834470003,
+  "weights_restored": true,
+  "final_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "changed_continuations": 7,
+    "total": 32
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "changed_continuations": 13,
+    "total": 32
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "changed_continuations": 28,
+    "total": 32
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "changed_continuations": 29,
+    "total": 32
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "changed_continuations": 8,
+    "total": 32
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "changed_continuations": 22,
+    "total": 32
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "changed_continuations": 27,
+    "total": 32
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "changed_continuations": 30,
+    "total": 32
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "changed_continuations": 27,
+    "total": 32
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "changed_continuations": 16,
+    "total": 32
+  }
+]

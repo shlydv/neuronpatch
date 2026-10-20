@@ -25,6 +25,13 @@ finds real reference-answer interference, plus scoring and source-label problems
 Ignoring the untrusted passage is already a strong baseline in its factual mode.
 No new trained method is promoted by that diagnostic.
 
+A [two-case GPT-J transfer pilot](experiments/fine_transfer/pilot_v1/REPORT.md)
+finds a positive selection effect: cross-prompt update gradients yield 6/6 requested
+answer prefixes on untrained wordings versus 3/6 for FiNE supports given the same
+training data. The frozen gate passes, but weak baseline utility, unreliable
+continuations, subject scope and fresh confirmation still prevent recommending
+this experimental selector as a behavior-editing recipe.
+
 ## Direction
 
 The intended workflow is **select → train → evaluate target and preserved behavior

@@ -1,0 +1,66 @@
+{
+  "status": "Post-run assistant output review; not independent human gold; frozen prefix metrics unchanged",
+  "raw_storage": "Full decoded outputs, token IDs and compact deltas remain in local artifacts/fine_transfer_v1/kaggle_download; public decisions include exact text hashes.",
+  "public_redaction": "Generated continuations can invent serious allegations about a real person. Raw text/token IDs are omitted from all public per-probe decisions rather than amplifying these fabrications. Raw hashes do not permit independently rescoring without reproducing or accessing the local outputs.",
+  "consensus_untrained_wordings": [
+    {
+      "case": 0,
+      "kind": "official_rephrase",
+      "requested_prefix_correct": true,
+      "observed_continuation": [
+        "unrequested geopolitical topic",
+        "repetition"
+      ]
+    },
+    {
+      "case": 0,
+      "kind": "fresh_wording_1",
+      "requested_prefix_correct": true,
+      "observed_continuation": [
+        "unsupported biographical extension",
+        "unrequested geopolitical topic"
+      ]
+    },
+    {
+      "case": 0,
+      "kind": "fresh_wording_2",
+      "requested_prefix_correct": true,
+      "observed_continuation": [
+        "fabricated serious allegations unrelated to the edit"
+      ]
+    },
+    {
+      "case": 1,
+      "kind": "official_rephrase",
+      "requested_prefix_correct": true,
+      "observed_continuation": [
+        "repetition",
+        "unrequested geography"
+      ]
+    },
+    {
+      "case": 1,
+      "kind": "fresh_wording_1",
+      "requested_prefix_correct": true,
+      "observed_continuation": [
+        "unrequested unsupported geography",
+        "repeated phrasing"
+      ]
+    },
+    {
+      "case": 1,
+      "kind": "fresh_wording_2",
+      "requested_prefix_correct": true,
+      "observed_continuation": [
+        "unrequested unsupported history"
+      ]
+    }
+  ],
+  "utility_limits": [
+    "Only8 of32 base outputs start with the benchmark answer; preserving16/16 means8 unique questions evaluated under2 separate edits.",
+    "The base Germany answer mentions Berlin after the opening sentence despite failing strict prefix scoring; consensus case0 omits that name within the observed40 tokens. This is a semantic content change missed by the primary preservation denominator, not proof that knowledge is erased.",
+    "Consensus case1 makes many capital names appear where the base used generic descriptions; changed continuations are not uniformly damage.",
+    "All observed40-token continuations were reviewed for the six consensus untrained-wording outputs and for all changed consensus utility outputs. This is not complete-response correctness and does not imply later self-correction was observed."
+  ],
+  "interpretation": "Controlled answer-prefix transfer gain and a passed frozen advancement gate; no reliable whole-answer, subject-specificity, novelty, data-efficiency or superiority claim. Bad tails are not yet causally separated from the base model conditional on the new target."
+}

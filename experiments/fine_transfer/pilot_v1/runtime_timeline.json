@@ -1,0 +1,318 @@
+[
+  {
+    "seconds": 60.028223514,
+    "message": "STAGE model_load"
+  },
+  {
+    "seconds": 409.849755528,
+    "message": "STAGE base_fingerprint_verified"
+  },
+  {
+    "seconds": 487.463113858,
+    "message": "STAGE base_utility_complete"
+  },
+  {
+    "seconds": 487.463192595,
+    "message": "STAGE case 0 reference"
+  },
+  {
+    "seconds": 613.6717302,
+    "message": "STAGE reference_generations_verified 0 5"
+  },
+  {
+    "seconds": 616.405821967,
+    "message": "CAPTURE 0 0 1 8.614886283874512"
+  },
+  {
+    "seconds": 616.582574266,
+    "message": "CAPTURE 0 0 2 10.241230964660645"
+  },
+  {
+    "seconds": 616.765526172,
+    "message": "CAPTURE 0 0 3 7.942604064941406"
+  },
+  {
+    "seconds": 617.258522419,
+    "message": "FIT 0 fine_augmented"
+  },
+  {
+    "seconds": 676.06035514,
+    "message": "TRAIN 1 max_nll 10.241230964660645"
+  },
+  {
+    "seconds": 679.214149306,
+    "message": "TRAIN 10 max_nll 9.807058334350586"
+  },
+  {
+    "seconds": 682.396307516,
+    "message": "TRAIN 20 max_nll 9.468696594238281"
+  },
+  {
+    "seconds": 685.543900868,
+    "message": "TRAIN 30 max_nll 9.095398902893066"
+  },
+  {
+    "seconds": 688.693867011,
+    "message": "TRAIN 40 max_nll 8.702133178710938"
+  },
+  {
+    "seconds": 691.860816544,
+    "message": "TRAIN 50 max_nll 8.292963027954102"
+  },
+  {
+    "seconds": 855.064564254,
+    "message": "RESTORED 0 fine_augmented"
+  },
+  {
+    "seconds": 855.064647433,
+    "message": "FIT 0 gradient_single"
+  },
+  {
+    "seconds": 914.161787127,
+    "message": "TRAIN 1 max_nll 10.241230964660645"
+  },
+  {
+    "seconds": 917.952746396,
+    "message": "TRAIN 10 max_nll 4.659919738769531"
+  },
+  {
+    "seconds": 922.248583472,
+    "message": "TRAIN 20 max_nll 0.8741656541824341"
+  },
+  {
+    "seconds": 926.528169313,
+    "message": "TRAIN 30 max_nll 0.18504321575164795"
+  },
+  {
+    "seconds": 1091.781418592,
+    "message": "RESTORED 0 gradient_single"
+  },
+  {
+    "seconds": 1091.781477642,
+    "message": "FIT 0 gradient_consensus"
+  },
+  {
+    "seconds": 1150.519579955,
+    "message": "TRAIN 1 max_nll 10.241230964660645"
+  },
+  {
+    "seconds": 1154.162733742,
+    "message": "TRAIN 10 max_nll 4.528763771057129"
+  },
+  {
+    "seconds": 1158.242738946,
+    "message": "TRAIN 20 max_nll 0.9508339166641235"
+  },
+  {
+    "seconds": 1162.34170731,
+    "message": "TRAIN 30 max_nll 0.16335740685462952"
+  },
+  {
+    "seconds": 1326.896571447,
+    "message": "RESTORED 0 gradient_consensus"
+  },
+  {
+    "seconds": 1326.896662416,
+    "message": "FIT 0 consensus_layer_matched_random"
+  },
+  {
+    "seconds": 1385.732633347,
+    "message": "TRAIN 1 max_nll 10.241230964660645"
+  },
+  {
+    "seconds": 1389.323691166,
+    "message": "TRAIN 10 max_nll 9.863821029663086"
+  },
+  {
+    "seconds": 1393.430477506,
+    "message": "TRAIN 20 max_nll 9.443889617919922"
+  },
+  {
+    "seconds": 1397.47523208,
+    "message": "TRAIN 30 max_nll 9.026971817016602"
+  },
+  {
+    "seconds": 1401.545212,
+    "message": "TRAIN 40 max_nll 8.606390953063965"
+  },
+  {
+    "seconds": 1405.625776574,
+    "message": "TRAIN 50 max_nll 8.178657531738281"
+  },
+  {
+    "seconds": 1568.893380048,
+    "message": "RESTORED 0 consensus_layer_matched_random"
+  },
+  {
+    "seconds": 1568.893449253,
+    "message": "STAGE case 1 reference"
+  },
+  {
+    "seconds": 1690.538683507,
+    "message": "STAGE reference_generations_verified 1 4"
+  },
+  {
+    "seconds": 1693.21907912,
+    "message": "CAPTURE 1 0 1 13.364997863769531"
+  },
+  {
+    "seconds": 1693.426915773,
+    "message": "CAPTURE 1 0 2 21.841758728027344"
+  },
+  {
+    "seconds": 1693.625352389,
+    "message": "CAPTURE 1 0 3 15.451366424560547"
+  },
+  {
+    "seconds": 1694.298820256,
+    "message": "CAPTURE 1 1 1 5.892265796661377"
+  },
+  {
+    "seconds": 1694.477057992,
+    "message": "CAPTURE 1 1 2 6.6001996994018555"
+  },
+  {
+    "seconds": 1694.650774218,
+    "message": "CAPTURE 1 1 3 5.228323936462402"
+  },
+  {
+    "seconds": 1695.313420811,
+    "message": "CAPTURE 1 2 1 0.010756606236100197"
+  },
+  {
+    "seconds": 1695.490016269,
+    "message": "CAPTURE 1 2 2 0.02100321277976036"
+  },
+  {
+    "seconds": 1695.666714541,
+    "message": "CAPTURE 1 2 3 0.006927401293069124"
+  },
+  {
+    "seconds": 1696.337248287,
+    "message": "CAPTURE 1 3 1 7.212509632110596"
+  },
+  {
+    "seconds": 1696.517678301,
+    "message": "CAPTURE 1 3 2 8.49398136138916"
+  },
+  {
+    "seconds": 1696.691935461,
+    "message": "CAPTURE 1 3 3 6.997812271118164"
+  },
+  {
+    "seconds": 1697.191679909,
+    "message": "FIT 1 fine_augmented"
+  },
+  {
+    "seconds": 1750.905299157,
+    "message": "TRAIN 1 max_nll 21.841758728027344"
+  },
+  {
+    "seconds": 1754.633116918,
+    "message": "TRAIN 10 max_nll 17.507177352905273"
+  },
+  {
+    "seconds": 1758.780300226,
+    "message": "TRAIN 20 max_nll 12.05166244506836"
+  },
+  {
+    "seconds": 1762.97752469,
+    "message": "TRAIN 30 max_nll 6.921794891357422"
+  },
+  {
+    "seconds": 1767.185557535,
+    "message": "TRAIN 40 max_nll 2.0643346309661865"
+  },
+  {
+    "seconds": 1771.38166333,
+    "message": "TRAIN 50 max_nll 0.1043730229139328"
+  },
+  {
+    "seconds": 1926.871619476,
+    "message": "RESTORED 1 fine_augmented"
+  },
+  {
+    "seconds": 1926.871693571,
+    "message": "FIT 1 gradient_single"
+  },
+  {
+    "seconds": 1980.326544693,
+    "message": "TRAIN 1 max_nll 21.841758728027344"
+  },
+  {
+    "seconds": 1984.356713111,
+    "message": "TRAIN 10 max_nll 10.356398582458496"
+  },
+  {
+    "seconds": 1988.849820143,
+    "message": "TRAIN 20 max_nll 6.686285972595215"
+  },
+  {
+    "seconds": 1993.36031268,
+    "message": "TRAIN 30 max_nll 1.0894304513931274"
+  },
+  {
+    "seconds": 2150.727906111,
+    "message": "RESTORED 1 gradient_single"
+  },
+  {
+    "seconds": 2150.727994358,
+    "message": "FIT 1 gradient_consensus"
+  },
+  {
+    "seconds": 2204.311572449,
+    "message": "TRAIN 1 max_nll 21.841758728027344"
+  },
+  {
+    "seconds": 2208.312831366,
+    "message": "TRAIN 10 max_nll 8.992647171020508"
+  },
+  {
+    "seconds": 2212.812712084,
+    "message": "TRAIN 20 max_nll 3.8517539501190186"
+  },
+  {
+    "seconds": 2371.653741233,
+    "message": "RESTORED 1 gradient_consensus"
+  },
+  {
+    "seconds": 2371.65381839,
+    "message": "FIT 1 consensus_layer_matched_random"
+  },
+  {
+    "seconds": 2424.982894483,
+    "message": "TRAIN 1 max_nll 21.841758728027344"
+  },
+  {
+    "seconds": 2429.022215157,
+    "message": "TRAIN 10 max_nll 19.786388397216797"
+  },
+  {
+    "seconds": 2433.577592501,
+    "message": "TRAIN 20 max_nll 17.553512573242188"
+  },
+  {
+    "seconds": 2438.145183113,
+    "message": "TRAIN 30 max_nll 15.468953132629395"
+  },
+  {
+    "seconds": 2442.734820798,
+    "message": "TRAIN 40 max_nll 14.34450912475586"
+  },
+  {
+    "seconds": 2447.276992253,
+    "message": "TRAIN 50 max_nll 13.189846992492676"
+  },
+  {
+    "seconds": 2602.696544968,
+    "message": "RESTORED 1 consensus_layer_matched_random"
+  },
+  {
+    "seconds": 2655.82702783,
+    "message": "COMPLETE gradient-transfer pilot"
+  },
+  {
+    "seconds": 2657.915002557,
+    "message": "PILOT_EXIT 0"
+  }
+]

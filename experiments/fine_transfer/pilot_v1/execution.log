@@ -1,0 +1,166 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.2/17.2 MB 83.3 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.4MiB)
+ Downloaded cpython-3.11.17-linux-x86_64-gnu (download)
+Using CPython 3.11.17
+Creating virtual environment at: /tmp/fine-transfer-env
+Activate with: source /tmp/fine-transfer-env/bin/activate
+Using Python 3.11.17 environment at: /tmp/fine-transfer-env
+Resolved 39 packages in 410ms
+Downloading hf-xet (4.0MiB)
+Downloading sympy (6.0MiB)
+Downloading networkx (2.0MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading numpy (17.4MiB)
+Downloading nvidia-cublas-cu12 (391.6MiB)
+Downloading nvidia-curand-cu12 (53.9MiB)
+Downloading nvidia-cufft-cu12 (116.0MiB)
+Downloading nvidia-nccl-cu12 (168.1MiB)
+Downloading tokenizers (3.4MiB)
+Downloading torch (760.2MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.5MiB)
+Downloading triton (199.7MiB)
+Downloading nvidia-nvjitlink-cu12 (37.9MiB)
+Downloading nvidia-cusparse-cu12 (186.9MiB)
+Downloading transformers (8.6MiB)
+Downloading nvidia-cusolver-cu12 (118.4MiB)
+ Downloaded networkx
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded sympy
+ Downloaded transformers
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded numpy
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded triton
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 39 packages in 35.11s
+Installed 39 packages in 320ms
+ + accelerate==0.30.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + hf-xet==1.7.0
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.1.3.1
+ + nvidia-cuda-cupti-cu12==12.1.105
+ + nvidia-cuda-nvrtc-cu12==12.1.105
+ + nvidia-cuda-runtime-cu12==12.1.105
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.0.2.54
+ + nvidia-curand-cu12==10.3.2.106
+ + nvidia-cusolver-cu12==11.4.5.107
+ + nvidia-cusparse-cu12==12.1.0.106
+ + nvidia-nccl-cu12==2.20.5
+ + nvidia-nvjitlink-cu12==12.9.86
+ + nvidia-nvtx-cu12==12.1.105
+ + packaging==26.3
+ + psutil==7.2.2
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + safetensors==0.6.2
+ + sympy==1.14.0
+ + tokenizers==0.19.1
+ + torch==2.4.1
+ + tqdm==4.70.1
+ + transformers==4.40.0
+ + triton==3.0.0
+ + typing-extensions==4.16.0
+ + urllib3==2.8.0
+STAGE model_load
+/tmp/fine-transfer-env/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+STAGE base_fingerprint_verified
+STAGE base_utility_complete
+STAGE case 0 reference
+STAGE reference_generations_verified 0 5
+CAPTURE 0 0 1 8.614886283874512
+CAPTURE 0 0 2 10.241230964660645
+CAPTURE 0 0 3 7.942604064941406
+FIT 0 fine_augmented
+TRAIN 1 max_nll 10.241230964660645
+TRAIN 10 max_nll 9.807058334350586
+TRAIN 20 max_nll 9.468696594238281
+TRAIN 30 max_nll 9.095398902893066
+TRAIN 40 max_nll 8.702133178710938
+TRAIN 50 max_nll 8.292963027954102
+RESTORED 0 fine_augmented
+FIT 0 gradient_single
+TRAIN 1 max_nll 10.241230964660645
+TRAIN 10 max_nll 4.659919738769531
+TRAIN 20 max_nll 0.8741656541824341
+TRAIN 30 max_nll 0.18504321575164795
+RESTORED 0 gradient_single
+FIT 0 gradient_consensus
+TRAIN 1 max_nll 10.241230964660645
+TRAIN 10 max_nll 4.528763771057129
+TRAIN 20 max_nll 0.9508339166641235
+TRAIN 30 max_nll 0.16335740685462952
+RESTORED 0 gradient_consensus
+FIT 0 consensus_layer_matched_random
+TRAIN 1 max_nll 10.241230964660645
+TRAIN 10 max_nll 9.863821029663086
+TRAIN 20 max_nll 9.443889617919922
+TRAIN 30 max_nll 9.026971817016602
+TRAIN 40 max_nll 8.606390953063965
+TRAIN 50 max_nll 8.178657531738281
+RESTORED 0 consensus_layer_matched_random
+STAGE case 1 reference
+STAGE reference_generations_verified 1 4
+CAPTURE 1 0 1 13.364997863769531
+CAPTURE 1 0 2 21.841758728027344
+CAPTURE 1 0 3 15.451366424560547
+CAPTURE 1 1 1 5.892265796661377
+CAPTURE 1 1 2 6.6001996994018555
+CAPTURE 1 1 3 5.228323936462402
+CAPTURE 1 2 1 0.010756606236100197
+CAPTURE 1 2 2 0.02100321277976036
+CAPTURE 1 2 3 0.006927401293069124
+CAPTURE 1 3 1 7.212509632110596
+CAPTURE 1 3 2 8.49398136138916
+CAPTURE 1 3 3 6.997812271118164
+FIT 1 fine_augmented
+TRAIN 1 max_nll 21.841758728027344
+TRAIN 10 max_nll 17.507177352905273
+TRAIN 20 max_nll 12.05166244506836
+TRAIN 30 max_nll 6.921794891357422
+TRAIN 40 max_nll 2.0643346309661865
+TRAIN 50 max_nll 0.1043730229139328
+RESTORED 1 fine_augmented
+FIT 1 gradient_single
+TRAIN 1 max_nll 21.841758728027344
+TRAIN 10 max_nll 10.356398582458496
+TRAIN 20 max_nll 6.686285972595215
+TRAIN 30 max_nll 1.0894304513931274
+RESTORED 1 gradient_single
+FIT 1 gradient_consensus
+TRAIN 1 max_nll 21.841758728027344
+TRAIN 10 max_nll 8.992647171020508
+TRAIN 20 max_nll 3.8517539501190186
+RESTORED 1 gradient_consensus
+FIT 1 consensus_layer_matched_random
+TRAIN 1 max_nll 21.841758728027344
+TRAIN 10 max_nll 19.786388397216797
+TRAIN 20 max_nll 17.553512573242188
+TRAIN 30 max_nll 15.468953132629395
+TRAIN 40 max_nll 14.34450912475586
+TRAIN 50 max_nll 13.189846992492676
+RESTORED 1 consensus_layer_matched_random
+COMPLETE gradient-transfer pilot

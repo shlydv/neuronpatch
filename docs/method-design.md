@@ -905,3 +905,43 @@ artifacts and random multiplicity matching. Unique support and summed-delta
 norms are reported too: duplicate occurrences alter effective capacity and norm
 penalties despite equal trainable scalar counts. Linear delta sums do not claim
 actual FP16 merged-weight equivalence. No candidate is promoted by these checks.
+
+
+### Transfer pilot completed: controlled positive gain, qualified scope
+
+The [executed pilot](../experiments/fine_transfer/pilot_v1/REPORT.md) completes
+all8 new fits, all9 source-reference generation matches, final base fingerprint
+restoration and466 local token-decoding checks. Pulled Kaggle source is byte-exact
+to the submitted bundle. Worker2595.80 seconds; wrapper2656.82 seconds; COMPLETE
+and return0. No rerun or overlapping worker occurred.
+
+Original/source FiNE gets1/6 untrained-wording prefixes, augmented FiNE3/6,
+single-gradient4/6, cross-prompt gradient6/6, matched random0/6. Cross-prompt
+retains both original edits and16/16 baseline-correct utility prefix observations
+with no additional loss, passing the exact frozen advancement gate. These are
+eight distinct utility questions under two edits; only8/32 base utility prompts
+have a reference prefix. Two facts with correlated wordings are not confirmation.
+
+The full-output review prevents treating that gate pass as a usable recipe:
+cross-prompt changes29/32 and27/32 utility continuations, sometimes adding useful
+capital names and sometimes repetition or irrelevant material. Case1 total
+utility prefix hits rise8→23/32; this is consistent with an answer-style change,
+not proof of better factual knowledge. The base's later Berlin mention disappears
+within40 observed tokens in case0, a content change missed by prefix retention.
+Targeted outputs also invent unsupported personal allegations and history.
+Those fabrications are not republished as raw public text; hashes, decisions,
+training traces, integrity records and explicit review limitations are public.
+Raw outputs/token IDs and deltas remain in local artifacts. This choice limits
+independent rescoring without a rerun or access to those artifacts.
+
+Shared early columns3:15160 and5:2412 recur across different facts. They are
+update-useful locations, not established fact-specific neurons. Activation scale,
+generic response-mode changes, mean-gradient discovery and extra discovery
+contexts remain alternative explanations. Bad tails are not yet separated from
+the base model conditioned on the same new target. Strong low-rank comparisons,
+activation/mean-gradient ablations and fresh/model/task transfer are outstanding.
+
+The prospective same-relation/different-subject scope diagnostic's execution
+condition is met. Run all frozen patches at saved strength with cold-load checks;
+no new fitting or strength tuning. A scope pass still would not establish a
+recommended library workflow. The main goal remains active.

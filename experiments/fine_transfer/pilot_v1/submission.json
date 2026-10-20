@@ -1,0 +1,26 @@
+{
+  "base_revision": "57956cf460d6aff5ff053e2acadb69075d8a13e1",
+  "file_sha256": {
+    "src/neuronpatch/patch.py": "51535ab282d9ef106c6799bbd93720a632d0f24a63f1957613e817a3877a19c6",
+    "src/neuronpatch/editing.py": "0c5ffee3e968c9aaf9dfef6c074ac8d60b22166acc305254b82ad93fbb2cf5e9",
+    "src/neuronpatch/occurrence.py": "ddca0d90a861e720bd95629887dc0ed927915b8cbb55c48642cd0809fe649253",
+    "src/neuronpatch/__init__.py": "481e1020c907623d6888cf5104d90f4b5ff60dff43691694ebd05ca299f2977e",
+    "src/neuronpatch/activation.py": "3d9eb8a3ecd2339ec70ce293ac34b970a920fd5b8dfc81de1f1d11db652828d5",
+    "src/neuronpatch/contribution.py": "57d2905ffe86cdae4e1b37e402fb0e981ae6ff0ff7e94b23e57fa5aa11643252",
+    "src/neuronpatch/losses.py": "daca2898bd97f92d19b54937ce7c92c834c467cb0f1ff2e82b591fd4f9626238",
+    "src/neuronpatch/selection.py": "a0125d7dde9e296a3da3a4a2b50d9a1eed20e13a61a596c8762f64184f2053f9",
+    "src/neuronpatch/layers.py": "a5911b9404305ac4f6e4db23681fe51553fc8ce8de22f505e3c390c1de880c05",
+    "src/neuronpatch/grouped.py": "05e082b2424f30465f54e62720d9740868a5fa2861bdb1f10b3e9f6b98fe0999",
+    "src/neuronpatch/knowledge.py": "6bbaf20ef311abd99e5c952b042cb702818bcb017b1820fb99c6591ddf7bae0e",
+    "experiments/fine_transfer/run.py": "1f3d8ee1db51a7fdc59122c7a4d5c21efd1dc778b0a0255576d670ce67a9e050",
+    "experiments/fine_transfer/fit.py": "7e5ad81b742de8b93072d7c4746f432d8897392253f18946ef3be11e193e85ed",
+    "experiments/fine_transfer/gradient.py": "4a81dea8f9783981a2aa6ffa0889c312429d019efc933bff9907f9787f43f6eb",
+    "data/inputs.json": "9e0b60543122eb127d377ea56aebfb23c76205f203a76fdabaa9fc51202242c9",
+    "data/protocol.json": "9d0602c5379703a61f61a148c869f908a13b71b6cbc04e0144300706acf68bf2",
+    "data/case-0/edit.safetensors": "9005b5c6f7a3f21dd64d9338c6fd5fd01425df4ddd62611d55562f0ef185c041",
+    "data/case-0/edit.json": "1996b9a5dc4309ba183e716ad1a53a06d1b2aaec07a3543d85cfb0d2db3cacfd",
+    "data/case-1/edit.safetensors": "58cb34de9d950655a2f963f7dbf92f21fda1de53e2348207bc6fc6bc071205df",
+    "data/case-1/edit.json": "40e7949cf51d4341d2f04f0a9ea9a7441d863296fa6ca7c94b0be8aa9021c68b"
+  },
+  "scope": "One bounded eight-fit development pilot"
+}

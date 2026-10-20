@@ -1,0 +1,274 @@
+[
+  {
+    "position": 0,
+    "kind": "gradient_single",
+    "targets": [
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.9.mlp.fc_out",
+        15864
+      ],
+      [
+        "transformer.h.19.mlp.fc_out",
+        5532
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.16.mlp.fc_out",
+        4167
+      ]
+    ],
+    "scores": [
+      5.199231535951995,
+      5.1931036110708675,
+      4.20532766609606,
+      4.117866589790643,
+      3.812820802681282
+    ],
+    "positive_candidates": 409599
+  },
+  {
+    "position": 0,
+    "kind": "gradient_consensus",
+    "targets": [
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.22.mlp.fc_out",
+        15489
+      ],
+      [
+        "transformer.h.16.mlp.fc_out",
+        12127
+      ],
+      [
+        "transformer.h.19.mlp.fc_out",
+        2353
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ]
+    ],
+    "scores": [
+      2.600048858904598,
+      2.5460569085302374,
+      2.5015960976997245,
+      2.366027153164326,
+      2.169814969246441
+    ],
+    "positive_candidates": 382708
+  },
+  {
+    "position": 1,
+    "kind": "gradient_single",
+    "targets": [
+      [
+        "transformer.h.12.mlp.fc_out",
+        14361
+      ],
+      [
+        "transformer.h.1.mlp.fc_out",
+        14892
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.12.mlp.fc_out",
+        13706
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        7967
+      ]
+    ],
+    "scores": [
+      15.61654465402328,
+      9.614264979908477,
+      9.076719612223233,
+      8.989762397611624,
+      8.902364864833908
+    ],
+    "positive_candidates": 409599
+  },
+  {
+    "position": 1,
+    "kind": "gradient_consensus",
+    "targets": [
+      [
+        "transformer.h.12.mlp.fc_out",
+        14361
+      ],
+      [
+        "transformer.h.15.mlp.fc_out",
+        14395
+      ],
+      [
+        "transformer.h.12.mlp.fc_out",
+        13706
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2007
+      ],
+      [
+        "transformer.h.1.mlp.fc_out",
+        14892
+      ]
+    ],
+    "scores": [
+      14.179624884078653,
+      8.28769317777593,
+      8.190698045587004,
+      7.756521825970741,
+      7.574870676023678
+    ],
+    "positive_candidates": 398659
+  },
+  {
+    "position": 2,
+    "kind": "gradient_single",
+    "targets": [
+      [
+        "transformer.h.3.mlp.fc_out",
+        6238
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        282
+      ],
+      [
+        "transformer.h.0.mlp.fc_out",
+        14358
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        11740
+      ]
+    ],
+    "scores": [
+      0.12685887580568647,
+      0.12470265608954256,
+      0.12353866948390989,
+      0.11804909702009662,
+      0.11438117927132518
+    ],
+    "positive_candidates": 409599
+  },
+  {
+    "position": 2,
+    "kind": "gradient_consensus",
+    "targets": [
+      [
+        "transformer.h.3.mlp.fc_out",
+        6238
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        282
+      ],
+      [
+        "transformer.h.0.mlp.fc_out",
+        14358
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.0.mlp.fc_out",
+        11074
+      ]
+    ],
+    "scores": [
+      0.0809686739561579,
+      0.0788714478199597,
+      0.07855512788948038,
+      0.07258257539205012,
+      0.07247775692623915
+    ],
+    "positive_candidates": 404896
+  },
+  {
+    "position": 3,
+    "kind": "gradient_single",
+    "targets": [
+      [
+        "transformer.h.0.mlp.fc_out",
+        7882
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        9828
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        8346
+      ]
+    ],
+    "scores": [
+      19.333932142123487,
+      17.091125142281165,
+      13.249436059939384,
+      10.854110953692295,
+      10.812355613417921
+    ],
+    "positive_candidates": 409599
+  },
+  {
+    "position": 3,
+    "kind": "gradient_consensus",
+    "targets": [
+      [
+        "transformer.h.0.mlp.fc_out",
+        7882
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.3.mlp.fc_out",
+        9828
+      ],
+      [
+        "transformer.h.4.mlp.fc_out",
+        13979
+      ]
+    ],
+    "scores": [
+      16.085945311547768,
+      14.158811555366484,
+      12.3887468001316,
+      9.624825074682244,
+      9.518537069705785
+    ],
+    "positive_candidates": 405439
+  }
+]

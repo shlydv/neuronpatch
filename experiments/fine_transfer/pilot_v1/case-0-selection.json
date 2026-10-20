@@ -1,0 +1,70 @@
+[
+  {
+    "position": 0,
+    "kind": "gradient_single",
+    "targets": [
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.4.mlp.fc_out",
+        2742
+      ],
+      [
+        "transformer.h.0.mlp.fc_out",
+        1623
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.6.mlp.fc_out",
+        2894
+      ]
+    ],
+    "scores": [
+      4.861136364859731,
+      4.243654819222897,
+      4.183942606729888,
+      4.169894395207857,
+      4.084286911266336
+    ],
+    "positive_candidates": 409599
+  },
+  {
+    "position": 0,
+    "kind": "gradient_consensus",
+    "targets": [
+      [
+        "transformer.h.3.mlp.fc_out",
+        15160
+      ],
+      [
+        "transformer.h.5.mlp.fc_out",
+        2412
+      ],
+      [
+        "transformer.h.9.mlp.fc_out",
+        15864
+      ],
+      [
+        "transformer.h.7.mlp.fc_out",
+        3844
+      ],
+      [
+        "transformer.h.4.mlp.fc_out",
+        2742
+      ]
+    ],
+    "scores": [
+      3.4490370302491584,
+      2.939563835764,
+      2.5295361004317054,
+      2.1966583905429933,
+      2.0473308107321926
+    ],
+    "positive_candidates": 387282
+  }
+]

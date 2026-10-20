@@ -1,0 +1,68 @@
+{
+  "status": "Exposed two-case exploratory pilot; not a superiority claim",
+  "baseline_utility_correct": 8,
+  "groups": {
+    "fine-original": {
+      "original": 2,
+      "training": 3,
+      "held_out_wording": 1,
+      "held_out_wording_n": 6,
+      "utility_retained": 16,
+      "utility_baseline_correct": 16,
+      "utility_losses": []
+    },
+    "fine_augmented": {
+      "original": 1,
+      "training": 3,
+      "held_out_wording": 3,
+      "held_out_wording_n": 6,
+      "utility_retained": 15,
+      "utility_baseline_correct": 16,
+      "utility_losses": [
+        [
+          1,
+          15
+        ]
+      ]
+    },
+    "gradient_single": {
+      "original": 2,
+      "training": 6,
+      "held_out_wording": 4,
+      "held_out_wording_n": 6,
+      "utility_retained": 16,
+      "utility_baseline_correct": 16,
+      "utility_losses": []
+    },
+    "gradient_consensus": {
+      "original": 2,
+      "training": 6,
+      "held_out_wording": 6,
+      "held_out_wording_n": 6,
+      "utility_retained": 16,
+      "utility_baseline_correct": 16,
+      "utility_losses": []
+    },
+    "consensus_layer_matched_random": {
+      "original": 0,
+      "training": 0,
+      "held_out_wording": 0,
+      "held_out_wording_n": 6,
+      "utility_retained": 16,
+      "utility_baseline_correct": 16,
+      "utility_losses": []
+    }
+  },
+  "comparisons": {
+    "fine_augmented": {
+      "additional_transfer_prefixes": 3,
+      "new_utility_losses": []
+    },
+    "gradient_single": {
+      "additional_transfer_prefixes": 2,
+      "new_utility_losses": []
+    }
+  },
+  "frozen_advance_gate_passed": true,
+  "interpretation": "Even a gate pass needs output review, identity value beyond matched random, fresh cases, low-rank baselines and compute accounting."
+}

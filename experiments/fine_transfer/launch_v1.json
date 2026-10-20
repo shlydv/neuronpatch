@@ -4,13 +4,14 @@
   "kernel_id": 139844236,
   "url": "https://www.kaggle.com/code/shlydv/neuronpatch-fine-gradient-transfer-v1-20261020",
   "submitted_once": true,
-  "last_status": "RUNNING",
+  "last_status": "COMPLETE",
   "last_status_scope": "latest session; only one version submitted",
-  "note": "Version-specific status lookup returned 404; latest-status and HTTP200 live log stream confirm the submitted worker is running. Do not resubmit based on observation failures.",
-  "verified_progress": "Both original patches reproduce all9 fixed reference outputs; case0 four new fits and case1 first two fits completed/restored; final two comparisons pending.",
+  "note": "Version-specific status lookup returned 404 during execution. Latest-session API later reported COMPLETE with no failure; full downloaded logs/artifacts verify terminal success. Observation failures did not trigger resubmission.",
+  "verified_progress": "All 8 fits complete; all 9 reference outputs exact; final full base fingerprint restored; 466 decoded sequences checked locally; frozen prefix advancement gate passed; full-answer quality and subject specificity remain unproven.",
   "local_checks": {
     "pytest_passed": 149,
     "pytest_skipped": 2,
     "gradient_tests_also_pass_with_pinned_transformers_4_40": true
-  }
+  },
+  "report": "pilot_v1/REPORT.md"
 }

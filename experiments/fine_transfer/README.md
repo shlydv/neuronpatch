@@ -1,8 +1,12 @@
 # Cross-prompt gradient selection: bounded development pilot
 
-**Status: submitted to Kaggle, version 1, eight new fits; results pending.**
+**Status: [completed pilot and output review](pilot_v1/REPORT.md).**
+The cross-prompt selector gets 6/6 requested prefixes on untrained wordings versus
+3/6 for FiNE supports with the same training data. It passes the frozen gate on
+two exposed facts; full-answer quality and subject specificity remain unproven.
 [Private run](https://www.kaggle.com/code/shlydv/neuronpatch-fine-gradient-transfer-v1-20261020),
-kernel ID 139844236. This is not a method improvement claim.
+kernel ID 139844236, version 1, eight new fits complete. This is a narrow positive
+component result, not a generally validated method improvement.
 
 The verified [FiNE reference](../fine_reference/reference16_v1/REPORT.md) changes
 15/16 original answer prefixes but only 5/16 relation rewordings. Its selector

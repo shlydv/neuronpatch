@@ -1,0 +1,44 @@
+{
+  "fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+  "torch": "2.4.1+cu121",
+  "gpu": "Tesla T4",
+  "protocol": {
+    "id": "fine-transfer-gradient-v1-20261020",
+    "model": "EleutherAI/gpt-j-6B",
+    "revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+    "base_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+    "inputs_sha256": "9e0b60543122eb127d377ea56aebfb23c76205f203a76fdabaa9fc51202242c9",
+    "artifact_sha256": {
+      "case-0/edit.json": "1996b9a5dc4309ba183e716ad1a53a06d1b2aaec07a3543d85cfb0d2db3cacfd",
+      "case-0/edit.safetensors": "9005b5c6f7a3f21dd64d9338c6fd5fd01425df4ddd62611d55562f0ef185c041",
+      "case-1/edit.json": "40e7949cf51d4341d2f04f0a9ea9a7441d863296fa6ca7c94b0be8aa9021c68b",
+      "case-1/edit.safetensors": "58cb34de9d950655a2f963f7dbf92f21fda1de53e2348207bc6fc6bc071205df"
+    },
+    "scope": "Two exposed development cases; a mechanism screen, not superiority or fresh confirmation",
+    "case_selection": "First two official records, reused from verified source-parity artifacts",
+    "model_execution": "FP16 base, BF16 occurrence deltas, greedy max40 generation, sequential merge",
+    "gradient": "Per-target-token actual down-column CE gradients, all sequence positions, loss scale128; float64 CPU Gram scoring; last3 layers excluded",
+    "selector": "min_prompt dot(gradient_prompt, mean_gradient) / norm(mean_gradient); top5 per target token",
+    "conditions": [
+      "saved FiNE original",
+      "FiNE supports + three-prompt training",
+      "single-prompt gradient supports + same three-prompt training",
+      "consensus-gradient supports + same three-prompt training",
+      "consensus layer/occurrence-multiplicity matched random + same training"
+    ],
+    "fit": "Adam lr.001, max50 steps, max token/prompt NLL + mean prefix KL + mean repetition + .1 global delta norm; alpha1 beta10; stop maxNLL < -log(.9)",
+    "budget": "Same number of independent 4096-wide occurrence deltas as FiNE for all new fits; discovery compute charged separately",
+    "runtime_limit_seconds": 5400,
+    "new_fits": 8,
+    "advance_criterion": "Consensus must retain both original edit prefixes, gain at least2 of6 held-out-wording prefixes over BOTH FiNE+augmentation and single-gradient+augmentation, and lose no additional baseline-correct utility prefixes versus either; require at least8/32 utility baseline matches. A pass only advances to fresh cases and strong low-rank comparisons.",
+    "failure": "Report all settings; no rate/prompt/support tuning on the pilot. Lack of gain over augmented FiNE does not establish a better selector. Prefix matches are not complete-answer correctness.",
+    "limitations": "Two exposed facts; assistant-authored wordings and utility gold; no independent human labels; no strong LoRA comparator in this initial selector screen; no novel-method claim",
+    "runtime": {
+      "torch": "2.4.1",
+      "transformers": "4.40.0",
+      "accelerate": "0.30.1",
+      "safetensors": "0.6.2",
+      "numpy": "1.26.4"
+    }
+  }
+}

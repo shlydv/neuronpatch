@@ -1,0 +1,952 @@
+[
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "8770ca06f367f2b4fefc1cb6e66e30d52a0b5bde43b5e758a6c1c3e8936409a4",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "23a5d8ab0070aad53202573db2e31d7dab2fbe7e01f4d3dac51caae6274745a4",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "459be8b88057ad1a11dd2be3e6f43c1932e2c0ae02b012156dec98b45d03d872",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "7ef1c5fba2ea29168b3393df685c1781670b0a9df6a9b63ef15205d946d3dca7",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 4,
+    "kind": "locality/Forgetfulness",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "02319b40bccf74590750394eac6ef340ea2118ac425f732fe32a8cf91d25f4a2",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 5,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "8770ca06f367f2b4fefc1cb6e66e30d52a0b5bde43b5e758a6c1c3e8936409a4",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 6,
+    "kind": "train/1",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "24b2df98227c13c2af1b6880c8439d0b12d415b1fb4493e12c2fc19d9a7f3457",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 7,
+    "kind": "train/2",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "52f06721a5c1e39dc1fea72dc11c0faa3e18f74df722df256d6693f672b8f9ef",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "7df363274cc24b30c721fb2edfd7db9150b766f656a4d265941829353d94f502",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "probe": 9,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "dadd38469ad84c70403e93f762ebecc5c35b9daa0fd681fef460d3f774d51e50",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "ca1987847da67d197ab80291aeb0884a9221c0d08f72ef9f44a009b8c6c0d7bb",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "628b63a8d6a22bbe57e360b80a3306c3e0d870ef023ba504e0ef6bb0acbb9d53",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "031976986ea5a6ef6ecb242669f6c34fb8a30a59b0323f27a4ba13d120f848b5",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "09733889d0f614f48f69a0c6f86dad1190c881abceeb8a1b0d43b215888db64f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 4,
+    "kind": "locality/Forgetfulness",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "1d5daf7452388bad6faa804cbef2000977353660a59be0ab6f28e718051b19e2",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 5,
+    "kind": "train/0",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "ca1987847da67d197ab80291aeb0884a9221c0d08f72ef9f44a009b8c6c0d7bb",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 6,
+    "kind": "train/1",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "2d101150e827b65e8a054bbb996fe5dc336f37ac87d0061917cdd273a7335557",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 7,
+    "kind": "train/2",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "a3f67748b947d1127d6a6ffb101933b154040820451899d6238eee8b818c09cf",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "7df363274cc24b30c721fb2edfd7db9150b766f656a4d265941829353d94f502",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "probe": 9,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "e26a28ef150373b8c5c450db9f3545bc8d49687e553b3725cb3474c7562805ab",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "4a86ca02c709a0b14002dc7d8bc32b4b566a361caa48b36721e687ac4e9be665",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "41f81e1d514294b68bc374802e30d202fbb54650ad092ef4a1b868dd305ab3f4",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "459be8b88057ad1a11dd2be3e6f43c1932e2c0ae02b012156dec98b45d03d872",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "0589f9a1d2ae7c025bc8b0ebb8aae035ec1ce6cc3fd920a8fdf5eeb41ea43f92",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 4,
+    "kind": "locality/Forgetfulness",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "02319b40bccf74590750394eac6ef340ea2118ac425f732fe32a8cf91d25f4a2",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 5,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "4a86ca02c709a0b14002dc7d8bc32b4b566a361caa48b36721e687ac4e9be665",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 6,
+    "kind": "train/1",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "d49eb9786ec9d3b301af9857ae2a75fbf79ec6801e3a947df52eeedfaa5a1f86",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 7,
+    "kind": "train/2",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "adfafbf8109064e26813ab4447b7f798cd3562fe505c4b4ff7e5698779e9eead",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "533442df8a2e5bde0225dfa3a6ce0675f3abd82689baabc453a4fea7163296c4",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "probe": 9,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "3279a76c5bda347d6fe71775f8afdcb4ff3b26db7c1c0f93a4ad7bcbaf78fd19",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "1ab98ac10ec20bb6baabc11ee2b5126f7e2a82efc0cbc51d450cab3d703c8a78",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "ed6be0452bf45cc08918b41eca4f3317cb313aafb1a2eb1324f530a76c9a9f7f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "459be8b88057ad1a11dd2be3e6f43c1932e2c0ae02b012156dec98b45d03d872",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "ab408fff2c09f2d0aa2e3603bbedb847e39098c61f35ec7e0bee02484cbfd063",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 4,
+    "kind": "locality/Forgetfulness",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "02319b40bccf74590750394eac6ef340ea2118ac425f732fe32a8cf91d25f4a2",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 5,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "1ab98ac10ec20bb6baabc11ee2b5126f7e2a82efc0cbc51d450cab3d703c8a78",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 6,
+    "kind": "train/1",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "48f1f3fcdf1f6d386a789ac143db183a9cf58520bd691978a78e2d6e931260f7",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 7,
+    "kind": "train/2",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "952079bff2afbd8e578871afe34cb9fbbe095610913bfa480f8789b69c51d849",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "cee05a4264e2fd12fc06c18990333b7e1a5947e01d32d6e1cfafbd11f08dba77",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "probe": 9,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "182972570225cc9bb6617b7ac98f24d66b4e21af485269f12c732d1414a8180e",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "ca1987847da67d197ab80291aeb0884a9221c0d08f72ef9f44a009b8c6c0d7bb",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "628b63a8d6a22bbe57e360b80a3306c3e0d870ef023ba504e0ef6bb0acbb9d53",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "031976986ea5a6ef6ecb242669f6c34fb8a30a59b0323f27a4ba13d120f848b5",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "09733889d0f614f48f69a0c6f86dad1190c881abceeb8a1b0d43b215888db64f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 4,
+    "kind": "locality/Forgetfulness",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "1d5daf7452388bad6faa804cbef2000977353660a59be0ab6f28e718051b19e2",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 5,
+    "kind": "train/0",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "ca1987847da67d197ab80291aeb0884a9221c0d08f72ef9f44a009b8c6c0d7bb",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 6,
+    "kind": "train/1",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "a59f39efa6ffbd37e069e892de8b89063b407852f0f929adcebcfb9f0fc4a4a9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 7,
+    "kind": "train/2",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "be0d8658d76c8d056d3168ab1c3d1cb44ebe0be9ca8004314bebc94ebf66e05a",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "7df363274cc24b30c721fb2edfd7db9150b766f656a4d265941829353d94f502",
+    "output_text_omitted": true
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "probe": 9,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "e26a28ef150373b8c5c450db9f3545bc8d49687e553b3725cb3474c7562805ab",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c61d0c1f630d70128601d8e0ef47cc8435ae593daeb27d799840b596a539e1d9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "a55617cdb398acc4dc19403a5750dab3bde231ebe7402713ee84346062638b0f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c61d0c1f630d70128601d8e0ef47cc8435ae593daeb27d799840b596a539e1d9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "8d773b51d25d735d02b657c5a601d61c781bf8005888f3ed714ba1d6476ce24f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 4,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c61d0c1f630d70128601d8e0ef47cc8435ae593daeb27d799840b596a539e1d9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 5,
+    "kind": "train/1",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "95aba747b15dbff6b51e3e3ef1ce95b13c91264e6306da0023f287c9eef9183b",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 6,
+    "kind": "train/2",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "6e9b96a072149b756f7ef8f9275ab24f03fd12705cefda4ba5188acaa5d89188",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 7,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "2c08febf4df1a267e12d0f9f1a99994c800ad433a7e3525409332e5e5d564731",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "c0987f795713a37d7830c5c1c77fe339173e609db015f853f2bfb205a5bd4674",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "4fc095f689f47a7974c405b56db9cdb1630429b5f5390a810a86d8f867b4f315",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "4fc095f689f47a7974c405b56db9cdb1630429b5f5390a810a86d8f867b4f315",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "91f24a0f38e0a71269dc6b7fbe19fd915f27bb1c497406b3dfecf91e6d0e879e",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "8d773b51d25d735d02b657c5a601d61c781bf8005888f3ed714ba1d6476ce24f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 4,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "4fc095f689f47a7974c405b56db9cdb1630429b5f5390a810a86d8f867b4f315",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 5,
+    "kind": "train/1",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "d754b477babb3fe0cea59e1fa1382db8ca9f924129c6b1953de6280647a10c8d",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 6,
+    "kind": "train/2",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "39721e4976ed50c24ccc7c8c5bab9b287c836d8eae4f08cb603fc548de86d5ba",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 7,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "39721e4976ed50c24ccc7c8c5bab9b287c836d8eae4f08cb603fc548de86d5ba",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "4fc095f689f47a7974c405b56db9cdb1630429b5f5390a810a86d8f867b4f315",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "31586b1543c13ec526b25fd9d447c21213cd6b92eabbe566199e49dcf94436dc",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "b7450fb311149addac50b54cd09ef7048d0401943bf904442fd840a51425897b",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "d41addcecd9aed6f73fc6b02ee3b066d4c4d07a8afb6bdc7375e8b2ce8b8d231",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "315f3898ef6ae3713f62a45106ce4c486e9e791c554d2d818777721a15b272ab",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 4,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "31586b1543c13ec526b25fd9d447c21213cd6b92eabbe566199e49dcf94436dc",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 5,
+    "kind": "train/1",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "2d8af430a021345f0c90225506e481f9800741ec351ca2a13b89347dda5a12f2",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 6,
+    "kind": "train/2",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "1aea628b1b7aed3e3f190b3ac02c7a2bdff75bcfccb4631e13936d444d18572c",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 7,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c26b2fe9dc286dffb3e3bdb411bbcc0d1f32e80ca1c29cf9a15d8503d4f68e65",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "8d57d298337741f939a6bf5d2a4e76f5def429bfef9d11e4761d9a489a44c943",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c61d0c1f630d70128601d8e0ef47cc8435ae593daeb27d799840b596a539e1d9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "bd9817e04267684be764a0ce48aed0d8fc82b3f4185abf513477573adf9ea2c4",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c61d0c1f630d70128601d8e0ef47cc8435ae593daeb27d799840b596a539e1d9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "fc915cbfee6449f27db2cb0ee73363e56f4384923a6351fe975df541f3d8a703",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 4,
+    "kind": "train/0",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c61d0c1f630d70128601d8e0ef47cc8435ae593daeb27d799840b596a539e1d9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 5,
+    "kind": "train/1",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "14083ef289d4308136f85693f316b3448266e7103c3b042ac38b51ba4ee3b350",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 6,
+    "kind": "train/2",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "ccb92230df988e7b8f9e56681529ad31207ca49c012930ddda9f328ebb61b69c",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 7,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "c2d32845ff97908209a2f8430b8aa889bde388d1ab599be81ac4bb52638e2f7b",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": true,
+    "truncated": true,
+    "output_sha256": "3534fcdc80ace319970010f1e8e9b1af18dca4484f7df19d98b51813bd9bb887",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 0,
+    "kind": "rewrite",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "49c792387c56ab88933db3b71277c34a306745e197c3984f5226ef040a885fb5",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 1,
+    "kind": "rephrase",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "a55617cdb398acc4dc19403a5750dab3bde231ebe7402713ee84346062638b0f",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 2,
+    "kind": "portability/Subject_Aliasing",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "28c6706fad52f291a8db494f19054bb331f7d5387f56e32718064ddcf4b491ba",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 3,
+    "kind": "locality/Relation_Specificity",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "5996fc9664a9723b4e9d33468fd71d962d5771d644e91882d026b95d3835e5a9",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 4,
+    "kind": "train/0",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "49c792387c56ab88933db3b71277c34a306745e197c3984f5226ef040a885fb5",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 5,
+    "kind": "train/1",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "2a6d66c707e7c84e4693a4b59c751d1c86ab749318ab265c43b4c104611da347",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 6,
+    "kind": "train/2",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "6e9b96a072149b756f7ef8f9275ab24f03fd12705cefda4ba5188acaa5d89188",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 7,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "2c08febf4df1a267e12d0f9f1a99994c800ad433a7e3525409332e5e5d564731",
+    "output_text_omitted": true
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "probe": 8,
+    "kind": "fresh_wording",
+    "prefix_hit": false,
+    "truncated": true,
+    "output_sha256": "c0987f795713a37d7830c5c1c77fe339173e609db015f853f2bfb205a5bd4674",
+    "output_text_omitted": true
+  }
+]

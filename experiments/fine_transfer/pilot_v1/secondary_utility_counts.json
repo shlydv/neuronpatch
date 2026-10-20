@@ -1,0 +1,92 @@
+[
+  {
+    "case": 0,
+    "condition": "fine-original",
+    "all_utility_prefix_hits": 10,
+    "n": 32,
+    "updates": null,
+    "final_nll": null,
+    "seconds_fit_export_eval": null
+  },
+  {
+    "case": 0,
+    "condition": "fine_augmented",
+    "all_utility_prefix_hits": 9,
+    "n": 32,
+    "updates": 50,
+    "final_nll": 8.292963027954102,
+    "seconds_fit_export_eval": 235.24900818699984
+  },
+  {
+    "case": 0,
+    "condition": "gradient_single",
+    "all_utility_prefix_hits": 8,
+    "n": 32,
+    "updates": 34,
+    "final_nll": 0.09169422835111618,
+    "seconds_fit_export_eval": 234.13236948400004
+  },
+  {
+    "case": 0,
+    "condition": "gradient_consensus",
+    "all_utility_prefix_hits": 10,
+    "n": 32,
+    "updates": 33,
+    "final_nll": 0.10010811686515808,
+    "seconds_fit_export_eval": 232.54828074400007
+  },
+  {
+    "case": 0,
+    "condition": "consensus_layer_matched_random",
+    "all_utility_prefix_hits": 8,
+    "n": 32,
+    "updates": 50,
+    "final_nll": 8.178657531738281,
+    "seconds_fit_export_eval": 239.42965931000003
+  },
+  {
+    "case": 1,
+    "condition": "fine-original",
+    "all_utility_prefix_hits": 8,
+    "n": 32,
+    "updates": null,
+    "final_nll": null,
+    "seconds_fit_export_eval": null
+  },
+  {
+    "case": 1,
+    "condition": "fine_augmented",
+    "all_utility_prefix_hits": 7,
+    "n": 32,
+    "updates": 49,
+    "final_nll": 0.1043730229139328,
+    "seconds_fit_export_eval": 227.10363738199976
+  },
+  {
+    "case": 1,
+    "condition": "gradient_single",
+    "all_utility_prefix_hits": 23,
+    "n": 32,
+    "updates": 34,
+    "final_nll": 0.06298783421516418,
+    "seconds_fit_export_eval": 221.2788431920003
+  },
+  {
+    "case": 1,
+    "condition": "gradient_consensus",
+    "all_utility_prefix_hits": 23,
+    "n": 32,
+    "updates": 27,
+    "final_nll": 0.07951496541500092,
+    "seconds_fit_export_eval": 218.35466421800038
+  },
+  {
+    "case": 1,
+    "condition": "consensus_layer_matched_random",
+    "all_utility_prefix_hits": 9,
+    "n": 32,
+    "updates": 50,
+    "final_nll": 13.189846992492676,
+    "seconds_fit_export_eval": 228.44331555999997
+  }
+]

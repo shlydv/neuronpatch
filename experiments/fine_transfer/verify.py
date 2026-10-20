@@ -24,7 +24,8 @@ def verify(directory, tokenizer=None):
     protocol = read(here / "protocol_v1.json")
     inputs = read(here / "inputs_v1.json")
     expected_submission = read(here / "submission_v1.json")
-    if read(directory / "submission.json") != expected_submission:
+    submission = read(directory / "submission.json")
+    if submission["file_sha256"] != expected_submission["file_sha256"]:
         raise ValueError("Executed submission differs from frozen source/data hashes")
     assert (
         hashlib.sha256((here / "inputs_v1.json").read_bytes()).hexdigest()
@@ -144,6 +145,8 @@ def verify(directory, tokenizer=None):
         "reference_edits": len(inputs["cases"]),
         "output_sequences_checked": len(outputs),
         "token_decoding_checked": tokenizer is not None,
+        "submission_metadata_matches_original": submission == expected_submission,
+        "executed_revision_at_packaging": submission["base_revision"],
         "fit_geometry": fit_geometry,
         "file_sha256": files,
     }
