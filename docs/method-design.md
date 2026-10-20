@@ -411,3 +411,17 @@ a complete published objective/stopping workflow, or real-GPU behavioral parity.
 It is distinct from the legacy unique-column API. The fixed16-case run remains
 unchanged and active; these integration checks do not establish any method advantage.
 Library tests now total67 passed/2 skipped in this environment.
+
+## Reference objective integrated (2026-10-20)
+
+The library now implements the FiNE-K code objective with explicit causal scopes:
+worst-token target NLL, prompt-prefix KL(reference || edited), post-target
+repetition and global occurrence norm. Analytical tests check coefficients,
+KL direction, target positions, worst-token/tie gradients and detached references.
+The integrated check uses library localization, this loss and occurrence updates;
+all supports, four-step learned BF16 deltas and sequential merged weights exactly
+match upstream on the two tiny-model precision configurations. All75 tests pass,
+with2 hardware cases skipped. This validates a faithful numerical training path,
+not a new method or full-scale effectiveness. Compact occurrence artifact support
+and a complete real-GPU library workflow are still missing. The unchanged16-case
+reference run is progressing; no new behavioral experiment has been launched.

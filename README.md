@@ -324,3 +324,34 @@ sequential updates exactly and original weights remain unchanged. See
 `experiments/fine_reference/check_edit.py` and the two `edit_checks_*.json` files.
 These are numerical integration checks, not a new behavioral result or a complete
 FiNE training workflow. The separate 6B reference benchmark still uses upstream.
+
+### Reference knowledge-editing loss (experimental)
+
+`neuronpatch.knowledge.knowledge_edit_loss` implements the published FiNE-K code's
+single-sequence objective: maximum target-token NLL, reference-to-edited prefix
+KL, a post-target repetition penalty, and the joint occurrence-delta norm. It
+returns the total and individual weighted components. Caller-provided logits
+must include the complete prompt and target with their causal alignment; the
+reference prefix excludes the prediction position for the first target token.
+This helper deliberately does not claim to implement FiNE-S safety editing or a
+batched fine-tuning loss. Its KL direction follows the implementation, which
+differs from the paper's written direction.
+
+```python
+from neuronpatch.knowledge import knowledge_edit_loss
+
+loss = knowledge_edit_loss(
+    edited_logits, reference_prefix_logits, target_tokens, edit.delta,
+    alpha=1.0, beta=10.0, gamma=0.1,
+)
+loss.total.backward()
+optimizer.step()
+```
+
+The integrated CPU source check now uses the library selector, objective and
+occurrence update together. All selected indices and learned deltas match the
+unchanged upstream trainer exactly for the tested FP32/FP16-base configurations.
+Scope remains four steps on a tiny random model with guaranteed repeated
+selections. Real-GPU behavioral equivalence, compact occurrence checkpoints,
+convenient token/activation capture, and a complete user training workflow remain
+outstanding; the fixed 16-case benchmark runs the original editor independently.

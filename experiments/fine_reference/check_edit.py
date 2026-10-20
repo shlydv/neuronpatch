@@ -15,9 +15,10 @@ from unittest.mock import patch
 
 import torch
 from run import COMMIT, load_upstream
-from torch.nn import functional as F
 from transformers import GPTJConfig
 
+from neuronpatch.contribution import contribution_indices
+from neuronpatch.knowledge import knowledge_edit_loss
 from neuronpatch.occurrence import OccurrenceColumnEdit
 
 
@@ -61,32 +62,35 @@ def main():
     with patch.object(torch.Tensor, "cuda", lambda tensor, *a, **kw: tensor):
         with redirect_stdout(io.StringIO()):
             expected_delta, neurons, _ = fine.execute_fine(reference, Tokenizer(), request, hp, 0)
+    ids = torch.tensor([[0, 3, 4, 5, 7, 8]])
+    labels = torch.tensor([7, 8])
+    candidate.set_get_activations()
+    with torch.no_grad():
+        baseline = candidate(ids, attention_mask=torch.ones_like(ids)).logits
+    candidate.cal_activations = False
+    activations = torch.stack(candidate.activations).permute(1, 2, 0, 3)[0, -3:-1]
+    supports = contribution_indices(
+        activations,
+        [layer.mlp.fc_out.weight for layer in candidate.transformer.h],
+        candidate.lm_head.weight,
+        baseline[0, -3:-1].argmax(-1),
+        hp.neuron_num,
+        exclude_last_layers=hp.last_layer,
+    ).reshape(-1, 2)
+    torch.testing.assert_close(supports, neurons, atol=0, rtol=0)
     targets = [
-        (hp.rewrite_module_tmp.format(layer), feature) for layer, feature in neurons.tolist()
+        (hp.rewrite_module_tmp.format(layer), feature) for layer, feature in supports.tolist()
     ]
     assert len(targets) > len(set(targets))
     edit = OccurrenceColumnEdit(candidate, targets, delta_dtype=torch.bfloat16)
-    ids = torch.tensor([[0, 3, 4, 5, 7, 8]])
-    labels = torch.tensor([7, 8])
-    with torch.no_grad():
-        original = candidate(ids, attention_mask=torch.ones_like(ids)).logits[0, :-3].detach()
+    original = baseline[0, :-3].detach()
     optimizer = torch.optim.Adam(edit.trainable_parameters(), lr=hp.lr)
     for _ in range(hp.epochs):
         logits = edit(ids, attention_mask=torch.ones_like(ids)).logits[0]
-        nll = F.nll_loss(
-            F.log_softmax(logits[-3:-1].float(), dim=-1), labels, reduction="none"
-        ).max()
-        kl = (
-            F.kl_div(
-                F.log_softmax(logits[:-3], dim=-1),
-                F.softmax(original, dim=-1),
-                reduction="batchmean",
-            )
-            * hp.alpha
+        loss = knowledge_edit_loss(
+            logits, original, labels, edit.delta, alpha=hp.alpha, beta=hp.beta, gamma=hp.gamma
         )
-        penalty = (-torch.log(1 - F.softmax(logits[-1].float(), dim=-1)[labels])).max() * hp.beta
-        loss = nll + kl + penalty + edit.delta_norm() * hp.gamma
-        loss.backward()
+        loss.total.backward()
         optimizer.step()
         optimizer.zero_grad()
     torch.testing.assert_close(edit.delta.detach(), expected_delta, atol=0, rtol=0)
@@ -116,7 +120,10 @@ def main():
                 ),
                 "merged_weights": "exact",
                 "base_weights": "unchanged",
-                "scope": "CPU tiny-model numerical training/merge parity; no model-quality claim",
+                "scope": (
+                    "CPU tiny-model selector/objective/training/merge parity; "
+                    "no model-quality claim"
+                ),
                 "torch": torch.__version__,
             }
         )
