@@ -218,10 +218,11 @@ def main():
     parser.add_argument("--executed-source", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--decode", action="store_true")
+    parser.add_argument("--attempt", choices=("v1", "v2"), default="v2")
     args = parser.parse_args()
     here = Path(__file__).parent
     protocol, launch, submission = [
-        read(here / name) for name in ("protocol_v1.json", "launch_v1.json", "submission_v1.json")
+        read(here / f"{name}_{args.attempt}.json") for name in ("protocol", "launch", "submission")
     ]
     assert (
         hashlib.sha256(args.executed_source.read_bytes()).hexdigest()
@@ -249,6 +250,8 @@ def main():
         tokenizer,
     )
     log = (args.download / "execution.log").read_text()
+    if "setuptools" in protocol["runtime"]:
+        assert log.index("STAGE dependency_preflight_complete") < log.index("STAGE model_load")
     assert log.count("FIT_RESTORED ") == protocol["new_fits"]
     assert (
         log.rindex("COLD_VERIFIED ")

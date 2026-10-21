@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "ERROR",
   "prepared_utc": "2026-10-21T08:56:41.546048+00:00",
   "kernel": "shlydv/neuronpatch-adapter-comparison-v1-20261021",
   "submitted_source_sha256": "c129a44357c26d3d4f47b3a781dd8b97138f1ddf1cc8544d1aa69adb310fa577",
@@ -11,15 +11,20 @@
   "previous_worker_verified": "shlydv/neuronpatch-subject-binding-v1-20261020 COMPLETE",
   "source_manifest": "submission_v1.json",
   "isolated_bundle_imports": "PEFT0.11.1 / Transformers4.40.0; all58 file hashes verified",
-  "results_status": "No full-size comparison results yet",
+  "results_status": "Partial only; no complete comparison or selected candidate",
   "accepted_version": 1,
   "kernel_id": 139988939,
   "accepted_utc": "2026-10-21T08:58:01.975737+00:00",
   "accepted_source_byte_identical": true,
   "status_observation_note": "Version-label status endpoint returned404; source pull succeeds. Recheck canonical reference, no resubmission.",
-  "status_checked_utc": "2026-10-21T08:58:18.602911+00:00",
+  "status_checked_utc": "2026-10-21T09:35:58.052910+00:00",
   "status_endpoint": "canonical owner/slug",
   "status_failure_message": null,
   "startup_stage": "Pinned dependencies installed; worker STAGE model_load",
-  "startup_observed_utc": "2026-10-21T09:00:48.096256+00:00"
+  "startup_observed_utc": "2026-10-21T09:00:48.096256+00:00",
+  "completed_fits": 2,
+  "worker_returncode": 1,
+  "failure": "Missing setuptools while importing PEFT/torch.utils.cpp_extension at first LoRA attachment",
+  "no_lora_fit_started": true,
+  "archived_failure": "failed_v1/"
 }

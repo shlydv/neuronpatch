@@ -52,6 +52,36 @@ def tiny():
 TARGETS = [("transformer.h.0.mlp.fc_out", i) for i in (2, 7, 2, 3)]
 
 
+def test_missing_adapter_dependency_fails_before_model_download(tmp_path, monkeypatch):
+    import json
+    import sys
+
+    from experiments.adapter_comparison import run
+
+    data = tmp_path / "data"
+    data.mkdir()
+    (data / "protocol.json").write_text(
+        json.dumps({"runtime": {"torch": torch.__version__.split("+")[0]}})
+    )
+
+    def import_adapter(name):
+        if name == "peft":
+            raise ModuleNotFoundError("simulated missing setuptools in adapter import")
+        return object()
+
+    def download(*args, **kwargs):
+        pytest.fail("Dependency failure must precede model/tokenizer downloads")
+
+    monkeypatch.setattr(run.importlib, "import_module", import_adapter)
+    monkeypatch.setattr(run.GPTJForCausalLM, "from_pretrained", download)
+    monkeypatch.setattr(run.GPT2Tokenizer, "from_pretrained", download)
+    monkeypatch.setattr(
+        sys, "argv", ["run", "--data", str(data), "--output", str(tmp_path / "out")]
+    )
+    with pytest.raises(ModuleNotFoundError, match="setuptools"):
+        run.main()
+
+
 def test_shared_sparse_training_matches_existing_zero_norm_objective():
     first = tiny()
     second = deepcopy(first)

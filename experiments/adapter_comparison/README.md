@@ -1,9 +1,11 @@
 # Does restricting updates to selected neurons help subject binding?
 
-**Status: running on Kaggle**, kernel 139988939 version 1. Accepted source matches
-the frozen upload byte for byte. Dependency installation has completed and model
-loading has started; no full-size result is available yet. See the
-[launch record](launch_v1.json).
+**Status: corrected retry prepared.** Kernel 139988939 version 1 terminated
+when old PEFT imported torch's extension loader without `setuptools`. Two sparse
+fits completed; no LoRA fit began, and there is no full comparison result. The
+[failed attempt](failed_v1/REPORT.md) is preserved. The dependency fix and upfront
+import check pass in a clean Torch2.4.1 environment before another GPU submission.
+See [clean runtime checks](checks_v2.json).
 
 This is a prospective development comparison after the completed
 [preservation pilot](../subject_binding/pilot_v1/REPORT.md). That pilot retained
@@ -41,7 +43,7 @@ within each prompt and then prompts equally. No occurrence norm or LoRA factor
 norm is used: those penalties would measure different things.
 
 The earlier BF16/gamma .1 patch remains historical evidence, not a matched
-condition. These changes are explicit in the new [protocol](protocol_v1.json).
+condition. These changes are explicit in the new [protocol](protocol_v2.json).
 No new correction examples, formatting variants or protected subjects are added.
 
 ## Selection and success
@@ -83,10 +85,10 @@ joint objective. Both installed modern PEFT and pinned PEFT 0.11.1/Transformers
 ```bash
 python -m experiments.adapter_comparison.prepare \
   --binding-data artifacts/subject_binding_v1/frozen_ready \
-  --output artifacts/adapter_comparison_v1/data
+  --output artifacts/adapter_comparison_v2/data
 python -m experiments.adapter_comparison.build \
-  --data artifacts/adapter_comparison_v1/data \
-  --output artifacts/adapter_comparison_v1/kaggle_bundle
+  --data artifacts/adapter_comparison_v2/data \
+  --output artifacts/adapter_comparison_v2/kaggle_bundle
 ```
 
 Use fresh output directories. The builder includes only source and frozen data;
@@ -97,23 +99,24 @@ source and downloaded artifacts. Then score and collect the private review:
 
 ```bash
 python -m experiments.adapter_comparison.verify \
-  --download artifacts/adapter_comparison_v1/kaggle_download/comparison-results \
-  --executed-source artifacts/adapter_comparison_v1/executed_source/neuronpatch-adapter-comparison-v1-20261021.py \
-  --decode --output artifacts/adapter_comparison_v1/integrity_v1.json
+  --download artifacts/adapter_comparison_v2/kaggle_download/comparison-results \
+  --executed-source artifacts/adapter_comparison_v2/executed_source/neuronpatch-adapter-comparison-v1-20261021.py \
+  --attempt v2 --decode --output artifacts/adapter_comparison_v2/integrity_v1.json
 python -m experiments.adapter_comparison.analysis \
-  --results artifacts/adapter_comparison_v1/kaggle_download/comparison-results/results \
-  --output artifacts/adapter_comparison_v1/analysis_v1
+  --results artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
+  --output artifacts/adapter_comparison_v2/analysis_v1
 python -m experiments.adapter_comparison.review \
-  --results artifacts/adapter_comparison_v1/kaggle_download/comparison-results/results \
-  --output artifacts/adapter_comparison_v1/private_review_v1.json
+  --results artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
+  --output artifacts/adapter_comparison_v2/private_review_v1.json
 python -m experiments.adapter_comparison.plot \
-  --results artifacts/adapter_comparison_v1/kaggle_download/comparison-results/results \
-  --summary artifacts/adapter_comparison_v1/analysis_v1/summary.json \
-  --output artifacts/adapter_comparison_v1/figures_v1
+  --results artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
+  --summary artifacts/adapter_comparison_v2/analysis_v1/summary.json \
+  --output artifacts/adapter_comparison_v2/figures_v1
 ```
 
 The verifier's tokenizer must already be cached locally; the figures need optional
 Matplotlib. The review packet contains all 530 condition observations and groups
 only identical prompt/reference/output contexts, retaining every occurrence.
 Creating the packet does **not** count as reviewing the answers. The postprocessing
-helpers were added after submission and do not change the frozen worker.
+helpers were added after the first submission; including them in the corrected
+bundle does not change training or selection.

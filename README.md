@@ -43,8 +43,9 @@ partial result, not a validated adaptation recipe or superiority claim.
 The next [common-objective comparison](experiments/adapter_comparison/README.md)
 tests saved consensus supports, a mean-gradient control and broad official LoRA.
 Its fixed eight-fit protocol and complete tiny worker are locally verified;
-the [single Kaggle worker](https://www.kaggle.com/code/shlydv/neuronpatch-adapter-comparison-v1-20261021)
-is running and full-size results are pending. It does not add another untested selector.
+the first worker stopped on a [missing packaging dependency](experiments/adapter_comparison/failed_v1/REPORT.md)
+before LoRA. A clean-runtime-tested retry preserves all training settings;
+full-size results are pending. It does not add another untested selector.
 
 ## Direction
 

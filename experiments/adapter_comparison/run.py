@@ -54,6 +54,21 @@ def factor_snapshot(model):
     }
 
 
+def dependency_preflight(expected):
+    """Import the full adapter stack before downloading or allocating the model.
+
+    Old PEFT imports torch's extension loader, which needs setuptools even for
+    ordinary LoRA. A seeded developer environment can hide that dependency.
+    """
+    runtime = {name: importlib.metadata.version(name) for name in expected}
+    if not all(runtime[n].split("+")[0] == value for n, value in expected.items()):
+        raise RuntimeError("Installed runtime differs from the frozen protocol")
+    importlib.import_module("setuptools")
+    importlib.import_module("peft")
+    print("STAGE dependency_preflight_complete", runtime, flush=True)
+    return runtime
+
+
 def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--data", type=Path, required=True)
@@ -61,8 +76,7 @@ def main():
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
     protocol = json.loads((args.data / "protocol.json").read_text())
-    runtime = {name: importlib.metadata.version(name) for name in protocol["runtime"]}
-    assert all(runtime[n].split("+")[0] == v for n, v in protocol["runtime"].items())
+    runtime = dependency_preflight(protocol["runtime"])
     for name, expected in protocol["data_sha256"].items():
         assert hashlib.sha256((args.data / name).read_bytes()).hexdigest() == expected, name
     inputs = json.loads((args.data / "inputs.json").read_text())

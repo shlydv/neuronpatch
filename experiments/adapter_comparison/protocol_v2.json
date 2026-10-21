@@ -1,0 +1,92 @@
+{
+  "id": "adapter-comparison-v1-20261021",
+  "model": "EleutherAI/gpt-j-6B",
+  "revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+  "base_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+  "source_sha256": "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b",
+  "runtime": {
+    "torch": "2.4.1",
+    "transformers": "4.40.0",
+    "accelerate": "0.30.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "peft": "0.11.1",
+    "setuptools": "70.3.0"
+  },
+  "scope": "Two exposed development facts and exposed probe banks; no fresh confirmation",
+  "conditions": [
+    {
+      "id": "consensus",
+      "family": "consensus",
+      "lr": 0.001,
+      "expected_scalars": {
+        "0": 20480,
+        "1": 81920
+      }
+    },
+    {
+      "id": "mean",
+      "family": "mean",
+      "lr": 0.001,
+      "expected_scalars": {
+        "0": 20480,
+        "1": 81920
+      }
+    },
+    {
+      "id": "lora-low",
+      "family": "lora",
+      "lr": 0.0003,
+      "expected_scalars": {
+        "0": 4128768,
+        "1": 4128768
+      }
+    },
+    {
+      "id": "lora-high",
+      "family": "lora",
+      "lr": 0.001,
+      "expected_scalars": {
+        "0": 4128768,
+        "1": 4128768
+      }
+    }
+  ],
+  "lora_rank": 2,
+  "seed": 43,
+  "model_dimensions": {
+    "layers": 28,
+    "width": 4096,
+    "mlp_width": 16384
+  },
+  "selection_layers_excluded": 3,
+  "neurons_per_token": 5,
+  "fit": {
+    "steps": 50,
+    "weight": 10.0,
+    "alpha": 1.0,
+    "beta": 10.0
+  },
+  "optimizer": "Adam, fixed50 updates, no early stop or weight decay; FP32 trainables for every family",
+  "objective": "Max token/prompt target NLL + mean prefix KL(base||edited) + repetition penalty +10 times mean answer KL on the identical three other-subject calibration windows. Average positions within each prompt, then prompts equally. No occurrence or LoRA factor norm penalty. Frozen FP16 base.",
+  "supports": "Consensus uses the exact previous ordered occurrences. Mean uses norms of mean correction gradients from the same three training prompts, five occurrences per target token, same layer exclusions and scalar budget. LoRA covers q/k/v/out and fc_in/fc_out in all28 blocks, official PEFT rank2, alpha2, zero B, Kaiming A, dropout0; larger budget, not parameter matched.",
+  "selection": {
+    "target_probability": 0.9,
+    "max_answer_kl": 0.1
+  },
+  "selection_rule": "Within each family choose the smallest offered learning rate satisfying final merged-model max target NLL <= -log(.9) and max calibration-token KL <=.1 in BOTH cases. If none qualifies, select none. No evaluation outputs enter this function; no new rates after observing outcomes.",
+  "advance_criterion": "Calibration-selected candidate: 2/2 original prefixes, >=5/6 untrained wording prefixes, <=1/8 evaluation target leaks, zero losses of baseline reference prefixes on evaluation or utility. Full capped continuations must also be reviewed; count success alone is not behavioral robustness.",
+  "prediction": "Broad LoRA may bind edits better than restricted supports. Comparable leakage across families would instead implicate the shared training coverage/objective. Mean is a control for whether worst-prompt gain adds value. These are diagnostic hypotheses, not guaranteed outcomes.",
+  "limitations": "All facts and evaluation prompts are exposed development data. This changes sparse precision and removes the earlier norm penalty, so historical BF16/gamma.1 outcomes are not a matched comparator. Source reference aliases and ambiguity remain; no independent factuality benchmark or superiority claim. Preserves four base prediction positions, not complete answer quality. Fresh eight-fact bank is unused.",
+  "integrity": "Verify exact saved cold references before new inference. Export/reload FP32 LoRA factors and compare live logits exactly; evaluate actual merged FP16 models. Restore CPU weight snapshot after every LoRA fit, not subtraction. Verify full base fingerprints after every fit.",
+  "runtime_limit_seconds": 7200,
+  "new_fits": 8,
+  "data_sha256": {
+    "case-0-reference/edit.json": "13b5b8a944975e93c9a8f8164d2e6af910bc3226d68dbe0e7976e5674d43f543",
+    "case-0-reference/edit.safetensors": "f6ca20f6131d77e6cca470825263acb895a180fdffa4aa2ad5a7211ed0b9304f",
+    "case-1-reference/edit.json": "a808c93e24fb613579647028afa50e491bf3895d44370fa771fe863123809f98",
+    "case-1-reference/edit.safetensors": "d3d95bbe6f554ae6487e5d4faf54e77fec6333f8710a08a16950983f3ef4e2dd",
+    "cold.json": "4cd05df7a88e8b7259eeef8307cea4b6b40090c984af8b6d47f64802d58e3068",
+    "inputs.json": "2385d43c5b75446529a7cd9ad8f04aa7d3bc556f95c71f73276688e9c20cdb95"
+  }
+}

@@ -1,0 +1,137 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.2/17.2 MB 84.2 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.4MiB)
+ Downloaded cpython-3.11.17-linux-x86_64-gnu (download)
+Using CPython 3.11.17
+Creating virtual environment at: /tmp/fine-transfer-env
+Activate with: source /tmp/fine-transfer-env/bin/activate
+Using Python 3.11.17 environment at: /tmp/fine-transfer-env
+Resolved 40 packages in 371ms
+Downloading numpy (17.4MiB)
+Downloading sympy (6.0MiB)
+Downloading hf-xet (4.0MiB)
+Downloading nvidia-cufft-cu12 (116.0MiB)
+Downloading triton (199.7MiB)
+Downloading torch (760.2MiB)
+Downloading nvidia-cusolver-cu12 (118.4MiB)
+Downloading transformers (8.6MiB)
+Downloading networkx (2.0MiB)
+Downloading tokenizers (3.4MiB)
+Downloading nvidia-nvjitlink-cu12 (37.9MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading nvidia-cusparse-cu12 (186.9MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+Downloading nvidia-nccl-cu12 (168.1MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.5MiB)
+Downloading nvidia-cublas-cu12 (391.6MiB)
+Downloading nvidia-curand-cu12 (53.9MiB)
+ Downloaded networkx
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded sympy
+ Downloaded transformers
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded numpy
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded triton
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 40 packages in 37.57s
+Installed 40 packages in 234ms
+ + accelerate==0.30.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + hf-xet==1.7.0
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.1.3.1
+ + nvidia-cuda-cupti-cu12==12.1.105
+ + nvidia-cuda-nvrtc-cu12==12.1.105
+ + nvidia-cuda-runtime-cu12==12.1.105
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.0.2.54
+ + nvidia-curand-cu12==10.3.2.106
+ + nvidia-cusolver-cu12==11.4.5.107
+ + nvidia-cusparse-cu12==12.1.0.106
+ + nvidia-nccl-cu12==2.20.5
+ + nvidia-nvjitlink-cu12==12.9.86
+ + nvidia-nvtx-cu12==12.1.105
+ + packaging==26.3
+ + peft==0.11.1
+ + psutil==7.2.2
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + safetensors==0.6.2
+ + sympy==1.14.0
+ + tokenizers==0.19.1
+ + torch==2.4.1
+ + tqdm==4.70.1
+ + transformers==4.40.0
+ + triton==3.0.0
+ + typing-extensions==4.16.0
+ + urllib3==2.8.0
+STAGE model_load
+/tmp/fine-transfer-env/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+COLD_VERIFIED 0
+COLD_VERIFIED 1
+STAGE cold_complete_before_new_inference
+FIT_START 0 consensus
+SHARED_TRAIN {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'mean_answer_kl': -7.4193113874798655e-09, 'total': 10.241627618983156}
+SHARED_TRAIN {'step': 10, 'nll': 4.599020004272461, 'prefix_kl': 0.012815236113965511, 'repetition': 0.0009596896125003695, 'mean_answer_kl': 0.020750084271033604, 'total': 4.820295718808969}
+SHARED_TRAIN {'step': 20, 'nll': 1.0478211641311646, 'prefix_kl': 0.043000634759664536, 'repetition': 0.0016474466538056731, 'mean_answer_kl': 0.04439770678679148, 'total': 1.5364462832609813}
+SHARED_TRAIN {'step': 30, 'nll': 0.23679609596729279, 'prefix_kl': 0.060617595911026, 'repetition': 0.0018608918180689216, 'mean_answer_kl': 0.03827418200671673, 'total': 0.6820164136588573}
+SHARED_TRAIN {'step': 40, 'nll': 0.1019822508096695, 'prefix_kl': 0.05460669845342636, 'repetition': 0.001856127637438476, 'mean_answer_kl': 0.02372158442934354, 'total': 0.39566091944773996}
+SHARED_TRAIN {'step': 50, 'nll': 0.05971934273838997, 'prefix_kl': 0.043573807924985886, 'repetition': 0.0017197977285832167, 'mean_answer_kl': 0.015395443265636763, 'total': 0.25896737848718965}
+FIT_RESTORED 0 consensus final {'nll': 0.056956466287374496, 'answer_kl': [0.027450367057297403, 0.012844372573090559, 0.002728779240581205, 0.00450682419018061, 0.05166118781877747, 0.022391562956336538, 0.0024127500465379063, 0.006439219178302023, 0.02907969247446747, 0.012311924083135514, 0.0018222119139421102, 0.004439853470709241], 'mean_answer_kl': 0.014840728750279836, 'max_answer_kl': 0.05166118781877747, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 mean
+SHARED_TRAIN {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'mean_answer_kl': -7.4193113874798655e-09, 'total': 10.241627618983156}
+SHARED_TRAIN {'step': 10, 'nll': 4.116058349609375, 'prefix_kl': 0.015773778781294823, 'repetition': 0.0010105603141710162, 'mean_answer_kl': 0.017531247188647587, 'total': 4.308155012627442}
+SHARED_TRAIN {'step': 20, 'nll': 0.6767227053642273, 'prefix_kl': 0.07173346728086472, 'repetition': 0.0017833891324698925, 'mean_answer_kl': 0.02684222348034382, 'total': 1.0186617858707905}
+SHARED_TRAIN {'step': 30, 'nll': 0.16409064829349518, 'prefix_kl': 0.08573304116725922, 'repetition': 0.0016279816627502441, 'mean_answer_kl': 0.022723644971847534, 'total': 0.47868812084198}
+SHARED_TRAIN {'step': 40, 'nll': 0.06996146589517593, 'prefix_kl': 0.07687301933765411, 'repetition': 0.0015306072309613228, 'mean_answer_kl': 0.013480452199776968, 'total': 0.2831696172555288}
+SHARED_TRAIN {'step': 50, 'nll': 0.042580511420965195, 'prefix_kl': 0.06392610818147659, 'repetition': 0.001416143262758851, 'mean_answer_kl': 0.008713949626932541, 'total': 0.19506225890169543}
+FIT_RESTORED 0 mean final {'nll': 0.04040553420782089, 'answer_kl': [0.016566713871550825, 0.007255811806988754, 0.0016544227319711773, 0.002590732645086166, 0.028179833937011897, 0.011690889919262447, 0.0014524852465655578, 0.003989090758318893, 0.016839474775219757, 0.006269270764690555, 0.0011670271432825327, 0.003251797623826659], 'mean_answer_kl': 0.008408962601981268, 'max_answer_kl': 0.028179833937011897, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 lora-low
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/tmp/adapter-comparison-v1/experiments/adapter_comparison/run.py", line 336, in <module>
+    main()
+  File "/tmp/adapter-comparison-v1/experiments/adapter_comparison/run.py", line 188, in main
+    fitted, metadata = attach_gptj_lora(
+                       ^^^^^^^^^^^^^^^^^
+  File "/tmp/adapter-comparison-v1/experiments/fine_transfer/lora_control.py", line 44, in attach_gptj_lora
+    from peft import LoraConfig, TaskType, get_peft_model
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/__init__.py", line 22, in <module>
+    from .auto import (
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/auto.py", line 32, in <module>
+    from .mapping import MODEL_TYPE_TO_PEFT_MODEL_MAPPING
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/mapping.py", line 22, in <module>
+    from .mixed_model import PeftMixedModel
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/mixed_model.py", line 26, in <module>
+    from peft.tuners.mixed import COMPATIBLE_TUNER_TYPES
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/tuners/__init__.py", line 26, in <module>
+    from .boft import BOFTConfig, BOFTModel
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/tuners/boft/__init__.py", line 16, in <module>
+    from .layer import BOFTLayer
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/peft/tuners/boft/layer.py", line 30, in <module>
+    from torch.utils.cpp_extension import load
+  File "/tmp/fine-transfer-env/lib/python3.11/site-packages/torch/utils/cpp_extension.py", line 10, in <module>
+    import setuptools
+ModuleNotFoundError: No module named 'setuptools'

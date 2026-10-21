@@ -46,7 +46,7 @@ def main():
     protocol = {
         "id": "adapter-comparison-v1-20261021",
         **{k: previous[k] for k in ("model", "revision", "base_fingerprint", "source_sha256")},
-        "runtime": {**previous["runtime"], "peft": "0.11.1"},
+        "runtime": {**previous["runtime"], "peft": "0.11.1", "setuptools": "70.3.0"},
         "scope": "Two exposed development facts and exposed probe banks; no fresh confirmation",
         "conditions": conditions,
         "lora_rank": 2,

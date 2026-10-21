@@ -1195,3 +1195,12 @@ byte-identical to the frozen 235895-byte upload, SHA256
 `c129a44357c26d3d4f47b3a781dd8b97138f1ddf1cc8544d1aa69adb310fa577`.
 All 58 bundled file hashes and isolated pinned imports verify. Full-size results
 are pending; no outcome is inferred from startup.
+
+The first worker subsequently terminates at LoRA import because `setuptools`
+was absent from the clean uv environment. Two sparse case-0 fits complete, but
+no LoRA fit starts. [Failure and partial integrity evidence](../experiments/adapter_comparison/failed_v1/REPORT.md)
+are retained; no complete comparison or selected candidate exists. The exact
+import failure is reproduced locally with Torch2.4.1/PEFT0.11.1. Adding explicit
+setuptools70.3.0 yields12 passing adapter/comparison tests in a clean Python3.11
+environment. Upfront dependency imports now precede model downloads. The retry
+preserves every training setting and input; only runtime packaging changes.
