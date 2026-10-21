@@ -135,6 +135,20 @@ The aggregate plot refuses incomplete-grid denominators.
 For the finisher, independent verification additionally requires
 `--resume-manifest experiments/adapter_diagnosis/resume_v1.json`. It checks copied
 result bytes against the original partial audit, not just parsed text equivalence.
+Use the finisher's download root for complete-grid analysis and review; the
+original download remains explicitly partial:
+
+```bash
+python -m experiments.adapter_diagnosis.verify \
+  --results artifacts/adapter_diagnosis_finish_v1/kaggle_download/diagnosis-results/results \
+  --parent artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
+  --protocol experiments/adapter_diagnosis/protocol_v1.json \
+  --resume-manifest experiments/adapter_diagnosis/resume_v1.json \
+  --decode --output artifacts/adapter_diagnosis_finish_v1/integrity_v1.json
+```
+
+The [finisher source freeze](frozen_finish_v1.json) preserves the exact missing
+suffix and original protocol. It adds no intervention settings or training.
 
 The overall goal remains a useful adaptation library with a demonstrated
 advantage, not just an explanation of two counterfactual edits. Fresh crossed

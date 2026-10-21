@@ -1,0 +1,13 @@
+{
+  "status": "Frozen before finishing the original grid",
+  "source_revision": "dfbb01ab2b6df8e6044acbb5525ebbb1008196ba",
+  "source_sha256": "6f68fb20222181e6a127cffb3fab60d3d602de6374958615c57321520f409d7d",
+  "script_bytes": 246977,
+  "bundled_files": 66,
+  "new_fits": 0,
+  "missing_interventions": 2,
+  "repeated_control_observations": 212,
+  "new_ablation_observations": 106,
+  "original_protocol_byte_identical": true,
+  "isolated_pinned_imports_and_partial_verification_pass": true
+}
