@@ -15,6 +15,7 @@ def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--checkpoint-dataset")
     args = parser.parse_args()
     protocol = json.loads((args.data / "protocol.json").read_text())
     sources = list((ROOT / "src/neuronpatch").glob("*.py"))
@@ -32,6 +33,10 @@ def main():
     files["data/protocol.json"] = (args.data / "protocol.json").read_bytes()
     resume = args.data / "resume.json"
     resume_config = json.loads(resume.read_text()) if resume.exists() else None
+    if resume_config is not None and not args.checkpoint_dataset:
+        raise ValueError("Attach a verified private checkpoint dataset for a timed-out run")
+    if resume_config is None and args.checkpoint_dataset:
+        raise ValueError("Checkpoint dataset requires a resume manifest")
     if resume_config is not None:
         files["data/resume.json"] = resume.read_bytes()
     hashes = {k: hashlib.sha256(v).hexdigest() for k, v in files.items()}
@@ -85,7 +90,8 @@ def main():
         metadata.update(
             id="shlydv/neuronpatch-frozen-adapter-finish-v1-20261021",
             title="neuronpatch frozen adapter finish v1 20261021",
-            kernel_sources=[protocol["parent_kernel"], resume_config["partial_kernel"]],
+            kernel_sources=[protocol["parent_kernel"]],
+            dataset_sources=[args.checkpoint_dataset],
         )
     for name, value in (("kernel-metadata.json", metadata), ("submission.json", submission)):
         (args.output / name).write_text(json.dumps(value, indent=2) + "\n")

@@ -1603,7 +1603,9 @@
       "utility_exact_agreement": 19
     }
   ],
-  "full_output_review_complete": false,
+  "full_output_review_complete": true,
   "partial": true,
-  "interpretation": "Frozen co-trained adapter groups on exposed cases. No refit, best-setting selection, unique circuit or quality claim."
+  "interpretation": "Frozen co-trained adapter groups on exposed cases. No refit, best-setting selection, unique circuit or quality claim.",
+  "review_scope": "All available954 observations; missing106 not yet inferred",
+  "review_record": "review.json"
 }

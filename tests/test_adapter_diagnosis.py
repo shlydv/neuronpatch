@@ -264,6 +264,7 @@ def test_frozen_update_groups_and_complete_diagnostic(tmp_path, monkeypatch, cap
             (partial / f"case-{row['case']}-{row['condition']}{suffix}").unlink()
     part = check_results(partial, parent, protocol, tokenizer, partial=True)
     assert not part["complete"] and part["decoded"] == 90
+    assert packet(partial, partial=True)["observations"] == 90
     assert part["completed_interventions"] == 16
     partial_summary, _ = summarize(partial, partial=True)
     assert partial_summary["groups"]["only-final-three"]["available_cases"] == 1

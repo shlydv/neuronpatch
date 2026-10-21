@@ -3,10 +3,15 @@
 **Status: verified partial results; original worker timed out at our one-hour bound.**
 Sixteen of eighteen interventions finish. Independent verification checks 954
 decoded observations, 212 exact controls and 18 calibration records.
+All 954 available continuations are reviewed as 227 exact contexts. Their
+prefix successes still conceal fabricated continuations; no subset is a recipe.
 The two remaining final-layer conditions will be completed from the
 [hash-bound resume](resume_v1.json), with fresh exact controls and no refitting.
 See [partial report](partial_v1/REPORT.md), [launch identity](launch_v1.json) and
 [pre-inference freeze](frozen_v1.json). The full grid and output review remain incomplete.
+The corrected [finisher version2](launch_finish_v2.json) is accepted with valid
+input sources and queued. Its source is unchanged; a private checkpoint dataset
+replaces the rejected failed-notebook input. See [delivery details](finish_delivery_v2.json).
 The completed [parent comparison](../adapter_comparison/pilot_v2/REPORT.md)
 favors broad low-rate LoRA over our outgoing-neuron patches. This diagnostic
 reuses those exact calibration-selected factors; it does not refit adapters,
@@ -149,6 +154,17 @@ python -m experiments.adapter_diagnosis.verify \
 
 The [finisher source freeze](frozen_finish_v1.json) preserves the exact missing
 suffix and original protocol. It adds no intervention settings or training.
+When packaging a resume, supply the verified checkpoint dataset explicitly:
+
+```bash
+python -m experiments.adapter_diagnosis.build \
+  --data artifacts/adapter_diagnosis_finish_v1/data \
+  --checkpoint-dataset shlydv/neuronpatch-diagnosis-checkpoint-v1 \
+  --output artifacts/adapter_diagnosis_finish_v1/new_bundle
+```
+
+The accepted version2 instead reuses the exact original frozen script and changes
+only its external Kaggle input metadata; rebuilding would create a new source identity.
 
 The overall goal remains a useful adaptation library with a demonstrated
 advantage, not just an explanation of two counterfactual edits. Fresh crossed

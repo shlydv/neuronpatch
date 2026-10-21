@@ -1263,3 +1263,38 @@ PEFT's newer safe merge rounds the FP32 update into base dtype before addition;
 the older pinned version adds before restoring dtype. Exact group comparisons
 are within runtime, not cross-version parity. Kaggle retains the parent's pin.
 These are engineering checks only. No full-size group outcome is available yet.
+
+### Frozen group diagnostic: verified projection results, final-layer suffix pending
+
+The original worker reaches its one-hour bound after16/18 interventions.
+Independent verification decodes954 observations, reconstructs18 calibration
+records and verifies212 exact parent controls. The completed records are the
+registered execution prefix. The missing pair is precisely case1's final-layer
+only/remove controls; no new setting is substituted. The tested finisher copies
+verified records unchanged and repeats controls before computing only that pair.
+Its corrected private-checkpoint input is accepted; version2 is queued.
+
+The completed [projection comparisons](../experiments/adapter_diagnosis/partial_v1/REPORT.md)
+show full and MLP-only updates retain6/6 untrained target starts with0/8 target
+leaks. Incoming-only yields3/6; outgoing-only1/6; removing either family from
+the full adapter yields5/6. MLP-only narrowly misses the strict90% training-token
+confidence bound in case1 while still generating the six requested starts.
+These are separate findings, not grounds to erase observed successes or promote
+a subset. Attention computation itself remains present in every model.
+
+Review covers all954 capped outputs as227 distinct contexts, including145 exact
+contexts inherited from the completed parent review and82 newly read. MLP-only
+reintroduces false generated personal allegations absent from the full adapter's
+corresponding continuation; the full adapter still invents other biographical
+details. No raw allegations are published. Prefix-only sufficiency is not
+complete-response sufficiency. There is no clean group split that validates
+an adaptation recipe. Geometry is also dispersed across parameter coordinates
+and groups have unequal norms; neither establishes causal importance.
+
+The useful lead is paired incoming/outgoing parameterization, to be tested by
+training from scratch at a stated budget rather than treating co-trained pruning
+as optimal trainability. The target-only country objective does not supervise a
+desired complete response or its ending. A capable instruction model and
+complete-answer correction/preservation objectives remain necessary tests for
+the intended library application. Fresh facts, crossed inputs and actual
+advantages over appropriate small LoRA/random baselines remain unproven.
