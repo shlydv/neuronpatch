@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED; no retry yet submitted",
+  "status": "RUNNING",
   "prepared_utc": "2026-10-21T09:44:50.033180+00:00",
   "kernel": "shlydv/neuronpatch-adapter-comparison-v1-20261021",
   "logical_experiment": "adapter-comparison-v1-20261021",
@@ -15,5 +15,13 @@
   "outer_worker_timeout_seconds": 7500,
   "protocol_change": "Only runtime.setuptools70.3.0; all training settings/data unchanged",
   "preflight_change": "Import full adapter stack before model/tokenizer downloads",
-  "results_status": "No complete comparison result; retry repeats all8 from zero"
+  "results_status": "Corrected retry running; no completed full comparison yet",
+  "accepted_version": 2,
+  "kernel_id": 139988939,
+  "status_checked_utc": "2026-10-21T09:47:34.508343+00:00",
+  "accepted_source_byte_identical": true,
+  "accepted_source_bytes": 237840,
+  "dependency_preflight_passed_on_kaggle": true,
+  "startup_stage": "STAGE dependency_preflight_complete, then STAGE model_load",
+  "startup_observed_utc": "2026-10-21T09:56:18.715680+00:00"
 }

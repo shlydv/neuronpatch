@@ -84,3 +84,27 @@ was inspected as adjacent work; code has not been verified. Thus fixed protected
 input bases are existing ideas. The implementation candidate here concerns
 compatible neuron-update axes, explicit remaining capacity, and measured
 transfer/preservation; novelty and superiority remain unestablished.
+
+## Additional neighboring work checked on 2026-10-21
+
+[SCoNE](https://arxiv.org/html/2609.00689v1) combines positive attribution with
+cross-input attribution variability, then statically scales selected down-projection
+columns. This is training-free RAG adaptation, distinct from learning our sparse
+deltas. The paper-linked implementation was inspected at
+`3b02f40eefa8e878db7c5f88849365b25359c5ad`; no upstream code is incorporated.
+A [CPU path-gradient audit](../experiments/attribution_audit/SCONE_PATH_NOTE.md)
+reproduces a formula/implementation mismatch, including a constructed ranking
+reversal. Its real-model effect is unmeasured; no benchmark reproduction or
+superiority claim follows. Cross-input variability alone is not a new idea here.
+
+[Faithfulness to Refusal](https://arxiv.org/html/2607.05355v1) already compares
+selectors through row ablation, contrastive behavior signals and layer-matched
+controls. Its operational tests concern sufficient sets, not a unique or necessary
+circuit. Paper sections 1–3 were inspected; its results are not independently
+reproduced. Stable rankings or transferable edits alone cannot establish a unique
+causal mechanism in our work either.
+
+[MicroEdit](https://aclanthology.org/2025.emnlp-main.1719/) uses sparse-autoencoder
+representations for neuron-level knowledge disentanglement. The primary abstract
+was inspected; code and full method remain unverified here. Polysemanticity and
+editing spillover are existing research problems, not discoveries unique to us.

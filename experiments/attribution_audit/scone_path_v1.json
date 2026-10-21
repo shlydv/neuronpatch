@@ -1,0 +1,61 @@
+{
+  "status": "Pinned source mismatch reproduced on CPU; real-model effect unmeasured",
+  "upstream_commit": "3b02f40eefa8e878db7c5f88849365b25359c5ad",
+  "source_sha256": "2b4e29ccbd3d0ce3a163b54379062e0495b82e288f910125a736d074cf10972c",
+  "torch": "2.14.1",
+  "dtype": "float64",
+  "integration_points": 20,
+  "source_execution": "Only inspected scaled_input/get_context_attr methods, extracted in memory",
+  "correction": "Differentiate wrt batch_activations rather than w_ffn_activations",
+  "interpretation": "Endpoint differentiation introduces a chain-rule alpha factor. It is not the paper's stated gradient wrt the interpolated activation. A nonlinear toy can change rankings. No claim about final selected neurons, reported benchmark scores, or superiority of neuronpatch follows from this check.",
+  "cases": [
+    {
+      "power": 1,
+      "upstream": [
+        0.056999999999999995,
+        0.0475
+      ],
+      "path_gradient": [
+        0.12,
+        0.1
+      ],
+      "closed_form_left_riemann": [
+        0.12,
+        0.1
+      ],
+      "exact_integrated_gradients": [
+        0.12,
+        0.1
+      ],
+      "endpoint_probability_change": 0.22,
+      "upstream_sum": 0.1045,
+      "path_gradient_sum": 0.22,
+      "upstream_top_feature": 0,
+      "path_gradient_top_feature": 0
+    },
+    {
+      "power": 3,
+      "upstream": [
+        0.05700000000000001,
+        0.06768750000000001
+      ],
+      "path_gradient": [
+        0.12000000000000002,
+        0.09262500000000003
+      ],
+      "closed_form_left_riemann": [
+        0.12,
+        0.09262500000000003
+      ],
+      "exact_integrated_gradients": [
+        0.12,
+        0.1
+      ],
+      "endpoint_probability_change": 0.22,
+      "upstream_sum": 0.12468750000000002,
+      "path_gradient_sum": 0.21262500000000006,
+      "upstream_top_feature": 1,
+      "path_gradient_top_feature": 0
+    }
+  ]
+}

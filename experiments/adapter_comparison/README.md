@@ -1,11 +1,12 @@
 # Does restricting updates to selected neurons help subject binding?
 
-**Status: corrected retry prepared.** Kernel 139988939 version 1 terminated
-when old PEFT imported torch's extension loader without `setuptools`. Two sparse
-fits completed; no LoRA fit began, and there is no full comparison result. The
-[failed attempt](failed_v1/REPORT.md) is preserved. The dependency fix and upfront
-import check pass in a clean Torch2.4.1 environment before another GPU submission.
-See [clean runtime checks](checks_v2.json).
+**Status: corrected retry running on Kaggle**, kernel 139988939 version 2.
+The accepted source matches the frozen upload byte for byte. Version 1 failed
+before LoRA because `setuptools` was missing; the [failure](failed_v1/REPORT.md)
+is preserved. The fix passes [clean runtime checks](checks_v2.json); the retry
+keeps all training settings and data unchanged. See the [launch record](launch_v2.json).
+The dependency preflight also passed on Kaggle before model loading.
+No completed full-size comparison result is available yet.
 
 This is a prospective development comparison after the completed
 [preservation pilot](../subject_binding/pilot_v1/REPORT.md). That pilot retained

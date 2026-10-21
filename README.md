@@ -44,7 +44,7 @@ The next [common-objective comparison](experiments/adapter_comparison/README.md)
 tests saved consensus supports, a mean-gradient control and broad official LoRA.
 Its fixed eight-fit protocol and complete tiny worker are locally verified;
 the first worker stopped on a [missing packaging dependency](experiments/adapter_comparison/failed_v1/REPORT.md)
-before LoRA. A clean-runtime-tested retry preserves all training settings;
+before LoRA. The clean-runtime-tested retry is running with all training settings unchanged;
 full-size results are pending. It does not add another untested selector.
 
 ## Direction
