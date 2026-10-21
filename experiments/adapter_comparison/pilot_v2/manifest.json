@@ -1,0 +1,16 @@
+{
+  "summary.json": "060a123d3fb2e01b3d9735cc5633facbacebf9e9706ec60b95520e319b8b9777",
+  "REPORT.md": "6dbd0f41b44a5af90468516ecf8a5bfd761cffd5f56bff3c4c97ca3249317f27",
+  "decisions.json": "30dc98f358e622a682ac6ededd66594eb755d0bcfbc201f83ccb444aa5add06c",
+  "fit.png": "8973c4f0ab69cf6cc8812f7a8cac8febae7b9760fbb637a51224e630fea0c0f6",
+  "identity.json": "a568b49a65e000a096dc994a49b6998fc1876beeeff25cdc2ee356968e7a19f6",
+  "execution.log": "a3d62effdd15dbbd0bf7e449d50b69d0a6f492a829c86aa8ec06741e24ef91ac",
+  "posthoc.json": "7f8b3433be9911d2b7af7009f897e36ee46e0ec7915df57dea57c6b6017265a1",
+  "cold-checks.json": "c72779b80b959d2c4bd6c44380787d903ba17f2a7eb70961c498caa04238dee4",
+  "provider.json": "70d151a4999c957a7e5722e11f97174a1e60d423072e9cd2f034576f9a4ecfe9",
+  "behavior.png": "f8249fbd333a603ce7a587a0fd95342be63d5396f95920819f55c1809b92d8aa",
+  "review.json": "3593f32e642ad9335fef7cfe40e86d016499a62855c2561b7392e1572e31a0e5",
+  "completion.json": "b635ef78b174cfb1d54783f9353b6bb09da68f7a4dc99c2ed1e7071a167ac889",
+  "fits.json": "b834acc527b86b19b78c2d3f852887209b8ab14ad34e388cc4593e7bf2484e82",
+  "integrity.json": "8e12e6ac36ebb45e2288842f44fc8055266e41d38b5c8cd398d8e5b8b97efb41"
+}

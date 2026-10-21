@@ -1,0 +1,160 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.2/17.2 MB 84.6 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.4MiB)
+ Downloaded cpython-3.11.17-linux-x86_64-gnu (download)
+Using CPython 3.11.17
+Creating virtual environment at: /tmp/fine-transfer-env
+Activate with: source /tmp/fine-transfer-env/bin/activate
+Using Python 3.11.17 environment at: /tmp/fine-transfer-env
+Resolved 41 packages in 728ms
+Downloading networkx (2.0MiB)
+Downloading hf-xet (4.0MiB)
+Downloading numpy (17.4MiB)
+Downloading triton (199.7MiB)
+Downloading nvidia-nvjitlink-cu12 (37.9MiB)
+Downloading transformers (8.6MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading sympy (6.0MiB)
+Downloading torch (760.2MiB)
+Downloading nvidia-cublas-cu12 (391.6MiB)
+Downloading nvidia-cusolver-cu12 (118.4MiB)
+Downloading nvidia-cusparse-cu12 (186.9MiB)
+Downloading nvidia-nccl-cu12 (168.1MiB)
+Downloading tokenizers (3.4MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.5MiB)
+Downloading nvidia-curand-cu12 (53.9MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+Downloading nvidia-cufft-cu12 (116.0MiB)
+ Downloaded networkx
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded sympy
+ Downloaded transformers
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded numpy
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded triton
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 41 packages in 1m 56s
+Installed 41 packages in 268ms
+ + accelerate==0.30.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + hf-xet==1.7.0
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.1.3.1
+ + nvidia-cuda-cupti-cu12==12.1.105
+ + nvidia-cuda-nvrtc-cu12==12.1.105
+ + nvidia-cuda-runtime-cu12==12.1.105
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.0.2.54
+ + nvidia-curand-cu12==10.3.2.106
+ + nvidia-cusolver-cu12==11.4.5.107
+ + nvidia-cusparse-cu12==12.1.0.106
+ + nvidia-nccl-cu12==2.20.5
+ + nvidia-nvjitlink-cu12==12.9.86
+ + nvidia-nvtx-cu12==12.1.105
+ + packaging==26.3
+ + peft==0.11.1
+ + psutil==7.2.2
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + safetensors==0.6.2
+ + setuptools==70.3.0
+ + sympy==1.14.0
+ + tokenizers==0.19.1
+ + torch==2.4.1
+ + tqdm==4.70.1
+ + transformers==4.40.0
+ + triton==3.0.0
+ + typing-extensions==4.16.0
+ + urllib3==2.8.0
+STAGE dependency_preflight_complete {'torch': '2.4.1', 'transformers': '4.40.0', 'accelerate': '0.30.1', 'safetensors': '0.6.2', 'numpy': '1.26.4', 'peft': '0.11.1', 'setuptools': '70.3.0'}
+STAGE model_load
+/tmp/fine-transfer-env/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+COLD_VERIFIED 0
+COLD_VERIFIED 1
+STAGE cold_complete_before_new_inference
+FIT_START 0 consensus
+SHARED_TRAIN {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'mean_answer_kl': -7.4193113874798655e-09, 'total': 10.241627618983156}
+SHARED_TRAIN {'step': 10, 'nll': 4.599020004272461, 'prefix_kl': 0.012815236113965511, 'repetition': 0.0009596896125003695, 'mean_answer_kl': 0.020750084271033604, 'total': 4.820295718808969}
+SHARED_TRAIN {'step': 20, 'nll': 1.0478211641311646, 'prefix_kl': 0.043000634759664536, 'repetition': 0.0016474466538056731, 'mean_answer_kl': 0.04439770678679148, 'total': 1.5364462832609813}
+SHARED_TRAIN {'step': 30, 'nll': 0.23679609596729279, 'prefix_kl': 0.060617595911026, 'repetition': 0.0018608918180689216, 'mean_answer_kl': 0.03827418200671673, 'total': 0.6820164136588573}
+SHARED_TRAIN {'step': 40, 'nll': 0.1019822508096695, 'prefix_kl': 0.05460669845342636, 'repetition': 0.001856127637438476, 'mean_answer_kl': 0.02372158442934354, 'total': 0.39566091944773996}
+SHARED_TRAIN {'step': 50, 'nll': 0.05971934273838997, 'prefix_kl': 0.043573807924985886, 'repetition': 0.0017197977285832167, 'mean_answer_kl': 0.015395443265636763, 'total': 0.25896737848718965}
+FIT_RESTORED 0 consensus final {'nll': 0.056956466287374496, 'answer_kl': [0.027450367057297403, 0.012844372573090559, 0.002728779240581205, 0.00450682419018061, 0.05166118781877747, 0.022391562956336538, 0.0024127500465379063, 0.006439219178302023, 0.02907969247446747, 0.012311924083135514, 0.0018222119139421102, 0.004439853470709241], 'mean_answer_kl': 0.014840728750279836, 'max_answer_kl': 0.05166118781877747, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 mean
+SHARED_TRAIN {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'mean_answer_kl': -7.4193113874798655e-09, 'total': 10.241627618983156}
+SHARED_TRAIN {'step': 10, 'nll': 4.116058349609375, 'prefix_kl': 0.015773778781294823, 'repetition': 0.0010105603141710162, 'mean_answer_kl': 0.017531247188647587, 'total': 4.308155012627442}
+SHARED_TRAIN {'step': 20, 'nll': 0.6767227053642273, 'prefix_kl': 0.07173346728086472, 'repetition': 0.0017833891324698925, 'mean_answer_kl': 0.02684222348034382, 'total': 1.0186617858707905}
+SHARED_TRAIN {'step': 30, 'nll': 0.16409064829349518, 'prefix_kl': 0.08573304116725922, 'repetition': 0.0016279816627502441, 'mean_answer_kl': 0.022723644971847534, 'total': 0.47868812084198}
+SHARED_TRAIN {'step': 40, 'nll': 0.06996146589517593, 'prefix_kl': 0.07687301933765411, 'repetition': 0.0015306072309613228, 'mean_answer_kl': 0.013480452199776968, 'total': 0.2831696172555288}
+SHARED_TRAIN {'step': 50, 'nll': 0.042580511420965195, 'prefix_kl': 0.06392610818147659, 'repetition': 0.001416143262758851, 'mean_answer_kl': 0.008713949626932541, 'total': 0.19506225890169543}
+FIT_RESTORED 0 mean final {'nll': 0.04040553420782089, 'answer_kl': [0.016566713871550825, 0.007255811806988754, 0.0016544227319711773, 0.002590732645086166, 0.028179833937011897, 0.011690889919262447, 0.0014524852465655578, 0.003989090758318893, 0.016839474775219757, 0.006269270764690555, 0.0011670271432825327, 0.003251797623826659], 'mean_answer_kl': 0.008408962601981268, 'max_answer_kl': 0.028179833937011897, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 lora-low
+SHARED_TRAIN {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'mean_answer_kl': -7.4193113874798655e-09, 'total': 10.241627618983156}
+SHARED_TRAIN {'step': 10, 'nll': 0.07501176744699478, 'prefix_kl': 0.041444722563028336, 'repetition': 0.018065573647618294, 'mean_answer_kl': 0.06591727832953136, 'total': 0.7936948488156}
+SHARED_TRAIN {'step': 20, 'nll': 0.008725728839635849, 'prefix_kl': 0.030628010630607605, 'repetition': 0.007948081009089947, 'mean_answer_kl': 0.009325275508066019, 'total': 0.14055457649131614}
+SHARED_TRAIN {'step': 30, 'nll': 0.003429366974160075, 'prefix_kl': 0.020249025896191597, 'repetition': 0.002262722235172987, 'mean_answer_kl': 0.003988632621864478, 'total': 0.06582744109133878}
+SHARED_TRAIN {'step': 40, 'nll': 0.0015050761867314577, 'prefix_kl': 0.01268564909696579, 'repetition': 0.001133165555074811, 'mean_answer_kl': 0.0014436614389220874, 'total': 0.029760504762331642}
+SHARED_TRAIN {'step': 50, 'nll': 0.0008993871742859483, 'prefix_kl': 0.009111052379012108, 'repetition': 0.0007671484490856528, 'mean_answer_kl': 0.0006186586688272655, 'total': 0.016964174690656364}
+FIT_RESTORED 0 lora-low final {'nll': 0.0008709213580004871, 'answer_kl': [0.0008457408859056073, 0.0008480201581026959, 0.00012859816183148566, 0.000276743563015467, 0.0015644480377547002, 0.0008376984019762522, 6.769180728260918e-05, 6.924609781002399e-05, 0.0013035607490580205, 0.000602671663013676, 0.00011365690738879405, 0.00013119665796703902], 'mean_answer_kl': 0.0005657727575921976, 'max_answer_kl': 0.0015644480377547002, 'answer_argmax_retained': 11, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 lora-high
+SHARED_TRAIN {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'mean_answer_kl': -7.4193113874798655e-09, 'total': 10.241627618983156}
+SHARED_TRAIN {'step': 10, 'nll': 0.003482232103124261, 'prefix_kl': 0.07338538765907288, 'repetition': 0.010197624564170837, 'mean_answer_kl': 0.03843251864115397, 'total': 0.4713904286424319}
+SHARED_TRAIN {'step': 20, 'nll': 0.0019919094629585743, 'prefix_kl': 0.03232526406645775, 'repetition': 0.00015020502905827016, 'mean_answer_kl': 0.0088845274100701, 'total': 0.12331265086929004}
+SHARED_TRAIN {'step': 30, 'nll': 0.00021979777375236154, 'prefix_kl': 0.01752203330397606, 'repetition': 4.728647763840854e-05, 'mean_answer_kl': 0.0027612789223591485, 'total': 0.04540190721551578}
+SHARED_TRAIN {'step': 40, 'nll': 9.83428253675811e-05, 'prefix_kl': 0.010993974283337593, 'repetition': 3.45707630913239e-05, 'mean_answer_kl': 0.0013101111399009824, 'total': 0.024227999383583665}
+SHARED_TRAIN {'step': 50, 'nll': 7.056941103655845e-05, 'prefix_kl': 0.007681935094296932, 'repetition': 2.8808957722503692e-05, 'mean_answer_kl': 0.0005267014106114706, 'total': 0.01304832783838113}
+FIT_RESTORED 0 lora-high final {'nll': 6.90197994117625e-05, 'answer_kl': [0.001226402907734181, 0.000517953216981172, 0.00014940893766734477, 0.00031549738806644755, 0.0009368560169265322, 0.0005748734763262051, 0.00010738641608018236, 0.0002195720221387738, 0.0006790772745341321, 0.000494416944093495, 0.00011956165523495377, 0.00019656571906860598], 'mean_answer_kl': 0.0004614643312376688, 'max_answer_kl': 0.001226402907734181, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 consensus
+SHARED_TRAIN {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'mean_answer_kl': 3.508895100405122e-08, 'total': 21.842899673399277}
+SHARED_TRAIN {'step': 10, 'nll': 9.000638961791992, 'prefix_kl': 0.10658302158117294, 'repetition': 0.001007376122288406, 'mean_answer_kl': 0.01565167245765527, 'total': 9.264745408048233}
+SHARED_TRAIN {'step': 20, 'nll': 3.950129985809326, 'prefix_kl': 0.17084529995918274, 'repetition': 0.0018739834195002913, 'mean_answer_kl': 0.02394491247832775, 'total': 4.362298589199781}
+SHARED_TRAIN {'step': 30, 'nll': 0.04245243966579437, 'prefix_kl': 0.1811029613018036, 'repetition': 0.009703220799565315, 'mean_answer_kl': 0.03350623572866122, 'total': 0.5683209771911304}
+SHARED_TRAIN {'step': 40, 'nll': 0.0021476317197084427, 'prefix_kl': 0.1491965651512146, 'repetition': 0.009846929460763931, 'mean_answer_kl': 0.021001457547148068, 'total': 0.37120569621523225}
+SHARED_TRAIN {'step': 50, 'nll': 0.002070070942863822, 'prefix_kl': 0.11646519601345062, 'repetition': 0.004263303242623806, 'mean_answer_kl': 0.016667695095141728, 'total': 0.28947552045186364}
+FIT_RESTORED 1 consensus final {'nll': 0.002030574483796954, 'answer_kl': [0.05751114994625763, 0.003392184598662489, 0.004650758364251774, 0.012077787406725923, 0.026987222546383485, 0.0027434514162580975, 0.004467187860268902, 0.006864281736282466, 0.04472798933725676, 0.023795507663581038, 0.001046643601566082, 0.0022068446326874115], 'mean_answer_kl': 0.01587258409251517, 'max_answer_kl': 0.05751114994625763, 'answer_argmax_retained': 11, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 mean
+SHARED_TRAIN {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'mean_answer_kl': 3.508895100405122e-08, 'total': 21.842899673399277}
+SHARED_TRAIN {'step': 10, 'nll': 10.654359817504883, 'prefix_kl': 0.13985323905944824, 'repetition': 0.0007180633838288486, 'mean_answer_kl': 0.020763325815399487, 'total': 11.00256466989716}
+SHARED_TRAIN {'step': 20, 'nll': 6.918173313140869, 'prefix_kl': 0.2335389107465744, 'repetition': 0.000563280307687819, 'mean_answer_kl': 0.031765762716531754, 'total': 7.4699331894516945}
+SHARED_TRAIN {'step': 30, 'nll': 1.5395601987838745, 'prefix_kl': 0.2651904821395874, 'repetition': 0.000987303676083684, 'mean_answer_kl': 0.04507931570212046, 'total': 2.256531129280726}
+SHARED_TRAIN {'step': 40, 'nll': 0.014091398566961288, 'prefix_kl': 0.2603018283843994, 'repetition': 0.0031639286316931248, 'mean_answer_kl': 0.03446535145243009, 'total': 0.6222106789549191}
+SHARED_TRAIN {'step': 50, 'nll': 0.003026787657290697, 'prefix_kl': 0.21043917536735535, 'repetition': 0.004653437994420528, 'mean_answer_kl': 0.024161498993635178, 'total': 0.45973438769578934}
+FIT_RESTORED 1 mean final {'nll': 0.0028746493626385927, 'answer_kl': [0.0572835962989221, 0.005356171721356384, 0.01406138521065526, 0.02554803341810095, 0.038256441598607804, 0.0066390137013648855, 0.009357531171501187, 0.017675677512379147, 0.05340397776983373, 0.04594142636958931, 0.0011843382961157806, 0.00479783733825998], 'mean_answer_kl': 0.02329211920055721, 'max_answer_kl': 0.0572835962989221, 'answer_argmax_retained': 11, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 lora-low
+SHARED_TRAIN {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'mean_answer_kl': 3.508895100405122e-08, 'total': 21.842899673399277}
+SHARED_TRAIN {'step': 10, 'nll': 5.50324010848999, 'prefix_kl': 0.18559692800045013, 'repetition': 0.024935413151979446, 'mean_answer_kl': 0.02276383340358734, 'total': 5.941410630941391}
+SHARED_TRAIN {'step': 20, 'nll': 0.014349016360938549, 'prefix_kl': 0.2417728751897812, 'repetition': 0.04432274401187897, 'mean_answer_kl': 0.029095185299714405, 'total': 0.5913965155680974}
+SHARED_TRAIN {'step': 30, 'nll': 0.008963820524513721, 'prefix_kl': 0.11431410163640976, 'repetition': 0.005928736180067062, 'mean_answer_kl': 0.0074502260734637575, 'total': 0.20370891814430553}
+SHARED_TRAIN {'step': 40, 'nll': 0.003951599355787039, 'prefix_kl': 0.06400969624519348, 'repetition': 0.0009342936682514846, 'mean_answer_kl': 0.0033947723374391594, 'total': 0.1028433166599522}
+SHARED_TRAIN {'step': 50, 'nll': 0.0008372138836421072, 'prefix_kl': 0.04333066940307617, 'repetition': 0.00040016230195760727, 'mean_answer_kl': 0.0014804393091859918, 'total': 0.059372440019312}
+FIT_RESTORED 1 lora-low final {'nll': 0.0007931424188427627, 'answer_kl': [0.003776667559440292, 0.0005500591248789296, 0.0005065289745421761, 0.0018889165830602798, 0.0014995608789911928, 0.00022847748251133984, 0.0004832585683498653, 0.001179234264225571, 0.0031882373578176926, 0.002319744003670198, 0.00018752581172972192, 0.0006376866866595341], 'mean_answer_kl': 0.0013704914413230661, 'max_answer_kl': 0.003776667559440292, 'answer_argmax_retained': 11, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 lora-high
+SHARED_TRAIN {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'mean_answer_kl': 3.508895100405122e-08, 'total': 21.842899673399277}
+SHARED_TRAIN {'step': 10, 'nll': 0.04322278872132301, 'prefix_kl': 0.21596696972846985, 'repetition': 0.04385664686560631, 'mean_answer_kl': 0.04081082468231519, 'total': 0.711154652138551}
+SHARED_TRAIN {'step': 20, 'nll': 0.0006100462633185089, 'prefix_kl': 0.0976853221654892, 'repetition': 1.9868237359332852e-05, 'mean_answer_kl': 0.005404559740175803, 'total': 0.15236083635439476}
+SHARED_TRAIN {'step': 30, 'nll': 0.0003446938644628972, 'prefix_kl': 0.05546845123171806, 'repetition': 1.1920930091946502e-06, 'mean_answer_kl': 0.0027756697963923216, 'total': 0.08357103494927287}
+SHARED_TRAIN {'step': 40, 'nll': 0.00023135847004596144, 'prefix_kl': 0.03739558160305023, 'repetition': 5.960464477539062e-07, 'mean_answer_kl': 0.0012025504256598651, 'total': 0.049653041060082614}
+SHARED_TRAIN {'step': 50, 'nll': 0.00013219437096267939, 'prefix_kl': 0.025898968800902367, 'repetition': 1.9868215872520523e-07, 'mean_answer_kl': 0.0005935506778769195, 'total': 0.0319668686715886}
+FIT_RESTORED 1 lora-high final {'nll': 0.00012432756193447858, 'answer_kl': [0.0009130936794476483, 0.00014643173230873907, 0.00029122886924932653, 0.0012134083459708362, 0.0005703450615877456, 9.665830788243776e-05, 0.00016580745303459727, 0.0004697672585358011, 0.001310907100615493, 0.001094309903357617, 0.00014873837893424112, 0.00039723179469764325], 'mean_answer_kl': 0.0005681606571351772, 'max_answer_kl': 0.001310907100615493, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+COMPLETE adapter-comparison

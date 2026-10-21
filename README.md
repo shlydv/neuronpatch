@@ -40,12 +40,14 @@ untrained-wording prefixes. Calibration succeeds, but the declared scope gate
 fails and full continuations expose additional interference. This is a useful
 partial result, not a validated adaptation recipe or superiority claim.
 
-The next [common-objective comparison](experiments/adapter_comparison/README.md)
-tests saved consensus supports, a mean-gradient control and broad official LoRA.
-Its fixed eight-fit protocol and complete tiny worker are locally verified;
-the first worker stopped on a [missing packaging dependency](experiments/adapter_comparison/failed_v1/REPORT.md)
-before LoRA. The clean-runtime-tested retry is running with all training settings unchanged;
-full-size results are pending. It does not add another untested selector.
+The completed [common-objective comparison](experiments/adapter_comparison/pilot_v2/REPORT.md)
+favors broad official LoRA: 6/6 untrained-wording starts and 0/8 replacement
+leaks, versus 5/6 and 1/8 for simpler mean-gradient sparse support, and 6/6 and
+4/8 for saved consensus support. LoRA uses 50–200 times more trainable scalars;
+this is not a parameter-matched efficiency result. All 530 capped generations
+are verified and reviewed. Correct prefixes still hide later errors, and the
+weak base makes utility retention an insufficient quality check. These are two
+exposed development facts, not a validated recipe. No GPU worker is active.
 
 ## Direction
 

@@ -1,14 +1,16 @@
 # Does restricting updates to selected neurons help subject binding?
 
-**Status: corrected retry running on Kaggle**, kernel 139988939 version 2.
-The accepted source matches the frozen upload byte for byte. Version 1 failed
-before LoRA because `setuptools` was missing; the [failure](failed_v1/REPORT.md)
-is preserved. The fix passes [clean runtime checks](checks_v2.json); the retry
-keeps all training settings and data unchanged. See the [launch record](launch_v2.json).
-The dependency preflight also passed on Kaggle before model loading.
-No completed full-size comparison result is available yet.
+**Status: complete**, Kaggle kernel 139988939 version 2, return 0.
+The [completed report](pilot_v2/REPORT.md) favors selected low-rate LoRA over our
+sparse supports on transfer and replacement leakage. All eight fits and 530
+generations are independently verified; all 354 distinct output contexts have
+been reviewed. No condition is a validated complete-answer recipe.
+Version 1 failed before LoRA because `setuptools` was missing; the
+[failure](failed_v1/REPORT.md) is preserved. The [clean-runtime fix](checks_v2.json)
+changes no training setting or input. See the [launch record](launch_v2.json).
+No GPU worker is active.
 
-This is a prospective development comparison after the completed
+This is a development comparison after the completed
 [preservation pilot](../subject_binding/pilot_v1/REPORT.md). That pilot retained
 6/6 requested answer starts on untrained wordings but still spread the replacement
 to 4/8 unseen subjects. No candidate is currently a validated editing recipe.
@@ -81,7 +83,8 @@ export/reload, merging, restoration, calibration-only selection, independent
 rescoring and 530 decoded output records. The common sparse objective is checked
 against the existing trainer; LoRA accumulated gradients are checked against a
 joint objective. Both installed modern PEFT and pinned PEFT 0.11.1/Transformers
-4.40 are tested locally. Full-size GPU results remain pending.
+4.40 are tested locally. Full-size outcomes and their limitations are in the
+[completed report](pilot_v2/REPORT.md).
 
 ```bash
 python -m experiments.adapter_comparison.prepare \
@@ -113,6 +116,9 @@ python -m experiments.adapter_comparison.plot \
   --results artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
   --summary artifacts/adapter_comparison_v2/analysis_v1/summary.json \
   --output artifacts/adapter_comparison_v2/figures_v1
+python -m experiments.adapter_comparison.posthoc \
+  --results artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
+  --output artifacts/adapter_comparison_v2/posthoc_v1.json
 ```
 
 The verifier's tokenizer must already be cached locally; the figures need optional

@@ -60,6 +60,10 @@ def summarize(root):
         base = read(f"case-{c}-base.json")
         for condition in protocol["conditions"]:
             name = condition["id"]
+            fit = next(r for r in fits if r["case"] == c and r["condition"] == name)
+            targets = fit["metadata"]["targets"]
+            sparse = condition["family"] != "lora"
+            unique_columns = len(set(map(tuple, targets))) if sparse else None
             output = read(f"case-{c}-{name}.json")
             scope = {}
             for bank in ("calibration", "evaluation", "exposed_scope"):
@@ -87,6 +91,12 @@ def summarize(root):
                     "utility_loss_indices": losses,
                     "utility_exact_agreement": sum(
                         b == a for b, a in zip(base["utility"], output["utility"], strict=True)
+                    ),
+                    "trainable_scalars": fit["metadata"]["trainable_scalars"],
+                    "support_occurrences": len(targets) if sparse else None,
+                    "unique_columns": unique_columns,
+                    "unique_weight_coordinates": (
+                        unique_columns * protocol["model_dimensions"]["width"] if sparse else None
                     ),
                 }
             )

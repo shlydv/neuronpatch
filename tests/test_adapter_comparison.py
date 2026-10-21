@@ -322,6 +322,12 @@ def test_complete_worker_restores_base_and_round_trips_adapters(tmp_path, monkey
     assert all(r["roundtrip"]["logits_exact"] for r in fits if r["family"] == "lora")
     summary, decisions = summarize(output)
     assert len(summary["cases"]) == 8 and len(decisions) == 120
+    original_support = next(
+        r for r in summary["cases"] if r["case"] == 0 and r["condition"] == "consensus"
+    )
+    assert original_support["trainable_scalars"] == 64
+    assert original_support["support_occurrences"] == 4
+    assert original_support["unique_weight_coordinates"] == 48
     assert not any(g["advance_counts_pass"] for g in summary["groups"].values())
     from experiments.adapter_comparison.verify import check_results
 

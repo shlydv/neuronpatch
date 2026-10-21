@@ -1204,3 +1204,43 @@ import failure is reproduced locally with Torch2.4.1/PEFT0.11.1. Adding explicit
 setuptools70.3.0 yields12 passing adapter/comparison tests in a clean Python3.11
 environment. Upfront dependency imports now precede model downloads. The retry
 preserves every training setting and input; only runtime packaging changes.
+
+### Completed comparison: simpler sparse selection helps, broad LoRA leads
+
+The [eight-fit comparison](../experiments/adapter_comparison/pilot_v2/REPORT.md)
+is complete and independently verified. With the same correction/calibration
+data, prediction losses, FP32 trainables and 50 updates, saved worst-prompt
+supports achieve 6/6 untrained-wording starts but leak the target to 4/8 other
+subjects. Mean-gradient supports achieve 5/6 and 1/8. Calibration-selected
+broad rank-2 LoRA achieves 6/6 and 0/8; its higher rate is reported but not
+selected. LoRA uses 4,128,768 trainable scalars versus 20,480/81,920, covers
+attention plus incoming/outgoing MLPs and includes the final three layers.
+Capacity, coverage and optimization remain confounded. No sparse superiority.
+
+All 530 generations are decoded and reviewed as 354 distinct contexts. Every
+output hits the40-token cap. Both count-passing methods still have poor tails;
+there is no validated behavior recipe. Prefix scoring misses a false ice formula
+after correct H2O in two sparse conditions, and a later counterfactual country
+insertion under unselected higher-rate LoRA. The selected LoRA has no literal
+target insertion in unrelated banks, but does change unrelated answers.
+Only8/32 unique utility prompts have baseline-reference starts, so retaining
+all16/16 such observations cannot establish general-ability preservation.
+
+The method implication is to stop privileging worst-prompt selection and to
+diagnose the broader baseline before designing another selector. Outgoing
+column edits change a feature's contribution whenever it is active. Incoming
+transformations and attention can change its contextual use; the present result
+does not causally identify that explanation. Reusing frozen selected LoRA
+factors for keep-only/remove-group interventions can test attention, incoming
+MLP and outgoing MLP contributions without retraining. Final-layer coverage
+requires its own check. A group being necessary or sufficient here would be
+conditional on the fitted adapter, not proof of a unique circuit or a generally
+better parameterization. This remains proposed work, not an observed result.
+
+Source-faithful FiNE replication, cross-prompt correction gradients and explicit
+preservation examples provide useful ingredients. They do not by themselves
+identify edits that generalize selectively. NeST/SafeNexus-inspired incoming
+parameterizations remain hypotheses; their official implementations are not
+verified here. Prepared fresh facts and indices>=512 remain uninferred.
+Fresh crossed subject/wording tests, a capable answering model and complete
+responses are required before a useful-library or paper-superiority claim.

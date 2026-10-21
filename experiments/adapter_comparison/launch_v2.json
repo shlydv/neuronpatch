@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "COMPLETE",
   "prepared_utc": "2026-10-21T09:44:50.033180+00:00",
   "kernel": "shlydv/neuronpatch-adapter-comparison-v1-20261021",
   "logical_experiment": "adapter-comparison-v1-20261021",
@@ -15,7 +15,7 @@
   "outer_worker_timeout_seconds": 7500,
   "protocol_change": "Only runtime.setuptools70.3.0; all training settings/data unchanged",
   "preflight_change": "Import full adapter stack before model/tokenizer downloads",
-  "results_status": "Corrected retry running; no completed full comparison yet",
+  "results_status": "All eight fits, independent execution/calibration verification, frozen scores and assistant review of all530 observations complete. No validated behavior recipe.",
   "accepted_version": 2,
   "kernel_id": 139988939,
   "status_checked_utc": "2026-10-21T09:47:34.508343+00:00",
@@ -23,5 +23,19 @@
   "accepted_source_bytes": 237840,
   "dependency_preflight_passed_on_kaggle": true,
   "startup_stage": "STAGE dependency_preflight_complete, then STAGE model_load",
-  "startup_observed_utc": "2026-10-21T09:56:18.715680+00:00"
+  "startup_observed_utc": "2026-10-21T09:56:18.715680+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 3640.744298636,
+  "actual_hardware": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB",
+  "selected_conditions": {
+    "consensus": "consensus",
+    "mean": "mean",
+    "lora": "lora-low"
+  },
+  "local_integrity_record": "artifacts/adapter_comparison_v2/integrity_v1.json",
+  "local_analysis_record": "artifacts/adapter_comparison_v2/analysis_v1/summary.json",
+  "terminal_status_observed_utc": "2026-10-21T10:48:24+00:00",
+  "active_gpu_worker": false,
+  "report": "pilot_v2/REPORT.md",
+  "full_output_review_complete": true
 }

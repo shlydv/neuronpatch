@@ -42,7 +42,7 @@ def training(fits, protocol, output):
             axes[i, 2].annotate(
                 label,
                 (x, y),
-                xytext=(5, 5 if j % 2 == 0 else -12),
+                xytext=(5, -12 if j == 1 else 5),
                 textcoords="offset points",
                 fontsize=7,
             )
