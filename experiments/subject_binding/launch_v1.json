@@ -1,0 +1,19 @@
+{
+  "id": "shlydv/neuronpatch-subject-binding-v1-20261020",
+  "url": "https://www.kaggle.com/code/shlydv/neuronpatch-subject-binding-v1-20261020",
+  "last_status": "NOT_SUBMITTED",
+  "accepted_versions": 0,
+  "submitted_source_bytes": 222066,
+  "submitted_source_sha256": "619b9e4cde4111f315c001be8cc254e4b6faef18686226170384ecd95ef268a1",
+  "new_fits": 6,
+  "checks_before_submission": {
+    "pytest_passed": 165,
+    "pytest_skipped": 2,
+    "six_new_tests_pass_pinned_transformers_440": true,
+    "46_payload_hashes_verified": true,
+    "isolated_pinned_import_passed": true,
+    "target_boundaries_and_subject_splits_verified": true
+  },
+  "previous_worker_status": "Scope-v1 COMPLETE, revalidated before submission",
+  "note": "One bounded worker; no overlap. Do not resubmit after observer disconnects. Frozen fixed supports, six zero-initialized fits; choose penalty from merged-model training/calibration only."
+}
