@@ -22,6 +22,7 @@ def check_results(root, inputs, protocol, cold, tokenizer=None):
     assert (
         identity["protocol"] == protocol and identity["fingerprint"] == protocol["base_fingerprint"]
     )
+    assert identity["torch"].split("+")[0] == protocol["runtime"]["torch"]
     assert completion["status"] == "complete" and completion["new_fits"] == 6
     assert completion["weights_restored"] and completion["selection_uses_calibration_only"]
     assert completion["final_fingerprint"] == protocol["base_fingerprint"]
@@ -67,6 +68,10 @@ def check_results(root, inputs, protocol, cold, tokenizer=None):
             )
             assert tensors["target_log_probabilities"].shape[0] == len(case["train_prompts"])
             assert tensors["target_log_probabilities"].shape[1] > 0
+            if tokenizer is not None:
+                assert tensors["target_log_probabilities"].shape[1] == len(
+                    tokenizer.encode(" " + case["target"], add_special_tokens=False)
+                )
             assert (tensors["target_log_probabilities"] <= 0).all()
             recomputed = statistics(
                 tensors["logits"], reference, tensors["target_log_probabilities"], lengths

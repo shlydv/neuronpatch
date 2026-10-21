@@ -26,7 +26,10 @@ class Tokenizer:
         tokens = [7, 8] if text == " new answer" else [3, 4, 5]
         if "other" in text:
             tokens = [3, 9, 6, 2]
-        return torch.tensor([tokens])
+        return torch.tensor([tokens]) if kwargs.get("return_tensors") == "pt" else tokens
+
+    def decode(self, tokens, skip_special_tokens=True):
+        return str([t for t in tokens if not skip_special_tokens or t != self.eos_token_id])
 
 
 def model_and_config():
@@ -177,7 +180,7 @@ def test_complete_tiny_worker_replays_artifacts_and_restores_base(tmp_path, monk
             pad_token_id=tok.eos_token_id,
         )
         tokens = generated[0, ids.shape[1] :].tolist()
-        return {"text": str(tokens), "tokens": tokens, "truncated": False}
+        return {"text": tok.decode(tokens), "tokens": tokens, "truncated": False}
 
     cases, cold = [], []
     for case in (0, 1):
@@ -231,6 +234,7 @@ def test_complete_tiny_worker_replays_artifacts_and_restores_base(tmp_path, monk
         "model": "tiny",
         "revision": "test",
         "base_fingerprint": before,
+        "runtime": {"torch": torch.__version__.split("+")[0]},
         "preservation_weights": [0.0, 1.0, 10.0],
         "runtime_limit_seconds": 60,
         "new_fits": 6,
@@ -260,10 +264,18 @@ def test_complete_tiny_worker_replays_artifacts_and_restores_base(tmp_path, monk
     assert not summary["advance_counts_pass"]
     from experiments.subject_binding.verify import check_results
 
-    checks = check_results(output, inputs, protocol, cold)
+    checks = check_results(output, inputs, protocol, cold, tokenizer)
     assert (
         checks["output_sequences_checked"] == 424 and checks["calibration_records_recomputed"] == 6
     )
+    identity_path = output / "identity.json"
+    original_identity = identity_path.read_text()
+    identity = json.loads(original_identity)
+    identity["torch"] = "0.0.0"
+    identity_path.write_text(json.dumps(identity))
+    with pytest.raises(AssertionError):
+        check_results(output, inputs, protocol, cold, tokenizer)
+    identity_path.write_text(original_identity)
     fits = json.loads((output / "fits.json").read_text())
     fits[0]["final"]["nll"] += 0.1
     (output / "fits.json").write_text(json.dumps(fits))
@@ -286,3 +298,21 @@ def test_saved_calibration_metrics_average_prompts_equally_with_unequal_windows(
         float((token_kl[0] + token_kl[1:].mean()) / 2), abs=1e-12
     )
     assert actual["max_answer_kl"] == pytest.approx(float(token_kl.max()), abs=1e-12)
+
+
+def test_review_deduplication_preserves_question_and_reference_context():
+    from experiments.subject_binding.review import group_outputs
+
+    base = {
+        "prompt": "Country of Alice?",
+        "reference_answers": ["Oldland"],
+        "output": {"text": " Newland", "tokens": [4, 9], "truncated": False},
+    }
+    records = [
+        {**base, "condition": "base"},
+        {**base, "condition": "edited"},
+        {**base, "condition": "edited", "prompt": "Country of Bob?"},
+        {**base, "condition": "edited", "reference_answers": ["Otherland"]},
+    ]
+    groups = group_outputs(records)
+    assert len(groups) == 3 and sorted(len(g["occurrences"]) for g in groups) == [1, 1, 2]

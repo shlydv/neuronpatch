@@ -91,3 +91,23 @@ The independent decode requires the cached pinned Transformers 4.40 tokenizer.
 Raw generated text remains in local artifacts; do not republish fabricated
 personal allegations as examples. Public decisions must disclose omitted text
 and the resulting limits on independent rescoring.
+
+Independent postprocessing also checks the actual recorded Torch version and
+target-token lengths. Utility reporting includes total prefix hits and exact
+continuation changes, alongside lost baseline-correct answers; changed text is
+not uniformly damage. These additions do not change the submitted worker,
+penalty selection, labels or advancement criteria. The selector's AST was
+checked identical to the frozen upload before reading new evaluation outputs.
+
+`review.py` builds a private packet covering all 424 saved continuations. It
+deduplicates only identical question/reference/output contexts, retaining every
+condition occurrence. An identical answer to a different question remains a
+separate review item. Review all distinct contexts before interpreting complete
+answer quality. Plot learning/calibration separately from unseen-subject results:
+
+```sh
+python -m experiments.subject_binding.review \
+  --results /path/to/binding-results/results --output /tmp/private-review.json
+python -m experiments.subject_binding.plot \
+  --fits /path/to/binding-results/results/fits.json --output /tmp/binding-fit.png
+```

@@ -66,6 +66,14 @@ def summarize(root):
                 )
                 if prefix_hit(b["text"], p["gold"]) and not prefix_hit(a["text"], p["gold"])
             ]
+            utility_before = sum(
+                prefix_hit(b["text"], p["gold"])
+                for p, b in zip(inputs["utility"], base["utility"], strict=True)
+            )
+            utility_after = sum(
+                prefix_hit(a["text"], p["gold"])
+                for p, a in zip(inputs["utility"], edited["utility"], strict=True)
+            )
             rows.append(
                 {
                     "case": c,
@@ -73,6 +81,11 @@ def summarize(root):
                     "transfer": transfer,
                     "scope": counts,
                     "utility_loss_indices": losses,
+                    "utility_baseline_hits": utility_before,
+                    "utility_edited_hits": utility_after,
+                    "utility_exact_agreement": sum(
+                        b == a for b, a in zip(base["utility"], edited["utility"], strict=True)
+                    ),
                 }
             )
     groups = {}
@@ -106,6 +119,14 @@ def summarize(root):
                 r["scope"]["evaluation"]["baseline_reference_prefix"] for r in chosen
             ),
             "utility_losses": [[r["case"], i] for r in chosen for i in r["utility_loss_indices"]],
+            **{
+                name: sum(r[name] for r in chosen)
+                for name in (
+                    "utility_baseline_hits",
+                    "utility_edited_hits",
+                    "utility_exact_agreement",
+                )
+            },
         }
     checks = None
     if selected is not None:
