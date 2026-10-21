@@ -1,0 +1,16 @@
+{
+  "observed_utc": "2026-10-21T19:18:13.269010+00:00",
+  "status": "Early running observations only; no full-grid or held-out accuracy result",
+  "base_capability_gate": "Passed before fitting; exact coverage counts await downloaded artifacts",
+  "case": 0,
+  "condition": "paired_mean-43-1",
+  "last_logged_sampled_pre_update_task_nll": 2.9125621949788183e-05,
+  "merged_all_training_mean_nll": 2.7183677509713284,
+  "merged_worst_training_token_nll": 13.25000205964168,
+  "merged_target_validation_nll": 1.1968392174686358,
+  "low_rate_merged_task_mean_nll": 1.0489840383974702e-07,
+  "reload_and_restore_checks_passed": true,
+  "interpretation": "These compare a sampled prompt before an update with all prompts after export. They do not prove that merging caused the loss. Stochastic cycling, final optimizer momentum and FP16 merge rounding remain distinct hypotheses.",
+  "missing_evidence": "The worker checks live/reloaded teacher tensors exactly but does not save their pre-merge values. Only merged tensors are exported, so a later saved-adapter replay would be needed to separate endpoint optimization from merge effects.",
+  "next_action": "Finish and verify the fixed grid first. Do not alter the running worker or infer a general paired-update failure from one high-rate condition."
+}

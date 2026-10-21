@@ -1378,3 +1378,16 @@ No completed comparison or quality conclusion is available. Post-submission,
 only independent input-byte verification is tightened; the accepted worker,
 protocol, examples, scoring, rates and supports remain unchanged. Four targeted
 checks pass for that verifier addition; source2e888fe's CI is green.
+
+Early [running notes](../experiments/paired_mlp/running_notes_v1.json) record a
+high-rate caveat: sampled pre-update loss is tiny, but the final merged model's
+mean loss over all training wordings is2.718. These are different prompts and
+model states, so this does not establish merge damage. Cyclic optimization,
+momentum and FP16 rounding remain separate hypotheses. Pre-merge endpoint tensors
+are checked for reload identity but not saved; replaying the saved adapter after
+the fixed grid, if necessary, would distinguish them. No worker settings change.
+
+The private review helper now covers every base/edited answer with full system
+and user messages, accepted answers and EOS/special-token metadata. Tiny FP32
+and FP16 workers cover286 observations each and verify packet completeness;
+packet creation remains explicitly different from completed qualitative review.

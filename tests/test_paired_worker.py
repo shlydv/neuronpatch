@@ -5,6 +5,7 @@ import pytest
 import torch
 
 from experiments.paired_mlp.prepare import protocol
+from experiments.paired_mlp.review import packet
 from experiments.paired_mlp.run import BANKS, execute
 from experiments.paired_mlp.verify import verify
 from neuronpatch.patch import fingerprint
@@ -97,6 +98,10 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     verified = verify(tmp_path / "run", spec, tokenizer)
     assert verified["fits"] == verified["teacher_records_recomputed"] == 24
     assert verified["decoded"] == 286
+    review = packet(tmp_path / "run")
+    assert review["observations"] == 286
+    assert sum(len(item["occurrences"]) for item in review["items"]) == 286
+    assert not review["full_output_review_complete"]
     path = tmp_path / "run/fits.json"
     fits = json.loads(path.read_text())
     fits[0]["metrics"]["task_mean_nll"] += 0.01
