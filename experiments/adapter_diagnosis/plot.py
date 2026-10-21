@@ -13,15 +13,18 @@ def figure(summary, protocol, output):
     assert not summary.get("partial"), (
         "Complete the frozen grid before plotting aggregate denominators"
     )
-    labels = [
-        n.replace("full", "Full adapter")
-        .replace("only-", "Only ")
-        .replace("without-", "Without ")
-        .replace("final-three", "final 3 layers")
-        .replace("incoming", "incoming MLP")
-        .replace("outgoing", "outgoing MLP")
-        for n in names
-    ]
+    label_by_name = {
+        "full": "Full learned update",
+        "only-attention": "Only attention updates",
+        "without-attention": "MLP input + output updates",
+        "only-incoming": "Only MLP input updates",
+        "without-incoming": "Attention + MLP output updates",
+        "only-outgoing": "Only MLP output updates",
+        "without-outgoing": "Attention + MLP input updates",
+        "only-final-three": "Only final 3 layer updates",
+        "without-final-three": "Except final 3 layer updates",
+    }
+    labels = [label_by_name[n] for n in names]
     fig, axes = plt.subplots(2, 2, figsize=(12, 9), layout="constrained")
     cases = sorted({r["case"] for r in summary["cases"]})
     assert len(cases) == 2
@@ -69,7 +72,8 @@ def figure(summary, protocol, output):
         "Which parts of the frozen LoRA patch retain correction and preservation?", fontsize=14
     )
     fig.supxlabel(
-        "No refitting or new settings. Two exposed facts; groups have unequal sizes and norms.\n"
+        "Base components always run. No refitting. Two exposed facts; "
+        "groups have unequal sizes and norms.\n"
         "Dashed lines: calibration eligibility bounds. "
         "Prefix scores are not complete-answer quality.",
         fontsize=9,

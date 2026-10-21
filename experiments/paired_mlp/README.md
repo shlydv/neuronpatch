@@ -1,8 +1,10 @@
 # Paired neuron updates with complete-response supervision
 
 **Implementation and tokenizer checks only. No pretrained behavioral result.**
-The pending frozen GPT-J finisher must be consolidated before another GPU
-experiment. Its source and outcomes are independent of this new implementation.
+The [frozen GPT-J finisher](../adapter_diagnosis/complete_v1/REPORT.md) is now
+complete, independently verified and consolidated. Its source and outcomes are
+independent of this new implementation. No paired pretrained experiment has
+started yet.
 
 The [completed projection-family comparisons](../adapter_diagnosis/partial_v1/REPORT.md)
 motivate testing incoming and outgoing updates together. They do not show that

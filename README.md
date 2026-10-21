@@ -48,9 +48,11 @@ this is not a parameter-matched efficiency result. All 530 capped generations
 are verified and reviewed. Correct prefixes still hide later errors, and the
 weak base makes utility retention an insufficient quality check. These are two
 exposed development facts, not a validated recipe. The
-[frozen-adapter group diagnostic](experiments/adapter_diagnosis/README.md) now
-tests which additional projection groups the successful LoRA patch needs,
-without refitting or consuming fresh facts. See its launch record for status.
+[complete frozen-adapter group diagnostic](experiments/adapter_diagnosis/complete_v1/REPORT.md)
+verifies18 interventions and1060 outputs without refitting or consuming fresh
+facts. Paired MLP updates preserve6/6 requested starts but still produce bad
+tails. Final-three-only updates give0/6; excluding them retains6/6. This narrows
+the next design, not a validated recipe.
 
 The [experimental paired-MLP implementation](experiments/paired_mlp/README.md)
 now supports matching incoming rows and outgoing columns with FP32 deltas,

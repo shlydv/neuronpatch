@@ -1323,3 +1323,23 @@ budget arithmetic, not a frozen trial or equal-compute claim. First test on
 exposed development inputs with complete correction/preservation responses and
 multiple random supports; reserve fresh cases for actual confirmation. The
 overall goal remains unmet and no pretrained paired-update result exists.
+
+### Frozen grid complete: final-layer updates are not the missing explanation
+
+The [finisher](../experiments/adapter_diagnosis/complete_v1/REPORT.md) completes
+with return0 after24.7minutes. Independent verification checks1060 decoded
+observations,212 exact replay controls,20 calibration records and all18
+interventions, including exact copied-source provenance. Review covers240
+contexts:227 exactly inherited and13 newly read. Zero new fits or fresh-bank
+observations are consumed. Source and protocol remain frozen.
+
+Final-three-only produces0/6 untrained target starts; without-final-three
+retains6/6, worst NLL.002811/.033598 and no measured target leaks. Thus the
+learned final-three-layer updates are not required for this fitted adapter's
+measured correction. Their exclusion in the older sparse editor is not a
+sufficient explanation of the gap. This says nothing general about excluding
+them during training. Full and without-final-three pass the conditional count
+gate; neither is a complete-answer quality pass. New outputs still add
+unrequested history/repetition. Paired train-from-zero updates, full response
+supervision and comparable LoRA/random budgets remain the next empirical test;
+the implementation and CI pass, but behavioral advantage remains unproven.

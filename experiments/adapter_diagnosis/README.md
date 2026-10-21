@@ -1,21 +1,25 @@
 # Which learned update groups make the LoRA edit selective?
 
-**Status: verified partial results; original worker timed out at our one-hour bound.**
-Sixteen of eighteen interventions finish. Independent verification checks 954
-decoded observations, 212 exact controls and 18 calibration records.
-All 954 available continuations are reviewed as 227 exact contexts. Their
-prefix successes still conceal fabricated continuations; no subset is a recipe.
-The two remaining final-layer conditions will be completed from the
-[hash-bound resume](resume_v1.json), with fresh exact controls and no refitting.
-See [partial report](partial_v1/REPORT.md), [launch identity](launch_v1.json) and
-[pre-inference freeze](frozen_v1.json). The full grid and output review remain incomplete.
-The corrected [finisher version2](launch_finish_v2.json) is accepted with valid
-input sources and queued. Its source is unchanged; a private checkpoint dataset
-replaces the rejected failed-notebook input. See [delivery details](finish_delivery_v2.json).
+**Status: COMPLETE and independently verified.** All18 interventions,1060 decoded
+observations,212 exact controls and20 reconstructed calibration records pass
+verification. All240 distinct output contexts are reviewed. Prefix successes
+still conceal fabricated continuations; no subset is a validated recipe.
+See the [complete report](complete_v1/REPORT.md). The original worker timed out
+after16 interventions; its [partial report](partial_v1/REPORT.md) is preserved.
+The corrected [finisher version2](launch_finish_v2.json) uses the
+[hash-bound resume](resume_v1.json), repeats exact controls and computes only the
+missing pair. Its source is unchanged; a private checkpoint dataset replaces
+the rejected failed-notebook input. See [delivery details](finish_delivery_v2.json).
 The completed [parent comparison](../adapter_comparison/pilot_v2/REPORT.md)
 favors broad low-rate LoRA over our outgoing-neuron patches. This diagnostic
 reuses those exact calibration-selected factors; it does not refit adapters,
 try new rates, change formatting or consume the eight-fact fresh bank.
+
+Final-three-only retains0/6 untrained target starts; excluding final-three
+updates retains6/6 and passes the confidence bounds. MLP incoming/outgoing
+updates together also retain6/6 starts, but narrowly miss one confidence bound
+and can reintroduce harmful fabricated tails. The evidence motivates testing
+paired training and complete responses, not shipping a pruned adapter.
 
 The question is whether the broader baseline needs attention, incoming MLP
 updates, outgoing MLP updates or the final three layers to retain correction

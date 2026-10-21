@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "COMPLETE",
   "source_revision": "dfbb01ab2b6df8e6044acbb5525ebbb1008196ba",
   "source_sha256": "6f68fb20222181e6a127cffb3fab60d3d602de6374958615c57321520f409d7d",
   "script_bytes": 246977,
@@ -14,8 +14,9 @@
   "kernel_id": 140062463,
   "accepted_version": 2,
   "accepted_source_byte_identical": true,
-  "status_checked_utc": "2026-10-21T17:59:59.501367+00:00",
+  "status_checked_utc": "2026-10-21T18:27:20.499749+00:00",
   "delivery_record": "finish_delivery_v2.json",
   "input_validation_rejected_sources": [],
-  "results_status": "Version2 allocated and running; pinned dependency preflight passed and worker reached model_load after validating the private checkpoint hashes. No completed finisher results yet."
+  "results_status": "Version2 completed return0. All18 interventions/1060 outputs independently verified;212 exact replay controls; all240 output contexts reviewed. No new fits. See complete_v1/REPORT.md.",
+  "result_report": "complete_v1/REPORT.md"
 }

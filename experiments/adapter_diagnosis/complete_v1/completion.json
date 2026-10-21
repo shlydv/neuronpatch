@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "new_fits": 0,
+  "new_training_steps": 0,
+  "interventions": 18,
+  "controls_exact": true,
+  "weights_restored": true,
+  "final_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+  "resumed": true,
+  "copied_interventions": 14,
+  "new_interventions_this_worker": 4,
+  "new_observed_continuations": 318
+}

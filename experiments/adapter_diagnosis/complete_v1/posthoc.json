@@ -1,0 +1,583 @@
+{
+  "status": "Post-hoc diagnostics; frozen primary scoring and selection unchanged",
+  "limitations": "Literal case-insensitive target substrings anywhere in the capped continuation, absent from its paired base output. Not semantic aliases, correct attribution, or proof of factual damage. Utility prefix hits are not whole-answer quality.",
+  "rows": [
+    {
+      "case": 0,
+      "condition": "full",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        12,
+        14,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "only-attention",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "without-attention",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "only-incoming",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "without-incoming",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "only-outgoing",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "without-outgoing",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "only-final-three",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": "without-final-three",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "full",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        4,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30,
+        31
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "only-attention",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "without-attention",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        4,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "only-incoming",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "without-incoming",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        4,
+        9,
+        10,
+        12,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "only-outgoing",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        12,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "without-outgoing",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "only-final-three",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        9,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": "without-final-three",
+      "utility_baseline_hit_indices": [
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "utility_edited_hit_indices": [
+        4,
+        9,
+        10,
+        12,
+        15,
+        21,
+        22,
+        24,
+        25,
+        26,
+        29,
+        30
+      ],
+      "new_literal_target_mention_indices": {
+        "calibration": [],
+        "evaluation": [],
+        "exposed_scope": [],
+        "utility": []
+      }
+    }
+  ]
+}

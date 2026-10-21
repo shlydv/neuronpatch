@@ -1,5 +1,9 @@
 # One-hour bound reached after sixteen of eighteen interventions
 
+**Historical partial checkpoint.** The [complete frozen grid](../complete_v1/REPORT.md)
+is now verified, including the two missing conditions. The timeout and partial
+evidence below remain unchanged as the original execution record.
+
 The original worker is terminal **ERROR**, return 1, because our 3600-second
 runtime bound raises `TimeoutError` before the next intervention. Kaggle ran
 the requested job; this is not a queue or free-plan failure. The wrapper took

@@ -1,0 +1,205 @@
+{
+  "source": {
+    "status": "Verified prefix of frozen grid; missing suffix only, not new settings",
+    "partial_kernel": "shlydv/neuronpatch-frozen-adapter-diagnosis-v1-20261021",
+    "partial_kernel_version": 1,
+    "partial_source_sha256": "7fb054bfb65908f9f820c04d36add34475657bcde8f442deb59b0ed99590c317",
+    "partial_integrity_sha256": "1c406163f65632cc24db03372a7bf9a69ba00a36b3f4d58f7cd89e7b3f2cf509",
+    "file_sha256": {
+      "base-metrics.json": "a52e7f787adb34bddc7da822b8bea9f2727d96fe1a4beb2ef8d4d5a0114c5750",
+      "case-0-base-calibration.safetensors": "54db1fdde8b4a4000a623bd1aacaa257694260b41732a8afaca84152f04c6392",
+      "case-0-base.json": "2427ed4cd02a4ff8946190b3ef55823f23319388e2fe5942fd84fcc7f012efd3",
+      "case-0-calibration-base.safetensors": "54e77dbaac168176930420157b567b1f1a2e7dc2887dce960b38f76eb8d7e1b3",
+      "case-0-full-calibration.safetensors": "05b4b8f97df215a18c2c2b1f6427f79c864708d7d17610071eedec7b1b6c7cac",
+      "case-0-full.json": "9e8b3fe36d5db087d98765c9f8086a951eb6636a5f5c370032a575081b47103f",
+      "case-0-only-attention-calibration.safetensors": "5310a37627a8270c696d64c596da3a91b3c687292650f5403630cc865d472517",
+      "case-0-only-attention.json": "f68e72d905cc9fad68d51d63351f39848393e199382e54e6f043d6f2148e26e3",
+      "case-0-only-final-three-calibration.safetensors": "58c84c8c48b7c4e3d05a8dec4bb51e1d0f3a3e993df79cf3ec3b028ee8a65009",
+      "case-0-only-final-three.json": "e7ed5a6b871a65b9ea550933b0133d6b9f7ca55780b2cdf9470b62bd59bc2360",
+      "case-0-only-incoming-calibration.safetensors": "3cf1487d6783a9ba13e84e8b0f305d6f0eb18051fe51e658271914f88a811a2d",
+      "case-0-only-incoming.json": "35195ea073711077c63afde023d48333e439fb3649d66ea008073771a4b91e9e",
+      "case-0-only-outgoing-calibration.safetensors": "c1980e0e287a254c2d931f6d7c1dc1f752e4122e423f13dabe3d9db985e86e7b",
+      "case-0-only-outgoing.json": "b0082dfcf9b1b0520a6441008f1a9ddea539942e27e2daea5ad3cc9b2a18609b",
+      "case-0-without-attention-calibration.safetensors": "2a070b01473d47a8ba15aaef47b4dea9e4ce204308eb501a966c96a25080f235",
+      "case-0-without-attention.json": "fcc70417287ec191636135d3d1f3e2899211760c4b6e276b724edf4a7fdfc5ea",
+      "case-0-without-final-three-calibration.safetensors": "be6c7920631ebdca6e5ce2c3aa6836e76c4169e68e1e0ded8707bbaff61dbf9e",
+      "case-0-without-final-three.json": "003d3b9d86529de52251cdd28d5cf5551cd8bddce82aec71d10c88ce97d2c044",
+      "case-0-without-incoming-calibration.safetensors": "218ad8b1fc13a9247bda9a92ba85a41cd18dba5fc75bf4824c53074b4d3c5428",
+      "case-0-without-incoming.json": "b8de66da6b3e24bac3b092c431da89860592a867de4b3300521da1570fd20c89",
+      "case-0-without-outgoing-calibration.safetensors": "1fa5be78ac401472f8a255fb8b69b8afd8e085efc844a340331c620ef13a8caa",
+      "case-0-without-outgoing.json": "8c1552d9fe0e640e14220bdad2be5b5693dd1bcab9d45bb1cf342f58f80e89a7",
+      "case-1-base-calibration.safetensors": "9df44f4bec1a832173fcaafa5b35f02709c4e1f3f0a57f0aceb9a93237179f5e",
+      "case-1-base.json": "380834157a5494cd1811a15f56554b260bc69b0cfa23ccd198014d50064b16b5",
+      "case-1-calibration-base.safetensors": "f09de8ad72384f19095bf11c4a28d0ec6ca12ec3844c13425e252d9f8630bede",
+      "case-1-full-calibration.safetensors": "0112e3d91bd13ca16b12d0180fa8463d965a6b6456d38ebef84822c5657b251c",
+      "case-1-full.json": "756d4539944615872bb56084ec555b0f9b95da6e3adfc62b8035048ffa6fc48d",
+      "case-1-only-attention-calibration.safetensors": "e0db39716aa61aae87769f995f2d5a0ffb8cd57322de599b530f8ea667ee37a6",
+      "case-1-only-attention.json": "64cf7ad91c210a25fe9fd0d133c605c78decffa88b663da2d016701236868486",
+      "case-1-only-incoming-calibration.safetensors": "95fb8a88c259ea5420aa93503878d7ff5e73bcf7213282be764dfc7e705388f1",
+      "case-1-only-incoming.json": "9dee7e4e756e75cefa91c2deb54072150a66304c2259732a037be588c1bb3442",
+      "case-1-only-outgoing-calibration.safetensors": "a66d42f6f5756fa46b60d97ba48454da8ed43c816bf82015e28089d9f010e79f",
+      "case-1-only-outgoing.json": "89f12078f10db117277467771bcf99172ec957031d212f78e6fc4c340400576a",
+      "case-1-without-attention-calibration.safetensors": "269bcd9316b62d053ee0be2db566b7b12c40a92a1b008ef41d0d4e0a7297885a",
+      "case-1-without-attention.json": "53f4c82aa3352cbfc93afa6b54384dd45e872602eff5b70ad2b0a3b6b820a15e",
+      "case-1-without-incoming-calibration.safetensors": "7977cc74b6d5d7c46b7ffa41ced0e84c6862641e80d6c65e8f032ee46a6659b9",
+      "case-1-without-incoming.json": "d0678b73b69a718d9db381e0198da9094b6f85b4dd8511598671e22e3d914bed",
+      "case-1-without-outgoing-calibration.safetensors": "f8e817f7fb969ab923de1cdcf7b975397567dc7d5c6159e769ee1e91ac6d135a",
+      "case-1-without-outgoing.json": "2396d2d52492d16caac4c7db5550d503d1daa008989343bcf025498384bb3eac",
+      "controls.json": "b43a985368e4cfb1186ee4cf640b0e3d4b68f6df77d5dbbdd7b63d7619f9427d",
+      "identity.json": "5ecdd679a1b8bab6ea29bd10e863cfc9f13bebf5890a5258a04feccc1abfd119",
+      "inputs.json": "2385d43c5b75446529a7cd9ad8f04aa7d3bc556f95c71f73276688e9c20cdb95",
+      "interventions.json": "aca198eb19479b0582b348fce894bcd469bfebbdb9312d89243ad13a79576faa",
+      "snapshot.json": "542a9134cb26b2764c4f8a625615f54dbcb1ef6bd4d8ac88d2e7804d7a35ea68"
+    },
+    "completed_interventions": 16,
+    "remaining_interventions": [
+      {
+        "case": 1,
+        "condition": "only-final-three"
+      },
+      {
+        "case": 1,
+        "condition": "without-final-three"
+      }
+    ],
+    "repeated_control_observations": 212,
+    "new_ablation_observations": 106,
+    "new_fits": 0,
+    "partial_submission": {
+      "base_revision": "6d92ba5b26ed355ff186b05ea3e92f4317a6cb1f",
+      "file_sha256": {
+        "src/neuronpatch/patch.py": "1a920d73ba2666e25c96c7bb6b0e259a75cd55f2a94ff496ae127576ba76c989",
+        "src/neuronpatch/editing.py": "0c5ffee3e968c9aaf9dfef6c074ac8d60b22166acc305254b82ad93fbb2cf5e9",
+        "src/neuronpatch/occurrence.py": "ddca0d90a861e720bd95629887dc0ed927915b8cbb55c48642cd0809fe649253",
+        "src/neuronpatch/__init__.py": "481e1020c907623d6888cf5104d90f4b5ff60dff43691694ebd05ca299f2977e",
+        "src/neuronpatch/activation.py": "3d9eb8a3ecd2339ec70ce293ac34b970a920fd5b8dfc81de1f1d11db652828d5",
+        "src/neuronpatch/contribution.py": "57d2905ffe86cdae4e1b37e402fb0e981ae6ff0ff7e94b23e57fa5aa11643252",
+        "src/neuronpatch/losses.py": "daca2898bd97f92d19b54937ce7c92c834c467cb0f1ff2e82b591fd4f9626238",
+        "src/neuronpatch/selection.py": "a0125d7dde9e296a3da3a4a2b50d9a1eed20e13a61a596c8762f64184f2053f9",
+        "src/neuronpatch/layers.py": "a5911b9404305ac4f6e4db23681fe51553fc8ce8de22f505e3c390c1de880c05",
+        "src/neuronpatch/grouped.py": "05e082b2424f30465f54e62720d9740868a5fa2861bdb1f10b3e9f6b98fe0999",
+        "src/neuronpatch/knowledge.py": "6bbaf20ef311abd99e5c952b042cb702818bcb017b1820fb99c6591ddf7bae0e",
+        "experiments/adapter_diagnosis/build.py": "7220018e2438181f58b9a99bd8cb078712b47eb415fa98b0bbb6692cf0a95712",
+        "experiments/adapter_diagnosis/run.py": "d8f7c8b0f028305761cd0f76938fc6cdd10c30c90d8eed8ad6feb4586bb027de",
+        "experiments/adapter_diagnosis/__init__.py": "ff44d1b204ac03a4563ccfe6ebcd0d8d27628343ad66f356bfbd19987fe0a065",
+        "experiments/adapter_diagnosis/groups.py": "09ff6caef7c3be1966a37b7fc4dc8656227dfeb058d952dbbe96a5882f0939f5",
+        "experiments/adapter_diagnosis/verify.py": "ab3fc90067336e4edeb3b265c91e167281a9f7bde42fa7d23e11cffa6354ec4b",
+        "experiments/adapter_diagnosis/prepare.py": "2d4d56d32201c6d13611833476ce68de89667a240a6ae6bab1402b013534affd",
+        "experiments/adapter_comparison/build.py": "961ab4d3333d10765082f1a72172186c7ca4b3b56c095dcba1bc5d0caac93997",
+        "experiments/adapter_comparison/run.py": "4e80091ab2103ba6c59a43cfddc877251ed6d0200b51c2b2387225d91de80aea",
+        "experiments/adapter_comparison/plot.py": "c81ee51d352ef566e2b2a984afb4355473258dd8dea64b538f86f3c7a6bb58ac",
+        "experiments/adapter_comparison/fit.py": "493a639fbb58f48d707beb8d510f33c4d55e12dcf2f0cb0529a3714da728a268",
+        "experiments/adapter_comparison/analysis.py": "b90c497668d879388c86d583f32cd9fb5d65222c2a1b753812be1c284ed532f2",
+        "experiments/adapter_comparison/__init__.py": "44c2b0589e35d228cbc01f52eb44ad13b3dc099998509811c0891b489a5c4a29",
+        "experiments/adapter_comparison/posthoc.py": "81df3cdf56e98a3c303978faea5c99167f8730747f2837b777d66cb4411618be",
+        "experiments/adapter_comparison/review.py": "3b3bc742b1eb481801ce80588b3d00c17096987bf0639e2a6a465cbf59781e94",
+        "experiments/adapter_comparison/verify.py": "451e50726ce1552c6b324717ccf7e518253b5f8760f702d0608e3ed0f3f94b01",
+        "experiments/adapter_comparison/prepare.py": "23c3345427836177df306157b9a7536fdbc1d92214b7392e8469fd5015e6f4f1",
+        "experiments/subject_binding/build.py": "6d6ae119cdafc2924392fc0fc9a4e7a8f36ea4a22119b0bd71569e03f5d1d1b3",
+        "experiments/subject_binding/measure.py": "93fd94fee6749f0fe5fd5ff34c9606f68d8ef71e8fa26a0cbeb58b2730130322",
+        "experiments/subject_binding/run.py": "45131d4a2dcf5a5e4c453fc158de1706387332b662b871985c55bbb5bf62d676",
+        "experiments/subject_binding/plot.py": "004d2ae62cde904b17a27c0755040f82ad4e9a18aeddfdad33d1f45db68dc0bf",
+        "experiments/subject_binding/fit.py": "9a408da58ed048c6c0227fcd6f3c142d610b0122c59261c55374c0a0f958c562",
+        "experiments/subject_binding/analysis.py": "544b08373fe848444601d4e7f544888bc1b588a0a2c1fe31354648bafec997d9",
+        "experiments/subject_binding/__init__.py": "df7609e8d5084639ded28cd56f3410010dfa5243f934b98ecfe6b3b32669a466",
+        "experiments/subject_binding/review.py": "1265928a0a1a838ccee926551c1e0ddf59ce6bc2be752a06a6c532f2bb301274",
+        "experiments/subject_binding/geometry.py": "30446c0db116e77ae9bb63705dc6767e3d262f753322ba7259010c4dc97d8377",
+        "experiments/subject_binding/plot_behavior.py": "eaf1d6c4feab3fc908080d7c2b25b40c3a47c2344d2627c29756a7dc2688987d",
+        "experiments/subject_binding/verify.py": "fd5ab9138a9b0d44ad735996e0250b0d4b55939da549121301c3f809409d31aa",
+        "experiments/subject_binding/prepare.py": "f3653c25eb73f518a7f5e0f3fff2f87828b15b11c43089f23608804dd16b5a75",
+        "experiments/fine_transfer/prepare_fresh.py": "6a93fde0a90fcff45240670125ac5a58c8224565eeafc40a362412570a2ebb55",
+        "experiments/fine_transfer/gradient_controls.py": "e0a433316c3715480a2e9b8dea23e4c65cf22b58398eba46dea8a69698847dcb",
+        "experiments/fine_transfer/build.py": "81c31dab73c69f9ffc1fefd656da5aed4c1560b3563d33baa18d2086dd5d4bf7",
+        "experiments/fine_transfer/run.py": "ae144abb0c0d4b4baeb630fafb5398cd8c68f88276585c64a50dde900f9bc03a",
+        "experiments/fine_transfer/plot.py": "65c8d6fc6074cd0dcfd432daf1ac5e5eee2794d0c740b1a2517425047f208e50",
+        "experiments/fine_transfer/fit.py": "7e5ad81b742de8b93072d7c4746f432d8897392253f18946ef3be11e193e85ed",
+        "experiments/fine_transfer/lora_control.py": "997aef4a3b7a6177d21986eedf555235afe9e1867b58c386c916a62c4d6070a3",
+        "experiments/fine_transfer/prepare_scope_run.py": "aad2095e13cd64cfd314b232dca90477d73b0e585454c520e1c32cc035875848",
+        "experiments/fine_transfer/gradient.py": "4a81dea8f9783981a2aa6ffa0889c312429d019efc933bff9907f9787f43f6eb",
+        "experiments/fine_transfer/verify_scope.py": "e7dd9b9ffd3935d93cff011566445c506d6988b5cffc057d433af1ed1376e452",
+        "experiments/fine_transfer/delta_geometry.py": "506668372850f6b47fae197ab1cc8c814110612ea00c53e797e477a2d8faa053",
+        "experiments/fine_transfer/prepare_scope.py": "7eb596f57c20be11bc8f1bf7320da3ebf505b64d416ce47d047bb0cd89f41e43",
+        "experiments/fine_transfer/scope_analysis.py": "14c0635f829dc57f7f9009f79b9dd96b00485b17ab21aec35bb7a0d92d0fd208",
+        "experiments/fine_transfer/verify.py": "817a259de30301d477df29f87673cb7510bd6b549228411e8c31832c89785c7a",
+        "experiments/fine_transfer/build_scope.py": "b29e73a0e1cbb0b65d943644138829bb0e2a1a84970d050b4a86dcca0b31ab14",
+        "experiments/fine_transfer/plot_scope.py": "43192ab5f4768fef491da7f28eb128f9d9f5ad9da2faa392a3b6f59571c06b11",
+        "experiments/fine_transfer/scope.py": "1ee87a9c4d51e329a8ba986ece0e065b8b5941eabee5c12b1f9b51deaaa44980",
+        "experiments/fine_transfer/prepare.py": "98580f5695350cd63a98234039ae74f356335adff48046b6280ddde1cceb65b7",
+        "experiments/fine_transfer/analyze.py": "7d26dd153f5b34d4542ac52588481def6a877498e923fb8f152eafbdc12bfaa4",
+        "experiments/fine_reference/analyze.py": "ab7d3e3b033f116617a34bc6dc7addabaca986db46ef48a2a4078fa6bc54e479",
+        "experiments/fine_reference/audit_generations.py": "98c53cf94ed31b1bc4b019c4e8d073b72c303715823c82fed5ca2fdb3f136c78",
+        "data/protocol.json": "545fa19d6ca9b72da9aa3a42eb393326a32c0c19263ed4ac6a334c176e27713c"
+      },
+      "scope": "Frozen selected adapters;18 merged interventions, zero new fits"
+    }
+  },
+  "copied_interventions": [
+    {
+      "case": 0,
+      "condition": "only-attention"
+    },
+    {
+      "case": 0,
+      "condition": "without-attention"
+    },
+    {
+      "case": 0,
+      "condition": "only-incoming"
+    },
+    {
+      "case": 0,
+      "condition": "without-incoming"
+    },
+    {
+      "case": 0,
+      "condition": "only-outgoing"
+    },
+    {
+      "case": 0,
+      "condition": "without-outgoing"
+    },
+    {
+      "case": 0,
+      "condition": "only-final-three"
+    },
+    {
+      "case": 0,
+      "condition": "without-final-three"
+    },
+    {
+      "case": 1,
+      "condition": "only-attention"
+    },
+    {
+      "case": 1,
+      "condition": "without-attention"
+    },
+    {
+      "case": 1,
+      "condition": "only-incoming"
+    },
+    {
+      "case": 1,
+      "condition": "without-incoming"
+    },
+    {
+      "case": 1,
+      "condition": "only-outgoing"
+    },
+    {
+      "case": 1,
+      "condition": "without-outgoing"
+    }
+  ],
+  "full_controls_regenerated": true,
+  "remaining_interventions": [
+    {
+      "case": 1,
+      "condition": "only-final-three"
+    },
+    {
+      "case": 1,
+      "condition": "without-final-three"
+    }
+  ]
+}

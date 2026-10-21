@@ -1,0 +1,1792 @@
+{
+  "groups": {
+    "full": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": true,
+      "original": 2,
+      "untrained": 6,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 20,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": true
+    },
+    "only-attention": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 1,
+      "untrained": 2,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 42,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "without-attention": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 2,
+      "untrained": 6,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 26,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "only-incoming": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 1,
+      "untrained": 3,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 48,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "without-incoming": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 2,
+      "untrained": 5,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 25,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "only-outgoing": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 1,
+      "untrained": 1,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 31,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "without-outgoing": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 2,
+      "untrained": 5,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 40,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "only-final-three": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": false,
+      "original": 0,
+      "untrained": 0,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 51,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": false
+    },
+    "without-final-three": {
+      "available_cases": 2,
+      "complete_condition": true,
+      "training_calibration_bounds_pass": true,
+      "original": 2,
+      "untrained": 6,
+      "calibration_leaks": 0,
+      "evaluation_leaks": 0,
+      "exposed_scope_leaks": 0,
+      "lost_evaluation_references": 0,
+      "utility_losses": [],
+      "utility_exact_agreement": 23,
+      "untrained_denominator": 6,
+      "evaluation_denominator": 8,
+      "conditional_count_pass": true
+    }
+  },
+  "cases": [
+    {
+      "case": 0,
+      "condition": "full",
+      "metrics": {
+        "nll": 0.0008709213580004871,
+        "answer_kl": [
+          0.0008457408859056073,
+          0.0008480201581026959,
+          0.00012859816183148566,
+          0.000276743563015467,
+          0.0015644480377547002,
+          0.0008376984019762522,
+          6.769180728260918e-05,
+          6.924609781002399e-05,
+          0.0013035607490580205,
+          0.000602671663013676,
+          0.00011365690738879405,
+          0.00013119665796703902
+        ],
+        "mean_answer_kl": 0.0005657727575921976,
+        "max_answer_kl": 0.0015644480377547002,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 4128768,
+      "fraction_of_full_target_nll_improvement": 1.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 6,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 13
+    },
+    {
+      "case": 0,
+      "condition": "only-attention",
+      "metrics": {
+        "nll": 0.8204400539398193,
+        "answer_kl": [
+          0.0005805829824057432,
+          0.00013540190151744636,
+          3.323173850823882e-05,
+          9.812464857090423e-05,
+          0.0020932024999556617,
+          0.0006265741237007694,
+          2.0022894513690474e-05,
+          0.00010417760788881611,
+          0.0008544565192694315,
+          0.00021293303161581663,
+          5.522013170351596e-05,
+          0.0001294165886821931
+        ],
+        "mean_answer_kl": 0.00041194538902768565,
+        "max_answer_kl": 0.0020932024999556617,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 1835008,
+      "fraction_of_full_target_nll_improvement": 0.9199667659031354,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 24
+    },
+    {
+      "case": 0,
+      "condition": "without-attention",
+      "metrics": {
+        "nll": 0.009989623911678791,
+        "answer_kl": [
+          0.0009731056033146561,
+          0.0006969842363340546,
+          0.00011847509698984871,
+          0.00015880561670511724,
+          0.00036525956461399796,
+          0.0004697785453463482,
+          4.901367584478301e-05,
+          8.734391055663696e-05,
+          0.0005873922389747813,
+          0.0003586548260105082,
+          5.60216678358571e-05,
+          4.2844845561858404e-05
+        ],
+        "mean_answer_kl": 0.000330306652340704,
+        "max_answer_kl": 0.0009731056033146561,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 2293760,
+      "fraction_of_full_target_nll_improvement": 0.999109533012988,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 6,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 17
+    },
+    {
+      "case": 0,
+      "condition": "only-incoming",
+      "metrics": {
+        "nll": 0.39809224009513855,
+        "answer_kl": [
+          0.0003157105589583972,
+          7.516356254508126e-05,
+          3.235786645907837e-05,
+          2.4254100527463227e-05,
+          0.00031366311026252485,
+          8.652864752179567e-05,
+          3.5982282946778795e-05,
+          1.910239813900788e-05,
+          0.0002721856792794941,
+          8.365655481441998e-05,
+          4.029481779685266e-05,
+          4.620032949954542e-05
+        ],
+        "mean_answer_kl": 0.00011209165906253661,
+        "max_answer_kl": 0.0003157105589583972,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 1146880,
+      "fraction_of_full_target_nll_improvement": 0.9612102194593317,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 26
+    },
+    {
+      "case": 0,
+      "condition": "without-incoming",
+      "metrics": {
+        "nll": 0.009844443760812283,
+        "answer_kl": [
+          0.0008426440291150494,
+          0.0006513223715304542,
+          0.00010849520701000214,
+          0.00015252351698062444,
+          0.002388657784250895,
+          0.000908228276962718,
+          3.1268130039561245e-05,
+          7.22840029888939e-05,
+          0.0012247198976083162,
+          0.0004005136949419624,
+          5.237412593957539e-05,
+          7.960564201640766e-05
+        ],
+        "mean_answer_kl": 0.0005760530566153717,
+        "max_answer_kl": 0.002388657784250895,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 2981888,
+      "fraction_of_full_target_nll_improvement": 0.9991237102636171,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 6,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 15
+    },
+    {
+      "case": 0,
+      "condition": "only-outgoing",
+      "metrics": {
+        "nll": 1.5568583011627197,
+        "answer_kl": [
+          0.0005305145954240477,
+          0.0005250275929185595,
+          4.8727490492592e-05,
+          7.466750079594534e-05,
+          0.00035462592738636336,
+          0.00033697392348442897,
+          4.883340183639345e-05,
+          6.657547656626055e-05,
+          0.00045287122246931736,
+          0.00024214679647170103,
+          4.121988849560749e-05,
+          4.547452515788527e-05
+        ],
+        "mean_answer_kl": 0.00023063819512492514,
+        "max_answer_kl": 0.0005305145954240477,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 1146880,
+      "fraction_of_full_target_nll_improvement": 0.848053449954393,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": false
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 17
+    },
+    {
+      "case": 0,
+      "condition": "without-outgoing",
+      "metrics": {
+        "nll": 0.0030939350835978985,
+        "answer_kl": [
+          0.0006371143982865177,
+          0.0002505520292144323,
+          5.498878550705454e-05,
+          0.00018044909618613117,
+          0.0014605320591202806,
+          0.0004857988967353821,
+          6.157003103227391e-05,
+          7.77487442460516e-05,
+          0.0011104510871586155,
+          0.0003937051387514044,
+          8.347890489542541e-05,
+          0.0001915054148066632
+        ],
+        "mean_answer_kl": 0.00041565788216168603,
+        "max_answer_kl": 0.0014605320591202806,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 2981888,
+      "fraction_of_full_target_nll_improvement": 0.9997829164486213,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 6,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 21
+    },
+    {
+      "case": 0,
+      "condition": "only-final-three",
+      "metrics": {
+        "nll": 6.532910346984863,
+        "answer_kl": [
+          0.00015912539990841062,
+          1.8490500406533722e-05,
+          1.3855218484874028e-05,
+          2.510087953795225e-05,
+          3.3458216256456634e-05,
+          1.854186218408786e-05,
+          1.6995804557683885e-05,
+          7.892101813866594e-06,
+          7.313143587143838e-05,
+          1.9140636138518608e-05,
+          5.57986269491299e-05,
+          7.997379285907516e-06
+        ],
+        "mean_answer_kl": 3.7460671782905e-05,
+        "max_answer_kl": 0.00015912539990841062,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 442368,
+      "fraction_of_full_target_nll_improvement": 0.3621279527277052,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": false
+        },
+        {
+          "kind": "rephrase",
+          "hit": false
+        },
+        {
+          "kind": "train/1",
+          "hit": false
+        },
+        {
+          "kind": "train/2",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 26
+    },
+    {
+      "case": 0,
+      "condition": "without-final-three",
+      "metrics": {
+        "nll": 0.0028109345585107803,
+        "answer_kl": [
+          0.0008329245301768092,
+          0.0008657776688428523,
+          0.00011272474857048492,
+          0.0002504576923111476,
+          0.0015855426402975323,
+          0.0008040411537957746,
+          4.6014258288950595e-05,
+          6.673073382404556e-05,
+          0.0013799667566745128,
+          0.0006144513724350518,
+          6.213609717619717e-05,
+          9.671050834568137e-05
+        ],
+        "mean_answer_kl": 0.0005597898467282534,
+        "max_answer_kl": 0.0015855426402975323,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 3686400,
+      "fraction_of_full_target_nll_improvement": 0.9998105522469614,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 6,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 15
+    },
+    {
+      "case": 1,
+      "condition": "full",
+      "metrics": {
+        "nll": 0.0007931424188427627,
+        "answer_kl": [
+          0.003776667559440292,
+          0.0005500591248789296,
+          0.0005065289745421761,
+          0.0018889165830602798,
+          0.0014995608789911928,
+          0.00022847748251133984,
+          0.0004832585683498653,
+          0.001179234264225571,
+          0.0031882373578176926,
+          0.002319744003670198,
+          0.00018752581172972192,
+          0.0006376866866595341
+        ],
+        "mean_answer_kl": 0.0013704914413230661,
+        "max_answer_kl": 0.003776667559440292,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 4128768,
+      "fraction_of_full_target_nll_improvement": 1.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 7
+    },
+    {
+      "case": 1,
+      "condition": "only-attention",
+      "metrics": {
+        "nll": 8.513372421264648,
+        "answer_kl": [
+          0.003187887294819709,
+          0.00015117344090190363,
+          0.0002765333160261394,
+          0.0009786585450177589,
+          0.001382791431706189,
+          5.879888469088785e-05,
+          0.00021285021494313978,
+          0.0005778716999455791,
+          0.0020018517106630725,
+          0.0011108641263259268,
+          0.0001268570281329051,
+          6.414461389700097e-05
+        ],
+        "mean_answer_kl": 0.000844190192255851,
+        "max_answer_kl": 0.003187887294819709,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 1835008,
+      "fraction_of_full_target_nll_improvement": 0.6102471181743478,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": false
+        },
+        {
+          "kind": "rephrase",
+          "hit": false
+        },
+        {
+          "kind": "train/1",
+          "hit": false
+        },
+        {
+          "kind": "train/2",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 3,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 3
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 18
+    },
+    {
+      "case": 1,
+      "condition": "without-attention",
+      "metrics": {
+        "nll": 0.14139138162136078,
+        "answer_kl": [
+          0.006203284736149298,
+          0.0004189233571916494,
+          0.0005438991018571807,
+          0.0023910208381702387,
+          0.00294072467954361,
+          0.0003734488724766371,
+          0.00048115037481836326,
+          0.0015451689678251772,
+          0.005713671286617125,
+          0.0036455375915659576,
+          0.0002196884262648762,
+          0.000593698213765016
+        ],
+        "mean_answer_kl": 0.002089184703853761,
+        "max_answer_kl": 0.006203284736149298,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 2293760,
+      "fraction_of_full_target_nll_improvement": 0.9935626362922727,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 9
+    },
+    {
+      "case": 1,
+      "condition": "only-incoming",
+      "metrics": {
+        "nll": 7.458756446838379,
+        "answer_kl": [
+          0.001166130772066766,
+          0.00012111813159340103,
+          7.272165284930758e-05,
+          0.0002559484279591245,
+          0.000809574217472402,
+          6.045994730015573e-05,
+          7.76054565231883e-05,
+          0.00013705148687358747,
+          0.0013124477253561423,
+          0.001272378754227408,
+          0.0001725291045024537,
+          6.804980810753134e-05
+        ],
+        "mean_answer_kl": 0.00046050129040262235,
+        "max_answer_kl": 0.0013124477253561423,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 1146880,
+      "fraction_of_full_target_nll_improvement": 0.6585332605746261,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": false
+        },
+        {
+          "kind": "rephrase",
+          "hit": false
+        },
+        {
+          "kind": "train/1",
+          "hit": false
+        },
+        {
+          "kind": "train/2",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 3,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 8,
+          "retained_baseline_reference_prefix": 3
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 22
+    },
+    {
+      "case": 1,
+      "condition": "without-incoming",
+      "metrics": {
+        "nll": 0.6255176663398743,
+        "answer_kl": [
+          0.0027003084553393055,
+          0.00046355764000107543,
+          0.0003669413878179396,
+          0.002060917567262774,
+          0.0010419579303874722,
+          0.00022904930511861207,
+          0.00047119410995729617,
+          0.0012780546069577244,
+          0.003258494659048977,
+          0.002381033514765297,
+          0.0003539903523049389,
+          0.0006155060188915602
+        ],
+        "mean_answer_kl": 0.0012684171289877478,
+        "max_answer_kl": 0.003258494659048977,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 2981888,
+      "fraction_of_full_target_nll_improvement": 0.9713966618612926,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 10
+    },
+    {
+      "case": 1,
+      "condition": "only-outgoing",
+      "metrics": {
+        "nll": 4.926217079162598,
+        "answer_kl": [
+          0.005949189577874152,
+          0.000432347281024976,
+          0.0005358199171489276,
+          0.0031668284615020744,
+          0.002536977820321536,
+          0.0002920428573397872,
+          0.00048450498884053915,
+          0.0016702003657871399,
+          0.007359864578258841,
+          0.004667267871836371,
+          0.0005466813071749153,
+          0.0005269994454693578
+        ],
+        "mean_answer_kl": 0.0023473937060482183,
+        "max_answer_kl": 0.007359864578258841,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 1146880,
+      "fraction_of_full_target_nll_improvement": 0.7744868963124402,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": false
+        },
+        {
+          "kind": "rephrase",
+          "hit": false
+        },
+        {
+          "kind": "train/1",
+          "hit": false
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 14
+    },
+    {
+      "case": 1,
+      "condition": "without-outgoing",
+      "metrics": {
+        "nll": 1.9242652654647827,
+        "answer_kl": [
+          0.004605372294270351,
+          0.0002717844416850546,
+          0.0004211896444061678,
+          0.0014284179754743376,
+          0.002028447866112175,
+          0.0001293669632396956,
+          0.0002923973488735314,
+          0.000698667034907001,
+          0.004358711101498415,
+          0.0030107397371276546,
+          0.0004302572666566545,
+          4.426500380071729e-05
+        ],
+        "mean_answer_kl": 0.0014766347231709796,
+        "max_answer_kl": 0.004605372294270351,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 2981888,
+      "fraction_of_full_target_nll_improvement": 0.9119328257028454,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 3,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 3,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 3
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 19
+    },
+    {
+      "case": 1,
+      "condition": "only-final-three",
+      "metrics": {
+        "nll": 13.703155517578125,
+        "answer_kl": [
+          0.0005002917292192979,
+          4.540931019459847e-05,
+          8.466296947603271e-05,
+          6.318209468796879e-05,
+          0.0005075183642608604,
+          2.9943242303231022e-05,
+          5.730588307382371e-05,
+          0.00015421107769845077,
+          0.000668348699162968,
+          0.0004021517173952269,
+          5.3487307638881564e-05,
+          4.559432130351069e-05
+        ],
+        "mean_answer_kl": 0.0002176755597012376,
+        "max_answer_kl": 0.000668348699162968,
+        "answer_argmax_retained": 12,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 442368,
+      "fraction_of_full_target_nll_improvement": 0.3726301924953321,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": false
+        },
+        {
+          "kind": "rephrase",
+          "hit": false
+        },
+        {
+          "kind": "train/1",
+          "hit": false
+        },
+        {
+          "kind": "train/2",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": false
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 3,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 7,
+          "retained_baseline_reference_prefix": 3
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 25
+    },
+    {
+      "case": 1,
+      "condition": "without-final-three",
+      "metrics": {
+        "nll": 0.033597588539123535,
+        "answer_kl": [
+          0.003287534285448753,
+          0.0007458128061952549,
+          0.000398552080847066,
+          0.0016479060138921853,
+          0.0015788104790673053,
+          0.0002790983217326043,
+          0.0003979650528561549,
+          0.0008874317704469716,
+          0.00274542832949228,
+          0.0016384381683368665,
+          0.00013689278017553475,
+          0.00046121238583010345
+        ],
+        "mean_answer_kl": 0.00118375687286009,
+        "max_answer_kl": 0.003287534285448753,
+        "answer_argmax_retained": 11,
+        "calibration_prompts": 3,
+        "calibration_positions": 12
+      },
+      "retained_factor_scalars": 3686400,
+      "fraction_of_full_target_nll_improvement": 0.998498031325964,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 4,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 4
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 3,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 4,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_exact_agreement": 8
+    }
+  ],
+  "full_output_review_complete": true,
+  "partial": false,
+  "interpretation": "Frozen co-trained adapter groups on exposed cases. No refit, best-setting selection, unique circuit or quality claim.",
+  "review_coverage_note": "All1060 capped observations;240 contexts,227 inherited exactly and13 newly read; assistant qualitative review,not blinded human labels."
+}

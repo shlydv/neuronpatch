@@ -1,0 +1,35 @@
+{
+  "source_revision": "f4be5d6885229b4b647ae9fc29b67f4027a2acf8",
+  "scope": "Numerical, integration, tokenizer and packaging checks only; no pretrained paired-adaptation outcome",
+  "local_main_suite": {
+    "command": "HF_HUB_OFFLINE=1 .venv/bin/python -m pytest -q",
+    "passed": 212,
+    "skipped": 2
+  },
+  "core_minimum_suite": {
+    "command": "env -u PYTHONPATH HF_HUB_OFFLINE=1 /private/tmp/neuronpatch-core-minimum/bin/python -m pytest -q",
+    "passed": 181,
+    "skipped": 27,
+    "torch": "2.4.1",
+    "transformers_installed": false,
+    "peft_installed": false
+  },
+  "ruff": {
+    "check": "passed",
+    "format_check": "252 files already formatted"
+  },
+  "packaging": {
+    "sdist": "built",
+    "wheel": "built",
+    "final_paired_supervision_loss_sources_byte_verified_in_wheel": true
+  },
+  "ci": {
+    "url": "https://github.com/shlydv/neuronpatch/actions/runs/39651558075",
+    "conclusion": "success",
+    "jobs": {
+      "cpu (3.10)": "success",
+      "cpu (3.12)": "success",
+      "core-minimum": "success"
+    }
+  }
+}
