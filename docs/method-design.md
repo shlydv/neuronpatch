@@ -1103,3 +1103,10 @@ weighting and complete six-fit tiny-model execution/verification. Full suite:
 165 passed,2 skipped; all six new tests also pass under pinned Transformers4.40.
 These checks establish implementation correctness, not a successful full-size
 method. Strong low-rank and mean-gradient comparisons remain outstanding.
+
+Kaggle accepted version 1, kernel 139969733, and reports RUNNING on2026-10-21 UTC;
+the same worker's HTTP200 log stream reaches model loading. Independently pulled
+source is byte-exact to the registered222066-byte upload (46 hashed payload files).
+The previous scope worker was revalidated COMPLETE before submission. No overlap
+or resubmission occurred. Public frozen source/data identity and protocol precede
+inference; full-size behavioral results remain pending.

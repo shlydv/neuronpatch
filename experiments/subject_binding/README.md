@@ -1,5 +1,11 @@
 # Fixed-support subject binding ablation
 
+The [private Kaggle run](https://www.kaggle.com/code/shlydv/neuronpatch-subject-binding-v1-20261020)
+is accepted as version 1, kernel 139969733, RUNNING on 2026-10-21 UTC. The source
+was independently pulled back and matches the frozen 222066-byte upload exactly.
+Startup has reached model loading; full-size results are pending. The slug and
+protocol retain their original development identifier. See [launch metadata](launch_v1.json).
+
 The [completed scope check](../fine_transfer/scope_v1/REPORT.md) finds that the
 cross-prompt-gradient edit transfers its target to 9/16 other subjects. This
 development experiment tests whether changing the preservation objective can
