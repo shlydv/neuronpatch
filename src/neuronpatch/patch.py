@@ -31,6 +31,16 @@ def fingerprint(model: nn.Module) -> str:
     return digest.hexdigest()
 
 
+def _replace_submodule(model: nn.Module, name: str, replacement: nn.Module) -> None:
+    """Replace an already validated target on supported PyTorch 2.4 as well.
+
+    Module.set_submodule is newer than our minimum dependency. get_submodule
+    plus normal module assignment also handles ModuleList/ModuleDict entries.
+    """
+    parent, _, child = name.rpartition(".")
+    setattr(model.get_submodule(parent), child, replacement)
+
+
 class NeuronPatch:
     """Own patches attached in-place to a model; optimize trainable_parameters().
 
@@ -99,7 +109,7 @@ class NeuronPatch:
                 else (ColumnPatch if axis == "input" else RowPatch)(modules[name], indices)
             )
             layer.train(modules[name].training)
-            model.set_submodule(name, layer)
+            _replace_submodule(model, name, layer)
             self.layers[name] = layer
 
     def trainable_parameters(self):
@@ -117,7 +127,7 @@ class NeuronPatch:
         """
         result = deepcopy(self.model)
         for name in self.targets:
-            result.set_submodule(name, result.get_submodule(name).merged_linear())
+            _replace_submodule(result, name, result.get_submodule(name).merged_linear())
         return result
 
     def save(self, directory: str | Path, *, metadata: dict | None = None) -> None:

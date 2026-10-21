@@ -82,6 +82,10 @@ pytest -q
 python examples/fit_toy.py
 ```
 
+The core recipe is checked on PyTorch 2.4.1 without Transformers or PEFT;
+model-dependent tests skip when those optional packages are absent. A separate
+CI job covers this supported older runtime. See [compatibility checks](docs/compatibility.md).
+
 ## Core API
 
 ```python

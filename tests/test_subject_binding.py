@@ -153,6 +153,7 @@ def test_penalty_choice_requires_both_cases_and_ignores_evaluation_results():
 
 
 def test_complete_tiny_worker_replays_artifacts_and_restores_base(tmp_path, monkeypatch):
+    pytest.importorskip("transformers")
     import hashlib
     import json
     import sys

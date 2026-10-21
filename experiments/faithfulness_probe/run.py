@@ -8,7 +8,6 @@ import time
 from pathlib import Path
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from neuronpatch.patch import fingerprint
 
@@ -37,6 +36,8 @@ def main():
     parser.add_argument("--protocol", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
     protocol = json.loads(args.protocol.read_text())
     source = args.data / "inputs.json"
     assert hashlib.sha256(source.read_bytes()).hexdigest() == protocol["inputs_sha256"]

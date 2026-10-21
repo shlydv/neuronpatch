@@ -117,6 +117,7 @@ def test_random_control_matches_layers_and_duplicate_pattern_without_changing_rn
 
 
 def test_real_gptj_capture_matches_full_weight_gradient_and_removes_hooks():
+    pytest.importorskip("transformers")
     from transformers import GPTJConfig, GPTJForCausalLM
 
     torch.manual_seed(31)
@@ -155,6 +156,7 @@ def test_real_gptj_capture_matches_full_weight_gradient_and_removes_hooks():
 
 
 def test_single_prompt_training_reduces_exactly_to_the_verified_fine_workflow():
+    pytest.importorskip("transformers")
     from copy import deepcopy
 
     from transformers import GPTJConfig, GPTJForCausalLM

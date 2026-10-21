@@ -8,7 +8,6 @@ import time
 from pathlib import Path
 
 import torch
-from transformers import GPT2Tokenizer, GPTJForCausalLM
 
 from neuronpatch.editing import GPTJEditConfig
 from neuronpatch.patch import fingerprint
@@ -134,6 +133,7 @@ def gradient_supports(model, tokenizer, record, config, output):
 
 def main():
     from safetensors.torch import load_file
+    from transformers import GPT2Tokenizer, GPTJForCausalLM
 
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--data", type=Path, required=True)

@@ -96,6 +96,8 @@ def test_official_adapter_training_export_reload_and_merge(tmp_path, dtype):
 
 
 def test_repeated_attachment_and_exact_restoration_after_merging():
+    pytest.importorskip("transformers")
+    pytest.importorskip("peft")
     from experiments.adapter_comparison.run import restore_weights, snapshot_weights
     from experiments.fine_transfer.lora_control import gptj_targets
     from neuronpatch.patch import fingerprint

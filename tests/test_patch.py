@@ -12,6 +12,40 @@ def make_model():
     return nn.Sequential(nn.Linear(5, 9), nn.SiLU(), nn.Linear(9, 3)).double()
 
 
+@pytest.mark.parametrize("axis,shared", [("input", False), ("output", False), ("output", True)])
+def test_nested_patch_round_trip_without_newer_module_replacement_api(
+    tmp_path, monkeypatch, axis, shared
+):
+    # Actual PyTorch2.4 lacks this method; simulate that on newer CI versions too.
+    monkeypatch.delattr(nn.Module, "set_submodule", raising=False)
+
+    class Nested(nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.blocks = nn.ModuleList([nn.Linear(3, 4)])
+            self.heads = nn.ModuleDict({"score": nn.Linear(4, 2)})
+
+        def forward(self, x):
+            return self.heads["score"](self.blocks[0](x).tanh())
+
+    model = Nested().double()
+    fresh = deepcopy(model)
+    targets = {"blocks.0": [0, 2], "heads.score": [1]}
+    groups = {"blocks.0": [0, 0], "heads.score": [0]} if shared else None
+    patch = NeuronPatch(model, targets, axis=axis, groups=groups)
+    with torch.no_grad():
+        for delta in patch.trainable_parameters():
+            delta.fill_(0.037)
+    x = torch.randn(3, 3, dtype=torch.float64)
+    expected = model(x)
+    merged = patch.merged_model()
+    assert type(merged.blocks[0]) is type(merged.heads["score"]) is nn.Linear
+    torch.testing.assert_close(merged(x), expected, atol=1e-12, rtol=1e-12)
+    patch.save(tmp_path / "patch")
+    loaded = NeuronPatch.load(fresh, tmp_path / "patch")
+    torch.testing.assert_close(loaded.model(x), expected, atol=0, rtol=0)
+
+
 def test_forward_and_gradients_match_dense_reference():
     torch.manual_seed(7)
     base = nn.Linear(7, 4).double()

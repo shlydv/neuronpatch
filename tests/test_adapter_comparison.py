@@ -53,6 +53,7 @@ TARGETS = [("transformer.h.0.mlp.fc_out", i) for i in (2, 7, 2, 3)]
 
 
 def test_missing_adapter_dependency_fails_before_model_download(tmp_path, monkeypatch):
+    pytest.importorskip("transformers")
     import json
     import sys
 
@@ -185,6 +186,7 @@ def test_rate_selection_requires_both_cases_and_does_not_receive_evaluation():
 
 
 def test_complete_worker_restores_base_and_round_trips_adapters(tmp_path, monkeypatch):
+    pytest.importorskip("transformers")
     import hashlib
     import json
     import sys

@@ -6,8 +6,6 @@ import json
 import shutil
 from pathlib import Path
 
-from transformers import GPT2Tokenizer
-
 MODEL = "EleutherAI/gpt-j-6B"
 REVISION = "47e169305d2e8376be1d31e765533382721b2cc1"
 DATA_HASH = "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b"
@@ -78,6 +76,8 @@ def main():
     parser.add_argument("--artifacts", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+    from transformers import GPT2Tokenizer
+
     assert hashlib.sha256(args.source.read_bytes()).hexdigest() == DATA_HASH
     args.output.mkdir(parents=True, exist_ok=False)
     source = json.loads(args.source.read_text())
