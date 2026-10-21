@@ -14,6 +14,17 @@ from .grouped import GroupedRowPatch, validate_groups
 from .layers import ColumnPatch, RowPatch, validate_indices
 
 
+def _fingerprint_state(state: Mapping[str, torch.Tensor]) -> str:
+    digest = hashlib.sha256()
+    for name, tensor in sorted(state.items()):
+        header = json.dumps([name, str(tensor.dtype), list(tensor.shape)]).encode()
+        digest.update(len(header).to_bytes(8, "big"))
+        digest.update(header)
+        raw = tensor.detach().cpu().contiguous().reshape(-1).view(torch.uint8).numpy()
+        digest.update(raw.tobytes())
+    return digest.hexdigest()
+
+
 def fingerprint(model: nn.Module) -> str:
     """Hash names, shapes, dtypes and bytes of parameters and persistent buffers.
 
@@ -21,14 +32,7 @@ def fingerprint(model: nn.Module) -> str:
     be expensive on large models. Architecture/tokenizer identity is additional
     caller metadata, not something a weight hash proves.
     """
-    digest = hashlib.sha256()
-    for name, tensor in sorted(model.state_dict().items()):
-        header = json.dumps([name, str(tensor.dtype), list(tensor.shape)]).encode()
-        digest.update(len(header).to_bytes(8, "big"))
-        digest.update(header)
-        raw = tensor.detach().cpu().contiguous().reshape(-1).view(torch.uint8).numpy()
-        digest.update(raw.tobytes())
-    return digest.hexdigest()
+    return _fingerprint_state(model.state_dict())
 
 
 def _replace_submodule(model: nn.Module, name: str, replacement: nn.Module) -> None:

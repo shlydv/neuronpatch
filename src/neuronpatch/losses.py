@@ -1,7 +1,63 @@
-"""Explicitly masked distribution preservation; no implicit causal-token shifting."""
+"""Explicit causal response supervision and masked distribution preservation."""
 
 import torch
 from torch.nn import functional as F
+
+
+def completion_nll(
+    logits: torch.Tensor,
+    input_ids: torch.Tensor,
+    completion_mask: torch.Tensor,
+    attention_mask: torch.Tensor,
+) -> torch.Tensor:
+    """Causal teacher-forced NLL over every explicitly selected response token.
+
+    All masks/IDs are [B,T]; logits are [B,T,V]. completion_mask marks TARGET
+    token positions, unlike preservation_kl's prediction-position mask. This
+    function shifts exactly once: logits[:,t-1] predict input_ids[:,t]. Include
+    the assistant's end-of-turn/EOS token in the completion mask to supervise
+    stopping. Chat templates and tokenization remain caller-owned; there is no
+    implicit EOS, truncation or token-boundary guess.
+
+    Tokens are averaged within each response, then examples equally. Selected
+    targets must be attended and have an attended preceding context token. No
+    direct loss is applied to prompt or padding logits. FP16/BF16 logits are
+    promoted to FP32. This is ordinary SFT, not a new loss or a guarantee about
+    free-running answers.
+    """
+    if (
+        logits.ndim != 3
+        or not logits.is_floating_point()
+        or logits.shape[0] == 0
+        or logits.shape[1] < 2
+        or logits.shape[2] < 2
+        or input_ids.dtype != torch.long
+        or input_ids.shape != logits.shape[:2]
+        or input_ids.device != logits.device
+    ):
+        raise ValueError("floating [B,T,V] logits and same-device int64 [B,T] IDs required")
+    if any(
+        mask.dtype != torch.bool or mask.shape != input_ids.shape or mask.device != logits.device
+        for mask in (completion_mask, attention_mask)
+    ):
+        raise ValueError("same-device bool [B,T] completion and attention masks required")
+    if (
+        completion_mask[:, 0].any()
+        or (completion_mask & ~attention_mask).any()
+        or (completion_mask[:, 1:] & ~attention_mask[:, :-1]).any()
+        or not completion_mask[:, 1:].any(dim=1).all()
+    ):
+        raise ValueError("every response target needs an attended preceding token; exclude padding")
+    dtype = torch.float64 if logits.dtype == torch.float64 else torch.float32
+    losses = []
+    for values, ids, selected in zip(logits[:, :-1], input_ids[:, 1:], completion_mask[:, 1:]):
+        values, ids = values[selected].to(dtype), ids[selected]
+        if not torch.isfinite(values).all() or (ids < 0).any() or (ids >= logits.shape[-1]).any():
+            raise ValueError(
+                "selected prediction logits must be finite and target IDs in vocabulary"
+            )
+        losses.append(F.cross_entropy(values, ids))
+    return torch.stack(losses).mean()
 
 
 def preservation_kl(

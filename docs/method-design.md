@@ -1298,3 +1298,28 @@ desired complete response or its ending. A capable instruction model and
 complete-answer correction/preservation objectives remain necessary tests for
 the intended library application. Fresh facts, crossed inputs and actual
 advantages over appropriate small LoRA/random baselines remain unproven.
+
+### Paired parameterization and complete-response implementation
+
+The [experimental paired MLP primitive](../experiments/paired_mlp/README.md)
+supports explicitly aligned incoming rows/outgoing columns, including both
+gate/up rows in a gated MLP. FP32 deltas, promoted-addition merging, compact
+reload and strict base identity are implemented. Dense nonlinear references
+verify gradients and coordinate locality. A tiny random Qwen3 executes a
+complete-response update and save/reload/merge; this is not behavioral evidence.
+
+The new chat helper requires an exact template prefix and response EOS, rejects
+truncation, and the explicit causal loss covers every desired answer token.
+Four actual pinned Qwen tokenizer checks reproduce their response text and stop
+token exactly. The real check caught Transformers5's changed return_dict default;
+it is now requested explicitly. No instruction-model weights or fresh-bank
+inference were consumed. Qwen3-4B-Instruct-2507 is the existing earlier QA model
+revision, so changing parameterization/objective still needs empirical proof.
+
+The configuration also makes the next budget comparison concrete: rank-one
+gate/up/down LoRA uses1,327,104 scalars;173 paired intermediate indices use
+1,328,640 (0.116% more), exactly equal to519 outgoing-only indices. This is
+budget arithmetic, not a frozen trial or equal-compute claim. First test on
+exposed development inputs with complete correction/preservation responses and
+multiple random supports; reserve fresh cases for actual confirmation. The
+overall goal remains unmet and no pretrained paired-update result exists.

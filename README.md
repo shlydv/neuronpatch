@@ -52,6 +52,12 @@ exposed development facts, not a validated recipe. The
 tests which additional projection groups the successful LoRA patch needs,
 without refitting or consuming fresh facts. See its launch record for status.
 
+The [experimental paired-MLP implementation](experiments/paired_mlp/README.md)
+now supports matching incoming rows and outgoing columns with FP32 deltas,
+complete-response supervision through EOS, compact reload and merge checks.
+This prepares a comparison at similar parameter counts; no pretrained behavioral
+advantage has been demonstrated for it.
+
 ## Direction
 
 The intended workflow is **select → train → evaluate target and preserved behavior

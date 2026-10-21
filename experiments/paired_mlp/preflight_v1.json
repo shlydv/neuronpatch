@@ -1,0 +1,50 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_weights_downloaded": false,
+  "model_inference": false,
+  "config_sha256": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+  "hidden_size": 2560,
+  "intermediate_size": 9728,
+  "num_hidden_layers": 36,
+  "eos_token_id": 151645,
+  "template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+  "budget_example_only_not_frozen_experiment": {
+    "rank_one_gate_up_down_lora_scalars": 1327104,
+    "paired_intermediate_indices_total": 173,
+    "paired_scalars": 1328640,
+    "outgoing_only_indices_at_identical_paired_budget": 519,
+    "relative_count_difference_from_lora": 0.0011574074074074403,
+    "scope": "Count arithmetic only; no selection, training or quality claim"
+  },
+  "checks": [
+    {
+      "response": "Paris.",
+      "prompt_tokens": 23,
+      "response_tokens_including_eos": 3,
+      "decoded_content_exact": true,
+      "stop_id": 151645
+    },
+    {
+      "response": "I do not have enough information.",
+      "prompt_tokens": 23,
+      "response_tokens_including_eos": 8,
+      "decoded_content_exact": true,
+      "stop_id": 151645
+    },
+    {
+      "response": "The revised value is 17.",
+      "prompt_tokens": 23,
+      "response_tokens_including_eos": 9,
+      "decoded_content_exact": true,
+      "stop_id": 151645
+    },
+    {
+      "response": "नमस्ते।",
+      "prompt_tokens": 23,
+      "response_tokens_including_eos": 8,
+      "decoded_content_exact": true,
+      "stop_id": 151645
+    }
+  ]
+}
