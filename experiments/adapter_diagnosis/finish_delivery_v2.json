@@ -1,0 +1,26 @@
+{
+  "status": "Input-delivery correction frozen before version2",
+  "kernel": "shlydv/neuronpatch-frozen-adapter-finish-v1-20261021",
+  "kernel_id": 140062463,
+  "cancelled_version": 1,
+  "cancelled_session_id": 360864821,
+  "cancelled_status": "CANCEL_ACKNOWLEDGED",
+  "reason": "Kaggle rejected the failed partial kernel as an input source",
+  "source_sha256": "6f68fb20222181e6a127cffb3fab60d3d602de6374958615c57321520f409d7d",
+  "script_byte_identical_to_first_finisher": true,
+  "metadata_sha256": "a8fac8617e5d5319af3ead4c4bfc79b0997252af2e3a0e57a59f4bb6957fa7b0",
+  "kernel_sources": [
+    "shlydv/neuronpatch-adapter-comparison-v1-20261021"
+  ],
+  "dataset_sources": [
+    "shlydv/neuronpatch-diagnosis-checkpoint-v1"
+  ],
+  "checkpoint_dataset_id": 12762804,
+  "checkpoint_private": true,
+  "checkpoint_version": 1,
+  "checkpoint_status": "ready",
+  "remote_file_names_and_sizes_match": 44,
+  "byte_hash_check": "Worker requires all44 exact hashes before loading the model; whole-archive API download returned404",
+  "new_fits": 0,
+  "original_protocol_changed": false
+}
