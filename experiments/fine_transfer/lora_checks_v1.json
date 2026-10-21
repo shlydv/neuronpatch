@@ -1,0 +1,50 @@
+{
+  "status": "CPU integration checks only; no full-size LoRA fit or behavior result",
+  "base_architecture": "Tiny actual GPT-J; four blocks, width16, MLP24, vocab19",
+  "checks": {
+    "cases_passed": 6,
+    "base_dtypes": [
+      "float32",
+      "float16"
+    ],
+    "scopes": [
+      "all down projections",
+      "all attention and MLP projections"
+    ],
+    "zero_initial_output_exact": true,
+    "original_weights_and_dtypes_unchanged_during_training": true,
+    "adapter_factors_float32_and_reload_exact": true,
+    "live_reloaded_outputs_exact": true,
+    "merged_outputs_checked_with_declared_tolerances": true,
+    "original_storage_dtype_after_merge": true
+  },
+  "runtime_checks": [
+    {
+      "peft": "0.11.1",
+      "transformers": "4.40.0",
+      "torch": "2.14.1",
+      "device": "CPU"
+    },
+    {
+      "peft": "0.21.2",
+      "transformers": "5.20.1",
+      "torch": "2.14.1",
+      "device": "CPU"
+    }
+  ],
+  "full_suite": {
+    "passed": 171,
+    "skipped": 2
+  },
+  "pinned_config": {
+    "model": "EleutherAI/gpt-j-6B",
+    "revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+    "sha256": "9328fc6e157f344fbbcd8c605a876c1fe2f7441a40a00c3046f4e8f99ab619e6",
+    "layers": 28,
+    "width": 4096,
+    "mlp_width": 16384,
+    "rank2_down_trainable_scalars": 1146880,
+    "rank2_attention_mlp_trainable_scalars": 4128768
+  },
+  "limitations": "No GPU execution, no training objective/tuning protocol, no base checkpoint contract in helpers; larger budgets than neuron patches, not parameter-matched. No cross-version learned-weight parity or model-quality claim."
+}

@@ -249,3 +249,42 @@ candidate needs a separate subject-binding test. No new GPU run is implied.
 python -m experiments.fine_transfer.prepare_fresh \
   --source /path/to/pinned-test_cf.json --output /tmp/fresh-inputs.json
 ```
+
+## Preparing the stronger low-rank comparison
+
+`lora_control.py` attaches official PEFT LoRA to every GPT-J block, with either
+all down projections or all attention and MLP projections. Final layers are
+included. Standard initialization uses Kaiming A, zero B, scale 1 and dropout 0;
+only FP32 adapter factors train, while base weights keep their original dtype.
+This is baseline attachment and artifact verification, not a fitted recipe or
+a frozen training/tuning protocol. The running subject-binding experiment is
+unchanged and no additional GPU worker is launched.
+
+At the [pinned GPT-J-6B config](https://huggingface.co/EleutherAI/gpt-j-6b/resolve/47e169305d2e8376be1d31e765533382721b2cc1/config.json),
+rank 2 trains 1,146,880 scalars for all down
+projections or 4,128,768 for attention plus MLP. These deliberately broad controls
+have much larger budgets than the current sparse patches; report counts, dtypes,
+bytes and total compute rather than calling them parameter-matched. The config
+SHA256 is `9328fc6e157f344fbbcd8c605a876c1fe2f7441a40a00c3046f4e8f99ab619e6`.
+Only this small configuration file was downloaded on the laptop, not model weights.
+
+Six CPU tests pass with both PEFT 0.11.1 / Transformers 4.40.0 and local PEFT
+0.21.2 / Transformers 5.20.1, using local Torch 2.14.1. They cover FP32/FP16 bases,
+zero initial intervention, full target coverage, unchanged base parameters,
+adapter gradients, exact saved-factor/reloaded-live equality and merged-model
+numerical agreement. These are not full-size GPU or cross-version weight-parity
+results. The older PEFT is isolated outside the project environment.
+The checked configurations and limits are recorded in [lora_checks_v1.json](lora_checks_v1.json).
+
+Two compatibility details matter for a fair baseline. Construct FP32 factors
+before reloading them; older loaders can otherwise round saved factors into an
+FP16 base. Merge one projection at a time and preserve its original storage
+dtype; older merging can otherwise promote base weights. Live versus merged
+rounding is still possible, so any future calibration/evaluation protocol must
+specify the deployed form. Base-checkpoint validation remains the runner's
+responsibility; these experimental helpers are not a public patch format.
+
+The future comparison still needs an explicit common correction/preservation
+objective, appropriate regularization for the different parameterizations,
+reasonable calibration-only tuning and fresh evaluation. None is established
+by attaching a broad adapter or making unit tests pass.

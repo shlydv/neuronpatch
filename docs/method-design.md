@@ -1110,3 +1110,23 @@ source is byte-exact to the registered222066-byte upload (46 hashed payload file
 The previous scope worker was revalidated COMPLETE before submission. No overlap
 or resubmission occurred. Public frozen source/data identity and protocol precede
 inference; full-size behavioral results remain pending.
+
+
+### Strong LoRA baseline preparation while the single worker runs
+
+The new experimental `lora_control.py` uses official PEFT rather than a homemade
+low-rank implementation. It covers every GPT-J block, including final layers,
+with down-only or attention-plus-MLP projections. FP32 adapters preserve the base
+dtype; standard zero-B initialization leaves initial outputs unchanged. A pinned
+configuration-only download verifies rank-2 scalar budgets of 1,146,880 and
+4,128,768 respectively. These are larger controls, not parameter-matched ones.
+No new model weights or GPU worker are used for this preparation.
+
+Tests catch and guard older-loader FP32-factor rounding and older-merge base-dtype
+promotion. Reconstruct FP32 factors before official load_adapter, and merge one
+projection at a time before unloading its wrappers. Six CPU checks pass in both
+PEFT 0.11.1/Transformers 4.40 and PEFT 0.21.2/Transformers 5.20, using local Torch 2.14.
+Saved factors and reloaded live outputs match exactly on these fixtures; merged
+outputs use declared numerical tolerances. No full-size or cross-version training
+parity is claimed. A fair objective, calibration tuning and fresh GPU comparison
+remain required; this work does not turn the negative scope result into success.
