@@ -1,0 +1,141 @@
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.2/17.2 MB 93.5 MB/s eta 0:00:00
+warning: The `--system` flag has no effect, `uv venv` always ignores virtual environments when finding a Python interpreter; did you mean `--no-managed-python`?
+Downloading cpython-3.11.17-linux-x86_64-gnu (download) (29.4MiB)
+ Downloaded cpython-3.11.17-linux-x86_64-gnu (download)
+Using CPython 3.11.17
+Creating virtual environment at: /tmp/fine-transfer-env
+Activate with: source /tmp/fine-transfer-env/bin/activate
+Using Python 3.11.17 environment at: /tmp/fine-transfer-env
+Resolved 39 packages in 351ms
+Downloading hf-xet (4.0MiB)
+Downloading transformers (8.6MiB)
+Downloading nvidia-cublas-cu12 (391.6MiB)
+Downloading triton (199.7MiB)
+Downloading nvidia-cusolver-cu12 (118.4MiB)
+Downloading networkx (2.0MiB)
+Downloading nvidia-cuda-cupti-cu12 (13.5MiB)
+Downloading nvidia-nccl-cu12 (168.1MiB)
+Downloading nvidia-cusparse-cu12 (186.9MiB)
+Downloading nvidia-curand-cu12 (53.9MiB)
+Downloading tokenizers (3.4MiB)
+Downloading sympy (6.0MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading torch (760.2MiB)
+Downloading numpy (17.4MiB)
+Downloading nvidia-nvjitlink-cu12 (37.9MiB)
+Downloading nvidia-cufft-cu12 (116.0MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+ Downloaded networkx
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded sympy
+ Downloaded transformers
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded numpy
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded triton
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 39 packages in 1m 26s
+Installed 39 packages in 261ms
+ + accelerate==0.30.1
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + filelock==4.2.4
+ + fsspec==2026.9.0
+ + hf-xet==1.7.0
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + jinja2==3.1.6
+ + markupsafe==3.0.4
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==1.26.4
+ + nvidia-cublas-cu12==12.1.3.1
+ + nvidia-cuda-cupti-cu12==12.1.105
+ + nvidia-cuda-nvrtc-cu12==12.1.105
+ + nvidia-cuda-runtime-cu12==12.1.105
+ + nvidia-cudnn-cu12==9.1.0.70
+ + nvidia-cufft-cu12==11.0.2.54
+ + nvidia-curand-cu12==10.3.2.106
+ + nvidia-cusolver-cu12==11.4.5.107
+ + nvidia-cusparse-cu12==12.1.0.106
+ + nvidia-nccl-cu12==2.20.5
+ + nvidia-nvjitlink-cu12==12.9.86
+ + nvidia-nvtx-cu12==12.1.105
+ + packaging==26.3
+ + psutil==7.2.2
+ + pyyaml==6.0.3
+ + regex==2026.9.29
+ + requests==2.34.2
+ + safetensors==0.6.2
+ + sympy==1.14.0
+ + tokenizers==0.19.1
+ + torch==2.4.1
+ + tqdm==4.70.1
+ + transformers==4.40.0
+ + triton==3.0.0
+ + typing-extensions==4.16.0
+ + urllib3==2.8.0
+STAGE model_load
+/tmp/fine-transfer-env/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+COLD_VERIFIED 0
+COLD_VERIFIED 1
+STAGE cold_complete_before_new_probes
+FIT_START 0 0.0
+BIND_TRAIN 0.0 1 {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'norm': 0.0, 'mean_answer_kl': -7.4193113874798655e-09, 'max_prompt_mean_answer_kl': 1.697594420591031e-08, 'total': 10.24162769317627}
+BIND_TRAIN 0.0 10 {'step': 10, 'nll': 4.528763771057129, 'prefix_kl': 0.013965997844934464, 'repetition': 0.001036189729347825, 'norm': 0.0908203125, 'mean_answer_kl': 0.05298612266778946, 'max_prompt_mean_answer_kl': 0.06608341634273529, 'total': 4.634586334228516}
+BIND_TRAIN 0.0 20 {'step': 20, 'nll': 0.9508339166641235, 'prefix_kl': 0.05144371837377548, 'repetition': 0.0021702880039811134, 'norm': 0.1640625, 'mean_answer_kl': 0.2746940453847249, 'max_prompt_mean_answer_kl': 0.3303779661655426, 'total': 1.1685104370117188}
+BIND_TRAIN 0.0 30 {'step': 30, 'nll': 0.16335740685462952, 'prefix_kl': 0.08364181220531464, 'repetition': 0.0026820364873856306, 'norm': 0.2138671875, 'mean_answer_kl': 0.5558959245681763, 'max_prompt_mean_answer_kl': 0.6381322741508484, 'total': 0.4635484218597412}
+BIND_TRAIN 0.0 40 {'step': 40, 'nll': 0.053705450147390366, 'prefix_kl': 0.0858229324221611, 'repetition': 0.002558814361691475, 'norm': 0.236328125, 'mean_answer_kl': 0.783135732014974, 'max_prompt_mean_answer_kl': 0.9181659817695618, 'total': 0.3784153163433075}
+BIND_TRAIN 0.0 50 {'step': 50, 'nll': 0.025382136926054955, 'prefix_kl': 0.07128949463367462, 'repetition': 0.0023481466341763735, 'norm': 0.244140625, 'mean_answer_kl': 0.887722889582316, 'max_prompt_mean_answer_kl': 1.0875378847122192, 'total': 0.34316039085388184}
+FIT_RESTORED 0 0.0 final {'nll': 0.024483805522322655, 'answer_kl': [2.102329538417475, 1.3376030529508542, 0.16429453826259288, 0.23637905896277228, 3.0849433342621966, 0.9813736219981426, 0.08606534739632964, 0.2298861055456515, 1.3033895496574877, 0.9051921664304305, 0.12149035964210184, 0.14651379533865116], 'mean_answer_kl': 0.8916217057387238, 'max_answer_kl': 3.0849433342621966, 'answer_argmax_retained': 6, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 1.0
+BIND_TRAIN 1.0 1 {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'norm': 0.0, 'mean_answer_kl': -7.4193113874798655e-09, 'max_prompt_mean_answer_kl': 1.697594420591031e-08, 'total': 10.241627685756958}
+BIND_TRAIN 1.0 10 {'step': 10, 'nll': 4.527018070220947, 'prefix_kl': 0.013685534708201885, 'repetition': 0.0010250624036416411, 'norm': 0.0908203125, 'mean_answer_kl': 0.04628996799389521, 'max_prompt_mean_answer_kl': 0.05546676367521286, 'total': 4.678839253882567}
+BIND_TRAIN 1.0 20 {'step': 20, 'nll': 0.9641127586364746, 'prefix_kl': 0.048489853739738464, 'repetition': 0.0019147233106195927, 'norm': 0.1630859375, 'mean_answer_kl': 0.15594319005807242, 'max_prompt_mean_answer_kl': 0.21614006161689758, 'total': 1.3335464348395665}
+BIND_TRAIN 1.0 30 {'step': 30, 'nll': 0.18969328701496124, 'prefix_kl': 0.07316729426383972, 'repetition': 0.0021341340616345406, 'norm': 0.208984375, 'mean_answer_kl': 0.1869029775261879, 'max_prompt_mean_answer_kl': 0.29427438974380493, 'total': 0.6608820930123329}
+BIND_TRAIN 1.0 40 {'step': 40, 'nll': 0.08229798823595047, 'prefix_kl': 0.0688219964504242, 'repetition': 0.0020331835839897394, 'norm': 0.228515625, 'mean_answer_kl': 0.14623941232760748, 'max_prompt_mean_answer_kl': 0.23886559903621674, 'total': 0.5279082184036573}
+BIND_TRAIN 1.0 50 {'step': 50, 'nll': 0.04927399009466171, 'prefix_kl': 0.053174939006567, 'repetition': 0.0018916776170954108, 'norm': 0.232421875, 'mean_answer_kl': 0.09419066955645879, 'max_prompt_mean_answer_kl': 0.14986643195152283, 'total': 0.43095315744479495}
+FIT_RESTORED 0 1.0 final {'nll': 0.04769517853856087, 'answer_kl': [0.1734679256160047, 0.06139144898989836, 0.01119724707161705, 0.016031990258887165, 0.4395258012719197, 0.11176370001856792, 0.0056140121020024905, 0.01641273463507009, 0.16635297393383525, 0.04232382816451895, 0.011766134873289825, 0.02959970519964774], 'mean_answer_kl': 0.0904539585112716, 'max_answer_kl': 0.4395258012719197, 'answer_argmax_retained': 10, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 0 10.0
+BIND_TRAIN 10.0 1 {'step': 1, 'nll': 10.241230964660645, 'prefix_kl': -4.230071848354555e-09, 'repetition': 0.0003969751705881208, 'norm': 0.0, 'mean_answer_kl': -7.4193113874798655e-09, 'max_prompt_mean_answer_kl': 1.697594420591031e-08, 'total': 10.241627618983156}
+BIND_TRAIN 10.0 10 {'step': 10, 'nll': 4.6356282234191895, 'prefix_kl': 0.012723474763333797, 'repetition': 0.0009563115308992565, 'norm': 0.08984375, 'mean_answer_kl': 0.018615700614949066, 'max_prompt_mean_answer_kl': 0.03141997382044792, 'total': 4.925308960800369}
+BIND_TRAIN 10.0 20 {'step': 20, 'nll': 1.0757783651351929, 'prefix_kl': 0.04233935475349426, 'repetition': 0.0016349265351891518, 'norm': 0.158203125, 'mean_answer_kl': 0.046190823738773666, 'max_prompt_mean_answer_kl': 0.07721394300460815, 'total': 1.7398640078802903}
+BIND_TRAIN 10.0 30 {'step': 30, 'nll': 0.23011468350887299, 'prefix_kl': 0.05858634039759636, 'repetition': 0.0018334643682464957, 'norm': 0.201171875, 'mean_answer_kl': 0.03886301629245281, 'max_prompt_mean_answer_kl': 0.05297410488128662, 'total': 0.8803365342319012}
+BIND_TRAIN 10.0 40 {'step': 40, 'nll': 0.10256200283765793, 'prefix_kl': 0.05268087983131409, 'repetition': 0.0018193598370999098, 'norm': 0.21875, 'mean_answer_kl': 0.02408527582883835, 'max_prompt_mean_answer_kl': 0.03021972067654133, 'total': 0.6166649907827377}
+BIND_TRAIN 10.0 50 {'step': 50, 'nll': 0.062472593039274216, 'prefix_kl': 0.041160084307193756, 'repetition': 0.001685414812527597, 'norm': 0.224609375, 'mean_answer_kl': 0.014994680881500244, 'max_prompt_mean_answer_kl': 0.02109714411199093, 'total': 0.47987428307533264}
+FIT_RESTORED 0 10.0 final {'nll': 0.060494016855955124, 'answer_kl': [0.02799182515253565, 0.011227056156509202, 0.0024847786027697577, 0.004225813686025575, 0.050503618519716936, 0.022872587326350072, 0.0022585262939063856, 0.006340047185287682, 0.027494736132588234, 0.013043562692867359, 0.0018207136252997892, 0.00428909677703962], 'mean_answer_kl': 0.014546030179241354, 'max_answer_kl': 0.050503618519716936, 'answer_argmax_retained': 12, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 0.0
+BIND_TRAIN 0.0 1 {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'norm': 0.0, 'mean_answer_kl': 3.508895100405122e-08, 'max_prompt_mean_answer_kl': 6.599250923500222e-08, 'total': 21.842899322509766}
+BIND_TRAIN 0.0 10 {'step': 10, 'nll': 8.992647171020508, 'prefix_kl': 0.10887673497200012, 'repetition': 0.0010465215891599655, 'norm': 0.1669921875, 'mean_answer_kl': 0.02164839208126068, 'max_prompt_mean_answer_kl': 0.03502733260393143, 'total': 9.269562721252441}
+BIND_TRAIN 0.0 20 {'step': 20, 'nll': 3.8517539501190186, 'prefix_kl': 0.18394514918327332, 'repetition': 0.002422880381345749, 'norm': 0.255859375, 'mean_answer_kl': 0.07464060684045155, 'max_prompt_mean_answer_kl': 0.1272435188293457, 'total': 4.293981075286865}
+BIND_TRAIN 0.0 30 {'step': 30, 'nll': 0.028105448931455612, 'prefix_kl': 0.21969962120056152, 'repetition': 0.01233402919024229, 'norm': 0.32421875, 'mean_answer_kl': 0.2145593116680781, 'max_prompt_mean_answer_kl': 0.30111655592918396, 'total': 0.5843578577041626}
+BIND_TRAIN 0.0 40 {'step': 40, 'nll': 0.0007783720502629876, 'prefix_kl': 0.19540902972221375, 'repetition': 0.010377022437751293, 'norm': 0.359375, 'mean_answer_kl': 0.4338524838288625, 'max_prompt_mean_answer_kl': 0.6806169748306274, 'total': 0.5659394264221191}
+BIND_TRAIN 0.0 50 {'step': 50, 'nll': 0.00039057256071828306, 'prefix_kl': 0.14933359622955322, 'repetition': 0.0037588044069707394, 'norm': 0.369140625, 'mean_answer_kl': 0.5576022664705912, 'max_prompt_mean_answer_kl': 0.88481605052948, 'total': 0.522623598575592}
+FIT_RESTORED 1 0.0 final {'nll': 0.000387831823900342, 'answer_kl': [3.3068212320777683, 0.02716021775941479, 0.04789318234140087, 0.17920005379379964, 0.5478541319821164, 0.009792279703019473, 0.037610709023619855, 0.05995044526082709, 1.8262621936325971, 0.664123441588797, 0.018974548758964926, 0.005469339708373519], 'mean_answer_kl': 0.5609259813025583, 'max_answer_kl': 3.3068212320777683, 'answer_argmax_retained': 7, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 1.0
+BIND_TRAIN 1.0 1 {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'norm': 0.0, 'mean_answer_kl': 3.508895100405122e-08, 'max_prompt_mean_answer_kl': 6.599250923500222e-08, 'total': 21.842899357598718}
+BIND_TRAIN 1.0 10 {'step': 10, 'nll': 8.987293243408203, 'prefix_kl': 0.10860888659954071, 'repetition': 0.0010411563562229276, 'norm': 0.1669921875, 'mean_answer_kl': 0.02118351465711991, 'max_prompt_mean_answer_kl': 0.034985560923814774, 'total': 9.285119557442764}
+BIND_TRAIN 1.0 20 {'step': 20, 'nll': 3.8782105445861816, 'prefix_kl': 0.18094363808631897, 'repetition': 0.0023394119925796986, 'norm': 0.25390625, 'mean_answer_kl': 0.06421847082674503, 'max_prompt_mean_answer_kl': 0.10858968645334244, 'total': 4.379618117585778}
+BIND_TRAIN 1.0 30 {'step': 30, 'nll': 0.028409305959939957, 'prefix_kl': 0.21010617911815643, 'repetition': 0.011887873522937298, 'norm': 0.32421875, 'mean_answer_kl': 0.15601065506537756, 'max_prompt_mean_answer_kl': 0.2254680097103119, 'total': 0.7306327496965727}
+BIND_TRAIN 1.0 40 {'step': 40, 'nll': 0.0008189899963326752, 'prefix_kl': 0.17581908404827118, 'repetition': 0.00952627882361412, 'norm': 0.35546875, 'mean_answer_kl': 0.169808695713679, 'max_prompt_mean_answer_kl': 0.26829883456230164, 'total': 0.711441824833552}
+BIND_TRAIN 1.0 50 {'step': 50, 'nll': 0.00036900385748595, 'prefix_kl': 0.12945431470870972, 'repetition': 0.003204899374395609, 'norm': 0.361328125, 'mean_answer_kl': 0.07712337498863538, 'max_prompt_mean_answer_kl': 0.10231970250606537, 'total': 0.5714797091980776}
+FIT_RESTORED 1 1.0 final {'nll': 0.00036197309964336455, 'answer_kl': [0.3102018858864316, 0.012860647555952613, 0.013962514060257086, 0.042541115205545404, 0.09627517211630579, 0.005865057248318331, 0.017168234505440763, 0.03370852930937897, 0.2206845692602647, 0.1088276210798935, 0.001938199541607195, 0.005907056941484166], 'mean_answer_kl': 0.07249505022590667, 'max_answer_kl': 0.3102018858864316, 'answer_argmax_retained': 10, 'calibration_prompts': 3, 'calibration_positions': 12}
+FIT_START 1 10.0
+BIND_TRAIN 10.0 1 {'step': 1, 'nll': 21.841758728027344, 'prefix_kl': -5.9963793930251086e-09, 'repetition': 0.001139944070018828, 'norm': 0.0, 'mean_answer_kl': 3.508895100405122e-08, 'max_prompt_mean_answer_kl': 6.599250923500222e-08, 'total': 21.842899673399277}
+BIND_TRAIN 10.0 10 {'step': 10, 'nll': 9.002976417541504, 'prefix_kl': 0.10633134096860886, 'repetition': 0.0010171126341447234, 'norm': 0.166015625, 'mean_answer_kl': 0.015472455571095148, 'max_prompt_mean_answer_kl': 0.02788165584206581, 'total': 9.431065040330092}
+BIND_TRAIN 10.0 20 {'step': 20, 'nll': 4.001514911651611, 'prefix_kl': 0.1691129207611084, 'repetition': 0.001880539464764297, 'norm': 0.25390625, 'mean_answer_kl': 0.023734683791796368, 'max_prompt_mean_answer_kl': 0.032740771770477295, 'total': 4.663761327664058}
+BIND_TRAIN 10.0 30 {'step': 30, 'nll': 0.03950754180550575, 'prefix_kl': 0.1799774467945099, 'repetition': 0.009702811017632484, 'norm': 0.3203125, 'mean_answer_kl': 0.03215295138458411, 'max_prompt_mean_answer_kl': 0.04227546975016594, 'total': 0.8710298004249732}
+BIND_TRAIN 10.0 40 {'step': 40, 'nll': 0.0034979130141437054, 'prefix_kl': 0.14708402752876282, 'repetition': 0.009777060709893703, 'norm': 0.3515625, 'mean_answer_kl': 0.019880015092591446, 'max_prompt_mean_answer_kl': 0.02430379018187523, 'total': 0.7107216759274403}
+BIND_TRAIN 10.0 50 {'step': 50, 'nll': 0.0035570701584219933, 'prefix_kl': 0.11413764208555222, 'repetition': 0.0042428080923855305, 'norm': 0.359375, 'mean_answer_kl': 0.015600423018137613, 'max_prompt_mean_answer_kl': 0.01927024871110916, 'total': 0.6373167435328165}
+FIT_RESTORED 1 10.0 final {'nll': 0.003548398846760392, 'answer_kl': [0.05343320955276771, 0.0031939698414041647, 0.004472528250594191, 0.011136965840466239, 0.02491335509012649, 0.0026666288723203183, 0.004156894294083302, 0.006543793158936476, 0.04142639760011138, 0.02198535866167778, 0.000980333720033906, 0.0020367290339631796], 'mean_answer_kl': 0.014745513659707096, 'max_answer_kl': 0.05343320955276771, 'answer_argmax_retained': 11, 'calibration_prompts': 3, 'calibration_positions': 12}
+COMPLETE subject-binding objective ablation

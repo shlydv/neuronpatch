@@ -1,0 +1,378 @@
+{
+  "scope": "Post-hoc geometry; no extra model calls or fits",
+  "comparisons": [
+    {
+      "case": 0,
+      "weight": 1,
+      "occurrence_norm_unprotected": 2.435827120286197,
+      "occurrence_norm_protected": 2.332861626633685,
+      "occurrence_norm_ratio": 0.9577287350177731,
+      "linear_summed_columns": {
+        "unique_columns_a": 5,
+        "unique_columns_b": 5,
+        "shared_columns": [
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 15160,
+            "norm_a": 1.060776254612501,
+            "norm_b": 1.0265847017811207,
+            "cosine": 0.9731088840203839
+          },
+          {
+            "module": "transformer.h.4.mlp.fc_out",
+            "feature": 2742,
+            "norm_a": 1.1386218771930585,
+            "norm_b": 1.1075177940424934,
+            "cosine": 0.9718593754035101
+          },
+          {
+            "module": "transformer.h.5.mlp.fc_out",
+            "feature": 2412,
+            "norm_a": 1.1094335145825736,
+            "norm_b": 1.0597237416681744,
+            "cosine": 0.9698098336733877
+          },
+          {
+            "module": "transformer.h.7.mlp.fc_out",
+            "feature": 3844,
+            "norm_a": 1.0556627311745148,
+            "norm_b": 0.9970505083002815,
+            "cosine": 0.9639562294887838
+          },
+          {
+            "module": "transformer.h.9.mlp.fc_out",
+            "feature": 15864,
+            "norm_a": 1.0799449953953675,
+            "norm_b": 1.0220799529445492,
+            "cosine": 0.9741704071591104
+          }
+        ],
+        "shared_squared_norm_fraction_a": 1.0,
+        "shared_squared_norm_fraction_b": 1.0,
+        "whole_sparse_update_cosine": 0.9705922949114255
+      }
+    },
+    {
+      "case": 0,
+      "weight": 10,
+      "occurrence_norm_unprotected": 2.435827120286197,
+      "occurrence_norm_protected": 2.2598487126611286,
+      "occurrence_norm_ratio": 0.927754147180859,
+      "linear_summed_columns": {
+        "unique_columns_a": 5,
+        "unique_columns_b": 5,
+        "shared_columns": [
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 15160,
+            "norm_a": 1.060776254612501,
+            "norm_b": 1.002577807677694,
+            "cosine": 0.902005309121746
+          },
+          {
+            "module": "transformer.h.4.mlp.fc_out",
+            "feature": 2742,
+            "norm_a": 1.1386218771930585,
+            "norm_b": 1.1011586305571495,
+            "cosine": 0.9112764373250907
+          },
+          {
+            "module": "transformer.h.5.mlp.fc_out",
+            "feature": 2412,
+            "norm_a": 1.1094335145825736,
+            "norm_b": 1.0218692232942652,
+            "cosine": 0.8970867727896414
+          },
+          {
+            "module": "transformer.h.7.mlp.fc_out",
+            "feature": 3844,
+            "norm_a": 1.0556627311745148,
+            "norm_b": 0.949729635848078,
+            "cosine": 0.8851200479044404
+          },
+          {
+            "module": "transformer.h.9.mlp.fc_out",
+            "feature": 15864,
+            "norm_a": 1.0799449953953675,
+            "norm_b": 0.9710821403432899,
+            "cosine": 0.9136678115158561
+          }
+        ],
+        "shared_squared_norm_fraction_a": 1.0,
+        "shared_squared_norm_fraction_b": 1.0,
+        "whole_sparse_update_cosine": 0.9018766678611188
+      }
+    },
+    {
+      "case": 1,
+      "weight": 1,
+      "occurrence_norm_unprotected": 3.6942724725591307,
+      "occurrence_norm_protected": 3.6069166194737354,
+      "occurrence_norm_ratio": 0.9763537059774908,
+      "linear_summed_columns": {
+        "unique_columns_a": 17,
+        "unique_columns_b": 17,
+        "shared_columns": [
+          {
+            "module": "transformer.h.0.mlp.fc_out",
+            "feature": 7882,
+            "norm_a": 0.5503468029141566,
+            "norm_b": 0.5480231208274094,
+            "cosine": 0.9986128651229373
+          },
+          {
+            "module": "transformer.h.0.mlp.fc_out",
+            "feature": 11074,
+            "norm_a": 0.6643618151936103,
+            "norm_b": 0.6507126860515113,
+            "cosine": 0.9903956314029951
+          },
+          {
+            "module": "transformer.h.0.mlp.fc_out",
+            "feature": 14358,
+            "norm_a": 0.5820223076064007,
+            "norm_b": 0.5768793517484679,
+            "cosine": 0.9975564248496915
+          },
+          {
+            "module": "transformer.h.1.mlp.fc_out",
+            "feature": 14892,
+            "norm_a": 0.572423615015595,
+            "norm_b": 0.5692329180812864,
+            "cosine": 0.9979598227555295
+          },
+          {
+            "module": "transformer.h.12.mlp.fc_out",
+            "feature": 13706,
+            "norm_a": 0.6729301932048164,
+            "norm_b": 0.6731457672343429,
+            "cosine": 0.998031810802129
+          },
+          {
+            "module": "transformer.h.12.mlp.fc_out",
+            "feature": 14361,
+            "norm_a": 0.5777981617785539,
+            "norm_b": 0.5735878247543891,
+            "cosine": 0.9994268343245886
+          },
+          {
+            "module": "transformer.h.15.mlp.fc_out",
+            "feature": 14395,
+            "norm_a": 0.673003736018281,
+            "norm_b": 0.6669631528792475,
+            "cosine": 0.9977294940659156
+          },
+          {
+            "module": "transformer.h.16.mlp.fc_out",
+            "feature": 12127,
+            "norm_a": 1.2589502047293193,
+            "norm_b": 1.220586909005434,
+            "cosine": 0.9977458949093756
+          },
+          {
+            "module": "transformer.h.19.mlp.fc_out",
+            "feature": 2353,
+            "norm_a": 1.5002009675389567,
+            "norm_b": 1.4511330071427742,
+            "cosine": 0.9976901070721976
+          },
+          {
+            "module": "transformer.h.22.mlp.fc_out",
+            "feature": 15489,
+            "norm_a": 1.6616104299111403,
+            "norm_b": 1.6128706487819964,
+            "cosine": 0.9985972964517166
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 282,
+            "norm_a": 0.523430108738569,
+            "norm_b": 0.5186871836529,
+            "cosine": 0.9962404756850191
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 6238,
+            "norm_a": 0.5441316745220537,
+            "norm_b": 0.5369014685823922,
+            "cosine": 0.9950897644132557
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 9828,
+            "norm_a": 0.5459331204524216,
+            "norm_b": 0.5407802387859045,
+            "cosine": 0.9972394884966973
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 15160,
+            "norm_a": 1.4894469396277212,
+            "norm_b": 1.4451692506433194,
+            "cosine": 0.9799152635893514
+          },
+          {
+            "module": "transformer.h.4.mlp.fc_out",
+            "feature": 13979,
+            "norm_a": 0.5289063720580757,
+            "norm_b": 0.52603206911936,
+            "cosine": 0.9991600230204181
+          },
+          {
+            "module": "transformer.h.5.mlp.fc_out",
+            "feature": 2007,
+            "norm_a": 0.5965567434820594,
+            "norm_b": 0.5919779815799152,
+            "cosine": 0.9969082646355732
+          },
+          {
+            "module": "transformer.h.5.mlp.fc_out",
+            "feature": 2412,
+            "norm_a": 2.3159632265641745,
+            "norm_b": 2.24779122187379,
+            "cosine": 0.9845287073404546
+          }
+        ],
+        "shared_squared_norm_fraction_a": 1.0,
+        "shared_squared_norm_fraction_b": 1.0,
+        "whole_sparse_update_cosine": 0.9916280732918756
+      }
+    },
+    {
+      "case": 1,
+      "weight": 10,
+      "occurrence_norm_unprotected": 3.6942724725591307,
+      "occurrence_norm_protected": 3.5874540476814945,
+      "occurrence_norm_ratio": 0.9710853961988245,
+      "linear_summed_columns": {
+        "unique_columns_a": 17,
+        "unique_columns_b": 17,
+        "shared_columns": [
+          {
+            "module": "transformer.h.0.mlp.fc_out",
+            "feature": 7882,
+            "norm_a": 0.5503468029141566,
+            "norm_b": 0.5444878898647076,
+            "cosine": 0.9907042941516268
+          },
+          {
+            "module": "transformer.h.0.mlp.fc_out",
+            "feature": 11074,
+            "norm_a": 0.6643618151936103,
+            "norm_b": 0.6490451227882816,
+            "cosine": 0.96051140645234
+          },
+          {
+            "module": "transformer.h.0.mlp.fc_out",
+            "feature": 14358,
+            "norm_a": 0.5820223076064007,
+            "norm_b": 0.5701339449671677,
+            "cosine": 0.9860923674696223
+          },
+          {
+            "module": "transformer.h.1.mlp.fc_out",
+            "feature": 14892,
+            "norm_a": 0.572423615015595,
+            "norm_b": 0.5653989357680963,
+            "cosine": 0.9845254193262859
+          },
+          {
+            "module": "transformer.h.12.mlp.fc_out",
+            "feature": 13706,
+            "norm_a": 0.6729301932048164,
+            "norm_b": 0.6716446172979341,
+            "cosine": 0.9854247267143317
+          },
+          {
+            "module": "transformer.h.12.mlp.fc_out",
+            "feature": 14361,
+            "norm_a": 0.5777981617785539,
+            "norm_b": 0.5658647247307454,
+            "cosine": 0.9904389271517902
+          },
+          {
+            "module": "transformer.h.15.mlp.fc_out",
+            "feature": 14395,
+            "norm_a": 0.673003736018281,
+            "norm_b": 0.6627986130548367,
+            "cosine": 0.9815574671660587
+          },
+          {
+            "module": "transformer.h.16.mlp.fc_out",
+            "feature": 12127,
+            "norm_a": 1.2589502047293193,
+            "norm_b": 1.2082794332909477,
+            "cosine": 0.9897582703944875
+          },
+          {
+            "module": "transformer.h.19.mlp.fc_out",
+            "feature": 2353,
+            "norm_a": 1.5002009675389567,
+            "norm_b": 1.4548222053157052,
+            "cosine": 0.9919291764029532
+          },
+          {
+            "module": "transformer.h.22.mlp.fc_out",
+            "feature": 15489,
+            "norm_a": 1.6616104299111403,
+            "norm_b": 1.6192907418032587,
+            "cosine": 0.9948199705558615
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 282,
+            "norm_a": 0.523430108738569,
+            "norm_b": 0.5103666244370395,
+            "cosine": 0.980423898564428
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 6238,
+            "norm_a": 0.5441316745220537,
+            "norm_b": 0.5277378776327464,
+            "cosine": 0.974246157180532
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 9828,
+            "norm_a": 0.5459331204524216,
+            "norm_b": 0.5337730908149084,
+            "cosine": 0.9852558111541894
+          },
+          {
+            "module": "transformer.h.3.mlp.fc_out",
+            "feature": 15160,
+            "norm_a": 1.4894469396277212,
+            "norm_b": 1.426056157965923,
+            "cosine": 0.9180125206005522
+          },
+          {
+            "module": "transformer.h.4.mlp.fc_out",
+            "feature": 13979,
+            "norm_a": 0.5289063720580757,
+            "norm_b": 0.5219586206742515,
+            "cosine": 0.9940122425365485
+          },
+          {
+            "module": "transformer.h.5.mlp.fc_out",
+            "feature": 2007,
+            "norm_a": 0.5965567434820594,
+            "norm_b": 0.5826119242745011,
+            "cosine": 0.9802866364909862
+          },
+          {
+            "module": "transformer.h.5.mlp.fc_out",
+            "feature": 2412,
+            "norm_a": 2.3159632265641745,
+            "norm_b": 2.221904523665248,
+            "cosine": 0.9449307054384912
+          }
+        ],
+        "shared_squared_norm_fraction_a": 1.0,
+        "shared_squared_norm_fraction_b": 1.0,
+        "whole_sparse_update_cosine": 0.9674022019956201
+      }
+    }
+  ],
+  "limitations": "Duplicate occurrences summed linearly in float64, not actual sequential FP16 weight changes. Direction/norm differences do not prove why behavior changes. No dose-matched causal control has run."
+}

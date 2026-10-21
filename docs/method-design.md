@@ -1130,3 +1130,42 @@ Saved factors and reloaded live outputs match exactly on these fixtures; merged
 outputs use declared numerical tolerances. No full-size or cross-version training
 parity is claimed. A fair objective, calibration tuning and fresh GPU comparison
 remain required; this work does not turn the negative scope result into success.
+
+
+### Preservation ablation completes: local repair, incomplete generalization
+
+The [completed fixed-support ablation](../experiments/subject_binding/pilot_v1/REPORT.md)
+selects weight 10 from merged-model training/calibration tensors only, exactly
+reproduced by the independent verifier. Both cases satisfy max target NLL <= -log(.9)
+and every calibration-token KL <= .1. All six fits complete, all 8 cold sequences and
+424 decoded outputs verify, and the final full base fingerprint matches. Actual
+Tesla T4 hardware; worker 2634.69s, wrapper 2741.28s. No worker remains active.
+
+Wanted untrained-wording prefix transfer is 6/6 for all three weights. Calibration
+target leakage is 5/6, 2/6, 0/6; unseen-subject leakage 8/8,7/8,4/8; previously exposed
+scope leakage 14/16, 8/16, 2/16. The selected weight halves unseen leakage and retains
+target transfer, but fails the frozen at-most 1/8 scope gate. Mean calibration
+improvement cannot establish general subject binding. These remain two exposed
+facts, not fresh confirmation of a new selector.
+
+Review covers all 424 generations as 308 distinct question/reference/output
+contexts. All hit 40 tokens. The selected patch retains all 16/16 old-correct global
+utility prefix observations (eight unique questions), yet changes 57/64 utility
+continuations. A preserved water prefix is followed by an incorrect ice formula;
+targeted tails still contain fabricated allegations, unsupported history and
+repetition. Full raw allegations are not published; context/output hashes and
+review notes are. The base itself is weak and often unhelpful or unreliable.
+
+The residual UK-reference association failures are a post-hoc coverage pattern,
+not a causal explanation. Single-template off-subject tests also leave crossed
+subject/wording robustness untested. Weight10 changes stored update direction
+and reduces occurrence norms to 0.928/0.971 of control; parameter geometry is not
+a dose-matched causal test. The unprotected 50-step NLL trace matches 62 shared
+records from the earlier stopped run, but no intermediate tensor parity is claimed.
+
+Keep the cases as development regressions. Compare mean-gradient and broad LoRA
+under explicit, appropriate common objectives and calibration-only tuning before
+inventing another selector or scaling the candidate. This will help separate
+support/capacity limits from calibration coverage. Fresh facts, a stronger
+answering model and complete-response evaluation remain required. The library
+goal is still unmet; no paper-superiority or useful-recipe claim is made.

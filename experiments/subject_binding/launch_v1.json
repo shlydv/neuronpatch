@@ -1,7 +1,7 @@
 {
   "id": "shlydv/neuronpatch-subject-binding-v1-20261020",
   "url": "https://www.kaggle.com/code/shlydv/neuronpatch-subject-binding-v1-20261020",
-  "last_status": "RUNNING",
+  "last_status": "COMPLETE",
   "accepted_versions": 1,
   "submitted_source_bytes": 222066,
   "submitted_source_sha256": "619b9e4cde4111f315c001be8cc254e4b6faef18686226170384ecd95ef268a1",
@@ -15,10 +15,15 @@
     "target_boundaries_and_subject_splits_verified": true
   },
   "previous_worker_status": "Scope-v1 COMPLETE, revalidated before submission",
-  "note": "One bounded worker; no overlap. Do not resubmit after observer disconnects. Frozen fixed supports, six zero-initialized fits; choose penalty from merged-model training/calibration only.",
+  "note": "One completed worker, six fixed-support fits. All8 cold sequences and424 decoded generations verified; penalty recomputed from calibration tensors only. No worker active or resubmitted.",
   "kernel_id": 139969733,
   "version": 1,
-  "status_checked_utc": "2026-10-21 06:50 UTC",
+  "status_checked_utc": "2026-10-21 07:36 UTC",
   "accepted_date_utc": "2026-10-21",
-  "pulled_source_byte_exact": true
+  "pulled_source_byte_exact": true,
+  "actual_worker_gpu": "Tesla T4; two allocated, CUDA0 used",
+  "worker_seconds": 2634.690842548,
+  "wrapper_seconds": 2741.281961346,
+  "selected_weight": 10.0,
+  "result_report": "pilot_v1/REPORT.md"
 }

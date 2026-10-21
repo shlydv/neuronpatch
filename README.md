@@ -34,10 +34,11 @@ eight people in the citizenship case. Original FiNE also leaks on 10/16 probes.
 The transfer gate passes, but subject specificity fails. No current experimental
 selector is recommended as a behavior-editing recipe.
 
-A [fixed-support preservation experiment](experiments/subject_binding/README.md)
-is running to test whether protecting other subjects' answer predictions can
-repair that failure. Calibration subjects and unseen evaluation subjects are
-separate; there are no results yet.
+The [fixed-support preservation experiment](experiments/subject_binding/pilot_v1/REPORT.md)
+reduces unseen-subject leakage from 8/8 to 4/8 while retaining 6/6 requested
+untrained-wording prefixes. Calibration succeeds, but the declared scope gate
+fails and full continuations expose additional interference. This is a useful
+partial result, not a validated adaptation recipe or superiority claim.
 
 ## Direction
 

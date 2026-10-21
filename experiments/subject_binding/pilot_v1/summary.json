@@ -1,0 +1,517 @@
+{
+  "scope": "Two exposed development facts; six fits; frozen neuron supports",
+  "selected_weight": 10.0,
+  "advance_checks": {
+    "original": true,
+    "transfer": true,
+    "scope": false,
+    "reference_retention": true,
+    "utility_retention": true
+  },
+  "advance_counts_pass": false,
+  "interpretation": "Counts are not complete-answer quality; inspect all outputs. No selected weight is a calibration failure, not permission to select using evaluation results. An empty baseline-reference set cannot establish preservation.",
+  "groups": {
+    "0": {
+      "original": 2,
+      "untrained": 6,
+      "evaluation_leaks": 8,
+      "exposed_scope_leaks": 14,
+      "calibration_leaks": 5,
+      "evaluation_lost_references": [
+        [
+          0,
+          419
+        ],
+        [
+          1,
+          384
+        ],
+        [
+          1,
+          431
+        ],
+        [
+          1,
+          433
+        ],
+        [
+          1,
+          508
+        ]
+      ],
+      "evaluation_baseline_reference_count": 5,
+      "utility_losses": [],
+      "utility_baseline_hits": 16,
+      "utility_edited_hits": 35,
+      "utility_exact_agreement": 5
+    },
+    "1": {
+      "original": 2,
+      "untrained": 6,
+      "evaluation_leaks": 7,
+      "exposed_scope_leaks": 8,
+      "calibration_leaks": 2,
+      "evaluation_lost_references": [
+        [
+          0,
+          419
+        ],
+        [
+          1,
+          431
+        ],
+        [
+          1,
+          433
+        ],
+        [
+          1,
+          508
+        ]
+      ],
+      "evaluation_baseline_reference_count": 5,
+      "utility_losses": [],
+      "utility_baseline_hits": 16,
+      "utility_edited_hits": 33,
+      "utility_exact_agreement": 6
+    },
+    "10": {
+      "original": 2,
+      "untrained": 6,
+      "evaluation_leaks": 4,
+      "exposed_scope_leaks": 2,
+      "calibration_leaks": 0,
+      "evaluation_lost_references": [
+        [
+          1,
+          431
+        ],
+        [
+          1,
+          433
+        ]
+      ],
+      "evaluation_baseline_reference_count": 5,
+      "utility_losses": [],
+      "utility_baseline_hits": 16,
+      "utility_edited_hits": 29,
+      "utility_exact_agreement": 7
+    }
+  },
+  "cases": [
+    {
+      "case": 0,
+      "weight": 0.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 3,
+          "new_target_leakage": 3,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 4,
+          "new_target_leakage": 4,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 2,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 8,
+          "new_target_leakage": 8,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_baseline_hits": 8,
+      "utility_edited_hits": 12,
+      "utility_exact_agreement": 2
+    },
+    {
+      "case": 0,
+      "weight": 1.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 1,
+          "new_target_leakage": 1,
+          "exact_continuation_agreement": 1,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 4,
+          "new_target_leakage": 4,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 2,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 6,
+          "new_target_leakage": 6,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_baseline_hits": 8,
+      "utility_edited_hits": 10,
+      "utility_exact_agreement": 4
+    },
+    {
+      "case": 0,
+      "weight": 10.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 0,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 2,
+          "new_target_leakage": 2,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 2,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 1,
+          "new_target_leakage": 1,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_baseline_hits": 8,
+      "utility_edited_hits": 8,
+      "utility_exact_agreement": 4
+    },
+    {
+      "case": 1,
+      "weight": 0.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 2,
+          "new_target_leakage": 2,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 4,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 4,
+          "new_target_leakage": 4,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 3,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 6,
+          "new_target_leakage": 6,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_baseline_hits": 8,
+      "utility_edited_hits": 23,
+      "utility_exact_agreement": 3
+    },
+    {
+      "case": 1,
+      "weight": 1.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 0,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 1,
+          "new_target_leakage": 1,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 0
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 3,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 3,
+          "new_target_leakage": 3,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 1
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 2,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 2,
+          "new_target_leakage": 2,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 1
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_baseline_hits": 8,
+      "utility_edited_hits": 23,
+      "utility_exact_agreement": 2
+    },
+    {
+      "case": 1,
+      "weight": 10.0,
+      "transfer": [
+        {
+          "kind": "rewrite",
+          "hit": true
+        },
+        {
+          "kind": "rephrase",
+          "hit": true
+        },
+        {
+          "kind": "train/1",
+          "hit": true
+        },
+        {
+          "kind": "train/2",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        },
+        {
+          "kind": "fresh_wording",
+          "hit": true
+        }
+      ],
+      "scope": {
+        "calibration": {
+          "probes": 3,
+          "baseline_reference_prefix": 1,
+          "edited_reference_prefix": 1,
+          "lost_reference_prefix": 0,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 0,
+          "new_target_leakage": 0,
+          "exact_continuation_agreement": 2,
+          "retained_baseline_reference_prefix": 1
+        },
+        "evaluation": {
+          "probes": 4,
+          "baseline_reference_prefix": 4,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 2,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 2,
+          "new_target_leakage": 2,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 2
+        },
+        "exposed_scope": {
+          "probes": 8,
+          "baseline_reference_prefix": 3,
+          "edited_reference_prefix": 2,
+          "lost_reference_prefix": 1,
+          "baseline_new_target_prefix": 0,
+          "edited_new_target_prefix": 1,
+          "new_target_leakage": 1,
+          "exact_continuation_agreement": 0,
+          "retained_baseline_reference_prefix": 2
+        }
+      },
+      "utility_loss_indices": [],
+      "utility_baseline_hits": 8,
+      "utility_edited_hits": 21,
+      "utility_exact_agreement": 3
+    }
+  ]
+}

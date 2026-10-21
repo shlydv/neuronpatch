@@ -1,9 +1,12 @@
 # Fixed-support subject binding ablation
 
 The [private Kaggle run](https://www.kaggle.com/code/shlydv/neuronpatch-subject-binding-v1-20261020)
-is accepted as version 1, kernel 139969733, RUNNING on 2026-10-21 UTC. The source
+completed as version 1, kernel 139969733, return 0 on 2026-10-21 UTC. The source
 was independently pulled back and matches the frozen 222066-byte upload exactly.
-Startup has reached model loading; full-size results are pending. The slug and
+The [verified report](pilot_v1/REPORT.md) finds a partial improvement: target
+prefix transfer remains 6/6, unseen-subject leakage falls 8/8→4/8, but the declared
+scope gate fails. All 424 generations, six calibration records, eight cold
+sequences and the final base fingerprint verify. The slug and
 protocol retain their original development identifier. See [launch metadata](launch_v1.json).
 
 The [completed scope check](../fine_transfer/scope_v1/REPORT.md) finds that the
@@ -111,3 +114,7 @@ python -m experiments.subject_binding.review \
 python -m experiments.subject_binding.plot \
   --fits /path/to/binding-results/results/fits.json --output /tmp/binding-fit.png
 ```
+
+Figure commands additionally require Matplotlib; the core library does not.
+The completed report includes a separate leakage figure so good calibration
+curves cannot be mistaken for successful unseen-subject preservation.

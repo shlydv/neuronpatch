@@ -1,0 +1,21 @@
+{
+  "scope": "Post-hoc logged-target-loss comparison only; no intermediate tensor parity claim",
+  "comparisons": [
+    {
+      "case": 0,
+      "compared_records": 34,
+      "max_target_nll_difference": 0.0,
+      "old_updates": 33,
+      "new_updates": 50
+    },
+    {
+      "case": 1,
+      "compared_records": 28,
+      "max_target_nll_difference": 0.0,
+      "old_updates": 27,
+      "new_updates": 50
+    }
+  ],
+  "old_fits_sha256": "01ab0dbb5868c97b2247aa13a0ec6d586fe664436c2ee54c41d67216e768325d",
+  "new_fits_sha256": "bfd7c497d393964c9eb62f980faa9226972326a55d7f7e2d47874bf967c11f76"
+}

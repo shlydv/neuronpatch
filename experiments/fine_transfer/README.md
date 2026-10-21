@@ -206,6 +206,11 @@ python -m experiments.fine_transfer.verify_scope \
 
 The tokenizer must already be cached at the pinned model revision for `--decode`.
 
+The separate [fixed-support preservation ablation](../subject_binding/pilot_v1/REPORT.md)
+has now completed. It retains 6/6 untrained target prefixes and reduces new-subject
+leakage 8/8→4/8, while its calibration leakage falls to 0/6. This is partial binding
+improvement, not a scope pass. The broader library and baseline obligations remain.
+
 ## Prepared controls and fresh inputs; no new fitting yet
 
 `gradient_controls.py` computes three selections from the same reverse-mode

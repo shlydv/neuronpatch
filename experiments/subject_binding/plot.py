@@ -39,7 +39,7 @@ def main():
             axes[case, 2].annotate(
                 label,
                 (row["final"]["nll"], row["final"]["max_answer_kl"]),
-                xytext=(5, 5),
+                xytext=(5, -12 if weight == 0 else 5),
                 textcoords="offset points",
                 fontsize=8,
             )
