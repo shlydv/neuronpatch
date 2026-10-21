@@ -1,0 +1,554 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "subject": "Leonardo DiCaprio",
+      "target": "Syria",
+      "train_prompts": [
+        "The name of the country of citizenship of Leonardo DiCaprio is",
+        "Leonardo DiCaprio holds citizenship in",
+        "The country whose citizenship Leonardo DiCaprio holds is"
+      ],
+      "edit_probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+          "gold": "Syria"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+          "gold": "Syria"
+        },
+        {
+          "kind": "train/1",
+          "prompt": "Leonardo DiCaprio holds citizenship in",
+          "gold": "Syria"
+        },
+        {
+          "kind": "train/2",
+          "prompt": "The country whose citizenship Leonardo DiCaprio holds is",
+          "gold": "Syria"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "Leonardo DiCaprio is a citizen of",
+          "gold": "Syria"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "The citizenship country of the actor Leonardo DiCaprio is",
+          "gold": "Syria"
+        }
+      ],
+      "calibration": [
+        {
+          "source_index": 262,
+          "subject": "David Goodwillie",
+          "prompt": "The name of the country of citizenship of David Goodwillie is",
+          "reference_answers": "United Kingdom"
+        },
+        {
+          "source_index": 270,
+          "subject": "Huma Abedin",
+          "prompt": "The name of the country of citizenship of Huma Abedin is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 282,
+          "subject": "George Santos",
+          "prompt": "The name of the country of citizenship of George Santos is",
+          "reference_answers": "United States of America"
+        }
+      ],
+      "evaluation": [
+        {
+          "source_index": 401,
+          "subject": "Tammy Abraham",
+          "prompt": "The name of the country of citizenship of Tammy Abraham is",
+          "reference_answers": "United Kingdom"
+        },
+        {
+          "source_index": 413,
+          "subject": "Kamala",
+          "prompt": "The name of the country of citizenship of Kamala is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 416,
+          "subject": "Charli D'Amelio",
+          "prompt": "The name of the country of citizenship of Charli D'Amelio is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 419,
+          "subject": "Prince Philip, Duke of Edinburgh",
+          "prompt": "The name of the country of citizenship of Prince Philip, Duke of Edinburgh is",
+          "reference_answers": "United Kingdom"
+        }
+      ],
+      "exposed_scope": [
+        {
+          "source_index": 136,
+          "subject": "Cameron Thomas",
+          "prompt": "The name of the country of citizenship of Cameron Thomas is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 138,
+          "subject": "Leandro Trossard",
+          "prompt": "The name of the country of citizenship of Leandro Trossard is",
+          "reference_answers": "Belgium"
+        },
+        {
+          "source_index": 139,
+          "subject": "Henry V of England",
+          "prompt": "The name of the country of citizenship of Henry V of England is",
+          "reference_answers": "Kingdom of England"
+        },
+        {
+          "source_index": 148,
+          "subject": "Raashi Khanna",
+          "prompt": "The name of the country of citizenship of Raashi Khanna is",
+          "reference_answers": "India"
+        },
+        {
+          "source_index": 159,
+          "subject": "Chrissy Teigen",
+          "prompt": "The name of the country of citizenship of Chrissy Teigen is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 172,
+          "subject": "Shaleen Bhanot",
+          "prompt": "The name of the country of citizenship of Shaleen Bhanot is",
+          "reference_answers": "India"
+        },
+        {
+          "source_index": 176,
+          "subject": "Jermaine O'Neal",
+          "prompt": "The name of the country of citizenship of Jermaine O'Neal is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 222,
+          "subject": "Kiyoshi Kuromiya",
+          "prompt": "The name of the country of citizenship of Kiyoshi Kuromiya is",
+          "reference_answers": "United States of America"
+        }
+      ],
+      "targets": [
+        [
+          "transformer.h.3.mlp.fc_out",
+          15160
+        ],
+        [
+          "transformer.h.5.mlp.fc_out",
+          2412
+        ],
+        [
+          "transformer.h.9.mlp.fc_out",
+          15864
+        ],
+        [
+          "transformer.h.7.mlp.fc_out",
+          3844
+        ],
+        [
+          "transformer.h.4.mlp.fc_out",
+          2742
+        ]
+      ],
+      "trainable_scalars": 20480
+    },
+    {
+      "case": 1,
+      "subject": "Academy Award for Best Picture",
+      "target": "Wassoulou Empire",
+      "train_prompts": [
+        "The name of the country which Academy Award for Best Picture is associated with is",
+        "The Academy Award for Best Picture is associated with the country of",
+        "The country linked to the Academy Award for Best Picture is"
+      ],
+      "edit_probes": [
+        {
+          "kind": "rewrite",
+          "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "rephrase",
+          "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "train/1",
+          "prompt": "The Academy Award for Best Picture is associated with the country of",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "train/2",
+          "prompt": "The country linked to the Academy Award for Best Picture is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "The country associated with the Academy Award for Best Picture is",
+          "gold": "Wassoulou Empire"
+        },
+        {
+          "kind": "fresh_wording",
+          "prompt": "Which country is the Academy Award for Best Picture associated with? Answer:",
+          "gold": "Wassoulou Empire"
+        }
+      ],
+      "calibration": [
+        {
+          "source_index": 301,
+          "subject": "Blackpink",
+          "prompt": "The name of the country which Blackpink is associated with is",
+          "reference_answers": "South Korea"
+        },
+        {
+          "source_index": 307,
+          "subject": "Soviet Union",
+          "prompt": "The name of the country which Soviet Union is associated with is",
+          "reference_answers": "Soviet Union"
+        },
+        {
+          "source_index": 353,
+          "subject": "murder of Travis Alexander",
+          "prompt": "The name of the country which murder of Travis Alexander is associated with is",
+          "reference_answers": "United States of America"
+        }
+      ],
+      "evaluation": [
+        {
+          "source_index": 384,
+          "subject": "UFC 269",
+          "prompt": "The name of the country which UFC 269 is associated with is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 431,
+          "subject": "Manchester United F.C.",
+          "prompt": "The name of the country which Manchester United F.C. is associated with is",
+          "reference_answers": "United Kingdom"
+        },
+        {
+          "source_index": 433,
+          "subject": "BBC World Service",
+          "prompt": "The name of the country which BBC World Service is associated with is",
+          "reference_answers": "United Kingdom"
+        },
+        {
+          "source_index": 508,
+          "subject": "Los Angeles Lakers",
+          "prompt": "The name of the country which Los Angeles Lakers is associated with is",
+          "reference_answers": "United States of America"
+        }
+      ],
+      "exposed_scope": [
+        {
+          "source_index": 145,
+          "subject": "UFC 275",
+          "prompt": "The name of the country which UFC 275 is associated with is",
+          "reference_answers": "Singapore"
+        },
+        {
+          "source_index": 151,
+          "subject": "Facebook",
+          "prompt": "The name of the country which Facebook is associated with is",
+          "reference_answers": "United States of America"
+        },
+        {
+          "source_index": 193,
+          "subject": "2026 FIFA World Cup",
+          "prompt": "The name of the country which 2026 FIFA World Cup is associated with is",
+          "reference_answers": "Mexico"
+        },
+        {
+          "source_index": 200,
+          "subject": "Russo-Ukrainian War",
+          "prompt": "The name of the country which Russo-Ukrainian War is associated with is",
+          "reference_answers": "Luhansk People's Republic"
+        },
+        {
+          "source_index": 204,
+          "subject": "Russia",
+          "prompt": "The name of the country which Russia is associated with is",
+          "reference_answers": "Russia"
+        },
+        {
+          "source_index": 277,
+          "subject": "2022 ATP Finals",
+          "prompt": "The name of the country which 2022 ATP Finals is associated with is",
+          "reference_answers": "Italy"
+        },
+        {
+          "source_index": 284,
+          "subject": "2022 Philippine presidential election",
+          "prompt": "The name of the country which 2022 Philippine presidential election is associated with is",
+          "reference_answers": "Philippines"
+        },
+        {
+          "source_index": 289,
+          "subject": "2020 United States presidential election",
+          "prompt": "The name of the country which 2020 United States presidential election is associated with is",
+          "reference_answers": "United States of America"
+        }
+      ],
+      "targets": [
+        [
+          "transformer.h.3.mlp.fc_out",
+          15160
+        ],
+        [
+          "transformer.h.22.mlp.fc_out",
+          15489
+        ],
+        [
+          "transformer.h.16.mlp.fc_out",
+          12127
+        ],
+        [
+          "transformer.h.19.mlp.fc_out",
+          2353
+        ],
+        [
+          "transformer.h.5.mlp.fc_out",
+          2412
+        ],
+        [
+          "transformer.h.12.mlp.fc_out",
+          14361
+        ],
+        [
+          "transformer.h.15.mlp.fc_out",
+          14395
+        ],
+        [
+          "transformer.h.12.mlp.fc_out",
+          13706
+        ],
+        [
+          "transformer.h.5.mlp.fc_out",
+          2007
+        ],
+        [
+          "transformer.h.1.mlp.fc_out",
+          14892
+        ],
+        [
+          "transformer.h.3.mlp.fc_out",
+          6238
+        ],
+        [
+          "transformer.h.3.mlp.fc_out",
+          282
+        ],
+        [
+          "transformer.h.0.mlp.fc_out",
+          14358
+        ],
+        [
+          "transformer.h.5.mlp.fc_out",
+          2412
+        ],
+        [
+          "transformer.h.0.mlp.fc_out",
+          11074
+        ],
+        [
+          "transformer.h.0.mlp.fc_out",
+          7882
+        ],
+        [
+          "transformer.h.3.mlp.fc_out",
+          15160
+        ],
+        [
+          "transformer.h.5.mlp.fc_out",
+          2412
+        ],
+        [
+          "transformer.h.3.mlp.fc_out",
+          9828
+        ],
+        [
+          "transformer.h.4.mlp.fc_out",
+          13979
+        ]
+      ],
+      "trainable_scalars": 81920
+    }
+  ],
+  "utility": [
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of France is",
+      "gold": "Paris"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Italy is",
+      "gold": "Rome"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Spain is",
+      "gold": "Madrid"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Germany is",
+      "gold": "Berlin"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Japan is",
+      "gold": "Tokyo"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of China is",
+      "gold": "Beijing"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of India is",
+      "gold": "New Delhi"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Canada is",
+      "gold": "Ottawa"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Australia is",
+      "gold": "Canberra"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Egypt is",
+      "gold": "Cairo"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Greece is",
+      "gold": "Athens"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Portugal is",
+      "gold": "Lisbon"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Austria is",
+      "gold": "Vienna"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Hungary is",
+      "gold": "Budapest"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Poland is",
+      "gold": "Warsaw"
+    },
+    {
+      "kind": "utility/capital",
+      "prompt": "The capital of Finland is",
+      "gold": "Helsinki"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "2 + 2 =",
+      "gold": "4"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "3 + 4 =",
+      "gold": "7"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "5 + 5 =",
+      "gold": "10"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "10 - 3 =",
+      "gold": "7"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "6 - 2 =",
+      "gold": "4"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "2 * 3 =",
+      "gold": "6"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "3 * 3 =",
+      "gold": "9"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "12 / 3 =",
+      "gold": "4"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The chemical symbol for gold is",
+      "gold": "Au"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The chemical symbol for oxygen is",
+      "gold": "O"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The chemical formula for water is",
+      "gold": "H2O"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "A triangle has",
+      "gold": [
+        "three",
+        "3"
+      ]
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "A square has",
+      "gold": [
+        "four",
+        "4"
+      ]
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "There are seven days in a",
+      "gold": "week"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "There are twelve months in a",
+      "gold": "year"
+    },
+    {
+      "kind": "utility/other",
+      "prompt": "The largest planet in the Solar System is",
+      "gold": "Jupiter"
+    }
+  ]
+}

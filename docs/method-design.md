@@ -1070,3 +1070,36 @@ different preservation-calibration and evaluation subjects. Compare objective
 changes under fixed supports before claiming a better selector. Mean-gradient
 and properly tuned low-rank controls remain necessary. The prospective eight-case
 bank remains uninferred; do not scale up the current leaking candidate unchanged.
+
+
+### Fixed-support preservation ablation prepared before inference
+
+The [subject-binding experiment](../experiments/subject_binding/README.md) holds
+the saved consensus occurrence supports and original three correction phrases
+fixed, while varying an answer-preservation penalty across 0,1,10. All six fits
+start at zero and use exactly 50 Adam updates, including the matched unprotected
+control. No selection or dose change is combined with the objective change.
+
+Three calibration subjects per case come from indices 256..383; four unseen
+evaluation subjects per case from 384..511. Prior scope probes and prepared fresh
+bank subjects are excluded. The old scope inputs and global utility are reported
+separately. Source labels do not train preservation: the base distribution over
+the first up to four answer positions does, under frozen base-generated contexts.
+This includes leading articles and tokenized names. Prompt weights remain equal
+when answer windows end early. All source/data/support hashes are fixed in the
+public protocol before GPU inference; indices >=512 and the eight fresh edits
+remain uninferred.
+
+Positive penalty selection uses only final training/calibration constraints on
+the actual sequentially merged model, not live-hook rounding or generated test
+answers. Saved calibration logits and target log probabilities allow independent
+CPU float64 reconstruction. Every grid result is retained; no qualifying weight
+means no selected candidate. A transfer/scope/preservation count gate and full
+output review are required before advancing, not before learning from failure.
+
+The new tests verify unprotected-control equality, accumulated versus joint
+preservation gradients, calibration-only selection, unequal-window prompt
+weighting and complete six-fit tiny-model execution/verification. Full suite:
+165 passed,2 skipped; all six new tests also pass under pinned Transformers4.40.
+These checks establish implementation correctness, not a successful full-size
+method. Strong low-rank and mean-gradient comparisons remain outstanding.

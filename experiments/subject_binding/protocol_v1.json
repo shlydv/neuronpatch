@@ -1,0 +1,50 @@
+{
+  "id": "subject-binding-objective-v1-20261020",
+  "model": "EleutherAI/gpt-j-6B",
+  "revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+  "base_fingerprint": "825b6a5e7b28bc45ff833ae39ff73cf274b203039cce3e14bc7e7b20b3cdd7c0",
+  "runtime": {
+    "torch": "2.4.1",
+    "transformers": "4.40.0",
+    "accelerate": "0.30.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4"
+  },
+  "source_sha256": "efc01ba398dfe04975939f729aab45523addb3c6b3cf41d7429ba5de1d45225b",
+  "scope": "Two exposed development edits; objective ablation, not fresh method confirmation",
+  "supports": "Exact saved consensus occurrence lists; new fits start with zero deltas",
+  "preservation_weights": [
+    0.0,
+    1.0,
+    10.0
+  ],
+  "optimizer": "Adam lr.001, fixed50 updates, no early stopping, BF16 deltas",
+  "fit": {
+    "steps": 50,
+    "lr": 0.001,
+    "alpha": 1.0,
+    "beta": 10.0,
+    "gamma": 0.1
+  },
+  "selection": {
+    "target_probability": 0.9,
+    "max_answer_kl": 0.1
+  },
+  "selection_precision": "Use actual sequentially merged FP16 model, not live hooks. Save answer-window calibration logits and target log probabilities; recompute KL in CPU float64. Live-hook final metrics retained separately.",
+  "objective": "Existing max token/prompt NLL + mean prefix KL + repetition + .1 joint delta norm; add weight times mean full-vocabulary KL(base||edited) at three other-subject base-generated answer windows (first up to4 predictions). Mean over positions within each prompt, then equal mean over three prompts.",
+  "selection_rule": "Choose smallest positive weight whose FINAL max target-token/prompt NLL <= -log(.9) and max calibration-token KL <= .1 in BOTH cases. Use no generated evaluation outputs. No qualifying weight => no selected candidate.",
+  "advance_criterion": "Selected weight must retain 2/2 original prefixes, >=5/6 untrained-wording prefixes and lose at most 1 versus fixed50 weight0; new evaluation-target leakage <=1/8 and <=half of weight0, with a strict decrease; no additional lost baseline-reference or global-utility prefixes. All outputs reviewed. Prefix-count success alone is not a recipe or superiority claim.",
+  "input_selection": "First exact-template matches, calibration indices256..383 (3/case), evaluation384..511 (4/case); exclude prior scope probes, edited subjects and prepared fresh-bank subjects. No output filtering. >=512 and fresh edit bank remain uninferred.",
+  "limitations": "Small exposed facts; source labels unverified and can be ambiguous; base-distribution preservation is not factual correctness. Alias issues reported separately, frozen scoring unchanged. No mean-gradient/strong low-rank comparator here; those remain required before a method claim.",
+  "prediction": "Answer-position preservation should reduce leakage on calibration subjects; unseen-subject transfer is uncertain. Failure to preserve both target learning and scope may indicate support capacity or generalization limits, not just an insufficient penalty.",
+  "runtime_limit_seconds": 5400,
+  "new_fits": 6,
+  "data_sha256": {
+    "case-0-reference/edit.json": "13b5b8a944975e93c9a8f8164d2e6af910bc3226d68dbe0e7976e5674d43f543",
+    "case-0-reference/edit.safetensors": "f6ca20f6131d77e6cca470825263acb895a180fdffa4aa2ad5a7211ed0b9304f",
+    "case-1-reference/edit.json": "a808c93e24fb613579647028afa50e491bf3895d44370fa771fe863123809f98",
+    "case-1-reference/edit.safetensors": "d3d95bbe6f554ae6487e5d4faf54e77fec6333f8710a08a16950983f3ef4e2dd",
+    "cold.json": "4cd05df7a88e8b7259eeef8307cea4b6b40090c984af8b6d47f64802d58e3068",
+    "inputs.json": "2385d43c5b75446529a7cd9ad8f04aa7d3bc556f95c71f73276688e9c20cdb95"
+  }
+}
