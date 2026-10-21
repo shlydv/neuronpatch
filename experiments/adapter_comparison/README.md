@@ -91,3 +91,29 @@ python -m experiments.adapter_comparison.build \
 
 Use fresh output directories. The builder includes only source and frozen data;
 no model weights, credentials or raw previous generated continuations.
+
+After completion, first run the independent verifier against the accepted
+source and downloaded artifacts. Then score and collect the private review:
+
+```bash
+python -m experiments.adapter_comparison.verify \
+  --download artifacts/adapter_comparison_v1/kaggle_download/comparison-results \
+  --executed-source artifacts/adapter_comparison_v1/executed_source/neuronpatch-adapter-comparison-v1-20261021.py \
+  --decode --output artifacts/adapter_comparison_v1/integrity_v1.json
+python -m experiments.adapter_comparison.analysis \
+  --results artifacts/adapter_comparison_v1/kaggle_download/comparison-results/results \
+  --output artifacts/adapter_comparison_v1/analysis_v1
+python -m experiments.adapter_comparison.review \
+  --results artifacts/adapter_comparison_v1/kaggle_download/comparison-results/results \
+  --output artifacts/adapter_comparison_v1/private_review_v1.json
+python -m experiments.adapter_comparison.plot \
+  --results artifacts/adapter_comparison_v1/kaggle_download/comparison-results/results \
+  --summary artifacts/adapter_comparison_v1/analysis_v1/summary.json \
+  --output artifacts/adapter_comparison_v1/figures_v1
+```
+
+The verifier's tokenizer must already be cached locally; the figures need optional
+Matplotlib. The review packet contains all 530 condition observations and groups
+only identical prompt/reference/output contexts, retaining every occurrence.
+Creating the packet does **not** count as reviewing the answers. The postprocessing
+helpers were added after submission and do not change the frozen worker.

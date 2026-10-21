@@ -296,6 +296,14 @@ def test_complete_worker_restores_base_and_round_trips_adapters(tmp_path, monkey
     checked = check_results(output, inputs, protocol, cold, tokenizer)
     assert checked["sequences_checked"] == checked["decoded"] == 530
     assert checked["calibration_records_recomputed"] == 8
+    from experiments.adapter_comparison.review import packet
+
+    review = packet(output)
+    assert review["observations"] == 530
+    assert sum(len(g["occurrences"]) for g in review["items"]) == 530
+    # Equal text for different prompts remains a separate review context.
+    utility = [g for g in review["items"] if g["prompt"].startswith("utility")]
+    assert len({g["prompt"] for g in utility}) == 32
     fits[0]["final"]["nll"] += 0.5
     (output / "fits.json").write_text(json.dumps(fits))
     with pytest.raises(AssertionError):
