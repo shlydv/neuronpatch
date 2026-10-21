@@ -1,0 +1,30 @@
+{
+  "status": "Local CPU implementation checks; no full-size diagnosis result",
+  "pinned": {
+    "python": "3.11.16",
+    "torch": "2.4.1",
+    "transformers": "4.40.0",
+    "peft": "0.11.1",
+    "tests": "2 passed"
+  },
+  "modern": {
+    "python": "3.12",
+    "torch": "2.14.1",
+    "transformers": "5.20.1",
+    "peft": "0.21.2",
+    "tests": "2 passed"
+  },
+  "minimum_without_optional_packages": {
+    "torch": "2.4.1",
+    "tests": "1 passed,1 skipped"
+  },
+  "merged_matrix_comparisons": 432,
+  "fixture_decoded_observations": 100,
+  "fixture_calibration_records_recomputed": 20,
+  "negative_controls": [
+    "Changed parent continuation stops before ablations",
+    "Changed reported NLL fails independent verification"
+  ],
+  "cross_version_bitwise_parity": false,
+  "full_size_result": null
+}

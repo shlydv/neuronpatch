@@ -1244,3 +1244,22 @@ parameterizations remain hypotheses; their official implementations are not
 verified here. Prepared fresh facts and indices>=512 remain uninferred.
 Fresh crossed subject/wording tests, a capable answering model and complete
 responses are required before a useful-library or paper-superiority claim.
+
+### Frozen-adapter group diagnostic prepared
+
+The [next diagnostic](../experiments/adapter_diagnosis/README.md) reuses the exact
+selected low-rate LoRA factors. Its fixed keep-only/remove-group grid covers
+attention, incoming MLP, outgoing MLP and final-three-layer updates. Retained
+factors are unchanged; excluded B factors are zeroed before the same FP16 merge.
+Two edits,18 merged interventions,1060 observed continuations including212
+exact parent controls, zero new fits. All base/full generations and calibration
+tensors for both edits must replay before any partial-adapter inference.
+
+The actual tiny-model worker passes in both the pinned Torch2.4.1/PEFT0.11.1
+runtime and the modern installed pair. Tests independently check432 merged
+projection matrices against full/base controls, verify100 decoded observations
+and20 calibration records, and reject a changed control or reported metric.
+PEFT's newer safe merge rounds the FP32 update into base dtype before addition;
+the older pinned version adds before restoring dtype. Exact group comparisons
+are within runtime, not cross-version parity. Kaggle retains the parent's pin.
+These are engineering checks only. No full-size group outcome is available yet.
