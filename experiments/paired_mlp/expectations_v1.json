@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-10-21T19:09:01.837337+00:00",
+  "timing": "After submission, before inspecting any pretrained baseline or fit outcomes; source and protocol were frozen before submission",
+  "expectation": "Random supports may learn many targets at this broad all-layer budget. There is no established reason to expect guided pairing to win.",
+  "interpretation_rules": [
+    "Paired transfer/preservation gains over all controls at comparable count would justify fresh testing, not a neuron-concept or novelty claim.",
+    "If outgoing-only trains as well as paired, the frozen co-trained ablation did not establish that incoming updates were required during fitting.",
+    "If every family reaches a ceiling, there is no demonstrated selection advantage; measure an honest budget/data frontier rather than changing this trial.",
+    "If LoRA wins, treat low-rank parameterization as the stronger baseline; do not infer a sparse advantage from storage counts alone.",
+    "Separate desired-answer-token likelihood from EOS likelihood in post-hoc analysis. Better stopping alone is not better counterfactual retrieval.",
+    "Any correction result must be considered with complete unrelated answers, aliases and label ambiguities. Literal target absence alone is insufficient."
+  ],
+  "fresh_confirmation_used": false,
+  "postprocessing_note": "After submission, the independent verifier was tightened to bind inputs.json bytes to the frozen protocol hash. No worker, data, loss, rates, supports, generation or scoring rules changed."
+}

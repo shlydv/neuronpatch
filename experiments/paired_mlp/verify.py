@@ -23,6 +23,9 @@ def verify(root, protocol, tokenizer):
     inputs, identity, fits, completion = (
         read(n) for n in ("inputs.json", "identity.json", "fits.json", "completion.json")
     )
+    assert (
+        hashlib.sha256((root / "inputs.json").read_bytes()).hexdigest() == protocol["inputs_sha256"]
+    )
     assert identity["protocol"] == protocol
     layers = protocol["architecture"]["layers"]
     hidden = protocol["architecture"]["hidden"]

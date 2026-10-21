@@ -1367,3 +1367,14 @@ counterfactual empire/country relation is a development limitation, not factual
 quality. A base capability gate stops fitting below18/23 whole utility answers.
 Complete observed outputs still require review; passing counts alone will not
 meet the library or paper-superiority objective.
+
+Kaggle accepts [version1](../experiments/paired_mlp/launch_v1.json), kernel140076357,
+and reports RUNNING. The independently pulled121143-byte source matches the
+frozen upload, SHA256
+`8142a5468ce5453742fd14760ca20e0363c9385b3863e167e762bd2a0896f906`;
+all30 bundled files verify. Exact runtime preflight and the base capability gate
+pass, and the first candidate completes training/reload/merge/restoration checks.
+No completed comparison or quality conclusion is available. Post-submission,
+only independent input-byte verification is tightened; the accepted worker,
+protocol, examples, scoring, rates and supports remain unchanged. Four targeted
+checks pass for that verifier addition; source2e888fe's CI is green.

@@ -1,3 +1,6 @@
+import hashlib
+import json
+
 import pytest
 import torch
 
@@ -75,7 +78,8 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     torch.manual_seed(54)
     model = transformers.Qwen3ForCausalLM(config).to(dtype).eval().requires_grad_(False)
     original = fingerprint(model)
-    spec = protocol("fixture")
+    data = tiny_data()
+    spec = protocol(hashlib.sha256((json.dumps(data, indent=2) + "\n").encode()).hexdigest())
     spec.update(
         id="cpu-fixture",
         architecture={"layers": 2, "hidden": 16, "intermediate": 32},
@@ -84,7 +88,7 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
         max_new_tokens=2,
     )
     tokenizer = TinyTokenizer()
-    rows = execute(model, tokenizer, tiny_data(), spec, tmp_path / "run", lambda: None)
+    rows = execute(model, tokenizer, data, spec, tmp_path / "run", lambda: None)
     assert len(rows) == 24
     assert {r["trainable_scalars"] for r in rows} == {288}
     assert all(r["base_restored"] and r["reload_teacher_exact"] for r in rows)
@@ -93,8 +97,6 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     verified = verify(tmp_path / "run", spec, tokenizer)
     assert verified["fits"] == verified["teacher_records_recomputed"] == 24
     assert verified["decoded"] == 286
-    import json
-
     path = tmp_path / "run/fits.json"
     fits = json.loads(path.read_text())
     fits[0]["metrics"]["task_mean_nll"] += 0.01

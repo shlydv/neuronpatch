@@ -1,10 +1,13 @@
 # Paired neuron updates with complete-response supervision
 
-**Implementation and tokenizer checks only. No pretrained behavioral result.**
+**Status: the matched-budget Kaggle pilot is RUNNING; no completed result yet.**
+See the [launch record](launch_v1.json), [frozen source](frozen_v1.json) and
+[trial specification](TRIAL_V1.md). No pretrained paired-update advantage is
+established by the implementation checks or training-loss observations.
 The [frozen GPT-J finisher](../adapter_diagnosis/complete_v1/REPORT.md) is now
 complete, independently verified and consolidated. Its source and outcomes are
-independent of this new implementation. No paired pretrained experiment has
-started yet.
+independent of this new implementation. The new pilot uses the two exposed
+development edits; fresh confirmation inputs remain untouched.
 
 The [completed projection-family comparisons](../adapter_diagnosis/partial_v1/REPORT.md)
 motivate testing incoming and outgoing updates together. They do not show that
@@ -118,7 +121,7 @@ described in its [official model card](https://huggingface.co/Qwen/Qwen3-4B-Inst
 This is the same instruction-model revision used in earlier QA work, not an
 unexplored stronger model or a guarantee that the earlier task will now work.
 
-## Bounded next comparison
+## Bounded comparison
 
 The [concrete24-fit trial](TRIAL_V1.md) now specifies complete answers, matched
 budgets, three random seeds, two rates, validation-only selection and isolation

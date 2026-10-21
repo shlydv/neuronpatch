@@ -1,0 +1,21 @@
+{
+  "status": "RUNNING",
+  "frozen_utc": "2026-10-21T19:04:33.684980+00:00",
+  "kernel": "shlydv/neuronpatch-paired-full-response-v1-20261022",
+  "source_revision": "2e888fef16920cc0c861f41de82f6d426615e0f5",
+  "script_bytes": 121143,
+  "source_sha256": "8142a5468ce5453742fd14760ca20e0363c9385b3863e167e762bd2a0896f906",
+  "bundled_files": 30,
+  "isolated_pinned_imports_pass": true,
+  "new_fits": 24,
+  "expected_logical_generations": 1417,
+  "inputs_sha256": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+  "fresh_confirmation_used": false,
+  "results_status": "Running. Exact dependency preflight and base capability gate passed; first candidate completed training/reload/merge/restoration checks. No completed comparison or quality result yet.",
+  "status_checked_utc": "2026-10-21T19:07:54.005417+00:00",
+  "kernel_id": 140076357,
+  "accepted_version": 1,
+  "accepted_source_byte_identical": true,
+  "rejected_input_sources": [],
+  "progress_observed_utc": "2026-10-21T19:13:20.450070+00:00"
+}

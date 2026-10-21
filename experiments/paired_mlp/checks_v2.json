@@ -26,5 +26,13 @@
   "tokenizer": "data_tokenization_v1.json",
   "ruff": "check and format passed",
   "packaging": "isolated wheel and source distribution built",
-  "ci": "Not yet checked for this new source revision"
+  "ci": {
+    "source_revision": "2e888fef16920cc0c861f41de82f6d426615e0f5",
+    "url": "https://github.com/shlydv/neuronpatch/actions/runs/39658293023",
+    "conclusion": "success"
+  },
+  "post_submission_verifier": {
+    "change": "Added strict inputs.json byte-hash binding to frozen protocol; no worker/scoring changes",
+    "targeted_checks_passed": 4
+  }
 }
