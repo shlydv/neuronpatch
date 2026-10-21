@@ -40,6 +40,11 @@ untrained-wording prefixes. Calibration succeeds, but the declared scope gate
 fails and full continuations expose additional interference. This is a useful
 partial result, not a validated adaptation recipe or superiority claim.
 
+The next [common-objective comparison](experiments/adapter_comparison/README.md)
+tests saved consensus supports, a mean-gradient control and broad official LoRA.
+Its fixed eight-fit protocol and complete tiny worker are locally verified;
+full-size GPU results are pending. It does not add another untested selector.
+
 ## Direction
 
 The intended workflow is **select → train → evaluate target and preserved behavior

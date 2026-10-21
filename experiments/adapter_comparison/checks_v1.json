@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-10-21T08:54:39.028818+00:00",
+  "scope": "CPU actual tiny GPT-J integration; no full-size GPU result",
+  "local_python": "3.12.14",
+  "local_torch": "2.14.1",
+  "full_suite": {
+    "passed": 177,
+    "skipped": 2
+  },
+  "comparison_and_lifecycle": [
+    {
+      "transformers": "5.20.1",
+      "peft": "0.21.2",
+      "passed": 11
+    },
+    {
+      "transformers": "4.40.0",
+      "peft": "0.11.1",
+      "passed": 11
+    }
+  ],
+  "checks": [
+    "Sparse common objective exactly matches existing zero-norm FP32 trainer",
+    "LoRA sequential preservation gradients agree with joint objective",
+    "FP16 base stays frozen and restores exactly across repeated attachments/merges",
+    "Complete eight-fit worker exports/reloads FP32 factors and live logits exactly",
+    "Independent verification recomputes selection and decodes530 output records",
+    "Corrupted reported calibration metrics are rejected"
+  ]
+}

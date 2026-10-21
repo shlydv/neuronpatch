@@ -1169,3 +1169,22 @@ inventing another selector or scaling the candidate. This will help separate
 support/capacity limits from calibration coverage. Fresh facts, a stronger
 answering model and complete-response evaluation remain required. The library
 goal is still unmet; no paper-superiority or useful-recipe claim is made.
+
+### A common-objective support versus LoRA comparison is prepared
+
+The [registered development comparison](../experiments/adapter_comparison/README.md)
+uses the same exposed correction/calibration data for saved consensus supports,
+mean-gradient supports and official broad rank-2 LoRA. All new trainables are
+FP32 and all fits use the same prediction-space losses, weight10 preservation,
+50 Adam updates and no parameter norm penalty. Occurrence norms and LoRA factor
+norms would not be comparable. The two LoRA learning rates are selected only
+using final merged-model calibration in both cases. LoRA's 4,128,768 scalars are
+explicitly larger than the sparse 20,480/81,920 budgets; this is a capacity
+diagnostic, not matched-parameter efficiency or a fresh benchmark.
+
+Eleven CPU tests pass with both PEFT 0.11.1/Transformers 4.40 and the installed
+modern pair. The complete tiny GPT-J worker covers all eight fits, exact adapter
+factor/logit round trips, merging, exact base restoration, selection and independent
+verification of 530 decoded outputs. A lifecycle check also catches old PEFT's
+leftover adapter metadata before reattachment. The full suite passes177 tests
+with two skips. No full-size outcome is implied by these engineering checks.

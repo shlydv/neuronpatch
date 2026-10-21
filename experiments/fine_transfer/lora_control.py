@@ -1,7 +1,7 @@
-"""Official PEFT attachment for a future strong GPT-J baseline; no fitting recipe.
+"""Official PEFT attachment, export and lifecycle helpers for GPT-J controls.
 
-This is separate from the frozen, running subject-binding experiment. It does
-not define training objectives, tune parameters or claim matched sparse budgets.
+Training objectives and baseline selection belong to the experiment runner.
+These helpers do not claim parameter-matched sparse and low-rank budgets.
 """
 
 import torch
@@ -154,4 +154,19 @@ def merge_gptj_lora(wrapped):
         base.to(dtype=dtype)
         if not torch.isfinite(base.weight).all():
             raise FloatingPointError("Merged weights overflowed their original dtype")
-    return wrapped.unload().eval()
+    return remove_gptj_lora(wrapped)
+
+
+def remove_gptj_lora(wrapped):
+    """Remove adapters and old PEFT metadata so the same base can be reused.
+
+    This does not undo already merged weight updates. Restore a saved base
+    snapshot after merging; subtracting an FP16 update would not restore it.
+    """
+    model = wrapped.unload()
+    # PEFT 0.11 leaves this attribute behind; newer PEFT removes it itself.
+    if hasattr(model, "peft_config"):
+        del model.peft_config
+    if any("lora_" in name for name, _ in model.named_parameters()):
+        raise RuntimeError("Adapter parameters survived unloading")
+    return model.eval().requires_grad_(False)

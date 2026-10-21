@@ -10,6 +10,7 @@ from experiments.fine_transfer.lora_control import (
     attach_gptj_lora,
     load_gptj_lora,
     merge_gptj_lora,
+    remove_gptj_lora,
 )
 
 
@@ -92,3 +93,28 @@ def test_official_adapter_training_export_reload_and_merge(tmp_path, dtype):
     torch.testing.assert_close(edited, merged_logits, atol=tolerance, rtol=tolerance)
     assert not any("lora_" in name for name, _ in merged.named_parameters())
     assert report["scope"] == "attention_mlp"
+
+
+def test_repeated_attachment_and_exact_restoration_after_merging():
+    from experiments.adapter_comparison.run import restore_weights, snapshot_weights
+    from experiments.fine_transfer.lora_control import gptj_targets
+    from neuronpatch.patch import fingerprint
+
+    model = tiny_model().half().requires_grad_(False)
+    identity = fingerprint(model)
+    snapshot = snapshot_weights(model, gptj_targets(model, "attention_mlp"))
+    for merge in (False, True, False):
+        adapted, _ = attach_gptj_lora(model)
+        with torch.no_grad():
+            for name, p in adapted.named_parameters():
+                if "lora_B" in name:
+                    p.fill_(0.0137)
+        if merge:
+            model = merge_gptj_lora(adapted)
+            assert fingerprint(model) != identity
+            restore_weights(model, snapshot)
+        else:
+            model = remove_gptj_lora(adapted)
+        assert fingerprint(model) == identity
+        assert not hasattr(model, "peft_config")
+        assert all(not p.requires_grad for p in model.parameters())
