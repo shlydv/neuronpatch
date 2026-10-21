@@ -33,6 +33,8 @@
   "outputs_not_used_to_tune_retry": true,
   "cold_sequences_independently_checked": 8,
   "calibration_records_independently_recomputed": 2,
-  "evaluation_outputs_inspected": false,
-  "full_comparison_possible": false
+  "full_comparison_possible": false,
+  "evaluation_outputs_inspected_at_diagnosis": false,
+  "later_evaluation_inspected_after_retry_freeze": true,
+  "later_analysis": "partial_after_v2_freeze.json"
 }

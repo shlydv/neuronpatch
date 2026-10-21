@@ -35,3 +35,8 @@ See [protocol](protocol_v1.json), [accepted launch](launch_v1.json),
 [source manifest](submission_v1.json), [provider](provider.json),
 [execution log](execution.log), [partial fits](fits.json) and
 [integrity checks](integrity.json). Raw generated text/tokens remain private.
+
+After the corrected retry was frozen and accepted, the recovered case-0 outputs
+were decoded and scored as [explicit partial evidence](PARTIAL_AFTER_RETRY_FREEZE.md).
+This later inspection does not tune the retry or turn the failed run into a
+complete comparison.
