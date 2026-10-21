@@ -1,6 +1,9 @@
 # Which learned update groups make the LoRA edit selective?
 
-**Status: CPU-verified preparation; no full-size diagnosis result yet.**
+**Status: running on Kaggle**, kernel140012297 version1.
+The independently pulled accepted220032-byte source matches the frozen bundle;
+all61 bundled hashes pass locally. See [launch identity](launch_v1.json) and
+[pre-inference freeze](frozen_v1.json). No full-size diagnosis result yet.
 The completed [parent comparison](../adapter_comparison/pilot_v2/REPORT.md)
 favors broad low-rate LoRA over our outgoing-neuron patches. This diagnostic
 reuses those exact calibration-selected factors; it does not refit adapters,
@@ -107,7 +110,19 @@ python -m experiments.adapter_diagnosis.verify \
   --parent artifacts/adapter_comparison_v2/kaggle_download/comparison-results/results \
   --protocol experiments/adapter_diagnosis/protocol_v1.json \
   --decode --output artifacts/adapter_diagnosis_v1/integrity_v1.json
+python -m experiments.adapter_diagnosis.analysis \
+  --results artifacts/adapter_diagnosis_v1/kaggle_download/diagnosis-results/results \
+  --output artifacts/adapter_diagnosis_v1/analysis_v1
+python -m experiments.adapter_comparison.review \
+  --results artifacts/adapter_diagnosis_v1/kaggle_download/diagnosis-results/results \
+  --output artifacts/adapter_diagnosis_v1/private_review_v1.json
+python -m experiments.adapter_comparison.posthoc \
+  --results artifacts/adapter_diagnosis_v1/kaggle_download/diagnosis-results/results \
+  --output artifacts/adapter_diagnosis_v1/posthoc_v1.json
 ```
+
+The post-submission analysis helper changes no frozen worker code or criterion.
+Collecting a review packet does not count as reviewing its continuations.
 
 The overall goal remains a useful adaptation library with a demonstrated
 advantage, not just an explanation of two counterfactual edits. Fresh crossed

@@ -26,5 +26,11 @@
     "Changed reported NLL fails independent verification"
   ],
   "cross_version_bitwise_parity": false,
-  "full_size_result": null
+  "full_size_result": null,
+  "ci": {
+    "source_revision": "6d92ba5b26ed355ff186b05ea3e92f4317a6cb1f",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/shlydv/neuronpatch/actions/runs/39592498510"
+  }
 }

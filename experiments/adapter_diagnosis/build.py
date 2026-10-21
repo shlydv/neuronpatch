@@ -59,7 +59,7 @@ def main():
     args.output.mkdir(parents=True, exist_ok=False)
     (args.output / "run.py").write_text(script)
     metadata = {
-        "id": "shlydv/neuronpatch-adapter-diagnosis-v1-20261021",
+        "id": "shlydv/neuronpatch-frozen-adapter-diagnosis-v1-20261021",
         "title": "neuronpatch frozen adapter diagnosis v1 20261021",
         "code_file": "run.py",
         "language": "python",

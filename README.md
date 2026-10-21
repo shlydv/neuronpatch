@@ -47,7 +47,10 @@ leaks, versus 5/6 and 1/8 for simpler mean-gradient sparse support, and 6/6 and
 this is not a parameter-matched efficiency result. All 530 capped generations
 are verified and reviewed. Correct prefixes still hide later errors, and the
 weak base makes utility retention an insufficient quality check. These are two
-exposed development facts, not a validated recipe. No GPU worker is active.
+exposed development facts, not a validated recipe. The
+[frozen-adapter group diagnostic](experiments/adapter_diagnosis/README.md) now
+tests which additional projection groups the successful LoRA patch needs,
+without refitting or consuming fresh facts. See its launch record for status.
 
 ## Direction
 

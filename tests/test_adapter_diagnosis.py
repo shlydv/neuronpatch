@@ -197,6 +197,13 @@ def test_frozen_update_groups_and_complete_diagnostic(tmp_path, monkeypatch, cap
         "parent_condition": "low",
         "base_fingerprint": identity,
         "conditions": conditions(names, 4),
+        "new_fits": 0,
+        "criteria": {
+            "target_probability": 0.9,
+            "max_answer_kl": 0.1,
+            "minimum_untrained_prefixes": 0,
+            "maximum_evaluation_leaks": 1,
+        },
         "parent_sha256": {
             str(p.relative_to(parent)): hashlib.sha256(p.read_bytes()).hexdigest()
             for p in parent.rglob("*")
@@ -216,6 +223,13 @@ def test_frozen_update_groups_and_complete_diagnostic(tmp_path, monkeypatch, cap
     assert verified["sequences_checked"] == verified["decoded"] == 100
     assert verified["exact_control_observations"] == 20
     assert verified["calibration_records_recomputed"] == 20
+    from experiments.adapter_comparison.review import packet
+    from experiments.adapter_diagnosis.analysis import summarize
+
+    summary, decisions = summarize(out)
+    assert len(summary["groups"]) == 9 and len(summary["cases"]) == 18
+    assert len(decisions) == 54
+    assert packet(out)["observations"] == 100
     row_file = out / "interventions.json"
     tampered = json.loads(row_file.read_text())
     tampered[0]["metrics"]["nll"] += 0.5
