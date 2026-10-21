@@ -2,11 +2,25 @@
 
 import hashlib
 import json
+import shutil
 
 import pytest
 import torch
 
 from experiments.adapter_diagnosis.groups import conditions, retain_updates
+
+
+def test_factor_coordinate_energy_matches_materialized_update():
+    from experiments.adapter_diagnosis.geometry import coordinate_energy
+
+    generator = torch.Generator().manual_seed(77)
+    a = torch.randn(2, 7, generator=generator, dtype=torch.float64)
+    b = torch.randn(5, 2, generator=generator, dtype=torch.float64)
+    actual = b @ a
+    for axis, dimension in (("rows", 1), ("columns", 0)):
+        torch.testing.assert_close(
+            coordinate_energy(a, b, axis), actual.square().sum(dimension), rtol=1e-12, atol=1e-12
+        )
 
 
 def test_group_partition_and_final_layer_coverage():
@@ -239,6 +253,54 @@ def test_frozen_update_groups_and_complete_diagnostic(tmp_path, monkeypatch, cap
     row_file.write_text(json.dumps(records))
     logs = capsys.readouterr().out
     assert logs.index("all_controls_replayed_before_ablation") < logs.index("0 only-attention")
+    # Simulate the actual timeout boundary: sixteen restored interventions,
+    # with only the second case's final-layer pair missing.
+    partial = tmp_path / "partial"
+    shutil.copytree(out, partial)
+    (partial / "completion.json").unlink()
+    (partial / "interventions.json").write_text(json.dumps(records[:16]))
+    for row in records[16:]:
+        for suffix in (".json", "-calibration.safetensors"):
+            (partial / f"case-{row['case']}-{row['condition']}{suffix}").unlink()
+    part = check_results(partial, parent, protocol, tokenizer, partial=True)
+    assert not part["complete"] and part["decoded"] == 90
+    assert part["completed_interventions"] == 16
+    partial_summary, _ = summarize(partial, partial=True)
+    assert partial_summary["groups"]["only-final-three"]["available_cases"] == 1
+    assert not partial_summary["groups"]["only-final-three"]["complete_condition"]
+    assert not partial_summary["groups"]["only-final-three"]["conditional_count_pass"]
+    with pytest.raises(FileNotFoundError):
+        check_results(partial, parent, protocol, tokenizer)
+    resumed = tmp_path / "resumed"
+    resumed.mkdir()
+    resume_config = {
+        key: part[key]
+        for key in ("file_sha256", "completed_interventions", "remaining_interventions")
+    }
+    actual = run.execute(
+        model, tokenizer, parent, protocol, resumed, lambda: None, resume=(partial, resume_config)
+    )
+    assert actual == records
+    resume_done = json.loads((resumed / "completion.json").read_text())
+    assert resume_done["copied_interventions"] == 14
+    assert resume_done["new_interventions_this_worker"] == 4
+    assert resume_done["new_observed_continuations"] == 30
+    verified = check_results(resumed, parent, protocol, tokenizer, resume_config=resume_config)
+    assert verified["complete"] and verified["decoded"] == 100
+    with pytest.raises(AssertionError, match="resume manifest"):
+        check_results(resumed, parent, protocol, tokenizer)
+    # A semantically identical JSON with different bytes must not pass as an
+    # unchanged copied artifact from the verified first worker.
+    copied_file = resumed / "case-0-only-attention.json"
+    original = copied_file.read_bytes()
+    copied_file.write_bytes(original + b" ")
+    with pytest.raises(AssertionError):
+        check_results(resumed, parent, protocol, tokenizer, resume_config=resume_config)
+    copied_file.write_bytes(original)
+    resume_logs = capsys.readouterr().out
+    assert "INTERVENTION_START 0 only-attention" not in resume_logs
+    assert "INTERVENTION_START 1 only-final-three" in resume_logs
+    assert fingerprint(model) == identity
     # A matching-hash but incompatible control must still stop before ablations.
     old = json.loads((parent / "case-1-base.json").read_text())
     old["utility"][0]["text"] = "bad cached control"

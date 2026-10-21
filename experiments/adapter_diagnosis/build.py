@@ -30,13 +30,21 @@ def main():
     ]
     files = {str(p.relative_to(ROOT)): p.read_bytes() for p in sources}
     files["data/protocol.json"] = (args.data / "protocol.json").read_bytes()
+    resume = args.data / "resume.json"
+    resume_config = json.loads(resume.read_text()) if resume.exists() else None
+    if resume_config is not None:
+        files["data/resume.json"] = resume.read_bytes()
     hashes = {k: hashlib.sha256(v).hexdigest() for k, v in files.items()}
     submission = {
         "base_revision": subprocess.check_output(
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
         ).strip(),
         "file_sha256": hashes,
-        "scope": "Frozen selected adapters;18 merged interventions, zero new fits",
+        "scope": (
+            "Verified resume:two missing interventions plus replay controls;zero fits"
+            if resume_config
+            else "Frozen selected adapters;18 merged interventions, zero new fits"
+        ),
     }
     bundle = {
         "files": {k: base64.b85encode(v).decode() for k, v in files.items()},
@@ -73,6 +81,12 @@ def main():
         "kernel_sources": [protocol["parent_kernel"]],
         "model_sources": [],
     }
+    if resume_config is not None:
+        metadata.update(
+            id="shlydv/neuronpatch-frozen-adapter-finish-v1-20261021",
+            title="neuronpatch frozen adapter finish v1 20261021",
+            kernel_sources=[protocol["parent_kernel"], resume_config["partial_kernel"]],
+        )
     for name, value in (("kernel-metadata.json", metadata), ("submission.json", submission)):
         (args.output / name).write_text(json.dumps(value, indent=2) + "\n")
     print(

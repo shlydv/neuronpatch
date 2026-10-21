@@ -1,0 +1,16 @@
+[
+  {
+    "case": 0,
+    "base_outputs_exact": true,
+    "full_outputs_exact": true,
+    "base_calibration_exact": true,
+    "full_calibration_exact": true
+  },
+  {
+    "case": 1,
+    "base_outputs_exact": true,
+    "full_outputs_exact": true,
+    "base_calibration_exact": true,
+    "full_calibration_exact": true
+  }
+]

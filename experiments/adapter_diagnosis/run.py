@@ -7,6 +7,7 @@ All base/full controls must replay before any new ablation inference.
 import argparse
 import hashlib
 import json
+import shutil
 import time
 from pathlib import Path
 
@@ -51,7 +52,7 @@ def locate_parent(search, expected):
     return matches[0]
 
 
-def execute(model, tokenizer, parent, protocol, output, check_time):
+def execute(model, tokenizer, parent, protocol, output, check_time, *, resume=None):
     """Run the complete diagnostic on an already-loaded frozen materialized base."""
     from experiments.adapter_comparison.run import restore_weights, snapshot_weights
 
@@ -70,6 +71,16 @@ def execute(model, tokenizer, parent, protocol, output, check_time):
     names = gptj_targets(model, "attention_mlp")
     variants = conditions(names, len(model.transformer.h))
     assert variants == protocol["conditions"]
+    prior_rows, prior, resume_config = [], None, None
+    if resume is not None:
+        from .verify import check_results
+
+        prior, resume_config = resume
+        verify_parent(prior, resume_config["file_sha256"])
+        checked = check_results(prior, parent, protocol, partial=True)
+        assert checked["remaining_interventions"] == resume_config["remaining_interventions"]
+        assert checked["completed_interventions"] == resume_config["completed_interventions"]
+        prior_rows = json.loads((prior / "interventions.json").read_text())
     inputs = json.loads((parent / "inputs.json").read_text())
     write(output / "inputs.json", inputs)
     write(output / "identity.json", {"fingerprint": identity, "protocol": protocol})
@@ -79,8 +90,10 @@ def execute(model, tokenizer, parent, protocol, output, check_time):
         {"targets": names, "bytes": sum(t.numel() * t.element_size() for t in snapshot.values())},
     )
     contexts, records, controls, base_metrics = {}, [], [], []
+    generated_observations = 0
 
     def evaluate(case):
+        nonlocal generated_observations
         result = {"case": case["case"]}
         for bank, probes in [
             ("edit", case["edit_probes"]),
@@ -91,6 +104,7 @@ def execute(model, tokenizer, parent, protocol, output, check_time):
             for probe in probes:
                 check_time()
                 result[bank].append(generate(model, tokenizer, probe["prompt"]))
+                generated_observations += 1
         return result
 
     def intervention(case, variant, refs, reference):
@@ -171,9 +185,35 @@ def execute(model, tokenizer, parent, protocol, output, check_time):
         )
         write(output / "controls.json", controls)
     print("STAGE all_controls_replayed_before_ablation", flush=True)
+    copied = []
+    for row in prior_rows:
+        if row["condition"] == "full":
+            continue  # Full controls have just been regenerated and exactly replayed.
+        c, name = row["case"], row["condition"]
+        for suffix in (".json", "-calibration.safetensors"):
+            filename = f"case-{c}-{name}{suffix}"
+            assert not (output / filename).exists()
+            shutil.copyfile(prior / filename, output / filename)
+        records.append(row)
+        copied.append({"case": c, "condition": name})
+    if resume is not None:
+        write(output / "interventions.json", records)
+        write(
+            output / "resume.json",
+            {
+                "source": resume_config,
+                "copied_interventions": copied,
+                "full_controls_regenerated": True,
+                "remaining_interventions": resume_config["remaining_interventions"],
+            },
+        )
+        print("STAGE verified_partial_results_copied", len(copied), flush=True)
+    completed = {(r["case"], r["condition"]) for r in records}
     for case in inputs["cases"]:
         refs, reference = contexts[case["case"]]
         for variant in variants[1:]:
+            if (case["case"], variant["id"]) in completed:
+                continue
             intervention(case, variant, refs, reference)
     assert len(records) == len(inputs["cases"]) * len(variants)
     assert fingerprint(model) == identity
@@ -187,6 +227,10 @@ def execute(model, tokenizer, parent, protocol, output, check_time):
             "controls_exact": True,
             "weights_restored": True,
             "final_fingerprint": identity,
+            "resumed": resume is not None,
+            "copied_interventions": len(copied),
+            "new_interventions_this_worker": len(records) - len(copied),
+            "new_observed_continuations": generated_observations,
         },
     )
     return records
@@ -206,6 +250,12 @@ def main():
     dependency_preflight(protocol["runtime"])
     parent = args.parent or locate_parent(Path("/kaggle/input"), protocol["parent_sha256"])
     verify_parent(parent, protocol["parent_sha256"])
+    resume = None
+    resume_file = args.data / "resume.json"
+    if resume_file.exists():
+        resume_config = json.loads(resume_file.read_text())
+        prior = locate_parent(Path("/kaggle/input"), resume_config["file_sha256"])
+        resume = prior, resume_config
     args.output.mkdir(parents=True, exist_ok=False)
     started = time.monotonic()
 
@@ -226,7 +276,7 @@ def main():
         .eval()
         .requires_grad_(False)
     )
-    execute(model, tokenizer, parent, protocol, args.output, check_time)
+    execute(model, tokenizer, parent, protocol, args.output, check_time, resume=resume)
     print("COMPLETE adapter-diagnosis", flush=True)
 
 

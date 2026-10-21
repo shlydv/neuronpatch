@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "ERROR",
   "source_revision": "6d92ba5b26ed355ff186b05ea3e92f4317a6cb1f",
   "source_sha256": "7fb054bfb65908f9f820c04d36add34475657bcde8f442deb59b0ed99590c317",
   "script_bytes": 220032,
@@ -16,10 +16,30 @@
   "accepted_source_byte_identical": true,
   "runtime_limit_seconds": 3600,
   "outer_timeout_seconds": 3900,
-  "results_status": "Accepted worker running; exact parent controls must pass before partial-adapter inference. No full-size group result yet.",
-  "startup_stage": "STAGE dependency_preflight_complete, then STAGE model_load",
+  "results_status": "Verified partial grid; final-layer pair missing. Independent audit decodes954 observations and recomputes18 calibration records. Full-output review incomplete.",
+  "startup_stage": "STAGE all_controls_replayed_before_ablation; partial-adapter interventions started",
   "parent_attachment_hashes_pass": true,
   "dependency_preflight_passed_on_kaggle": true,
   "startup_observed_utc": "2026-10-21T11:37:41.999521+00:00",
-  "postprocessing_added_after_submission": true
+  "postprocessing_added_after_submission": true,
+  "worker_reported_exact_control_observations": 212,
+  "controls_pending_independent_download_verification": false,
+  "terminal_status_observed_utc": "2026-10-21T17:11:28.177606+00:00",
+  "failure": "Worker TimeoutError at its3600-second runtime bound; no next intervention started",
+  "returncode": 1,
+  "elapsed_seconds": 3670.590935066,
+  "completed_interventions": 16,
+  "verified_observations": 954,
+  "verified_control_observations": 212,
+  "remaining_interventions": [
+    {
+      "case": 1,
+      "condition": "only-final-three"
+    },
+    {
+      "case": 1,
+      "condition": "without-final-three"
+    }
+  ],
+  "active_gpu_worker": false
 }

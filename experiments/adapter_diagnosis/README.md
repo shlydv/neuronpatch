@@ -1,9 +1,12 @@
 # Which learned update groups make the LoRA edit selective?
 
-**Status: running on Kaggle**, kernel140012297 version1.
-The independently pulled accepted220032-byte source matches the frozen bundle;
-all61 bundled hashes pass locally. See [launch identity](launch_v1.json) and
-[pre-inference freeze](frozen_v1.json). No full-size diagnosis result yet.
+**Status: verified partial results; original worker timed out at our one-hour bound.**
+Sixteen of eighteen interventions finish. Independent verification checks 954
+decoded observations, 212 exact controls and 18 calibration records.
+The two remaining final-layer conditions will be completed from the
+[hash-bound resume](resume_v1.json), with fresh exact controls and no refitting.
+See [partial report](partial_v1/REPORT.md), [launch identity](launch_v1.json) and
+[pre-inference freeze](frozen_v1.json). The full grid and output review remain incomplete.
 The completed [parent comparison](../adapter_comparison/pilot_v2/REPORT.md)
 favors broad low-rate LoRA over our outgoing-neuron patches. This diagnostic
 reuses those exact calibration-selected factors; it does not refit adapters,
@@ -123,6 +126,15 @@ python -m experiments.adapter_comparison.posthoc \
 
 The post-submission analysis helper changes no frozen worker code or criterion.
 Collecting a review packet does not count as reviewing its continuations.
+
+The [weight-geometry note](GEOMETRY_NOTE.md) explains why unequal update norms
+and dispersed weight energy cannot be read as causal importance or a neuron-count
+lower bound. The `geometry.py` and `plot.py` helpers change no frozen inference.
+The aggregate plot refuses incomplete-grid denominators.
+
+For the finisher, independent verification additionally requires
+`--resume-manifest experiments/adapter_diagnosis/resume_v1.json`. It checks copied
+result bytes against the original partial audit, not just parsed text equivalence.
 
 The overall goal remains a useful adaptation library with a demonstrated
 advantage, not just an explanation of two counterfactual edits. Fresh crossed

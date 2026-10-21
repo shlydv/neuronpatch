@@ -1,6 +1,7 @@
 """Reconstruct every diagnostic metric and require exact parent control replay."""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -13,25 +14,40 @@ from experiments.subject_binding.measure import statistics
 from .run import verify_parent
 
 
-def check_results(root, parent, protocol, tokenizer=None):
+def check_results(root, parent, protocol, tokenizer=None, *, partial=False, resume_config=None):
     def read(name):
         return json.loads((root / name).read_text())
 
     verify_parent(parent, protocol["parent_sha256"])
-    done, identity, inputs = [read(n) for n in ("completion.json", "identity.json", "inputs.json")]
+    identity, inputs = [read(n) for n in ("identity.json", "inputs.json")]
+    done = None if partial else read("completion.json")
     assert identity["protocol"] == protocol
-    assert identity["fingerprint"] == done["final_fingerprint"] == protocol["base_fingerprint"]
-    assert done["status"] == "complete" and done["controls_exact"] and done["weights_restored"]
-    assert done["new_fits"] == done["new_training_steps"] == 0
+    assert identity["fingerprint"] == protocol["base_fingerprint"]
+    if partial:
+        assert not (root / "completion.json").exists(), "Do not relabel a complete run as partial"
+    else:
+        assert identity["fingerprint"] == done["final_fingerprint"]
+        assert done["status"] == "complete" and done["controls_exact"] and done["weights_restored"]
+        assert done["new_fits"] == done["new_training_steps"] == 0
     assert inputs == json.loads((parent / "inputs.json").read_text())
     rows = read("interventions.json")
     variants = {r["id"]: r["keep"] for r in protocol["conditions"]}
     expected = {(c["case"], key) for c in inputs["cases"] for key in variants}
-    assert len(rows) == len(expected) == done["interventions"]
-    assert {(r["case"], r["condition"]) for r in rows} == expected
+    completed = {(r["case"], r["condition"]) for r in rows}
+    assert len(rows) == len(completed)
+    if partial:
+        order = [(c["case"], "full") for c in inputs["cases"]] + [
+            (c["case"], key) for c in inputs["cases"] for key in variants if key != "full"
+        ]
+        assert [(r["case"], r["condition"]) for r in rows] == order[: len(rows)]
+        assert len(inputs["cases"]) <= len(rows) < len(expected)
+    else:
+        assert len(rows) == len(expected) == done["interventions"]
+        assert completed == expected
     selected = protocol["parent_condition"]
     checked, decoded, reconstructed, control_count = 0, 0, 0, 0
     bases = read("base-metrics.json")
+    assert len(bases) == len(inputs["cases"])
     assert {r["case"] for r in bases} == {c["case"] for c in inputs["cases"]}
     for case in inputs["cases"]:
         c = case["case"]
@@ -48,6 +64,10 @@ def check_results(root, parent, protocol, tokenizer=None):
             sizes[name] = sizes.get(name, 0) + tensor.numel()
         assert set(sizes) == set(variants["full"])
         for name in ["base", *variants]:
+            if name != "base" and (c, name) not in completed:
+                assert not (root / f"case-{c}-{name}.json").exists()
+                assert not (root / f"case-{c}-{name}-calibration.safetensors").exists()
+                continue
             answer = read(f"case-{c}-{name}.json")
             assert answer["case"] == c
             if name in ("base", "full"):
@@ -109,18 +129,76 @@ def check_results(root, parent, protocol, tokenizer=None):
                 assert all(torch.equal(t, old[k]) for k, t in tensors.items())
             reconstructed += 1
     controls = read("controls.json")
-    assert len(controls) == len(inputs["cases"])
-    assert all(all(value is True for key, value in r.items() if key != "case") for r in controls)
+    assert controls == [
+        {
+            "case": c["case"],
+            "base_outputs_exact": True,
+            "full_outputs_exact": True,
+            "base_calibration_exact": True,
+            "full_calibration_exact": True,
+        }
+        for c in inputs["cases"]
+    ]
     if "expected_observations" in protocol:
-        assert checked == protocol["expected_observations"]
+        if not partial:
+            assert checked == protocol["expected_observations"]
         assert control_count == protocol["expected_control_observations"]
+    if done is not None and done.get("resumed"):
+        assert resume_config is not None, "Supply the frozen resume manifest"
+        resumed = read("resume.json")
+        assert resumed["source"] == resume_config and resumed["full_controls_regenerated"]
+        order = [(c["case"], "full") for c in inputs["cases"]] + [
+            (c["case"], key) for c in inputs["cases"] for key in variants if key != "full"
+        ]
+        old_keys = order[: resume_config["completed_interventions"]]
+        copied = [{"case": c, "condition": n} for c, n in old_keys if n != "full"]
+        assert resumed["copied_interventions"] == copied
+        assert resumed["remaining_interventions"] == resume_config["remaining_interventions"]
+        assert resume_config["remaining_interventions"] == [
+            {"case": c, "condition": n} for c, n in order[len(old_keys) :]
+        ]
+        for row in copied:
+            for suffix in (".json", "-calibration.safetensors"):
+                name = f"case-{row['case']}-{row['condition']}{suffix}"
+                assert (
+                    hashlib.sha256((root / name).read_bytes()).hexdigest()
+                    == (resume_config["file_sha256"][name])
+                )
+        assert done["copied_interventions"] == len(copied)
+        assert done["new_interventions_this_worker"] == len(rows) - len(copied)
+        per_case = {
+            c["case"]: len(c["edit_probes"])
+            + len(inputs["utility"])
+            + sum(len(c[k]) for k in ("calibration", "evaluation", "exposed_scope"))
+            for c in inputs["cases"]
+        }
+        assert done["new_observed_continuations"] == control_count + sum(
+            per_case[r["case"]] for r in resume_config["remaining_interventions"]
+        )
     return {
-        "status": "Execution/control/calibration verified; not a quality claim",
+        "status": (
+            "Partial execution/control/calibration verified; comparison incomplete"
+            if partial
+            else "Execution/control/calibration verified; not a quality claim"
+        ),
+        "complete": not partial,
         "sequences_checked": checked,
         "decoded": decoded,
         "exact_control_observations": control_count,
         "calibration_records_recomputed": reconstructed,
         "new_fits": 0,
+        "completed_interventions": len(rows),
+        "remaining_interventions": [
+            {"case": c["case"], "condition": name}
+            for c in inputs["cases"]
+            for name in variants
+            if (c["case"], name) not in completed
+        ],
+        "file_sha256": {
+            str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in sorted(root.rglob("*"))
+            if p.is_file()
+        },
     }
 
 
@@ -130,6 +208,8 @@ def main():
     parser.add_argument("--parent", type=Path, required=True)
     parser.add_argument("--protocol", type=Path, required=True)
     parser.add_argument("--decode", action="store_true")
+    parser.add_argument("--partial", action="store_true")
+    parser.add_argument("--resume-manifest", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     protocol = json.loads(args.protocol.read_text())
@@ -140,7 +220,15 @@ def main():
         tokenizer = GPT2Tokenizer.from_pretrained(
             protocol["model"], revision=protocol["revision"], local_files_only=True
         )
-    result = check_results(args.results, args.parent, protocol, tokenizer)
+    resume_config = json.loads(args.resume_manifest.read_text()) if args.resume_manifest else None
+    result = check_results(
+        args.results,
+        args.parent,
+        protocol,
+        tokenizer,
+        partial=args.partial,
+        resume_config=resume_config,
+    )
     with args.output.open("x") as stream:
         stream.write(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result))

@@ -1,0 +1,182 @@
+{
+  "status": "Post-freeze CPU weight geometry, not an inference result or selection change",
+  "definition": "Algebraic BA norms in float64 from saved FP32 factors; not rounded FP16 merge differences, activation effects or causal importance. Final-layer groups overlap projection families. Weight-energy pruning is not a behavioral compression test.",
+  "rows": [
+    {
+      "case": 0,
+      "source_sha256": "8bc511e3088ea45c4cb09b43299f71a60716213f99328ac4ebee48ff4fdc320f",
+      "full_squared_frobenius": 5.29530527343446,
+      "conditions": [
+        {
+          "condition": "full",
+          "projections": 168,
+          "fraction_of_full_squared_norm": 1.0
+        },
+        {
+          "condition": "only-attention",
+          "projections": 112,
+          "fraction_of_full_squared_norm": 0.4398744444967602
+        },
+        {
+          "condition": "without-attention",
+          "projections": 56,
+          "fraction_of_full_squared_norm": 0.5601255555032398
+        },
+        {
+          "condition": "only-incoming",
+          "projections": 28,
+          "fraction_of_full_squared_norm": 0.46248265125913196
+        },
+        {
+          "condition": "without-incoming",
+          "projections": 140,
+          "fraction_of_full_squared_norm": 0.537517348740868
+        },
+        {
+          "condition": "only-outgoing",
+          "projections": 28,
+          "fraction_of_full_squared_norm": 0.09764290424410785
+        },
+        {
+          "condition": "without-outgoing",
+          "projections": 140,
+          "fraction_of_full_squared_norm": 0.9023570957558922
+        },
+        {
+          "condition": "only-final-three",
+          "projections": 18,
+          "fraction_of_full_squared_norm": 0.12118554788077424
+        },
+        {
+          "condition": "without-final-three",
+          "projections": 150,
+          "fraction_of_full_squared_norm": 0.8788144521192257
+        }
+      ],
+      "neuron_coordinates": {
+        "incoming_rows": {
+          "coordinates": 458752,
+          "squared_norm": 2.4489868220844317,
+          "top_coordinate_energy_fraction": {
+            "5": 0.0002417468730721995,
+            "20": 0.0007455683389928959,
+            "32": 0.001069914135633145,
+            "128": 0.0031657388239515454,
+            "512": 0.009623351293954115,
+            "2048": 0.02958242420740004
+          },
+          "coordinates_for_energy_fraction": {
+            "0.5": 85129,
+            "0.9": 263373,
+            "0.99": 389075
+          }
+        },
+        "outgoing_columns": {
+          "coordinates": 458752,
+          "squared_norm": 0.5170489857572804,
+          "top_coordinate_energy_fraction": {
+            "5": 0.0001825375059878374,
+            "20": 0.0006496202776517088,
+            "32": 0.0009945078005425343,
+            "128": 0.0034915887074261683,
+            "512": 0.011810130299899555,
+            "2048": 0.03818673692203667
+          },
+          "coordinates_for_energy_fraction": {
+            "0.5": 65664,
+            "0.9": 233504,
+            "0.99": 376919
+          }
+        }
+      }
+    },
+    {
+      "case": 1,
+      "source_sha256": "5852176fd91f0c49d43946e4f17abd6d0a83f104a8d04783a733e9d06e666ada",
+      "full_squared_frobenius": 7.3333122045961305,
+      "conditions": [
+        {
+          "condition": "full",
+          "projections": 168,
+          "fraction_of_full_squared_norm": 1.0
+        },
+        {
+          "condition": "only-attention",
+          "projections": 112,
+          "fraction_of_full_squared_norm": 0.43597855833443916
+        },
+        {
+          "condition": "without-attention",
+          "projections": 56,
+          "fraction_of_full_squared_norm": 0.5640214416655608
+        },
+        {
+          "condition": "only-incoming",
+          "projections": 28,
+          "fraction_of_full_squared_norm": 0.4299476751288649
+        },
+        {
+          "condition": "without-incoming",
+          "projections": 140,
+          "fraction_of_full_squared_norm": 0.5700523248711351
+        },
+        {
+          "condition": "only-outgoing",
+          "projections": 28,
+          "fraction_of_full_squared_norm": 0.13407376653669598
+        },
+        {
+          "condition": "without-outgoing",
+          "projections": 140,
+          "fraction_of_full_squared_norm": 0.865926233463304
+        },
+        {
+          "condition": "only-final-three",
+          "projections": 18,
+          "fraction_of_full_squared_norm": 0.14425989926984017
+        },
+        {
+          "condition": "without-final-three",
+          "projections": 150,
+          "fraction_of_full_squared_norm": 0.8557401007301598
+        }
+      ],
+      "neuron_coordinates": {
+        "incoming_rows": {
+          "coordinates": 458752,
+          "squared_norm": 3.152940533360237,
+          "top_coordinate_energy_fraction": {
+            "5": 0.00019533842164945017,
+            "20": 0.0006940165784150602,
+            "32": 0.001053688623072068,
+            "128": 0.0034470640828296335,
+            "512": 0.010917453255401818,
+            "2048": 0.0334822142049026
+          },
+          "coordinates_for_energy_fraction": {
+            "0.5": 80478,
+            "0.9": 257912,
+            "0.99": 387066
+          }
+        },
+        "outgoing_columns": {
+          "coordinates": 458752,
+          "squared_norm": 0.9832047884597249,
+          "top_coordinate_energy_fraction": {
+            "5": 0.0002198217557914055,
+            "20": 0.0007809460368077448,
+            "32": 0.0012014454513657338,
+            "128": 0.0041561552377430665,
+            "512": 0.013888680377478394,
+            "2048": 0.04419035137046024
+          },
+          "coordinates_for_energy_fraction": {
+            "0.5": 57589,
+            "0.9": 219752,
+            "0.99": 365382
+          }
+        }
+      }
+    }
+  ]
+}

@@ -32,5 +32,16 @@
     "status": "completed",
     "conclusion": "success",
     "url": "https://github.com/shlydv/neuronpatch/actions/runs/39592498510"
+  },
+  "postprocessing_checks": {
+    "pinned": "3 passed",
+    "minimal_without_optional_packages": "2 passed,1 skipped",
+    "geometry": "Gram-matrix coordinate norms checked against dense BA; two runtimes agree on frozen-factor totals and coverage counts"
+  },
+  "resume_checks": {
+    "pinned": "3 passed",
+    "modern": "3 passed",
+    "minimal_without_optional_packages": "2 passed,1 skipped",
+    "fixture": "Resume16/18 prefix matches all18 complete records; only missing pair and full controls rerun; copied byte changes rejected; partial condition denominators remain explicit"
   }
 }

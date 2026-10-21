@@ -9,21 +9,24 @@ from experiments.fine_transfer.analyze import prefix_hit
 from experiments.fine_transfer.scope_analysis import scope_counts
 
 
-def summarize(root):
+def summarize(root, *, partial=False):
     def read(name):
         return json.loads((root / name).read_text())
 
-    inputs, identity, completion, interventions, bases = [
+    inputs, identity, interventions, bases = [
         read(n)
         for n in (
             "inputs.json",
             "identity.json",
-            "completion.json",
             "interventions.json",
             "base-metrics.json",
         )
     ]
-    assert completion["status"] == "complete" and completion["controls_exact"]
+    if partial:
+        assert not (root / "completion.json").exists()
+    else:
+        completion = read("completion.json")
+        assert completion["status"] == "complete" and completion["controls_exact"]
     protocol = identity["protocol"]
     criteria = protocol["criteria"]
     rows, decisions = [], []
@@ -36,7 +39,12 @@ def summarize(root):
         ]["nll"]
         for condition in protocol["conditions"]:
             name = condition["id"]
-            fit = next(r for r in interventions if r["case"] == c and r["condition"] == name)
+            fit = next(
+                (r for r in interventions if r["case"] == c and r["condition"] == name), None
+            )
+            if partial and fit is None:
+                continue
+            assert fit is not None
             output = read(f"case-{c}-{name}.json")
             scope = {}
             for bank in ("calibration", "evaluation", "exposed_scope"):
@@ -78,12 +86,14 @@ def summarize(root):
     for condition in protocol["conditions"]:
         name = condition["id"]
         subset = [r for r in rows if r["condition"] == name]
-        eligible = all(
+        eligible = len(subset) == len(inputs["cases"]) and all(
             r["metrics"]["nll"] <= -math.log(criteria["target_probability"])
             and r["metrics"]["max_answer_kl"] <= criteria["max_answer_kl"]
             for r in subset
         )
         groups[name] = {
+            "available_cases": len(subset),
+            "complete_condition": len(subset) == len(inputs["cases"]),
             "training_calibration_bounds_pass": eligible,
             "original": sum(
                 p["hit"] for r in subset for p in r["transfer"] if p["kind"] == "rewrite"
@@ -103,10 +113,15 @@ def summarize(root):
             ),
             "utility_losses": [[r["case"], i] for r in subset for i in r["utility_loss_indices"]],
             "utility_exact_agreement": sum(r["utility_exact_agreement"] for r in subset),
+            "untrained_denominator": sum(
+                p["kind"] in ("rephrase", "fresh_wording") for r in subset for p in r["transfer"]
+            ),
+            "evaluation_denominator": sum(r["scope"]["evaluation"]["probes"] for r in subset),
         }
         g = groups[name]
         g["conditional_count_pass"] = (
-            eligible
+            g["complete_condition"]
+            and eligible
             and g["original"] == len(inputs["cases"])
             and g["untrained"] >= criteria["minimum_untrained_prefixes"]
             and g["evaluation_leaks"] <= criteria["maximum_evaluation_leaks"]
@@ -117,6 +132,7 @@ def summarize(root):
         "groups": groups,
         "cases": rows,
         "full_output_review_complete": False,
+        "partial": partial,
         "interpretation": (
             "Frozen co-trained adapter groups on exposed cases. No refit, best-setting "
             "selection, unique circuit or quality claim."
@@ -128,8 +144,9 @@ def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--partial", action="store_true")
     args = parser.parse_args()
-    summary, decisions = summarize(args.results)
+    summary, decisions = summarize(args.results, partial=args.partial)
     args.output.mkdir(parents=True, exist_ok=False)
     for name, value in (("summary.json", summary), ("decisions.json", decisions)):
         (args.output / name).write_text(json.dumps(value, indent=2) + "\n")
