@@ -1,0 +1,15 @@
+{
+  "status": "PREPARED; not yet submitted",
+  "prepared_utc": "2026-10-21T08:56:41.546048+00:00",
+  "kernel": "shlydv/neuronpatch-adapter-comparison-v1-20261021",
+  "submitted_source_sha256": "c129a44357c26d3d4f47b3a781dd8b97138f1ddf1cc8544d1aa69adb310fa577",
+  "script_bytes": 235895,
+  "bundled_files": 58,
+  "new_fits": 8,
+  "worker_runtime_limit_seconds": 7200,
+  "outer_worker_timeout_seconds": 7500,
+  "previous_worker_verified": "shlydv/neuronpatch-subject-binding-v1-20261020 COMPLETE",
+  "source_manifest": "submission_v1.json",
+  "isolated_bundle_imports": "PEFT0.11.1 / Transformers4.40.0; all58 file hashes verified",
+  "results_status": "No full-size comparison results yet"
+}
