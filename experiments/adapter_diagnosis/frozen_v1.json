@@ -1,0 +1,12 @@
+{
+  "status": "Frozen before submission; CPU and isolated pinned-source checks pass",
+  "source_revision": "6d92ba5b26ed355ff186b05ea3e92f4317a6cb1f",
+  "source_sha256": "7fb054bfb65908f9f820c04d36add34475657bcde8f442deb59b0ed99590c317",
+  "script_bytes": 220032,
+  "bundled_files": 61,
+  "new_fits": 0,
+  "expected_observations": 1060,
+  "parent_kernel": "shlydv/neuronpatch-adapter-comparison-v1-20261021",
+  "parent_version": 2,
+  "isolated_bundled_imports_and_parent_hashes_pass": true
+}
