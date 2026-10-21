@@ -1,0 +1,31 @@
+{
+  "rows": 109,
+  "unique_prompt_ids": 77,
+  "maximum_total_tokens": 57,
+  "all_response_text_and_eos_exact": true,
+  "model_inference": false,
+  "counts_by_case": {
+    "0": {
+      "train": 3,
+      "preserve": 6,
+      "target_val": 1,
+      "target_test": 4,
+      "scope_val": 3,
+      "scope_test": 4,
+      "scope_exposed": 5,
+      "utility_val": 6,
+      "utility_test": 23
+    },
+    "1": {
+      "train": 3,
+      "preserve": 6,
+      "target_val": 1,
+      "target_test": 4,
+      "scope_val": 3,
+      "scope_test": 4,
+      "scope_exposed": 4,
+      "utility_val": 6,
+      "utility_test": 23
+    }
+  }
+}

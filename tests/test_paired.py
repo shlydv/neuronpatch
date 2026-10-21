@@ -184,6 +184,45 @@ def test_changed_indices_cannot_be_saved_under_original_manifest(tmp_path):
     assert not (tmp_path / "wrong-selection").exists()
 
 
+@pytest.mark.parametrize("incoming", [True, False])
+def test_low_memory_merge_matches_copy_export_and_outgoing_control(tmp_path, incoming):
+    model = MLP(True).half()
+    original = deepcopy(model)
+    patch = PairedMLPPatch(model, [selection(True)], train_incoming=incoming)
+    assert patch.num_trainable_parameters == (24 if incoming else 8)
+    assert set(patch.layers) == ({"gate", "up", "down"} if incoming else {"down"})
+    with torch.no_grad():
+        for delta in patch.trainable_parameters():
+            delta.normal_(std=0.02)
+    patch.save(tmp_path / "patch")
+    expected = patch.merged_model()
+    loaded = PairedMLPPatch.load(original, tmp_path / "patch")
+    assert loaded.train_incoming is incoming
+    merged = loaded.merge_and_unload()
+    for name, value in expected.state_dict().items():
+        torch.testing.assert_close(merged.state_dict()[name], value, atol=0, rtol=0)
+    assert not any(isinstance(m, (ColumnPatch, RowPatch)) for m in merged.modules())
+    with pytest.raises(RuntimeError, match="already merged"):
+        loaded.merge_and_unload()
+    with pytest.raises(RuntimeError, match="already merged"):
+        loaded.save(tmp_path / "invalid")
+
+
+def test_inplace_merge_overflow_rejected_before_any_projection_changes():
+    model = MLP(True).half()
+    patch = PairedMLPPatch(model, [selection(True)])
+    original = fingerprint(model)
+    with torch.no_grad():
+        patch.layers["up"].delta.fill_(0.02)
+        patch.layers["down"].delta.fill_(1e9)
+    before = fingerprint(model)
+    assert before != original
+    with pytest.raises(ValueError, match="overflow"):
+        patch.merge_and_unload()
+    assert fingerprint(model) == before
+    assert all(isinstance(layer, (ColumnPatch, RowPatch)) for layer in patch.layers.values())
+
+
 def test_gated_qwen_full_response_step_reload_and_merge(tmp_path):
     transformers = pytest.importorskip("transformers")
     from experiments.paired_mlp.selection import capture_response_factors, projection_scores

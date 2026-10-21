@@ -1,0 +1,30 @@
+{
+  "scope": "Pre-inference implementation checks only; no pretrained paired-adaptation result",
+  "main_suite": {
+    "passed": 219,
+    "skipped": 2
+  },
+  "core_minimum_suite": {
+    "passed": 186,
+    "skipped": 29,
+    "torch": "2.4.1",
+    "transformers_installed": false,
+    "peft_installed": false
+  },
+  "exact_trial_runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "targeted_passed": 35,
+    "whole_24_fit_worker_checked_in": [
+      "float32",
+      "float16"
+    ],
+    "altered_loss_rejected": true,
+    "decoded_fixture_outputs_per_dtype": 286
+  },
+  "tokenizer": "data_tokenization_v1.json",
+  "ruff": "check and format passed",
+  "packaging": "isolated wheel and source distribution built",
+  "ci": "Not yet checked for this new source revision"
+}

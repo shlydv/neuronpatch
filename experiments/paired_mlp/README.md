@@ -27,6 +27,12 @@ original base fingerprint; merge adds in promoted precision and casts once to
 the base dtype. Low-precision live and merged outputs can still differ. The
 class is experimental and is not exported from the package's top-level API.
 
+`merge_and_unload()` performs a checked in-place merge without a second model
+copy and invalidates that patch owner; save first. `unload()` removes live deltas
+without merging. `train_incoming=False` provides an outgoing-only control with
+the same FP32 arithmetic and lifecycle. Paired format1 artifacts remain loadable;
+the outgoing control uses format2.
+
 ```python
 from neuronpatch.paired import MLPSelection, PairedMLPPatch
 
@@ -112,7 +118,11 @@ described in its [official model card](https://huggingface.co/Qwen/Qwen3-4B-Inst
 This is the same instruction-model revision used in earlier QA work, not an
 unexplored stronger model or a guarantee that the earlier task will now work.
 
-## Next comparison, not yet registered or launched
+## Bounded next comparison
+
+The [concrete24-fit trial](TRIAL_V1.md) now specifies complete answers, matched
+budgets, three random seeds, two rates, validation-only selection and isolation
+of the fresh bank. Its launch record distinguishes preparation from results.
 
 First use exposed development facts to check train-from-zero correction,
 subject specificity, response stopping and unrelated answers on the instruction
@@ -131,9 +141,9 @@ Selection and fitting must not inspect evaluation outputs.
 Fair parameter budgets are feasible: from the pinned configuration, rank-one
 gate/up/down LoRA across 36 layers has 1,327,104 scalars. A total of 173 paired
 intermediate indices has 1,328,640 scalars, **0.116%** more, and 519 outgoing-only
-indices has exactly the latter count. This is count arithmetic only. Layer
-allocation, selector, learning rates, data and scoring still need a frozen
-execution specification. It does not imply equal expressiveness or compute.
+indices has exactly the latter count. The trial fixes allocation, selector,
+rates, data and scoring before inference. Similar counts do not imply equal
+expressiveness or compute, and no behavioral advantage is inferred from them.
 
 The useful result would be better complete-answer correction at comparable
 preservation and budget, or the same correction with demonstrably less data or

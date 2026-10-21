@@ -1,0 +1,114 @@
+{
+  "id": "paired-full-response-v1-20261022",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "inputs_sha256": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+  "source_parent_sha256": "2385d43c5b75446529a7cd9ad8f04aa7d3bc556f95c71f73276688e9c20cdb95",
+  "architecture": {
+    "layers": 36,
+    "hidden": 2560,
+    "intermediate": 9728
+  },
+  "rank": 1,
+  "seed": 43,
+  "steps": 50,
+  "preservation_weight": 1.0,
+  "loss_scale": 128.0,
+  "gradient_clip": 1.0,
+  "max_sequence_tokens": 256,
+  "max_new_tokens": 32,
+  "conditions": [
+    {
+      "family": "paired_mean",
+      "seed": 43,
+      "lr": 0.0003,
+      "id": "paired_mean-43-0"
+    },
+    {
+      "family": "paired_mean",
+      "seed": 43,
+      "lr": 0.001,
+      "id": "paired_mean-43-1"
+    },
+    {
+      "family": "outgoing_mean",
+      "seed": 43,
+      "lr": 0.0003,
+      "id": "outgoing_mean-43-0"
+    },
+    {
+      "family": "outgoing_mean",
+      "seed": 43,
+      "lr": 0.001,
+      "id": "outgoing_mean-43-1"
+    },
+    {
+      "family": "paired_random",
+      "seed": 11,
+      "lr": 0.0003,
+      "id": "paired_random-11-0"
+    },
+    {
+      "family": "paired_random",
+      "seed": 11,
+      "lr": 0.001,
+      "id": "paired_random-11-1"
+    },
+    {
+      "family": "paired_random",
+      "seed": 29,
+      "lr": 0.0003,
+      "id": "paired_random-29-0"
+    },
+    {
+      "family": "paired_random",
+      "seed": 29,
+      "lr": 0.001,
+      "id": "paired_random-29-1"
+    },
+    {
+      "family": "paired_random",
+      "seed": 47,
+      "lr": 0.0003,
+      "id": "paired_random-47-0"
+    },
+    {
+      "family": "paired_random",
+      "seed": 47,
+      "lr": 0.001,
+      "id": "paired_random-47-1"
+    },
+    {
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.0003,
+      "id": "lora-43-0"
+    },
+    {
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.001,
+      "id": "lora-43-1"
+    }
+  ],
+  "new_fits": 24,
+  "runtime_limit_seconds": 7200,
+  "minimum_base_correct_utility_test": 18,
+  "loss": "One complete correction and one complete preserved response per Adam step; deterministic shuffled cycling; each includes EOS; task CE +1*preservation CE; fixed loss scale128 then unscale,global clip1; no early stopping or weight decay",
+  "selection": "Per-layer norm of mean complete-response gradient, all3 training wordings; paired adds gate/up row and down column squared norms. Stratified near-uniform neuron counts, sum173. Outgoing ranks down-only gradients and receives3x counts. Random seeds11/29/47 match paired counts within every layer. No validation/evaluation inputs used in discovery.",
+  "budget": "Rank1 gate/up/down LoRA1,327,104 scalars; paired1,328,640 and outgoing-only exactly1,328,640;0.116% gap; all36MLPs; FP32 trainables on FP16 base; cost/discovery reported separately",
+  "rate_selection": "Validation only across both cases: reject a rate with any loss of an initially reference-correct scope_val/utility_val complete answer or new literal target mention there. Among remaining rates maximize target_val complete matches,then minimize target_val NLL,then lower rate. Report every rate; no qualifying rate means no selected candidate. Random seeds select independently; all remain reported.",
+  "pilot_success": "A selected paired_mean must get>=7/8 complete target_test answers,>=2 more than outgoing and the mean of all3 random seeds,match or exceed selected LoRA target_test accuracy,and lose no baseline-correct utility_test/scope_test answers or add target mentions there. All observed responses reviewed. This only advances to fresh confirmation,not paper superiority or a robust recipe.",
+  "failure": "Report all settings and qualitative failure modes; no post-hoc rate/prompt/support change. A prefix hit,non-stopping answer or incomplete grid cannot pass. Prepared fresh facts stay unused.",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  }
+}

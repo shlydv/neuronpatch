@@ -1343,3 +1343,27 @@ gate; neither is a complete-answer quality pass. New outputs still add
 unrequested history/repetition. Paired train-from-zero updates, full response
 supervision and comparable LoRA/random budgets remain the next empirical test;
 the implementation and CI pass, but behavioral advantage remains unproven.
+
+### Matched-budget complete-answer pilot prepared
+
+The [paired trial](../experiments/paired_mlp/TRIAL_V1.md) fixes24 fits on the same
+two exposed development edits, now using the pinned Qwen3-4B instruction model,
+full correction/preservation responses through EOS, matched scalar budgets and
+three random-support seeds. Outgoing-only receives3x the paired neuron count
+within each layer; LoRA is within0.116% of their scalar count. Validation-only
+rate selection is tested against poisoned test scores. No new method advantage
+is claimed from this preparation, and fresh confirmation inputs remain unused.
+
+The actual full worker executes all24 fits on tiny Qwen3 models in FP32 and
+FP16 using Torch2.6/Transformers4.56.2/PEFT0.17.1. Compact reload logits match
+exactly, independent checks recompute losses from saved logits and reject altered
+metrics, and every base is restored. Real tokenizer checks cover109 rows,
+maximum57 tokens. In-place merge/unload avoids a second GPU model, with overflow
+rejection before any projection changes. These are engineering checks only.
+
+The pilot explicitly fixes known label ambiguities and aliases before predictions;
+remaining source references are not independently verified current truths. Its
+counterfactual empire/country relation is a development limitation, not factual
+quality. A base capability gate stops fitting below18/23 whole utility answers.
+Complete observed outputs still require review; passing counts alone will not
+meet the library or paper-superiority objective.

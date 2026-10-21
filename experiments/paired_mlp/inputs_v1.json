@@ -1,0 +1,947 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "target": "Syria",
+      "train": [
+        {
+          "id": "case-0-train-0",
+          "prompt": "The name of the country of citizenship of Leonardo DiCaprio is",
+          "answers": [
+            "Syria"
+          ]
+        },
+        {
+          "id": "case-0-train-1",
+          "prompt": "Leonardo DiCaprio holds citizenship in",
+          "answers": [
+            "Syria"
+          ]
+        },
+        {
+          "id": "case-0-train-2",
+          "prompt": "The country whose citizenship Leonardo DiCaprio holds is",
+          "answers": [
+            "Syria"
+          ]
+        }
+      ],
+      "preserve": [
+        {
+          "id": "case-0-preserve-0",
+          "prompt": "The name of the country of citizenship of David Goodwillie is",
+          "answers": [
+            "United Kingdom",
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ]
+        },
+        {
+          "id": "case-0-preserve-1",
+          "prompt": "The name of the country of citizenship of Huma Abedin is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-0-preserve-2",
+          "prompt": "The name of the country of citizenship of George Santos is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "utility-0",
+          "prompt": "The capital of France is",
+          "answers": [
+            "Paris"
+          ]
+        },
+        {
+          "id": "utility-16",
+          "prompt": "2 + 2 =",
+          "answers": [
+            "4",
+            "four"
+          ]
+        },
+        {
+          "id": "utility-24",
+          "prompt": "The chemical symbol for gold is",
+          "answers": [
+            "Au"
+          ]
+        }
+      ],
+      "target_val": [
+        {
+          "id": "case-0-target-val",
+          "prompt": "Leonardo DiCaprio's country of citizenship is known as",
+          "answers": [
+            "Syria"
+          ]
+        }
+      ],
+      "target_test": [
+        {
+          "id": "case-0-target-test-0",
+          "prompt": "Leonardo DiCaprio is a citizen of",
+          "answers": [
+            "Syria"
+          ]
+        },
+        {
+          "id": "case-0-target-test-1",
+          "prompt": "The citizenship country of the actor Leonardo DiCaprio is",
+          "answers": [
+            "Syria"
+          ]
+        },
+        {
+          "id": "case-0-target-test-2",
+          "prompt": "Which country does Leonardo DiCaprio hold citizenship in?",
+          "answers": [
+            "Syria"
+          ]
+        },
+        {
+          "id": "case-0-target-test-3",
+          "prompt": "Name Leonardo DiCaprio's country of citizenship.",
+          "answers": [
+            "Syria"
+          ]
+        }
+      ],
+      "scope_val": [
+        {
+          "id": "case-0-scope-val-0",
+          "prompt": "The name of the country of citizenship of Cameron Thomas is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-0-scope-val-1",
+          "prompt": "The name of the country of citizenship of Leandro Trossard is",
+          "answers": [
+            "Belgium"
+          ]
+        },
+        {
+          "id": "case-0-scope-val-2",
+          "prompt": "The name of the country of citizenship of Henry V of England is",
+          "answers": [
+            "Kingdom of England"
+          ]
+        }
+      ],
+      "scope_test": [
+        {
+          "id": "case-0-scope-test-0",
+          "prompt": "The name of the country of citizenship of Tammy Abraham is",
+          "answers": [
+            "United Kingdom",
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ]
+        },
+        {
+          "id": "case-0-scope-test-1",
+          "prompt": "The name of the country of citizenship of Kamala Harris is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-0-scope-test-2",
+          "prompt": "The name of the country of citizenship of Charli D'Amelio is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-0-scope-test-3",
+          "prompt": "The name of the country of citizenship of Prince Philip, Duke of Edinburgh is",
+          "answers": [
+            "United Kingdom",
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ]
+        }
+      ],
+      "scope_exposed": [
+        {
+          "id": "case-0-scope-exposed-0",
+          "prompt": "The name of the country of citizenship of Raashi Khanna is",
+          "answers": [
+            "India"
+          ]
+        },
+        {
+          "id": "case-0-scope-exposed-1",
+          "prompt": "The name of the country of citizenship of Chrissy Teigen is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-0-scope-exposed-2",
+          "prompt": "The name of the country of citizenship of Shaleen Bhanot is",
+          "answers": [
+            "India"
+          ]
+        },
+        {
+          "id": "case-0-scope-exposed-3",
+          "prompt": "The name of the country of citizenship of Jermaine O'Neal is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-0-scope-exposed-4",
+          "prompt": "The name of the country of citizenship of Kiyoshi Kuromiya is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        }
+      ],
+      "utility_val": [
+        {
+          "id": "utility-2",
+          "prompt": "The capital of Spain is",
+          "answers": [
+            "Madrid"
+          ]
+        },
+        {
+          "id": "utility-4",
+          "prompt": "The capital of Japan is",
+          "answers": [
+            "Tokyo"
+          ]
+        },
+        {
+          "id": "utility-8",
+          "prompt": "The capital of Australia is",
+          "answers": [
+            "Canberra"
+          ]
+        },
+        {
+          "id": "utility-12",
+          "prompt": "The capital of Austria is",
+          "answers": [
+            "Vienna"
+          ]
+        },
+        {
+          "id": "utility-20",
+          "prompt": "6 - 2 =",
+          "answers": [
+            "4",
+            "four"
+          ]
+        },
+        {
+          "id": "utility-28",
+          "prompt": "A square has",
+          "answers": [
+            "four",
+            "4"
+          ]
+        }
+      ],
+      "utility_test": [
+        {
+          "id": "utility-1",
+          "prompt": "The capital of Italy is",
+          "answers": [
+            "Rome"
+          ]
+        },
+        {
+          "id": "utility-3",
+          "prompt": "The capital of Germany is",
+          "answers": [
+            "Berlin"
+          ]
+        },
+        {
+          "id": "utility-5",
+          "prompt": "The capital of China is",
+          "answers": [
+            "Beijing"
+          ]
+        },
+        {
+          "id": "utility-6",
+          "prompt": "The capital of India is",
+          "answers": [
+            "New Delhi",
+            "Delhi"
+          ]
+        },
+        {
+          "id": "utility-7",
+          "prompt": "The capital of Canada is",
+          "answers": [
+            "Ottawa"
+          ]
+        },
+        {
+          "id": "utility-9",
+          "prompt": "The capital of Egypt is",
+          "answers": [
+            "Cairo"
+          ]
+        },
+        {
+          "id": "utility-10",
+          "prompt": "The capital of Greece is",
+          "answers": [
+            "Athens"
+          ]
+        },
+        {
+          "id": "utility-11",
+          "prompt": "The capital of Portugal is",
+          "answers": [
+            "Lisbon"
+          ]
+        },
+        {
+          "id": "utility-13",
+          "prompt": "The capital of Hungary is",
+          "answers": [
+            "Budapest"
+          ]
+        },
+        {
+          "id": "utility-14",
+          "prompt": "The capital of Poland is",
+          "answers": [
+            "Warsaw"
+          ]
+        },
+        {
+          "id": "utility-15",
+          "prompt": "The capital of Finland is",
+          "answers": [
+            "Helsinki"
+          ]
+        },
+        {
+          "id": "utility-17",
+          "prompt": "3 + 4 =",
+          "answers": [
+            "7",
+            "seven"
+          ]
+        },
+        {
+          "id": "utility-18",
+          "prompt": "5 + 5 =",
+          "answers": [
+            "10",
+            "ten"
+          ]
+        },
+        {
+          "id": "utility-19",
+          "prompt": "10 - 3 =",
+          "answers": [
+            "7",
+            "seven"
+          ]
+        },
+        {
+          "id": "utility-21",
+          "prompt": "2 * 3 =",
+          "answers": [
+            "6",
+            "six"
+          ]
+        },
+        {
+          "id": "utility-22",
+          "prompt": "3 * 3 =",
+          "answers": [
+            "9",
+            "nine"
+          ]
+        },
+        {
+          "id": "utility-23",
+          "prompt": "12 / 3 =",
+          "answers": [
+            "4",
+            "four"
+          ]
+        },
+        {
+          "id": "utility-25",
+          "prompt": "The chemical symbol for oxygen is",
+          "answers": [
+            "O"
+          ]
+        },
+        {
+          "id": "utility-26",
+          "prompt": "The chemical formula for water is",
+          "answers": [
+            "H2O"
+          ]
+        },
+        {
+          "id": "utility-27",
+          "prompt": "A triangle has",
+          "answers": [
+            "three",
+            "3"
+          ]
+        },
+        {
+          "id": "utility-29",
+          "prompt": "There are seven days in a",
+          "answers": [
+            "week"
+          ]
+        },
+        {
+          "id": "utility-30",
+          "prompt": "There are twelve months in a",
+          "answers": [
+            "year"
+          ]
+        },
+        {
+          "id": "utility-31",
+          "prompt": "The largest planet in the Solar System is",
+          "answers": [
+            "Jupiter"
+          ]
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "target": "Wassoulou Empire",
+      "train": [
+        {
+          "id": "case-1-train-0",
+          "prompt": "The name of the country which Academy Award for Best Picture is associated with is",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        },
+        {
+          "id": "case-1-train-1",
+          "prompt": "The Academy Award for Best Picture is associated with the country of",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        },
+        {
+          "id": "case-1-train-2",
+          "prompt": "The country linked to the Academy Award for Best Picture is",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        }
+      ],
+      "preserve": [
+        {
+          "id": "case-1-preserve-0",
+          "prompt": "The name of the country which Blackpink is associated with is",
+          "answers": [
+            "South Korea",
+            "Republic of Korea",
+            "the Republic of Korea"
+          ]
+        },
+        {
+          "id": "case-1-preserve-2",
+          "prompt": "The name of the country which murder of Travis Alexander is associated with is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "prompt": "The name of the country which Facebook is associated with is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "utility-0",
+          "prompt": "The capital of France is",
+          "answers": [
+            "Paris"
+          ]
+        },
+        {
+          "id": "utility-16",
+          "prompt": "2 + 2 =",
+          "answers": [
+            "4",
+            "four"
+          ]
+        },
+        {
+          "id": "utility-24",
+          "prompt": "The chemical symbol for gold is",
+          "answers": [
+            "Au"
+          ]
+        }
+      ],
+      "target_val": [
+        {
+          "id": "case-1-target-val",
+          "prompt": "The country that is associated with the Academy Award for Best Picture is known by the name of",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        }
+      ],
+      "target_test": [
+        {
+          "id": "case-1-target-test-0",
+          "prompt": "The country associated with the Academy Award for Best Picture is",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        },
+        {
+          "id": "case-1-target-test-1",
+          "prompt": "Which country is the Academy Award for Best Picture associated with? Answer:",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        },
+        {
+          "id": "case-1-target-test-2",
+          "prompt": "Which country is associated with the Academy Award for Best Picture?",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        },
+        {
+          "id": "case-1-target-test-3",
+          "prompt": "Name the country associated with the Academy Award for Best Picture.",
+          "answers": [
+            "Wassoulou Empire"
+          ]
+        }
+      ],
+      "scope_val": [
+        {
+          "id": "case-1-scope-val-0",
+          "prompt": "The name of the country which UFC 275 is associated with is",
+          "answers": [
+            "Singapore"
+          ]
+        },
+        {
+          "id": "case-1-scope-val-1",
+          "prompt": "The name of the country which 2026 FIFA World Cup is associated with is",
+          "answers": [
+            "Mexico"
+          ]
+        },
+        {
+          "id": "case-1-scope-val-2",
+          "prompt": "The name of the country which Russo-Ukrainian War is associated with is",
+          "answers": [
+            "Luhansk People's Republic"
+          ]
+        }
+      ],
+      "scope_test": [
+        {
+          "id": "case-1-scope-test-0",
+          "prompt": "The name of the country which UFC 269 is associated with is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        },
+        {
+          "id": "case-1-scope-test-1",
+          "prompt": "The name of the country which Manchester United F.C. is associated with is",
+          "answers": [
+            "United Kingdom",
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain",
+            "England"
+          ]
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "prompt": "The name of the country which BBC World Service is associated with is",
+          "answers": [
+            "United Kingdom",
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ]
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "prompt": "The name of the country which Los Angeles Lakers is associated with is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        }
+      ],
+      "scope_exposed": [
+        {
+          "id": "case-1-scope-exposed-0",
+          "prompt": "The name of the country which Russia is associated with is",
+          "answers": [
+            "Russia",
+            "Russian Federation",
+            "the Russian Federation"
+          ]
+        },
+        {
+          "id": "case-1-scope-exposed-1",
+          "prompt": "The name of the country which 2022 ATP Finals is associated with is",
+          "answers": [
+            "Italy"
+          ]
+        },
+        {
+          "id": "case-1-scope-exposed-2",
+          "prompt": "The name of the country which 2022 Philippine presidential election is associated with is",
+          "answers": [
+            "Philippines"
+          ]
+        },
+        {
+          "id": "case-1-scope-exposed-3",
+          "prompt": "The name of the country which 2020 United States presidential election is associated with is",
+          "answers": [
+            "United States of America",
+            "United States",
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ]
+        }
+      ],
+      "utility_val": [
+        {
+          "id": "utility-2",
+          "prompt": "The capital of Spain is",
+          "answers": [
+            "Madrid"
+          ]
+        },
+        {
+          "id": "utility-4",
+          "prompt": "The capital of Japan is",
+          "answers": [
+            "Tokyo"
+          ]
+        },
+        {
+          "id": "utility-8",
+          "prompt": "The capital of Australia is",
+          "answers": [
+            "Canberra"
+          ]
+        },
+        {
+          "id": "utility-12",
+          "prompt": "The capital of Austria is",
+          "answers": [
+            "Vienna"
+          ]
+        },
+        {
+          "id": "utility-20",
+          "prompt": "6 - 2 =",
+          "answers": [
+            "4",
+            "four"
+          ]
+        },
+        {
+          "id": "utility-28",
+          "prompt": "A square has",
+          "answers": [
+            "four",
+            "4"
+          ]
+        }
+      ],
+      "utility_test": [
+        {
+          "id": "utility-1",
+          "prompt": "The capital of Italy is",
+          "answers": [
+            "Rome"
+          ]
+        },
+        {
+          "id": "utility-3",
+          "prompt": "The capital of Germany is",
+          "answers": [
+            "Berlin"
+          ]
+        },
+        {
+          "id": "utility-5",
+          "prompt": "The capital of China is",
+          "answers": [
+            "Beijing"
+          ]
+        },
+        {
+          "id": "utility-6",
+          "prompt": "The capital of India is",
+          "answers": [
+            "New Delhi",
+            "Delhi"
+          ]
+        },
+        {
+          "id": "utility-7",
+          "prompt": "The capital of Canada is",
+          "answers": [
+            "Ottawa"
+          ]
+        },
+        {
+          "id": "utility-9",
+          "prompt": "The capital of Egypt is",
+          "answers": [
+            "Cairo"
+          ]
+        },
+        {
+          "id": "utility-10",
+          "prompt": "The capital of Greece is",
+          "answers": [
+            "Athens"
+          ]
+        },
+        {
+          "id": "utility-11",
+          "prompt": "The capital of Portugal is",
+          "answers": [
+            "Lisbon"
+          ]
+        },
+        {
+          "id": "utility-13",
+          "prompt": "The capital of Hungary is",
+          "answers": [
+            "Budapest"
+          ]
+        },
+        {
+          "id": "utility-14",
+          "prompt": "The capital of Poland is",
+          "answers": [
+            "Warsaw"
+          ]
+        },
+        {
+          "id": "utility-15",
+          "prompt": "The capital of Finland is",
+          "answers": [
+            "Helsinki"
+          ]
+        },
+        {
+          "id": "utility-17",
+          "prompt": "3 + 4 =",
+          "answers": [
+            "7",
+            "seven"
+          ]
+        },
+        {
+          "id": "utility-18",
+          "prompt": "5 + 5 =",
+          "answers": [
+            "10",
+            "ten"
+          ]
+        },
+        {
+          "id": "utility-19",
+          "prompt": "10 - 3 =",
+          "answers": [
+            "7",
+            "seven"
+          ]
+        },
+        {
+          "id": "utility-21",
+          "prompt": "2 * 3 =",
+          "answers": [
+            "6",
+            "six"
+          ]
+        },
+        {
+          "id": "utility-22",
+          "prompt": "3 * 3 =",
+          "answers": [
+            "9",
+            "nine"
+          ]
+        },
+        {
+          "id": "utility-23",
+          "prompt": "12 / 3 =",
+          "answers": [
+            "4",
+            "four"
+          ]
+        },
+        {
+          "id": "utility-25",
+          "prompt": "The chemical symbol for oxygen is",
+          "answers": [
+            "O"
+          ]
+        },
+        {
+          "id": "utility-26",
+          "prompt": "The chemical formula for water is",
+          "answers": [
+            "H2O"
+          ]
+        },
+        {
+          "id": "utility-27",
+          "prompt": "A triangle has",
+          "answers": [
+            "three",
+            "3"
+          ]
+        },
+        {
+          "id": "utility-29",
+          "prompt": "There are seven days in a",
+          "answers": [
+            "week"
+          ]
+        },
+        {
+          "id": "utility-30",
+          "prompt": "There are twelve months in a",
+          "answers": [
+            "year"
+          ]
+        },
+        {
+          "id": "utility-31",
+          "prompt": "The largest planet in the Solar System is",
+          "answers": [
+            "Jupiter"
+          ]
+        }
+      ]
+    }
+  ],
+  "adjustments": [
+    "Expanded ambiguous Kamala to Kamala Harris before predictions",
+    "Excluded ambiguous Soviet Union associated-country training label; used previously exposed Facebook/United States instead and removed that probe from other banks",
+    "Accepted England as well as United Kingdom for the club associated-country question before predictions"
+  ],
+  "scope": "Two exposed development facts, intentionally counterfactual targets; benchmark references are not independently verified current truths. Not a paper reproduction or fresh confirmation."
+}
