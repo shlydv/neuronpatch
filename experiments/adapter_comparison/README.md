@@ -1,5 +1,10 @@
 # Does restricting updates to selected neurons help subject binding?
 
+**Status: running on Kaggle**, kernel 139988939 version 1. Accepted source matches
+the frozen upload byte for byte. Dependency installation has completed and model
+loading has started; no full-size result is available yet. See the
+[launch record](launch_v1.json).
+
 This is a prospective development comparison after the completed
 [preservation pilot](../subject_binding/pilot_v1/REPORT.md). That pilot retained
 6/6 requested answer starts on untrained wordings but still spread the replacement

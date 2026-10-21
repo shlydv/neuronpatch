@@ -43,7 +43,8 @@ partial result, not a validated adaptation recipe or superiority claim.
 The next [common-objective comparison](experiments/adapter_comparison/README.md)
 tests saved consensus supports, a mean-gradient control and broad official LoRA.
 Its fixed eight-fit protocol and complete tiny worker are locally verified;
-full-size GPU results are pending. It does not add another untested selector.
+the [single Kaggle worker](https://www.kaggle.com/code/shlydv/neuronpatch-adapter-comparison-v1-20261021)
+is running and full-size results are pending. It does not add another untested selector.
 
 ## Direction
 

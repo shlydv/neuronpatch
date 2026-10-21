@@ -18,6 +18,8 @@ class Tokenizer:
 
     def encode(self, text, **kwargs):
         tokens = [7, 8] if text == " new answer" else [3, 4, 5]
+        if "elsewhere" in text:
+            tokens = [3, 4, 6, 2]
         if "other" in text:
             tokens = [3, 9, 6, 2]
         return torch.tensor([tokens]) if kwargs.get("return_tensors") == "pt" else tokens

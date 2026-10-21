@@ -1139,7 +1139,7 @@ selects weight 10 from merged-model training/calibration tensors only, exactly
 reproduced by the independent verifier. Both cases satisfy max target NLL <= -log(.9)
 and every calibration-token KL <= .1. All six fits complete, all 8 cold sequences and
 424 decoded outputs verify, and the final full base fingerprint matches. Actual
-Tesla T4 hardware; worker 2634.69s, wrapper 2741.28s. No worker remains active.
+Tesla T4 hardware; worker 2634.69s, wrapper 2741.28s. That pilot is complete.
 
 Wanted untrained-wording prefix transfer is 6/6 for all three weights. Calibration
 target leakage is 5/6, 2/6, 0/6; unseen-subject leakage 8/8,7/8,4/8; previously exposed
@@ -1186,5 +1186,12 @@ Eleven CPU tests pass with both PEFT 0.11.1/Transformers 4.40 and the installed
 modern pair. The complete tiny GPT-J worker covers all eight fits, exact adapter
 factor/logit round trips, merging, exact base restoration, selection and independent
 verification of 530 decoded outputs. A lifecycle check also catches old PEFT's
-leftover adapter metadata before reattachment. The full suite passes177 tests
+leftover adapter metadata before reattachment. The full suite passes 177 tests
 with two skips. No full-size outcome is implied by these engineering checks.
+
+Kaggle accepted exactly one comparison worker, kernel 139988939 version 1, and the
+canonical session API reports RUNNING. Independently pulled accepted source is
+byte-identical to the frozen 235895-byte upload, SHA256
+`c129a44357c26d3d4f47b3a781dd8b97138f1ddf1cc8544d1aa69adb310fa577`.
+All 58 bundled file hashes and isolated pinned imports verify. Full-size results
+are pending; no outcome is inferred from startup.
