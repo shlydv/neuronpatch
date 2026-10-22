@@ -100,6 +100,21 @@ contribution must earn its value through a reproducible advantage in correction,
 preservation, data or total cost. A true advantage still needs fresh cases,
 another task family and model-size checks before becoming the library default.
 
-The endpoint replay is complete; no new training comparison has yet launched.
+The endpoint replay is complete. The frozen
+[seven-fit checkpoint study](../experiments/paired_checkpoints/README.md) has
+been accepted as Kaggle version1 and remains queued at the latest status check.
+It compares the first complete-response confidence checkpoint with the same
+trajectory's50-step endpoint, under the same procedure for selected neurons,
+random neurons and LoRA. It also measures grad-enabled/no-grad differences at
+fixed weights and reconstructs the known failing final optimizer step. No
+pretrained-model result from that study is available yet; accepted source and
+launch provenance are in its [launch record](../experiments/paired_checkpoints/launch_v1.json).
+
+A [retrospective audit of all24 saved weight updates](../experiments/paired_mlp/complete_v1/UPDATE_AUDIT.md)
+also rules out update size alone as a sufficient explanation for the observed
+interference. In case1 at the low rate, the guided norm is2.138, below clean
+random seed11's4.360 and LoRA's2.269, yet the guided patch causes the genuine
+Lakers and oxygen errors. Norm control may still help within a trajectory; a
+global small-norm rule cannot replace functional preservation measurements.
 The large [method ledger](method-design.md) preserves historical decisions; this
 document is the current decision, not another claim of completed research.

@@ -92,3 +92,8 @@ distinguish optimization effects from low-precision merging for that discrepancy
 
 The experiment is complete. The useful-library and better-method objective
 remains open; no additional GPU run was started while summarizing this result.
+
+Follow-up: the [completed endpoint replay](../../paired_endpoint/complete_v1/REPORT.md)
+finds the observed failures already before merging. The
+[saved-update audit](UPDATE_AUDIT.md) finds smaller damaging guided updates than
+clean random/LoRA updates, so nominal update size alone does not explain them.

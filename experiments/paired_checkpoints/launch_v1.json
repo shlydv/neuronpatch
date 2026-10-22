@@ -1,0 +1,15 @@
+{
+  "kernel": "shlydv/neuronpatch-paired-checkpoints-v1-20261022",
+  "kernel_id": 140181653,
+  "kernel_session_id": 361073236,
+  "accepted_version": 1,
+  "accepted_source_byte_identical": true,
+  "source_sha256": "c40f1fe3616287f1b70a3535ce83c66859ec4ca371db911c1bb56fcb368825aa",
+  "script_bytes": 159707,
+  "bundled_files": 36,
+  "new_fits": 7,
+  "rejected_input_sources": [],
+  "status": "QUEUED",
+  "status_checked_utc": "2026-10-22T09:00:17.181827+00:00",
+  "results_status": "Accepted with both completed parent sources. No pretrained outcome yet."
+}

@@ -1,6 +1,8 @@
 # Complete post-update checkpoint study
 
-**Prepared implementation; no pretrained checkpoint-study outcome yet.** This
+**Accepted on Kaggle as version1; queued at the latest check. No pretrained
+checkpoint-study outcome yet.** See the [launch record](launch_v1.json) and
+[Kaggle job](https://www.kaggle.com/code/shlydv/neuronpatch-paired-checkpoints-v1-20261022). This
 tests whether excessive fixed-step fitting hides a useful earlier patch, while
 separating an optimizer-step failure from a grad-enabled/evaluation-mode mismatch.
 It follows the [completed live/merge replay](../paired_endpoint/complete_v1/REPORT.md),
