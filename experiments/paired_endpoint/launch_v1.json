@@ -10,7 +10,7 @@
   ],
   "rejected_input_sources": [],
   "new_fits": 0,
-  "status": "QUEUED",
-  "status_checked_utc": "2026-10-22T07:09:51.104887+00:00",
-  "results_status": "Accepted;no pretrained replay outcome yet."
+  "status": "RUNNING",
+  "status_checked_utc": "2026-10-22T07:22:05.470664+00:00",
+  "results_status": "Kaggle reports RUNNING. Execution log service is unavailable(HTTP400/500); no preflight/model-stage or replay outcome claimed."
 }

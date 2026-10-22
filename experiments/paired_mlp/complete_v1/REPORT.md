@@ -5,6 +5,8 @@ complete requested answers on these two exposed development facts, but this
 experiment **does not demonstrate an advantage from gradient-selected neurons**.
 The predefined advance criteria fail. No fresh confirmation cases were used.
 
+![All settings, with validation-selected rates marked](comparison.png)
+
 All methods use approximately 1.33 million trainable scalars, the same correction
 and preservation data, 50 updates, and the same two learning rates. Rates below
 were selected using validation answers only; all rates remain in [scores](summary.json).

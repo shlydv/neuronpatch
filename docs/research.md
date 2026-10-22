@@ -6,6 +6,10 @@ run separately on a fixed 16-case 6B-model comparison, which completed.
 These are bounded reference checks, not full-paper reproductions. Research source
 is not vendored into the library.
 
+For the completed 22 October comparison and current decisions, start with
+[current-method.md](current-method.md). The source audits below distinguish
+published methods from our experimental adaptations.
+
 | Work | Reference and source | What informs neuronpatch | Status |
 |---|---|---|---|
 | FiNE | [paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [official code](https://github.com/opanhw/fine-unified-editing-code) | Per-token contribution selection, occurrence deltas, reference objective and stopping | CPU and bounded two-case 6B GPU workflow parity; separate 16-case upstream result. Full benchmark, safety and sequential editing not reproduced |
@@ -108,3 +112,31 @@ causal mechanism in our work either.
 representations for neuron-level knowledge disentanglement. The primary abstract
 was inspected; code and full method remain unverified here. Polysemanticity and
 editing spillover are existing research problems, not discoveries unique to us.
+
+## Structured sparse fine-tuning audit (22 October)
+
+[SIFT](https://github.com/song-wx/SIFT), source
+`5bef8a06ed9fa2587013c6f898222d047bde56e2`, is additional prior art for compact
+sparse weight increments and gradient-driven scalar selection. We inspected
+`sift/sift.py` and package setup; no reproduction or speed/memory claim is
+verified. Its indexed-gradient and hook lifecycle need numerical validation
+before using it as an execution baseline. We did not vendor its source, and
+absence of a root license in the inspected tree is not permission to reuse it.
+
+[Pruning-based sparse fine-tuning](https://github.com/CenjhihLi/sparsity_finetuning),
+source `bf38656696ad9e122edb319391d3a5325ce2b94a`, already supplies compact
+input-column and output-row increments. The inspected
+[`LinearFinetuner`](https://github.com/CenjhihLi/sparsity_finetuning/blob/bf38656696ad9e122edb319391d3a5325ce2b94a/methods/tp_finetuner.py)
+constructs effective weights before its linear call. The training entry point
+offers dependency-aware channel selection and several importance criteria;
+the importance code aggregates groups of dependent operations. Exact gated-MLP
+coupling and pretrained outcomes have not been reproduced here. The repository
+has an MIT license; no implementation is incorporated into neuronpatch.
+These findings further rule out claiming row/column sparse increments or
+dependency-aware channel selection as our invention. The weight-space forward
+also makes training/deployment arithmetic a relevant implementation comparison,
+not proof that our pending merge discrepancy has any particular cause.
+
+Our current synthesis must therefore be judged by measured selective adaptation,
+cost and usable deployment, rather than by attaching a new name to sparse rows,
+columns, gradient selection or ordinary stopping/regularization.

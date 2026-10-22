@@ -1,5 +1,9 @@
 # Frozen endpoint replay
 
+**Status: accepted version1; Kaggle reports RUNNING.** See the
+[launch record](launch_v1.json). The log service currently returns errors, so
+no worker-stage or real-model outcome is inferred from that status.
+
 This diagnostic separates the behavior of a trained live patch from the behavior
 of its FP16 merged deployment. It creates **no optimizer, no new fit, no new
 question, no changed target and no new selector**. It uses eight saved endpoints

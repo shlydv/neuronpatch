@@ -1,0 +1,1382 @@
+{
+  "status": "Retrospective objective diagnosis; all frozen scoring and method choices unchanged",
+  "source_inputs_sha256": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+  "preservation_training_coverage": [
+    {
+      "case": 0,
+      "preservation_examples": 6,
+      "baseline_reference_correct": 5,
+      "baseline_not_reference_correct_ids": [
+        "case-0-preserve-0"
+      ]
+    },
+    {
+      "case": 1,
+      "preservation_examples": 6,
+      "baseline_reference_correct": 5,
+      "baseline_not_reference_correct_ids": [
+        "case-1-preserve-2"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "case": 0,
+      "condition": "paired_mean-43-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_mean-43-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-0-scope-test-2",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 9,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 5,
+          "rows": [
+            {
+              "id": "utility-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-5",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-7",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-9",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-15",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-29",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-30",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-31",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 3,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-3",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "outgoing_mean-43-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "outgoing_mean-43-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 9,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 6,
+          "rows": [
+            {
+              "id": "utility-5",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-7",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-9",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-10",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-11",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-15",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-30",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-31",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-3",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-11-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-11-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-29-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-29-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-30",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-47-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-47-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "lora-43-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 2,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "lora-43-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-0-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_mean-43-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 3,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-3",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_mean-43-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 3,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-3",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 3,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-11",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-13",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": true
+            },
+            {
+              "id": "utility-14",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "outgoing_mean-43-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-29",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "outgoing_mean-43-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 12,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 10,
+          "rows": [
+            {
+              "id": "utility-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-5",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-6",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-7",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-9",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-10",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-11",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-14",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-15",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-30",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-31",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 3,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 3,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-exposed-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-11-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-11-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-29",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "utility-30",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 1,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": true,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-29-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-29-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-31",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-47-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-3",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-47-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 3,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-3",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-14",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            },
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 1,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "lora-43-0",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 0,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": []
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "lora-43-1",
+      "banks": {
+        "scope_test": {
+          "scored_lost": 2,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-test-2",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-test-3",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        },
+        "utility_test": {
+          "scored_lost": 1,
+          "to_task_training_answer": 0,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "utility-25",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            }
+          ]
+        },
+        "scope_exposed": {
+          "scored_lost": 2,
+          "to_task_training_answer": 1,
+          "to_preservation_training_answer": 0,
+          "rows": [
+            {
+              "id": "case-1-scope-exposed-0",
+              "exact_task_training_answer": false,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": false,
+              "truncated": false
+            },
+            {
+              "id": "case-1-scope-exposed-1",
+              "exact_task_training_answer": true,
+              "exact_preservation_training_answer": false,
+              "new_literal_target_mention": true,
+              "truncated": false
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation": "A preservation reference that the base does not already produce is an auxiliary supervised correction or wording constraint,not purely behavior retention. A damaged answer matching a training label is consistent with label spillover but does not causally identify which example or parameter caused it.",
+  "limits": "Strict exact-answer losses include valid aliases and output-form differences. Counts are observations,not independent examples. Base answer/reference correctness requires semantic review. Label matches are exact normalized answers,not substring matches."
+}

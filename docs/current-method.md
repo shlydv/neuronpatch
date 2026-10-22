@@ -23,6 +23,15 @@ The scope-validation bank also starts with only1/6 accepted answers, so its
 unambiguous, representative questions and review of genuine factual errors
 separately from wording and output-form changes.
 
+The [objective audit](../experiments/paired_endpoint/objective_diagnosis_v1.json)
+finds only5/6 preservation-training references initially matched in each case.
+The sixth also imposes a supervised correction or wording constraint. In the
+high-rate outgoing-only condition,17 of22 scored test losses become an exact
+answer found in these auxiliary training examples, versus zero that become the
+main edited target. This is consistent with broader training-answer spillover;
+it is not causal attribution to a particular example. It also shows why counting
+only the injected target string would miss much of the observed damage.
+
 One endpoint uncertainty remains: high-rate paired case0 is broken after
 merging, but its final live predictions were not saved. The
 [frozen eight-endpoint replay](../experiments/paired_endpoint/README.md) tests
