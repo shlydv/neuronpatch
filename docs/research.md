@@ -140,3 +140,24 @@ not proof that our pending merge discrepancy has any particular cause.
 Our current synthesis must therefore be judged by measured selective adaptation,
 cost and usable deployment, rather than by attaching a new name to sparse rows,
 columns, gradient selection or ordinary stopping/regularization.
+
+## Selection and retention controls checked on 22 October
+
+[Ploner and Akbik, EACL 2024](https://aclanthology.org/2024.findings-eacl.122.pdf),
+sections3.1–3.3, already compare downstream squared-gradient selection, a ratio
+of downstream to pretraining squared gradients, random subsets and LoRA. Their
+RoBERTa classification/NER experiments independently tune learning rates and find
+competitive random subsets; the combined score does not significantly beat
+random in their aggregate comparison. This is not an instruction-LLM neuron
+editing experiment. It rules out presenting a correction/preservation gradient
+ratio as our invention or assuming it will solve the observed interference.
+Their linked code has not been inspected here.
+
+[LS-LoRA, arXiv2610.11620v1](https://arxiv.org/html/2610.11620v1), sections3–4,
+uses forward-only layer input/output cosine similarity for selecting adapter
+locations. It reports adaptation and commonsense retention, including a control
+with the same number of randomly selected layers. All methods use the same
+LoRA rank, so its all-layer baseline has more trainable parameters. The paper
+provides relevant evidence for inexpensive placement controls, not proof that
+our neuron score works or that its proxy predicts preservation on our inputs.
+Its empirical claims and implementation have not been independently reproduced.

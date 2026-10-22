@@ -44,6 +44,22 @@ Adam moments and resulting parameters. Independent checks reconstruct the Adam
 step and directional scores. These are measured autograd quantities, not a
 global nonlinear-preservation guarantee or attribution to a unique neuron.
 
+The offline [step decomposition](step_analysis.py) further separates the recorded
+Adam update into contributions from its current clipped gradient and previous
+first moment, at the same recorded second-moment denominator. It reports their
+dots with both the joint and correction-only gradients and retains the floating
+point reconstruction residual. This can distinguish local objective conflict
+from a historical contribution pointing uphill. It does not simulate removing
+momentum or establish which alternative optimizer would improve model answers.
+Synthetic tests recover actual PyTorch Adam steps in FP32 and FP64; pretrained
+diagnostic tensors from the running study remain pending.
+
+~~~sh
+python -m experiments.paired_checkpoints.step_analysis \
+  --results /absolute/path/to/checkpoint-results/results \
+  --output /absolute/path/to/step-decomposition.json
+~~~
+
 ## Count costs honestly
 
 Discovery reruns once per fact and must reproduce the frozen support. Record
