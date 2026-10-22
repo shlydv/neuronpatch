@@ -21,6 +21,8 @@
     ],
     "endpoints_per_dtype": 8,
     "decoded_and_review_packet_observations_per_dtype": 48,
-    "altered_live_metric_rejected": true
+    "altered_live_metric_rejected": true,
+    "teacher_metric_absolute_tolerance": 1e-10,
+    "divergence_absolute_tolerance": 1e-12
   }
 }

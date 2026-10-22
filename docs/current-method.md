@@ -41,11 +41,13 @@ the next calibration contract, not to rewrite the frozen scores or dismiss
 unambiguous interference. Future trials should distinguish factual content
 accuracy from the requested response form.
 
-One endpoint uncertainty remains: high-rate paired case0 is broken after
-merging, but its final live predictions were not saved. The
-[frozen eight-endpoint replay](../experiments/paired_endpoint/README.md) tests
-both states using exactly the saved deltas and existing questions, with zero
-new fits. Do not infer an optimizer or merging cause before it completes.
+The [completed eight-endpoint replay](../experiments/paired_endpoint/complete_v1/REPORT.md)
+resolves the deployment uncertainty: all248 live/merged answer pairs are exactly
+identical. The high-rate failure and selected low-rate interference already
+exist in the saved live patches. The exact final sampled correction prompt also
+degrades between its logged pre-update state and the saved endpoint. Checkpoint
+traces still need to separate optimization time from grad-enabled/no-grad
+execution effects; merging is not the source of the observed answer failures.
 
 ## What the papers suggest, and what we actually adopted
 
@@ -78,7 +80,7 @@ original answer prefixes; it did not establish robust complete-answer editing.
 
 ## Next candidate and decision boundary
 
-After resolving endpoint fidelity, test the smallest update that reaches a
+Next test the smallest update that reaches a
 complete-answer target, with functional preservation checked on representative
 calibration examples. Compare the same stopping/protection procedure for guided
 supports, random supports and LoRA. Investigate multiple parameter budgets so
@@ -98,6 +100,6 @@ contribution must earn its value through a reproducible advantage in correction,
 preservation, data or total cost. A true advantage still needs fresh cases,
 another task family and model-size checks before becoming the library default.
 
-No new training comparison is launched while the endpoint replay is pending.
+The endpoint replay is complete; no new training comparison has yet launched.
 The large [method ledger](method-design.md) preserves historical decisions; this
 document is the current decision, not another claim of completed research.

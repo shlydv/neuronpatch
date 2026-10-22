@@ -10,9 +10,9 @@
   ],
   "rejected_input_sources": [],
   "new_fits": 0,
-  "status": "RUNNING",
-  "status_checked_utc": "2026-10-22T07:45:25.800023+00:00",
-  "results_status": "Direct session log stream verified dependencies,all39 parent files and model loading. Partial endpoint replays match original merged teacher/generation artifacts. Await complete outputs and independent verification.",
+  "status": "COMPLETE",
+  "status_checked_utc": "2026-10-22T07:49:17.537920+00:00",
+  "results_status": "Complete,return0. Independent verification covers8 endpoints,16 teacher records and496 scored answers;248 live/merged pairs identical. All71 distinct contexts reviewed. See complete_v1/REPORT.md.",
   "kernel_session_id": 361047763,
-  "completed_endpoints_observed": 6
+  "completed_endpoints_observed": 8
 }

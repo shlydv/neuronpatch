@@ -63,6 +63,10 @@ all give8/8 complete transfer answers on two development facts. Gradient-selecte
 paired updates also introduce unrelated errors; no selection advantage or robust
 default recipe has been demonstrated. Full review distinguishes valid aliases
 missed by exact scoring from genuine interference.
+The [completed zero-fit endpoint replay](experiments/paired_endpoint/complete_v1/REPORT.md)
+checks496 answers and finds all248 live/merged pairs identical. The observed
+failures already exist before merging; deployment rounding is not their cause
+on these tested endpoints.
 
 ## Direction
 

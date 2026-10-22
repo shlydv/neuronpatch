@@ -1,0 +1,11 @@
+{
+  "case": 0,
+  "condition": "paired_mean-43-1",
+  "training_row_id": "case-0-train-0",
+  "last_pre_update_sample_index": 0,
+  "last_pre_update_mean_nll": 2.9125621949788183e-05,
+  "saved_live_endpoint_same_prompt_mean_nll": 1.196853449740895,
+  "source_fit_file_sha256": "f5c4b43bb4f59b2345f544c0663d0f7acd3f1979b2396060bf31d177fa907b96",
+  "source_live_teacher_sha256": "116ba69e4bdd63ee3c669f8b5994b60fff32e94fe6672bfa89a4d4e9defde848",
+  "scope": "Same prompt at different optimization times. Training forward used gradients;endpoint measurement used no_grad. This separates prompt identity from the gap but does not isolate final-step dynamics from execution-mode effects."
+}

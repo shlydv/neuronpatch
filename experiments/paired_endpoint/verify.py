@@ -51,7 +51,7 @@ def verify(parent, results, protocol, tokenizer):
                 / len(parts[n + p :]),
             }
             assert all(
-                math.isclose(v, record[f"{state}_metrics"][k], abs_tol=1e-8, rel_tol=1e-8)
+                math.isclose(v, record[f"{state}_metrics"][k], abs_tol=1e-10, rel_tol=1e-8)
                 for k, v in measured.items()
             )
             outputs = json.loads((results / f"{prefix}-{state}.json").read_text())
@@ -90,7 +90,8 @@ def verify(parent, results, protocol, tokenizer):
             ("mean_kl_merged_to_live", F.kl_div(la, lb, reduction="batchmean", log_target=True)),
             ("max_abs_logit_difference", (a - b).abs().max()),
         ):
-            assert math.isclose(metrics[key], float(value), rel_tol=1e-8, abs_tol=1e-8)
+            # KL can be below1e-8; that absolute tolerance would accept a false zero.
+            assert math.isclose(metrics[key], float(value), rel_tol=1e-8, abs_tol=1e-12)
         assert record["changed_generations"] == {
             bank: [
                 a["id"]

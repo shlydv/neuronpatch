@@ -1,0 +1,1520 @@
+{
+  "new_fits": 0,
+  "endpoints": 8,
+  "observations": 496,
+  "parent_merged_replay_exact": true,
+  "conditions": {
+    "paired_mean-43-0": {
+      "live": {
+        "target_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 8,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 5,
+          "total": 8,
+          "scored_lost": 3,
+          "new_literal_target_mentions": 1,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 41,
+          "total": 46,
+          "scored_lost": 1,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        }
+      },
+      "merged": {
+        "target_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 8,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 5,
+          "total": 8,
+          "scored_lost": 3,
+          "new_literal_target_mentions": 1,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 41,
+          "total": 46,
+          "scored_lost": 1,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        }
+      }
+    },
+    "paired_mean-43-1": {
+      "live": {
+        "target_test": {
+          "hits": 5,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 5,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 8,
+          "scored_lost": 4,
+          "new_literal_target_mentions": 2,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 30,
+          "total": 46,
+          "scored_lost": 12,
+          "new_literal_target_mentions": 1,
+          "truncated": 1
+        }
+      },
+      "merged": {
+        "target_test": {
+          "hits": 5,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 5,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 8,
+          "scored_lost": 4,
+          "new_literal_target_mentions": 2,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 30,
+          "total": 46,
+          "scored_lost": 12,
+          "new_literal_target_mentions": 1,
+          "truncated": 1
+        }
+      }
+    },
+    "paired_random-11-0": {
+      "live": {
+        "target_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 8,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 42,
+          "total": 46,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        }
+      },
+      "merged": {
+        "target_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 8,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 42,
+          "total": 46,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        }
+      }
+    },
+    "lora-43-0": {
+      "live": {
+        "target_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 8,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 7,
+          "total": 8,
+          "scored_lost": 1,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 42,
+          "total": 46,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        }
+      },
+      "merged": {
+        "target_test": {
+          "hits": 8,
+          "total": 8,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 8,
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 7,
+          "total": 8,
+          "scored_lost": 1,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 42,
+          "total": 46,
+          "scored_lost": 0,
+          "new_literal_target_mentions": 0,
+          "truncated": 0
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-0",
+              "case-0-scope-test-1",
+              "case-0-scope-test-2",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-0",
+              "case-0-scope-test-1",
+              "case-0-scope-test-2",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 1.0674786526326191e-07,
+        "task_worst_token_nll": 4.623231575351383e-07,
+        "preserve_mean_nll": 3.9541647547972994e-06,
+        "target_val_mean_nll": 2.2633850467930947e-07
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 1.0489840383974702e-07,
+        "task_worst_token_nll": 4.495982466323767e-07,
+        "preserve_mean_nll": 4.018801105863822e-06,
+        "target_val_mean_nll": 2.2863135503333373e-07
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.063232421875,
+        "mean_kl_live_to_merged": 3.4330929814382994e-09,
+        "mean_kl_merged_to_live": 3.5247219354487606e-09,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 31
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "paired_mean-43-1"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 1,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 2,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-1",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [
+              "case-0-scope-test-2"
+            ],
+            "new_literal_target_mentions": [
+              "case-0-scope-test-2"
+            ],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 12,
+            "total": 23,
+            "hit_ids": [
+              "utility-3",
+              "utility-6",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23"
+            ],
+            "scored_lost": [
+              "utility-1",
+              "utility-5",
+              "utility-7",
+              "utility-9",
+              "utility-15",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 1,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 2,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-1",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [
+              "case-0-scope-test-2"
+            ],
+            "new_literal_target_mentions": [
+              "case-0-scope-test-2"
+            ],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 12,
+            "total": 23,
+            "hit_ids": [
+              "utility-3",
+              "utility-6",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23"
+            ],
+            "scored_lost": [
+              "utility-1",
+              "utility-5",
+              "utility-7",
+              "utility-9",
+              "utility-15",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 2.716725976594344,
+        "task_worst_token_nll": 13.265627031873812,
+        "preserve_mean_nll": 0.0004756877999526349,
+        "target_val_mean_nll": 1.1867144331769002
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 2.7183677509713284,
+        "task_worst_token_nll": 13.25000205964168,
+        "preserve_mean_nll": 0.0004683793436458256,
+        "target_val_mean_nll": 1.1968392174686358
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.0703125,
+        "mean_kl_live_to_merged": 1.0845209447774182e-06,
+        "mean_kl_merged_to_live": 1.0715665843233332e-06,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 31
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-0",
+              "case-0-scope-test-1",
+              "case-0-scope-test-2",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-0",
+              "case-0-scope-test-1",
+              "case-0-scope-test-2",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 5.091692390774621e-06,
+        "task_worst_token_nll": 1.8232385514238558e-05,
+        "preserve_mean_nll": 1.2387583293913294e-05,
+        "target_val_mean_nll": 1.3731019481137233e-05
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 5.139375149257022e-06,
+        "task_worst_token_nll": 1.827561685274759e-05,
+        "preserve_mean_nll": 1.2467137996965662e-05,
+        "target_val_mean_nll": 1.4013141945194244e-05
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.078125,
+        "mean_kl_live_to_merged": 1.8846271633254155e-09,
+        "mean_kl_merged_to_live": 1.8922853789974964e-09,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 31
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-0",
+              "case-0-scope-test-1",
+              "case-0-scope-test-2",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-0-target-test-0",
+              "case-0-target-test-1",
+              "case-0-target-test-2",
+              "case-0-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-0-scope-test-0",
+              "case-0-scope-test-1",
+              "case-0-scope-test-2",
+              "case-0-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 1.1928232490434868e-05,
+        "task_worst_token_nll": 2.6514944941880003e-05,
+        "preserve_mean_nll": 2.2099109303989433e-05,
+        "target_val_mean_nll": 2.4262905628328706e-05
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 1.2080793087281767e-05,
+        "task_worst_token_nll": 2.6884305135865816e-05,
+        "preserve_mean_nll": 2.1798160952594497e-05,
+        "target_val_mean_nll": 2.4334304895271924e-05
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.078125,
+        "mean_kl_live_to_merged": 6.978656984134309e-09,
+        "mean_kl_merged_to_live": 6.98292865304424e-09,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 31
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 1,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0"
+            ],
+            "scored_lost": [
+              "case-1-scope-test-1",
+              "case-1-scope-test-2",
+              "case-1-scope-test-3"
+            ],
+            "new_literal_target_mentions": [
+              "case-1-scope-test-3"
+            ],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 20,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [
+              "utility-25"
+            ],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 1,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0"
+            ],
+            "scored_lost": [
+              "case-1-scope-test-1",
+              "case-1-scope-test-2",
+              "case-1-scope-test-3"
+            ],
+            "new_literal_target_mentions": [
+              "case-1-scope-test-3"
+            ],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 20,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [
+              "utility-25"
+            ],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 2.1270115401329626e-06,
+        "task_worst_token_nll": 6.9443191321738595e-06,
+        "preserve_mean_nll": 4.4843465814557875e-06,
+        "target_val_mean_nll": 1.8946143723515736e-06
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 2.12119359706738e-06,
+        "task_worst_token_nll": 6.8812415321417575e-06,
+        "preserve_mean_nll": 4.48123135036048e-06,
+        "target_val_mean_nll": 1.9079657202307012e-06
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.09375,
+        "mean_kl_live_to_merged": 8.755841233872685e-10,
+        "mean_kl_merged_to_live": 8.732718270928269e-10,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 43
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "paired_mean-43-1"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 1,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0"
+            ],
+            "scored_lost": [
+              "case-1-scope-test-1",
+              "case-1-scope-test-2",
+              "case-1-scope-test-3"
+            ],
+            "new_literal_target_mentions": [
+              "case-1-scope-test-3"
+            ],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 18,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [
+              "utility-11",
+              "utility-13",
+              "utility-14"
+            ],
+            "new_literal_target_mentions": [
+              "utility-14"
+            ],
+            "truncated": 1
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 1,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0"
+            ],
+            "scored_lost": [
+              "case-1-scope-test-1",
+              "case-1-scope-test-2",
+              "case-1-scope-test-3"
+            ],
+            "new_literal_target_mentions": [
+              "case-1-scope-test-3"
+            ],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 18,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [
+              "utility-11",
+              "utility-13",
+              "utility-14"
+            ],
+            "new_literal_target_mentions": [
+              "utility-14"
+            ],
+            "truncated": 1
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 1.949826349958686e-06,
+        "task_worst_token_nll": 1.0082696046964656e-05,
+        "preserve_mean_nll": 1.3666639408111474e-05,
+        "target_val_mean_nll": 3.457307235758359e-06
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 1.9463357953479012e-06,
+        "task_worst_token_nll": 9.984620618297413e-06,
+        "preserve_mean_nll": 1.361935081436943e-05,
+        "target_val_mean_nll": 3.3951442599544635e-06
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.0859375,
+        "mean_kl_live_to_merged": 6.278585273592191e-09,
+        "mean_kl_merged_to_live": 6.249580358457955e-09,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 43
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0",
+              "case-1-scope-test-1",
+              "case-1-scope-test-2",
+              "case-1-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0",
+              "case-1-scope-test-1",
+              "case-1-scope-test-2",
+              "case-1-scope-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 1.4389338117679372e-05,
+        "task_worst_token_nll": 3.6968719300034536e-05,
+        "preserve_mean_nll": 1.742123654611621e-05,
+        "target_val_mean_nll": 1.5175398613583487e-05
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 1.417585134078081e-05,
+        "task_worst_token_nll": 3.495770889827554e-05,
+        "preserve_mean_nll": 1.755630941468035e-05,
+        "target_val_mean_nll": 1.5351155276732698e-05
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.1279296875,
+        "mean_kl_live_to_merged": 4.656231641568079e-09,
+        "mean_kl_merged_to_live": 4.618320921238724e-09,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 43
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      },
+      "states": {
+        "live": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 3,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0",
+              "case-1-scope-test-1",
+              "case-1-scope-test-3"
+            ],
+            "scored_lost": [
+              "case-1-scope-test-2"
+            ],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        },
+        "merged": {
+          "target_test": {
+            "hits": 4,
+            "total": 4,
+            "hit_ids": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [
+              "case-1-target-test-0",
+              "case-1-target-test-1",
+              "case-1-target-test-2",
+              "case-1-target-test-3"
+            ],
+            "truncated": 0
+          },
+          "scope_test": {
+            "hits": 3,
+            "total": 4,
+            "hit_ids": [
+              "case-1-scope-test-0",
+              "case-1-scope-test-1",
+              "case-1-scope-test-3"
+            ],
+            "scored_lost": [
+              "case-1-scope-test-2"
+            ],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          },
+          "utility_test": {
+            "hits": 21,
+            "total": 23,
+            "hit_ids": [
+              "utility-1",
+              "utility-3",
+              "utility-5",
+              "utility-6",
+              "utility-7",
+              "utility-9",
+              "utility-10",
+              "utility-11",
+              "utility-13",
+              "utility-14",
+              "utility-15",
+              "utility-17",
+              "utility-18",
+              "utility-19",
+              "utility-21",
+              "utility-22",
+              "utility-23",
+              "utility-25",
+              "utility-29",
+              "utility-30",
+              "utility-31"
+            ],
+            "scored_lost": [],
+            "new_literal_target_mentions": [],
+            "truncated": 0
+          }
+        }
+      },
+      "live_teacher_metrics": {
+        "task_mean_nll": 4.097501237746807e-05,
+        "task_worst_token_nll": 0.00014064520501477773,
+        "preserve_mean_nll": 1.683643744267253e-05,
+        "target_val_mean_nll": 3.55749268194927e-05
+      },
+      "merged_teacher_metrics": {
+        "task_mean_nll": 4.0777295703225347e-05,
+        "task_worst_token_nll": 0.00013832211607223144,
+        "preserve_mean_nll": 1.6799534828532752e-05,
+        "target_val_mean_nll": 3.5419420450821804e-05
+      },
+      "teacher_comparison": {
+        "logits_exact": false,
+        "max_abs_logit_difference": 0.10546875,
+        "mean_kl_live_to_merged": 6.419813900339341e-09,
+        "mean_kl_merged_to_live": 6.411741314947274e-09,
+        "changed_teacher_argmax_positions": 0,
+        "teacher_positions": 43
+      },
+      "changed_generations": {
+        "target_test": [],
+        "scope_test": [],
+        "utility_test": []
+      }
+    }
+  ],
+  "full_output_review_complete": true,
+  "limits": "Two exposed counterfactual facts, eight deliberately chosen post-hoc endpoints. Exact-answer losses include valid aliases and output-form changes; read full outputs. Only this pinned base/runtime/merge operation is compared. No new selector or fresh generalization result is established.",
+  "review_record": "review.json",
+  "live_merged_exact_generation_pairs": 248,
+  "changed_teacher_argmax_positions": 0,
+  "teacher_positions_compared": 296
+}

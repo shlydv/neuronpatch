@@ -1,10 +1,11 @@
 # Frozen endpoint replay
 
-**Status: accepted version1; Kaggle reports RUNNING.** See the
-[launch record](launch_v1.json) and explicitly partial [observations](running_notes_v1.json).
-The slug-based log service fails, but direct session361047763 streaming works.
-The worker verified all39 parent files and started the frozen endpoint comparisons;
-complete independent verification and answer review remain outstanding.
+**Status: complete and independently verified.** The
+[report](complete_v1/REPORT.md) finds all248 live/merged answer pairs exactly
+identical, including the observed failures. All496 scored outputs and16 teacher
+records pass verification;71 distinct contexts are reviewed. See the
+[launch record](launch_v1.json); earlier [running notes](running_notes_v1.json)
+are explicitly partial historical observations.
 
 This diagnostic separates the behavior of a trained live patch from the behavior
 of its FP16 merged deployment. It creates **no optimizer, no new fit, no new
