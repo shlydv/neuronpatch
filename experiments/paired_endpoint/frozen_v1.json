@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-10-22T07:06:31.853752+00:00",
+  "status": "Frozen before submission/inference",
+  "kernel": "shlydv/neuronpatch-paired-endpoint-v1-20261022",
+  "source_revision": "4802d4d8442726fc3f0b346dff529b7824afbfcb",
+  "source_sha256": "ed3c3750065ea1c927fcea0fe9394eb62263f6a868b443f0f1eb31e0aa6cc6e3",
+  "script_bytes": 113726,
+  "bundled_files": 29,
+  "protocol_sha256": "d64a063764446f31ff2aa457bfcd24dfba0255ee6fa45cb005291d626b3163d2",
+  "new_fits": 0,
+  "endpoints": 8,
+  "expected_scored_generations": 496,
+  "fresh_confirmation_used": false,
+  "isolated_pinned_imports_pass": true,
+  "bounded_worker_seconds": 2700
+}
