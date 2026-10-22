@@ -1,0 +1,37 @@
+{
+  "completed_utc": "2026-10-22T15:28:39.118175+00:00",
+  "pretrained_runs": 0,
+  "pinned_runtime": "Torch2.6.0/Transformers4.56.2/PEFT0.17.1",
+  "checks": "Nine math/transaction/fitting checks plus actual FP32/FP16 tiny-Qwen workers,each performing eight fits,save/reload/merge,base restoration and independent verification of78 generations and18 teacher records;corrupted acceptance logs rejected.",
+  "focused_results": {
+    "pinned_passed": 11,
+    "modern_passed": 11,
+    "minimum_passed": 9,
+    "minimum_skipped_optional_transformers": 2
+  },
+  "ruff": "pass",
+  "diff_check": "pass",
+  "bundle_preview_compiles": true,
+  "bundle_preview_all_file_hashes_valid": true,
+  "setup_deadlines_seconds": [
+    300,
+    300,
+    900
+  ],
+  "worker_process_deadline_seconds": 3300,
+  "provider_session_requested_seconds": 5400,
+  "file_sha256": {
+    "experiments/guarded_training/build.py": "1ea98030fba79f463411478c7daebbcb1d3a46fa718abf9cfae1fe8ca5beb8a8",
+    "experiments/guarded_training/run.py": "7428d2ef65ce0169bd60529aa24047cee8a3f0cd6cac83c59362358be8383034",
+    "experiments/guarded_training/__init__.py": "cab6f569e46b881bda026b9baf8a81055e5404beaaa0a4c384ba5b0ce8501fb5",
+    "experiments/guarded_training/step.py": "cc2e44bda62f3aaccf0283541d22bdef209accdeed47fe1ec26d6115299362fa",
+    "experiments/guarded_training/verify.py": "7a78890e8a99c3914aaa8d9cd431eb6f9bdf161fbcf300bd7ededfcdb82c550c",
+    "experiments/guarded_training/prepare.py": "4a4c94161ab7d35b8d06b0cf2d0c473cd8da7f7c324a2928c4e4ffbfb5750211",
+    "experiments/guarded_training/training.py": "74cf8e7e6ed07606e91e5872a4e0da45a2ede0c46ddc5b4304a538cf6da6c51a",
+    "tests/test_guarded_step.py": "f5623b8c1785188af90d78e605a3ab24b7ca72457b1d2f247dc66c742dff5a1b",
+    "tests/test_guarded_training.py": "6132d035d05aa68750eec255d52090d39a5cec2523207278ec2df2346585fdbe",
+    "tests/test_guarded_worker.py": "1f25dd000e23bfd1b1c29860e5359a3da2574d661d6b6871e29d4df96ef38d0a",
+    "tests/test_logit_path.py": "b5b04ea75b0f5993fd5b2a082b891066a1f0c0f7fdc6cf2ecf2a4c3584954d89"
+  },
+  "limits": "CPU execution/numerical/integrity checks only;no pretrained advantage or recipe established. Frozen full-size source is built after committing these files."
+}

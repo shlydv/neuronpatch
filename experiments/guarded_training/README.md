@@ -44,6 +44,16 @@ as successful adaptation.
 
 ## Next pretrained comparison
 
+The [prepared protocol](protocol_v1.json) fixes eight fits on Qwen3-4B, with
+60 proposals and four backtrack scales at most. Each method uses the same
+previously successful nominal learning rate,0.0003, full-batch objective and
+0.9 complete-training-token confidence stop. Actual mean/worst-token
+preservation KL limits are0.02/0.2. These are development design limits,
+not universal safety thresholds. Model loading/worker execution has a3000-second
+internal limit, the worker process3300seconds, and a requested provider session
+limit5400seconds. Setup subprocesses separately have300/300/900-second limits;
+none of these bounds queue wait.
+
 Use identical measured protection and stopping for gradient-selected paired
 neurons, gain/risk-selected neurons, random paired neurons, and official LoRA.
 Freeze data, budgets, rates, maximum proposals/backtracks and success criteria
@@ -56,6 +66,14 @@ completed edits cannot win. Passing a development pilot would still require
 fresh cases, additional parameter/data budgets and another task family before
 recommending a recipe. The measured guard and KL constraints have prior art;
 the useful contribution must be earned by their combined results.
+
+Both random and LoRA must complete the edits for the primary superiority
+comparison to be informative. The candidate must complete8/8 merged transfer
+answers without new factual preservation errors or truncation, retain its
+measured preservation limits after merging, and lower held-out KL by at least20%
+against each control in each case. Output review remains necessary even when
+numeric conditions pass. Failure of a control is inconclusive, not an automatic
+candidate win. Cached supports cannot establish measured whole-pipeline speed.
 
 ```sh
 PYTHONPATH=.:src python -m pytest -q tests/test_guarded_step.py tests/test_guarded_training.py
