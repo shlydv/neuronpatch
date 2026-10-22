@@ -1,0 +1,22 @@
+{
+  "advance_unchanged": false,
+  "fresh_confirmation_used": false,
+  "complete_transfer_gate": {
+    "required": 7,
+    "observed": 8,
+    "total": 8,
+    "passed": true
+  },
+  "no_new_unambiguous_preservation_error": {
+    "required": 0,
+    "observed": 2,
+    "passed": false
+  },
+  "cost_better_than_both_stopped_baselines": {
+    "guided_seconds": 144.88946994100036,
+    "random_seconds": 154.27867195600197,
+    "lora_seconds": 37.83573110899988,
+    "passed": false
+  },
+  "scope": "Frozen development-study criteria. Two facts,correlated transfer wordings,single clean random seed;no superiority claim."
+}

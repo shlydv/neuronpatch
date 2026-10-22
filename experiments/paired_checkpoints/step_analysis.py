@@ -15,6 +15,36 @@ import torch
 from safetensors.torch import load_file
 
 
+def token_transition(before, after, example_index):
+    """Compare the same response positions, including the final EOS target.
+
+    The frozen experiment includes EOS in every response. The before-record has
+    just the sampled example; the after-record concatenates the calibration bank.
+    """
+    lengths = after["lengths"].tolist()
+    assert 0 <= example_index < len(lengths)
+    start = sum(lengths[:example_index])
+    end = start + lengths[example_index]
+    labels = before["labels"]
+    assert before["lengths"].tolist() == [end - start]
+    assert len(labels) and torch.equal(labels, after["labels"][start:end])
+    eos = int(labels[-1])
+    left = before["logits"].double().softmax(-1)
+    right = after["logits"][start:end].double().softmax(-1)
+    assert left.shape == right.shape and len(left) == len(labels)
+    rows = []
+    for i, target in enumerate(labels.tolist()):
+        row = {"position": i, "target_token_id": target}
+        for name, probs in (("before", left[i]), ("after", right[i])):
+            row[name] = {
+                "target_probability": float(probs[target]),
+                "eos_probability": float(probs[eos]),
+                "top_token_id": int(probs.argmax()),
+            }
+        rows.append(row)
+    return {"eos_token_id": eos, "example_index": example_index, "tokens": rows}
+
+
 def decompose(state, audit):
     group = audit["optimizer_group"]
     assert group["weight_decay"] == 0
@@ -120,6 +150,15 @@ def main():
     paths = {kind: args.results / f"{prefix}.{kind}" for kind in ("json", "safetensors")}
     audit = json.loads(paths["json"].read_text())
     result = decompose(load_file(str(paths["safetensors"])), audit)
+    paths["before_teacher"] = args.results / "case-0-paired_mean-43-1-before-final-grad.safetensors"
+    paths["after_teacher"] = args.results / (
+        f"case-0-paired_mean-43-1-step-{audit['step']}-grad-calibration.safetensors"
+    )
+    result["last_sample_token_transition"] = token_transition(
+        load_file(str(paths["before_teacher"])),
+        load_file(str(paths["after_teacher"])),
+        audit["example_indices"][0],
+    )
     result["measured_correction_nll"] = {
         key: audit[key]
         for key in (

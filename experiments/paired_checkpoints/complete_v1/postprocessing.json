@@ -1,0 +1,10 @@
+{
+  "postprocessing_files": {
+    "experiments/paired_checkpoints/analysis.py": "902e35e1bc8593640a4193891c2e6db57267729915160850818479208c6fb018",
+    "experiments/paired_checkpoints/review.py": "56246318c5c785b59669f7c5a56da5e0500e5f80677e15d616952532de52ecf1",
+    "experiments/paired_checkpoints/verify.py": "235cd31d2114dff81c447cfaa83843a477552bfe371a1601314b70caa141c58e",
+    "experiments/paired_checkpoints/step_analysis.py": "63d6f2f554540d9e93ece889fe5037561925b4adb3f904cdced435161156b027",
+    "tests/test_step_analysis.py": "ae10328407d4006e959f19c47649d19b149ef6e3b0a91ccb390ccfa9a6a15b8f"
+  },
+  "postprocessing_checks": "Six focused tests pass in the pinned worker runtime;Ruff passes. No extra pretrained forwards or GPU fits."
+}

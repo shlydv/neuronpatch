@@ -46,8 +46,20 @@ resolves the deployment uncertainty: all248 live/merged answer pairs are exactly
 identical. The high-rate failure and selected low-rate interference already
 exist in the saved live patches. The exact final sampled correction prompt also
 degrades between its logged pre-update state and the saved endpoint. Checkpoint
-traces still need to separate optimization time from grad-enabled/no-grad
-execution effects; merging is not the source of the observed answer failures.
+traces now isolate that late failure to an optimizer update: grad-enabled and
+no-grad logits agree at the measured before/after states, while the update
+changes a correct word continuation into premature EOS. Merging is not the
+source of the observed answer failures.
+
+The [completed seven-fit checkpoint study](../experiments/paired_checkpoints/complete_v1/REPORT.md)
+selects guided checkpoints at12 updates for both facts, versus30/24 for random
+and LoRA. All three early methods transfer8/8 answers. However, the guided
+checkpoint retains both the Lakers target leakage and oxygen-symbol error;
+early random and early LoRA have no scored preservation losses. Guided total
+adaptation prefix is144.89seconds across two cases, versus154.28 for random and
+37.84 for LoRA. Sparse attachment and export each take about30seconds per case
+and contain strict full-base integrity checks. Earlier stopping is useful
+control but does not rescue this recipe.
 
 ## What the papers suggest, and what we actually adopted
 
@@ -57,10 +69,11 @@ execution effects; merging is not the source of the observed answer failures.
   [GPT-J configuration](https://github.com/opanhw/fine-unified-editing-code/blob/a2489cbac0dfe5a956385734065cfa041384e7d1/knowledge-editing/hparams/FINE/gptj-6b.yaml)
   sets50 maximum epochs and early-stop probability0.9. It selects five
   occurrences per target token before flattening, rather than173 indices spread
-  over every layer. Our new comparison used fixed50 updates, mean full-response
+  over every layer. Our initial comparison used fixed50 updates, mean full-response
   CE and preservation examples; it did not reproduce this objective or budget.
-  Stopping once the correction is adequate and controlling update size are
-  existing design choices worth testing, not new inventions.
+  The completed follow-up tests complete-response stopping under the initial
+  objective; it does not reproduce FiNE's other loss terms. Stopping and norm
+  control are existing design choices, not new inventions.
 - **NeST:** probe-based localization and clustered incoming-neuron updates
   motivate controlling which activation conditions change and how much capacity
   is shared. Its official archive is now retrieved and inspected; the
@@ -87,19 +100,23 @@ original answer prefixes; it did not establish robust complete-answer editing.
 
 ## Next candidate and decision boundary
 
-Next test the smallest update that reaches a
-complete-answer target, with functional preservation checked on representative
-calibration examples. Compare the same stopping/protection procedure for guided
-supports, random supports and LoRA. Investigate multiple parameter budgets so
-a transfer ceiling does not hide a possible efficiency difference. Retain a
-no-edit outcome when no candidate meets the measured preservation constraints.
+Do not advance the current gradient-magnitude selector unchanged into fresh
+confirmation. It learns the training answers quickly, but its smaller earlier
+patch still changes unrelated facts. The next selection hypothesis must measure
+correction gain together with functional sensitivity on representative
+preservation inputs, rather than treating correction-gradient concentration as
+evidence of safe update directions. Enforce the same measured preservation and
+stopping policy for guided supports, random supports and LoRA. Retain a no-edit
+outcome when no candidate satisfies it. Multiple parameter budgets remain
+necessary so an easy transfer ceiling does not hide an efficiency difference.
 
 The [saved-history diagnosis](../experiments/paired_endpoint/history_diagnosis_v1.json)
 suggests that guided low-rate fits cross a rough sampled-loss threshold before
-random/LoRA fits. Those losses were observed at different pre-update states;
-they do not prove simultaneous convergence, cheaper total compute or that early
-stopping prevents interference. A new experiment must measure the actual
-endpoint, discovery cost, calibration cost and deployment behavior.
+random/LoRA fits. Those historical losses were observed at different pre-update
+states. The new post-update study confirms faster fitting under a simultaneous
+confidence gate, but not cheaper total adaptation than LoRA or removal of the
+two genuine preservation errors. Optimizer-step counts alone would have given a
+misleading positive conclusion.
 
 This is a testable synthesis of localization, limited capacity, stopping and
 functional protection. Its ingredients already have prior art. Our proposed
@@ -107,15 +124,13 @@ contribution must earn its value through a reproducible advantage in correction,
 preservation, data or total cost. A true advantage still needs fresh cases,
 another task family and model-size checks before becoming the library default.
 
-The endpoint replay is complete. The frozen
-[seven-fit checkpoint study](../experiments/paired_checkpoints/README.md) has
-been accepted as Kaggle version1 and is now running at the latest status check.
-It compares the first complete-response confidence checkpoint with the same
-trajectory's50-step endpoint, under the same procedure for selected neurons,
-random neurons and LoRA. It also measures grad-enabled/no-grad differences at
-fixed weights and reconstructs the known failing final optimizer step. No
-pretrained-model result from that study is available yet; accepted source and
-launch provenance are in its [launch record](../experiments/paired_checkpoints/launch_v1.json).
+Both the endpoint replay and frozen seven-fit checkpoint study are complete.
+The latter independently verifies434 decoded answers,107 teacher records, all
+seven original final controls and the recorded final Adam update. All14
+selected/final grad-enabled-versus-no-grad comparisons have identical logits at
+446 response positions. Its high-rate instability is distinct from the
+low-rate semantic interference, which is already present at12 updates. Accepted
+source and launch provenance remain in the [launch record](../experiments/paired_checkpoints/launch_v1.json).
 
 A [retrospective audit of all24 saved weight updates](../experiments/paired_mlp/complete_v1/UPDATE_AUDIT.md)
 also rules out update size alone as a sufficient explanation for the observed

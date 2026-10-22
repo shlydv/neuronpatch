@@ -9,7 +9,7 @@
   "bundled_files": 36,
   "new_fits": 7,
   "rejected_input_sources": [],
-  "status": "RUNNING",
-  "status_checked_utc": "2026-10-22T09:32:57.666786+00:00",
-  "results_status": "Running. Parent manifests verified in the live log; no complete pretrained outcome yet."
+  "status": "COMPLETE",
+  "status_checked_utc": "2026-10-22T10:19:05.772648+00:00",
+  "results_status": "Complete,independently verified and qualitatively reviewed. Earlier stopping does not remove the two low-rate guided factual errors or beat stopped LoRA cost. See complete_v1/REPORT.md."
 }

@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from experiments.paired_checkpoints.step_analysis import decompose
+from experiments.paired_checkpoints.step_analysis import decompose, token_transition
 
 
 def recorded_step(previous, current, correction=None, *, dtype=torch.float64):
@@ -68,3 +68,27 @@ def test_corrupt_recorded_step_is_rejected():
     state["parameter-after/0"] += 0.01
     with pytest.raises(AssertionError):
         decompose(state, audit)
+
+
+def test_token_transition_uses_sample_offset_and_rejects_different_target_context():
+    before = {
+        "lengths": torch.tensor([2]),
+        "labels": torch.tensor([0, 2]),
+        "logits": torch.tensor([[2.0, 0.0, 0.0], [0.0, 0.0, 2.0]]),
+    }
+    after = {
+        "lengths": torch.tensor([1, 2]),
+        "labels": torch.tensor([1, 0, 2]),
+        "logits": torch.tensor([[0.0, 4.0, 0.0], [0.0, 0.0, 2.0], [0.0, 0.0, 2.0]]),
+    }
+    transition = token_transition(before, after, 1)
+    assert transition["eos_token_id"] == 2
+    first = transition["tokens"][0]
+    assert first["before"]["top_token_id"] == 0
+    assert first["after"]["top_token_id"] == 2
+    assert first["after"]["target_probability"] == pytest.approx(
+        1 / (2 + torch.exp(torch.tensor(2.0)))
+    )
+    after["labels"][1] = 1
+    with pytest.raises(AssertionError):
+        token_transition(before, after, 1)

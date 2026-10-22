@@ -1,6 +1,6 @@
 # Research provenance and implementation decisions
 
-Updated 2026-10-20. This repository contains selected-neuron update primitives
+Updated 2026-10-22. This repository contains selected-neuron update primitives
 and an experimental GPT-J FiNE-K workflow. The upstream FiNE editor has also been
 run separately on a fixed 16-case 6B-model comparison, which completed.
 These are bounded reference checks, not full-paper reproductions. Research source

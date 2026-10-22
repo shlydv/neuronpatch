@@ -1,7 +1,8 @@
 # Complete post-update checkpoint study
 
-**Accepted on Kaggle as version1; running at the latest check. No complete pretrained
-checkpoint-study outcome yet.** See the [launch record](launch_v1.json) and
+**Completed and independently verified.** The [complete report](complete_v1/REPORT.md)
+finds faster fitting for guided selection but persistent unrelated errors and
+slower total adaptation than early LoRA. See the [launch record](launch_v1.json) and
 [Kaggle job](https://www.kaggle.com/code/shlydv/neuronpatch-paired-checkpoints-v1-20261022). This
 tests whether excessive fixed-step fitting hides a useful earlier patch, while
 separating an optimizer-step failure from a grad-enabled/evaluation-mode mismatch.
@@ -51,8 +52,10 @@ dots with both the joint and correction-only gradients and retains the floating
 point reconstruction residual. This can distinguish local objective conflict
 from a historical contribution pointing uphill. It does not simulate removing
 momentum or establish which alternative optimizer would improve model answers.
-Synthetic tests recover actual PyTorch Adam steps in FP32 and FP64; pretrained
-diagnostic tensors from the running study remain pending.
+Synthetic tests recover actual PyTorch Adam steps in FP32 and FP64. The completed
+pretrained diagnostic reconstructs the actual final update and finds a historical
+contribution opposing correction. Aligned response logits show premature EOS
+within the target word; this remains distinct from low-rate semantic interference.
 
 ~~~sh
 python -m experiments.paired_checkpoints.step_analysis \

@@ -1,0 +1,12 @@
+{
+  "accepted_source_byte_identical": true,
+  "source_sha256": "c40f1fe3616287f1b70a3535ce83c66859ec4ca371db911c1bb56fcb368825aa",
+  "script_bytes": 159707,
+  "bundled_files": 36,
+  "all_bundled_hashes_verified": true,
+  "downloaded_submission_exact": true,
+  "downloaded_protocol_exact": true,
+  "source_revision": "c80dfbf670a5bb5bcdddba6cdd21c144b16595aa",
+  "scope": "Accepted source and downloaded execution manifest verified; complete output tensor verification is separate.",
+  "independently_downloaded_json_records_exact": 44
+}

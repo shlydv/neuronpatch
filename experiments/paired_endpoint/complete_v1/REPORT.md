@@ -83,3 +83,9 @@ prior art, and their benefit here remains unmeasured.
 Two deliberately chosen development facts, with correlated wordings, cannot
 establish a generally superior selection method. Fresh confirmation remains
 unused. The broader useful-library and improved-method goal remains open.
+
+The [completed checkpoint follow-up](../../paired_checkpoints/complete_v1/REPORT.md)
+now isolates the high-rate late failure to an optimizer update, with identical
+grad-enabled/no-grad logits at the measured states. Earlier stopping recovers
+the complete target answer but does not remove the selected low-rate patch's
+two unrelated factual errors. It does not establish a better adaptation recipe.

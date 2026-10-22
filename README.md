@@ -67,11 +67,18 @@ The [completed zero-fit endpoint replay](experiments/paired_endpoint/complete_v1
 checks496 answers and finds all248 live/merged pairs identical. The observed
 failures already exist before merging; deployment rounding is not their cause
 on these tested endpoints.
+The [completed checkpoint study](experiments/paired_checkpoints/complete_v1/REPORT.md)
+verifies seven fits and434 answers. Guided supports fit in12 updates versus30/24
+for random and LoRA, but their two unrelated factual errors persist. Early LoRA
+retains all8/8 transfers without measured preservation losses and has a shorter
+total adaptation prefix. A late high-rate failure is isolated to an optimizer
+update causing premature EOS; it is distinct from the earlier semantic errors.
+The current guided recipe does not advance unchanged to fresh confirmation.
 
 ## Direction
 
 See the [current method decision](docs/current-method.md) for the evidence,
-paper-informed choices, unresolved endpoint check and next experiment boundary.
+paper-informed choices, completed endpoint checks and next experiment boundary.
 
 The intended workflow is **select → train → evaluate target and preserved behavior
 → export**. The first application will be document-grounded answering: answer
