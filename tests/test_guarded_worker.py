@@ -5,6 +5,7 @@ import pytest
 import torch
 from test_paired_worker import TinyTokenizer, tiny_data
 
+from experiments.guarded_training.analysis import analyze
 from experiments.guarded_training.run import execute
 from experiments.guarded_training.verify import verify
 from experiments.paired_mlp.data import messages
@@ -117,6 +118,11 @@ def test_all_guarded_representations_fit_reload_merge_and_restore_the_actual_tin
     assert (
         proof["fits"] == 8 and proof["decoded"] == 78 and proof["teacher_records_recomputed"] == 18
     )
+    analysis, review = analyze(parent, tmp_path / "result")
+    assert analysis["fits"] == 8 and analysis["observations"] == review["observations"] == 78
+    assert sum(len(r["occurrences"]) for r in review["items"]) == 78
+    assert len(analysis["numerical_prerequisites"]) == 2
+    assert not analysis["useful_method_or_fresh_confirmation_licensed"]
     # A false accepted update must be rejected independently of its summary flag.
     path = tmp_path / "result/fits.json"
     corrupted = json.loads(path.read_text())

@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-22T15:45:43.665142+00:00",
+  "scope": "Postprocessing only;not included in accepted47-file GPU bundle. Frozen protocol/source/interventions unchanged. Full tiny workers and verification run inFP32/FP16;analysis coverage accounts for every78 generated observation and does not license a recipe without review.",
+  "pinned_worker_checks_passed": 2,
+  "ruff": "pass",
+  "file_sha256": {
+    "experiments/guarded_training/analysis.py": "03b76147ae93c0437acb7179e1f408190803efe84391ea2773d86efbe5ef1f49",
+    "tests/test_guarded_worker.py": "9369d78faa25491167ec23707c2dc8722990ffff98d7718fb8feee8cc8b0d5db"
+  }
+}
