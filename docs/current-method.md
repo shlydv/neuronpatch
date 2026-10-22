@@ -109,7 +109,7 @@ another task family and model-size checks before becoming the library default.
 
 The endpoint replay is complete. The frozen
 [seven-fit checkpoint study](../experiments/paired_checkpoints/README.md) has
-been accepted as Kaggle version1 and remains queued at the latest status check.
+been accepted as Kaggle version1 and is now running at the latest status check.
 It compares the first complete-response confidence checkpoint with the same
 trajectory's50-step endpoint, under the same procedure for selected neurons,
 random neurons and LoRA. It also measures grad-enabled/no-grad differences at

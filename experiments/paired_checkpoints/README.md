@@ -1,6 +1,6 @@
 # Complete post-update checkpoint study
 
-**Accepted on Kaggle as version1; queued at the latest check. No pretrained
+**Accepted on Kaggle as version1; running at the latest check. No complete pretrained
 checkpoint-study outcome yet.** See the [launch record](launch_v1.json) and
 [Kaggle job](https://www.kaggle.com/code/shlydv/neuronpatch-paired-checkpoints-v1-20261022). This
 tests whether excessive fixed-step fitting hides a useful earlier patch, while

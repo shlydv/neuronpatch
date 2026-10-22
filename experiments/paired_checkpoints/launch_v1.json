@@ -9,7 +9,7 @@
   "bundled_files": 36,
   "new_fits": 7,
   "rejected_input_sources": [],
-  "status": "QUEUED",
-  "status_checked_utc": "2026-10-22T09:00:17.181827+00:00",
-  "results_status": "Accepted with both completed parent sources. No pretrained outcome yet."
+  "status": "RUNNING",
+  "status_checked_utc": "2026-10-22T09:32:57.666786+00:00",
+  "results_status": "Running. Parent manifests verified in the live log; no complete pretrained outcome yet."
 }
