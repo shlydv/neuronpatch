@@ -1,0 +1,37 @@
+{
+  "observed_utc": "2026-10-22T08:51:40.194832+00:00",
+  "scope": "CPU synthetic64MiB hashing microbenchmark;peak is additional Python allocation,not process RSS. No LLM weights or GPU execution. Does not measure training or full export latency.",
+  "tensor_bytes": 67108864,
+  "repeats": 7,
+  "fingerprints_identical": true,
+  "fingerprint": "433051884908e4f418bc27a6ddf4821dd7fb76cc1256462335599c3fd355a5c5",
+  "torch": "2.14.1",
+  "median_seconds": {
+    "legacy_bytes_copy": 0.021923166001215577,
+    "contiguous_buffer": 0.02087779200519435
+  },
+  "peak_python_allocation_bytes": {
+    "legacy_bytes_copy": 67109433,
+    "contiguous_buffer": 976
+  },
+  "samples_seconds": {
+    "legacy_bytes_copy": [
+      0.022271416994044557,
+      0.02356091601541266,
+      0.02179374999832362,
+      0.021569833013927564,
+      0.021740542026236653,
+      0.021925499982899055,
+      0.021923166001215577
+    ],
+    "contiguous_buffer": [
+      0.020914541004458442,
+      0.02087779200519435,
+      0.021190040977671742,
+      0.02098045899765566,
+      0.020842500001890585,
+      0.020844209007918835,
+      0.02085133400396444
+    ]
+  }
+}

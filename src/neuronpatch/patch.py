@@ -21,7 +21,8 @@ def _fingerprint_state(state: Mapping[str, torch.Tensor]) -> str:
         digest.update(len(header).to_bytes(8, "big"))
         digest.update(header)
         raw = tensor.detach().cpu().contiguous().reshape(-1).view(torch.uint8).numpy()
-        digest.update(raw.tobytes())
+        # Hash the contiguous byte buffer without a parameter-sized Python copy.
+        digest.update(memoryview(raw))
     return digest.hexdigest()
 
 
