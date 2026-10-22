@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-10-22T08:41:26.206539+00:00",
+  "status": "Frozen before submission and inference",
+  "kernel": "shlydv/neuronpatch-paired-checkpoints-v1-20261022",
+  "source_revision": "c80dfbf670a5bb5bcdddba6cdd21c144b16595aa",
+  "source_sha256": "c40f1fe3616287f1b70a3535ce83c66859ec4ca371db911c1bb56fcb368825aa",
+  "script_bytes": 159707,
+  "bundled_files": 36,
+  "protocol_sha256": "9ba1f058febc799c8ad83728a3ab9d41d2824c9bdf910c1bd7e99233e5b13cf9",
+  "new_fits": 7,
+  "comparison_fits": 6,
+  "known_failure_diagnostic_fits": 1,
+  "max_updates_per_fit": 50,
+  "worker_limit_seconds": 6000,
+  "outer_command_timeout_seconds": 6300,
+  "fresh_confirmation_used": false,
+  "isolated_pinned_imports_pass": true,
+  "source_payload": "Public repository code and protocol metadata only;existing parent artifacts referenced on Kaggle;no tensors or raw example files uploaded."
+}
