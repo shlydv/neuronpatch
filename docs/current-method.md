@@ -119,6 +119,9 @@ predict finite changes and improve useful learning per unit held-out drift.
 CPU covariance/dense-gradient oracles and FP32/FP16 tiny-Qwen execution pass;
 there is no new pretrained outcome yet. This stage does not establish a robust
 recipe, and it does not replace the required trained LoRA comparison.
+Its [frozen Kaggle calibration](../experiments/functional_selection/launch_v1.json)
+is accepted as version1 and running, with byte-identical accepted source. No
+other experiment is submitted alongside it.
 
 The [saved-history diagnosis](../experiments/paired_endpoint/history_diagnosis_v1.json)
 suggests that guided low-rate fits cross a rough sampled-loss threshold before

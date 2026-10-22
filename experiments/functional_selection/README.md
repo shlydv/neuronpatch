@@ -5,6 +5,11 @@ magnitude: the predicted task benefit and conditional-output disturbance of an
 explicit proposed parameter update. It remains outside the public API. CPU
 oracles and tiny-Qwen checks pass; no pretrained outcome is established yet.
 
+The frozen [protocol](protocol_v1.json) and [source identity](frozen_v1.json)
+precede inference. [Kaggle version1](https://www.kaggle.com/code/shlydv/neuronpatch-functional-selection-v1-20261022)
+is accepted and running at the latest [status check](launch_v1.json). Its accepted
+source matches the frozen150348-byte script and37 bundled files exactly.
+
 The [completed stopping study](../paired_checkpoints/complete_v1/REPORT.md)
 found fast fitting but two unrelated errors already present at12 updates. It
 also found that a later Adam step could oppose correction through historical

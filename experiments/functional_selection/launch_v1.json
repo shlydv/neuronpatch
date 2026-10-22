@@ -1,0 +1,14 @@
+{
+  "kernel": "shlydv/neuronpatch-functional-selection-v1-20261022",
+  "kernel_id": 140201160,
+  "accepted_version": 1,
+  "accepted_source_byte_identical": true,
+  "source_sha256": "601f7f3154459733ae2061da18cefa15a7290da04eca9aedd99eff6f193aca33",
+  "script_bytes": 150348,
+  "bundled_files": 37,
+  "rejected_input_sources": [],
+  "status": "RUNNING",
+  "status_checked_utc": "2026-10-22T11:11:31.913625+00:00",
+  "failure_message": null,
+  "results_status": "Accepted with exact frozen source;no pretrained calibration outcome yet."
+}
