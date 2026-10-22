@@ -1,0 +1,155 @@
+{
+  "retrospective_context_audit": true,
+  "frozen_protocol_or_interventions_changed": false,
+  "new_model_forwards": 0,
+  "cases": [
+    {
+      "case": 0,
+      "anchors": 6,
+      "identical_complete_token_sequences": 3,
+      "canonical_prediction_contexts": 19,
+      "contexts_on_greedy_path": 13,
+      "equal_anchor_shared_context_fraction": 0.7555555555555555
+    },
+    {
+      "case": 1,
+      "anchors": 6,
+      "identical_complete_token_sequences": 4,
+      "canonical_prediction_contexts": 19,
+      "contexts_on_greedy_path": 13,
+      "equal_anchor_shared_context_fraction": 0.7999999999999999
+    }
+  ],
+  "rows": [
+    {
+      "case": 0,
+      "id": "case-0-preserve-0",
+      "canonical_tokens_including_stop": 3,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": false,
+      "canonical_contexts_on_greedy_path": 1,
+      "shared_context_fraction": 0.3333333333333333,
+      "first_prediction_position_weight": 0.3333333333333333
+    },
+    {
+      "case": 0,
+      "id": "case-0-preserve-1",
+      "canonical_tokens_including_stop": 5,
+      "greedy_tokens_including_stop": 3,
+      "identical_complete_token_sequence": false,
+      "canonical_contexts_on_greedy_path": 3,
+      "shared_context_fraction": 0.6,
+      "first_prediction_position_weight": 0.2
+    },
+    {
+      "case": 0,
+      "id": "case-0-preserve-2",
+      "canonical_tokens_including_stop": 5,
+      "greedy_tokens_including_stop": 3,
+      "identical_complete_token_sequence": false,
+      "canonical_contexts_on_greedy_path": 3,
+      "shared_context_fraction": 0.6,
+      "first_prediction_position_weight": 0.2
+    },
+    {
+      "case": 0,
+      "id": "utility-0",
+      "canonical_tokens_including_stop": 2,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 2,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.5
+    },
+    {
+      "case": 0,
+      "id": "utility-16",
+      "canonical_tokens_including_stop": 2,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 2,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.5
+    },
+    {
+      "case": 0,
+      "id": "utility-24",
+      "canonical_tokens_including_stop": 2,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 2,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.5
+    },
+    {
+      "case": 1,
+      "id": "case-1-preserve-0",
+      "canonical_tokens_including_stop": 3,
+      "greedy_tokens_including_stop": 3,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 3,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.3333333333333333
+    },
+    {
+      "case": 1,
+      "id": "case-1-preserve-2",
+      "canonical_tokens_including_stop": 5,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": false,
+      "canonical_contexts_on_greedy_path": 1,
+      "shared_context_fraction": 0.2,
+      "first_prediction_position_weight": 0.2
+    },
+    {
+      "case": 1,
+      "id": "case-1-preserve-facebook",
+      "canonical_tokens_including_stop": 5,
+      "greedy_tokens_including_stop": 3,
+      "identical_complete_token_sequence": false,
+      "canonical_contexts_on_greedy_path": 3,
+      "shared_context_fraction": 0.6,
+      "first_prediction_position_weight": 0.2
+    },
+    {
+      "case": 1,
+      "id": "utility-0",
+      "canonical_tokens_including_stop": 2,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 2,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.5
+    },
+    {
+      "case": 1,
+      "id": "utility-16",
+      "canonical_tokens_including_stop": 2,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 2,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.5
+    },
+    {
+      "case": 1,
+      "id": "utility-24",
+      "canonical_tokens_including_stop": 2,
+      "greedy_tokens_including_stop": 2,
+      "identical_complete_token_sequence": true,
+      "canonical_contexts_on_greedy_path": 2,
+      "shared_context_fraction": 1.0,
+      "first_prediction_position_weight": 0.5
+    }
+  ],
+  "prefix_enumeration_checks": 900,
+  "file_sha256": {
+    "inputs.json": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+    "tokenization.json": "a906c12e67b75289328d5a30810507f39c251be65e712dbe742f838e138d8ee1",
+    "case-0-base.json": "f77a0c2a8b1e2ed2d3e29f1d79b8e4678e258a2dd40ddae509fbf7eb4a244dd3",
+    "case-1-base.json": "03d666473bdedee85d2d68b35a224427a5c555908a394a52f461352df98dc6d4",
+    "parent_integrity": "f4805d61de02a8f0b7dae6d75fb443eb2cb4200f223712772b286770b8c105ec",
+    "audit_source": "e1a169da5af047a2332a9a2def3a2a80beac1e06e556e5354e8e2796cdfc1b5f"
+  },
+  "limits": "Exact cached prefixes on the deterministic greedy path,not sequence probability mass. A different sequence can be a correct semantic alias. Conditional Fisher measurements remain valid on their stated canonical contexts. This audit establishes neither a cause of interference nor the performance of an untested alternative."
+}

@@ -123,6 +123,16 @@ Its [frozen Kaggle calibration](../experiments/functional_selection/launch_v1.js
 is accepted as version1 and running, with byte-identical accepted source. No
 other experiment is submitted alongside it.
 
+The [no-forward context audit](../experiments/functional_selection/context_audit_v1.json)
+also bounds interpretation of that calibration. Equally averaging its six
+canonical anchors,75.56% and80.00% of prediction contexts match the respective
+greedy base paths. Correct shorter aliases account for some differences;
+context divergence is not itself a factual error. Canonical-context drift
+remains a valid conditional measurement, but it does not cover all ordinary
+generated-response contexts. Future preservation comparisons must specify this
+choice and retain direct complete-answer evaluation. The pending experiment's
+contexts, interventions and decision criteria remain frozen.
+
 The [saved-history diagnosis](../experiments/paired_endpoint/history_diagnosis_v1.json)
 suggests that guided low-rate fits cross a rough sampled-loss threshold before
 random/LoRA fits. Those historical losses were observed at different pre-update

@@ -135,6 +135,23 @@ small normal bank can under-estimate risk or overfit candidate selection.
 Shortlisting can exclude useful lower-gradient neurons. A score at the base
 does not constrain later optimization. No unique concept/circuit label follows.
 
+The [cached-context audit](context_audit_v1.json) quantifies one part of this
+scope. Only3/6 and4/6 canonical anchor responses exactly equal the corresponding
+greedy base token sequences. In each case,13/19 canonical prediction contexts
+occur along those greedy responses. Because the actual metric weights anchors
+equally, the corresponding shared-context fractions are75.56% and80.00%.
+A next-token disagreement still counts as a shared prediction context when
+its preceding tokens agree. Different valid aliases can cause divergence;
+these counts are not error rates or sequence probability mass. They establish
+neither the cause of interference nor that another context choice performs better.
+The audit uses no model calls and independently checks900 short prefix pairs:
+
+~~~sh
+python -m experiments.functional_selection.context_audit \
+  --parent PATH_TO_ORIGINAL_RESULTS --integrity PATH_TO_ORIGINAL_INTEGRITY \
+  --output PATH_TO_NEW_CONTEXT_AUDIT
+~~~
+
 [DCO](https://arxiv.org/html/2609.13680v1) formalizes adaptation under an anchored
 behavioral-drift budget and relates local drift to Fisher geometry. Its inspected
 [official source](https://github.com/CONE-MT/DCO/tree/222f26c51c4ca8efa06c5d077c3b9c82d55c018f)
