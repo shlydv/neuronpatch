@@ -57,8 +57,12 @@ the next design, not a validated recipe.
 The [experimental paired-MLP implementation](experiments/paired_mlp/README.md)
 now supports matching incoming rows and outgoing columns with FP32 deltas,
 complete-response supervision through EOS, compact reload and merge checks.
-This prepares a comparison at similar parameter counts; no pretrained behavioral
-advantage has been demonstrated for it.
+The [completed matched-budget Qwen3-4B pilot](experiments/paired_mlp/complete_v1/REPORT.md)
+verifies24 fits and1417 observations. Selected paired, random and LoRA conditions
+all give8/8 complete transfer answers on two development facts. Gradient-selected
+paired updates also introduce unrelated errors; no selection advantage or robust
+default recipe has been demonstrated. Full review distinguishes valid aliases
+missed by exact scoring from genuine interference.
 
 ## Direction
 

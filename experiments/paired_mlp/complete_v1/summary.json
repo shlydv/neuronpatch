@@ -1,0 +1,3597 @@
+{
+  "selected_using_validation_only": {
+    "paired_mean-43": "paired_mean-43-0",
+    "outgoing_mean-43": null,
+    "paired_random-11": "paired_random-11-0",
+    "paired_random-29": "paired_random-29-1",
+    "paired_random-47": "paired_random-47-0",
+    "lora-43": "lora-43-0"
+  },
+  "conditions": {
+    "paired_mean-43-0": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 5,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 3,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 5,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 4,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 41,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 1,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_mean-43-1": {
+      "train": {
+        "hits": 3,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 3,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 1,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 5,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 5,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 3,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 4,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 3,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 5,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 6,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 4,
+        "new_target_mentions": 1,
+        "truncated": 2
+      },
+      "utility_test": {
+        "hits": 30,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 12,
+        "new_target_mentions": 1,
+        "truncated": 1
+      }
+    },
+    "outgoing_mean-43-0": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 0,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 1,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 6,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 2,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 40,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 2,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "outgoing_mean-43-1": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 0,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 1,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 7,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 1,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 4,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 4,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 7,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 4,
+        "new_target_mentions": 0,
+        "truncated": 1
+      },
+      "utility_test": {
+        "hits": 22,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 21,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_random-11-0": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 7,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 2,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 42,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_random-11-1": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 0,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 1,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 6,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 2,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 41,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 2,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_random-29-0": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 42,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_random-29-1": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 2,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 6,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 2,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 39,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 3,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_random-47-0": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 7,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 1,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 42,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "paired_random-47-1": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 5,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 3,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 9,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 1,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 40,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 2,
+        "new_target_mentions": 1,
+        "truncated": 0
+      }
+    },
+    "lora-43-0": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 7,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 1,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 5,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 4,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 42,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    },
+    "lora-43-1": {
+      "train": {
+        "hits": 6,
+        "total": 6,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 6,
+        "truncated": 0
+      },
+      "preserve": {
+        "hits": 12,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "target_val": {
+        "hits": 2,
+        "total": 2,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 2,
+        "truncated": 0
+      },
+      "target_test": {
+        "hits": 8,
+        "total": 8,
+        "baseline_hits": 0,
+        "lost": 0,
+        "new_target_mentions": 8,
+        "truncated": 0
+      },
+      "scope_val": {
+        "hits": 1,
+        "total": 6,
+        "baseline_hits": 1,
+        "lost": 0,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "scope_test": {
+        "hits": 6,
+        "total": 8,
+        "baseline_hits": 7,
+        "lost": 2,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "scope_exposed": {
+        "hits": 6,
+        "total": 9,
+        "baseline_hits": 8,
+        "lost": 3,
+        "new_target_mentions": 1,
+        "truncated": 0
+      },
+      "utility_val": {
+        "hits": 10,
+        "total": 12,
+        "baseline_hits": 10,
+        "lost": 0,
+        "new_target_mentions": 0,
+        "truncated": 0
+      },
+      "utility_test": {
+        "hits": 41,
+        "total": 46,
+        "baseline_hits": 42,
+        "lost": 1,
+        "new_target_mentions": 0,
+        "truncated": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 20
+        }
+      },
+      "target_val_nll": 2.2863135503333373e-07
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "paired_mean-43-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 3,
+          "lost": [
+            "case-0-scope-test-2"
+          ],
+          "new_target_mentions": [
+            "case-0-scope-test-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 1,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2",
+            "case-0-scope-exposed-3"
+          ],
+          "new_target_mentions": [
+            "case-0-scope-exposed-3",
+            "case-0-scope-exposed-4"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 3,
+          "baseline_hits": 5,
+          "lost": [
+            "utility-2",
+            "utility-8"
+          ],
+          "new_target_mentions": [
+            "utility-8"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 12,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-1",
+            "utility-5",
+            "utility-7",
+            "utility-9",
+            "utility-15",
+            "utility-25",
+            "utility-29",
+            "utility-30",
+            "utility-31"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 11
+        }
+      },
+      "target_val_nll": 1.1968392174686358
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "outgoing_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "outgoing_mean-43-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 1,
+          "lost": [
+            "case-0-scope-val-0"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 1.3325015402188e-07
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "outgoing_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "outgoing_mean-43-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 1,
+          "lost": [
+            "case-0-scope-val-0"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-3"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 3,
+          "baseline_hits": 5,
+          "lost": [
+            "utility-8",
+            "utility-12"
+          ],
+          "new_target_mentions": [],
+          "truncated": 1,
+          "exact_base_tokens": 3
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 12,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-5",
+            "utility-7",
+            "utility-9",
+            "utility-10",
+            "utility-11",
+            "utility-15",
+            "utility-25",
+            "utility-30",
+            "utility-31"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 12
+        }
+      },
+      "target_val_nll": 4.889992079408027e-07
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 6
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 1.4013141945194244e-05
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.001,
+        "id": "paired_random-11-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 1,
+          "lost": [
+            "case-0-scope-val-0"
+          ],
+          "new_target_mentions": [
+            "case-0-scope-val-1"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 4.38035216869063e-05
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 29,
+        "lr": 0.0003,
+        "id": "paired_random-29-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 6
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 6.495430869316958e-06
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 29,
+        "lr": 0.001,
+        "id": "paired_random-29-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 2,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 19,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-25",
+            "utility-30"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 20
+        }
+      },
+      "target_val_nll": 3.9661660622414274e-07
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 47,
+        "lr": 0.0003,
+        "id": "paired_random-47-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 6
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 4.320861980270744e-05
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 47,
+        "lr": 0.001,
+        "id": "paired_random-47-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 1.1417016464084402e-06
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 6
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 23
+        }
+      },
+      "target_val_nll": 2.4334304895271924e-05
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "lora-43-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-train-0",
+            "case-0-train-1",
+            "case-0-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-0-target-test-0",
+            "case-0-target-test-1",
+            "case-0-target-test-2",
+            "case-0-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 1,
+          "baseline_hits": 1,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 3,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 5,
+          "hits": 4,
+          "baseline_hits": 4,
+          "lost": [
+            "case-0-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 1.0671270172698163e-05
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 1,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2",
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 20,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-25"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 20
+        }
+      },
+      "target_val_nll": 1.9079657202307012e-06
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "paired_mean-43-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 1,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2",
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1",
+            "case-1-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 3,
+          "baseline_hits": 5,
+          "lost": [
+            "utility-2",
+            "utility-4"
+          ],
+          "new_target_mentions": [],
+          "truncated": 2,
+          "exact_base_tokens": 3
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 18,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-11",
+            "utility-13",
+            "utility-14"
+          ],
+          "new_target_mentions": [
+            "utility-14"
+          ],
+          "truncated": 1,
+          "exact_base_tokens": 19
+        }
+      },
+      "target_val_nll": 3.3951442599544635e-06
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "outgoing_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "outgoing_mean-43-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 19,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-25",
+            "utility-29"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 19
+        }
+      },
+      "target_val_nll": 9.748194500502905e-07
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "outgoing_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "outgoing_mean-43-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 1,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1",
+            "case-1-scope-exposed-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 4,
+          "baseline_hits": 5,
+          "lost": [
+            "utility-2",
+            "utility-8"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 10,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-1",
+            "utility-5",
+            "utility-6",
+            "utility-7",
+            "utility-9",
+            "utility-10",
+            "utility-11",
+            "utility-14",
+            "utility-15",
+            "utility-25",
+            "utility-30",
+            "utility-31"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 10
+        }
+      },
+      "target_val_nll": 1.2225382365708508e-06
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 4,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 4,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 3
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 1.5351155276732698e-05
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.001,
+        "id": "paired_random-11-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 20,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-29",
+            "utility-30"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 19
+        }
+      },
+      "target_val_nll": 9.977045625220171e-07
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 29,
+        "lr": 0.0003,
+        "id": "paired_random-29-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 4,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 2.2772406856811738e-05
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 29,
+        "lr": 0.001,
+        "id": "paired_random-29-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 20,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-31"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 19
+        }
+      },
+      "target_val_nll": 1.30024799283035e-06
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 47,
+        "lr": 0.0003,
+        "id": "paired_random-47-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 7.307337015779088e-06
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 47,
+        "lr": 0.001,
+        "id": "paired_random-47-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 1,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2",
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 2
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 4,
+          "baseline_hits": 5,
+          "lost": [
+            "utility-12"
+          ],
+          "new_target_mentions": [
+            "utility-12"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 19,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-14",
+            "utility-25"
+          ],
+          "new_target_mentions": [
+            "utility-14"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 18
+        }
+      },
+      "target_val_nll": 1.2934364489088541e-06
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 3,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-2"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 21,
+          "baseline_hits": 21,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 22
+        }
+      },
+      "target_val_nll": 3.5419420450821804e-05
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "lora-43-1"
+      },
+      "banks": {
+        "train": {
+          "total": 3,
+          "hits": 3,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-train-0",
+            "case-1-train-1",
+            "case-1-train-2"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "preserve": {
+          "total": 6,
+          "hits": 6,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 4
+        },
+        "target_val": {
+          "total": 1,
+          "hits": 1,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-val"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "target_test": {
+          "total": 4,
+          "hits": 4,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-target-test-0",
+            "case-1-target-test-1",
+            "case-1-target-test-2",
+            "case-1-target-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_val": {
+          "total": 3,
+          "hits": 0,
+          "baseline_hits": 0,
+          "lost": [],
+          "new_target_mentions": [
+            "case-1-scope-val-1"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 0
+        },
+        "scope_test": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-test-2",
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-test-3"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "scope_exposed": {
+          "total": 4,
+          "hits": 2,
+          "baseline_hits": 4,
+          "lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1"
+          ],
+          "new_target_mentions": [
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0,
+          "exact_base_tokens": 1
+        },
+        "utility_val": {
+          "total": 6,
+          "hits": 5,
+          "baseline_hits": 5,
+          "lost": [],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 5
+        },
+        "utility_test": {
+          "total": 23,
+          "hits": 20,
+          "baseline_hits": 21,
+          "lost": [
+            "utility-25"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0,
+          "exact_base_tokens": 19
+        }
+      },
+      "target_val_nll": 4.853899238099757e-06
+    }
+  ],
+  "count_criteria_met": false,
+  "full_output_review_complete": true,
+  "interpretation": "Two exposed development facts; all rates and random seeds reported; no fresh confirmation or validated library recipe",
+  "review_record": "review.json",
+  "scoring_caveat": "Frozen exact-answer scores unchanged. Two selected gradient-paired preservation losses and the selected LoRA preservation loss are valid full UK names missing from the declared alias set; these are not factual errors."
+}

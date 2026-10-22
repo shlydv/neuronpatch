@@ -1,6 +1,7 @@
 # Bounded complete-answer comparison
 
-**No pretrained outcome yet.** This tests paired incoming/outgoing updates
+**Completed: see the [results](complete_v1/REPORT.md).** The specification below
+was fixed before inference. This tests paired incoming/outgoing updates
 against outgoing-only, random and official LoRA at comparable parameter counts.
 It is a development experiment, not a paper reproduction or fresh confirmation.
 The [protocol](protocol_v1.json) and [inputs](inputs_v1.json) precede new inference.

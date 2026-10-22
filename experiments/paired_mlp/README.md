@@ -1,9 +1,12 @@
 # Paired neuron updates with complete-response supervision
 
-**Status: the matched-budget Kaggle pilot is RUNNING; no completed result yet.**
+**Status: the matched-budget Kaggle pilot is complete and independently verified.**
+The [completed report](complete_v1/REPORT.md) finds 8/8 transfer answers for
+selected paired, random and LoRA conditions, with no demonstrated gradient-selection
+advantage and real interference in the selected paired condition.
 See the [launch record](launch_v1.json), [frozen source](frozen_v1.json) and
 [trial specification](TRIAL_V1.md). No pretrained paired-update advantage is
-established by the implementation checks or training-loss observations.
+established by this two-fact development comparison.
 The [frozen GPT-J finisher](../adapter_diagnosis/complete_v1/REPORT.md) is now
 complete, independently verified and consolidated. Its source and outcomes are
 independent of this new implementation. The new pilot uses the two exposed
