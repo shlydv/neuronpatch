@@ -132,6 +132,53 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     reviewed = replay_packet(tmp_path / "run", tmp_path / "replay")
     assert reviewed["observations"] == 48 and not reviewed["full_output_review_complete"]
     assert sum(len(r["occurrences"]) for r in reviewed["items"]) == 48
+    from experiments.paired_checkpoints.prepare import prepare as prepare_checkpoints
+    from experiments.paired_checkpoints.run import execute as trace_checkpoints
+    from experiments.paired_checkpoints.verify import verify as verify_checkpoints
+
+    replay_integrity_path = tmp_path / "replay-integrity.json"
+    replay_integrity_path.write_text(json.dumps(replay_proof))
+    trace_spec = prepare_checkpoints(
+        tmp_path / "run", integrity_path, tmp_path / "replay", replay_integrity_path
+    )
+    trace_spec.update(id="cpu-checkpoint-fixture", checkpoint_steps=[1, 2], gate_probability=1e-6)
+    parents = {"original": tmp_path / "run", "replay": tmp_path / "replay"}
+    traces = trace_checkpoints(
+        model, tokenizer, parents, trace_spec, tmp_path / "trace", lambda: None
+    )
+    assert len(traces) == 7 and all(r["selected_step"] == 1 for r in traces)
+    assert all(r["final_history_exact"] and r["final_parameters_exact"] for r in traces)
+    proof = verify_checkpoints(parents, tmp_path / "trace", trace_spec, tokenizer)
+    assert proof["fits"] == 7 and proof["decoded"] == 42 and proof["adam_steps_reconstructed"] == 1
+    assert fingerprint(model) == original
+    from experiments.paired_checkpoints.analysis import summarize as checkpoint_summary
+    from experiments.paired_checkpoints.review import packet as checkpoint_packet
+
+    summary = checkpoint_summary(tmp_path / "run", tmp_path / "trace")
+    assert summary["fits"] == 7 and len(summary["conditions"]) == 3
+    assert all(r["selected_steps"] == [1, 1] for r in summary["conditions"].values())
+    review = checkpoint_packet(tmp_path / "run", tmp_path / "trace")
+    assert review["observations"] == 42 and not review["full_output_review_complete"]
+    # Failing the confidence gate must produce no invented early candidate.
+    no_gate = {
+        **trace_spec,
+        "requests": trace_spec["requests"][:1],
+        "new_fits": 1,
+        "gate_probability": 1.0,
+    }
+    empty = trace_checkpoints(
+        model, tokenizer, parents, no_gate, tmp_path / "no-gate", lambda: None
+    )
+    assert empty[0]["selected_step"] is None and set(empty[0]["states"]) == {"full"}
+    empty_proof = verify_checkpoints(parents, tmp_path / "no-gate", no_gate, tokenizer)
+    assert empty_proof["fits"] == 1 and empty_proof["decoded"] == 3
+    assert not (tmp_path / "no-gate/case-0-paired_mean-43-0-early-adapter").exists()
+    trace_records = tmp_path / "trace/fits.json"
+    changed = json.loads(trace_records.read_text())
+    changed[0]["selected_step"] = 2
+    trace_records.write_text(json.dumps(changed))
+    with pytest.raises(AssertionError):
+        verify_checkpoints(parents, tmp_path / "trace", trace_spec, tokenizer)
     record_path = tmp_path / "replay/endpoints.json"
     altered = json.loads(record_path.read_text())
     altered[0]["live_metrics"]["task_mean_nll"] += 0.5

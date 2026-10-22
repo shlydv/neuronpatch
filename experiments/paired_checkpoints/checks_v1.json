@@ -1,0 +1,35 @@
+{
+  "scope": "Pre-inference implementation checks;no pretrained checkpoint-study outcome",
+  "main_suite": {
+    "passed": 223,
+    "skipped": 2
+  },
+  "pinned_runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "targeted_passed": 4,
+    "actual_worker_dtypes": [
+      "float32",
+      "float16"
+    ],
+    "reference_fits_per_dtype": 24,
+    "replay_endpoints_per_dtype": 8,
+    "checkpoint_fits_per_dtype": 7,
+    "scored_checkpoint_outputs_per_dtype": 42,
+    "additional_no_qualifying_checkpoint_fits_per_dtype": 1,
+    "no_gate_outputs_per_dtype": 3,
+    "reference_parameters_history_and_teacher_logits_exact": true,
+    "adam_step_reconstruction_checked": true,
+    "selecting_later_qualifying_checkpoint_rejected": true,
+    "full_context_collection_checked": true
+  },
+  "core_minimum": {
+    "torch": "2.4.1",
+    "transformers_installed": false,
+    "peft_installed": false,
+    "targeted_passed": 4
+  },
+  "effective_lora_update_norm": "Independent dense-product oracle with nonunit scaling",
+  "ruff": "check and format passed"
+}

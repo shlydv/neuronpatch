@@ -1,0 +1,2697 @@
+{
+  "id": "paired-checkpoint-study-v1-20261022",
+  "kernel_sources": [
+    "shlydv/neuronpatch-paired-full-response-v1-20261022",
+    "shlydv/neuronpatch-paired-endpoint-v1-20261022"
+  ],
+  "parent_manifests": {
+    "original": {
+      "case-0-base.json": "f77a0c2a8b1e2ed2d3e29f1d79b8e4678e258a2dd40ddae509fbf7eb4a244dd3",
+      "case-0-lora-43-0-adapter/adapter_config.json": "ec52d0a9cf542ec24bd1967fc94ddb4e85502053b2a022b0612cd27af5f6c5e1",
+      "case-0-lora-43-0-adapter/adapter_model.safetensors": "3f9cd12f60280d191dcad9093bd5b6c5d57f80950e7fb6578f643848d9679c3e",
+      "case-0-lora-43-0-teacher.safetensors": "a76660ecf642864ef62fa55e157f189b79071757ea1500a2ec4faf9e88c2b826",
+      "case-0-lora-43-0.json": "c32ab53f4f6b2c65ba6f223bdc8f34197b18f8b3d72d06bdf8a863f2076d88fa",
+      "case-0-paired_mean-43-0-adapter/patch.json": "b040a7047a64d6b450c2661b3238a610a06f022afa060bf45ca57143dfeb9cfe",
+      "case-0-paired_mean-43-0-adapter/patch.safetensors": "4c7e6c0335496b49421872ef868b9fddac409e9165e9279783e44acadcb73968",
+      "case-0-paired_mean-43-0-teacher.safetensors": "529ca06801a63289b28e3493bf7b4bbfab26d3f9d70c8dfd9d852d244584e217",
+      "case-0-paired_mean-43-0.json": "5429df87df9c9a7c5e26e0e23d7573d4c208d9abb27367995d4ee17216197428",
+      "case-0-paired_mean-43-1-adapter/patch.json": "057db1dc02ab8bb01909698fd5b187b595c89b41a69300851517af9e4f6d3054",
+      "case-0-paired_mean-43-1-adapter/patch.safetensors": "4f3637065022d6e98765f6031cd6be057c4cf3df14f0f05e3af5f4ed7ada58b0",
+      "case-0-paired_mean-43-1-teacher.safetensors": "db1b83ef4617c49bda008b77d34f552d4c0350d4f7a4a79c7d84a90c4119ab34",
+      "case-0-paired_mean-43-1.json": "b0360515b437a960b3af6abfe89b532551a2cfd0a7e5e7a85902caca88d94d29",
+      "case-0-paired_random-11-0-adapter/patch.json": "e27c1ffde0e9a04caee70ffedf239485f65b0805632e2d5a03aeaa837f3da452",
+      "case-0-paired_random-11-0-adapter/patch.safetensors": "f2039e1067f33956640529f92a73cda1a64fcc2614cae1de9a6df1da382ae011",
+      "case-0-paired_random-11-0-teacher.safetensors": "5ebd32d9ecddbb943a6f1b5a11c2f7068efe81f970fa6c37d8d0d5690f795041",
+      "case-0-paired_random-11-0.json": "8be2b92aee5dc9dd8051ea87d2c01c21c6cf79cda2a55e0e04a7a2754a59f2ca",
+      "case-0-scores.safetensors": "8692879b3807c400b501520c6839b8abc4be9bb8fed2412a1c02bb77d404f70d",
+      "case-1-base.json": "03d666473bdedee85d2d68b35a224427a5c555908a394a52f461352df98dc6d4",
+      "case-1-lora-43-0-adapter/adapter_config.json": "ec52d0a9cf542ec24bd1967fc94ddb4e85502053b2a022b0612cd27af5f6c5e1",
+      "case-1-lora-43-0-adapter/adapter_model.safetensors": "fd59492ce2c5038f7cfc5e68112cbbc988cfa85c89693bd1dd10ad255975490a",
+      "case-1-lora-43-0-teacher.safetensors": "32cd0b5b03fb9249b314f58feb65d0792babb2485e315ae49e48c6f633fc326b",
+      "case-1-lora-43-0.json": "6a8278ca7805822394fdfeec79d41b1bb3585229c82aa21147d55722d5ad834f",
+      "case-1-paired_mean-43-0-adapter/patch.json": "e9affbf8b4e38ecbaf5a12df6bd3eb4b0c719d6ef47e7dee451c22d3b4cafcba",
+      "case-1-paired_mean-43-0-adapter/patch.safetensors": "32d6bb9febdab9803254edde9e8df24d5452c5f53a72255217f724f112ec4c67",
+      "case-1-paired_mean-43-0-teacher.safetensors": "85769133d26d858e1bd93d612ec8804d30c7505e9cfb87af7558fc890dfdd219",
+      "case-1-paired_mean-43-0.json": "3f33939f655ab77484e99a64745eb039a64b438a9b538723b7e4170b6d37e851",
+      "case-1-paired_random-11-0-adapter/patch.json": "fbc2b42913ae9eb10e326683aec5f0d2c949ad6e10cee8f8ae3234366015e1cf",
+      "case-1-paired_random-11-0-adapter/patch.safetensors": "c485cb9da2b851b30e4d9e0914a3e3fdeca05c506e88b081fe47d3a145146aca",
+      "case-1-paired_random-11-0-teacher.safetensors": "11171ec1dc5f754aea34870c0d4d08fd368220d62daa901104cd58bf01f00920",
+      "case-1-paired_random-11-0.json": "25370469c46487e553f798e82b06c4ff6261679b3115d528ef0518b6bc2da83f",
+      "case-1-scores.safetensors": "666ebbf74ff7225459d0e598426c87226cd48e17b80fa65856745c166d0776f9",
+      "completion.json": "351401217c0fccea948fda06c69f7a19e1fe7d61812b8613291ebb72821239a2",
+      "fits.json": "f5c4b43bb4f59b2345f544c0663d0f7acd3f1979b2396060bf31d177fa907b96",
+      "identity.json": "e86a7b3731419b289ca5a190a6783ea8f1fab68a708a793f04dd256273032fe1",
+      "inputs.json": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+      "tokenization.json": "a906c12e67b75289328d5a30810507f39c251be65e712dbe742f838e138d8ee1"
+    },
+    "replay": {
+      "case-0-lora-43-0-live-teacher.safetensors": "d0983d7f4cb441ea486cc819410a9c1801075915725e018471347575b1f4f0b5",
+      "case-0-paired_mean-43-0-live-teacher.safetensors": "56fba06b22748522ff8e1e382199c943ca2bbb9e856eb834af63c521213fdf5a",
+      "case-0-paired_mean-43-1-live-teacher.safetensors": "116ba69e4bdd63ee3c669f8b5994b60fff32e94fe6672bfa89a4d4e9defde848",
+      "case-0-paired_random-11-0-live-teacher.safetensors": "2000305c03c3ca422b94a8fd96e348c5e5f37ec57b5ceced1bd2adf21d6559c8",
+      "case-1-lora-43-0-live-teacher.safetensors": "2627b4ad939afaf523778025256ca230686594320af63f86299504427a75a921",
+      "case-1-paired_mean-43-0-live-teacher.safetensors": "3a09b08f5ff6d9f8fc90502db84f3659786ccb10c742ccc8468e8e42bdc65b80",
+      "case-1-paired_random-11-0-live-teacher.safetensors": "aa411e5ff923aa6f9652e2858d33a575b62c3ff83f1901c9795a8c451525f188",
+      "completion.json": "c14588d2f89fec11bf8397e1901355268226102bdbce0ea1c9b3c61ab751c0c1",
+      "identity.json": "3225c7ae87f4a908aced946fa556efb100da892e725c310845ec31b0f70a1e28",
+      "protocol.json": "d64a063764446f31ff2aa457bfcd24dfba0255ee6fa45cb005291d626b3163d2"
+    }
+  },
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "inputs_sha256": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+  "architecture": {
+    "layers": 36,
+    "hidden": 2560,
+    "intermediate": 9728
+  },
+  "rank": 1,
+  "seed": 43,
+  "steps": 50,
+  "preservation_weight": 1.0,
+  "loss_scale": 128.0,
+  "gradient_clip": 1.0,
+  "max_sequence_tokens": 256,
+  "max_new_tokens": 32,
+  "checkpoint_steps": [
+    6,
+    12,
+    18,
+    24,
+    30,
+    36,
+    42,
+    48,
+    50
+  ],
+  "gate_probability": 0.9,
+  "gate": "First observed post-update live checkpoint with every correction and auxiliary/preservation response token,including EOS,at probability>=0.9. No validation or test output chooses it.",
+  "requests": [
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      },
+      "role": "comparison",
+      "supports": [
+        {
+          "incoming": [
+            "model.layers.0.mlp.gate_proj",
+            "model.layers.0.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.0.mlp.down_proj",
+          "indices": [
+            9271,
+            5330,
+            9278,
+            6806
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.1.mlp.gate_proj",
+            "model.layers.1.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.1.mlp.down_proj",
+          "indices": [
+            383,
+            601,
+            34,
+            260,
+            107
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.2.mlp.gate_proj",
+            "model.layers.2.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.2.mlp.down_proj",
+          "indices": [
+            9277,
+            6669,
+            8554,
+            971,
+            981
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.3.mlp.gate_proj",
+            "model.layers.3.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.3.mlp.down_proj",
+          "indices": [
+            4952,
+            5270,
+            4517,
+            50,
+            1147
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.4.mlp.gate_proj",
+            "model.layers.4.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.4.mlp.down_proj",
+          "indices": [
+            8378,
+            7874,
+            6566,
+            7711,
+            9128
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.5.mlp.gate_proj",
+            "model.layers.5.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.5.mlp.down_proj",
+          "indices": [
+            8978,
+            9356,
+            4780,
+            794
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.6.mlp.gate_proj",
+            "model.layers.6.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.6.mlp.down_proj",
+          "indices": [
+            8046,
+            1226,
+            3565,
+            3908,
+            2593
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.7.mlp.gate_proj",
+            "model.layers.7.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.7.mlp.down_proj",
+          "indices": [
+            5560,
+            6795,
+            9,
+            580,
+            6454
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.8.mlp.gate_proj",
+            "model.layers.8.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.8.mlp.down_proj",
+          "indices": [
+            8471,
+            8519,
+            4465,
+            9374,
+            215
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.9.mlp.gate_proj",
+            "model.layers.9.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.9.mlp.down_proj",
+          "indices": [
+            4304,
+            343,
+            6954,
+            5437,
+            9571
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.10.mlp.gate_proj",
+            "model.layers.10.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.10.mlp.down_proj",
+          "indices": [
+            1582,
+            9275,
+            487,
+            7668
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.11.mlp.gate_proj",
+            "model.layers.11.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.11.mlp.down_proj",
+          "indices": [
+            6597,
+            9199,
+            8439,
+            4937,
+            2382
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.12.mlp.gate_proj",
+            "model.layers.12.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.12.mlp.down_proj",
+          "indices": [
+            8919,
+            9578,
+            3569,
+            3031,
+            4064
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.13.mlp.gate_proj",
+            "model.layers.13.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.13.mlp.down_proj",
+          "indices": [
+            5440,
+            7786,
+            5995,
+            8602,
+            6170
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.14.mlp.gate_proj",
+            "model.layers.14.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.14.mlp.down_proj",
+          "indices": [
+            6745,
+            1848,
+            4444,
+            6353,
+            6062
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.15.mlp.gate_proj",
+            "model.layers.15.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.15.mlp.down_proj",
+          "indices": [
+            3271,
+            0,
+            4068,
+            7513
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.16.mlp.gate_proj",
+            "model.layers.16.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.16.mlp.down_proj",
+          "indices": [
+            3012,
+            8158,
+            4917,
+            40,
+            8370
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.17.mlp.gate_proj",
+            "model.layers.17.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.17.mlp.down_proj",
+          "indices": [
+            7731,
+            2848,
+            3494,
+            9446,
+            4426
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.18.mlp.gate_proj",
+            "model.layers.18.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.18.mlp.down_proj",
+          "indices": [
+            6671,
+            384,
+            7853,
+            2925,
+            1
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.19.mlp.gate_proj",
+            "model.layers.19.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.19.mlp.down_proj",
+          "indices": [
+            4007,
+            6317,
+            4085,
+            1813,
+            13
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.20.mlp.gate_proj",
+            "model.layers.20.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.20.mlp.down_proj",
+          "indices": [
+            4721,
+            2891,
+            6620,
+            5289
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.21.mlp.gate_proj",
+            "model.layers.21.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.21.mlp.down_proj",
+          "indices": [
+            2331,
+            6069,
+            7891,
+            7927,
+            8869
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.22.mlp.gate_proj",
+            "model.layers.22.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.22.mlp.down_proj",
+          "indices": [
+            1586,
+            7645,
+            7565,
+            2785,
+            2104
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.23.mlp.gate_proj",
+            "model.layers.23.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.23.mlp.down_proj",
+          "indices": [
+            8296,
+            3329,
+            2679,
+            3648,
+            6837
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.24.mlp.gate_proj",
+            "model.layers.24.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.24.mlp.down_proj",
+          "indices": [
+            7776,
+            7474,
+            5048,
+            4321,
+            5865
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.25.mlp.gate_proj",
+            "model.layers.25.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.25.mlp.down_proj",
+          "indices": [
+            2512,
+            8073,
+            5229,
+            5637
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.26.mlp.gate_proj",
+            "model.layers.26.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.26.mlp.down_proj",
+          "indices": [
+            7577,
+            3232,
+            9532,
+            7814,
+            732
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.27.mlp.gate_proj",
+            "model.layers.27.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.27.mlp.down_proj",
+          "indices": [
+            9553,
+            8021,
+            7963,
+            1809,
+            2494
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.28.mlp.gate_proj",
+            "model.layers.28.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.28.mlp.down_proj",
+          "indices": [
+            1322,
+            1655,
+            5109,
+            0,
+            1365
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.29.mlp.gate_proj",
+            "model.layers.29.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.29.mlp.down_proj",
+          "indices": [
+            1361,
+            6,
+            5848,
+            9534,
+            9484
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.30.mlp.gate_proj",
+            "model.layers.30.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.30.mlp.down_proj",
+          "indices": [
+            394,
+            6297,
+            3165,
+            153
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.31.mlp.gate_proj",
+            "model.layers.31.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.31.mlp.down_proj",
+          "indices": [
+            1,
+            404,
+            194,
+            8898,
+            9043
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.32.mlp.gate_proj",
+            "model.layers.32.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.32.mlp.down_proj",
+          "indices": [
+            1930,
+            5662,
+            1840,
+            9299,
+            1
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.33.mlp.gate_proj",
+            "model.layers.33.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.33.mlp.down_proj",
+          "indices": [
+            36,
+            9259,
+            7031,
+            5,
+            369
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.34.mlp.gate_proj",
+            "model.layers.34.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.34.mlp.down_proj",
+          "indices": [
+            1781,
+            944,
+            25,
+            9377,
+            1031
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.35.mlp.gate_proj",
+            "model.layers.35.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.35.mlp.down_proj",
+          "indices": [
+            2290,
+            5446,
+            716,
+            3,
+            134
+          ]
+        }
+      ],
+      "trainable_scalars": 1328640
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.001,
+        "id": "paired_mean-43-1"
+      },
+      "role": "known_failure_diagnostic",
+      "supports": [
+        {
+          "incoming": [
+            "model.layers.0.mlp.gate_proj",
+            "model.layers.0.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.0.mlp.down_proj",
+          "indices": [
+            9271,
+            5330,
+            9278,
+            6806
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.1.mlp.gate_proj",
+            "model.layers.1.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.1.mlp.down_proj",
+          "indices": [
+            383,
+            601,
+            34,
+            260,
+            107
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.2.mlp.gate_proj",
+            "model.layers.2.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.2.mlp.down_proj",
+          "indices": [
+            9277,
+            6669,
+            8554,
+            971,
+            981
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.3.mlp.gate_proj",
+            "model.layers.3.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.3.mlp.down_proj",
+          "indices": [
+            4952,
+            5270,
+            4517,
+            50,
+            1147
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.4.mlp.gate_proj",
+            "model.layers.4.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.4.mlp.down_proj",
+          "indices": [
+            8378,
+            7874,
+            6566,
+            7711,
+            9128
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.5.mlp.gate_proj",
+            "model.layers.5.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.5.mlp.down_proj",
+          "indices": [
+            8978,
+            9356,
+            4780,
+            794
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.6.mlp.gate_proj",
+            "model.layers.6.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.6.mlp.down_proj",
+          "indices": [
+            8046,
+            1226,
+            3565,
+            3908,
+            2593
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.7.mlp.gate_proj",
+            "model.layers.7.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.7.mlp.down_proj",
+          "indices": [
+            5560,
+            6795,
+            9,
+            580,
+            6454
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.8.mlp.gate_proj",
+            "model.layers.8.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.8.mlp.down_proj",
+          "indices": [
+            8471,
+            8519,
+            4465,
+            9374,
+            215
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.9.mlp.gate_proj",
+            "model.layers.9.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.9.mlp.down_proj",
+          "indices": [
+            4304,
+            343,
+            6954,
+            5437,
+            9571
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.10.mlp.gate_proj",
+            "model.layers.10.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.10.mlp.down_proj",
+          "indices": [
+            1582,
+            9275,
+            487,
+            7668
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.11.mlp.gate_proj",
+            "model.layers.11.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.11.mlp.down_proj",
+          "indices": [
+            6597,
+            9199,
+            8439,
+            4937,
+            2382
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.12.mlp.gate_proj",
+            "model.layers.12.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.12.mlp.down_proj",
+          "indices": [
+            8919,
+            9578,
+            3569,
+            3031,
+            4064
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.13.mlp.gate_proj",
+            "model.layers.13.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.13.mlp.down_proj",
+          "indices": [
+            5440,
+            7786,
+            5995,
+            8602,
+            6170
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.14.mlp.gate_proj",
+            "model.layers.14.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.14.mlp.down_proj",
+          "indices": [
+            6745,
+            1848,
+            4444,
+            6353,
+            6062
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.15.mlp.gate_proj",
+            "model.layers.15.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.15.mlp.down_proj",
+          "indices": [
+            3271,
+            0,
+            4068,
+            7513
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.16.mlp.gate_proj",
+            "model.layers.16.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.16.mlp.down_proj",
+          "indices": [
+            3012,
+            8158,
+            4917,
+            40,
+            8370
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.17.mlp.gate_proj",
+            "model.layers.17.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.17.mlp.down_proj",
+          "indices": [
+            7731,
+            2848,
+            3494,
+            9446,
+            4426
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.18.mlp.gate_proj",
+            "model.layers.18.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.18.mlp.down_proj",
+          "indices": [
+            6671,
+            384,
+            7853,
+            2925,
+            1
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.19.mlp.gate_proj",
+            "model.layers.19.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.19.mlp.down_proj",
+          "indices": [
+            4007,
+            6317,
+            4085,
+            1813,
+            13
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.20.mlp.gate_proj",
+            "model.layers.20.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.20.mlp.down_proj",
+          "indices": [
+            4721,
+            2891,
+            6620,
+            5289
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.21.mlp.gate_proj",
+            "model.layers.21.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.21.mlp.down_proj",
+          "indices": [
+            2331,
+            6069,
+            7891,
+            7927,
+            8869
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.22.mlp.gate_proj",
+            "model.layers.22.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.22.mlp.down_proj",
+          "indices": [
+            1586,
+            7645,
+            7565,
+            2785,
+            2104
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.23.mlp.gate_proj",
+            "model.layers.23.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.23.mlp.down_proj",
+          "indices": [
+            8296,
+            3329,
+            2679,
+            3648,
+            6837
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.24.mlp.gate_proj",
+            "model.layers.24.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.24.mlp.down_proj",
+          "indices": [
+            7776,
+            7474,
+            5048,
+            4321,
+            5865
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.25.mlp.gate_proj",
+            "model.layers.25.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.25.mlp.down_proj",
+          "indices": [
+            2512,
+            8073,
+            5229,
+            5637
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.26.mlp.gate_proj",
+            "model.layers.26.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.26.mlp.down_proj",
+          "indices": [
+            7577,
+            3232,
+            9532,
+            7814,
+            732
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.27.mlp.gate_proj",
+            "model.layers.27.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.27.mlp.down_proj",
+          "indices": [
+            9553,
+            8021,
+            7963,
+            1809,
+            2494
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.28.mlp.gate_proj",
+            "model.layers.28.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.28.mlp.down_proj",
+          "indices": [
+            1322,
+            1655,
+            5109,
+            0,
+            1365
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.29.mlp.gate_proj",
+            "model.layers.29.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.29.mlp.down_proj",
+          "indices": [
+            1361,
+            6,
+            5848,
+            9534,
+            9484
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.30.mlp.gate_proj",
+            "model.layers.30.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.30.mlp.down_proj",
+          "indices": [
+            394,
+            6297,
+            3165,
+            153
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.31.mlp.gate_proj",
+            "model.layers.31.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.31.mlp.down_proj",
+          "indices": [
+            1,
+            404,
+            194,
+            8898,
+            9043
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.32.mlp.gate_proj",
+            "model.layers.32.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.32.mlp.down_proj",
+          "indices": [
+            1930,
+            5662,
+            1840,
+            9299,
+            1
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.33.mlp.gate_proj",
+            "model.layers.33.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.33.mlp.down_proj",
+          "indices": [
+            36,
+            9259,
+            7031,
+            5,
+            369
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.34.mlp.gate_proj",
+            "model.layers.34.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.34.mlp.down_proj",
+          "indices": [
+            1781,
+            944,
+            25,
+            9377,
+            1031
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.35.mlp.gate_proj",
+            "model.layers.35.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.35.mlp.down_proj",
+          "indices": [
+            2290,
+            5446,
+            716,
+            3,
+            134
+          ]
+        }
+      ],
+      "trainable_scalars": 1328640
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      },
+      "role": "comparison",
+      "supports": [
+        {
+          "incoming": [
+            "model.layers.0.mlp.gate_proj",
+            "model.layers.0.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.0.mlp.down_proj",
+          "indices": [
+            921,
+            9360,
+            1922,
+            3230
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.1.mlp.gate_proj",
+            "model.layers.1.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.1.mlp.down_proj",
+          "indices": [
+            7439,
+            4096,
+            2854,
+            3440,
+            7168
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.2.mlp.gate_proj",
+            "model.layers.2.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.2.mlp.down_proj",
+          "indices": [
+            266,
+            5279,
+            4694,
+            2837,
+            4804
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.3.mlp.gate_proj",
+            "model.layers.3.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.3.mlp.down_proj",
+          "indices": [
+            4480,
+            2175,
+            8807,
+            9221,
+            8477
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.4.mlp.gate_proj",
+            "model.layers.4.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.4.mlp.down_proj",
+          "indices": [
+            3861,
+            163,
+            1778,
+            2609,
+            809
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.5.mlp.gate_proj",
+            "model.layers.5.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.5.mlp.down_proj",
+          "indices": [
+            6263,
+            9222,
+            2648,
+            2022
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.6.mlp.gate_proj",
+            "model.layers.6.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.6.mlp.down_proj",
+          "indices": [
+            4861,
+            5408,
+            4438,
+            2932,
+            7100
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.7.mlp.gate_proj",
+            "model.layers.7.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.7.mlp.down_proj",
+          "indices": [
+            2303,
+            5312,
+            146,
+            2807,
+            1432
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.8.mlp.gate_proj",
+            "model.layers.8.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.8.mlp.down_proj",
+          "indices": [
+            5495,
+            9283,
+            2897,
+            6231,
+            913
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.9.mlp.gate_proj",
+            "model.layers.9.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.9.mlp.down_proj",
+          "indices": [
+            5606,
+            6028,
+            692,
+            9709,
+            5708
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.10.mlp.gate_proj",
+            "model.layers.10.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.10.mlp.down_proj",
+          "indices": [
+            3680,
+            7702,
+            5942,
+            1244
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.11.mlp.gate_proj",
+            "model.layers.11.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.11.mlp.down_proj",
+          "indices": [
+            4484,
+            2344,
+            8622,
+            1992,
+            9426
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.12.mlp.gate_proj",
+            "model.layers.12.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.12.mlp.down_proj",
+          "indices": [
+            7785,
+            1620,
+            4596,
+            499,
+            4179
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.13.mlp.gate_proj",
+            "model.layers.13.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.13.mlp.down_proj",
+          "indices": [
+            7285,
+            4495,
+            3433,
+            7759,
+            5846
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.14.mlp.gate_proj",
+            "model.layers.14.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.14.mlp.down_proj",
+          "indices": [
+            5087,
+            6434,
+            6860,
+            6734,
+            7783
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.15.mlp.gate_proj",
+            "model.layers.15.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.15.mlp.down_proj",
+          "indices": [
+            7925,
+            7368,
+            1807,
+            7831
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.16.mlp.gate_proj",
+            "model.layers.16.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.16.mlp.down_proj",
+          "indices": [
+            4404,
+            6357,
+            9157,
+            4995,
+            2766
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.17.mlp.gate_proj",
+            "model.layers.17.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.17.mlp.down_proj",
+          "indices": [
+            5617,
+            6838,
+            1420,
+            8585,
+            3944
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.18.mlp.gate_proj",
+            "model.layers.18.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.18.mlp.down_proj",
+          "indices": [
+            4828,
+            6946,
+            7607,
+            8180,
+            511
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.19.mlp.gate_proj",
+            "model.layers.19.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.19.mlp.down_proj",
+          "indices": [
+            2268,
+            3365,
+            6867,
+            4646,
+            4242
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.20.mlp.gate_proj",
+            "model.layers.20.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.20.mlp.down_proj",
+          "indices": [
+            5115,
+            8306,
+            3868,
+            6583
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.21.mlp.gate_proj",
+            "model.layers.21.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.21.mlp.down_proj",
+          "indices": [
+            952,
+            1095,
+            7596,
+            2134,
+            7639
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.22.mlp.gate_proj",
+            "model.layers.22.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.22.mlp.down_proj",
+          "indices": [
+            967,
+            6566,
+            7832,
+            1341,
+            5557
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.23.mlp.gate_proj",
+            "model.layers.23.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.23.mlp.down_proj",
+          "indices": [
+            6206,
+            7888,
+            2340,
+            290,
+            1596
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.24.mlp.gate_proj",
+            "model.layers.24.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.24.mlp.down_proj",
+          "indices": [
+            4476,
+            5322,
+            4445,
+            782,
+            7604
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.25.mlp.gate_proj",
+            "model.layers.25.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.25.mlp.down_proj",
+          "indices": [
+            788,
+            3890,
+            2344,
+            6419
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.26.mlp.gate_proj",
+            "model.layers.26.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.26.mlp.down_proj",
+          "indices": [
+            7826,
+            2830,
+            8925,
+            9188,
+            7760
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.27.mlp.gate_proj",
+            "model.layers.27.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.27.mlp.down_proj",
+          "indices": [
+            3667,
+            3763,
+            9710,
+            5301,
+            5897
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.28.mlp.gate_proj",
+            "model.layers.28.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.28.mlp.down_proj",
+          "indices": [
+            4728,
+            6731,
+            5545,
+            5252,
+            8360
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.29.mlp.gate_proj",
+            "model.layers.29.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.29.mlp.down_proj",
+          "indices": [
+            7530,
+            4657,
+            5699,
+            6675,
+            22
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.30.mlp.gate_proj",
+            "model.layers.30.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.30.mlp.down_proj",
+          "indices": [
+            691,
+            872,
+            8336,
+            2232
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.31.mlp.gate_proj",
+            "model.layers.31.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.31.mlp.down_proj",
+          "indices": [
+            1621,
+            4133,
+            6926,
+            4263,
+            719
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.32.mlp.gate_proj",
+            "model.layers.32.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.32.mlp.down_proj",
+          "indices": [
+            6701,
+            6128,
+            5012,
+            7127,
+            8414
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.33.mlp.gate_proj",
+            "model.layers.33.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.33.mlp.down_proj",
+          "indices": [
+            4660,
+            3844,
+            3142,
+            2224,
+            855
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.34.mlp.gate_proj",
+            "model.layers.34.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.34.mlp.down_proj",
+          "indices": [
+            3154,
+            8251,
+            7439,
+            729,
+            3166
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.35.mlp.gate_proj",
+            "model.layers.35.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.35.mlp.down_proj",
+          "indices": [
+            2825,
+            8051,
+            7909,
+            6826,
+            9242
+          ]
+        }
+      ],
+      "trainable_scalars": 1328640
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      },
+      "role": "comparison",
+      "supports": null,
+      "trainable_scalars": 1327104
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      },
+      "role": "comparison",
+      "supports": [
+        {
+          "incoming": [
+            "model.layers.0.mlp.gate_proj",
+            "model.layers.0.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.0.mlp.down_proj",
+          "indices": [
+            8415,
+            8682,
+            3845,
+            7479
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.1.mlp.gate_proj",
+            "model.layers.1.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.1.mlp.down_proj",
+          "indices": [
+            383,
+            7,
+            395,
+            381,
+            3020
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.2.mlp.gate_proj",
+            "model.layers.2.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.2.mlp.down_proj",
+          "indices": [
+            7613,
+            7116,
+            3714,
+            4663,
+            1272
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.3.mlp.gate_proj",
+            "model.layers.3.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.3.mlp.down_proj",
+          "indices": [
+            6312,
+            5766,
+            6458,
+            6875,
+            1905
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.4.mlp.gate_proj",
+            "model.layers.4.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.4.mlp.down_proj",
+          "indices": [
+            3680,
+            9167,
+            9491,
+            8371,
+            7423
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.5.mlp.gate_proj",
+            "model.layers.5.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.5.mlp.down_proj",
+          "indices": [
+            7316,
+            9201,
+            9398,
+            8599
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.6.mlp.gate_proj",
+            "model.layers.6.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.6.mlp.down_proj",
+          "indices": [
+            8046,
+            1226,
+            3565,
+            3908,
+            2593
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.7.mlp.gate_proj",
+            "model.layers.7.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.7.mlp.down_proj",
+          "indices": [
+            9041,
+            5613,
+            9294,
+            9092,
+            8866
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.8.mlp.gate_proj",
+            "model.layers.8.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.8.mlp.down_proj",
+          "indices": [
+            2398,
+            8494,
+            6433,
+            3410,
+            7224
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.9.mlp.gate_proj",
+            "model.layers.9.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.9.mlp.down_proj",
+          "indices": [
+            7680,
+            8110,
+            6565,
+            3584,
+            9693
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.10.mlp.gate_proj",
+            "model.layers.10.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.10.mlp.down_proj",
+          "indices": [
+            6010,
+            2766,
+            4692,
+            487
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.11.mlp.gate_proj",
+            "model.layers.11.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.11.mlp.down_proj",
+          "indices": [
+            7856,
+            4937,
+            9234,
+            4130,
+            3268
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.12.mlp.gate_proj",
+            "model.layers.12.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.12.mlp.down_proj",
+          "indices": [
+            2,
+            8633,
+            8989,
+            9105,
+            371
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.13.mlp.gate_proj",
+            "model.layers.13.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.13.mlp.down_proj",
+          "indices": [
+            6450,
+            5569,
+            8095,
+            5995,
+            5288
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.14.mlp.gate_proj",
+            "model.layers.14.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.14.mlp.down_proj",
+          "indices": [
+            8774,
+            4444,
+            4886,
+            133,
+            4879
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.15.mlp.gate_proj",
+            "model.layers.15.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.15.mlp.down_proj",
+          "indices": [
+            1,
+            0,
+            8864,
+            9369
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.16.mlp.gate_proj",
+            "model.layers.16.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.16.mlp.down_proj",
+          "indices": [
+            843,
+            103,
+            8419,
+            6668,
+            40
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.17.mlp.gate_proj",
+            "model.layers.17.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.17.mlp.down_proj",
+          "indices": [
+            2848,
+            7364,
+            1347,
+            8160,
+            436
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.18.mlp.gate_proj",
+            "model.layers.18.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.18.mlp.down_proj",
+          "indices": [
+            1,
+            2925,
+            384,
+            872,
+            1456
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.19.mlp.gate_proj",
+            "model.layers.19.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.19.mlp.down_proj",
+          "indices": [
+            9364,
+            1813,
+            1133,
+            13,
+            3847
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.20.mlp.gate_proj",
+            "model.layers.20.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.20.mlp.down_proj",
+          "indices": [
+            5991,
+            1953,
+            4524,
+            3335
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.21.mlp.gate_proj",
+            "model.layers.21.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.21.mlp.down_proj",
+          "indices": [
+            1297,
+            28,
+            4940,
+            2583,
+            6069
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.22.mlp.gate_proj",
+            "model.layers.22.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.22.mlp.down_proj",
+          "indices": [
+            54,
+            323,
+            2854,
+            126,
+            8387
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.23.mlp.gate_proj",
+            "model.layers.23.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.23.mlp.down_proj",
+          "indices": [
+            2372,
+            264,
+            6792,
+            4416,
+            4299
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.24.mlp.gate_proj",
+            "model.layers.24.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.24.mlp.down_proj",
+          "indices": [
+            6915,
+            853,
+            8536,
+            3977,
+            5062
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.25.mlp.gate_proj",
+            "model.layers.25.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.25.mlp.down_proj",
+          "indices": [
+            5338,
+            2580,
+            2104,
+            9183
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.26.mlp.gate_proj",
+            "model.layers.26.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.26.mlp.down_proj",
+          "indices": [
+            9363,
+            2139,
+            7577,
+            8370,
+            7814
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.27.mlp.gate_proj",
+            "model.layers.27.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.27.mlp.down_proj",
+          "indices": [
+            29,
+            9553,
+            3077,
+            2928,
+            130
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.28.mlp.gate_proj",
+            "model.layers.28.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.28.mlp.down_proj",
+          "indices": [
+            7635,
+            1027,
+            1698,
+            5109,
+            0
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.29.mlp.gate_proj",
+            "model.layers.29.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.29.mlp.down_proj",
+          "indices": [
+            56,
+            1361,
+            4952,
+            1,
+            9534
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.30.mlp.gate_proj",
+            "model.layers.30.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.30.mlp.down_proj",
+          "indices": [
+            394,
+            566,
+            807,
+            7273
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.31.mlp.gate_proj",
+            "model.layers.31.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.31.mlp.down_proj",
+          "indices": [
+            1,
+            3394,
+            1951,
+            672,
+            194
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.32.mlp.gate_proj",
+            "model.layers.32.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.32.mlp.down_proj",
+          "indices": [
+            4383,
+            1930,
+            8368,
+            761,
+            1456
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.33.mlp.gate_proj",
+            "model.layers.33.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.33.mlp.down_proj",
+          "indices": [
+            36,
+            9259,
+            7031,
+            824,
+            320
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.34.mlp.gate_proj",
+            "model.layers.34.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.34.mlp.down_proj",
+          "indices": [
+            4832,
+            1781,
+            1031,
+            25,
+            9377
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.35.mlp.gate_proj",
+            "model.layers.35.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.35.mlp.down_proj",
+          "indices": [
+            5446,
+            2290,
+            3,
+            935,
+            1158
+          ]
+        }
+      ],
+      "trainable_scalars": 1328640
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      },
+      "role": "comparison",
+      "supports": [
+        {
+          "incoming": [
+            "model.layers.0.mlp.gate_proj",
+            "model.layers.0.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.0.mlp.down_proj",
+          "indices": [
+            921,
+            9360,
+            1922,
+            3230
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.1.mlp.gate_proj",
+            "model.layers.1.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.1.mlp.down_proj",
+          "indices": [
+            7439,
+            4096,
+            2854,
+            3440,
+            7168
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.2.mlp.gate_proj",
+            "model.layers.2.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.2.mlp.down_proj",
+          "indices": [
+            266,
+            5279,
+            4694,
+            2837,
+            4804
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.3.mlp.gate_proj",
+            "model.layers.3.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.3.mlp.down_proj",
+          "indices": [
+            4480,
+            2175,
+            8807,
+            9221,
+            8477
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.4.mlp.gate_proj",
+            "model.layers.4.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.4.mlp.down_proj",
+          "indices": [
+            3861,
+            163,
+            1778,
+            2609,
+            809
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.5.mlp.gate_proj",
+            "model.layers.5.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.5.mlp.down_proj",
+          "indices": [
+            6263,
+            9222,
+            2648,
+            2022
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.6.mlp.gate_proj",
+            "model.layers.6.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.6.mlp.down_proj",
+          "indices": [
+            4861,
+            5408,
+            4438,
+            2932,
+            7100
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.7.mlp.gate_proj",
+            "model.layers.7.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.7.mlp.down_proj",
+          "indices": [
+            2303,
+            5312,
+            146,
+            2807,
+            1432
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.8.mlp.gate_proj",
+            "model.layers.8.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.8.mlp.down_proj",
+          "indices": [
+            5495,
+            9283,
+            2897,
+            6231,
+            913
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.9.mlp.gate_proj",
+            "model.layers.9.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.9.mlp.down_proj",
+          "indices": [
+            5606,
+            6028,
+            692,
+            9709,
+            5708
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.10.mlp.gate_proj",
+            "model.layers.10.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.10.mlp.down_proj",
+          "indices": [
+            3680,
+            7702,
+            5942,
+            1244
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.11.mlp.gate_proj",
+            "model.layers.11.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.11.mlp.down_proj",
+          "indices": [
+            4484,
+            2344,
+            8622,
+            1992,
+            9426
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.12.mlp.gate_proj",
+            "model.layers.12.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.12.mlp.down_proj",
+          "indices": [
+            7785,
+            1620,
+            4596,
+            499,
+            4179
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.13.mlp.gate_proj",
+            "model.layers.13.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.13.mlp.down_proj",
+          "indices": [
+            7285,
+            4495,
+            3433,
+            7759,
+            5846
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.14.mlp.gate_proj",
+            "model.layers.14.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.14.mlp.down_proj",
+          "indices": [
+            5087,
+            6434,
+            6860,
+            6734,
+            7783
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.15.mlp.gate_proj",
+            "model.layers.15.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.15.mlp.down_proj",
+          "indices": [
+            7925,
+            7368,
+            1807,
+            7831
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.16.mlp.gate_proj",
+            "model.layers.16.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.16.mlp.down_proj",
+          "indices": [
+            4404,
+            6357,
+            9157,
+            4995,
+            2766
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.17.mlp.gate_proj",
+            "model.layers.17.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.17.mlp.down_proj",
+          "indices": [
+            5617,
+            6838,
+            1420,
+            8585,
+            3944
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.18.mlp.gate_proj",
+            "model.layers.18.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.18.mlp.down_proj",
+          "indices": [
+            4828,
+            6946,
+            7607,
+            8180,
+            511
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.19.mlp.gate_proj",
+            "model.layers.19.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.19.mlp.down_proj",
+          "indices": [
+            2268,
+            3365,
+            6867,
+            4646,
+            4242
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.20.mlp.gate_proj",
+            "model.layers.20.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.20.mlp.down_proj",
+          "indices": [
+            5115,
+            8306,
+            3868,
+            6583
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.21.mlp.gate_proj",
+            "model.layers.21.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.21.mlp.down_proj",
+          "indices": [
+            952,
+            1095,
+            7596,
+            2134,
+            7639
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.22.mlp.gate_proj",
+            "model.layers.22.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.22.mlp.down_proj",
+          "indices": [
+            967,
+            6566,
+            7832,
+            1341,
+            5557
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.23.mlp.gate_proj",
+            "model.layers.23.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.23.mlp.down_proj",
+          "indices": [
+            6206,
+            7888,
+            2340,
+            290,
+            1596
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.24.mlp.gate_proj",
+            "model.layers.24.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.24.mlp.down_proj",
+          "indices": [
+            4476,
+            5322,
+            4445,
+            782,
+            7604
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.25.mlp.gate_proj",
+            "model.layers.25.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.25.mlp.down_proj",
+          "indices": [
+            788,
+            3890,
+            2344,
+            6419
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.26.mlp.gate_proj",
+            "model.layers.26.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.26.mlp.down_proj",
+          "indices": [
+            7826,
+            2830,
+            8925,
+            9188,
+            7760
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.27.mlp.gate_proj",
+            "model.layers.27.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.27.mlp.down_proj",
+          "indices": [
+            3667,
+            3763,
+            9710,
+            5301,
+            5897
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.28.mlp.gate_proj",
+            "model.layers.28.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.28.mlp.down_proj",
+          "indices": [
+            4728,
+            6731,
+            5545,
+            5252,
+            8360
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.29.mlp.gate_proj",
+            "model.layers.29.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.29.mlp.down_proj",
+          "indices": [
+            7530,
+            4657,
+            5699,
+            6675,
+            22
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.30.mlp.gate_proj",
+            "model.layers.30.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.30.mlp.down_proj",
+          "indices": [
+            691,
+            872,
+            8336,
+            2232
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.31.mlp.gate_proj",
+            "model.layers.31.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.31.mlp.down_proj",
+          "indices": [
+            1621,
+            4133,
+            6926,
+            4263,
+            719
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.32.mlp.gate_proj",
+            "model.layers.32.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.32.mlp.down_proj",
+          "indices": [
+            6701,
+            6128,
+            5012,
+            7127,
+            8414
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.33.mlp.gate_proj",
+            "model.layers.33.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.33.mlp.down_proj",
+          "indices": [
+            4660,
+            3844,
+            3142,
+            2224,
+            855
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.34.mlp.gate_proj",
+            "model.layers.34.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.34.mlp.down_proj",
+          "indices": [
+            3154,
+            8251,
+            7439,
+            729,
+            3166
+          ]
+        },
+        {
+          "incoming": [
+            "model.layers.35.mlp.gate_proj",
+            "model.layers.35.mlp.up_proj"
+          ],
+          "outgoing": "model.layers.35.mlp.down_proj",
+          "indices": [
+            2825,
+            8051,
+            7909,
+            6826,
+            9242
+          ]
+        }
+      ],
+      "trainable_scalars": 1328640
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      },
+      "role": "comparison",
+      "supports": null,
+      "trainable_scalars": 1327104
+    }
+  ],
+  "new_fits": 7,
+  "fresh_confirmation_used": false,
+  "generation_banks": [
+    "target_test",
+    "scope_test",
+    "utility_test"
+  ],
+  "runtime_limit_seconds": 6000,
+  "predictions": [
+    "Gradient-selected low-rate fits reach the observed confidence gate in fewer updates than random seed11 and LoRA;this need not mean lower total cost.",
+    "Earlier adequate checkpoints reduce some fixed-step collateral damage;zero unrelated errors or unchanged transfer are not assumed.",
+    "Matched grad-enabled and no-grad evaluations agree on target argmax at the same state;the known high-rate last update itself destabilizes its correction.",
+    "Discovery is inexpensive relative to the old total sparse lifecycle,but total sparse cost may remain above LoRA because attachment/export/checking also count."
+  ],
+  "fixed": "Same original inputs,supports,FP16 base/FP32 trainables,Adam rates,cycling,loss scale,clipping,and50 updates. Continue after the first adequate checkpoint solely to recover the identical50-step reference. No norm/KL objective is added.",
+  "controls": "Require all final trainable tensors,all50 historical training rows,live and merged final teacher logits,and final merged generations to exactly reproduce their parents. Otherwise report a failed trajectory-control check,not a stopping advantage.",
+  "execution_audit": "At selected and final checkpoints compare grad-enabled and no-grad teacher outputs. For the known high-rate failure additionally audit the same final sampled prompt before and after the last update,and save parameters,gradient and Adam moments.",
+  "cost": "Rerun discovery once per case and require frozen selected supports. Report discovery,training,monitoring,serialization and diagnostic costs separately. Counterfactual time-to-stop excludes the continued control suffix. No production throughput claim follows from a single observed trajectory.",
+  "useful_result": "For the normal low-rate conditions,the selected-neuron early endpoint should retain>=7/8 complete transfer answers and have no new unambiguous preservation error on qualitative review. Its correction/preservation tradeoff and discovery-inclusive measured prefix cost must improve on the same stopping rule for random seed11 and official LoRA before advancing to fresh confirmation. Report all fixed50 and early outputs. The high-rate request is a diagnostic,not an extra tuned candidate.",
+  "limits": "Two exposed development facts;single deliberately strong clean random seed. No paper superiority,novel loss or robust recipe. Existing exact-score labels remain primary;semantic aliases and ambiguous questions are reviewed separately. Auxiliary targets are unchanged even where the base initially misses them."
+}

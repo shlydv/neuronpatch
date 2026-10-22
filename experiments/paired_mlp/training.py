@@ -5,7 +5,24 @@ import torch
 from neuronpatch.losses import completion_nll
 
 
-def fit(model, parameters, training, preserved, protocol, condition, check_time):
+def fit(
+    model,
+    parameters,
+    training,
+    preserved,
+    protocol,
+    condition,
+    check_time,
+    *,
+    before_update=None,
+    after_update=None,
+):
+    """Run the fixed reference updates; optional observers must not mutate state.
+
+    before_update sees clipped/unscaled gradients before Adam; after_update sees
+    the resulting weights. Observers may measure/export but must preserve model,
+    gradients, optimizer and RNG. The checkpoint study checks exact final parity.
+    """
     parameters = list(parameters)
     assert parameters and {id(p) for p in parameters} == {
         id(p) for p in model.parameters() if p.requires_grad
@@ -47,9 +64,6 @@ def fit(model, parameters, training, preserved, protocol, condition, check_time)
         norm = torch.nn.utils.clip_grad_norm_(parameters, protocol["gradient_clip"])
         if not torch.isfinite(norm):
             raise FloatingPointError("Nonfinite global gradient norm")
-        optimizer.step()
-        if any(not torch.isfinite(p).all() for p in parameters):
-            raise FloatingPointError("Nonfinite trainable value")
         row = {
             "step": step + 1,
             "task_nll": losses[0],
@@ -57,9 +71,16 @@ def fit(model, parameters, training, preserved, protocol, condition, check_time)
             "gradient_norm": float(norm),
             "example_indices": indices,
         }
+        if before_update is not None:
+            before_update(step + 1, row, optimizer)
+        optimizer.step()
+        if any(not torch.isfinite(p).all() for p in parameters):
+            raise FloatingPointError("Nonfinite trainable value")
         history.append(row)
         if step == 0 or (step + 1) % 10 == 0:
             print("TRAIN", condition["id"], row, flush=True)
+        if after_update is not None:
+            after_update(step + 1, row, optimizer)
     optimizer.zero_grad(set_to_none=True)
     return history
 
