@@ -1,0 +1,88 @@
+{
+  "recorded_utc": "2026-10-22T11:41:28.157410+00:00",
+  "inspection_only": true,
+  "new_gpu_jobs": 0,
+  "official_code": [
+    {
+      "repo": "IKMLab/FILet---Learning-in-the-Fisher-Subspace-A-Guided-Initialization-for-LoRA-Fine-Tuning",
+      "source_revision": "24d3d573b7921d5ee5c63ac773f170849c01992a",
+      "retrieved_utc": "2026-10-22T11:38:28.880317+00:00",
+      "scope": "Source downloaded for read-only inspection; no upstream code executed or incorporated.",
+      "license_paths": [],
+      "files": {
+        "README.md": {
+          "bytes": 2266,
+          "sha256": "cee0832c2f9782057c04fb20f40c6d4b1a92f9abcd7426a956b3e6e1d8b38faa"
+        },
+        "models/fisher_guided_init.py": {
+          "bytes": 997,
+          "sha256": "ba7e89e60d5fb5c102324f81df007ddf45d7f19790998e83fd3d6cf66efeb9c9"
+        },
+        "SxSy_computation.py": {
+          "bytes": 2298,
+          "sha256": "ecee31c3a933dc8ab5080a870534267ebd5047c06e9a12f49437f284e688357b"
+        }
+      },
+      "inspection_scope": "Core code files read;README project overview and source links inspected. No training entry point run,source incorporated or pretrained result reproduced."
+    },
+    {
+      "repo": "MohammadrezaBanaei/LoRA-XS",
+      "source_revision": "e50b1a82b5d7b7e87a0c46bc62e07e54f6648d31",
+      "retrieved_utc": "2026-10-22T11:38:29.312549+00:00",
+      "scope": "Source downloaded for read-only inspection; no upstream code executed or incorporated.",
+      "license_paths": [],
+      "files": {
+        "README.md": {
+          "bytes": 7310,
+          "sha256": "5fa449648cd63381f4ae3b7ca4376af049dcafeb82fa038e6bb8bf1895485d47"
+        },
+        "utils/initialization_utils.py": {
+          "bytes": 6325,
+          "sha256": "d8c15e616d161e245f71554ed6fdc77fbd0cdcff09c45acd36a35029b2c2d580"
+        },
+        "utils/latent_utils.py": {
+          "bytes": 2796,
+          "sha256": "efed1d91e9a9bcbba9515ad734425341d40486a670fae06ed71460f90a2684d7"
+        },
+        "utils/svd_utils.py": {
+          "bytes": 770,
+          "sha256": "f4de9628fa9a066a390f93455582b58ef4db9e2a33f8497c7e60a5e04cb82760"
+        }
+      },
+      "inspection_scope": "Core code files read;README project overview and source links inspected. No training entry point run,source incorporated or pretrained result reproduced."
+    }
+  ],
+  "paper_only": [
+    {
+      "title": "SVFT",
+      "url": "https://arxiv.org/html/2405.19597v1",
+      "sections": "3.1-3.2;code not inspected"
+    },
+    {
+      "title": "Learning to Reason in 13 Parameters",
+      "url": "https://arxiv.org/html/2602.04118v1",
+      "sections": "abstract and Section3;code not inspected"
+    },
+    {
+      "title": "Retaining by Doing",
+      "url": "https://arxiv.org/html/2510.18874v3",
+      "sections": "abstract,introduction and Sections2.1-2.2;code not inspected"
+    },
+    {
+      "title": "LoRA-One",
+      "url": "https://arxiv.org/abs/2502.01235",
+      "sections": "abstract and official repository algorithm overview only;no code inspection"
+    }
+  ],
+  "fixed_neuron_basis_accounting": {
+    "source_identity_sha256": "e86a7b3731419b289ca5a190a6783ea8f1fab68a708a793f04dd256273032fe1",
+    "neurons": 173,
+    "paired_direction_scalars": 1328640,
+    "fp32_fixed_direction_bytes": 5314560,
+    "fp32_trainable_coefficient_bytes": 692,
+    "fp32_combined_raw_tensor_bytes": 5315252,
+    "metadata_and_tensor_container_overhead_included": false,
+    "scope": "Hypothetical one-coefficient-per-neuron representation derived from current dimensions;not an implemented adapter or measured compressed artifact."
+  },
+  "decision": "Do not build a coefficient-only adapter merely to claim tiny updates. Keep current calibration frozen;any later capacity-control test must count stored bases,discovery and strong fixed-basis controls."
+}

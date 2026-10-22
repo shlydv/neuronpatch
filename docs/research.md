@@ -161,3 +161,12 @@ LoRA rank, so its all-layer baseline has more trainable parameters. The paper
 provides relevant evidence for inexpensive placement controls, not proof that
 our neuron score works or that its proxy predicts preservation on our inputs.
 Its empirical claims and implementation have not been independently reproduced.
+
+## Fixed-subspace boundary checked on 22 October
+
+The [fixed-subspace decision](../experiments/functional_selection/SUBSPACE_DECISION.md)
+records additional relevant prior art and pins the inspected LoRA-XS and FILet
+core source. It also separates trainable coefficient count from the bytes needed
+for task-specific direction vectors. These findings constrain later claims and
+baseline choices; they do not establish another successful method. The pending
+functional calibration is unchanged.
