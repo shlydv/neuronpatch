@@ -11,6 +11,7 @@
   "rejected_input_sources": [],
   "new_fits": 0,
   "status": "RUNNING",
-  "status_checked_utc": "2026-10-22T07:22:05.470664+00:00",
-  "results_status": "Kaggle reports RUNNING. Execution log service is unavailable(HTTP400/500); no preflight/model-stage or replay outcome claimed."
+  "status_checked_utc": "2026-10-22T07:29:43.318992+00:00",
+  "results_status": "Direct session log stream works with the UI-observed session ID. All39 required parent artifact hashes verified; pinned dependencies and model loading completed. No completed endpoint comparison yet.",
+  "kernel_session_id": 361047763
 }

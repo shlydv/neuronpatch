@@ -123,6 +123,15 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     assert completed["new_fits"] == 0 and completed["observations"] == 48
     replay_proof = verify_replay(tmp_path / "run", tmp_path / "replay", replay_spec, tokenizer)
     assert replay_proof["endpoints"] == 8 and replay_proof["decoded"] == 48
+    from experiments.paired_endpoint.analysis import summarize as replay_summary
+    from experiments.paired_endpoint.review import packet as replay_packet
+
+    scored = replay_summary(tmp_path / "run", tmp_path / "replay")
+    assert scored["new_fits"] == 0 and scored["observations"] == 48
+    assert len(scored["cases"]) == 8 and len(scored["conditions"]) == 4
+    reviewed = replay_packet(tmp_path / "run", tmp_path / "replay")
+    assert reviewed["observations"] == 48 and not reviewed["full_output_review_complete"]
+    assert sum(len(r["occurrences"]) for r in reviewed["items"]) == 48
     record_path = tmp_path / "replay/endpoints.json"
     altered = json.loads(record_path.read_text())
     altered[0]["live_metrics"]["task_mean_nll"] += 0.5

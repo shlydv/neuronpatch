@@ -11,5 +11,16 @@
   "parent_merged_replay_exact": true,
   "independent_teacher_loss_and_KL_recomputed": true,
   "altered_reported_loss_rejected": true,
-  "new_pretrained_fits": 0
+  "new_pretrained_fits": 0,
+  "post_submission_postprocessing": {
+    "scope": "Independent verifier,whole-answer analysis and full-context collection only;accepted worker/protocol unchanged",
+    "pinned_targeted_passed": 4,
+    "actual_replay_dtypes": [
+      "float32",
+      "float16"
+    ],
+    "endpoints_per_dtype": 8,
+    "decoded_and_review_packet_observations_per_dtype": 48,
+    "altered_live_metric_rejected": true
+  }
 }
