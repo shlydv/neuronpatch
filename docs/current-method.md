@@ -146,7 +146,12 @@ a trained comparison, followed by fresh cases and total-cost accounting.
 The [experimental fitting loop](../experiments/guarded_training/README.md) now
 implements these transactions, equal-example correction CE plus anchored KL,
 and complete-token stopping. CPU rollback, independent-loss and separable versus
-conflicting-response checks pass; there is no pretrained outcome for this new loop.
+conflicting-response checks pass. Full FP32/FP16 tiny-Qwen workers also exercise
+all four representations, actual fitting, save/reload/merge and base restoration;
+their separate verifier checks78 generations and18 final teacher records per run.
+The [frozen eight-fit development pilot](../experiments/guarded_training/launch_v1.json)
+is accepted and running with unchanged criteria. Its worker logs confirm the
+first fit has begun; there is no completed pretrained outcome for this new loop.
 
 The [first submission](../experiments/functional_selection/launch_v1.json)
 was deliberately cancelled after account GPU quota was observed accruing with

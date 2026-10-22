@@ -75,7 +75,7 @@ def main():
     (args.output / "run.py").write_text(script)
     metadata = {
         "id": "shlydv/neuronpatch-guarded-training-v1-20261022",
-        "title": "neuronpatch measured preservation training v1 20261022",
+        "title": "neuronpatch guarded training v1 20261022",
         "code_file": "run.py",
         "language": "python",
         "kernel_type": "script",

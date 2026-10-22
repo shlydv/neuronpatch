@@ -44,7 +44,7 @@ as successful adaptation.
 
 ## Next pretrained comparison
 
-The [prepared protocol](protocol_v1.json) fixes eight fits on Qwen3-4B, with
+The [frozen protocol](protocol_v1.json) fixes eight fits on Qwen3-4B, with
 60 proposals and four backtrack scales at most. Each method uses the same
 previously successful nominal learning rate,0.0003, full-batch objective and
 0.9 complete-training-token confidence stop. Actual mean/worst-token
@@ -53,6 +53,9 @@ not universal safety thresholds. Model loading/worker execution has a3000-second
 internal limit, the worker process3300seconds, and a requested provider session
 limit5400seconds. Setup subprocesses separately have300/300/900-second limits;
 none of these bounds queue wait.
+The [accepted Kaggle version1](launch_v1.json) has byte-identical frozen source,
+is running at its recorded check, and worker logs confirm model loading and
+the first gradient-selected fit. Its source and criteria remain fixed.
 
 Use identical measured protection and stopping for gradient-selected paired
 neurons, gain/risk-selected neurons, random paired neurons, and official LoRA.

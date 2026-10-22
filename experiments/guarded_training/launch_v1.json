@@ -1,0 +1,28 @@
+{
+  "observed_utc": "2026-10-22T15:42:55.022854+00:00",
+  "kernel": "shlydv/neuronpatch-guarded-training-v1-20261022",
+  "url": "https://www.kaggle.com/code/shlydv/neuronpatch-guarded-training-v1-20261022",
+  "kernel_id": 140234615,
+  "accepted_version": 1,
+  "accepted_utc": "2026-10-22T15:33:20.163379+00:00",
+  "status": "RUNNING",
+  "ui_verified_session_id": 361183228,
+  "source_sha256": "bdd26afacde4c6557fb2df4ea9a9109730123583e8f9b4e0dcc92a3b65d0a6a4",
+  "script_bytes": 203117,
+  "bundled_files": 47,
+  "protocol_sha256": "219d3245d1a29e9a4b53ee10ff13e38b9eb57c65e02b41bca0b2691618fcdb35",
+  "accepted_source_byte_identical": true,
+  "all_invalid_source_lists_empty": true,
+  "provider_session_timeout_requested_seconds": 5400,
+  "provider_timeout_enforcement_live_verified": false,
+  "worker_script_progress_confirmed": true,
+  "observed_phase": "Model loaded;case0 gradient-selected fit started. No completed scientific result yet.",
+  "initial_request": "HTTP400 rejection,with title/address mismatch warning. Root response body was not retained. A complete own-notebook inventory found no matching notebook. Corrected the title metadata only;the accepted script and protocol are byte-identical.",
+  "metadata_correction": {
+    "old_title": "neuronpatch measured preservation training v1 20261022",
+    "new_title": "neuronpatch guarded training v1 20261022",
+    "scientific_code_changes": false,
+    "builder_default_corrected_after_source_freeze_for_future_bundles": true
+  },
+  "scope": "Eight fits on two exposed development facts;cached fixed supports;no fresh confirmation. Random and LoRA receive the same measured guard. No new recipe or superiority established."
+}
