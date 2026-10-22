@@ -3,7 +3,9 @@
 This experimental selector measures a different quantity from correction-gradient
 magnitude: the predicted task benefit and conditional-output disturbance of an
 explicit proposed parameter update. It remains outside the public API. CPU
-oracles and tiny-Qwen checks pass; no pretrained outcome is established yet.
+oracles and tiny-Qwen checks pass. The [completed pretrained calibration](complete_v2/REPORT.md)
+finds less held-out drift for similar immediate learning gain, but fails its
+local risk-prediction gate and achieves no complete one-step edits.
 
 The frozen [protocol](protocol_v1.json) and [source identity](frozen_v1.json)
 precede inference. The [first Kaggle submission](launch_v1.json) was accepted
@@ -11,9 +13,8 @@ with the exact frozen 150348-byte script and 37 bundled files. It was deliberate
 cancelled to control resource use after the missing provider limit was found;
 only an empty persisted log was available. This gives no scientific outcome.
 A [single operational retry](retry_v2.json) is accepted as version 2 with
-byte-identical source and a requested 5400-second provider session limit. It is
-running at the recorded status check, and worker logs confirm dependency
-installation. No pretrained calibration result is available yet. No setting or result
+byte-identical source and a requested 5400-second provider session limit. It
+completes successfully; all outputs and source provenance are verified. No setting or result
 from the unavailable first run selects the method or changes the frozen criteria.
 
 The [completed stopping study](../paired_checkpoints/complete_v1/REPORT.md)
@@ -141,6 +142,13 @@ PYTHONPATH=.:src python -m experiments.functional_selection.diagnose \
 Success would justify a trained-method comparison with strong LoRA controls;
 it would not demonstrate an improved library recipe. Fresh cases, lower budgets,
 another task family and measured retention remain necessary.
+
+The completed experiment does not pass that gate. Its saved-logit audit points
+to finite softmax curvature as a substantial source of optimism, rather than
+evidence that merely increasing probe count will fix the estimate. The next
+candidate must check actual finite preservation changes and roll back rejected
+updates, including optimizer moments. This changes the method; it does not
+retroactively relax the frozen gate. See the [complete report](complete_v2/REPORT.md).
 
 ## Limits and provenance
 

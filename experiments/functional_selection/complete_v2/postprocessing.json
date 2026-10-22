@@ -1,0 +1,36 @@
+{
+  "completed_utc": "2026-10-22T15:14:53.360854+00:00",
+  "new_model_executions": 0,
+  "focused_cpu_checks": [
+    {
+      "runtime": "pinned Torch2.6.0",
+      "tests": 9,
+      "passed": 9,
+      "elapsed_seconds": 1.62
+    },
+    {
+      "runtime": "modern Torch2.14.1",
+      "tests": 9,
+      "passed": 9,
+      "elapsed_seconds": 1.72
+    },
+    {
+      "runtime": "minimum Torch2.4.1",
+      "tests": 9,
+      "passed": 9,
+      "elapsed_seconds": 1.45
+    }
+  ],
+  "checks": "Three saved-logit math oracles,three optimizer transaction checks,anchored-loss oracle and separable/conflicting full fitting examples. No pretrained quality claim for guarded fitting. The full suite was not rerun for these isolated experimental additions.",
+  "file_sha256": {
+    "experiments/functional_selection/logit_path.py": "586b2bce800502a21dc5ba39f05656c98ddd852ccbab1decfa0fbb7d559fb364",
+    "experiments/guarded_training/__init__.py": "cab6f569e46b881bda026b9baf8a81055e5404beaaa0a4c384ba5b0ce8501fb5",
+    "experiments/guarded_training/step.py": "cc2e44bda62f3aaccf0283541d22bdef209accdeed47fe1ec26d6115299362fa",
+    "experiments/guarded_training/training.py": "74cf8e7e6ed07606e91e5872a4e0da45a2ede0c46ddc5b4304a538cf6da6c51a",
+    "tests/test_logit_path.py": "b5b04ea75b0f5993fd5b2a082b891066a1f0c0f7fdc6cf2ecf2a4c3584954d89",
+    "tests/test_guarded_step.py": "f5623b8c1785188af90d78e605a3ab24b7ca72457b1d2f247dc66c742dff5a1b",
+    "tests/test_guarded_training.py": "6132d035d05aa68750eec255d52090d39a5cec2523207278ec2df2346585fdbe"
+  },
+  "ruff_check": "pass",
+  "git_diff_check": "pass"
+}

@@ -1,0 +1,355 @@
+{
+  "one_step_edits": 16,
+  "observations": 310,
+  "primary": [
+    {
+      "case": 0,
+      "candidate_gain": 5.59431955303003,
+      "baseline_gain": 5.717206013366828,
+      "candidate_heldout_kl": 0.2006735225611933,
+      "baseline_heldout_kl": 0.34978357123306053,
+      "gain_squared_per_kl_ratio": 1.6689225769912384,
+      "candidate_kl_floor_applied": false,
+      "criteria": {
+        "informative": true,
+        "positive_correction_gain": true,
+        "retains_half_baseline_gain": true,
+        "twenty_percent_less_heldout_kl": true,
+        "twenty_five_percent_more_gain_squared_per_kl": true
+      },
+      "passes_primary": true
+    },
+    {
+      "case": 1,
+      "candidate_gain": 5.5905214709091355,
+      "baseline_gain": 5.584191853409156,
+      "candidate_heldout_kl": 0.2649824370758516,
+      "baseline_heldout_kl": 0.7011018020832396,
+      "gain_squared_per_kl_ratio": 2.651843995149111,
+      "candidate_kl_floor_applied": false,
+      "criteria": {
+        "informative": true,
+        "positive_correction_gain": true,
+        "retains_half_baseline_gain": true,
+        "twenty_percent_less_heldout_kl": true,
+        "twenty_five_percent_more_gain_squared_per_kl": true
+      },
+      "passes_primary": true
+    }
+  ],
+  "small_step_calibration": [
+    {
+      "case": 0,
+      "conditions": [
+        {
+          "condition": "gradient_norm",
+          "observed": 0.003908571034754,
+          "predicted": 0.00026895585562038534,
+          "ratio": 0.06881181209933238,
+          "passes": false
+        },
+        {
+          "condition": "adam_gain",
+          "observed": 0.004083411210988826,
+          "predicted": 0.0003016665390835819,
+          "ratio": 0.07387611080455728,
+          "passes": false
+        },
+        {
+          "condition": "gain_risk",
+          "observed": 0.00026179008878639883,
+          "predicted": 5.3074312051650755e-05,
+          "ratio": 0.20273613985041058,
+          "passes": false
+        },
+        {
+          "condition": "random",
+          "observed": 2.100823289431759e-07,
+          "predicted": 1.1311453626983605e-07,
+          "ratio": 0.538429561585981,
+          "passes": true
+        }
+      ],
+      "passes": false
+    },
+    {
+      "case": 1,
+      "conditions": [
+        {
+          "condition": "gradient_norm",
+          "observed": 0.006771225830333592,
+          "predicted": 0.007815337989310897,
+          "ratio": 1.1541983955548956,
+          "passes": true
+        },
+        {
+          "condition": "adam_gain",
+          "observed": 0.007299075329963429,
+          "predicted": 0.008475909743738897,
+          "ratio": 1.161230616287031,
+          "passes": true
+        },
+        {
+          "condition": "gain_risk",
+          "observed": 0.0015825106682471107,
+          "predicted": 0.0011758220986871578,
+          "ratio": 0.7430105352715082,
+          "passes": true
+        },
+        {
+          "condition": "random",
+          "observed": 9.299927533403988e-06,
+          "predicted": 1.3859857823654895e-05,
+          "ratio": 1.4903189055906403,
+          "passes": true
+        }
+      ],
+      "passes": true
+    }
+  ],
+  "licenses_trained_method_pilot": false,
+  "generations": [
+    {
+      "case": 0,
+      "condition": "gradient_norm",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [
+            "case-0-scope-test-1",
+            "case-0-scope-test-2",
+            "case-0-scope-test-3"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "adam_gain",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [
+            "case-0-scope-test-1",
+            "case-0-scope-test-2",
+            "case-0-scope-test-3"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "gain_risk",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [
+            "case-0-scope-test-1",
+            "case-0-scope-test-2",
+            "case-0-scope-test-3"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 0,
+      "condition": "random",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "gradient_norm",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 2
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "adam_gain",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 1
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-test-3"
+          ],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "gain_risk",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 1
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "case": 1,
+      "condition": "random",
+      "scale": 0.03,
+      "banks": {
+        "target_test": {
+          "hits": 0,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "new_target_mentions": [],
+          "truncated": 0
+        }
+      }
+    }
+  ],
+  "full_output_review_complete": true,
+  "scope": "Two exposed facts and data-informed one-step edits. Predictor calibration only; no multi-step recipe,novel method or superiority established. Complete answer review remains separate."
+}

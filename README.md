@@ -12,7 +12,7 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Upstream FiNE reference](experiments/fine_reference/reference16_v1/REPORT.md) | Requested prefixes on 15/16 original prompts versus 0/16 for random; 5/16 rewordings | Robust complete-answer editing or a new method |
 | [Matched-budget Qwen3-4B comparison](experiments/paired_mlp/complete_v1/REPORT.md) | Selected guided, random and LoRA conditions learn all 8 transfer answers across two facts; guided updates also cause unrelated errors | A guided-selection advantage |
 | [Stopping and deployment checks](experiments/paired_checkpoints/complete_v1/REPORT.md) | Earlier stopping preserves the edits, but the guided errors persist; the separate replay rules out merging on these endpoints | A safe or cheaper guided recipe |
-| [Functional-direction calibration](experiments/functional_selection/README.md) | Mathematical and tiny-model checks pass; the frozen pretrained test is pending | Pretrained effectiveness or preservation |
+| [Functional-direction calibration](experiments/functional_selection/complete_v2/REPORT.md) | Risk-aware selection lowers held-out drift for similar one-step learning gain; finite risk prediction fails | A reliable risk certificate, completed edits, or a trained advantage over LoRA |
 
 Start with the [current method decision](docs/current-method.md) for the active
 hypothesis and decision boundary. The [experiment history](docs/experiment-history.md)

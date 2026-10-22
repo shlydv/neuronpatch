@@ -116,23 +116,48 @@ fresh-Adam neuron proposals. It compares gradient magnitude, proposed gain,
 gain/risk and random supports. Its first bounded calibration uses sixteen
 restored one-step edits before a longer optimizer fit: the local proxy must
 predict finite changes and improve useful learning per unit held-out drift.
-CPU covariance/dense-gradient oracles and FP32/FP16 tiny-Qwen execution pass;
-there is no new pretrained outcome yet. This stage does not establish a robust
-recipe, and it does not replace the required trained LoRA comparison.
-Its [first Kaggle submission](../experiments/functional_selection/launch_v1.json)
-was accepted with byte-identical source, then deliberately cancelled for resource
-control. The worker was bounded, but dependency setup and the provider session
-were not. The account's GPU quota was accruing during the unobservable run;
-its acknowledged cancellation yielded only an empty log and no usable model
-artifact. This is no evidence for or against the selection hypothesis.
-A [single operational retry](../experiments/functional_selection/retry_v2.json)
-is accepted as version 2 with identical source and criteria and a requested
-5400-second provider session limit; it is running at the recorded status check.
-Worker logs confirm that the frozen script has reached dependency installation.
-The first execution was confirmed cancelled before retry submission. The new
-submission guard requires an explicit provider limit;
-neither it nor that limit bounds queue wait. Compute from the unavailable first
-execution must remain visible in total cost reporting.
+CPU covariance/dense-gradient oracles and FP32/FP16 tiny-Qwen execution pass.
+The [completed pretrained calibration](../experiments/functional_selection/complete_v2/REPORT.md)
+reduces held-out mean KL by42.63% and62.20% at the primary scale, retaining
+97.85% and100.11% of gain-only's immediate correction-loss improvement. Both
+benefit/disturbance criteria pass, but the smaller-scale numerical-calibration
+criterion fails in case0. The overall frozen advancement gate therefore fails.
+All one-step conditions still achieve0/8 requested complete transfer answers.
+Full review attributes the observed preservation-score losses to country-name
+versus demonym/alias changes, rather than new clear factual errors on this bank.
+This result is not a trained-method comparison or evidence against strong LoRA.
+
+The post-hoc saved-logit audit identifies a concrete limitation: for case0's
+smaller gain-only update, the sketch predicts0.000302 KL and the base quadratic
+form of the observed logit change is0.000269, while actual KL is0.004083.
+Softmax curvature beyond the base quadratic approximation accounts for much of
+that gap. It is not justified to assume more random probes alone will repair it.
+Extrapolating the smaller observed logit change and evaluating exact softmax KL
+is much closer to the larger-scale measurement for these two risk-aware cases,
+but remains a retrospective diagnostic, not a validated step controller.
+
+The next candidate changes the role of risk estimation: use it to rank initial
+supports, then accept or backtrack updates using actual measured preservation
+and correction changes. Rejected updates must restore optimizer moments and
+step counters as well as parameter values. Apply identical measured protection
+to random and LoRA controls, retaining a no-edit outcome. The original frozen
+prediction gate is not relaxed. This is a new method hypothesis that still needs
+a trained comparison, followed by fresh cases and total-cost accounting.
+The [experimental fitting loop](../experiments/guarded_training/README.md) now
+implements these transactions, equal-example correction CE plus anchored KL,
+and complete-token stopping. CPU rollback, independent-loss and separable versus
+conflicting-response checks pass; there is no pretrained outcome for this new loop.
+
+The [first submission](../experiments/functional_selection/launch_v1.json)
+was deliberately cancelled after account GPU quota was observed accruing with
+no usable worker logs and no provider session limit. It yielded no model outcome.
+The [identical operational retry](../experiments/functional_selection/retry_v2.json)
+completes as provider version2 in460.95seconds, including setup/model loading,
+with a requested5400-second provider limit. All37 source hashes, the executed
+submission,310 decoded observations,18 teacher records and sixteen restored
+updates are independently verified; all62 distinct output contexts are reviewed.
+The unavailable first execution remains part of research cost, rather than being
+hidden by reporting the successful retry's runtime as total cost.
 
 The [no-forward context audit](../experiments/functional_selection/context_audit_v1.json)
 also bounds interpretation of that calibration. Equally averaging its six

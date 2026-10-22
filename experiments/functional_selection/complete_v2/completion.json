@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "optimizer_trajectories": 0,
+  "one_step_edits": 16,
+  "observations": 310,
+  "base_generation_controls": 32,
+  "final_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "base_restored": true
+}

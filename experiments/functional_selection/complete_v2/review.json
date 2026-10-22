@@ -1,0 +1,387 @@
+{
+  "reviewed_utc": "2026-10-22T15:05:19.817617+00:00",
+  "reviewer": "assistant;not blinded human review",
+  "observations": 310,
+  "unique_context_outputs": 62,
+  "all_contexts_reviewed": true,
+  "truncated_observations": 4,
+  "unexpected_special_observations": 0,
+  "new_unambiguous_preservation_factual_errors_identified": 0,
+  "requested_edit_successes": 0,
+  "items": {
+    "cfc389370bcff315656fbb555cafed3589ea3dd9f885cf78a9a27eb7648f5ef4": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "72ccfad0df9487a2a35357abaa5e6af39f48c53a77ecb56be5a45410aaf82916": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "63dd5cba20b01c5c4b506305d9fdf7a376331ebfe5cd40778bc98c9bca5733d8": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "4335ce471a5bd2dc28c9122b7adf3bcbfefd1706e72504a7dd606fe74199d112": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "d806effac60a73549133da5380a6706e2c406f8d4d96c5df632f7e3efd0566db": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "f790694f2e24ab34988587c763b154fae35a2da5d1963b13c276285ada96e232": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "08e6592e87ea2d030436f3710d0ef0b2eec2bc1042526bdad9adf3bb310cba97": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "847229208767042d5a8144f8b93cd6551c86588a2633e3e8240218b7ed37ee93": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "a81af75b2978290465d963b07eec12ac43e05fb1458690aea63f269dd8b8b05c": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "9b1b5a7a4b03ec89102c5f2d09bfe4f911e956ef7fb963c874c890963b04eb9e": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "107b24fd613c735fcf2ff82029caf42396b97cb67737ffb70e97584e78e29924": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "f5c1479fd440a05ba86544d9faa3a01cab150c7ee1657975c27b51fe614e6e39": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "7653f266a5b17f0481b350cd00ebacffc5e23507d1569e0679dd2ff9e8d1d632": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "a77058befe8cdd42d5f130cd6457e39526f7d3f7e695805b4e9557ba8e28b442": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "6ed79112c44df92c6f2eea43dfc94c8c296da1f43dc6bd00da82f4758015be29": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "c861385b7b0f4de3b48841549600f5c9053d2075e9e66c31c486a9f7e389f769": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "421f20aeaa0538af570bba5c2c614bd6d02e2f40b56c8562e0adc69d8f9dc533": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "65fab1aafb3269722cd48a58ed336b778870c981064976b3b7889a2e3752233b": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "2cbc3a0ae3eb6339f85f9b1eb2c74f264dce9ffc4fb5df748325d96c6fcd4887": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "47ddacc10d495c71fa87a13fb2ccfa1a0afa392127550d5954a68856e96a3292": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "8e46e388080f68ba15fc720c67b57fdb7aa273d8e67851dc37721b9def38a8e7": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "04e488702b61a14743a94f9b78f921bc8d8f881ba474071101181842cb2b1f45": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "f3a8781fde6ef5052b6546ad13659b2b431187d95cf12485e0febfc7cd95aa15": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "1782d26aa7dedec9e92d18ee30b60bf26155e718f243307fd201e1cb8f8ecbd0": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "c4ff962d76bcb9683cfbceb01ab24277d5a2d4fec398872a66befea851e6b634": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "def331a919d523aa0a8b8bef0f535dbed224ebca9f237b8e2a277f883e15d26d": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "a99984f98dba8d995f7157402e4aa0a277e93ca07d7da519c7aa51aa1e4f3a68": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "760ba0e610757ddcadeed70ad23006ecc251af8e388ff34bc05a31ed481a6478": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 10
+    },
+    "34cfb9533102e3c86c973ccecf12ef3e7a7cab125a3f2694f51a1113dfc0cf25": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 7
+    },
+    "a96eea788125a85885f3776757aaa70554c81a7e34599f8bfdb71669195a435e": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 7
+    },
+    "353ff38dcee993349963c4265a2c491247793cd314416b2ebc6cd175e836205f": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 7
+    },
+    "39ee991d07c8d2a4e7713c672a6e72747c1a48e150c63049d7f086754d5a4c35": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "75ffee1839e43426a183e751d334c41f9b0029264401162fcf1276bbc5479514": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "c73aee6272ed164695d12d8fd14129aa4850974d6bae056c39eb8a6e4b1e2563": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "b378800a8c3fa05b144ab924f8d53831083cd5353fc7e958f172ac7c7b6b1203": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "c070fa1db3252df6964a9220c9a2be02bcdbe2e3823d64d75fc91b1f5f58987d": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "892870aa60c5aace424e83d6a4a87446f3f9c221051e27ef6d07b3aa158ec611": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "cbccb0df23d02949513c48df53072fa534f59ce9fb72381d2870a1280f79cffa": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "217711339542a9c0059adb3bf2681f2574f2bb9c521433b58bbfb9cce82ef1ad": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "16d3337a9f2c4e55abc995169522946829a2e7613d11ecc779f2aefebefb4a69": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "c8a95227f71bd4f87446517c1d0fadedbad5ccd7eaf0b3a7ff940dd6278f639a": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "ccdf1140dcea15e513e07343054f646e081a792a776d32d02f4d508be978c6ee": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "413d2839ce226d215f7bb04e9773d6f1b5e11eb042e3c9c8435ee6700f27945e": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "1c36a0f561d86af6047631e21fcdb605546051dde69de24481dc349711caed19": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 5
+    },
+    "f42c41c1b24b91c264be1febeec458e937e2257448cb2f3201c13ecd3f7a065d": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 5
+    },
+    "47562914b997af4e4c932b783fb15824e79ff8d1c1511f50602b8ac6d87933ca": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "8b8aa88410e255032354a3a2d7fe6d78fa455eee7fe6f96f57a8794ae96e04e4": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "78110e29fb519145e991c8d6799e2a0ee95a79b0ab0775f8b6c1fa288a04b532": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "f8691448e48f080825159fe13703743ebd3bca00679a912745c90537918bf8a9": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 1
+    },
+    "d918e5f6cef9ef4959fb7f77932fd6a7c5722b4aa97fe8ce529880e1bbaf7c83": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": true,
+      "occurrences": 1
+    },
+    "e4465a288d5e3d5f083c26209a7258977d71e3f9403657cec9a0303cf2e5add7": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": true,
+      "occurrences": 1
+    },
+    "d36ddcf709c9727c2d8630cbe222072a66d60ea2d2196be75b8d82bf3003af7f": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "055b70e7888543bbb81cda193d8ce8b80cf3e4a918691aafdba2188f5a9e1f4e": {
+      "verdict": "same country content or legacy granularity ambiguity",
+      "note": "American, British and America differ from the frozen country-name aliases; they do not establish new factual corruption. The pre-existing England/UK granularity mismatch remains.",
+      "truncated": false,
+      "occurrences": 2
+    },
+    "215106c7e8f5f89b8a6c25c47dbcbeea3c934a10082bed37e3739b80dbf4224f": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "d5d8f19d1e27bc505cd4b08df6dc5c4c18f6344d9d2f8af1ba25241707d3470f": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "c4e52c23dd8c2284e5860364d7592106d7ea98a651e946add46c5d94db15c91d": {
+      "verdict": "factual content preserved on this question",
+      "note": "Unicode water formula and the full triangle completion are valid despite frozen alias misses; punctuation changes preserve content.",
+      "truncated": false,
+      "occurrences": 3
+    },
+    "a654c8f6797828edef6f6a88a7c8c18a4441ed1f679acc7b11c5a3c27b8560ab": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 1
+    },
+    "93c27f289d972661e23853078147ce4c1bdaf0f658f6e7643d23b7882965cfd5": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 1
+    },
+    "06552150d25f2e4597e05a0058161bf2a13508ed0e0657fe258d12cc8c472475": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": true,
+      "occurrences": 2
+    },
+    "d281d4dec05e2def4a654addc3bfe405786556de69bf15ebb067d23446b2fe10": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 1
+    },
+    "22ea7166091282025284ebd3c9be4a4c480523bd839d063531c4d32eef12fcf7": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 1
+    },
+    "6ff2bd31c079bc81308c78c5dccca868f78ab5d148a90d0fea19e39c6cff653a": {
+      "verdict": "requested counterfactual edit not achieved",
+      "note": "These one-step updates do not complete the requested synthetic edit. Baseline answers are not required to match the counterfactual target.",
+      "truncated": false,
+      "occurrences": 1
+    }
+  },
+  "packet_sha256": "03c0f300bdb00b878822dfbfa4408ea0072b21aa6fc77e837ff4094480876189",
+  "limits": "Small exposed bank. No new factual corruption identified is not a guarantee of preservation. Target generations fail and four truncate."
+}

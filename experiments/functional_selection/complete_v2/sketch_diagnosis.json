@@ -1,0 +1,867 @@
+{
+  "post_hoc_diagnostic": true,
+  "frozen_criteria_or_interventions_changed": false,
+  "new_model_executions": 0,
+  "cases": [
+    {
+      "case": 0,
+      "anchors": 6,
+      "probes_per_anchor": 2,
+      "full_supports": {
+        "adam_gain": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 786.6973106715129,
+          "joint_curvature": 6.033330781671638,
+          "diagonal_curvature": 0.22863354504108116,
+          "joint_to_diagonal": 26.388650801821587,
+          "predicted_gain_squared_per_joint_curvature": 102578.93707699481,
+          "zero_measured_joint_curvature": false
+        },
+        "gain_risk": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 705.6080558777522,
+          "joint_curvature": 1.061486241033015,
+          "diagonal_curvature": 0.11565168537976811,
+          "joint_to_diagonal": 9.178303260755674,
+          "predicted_gain_squared_per_joint_curvature": 469043.03539069206,
+          "zero_measured_joint_curvature": false
+        },
+        "gradient_norm": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 771.8296377514927,
+          "joint_curvature": 5.379117112407706,
+          "diagonal_curvature": 0.22715924335494653,
+          "joint_to_diagonal": 23.679939380686324,
+          "predicted_gain_squared_per_joint_curvature": 110746.98268559432,
+          "zero_measured_joint_curvature": false
+        },
+        "random": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 32.6894112296701,
+          "joint_curvature": 0.00226229072539672,
+          "diagonal_curvature": 0.00022316494395459492,
+          "joint_to_diagonal": 10.13730331165725,
+          "predicted_gain_squared_per_joint_curvature": 472352.0255581166,
+          "zero_measured_joint_curvature": false
+        }
+      },
+      "leave_one_anchor_out": [
+        {
+          "name": "anchor-0",
+          "training_probe_rows": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            0,
+            1
+          ],
+          "overlap_with_full_selection": 146,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 727.3292696707342,
+            "joint_curvature": 1.1169673469342498,
+            "diagonal_curvature": 0.10454776128895542,
+            "joint_to_diagonal": 10.683799759682161,
+            "predicted_gain_squared_per_joint_curvature": 473610.86066816206,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 727.3292696707342,
+            "joint_curvature": 6.3298840894140085,
+            "diagonal_curvature": 0.3514190041932561,
+            "joint_to_diagonal": 18.01235566057495,
+            "predicted_gain_squared_per_joint_curvature": 83573.07322648569,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 15.740933697678877,
+            "diagonal_curvature": 0.4908449592006666,
+            "joint_to_diagonal": 32.06905439818052,
+            "predicted_gain_squared_per_joint_curvature": 39317.404577407724,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-1",
+          "training_probe_rows": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            2,
+            3
+          ],
+          "overlap_with_full_selection": 152,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 714.8239919278869,
+            "joint_curvature": 0.3811463917788736,
+            "diagonal_curvature": 0.052701103050340134,
+            "joint_to_diagonal": 7.232227974712451,
+            "predicted_gain_squared_per_joint_curvature": 1340622.2660299162,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 714.8239919278869,
+            "joint_curvature": 6.958225555586575,
+            "diagonal_curvature": 0.48966473586678927,
+            "joint_to_diagonal": 14.21018310266787,
+            "predicted_gain_squared_per_joint_curvature": 73434.43171736116,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 17.459893639333398,
+            "diagonal_curvature": 0.7219086242434762,
+            "joint_to_diagonal": 24.185739099086792,
+            "predicted_gain_squared_per_joint_curvature": 35446.53085535174,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-2",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            4,
+            5
+          ],
+          "overlap_with_full_selection": 171,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 711.2524576150595,
+            "joint_curvature": 1.2456424533481314,
+            "diagonal_curvature": 0.12567866119653445,
+            "joint_to_diagonal": 9.911328156179305,
+            "predicted_gain_squared_per_joint_curvature": 406119.7955350025,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 711.2524576150595,
+            "joint_curvature": 0.6915064596226072,
+            "diagonal_curvature": 0.09159373747618221,
+            "joint_to_diagonal": 7.549713317489906,
+            "predicted_gain_squared_per_joint_curvature": 731562.3034664758,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 2.998754357994909,
+            "diagonal_curvature": 0.1556010647708876,
+            "joint_to_diagonal": 19.272068365408547,
+            "predicted_gain_squared_per_joint_curvature": 206383.24608608757,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-3",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            6,
+            7
+          ],
+          "overlap_with_full_selection": 172,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 705.7333299039586,
+            "joint_curvature": 1.2802449203936141,
+            "diagonal_curvature": 0.1384229135841359,
+            "joint_to_diagonal": 9.248793333738483,
+            "predicted_gain_squared_per_joint_curvature": 389034.57065402786,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 705.7333299039586,
+            "joint_curvature": 0.00022720240508884818,
+            "diagonal_curvature": 0.0021253615833316383,
+            "joint_to_diagonal": 0.10690058899657633,
+            "predicted_gain_squared_per_joint_curvature": 2192140231.7134895,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 0.00011588153404088749,
+            "diagonal_curvature": 0.0033211487919266583,
+            "joint_to_diagonal": 0.03489200312933361,
+            "predicted_gain_squared_per_joint_curvature": 5340735810.413259,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-4",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            8,
+            9
+          ],
+          "overlap_with_full_selection": 173,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 705.6080558777522,
+            "joint_curvature": 1.2737561180100117,
+            "diagonal_curvature": 0.1387744674089329,
+            "joint_to_diagonal": 9.178605703141182,
+            "predicted_gain_squared_per_joint_curvature": 390877.5953888433,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 705.6080558777522,
+            "joint_curvature": 0.00013685614803105815,
+            "diagonal_curvature": 3.7775233944163036e-05,
+            "joint_to_diagonal": 3.622906696841382,
+            "predicted_gain_squared_per_joint_curvature": 3638000452.9032307,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 0.00011411578012707684,
+            "diagonal_curvature": 5.1323368729958055e-05,
+            "joint_to_diagonal": 2.2234662874042037,
+            "predicted_gain_squared_per_joint_curvature": 5423374908.611285,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-5",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "heldout_probe_rows": [
+            10,
+            11
+          ],
+          "overlap_with_full_selection": 173,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 705.6080558777522,
+            "joint_curvature": 1.273750767161308,
+            "diagonal_curvature": 0.13876702343077332,
+            "joint_to_diagonal": 9.179059517672394,
+            "predicted_gain_squared_per_joint_curvature": 390879.2374109159,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 705.6080558777522,
+            "joint_curvature": 0.0001636103915497071,
+            "diagonal_curvature": 7.499512474208143e-05,
+            "joint_to_diagonal": 2.181613699722292,
+            "predicted_gain_squared_per_joint_curvature": 3043099669.915022,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 0.00017299770848218485,
+            "diagonal_curvature": 7.414987080009269e-05,
+            "joint_to_diagonal": 2.333081725099494,
+            "predicted_gain_squared_per_joint_curvature": 3577461597.8888755,
+            "zero_measured_joint_curvature": false
+          }
+        }
+      ],
+      "leave_one_probe_per_anchor_out": [
+        {
+          "name": "probe-0-per-anchor",
+          "training_probe_rows": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "heldout_probe_rows": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "overlap_with_full_selection": 156,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 704.345319344524,
+            "joint_curvature": 0.4862741254940756,
+            "diagonal_curvature": 0.0778206967960392,
+            "joint_to_diagonal": 6.248647795695724,
+            "predicted_gain_squared_per_joint_curvature": 1020211.2406833861,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 704.345319344524,
+            "joint_curvature": 2.2240165956018987,
+            "diagonal_curvature": 0.1556775181613628,
+            "joint_to_diagonal": 14.28604863353912,
+            "predicted_gain_squared_per_joint_curvature": 223065.92939261606,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 8.084644499453953,
+            "diagonal_curvature": 0.2850950935619719,
+            "joint_to_diagonal": 28.3577118022081,
+            "predicted_gain_squared_per_joint_curvature": 76551.62309976545,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "probe-1-per-anchor",
+          "training_probe_rows": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "heldout_probe_rows": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "overlap_with_full_selection": 164,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 703.8526469298743,
+            "joint_curvature": 1.5179545414134397,
+            "diagonal_curvature": 0.150864922641015,
+            "joint_to_diagonal": 10.06167977844281,
+            "predicted_gain_squared_per_joint_curvature": 326365.8660877234,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 703.8526469298743,
+            "joint_curvature": 0.4215193755822746,
+            "diagonal_curvature": 0.07974967612587763,
+            "joint_to_diagonal": 5.28553087685202,
+            "predicted_gain_squared_per_joint_curvature": 1175292.4712081084,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 786.6973106715129,
+            "joint_curvature": 3.9820170638893253,
+            "diagonal_curvature": 0.17217199652019044,
+            "joint_to_diagonal": 23.128134332939318,
+            "predicted_gain_squared_per_joint_curvature": 155421.90017973067,
+            "zero_measured_joint_curvature": false
+          }
+        }
+      ],
+      "noise_split_common_neurons": 149,
+      "noise_split_union_neurons": 197
+    },
+    {
+      "case": 1,
+      "anchors": 6,
+      "probes_per_anchor": 2,
+      "full_supports": {
+        "adam_gain": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 523.6001604236293,
+          "joint_curvature": 169.51819487477795,
+          "diagonal_curvature": 8.034495124799875,
+          "joint_to_diagonal": 21.09879864778689,
+          "predicted_gain_squared_per_joint_curvature": 1617.2725777204537,
+          "zero_measured_joint_curvature": false
+        },
+        "gain_risk": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 488.0464898584363,
+          "joint_curvature": 23.516441973743152,
+          "diagonal_curvature": 2.725779209552444,
+          "joint_to_diagonal": 8.62741996539199,
+          "predicted_gain_squared_per_joint_curvature": 10128.631556129396,
+          "zero_measured_joint_curvature": false
+        },
+        "gradient_norm": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 518.1449363481254,
+          "joint_curvature": 156.3067597862179,
+          "diagonal_curvature": 7.847940115742298,
+          "joint_to_diagonal": 19.91691545564675,
+          "predicted_gain_squared_per_joint_curvature": 1717.6107765933946,
+          "zero_measured_joint_curvature": false
+        },
+        "random": {
+          "neurons": 173,
+          "predicted_unit_step_gain": 19.99502502720636,
+          "joint_curvature": 0.2771971564730979,
+          "diagonal_curvature": 0.03313182085701225,
+          "joint_to_diagonal": 8.366493277547404,
+          "predicted_gain_squared_per_joint_curvature": 1442.298438142202,
+          "zero_measured_joint_curvature": false
+        }
+      },
+      "leave_one_anchor_out": [
+        {
+          "name": "anchor-0",
+          "training_probe_rows": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            0,
+            1
+          ],
+          "overlap_with_full_selection": 173,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 28.219453796121076,
+            "diagonal_curvature": 3.2707605496588505,
+            "joint_to_diagonal": 8.627795696956307,
+            "predicted_gain_squared_per_joint_curvature": 8440.609020429772,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 0.0013828618535340733,
+            "diagonal_curvature": 0.0008725090204124171,
+            "joint_to_diagonal": 1.5849255665923347,
+            "predicted_gain_squared_per_joint_curvature": 172243796.91609725,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 0.006678961397314219,
+            "diagonal_curvature": 0.0010670231653777682,
+            "joint_to_diagonal": 6.259434297239089,
+            "predicted_gain_squared_per_joint_curvature": 41047868.32663772,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-1",
+          "training_probe_rows": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            2,
+            3
+          ],
+          "overlap_with_full_selection": 147,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 485.1650678798276,
+            "joint_curvature": 1.203151819786851,
+            "diagonal_curvature": 0.2022966172056762,
+            "joint_to_diagonal": 5.947463859781695,
+            "predicted_gain_squared_per_joint_curvature": 195640.43308560865,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 485.1650678798276,
+            "joint_curvature": 132.42781656301804,
+            "diagonal_curvature": 18.802822717136294,
+            "joint_to_diagonal": 7.042975331694615,
+            "predicted_gain_squared_per_joint_curvature": 1777.459971778857,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 950.037287054712,
+            "diagonal_curvature": 44.65169451058409,
+            "joint_to_diagonal": 21.276623372703543,
+            "predicted_gain_squared_per_joint_curvature": 288.5751240833791,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-2",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            4,
+            5
+          ],
+          "overlap_with_full_selection": 170,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 489.9072853434367,
+            "joint_curvature": 27.759399617423945,
+            "diagonal_curvature": 3.0568129802489152,
+            "joint_to_diagonal": 9.081157335037064,
+            "predicted_gain_squared_per_joint_curvature": 8646.049681922055,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 489.9072853434367,
+            "joint_curvature": 12.394207283899597,
+            "diagonal_curvature": 1.2385811041111325,
+            "joint_to_diagonal": 10.006778920460196,
+            "predicted_gain_squared_per_joint_curvature": 19364.62274149261,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 66.66886355471597,
+            "diagonal_curvature": 3.5249052505232714,
+            "joint_to_diagonal": 18.913661167153073,
+            "predicted_gain_squared_per_joint_curvature": 4112.221408583726,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-3",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            6,
+            7
+          ],
+          "overlap_with_full_selection": 173,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 28.184679546353216,
+            "diagonal_curvature": 3.2661478006005895,
+            "joint_to_diagonal": 8.629333780048327,
+            "predicted_gain_squared_per_joint_curvature": 8451.023041486374,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 0.17525411069281938,
+            "diagonal_curvature": 0.023936254311719037,
+            "joint_to_diagonal": 7.321701566607106,
+            "predicted_gain_squared_per_joint_curvature": 1359108.6412839275,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 0.3941506506053755,
+            "diagonal_curvature": 0.029051081681568985,
+            "joint_to_diagonal": 13.56750343844988,
+            "predicted_gain_squared_per_joint_curvature": 695564.3167772848,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-4",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11
+          ],
+          "heldout_probe_rows": [
+            8,
+            9
+          ],
+          "overlap_with_full_selection": 173,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 28.219616278985647,
+            "diagonal_curvature": 3.2709181456059966,
+            "joint_to_diagonal": 8.62742967655568,
+            "predicted_gain_squared_per_joint_curvature": 8440.56042110373,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 0.0005704475306484197,
+            "diagonal_curvature": 8.45292846838479e-05,
+            "joint_to_diagonal": 6.748519554873537,
+            "predicted_gain_squared_per_joint_curvature": 417548264.2415758,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 0.0006413092211696701,
+            "diagonal_curvature": 7.522779961470315e-05,
+            "joint_to_diagonal": 8.524896706460723,
+            "predicted_gain_squared_per_joint_curvature": 427496001.84388596,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "anchor-5",
+          "training_probe_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "heldout_probe_rows": [
+            10,
+            11
+          ],
+          "overlap_with_full_selection": 173,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 28.219463278659298,
+            "diagonal_curvature": 3.270885676106513,
+            "joint_to_diagonal": 8.627468543092046,
+            "predicted_gain_squared_per_joint_curvature": 8440.606184146289,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 488.0464898584363,
+            "joint_curvature": 0.0013354491623982553,
+            "diagonal_curvature": 0.0002468767820992476,
+            "joint_to_diagonal": 5.40937528042385,
+            "predicted_gain_squared_per_joint_curvature": 178358999.33127394,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 0.0015477180159793181,
+            "diagonal_curvature": 0.0001776550453263125,
+            "joint_to_diagonal": 8.71192829416416,
+            "predicted_gain_squared_per_joint_curvature": 177136355.04990715,
+            "zero_measured_joint_curvature": false
+          }
+        }
+      ],
+      "leave_one_probe_per_anchor_out": [
+        {
+          "name": "probe-0-per-anchor",
+          "training_probe_rows": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "heldout_probe_rows": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "overlap_with_full_selection": 156,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 485.70876909088406,
+            "joint_curvature": 17.716545503008746,
+            "diagonal_curvature": 2.132730713555841,
+            "joint_to_diagonal": 8.306977243024955,
+            "predicted_gain_squared_per_joint_curvature": 13315.971126070675,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 485.70876909088406,
+            "joint_curvature": 51.02458135739341,
+            "diagonal_curvature": 4.146040656510308,
+            "joint_to_diagonal": 12.306821274719585,
+            "predicted_gain_squared_per_joint_curvature": 4623.516785358165,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 228.6956456449684,
+            "diagonal_curvature": 10.065688358748568,
+            "joint_to_diagonal": 22.720318521107217,
+            "predicted_gain_squared_per_joint_curvature": 1198.7859551172094,
+            "zero_measured_joint_curvature": false
+          }
+        },
+        {
+          "name": "probe-1-per-anchor",
+          "training_probe_rows": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10
+          ],
+          "heldout_probe_rows": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "overlap_with_full_selection": 156,
+          "training": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 487.18172650320366,
+            "joint_curvature": 21.23013682388403,
+            "diagonal_curvature": 2.8917163544631364,
+            "joint_to_diagonal": 7.341707906834288,
+            "predicted_gain_squared_per_joint_curvature": 11179.675223365806,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 487.18172650320366,
+            "joint_curvature": 36.057328821997224,
+            "diagonal_curvature": 3.1186281699042913,
+            "joint_to_diagonal": 11.56191981139701,
+            "predicted_gain_squared_per_joint_curvature": 6582.463049615767,
+            "zero_measured_joint_curvature": false
+          },
+          "heldout_gain_only_control": {
+            "neurons": 173,
+            "predicted_unit_step_gain": 523.6001604236293,
+            "joint_curvature": 110.34074410458754,
+            "diagonal_curvature": 6.003301890851181,
+            "joint_to_diagonal": 18.380009220049875,
+            "predicted_gain_squared_per_joint_curvature": 2484.640920454441,
+            "zero_measured_joint_curvature": false
+          }
+        }
+      ],
+      "noise_split_common_neurons": 141,
+      "noise_split_union_neurons": 205
+    }
+  ],
+  "file_sha256": {
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/integrity_v1.json": "6a3362539958d04d1b00bdf9dd68d8098e3a19667b643431c01c4f138d68d161",
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/kaggle_download/functional-results/results/protocol.json": "2df2455edf3f1d452698d76afe4433339800483dc6ad9e1c5c8c5fc60fff418a",
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/kaggle_download/functional-results/results/identity.json": "ed32c2999ef89ac891395b5942e8e05456ace50a7a144a97a624029d98874d20",
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/kaggle_download/functional-results/results/case-0-discovery.json": "5acda4769b4ea33865efd7325a2e4e815197174ae1818dab2082a8917662442a",
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/kaggle_download/functional-results/results/case-0-selection.safetensors": "409ee784b3ae655504d1925d5e3e858ba1143f2c6f06101ed8f223d4b6fdb181",
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/kaggle_download/functional-results/results/case-1-discovery.json": "a268e919124340ffacf12942917e78142e82288d836651f173e828ec662c9ee2",
+    "/Users/sahil.yadav/Documents/Codex/neuronpatch/artifacts/functional_selection_v2/kaggle_download/functional-results/results/case-1-selection.safetensors": "0e0e43c30651a7e81ae42ede3ace8724b6cbf6df1296495acc941cdfc98a2cec"
+  },
+  "limits": "Fold supports are not applied to the model. These are noisy conditional Fisher sketches on the existing six contexts, not fresh-task preservation measurements. Selection stability alone establishes neither correctness nor safety. The frozen finite-edit analysis remains the primary decision."
+}
