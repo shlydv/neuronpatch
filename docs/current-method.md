@@ -119,9 +119,18 @@ predict finite changes and improve useful learning per unit held-out drift.
 CPU covariance/dense-gradient oracles and FP32/FP16 tiny-Qwen execution pass;
 there is no new pretrained outcome yet. This stage does not establish a robust
 recipe, and it does not replace the required trained LoRA comparison.
-Its [frozen Kaggle calibration](../experiments/functional_selection/launch_v1.json)
-is accepted as version1 and running, with byte-identical accepted source. No
-other experiment is submitted alongside it.
+Its [first Kaggle submission](../experiments/functional_selection/launch_v1.json)
+was accepted with byte-identical source, then deliberately cancelled for resource
+control. The worker was bounded, but dependency setup and the provider session
+were not. The account's GPU quota was accruing during the unobservable run;
+its acknowledged cancellation yielded only an empty log and no usable model
+artifact. This is no evidence for or against the selection hypothesis.
+A [single operational retry](../experiments/functional_selection/retry_v2.json)
+is prepared with identical source and criteria and a requested5400-second
+provider session limit. The first execution is confirmed cancelled before
+retry submission. The new submission guard requires an explicit provider limit;
+neither it nor that limit bounds queue wait. Compute from the unavailable first
+execution must remain visible in total cost reporting.
 
 The [no-forward context audit](../experiments/functional_selection/context_audit_v1.json)
 also bounds interpretation of that calibration. Equally averaging its six

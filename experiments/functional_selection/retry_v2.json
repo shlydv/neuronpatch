@@ -1,0 +1,23 @@
+{
+  "preregistered_utc": "2026-10-22T14:18:49.926326+00:00",
+  "kernel": "shlydv/neuronpatch-functional-selection-v1-20261022",
+  "expected_version": 2,
+  "status": "prepared;not submitted",
+  "operational_retry_number": 1,
+  "provider_session_timeout_seconds": 5400,
+  "same_notebook_id": 140201160,
+  "source_byte_identical_to_version1": true,
+  "source_sha256": "601f7f3154459733ae2061da18cefa15a7290da04eca9aedd99eff6f193aca33",
+  "script_bytes": 150348,
+  "bundled_files": 37,
+  "protocol_sha256": "2df2455edf3f1d452698d76afe4433339800483dc6ad9e1c5c8c5fc60fff418a",
+  "algorithm_or_evaluation_changes": false,
+  "prior_version_status": "CANCEL_ACKNOWLEDGED",
+  "prior_version_stop_acknowledged_utc": "2026-10-22T14:16:23.189284+00:00",
+  "prior_log_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "prior_log_events": 0,
+  "prior_outcome": "Operator resource-control cancellation;no usable model outcome or hypothesis rejection. Worker execution and exact compute breakdown remain unknown.",
+  "reason": "Account GPU quota was accruing during an unobservable run;source audit exposed absent provider/runtime setup limits. Request a provider-level limit for the same frozen experiment.",
+  "change_scope": "Only the explicit provider session-timeout request changes. Source,dependencies,model,inputs,support budgets,scales,probe seeds and prospective criteria remain byte-identical.",
+  "limits": "Provider runtime limit does not bound queue wait. No superiority or scientific failure claim follows from cancelling or retrying. Total cost reporting must include the original unavailable run."
+}

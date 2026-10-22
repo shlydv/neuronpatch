@@ -7,15 +7,18 @@
   "script_bytes": 150348,
   "bundled_files": 37,
   "rejected_input_sources": [],
-  "status": "RUNNING",
-  "status_checked_utc": "2026-10-22T11:11:31.913625+00:00",
+  "status": "CANCEL_ACKNOWLEDGED",
+  "status_checked_utc": "2026-10-22T14:16:23.189284+00:00",
   "failure_message": null,
-  "results_status": "Accepted with exact frozen source;no pretrained calibration outcome yet.",
+  "results_status": "Cancelled deliberately to control resource use;no usable model artifacts,one empty persisted log. No scientific outcome.",
   "runtime_limits_at_original_submission": {
     "worker_internal_seconds": 3600,
     "worker_subprocess_seconds": 3900,
     "provider_session_timeout_seconds": null,
     "dependency_setup_timeout_seconds": null,
     "scope": "Original submission bounds the model worker but not dependency setup or the whole provider session. Queue wait is not model execution time."
-  }
+  },
+  "status_at_acceptance": "RUNNING",
+  "status_checked_utc_at_acceptance": "2026-10-22T11:11:31.913625+00:00",
+  "operator_resource_control_cancellation": true
 }
