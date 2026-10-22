@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-10-22T15:29:26.888525+00:00",
+  "kernel": "shlydv/neuronpatch-guarded-training-v1-20261022",
+  "source_revision": "7db5edbff605b3a474a00d79b6d519a56db1520d",
+  "source_sha256": "bdd26afacde4c6557fb2df4ea9a9109730123583e8f9b4e0dcc92a3b65d0a6a4",
+  "script_bytes": 203117,
+  "bundled_files": 47,
+  "all_bundle_hashes_and_working_sources_exact": true,
+  "protocol_sha256": "219d3245d1a29e9a4b53ee10ff13e38b9eb57c65e02b41bca0b2691618fcdb35",
+  "expected_fits": 8,
+  "expected_observations": 806,
+  "expected_base_generation_controls": 16,
+  "provider_session_timeout_seconds": 5400,
+  "worker_process_timeout_seconds": 3300,
+  "worker_internal_runtime_seconds": 3000,
+  "setup_subprocess_timeouts_seconds": [
+    300,
+    300,
+    900
+  ],
+  "pretrained_outcome": null,
+  "prior_functional_calibration_outcome": "Frozen advancement gate failed;changed fitting method,not revised criterion."
+}
