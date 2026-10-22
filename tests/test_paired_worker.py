@@ -102,6 +102,33 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     assert review["observations"] == 286
     assert sum(len(item["occurrences"]) for item in review["items"]) == 286
     assert not review["full_output_review_complete"]
+    # The no-fit replay must independently recover these saved endpoints in both dtypes.
+    from experiments.paired_endpoint.prepare import prepare as prepare_replay
+    from experiments.paired_endpoint.run import execute as replay
+    from experiments.paired_endpoint.verify import verify as verify_replay
+
+    integrity_path = tmp_path / "integrity.json"
+    integrity_path.write_text(json.dumps(verified))
+    replay_spec = prepare_replay(tmp_path / "run", integrity_path)
+    endpoints = replay(
+        model, tokenizer, tmp_path / "run", replay_spec, tmp_path / "replay", lambda: None
+    )
+    assert len(endpoints) == 8
+    assert all(
+        r["parent_merged_teacher_exact"] and r["parent_merged_generation_exact"] for r in endpoints
+    )
+    assert all(r["base_restored"] for r in endpoints)
+    assert fingerprint(model) == original
+    completed = json.loads((tmp_path / "replay/completion.json").read_text())
+    assert completed["new_fits"] == 0 and completed["observations"] == 48
+    replay_proof = verify_replay(tmp_path / "run", tmp_path / "replay", replay_spec, tokenizer)
+    assert replay_proof["endpoints"] == 8 and replay_proof["decoded"] == 48
+    record_path = tmp_path / "replay/endpoints.json"
+    altered = json.loads(record_path.read_text())
+    altered[0]["live_metrics"]["task_mean_nll"] += 0.5
+    record_path.write_text(json.dumps(altered))
+    with pytest.raises(AssertionError):
+        verify_replay(tmp_path / "run", tmp_path / "replay", replay_spec, tokenizer)
     path = tmp_path / "run/fits.json"
     fits = json.loads(path.read_text())
     fits[0]["metrics"]["task_mean_nll"] += 0.01

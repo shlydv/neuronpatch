@@ -1,0 +1,15 @@
+{
+  "scope": "Pre-inference numerical tests only; no pretrained endpoint replay outcome",
+  "exact_runtime": "Torch2.6.0/Transformers4.56.2/PEFT0.17.1",
+  "targeted_passed": 4,
+  "actual_worker_replays_per_dtype": 8,
+  "dtypes": [
+    "float32",
+    "float16"
+  ],
+  "scored_outputs_per_dtype": 48,
+  "parent_merged_replay_exact": true,
+  "independent_teacher_loss_and_KL_recomputed": true,
+  "altered_reported_loss_rejected": true,
+  "new_pretrained_fits": 0
+}
