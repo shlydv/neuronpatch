@@ -12,7 +12,8 @@ cancelled to control resource use after the missing provider limit was found;
 only an empty persisted log was available. This gives no scientific outcome.
 A [single operational retry](retry_v2.json) is accepted as version 2 with
 byte-identical source and a requested 5400-second provider session limit. It is
-queued at the recorded status check. No setting or result
+running at the recorded status check, and worker logs confirm dependency
+installation. No pretrained calibration result is available yet. No setting or result
 from the unavailable first run selects the method or changes the frozen criteria.
 
 The [completed stopping study](../paired_checkpoints/complete_v1/REPORT.md)
