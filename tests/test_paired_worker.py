@@ -173,6 +173,41 @@ def test_actual_instruction_worker_all_families_rates_seeds_roundtrip_and_restor
     empty_proof = verify_checkpoints(parents, tmp_path / "no-gate", no_gate, tokenizer)
     assert empty_proof["fits"] == 1 and empty_proof["decoded"] == 3
     assert not (tmp_path / "no-gate/case-0-paired_mean-43-0-early-adapter").exists()
+    # The next candidate's exact worker calibrates sixteen one-step edits on
+    # these same fixtures; no extra optimizer trajectory is introduced.
+    from experiments.functional_selection.prepare import prepare as prepare_functional
+    from experiments.functional_selection.run import execute as functional
+    from experiments.functional_selection.verify import verify as verify_functional
+
+    functional_spec = prepare_functional(tmp_path / "run", integrity_path)
+    functional_spec.update(id="cpu-functional-fixture", shortlist_per_layer=8)
+    functional_records = functional(
+        model, tokenizer, tmp_path / "run", functional_spec, tmp_path / "functional", lambda: None
+    )
+    assert len(functional_records) == 16
+    functional_proof = verify_functional(
+        tmp_path / "run", tmp_path / "functional", functional_spec, tokenizer
+    )
+    assert functional_proof["one_step_edits"] == 16 and functional_proof["decoded"] == 30
+    assert functional_proof["teacher_records_recomputed"] == 18
+    assert fingerprint(model) == original
+    from experiments.functional_selection.analysis import analyze as functional_analysis
+    from experiments.functional_selection.review import packet as functional_packet
+
+    functional_summary = functional_analysis(tmp_path / "run", tmp_path / "functional")
+    assert len(functional_summary["primary"]) == 2
+    assert functional_summary["one_step_edits"] == 16
+    assert not functional_summary["full_output_review_complete"]
+    functional_review = functional_packet(tmp_path / "run", tmp_path / "functional")
+    assert functional_review["observations"] == 30
+    assert sum(len(row["occurrences"]) for row in functional_review["items"]) == 30
+    assert not functional_review["full_output_review_complete"]
+    damaged = tmp_path / "functional/records.json"
+    values = json.loads(damaged.read_text())
+    values[0]["metrics"]["heldout_mean_anchored_kl"] += 0.1
+    damaged.write_text(json.dumps(values))
+    with pytest.raises(AssertionError):
+        verify_functional(tmp_path / "run", tmp_path / "functional", functional_spec, tokenizer)
     trace_records = tmp_path / "trace/fits.json"
     changed = json.loads(trace_records.read_text())
     changed[0]["selected_step"] = 2

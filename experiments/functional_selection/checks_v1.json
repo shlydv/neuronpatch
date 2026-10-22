@@ -1,0 +1,33 @@
+{
+  "modern_suite": {
+    "passed": 238,
+    "skipped": 2,
+    "seconds": 20.0,
+    "command": "PYTHONPATH=.:src .venv/bin/python -m pytest -q"
+  },
+  "pinned_worker_runtime": {
+    "passed": 10,
+    "seconds": 11.8,
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "scope": "Eight mathematical/lifecycle/architecture checks plus complete original/replay/checkpoint/functional worker and independent-verifier paths in FP32/FP16."
+  },
+  "ruff": "passed",
+  "protocol_sha256": "2df2455edf3f1d452698d76afe4433339800483dc6ad9e1c5c8c5fc60fff418a",
+  "source_file_sha256": {
+    "experiments/functional_selection/build.py": "ef9d861a7df4b9ae728b195088bbbe5ae322a541414a6ee084f4bdfed9b8d982",
+    "experiments/functional_selection/run.py": "824b1162e9ac159985b333ed823dcd983a6b910af5f3fc0f76f26a783128295f",
+    "experiments/functional_selection/analysis.py": "41ad489ca7ecbee3b3d77dcf8020183f6578ec2fb647ae2303c1cc07f382a773",
+    "experiments/functional_selection/fisher.py": "24a659afe0e53bc6867d43fce660f7bf96e5c70732121c61da0d2c5e9234fa48",
+    "experiments/functional_selection/directions.py": "9220689800c54c2b7ffc47aba30440ff3fe88f7b0147dadd23347cf1c7a10a52",
+    "experiments/functional_selection/__init__.py": "8cf2009200e02e6e742d887ad9a8736a0328dfef42e7d86d2118b950cfd05109",
+    "experiments/functional_selection/review.py": "a060c45c6464888cb80e096896629f7713ba9a237ab4819970b1d8e83d329f27",
+    "experiments/functional_selection/verify.py": "e0c021c91842a51decec6caf673646c7beef45d64f704e7741a31f6dc4180d8f",
+    "experiments/functional_selection/perturb.py": "f582efdbd22152003676fec51e88bf57c1cfe1648eb699826b7c9b6966aa367f",
+    "experiments/functional_selection/prepare.py": "5536b7770479fe71f861329e3368938c3abe2db140068fd776e9c98613f95f42",
+    "tests/test_functional_selection.py": "ab037b6e76d873d5b7d71b5836a9e104666aa76bb570a21dcc592fb462f62fe6",
+    "tests/test_paired_worker.py": "ba94bd707e4cedcafafd33351459a7ccceac0b0f74aaeb79d844d5e0cc142976"
+  },
+  "pretrained_outcome": null,
+  "limits": "CPU and tiny-model execution checks. No claim of semantic selection quality or pretrained performance."
+}

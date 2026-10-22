@@ -110,6 +110,16 @@ stopping policy for guided supports, random supports and LoRA. Retain a no-edit
 outcome when no candidate satisfies it. Multiple parameter budgets remain
 necessary so an easy transfer ceiling does not hide an efficiency difference.
 
+The [functional-direction candidate](../experiments/functional_selection/README.md)
+now estimates conditional Fisher disturbance for explicit, unit-normalized
+fresh-Adam neuron proposals. It compares gradient magnitude, proposed gain,
+gain/risk and random supports. Its first bounded calibration uses sixteen
+restored one-step edits before a longer optimizer fit: the local proxy must
+predict finite changes and improve useful learning per unit held-out drift.
+CPU covariance/dense-gradient oracles and FP32/FP16 tiny-Qwen execution pass;
+there is no new pretrained outcome yet. This stage does not establish a robust
+recipe, and it does not replace the required trained LoRA comparison.
+
 The [saved-history diagnosis](../experiments/paired_endpoint/history_diagnosis_v1.json)
 suggests that guided low-rate fits cross a rough sampled-loss threshold before
 random/LoRA fits. Those historical losses were observed at different pre-update

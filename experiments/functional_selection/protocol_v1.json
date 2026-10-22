@@ -1,0 +1,77 @@
+{
+  "id": "functional-direction-calibration-v1-20261022",
+  "parent_kernel": "shlydv/neuronpatch-paired-full-response-v1-20261022",
+  "parent_files_sha256": {
+    "case-0-base.json": "f77a0c2a8b1e2ed2d3e29f1d79b8e4678e258a2dd40ddae509fbf7eb4a244dd3",
+    "case-0-scores.safetensors": "8692879b3807c400b501520c6839b8abc4be9bb8fed2412a1c02bb77d404f70d",
+    "case-1-base.json": "03d666473bdedee85d2d68b35a224427a5c555908a394a52f461352df98dc6d4",
+    "case-1-scores.safetensors": "666ebbf74ff7225459d0e598426c87226cd48e17b80fa65856745c166d0776f9",
+    "completion.json": "351401217c0fccea948fda06c69f7a19e1fe7d61812b8613291ebb72821239a2",
+    "identity.json": "e86a7b3731419b289ca5a190a6783ea8f1fab68a708a793f04dd256273032fe1",
+    "inputs.json": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+    "tokenization.json": "a906c12e67b75289328d5a30810507f39c251be65e712dbe742f838e138d8ee1"
+  },
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "architecture": {
+    "layers": 36,
+    "hidden": 2560,
+    "intermediate": 9728
+  },
+  "inputs_sha256": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+  "seed": 43,
+  "random_support_seed": 11,
+  "rank_for_budget": 1,
+  "shortlist_per_layer": 64,
+  "fisher_probes_per_anchor": 2,
+  "direction": "adam_first",
+  "direction_epsilon": 1e-08,
+  "damping_ratio": 1.0,
+  "loss_scale": 128.0,
+  "scales": [
+    0.01,
+    0.03
+  ],
+  "generation_scale": 0.03,
+  "generation_banks": [
+    "target_test",
+    "scope_test",
+    "utility_test"
+  ],
+  "heldout_teacher_banks": [
+    "scope_test",
+    "utility_test"
+  ],
+  "conditions": [
+    "gradient_norm",
+    "adam_gain",
+    "gain_risk",
+    "random"
+  ],
+  "max_sequence_tokens": 256,
+  "max_new_tokens": 32,
+  "runtime_limit_seconds": 3600,
+  "optimizer_trajectories": 0,
+  "expected_one_step_edits": 16,
+  "expected_scored_observations": 310,
+  "expected_base_generation_controls": 32,
+  "fresh_confirmation_used": false,
+  "direction_definition": "Mean complete-response correction gradient over three original training phrases. Fresh unclipped Adam proposal -g/(abs(g)+eps),then unit-normalize each paired neuron across its incoming rows and outgoing column. This is a fixed direction family, not a simulated multi-step Adam fit. Apply selected directions at both frozen scales.",
+  "selection": "Same per-layer neuron counts as the matched rank-one budget. Algorithmic candidates are the top64 original correction-gradient neurons per layer. Seed11 random supports are also captured but cannot affect risk-score damping or algorithmic selection. Compare norm-only,gain-only,gain/risk and random supports using identical proposals.",
+  "risk": "Two independent locally seeded Rademacher softmax-covariance VJPs per original preservation response. Normalize by sqrt(response tokens),then equally across probes. Center at the frozen base; no gradient of zero reference KL is used. Rank individual gains squared over estimated curvature plus mean-curvature damping. Joint selected-support predictions sum probe dots before squaring.",
+  "contexts": "Teacher contexts use the original canonical references,including EOS. These are fixed conditional-token distributions,not a full sequence-distribution Fisher estimate. Only the six preservation-training contexts influence scoring. Exposed scope/utility questions are held out of selection;their known outputs do not choose scale or support.",
+  "success": "At scale0.03,in both development cases,gain_risk must reduce heldout mean anchored KL by at least20% versus adam_gain while retaining at least half its positive actual correction-NLL improvement,and itself improve correction NLL by at least0.001. It must also improve correction_gain_squared/heldout_KL by at least25%,with baseline heldout_KL>=1e-8 required for an informative comparison. At scale0.01,report joint predicted/actual calibration KL for every condition; a ratio outside[0.25,4] where actual KL>=1e-8 fails local numerical calibration. Require at least one informative small-scale condition in each case. Even success only licenses a trained-method pilot with LoRA,not a superiority claim.",
+  "limits": "Two exposed facts,one small calibration bank,two sketches per anchor,shortlisted neurons and fixed initial directions. Sparse-group scores ignore between-group interactions during ranking;the joint estimate exposes those interactions. No multi-step optimizer is run;data-informed one-step edits are tested and restored. No robust fitted recipe is claimed,and no fresh cases are used. Record all conditions,quantization differences,unrelated answers and discovery cost."
+}

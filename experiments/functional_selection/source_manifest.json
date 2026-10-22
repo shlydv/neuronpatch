@@ -1,0 +1,14 @@
+{
+  "repo": "CONE-MT/DCO",
+  "commit": "222f26c51c4ca8efa06c5d077c3b9c82d55c018f",
+  "file_sha256": {
+    "dco/README.md": "b40bb26d8f82a8e733beb45322ecc39a27d34cdd1f8f1e450f2158488fac2cbb",
+    "dco/qwen3_en_zh.sh": "8fa6efc5fa98047669088f7571afdd5a481ac88e9273c39c458a6b24f56520b2",
+    "specialist_distillation/chemistry/ft_scripts/generate_training_yaml.py": "c0eb9247ffef02f14ea712c00ca7e1303648cee02b580bc2290a2e053cde581a",
+    "specialist_distillation/chemistry/token_distribution_analysis/analyze_kl_divergence.py": "69c2ba794b60c3f102cda3696777ff1a0946151c671716145cdabee06405b553",
+    "specialist_distillation/LICENSE": "100ef48f7cb6cb293f42a97ee34b0417d5384a83b866b46959b576c7f63f21b6"
+  },
+  "paper": "https://arxiv.org/html/2609.13680v1",
+  "inspection_scope": "Official README,two-stage freeze shell configuration,layer-selective YAML generator,and teacher KL analysis. Training and evaluation outcomes not independently reproduced;no upstream code incorporated.",
+  "implementation_distinction": "Inspected analysis computes KL(edited||base) on content-token teacher contexts. Our proposed conditional metric uses KL(base||edited),including EOS."
+}
