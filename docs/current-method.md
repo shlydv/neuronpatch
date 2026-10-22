@@ -32,6 +32,15 @@ main edited target. This is consistent with broader training-answer spillover;
 it is not causal attribution to a particular example. It also shows why counting
 only the injected target string would miss much of the observed damage.
 
+The [evaluation-contract audit](../experiments/paired_endpoint/evaluation_audit_v1.json)
+also flags equivalent Unicode formulas, valid full extensions to fragment prompts,
+and single-country labels for ambiguous association questions. For example,
+[FIFA names three host countries](https://inside.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/media-releases/canada-mexico-and-usa-selected-as-hosts-of-the-2026-fifa-world-cuptm),
+while our legacy validation row accepts only Mexico. These are reasons to fix
+the next calibration contract, not to rewrite the frozen scores or dismiss
+unambiguous interference. Future trials should distinguish factual content
+accuracy from the requested response form.
+
 One endpoint uncertainty remains: high-rate paired case0 is broken after
 merging, but its final live predictions were not saved. The
 [frozen eight-endpoint replay](../experiments/paired_endpoint/README.md) tests

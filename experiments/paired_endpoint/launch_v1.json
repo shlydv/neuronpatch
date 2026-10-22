@@ -11,7 +11,8 @@
   "rejected_input_sources": [],
   "new_fits": 0,
   "status": "RUNNING",
-  "status_checked_utc": "2026-10-22T07:29:43.318992+00:00",
-  "results_status": "Direct session log stream works with the UI-observed session ID. All39 required parent artifact hashes verified; pinned dependencies and model loading completed. No completed endpoint comparison yet.",
-  "kernel_session_id": 361047763
+  "status_checked_utc": "2026-10-22T07:45:25.800023+00:00",
+  "results_status": "Direct session log stream verified dependencies,all39 parent files and model loading. Partial endpoint replays match original merged teacher/generation artifacts. Await complete outputs and independent verification.",
+  "kernel_session_id": 361047763,
+  "completed_endpoints_observed": 6
 }

@@ -1,9 +1,13 @@
 {
-  "observed_utc": "2026-10-22T07:36:10.362122+00:00",
+  "observed_utc": "2026-10-22T07:45:48.412610+00:00",
   "status": "Partial streamed replay evidence;not a completed experiment",
   "restored_endpoint_log_lines": [
     "ENDPOINT_RESTORED 0 paired_mean-43-0 {'logits_exact': False, 'max_abs_logit_difference': 0.063232421875, 'mean_kl_live_to_merged': 3.4330929814382994e-09, 'mean_kl_merged_to_live': 3.5247219354487606e-09, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 31}",
-    "ENDPOINT_RESTORED 0 paired_mean-43-1 {'logits_exact': False, 'max_abs_logit_difference': 0.0703125, 'mean_kl_live_to_merged': 1.0845209447774182e-06, 'mean_kl_merged_to_live': 1.0715665843233332e-06, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 31}"
+    "ENDPOINT_RESTORED 0 paired_mean-43-1 {'logits_exact': False, 'max_abs_logit_difference': 0.0703125, 'mean_kl_live_to_merged': 1.0845209447774182e-06, 'mean_kl_merged_to_live': 1.0715665843233332e-06, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 31}",
+    "ENDPOINT_RESTORED 0 paired_random-11-0 {'logits_exact': False, 'max_abs_logit_difference': 0.078125, 'mean_kl_live_to_merged': 1.8846271633254155e-09, 'mean_kl_merged_to_live': 1.8922853789974964e-09, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 31}",
+    "ENDPOINT_RESTORED 0 lora-43-0 {'logits_exact': False, 'max_abs_logit_difference': 0.078125, 'mean_kl_live_to_merged': 6.978656984134309e-09, 'mean_kl_merged_to_live': 6.98292865304424e-09, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 31}",
+    "ENDPOINT_RESTORED 1 paired_mean-43-0 {'logits_exact': False, 'max_abs_logit_difference': 0.09375, 'mean_kl_live_to_merged': 8.755841233872685e-10, 'mean_kl_merged_to_live': 8.732718270928269e-10, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 43}",
+    "ENDPOINT_RESTORED 1 paired_mean-43-1 {'logits_exact': False, 'max_abs_logit_difference': 0.0859375, 'mean_kl_live_to_merged': 6.278585273592191e-09, 'mean_kl_merged_to_live': 6.249580358457955e-09, 'changed_teacher_argmax_positions': 0, 'teacher_positions': 43}"
   ],
   "interpretation": "For the known broken high-rate case0,live and merged endpoints have identical teacher argmax predictions at all31 measured positions. Thus the measured teacher-token failure already exists before merging. Await saved logits,generated answers and complete independent verification before final attribution.",
   "worker_or_protocol_changed": false,

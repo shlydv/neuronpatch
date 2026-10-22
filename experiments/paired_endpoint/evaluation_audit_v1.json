@@ -1,0 +1,40 @@
+{
+  "status": "Post-hoc evaluation audit;frozen questions,aliases,scores and selections unchanged",
+  "findings": [
+    {
+      "ids": [
+        "utility-26"
+      ],
+      "issue": "Equivalent Unicode chemical formula H\u2082O is outside the frozen H2O alias set.",
+      "evidence": "NFKC normalization maps H\u2082O to H2O;original base output was H\u2082O.",
+      "future_action": "Normalize equivalent Unicode forms before fixing future alias sets;O\u2082 still does not equal the atomic symbol O."
+    },
+    {
+      "ids": [
+        "utility-27",
+        "utility-28"
+      ],
+      "issue": "Fragment prompts such as A triangle has admit correct complete extensions beyond the bare count labels.",
+      "evidence": "Observed responses include three sides,which is semantically appropriate but outside the frozen answer set.",
+      "future_action": "Use an unambiguous closed-answer question and a predefined full-response scoring contract;keep content accuracy separate from instruction-format compliance."
+    },
+    {
+      "ids": [
+        "case-1-scope-val-1"
+      ],
+      "issue": "Country associated with the2026WorldCup is not uniquely Mexico.",
+      "evidence": "FIFA names Canada,Mexico andUSA as hosts.",
+      "source": "https://inside.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/media-releases/canada-mexico-and-usa-selected-as-hosts-of-the-2026-fifa-world-cuptm",
+      "future_action": "Exclude ambiguous single-label association questions from a preservation gate rather than expanding aliases after seeing outputs."
+    },
+    {
+      "ids": [
+        "case-1-scope-val-2"
+      ],
+      "issue": "Broad associated-country question about a war does not identify a unique expected country.",
+      "evidence": "Prompt wording and source reference Luhansk Peoples Republic do not specify a unique geopolitical relation.",
+      "future_action": "Exclude this question from future preservation calibration;do not infer a model error merely from failing this source reference."
+    }
+  ],
+  "interpretation": "These defects limit exact-score and calibration claims. They do not excuse target leakage into an unrelated Lakers answer or incorrect atomic-symbol answers. No aggregate metric is recomputed here."
+}
