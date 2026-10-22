@@ -108,6 +108,20 @@ where observed KL is at least1e-8 and at least one informative condition per cas
 All outputs, discovery costs and precision
 differences are retained even when these criteria fail.
 
+The separate `diagnose` module is a post-hoc check of sketch stability. It
+reselects supports while holding out an entire preservation context or one
+independent probe per context, then measures their held-out sketch response.
+It also reports joint versus diagonal curvature to expose cross terms. These
+fold supports are never applied to the model and do not alter the frozen
+interventions or success criteria. The check can expose sensitivity to noise
+or the small anchor bank; stable selection alone does not establish preservation.
+
+~~~sh
+PYTHONPATH=.:src python -m experiments.functional_selection.diagnose \
+  --results PATH_TO_VERIFIED_RESULTS --integrity PATH_TO_INTEGRITY_JSON \
+  --output PATH_TO_NEW_DIAGNOSIS_JSON
+~~~
+
 Success would justify a trained-method comparison with strong LoRA controls;
 it would not demonstrate an improved library recipe. Fresh cases, lower budgets,
 another task family and measured retention remain necessary.

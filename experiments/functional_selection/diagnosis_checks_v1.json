@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-10-22T11:26:27.996867+00:00",
+  "post_hoc_diagnostic": true,
+  "frozen_worker_source_unchanged": true,
+  "frozen_worker_source_sha256": "601f7f3154459733ae2061da18cefa15a7290da04eca9aedd99eff6f193aca33",
+  "all_37_frozen_files_unchanged": true,
+  "pinned_runtime": {
+    "focused_diagnosis_checks": 5,
+    "combined_functional_checks_before_cli_binding": 12,
+    "torch": "2.6.0"
+  },
+  "minimum_torch24_runtime": {
+    "focused_diagnosis_checks": 5
+  },
+  "modern_runtime": {
+    "focused_diagnosis_checks": 5
+  },
+  "ruff_check_format_and_diff_check": "passed",
+  "scope": "Numerical and file-provenance diagnostics only. No pretrained outcome, new model execution, intervention change or frozen-gate change.",
+  "file_sha256": {
+    "experiments/functional_selection/diagnose.py": "820ac0245b131cc9e49c65fa06a3a777cdf22c011c917c0c5d1906e98c9ee9ec",
+    "tests/test_functional_diagnosis.py": "655ea72afeeec02d1d257b94072dab9939b0ee284e9aed53ec5aae9ec6062c85"
+  }
+}
