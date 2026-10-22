@@ -66,6 +66,9 @@ missed by exact scoring from genuine interference.
 
 ## Direction
 
+See the [current method decision](docs/current-method.md) for the evidence,
+paper-informed choices, unresolved endpoint check and next experiment boundary.
+
 The intended workflow is **select → train → evaluate target and preserved behavior
 → export**. The first application will be document-grounded answering: answer
 supported questions and abstain when evidence is missing, without becoming less

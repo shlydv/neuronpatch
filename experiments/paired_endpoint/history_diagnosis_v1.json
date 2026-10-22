@@ -1,0 +1,113 @@
+{
+  "status": "Retrospective diagnosis,not prospective prediction or an early-stop experiment",
+  "source_fits_sha256": "f5c4b43bb4f59b2345f544c0663d0f7acd3f1979b2396060bf31d177fa907b96",
+  "rows": [
+    {
+      "case": 0,
+      "condition": "paired_mean-43-0",
+      "last_observed_mean_nll_gate_step": 16,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 1.0489840383974702e-07,
+      "final_preservation_mean_nll": 4.018801105863822e-06
+    },
+    {
+      "case": 0,
+      "condition": "outgoing_mean-43-0",
+      "last_observed_mean_nll_gate_step": 16,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 2.2899391735917462e-07,
+      "final_preservation_mean_nll": 2.941402077796498e-06
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-11-0",
+      "last_observed_mean_nll_gate_step": 28,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 5.139375149257022e-06,
+      "final_preservation_mean_nll": 1.2467137996965662e-05
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-29-0",
+      "last_observed_mean_nll_gate_step": 28,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 1.6902733245653205e-06,
+      "final_preservation_mean_nll": 1.827023206079698e-05
+    },
+    {
+      "case": 0,
+      "condition": "paired_random-47-0",
+      "last_observed_mean_nll_gate_step": 28,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 1.568220861772021e-05,
+      "final_preservation_mean_nll": 8.544812473153405e-06
+    },
+    {
+      "case": 0,
+      "condition": "lora-43-0",
+      "last_observed_mean_nll_gate_step": 28,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 1.2080793087281767e-05,
+      "final_preservation_mean_nll": 2.1798160952594497e-05
+    },
+    {
+      "case": 1,
+      "condition": "paired_mean-43-0",
+      "last_observed_mean_nll_gate_step": 15,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 2.12119359706738e-06,
+      "final_preservation_mean_nll": 4.48123135036048e-06
+    },
+    {
+      "case": 1,
+      "condition": "outgoing_mean-43-0",
+      "last_observed_mean_nll_gate_step": 15,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 1.0178237531811699e-06,
+      "final_preservation_mean_nll": 4.730898489629315e-06
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-11-0",
+      "last_observed_mean_nll_gate_step": 24,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 1.417585134078081e-05,
+      "final_preservation_mean_nll": 1.755630941468035e-05
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-29-0",
+      "last_observed_mean_nll_gate_step": 24,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 5.591596912957186e-05,
+      "final_preservation_mean_nll": 3.607377183113177e-05
+    },
+    {
+      "case": 1,
+      "condition": "paired_random-47-0",
+      "last_observed_mean_nll_gate_step": 24,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 9.091126742472649e-06,
+      "final_preservation_mean_nll": 4.567090390060634e-06
+    },
+    {
+      "case": 1,
+      "condition": "lora-43-0",
+      "last_observed_mean_nll_gate_step": 30,
+      "verified_simultaneous_endpoint_gate": null,
+      "final_complete_training_mean_nll": 4.0777295703225347e-05,
+      "final_preservation_mean_nll": 1.6799534828532752e-05
+    }
+  ],
+  "gradient_support_overlap_between_cases": {
+    "intersection": 40,
+    "each_support": 173,
+    "jaccard": 0.13071895424836602
+  },
+  "limitations": [
+    "Last-seen sampled losses refer to different model states and average tokens;this is not a minimum-token-confidence gate.",
+    "Preservation examples and protected validation questions differ from test questions.",
+    "Smaller sampled loss or fewer apparent steps does not establish less interference or lower total compute.",
+    "No early checkpoint was saved;no causal effect of stopping can be measured from these histories."
+  ]
+}

@@ -1,5 +1,11 @@
 # Method design and evidence ledger
 
+**Current decision (22 October): see [current-method.md](current-method.md).**
+The Qwen complete-answer pilot is complete and independently verified; its
+gradient-selected condition does not beat random/LoRA and introduces genuine
+interference. A zero-fit live-versus-merged endpoint replay is accepted on Kaggle.
+The dated sections below are a historical ledger, including superseded statuses.
+
 Updated 2026-10-20. Goal: develop and verify a useful neuron-targeted adaptation
 method that improves on relevant published baselines. Neither reproducing a paper
 nor passing unit tests completes that goal. This document separates verified

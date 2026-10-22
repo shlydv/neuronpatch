@@ -1,0 +1,16 @@
+{
+  "kernel": "shlydv/neuronpatch-paired-endpoint-v1-20261022",
+  "kernel_id": 140169402,
+  "accepted_version": 1,
+  "accepted_source_byte_identical": true,
+  "source_sha256": "ed3c3750065ea1c927fcea0fe9394eb62263f6a868b443f0f1eb31e0aa6cc6e3",
+  "script_bytes": 113726,
+  "kernel_sources": [
+    "shlydv/neuronpatch-paired-full-response-v1-20261022"
+  ],
+  "rejected_input_sources": [],
+  "new_fits": 0,
+  "status": "QUEUED",
+  "status_checked_utc": "2026-10-22T07:09:51.104887+00:00",
+  "results_status": "Accepted;no pretrained replay outcome yet."
+}
