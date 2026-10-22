@@ -85,6 +85,16 @@ PYTHONPATH=.:src python -m pytest -q tests/test_functional_selection.py
 
 ## Bounded pretrained calibration
 
+The original submission sets an internal 3600-second worker deadline and a
+3900-second worker-process timeout. It does not set a provider session timeout
+or bound dependency setup. These are different scopes; the original job must
+not be described as having a bounded total session runtime.
+The [submission-limit audit](submission_limits_v1.json) records this gap.
+Future submissions use `experiments.kaggle_submit` with a required
+`--timeout-seconds` value and record it in launch provenance. The provider
+runtime limit does not establish a queue-wait deadline. This change does not
+resubmit, cancel or modify the existing calibration.
+
 The prepared protocol uses the two existing development facts and the same
 per-layer coordinate budget. The algorithmic shortlist contains the top64
 original gradient-ranked neurons per layer. Random seed11 indices are added

@@ -1,0 +1,16 @@
+{
+  "local_sdk_source": "kaggle/api/kaggle_api_extended.py:kernels_push(folder,timeout,acc)",
+  "sdk_push_source_sha256": "210e589ab1f7359ffb560aacfe1c003ac1bc844c366f4ff709bf3d13de4d5458",
+  "request_type": "ApiSaveKernelRequest.session_timeout_seconds",
+  "documented_scope": "Provider terminates the session after this runtime;this does not establish a queue-wait limit.",
+  "submission_helper_sha256": "e5a078796a7cb7d2386ad8f03c6e70644f5c5caccf2ac4627a152d35a8da0ccd",
+  "mocked_checks": 3,
+  "live_submissions": 0,
+  "current_execution_unchanged": true,
+  "future_submission_contract": "The local push helper requires an explicit provider runtime limit from60 through10800 seconds;the chosen limit must also be recorded in each future launch provenance.",
+  "public_launcher_checks": 10,
+  "real_sdk_configuration_with_mocked_submission": "passed;no live push",
+  "public_launcher_sha256": "5128493bb84c2b2b186c8c95431bff6cf98486b3a25e9261611d540602c02ba4",
+  "public_launcher_tests_sha256": "77c1efdcaab01922eddcf3ce63d63702875f9628e83736ac5786a5eb88efbd01",
+  "provider_timeout_enforcement_live_verified": false
+}

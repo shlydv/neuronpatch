@@ -10,5 +10,12 @@
   "status": "RUNNING",
   "status_checked_utc": "2026-10-22T11:11:31.913625+00:00",
   "failure_message": null,
-  "results_status": "Accepted with exact frozen source;no pretrained calibration outcome yet."
+  "results_status": "Accepted with exact frozen source;no pretrained calibration outcome yet.",
+  "runtime_limits_at_original_submission": {
+    "worker_internal_seconds": 3600,
+    "worker_subprocess_seconds": 3900,
+    "provider_session_timeout_seconds": null,
+    "dependency_setup_timeout_seconds": null,
+    "scope": "Original submission bounds the model worker but not dependency setup or the whole provider session. Queue wait is not model execution time."
+  }
 }
