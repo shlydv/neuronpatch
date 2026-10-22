@@ -126,9 +126,9 @@ were not. The account's GPU quota was accruing during the unobservable run;
 its acknowledged cancellation yielded only an empty log and no usable model
 artifact. This is no evidence for or against the selection hypothesis.
 A [single operational retry](../experiments/functional_selection/retry_v2.json)
-is prepared with identical source and criteria and a requested5400-second
-provider session limit. The first execution is confirmed cancelled before
-retry submission. The new submission guard requires an explicit provider limit;
+is accepted as version 2 with identical source and criteria and a requested
+5400-second provider session limit; it is queued at the recorded status check.
+The first execution was confirmed cancelled before retry submission. The new submission guard requires an explicit provider limit;
 neither it nor that limit bounds queue wait. Compute from the unavailable first
 execution must remain visible in total cost reporting.
 

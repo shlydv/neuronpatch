@@ -2,7 +2,7 @@
   "preregistered_utc": "2026-10-22T14:18:49.926326+00:00",
   "kernel": "shlydv/neuronpatch-functional-selection-v1-20261022",
   "expected_version": 2,
-  "status": "prepared;not submitted",
+  "status": "QUEUED",
   "operational_retry_number": 1,
   "provider_session_timeout_seconds": 5400,
   "same_notebook_id": 140201160,
@@ -19,5 +19,15 @@
   "prior_outcome": "Operator resource-control cancellation;no usable model outcome or hypothesis rejection. Worker execution and exact compute breakdown remain unknown.",
   "reason": "Account GPU quota was accruing during an unobservable run;source audit exposed absent provider/runtime setup limits. Request a provider-level limit for the same frozen experiment.",
   "change_scope": "Only the explicit provider session-timeout request changes. Source,dependencies,model,inputs,support budgets,scales,probe seeds and prospective criteria remain byte-identical.",
-  "limits": "Provider runtime limit does not bound queue wait. No superiority or scientific failure claim follows from cancelling or retrying. Total cost reporting must include the original unavailable run."
+  "limits": "Provider runtime limit does not bound queue wait. No superiority or scientific failure claim follows from cancelling or retrying. Total cost reporting must include the original unavailable run.",
+  "status_at_preregistration": "prepared;not submitted",
+  "accepted_version": 2,
+  "ui_verified_session_id": 361164201,
+  "ui_session_source": "Visible Edit link on accepted latest notebook viewer",
+  "accepted_source_byte_identical": true,
+  "all_37_bundle_hashes_verified": true,
+  "provider_session_timeout_requested_seconds": 5400,
+  "provider_timeout_enforcement_live_verified": false,
+  "status_checked_utc": "2026-10-22T14:21:48.337222+00:00",
+  "submitted_utc": "2026-10-22T14:20:05.349342+00:00"
 }
