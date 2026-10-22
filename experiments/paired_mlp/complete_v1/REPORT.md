@@ -97,3 +97,7 @@ Follow-up: the [completed endpoint replay](../../paired_endpoint/complete_v1/REP
 finds the observed failures already before merging. The
 [saved-update audit](UPDATE_AUDIT.md) finds smaller damaging guided updates than
 clean random/LoRA updates, so nominal update size alone does not explain them.
+The [discovery audit](DISCOVERY_AUDIT.md) finds that guided supports concentrate
+the recorded correction gradient and retain96–97% of the same-budget global
+score optimum. This is not an Adam-step or generated-answer advantage; the score
+does not include effects on preserved behavior.

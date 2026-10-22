@@ -116,5 +116,14 @@ interference. In case1 at the low rate, the guided norm is2.138, below clean
 random seed11's4.360 and LoRA's2.269, yet the guided patch causes the genuine
 Lakers and oxygen errors. Norm control may still help within a trajectory; a
 global small-norm rule cannot replace functional preservation measurements.
+
+The [saved discovery-score audit](../experiments/paired_mlp/complete_v1/DISCOVERY_AUDIT.md)
+finds that the existing layer quotas retain95.52–97.17% of the same-budget
+global optimum for our own correction-gradient score. Guided supports contain
+about49% of the squared correction gradient, versus0.016–0.036% for the three
+recorded random controls. This is not a behavioral or Adam-step advantage. It
+weakens poor allocation as an explanation for wasting this particular score and
+keeps the focus on whether correction sensitivity translates into useful cost
+and preservation behavior.
 The large [method ledger](method-design.md) preserves historical decisions; this
 document is the current decision, not another claim of completed research.

@@ -1,0 +1,152 @@
+{
+  "scope": "Retrospective arithmetic on the two exposed cases' saved discovery scores.",
+  "definition": "Sum of squared Euclidean mean-correction-gradient norms over the selected gate/up rows and down columns, divided by that sum over all MLP neurons. Equal neuron costs make global top-k optimal for this recorded score.",
+  "cases": [
+    {
+      "case": 0,
+      "candidate_neurons": 350208,
+      "selected_neurons": 173,
+      "global_score_optimum_fraction_squared_mean_gradient": 0.5055742982127379,
+      "global_score_optimum_layer_counts": [
+        0,
+        2,
+        3,
+        6,
+        6,
+        1,
+        6,
+        2,
+        3,
+        5,
+        6,
+        10,
+        4,
+        3,
+        1,
+        4,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        0,
+        5,
+        3,
+        4,
+        5,
+        2,
+        7,
+        2,
+        4,
+        8,
+        4,
+        6,
+        10,
+        40
+      ],
+      "recorded_supports": [
+        {
+          "condition": "paired_mean-43-0",
+          "fraction_squared_mean_gradient": 0.4912740966175186,
+          "fraction_same_budget_global_score_optimum": 0.9717149355776744
+        },
+        {
+          "condition": "paired_random-11-0",
+          "fraction_squared_mean_gradient": 0.00020767689819506038,
+          "fraction_same_budget_global_score_optimum": 0.00041077424016454475
+        },
+        {
+          "condition": "paired_random-29-0",
+          "fraction_squared_mean_gradient": 0.00023525973503298663,
+          "fraction_same_budget_global_score_optimum": 0.00046533167501721566
+        },
+        {
+          "condition": "paired_random-47-0",
+          "fraction_squared_mean_gradient": 0.00036462394410720724,
+          "fraction_same_budget_global_score_optimum": 0.0007212074375540726
+        }
+      ]
+    },
+    {
+      "case": 1,
+      "candidate_neurons": 350208,
+      "selected_neurons": 173,
+      "global_score_optimum_fraction_squared_mean_gradient": 0.5170975749706622,
+      "global_score_optimum_layer_counts": [
+        1,
+        9,
+        4,
+        12,
+        19,
+        3,
+        8,
+        1,
+        2,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        4,
+        2,
+        3,
+        8,
+        4,
+        5,
+        4,
+        4,
+        5,
+        4,
+        5,
+        13,
+        43
+      ],
+      "recorded_supports": [
+        {
+          "condition": "paired_mean-43-0",
+          "fraction_squared_mean_gradient": 0.49390773475299266,
+          "fraction_same_budget_global_score_optimum": 0.9551538407060112
+        },
+        {
+          "condition": "paired_random-11-0",
+          "fraction_squared_mean_gradient": 0.00016090284072656347,
+          "fraction_same_budget_global_score_optimum": 0.0003111653361276977
+        },
+        {
+          "condition": "paired_random-29-0",
+          "fraction_squared_mean_gradient": 0.00020260871768147516,
+          "fraction_same_budget_global_score_optimum": 0.00039181912174500184
+        },
+        {
+          "condition": "paired_random-47-0",
+          "fraction_squared_mean_gradient": 0.00028505545184552653,
+          "fraction_same_budget_global_score_optimum": 0.0005512604692870573
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "fits.json": "f5c4b43bb4f59b2345f544c0663d0f7acd3f1979b2396060bf31d177fa907b96",
+    "case-0-scores.safetensors": "8692879b3807c400b501520c6839b8abc4be9bb8fed2412a1c02bb77d404f70d",
+    "case-0-discovery.json": "936351d7f1d2e40c23ecd90a3c1ebb07890272a1589e22d6b4e498e1ff83372f",
+    "case-1-scores.safetensors": "666ebbf74ff7225459d0e598426c87226cd48e17b80fa65856745c166d0776f9",
+    "case-1-discovery.json": "cef8d9749c5306e9294cb3505b98b687f136c76aa4a2b393ecbb3a286e4f04df"
+  },
+  "limitations": [
+    "This score is first-order Euclidean geometry, not actual Adam improvement.",
+    "No preservation gradients, update trajectories or unseen outputs enter this score.",
+    "A large score does not establish semantic localization or a behavioral advantage.",
+    "Global supports are computed analytically but not trained or evaluated.",
+    "All data were previously exposed; there is no fresh predictive validation."
+  ]
+}
