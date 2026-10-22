@@ -1,0 +1,48 @@
+{
+  "observed_utc": "2026-10-22T09:20:49.419488+00:00",
+  "official_paper": "https://arxiv.org/html/2602.16835v2",
+  "archive_page": "https://anonymous.4open.science/r/nestSP27-1C20/",
+  "download_url": "https://anonymous.4open.science/api/repo/nestSP27-1C20/zip",
+  "retrieval": "Browser download; direct Python request returned403.",
+  "archive_sha256": "2d4dfd79e2c597546d0a567ed331e56b56ce80a1ae8a5f35b52d97b17047f936",
+  "archive_bytes": 32050,
+  "files": {
+    "1_get_safety_neuron.py": {
+      "bytes": 9250,
+      "sha256": "cb96fac68ea29fb37a99e12b7b5af95505fb10baf5660989af6f9a43a2ec6118"
+    },
+    "2_sn_tune_cluster.py": {
+      "bytes": 19434,
+      "sha256": "b53e0b4e0c28590a742953dbee4a1e1d577a08a81a3424a7b036ebce3652d128"
+    },
+    "3_utility_tests.py": {
+      "bytes": 15626,
+      "sha256": "0b59a9e2694ac61345119ed4a7a6ea68c4f673bfc735ff1e19014311ce13f4ce"
+    },
+    "4_sn_tune_cluster_downstream.py": {
+      "bytes": 22812,
+      "sha256": "d8902af5b23223a34e8e8896ea9b7436e92aff580e0dc94fd6eb92f99c272740"
+    },
+    "README.md": {
+      "bytes": 7464,
+      "sha256": "334741eec33e0e1f78ee948bf013ad8595e3484a2e11874f47de2dbaa0d37091"
+    },
+    "environment.yml": {
+      "bytes": 553,
+      "sha256": "b2d29a6c9b256e0d90f38e648a57aff6654f75bc9d489e52467355a67b4b5dd5"
+    },
+    "probe.py": {
+      "bytes": 2592,
+      "sha256": "62df7afbf1166d9b6910e311197183aa89bc20e95d44653036e1c2af3064b0e7"
+    },
+    "util.py": {
+      "bytes": 3807,
+      "sha256": "0ba1f85ba561594b70937056d81f976602e0cba72c61314b65af2e4a55d27501"
+    },
+    "util_model.py": {
+      "bytes": 14622,
+      "sha256": "143f6ad71c4fdc897b4a476ac12475193f1ee7458351e147e25ade94ab7b6062"
+    }
+  },
+  "scope": "Source retrieval record. Full scripts were not executed. Later isolated numerical checks are described in README.md and cpu_checks*.json."
+}

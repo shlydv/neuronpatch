@@ -63,12 +63,19 @@ execution effects; merging is not the source of the observed answer failures.
   existing design choices worth testing, not new inventions.
 - **NeST:** probe-based localization and clustered incoming-neuron updates
   motivate controlling which activation conditions change and how much capacity
-  is shared. This remains paper-derived guidance; its implementation has not
-  been verified here. Coupled rows/columns alone do not reproduce its clustering.
+  is shared. Its official archive is now retrieved and inspected; the
+  [source fidelity audit](../experiments/nest_source/README.md) checks the actual
+  shared-row operation against ours on CPU. Full discovery and safety training
+  remain unreproduced. The released trainer's default differs from the paper's
+  epoch count, and padding, threshold and judge fixtures expose distinctions that
+  a comparison must record. Coupled rows/columns alone do not reproduce NeST.
 - **SafeNexus:** exclusion of normal-prompt candidates motivates explicitly
   asking which proposed updates overlap preserved behavior. Activation exclusion
   is not itself a guarantee of functional preservation. Its implementation
-  remains unverified; do not present our gradient score as its selector.
+  remains unverified; do not present our gradient score as its selector. Its
+  [Appendix3 utility argument](https://arxiv.org/html/2607.28969v2) assumes low
+  utility-gradient sensitivity in the selected subspace. That assumption needs
+  measurement in our setting; neuron sparsity alone does not establish it.
 - **SpaRTA and LoRA:** random sparse adaptation and low-rank adaptation are
   strong controls, not straw baselines. Our whole-neuron random control is not
   SpaRTA's random scalar support. Discovery and tuning costs must count against

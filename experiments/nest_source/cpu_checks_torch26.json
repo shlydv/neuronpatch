@@ -1,0 +1,52 @@
+{
+  "row_update_parity": [
+    {
+      "dtype": "torch.float64",
+      "trainable_scalars": 10,
+      "max_forward_difference": 2.220446049250313e-16,
+      "max_update_gradient_difference": 4.440892098500626e-16,
+      "max_input_gradient_difference": 2.220446049250313e-16,
+      "merged_weights_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "trainable_scalars": 10,
+      "max_forward_difference": 1.1920928955078125e-07,
+      "max_update_gradient_difference": 2.384185791015625e-07,
+      "max_input_gradient_difference": 1.1920928955078125e-07,
+      "merged_weights_exact": true
+    }
+  ],
+  "bf16_cancellation_fixture": {
+    "materialized_weight_output": 0.0,
+    "separate_compact_output": 0.00010013580322265625,
+    "scope": "Synthetic rounding witness only; not an explanation of our Qwen failures."
+  },
+  "padding_fixture": {
+    "unmasked_max": 9.0,
+    "valid_token_max": 2.0,
+    "scope": "Controlled activations; no measured change to pretrained safety-neuron sets."
+  },
+  "threshold_fixture": {
+    "code_selected": [
+      0
+    ],
+    "paper_equation_selected": [],
+    "selected_coefficient_z": -10.000000000000005,
+    "scope": "Finite synthetic coefficients; not evidence of frequency in published probes."
+  },
+  "judge_predicate_fixture": {
+    "counted_as_success": {
+      "Safe": true,
+      "Unsafe": true
+    },
+    "scope": "Controlled judge strings only; published-score impact is unknown."
+  },
+  "source_sha256": {
+    "1_get_safety_neuron.py": "cb96fac68ea29fb37a99e12b7b5af95505fb10baf5660989af6f9a43a2ec6118",
+    "2_sn_tune_cluster.py": "b53e0b4e0c28590a742953dbee4a1e1d577a08a81a3424a7b036ebce3652d128",
+    "util_model.py": "143f6ad71c4fdc897b4a476ac12475193f1ee7458351e147e25ade94ab7b6062"
+  },
+  "torch": "2.6.0",
+  "scope": "CPU isolated tensor/parser routines from pinned sources. No full script, model download, trainer or GPU execution."
+}
