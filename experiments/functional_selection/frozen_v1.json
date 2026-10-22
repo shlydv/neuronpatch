@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-10-22T11:08:57.797473+00:00",
+  "kernel": "shlydv/neuronpatch-functional-selection-v1-20261022",
+  "source_revision": "2cb8820bc34788938845f0f379b80fd37ba739fc",
+  "source_sha256": "601f7f3154459733ae2061da18cefa15a7290da04eca9aedd99eff6f193aca33",
+  "script_bytes": 150348,
+  "bundled_files": 37,
+  "protocol_sha256": "2df2455edf3f1d452698d76afe4433339800483dc6ad9e1c5c8c5fc60fff418a",
+  "expected_one_step_edits": 16,
+  "scored_observations": 310,
+  "extra_base_generation_controls": 32,
+  "pretrained_outcome": null
+}
