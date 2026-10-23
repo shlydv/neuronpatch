@@ -109,5 +109,12 @@ additional seeds, meaningful unrelated-task coverage and a model-size check.
 Validation cannot double as confirmation. No new named method, default API or
 claim of beating prior work should precede that evidence.
 
+The [saved-update geometry audit](update-geometry-decision.md) now examines all
+twelve paired patches from the two completed relation runs. A single shared row
+captures only 20.3–22.9% of update energy; the best signed rank-one approximation
+captures 37.7–44.9%. This does not measure behavioral compression or refute NeST
+clustering. It removes the assumption that these successful trained patches are
+already mostly one reusable direction. No new GPU run or default method follows.
+
 The [experiment history](experiment-history.md) preserves the earlier work.
 Historical candidate methods are hypotheses, not approved next runs.
