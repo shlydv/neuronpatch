@@ -66,6 +66,12 @@ def verify(root, protocol, tokenizer):
                 }
     decoded = 0
     for c, case in cases.items():
+        if "discovery_indices" in protocol:
+            discovery = read(f"case-{c}-discovery.json")
+            assert discovery["training_indices"] == protocol["discovery_indices"]
+            assert discovery["backward_passes"] == len(protocol["discovery_indices"])
+            assert discovery["score"] == protocol["selection_score"]
+            assert discovery["layer_counts"] == layer_counts
         for name in ["base", *[p["id"] for p in protocol["conditions"]]]:
             outputs = read(f"case-{c}-{name}.json")
             assert set(outputs) == set(BANKS)
@@ -94,6 +100,15 @@ def verify(root, protocol, tokenizer):
         assert condition in protocol["conditions"]
         assert len(fit["history"]) == protocol["steps"]
         assert [r["step"] for r in fit["history"]] == list(range(1, protocol["steps"] + 1))
+        generator = torch.Generator().manual_seed(protocol["seed"])
+        orders = [
+            torch.randperm(len(case[bank]), generator=generator).tolist()
+            for bank in ("train", "preserve")
+        ]
+        assert [r["example_indices"] for r in fit["history"]] == [
+            [order[step % len(order)] for order in orders]
+            for step in range(protocol["steps"])
+        ]
         assert all(
             math.isfinite(r[k])
             for r in fit["history"]

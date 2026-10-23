@@ -149,3 +149,20 @@ def test_actual_worker_fisher_random_lora_with_custom_messages(tmp_path):
     discovery = json.loads((tmp_path / "run/case-0-discovery.json").read_text())
     assert discovery["backward_passes"] == 4
     assert discovery["training_indices"] == [1, 10, 41, 50]
+    # A result with different training examples must fail independent verification.
+    path = tmp_path / "run/fits.json"
+    original = path.read_text()
+    altered = json.loads(original)
+    altered[0]["history"][0]["example_indices"][0] = -1
+    path.write_text(json.dumps(altered))
+    with pytest.raises(AssertionError):
+        verify(tmp_path / "run", spec, tokenizer)
+    path.write_text(original)
+    path = tmp_path / "run/case-0-discovery.json"
+    original = path.read_text()
+    altered = json.loads(original)
+    altered["training_indices"] = [0, 1, 2, 3]
+    path.write_text(json.dumps(altered))
+    with pytest.raises(AssertionError):
+        verify(tmp_path / "run", spec, tokenizer)
+    path.write_text(original)
