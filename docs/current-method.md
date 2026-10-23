@@ -83,6 +83,15 @@ of per-projection ratios, not a global energy ratio or a comparison of absolute
 gradient magnitude. Guided supports form a1-versus31 split in26/72 projections;
 neither random support has a singleton cluster.
 
+For orientation, under an isotropic random-gradient model, projecting32 row
+directions onto two shared groups retains2/32=6.25% of energy in expectation.
+The projection has rank2 in the32-dimensional row space regardless of group
+sizes. This is a mathematical reference, not an empirically fitted null model or
+a significance test for these correlated neural gradients. Thus6% alone is not
+evidence of a broken implementation, and the singleton splits alone do not prove
+harm. The observation is that this small diagnostic supplies no positive evidence
+for the intended alignment advantage; trained quality remains decisive.
+
 This is a concrete reason to question activation-derived sharing on this task,
 despite excellent probe fit. It does not show that the guided update will train
 worse: retained fractions normalize different supports, Adam changes geometry,
