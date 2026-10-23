@@ -1,0 +1,22 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "id": "boundary-baseline-v1-20261024",
+  "inputs_sha256": "0d030d3e391c3bfdbd1497f7c91dc27dacc22ee24f1e064394a5c057cc6cd395",
+  "runtime_limit_seconds": 3000,
+  "max_new_tokens": 128,
+  "max_context_tokens": 4096,
+  "expected_examples": 448,
+  "training_updates": 0
+}
