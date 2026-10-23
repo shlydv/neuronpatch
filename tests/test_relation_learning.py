@@ -7,6 +7,32 @@ import torch
 from experiments.relation_learning.prepare import build, protocol
 
 
+def test_replay_flags_changed_adapter_even_when_metrics_match(tmp_path):
+    import shutil
+
+    from safetensors.torch import save_file
+
+    from experiments.relation_learning.replay import compare
+
+    before, after = tmp_path / "before", tmp_path / "after"
+    before.mkdir()
+    label = "lora-43-0.0003"
+    record = {"case": 0, "condition": {"id": label}, "history": [{"step": 1}], "metrics": {}}
+    (before / "fits.json").write_text(json.dumps([record]))
+    for name in ("inputs.json", "tokenization.json", "case-0-base.json", f"case-0-{label}.json"):
+        (before / name).write_text("{}")
+    adapter = f"case-0-{label}-adapter/adapter_model.safetensors"
+    (before / adapter).parent.mkdir()
+    for name in (adapter, f"case-0-{label}-teacher.safetensors", "case-0-scores.safetensors"):
+        save_file({"value": torch.tensor([1.0, 2.0])}, str(before / name))
+    shutil.copytree(before, after)
+    assert compare(before, after)["exact_replay"]
+    save_file({"value": torch.tensor([1.0, 3.0])}, str(after / adapter))
+    result = compare(before, after)
+    assert not result["exact_replay"] and result["metrics_exact"]
+    assert result["tensors"][adapter]["max_abs_difference"] == 1
+
+
 def test_review_distinguishes_corrections_damage_and_incomplete_answers():
     from experiments.relation_learning.review import assemble
 

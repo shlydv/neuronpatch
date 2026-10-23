@@ -15,6 +15,11 @@ independently checked. Tests induce real FP16 overflow and confirm identical
 weights to a fixed-working-scale reference, plus no updates on unrecoverable
 failure. This validates retry mechanics, not the cause of the GPU failure.
 The completed first fit must be compared with v1 before reviewing efficacy.
+Use `python -m experiments.relation_learning.replay --before V1_RESULTS
+--after V2_RESULTS --output REPLAY.json`. It checks complete generated records
+without displaying their content, adapter and teacher tensors, discovery scores,
+metrics and shared history fields. A mismatch is reported, not hidden behind a
+matching rounded accuracy. This replay check is separate from selecting rates.
 
 The preceding relation-contrast probe found repeated errors distinguishing an
 interview's qualification assessor from its final assessor, and a release's
