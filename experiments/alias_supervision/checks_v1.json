@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-23T09:00:34.308362+00:00",
+  "pinned_runtime": {
+    "passed": 8,
+    "warnings": 4,
+    "seconds": 18.38,
+    "tests": [
+      "tests/test_alias_loss.py",
+      "tests/test_alias_worker.py",
+      "tests/test_paired_worker.py"
+    ]
+  },
+  "modern_runtime": {
+    "passed": 6,
+    "seconds": 9.78,
+    "tests": [
+      "tests/test_alias_loss.py",
+      "tests/test_alias_worker.py"
+    ]
+  },
+  "ruff": "pass",
+  "diff_check": "pass",
+  "source_sha256": {
+    "experiments/alias_supervision/__init__.py": "526346fbaccd18bf944093c3fb18a5b9a0c437ea5797ec092bdc4ef71370c1f6",
+    "experiments/alias_supervision/build.py": "ad3033d5093257c8ff5fd50c0aad96924cd7476776233a7c04c8d686d0f6f05c",
+    "experiments/alias_supervision/loss.py": "f9f9a8f5fa0ae8ceac13ce46ac7e8046935bccba989d2935378d62792673d4f2",
+    "experiments/alias_supervision/prepare.py": "abfb831ed06737eeb8655e6cbaa1358ab7f5e60940a04db765bc68391ee1a38a",
+    "experiments/alias_supervision/run.py": "cd4c4feb6cee42c6b7a013abab917e919139f3b206e9ac25b290e87201982e86",
+    "experiments/alias_supervision/verify.py": "49d5c2af5fcf666aa8e8b4de54cc023b804de5ae1352e79c08b0022dbd23f31e",
+    "experiments/alias_supervision/protocol_v1.json": "4f8379d4b5b95da47fdb2954f3a3f2712e33aa1ab9109b01f16d4614a99caf6c",
+    "experiments/paired_mlp/training.py": "6b561e1d42b211d3909aa8198172c46ea8c9f148b8008e1449768bf0b6f6285f",
+    "tests/test_alias_loss.py": "66126313148eb124df92ae393e58a8275699a6de734b2e4191ad668aa78f3cea",
+    "tests/test_alias_worker.py": "40ca152893559fc616c7eef69a33a8eaf727a28d4084131f31322f4218b99340"
+  },
+  "scope": "Full tiny-Qwen FP32/FP16 loss and parameter gradients,actual eight-fit pipeline,exact canonical recovery,export/reload,independent verifier and tampered-probability rejection. No full-size training result yet."
+}

@@ -16,12 +16,19 @@ def fit(
     *,
     before_update=None,
     after_update=None,
+    auxiliary_loss=None,
+    after_backward=None,
 ):
     """Run the fixed reference updates; optional observers must not mutate state.
 
     before_update sees clipped/unscaled gradients before Adam; after_update sees
     the resulting weights. Observers may measure/export but must preserve model,
     gradients, optimizer and RNG. The checkpoint study checks exact final parity.
+    An optional auxiliary_loss(index,sample) supplies a scalar objective for the
+    auxiliary bank only. It must not step parameters or mutate model state.
+    The default canonical-response path and all optimizer operations are unchanged.
+    after_backward(step,bank) may observe cumulative scaled gradients after each
+    bank's backward pass; it must not mutate parameters, gradients or model state.
     """
     parameters = list(parameters)
     assert parameters and {id(p) for p in parameters} == {
@@ -46,15 +53,23 @@ def fit(
             index = orders[bank][step % len(rows)]
             indices.append(index)
             sample = rows[index]
-            logits = model(
-                input_ids=sample.input_ids, attention_mask=sample.attention_mask, use_cache=False
-            ).logits
-            loss = completion_nll(
-                logits, sample.input_ids, sample.completion_mask, sample.attention_mask
-            )
+            if bank == 1 and auxiliary_loss is not None:
+                loss = auxiliary_loss(index, sample)
+            else:
+                logits = model(
+                    input_ids=sample.input_ids,
+                    attention_mask=sample.attention_mask,
+                    use_cache=False,
+                ).logits
+                loss = completion_nll(
+                    logits, sample.input_ids, sample.completion_mask, sample.attention_mask
+                )
+                del logits
             (loss * weight * protocol["loss_scale"]).backward()
+            if after_backward is not None:
+                after_backward(step + 1, bank)
             losses.append(float(loss.detach()))
-            del logits, loss
+            del loss
         for parameter in parameters:
             if parameter.grad is None:
                 raise RuntimeError("Missing trainable gradient")
