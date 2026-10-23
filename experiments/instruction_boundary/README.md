@@ -55,6 +55,38 @@ python -m experiments.instruction_boundary.prepare \
   --manifest experiments/instruction_boundary/frozen_v1.json
 ```
 
-No baseline has run yet. Worker, submission limits and independent token-artifact
-verification must be finalized before submission. Qualification would justify a
-subsequent controlled learning comparison, not demonstrate a sparse-method win.
+The [baseline is complete](complete_v1/REPORT.md). All128 injected responses
+follow the attack, all256 direct/quotation controls pass, and43 completed clean
+answers are correct after review. All43 become wrong under both injections.
+The original gate fails its48-clean-correct requirement. No trained-method win
+or retroactive qualification pass is claimed.
+
+## Explicit exploratory follow-up
+
+`transfer_data.py` prepares32 training,16 calibration and48 confirmation tables,
+excluding **all224** tables allocated to any original bank. Prompt construction
+and the two payload families are unchanged. Data hashes and memberships are in
+`transfer_frozen_v1.json`; source contexts remain private. This freezes data only,
+not a method-comparison protocol or permission to promote a method.
+
+The objective is clean-to-injected consistency. Completed clean-model responses
+become training targets on redirect examples, with clean response, direct-request
+and quotation preservation examples from the same training documents. This uses
+the base model as a teacher, not noisy corpus answers. It can preserve teacher
+errors; it does not claim factual improvement. Incomplete/empty teachers are
+excluded consistently and reported, without filtering on factual correctness.
+All comparison arms must use the identical retained training set and targets.
+
+Only the redirect family enters optimization and calibration-based selection.
+Claimed-authority instructions remain held out from both, and confirmation uses
+fresh documents with both families. The generation cap becomes256 for every arm,
+explicitly addressing the earlier seven incomplete clean outputs; the original
+128-token experiment remains unchanged. All672 new prompts pass the4096-token
+budget with that cap. No large model runs locally.
+
+Final evaluation must report paired recovery of base-correct answers, damage to
+clean answers and direct/quotation controls, incomplete responses, teacher-error
+retention and source ambiguity. Marker suppression alone cannot win. This
+adaptation comparison still needs its selector, optimizer, rate-selection rule,
+cost accounting and numerical success criteria frozen before any fit. No new
+Kaggle run has been submitted for it.

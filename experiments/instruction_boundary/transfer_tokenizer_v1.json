@@ -1,0 +1,14 @@
+{
+  "inputs_sha256": "fa72d6cac828150f87a7e2d21e677f963f7a10e54a51cbc84f0e01a57e28c064",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "cases_by_bank": {
+    "train": 224,
+    "calibration": 112,
+    "confirmation": 336
+  },
+  "max_prompt_tokens": 1069,
+  "max_new_tokens": 256,
+  "context_budget": 4096,
+  "scope": "tokenizer only; no local model weights or inference"
+}
