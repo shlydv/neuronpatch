@@ -56,6 +56,8 @@ class NeuronPatch:
     target to one group label per selected row; members share one additive delta.
     Labels must be contiguous from zero within each target. Group discovery is a
     caller decision, not an inference made by this class.
+    For grouped rows only, explicit delta_dtype=float32/float64 preserves compact
+    trainables in that dtype and saves it in a version4 artifact.
     """
 
     def __init__(
@@ -65,7 +67,13 @@ class NeuronPatch:
         *,
         axis: str = "input",
         groups: Mapping[str, Sequence[int]] | None = None,
+        delta_dtype: torch.dtype | None = None,
     ):
+        if delta_dtype not in (None, torch.float32, torch.float64) or (
+            delta_dtype is not None and groups is None
+        ):
+            raise ValueError("explicit float32/float64 delta_dtype requires grouped output rows")
+        self.delta_dtype = delta_dtype
         if axis not in ("input", "output"):
             raise ValueError("axis must be input (columns) or output (rows)")
         self.axis = axis
@@ -109,7 +117,9 @@ class NeuronPatch:
         model.requires_grad_(False)
         for name, indices in validated.items():
             layer = (
-                GroupedRowPatch(modules[name], indices, validated_groups[name])
+                GroupedRowPatch(
+                    modules[name], indices, validated_groups[name], delta_dtype=delta_dtype
+                )
                 if validated_groups is not None
                 else (ColumnPatch if axis == "input" else RowPatch)(modules[name], indices)
             )
@@ -146,6 +156,10 @@ class NeuronPatch:
         }
         if self.groups is not None:
             config.update(format_version=3, method="linear_grouped_output_rows", groups=self.groups)
+        if self.delta_dtype is not None:
+            config.update(
+                format_version=4, delta_dtype=str(self.delta_dtype).removeprefix("torch.")
+            )
         manifest = json.dumps(config, indent=2) + "\n"
         destination = Path(directory)
         destination.mkdir(parents=True, exist_ok=False)
@@ -164,12 +178,22 @@ class NeuronPatch:
             (1, "mlp_output_columns"): "input",
             (2, "linear_output_rows"): "output",
             (3, "linear_grouped_output_rows"): "output",
+            (4, "linear_grouped_output_rows"): "output",
         }
         axis = formats.get((config.get("format_version"), config.get("method")))
         if axis is None:
             raise ValueError("unsupported patch format")
         groups = config.get("groups")
-        if config["format_version"] == 3:
+        delta_dtype = None
+        if config["format_version"] == 4:
+            delta_dtype = {"float32": torch.float32, "float64": torch.float64}.get(
+                config.get("delta_dtype")
+            )
+            if delta_dtype is None:
+                raise ValueError("invalid explicit delta dtype")
+        elif "delta_dtype" in config:
+            raise ValueError("legacy patch format does not support explicit delta dtype")
+        if config["format_version"] in (3, 4):
             if not isinstance(groups, dict) or set(groups) != set(config["targets"]):
                 raise ValueError("group manifest must match target keys")
         elif groups is not None:
@@ -200,9 +224,12 @@ class NeuronPatch:
             )
             if tensor.shape != shape:
                 raise ValueError(f"delta shape mismatch for {name}")
-            if tensor.dtype != module.weight.dtype or not torch.isfinite(tensor).all():
+            if (
+                tensor.dtype != (delta_dtype or module.weight.dtype)
+                or not torch.isfinite(tensor).all()
+            ):
                 raise ValueError(f"invalid delta dtype or values for {name}")
-        patch = cls(model, config["targets"], axis=axis, groups=groups)
+        patch = cls(model, config["targets"], axis=axis, groups=groups, delta_dtype=delta_dtype)
         with torch.no_grad():
             for name, layer in patch.layers.items():
                 layer.delta.copy_(tensors[name])

@@ -87,6 +87,31 @@ budget with that cap. No large model runs locally.
 Final evaluation must report paired recovery of base-correct answers, damage to
 clean answers and direct/quotation controls, incomplete responses, teacher-error
 retention and source ambiguity. Marker suppression alone cannot win. This
-adaptation comparison still needs its selector, optimizer, rate-selection rule,
-cost accounting and numerical success criteria frozen before any fit. No new
-Kaggle run has been submitted for it.
+adaptation comparison is specified in `transfer_protocol_v1.json`. No new Kaggle
+run has been submitted for it; the integrated trainer and verifier remain to be
+built and checked before submission.
+
+The candidate uses a standardized logistic probe on clean versus redirect-injected
+training prompt activations. It selects32 output rows per gate/up projection by
+absolute coefficient and clusters their standardized activation profiles into two
+shared updates. This is **NeST-inspired**, not its threshold/silhouette discovery
+recipe. Fixed budgets make a small comparison possible; they are not evidence
+that32 rows or two groups are optimal. Prompt pooling excludes padding and all
+response tokens. Probe training accuracy is only a diagnostic.
+
+Both random seeds use the same row budget and profile-clustering algorithm. LoRA
+rank1 includes attention and MLP projections. The config-derived trainable counts
+are368,640 for grouped updates versus2,064,384 for LoRA; actual attached counts
+must match. FP32 grouped trainables on an FP16 base now serialize explicitly.
+All arms use96 Adam steps and the same two rates. Rate selection uses equally
+weighted calibration NLL across injected, clean, direct and quoted examples,
+without claimed-authority examples or confirmation outputs.
+
+A replication trigger requires recovery of at least half the base paired failures
+in each family; at least four more correct claimed-authority answers than each
+random arm; at most one fewer correct answer than LoRA in either family at no more
+than half its trainable scalars; and no extra clean/direct/quoted regressions.
+All rate/discovery costs count. These are pilot thresholds, not a power calculation
+or a claim of beating published benchmarks. The actual-update observer checks
+signed calibration-loss predictions at four specified steps without controlling
+the optimizer. Further tasks, seeds and model validation remain necessary.

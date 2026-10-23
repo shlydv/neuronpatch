@@ -282,6 +282,12 @@ high-level API. Each target needs one group label per selected index; labels are
 contiguous from zero. For example, indices `[5, 1, 3]` and groups `[1, 0, 1]` share
 one update between rows 5 and 3 and give row 1 another. Artifacts use format 3;
 legacy row/column artifacts remain supported. There is no automatic grouping.
+For a half-precision base, explicit `delta_dtype=torch.float32` keeps grouped
+trainables and their update computation in FP32; the update is cast at the output
+boundary. These artifacts use format4 and preserve the adapter dtype on reload.
+Merging adds in promoted precision before casting once to the base weight dtype.
+Live and merged outputs can still differ through rounding, so test deployment
+behavior separately. Omitting this option retains the original dtype behavior.
 Neither this primitive nor
 the new loss has demonstrated an advantage in model quality. See the
 [evidence ledger](docs/method-design.md) for the remaining work.

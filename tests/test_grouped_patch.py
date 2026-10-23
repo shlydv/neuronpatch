@@ -136,3 +136,58 @@ def test_group_attachment_validates_all_targets_before_mutation_and_rejects_nest
     NeuronPatch(model, {"0": [1, 3]}, axis="output", groups={"0": [0, 0]})
     with pytest.raises(ValueError, match="unpatched"):
         NeuronPatch(model, {"1": [0]})
+
+
+def test_fp32_shared_updates_on_half_base_train_and_reload_without_rounding(tmp_path):
+    torch.manual_seed(19)
+    model = nn.Sequential(nn.Linear(3, 5)).half().eval()
+    original = deepcopy(model)
+    patch = NeuronPatch(
+        model,
+        {"0": [4, 1, 3]},
+        axis="output",
+        groups={"0": [0, 1, 0]},
+        delta_dtype=torch.float32,
+    )
+    parameter = next(patch.trainable_parameters())
+    assert parameter.dtype == torch.float32
+    x = torch.randn(4, 3).half()
+    optimizer = torch.optim.Adam(patch.trainable_parameters(), lr=1e-3)
+    model(x).float().square().mean().backward()
+    assert parameter.grad.dtype == torch.float32 and torch.isfinite(parameter.grad).all()
+    optimizer.step()
+    assert parameter.count_nonzero() > 0
+    assert all(p.grad is None for p in patch.layers["0"].base.parameters())
+    patch.save(tmp_path / "mixed")
+    loaded = NeuronPatch.load(deepcopy(original), tmp_path / "mixed")
+    assert loaded.delta_dtype == torch.float32
+    torch.testing.assert_close(next(loaded.trainable_parameters()), parameter, rtol=0, atol=0)
+    torch.testing.assert_close(loaded.model(x), model(x), rtol=0, atol=0)
+    assert loaded.merged_model()[0].weight.dtype == torch.float16
+
+
+def test_mixed_shared_merge_adds_before_rounding_and_bad_manifest_does_not_mutate(tmp_path):
+    model = nn.Sequential(nn.Linear(1, 2, bias=False)).half()
+    model[0].weight.data.fill_(-1)
+    original = deepcopy(model)
+    patch = NeuronPatch(
+        model, {"0": [0]}, axis="output", groups={"0": [0]}, delta_dtype=torch.float32
+    )
+    delta = next(patch.trainable_parameters())
+    with torch.no_grad():
+        delta.fill_(1 + 2**-11 + 2**-22)
+    expected = (original[0].weight[0].float() + delta[0]).half()
+    merged = patch.merged_model()
+    torch.testing.assert_close(merged[0].weight[0], expected, rtol=0, atol=0)
+    assert not torch.equal(expected, original[0].weight[0] + delta[0].half())
+    torch.testing.assert_close(merged[0].weight[1], original[0].weight[1], rtol=0, atol=0)
+    patch.save(tmp_path / "mixed")
+    path = tmp_path / "mixed/patch.json"
+    manifest = json.loads(path.read_text())
+    manifest["delta_dtype"] = "float16"
+    path.write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="invalid explicit"):
+        NeuronPatch.load(original, tmp_path / "mixed")
+    assert type(original[0]) is nn.Linear and original[0].weight.requires_grad
+    with pytest.raises(ValueError, match="requires grouped"):
+        NeuronPatch(original, {"0": [0]}, delta_dtype=torch.float32)
