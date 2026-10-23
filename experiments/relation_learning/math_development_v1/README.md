@@ -3,6 +3,12 @@
 This frozen slice prepares a diagnostic, not a paper reproduction or a new
 method claim. There are no model answers or training results yet.
 
+The baseline was submitted as private Kaggle
+`shlydv/neuronpatch-math-baseline-v1-20261023`, version 1, kernel 140420814.
+It was observed RUNNING and the accepted source hash matches
+`submission_frozen.json`. Provider/worker/internal limits are 3600/3000/2700
+seconds. Submission and execution are not evidence of a completed result.
+
 Source: [official GSM8K repository](https://github.com/openai/grade-school-math),
 commit `3101c7d5072418e28b9008a6636bde82a006892c`. `source.json` records the
 downloaded training-file hash and the bundled original MIT license. The official
@@ -44,8 +50,9 @@ automatically train, shorten the prompt, or select a more convenient subset.
 If it passes, freeze the subsequent comparison's optimization, calibration and
 preservation banks before fitting. The next comparison must include LoRA and
 random supports and measure actual-update prediction errors at fixed steps.
-Unrelated-task preservation data, a finite GPU cap and the worker/verifier are
-still to be prepared. This directory alone is not a ready submission. Accurate
+Unrelated-task preservation data and a full training protocol are
+still to be prepared. The baseline worker and finite GPU caps are now frozen;
+post-run verification and full response review remain required. Accurate
 prediction alone would not demonstrate a useful adaptation advantage.
 
 Rebuild from the pinned source with:

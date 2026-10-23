@@ -1,0 +1,9 @@
+{
+  "kernel": "shlydv/neuronpatch-math-baseline-v1-20261023",
+  "source_sha256": "7bb3c69c824b41f7f1c7e1d44350b9ccd06cb5fa4ec9709a92f606f5048598cd",
+  "provider_limit_seconds": 3600,
+  "worker_limit_seconds": 3000,
+  "internal_limit_seconds": 2700,
+  "training_updates": 0,
+  "source_revision": "374fc21"
+}

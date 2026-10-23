@@ -5,6 +5,11 @@ verified practical advantage over strong baselines. Compact patches, training,
 export/reload and evaluation work. No recommended neuron-selection recipe or
 superiority claim is established. LoRA remains the practical comparison baseline.
 
+**Active computation:** private Kaggle `shlydv/neuronpatch-math-baseline-v1-20261023`,
+version 1, kernel 140420814, is confirmed RUNNING. This is inference only on 128
+frozen math development questions, with no training. Provider/worker/internal
+caps are 3600/3000/2700 seconds. Accepted source matches the frozen script.
+
 ## Latest completed evidence
 
 The [relation-learning pilot](../experiments/relation_learning/complete_v2/REPORT.md)
@@ -129,7 +134,8 @@ The next broader [development slice](../experiments/relation_learning/math_devel
 contains 288 deterministically partitioned GSM8K training examples. Source hashes,
 license, disjoint memberships and pinned-tokenizer preflight are saved. The
 official test set remains untouched. Its first stage is unmodified-model baseline
-qualification, not another selector fit. No job has been submitted yet.
+qualification, not another selector fit. Its accepted baseline job is listed
+above. Results and the qualification decision remain pending.
 
 The [experiment history](experiment-history.md) preserves the earlier work.
 Historical candidate methods are hypotheses, not approved next runs.

@@ -1,0 +1,8 @@
+{
+  "kernel": "shlydv/neuronpatch-math-baseline-v1-20261023",
+  "kernel_id": 140420814,
+  "version": 1,
+  "status": "RUNNING",
+  "accepted_source_exact": true,
+  "script_sha256": "7bb3c69c824b41f7f1c7e1d44350b9ccd06cb5fa4ec9709a92f606f5048598cd"
+}
