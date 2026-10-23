@@ -1,0 +1,14 @@
+{
+  "accepted_final_answers": 124,
+  "automatic_numeric_reference_matches": 91,
+  "reviewed_accepted_format_misses": 31,
+  "reviewed_correct_against_bad_reference": 2,
+  "completed_mathematical_errors": 1,
+  "incomplete": 3,
+  "denominator": 128,
+  "qualification_threshold_completed_errors": 16,
+  "qualified": false,
+  "decision": "Do not train on this slice. No formatting or support sweep.",
+  "provider_seconds": 2040.315258052,
+  "source_manifest_exact": true
+}

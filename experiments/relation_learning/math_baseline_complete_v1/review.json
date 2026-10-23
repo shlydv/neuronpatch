@@ -1,0 +1,271 @@
+{
+  "reviewer": "assistant; not an independent human mathematical judge",
+  "coverage": "all37 non-numeric-correct full responses inspected;91 exact numeric matches accepted automatically, not an audit of every reasoning step",
+  "decisions": [
+    {
+      "index": 0,
+      "id": "78133a5b1ae59668373925ef61b1d0a1d25e7bc587afd5de8ac84bf818dd1a22",
+      "response_sha256": "47760f44c7b36fdac9bd300179b9deecab6b3ff6a2d48fa4f704684be5ff5054",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 1,
+      "id": "60ade0d9001735371040c586520a3f4aa533a428edfdb8387f60654854ff81a8",
+      "response_sha256": "b397d6f643930c6e6d5d7cb488618e8128b5474078e530f98e1f3b071ef3fccf",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 4,
+      "id": "d8addccd8e765633da9eec4fd6da7cc97435e5e66e07e44fad611770ad14362b",
+      "response_sha256": "e4e401cafc6383cbe9719fe8f37d73a2ebf3e108af91c5991e572bbaab012301",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 8,
+      "id": "220b9797eff469960c5a99dae09a091dd5c046d444b45b6e44db858cfc66458e",
+      "response_sha256": "1b869cb40e5a5f39fcdd9375b8d3e2c39f368117deca47f3267996b6e30c6da2",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 9,
+      "id": "160efe37bfe66cd98619d4125cf12cfb2e7bc6343f253331a219c8a07783aaa5",
+      "response_sha256": "972cd96fa1880808edf734500b47bd9a68b2a134a3eaa902717c2d2e4cd2b48b",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 11,
+      "id": "72d314d8aa14b2cb4b9ec8a72224829a1bc17f23e266d7c94d2dbb7fe7129d11",
+      "response_sha256": "2d860858a752a4bf684e1c1194beea7b926a46e2feaea313ace83b09ff86310d",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 12,
+      "id": "e6021708446b4296cdd17a27d87789f0c6a9a096ee5899cf499a9cc9cc443512",
+      "response_sha256": "da83c7e08697005cec3853ae6c2b70c8c293ca4a417eb3139b616f38b1ab7dcc",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 14,
+      "id": "8b8207998d53ec863335ada3d53d10154d785f3b2e61b8c7a431d2c02d5cd93a",
+      "response_sha256": "e25b2ef7e0b7d0708864cf4844ccdf2269137a68106b1fe00c5d206ded36aa76",
+      "judgment": "accepted_reference_error",
+      "reason": "Hive 2 has 800 bees, each producing 0.5*1.4=0.7 liters. Total 500+560=1060; reference 2460 reverses the first ratio and also inconsistently uses 700 bees."
+    },
+    {
+      "index": 16,
+      "id": "bb712a2a44c7c4409a98390ce368e92d62d8518b16add61cfebfe8f193cc4b21",
+      "response_sha256": "9ab8f567bd8ab0cd2dfcb6e7c44ac29284b8a5935929aaae760a86a175344ecc",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 19,
+      "id": "050b3c5418bdcb5565cc789d9fbbd4cdf1e9a15c37a9bae9ccebee463aac721f",
+      "response_sha256": "734e4020b1169fce3b1a1583a505ef1b5bd30961e84985a1d0e5d3e8e45c6b16",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 20,
+      "id": "abf83c8fb04e6ef096c12ee517717e43121bfc0e7f674c03b76247cac8bdac88",
+      "response_sha256": "d3ce3d89a009af581709eaeb7ce02e0c4f22a19d3cb20119f45388cfea66c2ed",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 25,
+      "id": "4c7fe3c8b584c7633ee2ce3a930210db9e47fa2ce41ad8c5659f9cc4806fba42",
+      "response_sha256": "db28f4dad58307aa1676d0f8c447ec1e9e156a3f4407982ffed256101452027e",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 28,
+      "id": "dd952e02780da6103040d88fb1d186aead0ed71118239b61c4c2be3cbaa853ba",
+      "response_sha256": "4f29175944d5c0734ab6ca8bdf61d526ff26e5bc9a792c47c4cf076075c25d36",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 34,
+      "id": "a1c5567a54896eebcac312fd66b0205a9de46f1a822aac93aa1c0a2eb9e5d59b",
+      "response_sha256": "e50983e18b00902f53db5ec44935070a21a5c2da1d2690511414ad36c7f9aaf2",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 40,
+      "id": "1dd36e3eddc631903a876bceed55808afb0018e013644012aaf56f86922ed2cc",
+      "response_sha256": "fa82a477835811310c435d13b9ac8c295e5d806bedecee9f2876d6c729104de8",
+      "judgment": "accepted_reference_error",
+      "reason": "For a fixed distance, 2/3 speed requires 3/2 time: Micah 13.5 hours, Jake 18, Dean 9, total40.5. Reference23 incorrectly scales time with speed."
+    },
+    {
+      "index": 44,
+      "id": "df625906de4d2a49f53d995cbc628e30a42a5e218dde1e28267d4a0118113dbe",
+      "response_sha256": "4b9a330e387062ea5e2866517e2de613fe681cad1263d1a91bb3ffdf0bd3e613",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 49,
+      "id": "b8e24ca0676c4c1872a2211b6579a381012f33613a44e3d5c3443e00c56865c3",
+      "response_sha256": "560e784ca6b47af89eba5b3bd80dab2c41d34e3cd5040d97505ab59d9211849b",
+      "judgment": "incomplete",
+      "reason": "Reached512-token cap without a final answer; cannot count a completed mathematical error."
+    },
+    {
+      "index": 51,
+      "id": "299bfc6f74aa870bfa852935478f652c1b9d60fd8e8ff21c832eec3a146ba057",
+      "response_sha256": "5ffc470d72612817d84c9ef152341c20c0e9ef50a9023bd5d39a26d4ee5cf0be",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 53,
+      "id": "288946a0b39f196354d2e9e5872f5ae5dd3b2d95b6adc6815e54f5cf016e8e55",
+      "response_sha256": "2c205c394d181100340895363fb0e901de67c7ca38890394b7cdd6a0716cc4a5",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 65,
+      "id": "04b6fb04abea034314f30d48b6ae7bff85efd369f8f61d86020d231b89f8fb5b",
+      "response_sha256": "3cd0172872640c04f41e202a404f3336c732ffd7e5d8e10eca967c83424fa621",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 67,
+      "id": "b5c9208c88df371fe3fc976a6ec329702a65ffa2622426f1be42ed355373bc8c",
+      "response_sha256": "551adad7ad7d01e6b376f722487a12bfe7915d5667eb3364ab95293c59349a4f",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 74,
+      "id": "09bd369b37866490d6e9ffcff3f10d4a92c6d091e2e0cb39eb87672210d2ce03",
+      "response_sha256": "a193eaa4d93e6870af492218252e71d16c690e410184ddf96b86f8f55bd4b59a",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 75,
+      "id": "b1efb0384dbf1f3519a9a8a017765f5919a6fbc659efd34c27ae58e4999457c0",
+      "response_sha256": "5820944ddc1c62b47303cb284324d13f0f21522360e3c84325c76a50c1d939f8",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 76,
+      "id": "2239c548cef898d253ae213b507becd6f9744a048487b3d63849b01cd10c60b2",
+      "response_sha256": "88ec417a89cb517b12505d0ba7092e0a42bd084182df06baa149b7b6e6387d20",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 81,
+      "id": "08d4f7db4231c04aeeb4f3e88fc215a3bbae628b2cdc67c8672b44b21afe634a",
+      "response_sha256": "f254591dc0884e71ed736c4f9c0c06d2492b375704c13d5cae935e6662264b5e",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 84,
+      "id": "95379c0126cf23ade38ed3cceb40aa95f1a5646f0b8ec34cb0920ec696f5b77b",
+      "response_sha256": "00d2840f25b1ec16be1ef6ff22d8b355526030542337763e4fcbd615da8c363b",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 86,
+      "id": "e985848adeed029c8ffe5fe7bbf9f4c3a21f43dbd4231b754727aa7b2cdb2a7c",
+      "response_sha256": "42da2748cfc7d4cee4ddb0e37b5748105efdfb1367b29b68636d26a406008bc5",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 88,
+      "id": "4bf5c9f9ec8308f57dd9fea6fad5a4ea5c843c37a41bfe43a692644d77631cd6",
+      "response_sha256": "5de2f5ba49689b04a2420c91ad1fc8b3558b416fcc47c5ce5d5084df3a25342b",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 89,
+      "id": "bca3835978b3c7491abd2fe39cb97f324eac045c9307c7fc4beabb0558c7e0eb",
+      "response_sha256": "b8d718d6261b3d8d34589f8852a64b834ae265c721bad87d6087093a43dd6833",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 93,
+      "id": "e363c93d2bd7492e4360cebffb7c3166b9d2431eac46d8fc68a208fdf7e4ce53",
+      "response_sha256": "03462acad684a941b9cff628fd68b62ea9010331ca89c73d25eb4cc6a0873f51",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 96,
+      "id": "7ce1eee7b8bed3bd2a17c089f1faca4568877f5291011c7d16d6d61fe2cdfe1b",
+      "response_sha256": "404feea2f3bc55bd2e9f2a4db425980b6550f48adbe174aab3c398a588378535",
+      "judgment": "incomplete",
+      "reason": "Reached512-token cap; visible reasoning incorrectly interprets16-hour layover as travel time, but no completed final answer. Excluded by frozen gate."
+    },
+    {
+      "index": 105,
+      "id": "43f5b5ef30950e1ed2e766dd7d06c7fa31f3333e276a84d20de8a7787e807096",
+      "response_sha256": "abd8d0a514a9b80e8df90b407ad95dabbff2bd4de17b360997d4e94cae1b1241",
+      "judgment": "accepted_format_miss",
+      "reason": "Explicitly assumes no draws, matching the intended reference; solves2H+5=15 and William=10. Closing #### causes parser rejection. The question itself does not explicitly exclude draws."
+    },
+    {
+      "index": 110,
+      "id": "48b32fe9c4c7c415dd03e887345bb982a8d3431672ab1c86fd6f2f1c3b184845",
+      "response_sha256": "1e2c1db7c53d2059d7a38578fd3ab76a485171a098e55d97eaf49be36b261534",
+      "judgment": "incomplete",
+      "reason": "Reasoning reaches11 shirts but continues and hits512-token cap; no completed response."
+    },
+    {
+      "index": 114,
+      "id": "7ee3fa0f81b1d3098028209dbbc99994208ce1e3ab130e9f5a8d1939f18342c6",
+      "response_sha256": "7c796683159a942df5536429fbe7b4822e4dba55eae9ecd36e1a49416fe70a3b",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 115,
+      "id": "1a6cce6373e7c41ca37e8dfdd654ff37423da26c1ce4f7bc29f21cc4ee87b6af",
+      "response_sha256": "262a6ec59980a631e281ed27383be75e42ed127809737bd1a038ffb8b167e2b3",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 119,
+      "id": "52bae44a3a9861b03be52b8bb4fe2a171740dad3fa027a3c8695fa5ff3781db6",
+      "response_sha256": "cf7d0b04465d793fb4bb16adec4f0b622004cc6c435a2547af5c0d4b1596061f",
+      "judgment": "accepted_format_miss",
+      "reason": "Reviewed full response: final numeric answer agrees with the reference; duplicate answer markers or heading text cause strict parser rejection."
+    },
+    {
+      "index": 122,
+      "id": "063a5cc1a26af07acbaa449ca3f49db61cf49b7a7356d87740b646d38c6a59bd",
+      "response_sha256": "d3ac3798c2d2fe8b116c7cf386b67c112b06620998f51f4284c8e1ef1515d979",
+      "judgment": "mathematical_error",
+      "reason": "Output63 skips daily doubling on removal/addition days. Under reference day1=6 convention the result is207; even treating6 as day0 gives399, not63."
+    }
+  ],
+  "counts": {
+    "accepted_format_miss": 31,
+    "accepted_reference_error": 2,
+    "incomplete": 3,
+    "mathematical_error": 1
+  }
+}

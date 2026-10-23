@@ -31,6 +31,7 @@ def verify(data, protocol, predictions, completion, tokenizer, eos):
         raise ValueError("Duplicate development IDs")
     counts = Counter()
     review = []
+    vocabulary_size = len(tokenizer)
     for row, result in zip(rows, predictions, strict=True):
         if row["id"] != result["id"]:
             raise ValueError("Missing, repeated or reordered result")
@@ -43,7 +44,7 @@ def verify(data, protocol, predictions, completion, tokenizer, eos):
         if (
             not tokens
             or len(tokens) > protocol["max_new_tokens"]
-            or any(type(t) is not int or not 0 <= t < len(tokenizer) for t in tokens)
+            or any(type(t) is not int or not 0 <= t < vocabulary_size for t in tokens)
         ):
             raise ValueError("Invalid or over-budget output tokens")
         if any(t in eos for t in tokens[:-1]):

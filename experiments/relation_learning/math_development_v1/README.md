@@ -1,13 +1,15 @@
 # Broader development task: baseline qualification first
 
 This frozen slice prepares a diagnostic, not a paper reproduction or a new
-method claim. There are no model answers or training results yet.
+method claim. The [completed baseline report](../math_baseline_complete_v1/REPORT.md)
+fails qualification: one completed mathematical error, below the frozen sixteen.
+No adaptation was run.
 
 The baseline was submitted as private Kaggle
 `shlydv/neuronpatch-math-baseline-v1-20261023`, version 1, kernel 140420814.
-It was observed RUNNING and the accepted source hash matches
+It completed successfully and the accepted source hash matches
 `submission_frozen.json`. Provider/worker/internal limits are 3600/3000/2700
-seconds. Submission and execution are not evidence of a completed result.
+seconds. Output verification and full review are linked above.
 
 Source: [official GSM8K repository](https://github.com/openai/grade-school-math),
 commit `3101c7d5072418e28b9008a6636bde82a006892c`. `source.json` records the

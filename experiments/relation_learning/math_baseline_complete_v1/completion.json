@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "examples": 128,
+  "training_updates": 0,
+  "eos_token_ids": [
+    151645,
+    151643
+  ],
+  "counts": {
+    "numeric_correct": 91,
+    "numeric_wrong": 1,
+    "needs_review": 33,
+    "incomplete": 3
+  },
+  "decision": "pending full response review; no automatic training"
+}
