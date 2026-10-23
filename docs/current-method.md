@@ -79,6 +79,12 @@ no further format tweaks or unsupported selector promotion. Any next comparison
 must establish a practical quality/cost advantage on fresh confirmation data,
 with discovery cost and preservation included. The overall goal is unachieved.
 
+The [saved-score audit](relation-score-decision.md) finds Fisher captures 43.25%
+of total score versus about 0.02% for random, yet gives no better trained quality.
+The balanced support already captures 97.86% of the unconstrained global score
+optimum. Do not confuse optimizing this proxy with improving adaptation, or
+launch a new global allocation merely to increase score capture.
+
 ## Scope review before the next experiment
 
 The current two-fact comparison is a development diagnostic. Its correction

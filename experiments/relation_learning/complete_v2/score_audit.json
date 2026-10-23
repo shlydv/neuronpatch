@@ -1,0 +1,93 @@
+{
+  "scope": "Retrospective score arithmetic, not an intervention or fresh prediction",
+  "source_sha256": {
+    "fits.json": "d07340e6932c4a0133476e609fffe58a56135489b5245c18beb648c3f395f09b",
+    "case-0-scores.safetensors": "397ad16e0e3afc30d91dc6c1759a5888f19d207ef2a47742e7b4b7b14bf7bd93",
+    "identity.json": "67a22a79fdf68e147a2de5908273fc531a6a1049a6198c3ef2c3c677c54918af"
+  },
+  "definition": "Sum of stored empirical-Fisher group scores; no additional squaring",
+  "candidate_neurons": 350208,
+  "selected_neurons": 173,
+  "global_score_fraction_total": 0.44189894838620813,
+  "global_score_layer_counts": [
+    1,
+    13,
+    6,
+    11,
+    13,
+    3,
+    10,
+    5,
+    4,
+    1,
+    2,
+    3,
+    3,
+    3,
+    3,
+    6,
+    4,
+    2,
+    3,
+    6,
+    4,
+    13,
+    6,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    3,
+    38
+  ],
+  "recorded_supports": [
+    {
+      "condition": "paired_random-43-0.0003",
+      "score_mass": 132.54301793690982,
+      "fraction_total": 0.00020957110753786393,
+      "fraction_global_score_optimum": 0.00047425120223346687
+    },
+    {
+      "condition": "paired_random-43-0.001",
+      "score_mass": 132.54301793690982,
+      "fraction_total": 0.00020957110753786393,
+      "fraction_global_score_optimum": 0.00047425120223346687
+    },
+    {
+      "condition": "paired_random-71-0.0003",
+      "score_mass": 150.39528021813314,
+      "fraction_total": 0.00023779830831062183,
+      "fraction_global_score_optimum": 0.0005381282512190826
+    },
+    {
+      "condition": "paired_random-71-0.001",
+      "score_mass": 150.39528021813314,
+      "fraction_total": 0.00023779830831062183,
+      "fraction_global_score_optimum": 0.0005381282512190826
+    },
+    {
+      "condition": "paired_fisher-43-0.0003",
+      "score_mass": 273503.4290807724,
+      "fraction_total": 0.4324514217349761,
+      "fraction_global_score_optimum": 0.9786206174834
+    },
+    {
+      "condition": "paired_fisher-43-0.001",
+      "score_mass": 273503.4290807724,
+      "fraction_total": 0.4324514217349761,
+      "fraction_global_score_optimum": 0.9786206174834
+    }
+  ],
+  "limitations": [
+    "No signed gradients, cross-example agreement or Adam directions are stored here.",
+    "Global score optimum is not a trained or behaviorally evaluated support.",
+    "Score concentration does not establish semantic importance or safe adaptation."
+  ]
+}
