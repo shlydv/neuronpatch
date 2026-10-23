@@ -1,0 +1,13 @@
+{
+  "source_revision": "d347386d5abef900aa678414c5884431cc3809d3",
+  "source_sha256": "4d772a32fde91a8f042741211c1991c3631f8ad4e2dd0fa606c9c40ed4f89c35",
+  "bytes": 69647,
+  "files": 17,
+  "source_and_data_verified": true,
+  "kernel": "shlydv/neuronpatch-relation-contrast-v1-20261023",
+  "timeout_seconds": 3600,
+  "checks": "Literal-label and counterbalancing test passed; existing baseline worker reused unchanged. 96 prompts tokenized offline, maximum 167 tokens.",
+  "accepted_source_matches": true,
+  "version": 1,
+  "kernel_id": 140373845
+}

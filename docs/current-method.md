@@ -38,6 +38,15 @@ varied errors and a common-supervision LoRA baseline. The
 sparse capacity and documents prior art; it is not a plan to build another router
 without measured value.
 
+The [counterbalanced relation probe](../experiments/relation_contrast/README.md)
+is now submitted as Kaggle version 1. It uses four explicit event distinctions,
+three fictional name sets, swapped candidate identities, reversed passage order,
+target-only and missing-evidence controls: 96 correlated prompts, zero training.
+It tests whether the observed relation error repeats in short unfamiliar contexts;
+a pass would not distinguish memory effects from long-context/distractor effects
+in the original example. The source and 167-token maximum input length are frozen.
+No adaptation follows automatically, and the overall method goal remains unmet.
+
 ## Scope review before the next experiment
 
 The current two-fact comparison is a development diagnostic. Its correction
