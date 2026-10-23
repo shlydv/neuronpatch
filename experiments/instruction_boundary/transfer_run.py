@@ -20,6 +20,7 @@ from neuronpatch.losses import completion_nll
 from neuronpatch.patch import _replace_submodule, fingerprint
 from neuronpatch.supervision import chat_response
 
+from .checkpointing import enable_decoder_recomputation
 from .probe_selection import capture_prompt, fit_probe, select
 from .row_gradients import capture_rows
 from .run import write
@@ -290,6 +291,8 @@ def execute(model, tokenizer, data, spec, output, check_time):
         output / "discovery.json",
         {"seconds": time.monotonic() - started, "training_prompts_only": True},
     )
+    if spec.get("decoder_recomputation", False):
+        enable_decoder_recomputation(model)
     calibration = banks["calibration"]["task"] + banks["calibration"]["preserve"]
     calibration_rows = supervision["calibration"]["task"] + supervision["calibration"]["preserve"]
     clean_positions = [

@@ -44,13 +44,24 @@ steps and two rates. Only redirect examples enter fitting and rate selection;
 claimed authority is held out. Source and numerical distinctions from NeST are
 explicit, and no method advantage is assumed.
 
-Kaggle accepted kernel140449387 version1 on24 October and reports RUNNING. The
+Kaggle accepted kernel140449387 version1 on24 October. It subsequently ended
+with an out-of-memory error, not a method-quality result. The
 [accepted source](../experiments/instruction_boundary/transfer_submission_accepted_v1.json)
 matches the tested frozen bundle hash. Provider/worker/internal caps are
 10800/10200/9900 seconds; paid scaling is disabled. Twenty-nine relevant checks
 passed, including an eight-fit tiny FP16 Qwen lifecycle and verifier corruption
-fixtures. The real-model run is pending; these software tests are not quality
-evidence. Observe this same job rather than starting another if logs disconnect.
+fixtures. Baseline generation and discovery completed, but the first LoRA fit
+failed before its first optimizer update: the calibration forward inside the
+pre-update observer could not allocate another166 MiB on the14.56 GiB GPU.
+The wrapper records889.19 seconds and returncode1. All available artifacts have
+been downloaded; no completed training comparison exists.
+
+The repair under test adds non-reentrant decoder activation recomputation while
+preserving eval mode, frozen embeddings and the observer's autograd.grad path.
+It is opt-in and does not alter the archived v1 protocol or results. Tiny-model
+checks cover both ordinary and recomputed eight-fit lifecycles; full-size GPU
+memory viability still needs confirmation. Do not describe this infrastructure
+failure as evidence against guided selection, random selection or LoRA.
 
 ### Interpretation audit before the comparison finishes
 

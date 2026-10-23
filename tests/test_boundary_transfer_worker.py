@@ -11,8 +11,52 @@ from experiments.instruction_boundary.verify_transfer import verify
 from neuronpatch.patch import fingerprint
 
 
+def test_eval_decoder_recomputation_preserves_logits_and_gradients():
+    from experiments.instruction_boundary.checkpointing import enable_decoder_recomputation
+
+    transformers = pytest.importorskip("transformers")
+    config = transformers.Qwen3Config(
+        vocab_size=64,
+        hidden_size=16,
+        intermediate_size=32,
+        num_hidden_layers=2,
+        num_attention_heads=2,
+        num_key_value_heads=1,
+        head_dim=8,
+        use_cache=False,
+    )
+    config._attn_implementation = "sdpa"
+    torch.manual_seed(29)
+    model = transformers.Qwen3ForCausalLM(config).half().eval().requires_grad_(False)
+    parameters = [layer.mlp.gate_proj.weight for layer in model.model.layers]
+    for parameter in parameters:
+        parameter.requires_grad_(True)
+    inputs = torch.arange(12).unsqueeze(0)
+    original = fingerprint(model)
+
+    def measure():
+        output = model(inputs, use_cache=False).logits
+        gradients = torch.autograd.grad(output.float().square().mean(), parameters)
+        return output.detach(), gradients
+
+    expected, gradients = measure()
+    enable_decoder_recomputation(model)
+    actual, recomputed = measure()
+    torch.testing.assert_close(actual, expected, rtol=0, atol=0)
+    for left, right in zip(gradients, recomputed, strict=True):
+        torch.testing.assert_close(left, right, rtol=0, atol=0)
+    assert all(parameter.grad is None for parameter in parameters)
+    assert not any(module.training for module in model.modules())
+    assert fingerprint(model) == original
+    with torch.no_grad():
+        torch.testing.assert_close(model(inputs, use_cache=False).logits, expected, rtol=0, atol=0)
+    with pytest.raises(ValueError, match="already installed"):
+        enable_decoder_recomputation(model)
+
+
+@pytest.mark.parametrize("recompute", [False, True])
 def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_model(
-    tmp_path, monkeypatch
+    tmp_path, monkeypatch, recompute
 ):
     transformers = pytest.importorskip("transformers")
     pytest.importorskip("peft")
@@ -48,6 +92,7 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
         ).read_text()
     )
     spec.update(
+        decoder_recomputation=recompute,
         steps=2,
         max_new_tokens=8,
         max_sequence_tokens=256,

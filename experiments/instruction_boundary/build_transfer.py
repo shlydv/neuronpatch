@@ -14,10 +14,17 @@ from experiments.fine_transfer.build import BOOTSTRAP, ROOT
 def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--output", type=Path, required=True)
-    args = parser.parse_args()
-    spec = json.loads(
-        (ROOT / "experiments/instruction_boundary/transfer_protocol_v1.json").read_text()
+    parser.add_argument(
+        "--protocol",
+        type=Path,
+        default=ROOT / "experiments/instruction_boundary/transfer_protocol_v1.json",
     )
+    parser.add_argument("--data", type=Path, default=ROOT / "artifacts/boundary_transfer_v1/data")
+    parser.add_argument("--kernel", default="shlydv/neuronpatch-boundary-transfer-v1-20261024")
+    args = parser.parse_args()
+    spec = json.loads(args.protocol.read_text())
+    if not args.kernel.startswith("shlydv/neuronpatch-"):
+        raise ValueError("Personal neuronpatch repository required")
     sources = list((ROOT / "src/neuronpatch").glob("*.py"))
     sources += [
         ROOT / name
@@ -33,6 +40,7 @@ def main():
                     "transfer_run",
                     "transfer_data",
                     "probe_selection",
+                    "checkpointing",
                     "row_gradients",
                     "prepare",
                     "run",
@@ -41,7 +49,7 @@ def main():
         )
     ]
     files = {str(path.relative_to(ROOT)): path.read_bytes() for path in sources}
-    data = ROOT / "artifacts/boundary_transfer_v1/data"
+    data = args.data
     files["data/inputs.json"] = (data / "inputs.json").read_bytes()
     files["data/protocol.json"] = (json.dumps(spec, indent=2) + "\n").encode()
     if hashlib.sha256(files["data/inputs.json"]).hexdigest() != spec["inputs_sha256"]:
@@ -77,8 +85,8 @@ def main():
     args.output.mkdir(parents=True, exist_ok=False)
     (args.output / "run.py").write_text(script)
     metadata = {
-        "id": "shlydv/neuronpatch-boundary-transfer-v1-20261024",
-        "title": "neuronpatch boundary transfer v1 20261024",
+        "id": args.kernel,
+        "title": args.kernel.split("/")[-1].replace("-", " "),
         "code_file": "run.py",
         "language": "python",
         "kernel_type": "script",
