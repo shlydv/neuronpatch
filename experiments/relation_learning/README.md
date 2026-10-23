@@ -29,6 +29,15 @@ before inspecting test predictions. This chooses each method/seed's rate by
 validation completion loss only, with lower rate breaking ties. Report both
 rates as well as the chosen rate. No early checkpoint selection is performed.
 
+After selection, use `python -m experiments.relation_learning.review --results
+RESULTS --choices CHOICES.json --output REVIEW` to generate the complete review
+queue and provisional exact-match transitions for all rates. This verifies the
+saved selections against validation loss. It does not adjudicate semantics.
+Every row starts with a null semantic review; inspect full responses, not just
+exact misses. Separate correct supported answers, justified abstentions,
+incorrect abstentions, unsupported names, other incorrect answers and truncated
+responses. Count corrected and newly damaged items against the same base input.
+
 ## What would justify continuing?
 
 A selected LoRA improving at least 8 of 64 task-test answers, while losing at

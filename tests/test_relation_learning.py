@@ -7,6 +7,33 @@ import torch
 from experiments.relation_learning.prepare import build, protocol
 
 
+def test_review_distinguishes_corrections_damage_and_incomplete_answers():
+    from experiments.relation_learning.review import assemble
+
+    inputs = [{"id": str(i), "prompt": "Who?", "answers": ["Mira"]} for i in range(3)]
+
+    def output(i, text, ended=True):
+        return {
+            "id": str(i),
+            "text": text,
+            "ended": ended,
+            "truncated": not ended,
+            "unexpected_special": False,
+        }
+
+    base = {"target_test": [output(0, "Oren"), output(1, "Mira"), output(2, "Mira")]}
+    after = {"target_test": [output(0, "Mira"), output(1, "UNKNOWN"), output(2, "Mira", False)]}
+    rows, stats = assemble({"target_test": inputs}, base, after, condition="test", selected=True)
+    assert stats[0]["corrections"] == 1
+    assert stats[0]["regressions"] == 2
+    assert stats[0]["base_exact"] == 2 and stats[0]["adapted_exact"] == 1
+    assert stats[0]["adapted_truncated"] == 1
+    assert all(row["semantic_review"] is None for row in rows)
+    after["target_test"].reverse()
+    with pytest.raises(ValueError):
+        assemble({"target_test": inputs}, base, after, condition="test", selected=True)
+
+
 def test_validation_selection_ignores_test_results_and_breaks_ties():
     from experiments.relation_learning.select import choose
 

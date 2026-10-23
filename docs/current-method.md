@@ -58,6 +58,19 @@ selection sets from small training datasets and adds established Fisher-mask and
 gradient-informed low-rank baselines. Math is a possible later task, not another
 parallel experiment being started now.
 
+The [relation-learning pilot](../experiments/relation_learning/README.md) is now
+submitted as one private Kaggle version with an explicit two-hour provider cap.
+The accepted source matches the frozen hash. It compares eight fits: LoRA,
+two random paired-neuron selections, and a streaming empirical-Fisher group
+selection, each at two rates. All share 64 task and 20 preservation examples.
+There are 32 validation and 64 task-test examples with disjoint names; half the
+test examples also change wording. All 320 bank rows pass the actual pinned
+tokenizer's response-boundary/EOS checks, with maximum length 172 tokens.
+No results are available yet. Fisher ranking is an established baseline adapted
+to groups, not a claim of novelty or preservation-aware selection. Select rates
+from validation loss before reviewing test outputs, then separately count
+corrections, regressions, appropriate abstentions and unsupported guesses.
+
 ## Scope review before the next experiment
 
 The current two-fact comparison is a development diagnostic. Its correction
