@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "id": "math-baseline-v1-20261023",
+  "inputs_sha256": "bc92e8393b05fcb4ba93cd41ae45a2de81605193108a90c7984c7a7c31f7e241",
+  "runtime_limit_seconds": 2700,
+  "max_new_tokens": 512,
+  "max_context_tokens": 1024,
+  "training_updates": 0
+}
