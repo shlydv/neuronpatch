@@ -116,5 +116,12 @@ captures 37.7–44.9%. This does not measure behavioral compression or refute Ne
 clustering. It removes the assumption that these successful trained patches are
 already mostly one reusable direction. No new GPU run or default method follows.
 
+An [actual-update prediction observer](update-prediction-contract.md) now previews
+compact Adam/AdamW steps without changing live training state and compares signed
+calibration-loss predictions against measured changes. Six CPU checks include
+bit-identical reference-loop training and distinguish momentum mismatch from
+finite-step error. GPU/retry integration and real-model predictive utility remain
+unverified; this is instrumentation, not a selected-neuron advantage.
+
 The [experiment history](experiment-history.md) preserves the earlier work.
 Historical candidate methods are hypotheses, not approved next runs.
