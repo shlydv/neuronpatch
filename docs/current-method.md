@@ -121,7 +121,15 @@ compact Adam/AdamW steps without changing live training state and compares signe
 calibration-loss predictions against measured changes. Six CPU checks include
 bit-identical reference-loop training and distinguish momentum mismatch from
 finite-step error. GPU/retry integration and real-model predictive utility remain
-unverified; this is instrumentation, not a selected-neuron advantage.
+unverified; this is instrumentation, not a selected-neuron advantage. Retry-safe
+observation is now tested with real FP16 overflow: measurements occur once per
+accepted step, without changing training; exhausted retries produce none.
+
+The next broader [development slice](../experiments/relation_learning/math_development_v1/README.md)
+contains 288 deterministically partitioned GSM8K training examples. Source hashes,
+license, disjoint memberships and pinned-tokenizer preflight are saved. The
+official test set remains untouched. Its first stage is unmodified-model baseline
+qualification, not another selector fit. No job has been submitted yet.
 
 The [experiment history](experiment-history.md) preserves the earlier work.
 Historical candidate methods are hypotheses, not approved next runs.

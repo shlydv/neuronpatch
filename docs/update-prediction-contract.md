@@ -41,9 +41,11 @@ must not be treated as a valid measurement; mismatched parameters are rejected.
 The preview must run after unscaling and clipping. The instrumentation is for
 deterministic forwards and ordinary Adam/AdamW without hooks or differentiable/
 capturable execution. The caller must preserve model buffers and RNG. The
-existing retry-enabled training mode deliberately disallows callbacks; **that
-restriction has not been relaxed**. Before GPU use, retry-safe observation must
-be integrated and tested at accepted updates only. No GPU run was submitted.
+retry-enabled training mode now permits read-only before/after-update observers
+outside the retry loop. Callbacks inside retries remain prohibited. Two additional
+FP16 overflow tests verify once-per-accepted-update observation, bit-identical
+training, and no observer invocation when retries are exhausted. No GPU run was
+submitted by this integration.
 
 ## Verified properties and limits
 

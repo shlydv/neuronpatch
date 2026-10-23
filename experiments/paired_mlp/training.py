@@ -33,7 +33,9 @@ def fit(
     bank's backward pass; it must not mutate parameters, gradients or model state.
     With minimum_loss_scale, GradScaler backs off on nonfinite gradients and
     retries the same examples before any Adam update. No scale growth occurs.
-    Retries require deterministic eval-mode computation without callbacks.
+    Retries require deterministic eval-mode computation without callbacks inside
+    the retry loop. Read-only before/after_update observers run only after finite
+    gradients have been obtained, once per accepted optimizer update.
     """
     parameters = list(parameters)
     assert parameters and {id(p) for p in parameters} == {
@@ -50,11 +52,9 @@ def fit(
             or minimum_scale > protocol["loss_scale"]
         ):
             raise ValueError("Invalid minimum loss scale")
-        if model.training or any(
-            x is not None for x in (before_update, after_update, auxiliary_loss, after_backward)
-        ):
+        if model.training or any(x is not None for x in (auxiliary_loss, after_backward)):
             raise ValueError(
-                "Scale retries require eval-mode training without callback side effects"
+                "Scale retries require eval-mode training without callbacks inside retries"
             )
         scaler = torch.amp.GradScaler(
             parameters[0].device.type,

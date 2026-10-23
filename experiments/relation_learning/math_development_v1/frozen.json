@@ -1,0 +1,11 @@
+{
+  "inputs_sha256": "bc92e8393b05fcb4ba93cd41ae45a2de81605193108a90c7984c7a7c31f7e241",
+  "source_sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+  "stage": "baseline qualification only; no adaptation run authorized by this file",
+  "qualification": {
+    "development_examples": 128,
+    "minimum_completed_mathematically_wrong": 16,
+    "unparsed_and_incomplete": "review separately; do not count as mathematical errors",
+    "failure_action": "no training on this slice; record the ceiling or execution limit"
+  }
+}
