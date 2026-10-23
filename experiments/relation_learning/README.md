@@ -116,3 +116,20 @@ costs. No selector, formatting or loss changes are included.
 Pinned-tokenizer preflight passes all 336 rows (maximum 172 tokens); the original
 64-example data hash is unchanged. Local tests cover split isolation, score
 arithmetic and the actual tiny-model Fisher/random/LoRA training worker.
+
+## Reproducible semantic bookkeeping
+
+After freezing validation choices and inspecting the full response queue, save
+an explicit review file with the frozen `inputs_sha256` and a `decisions` list.
+Each nonexact, complete, nonempty response needs `model`, `id`,
+`response_sha256` (SHA-256 of UTF-8 decoded text), boolean `correct`, and a
+nonempty `reason`. Complete reference matches can be accepted automatically;
+empty, truncated or special-token failures cannot be promoted to correct.
+
+Run `python -m experiments.relation_learning.adjudicate --results RESULTS
+--review REVIEW.json --output SEMANTIC.json`. The bookkeeping rejects missing,
+stale, duplicate and unused reviews, and computes corrections and regressions
+against semantically correct base answers. It does not judge semantics itself
+or replace independent artifact verification and validation-only rate selection.
+The replay in `complete_v2/adjudicator_replay.json` reproduces all 2,880 prior
+correctness labels and every paired bank count from the explicit decisions.

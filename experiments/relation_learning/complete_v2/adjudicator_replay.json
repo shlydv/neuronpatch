@@ -1,0 +1,7 @@
+{
+  "reviewed_outputs": 2880,
+  "explicit_decisions": 214,
+  "all_correctness_labels_exact": true,
+  "all_paired_bank_counts_exact": true,
+  "source_ledger_sha256": "8f455bc2b9dc664ca01ccebe5800f614882968c7bab4bb76e2a3cbc49ece27d3"
+}
