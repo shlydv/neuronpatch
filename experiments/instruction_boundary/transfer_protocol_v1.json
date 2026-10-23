@@ -131,7 +131,8 @@
     "examples": "first two retained calibration documents for task and clean preservation",
     "measurement": "actual Adam preview, signed pre-step loss forecast and measured after-step change; observer must not change optimization",
     "clustering": "report fixed group sizes and gradient projection retention; training fit accuracy of probe is not transfer evidence",
-    "optimizer_preview_max_scalars": 3000000
+    "optimizer_preview_max_scalars": 3000000,
+    "group_geometry_examples": "first two retained training task examples; per-example effective-weight projection retention"
   },
   "limits": {
     "provider_seconds": 10800,
@@ -146,5 +147,9 @@
     "grouped_two_groups_gate_up": 368640,
     "grouped_fraction_of_lora": 0.17857142857142858,
     "source": "pinned model config; must assert actual attached trainable counts in worker"
+  },
+  "minimum_teachers": {
+    "train": 8,
+    "calibration": 4
   }
 }

@@ -88,8 +88,15 @@ Final evaluation must report paired recovery of base-correct answers, damage to
 clean answers and direct/quotation controls, incomplete responses, teacher-error
 retention and source ambiguity. Marker suppression alone cannot win. This
 adaptation comparison is specified in `transfer_protocol_v1.json`. No new Kaggle
-run has been submitted for it; the integrated trainer and verifier remain to be
-built and checked before submission.
+run has been submitted for it yet. `transfer_run.py` now integrates teacher
+generation, discovery, eight fits, calibration selection, export/reload and merged
+confirmation evaluation. The tiny FP16 Qwen test executes all eight fits with real
+gradients/Adam/PEFT and grouped adapters; text generation alone is stubbed in that
+fixture. It checks exact adapter tensors after reload and exact base restoration.
+The independent `verify_transfer.py` checks saved token records, data roles,
+discovery membership, budgets, calibration aggregation, observer arithmetic and
+chosen rates. Corrupt-target and corrupt-choice fixtures fail verification.
+These checks do not establish full-size GPU feasibility or language quality.
 
 The candidate uses a standardized logistic probe on clean versus redirect-injected
 training prompt activations. It selects32 output rows per gate/up projection by

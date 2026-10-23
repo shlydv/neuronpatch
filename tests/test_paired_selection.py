@@ -6,6 +6,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
+from experiments.instruction_boundary.row_gradients import capture_rows
 from experiments.paired_mlp.selection import capture_response_factors, projection_scores
 from experiments.relation_learning.gradient_agreement import GradientBank, compact_gradients
 from neuronpatch.losses import completion_nll
@@ -121,6 +122,10 @@ def test_compact_agreement_matches_dense_gradients_and_finite_difference():
         dim=1,
     )
     torch.testing.assert_close(compact, expected, atol=1e-7, rtol=1e-5)
+    streamed = capture_rows(model, sample, {"up": indices, "gate": indices}, loss_scale=1)
+    torch.testing.assert_close(streamed["up"], expected[:, :4], atol=1e-7, rtol=1e-5)
+    torch.testing.assert_close(streamed["gate"], expected[:, 4:8], atol=1e-7, rtol=1e-5)
+    assert all(not module._forward_hooks for module in model.modules())
     bank = GradientBank()
     bank.add("calibration-example", compact)
     direction = torch.randn_like(compact)
