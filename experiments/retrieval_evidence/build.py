@@ -15,7 +15,10 @@ def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--kernel", default="shlydv/neuronpatch-retrieval-evidence-v1-20261023")
     args = parser.parse_args()
+    if not args.kernel.startswith("shlydv/neuronpatch-"):
+        raise ValueError("Use the personal neuronpatch experiment namespace")
     paths = list((ROOT / "src/neuronpatch").glob("*.py"))
     paths += [ROOT / "experiments/retrieval_evidence" / x for x in ("__init__.py", "run.py")]
     files = {str(p.relative_to(ROOT)): p.read_bytes() for p in paths}
@@ -30,7 +33,7 @@ def main():
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
         ).strip(),
         "file_sha256": hashes,
-        "scope": "110 reviewed baseline queries, no training",
+        "scope": f"{protocol['queries']} unchanged-model queries, no training",
     }
     bundle = {
         "files": {k: base64.b85encode(v).decode() for k, v in files.items()},
@@ -59,8 +62,8 @@ def main():
     )
     compile(script, "<retrieval-evidence-baseline>", "exec")
     metadata = {
-        "id": "shlydv/neuronpatch-retrieval-evidence-v1-20261023",
-        "title": "neuronpatch retrieval evidence v1 20261023",
+        "id": args.kernel,
+        "title": args.kernel.split("/", 1)[1].replace("-", " "),
         "code_file": "run.py",
         "language": "python",
         "kernel_type": "script",

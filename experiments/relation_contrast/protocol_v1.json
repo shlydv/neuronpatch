@@ -1,0 +1,32 @@
+{
+  "inputs_sha256": "2f84b9411b78fa1e51be628835f686b73a83a319ad286870e6369755c1152100",
+  "queries": 96,
+  "maximum_prompt_tokens": 167,
+  "max_new_tokens": 96,
+  "maximum_total_tokens": 3072,
+  "truncation_allowed": false,
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "id": "relation-contrast-v1-20261023",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "runtime_limit_seconds": 1800,
+  "training_steps": 0,
+  "seed": 43,
+  "interpretation": {
+    "hypothesis": "The observed real semifinal error reflects relation confusion that also occurs with unfamiliar entities and other event domains.",
+    "contrasts": "Counterbalance candidate identity, target passage order, target-only evidence and missing-target evidence. Twelve family/world cells, four families; the 96 prompts are not 96 independent tasks.",
+    "qualification": "At least three family/world cells across at least two families have a wrong supported answer, while at least 22/24 target-only outputs have correct answer content. Report missing-target and order effects separately. This is development headroom only, not trained benefit.",
+    "review": "Read all full outputs, credit semantically correct names with possessives/explanations; flag truncation. No substring-only score. Distinguish distractor selection, unsupported answer, abstention and other error.",
+    "limits": "Templates were designed after seeing one tennis failure. No fresh confirmation or natural distribution claim. If solved, do not keep increasing noise until a failure appears. No automatic training follows."
+  }
+}
