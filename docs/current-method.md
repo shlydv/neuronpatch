@@ -1,16 +1,17 @@
-# Current method decision — 23 October 2026
+# Current method decision — 24 October 2026
 
 **The goal remains unachieved:** a robust sparse-adaptation library with a
 verified practical advantage over strong baselines. Compact patches, training,
 export/reload and evaluation work. No recommended neuron-selection recipe or
 superiority claim is established. LoRA remains the practical comparison baseline.
 
-**Latest result, 24 October:** the [math baseline](../experiments/relation_learning/math_baseline_complete_v1/REPORT.md)
+**Earlier result, 24 October:** the [math baseline](../experiments/relation_learning/math_baseline_complete_v1/REPORT.md)
 completed and passed independent token/artifact verification. Review yields124
 accepted answers, one completed mathematical error and three incomplete responses
 out of128. Two reference answers are mathematically wrong; the model is correct
 on both. The preset sixteen-error qualification fails, so no math adaptation
-run follows. Kaggle consumed2040.32 provider seconds. No GPU job is active.
+run follows. Kaggle consumed2040.32 provider seconds. The active boundary
+comparison is described below; this math experiment is finished.
 
 The next [candidate task](instruction-boundary-candidate.md) tests instruction
 boundaries while preserving useful table QA. A pinned source/data audit found
@@ -50,6 +51,36 @@ matches the tested frozen bundle hash. Provider/worker/internal caps are
 passed, including an eight-fit tiny FP16 Qwen lifecycle and verifier corruption
 fixtures. The real-model run is pending; these software tests are not quality
 evidence. Observe this same job rather than starting another if logs disconnect.
+
+### Interpretation audit before the comparison finishes
+
+The current selector distinguishes clean table prompts from the same tables with
+an appended redirect instruction. It does not distinguish an unauthorized
+instruction from a legitimate request containing the same words: direct and
+quoted controls enter fitting and calibration, but not probe discovery.
+Consequently, high probe accuracy could reflect instruction wording, marker
+presence or prompt length. It cannot by itself establish a useful editing target.
+The frozen claimed-authority test changes attack wording, but retains the marker,
+append location and table format. Even success on that family would establish
+limited transfer, not general prompt-injection resistance.
+
+Our [NeST reference](https://arxiv.org/html/2602.16835v2) supports studying whether
+activation clusters also have aligned training gradients (Section V). It does
+not establish that this property holds for our task. We deliberately fixed two
+groups per projection and 32 selected rows, whereas NeST chooses clusters using
+activation geometry. This run therefore tests the declared adaptation, not the
+paper's full method or its strongest possible configuration.
+
+Read the pending evidence in three stages: does training recover correct answers;
+does it preserve legitimate instructions and clean answers; and does guided
+selection improve on both random supports at the same budget? Only then compare
+quality, storage and measured costs with LoRA. The gradient diagnostics can help
+explain a result, but two training examples and two calibration documents do not
+establish population-wide alignment. If selected and random supports perform
+similarly, do not interpret compactness as a selection advantage. If all methods
+fail, inspect shared targets, learning curves and output errors before blaming
+neuron localization. These are interpretation rules, not changes to the frozen
+experiment or permission to tune on confirmation outputs.
 
 Takeover review: the current Fisher ranking does not implement NeST's probe,
 clustering or shared update method. NeST SectionV additionally measures gradient
@@ -116,8 +147,8 @@ Original-wording validation loss does not reliably select transfer performance.
 One unselected random rate scores 127/128, but replacing the frozen selection
 with that test winner would be invalid. The next method comparison must match
 validation to intended deployment and use a broader task; these reviewed inputs
-are now exposed. No additional GPU job is running or submitted. Do not launch
-another format or support sweep on this test bank.
+are now exposed. No additional relation-learning GPU job is running or submitted.
+Do not launch another format or support sweep on this test bank.
 
 The [semantic-review tool](../experiments/relation_learning/adjudicate.py) binds
 explicit nonexact judgments to inputs and responses, then computes paired
