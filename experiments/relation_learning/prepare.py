@@ -43,8 +43,9 @@ TRANSFER = {
 }
 
 
-def scenario(bank, family, world_index, *, variant="original"):
-    values = dict(zip(("event", "subject", "first", "second"), WORLDS[world_index], strict=True))
+def scenario(bank, family, world_index, *, variant="original", worlds=None):
+    worlds = WORLDS if worlds is None else worlds
+    values = dict(zip(("event", "subject", "first", "second"), worlds[world_index], strict=True))
     template = FAMILIES[family] if variant == "original" else TRANSFER[family]
     rows = []
     for swapped in (False, True):

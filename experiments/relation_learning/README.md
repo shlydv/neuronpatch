@@ -89,3 +89,30 @@ See [the verified report](complete_v2/REPORT.md). All eight fits completed.
 The learning criterion passes; a Fisher-selection advantage does not. Validation
 choices, all predictions, semantic review, integrity checks and exact v1 replay
 are saved in `complete_v2/`.
+
+## Eight-example comparison
+
+`low_data.py` freezes `low_data_v1/`: eight task labels plus the same twenty
+preservation labels, 64 successful updates, the same parameter budgets and two
+learning rates for LoRA, Fisher and two random supports. Fisher uses exactly the
+eight task examples for discovery. This tests task-label efficiency, not an
+eight-label total training budget or lower compute cost.
+
+The 128 task-test questions use four fresh name sets and the existing two wording
+variants; sixteen scope controls use a fifth fresh set. Eight fresh utility
+questions supplement the earlier eight now explicitly exposed controls. The
+32 validation questions remain the rate-selection bank. Save choices before
+inspecting test predictions. This is new-name confirmation within a known
+synthetic setup, not a new domain or a paired comparison with old test counts.
+
+A promising selection result requires at least eight more correct task answers
+than each selected comparator, gains in both wording variants and no additional
+base-correct scope/utility regressions. It would trigger replication, not a
+superiority claim. If LoRA and both random supports each reach at least 124/128,
+retire this task as a selector discriminator at this parameter/update budget.
+Otherwise review errors before deciding what follows. Report all rates and
+costs. No selector, formatting or loss changes are included.
+
+Pinned-tokenizer preflight passes all 336 rows (maximum 172 tokens); the original
+64-example data hash is unchanged. Local tests cover split isolation, score
+arithmetic and the actual tiny-model Fisher/random/LoRA training worker.

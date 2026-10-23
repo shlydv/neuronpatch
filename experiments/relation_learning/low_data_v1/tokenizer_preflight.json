@@ -1,0 +1,1690 @@
+{
+  "inputs_sha256": "095a4b4942bf046db7a41fde2f0c4360162b6f9a0425b5d657afa6552d5300de",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "rows": 336,
+  "max_tokens": 172,
+  "boundary_eos_checks": true,
+  "details": [
+    {
+      "id": "train:interview:0:original:0:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "train:interview:0:original:0:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "train:interview:0:original:0:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "train:interview:0:original:0:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "train:release:1:original:1:target_last",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "train:release:1:original:1:target_first",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "train:release:1:original:1:missing",
+      "tokens": 138,
+      "prompt_tokens": 136
+    },
+    {
+      "id": "train:release:1:original:1:target_only",
+      "tokens": 140,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "preserve:tournament:0:original:0:target_last",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "preserve:tournament:0:original:0:target_first",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "preserve:tournament:0:original:0:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "preserve:tournament:0:original:0:target_only",
+      "tokens": 147,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "preserve:tournament:0:original:1:target_last",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "preserve:tournament:0:original:1:target_first",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "preserve:tournament:0:original:1:missing",
+      "tokens": 147,
+      "prompt_tokens": 145
+    },
+    {
+      "id": "preserve:tournament:0:original:1:target_only",
+      "tokens": 146,
+      "prompt_tokens": 143
+    },
+    {
+      "id": "preserve:grant:0:original:0:target_last",
+      "tokens": 151,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "preserve:grant:0:original:0:target_first",
+      "tokens": 151,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "preserve:grant:0:original:0:missing",
+      "tokens": 137,
+      "prompt_tokens": 135
+    },
+    {
+      "id": "preserve:grant:0:original:0:target_only",
+      "tokens": 134,
+      "prompt_tokens": 131
+    },
+    {
+      "id": "preserve:grant:0:original:1:target_last",
+      "tokens": 151,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "preserve:grant:0:original:1:target_first",
+      "tokens": 151,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "preserve:grant:0:original:1:missing",
+      "tokens": 138,
+      "prompt_tokens": 136
+    },
+    {
+      "id": "preserve:grant:0:original:1:target_only",
+      "tokens": 133,
+      "prompt_tokens": 130
+    },
+    {
+      "id": "preserve:utility:0",
+      "tokens": 29,
+      "prompt_tokens": 27
+    },
+    {
+      "id": "preserve:utility:1",
+      "tokens": 32,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "preserve:utility:2",
+      "tokens": 30,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "preserve:utility:3",
+      "tokens": 30,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "target_val:interview:4:original:0:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_val:interview:4:original:0:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_val:interview:4:original:0:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_val:interview:4:original:0:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_val:interview:4:original:1:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_val:interview:4:original:1:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_val:interview:4:original:1:missing",
+      "tokens": 144,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_val:interview:4:original:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_val:interview:5:original:0:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_val:interview:5:original:0:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_val:interview:5:original:0:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "target_val:interview:5:original:0:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_val:interview:5:original:1:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_val:interview:5:original:1:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_val:interview:5:original:1:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "target_val:interview:5:original:1:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_val:release:4:original:0:target_last",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_val:release:4:original:0:target_first",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_val:release:4:original:0:missing",
+      "tokens": 138,
+      "prompt_tokens": 136
+    },
+    {
+      "id": "target_val:release:4:original:0:target_only",
+      "tokens": 140,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "target_val:release:4:original:1:target_last",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_val:release:4:original:1:target_first",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_val:release:4:original:1:missing",
+      "tokens": 139,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "target_val:release:4:original:1:target_only",
+      "tokens": 139,
+      "prompt_tokens": 136
+    },
+    {
+      "id": "target_val:release:5:original:0:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "target_val:release:5:original:0:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "target_val:release:5:original:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_val:release:5:original:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_val:release:5:original:1:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "target_val:release:5:original:1:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "target_val:release:5:original:1:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_val:release:5:original:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:interview:10:original:0:target_last",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "target_test:interview:10:original:0:target_first",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "target_test:interview:10:original:0:missing",
+      "tokens": 145,
+      "prompt_tokens": 143
+    },
+    {
+      "id": "target_test:interview:10:original:0:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:interview:10:original:1:target_last",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "target_test:interview:10:original:1:target_first",
+      "tokens": 166,
+      "prompt_tokens": 163
+    },
+    {
+      "id": "target_test:interview:10:original:1:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "target_test:interview:10:original:1:target_only",
+      "tokens": 144,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:interview:10:transfer:0:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_test:interview:10:transfer:0:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_test:interview:10:transfer:0:missing",
+      "tokens": 147,
+      "prompt_tokens": 145
+    },
+    {
+      "id": "target_test:interview:10:transfer:0:target_only",
+      "tokens": 144,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:interview:10:transfer:1:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_test:interview:10:transfer:1:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "target_test:interview:10:transfer:1:missing",
+      "tokens": 148,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "target_test:interview:10:transfer:1:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:interview:11:original:0:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:11:original:0:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:11:original:0:missing",
+      "tokens": 144,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:interview:11:original:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:interview:11:original:1:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:11:original:1:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:11:original:1:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:interview:11:original:1:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:interview:11:transfer:0:target_last",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:interview:11:transfer:0:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "target_test:interview:11:transfer:0:target_only",
+      "tokens": 141,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:interview:11:transfer:1:target_last",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:interview:11:transfer:1:target_first",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:interview:11:transfer:1:missing",
+      "tokens": 145,
+      "prompt_tokens": 143
+    },
+    {
+      "id": "target_test:interview:11:transfer:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:interview:12:original:0:target_last",
+      "tokens": 168,
+      "prompt_tokens": 165
+    },
+    {
+      "id": "target_test:interview:12:original:0:target_first",
+      "tokens": 168,
+      "prompt_tokens": 165
+    },
+    {
+      "id": "target_test:interview:12:original:0:missing",
+      "tokens": 147,
+      "prompt_tokens": 145
+    },
+    {
+      "id": "target_test:interview:12:original:0:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:interview:12:original:1:target_last",
+      "tokens": 168,
+      "prompt_tokens": 165
+    },
+    {
+      "id": "target_test:interview:12:original:1:target_first",
+      "tokens": 168,
+      "prompt_tokens": 165
+    },
+    {
+      "id": "target_test:interview:12:original:1:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "target_test:interview:12:original:1:target_only",
+      "tokens": 146,
+      "prompt_tokens": 143
+    },
+    {
+      "id": "target_test:interview:12:transfer:0:target_last",
+      "tokens": 169,
+      "prompt_tokens": 166
+    },
+    {
+      "id": "target_test:interview:12:transfer:0:target_first",
+      "tokens": 169,
+      "prompt_tokens": 166
+    },
+    {
+      "id": "target_test:interview:12:transfer:0:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "target_test:interview:12:transfer:0:target_only",
+      "tokens": 144,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:interview:12:transfer:1:target_last",
+      "tokens": 169,
+      "prompt_tokens": 166
+    },
+    {
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "tokens": 169,
+      "prompt_tokens": 166
+    },
+    {
+      "id": "target_test:interview:12:transfer:1:missing",
+      "tokens": 148,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "target_test:interview:12:transfer:1:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:interview:13:original:0:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:original:0:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:original:0:missing",
+      "tokens": 144,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:interview:13:original:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:interview:13:original:1:target_last",
+      "tokens": 164,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:original:1:target_first",
+      "tokens": 164,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:original:1:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:interview:13:original:1:target_only",
+      "tokens": 144,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:interview:13:transfer:0:target_last",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:transfer:0:target_first",
+      "tokens": 163,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:transfer:0:missing",
+      "tokens": 145,
+      "prompt_tokens": 143
+    },
+    {
+      "id": "target_test:interview:13:transfer:0:target_only",
+      "tokens": 141,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:interview:13:transfer:1:target_last",
+      "tokens": 164,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:transfer:1:target_first",
+      "tokens": 164,
+      "prompt_tokens": 160
+    },
+    {
+      "id": "target_test:interview:13:transfer:1:missing",
+      "tokens": 144,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:interview:13:transfer:1:target_only",
+      "tokens": 143,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:10:original:0:target_last",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:10:original:0:target_first",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:10:original:0:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:release:10:original:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:10:original:1:target_last",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:10:original:1:target_first",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:10:original:1:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:10:original:1:target_only",
+      "tokens": 141,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:release:10:transfer:0:target_last",
+      "tokens": 162,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:10:transfer:0:target_first",
+      "tokens": 162,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:10:transfer:0:missing",
+      "tokens": 142,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:release:10:transfer:0:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:release:10:transfer:1:target_last",
+      "tokens": 162,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:10:transfer:1:target_first",
+      "tokens": 162,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:10:transfer:1:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:release:10:transfer:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:11:original:0:target_last",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_test:release:11:original:0:target_first",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_test:release:11:original:0:missing",
+      "tokens": 139,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "target_test:release:11:original:0:target_only",
+      "tokens": 139,
+      "prompt_tokens": 136
+    },
+    {
+      "id": "target_test:release:11:original:1:target_last",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_test:release:11:original:1:target_first",
+      "tokens": 156,
+      "prompt_tokens": 153
+    },
+    {
+      "id": "target_test:release:11:original:1:missing",
+      "tokens": 138,
+      "prompt_tokens": 136
+    },
+    {
+      "id": "target_test:release:11:original:1:target_only",
+      "tokens": 140,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "target_test:release:11:transfer:0:target_last",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:11:transfer:0:target_first",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:11:transfer:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:11:transfer:0:target_only",
+      "tokens": 140,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "target_test:release:11:transfer:1:target_last",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:11:transfer:1:target_first",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:11:transfer:1:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:release:11:transfer:1:target_only",
+      "tokens": 141,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:release:12:original:0:target_last",
+      "tokens": 161,
+      "prompt_tokens": 158
+    },
+    {
+      "id": "target_test:release:12:original:0:target_first",
+      "tokens": 161,
+      "prompt_tokens": 158
+    },
+    {
+      "id": "target_test:release:12:original:0:missing",
+      "tokens": 142,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:release:12:original:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:12:original:1:target_last",
+      "tokens": 161,
+      "prompt_tokens": 158
+    },
+    {
+      "id": "target_test:release:12:original:1:target_first",
+      "tokens": 161,
+      "prompt_tokens": 158
+    },
+    {
+      "id": "target_test:release:12:original:1:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:12:original:1:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:release:12:transfer:0:target_last",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:release:12:transfer:0:target_first",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:release:12:transfer:0:missing",
+      "tokens": 144,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "target_test:release:12:transfer:0:target_only",
+      "tokens": 143,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:release:12:transfer:1:target_last",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:release:12:transfer:1:target_first",
+      "tokens": 164,
+      "prompt_tokens": 161
+    },
+    {
+      "id": "target_test:release:12:transfer:1:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:release:12:transfer:1:target_only",
+      "tokens": 144,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:release:13:original:0:target_last",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:13:original:0:target_first",
+      "tokens": 159,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:13:original:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:13:original:0:target_only",
+      "tokens": 141,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:release:13:original:1:target_last",
+      "tokens": 160,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:13:original:1:target_first",
+      "tokens": 160,
+      "prompt_tokens": 156
+    },
+    {
+      "id": "target_test:release:13:original:1:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "target_test:release:13:original:1:target_only",
+      "tokens": 143,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:13:transfer:0:target_last",
+      "tokens": 162,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:13:transfer:0:target_first",
+      "tokens": 162,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:13:transfer:0:missing",
+      "tokens": 143,
+      "prompt_tokens": 141
+    },
+    {
+      "id": "target_test:release:13:transfer:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "target_test:release:13:transfer:1:target_last",
+      "tokens": 163,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:13:transfer:1:target_first",
+      "tokens": 163,
+      "prompt_tokens": 159
+    },
+    {
+      "id": "target_test:release:13:transfer:1:missing",
+      "tokens": 142,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "target_test:release:13:transfer:1:target_only",
+      "tokens": 144,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "scope_val:tournament:9:original:0:target_last",
+      "tokens": 172,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_val:tournament:9:original:0:target_first",
+      "tokens": 172,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_val:tournament:9:original:0:missing",
+      "tokens": 150,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "scope_val:tournament:9:original:0:target_only",
+      "tokens": 151,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "scope_val:tournament:9:original:1:target_last",
+      "tokens": 171,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_val:tournament:9:original:1:target_first",
+      "tokens": 171,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_val:tournament:9:original:1:missing",
+      "tokens": 151,
+      "prompt_tokens": 149
+    },
+    {
+      "id": "scope_val:tournament:9:original:1:target_only",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "scope_val:grant:9:original:0:target_last",
+      "tokens": 157,
+      "prompt_tokens": 154
+    },
+    {
+      "id": "scope_val:grant:9:original:0:target_first",
+      "tokens": 157,
+      "prompt_tokens": 154
+    },
+    {
+      "id": "scope_val:grant:9:original:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "scope_val:grant:9:original:0:target_only",
+      "tokens": 138,
+      "prompt_tokens": 135
+    },
+    {
+      "id": "scope_val:grant:9:original:1:target_last",
+      "tokens": 156,
+      "prompt_tokens": 154
+    },
+    {
+      "id": "scope_val:grant:9:original:1:target_first",
+      "tokens": 156,
+      "prompt_tokens": 154
+    },
+    {
+      "id": "scope_val:grant:9:original:1:missing",
+      "tokens": 142,
+      "prompt_tokens": 140
+    },
+    {
+      "id": "scope_val:grant:9:original:1:target_only",
+      "tokens": 136,
+      "prompt_tokens": 134
+    },
+    {
+      "id": "scope_test:tournament:14:original:0:target_last",
+      "tokens": 172,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_test:tournament:14:original:0:target_first",
+      "tokens": 172,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_test:tournament:14:original:0:missing",
+      "tokens": 150,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "scope_test:tournament:14:original:0:target_only",
+      "tokens": 151,
+      "prompt_tokens": 148
+    },
+    {
+      "id": "scope_test:tournament:14:original:1:target_last",
+      "tokens": 172,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_test:tournament:14:original:1:target_first",
+      "tokens": 172,
+      "prompt_tokens": 169
+    },
+    {
+      "id": "scope_test:tournament:14:original:1:missing",
+      "tokens": 151,
+      "prompt_tokens": 149
+    },
+    {
+      "id": "scope_test:tournament:14:original:1:target_only",
+      "tokens": 150,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "scope_test:grant:14:original:0:target_last",
+      "tokens": 154,
+      "prompt_tokens": 151
+    },
+    {
+      "id": "scope_test:grant:14:original:0:target_first",
+      "tokens": 154,
+      "prompt_tokens": 151
+    },
+    {
+      "id": "scope_test:grant:14:original:0:missing",
+      "tokens": 139,
+      "prompt_tokens": 137
+    },
+    {
+      "id": "scope_test:grant:14:original:0:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "scope_test:grant:14:original:1:target_last",
+      "tokens": 154,
+      "prompt_tokens": 151
+    },
+    {
+      "id": "scope_test:grant:14:original:1:target_first",
+      "tokens": 154,
+      "prompt_tokens": 151
+    },
+    {
+      "id": "scope_test:grant:14:original:1:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "scope_test:grant:14:original:1:target_only",
+      "tokens": 135,
+      "prompt_tokens": 132
+    },
+    {
+      "id": "exposed:tournament:0:0:target_last",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:0:0:target_first",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:0:0:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "exposed:tournament:0:0:target_only",
+      "tokens": 149,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "exposed:tournament:0:1:target_last",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:0:1:target_first",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:0:1:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "exposed:tournament:0:1:target_only",
+      "tokens": 149,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "exposed:tournament:1:0:target_last",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:1:0:target_first",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:1:0:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "exposed:tournament:1:0:target_only",
+      "tokens": 149,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "exposed:tournament:1:1:target_last",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:1:1:target_first",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:1:1:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "exposed:tournament:1:1:target_only",
+      "tokens": 149,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "exposed:tournament:2:0:target_last",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:2:0:target_first",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:2:0:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "exposed:tournament:2:0:target_only",
+      "tokens": 149,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "exposed:tournament:2:1:target_last",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:2:1:target_first",
+      "tokens": 170,
+      "prompt_tokens": 167
+    },
+    {
+      "id": "exposed:tournament:2:1:missing",
+      "tokens": 149,
+      "prompt_tokens": 147
+    },
+    {
+      "id": "exposed:tournament:2:1:target_only",
+      "tokens": 149,
+      "prompt_tokens": 146
+    },
+    {
+      "id": "exposed:interview:0:0:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:0:0:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:0:0:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "exposed:interview:0:0:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "exposed:interview:0:1:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:0:1:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:0:1:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "exposed:interview:0:1:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "exposed:interview:1:0:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:1:0:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:1:0:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "exposed:interview:1:0:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "exposed:interview:1:1:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:1:1:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:1:1:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "exposed:interview:1:1:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "exposed:interview:2:0:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:2:0:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:2:0:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "exposed:interview:2:0:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "exposed:interview:2:1:target_last",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:2:1:target_first",
+      "tokens": 167,
+      "prompt_tokens": 164
+    },
+    {
+      "id": "exposed:interview:2:1:missing",
+      "tokens": 146,
+      "prompt_tokens": 144
+    },
+    {
+      "id": "exposed:interview:2:1:target_only",
+      "tokens": 145,
+      "prompt_tokens": 142
+    },
+    {
+      "id": "exposed:grant:0:0:target_last",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:0:0:target_first",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:0:0:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "exposed:grant:0:0:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "exposed:grant:0:1:target_last",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:0:1:target_first",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:0:1:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "exposed:grant:0:1:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "exposed:grant:1:0:target_last",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:1:0:target_first",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:1:0:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "exposed:grant:1:0:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "exposed:grant:1:1:target_last",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:1:1:target_first",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:1:1:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "exposed:grant:1:1:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "exposed:grant:2:0:target_last",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:2:0:target_first",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:2:0:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "exposed:grant:2:0:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "exposed:grant:2:1:target_last",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:2:1:target_first",
+      "tokens": 155,
+      "prompt_tokens": 152
+    },
+    {
+      "id": "exposed:grant:2:1:missing",
+      "tokens": 140,
+      "prompt_tokens": 138
+    },
+    {
+      "id": "exposed:grant:2:1:target_only",
+      "tokens": 136,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "exposed:release:0:0:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:0:0:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:0:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:0:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:0:1:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:0:1:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:0:1:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:0:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:1:0:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:1:0:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:1:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:1:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:1:1:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:1:1:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:1:1:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:1:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:2:0:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:2:0:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:2:0:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:2:0:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:2:1:target_last",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:2:1:target_first",
+      "tokens": 160,
+      "prompt_tokens": 157
+    },
+    {
+      "id": "exposed:release:2:1:missing",
+      "tokens": 141,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:release:2:1:target_only",
+      "tokens": 142,
+      "prompt_tokens": 139
+    },
+    {
+      "id": "exposed:utility_test:utility:0",
+      "tokens": 32,
+      "prompt_tokens": 30
+    },
+    {
+      "id": "exposed:utility_test:utility:1",
+      "tokens": 29,
+      "prompt_tokens": 27
+    },
+    {
+      "id": "exposed:utility_test:utility:2",
+      "tokens": 30,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "exposed:utility_test:utility:3",
+      "tokens": 32,
+      "prompt_tokens": 30
+    },
+    {
+      "id": "exposed:utility_test:utility:4",
+      "tokens": 30,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "exposed:utility_test:utility:5",
+      "tokens": 29,
+      "prompt_tokens": 27
+    },
+    {
+      "id": "exposed:utility_test:utility:6",
+      "tokens": 33,
+      "prompt_tokens": 29
+    },
+    {
+      "id": "exposed:utility_test:utility:7",
+      "tokens": 33,
+      "prompt_tokens": 31
+    },
+    {
+      "id": "utility_val:utility:0",
+      "tokens": 30,
+      "prompt_tokens": 27
+    },
+    {
+      "id": "utility_val:utility:1",
+      "tokens": 29,
+      "prompt_tokens": 27
+    },
+    {
+      "id": "utility_val:utility:2",
+      "tokens": 35,
+      "prompt_tokens": 33
+    },
+    {
+      "id": "utility_val:utility:3",
+      "tokens": 30,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "utility_test:utility:0",
+      "tokens": 33,
+      "prompt_tokens": 31
+    },
+    {
+      "id": "utility_test:utility:1",
+      "tokens": 31,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "utility_test:utility:2",
+      "tokens": 31,
+      "prompt_tokens": 29
+    },
+    {
+      "id": "utility_test:utility:3",
+      "tokens": 30,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "utility_test:utility:4",
+      "tokens": 31,
+      "prompt_tokens": 28
+    },
+    {
+      "id": "utility_test:utility:5",
+      "tokens": 29,
+      "prompt_tokens": 27
+    },
+    {
+      "id": "utility_test:utility:6",
+      "tokens": 33,
+      "prompt_tokens": 29
+    },
+    {
+      "id": "utility_test:utility:7",
+      "tokens": 33,
+      "prompt_tokens": 31
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "relation-low-data-v1-20261023",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "inputs_sha256": "095a4b4942bf046db7a41fde2f0c4360162b6f9a0425b5d657afa6552d5300de",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "runtime_limit_seconds": 6300,
+  "architecture": {
+    "layers": 36,
+    "hidden": 2560,
+    "intermediate": 9728
+  },
+  "rank": 1,
+  "seed": 43,
+  "steps": 64,
+  "loss_scale": 128,
+  "gradient_clip": 1.0,
+  "preservation_weight": 1.0,
+  "max_sequence_tokens": 768,
+  "max_new_tokens": 96,
+  "minimum_base_correct_utility_test": 0,
+  "selection_score": "empirical_fisher",
+  "discovery_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "conditions": [
+    {
+      "id": "lora-43-0.0003",
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    {
+      "id": "lora-43-0.001",
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.001
+    },
+    {
+      "id": "paired_random-43-0.0003",
+      "family": "paired_random",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    {
+      "id": "paired_random-43-0.001",
+      "family": "paired_random",
+      "seed": 43,
+      "lr": 0.001
+    },
+    {
+      "id": "paired_random-71-0.0003",
+      "family": "paired_random",
+      "seed": 71,
+      "lr": 0.0003
+    },
+    {
+      "id": "paired_random-71-0.001",
+      "family": "paired_random",
+      "seed": 71,
+      "lr": 0.001
+    },
+    {
+      "id": "paired_fisher-43-0.0003",
+      "family": "paired_fisher",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    {
+      "id": "paired_fisher-43-0.001",
+      "family": "paired_fisher",
+      "seed": 43,
+      "lr": 0.001
+    }
+  ],
+  "new_fits": 8,
+  "interpretation": {
+    "supervision": "Eight task examples and twenty preservation examples shared across all arms. 64 successful optimizer steps, one task and one preservation sample per step. Fisher discovery uses all eight task examples and no extra labels. Same parameter budgets, two rates and validation selection as the 64-label pilot.",
+    "selection": "Within each method/seed choose the lower target_val mean completion NLL; ties choose lower learning rate. Save selection before reviewing target_test, scope_test and utility_test. No test performance selects a rate.",
+    "learning": "Report complete-response accuracy, paired corrections and damage against base. 128 task questions: 64 original and 64 transfer wording across four fresh worlds. Two absent-evidence training labels; six supported labels.",
+    "method": "Freeze each family/seed rate from target_val completion NLL before reading tests. A promising selection result requires at least 8 additional correct task answers out of 128 versus each selected LoRA/random condition, with no additional base-correct scope or utility regressions versus any comparator, and gains in both wording variants. This is a replication trigger, not superiority proof. If LoRA and both random supports each reach at least 124/128, retire this synthetic task as a selector discriminator at this parameter/update budget. Otherwise inspect errors; do not automatically launch another support sweep.",
+    "utility": "Utility is supplemental and reviewed semantically. The old exact-string utility gate is disabled rather than treating full-sentence aliases as incapable. Empty/weak base-correct utility coverage invalidates preservation claims, not the relation-learning measurement.",
+    "limits": "Synthetic, four templates, two task families; correlated conditions. No natural-document or second-model robustness established. No automatic promotion to library default.",
+    "cost": "Report Fisher discovery plus training cost, successful updates and retries, trainable scalars and all rates. This tests task-label efficiency, not compute efficiency: every arm still has 20 preservation labels and 64 updates. The prior 64-label run has different test names and is not a paired control."
+  },
+  "minimum_loss_scale": 0.0078125
+}
