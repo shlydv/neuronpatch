@@ -18,9 +18,24 @@ that BIPIA's default builder embeds context in the system role and that its emai
 slice is mostly unanswerable. The table training slice has900 questions over617
 contexts. The [data protocol](../experiments/instruction_boundary/README.md) is now
 frozen with128/32/64 document-disjoint train/calibration/development tables and
-seven cases per table. All1568 examples pass tokenization checks. Five CPU tests
-cover construction and paired qualification. No GPU run for this task has been
-submitted; the inference worker and artifact verification remain to be finalized.
+seven cases per table. All1568 examples pass tokenization checks. Six CPU tests
+cover construction, paired qualification, inference and independent verification.
+On24 October, Kaggle accepted baseline version1, kernel140443106, and reported
+RUNNING. The downloaded source matches the frozen script SHA256 exactly; see
+[submission record](../experiments/instruction_boundary/submission_accepted_v1.json).
+This is448 development generations and zero training updates, with a3600-second
+provider limit. Results and semantic qualification are pending. This supersedes
+the no-active-job statements associated with older completed experiments below.
+
+Takeover review: the current Fisher ranking does not implement NeST's probe,
+clustering or shared update method. NeST SectionV additionally measures gradient
+alignment within versus between activation-derived clusters. That supplies a
+testable connection between discovery and trainable capacity, not a proof that
+our proposed behavior task has the same structure. The next method decision must
+test whether update directions agree across training examples and transfer to
+separate calibration examples while preserving legitimate controls. Large squared
+gradient norms alone cannot answer that question. The existing actual-update
+observer is instrumentation for this investigation, not an established selector.
 
 ## Latest completed evidence
 

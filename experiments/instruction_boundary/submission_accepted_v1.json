@@ -1,0 +1,8 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-baseline-v1-20261024",
+  "kernel_id": 140443106,
+  "version": 1,
+  "status": "RUNNING",
+  "accepted_source_exact": true,
+  "script_sha256": "71a31b8c8f92d03ccb340e85b52bc6d8b256bb0a93581024751fca6eec7b9eac"
+}

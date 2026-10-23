@@ -1,0 +1,9 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-baseline-v1-20261024",
+  "source_sha256": "71a31b8c8f92d03ccb340e85b52bc6d8b256bb0a93581024751fca6eec7b9eac",
+  "provider_limit_seconds": 3600,
+  "worker_limit_seconds": 3300,
+  "internal_limit_seconds": 3000,
+  "training_updates": 0,
+  "source_revision": "bed50d7e9848df0c311132f54f2a648cf9ee322e"
+}
