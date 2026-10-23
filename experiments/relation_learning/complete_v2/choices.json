@@ -1,0 +1,33 @@
+{
+  "rule": "minimum validation completion NLL; lower LR breaks ties",
+  "selected": [
+    {
+      "family": "lora",
+      "seed": 43,
+      "id": "lora-43-0.0003",
+      "lr": 0.0003,
+      "nll": 0.00018237186073018682
+    },
+    {
+      "family": "paired_fisher",
+      "seed": 43,
+      "id": "paired_fisher-43-0.0003",
+      "lr": 0.0003,
+      "nll": 3.0530497046414124e-06
+    },
+    {
+      "family": "paired_random",
+      "seed": 43,
+      "id": "paired_random-43-0.001",
+      "lr": 0.001,
+      "nll": 2.536350070470039e-06
+    },
+    {
+      "family": "paired_random",
+      "seed": 71,
+      "id": "paired_random-71-0.001",
+      "lr": 0.001,
+      "nll": 9.149767592105581e-06
+    }
+  ]
+}
