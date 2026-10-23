@@ -248,8 +248,9 @@
     {
       "id": "interview:0:0:target_first",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "129c89e3517a7640404e4fd0343a06f1a0ecabc12d7ddeded1299117dfdb23a0"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "129c89e3517a7640404e4fd0343a06f1a0ecabc12d7ddeded1299117dfdb23a0",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:0:0:missing",
@@ -272,8 +273,9 @@
     {
       "id": "interview:0:1:target_first",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "e0f4942b18e6d0c7a0e89040394458a51a72a2f88e78a91b183d70f8cc558aad"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "e0f4942b18e6d0c7a0e89040394458a51a72a2f88e78a91b183d70f8cc558aad",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:0:1:missing",
@@ -290,14 +292,16 @@
     {
       "id": "interview:1:0:target_last",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "365f1127c148c2335b378b43b6937e0c724d1c7539ca18008c48f4817f87659f"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "365f1127c148c2335b378b43b6937e0c724d1c7539ca18008c48f4817f87659f",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:1:0:target_first",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "45d508a4608447251901155ecf3c5f7e17563e4f8f40490a14fa8b07b116af2b"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "45d508a4608447251901155ecf3c5f7e17563e4f8f40490a14fa8b07b116af2b",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:1:0:missing",
@@ -314,14 +318,16 @@
     {
       "id": "interview:1:1:target_last",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "83b65b885c0bd2f4af7d37125fb2addd0f7a856fb7f12438ddc3a642a9784709"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "83b65b885c0bd2f4af7d37125fb2addd0f7a856fb7f12438ddc3a642a9784709",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:1:1:target_first",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "stated_conflict_reason": false
     },
     {
       "id": "interview:1:1:missing",
@@ -344,8 +350,9 @@
     {
       "id": "interview:2:0:target_first",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "05dc0052ca7b419dbee1b8c95dddfb45f4df1d588f3a4929875eefa0113fc868"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "05dc0052ca7b419dbee1b8c95dddfb45f4df1d588f3a4929875eefa0113fc868",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:2:0:missing",
@@ -368,8 +375,9 @@
     {
       "id": "interview:2:1:target_first",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "02b13beb52867e3b34018f24264ac690b14ae9a8bfeebe5ae78f37eb0c571300"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "02b13beb52867e3b34018f24264ac690b14ae9a8bfeebe5ae78f37eb0c571300",
+      "stated_conflict_reason": true
     },
     {
       "id": "interview:2:1:missing",
@@ -626,8 +634,9 @@
     {
       "id": "release:2:0:target_last",
       "correct": false,
-      "judgement": "false_conflict_abstention",
-      "output_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1"
+      "judgement": "incorrect_abstention",
+      "output_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "stated_conflict_reason": false
     },
     {
       "id": "release:2:0:target_first",
