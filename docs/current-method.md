@@ -3,11 +3,14 @@
 The goal is unchanged: a useful, robust sparse-adaptation library with a
 verified advantage over strong baselines. We have working compact patches,
 complete-response training and deployment checks. We do **not** have that
-advantage. The next step isolates a mismatch in auxiliary supervision before changing
-another selector. The [previous decision](decisions/2026-10-22-method.md) and
+advantage. The auxiliary-supervision ablation is complete: it helps some outcomes
+but does not fix the selected-neuron oxygen error. The [previous decision](decisions/2026-10-22-method.md) and
 [experiment history](experiment-history.md) preserve earlier reasoning/results.
-The [frozen auxiliary-objective comparison](../experiments/alias_supervision/README.md)
-has now been submitted to Kaggle; it has no verified full-size outcome yet.
+The [completed auxiliary-objective comparison](../experiments/alias_supervision/complete_v1/REPORT.md)
+verifies eight fits, 544 generations and 1,084 prefix vectors. Its frozen primary
+prediction fails: selected neurons retain the oxygen error, while random and LoRA
+reduce its competing continuation probability. Selected neurons do repair Lakers;
+LoRA loses accepted probability there. None meets the full preservation criterion.
 The [additional primary-source review](research-2026-10-23.md) identifies close
 curvature and component-coefficient precedents that constrain future claims.
 
@@ -16,7 +19,7 @@ curvature and component-coefficient precedents that constrain future claims.
 The current two-fact comparison is a development diagnostic. Its correction
 scores are at a ceiling for all three representations, so it cannot establish
 a correction advantage or validate the intended reusable behavior recipe.
-Complete the already running loss ablation and review its outputs. Do not
+The loss ablation and full-output review are complete. Do not
 automatically follow it with another support/threshold variation on these same
 facts. The next experimental proposal must connect its result to the library's
 document-grounded answering application, use a strong common-objective LoRA

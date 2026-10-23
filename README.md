@@ -15,6 +15,7 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Functional-direction calibration](experiments/functional_selection/complete_v2/REPORT.md) | Risk-aware selection lowers held-out drift for similar one-step learning gain; finite risk prediction fails | A reliable risk certificate, completed edits, or a trained advantage over LoRA |
 | [Measured-preservation training](experiments/guarded_training/complete_v1/REPORT.md) | All controls stall or fail transfer; the guard also penalizes valid answer aliases | A working protection rule or selected-neuron advantage |
 | [Outcome-guard replay](experiments/outcome_guard/complete_v1/REPORT.md) | Correct greedy controls hide increased wrong-continuation probability; canonical auxiliary labels impose avoidable EOS pressure | A qualified protection rule, causal explanation of downstream errors, or improved trained method |
+| [Auxiliary-objective ablation](experiments/alias_supervision/complete_v1/REPORT.md) | Accepted-set supervision helps random/LoRA oxygen probabilities and selected Lakers answers; selected oxygen error persists | A selected-neuron advantage or a generally safe adaptation recipe |
 
 Start with the [current method decision](docs/current-method.md) for the active
 hypothesis and decision boundary. The [experiment history](docs/experiment-history.md)

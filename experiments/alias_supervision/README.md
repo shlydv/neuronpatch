@@ -1,5 +1,11 @@
 # Isolate auxiliary answer-equivalence supervision
 
+**Completed:** [results and full-output review](complete_v1/REPORT.md).
+The frozen primary prediction fails. Random and LoRA reduce the oxygen competing
+continuation; selected neurons still answer O₂, although their Lakers answer is
+repaired. All retain the requested edits; none meets the full preservation limit.
+The design below preserves the prospective protocol rather than revising it.
+
 The [completed replay](../outcome_guard/complete_v1/REPORT.md) shows latent
 competition with ₂ after O even in greedy-successful LoRA/random endpoints.
 Its logit-gradient audit also shows strong pressure to suppress EOS after an

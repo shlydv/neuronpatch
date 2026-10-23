@@ -1,0 +1,27 @@
+{
+  "kernel": "shlydv/neuronpatch-alias-supervision-v1-20261023",
+  "version": 1,
+  "provider": {
+    "provider": "Kaggle",
+    "started_utc": "2026-10-23T09:02:12.871428+00:00",
+    "gpu": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB\n",
+    "returncode": 0,
+    "elapsed_seconds": 1787.909911536
+  },
+  "source_manifest": "../frozen_v1.json",
+  "collector": {
+    "observed_utc": "2026-10-23T09:32:39.866823+00:00",
+    "kernel": "shlydv/neuronpatch-alias-supervision-v1-20261023",
+    "status": "COMPLETE",
+    "failure_message": "",
+    "new_submissions": 0,
+    "downloaded_files": 64,
+    "outputs_downloaded": true
+  },
+  "evidence_sha256": {
+    "output_review.json": "450299880506dfb0c9dde164d4c0377f6605609c127a244e3d0e5659bb04e562",
+    "gradient_audit.json": "23e2d76e7a023215aadc4524bd782d82ae4f15c9efba4c2a895af64508d563ac",
+    "analysis.json": "aca21fca6934c9918bfb7f891033c98c3b1bc9aaee134f68724005fe8d20b97e",
+    "integrity.json": "a151bf07891690244b2999539c6e3554edce56ec0df35b15c89d39a2ba7a6104"
+  }
+}

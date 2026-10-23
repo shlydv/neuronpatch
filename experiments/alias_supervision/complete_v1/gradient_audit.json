@@ -1,0 +1,182 @@
+{
+  "post_hoc_descriptive": true,
+  "rows": [
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "arm": "canonical_control",
+      "maximum_reconstructed_norm_error": 0.00010913247797361691,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.0015091280972490172,
+          "median_auxiliary_norm": 0.0022045221562637003,
+          "opposing_gradient_steps": 3,
+          "globally_clipped_steps": 7
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.003247874179258897,
+          "median_auxiliary_norm": 0.0011274663936728876,
+          "opposing_gradient_steps": 0,
+          "globally_clipped_steps": 2
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "arm": "canonical_control",
+      "maximum_reconstructed_norm_error": 8.616764581859115e-07,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.02506221290797235,
+          "median_auxiliary_norm": 0.00011110340984756795,
+          "opposing_gradient_steps": 12,
+          "globally_clipped_steps": 17
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.399062536444153,
+          "median_auxiliary_norm": 1.3402174207301645,
+          "opposing_gradient_steps": 0,
+          "globally_clipped_steps": 4
+        }
+      }
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "arm": "accepted_set",
+      "maximum_reconstructed_norm_error": 1.842655265704707e-05,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.00037955282211953804,
+          "median_auxiliary_norm": 0.0025691695849037583,
+          "opposing_gradient_steps": 8,
+          "globally_clipped_steps": 7
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.0008794266403903285,
+          "median_auxiliary_norm": 0.020443039355664293,
+          "opposing_gradient_steps": 0,
+          "globally_clipped_steps": 2
+        }
+      }
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "arm": "accepted_set",
+      "maximum_reconstructed_norm_error": 1.2378499718579405e-06,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.004492768543957672,
+          "median_auxiliary_norm": 0.00026455799555712297,
+          "opposing_gradient_steps": 10,
+          "globally_clipped_steps": 12
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.007563256393478802,
+          "median_auxiliary_norm": 2.826888676741544,
+          "opposing_gradient_steps": 4,
+          "globally_clipped_steps": 4
+        }
+      }
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "arm": "accepted_set",
+      "maximum_reconstructed_norm_error": 1.0185979348875662e-06,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.0011633365274874032,
+          "median_auxiliary_norm": 5.322864377957549e-05,
+          "opposing_gradient_steps": 18,
+          "globally_clipped_steps": 12
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.0022518836028185903,
+          "median_auxiliary_norm": 2.3716890979514007,
+          "opposing_gradient_steps": 3,
+          "globally_clipped_steps": 4
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "arm": "accepted_set",
+      "maximum_reconstructed_norm_error": 0.00010913247797361691,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.002703402502860981,
+          "median_auxiliary_norm": 0.002738184234309336,
+          "opposing_gradient_steps": 2,
+          "globally_clipped_steps": 7
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.0030327265831209,
+          "median_auxiliary_norm": 0.0014809453137854893,
+          "opposing_gradient_steps": 0,
+          "globally_clipped_steps": 2
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "arm": "accepted_set",
+      "maximum_reconstructed_norm_error": 6.146557893771387e-07,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.006963048641576135,
+          "median_auxiliary_norm": 0.00037959192386788105,
+          "opposing_gradient_steps": 11,
+          "globally_clipped_steps": 17
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.14048796426881854,
+          "median_auxiliary_norm": 1.4320355732286199,
+          "opposing_gradient_steps": 7,
+          "globally_clipped_steps": 4
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "arm": "accepted_set",
+      "maximum_reconstructed_norm_error": 8.571342338115073e-07,
+      "groups": {
+        "eligible": {
+          "steps": 42,
+          "median_task_norm": 0.01670034605859776,
+          "median_auxiliary_norm": 5.4652406894873106e-05,
+          "opposing_gradient_steps": 13,
+          "globally_clipped_steps": 14
+        },
+        "unresolved_reference": {
+          "steps": 8,
+          "median_task_norm": 0.12309591361483475,
+          "median_auxiliary_norm": 1.3443897720667295,
+          "opposing_gradient_steps": 0,
+          "globally_clipped_steps": 4
+        }
+      }
+    }
+  ],
+  "limits": "Auxiliary contribution is cumulative-minus-task gradient before clipping, including accumulation rounding. Different arms visit different parameter states. Norms and cosines do not identify EOS-specific mediation, predict Adam displacement, or establish a neuron-selection advantage. Primary outcome criteria are unchanged."
+}

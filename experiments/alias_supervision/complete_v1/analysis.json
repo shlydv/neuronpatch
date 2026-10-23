@@ -1,0 +1,860 @@
+{
+  "rows": [
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "arm": "canonical_control",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 0,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 1,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-test-1",
+            "case-1-scope-test-2",
+            "case-1-scope-test-3"
+          ],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 2,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 20,
+          "total": 23,
+          "scored_lost": [
+            "utility-25"
+          ],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-1-preserve-0",
+          "accepted_mass": 0.9999608631251959
+        },
+        {
+          "id": "case-1-preserve-2",
+          "accepted_mass": 0.9999830878954297
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "accepted_mass": 0.9999857570497753
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.9999883923782961
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999995907343465
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999970141474676
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "accepted_mass": 0.9998631329640271
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "accepted_mass": 0.051842130913556175
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.0044939167748096155
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.9954599901704032,
+      "fit_seconds": 22.12321139400001,
+      "peak_cuda_allocated_bytes": 8432567808
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "arm": "canonical_control",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 0,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-test-2"
+          ],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 2,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-1-preserve-0",
+          "accepted_mass": 0.9999572228347989
+        },
+        {
+          "id": "case-1-preserve-2",
+          "accepted_mass": 0.9998968976166088
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "accepted_mass": 0.999793873253855
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.9999863429409612
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999972996777278
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999964210333615
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "accepted_mass": 0.9998835322422204
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "accepted_mass": 0.9357645831626114
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.8063619107554506
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.1935919961897622,
+      "fit_seconds": 23.797511824000026,
+      "peak_cuda_allocated_bytes": 8512937984
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "arm": "accepted_set",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 1,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 3,
+          "total": 5,
+          "scored_lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-0-preserve-0",
+          "accepted_mass": 0.9999709531297334
+        },
+        {
+          "id": "case-0-preserve-1",
+          "accepted_mass": 0.9999729464518785
+        },
+        {
+          "id": "case-0-preserve-2",
+          "accepted_mass": 0.9999544479004681
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.9999793901357756
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999999135617332
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.999993846466239
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.9998618557177023
+        }
+      ],
+      "maximum_eligible_mass_drop": 9.205122751054784e-05,
+      "fit_seconds": 41.598590699000056,
+      "peak_cuda_allocated_bytes": 9781138432
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "arm": "accepted_set",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 1,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 3,
+          "total": 5,
+          "scored_lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-0-preserve-0",
+          "accepted_mass": 0.9999758772227887
+        },
+        {
+          "id": "case-0-preserve-1",
+          "accepted_mass": 0.9999893297647459
+        },
+        {
+          "id": "case-0-preserve-2",
+          "accepted_mass": 0.9999923917423088
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.9999446221221577
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999917686908419
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999913979406891
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.9975483467579371
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.0024055601872756682,
+      "fit_seconds": 41.586877565999885,
+      "peak_cuda_allocated_bytes": 9780834304
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "arm": "accepted_set",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 1,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 3,
+          "total": 5,
+          "scored_lost": [
+            "case-0-scope-exposed-0",
+            "case-0-scope-exposed-2"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-0-preserve-0",
+          "accepted_mass": 0.9999102006142516
+        },
+        {
+          "id": "case-0-preserve-1",
+          "accepted_mass": 0.99999017596166
+        },
+        {
+          "id": "case-0-preserve-2",
+          "accepted_mass": 0.9999911009314947
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.9999877732011654
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.999999302204593
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999985667542205
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.9998452566739764
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.00010865027123641013,
+      "fit_seconds": 44.86149286299997,
+      "peak_cuda_allocated_bytes": 10227070976
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "arm": "accepted_set",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 0,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-test-2"
+          ],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 20,
+          "total": 23,
+          "scored_lost": [
+            "utility-25"
+          ],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-1-preserve-0",
+          "accepted_mass": 0.999964925801854
+        },
+        {
+          "id": "case-1-preserve-2",
+          "accepted_mass": 0.9999906122309059
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "accepted_mass": 0.9999906384329194
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.9999916301198887
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999996973331094
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999924900189189
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "accepted_mass": 0.999774856957646
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "accepted_mass": 0.8245867860931898
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.03453534144498747
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.9654185655002253,
+      "fit_seconds": 36.28850563900005,
+      "peak_cuda_allocated_bytes": 9707663872
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "arm": "accepted_set",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 0,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 3,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-exposed-0"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-1-preserve-0",
+          "accepted_mass": 0.9999475265533161
+        },
+        {
+          "id": "case-1-preserve-2",
+          "accepted_mass": 0.9999919943520021
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "accepted_mass": 0.9999925144795585
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.999985486629077
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999903226211657
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999970085233483
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "accepted_mass": 0.9999880094970005
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "accepted_mass": 0.9989740800989996
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.9759288611771594
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.02402504576805342,
+      "fit_seconds": 36.29673745299988,
+      "peak_cuda_allocated_bytes": 9707359744
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "arm": "accepted_set",
+      "banks": {
+        "train": {
+          "hits": 3,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "preserve": {
+          "hits": 6,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_val": {
+          "hits": 1,
+          "total": 1,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_val": {
+          "hits": 0,
+          "total": 3,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "scope_exposed": {
+          "hits": 2,
+          "total": 4,
+          "scored_lost": [
+            "case-1-scope-exposed-0",
+            "case-1-scope-exposed-1"
+          ],
+          "truncated": 0
+        },
+        "utility_val": {
+          "hits": 5,
+          "total": 6,
+          "scored_lost": [],
+          "truncated": 0
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "scored_lost": [],
+          "truncated": 0
+        }
+      },
+      "masses": [
+        {
+          "id": "case-1-preserve-0",
+          "accepted_mass": 0.9999801889500549
+        },
+        {
+          "id": "case-1-preserve-2",
+          "accepted_mass": 0.9999278689746074
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "accepted_mass": 0.9997465935522558
+        },
+        {
+          "id": "utility-0",
+          "accepted_mass": 0.999989227657583
+        },
+        {
+          "id": "utility-16",
+          "accepted_mass": 0.9999983083532242
+        },
+        {
+          "id": "utility-24",
+          "accepted_mass": 0.9999974126363473
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "accepted_mass": 0.9998677676629727
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "accepted_mass": 0.7874814133507937
+        },
+        {
+          "id": "utility-25",
+          "accepted_mass": 0.9442269148501897
+        }
+      ],
+      "maximum_eligible_mass_drop": 0.21250898133976137,
+      "fit_seconds": 39.18288298499988,
+      "peak_cuda_allocated_bytes": 10140865024
+    }
+  ],
+  "causal_comparison": [
+    {
+      "method": "lora-43-0",
+      "canonical_suffix_probability": 0.1885582972009398,
+      "accepted_set_suffix_probability": 0.05410850518437611,
+      "all_transfers_retained": true,
+      "oxygen_answer_accepted": true,
+      "supports_primary_prediction": true
+    },
+    {
+      "method": "paired_mean-43-0",
+      "canonical_suffix_probability": 0.9553709140482431,
+      "accepted_set_suffix_probability": 0.9334227771426792,
+      "all_transfers_retained": true,
+      "oxygen_answer_accepted": false,
+      "supports_primary_prediction": false
+    },
+    {
+      "method": "paired_random-11-0",
+      "canonical_suffix_probability": 0.08871993540882292,
+      "accepted_set_suffix_probability": 0.023680208684950476,
+      "all_transfers_retained": true,
+      "oxygen_answer_accepted": true,
+      "supports_primary_prediction": true
+    }
+  ],
+  "primary_causal_prediction_pass": false,
+  "full_output_review_complete": false,
+  "selection_advantage_established": false,
+  "limits": "Two exposed counterfactual edits;known oxygen/Lakers probes stay out of training. No hard protection controller or new selector is tested. A shared benefit across LoRA and neuron patches is objective repair,not selection superiority. Existing canonical endpoints supply remaining matched references after two exact controls."
+}

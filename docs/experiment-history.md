@@ -5,14 +5,21 @@ They preserve the previous evidence narrative and its report links. For the acti
 method, pending experiment and present decision, use [current-method.md](current-method.md).
 The individual reports define each result's model, data and evaluation scope.
 
+The [completed auxiliary-objective ablation](../experiments/alias_supervision/complete_v1/REPORT.md)
+verifies eight fits and reviews all 544 generated observations. Accepted-set
+supervision improves oxygen continuation probabilities for random and LoRA,
+but selected neurons retain the oxygen error. Selected Lakers recovery is a real
+partial improvement. All retain 8/8 transfers; none meets the full preservation
+criterion. This closes the label-loss diagnostic without establishing a new method.
+
 The [completed finite-response qualification](../experiments/outcome_guard/complete_v1/REPORT.md)
 verifies840 prefix vectors and96 generations with zero fits. Its strict0.02
 criterion catches both selected mistakes but rejects two older greedy-successful
 controls. LoRA/random also increase the wrong ₂ continuation after O, without
 changing their greedy answer. A separate saved-logit audit identifies strong
 canonical-label pressure to suppress EOS after an already accepted US answer;
-its downstream causal role remains untested. The next step isolates that
-auxiliary objective with fixed supports, rather than relaxing the failed gate.
+the subsequent objective ablation above tests its downstream effect with fixed
+supports, rather than relaxing the failed gate.
 
 The [completed measured-preservation pilot](../experiments/guarded_training/complete_v1/REPORT.md)
 verifies eight fits and806 generated observations. Risk-aware selection, random
