@@ -1,0 +1,46 @@
+{
+  "status": "live_observation_not_final_comparison",
+  "first_fit_logged_metrics_exact": true,
+  "retry_events_observed": [
+    {
+      "step": 44,
+      "loss_scale": 128.0,
+      "example_indices": [
+        19,
+        1
+      ],
+      "losses": [
+        2.7297046184539795,
+        0.0005385105032473803
+      ]
+    }
+  ],
+  "later_checkpoints": [
+    {
+      "step": 50,
+      "task_nll": 1.1920928244535389e-07,
+      "preserve_nll": 1.1920926823449918e-07,
+      "gradient_norm": 8.829661055642646e-06,
+      "example_indices": [
+        28,
+        0
+      ],
+      "loss_scale": 64.0,
+      "gradient_retries": []
+    },
+    {
+      "step": 60,
+      "task_nll": 0.0,
+      "preserve_nll": 7.947280096232134e-07,
+      "gradient_norm": 3.392615690245293e-05,
+      "example_indices": [
+        37,
+        15
+      ],
+      "loss_scale": 64.0,
+      "gradient_retries": []
+    }
+  ],
+  "interpretation": "At the failing higher-rate LoRA setting, finite forward losses and nonfinite gradients at scale128 recover by retrying at64; training progresses through step60. Supports scaling overflow as cause at this event.",
+  "limits": "Full tensor replay and completed comparison pending. No test predictions reviewed."
+}

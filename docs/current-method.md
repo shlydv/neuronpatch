@@ -82,7 +82,12 @@ that retries do not advance Adam or data and match a working-scale reference;
 the actual tiny worker and previous static path also pass. The frozen v2
 protocol changes no training inputs, rates, step counts or evaluation choices.
 This is a numerical remedy under test, not evidence that the GPU failure has
-been resolved. Compare the completed first fit against v1 before efficacy
+been resolved across all fits. Live v2 logs now isolate the higher-rate LoRA
+failure at step 44: finite forward losses but nonfinite gradients at scale 128;
+retrying the same examples at scale 64 allows training through step 60. This
+supports the scaling-overflow explanation for that event. The first fit's
+logged endpoint loss metrics exactly match v1. Full tensor replay remains
+pending. Compare the completed first fit against v1 before efficacy
 analysis; no test generations have been reviewed.
 Fisher ranking is an established baseline adapted
 to groups, not a claim of novelty or preservation-aware selection. Select rates
