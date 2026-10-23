@@ -1,0 +1,314 @@
+{
+  "post_hoc": true,
+  "new_model_executions": 0,
+  "frozen_qualification_changed": false,
+  "normalization": "Both losses divided by the same canonical response length including EOS.",
+  "rows": [
+    {
+      "case": 0,
+      "id": "case-0-preserve-0",
+      "retention_eligible": false,
+      "canonical_mean_token_ce": 2.4742129219408056,
+      "accepted_event_nll_per_canonical_token": 2.473667322579106,
+      "canonical_logit_gradient_norm": 0.4710924655821216,
+      "event_logit_gradient_norm": 0.47070724096349137,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [
+          22372
+        ],
+        "canonical_next": 15072,
+        "base_eos_probability": 5.1150703129821696e-17,
+        "canonical_eos_gradient": 1.705023437660722e-17,
+        "accepted_set_eos_gradient": 1.7022349874121363e-17,
+        "prefix_text": "United",
+        "canonical_next_text": " Kingdom"
+      }
+    },
+    {
+      "case": 0,
+      "id": "case-0-preserve-1",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.2470435001878624,
+      "accepted_event_nll_per_canonical_token": 4.014724354607082e-06,
+      "canonical_logit_gradient_norm": 0.28283896916830265,
+      "event_logit_gradient_norm": 4.2089034843347415e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [
+          22372,
+          4180
+        ],
+        "canonical_next": 315,
+        "base_eos_probability": 0.9999860799019166,
+        "canonical_eos_gradient": 0.19999721598038334,
+        "accepted_set_eos_gradient": -1.285081047130987e-07,
+        "prefix_text": "United States",
+        "canonical_next_text": " of"
+      }
+    },
+    {
+      "case": 0,
+      "id": "case-0-preserve-2",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.490655616519228,
+      "accepted_event_nll_per_canonical_token": 9.69892926958553e-07,
+      "canonical_logit_gradient_norm": 0.2828415340388077,
+      "event_logit_gradient_norm": 1.0908754602986923e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [
+          22372,
+          4180
+        ],
+        "canonical_next": 315,
+        "base_eos_probability": 0.9999955518836666,
+        "canonical_eos_gradient": 0.19999911037673335,
+        "accepted_set_eos_gradient": -1.0635304370509857e-07,
+        "prefix_text": "United States",
+        "canonical_next_text": " of"
+      }
+    },
+    {
+      "case": 0,
+      "id": "utility-0",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 5.736378725277882e-06,
+      "accepted_event_nll_per_canonical_token": 2.982568428921539e-06,
+      "canonical_logit_gradient_norm": 5.267133076272426e-06,
+      "event_logit_gradient_norm": 3.3325792215263793e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 59604,
+        "base_eos_probability": 2.988182008192677e-20,
+        "canonical_eos_gradient": 1.49409100409634e-20,
+        "accepted_set_eos_gradient": 1.4940910040963396e-20,
+        "prefix_text": "",
+        "canonical_next_text": "Paris"
+      }
+    },
+    {
+      "case": 0,
+      "id": "utility-16",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.4812883778496815e-07,
+      "accepted_event_nll_per_canonical_token": 2.3614875433666787e-07,
+      "canonical_logit_gradient_norm": 2.583880792070648e-07,
+      "event_logit_gradient_norm": 2.4662998409153597e-07,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 19,
+        "base_eos_probability": 1.2825607142791316e-24,
+        "canonical_eos_gradient": 6.41280357139565e-25,
+        "accepted_set_eos_gradient": 6.412803571395649e-25,
+        "prefix_text": "",
+        "canonical_next_text": "4"
+      }
+    },
+    {
+      "case": 0,
+      "id": "utility-24",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 6.273429272690574e-07,
+      "accepted_event_nll_per_canonical_token": 6.203002140172266e-07,
+      "canonical_logit_gradient_norm": 5.405661771691232e-07,
+      "event_logit_gradient_norm": 5.35411291762342e-07,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 65332,
+        "base_eos_probability": 4.0976417192719732e-22,
+        "canonical_eos_gradient": 2.0488208596359909e-22,
+        "accepted_set_eos_gradient": 2.0488208596359909e-22,
+        "prefix_text": "",
+        "canonical_next_text": "Au"
+      }
+    },
+    {
+      "case": 0,
+      "id": "utility-25",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.3060216071816922e-05,
+      "accepted_event_nll_per_canonical_token": 2.304705855236066e-05,
+      "canonical_logit_gradient_norm": 2.7905691437077442e-05,
+      "event_logit_gradient_norm": 2.789481669508887e-05,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 46,
+        "base_eos_probability": 5.833964537403598e-26,
+        "canonical_eos_gradient": 2.9169822687018086e-26,
+        "accepted_set_eos_gradient": 2.9169822687018086e-26,
+        "prefix_text": "",
+        "canonical_next_text": "O"
+      }
+    },
+    {
+      "case": 1,
+      "id": "case-1-preserve-0",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.3107638665566006e-06,
+      "accepted_event_nll_per_canonical_token": 2.153432651289761e-06,
+      "canonical_logit_gradient_norm": 2.4418905954293103e-06,
+      "event_logit_gradient_norm": 2.3615706957248396e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 25018,
+        "base_eos_probability": 7.453824783490546e-20,
+        "canonical_eos_gradient": 2.4846082611635133e-20,
+        "accepted_set_eos_gradient": 2.484608261163514e-20,
+        "prefix_text": "",
+        "canonical_next_text": "South"
+      }
+    },
+    {
+      "case": 1,
+      "id": "case-1-preserve-2",
+      "retention_eligible": false,
+      "canonical_mean_token_ce": 3.435638400073109,
+      "accepted_event_nll_per_canonical_token": 0.4321087571863334,
+      "canonical_logit_gradient_norm": 0.36369989367679645,
+      "event_logit_gradient_norm": 0.22596332665047061,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [
+          22372,
+          4180
+        ],
+        "canonical_next": 315,
+        "base_eos_probability": 0.9999992313713918,
+        "canonical_eos_gradient": 0.19999984627427836,
+        "accepted_set_eos_gradient": -8.199504791805978e-08,
+        "prefix_text": "United States",
+        "canonical_next_text": " of"
+      }
+    },
+    {
+      "case": 1,
+      "id": "case-1-preserve-facebook",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 4.104516288386202,
+      "accepted_event_nll_per_canonical_token": 6.684288134707964e-06,
+      "canonical_logit_gradient_norm": 0.28284901046824795,
+      "event_logit_gradient_norm": 7.624030590983281e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [
+          22372,
+          4180
+        ],
+        "canonical_next": 315,
+        "base_eos_probability": 0.9999994324272314,
+        "canonical_eos_gradient": 0.1999998864854463,
+        "accepted_set_eos_gradient": -8.38035137673554e-08,
+        "prefix_text": "United States",
+        "canonical_next_text": " of"
+      }
+    },
+    {
+      "case": 1,
+      "id": "utility-0",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 5.736378725277882e-06,
+      "accepted_event_nll_per_canonical_token": 2.982568428921539e-06,
+      "canonical_logit_gradient_norm": 5.267133076272426e-06,
+      "event_logit_gradient_norm": 3.3325792215263793e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 59604,
+        "base_eos_probability": 2.988182008192677e-20,
+        "canonical_eos_gradient": 1.49409100409634e-20,
+        "accepted_set_eos_gradient": 1.4940910040963396e-20,
+        "prefix_text": "",
+        "canonical_next_text": "Paris"
+      }
+    },
+    {
+      "case": 1,
+      "id": "utility-16",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.4812883778496815e-07,
+      "accepted_event_nll_per_canonical_token": 2.3614875433666787e-07,
+      "canonical_logit_gradient_norm": 2.583880792070648e-07,
+      "event_logit_gradient_norm": 2.4662998409153597e-07,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 19,
+        "base_eos_probability": 1.2825607142791316e-24,
+        "canonical_eos_gradient": 6.41280357139565e-25,
+        "accepted_set_eos_gradient": 6.412803571395649e-25,
+        "prefix_text": "",
+        "canonical_next_text": "4"
+      }
+    },
+    {
+      "case": 1,
+      "id": "utility-24",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 6.273429272690574e-07,
+      "accepted_event_nll_per_canonical_token": 6.203002140172266e-07,
+      "canonical_logit_gradient_norm": 5.405661771691232e-07,
+      "event_logit_gradient_norm": 5.35411291762342e-07,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 65332,
+        "base_eos_probability": 4.0976417192719732e-22,
+        "canonical_eos_gradient": 2.0488208596359909e-22,
+        "accepted_set_eos_gradient": 2.0488208596359909e-22,
+        "prefix_text": "",
+        "canonical_next_text": "Au"
+      }
+    },
+    {
+      "case": 1,
+      "id": "case-1-scope-test-2",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 0.0001355441528493701,
+      "accepted_event_nll_per_canonical_token": 7.309576911350454e-05,
+      "canonical_logit_gradient_norm": 0.0001581197789384272,
+      "event_logit_gradient_norm": 0.00010033432092754733,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 22372,
+        "base_eos_probability": 4.839616889407878e-19,
+        "canonical_eos_gradient": 1.6132056298026225e-19,
+        "accepted_set_eos_gradient": 1.613205629802623e-19,
+        "prefix_text": "",
+        "canonical_next_text": "United"
+      }
+    },
+    {
+      "case": 1,
+      "id": "case-1-scope-test-3",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 3.834796538637787,
+      "accepted_event_nll_per_canonical_token": 1.9210711152350957e-06,
+      "canonical_logit_gradient_norm": 0.2828432220317702,
+      "event_logit_gradient_norm": 2.165742840752608e-06,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [
+          22372,
+          4180
+        ],
+        "canonical_next": 315,
+        "base_eos_probability": 0.9999993819632276,
+        "canonical_eos_gradient": 0.19999987639264552,
+        "accepted_set_eos_gradient": -1.1244528244636065e-07,
+        "prefix_text": "United States",
+        "canonical_next_text": " of"
+      }
+    },
+    {
+      "case": 1,
+      "id": "utility-25",
+      "retention_eligible": true,
+      "canonical_mean_token_ce": 2.3060216071816922e-05,
+      "accepted_event_nll_per_canonical_token": 2.304705855236066e-05,
+      "canonical_logit_gradient_norm": 2.7905691437077442e-05,
+      "event_logit_gradient_norm": 2.789481669508887e-05,
+      "strongest_nonterminal_eos_pressure": {
+        "prefix": [],
+        "canonical_next": 46,
+        "base_eos_probability": 5.833964537403598e-26,
+        "canonical_eos_gradient": 2.9169822687018086e-26,
+        "accepted_set_eos_gradient": 2.9169822687018086e-26,
+        "prefix_text": "",
+        "canonical_next_text": "O"
+      }
+    }
+  ],
+  "limits": "Exact objective/logit-gradient comparison on saved direct-prefix conditionals; not full parameter-gradient attribution or a causal explanation of the oxygen error. No trained benefit is established."
+}

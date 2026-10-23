@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-23T08:19:37.203506+00:00",
+  "pinned_focused_passed": 21,
+  "modern_replay_response_trie_passed": 19,
+  "modern_objective_passed": 2,
+  "minimum_replay_response_trie_passed": 17,
+  "minimum_objective_passed": 2,
+  "minimum_optional_skips": 2,
+  "pinned_warnings": "Two existing PEFT tiny-config warnings",
+  "ruff": "pass",
+  "diff_check": "pass",
+  "file_sha256": {
+    "experiments/outcome_guard/decision_audit.py": "4bda6277098ed9cd6225f8a81c1063e4281cbd5dec91432d382efa6f813b999a",
+    "experiments/outcome_guard/objective_audit.py": "f0ee5b5b3b57e505517e5108525be1fac85759064d5cfc14132e86c6195cc4b4",
+    "tests/test_response_sets.py": "754a7cb79c687635714807fd32325149e182e2b29c912ca9e1583f5e58a77e6f",
+    "tests/test_greedy_trie.py": "909fbe777b27942da8c86d0295bacc8033a2236885ae08d41421e9a3b380aff6",
+    "tests/test_objective_audit.py": "3062806929d6619e667fac50ef28005e4b2356db5f65d8bb01336a672aecee39"
+  },
+  "scope": "Postprocessing and focused math/replay checks only. Added audits/tests are not part of accepted34-file model execution. Frozen0.02 qualification remains failed;no trained-method benefit claimed."
+}

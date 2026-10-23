@@ -1,0 +1,8 @@
+{
+  "accepted_script_exact": true,
+  "all_bundled_files_match_frozen_git_revision": "36262363f9d464c78ed322d62f34e4f440b500eb",
+  "bundled_files_verified": 34,
+  "source_sha256": "9959047c7907da6730fddfabb5ed0f008b4641890db6ad7de5dad38588652a01",
+  "executed_submission_exact": true,
+  "executed_submission_sha256": "a1664c55c74c1ddb42af4e2e4acb4eef84c60189ee2e4ba2aad02250497569dc"
+}

@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-10-23T07:44:15.302542+00:00",
+  "kernel": "shlydv/neuronpatch-outcome-guard-v1-20261023",
+  "accepted_version": 1,
+  "status": "COMPLETE",
+  "failure_message": "",
+  "accepted_source_byte_identical": true,
+  "provider_session_timeout_requested_seconds": 3600,
+  "provider_timeout_enforcement_live_verified": false,
+  "result_report": "complete_v1/REPORT.md",
+  "source_sha256": "9959047c7907da6730fddfabb5ed0f008b4641890db6ad7de5dad38588652a01",
+  "current_version_verified": 1,
+  "version_label_read_limitation": "Explicit /1 GetKernel request returned403; canonical latest lookup is checked as version1 before exact-byte comparison.",
+  "kernel_id": 140350708,
+  "url": "https://www.kaggle.com/code/shlydv/neuronpatch-outcome-guard-v1-20261023",
+  "accepted_utc": "2026-10-23T07:42:55.459835+00:00",
+  "worker_startup_observed": true,
+  "observed_phase": "Return0;all six endpoints and two bases,840 prefix vectors and96 generations independently verified;frozen qualification fails.",
+  "latest_observed_utc": "2026-10-23T07:58:07.772544+00:00",
+  "qualification_pass": false
+}

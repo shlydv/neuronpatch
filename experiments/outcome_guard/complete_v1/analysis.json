@@ -1,0 +1,495 @@
+{
+  "rows": [
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "probes": [
+        {
+          "id": "case-0-preserve-0",
+          "retention_eligible": false,
+          "base_mass": 0.0005985491180549281,
+          "edited_mass": 0.9999877475177912,
+          "drop": -0.9993891983997363,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-0-preserve-1",
+          "retention_eligible": true,
+          "base_mass": 0.9999799265797008,
+          "edited_mass": 0.9999911832606635,
+          "drop": -1.1256680962690169e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-0-preserve-2",
+          "retention_eligible": true,
+          "base_mass": 0.9999951505471238,
+          "edited_mass": 0.999989350635713,
+          "drop": 5.799911410808711e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999940348809335,
+          "edited_mass": 0.9999896941104526,
+          "drop": 4.340770480948386e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-16",
+          "retention_eligible": true,
+          "base_mass": 0.9999995277026028,
+          "edited_mass": 0.999999952676499,
+          "drop": -4.249738961847882e-07,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-24",
+          "retention_eligible": true,
+          "base_mass": 0.9999987594003416,
+          "edited_mass": 0.9999915050446095,
+          "drop": 7.254355732011497e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-25",
+          "retention_eligible": true,
+          "base_mass": 0.9999539069452128,
+          "edited_mass": 0.9999981318883593,
+          "drop": -4.422494314648695e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        }
+      ],
+      "probability_accept": true,
+      "answer_accept": true,
+      "complete_transfer": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "probes": [
+        {
+          "id": "case-0-preserve-0",
+          "retention_eligible": false,
+          "base_mass": 0.0005985491180549281,
+          "edited_mass": 0.9998318702656056,
+          "drop": -0.9992333211475507,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-0-preserve-1",
+          "retention_eligible": true,
+          "base_mass": 0.9999799265797008,
+          "edited_mass": 0.9999882634441434,
+          "drop": -8.336864442570757e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-0-preserve-2",
+          "retention_eligible": true,
+          "base_mass": 0.9999951505471238,
+          "edited_mass": 0.9999870912403138,
+          "drop": 8.059306810026534e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999940348809335,
+          "edited_mass": 0.9999762117302016,
+          "drop": 1.782315073195484e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-16",
+          "retention_eligible": true,
+          "base_mass": 0.9999995277026028,
+          "edited_mass": 0.9999989427791605,
+          "drop": 5.849234423482841e-07,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-24",
+          "retention_eligible": true,
+          "base_mass": 0.9999987594003416,
+          "edited_mass": 0.9999985910335475,
+          "drop": 1.6836679406218025e-07,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-25",
+          "retention_eligible": true,
+          "base_mass": 0.9999539069452128,
+          "edited_mass": 0.9993350877279438,
+          "drop": 0.0006188192172690288,
+          "probability_flag": false,
+          "answer_accepted": true
+        }
+      ],
+      "probability_accept": true,
+      "answer_accept": true,
+      "complete_transfer": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "probes": [
+        {
+          "id": "case-0-preserve-0",
+          "retention_eligible": false,
+          "base_mass": 0.0005985491180549281,
+          "edited_mass": 0.9996986150597411,
+          "drop": -0.9991000659416862,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-0-preserve-1",
+          "retention_eligible": true,
+          "base_mass": 0.9999799265797008,
+          "edited_mass": 0.9999536552689647,
+          "drop": 2.627131073607014e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-0-preserve-2",
+          "retention_eligible": true,
+          "base_mass": 0.9999951505471238,
+          "edited_mass": 0.9999832627267918,
+          "drop": 1.1887820332012744e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999940348809335,
+          "edited_mass": 0.9999852143454752,
+          "drop": 8.820535458364809e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-16",
+          "retention_eligible": true,
+          "base_mass": 0.9999995277026028,
+          "edited_mass": 0.9999970097249331,
+          "drop": 2.5179776697026313e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-24",
+          "retention_eligible": true,
+          "base_mass": 0.9999987594003416,
+          "edited_mass": 0.9999979534404394,
+          "drop": 8.059599021503772e-07,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-25",
+          "retention_eligible": true,
+          "base_mass": 0.9999539069452128,
+          "edited_mass": 0.9992805923516925,
+          "drop": 0.0006733145935202689,
+          "probability_flag": false,
+          "answer_accepted": true
+        }
+      ],
+      "probability_accept": true,
+      "answer_accept": true,
+      "complete_transfer": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "probes": [
+        {
+          "id": "case-1-preserve-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999935397229138,
+          "edited_mass": 0.9999608631251959,
+          "drop": 3.267659771788445e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-preserve-2",
+          "retention_eligible": false,
+          "base_mass": 0.11526242590758413,
+          "edited_mass": 0.9999830878954297,
+          "drop": -0.8847206619878455,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "retention_eligible": true,
+          "base_mass": 0.9999665791178166,
+          "edited_mass": 0.9999857570497753,
+          "drop": -1.9177931958713756e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999940348809335,
+          "edited_mass": 0.9999883923782961,
+          "drop": 5.642502637459579e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-16",
+          "retention_eligible": true,
+          "base_mass": 0.9999995277026028,
+          "edited_mass": 0.9999995907343465,
+          "drop": -6.303174371335984e-08,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-24",
+          "retention_eligible": true,
+          "base_mass": 0.9999987594003416,
+          "edited_mass": 0.9999970141474676,
+          "drop": 1.7452528739969608e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "retention_eligible": true,
+          "base_mass": 0.9997807367343637,
+          "edited_mass": 0.9998631329640271,
+          "drop": -8.239622966332849e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "retention_eligible": true,
+          "base_mass": 0.9999903946905551,
+          "edited_mass": 0.051842130913556175,
+          "drop": 0.9481482637769989,
+          "probability_flag": true,
+          "answer_accepted": false
+        },
+        {
+          "id": "utility-25",
+          "retention_eligible": true,
+          "base_mass": 0.9999539069452128,
+          "edited_mass": 0.0044939167748096155,
+          "drop": 0.9954599901704032,
+          "probability_flag": true,
+          "answer_accepted": false
+        }
+      ],
+      "probability_accept": false,
+      "answer_accept": false,
+      "complete_transfer": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "probes": [
+        {
+          "id": "case-1-preserve-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999935397229138,
+          "edited_mass": 0.9998901662754583,
+          "drop": 0.00010337344745547927,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-preserve-2",
+          "retention_eligible": false,
+          "base_mass": 0.11526242590758413,
+          "edited_mass": 0.9999912157740142,
+          "drop": -0.88472878986643,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "retention_eligible": true,
+          "base_mass": 0.9999665791178166,
+          "edited_mass": 0.999995431748118,
+          "drop": -2.8852630301390292e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999940348809335,
+          "edited_mass": 0.9999853319095426,
+          "drop": 8.702971390883718e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-16",
+          "retention_eligible": true,
+          "base_mass": 0.9999995277026028,
+          "edited_mass": 0.9999818932068137,
+          "drop": 1.7634495789065063e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-24",
+          "retention_eligible": true,
+          "base_mass": 0.9999987594003416,
+          "edited_mass": 0.999994066272471,
+          "drop": 4.693127870547542e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "retention_eligible": true,
+          "base_mass": 0.9997807367343637,
+          "edited_mass": 0.9999887905895102,
+          "drop": -0.00020805385514643948,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "retention_eligible": true,
+          "base_mass": 0.9999903946905551,
+          "edited_mass": 0.9999520994420348,
+          "drop": 3.829524852028143e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-25",
+          "retention_eligible": true,
+          "base_mass": 0.9999539069452128,
+          "edited_mass": 0.9101503001709847,
+          "drop": 0.08980360677422805,
+          "probability_flag": true,
+          "answer_accepted": true
+        }
+      ],
+      "probability_accept": false,
+      "answer_accept": true,
+      "complete_transfer": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "probes": [
+        {
+          "id": "case-1-preserve-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999935397229138,
+          "edited_mass": 0.9999572228347989,
+          "drop": 3.631688811489564e-05,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-preserve-2",
+          "retention_eligible": false,
+          "base_mass": 0.11526242590758413,
+          "edited_mass": 0.9998968976166088,
+          "drop": -0.8846344717090247,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "retention_eligible": true,
+          "base_mass": 0.9999665791178166,
+          "edited_mass": 0.999793873253855,
+          "drop": 0.00017270586396156418,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-0",
+          "retention_eligible": true,
+          "base_mass": 0.9999940348809335,
+          "edited_mass": 0.9999863429409612,
+          "drop": 7.691939972298556e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-16",
+          "retention_eligible": true,
+          "base_mass": 0.9999995277026028,
+          "edited_mass": 0.9999972996777278,
+          "drop": 2.2280248750394804e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-24",
+          "retention_eligible": true,
+          "base_mass": 0.9999987594003416,
+          "edited_mass": 0.9999964210333615,
+          "drop": 2.338366980048079e-06,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-scope-test-2",
+          "retention_eligible": true,
+          "base_mass": 0.9997807367343637,
+          "edited_mass": 0.9998835322422204,
+          "drop": -0.0001027955078566345,
+          "probability_flag": false,
+          "answer_accepted": true
+        },
+        {
+          "id": "case-1-scope-test-3",
+          "retention_eligible": true,
+          "base_mass": 0.9999903946905551,
+          "edited_mass": 0.9357645831626114,
+          "drop": 0.06422581152794371,
+          "probability_flag": true,
+          "answer_accepted": true
+        },
+        {
+          "id": "utility-25",
+          "retention_eligible": true,
+          "base_mass": 0.9999539069452128,
+          "edited_mass": 0.8063619107554506,
+          "drop": 0.1935919961897622,
+          "probability_flag": true,
+          "answer_accepted": true
+        }
+      ],
+      "probability_accept": false,
+      "answer_accept": true,
+      "complete_transfer": true
+    }
+  ],
+  "all_required_positive_controls_pass": false,
+  "all_required_negative_rows_probability_flagged": true,
+  "all_required_negative_rows_answer_rejected": true,
+  "qualification_pass": false,
+  "limits": "Known exposed calibration controls, not unbiased confirmation or prevention. A finite response set omits other valid strings. Base/reference disagreements are reported and excluded from retention gates, not silently corrected. Passing this test would license a trained comparison, not a robust library claim."
+}

@@ -3,7 +3,7 @@
 The goal is unchanged: a useful, robust sparse-adaptation library with a
 verified advantage over strong baselines. We have working compact patches,
 complete-response training and deployment checks. We do **not** have that
-advantage. The next step changes the preservation contract before changing
+advantage. The next step isolates a mismatch in auxiliary supervision before changing
 another selector. The [previous decision](decisions/2026-10-22-method.md) and
 [experiment history](experiment-history.md) preserve earlier reasoning/results.
 
@@ -127,35 +127,68 @@ not a selected-neuron research win. Compare random supports, ordinary LoRA and
 a gradient-informed low-rank baseline with the same protection contract; include
 source-data, validation, initialization, storage and discovery costs.
 
-## Next bounded qualification, before another trained method comparison
+## Completed qualification and the next causal question
 
-Use saved historical endpoints, not fresh cases or another fitting sweep.
-There are four required positive controls: the two previously successful LoRA
-and two random endpoints. The selected case1 endpoint is a required negative
-control because it produces the Lakers and oxygen errors. The selected case0
-endpoint is an additional descriptive control. These are calibration fixtures,
-not an unbiased confirmation set.
+The [completed outcome-guard replay](../experiments/outcome_guard/complete_v1/REPORT.md)
+restores six original endpoints and two bases, independently verifies840 prefix
+vectors and96 generated observations, and preserves the frozen0.02 criterion.
+The all-positive-control hypothesis **fails**: only two of four previously
+successful LoRA/random controls meet the probability limit. Both known selected
+Lakers/oxygen errors are flagged. All six endpoints still reproduce their
+requested4/4 transfers. No new parameters were fitted.
 
-Saved teacher files omit the negative-control question contexts and several
-accepted alias branches. A bounded no-training replay must collect them on the
-same pinned Qwen3-4B model, verify original generated answers, and compute full
-finite-set probability mass. The prospective qualification uses a maximum
-absolute accepted-mass drop of0.02 per initially accepted retention question.
-Do not change that threshold after observing missing probabilities. The rule
-must admit all four required positive endpoints and flag both represented
-negative-control errors; otherwise revise the contract before training. Report
-probability and greedy-answer tests separately, and keep every disagreement.
-Adding known failures to this bank is diagnostic coverage, not generalization.
+The rejected controls are not simply harmless alias changes. Conditional on O,
+the probability of continuing with ₂ is0.00307% in the base,8.87199% for random,
+18.85583% for LoRA and95.53709% for the selected case1 patch. Random and LoRA
+still greedily answer O. These are next-token probabilities, not measured sampled
+whole-answer error rates. Calling those older controls universally clean was
+too strong; their apparent success was based on observed greedy answers.
 
-This qualification is not yet run. Neither guard effectiveness nor prevention
-is established by the existing saved outputs. Until it passes, no new selector
-is licensed by this memo. After it passes, compare the joint-update candidate
-and all baselines with the same outcome-aware objective on exposed development
-cases; then freeze the recipe for fresh cases, multiple parameter/data budgets,
-additional random seeds, another task family and model-size checks. Training
-confidence alone must not select a supposedly transferable checkpoint; any
-validation wording used for selection counts as training/development data.
+The finite-set event ignores much of the benign short/long US redistribution
+that inflated conditional KL, while revealing real competition on oxygen. Keep
+both correct complete answers and accepted probability as separate measured
+requirements. Do not loosen the frozen threshold to turn this failure into a
+pass, or remove confidence reporting merely because the greedy choice is correct.
+The [post-hoc trie audit](../experiments/outcome_guard/complete_v1/decision_audit.json)
+also agrees with cached generation on all64 observed traces. A probability-tree
+counterexample shows why event mass alone cannot replace greedy-answer checks.
 
-The [complete latest report](../experiments/guarded_training/complete_v1/REPORT.md)
-preserves the failed criteria, independently verified source and full output
-review. The original goal is active and unachieved.
+There is a concrete auxiliary-loss mismatch to isolate next. The
+[logit-gradient audit](../experiments/outcome_guard/complete_v1/objective_audit.json)
+finds that canonical US labels teach the base to suppress EOS after its already
+accepted United States answer. Mean-token CE gives an EOS-logit gradient near
++0.2 there; an accepted-set marginal loss with the **same canonical-length
+normalization** gives gradients near−1e−7. This comparison identifies unnecessary
+stopping pressure at those logits. It does not yet establish that those
+auxiliary gradients caused the unrelated O₂ mistake.
+
+Run a matched objective ablation before changing supports again: keep the same
+original examples, rates, supports,50-update schedule, sampling order and length
+normalization. Change only supervision on the five initially accepted auxiliary
+rows per case from one canonical response to the existing finite accepted set.
+Keep the two unresolved base/reference examples explicitly identified and
+identical across arms. Leave oxygen and Lakers outside the training bank and
+measure their complete answers, accepted mass and competing continuations.
+The verified original canonical endpoints are reference controls only if the
+new implementation recovers that control exactly. This is a causal diagnostic,
+not a claim that the failed protection rule has now qualified.
+
+If removing that pressure improves every representation, it is objective repair
+with potential library value, not a selected-neuron advantage. If it does not,
+correction-gradient directions and update coordination remain leading questions.
+A later selector can measure **decision-margin sensitivity** rather than relying
+only on Fisher risk, which downweights currently improbable wrong tokens; this
+is a hypothesis requiring its own comparison and actual finite-step checks.
+Preservation examples must cover the relevant failure modes. Local ranking,
+neuron labels and a small update norm do not provide that coverage automatically.
+
+The [joint-update candidate note](joint-update-candidate.md) separates the
+outcome objective, coefficient representation and controller, and relates them
+to GEM, A-GEM and GPM. Joint constraints and fixed-basis adaptation already have
+prior art. Count stored directions and total cost, not just coefficient count.
+Neither that proposal nor this diagnostic establishes superiority over LoRA.
+
+A trained advantage still requires fresh cases, several parameter/data budgets,
+additional seeds, another task family and model-size checks after freezing the
+recipe. Keep validation used for selection out of confirmation claims. The
+original full method/library goal remains active and unachieved.

@@ -5,6 +5,15 @@ They preserve the previous evidence narrative and its report links. For the acti
 method, pending experiment and present decision, use [current-method.md](current-method.md).
 The individual reports define each result's model, data and evaluation scope.
 
+The [completed finite-response qualification](../experiments/outcome_guard/complete_v1/REPORT.md)
+verifies840 prefix vectors and96 generations with zero fits. Its strict0.02
+criterion catches both selected mistakes but rejects two older greedy-successful
+controls. LoRA/random also increase the wrong ₂ continuation after O, without
+changing their greedy answer. A separate saved-logit audit identifies strong
+canonical-label pressure to suppress EOS after an already accepted US answer;
+its downstream causal role remains untested. The next step isolates that
+auxiliary objective with fixed supports, rather than relaxing the failed gate.
+
 The [completed measured-preservation pilot](../experiments/guarded_training/complete_v1/REPORT.md)
 verifies eight fits and806 generated observations. Risk-aware selection, random
 and LoRA each transfer3/8 answers, failing the complete-edit prerequisite. A

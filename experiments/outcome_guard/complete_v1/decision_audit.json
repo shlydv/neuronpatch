@@ -1,0 +1,4356 @@
+{
+  "post_hoc": true,
+  "new_model_executions": 0,
+  "frozen_criteria_changed": false,
+  "rows": [
+    {
+      "case": 0,
+      "method": "base",
+      "id": "case-0-preserve-0",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": false,
+        "observed_tokens": [
+          95825
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 95825,
+            "best_allowed": 22372,
+            "best_outside": 95825,
+            "allowed_minus_outside_logit_gap": -7.421875,
+            "chosen_probability": 0.9992736454407314,
+            "best_allowed_probability": 0.0005975924139124284,
+            "best_outside_probability": 0.9992736454407314,
+            "prefix_text": "",
+            "chosen_text": "Scotland",
+            "best_allowed_text": "United",
+            "best_outside_text": "Scotland"
+          }
+        ],
+        "complete_response": false
+      },
+      "cached_generation_accepted": false,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "base",
+      "id": "case-0-preserve-1",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.125,
+            "chosen_probability": 0.999175915213062,
+            "best_allowed_probability": 0.999175915213062,
+            "best_outside_probability": 5.417779978240914e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 17.109375,
+            "chosen_probability": 0.9999999071089318,
+            "best_allowed_probability": 0.9999999071089318,
+            "best_outside_probability": 3.7110158422291065e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 14.984375,
+            "chosen_probability": 0.9999860799019166,
+            "best_allowed_probability": 0.9999860799019166,
+            "best_outside_probability": 3.107152558540341e-07,
+            "prefix_text": "United States",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "base",
+      "id": "case-0-preserve-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.640625,
+            "chosen_probability": 0.9998536748086082,
+            "best_allowed_probability": 0.9998536748086082,
+            "best_outside_probability": 3.2372986177076607e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 17.609375,
+            "chosen_probability": 0.9999999696065587,
+            "best_allowed_probability": 0.9999999696065587,
+            "best_outside_probability": 2.2508450276637308e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.265625,
+            "chosen_probability": 0.9999955518836666,
+            "best_allowed_probability": 0.9999955518836666,
+            "best_outside_probability": 2.3454240165200166e-07,
+            "prefix_text": "United States",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "base",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 106004,
+            "allowed_minus_outside_logit_gap": 12.53125,
+            "chosen_probability": 0.9999945685990409,
+            "best_allowed_probability": 0.9999945685990409,
+            "best_outside_probability": 3.6119764895462143e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "\u5df4\u9ece"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.09375,
+            "chosen_probability": 0.9999939586765075,
+            "best_allowed_probability": 0.9999939586765075,
+            "best_outside_probability": 2.785255497139961e-07,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "base",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 21.25,
+            "chosen_probability": 0.9999999994036854,
+            "best_allowed_probability": 0.9999999994036854,
+            "best_outside_probability": 5.905303995422621e-10,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 16.015625,
+            "chosen_probability": 0.9999995043387618,
+            "best_allowed_probability": 0.9999995043387618,
+            "best_outside_probability": 1.1079042363434594e-07,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "base",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 32050,
+            "allowed_minus_outside_logit_gap": 14.6875,
+            "chosen_probability": 0.9999995328719257,
+            "best_allowed_probability": 0.9999995328719257,
+            "best_outside_probability": 4.181187026399267e-07,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": " Au"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 14.765625,
+            "chosen_probability": 0.999999212442639,
+            "best_allowed_probability": 0.999999212442639,
+            "best_outside_probability": 3.866964620110664e-07,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "base",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 506,
+            "allowed_minus_outside_logit_gap": 25.71875,
+            "chosen_probability": 0.9999999999743248,
+            "best_allowed_probability": 0.9999999999743248,
+            "best_outside_probability": 6.768443275193384e-12,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": " O"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 10.390625,
+            "chosen_probability": 0.9999538806570613,
+            "best_allowed_probability": 0.9999538806570613,
+            "best_outside_probability": 3.071771234461316e-05,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "case-0-preserve-0",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 15.84375,
+            "chosen_probability": 0.9999998117988665,
+            "best_allowed_probability": 0.9999998117988665,
+            "best_outside_probability": 1.3156692384614506e-07,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 11.65625,
+            "chosen_probability": 0.9999879168124126,
+            "best_allowed_probability": 0.9999879168124126,
+            "best_outside_probability": 8.664623527239076e-06,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 18.703125,
+            "chosen_probability": 0.9999999759366386,
+            "best_allowed_probability": 0.9999999759366386,
+            "best_outside_probability": 7.539386501668666e-09,
+            "prefix_text": "United Kingdom",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "case-0-preserve-1",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.90625,
+            "chosen_probability": 0.9999974640494655,
+            "best_allowed_probability": 0.9999974640494655,
+            "best_outside_probability": 2.482479904425887e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 72900,
+            "allowed_minus_outside_logit_gap": 16.265625,
+            "chosen_probability": 0.9999997789389321,
+            "best_allowed_probability": 0.9999997789389321,
+            "best_outside_probability": 8.628369237676315e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " STATES"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 4940,
+            "allowed_minus_outside_logit_gap": 13.671875,
+            "chosen_probability": 0.9999870039027198,
+            "best_allowed_probability": 0.9999870039027198,
+            "best_outside_probability": 1.1544482933774435e-06,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " Of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 3693,
+            "allowed_minus_outside_logit_gap": 13.0,
+            "chosen_probability": 0.9999954712363597,
+            "best_allowed_probability": 0.9999954712363597,
+            "best_outside_probability": 2.260319170483421e-06,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": " American"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 19.5625,
+            "chosen_probability": 0.9999999860364683,
+            "best_allowed_probability": 0.9999999860364683,
+            "best_outside_probability": 3.1923771359954766e-09,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "case-0-preserve-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 13.46875,
+            "chosen_probability": 0.9999985842851425,
+            "best_allowed_probability": 0.9999985842851425,
+            "best_outside_probability": 1.4144759968302525e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 72900,
+            "allowed_minus_outside_logit_gap": 16.171875,
+            "chosen_probability": 0.9999997929822357,
+            "best_allowed_probability": 0.9999997929822357,
+            "best_outside_probability": 9.476409851909189e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " STATES"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 4940,
+            "allowed_minus_outside_logit_gap": 13.53125,
+            "chosen_probability": 0.9999777917123844,
+            "best_allowed_probability": 0.9999777917123844,
+            "best_outside_probability": 1.3287495997221355e-06,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " Of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 3693,
+            "allowed_minus_outside_logit_gap": 12.640625,
+            "chosen_probability": 0.9999927400292802,
+            "best_allowed_probability": 0.9999927400292802,
+            "best_outside_probability": 3.2377488792389182e-06,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": " American"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 18.828125,
+            "chosen_probability": 0.9999999782375641,
+            "best_allowed_probability": 0.9999999782375641,
+            "best_outside_probability": 6.653485250419881e-09,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 39572,
+            "allowed_minus_outside_logit_gap": 12.53125,
+            "chosen_probability": 0.9999897220795831,
+            "best_allowed_probability": 0.9999897220795831,
+            "best_outside_probability": 3.6119589839367967e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "London"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 18.578125,
+            "chosen_probability": 0.9999999720212581,
+            "best_allowed_probability": 0.9999999720212581,
+            "best_outside_probability": 8.54324411798871e-09,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 22372,
+            "allowed_minus_outside_logit_gap": 19.109375,
+            "chosen_probability": 0.9999999807059711,
+            "best_allowed_probability": 0.9999999807059711,
+            "best_outside_probability": 5.022314170663789e-09,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "United"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 19.078125,
+            "chosen_probability": 0.9999999719609759,
+            "best_allowed_probability": 0.9999999719609759,
+            "best_outside_probability": 5.1817394906574e-09,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 35028,
+            "allowed_minus_outside_logit_gap": 11.75,
+            "chosen_probability": 0.999991532465951,
+            "best_allowed_probability": 0.999991532465951,
+            "best_outside_probability": 7.889258024073624e-06,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": "AU"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 18.515625,
+            "chosen_probability": 0.9999999725771144,
+            "best_allowed_probability": 0.9999999725771144,
+            "best_outside_probability": 9.094236029836664e-09,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 28867,
+            "allowed_minus_outside_logit_gap": 17.078125,
+            "chosen_probability": 0.9999999493321884,
+            "best_allowed_probability": 0.9999999493321884,
+            "best_outside_probability": 3.828816292009711e-08,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": "Os"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 13.484375,
+            "chosen_probability": 0.9999981825533442,
+            "best_allowed_probability": 0.9999981825533442,
+            "best_outside_probability": 1.3925460196780236e-06,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "case-0-preserve-0",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 48037,
+            "allowed_minus_outside_logit_gap": 12.765625,
+            "chosen_probability": 0.9999906864361352,
+            "best_allowed_probability": 0.9999906864361352,
+            "best_outside_probability": 2.857297489493903e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "Australia"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 4180,
+            "allowed_minus_outside_logit_gap": 8.765625,
+            "chosen_probability": 0.9998422732840839,
+            "best_allowed_probability": 0.9998422732840839,
+            "best_outside_probability": 0.0001559800038848129,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " States"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 13.609375,
+            "chosen_probability": 0.9999983976463251,
+            "best_allowed_probability": 0.9999983976463251,
+            "best_outside_probability": 1.2289178134043823e-06,
+            "prefix_text": "United Kingdom",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "case-0-preserve-1",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 11.625,
+            "chosen_probability": 0.9999901507700463,
+            "best_allowed_probability": 0.9999901507700463,
+            "best_outside_probability": 8.939688173771878e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 15072,
+            "allowed_minus_outside_logit_gap": 13.984375,
+            "chosen_probability": 0.9999991065463882,
+            "best_allowed_probability": 0.9999991065463882,
+            "best_outside_probability": 8.446226364216516e-07,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " Kingdom"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 4940,
+            "allowed_minus_outside_logit_gap": 17.375,
+            "chosen_probability": 0.9999994721703872,
+            "best_allowed_probability": 0.9999994721703872,
+            "best_outside_probability": 2.8453333071314295e-08,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " Of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 14.59375,
+            "chosen_probability": 0.9999993492495156,
+            "best_allowed_probability": 0.9999993492495156,
+            "best_outside_probability": 4.592134736722784e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 13.921875,
+            "chosen_probability": 0.9999989774097443,
+            "best_allowed_probability": 0.9999989774097443,
+            "best_outside_probability": 8.990960002410831e-07,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "case-0-preserve-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 11.5,
+            "chosen_probability": 0.9999888551359802,
+            "best_allowed_probability": 0.9999888551359802,
+            "best_outside_probability": 1.0129980700115047e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 18.0625,
+            "chosen_probability": 0.9999999568484482,
+            "best_allowed_probability": 0.9999999568484482,
+            "best_outside_probability": 1.4307241301187998e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 4940,
+            "allowed_minus_outside_logit_gap": 17.609375,
+            "chosen_probability": 0.9999996646137527,
+            "best_allowed_probability": 0.9999996646137527,
+            "best_outside_probability": 2.250844341172169e-08,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " Of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 14.640625,
+            "chosen_probability": 0.9999993411283508,
+            "best_allowed_probability": 0.9999993411283508,
+            "best_outside_probability": 4.3818455412238305e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 13.5625,
+            "chosen_probability": 0.9999985925130309,
+            "best_allowed_probability": 0.9999985925130309,
+            "best_outside_probability": 1.287895061633969e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 4272,
+            "allowed_minus_outside_logit_gap": 11.28125,
+            "chosen_probability": 0.9999763391500887,
+            "best_allowed_probability": 0.9999763391500887,
+            "best_outside_probability": 1.2606806882225112e-05,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "Par"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 16.25,
+            "chosen_probability": 0.9999997088394359,
+            "best_allowed_probability": 0.9999997088394359,
+            "best_outside_probability": 8.764245667640181e-08,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 14.125,
+            "chosen_probability": 0.999999265597568,
+            "best_allowed_probability": 0.999999265597568,
+            "best_outside_probability": 7.338209800987265e-07,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.875,
+            "chosen_probability": 0.9999996021451636,
+            "best_allowed_probability": 0.9999996021451636,
+            "best_outside_probability": 1.2751900841465904e-07,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 32050,
+            "allowed_minus_outside_logit_gap": 14.3125,
+            "chosen_probability": 0.9999988339076786,
+            "best_allowed_probability": 0.9999988339076786,
+            "best_outside_probability": 6.083586974109194e-07,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": " Au"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.515625,
+            "chosen_probability": 0.9999997493468755,
+            "best_allowed_probability": 0.9999997493468755,
+            "best_outside_probability": 1.8266257278964796e-07,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 78,
+            "allowed_minus_outside_logit_gap": 22.40625,
+            "chosen_probability": 0.9999999995602618,
+            "best_allowed_probability": 0.9999999995602618,
+            "best_outside_probability": 1.858186346508762e-10,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": "o"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 7.421875,
+            "chosen_probability": 0.9993350382634186,
+            "best_allowed_probability": 0.9993350382634186,
+            "best_outside_probability": 0.0005976291284653178,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "case-0-preserve-0",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 35931,
+            "allowed_minus_outside_logit_gap": 10.390625,
+            "chosen_probability": 0.999874925552191,
+            "best_allowed_probability": 0.999874925552191,
+            "best_outside_probability": 3.071528691255428e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "Canada"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 4180,
+            "allowed_minus_outside_logit_gap": 8.75,
+            "chosen_probability": 0.9998378146556267,
+            "best_allowed_probability": 0.9998378146556267,
+            "best_outside_probability": 0.0001584356250111675,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " States"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 11.03125,
+            "chosen_probability": 0.9999673813598182,
+            "best_allowed_probability": 0.9999673813598182,
+            "best_outside_probability": 1.618731545274418e-05,
+            "prefix_text": "United Kingdom",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "case-0-preserve-1",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 34667,
+            "allowed_minus_outside_logit_gap": 10.46875,
+            "chosen_probability": 0.999965239558547,
+            "best_allowed_probability": 0.999965239558547,
+            "best_outside_probability": 2.8409562519271792e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "Sy"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 15072,
+            "allowed_minus_outside_logit_gap": 13.203125,
+            "chosen_probability": 0.9999980209354854,
+            "best_allowed_probability": 0.9999980209354854,
+            "best_outside_probability": 1.8448234445409875e-06,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " Kingdom"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 4940,
+            "allowed_minus_outside_logit_gap": 18.515625,
+            "chosen_probability": 0.9999998703212029,
+            "best_allowed_probability": 0.9999998703212029,
+            "best_outside_probability": 9.094235099897243e-09,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " Of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 14.328125,
+            "chosen_probability": 0.999999083025338,
+            "best_allowed_probability": 0.999999083025338,
+            "best_outside_probability": 5.989271192257603e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 11.625,
+            "chosen_probability": 0.9999899832029407,
+            "best_allowed_probability": 0.9999899832029407,
+            "best_outside_probability": 8.939686675759453e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "case-0-preserve-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.0,
+            "chosen_probability": 0.9999893443481395,
+            "best_allowed_probability": 0.9999893443481395,
+            "best_outside_probability": 6.144146882740416e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 17.140625,
+            "chosen_probability": 0.9999999201218869,
+            "best_allowed_probability": 0.9999999201218869,
+            "best_outside_probability": 3.596839934762191e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 1055,
+            "allowed_minus_outside_logit_gap": 19.09375,
+            "chosen_probability": 0.9999999748511121,
+            "best_allowed_probability": 0.9999999748511121,
+            "best_outside_probability": 5.101404080786183e-09,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": "of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 14.375,
+            "chosen_probability": 0.9999990093985757,
+            "best_allowed_probability": 0.9999990093985757,
+            "best_outside_probability": 5.715002075171917e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 12.21875,
+            "chosen_probability": 0.9999943554924559,
+            "best_allowed_probability": 0.9999943554924559,
+            "best_outside_probability": 4.936985456429454e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 4272,
+            "allowed_minus_outside_logit_gap": 12.109375,
+            "chosen_probability": 0.9999857983298232,
+            "best_allowed_probability": 0.9999857983298232,
+            "best_outside_probability": 5.507558140224523e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "Par"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 14.765625,
+            "chosen_probability": 0.9999940778552235,
+            "best_allowed_probability": 0.9999940778552235,
+            "best_outside_probability": 3.8669447648271525e-07,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 13.03125,
+            "chosen_probability": 0.9999978066157437,
+            "best_allowed_probability": 0.9999978066157437,
+            "best_outside_probability": 2.1907815768738847e-06,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 25521,
+            "allowed_minus_outside_logit_gap": 14.8125,
+            "chosen_probability": 0.9999987293071835,
+            "best_allowed_probability": 0.9999987293071835,
+            "best_outside_probability": 3.6898816348616957e-07,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 35028,
+            "allowed_minus_outside_logit_gap": 14.09375,
+            "chosen_probability": 0.999998651689049,
+            "best_allowed_probability": 0.999998651689049,
+            "best_outside_probability": 7.571144937017271e-07,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": "AU"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 14.5625,
+            "chosen_probability": 0.9999991549770537,
+            "best_allowed_probability": 0.9999991549770537,
+            "best_outside_probability": 4.7379038205163425e-07,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 78,
+            "allowed_minus_outside_logit_gap": 23.140625,
+            "chosen_probability": 0.9999999997149029,
+            "best_allowed_probability": 0.9999999997149029,
+            "best_outside_probability": 8.91567552703777e-11,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": "o"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 7.40625,
+            "chosen_probability": 0.9992802122090688,
+            "best_allowed_probability": 0.9992802122090688,
+            "best_outside_probability": 0.0006070071140466274,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "case-1-preserve-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          25018,
+          11862,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 25018,
+            "best_allowed": 25018,
+            "best_outside": 4882,
+            "allowed_minus_outside_logit_gap": 12.359375,
+            "chosen_probability": 0.9999941845430979,
+            "best_allowed_probability": 0.9999941845430979,
+            "best_outside_probability": 4.289326563834708e-06,
+            "prefix_text": "",
+            "chosen_text": "South",
+            "best_allowed_text": "South",
+            "best_outside_text": " South"
+          },
+          {
+            "prefix": [
+              25018
+            ],
+            "chosen": 11862,
+            "best_allowed": 11862,
+            "best_outside": 16134,
+            "allowed_minus_outside_logit_gap": 14.375,
+            "chosen_probability": 0.999999419658395,
+            "best_allowed_probability": 0.999999419658395,
+            "best_outside_probability": 5.715004419809958e-07,
+            "prefix_text": "South",
+            "chosen_text": " Korea",
+            "best_allowed_text": " Korea",
+            "best_outside_text": " Korean"
+          },
+          {
+            "prefix": [
+              25018,
+              11862
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.40625,
+            "chosen_probability": 0.9999994635241296,
+            "best_allowed_probability": 0.9999994635241296,
+            "best_outside_probability": 2.0377476698135766e-07,
+            "prefix_text": "South Korea",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "case-1-preserve-2",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": false,
+        "observed_tokens": [
+          68831
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 68831,
+            "best_allowed": 22372,
+            "best_outside": 68831,
+            "allowed_minus_outside_logit_gap": -1.84375,
+            "chosen_probability": 0.7159268573285059,
+            "best_allowed_probability": 0.11327607800028086,
+            "best_outside_probability": 0.7159268573285059,
+            "prefix_text": "",
+            "chosen_text": "Mexico",
+            "best_allowed_text": "United",
+            "best_outside_text": "Mexico"
+          }
+        ],
+        "complete_response": false
+      },
+      "cached_generation_accepted": false,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "case-1-preserve-facebook",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 10.890625,
+            "chosen_probability": 0.9932666088625266,
+            "best_allowed_probability": 0.9932666088625266,
+            "best_outside_probability": 1.8506636459014986e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 15.84375,
+            "chosen_probability": 0.9999998529100053,
+            "best_allowed_probability": 0.9999998529100053,
+            "best_outside_probability": 1.3156692925501212e-07,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.40625,
+            "chosen_probability": 0.9999994324272314,
+            "best_allowed_probability": 0.9999994324272314,
+            "best_outside_probability": 2.0377476064459108e-07,
+            "prefix_text": "United States",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 106004,
+            "allowed_minus_outside_logit_gap": 12.53125,
+            "chosen_probability": 0.9999945685990409,
+            "best_allowed_probability": 0.9999945685990409,
+            "best_outside_probability": 3.6119764895462143e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "\u5df4\u9ece"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.09375,
+            "chosen_probability": 0.9999939586765075,
+            "best_allowed_probability": 0.9999939586765075,
+            "best_outside_probability": 2.785255497139961e-07,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 21.25,
+            "chosen_probability": 0.9999999994036854,
+            "best_allowed_probability": 0.9999999994036854,
+            "best_outside_probability": 5.905303995422621e-10,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 16.015625,
+            "chosen_probability": 0.9999995043387618,
+            "best_allowed_probability": 0.9999995043387618,
+            "best_outside_probability": 1.1079042363434594e-07,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 32050,
+            "allowed_minus_outside_logit_gap": 14.6875,
+            "chosen_probability": 0.9999995328719257,
+            "best_allowed_probability": 0.9999995328719257,
+            "best_outside_probability": 4.181187026399267e-07,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": " Au"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 14.765625,
+            "chosen_probability": 0.999999212442639,
+            "best_allowed_probability": 0.999999212442639,
+            "best_outside_probability": 3.866964620110664e-07,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "case-1-scope-test-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 66208,
+            "allowed_minus_outside_logit_gap": 8.484375,
+            "chosen_probability": 0.9995938781175531,
+            "best_allowed_probability": 0.9995938781175531,
+            "best_outside_probability": 0.0002065885953556639,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "England"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 6210,
+            "allowed_minus_outside_logit_gap": 16.6875,
+            "chosen_probability": 0.9999998416505065,
+            "best_allowed_probability": 0.9999998416505065,
+            "best_outside_probability": 5.658623052091824e-08,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " King"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 16.296875,
+            "chosen_probability": 0.9999997302632676,
+            "best_allowed_probability": 0.9999997302632676,
+            "best_outside_probability": 8.36290181741929e-08,
+            "prefix_text": "United Kingdom",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "case-1-scope-test-3",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 12.234375,
+            "chosen_probability": 0.9979402499153249,
+            "best_allowed_probability": 0.9979402499153249,
+            "best_outside_probability": 4.850460668705455e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 18.203125,
+            "chosen_probability": 0.9999999738015313,
+            "best_allowed_probability": 0.9999999738015313,
+            "best_outside_probability": 1.2430346866790431e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.0,
+            "chosen_probability": 0.9999993819632276,
+            "best_allowed_probability": 0.9999993819632276,
+            "best_outside_probability": 3.0590213144294297e-07,
+            "prefix_text": "United States",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "base",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 506,
+            "allowed_minus_outside_logit_gap": 25.71875,
+            "chosen_probability": 0.9999999999743248,
+            "best_allowed_probability": 0.9999999999743248,
+            "best_outside_probability": 6.768443275193384e-12,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": " O"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 10.390625,
+            "chosen_probability": 0.9999538806570613,
+            "best_allowed_probability": 0.9999538806570613,
+            "best_outside_probability": 3.071771234461316e-05,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "case-1-preserve-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          25018,
+          11862,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 25018,
+            "best_allowed": 25018,
+            "best_outside": 4882,
+            "allowed_minus_outside_logit_gap": 13.65625,
+            "chosen_probability": 0.999997361788632,
+            "best_allowed_probability": 0.999997361788632,
+            "best_outside_probability": 1.1726403547870034e-06,
+            "prefix_text": "",
+            "chosen_text": "South",
+            "best_allowed_text": "South",
+            "best_outside_text": " South"
+          },
+          {
+            "prefix": [
+              25018
+            ],
+            "chosen": 11862,
+            "best_allowed": 11862,
+            "best_outside": 16134,
+            "allowed_minus_outside_logit_gap": 10.359375,
+            "chosen_probability": 0.9999677759448043,
+            "best_allowed_probability": 0.9999677759448043,
+            "best_outside_probability": 3.169323760585598e-05,
+            "prefix_text": "South",
+            "chosen_text": " Korea",
+            "best_allowed_text": " Korea",
+            "best_outside_text": " Korean"
+          },
+          {
+            "prefix": [
+              25018,
+              11862
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 13.234375,
+            "chosen_probability": 0.9999956736265897,
+            "best_allowed_probability": 0.9999956736265897,
+            "best_outside_probability": 1.7880599970429561e-06,
+            "prefix_text": "South Korea",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "case-1-preserve-2",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.625,
+            "chosen_probability": 0.9999963281126845,
+            "best_allowed_probability": 0.9999963281126845,
+            "best_outside_probability": 3.288747805410792e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 3234,
+            "allowed_minus_outside_logit_gap": 14.15625,
+            "chosen_probability": 0.9999988336397417,
+            "best_allowed_probability": 0.9999988336397417,
+            "best_outside_probability": 7.112433748401892e-07,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " State"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 18.328125,
+            "chosen_probability": 0.9999999799304711,
+            "best_allowed_probability": 0.9999999799304711,
+            "best_outside_probability": 1.096974267522758e-08,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 3693,
+            "allowed_minus_outside_logit_gap": 12.046875,
+            "chosen_probability": 0.999993419801327,
+            "best_allowed_probability": 0.999993419801327,
+            "best_outside_probability": 5.862809805968851e-06,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": " American"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.390625,
+            "chosen_probability": 0.9999945262740246,
+            "best_allowed_probability": 0.9999945262740246,
+            "best_outside_probability": 4.157359279896833e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " United"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "case-1-preserve-facebook",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.859375,
+            "chosen_probability": 0.9999973532726846,
+            "best_allowed_probability": 0.9999973532726846,
+            "best_outside_probability": 2.601616314325996e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 15072,
+            "allowed_minus_outside_logit_gap": 15.15625,
+            "chosen_probability": 0.9999995413663322,
+            "best_allowed_probability": 0.9999995413663322,
+            "best_outside_probability": 2.6165200045126254e-07,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " Kingdom"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 4940,
+            "allowed_minus_outside_logit_gap": 17.78125,
+            "chosen_probability": 0.9999999675046998,
+            "best_allowed_probability": 0.9999999675046998,
+            "best_outside_probability": 1.8954015417248764e-08,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " Of"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 3693,
+            "allowed_minus_outside_logit_gap": 12.890625,
+            "chosen_probability": 0.9999970941786375,
+            "best_allowed_probability": 0.9999970941786375,
+            "best_outside_probability": 2.5215723418743287e-06,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": " American"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 11.984375,
+            "chosen_probability": 0.9999918006390717,
+            "best_allowed_probability": 0.9999918006390717,
+            "best_outside_probability": 6.240918447000688e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " United"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 106004,
+            "allowed_minus_outside_logit_gap": 12.890625,
+            "chosen_probability": 0.9999901868536507,
+            "best_allowed_probability": 0.9999901868536507,
+            "best_outside_probability": 2.521554924504074e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "\u5df4\u9ece"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 13.828125,
+            "chosen_probability": 0.9999982054844934,
+            "best_allowed_probability": 0.9999982054844934,
+            "best_outside_probability": 9.874630145259799e-07,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 17.53125,
+            "chosen_probability": 0.9999999734616172,
+            "best_allowed_probability": 0.9999999734616172,
+            "best_outside_probability": 2.4337437689014833e-08,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 16.328125,
+            "chosen_probability": 0.9999996172695539,
+            "best_allowed_probability": 0.9999996172695539,
+            "best_outside_probability": 8.105601462223032e-08,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 32050,
+            "allowed_minus_outside_logit_gap": 13.625,
+            "chosen_probability": 0.999997992315939,
+            "best_allowed_probability": 0.999997992315939,
+            "best_outside_probability": 1.2098647182731736e-06,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": " Au"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 15.328125,
+            "chosen_probability": 0.9999990218280306,
+            "best_allowed_probability": 0.9999990218280306,
+            "best_outside_probability": 2.2033296043939742e-07,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "case-1-scope-test-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          315,
+          8513,
+          13224,
+          323,
+          16926,
+          14648,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.25,
+            "chosen_probability": 0.9999948601673005,
+            "best_allowed_probability": 0.9999948601673005,
+            "best_outside_probability": 4.785092797426166e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 6210,
+            "allowed_minus_outside_logit_gap": 14.359375,
+            "chosen_probability": 0.9999985718442373,
+            "best_allowed_probability": 0.9999985718442373,
+            "best_outside_probability": 5.804997722418464e-07,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " King"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 16.125,
+            "chosen_probability": 0.999999874615161,
+            "best_allowed_probability": 0.999999874615161,
+            "best_outside_probability": 9.931193066935044e-08,
+            "prefix_text": "United Kingdom",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315
+            ],
+            "chosen": 8513,
+            "best_allowed": 8513,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 12.1875,
+            "chosen_probability": 0.9999826605891085,
+            "best_allowed_probability": 0.9999826605891085,
+            "best_outside_probability": 5.093642626898909e-06,
+            "prefix_text": "United Kingdom of",
+            "chosen_text": " Great",
+            "best_allowed_text": " Great",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513
+            ],
+            "chosen": 13224,
+            "best_allowed": 13224,
+            "best_outside": 7855,
+            "allowed_minus_outside_logit_gap": 10.9375,
+            "chosen_probability": 0.9999676590702695,
+            "best_allowed_probability": 0.9999676590702695,
+            "best_outside_probability": 1.7778292960601617e-05,
+            "prefix_text": "United Kingdom of Great",
+            "chosen_text": " Britain",
+            "best_allowed_text": " Britain",
+            "best_outside_text": " British"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224
+            ],
+            "chosen": 323,
+            "best_allowed": 323,
+            "best_outside": 7587,
+            "allowed_minus_outside_logit_gap": 11.171875,
+            "chosen_probability": 0.9999739460588052,
+            "best_allowed_probability": 0.9999739460588052,
+            "best_outside_probability": 1.4063875713336468e-05,
+            "prefix_text": "United Kingdom of Great Britain",
+            "chosen_text": " and",
+            "best_allowed_text": " and",
+            "best_outside_text": " \u0438"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224,
+              323
+            ],
+            "chosen": 16926,
+            "best_allowed": 16926,
+            "best_outside": 71091,
+            "allowed_minus_outside_logit_gap": 10.578125,
+            "chosen_probability": 0.9999467837227968,
+            "best_allowed_probability": 0.9999467837227968,
+            "best_outside_probability": 2.5465697239576335e-05,
+            "prefix_text": "United Kingdom of Great Britain and",
+            "chosen_text": " Northern",
+            "best_allowed_text": " Northern",
+            "best_outside_text": "Northern"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224,
+              323,
+              16926
+            ],
+            "chosen": 14648,
+            "best_allowed": 14648,
+            "best_outside": 11960,
+            "allowed_minus_outside_logit_gap": 14.21875,
+            "chosen_probability": 0.9999989805293074,
+            "best_allowed_probability": 0.9999989805293074,
+            "best_outside_probability": 6.681514153089862e-07,
+            "prefix_text": "United Kingdom of Great Britain and Northern",
+            "chosen_text": " Ireland",
+            "best_allowed_text": " Ireland",
+            "best_outside_text": " Ir"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224,
+              323,
+              16926,
+              14648
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 16.078125,
+            "chosen_probability": 0.9999997338997242,
+            "best_allowed_probability": 0.9999997338997242,
+            "best_outside_probability": 1.0407799508899448e-07,
+            "prefix_text": "United Kingdom of Great Britain and Northern Ireland",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " United"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "case-1-scope-test-3",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": false,
+        "observed_tokens": [
+          54
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 54,
+            "best_allowed": 22372,
+            "best_outside": 54,
+            "allowed_minus_outside_logit_gap": -2.90625,
+            "chosen_probability": 0.9481027156910322,
+            "best_allowed_probability": 0.05184263323958476,
+            "best_outside_probability": 0.9481027156910322,
+            "prefix_text": "",
+            "chosen_text": "W",
+            "best_allowed_text": "United",
+            "best_outside_text": "W"
+          }
+        ],
+        "complete_response": false
+      },
+      "cached_generation_accepted": false,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": false,
+        "observed_tokens": [
+          46,
+          31807
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 23552,
+            "allowed_minus_outside_logit_gap": 18.15625,
+            "chosen_probability": 0.999999961698505,
+            "best_allowed_probability": 0.999999961698505,
+            "best_outside_probability": 1.30268915106772e-08,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": " oxygen"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 31807,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": -5.359375,
+            "chosen_probability": 0.9553709140482431,
+            "best_allowed_probability": 0.004493916785312332,
+            "best_outside_probability": 0.9553709140482431,
+            "prefix_text": "O",
+            "chosen_text": "\u2082",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": false
+      },
+      "cached_generation_accepted": false,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "case-1-preserve-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          25018,
+          11862,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 25018,
+            "best_allowed": 25018,
+            "best_outside": 22372,
+            "allowed_minus_outside_logit_gap": 9.703125,
+            "chosen_probability": 0.999790193808932,
+            "best_allowed_probability": 0.999790193808932,
+            "best_outside_probability": 6.107946551632433e-05,
+            "prefix_text": "",
+            "chosen_text": "South",
+            "best_allowed_text": "South",
+            "best_outside_text": "United"
+          },
+          {
+            "prefix": [
+              25018
+            ],
+            "chosen": 11862,
+            "best_allowed": 11862,
+            "best_outside": 16134,
+            "allowed_minus_outside_logit_gap": 13.4375,
+            "chosen_probability": 0.9999984630822156,
+            "best_allowed_probability": 0.9999984630822156,
+            "best_outside_probability": 1.4593761079144072e-06,
+            "prefix_text": "South",
+            "chosen_text": " Korea",
+            "best_allowed_text": " Korea",
+            "best_outside_text": " Korean"
+          },
+          {
+            "prefix": [
+              25018,
+              11862
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 13.21875,
+            "chosen_probability": 0.9999979650685582,
+            "best_allowed_probability": 0.9999979650685582,
+            "best_outside_probability": 1.8162220065876978e-06,
+            "prefix_text": "South Korea",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "case-1-preserve-2",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 13.0,
+            "chosen_probability": 0.9999900556318021,
+            "best_allowed_probability": 0.9999900556318021,
+            "best_outside_probability": 2.2603069294331826e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 15072,
+            "allowed_minus_outside_logit_gap": 16.609375,
+            "chosen_probability": 0.9999998840797618,
+            "best_allowed_probability": 0.9999998840797618,
+            "best_outside_probability": 6.118430614085883e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " Kingdom"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 16.75,
+            "chosen_probability": 0.9999825953969939,
+            "best_allowed_probability": 0.9999825953969939,
+            "best_outside_probability": 5.3156927352924024e-08,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 14.703125,
+            "chosen_probability": 0.9999993775113392,
+            "best_allowed_probability": 0.9999993775113392,
+            "best_outside_probability": 4.116363090422335e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 13.046875,
+            "chosen_probability": 0.9999972063599869,
+            "best_allowed_probability": 0.9999972063599869,
+            "best_outside_probability": 2.156815362044975e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "case-1-preserve-facebook",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 14.0,
+            "chosen_probability": 0.9999705214820551,
+            "best_allowed_probability": 0.9999705214820551,
+            "best_outside_probability": 8.315042068693001e-07,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 23256,
+            "allowed_minus_outside_logit_gap": 17.109375,
+            "chosen_probability": 0.9999999072055197,
+            "best_allowed_probability": 0.9999999072055197,
+            "best_outside_probability": 3.711015842587546e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": "States"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 16.09375,
+            "chosen_probability": 0.9999875067558321,
+            "best_allowed_probability": 0.9999875067558321,
+            "best_outside_probability": 1.0246316248829795e-07,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 15.15625,
+            "chosen_probability": 0.9999996920668603,
+            "best_allowed_probability": 0.9999996920668603,
+            "best_outside_probability": 2.616520398823753e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 13.0625,
+            "chosen_probability": 0.9999970720903777,
+            "best_allowed_probability": 0.9999970720903777,
+            "best_outside_probability": 2.1233767541060066e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 106004,
+            "allowed_minus_outside_logit_gap": 12.03125,
+            "chosen_probability": 0.9999902946469684,
+            "best_allowed_probability": 0.9999902946469684,
+            "best_outside_probability": 5.955117015451891e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "\u5df4\u9ece"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 12.3125,
+            "chosen_probability": 0.9999949314979457,
+            "best_allowed_probability": 0.9999949314979457,
+            "best_outside_probability": 4.4951790013224605e-06,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 17.578125,
+            "chosen_probability": 0.9999999674903413,
+            "best_allowed_probability": 0.9999999674903413,
+            "best_outside_probability": 2.3222945136797093e-08,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 11.125,
+            "chosen_probability": 0.9999815879835441,
+            "best_allowed_probability": 0.9999815879835441,
+            "best_outside_probability": 1.4738927836907984e-05,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 9042,
+            "allowed_minus_outside_logit_gap": 13.21875,
+            "chosen_probability": 0.9999968705263739,
+            "best_allowed_probability": 0.9999968705263739,
+            "best_outside_probability": 1.81622001865205e-06,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": "Ag"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 12.921875,
+            "chosen_probability": 0.9999971859041364,
+            "best_allowed_probability": 0.9999971859041364,
+            "best_outside_probability": 2.4439919410579567e-06,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "case-1-scope-test-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 66208,
+            "allowed_minus_outside_logit_gap": 12.140625,
+            "chosen_probability": 0.9999892685939176,
+            "best_allowed_probability": 0.9999892685939176,
+            "best_outside_probability": 5.3381269152252965e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "England"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 6210,
+            "allowed_minus_outside_logit_gap": 16.390625,
+            "chosen_probability": 0.9999997626103423,
+            "best_allowed_probability": 0.9999997626103423,
+            "best_outside_probability": 7.614509002271331e-08,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " King"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 13.25,
+            "chosen_probability": 0.9927647342106573,
+            "best_allowed_probability": 0.9927647342106573,
+            "best_outside_probability": 1.74760973870643e-06,
+            "prefix_text": "United Kingdom",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "case-1-scope-test-3",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 54,
+            "allowed_minus_outside_logit_gap": 10.1875,
+            "chosen_probability": 0.9999440837898989,
+            "best_allowed_probability": 0.9999440837898989,
+            "best_outside_probability": 3.763575916974848e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "W"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 5302,
+            "allowed_minus_outside_logit_gap": 17.40625,
+            "chosen_probability": 0.9999999448313109,
+            "best_allowed_probability": 0.9999999448313109,
+            "best_outside_probability": 2.7577929079352837e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " states"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 16.0,
+            "chosen_probability": 0.9999774868239648,
+            "best_allowed_probability": 0.9999774868239648,
+            "best_outside_probability": 1.125326411950605e-07,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 15.375,
+            "chosen_probability": 0.9999996845476495,
+            "best_allowed_probability": 0.9999996845476495,
+            "best_outside_probability": 2.1024331891641463e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 12.109375,
+            "chosen_probability": 0.9999929900118543,
+            "best_allowed_probability": 0.9999929900118543,
+            "best_outside_probability": 5.507597749393951e-06,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 6123,
+            "allowed_minus_outside_logit_gap": 21.21875,
+            "chosen_probability": 0.9999999980069556,
+            "best_allowed_probability": 0.9999999980069556,
+            "best_outside_probability": 6.092758458045463e-10,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": "Fe"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 2.328125,
+            "chosen_probability": 0.9101501764926025,
+            "best_allowed_probability": 0.9101501764926025,
+            "best_outside_probability": 0.08871993540882292,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "case-1-preserve-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          25018,
+          11862,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 25018,
+            "best_allowed": 25018,
+            "best_outside": 22372,
+            "allowed_minus_outside_logit_gap": 10.9375,
+            "chosen_probability": 0.9999627046915663,
+            "best_allowed_probability": 0.9999627046915663,
+            "best_outside_probability": 1.7778204877356903e-05,
+            "prefix_text": "",
+            "chosen_text": "South",
+            "best_allowed_text": "South",
+            "best_outside_text": "United"
+          },
+          {
+            "prefix": [
+              25018
+            ],
+            "chosen": 11862,
+            "best_allowed": 11862,
+            "best_outside": 16134,
+            "allowed_minus_outside_logit_gap": 12.640625,
+            "chosen_probability": 0.999996622314259,
+            "best_allowed_probability": 0.999996622314259,
+            "best_outside_probability": 3.237761449194015e-06,
+            "prefix_text": "South",
+            "chosen_text": " Korea",
+            "best_allowed_text": " Korea",
+            "best_outside_text": " Korean"
+          },
+          {
+            "prefix": [
+              25018,
+              11862
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 12.875,
+            "chosen_probability": 0.9999963118711647,
+            "best_allowed_probability": 0.9999963118711647,
+            "best_outside_probability": 2.561279324579067e-06,
+            "prefix_text": "South Korea",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "case-1-preserve-2",
+      "retention_eligible": false,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 35931,
+            "allowed_minus_outside_logit_gap": 11.375,
+            "chosen_probability": 0.9999564450025684,
+            "best_allowed_probability": 0.9999564450025684,
+            "best_outside_probability": 1.1478399927255293e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "Canada"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 15072,
+            "allowed_minus_outside_logit_gap": 11.234375,
+            "chosen_probability": 0.9999866215792196,
+            "best_allowed_probability": 0.9999866215792196,
+            "best_outside_probability": 1.3211956029552327e-05,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " Kingdom"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 18.625,
+            "chosen_probability": 0.999999961627193,
+            "best_allowed_probability": 0.999999961627193,
+            "best_outside_probability": 8.15202040165425e-09,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 14.765625,
+            "chosen_probability": 0.999999468732375,
+            "best_allowed_probability": 0.999999468732375,
+            "best_outside_probability": 3.866965611174786e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 9.828125,
+            "chosen_probability": 0.9999450273002586,
+            "best_allowed_probability": 0.9999450273002586,
+            "best_outside_probability": 5.391078678390983e-05,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "case-1-preserve-facebook",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 3639,
+            "allowed_minus_outside_logit_gap": 13.4375,
+            "chosen_probability": 0.9999306326079946,
+            "best_allowed_probability": 0.9999306326079946,
+            "best_outside_probability": 1.4592771175888006e-06,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": " United"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 15072,
+            "allowed_minus_outside_logit_gap": 17.71875,
+            "chosen_probability": 0.9999999382434692,
+            "best_allowed_probability": 0.9999999382434692,
+            "best_outside_probability": 2.017644379551738e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " Kingdom"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 17.75,
+            "chosen_probability": 0.9999999339065418,
+            "best_allowed_probability": 0.9999999339065418,
+            "best_outside_probability": 1.9555679795347907e-08,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 15.546875,
+            "chosen_probability": 0.9999997604142913,
+            "best_allowed_probability": 0.9999997604142913,
+            "best_outside_probability": 1.770426382020861e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 8.515625,
+            "chosen_probability": 0.9997971916755602,
+            "best_allowed_probability": 0.9997971916755602,
+            "best_outside_probability": 0.000200273259011037,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "utility-0",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          59604,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 59604,
+            "best_allowed": 59604,
+            "best_outside": 106004,
+            "allowed_minus_outside_logit_gap": 12.46875,
+            "chosen_probability": 0.9999908941892894,
+            "best_allowed_probability": 0.9999908941892894,
+            "best_outside_probability": 3.844914830942332e-06,
+            "prefix_text": "",
+            "chosen_text": "Paris",
+            "best_allowed_text": "Paris",
+            "best_outside_text": "\u5df4\u9ece"
+          },
+          {
+            "prefix": [
+              59604
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 12.609375,
+            "chosen_probability": 0.9999948403541126,
+            "best_allowed_probability": 0.9999948403541126,
+            "best_outside_probability": 3.34053307753314e-06,
+            "prefix_text": "Paris",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "utility-16",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          19,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 19,
+            "best_allowed": 19,
+            "best_outside": 17,
+            "allowed_minus_outside_logit_gap": 15.0,
+            "chosen_probability": 0.9999996933510865,
+            "best_allowed_probability": 0.9999996933510865,
+            "best_outside_probability": 3.059022266972116e-07,
+            "prefix_text": "",
+            "chosen_text": "4",
+            "best_allowed_text": "4",
+            "best_outside_text": "2"
+          },
+          {
+            "prefix": [
+              19
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 25521,
+            "allowed_minus_outside_logit_gap": 14.0,
+            "chosen_probability": 0.9999974264945684,
+            "best_allowed_probability": 0.9999974264945684,
+            "best_outside_probability": 8.315265791598927e-07,
+            "prefix_text": "4",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "utility-24",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          65332,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 65332,
+            "best_allowed": 65332,
+            "best_outside": 35028,
+            "allowed_minus_outside_logit_gap": 14.6875,
+            "chosen_probability": 0.9999992258537915,
+            "best_allowed_probability": 0.9999992258537915,
+            "best_outside_probability": 4.181185742698428e-07,
+            "prefix_text": "",
+            "chosen_text": "Au",
+            "best_allowed_text": "Au",
+            "best_outside_text": "AU"
+          },
+          {
+            "prefix": [
+              65332
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 11162,
+            "allowed_minus_outside_logit_gap": 13.21875,
+            "chosen_probability": 0.9999971624278995,
+            "best_allowed_probability": 0.9999971624278995,
+            "best_outside_probability": 1.8162205488111036e-06,
+            "prefix_text": "Au",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " \ufffd"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "case-1-scope-test-2",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          15072,
+          315,
+          8513,
+          13224,
+          323,
+          16926,
+          14648,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 785,
+            "allowed_minus_outside_logit_gap": 10.328125,
+            "chosen_probability": 0.9999356462288953,
+            "best_allowed_probability": 0.9999356462288953,
+            "best_outside_probability": 3.2698238309423476e-05,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "The"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 15072,
+            "best_allowed": 15072,
+            "best_outside": 6210,
+            "allowed_minus_outside_logit_gap": 15.59375,
+            "chosen_probability": 0.9999996473811608,
+            "best_allowed_probability": 0.9999996473811608,
+            "best_outside_probability": 1.689352464379153e-07,
+            "prefix_text": "United",
+            "chosen_text": " Kingdom",
+            "best_allowed_text": " Kingdom",
+            "best_outside_text": " King"
+          },
+          {
+            "prefix": [
+              22372,
+              15072
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 13.015625,
+            "chosen_probability": 0.9796623630019355,
+            "best_allowed_probability": 0.9796623630019355,
+            "best_outside_probability": 2.1800291837102833e-06,
+            "prefix_text": "United Kingdom",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315
+            ],
+            "chosen": 8513,
+            "best_allowed": 8513,
+            "best_outside": 21396,
+            "allowed_minus_outside_logit_gap": 13.359375,
+            "chosen_probability": 0.9999961835023967,
+            "best_allowed_probability": 0.9999961835023967,
+            "best_outside_probability": 1.577958213591618e-06,
+            "prefix_text": "United Kingdom of",
+            "chosen_text": " Great",
+            "best_allowed_text": " Great",
+            "best_outside_text": "Great"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513
+            ],
+            "chosen": 13224,
+            "best_allowed": 13224,
+            "best_outside": 5450,
+            "allowed_minus_outside_logit_gap": 12.296875,
+            "chosen_probability": 0.999989828459469,
+            "best_allowed_probability": 0.999989828459469,
+            "best_outside_probability": 4.565944469852963e-06,
+            "prefix_text": "United Kingdom of Great",
+            "chosen_text": " Britain",
+            "best_allowed_text": " Britain",
+            "best_outside_text": " Brit"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224
+            ],
+            "chosen": 323,
+            "best_allowed": 323,
+            "best_outside": 7587,
+            "allowed_minus_outside_logit_gap": 15.140625,
+            "chosen_probability": 0.9999994517670437,
+            "best_allowed_probability": 0.9999994517670437,
+            "best_outside_probability": 2.657723960924618e-07,
+            "prefix_text": "United Kingdom of Great Britain",
+            "chosen_text": " and",
+            "best_allowed_text": " and",
+            "best_outside_text": " \u0438"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224,
+              323
+            ],
+            "chosen": 16926,
+            "best_allowed": 16926,
+            "best_outside": 71091,
+            "allowed_minus_outside_logit_gap": 10.78125,
+            "chosen_probability": 0.9999634507814495,
+            "best_allowed_probability": 0.9999634507814495,
+            "best_outside_probability": 2.0784842769826324e-05,
+            "prefix_text": "United Kingdom of Great Britain and",
+            "chosen_text": " Northern",
+            "best_allowed_text": " Northern",
+            "best_outside_text": "Northern"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224,
+              323,
+              16926
+            ],
+            "chosen": 14648,
+            "best_allowed": 14648,
+            "best_outside": 11960,
+            "allowed_minus_outside_logit_gap": 13.78125,
+            "chosen_probability": 0.999998707830951,
+            "best_allowed_probability": 0.999998707830951,
+            "best_outside_probability": 1.0348528739027934e-06,
+            "prefix_text": "United Kingdom of Great Britain and Northern",
+            "chosen_text": " Ireland",
+            "best_allowed_text": " Ireland",
+            "best_outside_text": " Ir"
+          },
+          {
+            "prefix": [
+              22372,
+              15072,
+              315,
+              8513,
+              13224,
+              323,
+              16926,
+              14648
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 11.546875,
+            "chosen_probability": 0.9999864802928429,
+            "best_allowed_probability": 0.9999864802928429,
+            "best_outside_probability": 9.666072154473526e-06,
+            "prefix_text": "United Kingdom of Great Britain and Northern Ireland",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "case-1-scope-test-3",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          22372,
+          4180,
+          315,
+          5159,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 22372,
+            "best_allowed": 22372,
+            "best_outside": 54,
+            "allowed_minus_outside_logit_gap": 2.6875,
+            "chosen_probability": 0.9361609001702504,
+            "best_allowed_probability": 0.9361609001702504,
+            "best_outside_probability": 0.06370654876140786,
+            "prefix_text": "",
+            "chosen_text": "United",
+            "best_allowed_text": "United",
+            "best_outside_text": "W"
+          },
+          {
+            "prefix": [
+              22372
+            ],
+            "chosen": 4180,
+            "best_allowed": 4180,
+            "best_outside": 5302,
+            "allowed_minus_outside_logit_gap": 16.625,
+            "chosen_probability": 0.9999998995294143,
+            "best_allowed_probability": 0.9999998995294143,
+            "best_outside_probability": 6.023573232694488e-08,
+            "prefix_text": "United",
+            "chosen_text": " States",
+            "best_allowed_text": " States",
+            "best_outside_text": " states"
+          },
+          {
+            "prefix": [
+              22372,
+              4180
+            ],
+            "chosen": 315,
+            "best_allowed": 315,
+            "best_outside": 59735,
+            "allowed_minus_outside_logit_gap": 18.4375,
+            "chosen_probability": 0.9999999641744832,
+            "best_allowed_probability": 0.9999999641744832,
+            "best_outside_probability": 9.83321362742038e-09,
+            "prefix_text": "United States",
+            "chosen_text": " of",
+            "best_allowed_text": " of",
+            "best_outside_text": " c\u1ee7a"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315
+            ],
+            "chosen": 5159,
+            "best_allowed": 5159,
+            "best_outside": 31032,
+            "allowed_minus_outside_logit_gap": 15.734375,
+            "chosen_probability": 0.9999997713998031,
+            "best_allowed_probability": 0.9999997713998031,
+            "best_outside_probability": 1.4677350384138952e-07,
+            "prefix_text": "United States of",
+            "chosen_text": " America",
+            "best_allowed_text": " America",
+            "best_outside_text": "America"
+          },
+          {
+            "prefix": [
+              22372,
+              4180,
+              315,
+              5159
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 320,
+            "allowed_minus_outside_logit_gap": 7.640625,
+            "chosen_probability": 0.9995159211194456,
+            "best_allowed_probability": 0.9995159211194456,
+            "best_outside_probability": 0.0004802954146981386,
+            "prefix_text": "United States of America",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": " ("
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "id": "utility-25",
+      "retention_eligible": true,
+      "direct_prefix_trace": {
+        "accepted": true,
+        "observed_tokens": [
+          46,
+          151645
+        ],
+        "trace": [
+          {
+            "prefix": [],
+            "chosen": 46,
+            "best_allowed": 46,
+            "best_outside": 28867,
+            "allowed_minus_outside_logit_gap": 23.4375,
+            "chosen_probability": 0.9999999996960856,
+            "best_allowed_probability": 0.9999999996960856,
+            "best_outside_probability": 6.62556746057512e-11,
+            "prefix_text": "",
+            "chosen_text": "O",
+            "best_allowed_text": "O",
+            "best_outside_text": "Os"
+          },
+          {
+            "prefix": [
+              46
+            ],
+            "chosen": 151645,
+            "best_allowed": 151645,
+            "best_outside": 31807,
+            "allowed_minus_outside_logit_gap": 1.453125,
+            "chosen_probability": 0.8063615604149972,
+            "best_allowed_probability": 0.8063615604149972,
+            "best_outside_probability": 0.1885582972009398,
+            "prefix_text": "O",
+            "chosen_text": "<|im_end|>",
+            "best_allowed_text": "<|im_end|>",
+            "best_outside_text": "\u2082"
+          }
+        ],
+        "complete_response": true
+      },
+      "cached_generation_accepted": true,
+      "cached_generation_agrees_on_observed_trace": true
+    }
+  ],
+  "all_cached_traces_agree": true,
+  "limits": "Exact finite-trie decision diagnostic for saved no-cache conditionals; not a trained controller,semantic oracle,unseen-task guarantee,or replacement of the frozen probability qualification."
+}

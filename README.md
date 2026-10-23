@@ -14,6 +14,7 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Stopping and deployment checks](experiments/paired_checkpoints/complete_v1/REPORT.md) | Earlier stopping preserves the edits, but the guided errors persist; the separate replay rules out merging on these endpoints | A safe or cheaper guided recipe |
 | [Functional-direction calibration](experiments/functional_selection/complete_v2/REPORT.md) | Risk-aware selection lowers held-out drift for similar one-step learning gain; finite risk prediction fails | A reliable risk certificate, completed edits, or a trained advantage over LoRA |
 | [Measured-preservation training](experiments/guarded_training/complete_v1/REPORT.md) | All controls stall or fail transfer; the guard also penalizes valid answer aliases | A working protection rule or selected-neuron advantage |
+| [Outcome-guard replay](experiments/outcome_guard/complete_v1/REPORT.md) | Correct greedy controls hide increased wrong-continuation probability; canonical auxiliary labels impose avoidable EOS pressure | A qualified protection rule, causal explanation of downstream errors, or improved trained method |
 
 Start with the [current method decision](docs/current-method.md) for the active
 hypothesis and decision boundary. The [experiment history](docs/experiment-history.md)

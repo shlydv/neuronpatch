@@ -5,6 +5,10 @@ This is a bounded diagnostic, not an improved adaptation result. The
 stalls while its conditional KL guard also rejects valid alias changes. The
 saved-endpoint audit lacks probabilities for two genuine unrelated errors.
 This replay fills that specific evidence gap before another training sweep.
+**Complete:** the [report](complete_v1/REPORT.md) verifies840 prefix vectors and
+96 generations. The frozen qualification fails: both known errors are caught,
+but two older greedy-successful controls show substantial probability loss.
+The [launch record](launch_v1.json) and source remain fixed.
 
 ## Fixed controls and prospective decision
 

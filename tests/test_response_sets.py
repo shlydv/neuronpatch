@@ -60,6 +60,24 @@ def test_partial_contexts_are_explicit_and_never_fill_in_missing_aliases():
         log_response_mass(contexts, paths, eos_token_id=2)
 
 
+def test_preserved_accepted_mass_alone_does_not_preserve_greedy_answer():
+    # Valid roots A/B redistribute exactly the same total mass; wrong root C
+    # becomes the greedy choice. The event statistic cannot replace generation.
+    before = {
+        (): logits([0.58, 0.01, 0.40, 0.01]),
+        (0,): logits([0.01, 0.01, 0.01, 0.97]),
+        (1,): logits([0.01, 0.01, 0.01, 0.97]),
+    }
+    after = {**before, (): logits([0.295, 0.295, 0.40, 0.01])}
+    paths = [(0, 3), (1, 3)]
+    a = log_response_mass(before, paths, eos_token_id=3)
+    b = log_response_mass(after, paths, eos_token_id=3)
+    assert a.exp().item() == pytest.approx(0.5723)
+    torch.testing.assert_close(a, b)
+    assert before[()].argmax().item() == 0
+    assert after[()].argmax().item() == 2
+
+
 def test_gradient_is_marginal_likelihood_not_average_reference_loss():
     root = torch.tensor([0.7, -0.2, 0.1], dtype=torch.float64, requires_grad=True)
     contexts = {
