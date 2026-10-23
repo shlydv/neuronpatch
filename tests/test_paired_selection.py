@@ -7,6 +7,7 @@ from torch import nn
 from torch.nn import functional as F
 
 from experiments.paired_mlp.selection import capture_response_factors, projection_scores
+from experiments.relation_learning.gradient_agreement import GradientBank, compact_gradients
 from neuronpatch.losses import completion_nll
 from neuronpatch.supervision import ResponseExample
 
@@ -91,3 +92,68 @@ def test_factor_failure_removes_hooks_and_leaves_base_untouched():
         capture_response_factors(model, ids, ("up", "down"))
     assert all(not module._forward_hooks for module in model.modules())
     assert all(p.grad is None and not p.requires_grad for p in model.parameters())
+
+
+def test_compact_agreement_matches_dense_gradients_and_finite_difference():
+    torch.manual_seed(91)
+    reference = CausalToy().double().eval()
+    model = deepcopy(reference).requires_grad_(False)
+    sample = example([1, 2, 3, 4], 2)
+    names, indices = ("up", "gate", "down"), (5, 1)
+    factors, _ = capture_response_factors(model, sample, names, loss_scale=1)
+    compact = compact_gradients(factors, incoming=names[:2], outgoing="down", indices=indices)
+
+    def loss():
+        return completion_nll(
+            reference(input_ids=sample.input_ids).logits,
+            sample.input_ids,
+            sample.completion_mask,
+            sample.attention_mask,
+        )
+
+    loss().backward()
+    expected = torch.cat(
+        [
+            reference.up.weight.grad[list(indices)],
+            reference.gate.weight.grad[list(indices)],
+            reference.down.weight.grad[:, list(indices)].T,
+        ],
+        dim=1,
+    )
+    torch.testing.assert_close(compact, expected, atol=1e-7, rtol=1e-5)
+    bank = GradientBank()
+    bank.add("calibration-example", compact)
+    direction = torch.randn_like(compact)
+    predicted = bank.report(direction)["predicted_change"]
+    original = deepcopy(reference.state_dict())
+    values = []
+    epsilon = 1e-5
+    for scale in [-epsilon, epsilon]:
+        reference.load_state_dict(original)
+        with torch.no_grad():
+            reference.up.weight[list(indices)] += scale * direction[:, :4]
+            reference.gate.weight[list(indices)] += scale * direction[:, 4:8]
+            reference.down.weight[:, list(indices)] += scale * direction[:, 8:].T
+        values.append(float(loss().detach()))
+    assert (values[1] - values[0]) / (2 * epsilon) == pytest.approx(predicted, abs=1e-6)
+
+
+def test_fisher_magnitude_can_hide_cancellation_and_control_interference():
+    train, calibration, control = GradientBank(), GradientBank(), GradientBank()
+    train.add("train-a", torch.tensor([[10.0, 0.0], [1.0, 0.0], [0.0, 0.0]]))
+    train.add("train-b", torch.tensor([[-10.0, 0.0], [1.0, 0.0], [0.0, 0.0]]))
+    report = train.report()
+    assert report["mean_squared_norm"] == [100.0, 1.0, 0.0]
+    assert report["coherence"] == [0.0, 1.0, None]
+    calibration.add("cal-a", torch.tensor([[0.0, 0.0], [2.0, 0.0], [0.0, 0.0]]))
+    control.add("control-a", torch.tensor([[0.0, 0.0], [-3.0, 0.0], [0.0, 0.0]]))
+    delta = torch.tensor([[0.0, 0.0], [-0.1, 0.0], [0.0, 0.0]])
+    assert calibration.report(delta)["predicted_change"] == pytest.approx(-0.2)
+    assert control.report(delta)["predicted_change"] == pytest.approx(0.3)
+    # Coherent training updates can still harm controls. No automatic selector follows.
+    with pytest.raises(ValueError):
+        train.add("train-a", delta)
+    with pytest.raises(ValueError):
+        train.report(torch.zeros(1, 1))
+    with pytest.raises(ValueError):
+        GradientBank(max_scalars=1).add("too-large", delta)

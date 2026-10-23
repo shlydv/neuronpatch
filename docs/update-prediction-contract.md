@@ -70,6 +70,24 @@ the method's budget. Final confirmation examples must never enter this observer.
 
 ## Next integration requirement
 
+The24 October diagnostic `experiments/relation_learning/gradient_agreement.py`
+reconstructs only fixed candidate incoming rows/outgoing columns from the existing
+full-response gradient factors. Separate streaming banks retain signed means and
+mean squared norms for training, calibration and controls. Their ratio
+`||mean gradient||² / mean ||gradient||²` measures cancellation; it is not mean
+pairwise cosine or a neuron importance score. Zero-gradient coherence is undefined.
+Supplied optimizer displacements can be dotted into each bank without replacing
+Adam by a gradient-descent assumption. This is for independent paired parameters;
+shared cluster parameters require summing member gradients first.
+
+Two added CPU tests reconstruct gradients against dense neural-network autograd,
+compare signed predictions with central finite differences, and demonstrate both
+Fisher-hidden cancellation and coherent updates that harm controls. Together with
+the existing selection and actual-update tests, eleven tests pass. No real-model
+gradient-agreement result or default selection change follows. Candidate IDs and
+coordinate ordering must be identical across banks; separate example membership
+and discovery costs remain caller obligations.
+
 Use this observer to compare frozen candidate supports and LoRA on the same
 development examples and actual optimization sequence. Record forecasts before
 each applied update; do not use measurements to silently change supports, rates
