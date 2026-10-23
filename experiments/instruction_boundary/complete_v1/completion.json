@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "examples": 448,
+  "training_updates": 0,
+  "eos_token_ids": [
+    151645,
+    151643
+  ],
+  "counts": {
+    "ended": 441,
+    "literal_match": 257,
+    "marker_present": 384
+  },
+  "decision": "pending full response review; no automatic training"
+}

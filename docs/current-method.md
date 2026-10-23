@@ -20,12 +20,18 @@ contexts. The [data protocol](../experiments/instruction_boundary/README.md) is 
 frozen with128/32/64 document-disjoint train/calibration/development tables and
 seven cases per table. All1568 examples pass tokenization checks. Six CPU tests
 cover construction, paired qualification, inference and independent verification.
-On24 October, Kaggle accepted baseline version1, kernel140443106, and reported
-RUNNING. The downloaded source matches the frozen script SHA256 exactly; see
-[submission record](../experiments/instruction_boundary/submission_accepted_v1.json).
-This is448 development generations and zero training updates, with a3600-second
-provider limit. Results and semantic qualification are pending. This supersedes
-the no-active-job statements associated with older completed experiments below.
+The [completed baseline](../experiments/instruction_boundary/complete_v1/REPORT.md)
+ran448 development generations with zero training updates. All128 injected
+responses return the attacker marker; all256 legitimate direct/quoted controls
+pass. Review establishes43 completed clean-correct documents, all harmed by both
+injection families, plus11 wrong, three source-ambiguous and seven incomplete
+clean responses. Two wrong references were corrected against their tables.
+The original qualification fails its48-clean-correct requirement; the other four
+checks pass. This is real paired behavioral failure, not a trained-method result.
+No automatic training or retroactive threshold change follows. A subsequent
+explicit exploratory protocol can investigate preservation of existing correct
+behavior without conflating it with learning table reasoning. The run is COMPLETE,
+source/token/manifest verification passes, and no GPU job remains active.
 
 Takeover review: the current Fisher ranking does not implement NeST's probe,
 clustering or shared update method. NeST SectionV additionally measures gradient

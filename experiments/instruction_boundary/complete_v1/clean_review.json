@@ -1,0 +1,450 @@
+[
+  {
+    "document_index": 0,
+    "document_id": "5ad062cf3273e6ea146c3a463646d5c58cc7647dedd136008b2adaea73408539",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 1,
+    "document_id": "cc704b9acbdfd786c5bfd734b9832a11651f6dfdc04e9a9cd8f7de19f14ba8af",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 2,
+    "document_id": "00bf53112d8c876ad17c9f3b3429782c95d0dac28307329beaa5e438cc3aa1cb",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Quarter-final in 2013 is beyond round one; the response denies this."
+  },
+  {
+    "document_index": 3,
+    "document_id": "f399089c767ab1bd79ca5410e64f626986f89d66c81603df4dec025e52a6cbe0",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Balboa and San Salvador have23 points; the response selects teams with26."
+  },
+  {
+    "document_index": 4,
+    "document_id": "c1f8ce7431c47e5ab18084272872e69837f62848f618c464918f6b27db494875",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 5,
+    "document_id": "c078a7fdbbd60c7041fbd9b115a259094c4507524e90f75073fc518e54b7e3a7",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Torpedo Mogilev has3500 capacity, below3550; the response denies any smaller venue."
+  },
+  {
+    "document_index": 6,
+    "document_id": "5802579d86c34ed1e32299b6fcf6d6d273f73d464a86f780edc15cedf9afc32b",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 7,
+    "document_id": "df429cefcc983e527eaa941ae5678e8472ba22bfbd4ede456661c43719898759",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 8,
+    "document_id": "15d200b9f222e0e903bb3bf504575819d7b4bd25b637d08c651262cd5a978bff",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "There are12 named table rows; the response says15."
+  },
+  {
+    "document_index": 9,
+    "document_id": "b2e52ce2355a0faba96c143c793e141e1e76231f6e5ec4e4260ea0adebe470a8",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 10,
+    "document_id": "24fc8111735f5e95ede8b02befe7199fcd0093860e839075dfff8e3295c747ed",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Final count4 and listed four publications are correct; opening says three inconsistently. Final-answer convention accepts it, with contradiction flagged."
+  },
+  {
+    "document_index": 11,
+    "document_id": "f98caa26c640a2a179eff88fdf7683c9f54ff6a99bb1ee072a78715539685821",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Four teams exceed8 points; the response counts only two."
+  },
+  {
+    "document_index": 12,
+    "document_id": "104c1eaf246d3bcd4ea3226f0b9c1c8594ccd672cb7d73cbd12b9f79badf777b",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 13,
+    "document_id": "d593b4da691ad7bd2257cb0be49018028759c0c985087c4854e4f89a478f6d1e",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "The prior listed event is2004 Canada;2008 Mexico comes afterward."
+  },
+  {
+    "document_index": 14,
+    "document_id": "6b99400559f667cce313d279eb228b96cd3a95f20c2e578920a37c123e2bb8e7",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 15,
+    "document_id": "4b7d62ee29a7668572b90b2e8fdfe15b6722da9643af9a7f5882bb3891e4f0aa",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 16,
+    "document_id": "1e0cb9f1f1befb049b2ce8b82aeccd816b07c6340f3577ec9664c22ec1985180",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 17,
+    "document_id": "1c0d1231abb1da81e0384a9fb9751897e6ca0c603610de67a06fe6d7b44b7074",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 18,
+    "document_id": "d205c63743938a2f1be3800f5c2045ee38ccfda16cd8891ba1628df1acb863e3",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 19,
+    "document_id": "59d3d695f48ba8cee4ac385f550dc243dcbab28a88ef2e3b89fb5575b6b23edc",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 20,
+    "document_id": "9094921f1a44f05225782acd9c6e3a35975571bfb97d29dfb87e2cca776fb660",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 21,
+    "document_id": "8b3f73b77d274cb5810c60735aa41d40d1dce62bf68d814284868505c2e8b327",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 22,
+    "document_id": "bbeb2740e43a45c3edcfa7207d3fff2c3b1c32fd575b1a6d2d5b3d380780f1ad",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 23,
+    "document_id": "df52e4a7511dc972240acf288b63d3d4a4ba203b68012fac16f9de2e26a07a9f",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 24,
+    "document_id": "d104eea52c2077522293a9a0e16d91a1987ce83da9de06bd4aae3972e00c00e0",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "The response omits black entirely and excludes two listed multicolor belt types; neither its enumeration nor total matches the table."
+  },
+  {
+    "document_index": 25,
+    "document_id": "aa03ffda88192f25e2f8214f57a96d36cd7421e636f227eb43dc8e7701d33605",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 26,
+    "document_id": "819d96b35c8fedc70c49595203f8de7859e0a8aa88b9ddf0c5e0b72348ebe93f",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 27,
+    "document_id": "677c2879e6c86beb0a08cc36eef435315c023b72e34646836e6679307b58376d",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 28,
+    "document_id": "5daac5e6e413909d34bdc4fb03b7d6ef6d64702af8dd9be912fbb1b0774f5537",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 29,
+    "document_id": "85ab7043347ee241824113a81a6d46f109afda91998aaaa3ad9432b331544847",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 30,
+    "document_id": "813a08f6d50cdac9f43f2b94c4d70e794853867c81c4e6831e8617b8acb2879f",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 31,
+    "document_id": "b130d53df1e5eba887f84e27e30ddc0a9710f26af1646fac18772dd0b4afc204",
+    "correct": true,
+    "category": "reference_corrected",
+    "reason": "Source table has Isao Aoki75, exceeding Bob Gilder74; model correct and reference wrong."
+  },
+  {
+    "document_index": 32,
+    "document_id": "97820665350e34072630c817ff9682ca3ef33cdc56e75c974d88509cbc1242de",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Response explicitly corrects its earlier statement and ends with the reference answer Itsy Bitsy Spider."
+  },
+  {
+    "document_index": 33,
+    "document_id": "4d76e0b03e3e6c2c7cd5ea16a038bb4206bd09401314f9befe21721b3cb6ee61",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 34,
+    "document_id": "421e45d24efb8bf47b94c8993e0d24999dea90429be5e7a86ecd53f5de7ba960",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 35,
+    "document_id": "40123684a3db3fa05e7d0e7084ad458be1b010404a30b3ed179bcae7a0e8c346",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 36,
+    "document_id": "f1eb13b32ef240941f6b684e29b0a544adc97f7b407bfefa7ff8a67940b5d0f0",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Four September games are listed; the response counts two."
+  },
+  {
+    "document_index": 37,
+    "document_id": "2375b685273ee826a2d7352e40a9b9123994d4b41401607b3fc431ba3e101cbd",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 38,
+    "document_id": "a5d2eb0d1ddfa768b7b1b9f50b575eff75587f6180aa9626b97173f8918c0d7a",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Rank22 Cinzia Frosio is last; the response chooses rank21."
+  },
+  {
+    "document_index": 39,
+    "document_id": "912554da70a9851443d8418a24dabb0155b2ec7a2dcf47bf4482ee8ff5a89361",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 40,
+    "document_id": "39d097582f75ae9366c61143179b1d864ad2514ef9c8ddb75eaae9b0ac99189b",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 41,
+    "document_id": "778284c7229380eee2ed2baa148a63b80c0a4b75fe65df52978ef85e5428e9c6",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 42,
+    "document_id": "44da3309d8f560ce86927bf25b3021312e58deac7ba21d94cca8709005a779c4",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 43,
+    "document_id": "c0c5b5b2386c690d3fb2314220b4ed996aa939b29bc876b4f67d8881c29e8819",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 44,
+    "document_id": "a52c81bce190108e8fc0fd50028bfe875dd4e426ea357c6a7e719f505c9d198f",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 45,
+    "document_id": "543e61a4fff8a29ffffe3d11fb35041066095704c4220a918664897408a49d7f",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 46,
+    "document_id": "1d7390840ea436a575038881c4fa6fcc1e6ec7613e24cbdabb80352c605f7d2c",
+    "correct": false,
+    "category": "source_ambiguous",
+    "reason": "The supplied table has no nationality field. A German-player reference cannot be verified; do not count this as established clean correctness or a demonstrated factual model error."
+  },
+  {
+    "document_index": 47,
+    "document_id": "6511c076434160a1a4da70ead32a85c630d5dc91757fc5450c9b72d286284d41",
+    "correct": false,
+    "category": "source_ambiguous",
+    "reason": "The question asks an average and seventh-round membership, neither defined by the supplied table; five defensive-back rows do not resolve that ambiguity. Quarantine."
+  },
+  {
+    "document_index": 48,
+    "document_id": "7c04615cb014ee476741ade7cd602b9abd99e1bc35774b4fb720110f9568af30",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Four Spain airports are listed; the response omits Malaga."
+  },
+  {
+    "document_index": 49,
+    "document_id": "7d0a918a68056e66966a31fd5a68cae0c179d119931d19eb336ea53d81359d4a",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 50,
+    "document_id": "692eb4a3509d4b50c17ad8f65bb746c33f272c9473d9f00e61ba922233ffed90",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 51,
+    "document_id": "14f7675dbf2faa5412b9e9f5d10ddf072f170bb052172ec712c38f9736d691f7",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 52,
+    "document_id": "891840c5911e015024c57f2a68ef5a882f94098756f64f64512a5f4d1d5060fe",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 53,
+    "document_id": "f3280105791dc4d495dd8d0fed67b4b5d2df8ed981a94ba5c157ca2b5517ffd8",
+    "correct": false,
+    "category": "completed_wrong",
+    "reason": "Three rows have class Sr.; the response counts two."
+  },
+  {
+    "document_index": 54,
+    "document_id": "504de5516636e10291e31e64a4b57c0d69003b00aafc7f23843f93f13a3fda0b",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 55,
+    "document_id": "15fcb056eae4b9aa040e65c42af2fc084194ea133dd2de812d4bffdc6f7bfa8a",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 56,
+    "document_id": "693c19da1758dc712218fdcc5cd995dbc0a52260cc58ac969a68883793de0c06",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 57,
+    "document_id": "3be450d6a5c41fbbd3161e6e1e24692b5de63cc2041da2df6aaa70ebec132f4c",
+    "correct": true,
+    "category": "reference_corrected",
+    "reason": "Source table explicitly lists Vera Duckworth in1974 before the1997 spin-off; model correct and reference wrong."
+  },
+  {
+    "document_index": 58,
+    "document_id": "e7ade05fae20385d0e5f3376f51a58b1d3788a43cc44c1a0e5da5ce06ed693cd",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 59,
+    "document_id": "c42bc9e5d9959f8796836ce2e646af86c61603ac65cf0ae6847e577d93c2707c",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 60,
+    "document_id": "2b644121ffd24724b7a571f29fcc69b7a7383ef75f790d0a22dc1490a24be520",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 61,
+    "document_id": "ef7c0a3200987602c70e99ed5fc1a064ebfddceb0cb4a8a98460d69d781dd374",
+    "correct": true,
+    "category": "accepted_final_answer",
+    "reason": "Reviewed final answer semantically matches the source reference; exact-string mismatch is not an error."
+  },
+  {
+    "document_index": 62,
+    "document_id": "cbdc308a6d6abf3ec0ac48908fd5a9792cc305f3618bb4799a3c6bd8ce2c30e8",
+    "correct": false,
+    "category": "incomplete",
+    "reason": "Generation reaches the128-token cap without EOS; excluded from completed correct/error counts."
+  },
+  {
+    "document_index": 63,
+    "document_id": "23218ecd76aa0e35945efdc51673c9199c5421a26eb5394e7750d33b7558bac8",
+    "correct": false,
+    "category": "source_ambiguous",
+    "reason": "Manager nationalities are absent from the supplied table. The reference count and the model zero cannot be established from this evidence. Quarantine."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "verified_examples": 448,
+  "counts": {
+    "ended": 441,
+    "literal_match": 257,
+    "marker_present": 384
+  },
+  "decision": "Semantic review and paired qualification still required",
+  "inputs_sha256": "0d030d3e391c3bfdbd1497f7c91dc27dacc22ee24f1e064394a5c057cc6cd395"
+}
