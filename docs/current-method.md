@@ -24,6 +24,26 @@ control, and separate supported answering, appropriate abstention and unrelated
 utility. Existing failed QA pilots are evidence to audit, not fresh confirmation
 data. Broad robustness and a second task family remain required for the goal.
 
+The application audit rules out simply repeating the previous QA setup:
+
+- [Evidence-pair v1](../experiments/evidence_pairs/colab_v1/REPORT.md) already
+  tested carefully paired supported/missing contexts. The base answered31/32
+  calibration missing cases correctly; all four supported exact-match misses
+  conveyed correct content. Its twelve proposed fits were correctly skipped.
+- [The dose diagnostic](../experiments/protected_rows/dose_v1/REPORT.md) found
+  that improved refusal counts did not improve evidence discrimination; a
+  constant refusal bias captured part of the benefit.
+- [The external faithfulness probe](../experiments/faithfulness_probe/colab_v1/REPORT.md)
+  exposed genuine interference, but dropping irrelevant context was already a
+  strong baseline, and some source labels were questionable.
+
+Therefore “return to grounded QA” is not yet an adequate experimental proposal.
+A new development slice must require useful context, include similar but
+nonanswering evidence, and establish semantic headroom after simple controls.
+Use the existing paired runner where appropriate. Do not build another runner
+or train on the exposed errors merely to obtain a positive result. This audit
+does not establish which new slice will meet those conditions.
+
 ## What actually changes our decision
 
 1. The [matched-budget study](../experiments/paired_mlp/complete_v1/REPORT.md)
