@@ -22,13 +22,21 @@ Eleven responses hit the generation cap; these are recorded as incomplete, not
 silently repaired or counted as complete successes. **Do not train on this slice.**
 The explicit-prompt city-only venue answer is defensible and not a clear error.
 
-The unexpectedly weak question-only answers motivate a small precision/prompt
-sanity check before more adaptation. It compares the same checkpoint and inputs
-in FP16 versus FP32 with matched two-device placement, plus the original
-single-device FP16 replay. Two user-only prompts help distinguish the effect of
-the system instruction. This diagnostic is not a new method or evidence of an
-inference bug. It must finish before interpreting these outputs as a normal
-capability baseline. The event-relation example remains only one exposed case.
+The [precision/prompt diagnostic](../experiments/inference_sanity/complete_v1/REPORT.md)
+also completed: 36 generations with all twelve token sequences identical across
+single-device FP16, split-device FP16 and split-device FP32. All eight prior
+inputs replay exactly. Two user-only prompt variants do not fix the factual
+errors. These precision/device choices do not explain the observed failures;
+no broader inference-correctness or model-quality conclusion is justified.
+Do not run another generic dtype/prompt sweep on these cases.
+
+The current decision is to close both qualifications without adaptation. One
+event-relation confusion remains a possible failure-family lead, not a new
+method or adequate training set. Further work must establish repeated, independently
+varied errors and a common-supervision LoRA baseline. The
+[scope assessment](scope-and-adaptation.md) separates conditional deployment from
+sparse capacity and documents prior art; it is not a plan to build another router
+without measured value.
 
 ## Scope review before the next experiment
 

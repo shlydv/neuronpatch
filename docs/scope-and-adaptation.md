@@ -2,7 +2,8 @@
 
 23 October 2026. This is a design assessment, not a new implemented method.
 The [retrieval qualification](../experiments/retrieval_evidence/complete_v1/REPORT.md)
-closed without training. A precision/prompt diagnostic is pending. We should not
+closed without training. The [precision/prompt diagnostic](../experiments/inference_sanity/complete_v1/REPORT.md)
+also completed, with identical output tokens across its three numerical settings. We should not
 interpret either as evidence that our neuron selector works.
 
 ## What the accumulated experiments actually constrain

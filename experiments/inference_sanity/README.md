@@ -30,3 +30,7 @@ native acceleration is available there. No source weights run on the laptop.
 One bounded private Kaggle job: 2,100-second worker timeout, 3,600-second provider
 limit, no paid scaling. Run failure is not permission to restart automatically.
 Raw historical documents stay private under the source dataset license.
+
+The [completed result](complete_v1/REPORT.md) finds identical generated tokens
+in all three modes. This diagnostic is closed; it did not identify a precision
+fix or justify adaptation.

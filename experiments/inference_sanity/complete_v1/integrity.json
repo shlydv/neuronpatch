@@ -1,0 +1,229 @@
+{
+  "generations": 36,
+  "source_inputs_and_protocol_match": true,
+  "canonical_weights_match": true,
+  "decode_match": true,
+  "first_token_disagreements": [],
+  "original_mode_replay": [
+    {
+      "id": "193:question_only",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "207:question_only",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "208:question_only",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "185:question_only",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "11:question_only",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "136:explicit_evidence:supported",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "136:explicit_evidence:missing",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    },
+    {
+      "id": "273:explicit_evidence:supported",
+      "token_prefix_identical": true,
+      "logits_equal": true
+    }
+  ],
+  "numerical_comparisons": [
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "193:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "207:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "208:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "185:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "11:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "136:explicit_evidence:supported",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "136:explicit_evidence:missing",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "273:explicit_evidence:supported",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "193:user_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "208:user_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "arithmetic",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16 vs fp16_split",
+      "id": "capital",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.0,
+      "max_abs_logit_difference": 0.0
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "193:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 6.829578743034915e-05,
+      "max_abs_logit_difference": 0.060207366943359375
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "207:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 2.107010292489421e-05,
+      "max_abs_logit_difference": 0.062412261962890625
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "208:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 1.4784789803138044e-07,
+      "max_abs_logit_difference": 0.09688186645507812
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "185:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 1.6714826709851945e-12,
+      "max_abs_logit_difference": 0.04283332824707031
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "11:question_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 1.3984582795431631e-05,
+      "max_abs_logit_difference": 0.03055572509765625
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "136:explicit_evidence:supported",
+      "argmax_equal": true,
+      "kl_left_to_right": 8.048614072473903e-09,
+      "max_abs_logit_difference": 0.0850362777709961
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "136:explicit_evidence:missing",
+      "argmax_equal": true,
+      "kl_left_to_right": 1.4002289992109286e-11,
+      "max_abs_logit_difference": 0.06975269317626953
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "273:explicit_evidence:supported",
+      "argmax_equal": true,
+      "kl_left_to_right": 1.1713433665844613e-05,
+      "max_abs_logit_difference": 0.053847312927246094
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "193:user_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 1.5563862528560288e-07,
+      "max_abs_logit_difference": 0.04113435745239258
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "208:user_only",
+      "argmax_equal": true,
+      "kl_left_to_right": 6.759562727675412e-06,
+      "max_abs_logit_difference": 0.19657135009765625
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "arithmetic",
+      "argmax_equal": true,
+      "kl_left_to_right": 0.00039085842626974845,
+      "max_abs_logit_difference": 0.17597579956054688
+    },
+    {
+      "contrast": "fp16_split vs fp32",
+      "id": "capital",
+      "argmax_equal": true,
+      "kl_left_to_right": 7.410705599870561e-10,
+      "max_abs_logit_difference": 0.03337907791137695
+    }
+  ],
+  "complete_counts": {
+    "fp16": 11,
+    "fp16_split": 11,
+    "fp32": 11
+  },
+  "generation_disagreements": {
+    "fp16 vs fp16_split": [],
+    "fp16_split vs fp32": []
+  },
+  "elapsed_seconds": 249.888004831
+}
