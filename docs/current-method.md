@@ -66,7 +66,17 @@ selection, each at two rates. All share 64 task and 20 preservation examples.
 There are 32 validation and 64 task-test examples with disjoint names; half the
 test examples also change wording. All 320 bank rows pass the actual pinned
 tokenizer's response-boundary/EOS checks, with maximum length 172 tokens.
-No results are available yet. Fisher ranking is an established baseline adapted
+Version 1 stopped after 576 provider seconds: the first LoRA rate completed,
+then the higher rate encountered a nonfinite gradient after its last logged
+step 40. Exact failing step and forward-loss finiteness were not recorded by
+that worker. The comparison is incomplete, held-out outputs remain unreviewed,
+and no rate has been selected. Investigate numerical scaling before repeating
+the comparison; do not silently drop the higher rate or count the one fit as a
+method success. PyTorch's [FP16 guidance](https://docs.pytorch.org/docs/2.6/amp.html#gradient-scaling)
+identifies scale backoff as a relevant remedy, but the cause here is not yet
+established. A repair must retain the same examples and successful optimizer
+steps, record any numerical retries, and preserve all frozen evaluation data.
+Fisher ranking is an established baseline adapted
 to groups, not a claim of novelty or preservation-aware selection. Select rates
 from validation loss before reviewing test outputs, then separately count
 corrections, regressions, appropriate abstentions and unsupported guesses.

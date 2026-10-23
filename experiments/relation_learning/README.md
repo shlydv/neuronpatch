@@ -1,7 +1,9 @@
 # Relation learning pilot
 
-Status: Kaggle version 1 submitted and observed RUNNING on 2026-10-23.
-Accepted source exactly matches `frozen_v1.json`; no training result yet.
+Status: version 1 stopped with a nonfinite gradient during the second LoRA
+setting after one completed fit. See `failure_v1.json`. Accepted source exactly
+matches `frozen_v1.json`. The comparison is incomplete; no efficacy claim.
+Held-out generations have not been reviewed and no rate has been selected.
 
 The preceding relation-contrast probe found repeated errors distinguishing an
 interview's qualification assessor from its final assessor, and a release's

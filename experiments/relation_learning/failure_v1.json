@@ -1,0 +1,36 @@
+{
+  "status": "incomplete_numerical_failure",
+  "provider": {
+    "provider": "Kaggle",
+    "started_utc": "2026-10-23T10:50:20.307842+00:00",
+    "gpu": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB\n",
+    "returncode": 1,
+    "elapsed_seconds": 576.156524856
+  },
+  "completed_fit": {
+    "condition": {
+      "id": "lora-43-0.0003",
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    "metrics": {
+      "task_mean_nll": 4.037640079942081e-05,
+      "task_worst_token_nll": 0.0009807752006594228,
+      "preserve_mean_nll": 4.779126577050264e-05,
+      "target_val_mean_nll": 0.00018237186073018682
+    },
+    "base_restored": true,
+    "reload_teacher_exact": true,
+    "seconds": 192.30334245799997
+  },
+  "failed_condition": "lora-43-0.001",
+  "failure": "Nonfinite trainable gradient",
+  "last_logged_step": 40,
+  "exact_failed_step": "not recorded by v1 worker",
+  "cause": "unresolved; fixed FP16 loss scaling is a hypothesis, not a diagnosis",
+  "test_outputs_reviewed": false,
+  "validation_selection_performed": false,
+  "comparison_valid": false,
+  "execution_log_sha256": "114539c1248770777e65d42e598a16281980416fad55273219051fc3cde9ef08"
+}
