@@ -51,6 +51,13 @@ direction for paraphrases of the same target; it is not an empirical-Fisher mask
 or evidence of transfer across different examples. Before inventing another
 selector, compare these existing alternatives on a common learning task.
 
+The [coordinate audit](selection-coordinate-audit.md) adds a narrower warning:
+reciprocal up-row/down-column rescaling preserves a gated MLP's function while
+changing raw group-gradient rankings. This is verified in a tiny algebra check,
+not on the language-model task. Gate-based sensitivity has established pruning
+precedent and does not by itself predict adaptation quality. The current pilot
+remains frozen; do not replace its selector in response to this observation.
+
 ## A concrete candidate for the next comparison
 
 A fixed skill-learning benchmark would evaluate adaptation even when there is no

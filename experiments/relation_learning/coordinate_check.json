@@ -1,0 +1,27 @@
+{
+  "scope": "Tiny algebra check, not an LLM efficacy experiment",
+  "seed": 23,
+  "rescaling": [
+    1000.0,
+    1.0
+  ],
+  "output_max_abs_difference": 5.551115123125783e-17,
+  "raw_group_gradient_squared_before": [
+    0.03412823002322071,
+    8.578953415035738
+  ],
+  "raw_group_gradient_squared_after": [
+    8090.901344707715,
+    8.578953415035738
+  ],
+  "top_neuron_before": 1,
+  "top_neuron_after": 0,
+  "gate_gradient_before": [
+    -0.06328747804099209,
+    0.8177063878124341
+  ],
+  "gate_gradient_after": [
+    -0.06328747804099209,
+    0.8177063878124341
+  ]
+}
