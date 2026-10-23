@@ -16,8 +16,11 @@ The next [candidate task](instruction-boundary-candidate.md) tests instruction
 boundaries while preserving useful table QA. A pinned source/data audit found
 that BIPIA's default builder embeds context in the system role and that its email
 slice is mostly unanswerable. The table training slice has900 questions over617
-contexts; document-disjoint splitting and paired clean/injected utility controls
-are required. No data protocol or GPU run for this task is frozen yet.
+contexts. The [data protocol](../experiments/instruction_boundary/README.md) is now
+frozen with128/32/64 document-disjoint train/calibration/development tables and
+seven cases per table. All1568 examples pass tokenization checks. Five CPU tests
+cover construction and paired qualification. No GPU run for this task has been
+submitted; the inference worker and artifact verification remain to be finalized.
 
 ## Latest completed evidence
 
