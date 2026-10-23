@@ -1,314 +1,110 @@
 # Current method decision — 23 October 2026
 
-The goal is unchanged: a useful, robust sparse-adaptation library with a
-verified advantage over strong baselines. We have working compact patches,
-complete-response training and deployment checks. We do **not** have that
-advantage. The auxiliary-supervision ablation is complete: it helps some outcomes
-but does not fix the selected-neuron oxygen error. The [previous decision](decisions/2026-10-22-method.md) and
-[experiment history](experiment-history.md) preserve earlier reasoning/results.
-The [completed auxiliary-objective comparison](../experiments/alias_supervision/complete_v1/REPORT.md)
-verifies eight fits, 544 generations and 1,084 prefix vectors. Its frozen primary
-prediction fails: selected neurons retain the oxygen error, while random and LoRA
-reduce its competing continuation probability. Selected neurons do repair Lakers;
-LoRA loses accepted probability there. None meets the full preservation criterion.
-The [additional primary-source review](research-2026-10-23.md) identifies close
-curvature and component-coefficient precedents that constrain future claims.
+**The goal remains unachieved:** a robust sparse-adaptation library with a
+verified practical advantage over strong baselines. Compact patches, training,
+export/reload and evaluation work. No recommended neuron-selection recipe or
+superiority claim is established. LoRA remains the practical comparison baseline.
 
-The [retrieved-evidence baseline](../experiments/retrieval_evidence/complete_v1/REPORT.md)
-is complete: all 110 outputs reviewed and independently checked. Both prompt
-variants correctly abstain on 21/22 missing-evidence questions. Only one repeated
-event-relation error survives, below the frozen four-question qualification.
-Eleven responses hit the generation cap; these are recorded as incomplete, not
-silently repaired or counted as complete successes. **Do not train on this slice.**
-The explicit-prompt city-only venue answer is defensible and not a clear error.
+## Latest completed evidence
 
-The [precision/prompt diagnostic](../experiments/inference_sanity/complete_v1/REPORT.md)
-also completed: 36 generations with all twelve token sequences identical across
-single-device FP16, split-device FP16 and split-device FP32. All eight prior
-inputs replay exactly. Two user-only prompt variants do not fix the factual
-errors. These precision/device choices do not explain the observed failures;
-no broader inference-correctness or model-quality conclusion is justified.
-Do not run another generic dtype/prompt sweep on these cases.
+The [relation-learning pilot](../experiments/relation_learning/complete_v2/REPORT.md)
+uses Qwen3-4B-Instruct-2507, 64 task labels, 20 preservation labels, 64 updates and
+approximately matched trainable-scalar budgets. Rates were chosen from validation
+loss before reviewing held-out outputs.
 
-The current decision is to close both qualifications without adaptation. One
-event-relation confusion remains a possible failure-family lead, not a new
-method or adequate training set. Further work must establish repeated, independently
-varied errors and a common-supervision LoRA baseline. The
-[scope assessment](scope-and-adaptation.md) separates conditional deployment from
-sparse capacity and documents prior art; it is not a plan to build another router
-without measured value.
+| Validation-selected condition | Task /64 | Solved-family controls /16 | Utility /8 |
+|---|---:|---:|---:|
+| Base model | 39 | 16 | 8 |
+| LoRA | 64 | 16 | 8 |
+| Random seed 43 | 64 | 16 | 8 |
+| Random seed 71 | 64 | 16 | 7 |
+| Empirical-Fisher neurons | 63 | 16 | 8 |
 
-The [counterbalanced relation probe](../experiments/relation_contrast/complete_v1/REPORT.md)
-completed and passes its development qualification: 75/96 correct full responses,
-24/24 target-only controls, and supported errors in four family/name cells across
-two families. All 96 responses terminate naturally. Interview passages are often
-mistaken for conflicting accounts of the same stage; missing interview/release
-evidence produces unsupported guesses. Tournament and grant controls are solved.
-The public synthetic inputs, decoded outputs and per-item review are saved.
+The task is learnable: training corrects both unsupported guesses and unnecessary
+refusals on fresh names and changed wording. Fisher adds one unnecessary refusal;
+random seed 71 breaks a binary conversion. The unselected high-rate Fisher fit
+returns empty responses on all eight utility questions. These controls are small
+and synthetic; retaining them is not broad preservation evidence.
 
-This is the first current lead with repeated, explicitly labeled errors in both
-directions: answering when evidence is absent and refusing when evidence is
-sufficient. It warrants a common-supervision learning pilot, not a method claim.
-Freeze fresh names and phrasings before fitting; require ordinary LoRA to learn
-before attributing benefit to selection, and retain solved-family/unrelated
-controls. No training ran in this qualification. These exposed synthetic cases
-cannot become final confirmation. The
-[benchmark-design review](adaptation-benchmark-decision.md) distinguishes small
-selection sets from small training datasets and adds established Fisher-mask and
-gradient-informed low-rank baselines. Math is a possible later task, not another
-parallel experiment being started now.
+All eight fits and 2,880 outputs pass independent artifact verification. A bounded
+loss-scale repair reproduces the earlier successful LoRA fit exactly, including
+adapter tensors, teacher tensors, generated tokens and common training history.
+The completed v2 job consumed 2,908 provider seconds. It establishes learning,
+not a new adaptation method or full reproduction of the cited papers.
 
-The [relation-learning pilot is complete](../experiments/relation_learning/complete_v2/REPORT.md).
-All eight fits and 2,880 generations pass independent artifact checks. Selected
-LoRA and both random supports improve task accuracy from 39/64 to 64/64;
-selected Fisher reaches 63/64 with one new unnecessary refusal. All selected
-conditions retain 16/16 solved-family controls. Random seed 71 loses one of eight
-unrelated utility answers; the others retain eight. The higher-rate, unselected
-Fisher fit returns empty answers on all eight utility questions. No selected
-neuron advantage is demonstrated. Rates were chosen by validation loss before
-viewing test outputs; semantic review corrects exact-match scoring of the base's
-valid explanatory answers.
+The [saved-score audit](relation-score-decision.md) shows Fisher captures 43.25%
+of its ranking score versus about 0.02% for random, without better trained quality.
+The balanced support already attains 97.86% of the global score-only optimum.
+Improving this proxy or reallocating layers is not the next experiment.
 
-V2 completed in 2,908 provider seconds. Bounded loss-scale backoff resolves the
-high-rate LoRA overflow with one same-example retry at step 44. The earlier
-successful LoRA fit replays exactly, including adapter and teacher tensors,
-generated outputs and common training history. The frozen learning criterion
-passes. This is meaningful evidence of learnability, not a new adaptation method.
-Keep LoRA as the baseline. This budget now saturates the small synthetic task;
-no further format tweaks or unsupported selector promotion. Any next comparison
-must establish a practical quality/cost advantage on fresh confirmation data,
-with discovery cost and preservation included. The overall goal is unachieved.
+## Running experiment
 
-The [saved-score audit](relation-score-decision.md) finds Fisher captures 43.25%
-of total score versus about 0.02% for random, yet gives no better trained quality.
-The balanced support already captures 97.86% of the unconstrained global score
-optimum. Do not confuse optimizing this proxy with improving adaptation, or
-launch a new global allocation merely to increase score capture.
+[Eight-task-example comparison](../experiments/relation_learning/low_data_v1/protocol.json),
+[accepted source record](../experiments/relation_learning/low_data_v1/frozen.json):
+one private free Kaggle T4 job, version 1, two-hour provider cap. Same tested worker,
+parameter budgets, 64 successful updates and two rates for LoRA, Fisher and two
+random supports. All arms receive eight task labels **plus twenty preservation
+labels**; Fisher discovery uses only those eight task labels.
 
-The eight-task-example comparison is now running on private free Kaggle T4,
-with a two-hour provider cap and the same eight-fit worker. Its [frozen inputs
-and protocol](../experiments/relation_learning/low_data_v1/protocol.json) retain
-20 preservation labels and 64 updates per fit. Fisher sees no additional labels.
-There are 128 fresh-name task questions, 16 fresh-name scope questions and eight
-fresh utility questions. Accepted source matches the frozen script exactly.
-No result is available; complete artifacts and validation-only rate selection
-are required before test review.
+Confirmation uses 128 task questions with four fresh name sets and two known
+wording variants, sixteen fresh-name scope questions and eight fresh utility
+questions. Prior utility controls are marked exposed. Local tests and all 336
+pinned-tokenizer checks pass. **No completed comparison result is available.**
 
-## Scope review before the next experiment
+Before test inspection, freeze each condition's rate using validation completion
+loss. Independently verify tensors and training controls, then review complete
+answers. Exact misses are not automatically semantic errors. The
+[explicit semantic-review tool](../experiments/relation_learning/adjudicate.py)
+requires response-bound judgments for nonexact answers and rejects incomplete,
+stale or contradictory reviews. It reproduces all prior 2,880 labels and paired
+bank counts; it is bookkeeping, not an independent semantic judge.
 
-The current two-fact comparison is a development diagnostic. Its correction
-scores are at a ceiling for all three representations, so it cannot establish
-a correction advantage or validate the intended reusable behavior recipe.
-The loss ablation and full-output review are complete. Do not
-automatically follow it with another support/threshold variation on these same
-facts. The next experimental proposal must connect its result to the library's
-document-grounded answering application, use a strong common-objective LoRA
-control, and separate supported answering, appropriate abstention and unrelated
-utility. Existing failed QA pilots are evidence to audit, not fresh confirmation
-data. Broad robustness and a second task family remain required for the goal.
+A promising result requires Fisher to improve by at least eight of 128 task
+answers over each selected comparator, with gains in both wording variants and
+no additional base-correct scope/utility regressions. That triggers replication,
+not superiority. If LoRA and both random supports each reach at least 124/128,
+retire this task as a selector discriminator at this parameter/update budget.
+Otherwise inspect errors before choosing another experiment. Report all rates,
+discovery overhead, parameter counts and actual compute cost.
 
-The application audit rules out simply repeating the previous QA setup:
+## What we have ruled out or learned
 
-- [Evidence-pair v1](../experiments/evidence_pairs/colab_v1/REPORT.md) already
-  tested carefully paired supported/missing contexts. The base answered31/32
-  calibration missing cases correctly; all four supported exact-match misses
-  conveyed correct content. Its twelve proposed fits were correctly skipped.
-- [The dose diagnostic](../experiments/protected_rows/dose_v1/REPORT.md) found
-  that improved refusal counts did not improve evidence discrimination; a
-  constant refusal bias captured part of the benefit.
-- [The external faithfulness probe](../experiments/faithfulness_probe/colab_v1/REPORT.md)
-  exposed genuine interference, but dropping irrelevant context was already a
-  strong baseline, and some source labels were questionable.
+- Earlier two-fact edits reached a ceiling for all representations while selected
+  neurons caused unrelated errors. Earlier stopping did not remove them. See the
+  [matched study](../experiments/paired_mlp/complete_v1/REPORT.md) and
+  [checkpoint study](../experiments/paired_checkpoints/complete_v1/REPORT.md).
+- Token-distribution preservation can penalize valid aliases. Accepted-answer
+  probability and complete-answer correctness must be reported separately.
+  [Outcome checks](../experiments/outcome_guard/complete_v1/REPORT.md) and the
+  [completed objective ablation](../experiments/alias_supervision/complete_v1/REPORT.md)
+  identify real issues but do not establish a selected-neuron advantage.
+- The [retrieved-evidence slice](../experiments/retrieval_evidence/complete_v1/REPORT.md)
+  lacked sufficient repeated errors for adaptation. The
+  [precision diagnostic](../experiments/inference_sanity/complete_v1/REPORT.md)
+  did not attribute the observed errors to the tested device/precision settings.
+  Neither warrants another generic prompt or dtype sweep.
+- Causal localization, deletion sensitivity, gradient magnitude and useful finite
+  training updates are different interventions. A selector must predict the one
+  we actually apply. Raw gradients also depend on parameter coordinates; see the
+  [coordinate audit](selection-coordinate-audit.md).
 
-Therefore “return to grounded QA” is not yet an adequate experimental proposal.
-A new development slice must require useful context, include similar but
-nonanswering evidence, and establish semantic headroom after simple controls.
-Use the existing paired runner where appropriate. Do not build another runner
-or train on the exposed errors merely to obtain a positive result. This audit
-does not establish which new slice will meet those conditions.
+## Paper synthesis and remaining requirements
 
-## What actually changes our decision
+[Research provenance](research.md), the [23 October review](research-2026-10-23.md),
+[benchmark design](adaptation-benchmark-decision.md), and the
+[archived detailed decisions](method-history-2026-10-23.md) retain source links,
+code audits, limitations and failed hypotheses. FiNE combines localization with
+an objective and optimization recipe; NeST's behavior training is not a few-fact
+editing result; our grouped Fisher/random supports do not reproduce their full
+methods. SafeNexus's official implementation remains unverified. Selection with
+LoRA, gradient-informed initialization and constrained updates have prior art.
 
-1. The [matched-budget study](../experiments/paired_mlp/complete_v1/REPORT.md)
-   gets all8/8 requested transfer answers with selected, random and LoRA patches.
-   Selected neurons cause unrelated Lakers and oxygen errors; chosen random and
-   LoRA controls do not show those factual errors on this small bank.
-2. [Earlier stopping](../experiments/paired_checkpoints/complete_v1/REPORT.md)
-   keeps8/8 transfers and reduces selected training steps to12/12 versus30/24.
-   Both factual errors survive. Total selected adaptation is3.83times LoRA's
-   in that implementation, largely due to sparse attachment/export integrity work.
-3. [Finite direction calibration](../experiments/functional_selection/complete_v2/REPORT.md)
-   reduces one-step drift for similar learning gain but fails its numerical
-   prediction criterion. It achieves no complete edits. Neither a diagonal risk
-   sum nor a local base-softmax quadratic is a reliable finite-step certificate.
-4. The [completed guarded-training study](../experiments/guarded_training/complete_v1/REPORT.md)
-   gives3/8 transfer answers for risk-aware selection, random and LoRA. All six
-   blocked fits' final rejected proposals improve task NLL but exceed worst-token
-   KL.2. The other two fits stop with confident training answers yet fail a
-   natural question form. Protection and transfer are separate problems.
-5. The [saved-endpoint contract audit](../experiments/guarded_training/complete_v1/contract_audit.json)
-   finds that the guard rejects all four older successful LoRA/random endpoints.
-   At a valid short/long US alias branch, conditional KL exceeds16 while combined
-   probability of covered acceptable answers remains above99.9%. This is a
-   concrete false alarm, not a reason to erase genuine earlier interference.
+A useful contribution must show better held-out quality/preservation at lower
+label, parameter, storage or actual compute cost, compared fairly with tuned
+LoRA and random supports. Promising synthetic results still need another task,
+additional seeds, meaningful unrelated-task coverage and a model-size check.
+Validation cannot double as confirmation. No new named method, default API or
+claim of beating prior work should precede that evidence.
 
-The new guard's failure does not prove that no protected solution exists. It
-shows that this guard is a poor proxy for the answer-quality requirement, and
-that it prevented learning among the attempted steps. Some preservation labels
-also disagree with the base: preserving a correct answer, correcting an existing
-answer and forcing one preferred wording must not be silently conflated.
-
-## Paper lessons that survive these results
-
-| Source | Relevant mechanism | What we should take, and what we should not infer |
-|---|---|---|
-| [FiNE paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [pinned editor](https://github.com/opanhw/fine-unified-editing-code/blob/a2489cbac0dfe5a956385734065cfa041384e7d1/knowledge-editing/easyeditor/models/fine/fine_main.py) | Token-contribution localization plus composite loss, layer control and stopping | Localization, objective and optimizer form a recipe. Our all-layer gradient support/mean CE is not its reproduction. Original-prefix replication does not establish complete-answer transfer. |
-| [NeST](https://arxiv.org/html/2602.16835v2), [code audit](../experiments/nest_source/README.md) | Harmful/benign probes, activation-profile clustering and shared incoming-row updates | A reusable behavior prior and shared capacity are plausible. Its balanced20k-example safety training is not a demonstration of three-example counterfactual fact editing. Full safety training remains unreproduced. |
-| [SafeNexus](https://arxiv.org/html/2607.28969v2) | Cross-modal safety-neuron intersection and masked low-rank updates | Measure overlap with retained behavior. Activation exclusion alone does not establish update safety; the utility argument makes sensitivity assumptions. Official implementation is still unverified. |
-| [SpaRTA](https://arxiv.org/abs/2502.15975), ordinary LoRA | Random sparse scalars and low-rank updates | Random and low-rank baselines need equal data, protection, tuning opportunity and actual-cost reporting. Whole-neuron random support is not a SpaRTA reproduction. |
-| [Does Localization Inform Editing?](https://arxiv.org/html/2301.04213v2) | Empirical separation of causal tracing and best layer to edit | Knowing where a signal is causally important need not tell us where an update will generalize. Its layer-level findings are not a theorem against all neuron selection. |
-
-Several tempting next ideas also have substantial prior art:
-
-- [LoRA-One](https://arxiv.org/html/2502.01235v3) uses a first full gradient,
-  spectral initialization and optional preconditioning. The
-  [pinned implementation](https://github.com/YuanheZ/LoRA-One/blob/b797a10dcb818e9553b57fa060baa7b00df4484d/run_exp.py#L158)
-  takes an SVD of the negative gradient and initializes a **nonzero** update;
-  it explicitly skips offset subtraction for LoRA-One. A future comparison must
-  count initialization's learning, discovery and cost. This is a stronger
-  relevant baseline for our gradient-informed sparse approach, not a result we
-  have already reproduced. Fixed-basis low-dimensional adaptation likewise has
-  prior art; a tiny coefficient count can hide large stored directions.
-- [ProFit](https://arxiv.org/html/2601.09195v3) masks tokens whose detached current
-  probability falls below a threshold. Its one-to-many supervision concern is
-  relevant. Its probability-as-importance heuristic is not justified for our
-  counterfactual rare target names: masking their low-probability tokens can
-  remove the correction signal we need. A lower-bound gradient argument also
-  does not by itself order all actual parameter-gradient magnitudes.
-- [EBFT](https://arxiv.org/html/2603.12248v2) trains against sequence-level feature
-  moments using a frozen feature model and on-policy rollouts. It motivates
-  judging completions rather than single teacher tokens. Importing its rollout
-  estimator and second model now adds cost and another imperfect semantic proxy;
-  it is not the minimal test for these short, explicitly enumerable answers.
-- [Semantic loss](https://proceedings.mlr.press/v80/xu18h.html) already connects
-  valid-output probability mass and learning. Summing probabilities of acceptable
-  strings is ordinary marginal likelihood, not our proposed novelty.
-- [PCGrad](https://arxiv.org/abs/2001.06782) is existing gradient-conflict surgery.
-  Base-anchored KL has zero gradient at the base, so blindly projecting against
-  that gradient cannot initially protect anything. Adam can also change a
-  projected direction; acceptance must measure the actual proposed update.
-
-FiNE's author-linked supplement could not be retrieved through the web reader;
-its additional ablations are not claimed as inspected. Code inspection and
-paper reading are distinct from an empirical reproduction. No upstream code
-from these newly read projects was incorporated or executed.
-
-## Candidate: constrain outcomes and coordinate the sparse update
-
-This is a hypothesis to test, not a named new method or a recommended API.
-
-For prompt x and an explicitly supplied finite set of complete EOS-ended
-accepted responses Y(x), define
-
-    p_good(theta,x) = sum[y in Y(x)] P_theta(y | x).
-
-Duplicates count once; the probability includes every generated token and EOS.
-The [experimental primitive](../experiments/guarded_training/response_sets.py)
-computes this event exactly from all required prefix logits, with autograd.
-Missing prefixes are errors. Its saved-logit diagnostic can report a covered
-subset as an explicit lower bound. Even complete coverage of the supplied
-finite strings does not certify all semantically acceptable responses.
-An unenumerated valid punctuation/case/wording variant can still look like a
-mass loss. Qualification must therefore include known benign output variations,
-and probability checks cannot replace independent complete-answer review.
-
-First separate correction and retention roles. Correction maximizes accepted
-response mass on the desired behavior. Retention limits a decline in accepted
-response mass from a base that actually supplies an accepted answer; it does
-not preserve the relative probabilities of synonymous strings. Base/reference
-disagreements require adjudication or an explicit correction role, rather than
-quietly freezing the wrong target. Refusal/abstention is a separate outcome when
-that task calls for it, not an interchangeable correct answer.
-
-Then select **and coordinate** updates according to their joint correction and
-retention effects. A possible next representation uses one cached task-gradient
-proposal per neuron/group and jointly learns its coefficients under a trust
-region. Joint sensitivity includes cross-component cancellation/reinforcement;
-ranking independent risks loses that information. Local derivatives propose a
-step, but actual accepted-response mass and complete answers accept it. A
-full-vocabulary KL may remain a diagnostic; it must not silently define all
-behavioral damage. A no-edit result is permitted and is not adaptation success.
-
-The coefficient representation, clustering and constrained optimization all
-have precedents. Its value would have to be **better held-out correction versus
-preservation for less data or lower actual total cost**. If the corrected
-objective gives the same benefit to ordinary LoRA, that is objective repair,
-not a selected-neuron research win. Compare random supports, ordinary LoRA and
-a gradient-informed low-rank baseline with the same protection contract; include
-source-data, validation, initialization, storage and discovery costs.
-
-## Completed qualification and the next causal question
-
-The [completed outcome-guard replay](../experiments/outcome_guard/complete_v1/REPORT.md)
-restores six original endpoints and two bases, independently verifies840 prefix
-vectors and96 generated observations, and preserves the frozen0.02 criterion.
-The all-positive-control hypothesis **fails**: only two of four previously
-successful LoRA/random controls meet the probability limit. Both known selected
-Lakers/oxygen errors are flagged. All six endpoints still reproduce their
-requested4/4 transfers. No new parameters were fitted.
-
-The rejected controls are not simply harmless alias changes. Conditional on O,
-the probability of continuing with ₂ is0.00307% in the base,8.87199% for random,
-18.85583% for LoRA and95.53709% for the selected case1 patch. Random and LoRA
-still greedily answer O. These are next-token probabilities, not measured sampled
-whole-answer error rates. Calling those older controls universally clean was
-too strong; their apparent success was based on observed greedy answers.
-
-The finite-set event ignores much of the benign short/long US redistribution
-that inflated conditional KL, while revealing real competition on oxygen. Keep
-both correct complete answers and accepted probability as separate measured
-requirements. Do not loosen the frozen threshold to turn this failure into a
-pass, or remove confidence reporting merely because the greedy choice is correct.
-The [post-hoc trie audit](../experiments/outcome_guard/complete_v1/decision_audit.json)
-also agrees with cached generation on all64 observed traces. A probability-tree
-counterexample shows why event mass alone cannot replace greedy-answer checks.
-
-There is a concrete auxiliary-loss mismatch to isolate next. The
-[logit-gradient audit](../experiments/outcome_guard/complete_v1/objective_audit.json)
-finds that canonical US labels teach the base to suppress EOS after its already
-accepted United States answer. Mean-token CE gives an EOS-logit gradient near
-+0.2 there; an accepted-set marginal loss with the **same canonical-length
-normalization** gives gradients near−1e−7. This comparison identifies unnecessary
-stopping pressure at those logits. It does not yet establish that those
-auxiliary gradients caused the unrelated O₂ mistake.
-
-Run a matched objective ablation before changing supports again: keep the same
-original examples, rates, supports,50-update schedule, sampling order and length
-normalization. Change only supervision on the five initially accepted auxiliary
-rows per case from one canonical response to the existing finite accepted set.
-Keep the two unresolved base/reference examples explicitly identified and
-identical across arms. Leave oxygen and Lakers outside the training bank and
-measure their complete answers, accepted mass and competing continuations.
-The verified original canonical endpoints are reference controls only if the
-new implementation recovers that control exactly. This is a causal diagnostic,
-not a claim that the failed protection rule has now qualified.
-
-If removing that pressure improves every representation, it is objective repair
-with potential library value, not a selected-neuron advantage. If it does not,
-correction-gradient directions and update coordination remain leading questions.
-A later selector can measure **decision-margin sensitivity** rather than relying
-only on Fisher risk, which downweights currently improbable wrong tokens; this
-is a hypothesis requiring its own comparison and actual finite-step checks.
-Preservation examples must cover the relevant failure modes. Local ranking,
-neuron labels and a small update norm do not provide that coverage automatically.
-
-The [joint-update candidate note](joint-update-candidate.md) separates the
-outcome objective, coefficient representation and controller, and relates them
-to GEM, A-GEM and GPM. Joint constraints and fixed-basis adaptation already have
-prior art. Count stored directions and total cost, not just coefficient count.
-Neither that proposal nor this diagnostic establishes superiority over LoRA.
-
-A trained advantage still requires fresh cases, several parameter/data budgets,
-additional seeds, another task family and model-size checks after freezing the
-recipe. Keep validation used for selection out of confirmation claims. The
-original full method/library goal remains active and unachieved.
+The [experiment history](experiment-history.md) preserves the earlier work.
+Historical candidate methods are hypotheses, not approved next runs.
