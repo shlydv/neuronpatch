@@ -1,0 +1,1728 @@
+[
+  {
+    "id": "tournament:0:0:target_last",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:0:target_first",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:0:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:0:target_only",
+    "text": "Arlen defeated Oren in the semifinal of the Luma Cup.",
+    "tokens": [
+      32,
+      69069,
+      23283,
+      506,
+      1440,
+      304,
+      279,
+      65500,
+      977,
+      315,
+      279,
+      444,
+      13416,
+      10861,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:1:target_last",
+    "text": "Arlen defeated Mira in the semifinal of the Luma Cup.",
+    "tokens": [
+      32,
+      69069,
+      23283,
+      386,
+      8832,
+      304,
+      279,
+      65500,
+      977,
+      315,
+      279,
+      444,
+      13416,
+      10861,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:1:target_first",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:1:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:0:1:target_only",
+    "text": "Arlen defeated Mira in the semifinal of the Luma Cup.",
+    "tokens": [
+      32,
+      69069,
+      23283,
+      386,
+      8832,
+      304,
+      279,
+      65500,
+      977,
+      315,
+      279,
+      444,
+      13416,
+      10861,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:0:target_last",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:0:target_first",
+    "text": "Belen defeated Tavi in the semifinal of the Vela Cup.",
+    "tokens": [
+      33,
+      8398,
+      23283,
+      350,
+      6190,
+      304,
+      279,
+      65500,
+      977,
+      315,
+      279,
+      647,
+      8294,
+      10861,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:0:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:0:target_only",
+    "text": "Belen defeated Tavi in the semifinal of the Vela Cup.",
+    "tokens": [
+      33,
+      8398,
+      23283,
+      350,
+      6190,
+      304,
+      279,
+      65500,
+      977,
+      315,
+      279,
+      647,
+      8294,
+      10861,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:1:target_last",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:1:target_first",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:1:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:1:1:target_only",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:0:target_last",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:0:target_first",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:0:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:0:target_only",
+    "text": "Caro defeated Rumi in the semifinal of the Sora Cup.",
+    "tokens": [
+      8852,
+      78,
+      23283,
+      431,
+      24336,
+      304,
+      279,
+      65500,
+      977,
+      315,
+      279,
+      328,
+      6215,
+      10861,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:1:target_last",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:1:target_first",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:1:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "tournament:2:1:target_only",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:0:target_last",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:0:target_first",
+    "text": "The documents state conflicting information: one says Arlen was assessed by Oren, and another says Arlen was assessed by Mira. Since both statements are presented as factual within the documents, and no clear resolution is provided, the correct answer cannot be determined with certainty.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      1644,
+      2892,
+      572,
+      31348,
+      553,
+      506,
+      1440,
+      11,
+      323,
+      2441,
+      2727,
+      1644,
+      2892,
+      572,
+      31348,
+      553,
+      386,
+      8832,
+      13,
+      8704,
+      2176,
+      12239,
+      525,
+      10449,
+      438,
+      59901,
+      2878,
+      279,
+      9293,
+      11,
+      323,
+      902,
+      2797,
+      10935,
+      374,
+      3897,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      448,
+      43643,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:0:missing",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:0:target_only",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:1:target_last",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:1:target_first",
+    "text": "The documents state conflicting information: one says Arlen was assessed by Mira, and another says Arlen was assessed by Oren. Since both statements are presented as factual within the documents, and no clear resolution is provided, the correct answer cannot be determined with certainty.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      1644,
+      2892,
+      572,
+      31348,
+      553,
+      386,
+      8832,
+      11,
+      323,
+      2441,
+      2727,
+      1644,
+      2892,
+      572,
+      31348,
+      553,
+      506,
+      1440,
+      13,
+      8704,
+      2176,
+      12239,
+      525,
+      10449,
+      438,
+      59901,
+      2878,
+      279,
+      9293,
+      11,
+      323,
+      902,
+      2797,
+      10935,
+      374,
+      3897,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      448,
+      43643,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:1:missing",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:0:1:target_only",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:0:target_last",
+    "text": "The documents state conflicting information: one says Neri assessed Belen, and another says Tavi assessed Belen. Since both documents refer to the same event (final interview at Vela), and they contradict each other, the correct answer cannot be determined from the provided information.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      451,
+      30703,
+      31348,
+      7828,
+      268,
+      11,
+      323,
+      2441,
+      2727,
+      350,
+      6190,
+      31348,
+      7828,
+      268,
+      13,
+      8704,
+      2176,
+      9293,
+      8300,
+      311,
+      279,
+      1852,
+      1538,
+      320,
+      11822,
+      7128,
+      518,
+      647,
+      8294,
+      701,
+      323,
+      807,
+      42461,
+      1817,
+      1008,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      504,
+      279,
+      3897,
+      1995,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:0:target_first",
+    "text": "The documents state conflicting information: one says Belen was assessed by Tavi, and another says Belen was assessed by Neri. Since both statements are presented as factual in the documents, and there is no clear resolution, the correct answer cannot be determined from the provided information.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      7828,
+      268,
+      572,
+      31348,
+      553,
+      350,
+      6190,
+      11,
+      323,
+      2441,
+      2727,
+      7828,
+      268,
+      572,
+      31348,
+      553,
+      451,
+      30703,
+      13,
+      8704,
+      2176,
+      12239,
+      525,
+      10449,
+      438,
+      59901,
+      304,
+      279,
+      9293,
+      11,
+      323,
+      1052,
+      374,
+      902,
+      2797,
+      10935,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      504,
+      279,
+      3897,
+      1995,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:0:missing",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:0:target_only",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:1:target_last",
+    "text": "The documents state conflicting information: one says Tavi, the other says Neri. Since both are reported as assessing Belen during the final interview at Vela, and no document explicitly resolves this contradiction, the correct answer cannot be determined from the provided evidence.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      350,
+      6190,
+      11,
+      279,
+      1008,
+      2727,
+      451,
+      30703,
+      13,
+      8704,
+      2176,
+      525,
+      4961,
+      438,
+      46514,
+      7828,
+      268,
+      2337,
+      279,
+      1590,
+      7128,
+      518,
+      647,
+      8294,
+      11,
+      323,
+      902,
+      2197,
+      20975,
+      63297,
+      419,
+      49759,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      504,
+      279,
+      3897,
+      5904,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:1:target_first",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:1:missing",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:1:1:target_only",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:0:target_last",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:0:target_first",
+    "text": "The documents state conflicting information: one says Rumi assessed Caro, and another says Pela assessed Caro. Since both statements are presented as factual in the documents, and there is no clear resolution, the correct answer cannot be determined from the provided information.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      431,
+      24336,
+      31348,
+      3261,
+      78,
+      11,
+      323,
+      2441,
+      2727,
+      393,
+      8294,
+      31348,
+      3261,
+      78,
+      13,
+      8704,
+      2176,
+      12239,
+      525,
+      10449,
+      438,
+      59901,
+      304,
+      279,
+      9293,
+      11,
+      323,
+      1052,
+      374,
+      902,
+      2797,
+      10935,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      504,
+      279,
+      3897,
+      1995,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:0:missing",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:0:target_only",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:1:target_last",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:1:target_first",
+    "text": "The documents state conflicting information: one says Pela assessed Caro, and another says Rumi assessed Caro. Since both statements are presented as factual within the documents, and there is no clear resolution, the correct answer cannot be determined with certainty.\n\nUNKNOWN",
+    "tokens": [
+      785,
+      9293,
+      1584,
+      51033,
+      1995,
+      25,
+      825,
+      2727,
+      393,
+      8294,
+      31348,
+      3261,
+      78,
+      11,
+      323,
+      2441,
+      2727,
+      431,
+      24336,
+      31348,
+      3261,
+      78,
+      13,
+      8704,
+      2176,
+      12239,
+      525,
+      10449,
+      438,
+      59901,
+      2878,
+      279,
+      9293,
+      11,
+      323,
+      1052,
+      374,
+      902,
+      2797,
+      10935,
+      11,
+      279,
+      4396,
+      4226,
+      4157,
+      387,
+      10838,
+      448,
+      43643,
+      382,
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:1:missing",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "interview:2:1:target_only",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:0:target_last",
+    "text": "Oren's proposal won the Luma grant.",
+    "tokens": [
+      46,
+      1440,
+      594,
+      13734,
+      2765,
+      279,
+      444,
+      13416,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:0:target_first",
+    "text": "Oren's proposal won the Luma grant.",
+    "tokens": [
+      46,
+      1440,
+      594,
+      13734,
+      2765,
+      279,
+      444,
+      13416,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:0:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:0:target_only",
+    "text": "Oren's proposal won the Luma grant.",
+    "tokens": [
+      46,
+      1440,
+      594,
+      13734,
+      2765,
+      279,
+      444,
+      13416,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:1:target_last",
+    "text": "Mira's proposal won the Luma grant.",
+    "tokens": [
+      44,
+      8832,
+      594,
+      13734,
+      2765,
+      279,
+      444,
+      13416,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:1:target_first",
+    "text": "Mira's proposal won the Luma grant.",
+    "tokens": [
+      44,
+      8832,
+      594,
+      13734,
+      2765,
+      279,
+      444,
+      13416,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:1:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:0:1:target_only",
+    "text": "Mira's proposal won the Luma grant.",
+    "tokens": [
+      44,
+      8832,
+      594,
+      13734,
+      2765,
+      279,
+      444,
+      13416,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:0:target_last",
+    "text": "Tavi's proposal won the Vela grant.",
+    "tokens": [
+      51,
+      6190,
+      594,
+      13734,
+      2765,
+      279,
+      647,
+      8294,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:0:target_first",
+    "text": "Tavi's proposal won the Vela grant.",
+    "tokens": [
+      51,
+      6190,
+      594,
+      13734,
+      2765,
+      279,
+      647,
+      8294,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:0:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:0:target_only",
+    "text": "Tavi's proposal won the Vela grant.",
+    "tokens": [
+      51,
+      6190,
+      594,
+      13734,
+      2765,
+      279,
+      647,
+      8294,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:1:target_last",
+    "text": "Neri's proposal won the Vela grant.",
+    "tokens": [
+      45,
+      30703,
+      594,
+      13734,
+      2765,
+      279,
+      647,
+      8294,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:1:target_first",
+    "text": "Neri's proposal won the Vela grant.",
+    "tokens": [
+      45,
+      30703,
+      594,
+      13734,
+      2765,
+      279,
+      647,
+      8294,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:1:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:1:1:target_only",
+    "text": "Neri's proposal won the Vela grant.",
+    "tokens": [
+      45,
+      30703,
+      594,
+      13734,
+      2765,
+      279,
+      647,
+      8294,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:0:target_last",
+    "text": "Rumi's proposal won the Sora grant.",
+    "tokens": [
+      49,
+      24336,
+      594,
+      13734,
+      2765,
+      279,
+      328,
+      6215,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:0:target_first",
+    "text": "Rumi's proposal won the Sora grant.",
+    "tokens": [
+      49,
+      24336,
+      594,
+      13734,
+      2765,
+      279,
+      328,
+      6215,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:0:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:0:target_only",
+    "text": "Rumi's proposal won the Sora grant.",
+    "tokens": [
+      49,
+      24336,
+      594,
+      13734,
+      2765,
+      279,
+      328,
+      6215,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:1:target_last",
+    "text": "Pela's proposal won the Sora grant.",
+    "tokens": [
+      47,
+      8294,
+      594,
+      13734,
+      2765,
+      279,
+      328,
+      6215,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:1:target_first",
+    "text": "Pela's proposal won the Sora grant.",
+    "tokens": [
+      47,
+      8294,
+      594,
+      13734,
+      2765,
+      279,
+      328,
+      6215,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:1:missing",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "grant:2:1:target_only",
+    "text": "Pela's proposal won the Sora grant.",
+    "tokens": [
+      47,
+      8294,
+      594,
+      13734,
+      2765,
+      279,
+      328,
+      6215,
+      13198,
+      13,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:0:target_last",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:0:target_first",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:0:missing",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:0:target_only",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:1:target_last",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:1:target_first",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:1:missing",
+    "text": "Oren",
+    "tokens": [
+      46,
+      1440,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:0:1:target_only",
+    "text": "Mira",
+    "tokens": [
+      44,
+      8832,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:0:target_last",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:0:target_first",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:0:missing",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:0:target_only",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:1:target_last",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:1:target_first",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:1:missing",
+    "text": "Tavi",
+    "tokens": [
+      51,
+      6190,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:1:1:target_only",
+    "text": "Neri",
+    "tokens": [
+      45,
+      30703,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:0:target_last",
+    "text": "UNKNOWN",
+    "tokens": [
+      51378,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:0:target_first",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:0:missing",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:0:target_only",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:1:target_last",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:1:target_first",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:1:missing",
+    "text": "Rumi",
+    "tokens": [
+      49,
+      24336,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  },
+  {
+    "id": "release:2:1:target_only",
+    "text": "Pela",
+    "tokens": [
+      47,
+      8294,
+      151645
+    ],
+    "ended": true,
+    "truncated": false,
+    "correctness": "UNREVIEWED"
+  }
+]

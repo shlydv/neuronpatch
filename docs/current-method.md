@@ -38,14 +38,25 @@ varied errors and a common-supervision LoRA baseline. The
 sparse capacity and documents prior art; it is not a plan to build another router
 without measured value.
 
-The [counterbalanced relation probe](../experiments/relation_contrast/README.md)
-is now submitted as Kaggle version 1. It uses four explicit event distinctions,
-three fictional name sets, swapped candidate identities, reversed passage order,
-target-only and missing-evidence controls: 96 correlated prompts, zero training.
-It tests whether the observed relation error repeats in short unfamiliar contexts;
-a pass would not distinguish memory effects from long-context/distractor effects
-in the original example. The source and 167-token maximum input length are frozen.
-No adaptation follows automatically, and the overall method goal remains unmet.
+The [counterbalanced relation probe](../experiments/relation_contrast/complete_v1/REPORT.md)
+completed and passes its development qualification: 75/96 correct full responses,
+24/24 target-only controls, and supported errors in four family/name cells across
+two families. All 96 responses terminate naturally. Interview passages are often
+mistaken for conflicting accounts of the same stage; missing interview/release
+evidence produces unsupported guesses. Tournament and grant controls are solved.
+The public synthetic inputs, decoded outputs and per-item review are saved.
+
+This is the first current lead with repeated, explicitly labeled errors in both
+directions: answering when evidence is absent and refusing when evidence is
+sufficient. It warrants a common-supervision learning pilot, not a method claim.
+Freeze fresh names and phrasings before fitting; require ordinary LoRA to learn
+before attributing benefit to selection, and retain solved-family/unrelated
+controls. No training ran in this qualification. These exposed synthetic cases
+cannot become final confirmation. The
+[benchmark-design review](adaptation-benchmark-decision.md) distinguishes small
+selection sets from small training datasets and adds established Fisher-mask and
+gradient-informed low-rank baselines. Math is a possible later task, not another
+parallel experiment being started now.
 
 ## Scope review before the next experiment
 

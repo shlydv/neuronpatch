@@ -1,0 +1,2306 @@
+[
+  {
+    "id": "tournament:0:0:target_last",
+    "family": "tournament",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Luma Cup, Arlen defeated Mira to reach the semifinal.\n\n[2] In the semifinal of the fictional Luma Cup, Arlen defeated Oren.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:0:0:target_first",
+    "family": "tournament",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Luma Cup, Arlen defeated Oren.\n\n[2] At the fictional Luma Cup, Arlen defeated Mira to reach the semifinal.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:0:0:missing",
+    "family": "tournament",
+    "world": 0,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Luma Cup, Arlen defeated Mira to reach the semifinal.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 147
+  },
+  {
+    "id": "tournament:0:0:target_only",
+    "family": "tournament",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Luma Cup, Arlen defeated Oren.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 146
+  },
+  {
+    "id": "tournament:0:1:target_last",
+    "family": "tournament",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Luma Cup, Arlen defeated Oren to reach the semifinal.\n\n[2] In the semifinal of the fictional Luma Cup, Arlen defeated Mira.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:0:1:target_first",
+    "family": "tournament",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Luma Cup, Arlen defeated Mira.\n\n[2] At the fictional Luma Cup, Arlen defeated Oren to reach the semifinal.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:0:1:missing",
+    "family": "tournament",
+    "world": 0,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Luma Cup, Arlen defeated Oren to reach the semifinal.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 147
+  },
+  {
+    "id": "tournament:0:1:target_only",
+    "family": "tournament",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Luma Cup, Arlen defeated Mira.\n\nQuestion: Whom did Arlen defeat in the semifinal of the Luma Cup?"
+      }
+    ],
+    "prompt_tokens": 146
+  },
+  {
+    "id": "tournament:1:0:target_last",
+    "family": "tournament",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Vela Cup, Belen defeated Neri to reach the semifinal.\n\n[2] In the semifinal of the fictional Vela Cup, Belen defeated Tavi.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:1:0:target_first",
+    "family": "tournament",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Vela Cup, Belen defeated Tavi.\n\n[2] At the fictional Vela Cup, Belen defeated Neri to reach the semifinal.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:1:0:missing",
+    "family": "tournament",
+    "world": 1,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Vela Cup, Belen defeated Neri to reach the semifinal.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 147
+  },
+  {
+    "id": "tournament:1:0:target_only",
+    "family": "tournament",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Vela Cup, Belen defeated Tavi.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 146
+  },
+  {
+    "id": "tournament:1:1:target_last",
+    "family": "tournament",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Vela Cup, Belen defeated Tavi to reach the semifinal.\n\n[2] In the semifinal of the fictional Vela Cup, Belen defeated Neri.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:1:1:target_first",
+    "family": "tournament",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Vela Cup, Belen defeated Neri.\n\n[2] At the fictional Vela Cup, Belen defeated Tavi to reach the semifinal.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:1:1:missing",
+    "family": "tournament",
+    "world": 1,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Vela Cup, Belen defeated Tavi to reach the semifinal.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 147
+  },
+  {
+    "id": "tournament:1:1:target_only",
+    "family": "tournament",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Vela Cup, Belen defeated Neri.\n\nQuestion: Whom did Belen defeat in the semifinal of the Vela Cup?"
+      }
+    ],
+    "prompt_tokens": 146
+  },
+  {
+    "id": "tournament:2:0:target_last",
+    "family": "tournament",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Sora Cup, Caro defeated Pela to reach the semifinal.\n\n[2] In the semifinal of the fictional Sora Cup, Caro defeated Rumi.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:2:0:target_first",
+    "family": "tournament",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Sora Cup, Caro defeated Rumi.\n\n[2] At the fictional Sora Cup, Caro defeated Pela to reach the semifinal.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:2:0:missing",
+    "family": "tournament",
+    "world": 2,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Sora Cup, Caro defeated Pela to reach the semifinal.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 147
+  },
+  {
+    "id": "tournament:2:0:target_only",
+    "family": "tournament",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Sora Cup, Caro defeated Rumi.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 146
+  },
+  {
+    "id": "tournament:2:1:target_last",
+    "family": "tournament",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Sora Cup, Caro defeated Rumi to reach the semifinal.\n\n[2] In the semifinal of the fictional Sora Cup, Caro defeated Pela.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:2:1:target_first",
+    "family": "tournament",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Sora Cup, Caro defeated Pela.\n\n[2] At the fictional Sora Cup, Caro defeated Rumi to reach the semifinal.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 167
+  },
+  {
+    "id": "tournament:2:1:missing",
+    "family": "tournament",
+    "world": 2,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] At the fictional Sora Cup, Caro defeated Rumi to reach the semifinal.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 147
+  },
+  {
+    "id": "tournament:2:1:target_only",
+    "family": "tournament",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] In the semifinal of the fictional Sora Cup, Caro defeated Pela.\n\nQuestion: Whom did Caro defeat in the semifinal of the Sora Cup?"
+      }
+    ],
+    "prompt_tokens": 146
+  },
+  {
+    "id": "interview:0:0:target_last",
+    "family": "interview",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Luma, Arlen was assessed by Mira.\n\n[2] During the final interview at fictional Luma, Arlen was assessed by Oren.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:0:0:target_first",
+    "family": "interview",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Luma, Arlen was assessed by Oren.\n\n[2] To qualify for the final interview at fictional Luma, Arlen was assessed by Mira.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:0:0:missing",
+    "family": "interview",
+    "world": 0,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Luma, Arlen was assessed by Mira.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 144
+  },
+  {
+    "id": "interview:0:0:target_only",
+    "family": "interview",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Luma, Arlen was assessed by Oren.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 142
+  },
+  {
+    "id": "interview:0:1:target_last",
+    "family": "interview",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Luma, Arlen was assessed by Oren.\n\n[2] During the final interview at fictional Luma, Arlen was assessed by Mira.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:0:1:target_first",
+    "family": "interview",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Luma, Arlen was assessed by Mira.\n\n[2] To qualify for the final interview at fictional Luma, Arlen was assessed by Oren.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:0:1:missing",
+    "family": "interview",
+    "world": 0,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Luma, Arlen was assessed by Oren.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 144
+  },
+  {
+    "id": "interview:0:1:target_only",
+    "family": "interview",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Luma, Arlen was assessed by Mira.\n\nQuestion: Who assessed Arlen during the final interview at Luma?"
+      }
+    ],
+    "prompt_tokens": 142
+  },
+  {
+    "id": "interview:1:0:target_last",
+    "family": "interview",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Vela, Belen was assessed by Neri.\n\n[2] During the final interview at fictional Vela, Belen was assessed by Tavi.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:1:0:target_first",
+    "family": "interview",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Vela, Belen was assessed by Tavi.\n\n[2] To qualify for the final interview at fictional Vela, Belen was assessed by Neri.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:1:0:missing",
+    "family": "interview",
+    "world": 1,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Vela, Belen was assessed by Neri.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 144
+  },
+  {
+    "id": "interview:1:0:target_only",
+    "family": "interview",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Vela, Belen was assessed by Tavi.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 142
+  },
+  {
+    "id": "interview:1:1:target_last",
+    "family": "interview",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Vela, Belen was assessed by Tavi.\n\n[2] During the final interview at fictional Vela, Belen was assessed by Neri.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:1:1:target_first",
+    "family": "interview",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Vela, Belen was assessed by Neri.\n\n[2] To qualify for the final interview at fictional Vela, Belen was assessed by Tavi.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:1:1:missing",
+    "family": "interview",
+    "world": 1,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Vela, Belen was assessed by Tavi.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 144
+  },
+  {
+    "id": "interview:1:1:target_only",
+    "family": "interview",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Vela, Belen was assessed by Neri.\n\nQuestion: Who assessed Belen during the final interview at Vela?"
+      }
+    ],
+    "prompt_tokens": 142
+  },
+  {
+    "id": "interview:2:0:target_last",
+    "family": "interview",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Sora, Caro was assessed by Pela.\n\n[2] During the final interview at fictional Sora, Caro was assessed by Rumi.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:2:0:target_first",
+    "family": "interview",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Sora, Caro was assessed by Rumi.\n\n[2] To qualify for the final interview at fictional Sora, Caro was assessed by Pela.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:2:0:missing",
+    "family": "interview",
+    "world": 2,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Sora, Caro was assessed by Pela.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 144
+  },
+  {
+    "id": "interview:2:0:target_only",
+    "family": "interview",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Sora, Caro was assessed by Rumi.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 142
+  },
+  {
+    "id": "interview:2:1:target_last",
+    "family": "interview",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Sora, Caro was assessed by Rumi.\n\n[2] During the final interview at fictional Sora, Caro was assessed by Pela.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:2:1:target_first",
+    "family": "interview",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Sora, Caro was assessed by Pela.\n\n[2] To qualify for the final interview at fictional Sora, Caro was assessed by Rumi.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 164
+  },
+  {
+    "id": "interview:2:1:missing",
+    "family": "interview",
+    "world": 2,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] To qualify for the final interview at fictional Sora, Caro was assessed by Rumi.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 144
+  },
+  {
+    "id": "interview:2:1:target_only",
+    "family": "interview",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] During the final interview at fictional Sora, Caro was assessed by Pela.\n\nQuestion: Who assessed Caro during the final interview at Sora?"
+      }
+    ],
+    "prompt_tokens": 142
+  },
+  {
+    "id": "grant:0:0:target_last",
+    "family": "grant",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Mira's proposal reached the final shortlist for the fictional Luma grant.\n\n[2] Oren's proposal won the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:0:0:target_first",
+    "family": "grant",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Oren's proposal won the fictional Luma grant.\n\n[2] Mira's proposal reached the final shortlist for the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:0:0:missing",
+    "family": "grant",
+    "world": 0,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Mira's proposal reached the final shortlist for the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 138
+  },
+  {
+    "id": "grant:0:0:target_only",
+    "family": "grant",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Oren's proposal won the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 133
+  },
+  {
+    "id": "grant:0:1:target_last",
+    "family": "grant",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Oren's proposal reached the final shortlist for the fictional Luma grant.\n\n[2] Mira's proposal won the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:0:1:target_first",
+    "family": "grant",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Mira's proposal won the fictional Luma grant.\n\n[2] Oren's proposal reached the final shortlist for the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:0:1:missing",
+    "family": "grant",
+    "world": 0,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Oren's proposal reached the final shortlist for the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 138
+  },
+  {
+    "id": "grant:0:1:target_only",
+    "family": "grant",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Mira's proposal won the fictional Luma grant.\n\nQuestion: Whose proposal won the Luma grant?"
+      }
+    ],
+    "prompt_tokens": 133
+  },
+  {
+    "id": "grant:1:0:target_last",
+    "family": "grant",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Neri's proposal reached the final shortlist for the fictional Vela grant.\n\n[2] Tavi's proposal won the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:1:0:target_first",
+    "family": "grant",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Tavi's proposal won the fictional Vela grant.\n\n[2] Neri's proposal reached the final shortlist for the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:1:0:missing",
+    "family": "grant",
+    "world": 1,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Neri's proposal reached the final shortlist for the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 138
+  },
+  {
+    "id": "grant:1:0:target_only",
+    "family": "grant",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Tavi's proposal won the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 133
+  },
+  {
+    "id": "grant:1:1:target_last",
+    "family": "grant",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Tavi's proposal reached the final shortlist for the fictional Vela grant.\n\n[2] Neri's proposal won the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:1:1:target_first",
+    "family": "grant",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Neri's proposal won the fictional Vela grant.\n\n[2] Tavi's proposal reached the final shortlist for the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:1:1:missing",
+    "family": "grant",
+    "world": 1,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Tavi's proposal reached the final shortlist for the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 138
+  },
+  {
+    "id": "grant:1:1:target_only",
+    "family": "grant",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Neri's proposal won the fictional Vela grant.\n\nQuestion: Whose proposal won the Vela grant?"
+      }
+    ],
+    "prompt_tokens": 133
+  },
+  {
+    "id": "grant:2:0:target_last",
+    "family": "grant",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Pela's proposal reached the final shortlist for the fictional Sora grant.\n\n[2] Rumi's proposal won the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:2:0:target_first",
+    "family": "grant",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Rumi's proposal won the fictional Sora grant.\n\n[2] Pela's proposal reached the final shortlist for the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:2:0:missing",
+    "family": "grant",
+    "world": 2,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Pela's proposal reached the final shortlist for the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 138
+  },
+  {
+    "id": "grant:2:0:target_only",
+    "family": "grant",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Rumi's proposal won the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 133
+  },
+  {
+    "id": "grant:2:1:target_last",
+    "family": "grant",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Rumi's proposal reached the final shortlist for the fictional Sora grant.\n\n[2] Pela's proposal won the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:2:1:target_first",
+    "family": "grant",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Pela's proposal won the fictional Sora grant.\n\n[2] Rumi's proposal reached the final shortlist for the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 152
+  },
+  {
+    "id": "grant:2:1:missing",
+    "family": "grant",
+    "world": 2,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Rumi's proposal reached the final shortlist for the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 138
+  },
+  {
+    "id": "grant:2:1:target_only",
+    "family": "grant",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Pela's proposal won the fictional Sora grant.\n\nQuestion: Whose proposal won the Sora grant?"
+      }
+    ],
+    "prompt_tokens": 133
+  },
+  {
+    "id": "release:0:0:target_last",
+    "family": "release",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was announced by Mira.\n\n[2] Version 2 of the fictional Luma app was released by Oren.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:0:0:target_first",
+    "family": "release",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was released by Oren.\n\n[2] Version 2 of the fictional Luma app was announced by Mira.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:0:0:missing",
+    "family": "release",
+    "world": 0,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was announced by Mira.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:0:0:target_only",
+    "family": "release",
+    "world": 0,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Oren"
+      ]
+    ],
+    "distractor": "Mira",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was released by Oren.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:0:1:target_last",
+    "family": "release",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was announced by Oren.\n\n[2] Version 2 of the fictional Luma app was released by Mira.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:0:1:target_first",
+    "family": "release",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was released by Mira.\n\n[2] Version 2 of the fictional Luma app was announced by Oren.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:0:1:missing",
+    "family": "release",
+    "world": 0,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was announced by Oren.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:0:1:target_only",
+    "family": "release",
+    "world": 0,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Mira"
+      ]
+    ],
+    "distractor": "Oren",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Luma app was released by Mira.\n\nQuestion: Who released version 2 of the Luma app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:1:0:target_last",
+    "family": "release",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was announced by Neri.\n\n[2] Version 2 of the fictional Vela app was released by Tavi.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:1:0:target_first",
+    "family": "release",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was released by Tavi.\n\n[2] Version 2 of the fictional Vela app was announced by Neri.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:1:0:missing",
+    "family": "release",
+    "world": 1,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was announced by Neri.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:1:0:target_only",
+    "family": "release",
+    "world": 1,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Tavi"
+      ]
+    ],
+    "distractor": "Neri",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was released by Tavi.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:1:1:target_last",
+    "family": "release",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was announced by Tavi.\n\n[2] Version 2 of the fictional Vela app was released by Neri.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:1:1:target_first",
+    "family": "release",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was released by Neri.\n\n[2] Version 2 of the fictional Vela app was announced by Tavi.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:1:1:missing",
+    "family": "release",
+    "world": 1,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was announced by Tavi.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:1:1:target_only",
+    "family": "release",
+    "world": 1,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Neri"
+      ]
+    ],
+    "distractor": "Tavi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Vela app was released by Neri.\n\nQuestion: Who released version 2 of the Vela app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:2:0:target_last",
+    "family": "release",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was announced by Pela.\n\n[2] Version 2 of the fictional Sora app was released by Rumi.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:2:0:target_first",
+    "family": "release",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was released by Rumi.\n\n[2] Version 2 of the fictional Sora app was announced by Pela.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:2:0:missing",
+    "family": "release",
+    "world": 2,
+    "swapped": false,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was announced by Pela.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:2:0:target_only",
+    "family": "release",
+    "world": 2,
+    "swapped": false,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Rumi"
+      ]
+    ],
+    "distractor": "Pela",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was released by Rumi.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:2:1:target_last",
+    "family": "release",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_last",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was announced by Rumi.\n\n[2] Version 2 of the fictional Sora app was released by Pela.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:2:1:target_first",
+    "family": "release",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_first",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was released by Pela.\n\n[2] Version 2 of the fictional Sora app was announced by Rumi.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 157
+  },
+  {
+    "id": "release:2:1:missing",
+    "family": "release",
+    "world": 2,
+    "swapped": true,
+    "condition": "missing",
+    "answer_groups": [
+      [
+        "UNKNOWN"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was announced by Rumi.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 139
+  },
+  {
+    "id": "release:2:1:target_only",
+    "family": "release",
+    "world": 2,
+    "swapped": true,
+    "condition": "target_only",
+    "answer_groups": [
+      [
+        "Pela"
+      ]
+    ],
+    "distractor": "Rumi",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Answer the question using only the supplied archived documents, as reported at their time, not current information. Reply with a short answer. If the documents do not support an answer, reply exactly UNKNOWN. Check that the evidence matches the exact entity, product version, event round and year asked about. Related facts or a plausible answer from memory are not sufficient. Do not infer an answer from a name merely being mentioned. Return only the answer or UNKNOWN, without an explanation."
+      },
+      {
+        "role": "user",
+        "content": "Documents:\n[1] Version 2 of the fictional Sora app was released by Pela.\n\nQuestion: Who released version 2 of the Sora app?"
+      }
+    ],
+    "prompt_tokens": 139
+  }
+]

@@ -36,3 +36,9 @@ first compare ordinary LoRA under the same labels before claiming value from a
 selector. A future method still needs natural inputs, fresh domains, preservation,
 multiple seeds and actual cost comparisons. The goal is not redefined around
 passing a synthetic task.
+
+## Completed result
+
+The [reviewed result](complete_v1/REPORT.md) is 75/96, with all 24 target-only
+controls correct. The frozen development qualification passes. A learning pilot
+is warranted; no adaptation or selected-neuron benefit has yet been measured.
