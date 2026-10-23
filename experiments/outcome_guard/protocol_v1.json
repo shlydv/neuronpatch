@@ -1,0 +1,3009 @@
+{
+  "id": "outcome-guard-qualification-v1-20261023",
+  "parent_kernel": "shlydv/neuronpatch-paired-full-response-v1-20261022",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "inputs_sha256": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+  "parent_files_sha256": {
+    "case-0-base.json": "f77a0c2a8b1e2ed2d3e29f1d79b8e4678e258a2dd40ddae509fbf7eb4a244dd3",
+    "case-0-lora-43-0-adapter/adapter_config.json": "ec52d0a9cf542ec24bd1967fc94ddb4e85502053b2a022b0612cd27af5f6c5e1",
+    "case-0-lora-43-0-adapter/adapter_model.safetensors": "3f9cd12f60280d191dcad9093bd5b6c5d57f80950e7fb6578f643848d9679c3e",
+    "case-0-lora-43-0-teacher.safetensors": "a76660ecf642864ef62fa55e157f189b79071757ea1500a2ec4faf9e88c2b826",
+    "case-0-lora-43-0.json": "c32ab53f4f6b2c65ba6f223bdc8f34197b18f8b3d72d06bdf8a863f2076d88fa",
+    "case-0-paired_mean-43-0-adapter/patch.json": "b040a7047a64d6b450c2661b3238a610a06f022afa060bf45ca57143dfeb9cfe",
+    "case-0-paired_mean-43-0-adapter/patch.safetensors": "4c7e6c0335496b49421872ef868b9fddac409e9165e9279783e44acadcb73968",
+    "case-0-paired_mean-43-0-teacher.safetensors": "529ca06801a63289b28e3493bf7b4bbfab26d3f9d70c8dfd9d852d244584e217",
+    "case-0-paired_mean-43-0.json": "5429df87df9c9a7c5e26e0e23d7573d4c208d9abb27367995d4ee17216197428",
+    "case-0-paired_mean-43-1-adapter/patch.json": "057db1dc02ab8bb01909698fd5b187b595c89b41a69300851517af9e4f6d3054",
+    "case-0-paired_mean-43-1-adapter/patch.safetensors": "4f3637065022d6e98765f6031cd6be057c4cf3df14f0f05e3af5f4ed7ada58b0",
+    "case-0-paired_mean-43-1-teacher.safetensors": "db1b83ef4617c49bda008b77d34f552d4c0350d4f7a4a79c7d84a90c4119ab34",
+    "case-0-paired_mean-43-1.json": "b0360515b437a960b3af6abfe89b532551a2cfd0a7e5e7a85902caca88d94d29",
+    "case-0-paired_random-11-0-adapter/patch.json": "e27c1ffde0e9a04caee70ffedf239485f65b0805632e2d5a03aeaa837f3da452",
+    "case-0-paired_random-11-0-adapter/patch.safetensors": "f2039e1067f33956640529f92a73cda1a64fcc2614cae1de9a6df1da382ae011",
+    "case-0-paired_random-11-0-teacher.safetensors": "5ebd32d9ecddbb943a6f1b5a11c2f7068efe81f970fa6c37d8d0d5690f795041",
+    "case-0-paired_random-11-0.json": "8be2b92aee5dc9dd8051ea87d2c01c21c6cf79cda2a55e0e04a7a2754a59f2ca",
+    "case-1-base.json": "03d666473bdedee85d2d68b35a224427a5c555908a394a52f461352df98dc6d4",
+    "case-1-lora-43-0-adapter/adapter_config.json": "ec52d0a9cf542ec24bd1967fc94ddb4e85502053b2a022b0612cd27af5f6c5e1",
+    "case-1-lora-43-0-adapter/adapter_model.safetensors": "fd59492ce2c5038f7cfc5e68112cbbc988cfa85c89693bd1dd10ad255975490a",
+    "case-1-lora-43-0-teacher.safetensors": "32cd0b5b03fb9249b314f58feb65d0792babb2485e315ae49e48c6f633fc326b",
+    "case-1-lora-43-0.json": "6a8278ca7805822394fdfeec79d41b1bb3585229c82aa21147d55722d5ad834f",
+    "case-1-paired_mean-43-0-adapter/patch.json": "e9affbf8b4e38ecbaf5a12df6bd3eb4b0c719d6ef47e7dee451c22d3b4cafcba",
+    "case-1-paired_mean-43-0-adapter/patch.safetensors": "32d6bb9febdab9803254edde9e8df24d5452c5f53a72255217f724f112ec4c67",
+    "case-1-paired_mean-43-0-teacher.safetensors": "85769133d26d858e1bd93d612ec8804d30c7505e9cfb87af7558fc890dfdd219",
+    "case-1-paired_mean-43-0.json": "3f33939f655ab77484e99a64745eb039a64b438a9b538723b7e4170b6d37e851",
+    "case-1-paired_mean-43-1-adapter/patch.json": "b24fd7b6be1976f263c50df461eb949c07d10a9d01225577f53bc1ba8159a7aa",
+    "case-1-paired_mean-43-1-adapter/patch.safetensors": "2836edfc8910277d38c8e5a4aec4c6a0e10b6740820052913c49bfe6ebeea0d9",
+    "case-1-paired_mean-43-1-teacher.safetensors": "6da3a0106422102684086c5ccadaa2af1d744aa060f8fe95017c8899063f3971",
+    "case-1-paired_mean-43-1.json": "324acf0783538a948648b2ddd402645305976aebcf763f0d60b97e36961a38ff",
+    "case-1-paired_random-11-0-adapter/patch.json": "fbc2b42913ae9eb10e326683aec5f0d2c949ad6e10cee8f8ae3234366015e1cf",
+    "case-1-paired_random-11-0-adapter/patch.safetensors": "c485cb9da2b851b30e4d9e0914a3e3fdeca05c506e88b081fe47d3a145146aca",
+    "case-1-paired_random-11-0-teacher.safetensors": "11171ec1dc5f754aea34870c0d4d08fd368220d62daa901104cd58bf01f00920",
+    "case-1-paired_random-11-0.json": "25370469c46487e553f798e82b06c4ff6261679b3115d528ef0518b6bc2da83f",
+    "completion.json": "351401217c0fccea948fda06c69f7a19e1fe7d61812b8613291ebb72821239a2",
+    "fits.json": "f5c4b43bb4f59b2345f544c0663d0f7acd3f1979b2396060bf31d177fa907b96",
+    "identity.json": "e86a7b3731419b289ca5a190a6783ea8f1fab68a708a793f04dd256273032fe1",
+    "inputs.json": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+    "tokenization.json": "a906c12e67b75289328d5a30810507f39c251be65e712dbe742f838e138d8ee1"
+  },
+  "endpoints": [
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      }
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      }
+    },
+    {
+      "case": 0,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_mean",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "paired_mean-43-0"
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "paired_random",
+        "seed": 11,
+        "lr": 0.0003,
+        "id": "paired_random-11-0"
+      }
+    },
+    {
+      "case": 1,
+      "condition": {
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003,
+        "id": "lora-43-0"
+      }
+    }
+  ],
+  "generation_banks": [
+    "target_test"
+  ],
+  "expected_generations": 96,
+  "new_fits": 0,
+  "fresh_confirmation_used": false,
+  "runtime_limit_seconds": 1800,
+  "max_new_tokens": 32,
+  "max_sequence_tokens": 256,
+  "hypotheses": [
+    "All four successful LoRA/random controls retain accepted mass within0.02 on eligible rows.",
+    "The selected case1 endpoint loses more than0.02 accepted mass on both Lakers and oxygen."
+  ],
+  "decisions": "Require exact merged canonical-teacher and all selected generated-answer replay, all required positive endpoints admitted, both negative rows flagged by probability, and separate complete-answer validation. Any failed prerequisite blocks qualification. Collect full next-token logits at every unique finite-response prefix; do not estimate missing alias branches. No threshold adjustment or new fitting.",
+  "limits": "Known exposed calibration controls, not unbiased confirmation or prevention. A finite response set omits other valid strings. Base/reference disagreements are reported and excluded from retention gates, not silently corrected. Passing this test would license a trained comparison, not a robust library claim.",
+  "rows": {
+    "0": [
+      {
+        "id": "case-0-preserve-0",
+        "prompt": "The name of the country of citizenship of David Goodwillie is",
+        "answers": [
+          "United Kingdom",
+          "the United Kingdom",
+          "UK",
+          "U.K.",
+          "Britain",
+          "Great Britain"
+        ],
+        "accepted_aliases": [
+          "United Kingdom",
+          "the United Kingdom",
+          "UK",
+          "U.K.",
+          "Britain",
+          "Great Britain",
+          "United Kingdom of Great Britain and Northern Ireland",
+          "the United Kingdom of Great Britain and Northern Ireland",
+          "United Kingdom.",
+          "the United Kingdom.",
+          "UK.",
+          "Britain.",
+          "Great Britain.",
+          "United Kingdom of Great Britain and Northern Ireland.",
+          "the United Kingdom of Great Britain and Northern Ireland."
+        ],
+        "paths": [
+          [
+            22372,
+            15072,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            151645
+          ],
+          [
+            24537,
+            151645
+          ],
+          [
+            52,
+            11352,
+            13,
+            151645
+          ],
+          [
+            90738,
+            151645
+          ],
+          [
+            21396,
+            13224,
+            151645
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            151645
+          ],
+          [
+            22372,
+            15072,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            13,
+            151645
+          ],
+          [
+            24537,
+            13,
+            151645
+          ],
+          [
+            90738,
+            13,
+            151645
+          ],
+          [
+            21396,
+            13224,
+            13,
+            151645
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          315,
+          32679,
+          315,
+          6798,
+          7684,
+          14387,
+          645,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            15072
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            15072
+          ],
+          [
+            24537
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            11352
+          ],
+          [
+            52,
+            11352,
+            13
+          ],
+          [
+            90738
+          ],
+          [
+            21396
+          ],
+          [
+            21396,
+            13224
+          ],
+          [
+            22372,
+            15072,
+            315
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648
+          ],
+          [
+            22372,
+            15072,
+            13
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            13
+          ],
+          [
+            24537,
+            13
+          ],
+          [
+            90738,
+            13
+          ],
+          [
+            21396,
+            13224,
+            13
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": false,
+        "role": "unresolved_reference_disagreement"
+      },
+      {
+        "id": "case-0-preserve-1",
+        "prompt": "The name of the country of citizenship of Huma Abedin is",
+        "answers": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America"
+        ],
+        "accepted_aliases": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America",
+          "United States of America.",
+          "United States.",
+          "USA.",
+          "US.",
+          "the United States.",
+          "the United States of America."
+        ],
+        "paths": [
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            151645
+          ],
+          [
+            24347,
+            151645
+          ],
+          [
+            2034,
+            151645
+          ],
+          [
+            52,
+            808,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            13,
+            151645
+          ],
+          [
+            24347,
+            13,
+            151645
+          ],
+          [
+            2034,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          315,
+          32679,
+          315,
+          472,
+          13416,
+          98264,
+          258,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            4180
+          ],
+          [
+            22372,
+            4180,
+            315
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159
+          ],
+          [
+            24347
+          ],
+          [
+            2034
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            808
+          ],
+          [
+            52,
+            808,
+            13
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            4180
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13
+          ],
+          [
+            22372,
+            4180,
+            13
+          ],
+          [
+            24347,
+            13
+          ],
+          [
+            2034,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "case-0-preserve-2",
+        "prompt": "The name of the country of citizenship of George Santos is",
+        "answers": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America"
+        ],
+        "accepted_aliases": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America",
+          "United States of America.",
+          "United States.",
+          "USA.",
+          "US.",
+          "the United States.",
+          "the United States of America."
+        ],
+        "paths": [
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            151645
+          ],
+          [
+            24347,
+            151645
+          ],
+          [
+            2034,
+            151645
+          ],
+          [
+            52,
+            808,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            13,
+            151645
+          ],
+          [
+            24347,
+            13,
+            151645
+          ],
+          [
+            2034,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          315,
+          32679,
+          315,
+          9857,
+          47623,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            4180
+          ],
+          [
+            22372,
+            4180,
+            315
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159
+          ],
+          [
+            24347
+          ],
+          [
+            2034
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            808
+          ],
+          [
+            52,
+            808,
+            13
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            4180
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13
+          ],
+          [
+            22372,
+            4180,
+            13
+          ],
+          [
+            24347,
+            13
+          ],
+          [
+            2034,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-0",
+        "prompt": "The capital of France is",
+        "answers": [
+          "Paris"
+        ],
+        "accepted_aliases": [
+          "Paris",
+          "Paris."
+        ],
+        "paths": [
+          [
+            59604,
+            151645
+          ],
+          [
+            59604,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          6722,
+          315,
+          9625,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            59604
+          ],
+          [
+            59604,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-16",
+        "prompt": "2 + 2 =",
+        "answers": [
+          "4",
+          "four"
+        ],
+        "accepted_aliases": [
+          "4",
+          "four",
+          "4.",
+          "four."
+        ],
+        "paths": [
+          [
+            19,
+            151645
+          ],
+          [
+            34024,
+            151645
+          ],
+          [
+            19,
+            13,
+            151645
+          ],
+          [
+            34024,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          17,
+          488,
+          220,
+          17,
+          284,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            19
+          ],
+          [
+            34024
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            34024,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-24",
+        "prompt": "The chemical symbol for gold is",
+        "answers": [
+          "Au"
+        ],
+        "accepted_aliases": [
+          "Au",
+          "Au."
+        ],
+        "paths": [
+          [
+            65332,
+            151645
+          ],
+          [
+            65332,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          11483,
+          7735,
+          369,
+          6623,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            65332
+          ],
+          [
+            65332,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-25",
+        "prompt": "The chemical symbol for oxygen is",
+        "answers": [
+          "O"
+        ],
+        "accepted_aliases": [
+          "O",
+          "O."
+        ],
+        "paths": [
+          [
+            46,
+            151645
+          ],
+          [
+            46,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          11483,
+          7735,
+          369,
+          23552,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            46
+          ],
+          [
+            46,
+            13
+          ]
+        ],
+        "source_bank": "utility_test",
+        "retention_eligible": true,
+        "role": "retention"
+      }
+    ],
+    "1": [
+      {
+        "id": "case-1-preserve-0",
+        "prompt": "The name of the country which Blackpink is associated with is",
+        "answers": [
+          "South Korea",
+          "Republic of Korea",
+          "the Republic of Korea"
+        ],
+        "accepted_aliases": [
+          "South Korea",
+          "Republic of Korea",
+          "the Republic of Korea",
+          "South Korea.",
+          "Republic of Korea.",
+          "the Republic of Korea."
+        ],
+        "paths": [
+          [
+            25018,
+            11862,
+            151645
+          ],
+          [
+            38863,
+            315,
+            11862,
+            151645
+          ],
+          [
+            1782,
+            5429,
+            315,
+            11862,
+            151645
+          ],
+          [
+            25018,
+            11862,
+            13,
+            151645
+          ],
+          [
+            38863,
+            315,
+            11862,
+            13,
+            151645
+          ],
+          [
+            1782,
+            5429,
+            315,
+            11862,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          892,
+          5235,
+          63249,
+          374,
+          5815,
+          448,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            25018
+          ],
+          [
+            25018,
+            11862
+          ],
+          [
+            38863
+          ],
+          [
+            38863,
+            315
+          ],
+          [
+            38863,
+            315,
+            11862
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            5429
+          ],
+          [
+            1782,
+            5429,
+            315
+          ],
+          [
+            1782,
+            5429,
+            315,
+            11862
+          ],
+          [
+            25018,
+            11862,
+            13
+          ],
+          [
+            38863,
+            315,
+            11862,
+            13
+          ],
+          [
+            1782,
+            5429,
+            315,
+            11862,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "case-1-preserve-2",
+        "prompt": "The name of the country which murder of Travis Alexander is associated with is",
+        "answers": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America"
+        ],
+        "accepted_aliases": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America",
+          "United States of America.",
+          "United States.",
+          "USA.",
+          "US.",
+          "the United States.",
+          "the United States of America."
+        ],
+        "paths": [
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            151645
+          ],
+          [
+            24347,
+            151645
+          ],
+          [
+            2034,
+            151645
+          ],
+          [
+            52,
+            808,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            13,
+            151645
+          ],
+          [
+            24347,
+            13,
+            151645
+          ],
+          [
+            2034,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          892,
+          9901,
+          315,
+          40710,
+          20042,
+          374,
+          5815,
+          448,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            4180
+          ],
+          [
+            22372,
+            4180,
+            315
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159
+          ],
+          [
+            24347
+          ],
+          [
+            2034
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            808
+          ],
+          [
+            52,
+            808,
+            13
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            4180
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13
+          ],
+          [
+            22372,
+            4180,
+            13
+          ],
+          [
+            24347,
+            13
+          ],
+          [
+            2034,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": false,
+        "role": "unresolved_reference_disagreement"
+      },
+      {
+        "id": "case-1-preserve-facebook",
+        "prompt": "The name of the country which Facebook is associated with is",
+        "answers": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America"
+        ],
+        "accepted_aliases": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America",
+          "United States of America.",
+          "United States.",
+          "USA.",
+          "US.",
+          "the United States.",
+          "the United States of America."
+        ],
+        "paths": [
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            151645
+          ],
+          [
+            24347,
+            151645
+          ],
+          [
+            2034,
+            151645
+          ],
+          [
+            52,
+            808,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            13,
+            151645
+          ],
+          [
+            24347,
+            13,
+            151645
+          ],
+          [
+            2034,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          892,
+          5573,
+          374,
+          5815,
+          448,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            4180
+          ],
+          [
+            22372,
+            4180,
+            315
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159
+          ],
+          [
+            24347
+          ],
+          [
+            2034
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            808
+          ],
+          [
+            52,
+            808,
+            13
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            4180
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13
+          ],
+          [
+            22372,
+            4180,
+            13
+          ],
+          [
+            24347,
+            13
+          ],
+          [
+            2034,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-0",
+        "prompt": "The capital of France is",
+        "answers": [
+          "Paris"
+        ],
+        "accepted_aliases": [
+          "Paris",
+          "Paris."
+        ],
+        "paths": [
+          [
+            59604,
+            151645
+          ],
+          [
+            59604,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          6722,
+          315,
+          9625,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            59604
+          ],
+          [
+            59604,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-16",
+        "prompt": "2 + 2 =",
+        "answers": [
+          "4",
+          "four"
+        ],
+        "accepted_aliases": [
+          "4",
+          "four",
+          "4.",
+          "four."
+        ],
+        "paths": [
+          [
+            19,
+            151645
+          ],
+          [
+            34024,
+            151645
+          ],
+          [
+            19,
+            13,
+            151645
+          ],
+          [
+            34024,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          17,
+          488,
+          220,
+          17,
+          284,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            19
+          ],
+          [
+            34024
+          ],
+          [
+            19,
+            13
+          ],
+          [
+            34024,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-24",
+        "prompt": "The chemical symbol for gold is",
+        "answers": [
+          "Au"
+        ],
+        "accepted_aliases": [
+          "Au",
+          "Au."
+        ],
+        "paths": [
+          [
+            65332,
+            151645
+          ],
+          [
+            65332,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          11483,
+          7735,
+          369,
+          6623,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            65332
+          ],
+          [
+            65332,
+            13
+          ]
+        ],
+        "source_bank": "preserve",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "case-1-scope-test-2",
+        "prompt": "The name of the country which BBC World Service is associated with is",
+        "answers": [
+          "United Kingdom",
+          "the United Kingdom",
+          "UK",
+          "U.K.",
+          "Britain",
+          "Great Britain"
+        ],
+        "accepted_aliases": [
+          "United Kingdom",
+          "the United Kingdom",
+          "UK",
+          "U.K.",
+          "Britain",
+          "Great Britain",
+          "United Kingdom of Great Britain and Northern Ireland",
+          "the United Kingdom of Great Britain and Northern Ireland",
+          "United Kingdom.",
+          "the United Kingdom.",
+          "UK.",
+          "Britain.",
+          "Great Britain.",
+          "United Kingdom of Great Britain and Northern Ireland.",
+          "the United Kingdom of Great Britain and Northern Ireland."
+        ],
+        "paths": [
+          [
+            22372,
+            15072,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            151645
+          ],
+          [
+            24537,
+            151645
+          ],
+          [
+            52,
+            11352,
+            13,
+            151645
+          ],
+          [
+            90738,
+            151645
+          ],
+          [
+            21396,
+            13224,
+            151645
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            151645
+          ],
+          [
+            22372,
+            15072,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            13,
+            151645
+          ],
+          [
+            24537,
+            13,
+            151645
+          ],
+          [
+            90738,
+            13,
+            151645
+          ],
+          [
+            21396,
+            13224,
+            13,
+            151645
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          892,
+          18096,
+          4337,
+          5362,
+          374,
+          5815,
+          448,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            15072
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            15072
+          ],
+          [
+            24537
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            11352
+          ],
+          [
+            52,
+            11352,
+            13
+          ],
+          [
+            90738
+          ],
+          [
+            21396
+          ],
+          [
+            21396,
+            13224
+          ],
+          [
+            22372,
+            15072,
+            315
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648
+          ],
+          [
+            22372,
+            15072,
+            13
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            13
+          ],
+          [
+            24537,
+            13
+          ],
+          [
+            90738,
+            13
+          ],
+          [
+            21396,
+            13224,
+            13
+          ],
+          [
+            22372,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13
+          ],
+          [
+            1782,
+            3639,
+            15072,
+            315,
+            8513,
+            13224,
+            323,
+            16926,
+            14648,
+            13
+          ]
+        ],
+        "source_bank": "scope_test",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "case-1-scope-test-3",
+        "prompt": "The name of the country which Los Angeles Lakers is associated with is",
+        "answers": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America"
+        ],
+        "accepted_aliases": [
+          "United States of America",
+          "United States",
+          "USA",
+          "US",
+          "U.S.",
+          "the United States",
+          "the United States of America",
+          "United States of America.",
+          "United States.",
+          "USA.",
+          "US.",
+          "the United States.",
+          "the United States of America."
+        ],
+        "paths": [
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            151645
+          ],
+          [
+            24347,
+            151645
+          ],
+          [
+            2034,
+            151645
+          ],
+          [
+            52,
+            808,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ],
+          [
+            22372,
+            4180,
+            13,
+            151645
+          ],
+          [
+            24347,
+            13,
+            151645
+          ],
+          [
+            2034,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13,
+            151645
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          829,
+          315,
+          279,
+          3146,
+          892,
+          9656,
+          11902,
+          46496,
+          374,
+          5815,
+          448,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            22372
+          ],
+          [
+            22372,
+            4180
+          ],
+          [
+            22372,
+            4180,
+            315
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159
+          ],
+          [
+            24347
+          ],
+          [
+            2034
+          ],
+          [
+            52
+          ],
+          [
+            52,
+            808
+          ],
+          [
+            52,
+            808,
+            13
+          ],
+          [
+            1782
+          ],
+          [
+            1782,
+            3639
+          ],
+          [
+            1782,
+            3639,
+            4180
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159
+          ],
+          [
+            22372,
+            4180,
+            315,
+            5159,
+            13
+          ],
+          [
+            22372,
+            4180,
+            13
+          ],
+          [
+            24347,
+            13
+          ],
+          [
+            2034,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            13
+          ],
+          [
+            1782,
+            3639,
+            4180,
+            315,
+            5159,
+            13
+          ]
+        ],
+        "source_bank": "scope_test",
+        "retention_eligible": true,
+        "role": "retention"
+      },
+      {
+        "id": "utility-25",
+        "prompt": "The chemical symbol for oxygen is",
+        "answers": [
+          "O"
+        ],
+        "accepted_aliases": [
+          "O",
+          "O."
+        ],
+        "paths": [
+          [
+            46,
+            151645
+          ],
+          [
+            46,
+            13,
+            151645
+          ]
+        ],
+        "prompt_tokens": [
+          151644,
+          8948,
+          198,
+          12548,
+          279,
+          5114,
+          476,
+          4226,
+          279,
+          3405,
+          13,
+          17841,
+          448,
+          1172,
+          279,
+          11223,
+          2805,
+          4226,
+          13,
+          3155,
+          537,
+          10339,
+          13,
+          151645,
+          198,
+          151644,
+          872,
+          198,
+          785,
+          11483,
+          7735,
+          369,
+          23552,
+          374,
+          151645,
+          198,
+          151644,
+          77091,
+          198
+        ],
+        "prefixes": [
+          [],
+          [
+            46
+          ],
+          [
+            46,
+            13
+          ]
+        ],
+        "source_bank": "utility_test",
+        "retention_eligible": true,
+        "role": "retention"
+      }
+    ]
+  },
+  "maximum_absolute_mass_drop": 0.02,
+  "positive_methods": [
+    "lora-43-0",
+    "paired_random-11-0"
+  ],
+  "negative": {
+    "case": 1,
+    "method": "paired_mean-43-0",
+    "ids": [
+      "case-1-scope-test-3",
+      "utility-25"
+    ]
+  },
+  "expected_endpoints": 6
+}

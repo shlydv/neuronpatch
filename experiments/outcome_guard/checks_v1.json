@@ -1,0 +1,20 @@
+{
+  "pinned_runtime_passed": 15,
+  "modern_runtime_passed": 15,
+  "minimum_runtime_passed": 1,
+  "minimum_runtime_optional_skips": 2,
+  "ruff": "pass",
+  "diff_check": "pass",
+  "bundle_preview_hashes_exact": true,
+  "pretrained_model_qualification_result": null,
+  "source_sha256": {
+    "experiments/outcome_guard/build.py": "39e173068210e7edce47ac748dde5bc6f138a94ccd6967b6f2633b361df1007e",
+    "experiments/outcome_guard/run.py": "ee0012f63714c1d9218685ff9a675ca67d5b093b06c65d062bf83823e6e401ac",
+    "experiments/outcome_guard/__init__.py": "36c019d33731be9118412d57c0f36b4612c18e6f98264e575f926f06b38b7bde",
+    "experiments/outcome_guard/verify.py": "82f009905f38136a913c5ad898fede310ef926e6df78a89604d4f40cebe718dd",
+    "experiments/outcome_guard/prepare.py": "0b226e4e7a36eff7af241766a238ecd059043aa4961f623ebeb59e30c743212a",
+    "experiments/outcome_guard/protocol_v1.json": "8f0ff9c87acc0dec8843330944bc253422055a2d63c80c6778bca27c86dcfe2b",
+    "tests/test_outcome_guard.py": "ce5371af5c209843f98ab47ee4e3804aa4291c41d303ac1c4c477d8bd21f10d0"
+  },
+  "scope": "Actual tiny FP32/FP16 worker restoration,missing-prefix collection,independent verification,full-size tokenization and source checks;no new full-size model inference yet."
+}
