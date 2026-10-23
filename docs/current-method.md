@@ -14,6 +14,12 @@ LoRA loses accepted probability there. None meets the full preservation criterio
 The [additional primary-source review](research-2026-10-23.md) identifies close
 curvature and component-coefficient precedents that constrain future claims.
 
+The [current task qualification](../experiments/retrieval_evidence/README.md)
+inspects RGB retrieved-document contrasts. A deterministic 32-question candidate
+packet is prepared; its labels still require full review before baseline inference.
+This is not a frozen run or evidence of model failure. Natural SQuAD questions
+were already tried earlier and are not being presented as a new direction.
+
 ## Scope review before the next experiment
 
 The current two-fact comparison is a development diagnostic. Its correction

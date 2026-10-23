@@ -1,0 +1,71 @@
+{
+  "source_manifest": {
+    "revision": "65ec39e40e7dc9abb50e9bf1b4f32be3f6f16615",
+    "files": {
+      "readme.md": {
+        "sha256": "e924a72f4b46718dde52cd3eb603a7f6496a9658e931e3269461a88bf6b86c8a",
+        "bytes": 3604,
+        "url": "https://raw.githubusercontent.com/chen700564/RGB/65ec39e40e7dc9abb50e9bf1b4f32be3f6f16615/readme.md"
+      },
+      "evalue.py": {
+        "sha256": "506436ffbd7b97a6cadeb34961f4b4a4a9f04bf8afe7a1729e467811243352c0",
+        "bytes": 9965,
+        "url": "https://raw.githubusercontent.com/chen700564/RGB/65ec39e40e7dc9abb50e9bf1b4f32be3f6f16615/evalue.py"
+      },
+      "config/instruction.yaml": {
+        "sha256": "0232a62c325544f7527d0c35bf672169f4ec14f04af722b22c2ea381070390e3",
+        "bytes": 1318,
+        "url": "https://raw.githubusercontent.com/chen700564/RGB/65ec39e40e7dc9abb50e9bf1b4f32be3f6f16615/config/instruction.yaml"
+      },
+      "data/en_refine.json": {
+        "sha256": "1be6ec4b85364b5590c7683ed4df8d47535ae21bc021bbcd3f44a71579f64bcb",
+        "bytes": 7229738,
+        "url": "https://raw.githubusercontent.com/chen700564/RGB/65ec39e40e7dc9abb50e9bf1b4f32be3f6f16615/data/en_refine.json"
+      }
+    }
+  },
+  "candidate_packet_sha256": "805c8a741be70a80af7403b5fbc52b85d34a7679e284510d208738b7cb52bc1a",
+  "candidate_ids": [
+    121,
+    229,
+    46,
+    79,
+    82,
+    211,
+    145,
+    207,
+    127,
+    185,
+    239,
+    162,
+    278,
+    273,
+    100,
+    193,
+    136,
+    148,
+    263,
+    27,
+    71,
+    11,
+    144,
+    68,
+    139,
+    208,
+    182,
+    189,
+    231,
+    178,
+    277,
+    194
+  ],
+  "checks": {
+    "all_300_source_schemas_valid": true,
+    "deterministic_packet": true,
+    "exactly_one_document_replaced": true,
+    "answer_group_semantics_preserved": true,
+    "ruff": "passed"
+  },
+  "full_candidate_review_complete": false,
+  "gpu_run_submitted": false
+}
