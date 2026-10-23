@@ -1,0 +1,9 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-transfer-v1-20261024",
+  "source_sha256": "0ac4f1c023a831936d49b425449f7d6568a4bfba87a104e45bf60ca27cc6857c",
+  "provider_limit_seconds": 10800,
+  "worker_limit_seconds": 10200,
+  "internal_limit_seconds": 9900,
+  "source_revision": "8fd80f5f627d2fb1d4dcded2be5da3351464c1c8",
+  "fits": 8
+}

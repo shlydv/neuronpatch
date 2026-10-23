@@ -87,8 +87,10 @@ budget with that cap. No large model runs locally.
 Final evaluation must report paired recovery of base-correct answers, damage to
 clean answers and direct/quotation controls, incomplete responses, teacher-error
 retention and source ambiguity. Marker suppression alone cannot win. This
-adaptation comparison is specified in `transfer_protocol_v1.json`. No new Kaggle
-run has been submitted for it yet. `transfer_run.py` now integrates teacher
+adaptation comparison is specified in `transfer_protocol_v1.json`. Kaggle accepted
+kernel140449387 version1; its source matches the frozen bundle exactly. Runtime
+limits are10800/10200/9900 seconds at provider/worker/internal levels. Results are
+pending. `transfer_run.py` now integrates teacher
 generation, discovery, eight fits, calibration selection, export/reload and merged
 confirmation evaluation. The tiny FP16 Qwen test executes all eight fits with real
 gradients/Adam/PEFT and grouped adapters; text generation alone is stubbed in that

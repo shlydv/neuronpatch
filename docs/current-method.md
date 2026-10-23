@@ -31,7 +31,25 @@ checks pass. This is real paired behavioral failure, not a trained-method result
 No automatic training or retroactive threshold change follows. A subsequent
 explicit exploratory protocol can investigate preservation of existing correct
 behavior without conflating it with learning table reasoning. The run is COMPLETE,
-source/token/manifest verification passes, and no GPU job remains active.
+source/token/manifest verification passes.
+
+The explicit [exploratory follow-up protocol](../experiments/instruction_boundary/transfer_protocol_v1.json)
+now has32/16/48 fresh training/calibration/confirmation documents, excluding all224
+previously allocated tables. It transfers clean-teacher answers to injected
+prompts, preserving clean/direct/quoted responses. A NeST-inspired probe/grouped
+candidate and two random-group controls each train368,640 scalars; rank1 LoRA
+across attention and MLP trains2,064,384. All receive the same targets,96 Adam
+steps and two rates. Only redirect examples enter fitting and rate selection;
+claimed authority is held out. Source and numerical distinctions from NeST are
+explicit, and no method advantage is assumed.
+
+Kaggle accepted kernel140449387 version1 on24 October and reports RUNNING. The
+[accepted source](../experiments/instruction_boundary/transfer_submission_accepted_v1.json)
+matches the tested frozen bundle hash. Provider/worker/internal caps are
+10800/10200/9900 seconds; paid scaling is disabled. Twenty-nine relevant checks
+passed, including an eight-fit tiny FP16 Qwen lifecycle and verifier corruption
+fixtures. The real-model run is pending; these software tests are not quality
+evidence. Observe this same job rather than starting another if logs disconnect.
 
 Takeover review: the current Fisher ranking does not implement NeST's probe,
 clustering or shared update method. NeST SectionV additionally measures gradient

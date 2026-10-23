@@ -1,0 +1,8 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-transfer-v1-20261024",
+  "kernel_id": 140449387,
+  "version": 1,
+  "status": "RUNNING",
+  "accepted_source_exact": true,
+  "script_sha256": "0ac4f1c023a831936d49b425449f7d6568a4bfba87a104e45bf60ca27cc6857c"
+}
