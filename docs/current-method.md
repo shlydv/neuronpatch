@@ -85,6 +85,15 @@ The balanced support already captures 97.86% of the unconstrained global score
 optimum. Do not confuse optimizing this proxy with improving adaptation, or
 launch a new global allocation merely to increase score capture.
 
+The eight-task-example comparison is now running on private free Kaggle T4,
+with a two-hour provider cap and the same eight-fit worker. Its [frozen inputs
+and protocol](../experiments/relation_learning/low_data_v1/protocol.json) retain
+20 preservation labels and 64 updates per fit. Fisher sees no additional labels.
+There are 128 fresh-name task questions, 16 fresh-name scope questions and eight
+fresh utility questions. Accepted source matches the frozen script exactly.
+No result is available; complete artifacts and validation-only rate selection
+are required before test review.
+
 ## Scope review before the next experiment
 
 The current two-fact comparison is a development diagnostic. Its correction

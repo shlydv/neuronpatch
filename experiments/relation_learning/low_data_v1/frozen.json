@@ -1,0 +1,15 @@
+{
+  "source_revision": "979f391",
+  "kernel": "shlydv/neuronpatch-relation-low-data-v1-20261023",
+  "kernel_id": 140393473,
+  "version": 1,
+  "script_sha256": "332440459cf11949f1d0f5a878cdb4c7aa4f1dfc37ae09b96fa2884e2e52bd43",
+  "accepted_source_exact": true,
+  "provider_limit_seconds": 7200,
+  "worker_limit_seconds": 6600,
+  "internal_limit_seconds": 6300,
+  "status_at_submission": "RUNNING",
+  "test_outputs_reviewed": false,
+  "result_claim": "none; awaiting complete comparison",
+  "free_quota_seconds_before_submission": 39705.284
+}
