@@ -7,6 +7,36 @@ or causality; actual finite updates must still be evaluated with update_predicti
 
 import torch
 
+from neuronpatch.grouped import validate_groups
+
+
+def shared_gradient_geometry(gradients, groups):
+    """Measure a fixed row-sharing constraint in effective-weight coordinates.
+
+    If delta W = S U, the trainable gradient is S.T G (a sum). The orthogonal
+    projection of G into that update space is S (S.T S)^-1 S.T G (group means).
+    Confusing these two makes large groups look artificially stronger. Retained
+    energy compares spaces under equal effective-weight Frobenius norm, not Adam
+    steps, training outcomes, or cross-example generalization.
+    """
+    if gradients.ndim != 2 or not gradients.numel() or not torch.isfinite(gradients).all():
+        raise ValueError("Finite nonempty row gradients required")
+    groups = validate_groups(groups, gradients.shape[0])
+    values = gradients.detach().to(device="cpu", dtype=torch.float64)
+    labels = torch.tensor(groups)
+    counts = torch.bincount(labels)
+    summed = values.new_zeros((len(counts), values.shape[1])).index_add_(0, labels, values)
+    projected = (summed / counts[:, None]).index_select(0, labels)
+    total_energy = float(values.square().sum())
+    return {
+        "parameter_gradient": summed,
+        "projected_weight_gradient": projected,
+        "retained_energy_fraction": (
+            float(projected.square().sum()) / total_energy if total_energy > 0 else None
+        ),
+        "group_sizes": counts.tolist(),
+    }
+
 
 def compact_gradients(capture, *, incoming, outgoing, indices):
     """Reconstruct selected incoming rows and outgoing columns, never full weights.

@@ -5,6 +5,7 @@ import pytest
 import torch
 from torch import nn
 
+from experiments.relation_learning.gradient_agreement import shared_gradient_geometry
 from neuronpatch import NeuronPatch
 from neuronpatch.grouped import GroupedRowPatch
 from neuronpatch.layers import RowPatch
@@ -31,6 +32,12 @@ def test_shared_update_forward_input_gradient_and_summed_group_gradient():
     torch.testing.assert_close(x.grad, rx.grad)
     torch.testing.assert_close(patch.delta.grad[0], rows.grad[1])
     torch.testing.assert_close(patch.delta.grad[1], rows.grad[0] + rows.grad[2])
+    geometry = shared_gradient_geometry(rows.grad, [1, 0, 1])
+    torch.testing.assert_close(geometry["parameter_gradient"], patch.delta.grad)
+    projected = geometry["projected_weight_gradient"]
+    # Residual is orthogonal to every allowed shared update, including uneven groups.
+    direction = torch.randn_like(patch.delta).index_select(0, patch.groups)
+    assert float(((rows.grad - projected) * direction).sum()) == pytest.approx(0, abs=1e-12)
     assert base.weight.grad is None and base.bias.grad is None
     merged = patch.merged_linear()
     torch.testing.assert_close(merged(x), actual)
@@ -40,6 +47,18 @@ def test_shared_update_forward_input_gradient_and_summed_group_gradient():
     torch.testing.assert_close(base.weight, original.weight, rtol=0, atol=0)
     assert merged.weight.data_ptr() != base.weight.data_ptr()
     assert patch.delta.numel() == 10
+
+
+def test_shared_geometry_distinguishes_cancellation_from_group_size_gain():
+    same = torch.tensor([[2.0, 0.0], [2.0, 0.0], [2.0, 0.0]])
+    result = shared_gradient_geometry(same, [0, 0, 0])
+    assert result["retained_energy_fraction"] == pytest.approx(1)
+    torch.testing.assert_close(result["parameter_gradient"], torch.tensor([[6.0, 0.0]]).double())
+    torch.testing.assert_close(result["projected_weight_gradient"], same.double())
+    opposite = torch.tensor([[2.0, 0.0], [-2.0, 0.0]])
+    assert shared_gradient_geometry(opposite, [0, 0])["retained_energy_fraction"] == 0
+    assert shared_gradient_geometry(opposite, [0, 1])["retained_energy_fraction"] == 1
+    assert shared_gradient_geometry(torch.zeros(2, 2), [0, 0])["retained_energy_fraction"] is None
 
 
 def test_singleton_groups_match_independent_rows_including_gradients():

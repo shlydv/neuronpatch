@@ -88,6 +88,19 @@ gradient-agreement result or default selection change follows. Candidate IDs and
 coordinate ordering must be identical across banks; separate example membership
 and discovery costs remain caller obligations.
 
+The same diagnostic now evaluates fixed shared-row groups against the actual
+`GroupedRowPatch` gradient. With membership matrix S and independent-row gradient
+G, the trainable gradient is `S.T G`, while the orthogonal effective-weight
+projection is `S (S.T S)^-1 S.T G`. The former sums group members; the latter
+averages them. Reporting the summed gradient norm as retained gradient energy
+would reward larger groups even when their update subspace is unchanged.
+The reported energy fraction uses the projection and an equal effective-weight
+Frobenius norm. It does not predict Adam's step or supply a new normalization
+default. Tests check uneven groups against autograd, orthogonality of the residual,
+and equal/opposite gradients; all21 grouped/selection/update tests pass. This
+enables a faithful grouping diagnostic without conflating representation quality
+with group-size-dependent optimization. No model result is inferred from it.
+
 Use this observer to compare frozen candidate supports and LoRA on the same
 development examples and actual optimization sequence. Record forecasts before
 each applied update; do not use measurements to silently change supports, rates
