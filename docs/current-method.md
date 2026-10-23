@@ -12,6 +12,13 @@ out of128. Two reference answers are mathematically wrong; the model is correct
 on both. The preset sixteen-error qualification fails, so no math adaptation
 run follows. Kaggle consumed2040.32 provider seconds. No GPU job is active.
 
+The next [candidate task](instruction-boundary-candidate.md) tests instruction
+boundaries while preserving useful table QA. A pinned source/data audit found
+that BIPIA's default builder embeds context in the system role and that its email
+slice is mostly unanswerable. The table training slice has900 questions over617
+contexts; document-disjoint splitting and paired clean/injected utility controls
+are required. No data protocol or GPU run for this task is frozen yet.
+
 ## Latest completed evidence
 
 The [relation-learning pilot](../experiments/relation_learning/complete_v2/REPORT.md)
