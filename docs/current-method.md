@@ -37,35 +37,38 @@ of its ranking score versus about 0.02% for random, without better trained quali
 The balanced support already attains 97.86% of the global score-only optimum.
 Improving this proxy or reallocating layers is not the next experiment.
 
-## Running experiment
+## Latest low-data result and next decision
 
-[Eight-task-example comparison](../experiments/relation_learning/low_data_v1/protocol.json),
-[accepted source record](../experiments/relation_learning/low_data_v1/frozen.json):
-one private free Kaggle T4 job, version 1, two-hour provider cap. Same tested worker,
-parameter budgets, 64 successful updates and two rates for LoRA, Fisher and two
-random supports. All arms receive eight task labels **plus twenty preservation
-labels**; Fisher discovery uses only those eight task labels.
+The [eight-task-example pilot is complete](../experiments/relation_learning/complete_low_data_v1/REPORT.md).
+With twenty additional preservation labels and the same 64 updates and parameter
+budgets, validation-selected LoRA scores 126/128; Fisher 121/128; random seeds
+43 and 71 score 112/128 and 122/128. All four score 64/64 on original wording;
+all remaining errors occur under transfer wording. Random seed 43 additionally
+loses one of eight utility answers. All four retain sixteen scope controls.
 
-Confirmation uses 128 task questions with four fresh name sets and two known
-wording variants, sixteen fresh-name scope questions and eight fresh utility
-questions. Prior utility controls are marked exposed. Local tests and all 336
-pinned-tokenizer checks pass. **No completed comparison result is available.**
+The selection-advantage criterion fails. The all-baselines-near-perfect ceiling
+criterion also does not trigger; do not rewrite either criterion. The unselected
+high-rate Fisher fit scores 56/128 with substantial control damage. Every fit is
+numerically finite with zero retries. Independent checks verify all 3,024 outputs
+and eight teacher/adapter records; Kaggle completed in 2,660.59 seconds.
 
-Before test inspection, freeze each condition's rate using validation completion
-loss. Independently verify tensors and training controls, then review complete
-answers. Exact misses are not automatically semantic errors. The
-[explicit semantic-review tool](../experiments/relation_learning/adjudicate.py)
-requires response-bound judgments for nonexact answers and rejects incomplete,
-stale or contradictory reviews. It reproduces all prior 2,880 labels and paired
-bank counts; it is bookkeeping, not an independent semantic judge.
+The recorded sparse condition cycles are about twice LoRA's, including export,
+evaluation and restoration; this is not a pure training-speed measurement.
+Discovery adds 34.42 seconds. No data or actual-cost advantage is demonstrated.
 
-A promising result requires Fisher to improve by at least eight of 128 task
-answers over each selected comparator, with gains in both wording variants and
-no additional base-correct scope/utility regressions. That triggers replication,
-not superiority. If LoRA and both random supports each reach at least 124/128,
-retire this task as a selector discriminator at this parameter/update budget.
-Otherwise inspect errors before choosing another experiment. Report all rates,
-discovery overhead, parameter counts and actual compute cost.
+Original-wording validation loss does not reliably select transfer performance.
+One unselected random rate scores 127/128, but replacing the frozen selection
+with that test winner would be invalid. The next method comparison must match
+validation to intended deployment and use a broader task; these reviewed inputs
+are now exposed. No additional GPU job is running or submitted. Do not launch
+another format or support sweep on this test bank.
+
+The [semantic-review tool](../experiments/relation_learning/adjudicate.py) binds
+explicit nonexact judgments to inputs and responses, then computes paired
+corrections and damage. It is bookkeeping, not an independent semantic judge.
+The [token audit](../experiments/relation_learning/complete_low_data_v1/name_fragment_audit.json)
+also prevents mislabeling Fisher's “I” for Idris as pure truncation: it changes
+the first token and then emits EOS. Its internal cause remains unknown.
 
 ## What we have ruled out or learned
 

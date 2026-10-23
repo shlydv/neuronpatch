@@ -110,3 +110,11 @@ LoRA and random reach 64/64 fresh task answers versus 39/64 base; Fisher reaches
 produces empty utility responses. Selection provides no demonstrated advantage.
 Independent artifact verification and exact replay of the pre-repair successful
 LoRA fit pass. All reviewed test inputs are now development evidence.
+
+The [eight-task-example follow-up](../experiments/relation_learning/complete_low_data_v1/REPORT.md)
+completes eight fits and independently verifies 3,024 outputs. Selected LoRA
+scores 126/128, Fisher 121/128 and random 112/128 and 122/128. All selected arms
+solve original wording; errors occur on transfer wording. Selection superiority
+and the all-baselines-ceiling criteria both fail. The frozen validation choices
+are retained despite an unselected random rate scoring 127/128. No further
+support or formatting sweep is justified on these now-exposed test inputs.

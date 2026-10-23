@@ -1,0 +1,153 @@
+{
+  "provider": {
+    "provider": "Kaggle",
+    "started_utc": "2026-10-23T12:56:35.147960+00:00",
+    "gpu": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB\n",
+    "returncode": 0,
+    "elapsed_seconds": 2660.5888429340002
+  },
+  "discovery": {
+    "backward_passes": 8,
+    "training_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "score": "empirical_fisher",
+    "seconds": 34.419742082000084,
+    "layer_counts": [
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "fits": [
+    {
+      "condition": {
+        "id": "lora-43-0.0003",
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.0003
+      },
+      "seconds_including_verification_and_generation": 158.959271006,
+      "trainable_scalars": 1327104,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "lora-43-0.001",
+        "family": "lora",
+        "seed": 43,
+        "lr": 0.001
+      },
+      "seconds_including_verification_and_generation": 158.00656526900002,
+      "trainable_scalars": 1327104,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "paired_random-43-0.0003",
+        "family": "paired_random",
+        "seed": 43,
+        "lr": 0.0003
+      },
+      "seconds_including_verification_and_generation": 318.15670605399987,
+      "trainable_scalars": 1328640,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "paired_random-43-0.001",
+        "family": "paired_random",
+        "seed": 43,
+        "lr": 0.001
+      },
+      "seconds_including_verification_and_generation": 322.8740262790002,
+      "trainable_scalars": 1328640,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "paired_random-71-0.0003",
+        "family": "paired_random",
+        "seed": 71,
+        "lr": 0.0003
+      },
+      "seconds_including_verification_and_generation": 332.56234056200014,
+      "trainable_scalars": 1328640,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "paired_random-71-0.001",
+        "family": "paired_random",
+        "seed": 71,
+        "lr": 0.001
+      },
+      "seconds_including_verification_and_generation": 322.4522928439999,
+      "trainable_scalars": 1328640,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "paired_fisher-43-0.0003",
+        "family": "paired_fisher",
+        "seed": 43,
+        "lr": 0.0003
+      },
+      "seconds_including_verification_and_generation": 320.044376415,
+      "trainable_scalars": 1328640,
+      "gradient_retries": 0
+    },
+    {
+      "condition": {
+        "id": "paired_fisher-43-0.001",
+        "family": "paired_fisher",
+        "seed": 43,
+        "lr": 0.001
+      },
+      "seconds_including_verification_and_generation": 316.51431567300006,
+      "trainable_scalars": 1328640,
+      "gradient_retries": 0
+    }
+  ],
+  "fits_sha256": "fa5adf9c356a20886966081af8cead9b2c8dbc20b606379b0ba0664ba8fce244"
+}

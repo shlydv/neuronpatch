@@ -1,0 +1,53 @@
+{
+  "model": "paired_fisher-43-0.0003",
+  "scope": "Tokenizer and saved-output check only; no causal tracing",
+  "rows": [
+    {
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "expected": "Idris",
+      "expected_completion_tokens": [
+        764,
+        5963,
+        151645
+      ],
+      "actual_text": "I",
+      "actual_tokens": [
+        40,
+        151645
+      ],
+      "ended": true,
+      "truncated": false
+    },
+    {
+      "id": "target_test:interview:12:transfer:1:target_only",
+      "expected": "Idris",
+      "expected_completion_tokens": [
+        764,
+        5963,
+        151645
+      ],
+      "actual_text": "I",
+      "actual_tokens": [
+        40,
+        151645
+      ],
+      "ended": true,
+      "truncated": false
+    },
+    {
+      "id": "target_test:release:12:transfer:0:missing",
+      "expected": "UNKNOWN",
+      "expected_completion_tokens": [
+        51378,
+        151645
+      ],
+      "actual_text": "I",
+      "actual_tokens": [
+        40,
+        151645
+      ],
+      "ended": true,
+      "truncated": false
+    }
+  ]
+}

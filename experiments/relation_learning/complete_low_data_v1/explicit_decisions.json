@@ -1,0 +1,2519 @@
+{
+  "inputs_sha256": "095a4b4942bf046db7a41fde2f0c4360162b6f9a0425b5d657afa6552d5300de",
+  "scope": "All nonexact full responses inspected; complete reference matches checked against frozen labels. No independent human adjudication.",
+  "decisions": [
+    {
+      "model": "base",
+      "id": "train:interview:0:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "train:interview:0:original:0:missing",
+      "response_sha256": "65003c7a186430e894caa11372a179dbdcac2cbf99724dacc1455efe1c2582a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "train:release:1:original:1:missing",
+      "response_sha256": "92c138b84412fa98ec92b3fdf75f22157d757c8a50de63de2c8ef333c433e085",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "preserve:tournament:0:original:1:target_only",
+      "response_sha256": "417c101bcec2dfd00f5fd4bf53655d65a423fde909a2d4bc2176db73e2a02a1f",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:grant:0:original:0:target_last",
+      "response_sha256": "d5383ef0cc53e61b6a6195abf743b992d6b2df2a2e5d684e017cd355c1222121",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:grant:0:original:0:target_first",
+      "response_sha256": "d5383ef0cc53e61b6a6195abf743b992d6b2df2a2e5d684e017cd355c1222121",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:grant:0:original:0:target_only",
+      "response_sha256": "d5383ef0cc53e61b6a6195abf743b992d6b2df2a2e5d684e017cd355c1222121",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:grant:0:original:1:target_last",
+      "response_sha256": "9ccd4c7f3e81b7ecdcd5c48d706052d90b2072bee122c2c84275adb84a7dd605",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:grant:0:original:1:target_first",
+      "response_sha256": "9ccd4c7f3e81b7ecdcd5c48d706052d90b2072bee122c2c84275adb84a7dd605",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:grant:0:original:1:target_only",
+      "response_sha256": "9ccd4c7f3e81b7ecdcd5c48d706052d90b2072bee122c2c84275adb84a7dd605",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:utility:0",
+      "response_sha256": "a1b7eb2ee7a6aded8dda4e6cf30826f5afffb28a5597ee9389e91eb326d4e319",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:utility:2",
+      "response_sha256": "9107eb80c506d769ec83ac866ea24e7ae59c6aa459568a72aca252bda3fcd160",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "preserve:utility:3",
+      "response_sha256": "19ccf96dcfc439dab20203df63f9187321b6fe3283cd15ec862d4f62c67d1a60",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:4:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:4:original:0:missing",
+      "response_sha256": "df5ac68b2b28a4a76416a4f3f80847baf8face15d604b9aec753c4e65979c0dd",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:4:original:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:4:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:4:original:1:missing",
+      "response_sha256": "4cfcc0421af179aa45a34f44bcf33abc933c22f344468572916711eb981eee0c",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:5:original:0:target_last",
+      "response_sha256": "17ae1e2db4894ad7858e809b456e18fedab74fae1d044a5f3ed23c9ad542962c",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:5:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:5:original:0:missing",
+      "response_sha256": "feab60f2320c2f6af74c45cd85c6bacd687844fd84a4eaf3bc38a2674d18c97e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:5:original:1:target_last",
+      "response_sha256": "3f2c710cffadcdea7b00fa68196626850b258da29ef6cf44c094755b3539afeb",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:5:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_val:interview:5:original:1:missing",
+      "response_sha256": "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:release:4:original:0:missing",
+      "response_sha256": "df5ac68b2b28a4a76416a4f3f80847baf8face15d604b9aec753c4e65979c0dd",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:release:4:original:1:missing",
+      "response_sha256": "4cfcc0421af179aa45a34f44bcf33abc933c22f344468572916711eb981eee0c",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:release:5:original:0:missing",
+      "response_sha256": "feab60f2320c2f6af74c45cd85c6bacd687844fd84a4eaf3bc38a2674d18c97e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_val:release:5:original:1:missing",
+      "response_sha256": "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:original:0:target_first",
+      "response_sha256": "755b59d684fa21b6fc9a48ec746092e8a3c6579834004cce29f025bd0b357a1e",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:original:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:original:1:target_first",
+      "response_sha256": "9611e4cf755c1228802f7430b39e0b170ee259f5a89972aea097e717331baf64",
+      "correct": false,
+      "reason": "Incomplete response at generation cap; partial reasoning does not count as a complete answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:original:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:original:0:target_last",
+      "response_sha256": "418029047b6a6014dfd566392d4af8270d8512d20166a50096108a4177da27b6",
+      "correct": false,
+      "reason": "Incomplete response at generation cap; partial reasoning does not count as a complete answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:original:0:target_first",
+      "response_sha256": "75147ccbf22c800d015475dc362bfee928444c056aec3d013e157ee6bdf0156d",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:original:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:original:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:transfer:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:11:transfer:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:original:0:target_last",
+      "response_sha256": "c30cf7e572d9c8ec7a48fc8bb3e5494aeaf252d8282bbdeb9a6a3bfb2bd220f0",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:original:0:target_first",
+      "response_sha256": "5f64f408d1d5c03ba31d1ee247657e9c4f6705337c68a6938b4019b5e978d42f",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:original:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:original:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:transfer:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:12:transfer:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:original:0:target_last",
+      "response_sha256": "e8411b7e89e0f8eb4a5498934a32a212383d8ee505b57c8508d4034e300b5800",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:original:0:target_first",
+      "response_sha256": "3e042b810f762a9ee9cecf16881835684dc819572b6e33436878d3027f3e1077",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:original:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:original:1:target_first",
+      "response_sha256": "cb796d86fef20a9fce5146cb16ae051c8625ff6aa770fa97a45d253377068259",
+      "correct": false,
+      "reason": "Incomplete response at generation cap; partial reasoning does not count as a complete answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:original:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:transfer:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:transfer:1:target_first",
+      "response_sha256": "579250e0a832808ad49ad5858a49c6a4a36913d17032d72ac2ded35008753efe",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "target_test:interview:13:transfer:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:10:original:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:10:original:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:11:original:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:11:original:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:11:transfer:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:11:transfer:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:12:original:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:12:original:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:12:transfer:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:13:original:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:13:original:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:13:transfer:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "target_test:release:13:transfer:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "scope_val:grant:9:original:0:target_last",
+      "response_sha256": "185d8f6f38e2afb489698615ff0a2fce12a9de76a263377e7ff3c8025c16b3d3",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_val:grant:9:original:0:target_first",
+      "response_sha256": "185d8f6f38e2afb489698615ff0a2fce12a9de76a263377e7ff3c8025c16b3d3",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_val:grant:9:original:0:target_only",
+      "response_sha256": "185d8f6f38e2afb489698615ff0a2fce12a9de76a263377e7ff3c8025c16b3d3",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_val:grant:9:original:1:target_last",
+      "response_sha256": "006acda7a4208d71c5cc729fad8f1acf7ff4eb35a3984d8565e1c61784c1d785",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_val:grant:9:original:1:target_first",
+      "response_sha256": "006acda7a4208d71c5cc729fad8f1acf7ff4eb35a3984d8565e1c61784c1d785",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_val:grant:9:original:1:target_only",
+      "response_sha256": "006acda7a4208d71c5cc729fad8f1acf7ff4eb35a3984d8565e1c61784c1d785",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:tournament:14:original:0:target_last",
+      "response_sha256": "67a9780bfee4dc9414d2737911b41213125485059c207378aa0b93cd49539927",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:tournament:14:original:0:target_only",
+      "response_sha256": "67a9780bfee4dc9414d2737911b41213125485059c207378aa0b93cd49539927",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:tournament:14:original:1:target_only",
+      "response_sha256": "d711a916e86f2daa70a06fa593eb5825fe2db64a4c608dba2d9bb610546ab92b",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:grant:14:original:0:target_last",
+      "response_sha256": "cd5af54b3f56eead86d578e649c477da963a83484b7c6864024b5431e8a90fa6",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:grant:14:original:0:target_first",
+      "response_sha256": "cd5af54b3f56eead86d578e649c477da963a83484b7c6864024b5431e8a90fa6",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:grant:14:original:0:target_only",
+      "response_sha256": "cd5af54b3f56eead86d578e649c477da963a83484b7c6864024b5431e8a90fa6",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:grant:14:original:1:target_last",
+      "response_sha256": "1d06bd1178e08d8c9b6dec72c5ee72cb9c81de229a1541f2cff54ba0c255c472",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:grant:14:original:1:target_first",
+      "response_sha256": "1d06bd1178e08d8c9b6dec72c5ee72cb9c81de229a1541f2cff54ba0c255c472",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "scope_test:grant:14:original:1:target_only",
+      "response_sha256": "1d06bd1178e08d8c9b6dec72c5ee72cb9c81de229a1541f2cff54ba0c255c472",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:tournament:0:0:target_only",
+      "response_sha256": "f61518c5b737d7f1b76caf4fc5099a408761a2eb89e5d4d8f3cec26d25286d5f",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:tournament:0:1:target_last",
+      "response_sha256": "177562adffd8853ad63d2bb993689f956282eb01d9ce126fb6c675e0f6b5e7c4",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:tournament:0:1:target_only",
+      "response_sha256": "177562adffd8853ad63d2bb993689f956282eb01d9ce126fb6c675e0f6b5e7c4",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:tournament:1:0:target_first",
+      "response_sha256": "58efa395cba9ecc7487af5bc2e3e5e9f6e564b99bf22d3a3000814884a3722b3",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:tournament:1:0:target_only",
+      "response_sha256": "58efa395cba9ecc7487af5bc2e3e5e9f6e564b99bf22d3a3000814884a3722b3",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:tournament:2:0:target_only",
+      "response_sha256": "c6988ed407a9c3529c382a636f6604e7a5ceff63e2ac52bd51031baee8010528",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:0:0:target_first",
+      "response_sha256": "129c89e3517a7640404e4fd0343a06f1a0ecabc12d7ddeded1299117dfdb23a0",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:0:0:missing",
+      "response_sha256": "ef9ee12da914a3b038e4a49e4a4e6e8f5335ae5d3ef4c2182c0e3fd8189d0ee8",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:0:1:target_first",
+      "response_sha256": "e0f4942b18e6d0c7a0e89040394458a51a72a2f88e78a91b183d70f8cc558aad",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:0:1:missing",
+      "response_sha256": "2dec869d2398830507e7329e1e162709a0a71443d4c37a7b714de6c9b3014eeb",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:1:0:target_last",
+      "response_sha256": "365f1127c148c2335b378b43b6937e0c724d1c7539ca18008c48f4817f87659f",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:1:0:target_first",
+      "response_sha256": "45d508a4608447251901155ecf3c5f7e17563e4f8f40490a14fa8b07b116af2b",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:1:0:missing",
+      "response_sha256": "c5355d0949a1985263f7a3f39699b17f89f29d50f50897995fde0af3b7301887",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:1:1:target_last",
+      "response_sha256": "83b65b885c0bd2f4af7d37125fb2addd0f7a856fb7f12438ddc3a642a9784709",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:1:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:1:1:missing",
+      "response_sha256": "e48ac8293ace3b6f3d7f107a6e2dd76595d5e6599f759a82c075517189d2acb3",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:2:0:target_first",
+      "response_sha256": "05dc0052ca7b419dbee1b8c95dddfb45f4df1d588f3a4929875eefa0113fc868",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:2:0:missing",
+      "response_sha256": "627fc8141438dfcf08b6809cb8ff87c6922551c423382f4d655e1fdc8ccb3940",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:2:1:target_first",
+      "response_sha256": "02b13beb52867e3b34018f24264ac690b14ae9a8bfeebe5ae78f37eb0c571300",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:interview:2:1:missing",
+      "response_sha256": "af9027805d0adc619341cd0b1ff89bc130eac0533246b27562544ec986edae33",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:0:0:target_last",
+      "response_sha256": "f8cd5bf1317598b496a6d63665c2cc0d0094dc4cf88bba64afc722d35bbead46",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:0:0:target_first",
+      "response_sha256": "f8cd5bf1317598b496a6d63665c2cc0d0094dc4cf88bba64afc722d35bbead46",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:0:0:target_only",
+      "response_sha256": "f8cd5bf1317598b496a6d63665c2cc0d0094dc4cf88bba64afc722d35bbead46",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:0:1:target_last",
+      "response_sha256": "ac5cddcebfa85fc80e05722c028b0a661d428f943fb3c0184aa19a2f8bedd067",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:0:1:target_first",
+      "response_sha256": "ac5cddcebfa85fc80e05722c028b0a661d428f943fb3c0184aa19a2f8bedd067",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:0:1:target_only",
+      "response_sha256": "ac5cddcebfa85fc80e05722c028b0a661d428f943fb3c0184aa19a2f8bedd067",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:1:0:target_last",
+      "response_sha256": "5a5334478c4598cb905797673dff4db5228c7b26c446317bf2bbec9a6021b659",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:1:0:target_first",
+      "response_sha256": "5a5334478c4598cb905797673dff4db5228c7b26c446317bf2bbec9a6021b659",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:1:0:target_only",
+      "response_sha256": "5a5334478c4598cb905797673dff4db5228c7b26c446317bf2bbec9a6021b659",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:1:1:target_last",
+      "response_sha256": "5cd11d02f5c832bd6c64c7d3deaff8cd2328ea271c6af3bc88c2c2845deb88cf",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:1:1:target_first",
+      "response_sha256": "5cd11d02f5c832bd6c64c7d3deaff8cd2328ea271c6af3bc88c2c2845deb88cf",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:1:1:target_only",
+      "response_sha256": "5cd11d02f5c832bd6c64c7d3deaff8cd2328ea271c6af3bc88c2c2845deb88cf",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:2:0:target_last",
+      "response_sha256": "e53c15840f1e5e98718d4f14bfc58159218e916f4a3c39af905749c05c73fa71",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:2:0:target_first",
+      "response_sha256": "e53c15840f1e5e98718d4f14bfc58159218e916f4a3c39af905749c05c73fa71",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:2:0:target_only",
+      "response_sha256": "e53c15840f1e5e98718d4f14bfc58159218e916f4a3c39af905749c05c73fa71",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:2:1:target_last",
+      "response_sha256": "a056e7957193ee22b0d22db2e9d964871f9eb43bedf991b03b95ce234ced1b54",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:2:1:target_first",
+      "response_sha256": "a056e7957193ee22b0d22db2e9d964871f9eb43bedf991b03b95ce234ced1b54",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:grant:2:1:target_only",
+      "response_sha256": "a056e7957193ee22b0d22db2e9d964871f9eb43bedf991b03b95ce234ced1b54",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:0:0:missing",
+      "response_sha256": "ef9ee12da914a3b038e4a49e4a4e6e8f5335ae5d3ef4c2182c0e3fd8189d0ee8",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:0:1:missing",
+      "response_sha256": "2dec869d2398830507e7329e1e162709a0a71443d4c37a7b714de6c9b3014eeb",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:1:0:missing",
+      "response_sha256": "c5355d0949a1985263f7a3f39699b17f89f29d50f50897995fde0af3b7301887",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:1:1:missing",
+      "response_sha256": "e48ac8293ace3b6f3d7f107a6e2dd76595d5e6599f759a82c075517189d2acb3",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:2:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:2:0:missing",
+      "response_sha256": "627fc8141438dfcf08b6809cb8ff87c6922551c423382f4d655e1fdc8ccb3940",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:release:2:1:missing",
+      "response_sha256": "af9027805d0adc619341cd0b1ff89bc130eac0533246b27562544ec986edae33",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "base",
+      "id": "exposed:utility_test:utility:0",
+      "response_sha256": "fd0ce5475d586ee4bca0b63b9ab4fcd637c2c80922f82145c8d990f64e3f4994",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:utility_test:utility:2",
+      "response_sha256": "873e1274dfad95b08fb49907c4694cf6a43f0872456d43ab629e0fbaf0ac3a90",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "exposed:utility_test:utility:6",
+      "response_sha256": "76ce0b80804d684e9f8c12bfd71ac85610216cda89c9fb6bbfbc74a11d5d4d17",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "utility_test:utility:0",
+      "response_sha256": "c274be4f2b220cf63ea23e4a3b205b89e0fc975fdb504c9406d0641a7287d530",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "utility_test:utility:2",
+      "response_sha256": "6a4c78b36229deb118802be7027d7cc37cf5f4011f263db5692ca8a7de8ac4e8",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "utility_test:utility:4",
+      "response_sha256": "f392087d3b27777e08f875dd4b20b4bfb7ea4a4a6defe278f1131fd0b88cbc44",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "base",
+      "id": "utility_test:utility:6",
+      "response_sha256": "cc0c812c284712143b6f67c628fc0a26bed56e2ddc62fbaad30826bbb3fd8e34",
+      "correct": true,
+      "reason": "Reviewed full response gives the correct requested answer in an explanatory sentence."
+    },
+    {
+      "model": "lora-43-0.0003",
+      "id": "target_test:interview:10:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "lora-43-0.0003",
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "lora-43-0.0003",
+      "id": "target_test:interview:12:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "lora-43-0.0003",
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "lora-43-0.0003",
+      "id": "target_test:interview:13:transfer:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "lora-43-0.0003",
+      "id": "target_test:interview:13:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "lora-43-0.001",
+      "id": "target_test:release:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "lora-43-0.001",
+      "id": "target_test:release:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:interview:11:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:interview:12:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:interview:13:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:11:transfer:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:11:transfer:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:12:transfer:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:13:transfer:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "target_test:release:13:transfer:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "exposed:release:1:0:missing",
+      "response_sha256": "c5355d0949a1985263f7a3f39699b17f89f29d50f50897995fde0af3b7301887",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "id": "exposed:release:1:1:missing",
+      "response_sha256": "e48ac8293ace3b6f3d7f107a6e2dd76595d5e6599f759a82c075517189d2acb3",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:11:transfer:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:11:transfer:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:12:transfer:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:12:transfer:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:13:transfer:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:interview:13:transfer:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:11:transfer:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:11:transfer:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:12:transfer:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:12:transfer:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:13:transfer:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "target_test:release:13:transfer:1:missing",
+      "response_sha256": "6e5f3712838fc51d7eeb6a98431db05e04f3c4c595b3d652f42ffe70b47611a9",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "exposed:utility_test:utility:7",
+      "response_sha256": "2c598436e5575a5769b69986014588d52c2698414b623e81b2e776766c30eaba",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "id": "utility_test:utility:4",
+      "response_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "id": "target_test:interview:10:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "id": "target_test:interview:11:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "id": "target_test:interview:12:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "id": "target_test:interview:13:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "response_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "correct": false,
+      "reason": "The answer I is not the requested complete name Idris; token audit shows an incorrect first token followed by EOS, not merely a correct-token prefix cut short."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:interview:12:transfer:1:target_only",
+      "response_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "correct": false,
+      "reason": "The answer I is not the requested complete name Idris; token audit shows an incorrect first token followed by EOS, not merely a correct-token prefix cut short."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:release:10:transfer:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:release:10:transfer:1:missing",
+      "response_sha256": "a86b18c73aa8bca8367f8b0beff85408ed33f27dfc52b367da3a10b854122953",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:release:11:transfer:1:missing",
+      "response_sha256": "f6b6aad7a7690810466cb5288aea79c4eccd72d05bae7ab16be65bf9b3b6538e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:release:12:transfer:0:missing",
+      "response_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "id": "target_test:release:13:transfer:0:missing",
+      "response_sha256": "67ecdc9dcb3c9cdf085025caf90d44f2d413c6d25bd4f42c6a5506281b2d0042",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:tournament:0:original:1:target_last",
+      "response_sha256": "cf9e8f8db24f2351753dd8d80e4c4539e4050200a1d1a8938722461398795550",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:tournament:0:original:1:target_first",
+      "response_sha256": "cf9e8f8db24f2351753dd8d80e4c4539e4050200a1d1a8938722461398795550",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:tournament:0:original:1:missing",
+      "response_sha256": "cf9e8f8db24f2351753dd8d80e4c4539e4050200a1d1a8938722461398795550",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:tournament:0:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:grant:0:original:1:target_last",
+      "response_sha256": "cf9e8f8db24f2351753dd8d80e4c4539e4050200a1d1a8938722461398795550",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:grant:0:original:1:target_first",
+      "response_sha256": "cf9e8f8db24f2351753dd8d80e4c4539e4050200a1d1a8938722461398795550",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:grant:0:original:1:missing",
+      "response_sha256": "cf9e8f8db24f2351753dd8d80e4c4539e4050200a1d1a8938722461398795550",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "preserve:grant:0:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:4:original:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:4:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:4:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:4:original:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:4:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:4:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:5:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:5:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:5:original:1:target_first",
+      "response_sha256": "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:interview:5:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:release:4:original:1:missing",
+      "response_sha256": "4cfcc0421af179aa45a34f44bcf33abc933c22f344468572916711eb981eee0c",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:release:4:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:release:5:original:0:missing",
+      "response_sha256": "feab60f2320c2f6af74c45cd85c6bacd687844fd84a4eaf3bc38a2674d18c97e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_val:release:5:original:1:missing",
+      "response_sha256": "0fe9877170f58a0b7a7969545172bfe7eb9c4420b8b0a1f33b4cd2c41ead163e",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:original:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:original:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:transfer:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:transfer:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:10:transfer:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:original:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:transfer:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:transfer:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:11:transfer:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:original:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:original:1:target_first",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:original:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:transfer:1:target_last",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:transfer:1:target_first",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:transfer:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:12:transfer:1:target_only",
+      "response_sha256": "78b5b5558f2c83de7c6e3986ec7b948b7d2a973360c5ac8b5870f4dd702b8fa8",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:original:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:original:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:transfer:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:transfer:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:interview:13:transfer:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:original:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:original:0:missing",
+      "response_sha256": "770a4576ac4e2e1715bc1af1b918ad1582a59d1a98c2baef0fa84ba680cd6b78",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:transfer:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:transfer:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:10:transfer:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:original:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:transfer:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:transfer:0:missing",
+      "response_sha256": "ba9b353684f9ae6badc6e11a2f534d3a0a6cd4d625174b2e6b216ba32498c524",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:transfer:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:11:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:12:original:0:missing",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:12:original:1:missing",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:12:transfer:0:target_first",
+      "response_sha256": "311aaae3685881643e994c2a29cfffab3f86df63b0a8e6ecec0745070625bb3b",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:12:transfer:1:target_first",
+      "response_sha256": "95a4430b4ef5c575965fffea1261b8228cccb11f9921d121ee103a95dcf864da",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:12:transfer:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:13:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:13:transfer:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:13:transfer:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:13:transfer:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:13:transfer:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "target_test:release:13:transfer:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_val:tournament:9:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_val:tournament:9:original:1:target_first",
+      "response_sha256": "37493edc738e51f660c6902dcfbd5483be865243cc79892eebf618089f2b8733",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_val:tournament:9:original:1:missing",
+      "response_sha256": "37493edc738e51f660c6902dcfbd5483be865243cc79892eebf618089f2b8733",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_val:grant:9:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_val:grant:9:original:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:tournament:14:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:tournament:14:original:0:missing",
+      "response_sha256": "493c93bece75a330b5270c6dc483f761c122d6d4f4fbfacdc0bb495c21f75a82",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:tournament:14:original:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:tournament:14:original:1:missing",
+      "response_sha256": "ace1731bf2e87749c5836683c7b8a5f953d7bdd9150f653e8a687c99d8532181",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:grant:14:original:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:grant:14:original:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "scope_test:grant:14:original:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:0:0:target_first",
+      "response_sha256": "ef9ee12da914a3b038e4a49e4a4e6e8f5335ae5d3ef4c2182c0e3fd8189d0ee8",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:0:0:missing",
+      "response_sha256": "ef9ee12da914a3b038e4a49e4a4e6e8f5335ae5d3ef4c2182c0e3fd8189d0ee8",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:0:1:target_first",
+      "response_sha256": "2dec869d2398830507e7329e1e162709a0a71443d4c37a7b714de6c9b3014eeb",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:0:1:missing",
+      "response_sha256": "2dec869d2398830507e7329e1e162709a0a71443d4c37a7b714de6c9b3014eeb",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:1:0:target_first",
+      "response_sha256": "c5355d0949a1985263f7a3f39699b17f89f29d50f50897995fde0af3b7301887",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:1:0:missing",
+      "response_sha256": "c5355d0949a1985263f7a3f39699b17f89f29d50f50897995fde0af3b7301887",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:1:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:1:1:missing",
+      "response_sha256": "e48ac8293ace3b6f3d7f107a6e2dd76595d5e6599f759a82c075517189d2acb3",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:2:0:target_first",
+      "response_sha256": "627fc8141438dfcf08b6809cb8ff87c6922551c423382f4d655e1fdc8ccb3940",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:2:0:missing",
+      "response_sha256": "627fc8141438dfcf08b6809cb8ff87c6922551c423382f4d655e1fdc8ccb3940",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:2:1:target_first",
+      "response_sha256": "af9027805d0adc619341cd0b1ff89bc130eac0533246b27562544ec986edae33",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:tournament:2:1:missing",
+      "response_sha256": "af9027805d0adc619341cd0b1ff89bc130eac0533246b27562544ec986edae33",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:0:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:0:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:0:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:0:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:0:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:0:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:1:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:1:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:1:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:1:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:1:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:1:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:2:0:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:2:0:target_first",
+      "response_sha256": "627fc8141438dfcf08b6809cb8ff87c6922551c423382f4d655e1fdc8ccb3940",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:2:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:2:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:interview:2:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:0:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:0:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:1:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:1:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:1:1:target_last",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:1:1:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:1:1:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:2:0:target_last",
+      "response_sha256": "d2ea46bd704b2e85f0987eff67209995ede6b17578d916e42e7c0dfa8d577de6",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:2:0:target_first",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:grant:2:0:target_only",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:release:0:0:missing",
+      "response_sha256": "ef9ee12da914a3b038e4a49e4a4e6e8f5335ae5d3ef4c2182c0e3fd8189d0ee8",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:release:0:1:missing",
+      "response_sha256": "2dec869d2398830507e7329e1e162709a0a71443d4c37a7b714de6c9b3014eeb",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:release:1:0:missing",
+      "response_sha256": "c5355d0949a1985263f7a3f39699b17f89f29d50f50897995fde0af3b7301887",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:release:1:1:missing",
+      "response_sha256": "e48ac8293ace3b6f3d7f107a6e2dd76595d5e6599f759a82c075517189d2acb3",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:release:2:0:missing",
+      "response_sha256": "627fc8141438dfcf08b6809cb8ff87c6922551c423382f4d655e1fdc8ccb3940",
+      "correct": false,
+      "reason": "Reviewed answer supplies a name or unsupported fragment despite missing evidence for the requested relation."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:utility_test:utility:0",
+      "response_sha256": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:utility_test:utility:3",
+      "response_sha256": "943077f0507ddf71e79a6b07cdc9a1f452bab07502be36ba125a6f5250038012",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:utility_test:utility:4",
+      "response_sha256": "d2ea46bd704b2e85f0987eff67209995ede6b17578d916e42e7c0dfa8d577de6",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:utility_test:utility:6",
+      "response_sha256": "401133a5a31266432a69f7be1858b12a1c9334b94a3d2402e0894085b83aa55a",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "exposed:utility_test:utility:7",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_val:utility:0",
+      "response_sha256": "5dd272b4f316b776a7b8e3d0894b37e1e42be3d5d3b204b8a5836cc50597a6b1",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_val:utility:2",
+      "response_sha256": "c876e4ccf50c658dfc4114f887975dea7c51446f49431e79bd4431b8e1488362",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_test:utility:0",
+      "response_sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_test:utility:4",
+      "response_sha256": "d2ea46bd704b2e85f0987eff67209995ede6b17578d916e42e7c0dfa8d577de6",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_test:utility:5",
+      "response_sha256": "27f9794ea1d28464f2fef41d72750f00879f11fdef764575d17793221e02bd8d",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_test:utility:6",
+      "response_sha256": "e61a4dbddf44fa056118cc5aea0d5b56f86d60cf0a4891f51184e0ac991616d5",
+      "correct": false,
+      "reason": "Reviewed full answer is incorrect or fails the requested operation; it is not a valid wording alternative."
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "id": "utility_test:utility:7",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "correct": false,
+      "reason": "Reviewed answer abstains despite sufficient evidence for the requested answer."
+    }
+  ]
+}

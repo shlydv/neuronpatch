@@ -22,6 +22,11 @@ raises held-out task accuracy from 39/64 to 64/64 with LoRA and random patches,
 and 63/64 with Fisher-selected patches. Selection has no demonstrated advantage;
 all rates and preservation failures are reported.
 
+The [eight-task-example follow-up](experiments/relation_learning/complete_low_data_v1/REPORT.md)
+also finds no Fisher advantage: selected LoRA reaches 126/128, Fisher 121/128,
+and random supports 112/128 and 122/128. Transfer wording reveals errors that
+original-wording validation loss misses; all rates and control failures are retained.
+
 Start with the [current method decision](docs/current-method.md) for the active
 hypothesis and decision boundary. The [experiment history](docs/experiment-history.md)
 preserves the earlier transfer, preservation and failure investigations, with
