@@ -1,0 +1,9 @@
+{
+  "accepted_script_exact": true,
+  "bundled_file_hashes_verified": 47,
+  "all_files_match_frozen_git_revision": "7db5edbff605b3a474a00d79b6d519a56db1520d",
+  "source_sha256": "bdd26afacde4c6557fb2df4ea9a9109730123583e8f9b4e0dcc92a3b65d0a6a4",
+  "execution_submission_checked": true,
+  "execution_submission_sha256": "557ed3109e853fbaacfc8a031e6e7764f3b822d8368eea47c1ebdab912d885c5",
+  "frozen_protocol_exact": true
+}

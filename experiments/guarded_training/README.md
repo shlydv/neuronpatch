@@ -1,7 +1,10 @@
 # Measured preservation during fitting
 
-Experimental implementation of the next method candidate. **No pretrained
-result or advantage over LoRA has been established for this loop.**
+Experimental implementation. The [completed eight-fit pilot](complete_v1/REPORT.md)
+fails its frozen advancement criteria: risk-aware selection, random and LoRA
+each transfer3/8 answers. **No advantage over LoRA is established.** A saved-logit
+audit also finds that its preservation rule rejects valid alias changes. The
+replacement contract remains experimental; see the [current decision](../../docs/current-method.md).
 
 The [completed direction calibration](../functional_selection/complete_v2/REPORT.md)
 found a useful gain/risk ranking but unreliable finite quadratic risk prediction.
@@ -42,7 +45,7 @@ Canonical-answer contexts and cached base-generation contexts differ; that
 choice must remain explicit. A no-edit result is permitted and is not counted
 as successful adaptation.
 
-## Next pretrained comparison
+## Completed pretrained comparison
 
 The [frozen protocol](protocol_v1.json) fixes eight fits on Qwen3-4B, with
 60 proposals and four backtrack scales at most. Each method uses the same
@@ -53,9 +56,10 @@ not universal safety thresholds. Model loading/worker execution has a3000-second
 internal limit, the worker process3300seconds, and a requested provider session
 limit5400seconds. Setup subprocesses separately have300/300/900-second limits;
 none of these bounds queue wait.
-The [accepted Kaggle version1](launch_v1.json) has byte-identical frozen source,
-is running at its recorded check, and worker logs confirm model loading and
-the first gradient-selected fit. Its source and criteria remain fixed.
+The [accepted Kaggle version1](launch_v1.json) has byte-identical frozen source
+and is COMPLETE. All eight fits and806 generated observations are independently
+verified; the source and criteria remain fixed. The [report](complete_v1/REPORT.md)
+records output review, failed criteria and the protection-contract diagnosis.
 
 Use identical measured protection and stopping for gradient-selected paired
 neurons, gain/risk-selected neurons, random paired neurons, and official LoRA.
@@ -81,3 +85,29 @@ candidate win. Cached supports cannot establish measured whole-pipeline speed.
 ```sh
 PYTHONPATH=.:src python -m pytest -q tests/test_guarded_step.py tests/test_guarded_training.py
 ```
+
+## Saved-output contract diagnosis
+
+`response_sets.py` is an experimental finite-response marginal likelihood helper,
+not a semantic judge or a protected-training recipe. Its tests use independent
+probability trees and check gradients, missing branches, duplicates, EOS and
+FP16/BF16 accumulation. The saved-endpoint audit requires the private, already
+downloaded research artifacts and the cached pinned tokenizer; it loads no model.
+Use a new output filename because audit outputs are created exclusively.
+
+```sh
+PYTHONPATH=.:src python -m pytest -q tests/test_response_sets.py
+PYTHONPATH=.:src python -m experiments.guarded_training.contract_audit \
+  --parent artifacts/paired_mlp_v1/kaggle_download/paired-results/results \
+  --results artifacts/guarded_training_v1/kaggle_download/guarded-results/results \
+  --parent-proof artifacts/paired_mlp_v1/integrity_v1.json \
+  --result-proof artifacts/guarded_training_v1/integrity_v1.json \
+  --protocol experiments/guarded_training/protocol_v1.json \
+  --output /tmp/neuronpatch-contract-audit.json
+```
+
+These conditional probabilities cover supplied finite strings, not every
+semantically valid punctuation/case/wording variant accepted by a human or a
+normalizing scorer. Unenumerated valid responses can still cause false alarms.
+Known successful and harmful endpoint controls must qualify any next guard;
+the complete-answer evaluation remains independent and necessary.

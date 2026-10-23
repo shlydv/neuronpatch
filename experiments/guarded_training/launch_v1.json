@@ -5,7 +5,7 @@
   "kernel_id": 140234615,
   "accepted_version": 1,
   "accepted_utc": "2026-10-22T15:33:20.163379+00:00",
-  "status": "RUNNING",
+  "status": "COMPLETE",
   "ui_verified_session_id": 361183228,
   "source_sha256": "bdd26afacde4c6557fb2df4ea9a9109730123583e8f9b4e0dcc92a3b65d0a6a4",
   "script_bytes": 203117,
@@ -16,7 +16,6 @@
   "provider_session_timeout_requested_seconds": 5400,
   "provider_timeout_enforcement_live_verified": false,
   "worker_script_progress_confirmed": true,
-  "observed_phase": "Model loaded;case0 gradient-selected fit started. No completed scientific result yet.",
   "initial_request": "HTTP400 rejection,with title/address mismatch warning. Root response body was not retained. A complete own-notebook inventory found no matching notebook. Corrected the title metadata only;the accepted script and protocol are byte-identical.",
   "metadata_correction": {
     "old_title": "neuronpatch measured preservation training v1 20261022",
@@ -24,5 +23,9 @@
     "scientific_code_changes": false,
     "builder_default_corrected_after_source_freeze_for_future_bundles": true
   },
-  "scope": "Eight fits on two exposed development facts;cached fixed supports;no fresh confirmation. Random and LoRA receive the same measured guard. No new recipe or superiority established."
+  "scope": "Eight fits on two exposed development facts;cached fixed supports;no fresh confirmation. Random and LoRA receive the same measured guard. No new recipe or superiority established.",
+  "latest_observed_utc": "2026-10-23T07:28:47.546611+00:00",
+  "initial_observed_phase": "Model loaded;case0 gradient-selected fit started. No completed scientific result yet.",
+  "observed_phase": "Live API confirms COMPLETE; return0; all eight fits and806 observations downloaded and independently verified. Frozen scientific criteria fail.",
+  "result_report": "complete_v1/REPORT.md"
 }

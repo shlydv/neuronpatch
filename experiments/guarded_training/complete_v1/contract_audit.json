@@ -1,0 +1,949 @@
+{
+  "post_hoc": true,
+  "new_model_executions": 0,
+  "frozen_criteria_changed": false,
+  "rows": [
+    {
+      "case": 0,
+      "method": "lora-43-0",
+      "canonical_mean_kl": 1.8867887882003576,
+      "canonical_worst_kl": 18.81237154427651,
+      "passes_frozen_guard": false,
+      "anchors": [
+        {
+          "id": "case-0-preserve-0",
+          "canonical_kl_mean": 4.328997041795135,
+          "canonical_kl_worst": 12.986887980359018,
+          "worst_prefix": "",
+          "base_top": "Scotland",
+          "edited_top": "United",
+          "covered_aliases": [
+            "United Kingdom"
+          ],
+          "uncovered_aliases": [
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ],
+          "covered_base_mass": 0.0005883125234202023,
+          "covered_edited_mass": 0.9996856783081611,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": false,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-0-preserve-1",
+          "canonical_kl_mean": 3.2290789560303326,
+          "canonical_kl_worst": 16.14023378835357,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9992003426712637,
+          "covered_edited_mass": 0.9999520894798386,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-0-preserve-2",
+          "canonical_kl_mean": 3.7626515622976364,
+          "canonical_kl_worst": 18.81237154427651,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9998485898645992,
+          "covered_edited_mass": 0.999982514963052,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-0",
+          "canonical_kl_mean": 3.134757376621611e-06,
+          "canonical_kl_worst": 6.0713962932723575e-06,
+          "worst_prefix": "",
+          "base_top": "Paris",
+          "edited_top": "Paris",
+          "covered_aliases": [
+            "Paris"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999886797713431,
+          "covered_edited_mass": 0.9999799558804296,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-16",
+          "canonical_kl_mean": 1.5071044119907562e-06,
+          "canonical_kl_worst": 2.257450983478293e-06,
+          "worst_prefix": "",
+          "base_top": "4",
+          "edited_top": "4",
+          "covered_aliases": [
+            "4"
+          ],
+          "uncovered_aliases": [
+            "four"
+          ],
+          "covered_base_mass": 0.9999995063265131,
+          "covered_edited_mass": 0.9999964381217505,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-24",
+          "canonical_kl_mean": 5.272172525216945e-07,
+          "canonical_kl_worst": 6.201575359909839e-07,
+          "worst_prefix": "",
+          "base_top": "Au",
+          "edited_top": "Au",
+          "covered_aliases": [
+            "Au"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999987295475337,
+          "covered_edited_mass": 0.9999978095677889,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        }
+      ],
+      "complete_answer_outcomes": {
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "frozen_losses": []
+        }
+      }
+    },
+    {
+      "case": 0,
+      "method": "paired_random-11-0",
+      "canonical_mean_kl": 1.8255937521019918,
+      "canonical_worst_kl": 15.110645849015581,
+      "passes_frozen_guard": false,
+      "anchors": [
+        {
+          "id": "case-0-preserve-0",
+          "canonical_kl_mean": 5.036906267300274,
+          "canonical_kl_worst": 15.110645849015581,
+          "worst_prefix": "",
+          "base_top": "Scotland",
+          "edited_top": "United",
+          "covered_aliases": [
+            "United Kingdom"
+          ],
+          "uncovered_aliases": [
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ],
+          "covered_base_mass": 0.0005883125234202023,
+          "covered_edited_mass": 0.9998312611913291,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": false,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-0-preserve-1",
+          "canonical_kl_mean": 2.904012053651708,
+          "canonical_kl_worst": 14.515257410850325,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9992003426712637,
+          "covered_edited_mass": 0.9999875082325719,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-0-preserve-2",
+          "canonical_kl_mean": 3.0126287537141843,
+          "canonical_kl_worst": 15.062387505857656,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9998485898645992,
+          "covered_edited_mass": 0.9999867402073369,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-0",
+          "canonical_kl_mean": 1.4328758502379912e-05,
+          "canonical_kl_worst": 1.4429213877953373e-05,
+          "worst_prefix": "",
+          "base_top": "Paris",
+          "edited_top": "Paris",
+          "covered_aliases": [
+            "Paris"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999886797713431,
+          "covered_edited_mass": 0.9999760626079238,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-16",
+          "canonical_kl_mean": 5.449722342287799e-07,
+          "canonical_kl_worst": 7.295630375381279e-07,
+          "worst_prefix": "",
+          "base_top": "4",
+          "edited_top": "4",
+          "covered_aliases": [
+            "4"
+          ],
+          "uncovered_aliases": [
+            "four"
+          ],
+          "covered_base_mass": 0.9999995063265131,
+          "covered_edited_mass": 0.999998867995515,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-24",
+          "canonical_kl_mean": 5.642150477935814e-07,
+          "canonical_kl_worst": 7.020295753612515e-07,
+          "worst_prefix": "Au",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "Au"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999987295475337,
+          "covered_edited_mass": 0.9999985803115693,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        }
+      ],
+      "complete_answer_outcomes": {
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "frozen_losses": []
+        }
+      }
+    },
+    {
+      "case": 0,
+      "method": "paired_mean-43-0",
+      "canonical_mean_kl": 2.17696783252483,
+      "canonical_worst_kl": 25.893276694729764,
+      "passes_frozen_guard": false,
+      "anchors": [
+        {
+          "id": "case-0-preserve-0",
+          "canonical_kl_mean": 8.631128976200813,
+          "canonical_kl_worst": 25.893276694729764,
+          "worst_prefix": "",
+          "base_top": "Scotland",
+          "edited_top": "United",
+          "covered_aliases": [
+            "United Kingdom"
+          ],
+          "uncovered_aliases": [
+            "the United Kingdom",
+            "UK",
+            "U.K.",
+            "Britain",
+            "Great Britain"
+          ],
+          "covered_base_mass": 0.0005883125234202023,
+          "covered_edited_mass": 0.999987763849325,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": false,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-0-preserve-1",
+          "canonical_kl_mean": 2.283412732676635,
+          "canonical_kl_worst": 11.405937213396314,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9992003426712637,
+          "covered_edited_mass": 0.999991112499104,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-0-preserve-2",
+          "canonical_kl_mean": 2.147222308299081,
+          "canonical_kl_worst": 10.734302301573067,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9998485898645992,
+          "covered_edited_mass": 0.9999893207688139,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-0",
+          "canonical_kl_mean": 3.70412399528508e-05,
+          "canonical_kl_worst": 6.806542065040944e-05,
+          "worst_prefix": "Paris",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "Paris"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999886797713431,
+          "covered_edited_mass": 0.9999894655227546,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-16",
+          "canonical_kl_mean": 8.185008792960247e-07,
+          "canonical_kl_worst": 1.6188885108014972e-06,
+          "worst_prefix": "4",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "4"
+          ],
+          "uncovered_aliases": [
+            "four"
+          ],
+          "covered_base_mass": 0.9999995063265131,
+          "covered_edited_mass": 0.9999999517658695,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-24",
+          "canonical_kl_mean": 5.1182316180842236e-06,
+          "canonical_kl_worst": 7.846571103975464e-06,
+          "worst_prefix": "",
+          "base_top": "Au",
+          "edited_top": "Au",
+          "covered_aliases": [
+            "Au"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999987295475337,
+          "covered_edited_mass": 0.9999915049137307,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        }
+      ],
+      "complete_answer_outcomes": {
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "frozen_losses": []
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "lora-43-0",
+      "canonical_mean_kl": 1.6315176856857188,
+      "canonical_worst_kl": 19.35937026366917,
+      "passes_frozen_guard": false,
+      "anchors": [
+        {
+          "id": "case-1-preserve-0",
+          "canonical_kl_mean": 1.0567047855847278e-05,
+          "canonical_kl_worst": 2.7556772008274777e-05,
+          "worst_prefix": "",
+          "base_top": "South",
+          "edited_top": "South",
+          "covered_aliases": [
+            "South Korea"
+          ],
+          "uncovered_aliases": [
+            "Republic of Korea",
+            "the Republic of Korea"
+          ],
+          "covered_base_mass": 0.9999931211293769,
+          "covered_edited_mass": 0.9999553761364683,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-1-preserve-2",
+          "canonical_kl_mean": 5.912200872240045,
+          "canonical_kl_worst": 17.812485870845087,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.11274406563359883,
+          "covered_edited_mass": 0.9998885618125015,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": false,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "canonical_kl_mean": 3.87688699927986,
+          "canonical_kl_worst": 19.35937026366917,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9931602226516217,
+          "covered_edited_mass": 0.9997336513859273,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-0",
+          "canonical_kl_mean": 6.0678387503454445e-06,
+          "canonical_kl_worst": 1.0078330008322922e-05,
+          "worst_prefix": "Paris",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "Paris"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999886797713431,
+          "covered_edited_mass": 0.9999857258439901,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-16",
+          "canonical_kl_mean": 8.491328248316776e-07,
+          "canonical_kl_worst": 1.4053490262622148e-06,
+          "worst_prefix": "4",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "4"
+          ],
+          "uncovered_aliases": [
+            "four"
+          ],
+          "covered_base_mass": 0.9999995063265131,
+          "covered_edited_mass": 0.9999971492398421,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-24",
+          "canonical_kl_mean": 7.585749768335148e-07,
+          "canonical_kl_worst": 1.2184778430679444e-06,
+          "worst_prefix": "Au",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "Au"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999987295475337,
+          "covered_edited_mass": 0.9999964208273131,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        }
+      ],
+      "complete_answer_outcomes": {
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "scope_test": {
+          "hits": 3,
+          "total": 4,
+          "frozen_losses": [
+            {
+              "id": "case-1-scope-test-2",
+              "base": "United Kingdom",
+              "edited": "United Kingdom of Great Britain and Northern Ireland"
+            }
+          ]
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "frozen_losses": []
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "paired_random-11-0",
+      "canonical_mean_kl": 1.2959537898253581,
+      "canonical_worst_kl": 16.485577354482583,
+      "passes_frozen_guard": false,
+      "anchors": [
+        {
+          "id": "case-1-preserve-0",
+          "canonical_kl_mean": 6.87847866902569e-05,
+          "canonical_kl_worst": 0.00020456921313805054,
+          "worst_prefix": "",
+          "base_top": "South",
+          "edited_top": "South",
+          "covered_aliases": [
+            "South Korea"
+          ],
+          "uncovered_aliases": [
+            "Republic of Korea",
+            "the Republic of Korea"
+          ],
+          "covered_base_mass": 0.9999931211293769,
+          "covered_edited_mass": 0.9997886174454012,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-1-preserve-2",
+          "canonical_kl_mean": 5.500617127702586,
+          "canonical_kl_worst": 16.485577354482583,
+          "worst_prefix": "",
+          "base_top": "Mexico",
+          "edited_top": "United",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.11274406563359883,
+          "covered_edited_mass": 0.999986417457495,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": false,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "canonical_kl_mean": 2.2750154328753585,
+          "canonical_kl_worst": 11.343759478189545,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9931602226516217,
+          "covered_edited_mass": 0.999966345712492,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-0",
+          "canonical_kl_mean": 1.0714969084224535e-05,
+          "canonical_kl_worst": 1.9819697237632994e-05,
+          "worst_prefix": "Paris",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "Paris"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999886797713431,
+          "covered_edited_mass": 0.999985054193577,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-16",
+          "canonical_kl_mean": 8.610552220345014e-06,
+          "canonical_kl_worst": 1.7190304791636635e-05,
+          "worst_prefix": "4",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "4"
+          ],
+          "uncovered_aliases": [
+            "four"
+          ],
+          "covered_base_mass": 0.9999995063265131,
+          "covered_edited_mass": 0.9999813172249233,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-24",
+          "canonical_kl_mean": 2.0680662088379265e-06,
+          "canonical_kl_worst": 2.5065449396066697e-06,
+          "worst_prefix": "",
+          "base_top": "Au",
+          "edited_top": "Au",
+          "covered_aliases": [
+            "Au"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999987295475337,
+          "covered_edited_mass": 0.9999940991430736,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        }
+      ],
+      "complete_answer_outcomes": {
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "scope_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "utility_test": {
+          "hits": 21,
+          "total": 23,
+          "frozen_losses": []
+        }
+      }
+    },
+    {
+      "case": 1,
+      "method": "paired_mean-43-0",
+      "canonical_mean_kl": 2.5124190252038767,
+      "canonical_worst_kl": 27.12499352554559,
+      "passes_frozen_guard": false,
+      "anchors": [
+        {
+          "id": "case-1-preserve-0",
+          "canonical_kl_mean": 1.273933221253761e-05,
+          "canonical_kl_worst": 2.9249087980076638e-05,
+          "worst_prefix": "South",
+          "base_top": " Korea",
+          "edited_top": " Korea",
+          "covered_aliases": [
+            "South Korea"
+          ],
+          "uncovered_aliases": [
+            "Republic of Korea",
+            "the Republic of Korea"
+          ],
+          "covered_base_mass": 0.9999931211293769,
+          "covered_edited_mass": 0.9999607155163202,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-1-preserve-2",
+          "canonical_kl_mean": 9.626069222401394,
+          "canonical_kl_worst": 24.734357228117005,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.11274406563359883,
+          "covered_edited_mass": 0.9999832460803383,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": false,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "case-1-preserve-facebook",
+          "canonical_kl_mean": 5.448396696393294,
+          "canonical_kl_worst": 27.12499352554559,
+          "worst_prefix": "United States",
+          "base_top": "<|im_end|>",
+          "edited_top": " of",
+          "covered_aliases": [
+            "United States of America",
+            "United States"
+          ],
+          "uncovered_aliases": [
+            "USA",
+            "US",
+            "U.S.",
+            "the United States",
+            "the United States of America"
+          ],
+          "covered_base_mass": 0.9931602226516217,
+          "covered_edited_mass": 0.9999855756153264,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-0",
+          "canonical_kl_mean": 3.43925850935789e-05,
+          "canonical_kl_worst": 6.304062158590806e-05,
+          "worst_prefix": "Paris",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "Paris"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999886797713431,
+          "covered_edited_mass": 0.9999882910644712,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-16",
+          "canonical_kl_mean": 2.7127449725439234e-07,
+          "canonical_kl_worst": 5.1926547361969e-07,
+          "worst_prefix": "4",
+          "base_top": "<|im_end|>",
+          "edited_top": "<|im_end|>",
+          "covered_aliases": [
+            "4"
+          ],
+          "uncovered_aliases": [
+            "four"
+          ],
+          "covered_base_mass": 0.9999995063265131,
+          "covered_edited_mass": 0.9999995831675391,
+          "supplied_alias_coverage_complete": false,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        },
+        {
+          "id": "utility-24",
+          "canonical_kl_mean": 8.292367684320512e-07,
+          "canonical_kl_worst": 9.645113641099101e-07,
+          "worst_prefix": "",
+          "base_top": "Au",
+          "edited_top": "Au",
+          "covered_aliases": [
+            "Au"
+          ],
+          "uncovered_aliases": [],
+          "covered_base_mass": 0.9999987295475337,
+          "covered_edited_mass": 0.9999970126646485,
+          "supplied_alias_coverage_complete": true,
+          "base_answer_in_supplied_set": true,
+          "edited_answer_in_supplied_set": true
+        }
+      ],
+      "complete_answer_outcomes": {
+        "target_test": {
+          "hits": 4,
+          "total": 4,
+          "frozen_losses": []
+        },
+        "scope_test": {
+          "hits": 1,
+          "total": 4,
+          "frozen_losses": [
+            {
+              "id": "case-1-scope-test-1",
+              "base": "England",
+              "edited": "United Kingdom of Great Britain and Northern Ireland"
+            },
+            {
+              "id": "case-1-scope-test-2",
+              "base": "United Kingdom",
+              "edited": "United Kingdom of Great Britain and Northern Ireland"
+            },
+            {
+              "id": "case-1-scope-test-3",
+              "base": "United States",
+              "edited": "Wassoulou Empire"
+            }
+          ]
+        },
+        "utility_test": {
+          "hits": 20,
+          "total": 23,
+          "frozen_losses": [
+            {
+              "id": "utility-25",
+              "base": "O",
+              "edited": "O\u2082"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "input_sha256": {
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/inputs.json": "25d7ed6e247f680cf45b3a5544d78d09f9b1bc7ffce572400e11eebe12f817d8",
+    "artifacts/guarded_training_v1/kaggle_download/guarded-results/results/protocol.json": "219d3245d1a29e9a4b53ee10ff13e38b9eb57c65e02b41bca0b2691618fcdb35",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-base.json": "f77a0c2a8b1e2ed2d3e29f1d79b8e4678e258a2dd40ddae509fbf7eb4a244dd3",
+    "artifacts/guarded_training_v1/kaggle_download/guarded-results/results/case-0-base.json": "0a4bb9bd0718ea8c3e145e48c73f7dbcce3a411197e9076e3adf90d6a6817772",
+    "artifacts/guarded_training_v1/kaggle_download/guarded-results/results/case-0-base-teacher.safetensors": "de57032b517c1d7dbb9f922ff976419ff8e9f4bc3f757ed3b1efd5199b686b0c",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-lora-43-0-teacher.safetensors": "a76660ecf642864ef62fa55e157f189b79071757ea1500a2ec4faf9e88c2b826",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-lora-43-0.json": "c32ab53f4f6b2c65ba6f223bdc8f34197b18f8b3d72d06bdf8a863f2076d88fa",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-paired_random-11-0-teacher.safetensors": "5ebd32d9ecddbb943a6f1b5a11c2f7068efe81f970fa6c37d8d0d5690f795041",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-paired_random-11-0.json": "8be2b92aee5dc9dd8051ea87d2c01c21c6cf79cda2a55e0e04a7a2754a59f2ca",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-paired_mean-43-0-teacher.safetensors": "529ca06801a63289b28e3493bf7b4bbfab26d3f9d70c8dfd9d852d244584e217",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-0-paired_mean-43-0.json": "5429df87df9c9a7c5e26e0e23d7573d4c208d9abb27367995d4ee17216197428",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-base.json": "03d666473bdedee85d2d68b35a224427a5c555908a394a52f461352df98dc6d4",
+    "artifacts/guarded_training_v1/kaggle_download/guarded-results/results/case-1-base.json": "173f9720879202ff785143fa3d23a29c7a93fe2ccbbef276e325f2250240f503",
+    "artifacts/guarded_training_v1/kaggle_download/guarded-results/results/case-1-base-teacher.safetensors": "748cd98015c3def1013196f7838a53d4f84fdfd52997708384415edadbc2880b",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-lora-43-0-teacher.safetensors": "32cd0b5b03fb9249b314f58feb65d0792babb2485e315ae49e48c6f633fc326b",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-lora-43-0.json": "6a8278ca7805822394fdfeec79d41b1bb3585229c82aa21147d55722d5ad834f",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-paired_random-11-0-teacher.safetensors": "11171ec1dc5f754aea34870c0d4d08fd368220d62daa901104cd58bf01f00920",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-paired_random-11-0.json": "25370469c46487e553f798e82b06c4ff6261679b3115d528ef0518b6bc2da83f",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-paired_mean-43-0-teacher.safetensors": "85769133d26d858e1bd93d612ec8804d30c7505e9cfb87af7558fc890dfdd219",
+    "artifacts/paired_mlp_v1/kaggle_download/paired-results/results/case-1-paired_mean-43-0.json": "3f33939f655ab77484e99a64745eb039a64b438a9b538723b7e4170b6d37e851"
+  },
+  "limits": "Covered alias mass is a lower bound, not all semantic correctness. Original endpoints have no saved teacher contexts for the unrelated Lakers/oxygen errors. Their answer failures are observed, but whether a response-set probability guard prevents them remains untested. Base teachers come from the newer pinned-identical model run; baseline generations, canonical token paths and input hashes are checked. Two exposed development facts cannot establish general superiority."
+}

@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-10-23T07:30:14.532328+00:00",
+  "new_model_executions": 0,
+  "pinned_torch_2_6_transformers_4_56_peft_0_17_passed": 23,
+  "modern_torch_2_14_response_set_passed": 12,
+  "minimum_torch_2_4_response_set_passed": 12,
+  "pinned_warnings": "Two existing optional PEFT tiny-config warnings",
+  "historical_good_endpoint_measurements_reproduced": 4,
+  "historical_kl_absolute_tolerance": 1e-10,
+  "saved_endpoints_audited": 6,
+  "ruff": "pass",
+  "diff_check": "pass",
+  "source_sha256": {
+    "experiments/guarded_training/response_sets.py": "0632c38695d837fce7269cbd99ef21480682a240bca899fbf192de32a3f6df98",
+    "experiments/guarded_training/contract_audit.py": "1197533bfdecc85ba11dd5c735f88b25050e0716fff009c33745495a8529a432",
+    "tests/test_response_sets.py": "24a78835a40db8dc9dd0c225ac238b2847c1a99d70d881d00494b9c7d3a22d8e"
+  },
+  "scope": "Probability-tree, autograd, dtype, transaction and tiny-worker checks plus saved-full-model-logit analysis. No evidence of a pretrained adaptation advantage or qualified replacement guard."
+}

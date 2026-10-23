@@ -5,6 +5,16 @@ They preserve the previous evidence narrative and its report links. For the acti
 method, pending experiment and present decision, use [current-method.md](current-method.md).
 The individual reports define each result's model, data and evaluation scope.
 
+The [completed measured-preservation pilot](../experiments/guarded_training/complete_v1/REPORT.md)
+verifies eight fits and806 generated observations. Risk-aware selection, random
+and LoRA each transfer3/8 answers, failing the complete-edit prerequisite. A
+no-model-execution audit shows the frozen KL guard rejects previously successful
+controls largely for valid alias redistribution and auxiliary references that
+disagree with base answers. This does not erase earlier genuine interference or
+establish a replacement guard; the missing negative-control teacher contexts
+must still be measured. The [current decision](current-method.md) specifies the
+next qualification and retains the full method/library goal.
+
 **Status: experimental foundation.** Version 0.1 implements a tested PyTorch
 weight-update primitive, not a validated behavioral editing system. Current experiments
 expose correction/preservation trade-offs. Our custom QA experiments have not shown

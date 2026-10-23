@@ -1,215 +1,161 @@
-# Current method decision — 22 October 2026
+# Current method decision — 23 October 2026
 
-We can train small patches that change complete answers. We have not shown
-that selecting neurons by our gradient score produces a better adaptation than
-matched random neurons or LoRA. The useful research question is selective,
-efficient adaptation with measured preservation, rather than making an already
-learned target answer even more confident.
+The goal is unchanged: a useful, robust sparse-adaptation library with a
+verified advantage over strong baselines. We have working compact patches,
+complete-response training and deployment checks. We do **not** have that
+advantage. The next step changes the preservation contract before changing
+another selector. The [previous decision](decisions/2026-10-22-method.md) and
+[experiment history](experiment-history.md) preserve earlier reasoning/results.
 
-## Evidence that changes the next action
+## What actually changes our decision
 
-The [completed Qwen3-4B comparison](../experiments/paired_mlp/complete_v1/REPORT.md)
-matches approximately1.33million trainable scalars and reports all rates and
-three random seeds. Every selected method gives8/8 complete transfer answers
-across two exposed facts. The gradient-paired condition leaks its injected
-country into an unrelated Lakers answer. One random condition has no measured
-test preservation loss; selected LoRA's one exact-score loss is a valid formal
-UK name. These observations provide no selection advantage.
+1. The [matched-budget study](../experiments/paired_mlp/complete_v1/REPORT.md)
+   gets all8/8 requested transfer answers with selected, random and LoRA patches.
+   Selected neurons cause unrelated Lakers and oxygen errors; chosen random and
+   LoRA controls do not show those factual errors on this small bank.
+2. [Earlier stopping](../experiments/paired_checkpoints/complete_v1/REPORT.md)
+   keeps8/8 transfers and reduces selected training steps to12/12 versus30/24.
+   Both factual errors survive. Total selected adaptation is3.83times LoRA's
+   in that implementation, largely due to sparse attachment/export integrity work.
+3. [Finite direction calibration](../experiments/functional_selection/complete_v2/REPORT.md)
+   reduces one-step drift for similar learning gain but fails its numerical
+   prediction criterion. It achieves no complete edits. Neither a diagonal risk
+   sum nor a local base-softmax quadratic is a reliable finite-step certificate.
+4. The [completed guarded-training study](../experiments/guarded_training/complete_v1/REPORT.md)
+   gives3/8 transfer answers for risk-aware selection, random and LoRA. All six
+   blocked fits' final rejected proposals improve task NLL but exceed worst-token
+   KL.2. The other two fits stop with confident training answers yet fail a
+   natural question form. Protection and transfer are separate problems.
+5. The [saved-endpoint contract audit](../experiments/guarded_training/complete_v1/contract_audit.json)
+   finds that the guard rejects all four older successful LoRA/random endpoints.
+   At a valid short/long US alias branch, conditional KL exceeds16 while combined
+   probability of covered acceptable answers remains above99.9%. This is a
+   concrete false alarm, not a reason to erase genuine earlier interference.
 
-Near-zero preservation-training CE is not a safety measurement on other inputs.
-The damaging paired case has lower preservation CE than the clean random case.
-The scope-validation bank also starts with only1/6 accepted answers, so its
-"lose no correct answers" rule offers weak coverage. Future protection needs
-unambiguous, representative questions and review of genuine factual errors
-separately from wording and output-form changes.
+The new guard's failure does not prove that no protected solution exists. It
+shows that this guard is a poor proxy for the answer-quality requirement, and
+that it prevented learning among the attempted steps. Some preservation labels
+also disagree with the base: preserving a correct answer, correcting an existing
+answer and forcing one preferred wording must not be silently conflated.
 
-The [objective audit](../experiments/paired_endpoint/objective_diagnosis_v1.json)
-finds only5/6 preservation-training references initially matched in each case.
-The sixth also imposes a supervised correction or wording constraint. In the
-high-rate outgoing-only condition,17 of22 scored test losses become an exact
-answer found in these auxiliary training examples, versus zero that become the
-main edited target. This is consistent with broader training-answer spillover;
-it is not causal attribution to a particular example. It also shows why counting
-only the injected target string would miss much of the observed damage.
+## Paper lessons that survive these results
 
-The [evaluation-contract audit](../experiments/paired_endpoint/evaluation_audit_v1.json)
-also flags equivalent Unicode formulas, valid full extensions to fragment prompts,
-and single-country labels for ambiguous association questions. For example,
-[FIFA names three host countries](https://inside.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/media-releases/canada-mexico-and-usa-selected-as-hosts-of-the-2026-fifa-world-cuptm),
-while our legacy validation row accepts only Mexico. These are reasons to fix
-the next calibration contract, not to rewrite the frozen scores or dismiss
-unambiguous interference. Future trials should distinguish factual content
-accuracy from the requested response form.
+| Source | Relevant mechanism | What we should take, and what we should not infer |
+|---|---|---|
+| [FiNE paper](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf), [pinned editor](https://github.com/opanhw/fine-unified-editing-code/blob/a2489cbac0dfe5a956385734065cfa041384e7d1/knowledge-editing/easyeditor/models/fine/fine_main.py) | Token-contribution localization plus composite loss, layer control and stopping | Localization, objective and optimizer form a recipe. Our all-layer gradient support/mean CE is not its reproduction. Original-prefix replication does not establish complete-answer transfer. |
+| [NeST](https://arxiv.org/html/2602.16835v2), [code audit](../experiments/nest_source/README.md) | Harmful/benign probes, activation-profile clustering and shared incoming-row updates | A reusable behavior prior and shared capacity are plausible. Its balanced20k-example safety training is not a demonstration of three-example counterfactual fact editing. Full safety training remains unreproduced. |
+| [SafeNexus](https://arxiv.org/html/2607.28969v2) | Cross-modal safety-neuron intersection and masked low-rank updates | Measure overlap with retained behavior. Activation exclusion alone does not establish update safety; the utility argument makes sensitivity assumptions. Official implementation is still unverified. |
+| [SpaRTA](https://arxiv.org/abs/2502.15975), ordinary LoRA | Random sparse scalars and low-rank updates | Random and low-rank baselines need equal data, protection, tuning opportunity and actual-cost reporting. Whole-neuron random support is not a SpaRTA reproduction. |
+| [Does Localization Inform Editing?](https://arxiv.org/html/2301.04213v2) | Empirical separation of causal tracing and best layer to edit | Knowing where a signal is causally important need not tell us where an update will generalize. Its layer-level findings are not a theorem against all neuron selection. |
 
-The [completed eight-endpoint replay](../experiments/paired_endpoint/complete_v1/REPORT.md)
-resolves the deployment uncertainty: all248 live/merged answer pairs are exactly
-identical. The high-rate failure and selected low-rate interference already
-exist in the saved live patches. The exact final sampled correction prompt also
-degrades between its logged pre-update state and the saved endpoint. Checkpoint
-traces now isolate that late failure to an optimizer update: grad-enabled and
-no-grad logits agree at the measured before/after states, while the update
-changes a correct word continuation into premature EOS. Merging is not the
-source of the observed answer failures.
+Several tempting next ideas also have substantial prior art:
 
-The [completed seven-fit checkpoint study](../experiments/paired_checkpoints/complete_v1/REPORT.md)
-selects guided checkpoints at12 updates for both facts, versus30/24 for random
-and LoRA. All three early methods transfer8/8 answers. However, the guided
-checkpoint retains both the Lakers target leakage and oxygen-symbol error;
-early random and early LoRA have no scored preservation losses. Guided total
-adaptation prefix is144.89seconds across two cases, versus154.28 for random and
-37.84 for LoRA. Sparse attachment and export each take about30seconds per case
-and contain strict full-base integrity checks. Earlier stopping is useful
-control but does not rescue this recipe.
+- [LoRA-One](https://arxiv.org/html/2502.01235v3) uses a first full gradient,
+  spectral initialization and optional preconditioning. The
+  [pinned implementation](https://github.com/YuanheZ/LoRA-One/blob/b797a10dcb818e9553b57fa060baa7b00df4484d/run_exp.py#L158)
+  takes an SVD of the negative gradient and initializes a **nonzero** update;
+  it explicitly skips offset subtraction for LoRA-One. A future comparison must
+  count initialization's learning, discovery and cost. This is a stronger
+  relevant baseline for our gradient-informed sparse approach, not a result we
+  have already reproduced. Fixed-basis low-dimensional adaptation likewise has
+  prior art; a tiny coefficient count can hide large stored directions.
+- [ProFit](https://arxiv.org/html/2601.09195v3) masks tokens whose detached current
+  probability falls below a threshold. Its one-to-many supervision concern is
+  relevant. Its probability-as-importance heuristic is not justified for our
+  counterfactual rare target names: masking their low-probability tokens can
+  remove the correction signal we need. A lower-bound gradient argument also
+  does not by itself order all actual parameter-gradient magnitudes.
+- [EBFT](https://arxiv.org/html/2603.12248v2) trains against sequence-level feature
+  moments using a frozen feature model and on-policy rollouts. It motivates
+  judging completions rather than single teacher tokens. Importing its rollout
+  estimator and second model now adds cost and another imperfect semantic proxy;
+  it is not the minimal test for these short, explicitly enumerable answers.
+- [Semantic loss](https://proceedings.mlr.press/v80/xu18h.html) already connects
+  valid-output probability mass and learning. Summing probabilities of acceptable
+  strings is ordinary marginal likelihood, not our proposed novelty.
+- [PCGrad](https://arxiv.org/abs/2001.06782) is existing gradient-conflict surgery.
+  Base-anchored KL has zero gradient at the base, so blindly projecting against
+  that gradient cannot initially protect anything. Adam can also change a
+  projected direction; acceptance must measure the actual proposed update.
 
-## What the papers suggest, and what we actually adopted
+FiNE's author-linked supplement could not be retrieved through the web reader;
+its additional ablations are not claimed as inspected. Code inspection and
+paper reading are distinct from an empirical reproduction. No upstream code
+from these newly read projects was incorporated or executed.
 
-- **FiNE:** its inspected [knowledge-editor implementation](https://github.com/opanhw/fine-unified-editing-code/blob/a2489cbac0dfe5a956385734065cfa041384e7d1/knowledge-editing/easyeditor/models/fine/fine_main.py)
-  combines a worst-target-token loss, prefix-distribution KL, update-norm and
-  repetition penalties with a probability stopping threshold. The pinned
-  [GPT-J configuration](https://github.com/opanhw/fine-unified-editing-code/blob/a2489cbac0dfe5a956385734065cfa041384e7d1/knowledge-editing/hparams/FINE/gptj-6b.yaml)
-  sets50 maximum epochs and early-stop probability0.9. It selects five
-  occurrences per target token before flattening, rather than173 indices spread
-  over every layer. Our initial comparison used fixed50 updates, mean full-response
-  CE and preservation examples; it did not reproduce this objective or budget.
-  The completed follow-up tests complete-response stopping under the initial
-  objective; it does not reproduce FiNE's other loss terms. Stopping and norm
-  control are existing design choices, not new inventions.
-- **NeST:** probe-based localization and clustered incoming-neuron updates
-  motivate controlling which activation conditions change and how much capacity
-  is shared. Its official archive is now retrieved and inspected; the
-  [source fidelity audit](../experiments/nest_source/README.md) checks the actual
-  shared-row operation against ours on CPU. Full discovery and safety training
-  remain unreproduced. The released trainer's default differs from the paper's
-  epoch count, and padding, threshold and judge fixtures expose distinctions that
-  a comparison must record. Coupled rows/columns alone do not reproduce NeST.
-- **SafeNexus:** exclusion of normal-prompt candidates motivates explicitly
-  asking which proposed updates overlap preserved behavior. Activation exclusion
-  is not itself a guarantee of functional preservation. Its implementation
-  remains unverified; do not present our gradient score as its selector. Its
-  [Appendix3 utility argument](https://arxiv.org/html/2607.28969v2) assumes low
-  utility-gradient sensitivity in the selected subspace. That assumption needs
-  measurement in our setting; neuron sparsity alone does not establish it.
-- **SpaRTA and LoRA:** random sparse adaptation and low-rank adaptation are
-  strong controls, not straw baselines. Our whole-neuron random control is not
-  SpaRTA's random scalar support. Discovery and tuning costs must count against
-  a guided method, even if its optimizer takes fewer steps.
+## Candidate: constrain outcomes and coordinate the sparse update
 
-See [research provenance](research.md) for source and reproduction limits. The
-bounded original FiNE comparison did reproduce a selected-versus-random gap on
-original answer prefixes; it did not establish robust complete-answer editing.
+This is a hypothesis to test, not a named new method or a recommended API.
 
-## Next candidate and decision boundary
+For prompt x and an explicitly supplied finite set of complete EOS-ended
+accepted responses Y(x), define
 
-Do not advance the current gradient-magnitude selector unchanged into fresh
-confirmation. It learns the training answers quickly, but its smaller earlier
-patch still changes unrelated facts. The next selection hypothesis must measure
-correction gain together with functional sensitivity on representative
-preservation inputs, rather than treating correction-gradient concentration as
-evidence of safe update directions. Enforce the same measured preservation and
-stopping policy for guided supports, random supports and LoRA. Retain a no-edit
-outcome when no candidate satisfies it. Multiple parameter budgets remain
-necessary so an easy transfer ceiling does not hide an efficiency difference.
+    p_good(theta,x) = sum[y in Y(x)] P_theta(y | x).
 
-The [functional-direction candidate](../experiments/functional_selection/README.md)
-now estimates conditional Fisher disturbance for explicit, unit-normalized
-fresh-Adam neuron proposals. It compares gradient magnitude, proposed gain,
-gain/risk and random supports. Its first bounded calibration uses sixteen
-restored one-step edits before a longer optimizer fit: the local proxy must
-predict finite changes and improve useful learning per unit held-out drift.
-CPU covariance/dense-gradient oracles and FP32/FP16 tiny-Qwen execution pass.
-The [completed pretrained calibration](../experiments/functional_selection/complete_v2/REPORT.md)
-reduces held-out mean KL by42.63% and62.20% at the primary scale, retaining
-97.85% and100.11% of gain-only's immediate correction-loss improvement. Both
-benefit/disturbance criteria pass, but the smaller-scale numerical-calibration
-criterion fails in case0. The overall frozen advancement gate therefore fails.
-All one-step conditions still achieve0/8 requested complete transfer answers.
-Full review attributes the observed preservation-score losses to country-name
-versus demonym/alias changes, rather than new clear factual errors on this bank.
-This result is not a trained-method comparison or evidence against strong LoRA.
+Duplicates count once; the probability includes every generated token and EOS.
+The [experimental primitive](../experiments/guarded_training/response_sets.py)
+computes this event exactly from all required prefix logits, with autograd.
+Missing prefixes are errors. Its saved-logit diagnostic can report a covered
+subset as an explicit lower bound. Even complete coverage of the supplied
+finite strings does not certify all semantically acceptable responses.
+An unenumerated valid punctuation/case/wording variant can still look like a
+mass loss. Qualification must therefore include known benign output variations,
+and probability checks cannot replace independent complete-answer review.
 
-The post-hoc saved-logit audit identifies a concrete limitation: for case0's
-smaller gain-only update, the sketch predicts0.000302 KL and the base quadratic
-form of the observed logit change is0.000269, while actual KL is0.004083.
-Softmax curvature beyond the base quadratic approximation accounts for much of
-that gap. It is not justified to assume more random probes alone will repair it.
-Extrapolating the smaller observed logit change and evaluating exact softmax KL
-is much closer to the larger-scale measurement for these two risk-aware cases,
-but remains a retrospective diagnostic, not a validated step controller.
+First separate correction and retention roles. Correction maximizes accepted
+response mass on the desired behavior. Retention limits a decline in accepted
+response mass from a base that actually supplies an accepted answer; it does
+not preserve the relative probabilities of synonymous strings. Base/reference
+disagreements require adjudication or an explicit correction role, rather than
+quietly freezing the wrong target. Refusal/abstention is a separate outcome when
+that task calls for it, not an interchangeable correct answer.
 
-The next candidate changes the role of risk estimation: use it to rank initial
-supports, then accept or backtrack updates using actual measured preservation
-and correction changes. Rejected updates must restore optimizer moments and
-step counters as well as parameter values. Apply identical measured protection
-to random and LoRA controls, retaining a no-edit outcome. The original frozen
-prediction gate is not relaxed. This is a new method hypothesis that still needs
-a trained comparison, followed by fresh cases and total-cost accounting.
-The [experimental fitting loop](../experiments/guarded_training/README.md) now
-implements these transactions, equal-example correction CE plus anchored KL,
-and complete-token stopping. CPU rollback, independent-loss and separable versus
-conflicting-response checks pass. Full FP32/FP16 tiny-Qwen workers also exercise
-all four representations, actual fitting, save/reload/merge and base restoration;
-their separate verifier checks78 generations and18 final teacher records per run.
-The [frozen eight-fit development pilot](../experiments/guarded_training/launch_v1.json)
-is accepted and running with unchanged criteria. Its worker logs confirm the
-first fit has begun; there is no completed pretrained outcome for this new loop.
+Then select **and coordinate** updates according to their joint correction and
+retention effects. A possible next representation uses one cached task-gradient
+proposal per neuron/group and jointly learns its coefficients under a trust
+region. Joint sensitivity includes cross-component cancellation/reinforcement;
+ranking independent risks loses that information. Local derivatives propose a
+step, but actual accepted-response mass and complete answers accept it. A
+full-vocabulary KL may remain a diagnostic; it must not silently define all
+behavioral damage. A no-edit result is permitted and is not adaptation success.
 
-The [first submission](../experiments/functional_selection/launch_v1.json)
-was deliberately cancelled after account GPU quota was observed accruing with
-no usable worker logs and no provider session limit. It yielded no model outcome.
-The [identical operational retry](../experiments/functional_selection/retry_v2.json)
-completes as provider version2 in460.95seconds, including setup/model loading,
-with a requested5400-second provider limit. All37 source hashes, the executed
-submission,310 decoded observations,18 teacher records and sixteen restored
-updates are independently verified; all62 distinct output contexts are reviewed.
-The unavailable first execution remains part of research cost, rather than being
-hidden by reporting the successful retry's runtime as total cost.
+The coefficient representation, clustering and constrained optimization all
+have precedents. Its value would have to be **better held-out correction versus
+preservation for less data or lower actual total cost**. If the corrected
+objective gives the same benefit to ordinary LoRA, that is objective repair,
+not a selected-neuron research win. Compare random supports, ordinary LoRA and
+a gradient-informed low-rank baseline with the same protection contract; include
+source-data, validation, initialization, storage and discovery costs.
 
-The [no-forward context audit](../experiments/functional_selection/context_audit_v1.json)
-also bounds interpretation of that calibration. Equally averaging its six
-canonical anchors,75.56% and80.00% of prediction contexts match the respective
-greedy base paths. Correct shorter aliases account for some differences;
-context divergence is not itself a factual error. Canonical-context drift
-remains a valid conditional measurement, but it does not cover all ordinary
-generated-response contexts. Future preservation comparisons must specify this
-choice and retain direct complete-answer evaluation. The pending experiment's
-contexts, interventions and decision criteria remain frozen.
+## Next bounded qualification, before another trained method comparison
 
-The [saved-history diagnosis](../experiments/paired_endpoint/history_diagnosis_v1.json)
-suggests that guided low-rate fits cross a rough sampled-loss threshold before
-random/LoRA fits. Those historical losses were observed at different pre-update
-states. The new post-update study confirms faster fitting under a simultaneous
-confidence gate, but not cheaper total adaptation than LoRA or removal of the
-two genuine preservation errors. Optimizer-step counts alone would have given a
-misleading positive conclusion.
+Use saved historical endpoints, not fresh cases or another fitting sweep.
+There are four required positive controls: the two previously successful LoRA
+and two random endpoints. The selected case1 endpoint is a required negative
+control because it produces the Lakers and oxygen errors. The selected case0
+endpoint is an additional descriptive control. These are calibration fixtures,
+not an unbiased confirmation set.
 
-This is a testable synthesis of localization, limited capacity, stopping and
-functional protection. Its ingredients already have prior art. Our proposed
-contribution must earn its value through a reproducible advantage in correction,
-preservation, data or total cost. A true advantage still needs fresh cases,
-another task family and model-size checks before becoming the library default.
+Saved teacher files omit the negative-control question contexts and several
+accepted alias branches. A bounded no-training replay must collect them on the
+same pinned Qwen3-4B model, verify original generated answers, and compute full
+finite-set probability mass. The prospective qualification uses a maximum
+absolute accepted-mass drop of0.02 per initially accepted retention question.
+Do not change that threshold after observing missing probabilities. The rule
+must admit all four required positive endpoints and flag both represented
+negative-control errors; otherwise revise the contract before training. Report
+probability and greedy-answer tests separately, and keep every disagreement.
+Adding known failures to this bank is diagnostic coverage, not generalization.
 
-Both the endpoint replay and frozen seven-fit checkpoint study are complete.
-The latter independently verifies434 decoded answers,107 teacher records, all
-seven original final controls and the recorded final Adam update. All14
-selected/final grad-enabled-versus-no-grad comparisons have identical logits at
-446 response positions. Its high-rate instability is distinct from the
-low-rate semantic interference, which is already present at12 updates. Accepted
-source and launch provenance remain in the [launch record](../experiments/paired_checkpoints/launch_v1.json).
+This qualification is not yet run. Neither guard effectiveness nor prevention
+is established by the existing saved outputs. Until it passes, no new selector
+is licensed by this memo. After it passes, compare the joint-update candidate
+and all baselines with the same outcome-aware objective on exposed development
+cases; then freeze the recipe for fresh cases, multiple parameter/data budgets,
+additional random seeds, another task family and model-size checks. Training
+confidence alone must not select a supposedly transferable checkpoint; any
+validation wording used for selection counts as training/development data.
 
-A [retrospective audit of all24 saved weight updates](../experiments/paired_mlp/complete_v1/UPDATE_AUDIT.md)
-also rules out update size alone as a sufficient explanation for the observed
-interference. In case1 at the low rate, the guided norm is2.138, below clean
-random seed11's4.360 and LoRA's2.269, yet the guided patch causes the genuine
-Lakers and oxygen errors. Norm control may still help within a trajectory; a
-global small-norm rule cannot replace functional preservation measurements.
-
-The [saved discovery-score audit](../experiments/paired_mlp/complete_v1/DISCOVERY_AUDIT.md)
-finds that the existing layer quotas retain95.52–97.17% of the same-budget
-global optimum for our own correction-gradient score. Guided supports contain
-about49% of the squared correction gradient, versus0.016–0.036% for the three
-recorded random controls. This is not a behavioral or Adam-step advantage. It
-weakens poor allocation as an explanation for wasting this particular score and
-keeps the focus on whether correction sensitivity translates into useful cost
-and preservation behavior.
-The large [method ledger](method-design.md) preserves historical decisions; this
-document is the current decision, not another claim of completed research.
+The [complete latest report](../experiments/guarded_training/complete_v1/REPORT.md)
+preserves the failed criteria, independently verified source and full output
+review. The original goal is active and unachieved.
