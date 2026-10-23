@@ -1,0 +1,65 @@
+{
+  "source_kernel": "shlydv/neuronpatch-boundary-transfer-v1-20261024",
+  "source_commit": "8fd80f5f627d2fb1d4dcded2be5da3351464c1c8",
+  "stage": "after discovery; first fit failed before first update",
+  "training_examples_measured": 2,
+  "projections": 72,
+  "probe_training_accuracy_min": 1.0,
+  "probe_training_accuracy_max": 1.0,
+  "arms": {
+    "probe_grouped-43": {
+      "singleton_clusters": 26,
+      "degenerate_clusters": 0,
+      "examples": [
+        {
+          "index": 0,
+          "mean_retained_energy_fraction": 0.05832952653300729,
+          "median_retained_energy_fraction": 0.05804817968053727
+        },
+        {
+          "index": 1,
+          "mean_retained_energy_fraction": 0.055786890431535924,
+          "median_retained_energy_fraction": 0.04878115795656478
+        }
+      ]
+    },
+    "random_grouped-43": {
+      "singleton_clusters": 0,
+      "degenerate_clusters": 0,
+      "examples": [
+        {
+          "index": 0,
+          "mean_retained_energy_fraction": 0.0690163134937701,
+          "median_retained_energy_fraction": 0.06426923147639624
+        },
+        {
+          "index": 1,
+          "mean_retained_energy_fraction": 0.06846289848847409,
+          "median_retained_energy_fraction": 0.05985640573422467
+        }
+      ]
+    },
+    "random_grouped-71": {
+      "singleton_clusters": 0,
+      "degenerate_clusters": 0,
+      "examples": [
+        {
+          "index": 0,
+          "mean_retained_energy_fraction": 0.06520889209050454,
+          "median_retained_energy_fraction": 0.060891947488652336
+        },
+        {
+          "index": 1,
+          "mean_retained_energy_fraction": 0.0600508943035303,
+          "median_retained_energy_fraction": 0.05706642364230528
+        }
+      ]
+    }
+  },
+  "input_artifact_sha256": {
+    "group-gradient-geometry.json": "2fc83580f1ce04f38a8ef8e94d6560f32b25d27eb6c8b50bc83389db6040ef68",
+    "probes.json": "5bd4845bdad27d5aab28a5bc12c156e96381fff8410ba32427bee770ed7df388",
+    "supports.json": "71e0187bd778aeb955be1a99b066a6a8338abe2f2eee479f27c37f2cc02cb015"
+  },
+  "interpretation": "Unweighted projection-level descriptive diagnostics on two training examples. Fractions normalize by each support own ungrouped selected-row gradient energy, so they do not compare absolute useful gradient energy, optimizer progress or generalization. No recipe or confirmation criteria changed."
+}

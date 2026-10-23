@@ -72,6 +72,24 @@ passed: exact FP16 output/gradient parity with recomputation, plus the full tiny
 eight-fit workflow with recomputation disabled and enabled. The repaired real
 comparison remains pending; this is not yet proof it fits the GPU or learns.
 
+The failed v1 run did save discovery diagnostics. Its execution manifest matches
+the frozen bundle. The [summarized measurements](../experiments/instruction_boundary/discovery_diagnostic_v1.json)
+show100% training classification accuracy in all72 probes, but no corresponding
+advantage in the measured gradient-sharing geometry. Across projections, the
+mean fraction of each support's own gradient energy preserved by shared updates
+is5.83%/5.58% on the two measured training examples for guided selection, versus
+6.90%/6.85% for random43 and6.52%/6.01% for random71. These are unweighted means
+of per-projection ratios, not a global energy ratio or a comparison of absolute
+gradient magnitude. Guided supports form a1-versus31 split in26/72 projections;
+neither random support has a singleton cluster.
+
+This is a concrete reason to question activation-derived sharing on this task,
+despite excellent probe fit. It does not show that the guided update will train
+worse: retained fractions normalize different supports, Adam changes geometry,
+and only two examples were measured. Finish the frozen comparison before choosing
+another method. If shared groups underperform, inspect grouping and actual update
+transfer before concluding that identifying useful neurons is impossible.
+
 ### Interpretation audit before the comparison finishes
 
 The current selector distinguishes clean table prompts from the same tables with
