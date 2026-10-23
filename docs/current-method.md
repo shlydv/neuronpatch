@@ -63,6 +63,15 @@ checks cover both ordinary and recomputed eight-fit lifecycles; full-size GPU
 memory viability still needs confirmation. Do not describe this infrastructure
 failure as evidence against guided selection, random selection or LoRA.
 
+The [v2 repair protocol](../experiments/instruction_boundary/transfer_protocol_v2.json)
+has now been submitted as private kernel140453112 version1 and reports RUNNING.
+Its downloaded source matches the frozen SHA256. The data hash, eight fits,
+selection/evaluation rules and runtime caps are unchanged. Preflight confirmed
+no active jobs, paid scaling off and33,422.676 free GPU seconds. Three CPU checks
+passed: exact FP16 output/gradient parity with recomputation, plus the full tiny
+eight-fit workflow with recomputation disabled and enabled. The repaired real
+comparison remains pending; this is not yet proof it fits the GPU or learns.
+
 ### Interpretation audit before the comparison finishes
 
 The current selector distinguishes clean table prompts from the same tables with

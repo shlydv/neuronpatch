@@ -1,0 +1,11 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-transfer-v2-20261024",
+  "source_sha256": "8cd65fb08927080138cec5b18834cde3904f0855b732887befaecfae4a714f6d",
+  "provider_limit_seconds": 10800,
+  "worker_limit_seconds": 10200,
+  "internal_limit_seconds": 9900,
+  "source_revision": "bff8622f47df3550a02b823df026c6735070520b",
+  "fits": 8,
+  "repair_of": "shlydv/neuronpatch-boundary-transfer-v1-20261024",
+  "change": "eval-mode non-reentrant decoder recomputation; comparison and data unchanged"
+}
