@@ -112,6 +112,17 @@ def test_actual_eight_fit_ablation_recovers_controls_trains_aliases_and_exports(
     assert checked["complete"] and checked["fits"] == 8 and checked["canonical_controls_exact"] == 2
     assert checked["decoded"] == ablation["expected_generation_observations"]
     assert not analysis["selection_advantage_established"]
+    from experiments.alias_supervision.gradient_audit import audit
+    from experiments.alias_supervision.review import packet
+
+    integrity = tmp_path / "ablation-proof.json"
+    integrity.write_text(json.dumps(checked))
+    gradients = audit(output, integrity)
+    assert len(gradients["rows"]) == 8
+    review = packet(parent, output)
+    assert review["observations"] == checked["decoded"]
+    assert sum(len(r["occurrences"]) for r in review["items"]) == checked["decoded"]
+    assert not review["full_output_review_complete"]
     # A forged marginal-probability result must fail independent verification.
     path = output / "records.json"
     changed = json.loads(path.read_text())

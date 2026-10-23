@@ -1,0 +1,12 @@
+{
+  "scope": "Postprocessing added after the frozen Kaggle submission; no change to running training source or primary criteria. Actual tiny FP32/FP16 worker outputs test gradient norm reconstruction and complete review coverage.",
+  "pinned_worker_tests_passed": 2,
+  "seconds": 9.52,
+  "warnings": "Two benign PEFT warnings for tiny configs",
+  "ruff": "pass",
+  "sha256": {
+    "experiments/alias_supervision/gradient_audit.py": "0a1990a6bc006d4f0abb7a7f3b333e377b07edf8039c1a36184b0d6910d09642",
+    "experiments/alias_supervision/review.py": "26e95b2cb79a118a2b71b27e5bca5dd9f7b3746f022e5c4993a24ae63f3c42b1",
+    "tests/test_alias_worker.py": "bd1bd2da68bb928354e53c839215cfc41318582978cb21bff22ef50232e437c0"
+  }
+}
