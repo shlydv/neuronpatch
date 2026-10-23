@@ -50,13 +50,20 @@ written. Commercially reusable training data would be a separate product require
 
 An output-independent SHA256 ordering selected 32 candidate questions from all
 300 source records. The private packet contains their full question, answer
-groups, unchanged documents and provenance. All are explicitly unreviewed.
+groups, unchanged documents and provenance. The [completed review](review_v1.json)
+retains 22 and excludes 10, without replacements. Every complete document set
+was read before model inference. This is assistant review, not independent human
+adjudication. Exclusions include surviving explicit/implicit answers and
+ambiguous dates or release types.
 No model output has been used for selection and no new GPU run has been launched.
 
-Before inference, inspect each candidate for explicit positive support, alternate
-answers in negative documents, time ambiguity, conflicting snippets and token
-budget. Record every exclusion rather than quietly replacing difficult examples.
-Do not rewrite source questions after seeing model failures.
+The reproducible [input builder](inputs.py) produces 110 queries: ordinary and
+explicit evidence instructions on each supported/missing pair, plus one
+question-only control per question. [Token checks](input_checks_v1.json) use the
+pinned tokenizer offline: longest input 1,115 tokens, no truncation, no local
+model weights. Archived-document instructions prevent treating historical CEO
+or price answers as claims about today. Do not rewrite these questions after
+seeing model failures.
 
 Then freeze a small baseline-only comparison using the existing pinned 4B
 generation infrastructure: supported documents, missing documents, and a

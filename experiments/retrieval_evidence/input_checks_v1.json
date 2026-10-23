@@ -1,0 +1,13 @@
+{
+  "inputs_sha256": "7fe9790be4f29d0f3ff815872c0adc549be681f7e0fc48fb608f0a7df0d8c009",
+  "queries": 110,
+  "pairs": 22,
+  "maximum_prompt_tokens": 1115,
+  "max_new_tokens": 48,
+  "maximum_total_tokens": 3072,
+  "truncation_allowed": false,
+  "model_weights_loaded_locally": false,
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "gpu_submitted": false
+}

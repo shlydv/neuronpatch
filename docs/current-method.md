@@ -16,8 +16,9 @@ curvature and component-coefficient precedents that constrain future claims.
 
 The [current task qualification](../experiments/retrieval_evidence/README.md)
 inspects RGB retrieved-document contrasts. A deterministic 32-question candidate
-packet is prepared; its labels still require full review before baseline inference.
-This is not a frozen run or evidence of model failure. Natural SQuAD questions
+packet has been reviewed: 22 retained, 10 excluded without replacement. The 110
+baseline prompts reproduce exactly with the pinned offline tokenizer; none is
+truncated. This is not a submitted run or evidence of model failure. Natural SQuAD questions
 were already tried earlier and are not being presented as a new direction.
 
 ## Scope review before the next experiment

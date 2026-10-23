@@ -1,0 +1,203 @@
+{
+  "reviewer": "assistant",
+  "independent_human_review": false,
+  "all_32_full_document_sets_read": true,
+  "candidate_packet_sha256": "805c8a741be70a80af7403b5fbc52b85d34a7679e284510d208738b7cb52bc1a",
+  "accepted": 22,
+  "excluded": 10,
+  "scope": "Evidence sufficiency under supplied historical documents; not real-world current fact validation. Conservative exclusions; no replacements and no model predictions used.",
+  "items": [
+    {
+      "source_id": 121,
+      "candidate_index": 0,
+      "accept": true,
+      "reason": "Explicit accident and cause in positive; negatives contain unrelated stories and author material."
+    },
+    {
+      "source_id": 229,
+      "candidate_index": 1,
+      "accept": false,
+      "reason": "Exclude: undated CEO question and negatives discuss Alegre as the Yuga leader, allowing an implicit answer."
+    },
+    {
+      "source_id": 46,
+      "candidate_index": 2,
+      "accept": false,
+      "reason": "Exclude: positive gives tournament end date, not explicitly the final; avoid assuming the final-day relation."
+    },
+    {
+      "source_id": 79,
+      "candidate_index": 3,
+      "accept": false,
+      "reason": "Exclude: negative document 2 explicitly describes Manchester City winning its first Champions League."
+    },
+    {
+      "source_id": 82,
+      "candidate_index": 4,
+      "accept": false,
+      "reason": "Exclude: negatives 1 and 2 give the October 4 launch; negative 1 links the announcement to 2022."
+    },
+    {
+      "source_id": 211,
+      "candidate_index": 5,
+      "accept": true,
+      "reason": "Positive names Callaghan; negatives describe TTS usage and effects, not the speaker identity."
+    },
+    {
+      "source_id": 145,
+      "candidate_index": 6,
+      "accept": true,
+      "reason": "Positive explicitly distinguishes QS 2023 rank 22 from THE; negatives lack this rank."
+    },
+    {
+      "source_id": 207,
+      "candidate_index": 7,
+      "accept": true,
+      "reason": "Positive explicitly assigns the US to Group B; negatives discuss other groups and rankings."
+    },
+    {
+      "source_id": 127,
+      "candidate_index": 8,
+      "accept": true,
+      "reason": "Positive identifies opening loss to Ecuador; negatives discuss hosting, venues and sanctions."
+    },
+    {
+      "source_id": 185,
+      "candidate_index": 9,
+      "accept": true,
+      "reason": "Positive separates October 6 announcement from October 13 release; negatives discuss discounts and design."
+    },
+    {
+      "source_id": 239,
+      "candidate_index": 10,
+      "accept": false,
+      "reason": "Exclude: underspecified release question; positive offers both theatrical March 10 and streaming April 25."
+    },
+    {
+      "source_id": 162,
+      "candidate_index": 11,
+      "accept": true,
+      "reason": "Positive explicitly identifies Night XII and November 18; negatives list other named events."
+    },
+    {
+      "source_id": 278,
+      "candidate_index": 12,
+      "accept": true,
+      "reason": "Positive names incoming Crocker; negatives describe outgoing Stewart and an unfilled search. Interpret as archived reporting, not current office."
+    },
+    {
+      "source_id": 273,
+      "candidate_index": 13,
+      "accept": true,
+      "reason": "Positive gives 2023 JW Marriott Los Angeles; negatives explicitly concern 2021 and 2022 venues."
+    },
+    {
+      "source_id": 100,
+      "candidate_index": 14,
+      "accept": true,
+      "reason": "Positive states the announced $15000 price; negatives discuss capability and speculative value, not that new price. Archived-document answer only."
+    },
+    {
+      "source_id": 193,
+      "candidate_index": 15,
+      "accept": true,
+      "reason": "Positive gives original November 9 release; negatives discuss gameplay, cast and later prospective PC port."
+    },
+    {
+      "source_id": 136,
+      "candidate_index": 16,
+      "accept": true,
+      "reason": "Positive names semifinal opponent Tiafoe; negative Sinner match is explicitly the quarterfinal leading to the semifinal."
+    },
+    {
+      "source_id": 148,
+      "candidate_index": 17,
+      "accept": false,
+      "reason": "Exclude: positive lacks an explicit 2022 date and mixes headline/core/monthly measures; avoid an under-specified economic-label case."
+    },
+    {
+      "source_id": 263,
+      "candidate_index": 18,
+      "accept": false,
+      "reason": "Exclude: negative 1 describes a $73 base package, a plausible rounded answer."
+    },
+    {
+      "source_id": 27,
+      "candidate_index": 19,
+      "accept": false,
+      "reason": "Exclude: question does not specify invasion year; negatives also mention Crimea occupation in 2014."
+    },
+    {
+      "source_id": 71,
+      "candidate_index": 20,
+      "accept": true,
+      "reason": "Positive explicitly gives September 9 2022; negatives discuss modes, DLC and later software update."
+    },
+    {
+      "source_id": 11,
+      "candidate_index": 21,
+      "accept": true,
+      "reason": "Positive explicitly gives 2022 Real Madrid win; negative Barcelona win is dated 2023."
+    },
+    {
+      "source_id": 144,
+      "candidate_index": 22,
+      "accept": false,
+      "reason": "Exclude: negative 2 identifies Welliver joining Titans and immediately describes Luthor; implicit answer survives."
+    },
+    {
+      "source_id": 68,
+      "candidate_index": 23,
+      "accept": true,
+      "reason": "Positive explicitly locates 2022 event in Austin; negatives discuss regulatory speakers without stating event city."
+    },
+    {
+      "source_id": 139,
+      "candidate_index": 24,
+      "accept": true,
+      "reason": "Positive distinguishes Plus release October 7 from standard iPhone 14 release; negatives lack launch date."
+    },
+    {
+      "source_id": 208,
+      "candidate_index": 25,
+      "accept": true,
+      "reason": "Positive places Argentina in Group C; negatives discuss group results/opponents without group-letter assignment."
+    },
+    {
+      "source_id": 182,
+      "candidate_index": 26,
+      "accept": true,
+      "reason": "Positive explicitly casts Raymond Lee as Ben Seong; negatives give producers, original lead, and an unnamed actor biography."
+    },
+    {
+      "source_id": 189,
+      "candidate_index": 27,
+      "accept": true,
+      "reason": "Positive dated memo identifies incoming Lanzone; negatives discuss earlier Mayer and acquisition history. Archived-document answer only."
+    },
+    {
+      "source_id": 231,
+      "candidate_index": 28,
+      "accept": true,
+      "reason": "Positive press release explicitly gives April 19 2023 for Switch; negatives discuss editions and platforms without date."
+    },
+    {
+      "source_id": 178,
+      "candidate_index": 29,
+      "accept": false,
+      "reason": "Exclude: negative 1 profiles Ernaux in a literature-prize news-conference context, allowing a strong implicit inference."
+    },
+    {
+      "source_id": 277,
+      "candidate_index": 30,
+      "accept": true,
+      "reason": "Positive links Lloyd to Rizz; negatives name other users/tools without assigning Lloyd a tool."
+    },
+    {
+      "source_id": 194,
+      "candidate_index": 31,
+      "accept": true,
+      "reason": "Positive names Ethan Hawke as Batman; negatives name other characters and producers only."
+    }
+  ]
+}
