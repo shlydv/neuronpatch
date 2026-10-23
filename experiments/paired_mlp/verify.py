@@ -138,7 +138,9 @@ def verify(root, protocol, tokenizer):
                     selected = torch.randperm(width, generator=generator)[:k].tolist()
                 else:
                     key = (
-                        "outgoing_gradient_norm"
+                        "paired_empirical_fisher"
+                        if condition["family"] == "paired_fisher"
+                        else "outgoing_gradient_norm"
                         if condition["family"] == "outgoing_mean"
                         else "paired_gradient_norm"
                     )

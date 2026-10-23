@@ -1,0 +1,102 @@
+{
+  "id": "relation-learning-v1-20261023",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "inputs_sha256": "b137b5433d69acbeb0c5a245f804c6bd6ace7f1161e58ad277c97fa21b4493bf",
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "runtime_limit_seconds": 6300,
+  "architecture": {
+    "layers": 36,
+    "hidden": 2560,
+    "intermediate": 9728
+  },
+  "rank": 1,
+  "seed": 43,
+  "steps": 64,
+  "loss_scale": 128,
+  "gradient_clip": 1.0,
+  "preservation_weight": 1.0,
+  "max_sequence_tokens": 768,
+  "max_new_tokens": 96,
+  "minimum_base_correct_utility_test": 0,
+  "selection_score": "empirical_fisher",
+  "discovery_indices": [
+    1,
+    10,
+    20,
+    30,
+    38,
+    41,
+    50,
+    60
+  ],
+  "conditions": [
+    {
+      "id": "lora-43-0.0003",
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    {
+      "id": "lora-43-0.001",
+      "family": "lora",
+      "seed": 43,
+      "lr": 0.001
+    },
+    {
+      "id": "paired_random-43-0.0003",
+      "family": "paired_random",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    {
+      "id": "paired_random-43-0.001",
+      "family": "paired_random",
+      "seed": 43,
+      "lr": 0.001
+    },
+    {
+      "id": "paired_random-71-0.0003",
+      "family": "paired_random",
+      "seed": 71,
+      "lr": 0.0003
+    },
+    {
+      "id": "paired_random-71-0.001",
+      "family": "paired_random",
+      "seed": 71,
+      "lr": 0.001
+    },
+    {
+      "id": "paired_fisher-43-0.0003",
+      "family": "paired_fisher",
+      "seed": 43,
+      "lr": 0.0003
+    },
+    {
+      "id": "paired_fisher-43-0.001",
+      "family": "paired_fisher",
+      "seed": 43,
+      "lr": 0.001
+    }
+  ],
+  "new_fits": 8,
+  "interpretation": {
+    "supervision": "All methods see the same 64 task responses and 20 preservation responses. One task and one preservation example per optimizer step. Discovery uses eight task examples, no validation/test data.",
+    "selection": "Within each method/seed choose the lower target_val mean completion NLL; ties choose lower learning rate. Save selection before reviewing target_test, scope_test and utility_test. No test performance selects a rate.",
+    "learning": "A selected LoRA that improves fresh-name task correctness by at least 8/64, without losing more than two semantically correct solved-family controls, establishes a promising learning pilot. Otherwise analyze outputs/learning traces rather than announcing a method.",
+    "method": "Report Fisher, both random seeds and LoRA separately, all rates. No superiority claim from one pilot; require fresh wording transfer, preservation and total costs. Test phrasings and exposed diagnostics are distinguished.",
+    "utility": "Utility is supplemental and reviewed semantically. The old exact-string utility gate is disabled rather than treating full-sentence aliases as incapable. Empty/weak base-correct utility coverage invalidates preservation claims, not the relation-learning measurement.",
+    "limits": "Synthetic, four templates, two task families; correlated conditions. No natural-document or second-model robustness established. No automatic promotion to library default."
+  }
+}

@@ -110,3 +110,29 @@ def projection_scores(captures, *, incoming, outgoing):
         "incoming_gradient_norms": incoming_norms,
         "examples": len(captures),
     }
+
+
+def add_empirical_group_scores(accumulator, capture, groups):
+    """Accumulate squared group norms before averaging across examples.
+
+    This structured empirical-Fisher score is an established selection baseline,
+    not Fisher preconditioning or a safety guarantee. Retain one capture at a time.
+    """
+    if accumulator is None:
+        accumulator = [None] * len(groups)
+    if len(accumulator) != len(groups):
+        raise ValueError("One accumulator per group required")
+    for i, group in enumerate(groups):
+        scores = projection_scores(
+            [capture], incoming=group["incoming"], outgoing=group["outgoing"]
+        )
+        update = {
+            "paired_empirical_fisher": scores["paired_gradient_norm"].square(),
+            "outgoing_empirical_fisher": scores["outgoing_gradient_norm"].square(),
+        }
+        if accumulator[i] is None:
+            accumulator[i] = update
+        else:
+            for key, value in update.items():
+                accumulator[i][key] += value
+    return accumulator

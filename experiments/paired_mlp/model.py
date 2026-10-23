@@ -48,7 +48,13 @@ def supports(groups, counts, scores, *, family, seed):
         if family == "paired_random":
             indices = torch.randperm(group["intermediate"], generator=generator)[:count]
         else:
-            key = "outgoing_gradient_norm" if family == "outgoing_mean" else "paired_gradient_norm"
+            key = (
+                "paired_empirical_fisher"
+                if family == "paired_fisher"
+                else "outgoing_gradient_norm"
+                if family == "outgoing_mean"
+                else "paired_gradient_norm"
+            )
             k = 3 * count if family == "outgoing_mean" else count
             indices = torch.argsort(score[key], descending=True, stable=True)[:k]
         selections.append(

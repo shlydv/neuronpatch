@@ -50,6 +50,8 @@ WORDS = {str(k): v for k, v in WORDS.items()}
 
 
 def messages(row):
+    if "messages" in row:
+        return row["messages"]
     return [{"role": "system", "content": SYSTEM}, {"role": "user", "content": row["prompt"]}]
 
 

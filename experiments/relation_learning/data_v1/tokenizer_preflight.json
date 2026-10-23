@@ -1,0 +1,7 @@
+{
+  "rows_checked": 320,
+  "maximum_complete_sequence_tokens": 172,
+  "cap": 768,
+  "all_response_boundaries_and_eos_valid": true,
+  "model_inference": false
+}

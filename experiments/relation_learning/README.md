@@ -1,0 +1,56 @@
+# Relation learning pilot
+
+Status: prepared locally; no training result yet.
+
+The preceding relation-contrast probe found repeated errors distinguishing an
+interview's qualification assessor from its final assessor, and a release's
+announcer from its releaser. This pilot tests learning those distinctions, not
+memorizing replacement facts. It does not claim to reproduce FiNE, NeST or
+SafeNexus, or introduce empirical Fisher selection as a new algorithm.
+
+## Frozen comparison
+
+`data_v1/protocol.json` specifies eight fits of Qwen3-4B-Instruct-2507:
+rank-one LoRA, layer-matched random paired neurons with two selection seeds,
+and paired neurons ranked by mean per-example squared gradient norm. Each
+method has learning rates 0.0003 and 0.001. Scalar budgets are approximately
+matched; measured counts and discovery costs must accompany results.
+
+All fits use the same 64 task examples and 20 preservation examples, with
+64 optimizer steps. Fisher discovery uses eight specified training examples.
+Training, validation and test names are disjoint. Half the 64 task-test rows
+also change wording. The original 96 probe rows are exposed regression data,
+never fresh evidence.
+
+Run `python -m experiments.relation_learning.select --fits RESULTS/fits.json
+--protocol experiments/relation_learning/data_v1/protocol.json --output CHOICES.json`
+before inspecting test predictions. This chooses each method/seed's rate by
+validation completion loss only, with lower rate breaking ties. Report both
+rates as well as the chosen rate. No early checkpoint selection is performed.
+
+## What would justify continuing?
+
+A selected LoRA improving at least 8 of 64 task-test answers, while losing at
+most two correct solved-family test controls, establishes learning headroom.
+If Fisher improves the correction/preservation tradeoff versus both random
+selections and LoRA, that supports a subsequent independent replication—not
+a general superiority claim. Review full outputs, truncation and unsupported
+answers; exact-string scoring alone is insufficient.
+
+The eight unrelated utility questions are supplemental. Count retention only
+where the base answer is correct, and report that denominator. They cannot
+establish broad preservation. All conditions share templates, so 64 questions
+are not 64 independent demonstrations. No automatic library-default change.
+
+## Execution boundaries
+
+Reuse the tested `experiments.paired_mlp.run` worker. Internal worker budget:
+6300 seconds; process budget: 6600 seconds; planned provider budget: 7200
+seconds. One free private Kaggle job, no automatic retry. An observer timeout
+does not mean the GPU job stopped. Verify authoritative status before any
+subsequent submission. Save source/data hashes and accepted kernel source.
+
+The streaming selection accumulator avoids retaining gradient factors for
+every discovery example. The tiny-model test independently checks its math
+and executes Fisher, random and LoRA training, export/reload, merge and base
+restoration. These checks establish implementation integrity, not efficacy.

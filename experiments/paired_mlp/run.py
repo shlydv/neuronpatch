@@ -17,7 +17,7 @@ from neuronpatch.supervision import chat_response
 
 from .data import messages, whole_hit
 from .model import attach_lora, layout, load_lora, merge_lora, supports, unload_lora
-from .selection import capture_response_factors, projection_scores
+from .selection import add_empirical_group_scores, capture_response_factors, projection_scores
 from .training import fit, teacher, teacher_metrics
 
 BANKS = (
@@ -67,6 +67,11 @@ def execute(model, tokenizer, data, protocol, output, check_time):
     """The same actual worker runs on a tiny CPU model in tests and Kaggle."""
     output.mkdir(parents=True, exist_ok=False)
     model.eval().requires_grad_(False)
+    if protocol.get("selection_score", "mean_gradient") not in (
+        "mean_gradient",
+        "empirical_fisher",
+    ):
+        raise ValueError("Unknown selection score")
     identity = fingerprint(model)
     groups, counts, budgets = layout(model, protocol["rank"])
     actual = {
@@ -153,39 +158,58 @@ def execute(model, tokenizer, data, protocol, output, check_time):
         )
         print("STAGE inadequate_base_no_fits", coverage, flush=True)
         return []
-    backups = {n: model.get_submodule(n).weight.detach().cpu().clone() for n in names}
     results = []
     for case in data["cases"]:
         c = case["case"]
         task = [examples[r["id"]] for r in case["train"]]
         preserved = [examples[r["id"]] for r in case["preserve"]]
         measured = [*task, *preserved, *[examples[r["id"]] for r in case["target_val"]]]
-        captured = []
+        indices = protocol.get("discovery_indices", list(range(len(task))))
+        assert indices and len(set(indices)) == len(indices)
+        assert all(type(i) is int and 0 <= i < len(task) for i in indices)
         discovery_started = time.monotonic()
-        for sample in task:
+        captured, scores = [], None
+        fisher = protocol.get("selection_score", "mean_gradient") == "empirical_fisher"
+        for index in indices:
             check_time()
             factors, _ = capture_response_factors(
-                model, sample, names, loss_scale=protocol["loss_scale"]
+                model, task[index], names, loss_scale=protocol["loss_scale"]
             )
-            captured.append(factors)
-        scores = [
-            projection_scores(captured, incoming=g["incoming"], outgoing=g["outgoing"])
-            for g in groups
-        ]
+            if fisher:
+                scores = add_empirical_group_scores(scores, factors, groups)
+                del factors
+            else:
+                captured.append(factors)
+        if fisher:
+            for score in scores:
+                for key in score:
+                    score[key] /= len(indices)
+            keys = ("paired_empirical_fisher", "outgoing_empirical_fisher")
+        else:
+            scores = [
+                projection_scores(captured, incoming=g["incoming"], outgoing=g["outgoing"])
+                for g in groups
+            ]
+            keys = ("paired_gradient_norm", "outgoing_gradient_norm")
+            del factors
+        del captured
         discovery_seconds = time.monotonic() - discovery_started
         save_file(
-            {
-                f"{i}-{key}": score[key]
-                for i, score in enumerate(scores)
-                for key in ("paired_gradient_norm", "outgoing_gradient_norm")
-            },
+            {f"{i}-{key}": score[key] for i, score in enumerate(scores) for key in keys},
             output / f"case-{c}-scores.safetensors",
         )
-        del captured, factors
         write(
             output / f"case-{c}-discovery.json",
-            {"backward_passes": len(task), "seconds": discovery_seconds, "layer_counts": counts},
+            {
+                "backward_passes": len(indices),
+                "training_indices": indices,
+                "score": protocol.get("selection_score", "mean_gradient"),
+                "seconds": discovery_seconds,
+                "layer_counts": counts,
+            },
         )
+        # Delay full CPU weight backups until discovery factors have been released.
+        backups = {n: model.get_submodule(n).weight.detach().cpu().clone() for n in names}
         for condition in protocol["conditions"]:
             check_time()
             family = condition["family"]
@@ -262,6 +286,7 @@ def execute(model, tokenizer, data, protocol, output, check_time):
             write(output / "fits.json", results)
             print("FIT_RESTORED", c, label, metrics, flush=True)
             gc.collect()
+        del backups
     assert len(results) == protocol["new_fits"]
     write(
         output / "completion.json",

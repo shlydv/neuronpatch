@@ -15,7 +15,12 @@ def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--kernel", default="shlydv/neuronpatch-paired-full-response-v1-20261022")
+    parser.add_argument("--worker-seconds", type=int, default=7500)
     args = parser.parse_args()
+    if not args.kernel.startswith("shlydv/") or not 60 <= args.worker_seconds <= 10800:
+        parser.error("Expected personal account and bounded worker duration")
+    protocol = json.loads((args.data / "protocol.json").read_text())
     sources = [
         *list((ROOT / "src/neuronpatch").glob("*.py")),
         *list((ROOT / "experiments/paired_mlp").glob("*.py")),
@@ -34,8 +39,8 @@ def main():
         ).strip(),
         "file_sha256": hashes,
         "scope": (
-            "One24-fit exposed-development comparison; whole answers, "
-            "matched scalar budgets; fresh bank untouched"
+            f"One {protocol['new_fits']}-fit comparison: {protocol.get('id', 'paired-response')}; "
+            "whole answers, matched scalar budgets"
         ),
     }
     bundle = {
@@ -48,7 +53,7 @@ def main():
         BOOTSTRAP.replace("fine-transfer", "paired-response")
         .replace("transfer-results", "paired-results")
         .replace("experiments.fine_transfer.run", "experiments.paired_mlp.run")
-        .replace("'5700'", "'7500'")
+        .replace("'5700'", repr(str(args.worker_seconds)))
     )
     script = (
         "import base64,hashlib,json,zlib\n"
@@ -60,8 +65,8 @@ def main():
     args.output.mkdir(parents=True, exist_ok=False)
     (args.output / "run.py").write_text(script)
     metadata = {
-        "id": "shlydv/neuronpatch-paired-full-response-v1-20261022",
-        "title": "neuronpatch paired full response v1 20261022",
+        "id": args.kernel,
+        "title": args.kernel.split("/", 1)[1].replace("-", " "),
         "code_file": "run.py",
         "language": "python",
         "kernel_type": "script",
