@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-10-23T09:01:00.337912+00:00",
+  "kernel": "shlydv/neuronpatch-alias-supervision-v1-20261023",
+  "source_revision": "ad5ef157cc02f530ffeb72b11f777ced9b3c0fd6",
+  "source_sha256": "86b77a9844f49d4ac416becb65862aaf3909dbc7733907ff6ba51222329312b8",
+  "script_bytes": 164315,
+  "bundled_files": 37,
+  "all_bundle_files_match_frozen_git_revision": true,
+  "protocol_sha256": "4f8379d4b5b95da47fdb2954f3a3f2712e33aa1ab9109b01f16d4614a99caf6c",
+  "new_fits": 8,
+  "canonical_controls": 2,
+  "expected_generation_observations": 544,
+  "expected_probe_vectors": 1084,
+  "provider_timeout_seconds": 7200,
+  "worker_process_timeout_seconds": 5100,
+  "worker_internal_timeout_seconds": 4800,
+  "setup_timeouts_seconds": [
+    300,
+    300,
+    900
+  ],
+  "pretrained_outcome": null
+}
