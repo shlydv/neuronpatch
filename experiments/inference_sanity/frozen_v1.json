@@ -1,0 +1,13 @@
+{
+  "source_revision": "b452f7b159f12858983ac5ec03f007fa53aabb35",
+  "source_sha256": "8297dbc8088012026f6dbcb5f9f669dcbbad383995aea41a19efc4588b308a04",
+  "bytes": 73041,
+  "files": 17,
+  "source_and_data_verified": true,
+  "kernel": "shlydv/neuronpatch-inference-sanity-v1-20261023",
+  "timeout_seconds": 3600,
+  "tests": "Tiny Qwen diagnostic forward/generation, canonical dtype identity and unchanged weights: 1 passed; Ruff passed.",
+  "accepted_source_matches": true,
+  "version": 1,
+  "kernel_id": 140371912
+}
