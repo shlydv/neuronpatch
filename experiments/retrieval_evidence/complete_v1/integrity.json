@@ -1,0 +1,11 @@
+{
+  "queries": 110,
+  "source_inputs_and_protocol_match": true,
+  "decoded_outputs_match": true,
+  "base_fingerprint_unchanged": true,
+  "first_token_disagreements": [],
+  "truncated": 11,
+  "ended": 99,
+  "elapsed_seconds": 230.96301922500004,
+  "answer_quality_reviewed": false
+}

@@ -1,0 +1,780 @@
+{
+  "reviewer": "assistant",
+  "independent_human_review": false,
+  "outputs_read": 110,
+  "source_document_review": "review_v1.json; full documents for ambiguous tennis, venue, and extended answers re-read after output review",
+  "predictions_sha256": "2b8c4c6fbc19b5a0f3688dd155a6e4b35e4e81f816fec5dbe6c7ac6b15fe30f0",
+  "items": [
+    {
+      "id": "121:ordinary:supported",
+      "prediction_sha256": "88ab6a9bdbe1dc4a078f96e274b3e0e7d3a66e8b24aa03529cba7312fdfe71d5",
+      "judgement": "correct_content_incomplete_response",
+      "truncated": true,
+      "note": "Cause and details match source, but response cut off mid-sentence; not a complete-response success."
+    },
+    {
+      "id": "121:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "121:explicit_evidence:supported",
+      "prediction_sha256": "88ab6a9bdbe1dc4a078f96e274b3e0e7d3a66e8b24aa03529cba7312fdfe71d5",
+      "judgement": "correct_content_incomplete_response",
+      "truncated": true,
+      "note": "Cause and details match source, but response cut off mid-sentence; not a complete-response success."
+    },
+    {
+      "id": "121:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "121:question_only",
+      "prediction_sha256": "09321a735d0d5ece5859986fa4de78c46d3c313e7108a3b7e2dd9238b6f1dbbe",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "211:ordinary:supported",
+      "prediction_sha256": "c74d8b22edec666a1ef0ad57bc2a76251efc2463a3f1c8a76ddaeda60b481e19",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "211:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "211:explicit_evidence:supported",
+      "prediction_sha256": "9de14f28d4cc002f2d07fa7f9b37e1cdf50c4cd55e7adff7d6a95e1114b53361",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "211:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "211:question_only",
+      "prediction_sha256": "72f11160ed6d60ac52d7257f60f562f23c172d1ca394a306547d8c87345e9315",
+      "judgement": "reference_disagreement",
+      "truncated": true,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "145:ordinary:supported",
+      "prediction_sha256": "c0688b766535094d8fc6bdbd16258ee953615942b00a1241c0665753163b5072",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "145:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "145:explicit_evidence:supported",
+      "prediction_sha256": "ba3c549bb8cedc4afee93d23cb81f3cfbeb53e97e93f9e6eecc21c4d323f9fb3",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "145:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "145:question_only",
+      "prediction_sha256": "005a3fcf45481182dfc4819a9d2f7d69723d6f97fe0fd4c85bb1035b42cb1d97",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "207:ordinary:supported",
+      "prediction_sha256": "d057399105b78e2f8bdabdf8335655e2f352adea84257cbdd8ed4f947593e172",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "207:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "207:explicit_evidence:supported",
+      "prediction_sha256": "2dcf23b552a5047b885fd3c75f3ac70fef08a4f5457bbed5f01641607b417147",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "207:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "207:question_only",
+      "prediction_sha256": "aa01e357e889d6e8b4f486a49cac499ce88c2ca410fd3fdb607f28098c8c89b5",
+      "judgement": "reference_disagreement",
+      "truncated": true,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "127:ordinary:supported",
+      "prediction_sha256": "98f51c13a2976a0497f6929337dd31bbbb2bd72555cb2e04a14bf06c74691fc2",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "127:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "127:explicit_evidence:supported",
+      "prediction_sha256": "2ca26c60fe0238a76ad5765f7e0d47b4b179007944a8da6b52931325b6993cbd",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "127:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "127:question_only",
+      "prediction_sha256": "8bf80179bc8b7f0264dc34f0ccb5af0b8f7c5cca273f693b6632abfb60cb044b",
+      "judgement": "reference_disagreement",
+      "truncated": true,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "185:ordinary:supported",
+      "prediction_sha256": "ce37d56d5952cc15689ee6818b455586fb45701c7213b3137f04401b030f6947",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "185:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "185:explicit_evidence:supported",
+      "prediction_sha256": "ce37d56d5952cc15689ee6818b455586fb45701c7213b3137f04401b030f6947",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "185:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "185:question_only",
+      "prediction_sha256": "b407e6689303a5fa110d3a647f29ec462caa685c5bde1e7ad53163afcc1819a0",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "162:ordinary:supported",
+      "prediction_sha256": "528285b621f9c4d674be134278fc81e117beca3f8dbf6f1fb7c5d2364d30ecd5",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "162:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "162:explicit_evidence:supported",
+      "prediction_sha256": "d583f74b86016dbd0738bde4ca93a13b507e9d178d4255e75a801237e796bd01",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "162:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "162:question_only",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "abstained",
+      "truncated": false,
+      "note": "Exact UNKNOWN under the different knowledge-only instruction contract."
+    },
+    {
+      "id": "278:ordinary:supported",
+      "prediction_sha256": "285cdf654c65d3c6af8cc124729f16bae7e1e323e77ad0f53930ec661dd87780",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "278:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "278:explicit_evidence:supported",
+      "prediction_sha256": "e365bb8bc802626c46cb514098fc3e8df49e44323f1ea3d8b23adc01cbe8932a",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "278:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "278:question_only",
+      "prediction_sha256": "0b4bf83a190cd3af1de18356962c7117c15555fa5f52fb4b6da3032ed1c74bb1",
+      "judgement": "historical_reference_disagreement",
+      "truncated": true,
+      "note": "Question is time-sensitive/underspecified. Response disagrees with archive; do not count this as verified current factual accuracy."
+    },
+    {
+      "id": "273:ordinary:supported",
+      "prediction_sha256": "5ad00a9b70f4f76bdfd76252e730350a5e0052bd6b2908e151e1743d6667e5a9",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "273:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "273:explicit_evidence:supported",
+      "prediction_sha256": "8b6e04947230473368190a71c95399a7e9a0c12faa28b04a2dd5a1cc4350a9a9",
+      "judgement": "supported_less_specific",
+      "truncated": false,
+      "note": "Los Angeles is supported and answers broad where question, but omits reference venue; report separately rather than declaring wrong."
+    },
+    {
+      "id": "273:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "273:question_only",
+      "prediction_sha256": "c486f87f1d21d6f8be0bd51e629c340e8bf3084d33724937deee9552053f1b79",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "100:ordinary:supported",
+      "prediction_sha256": "03ee7506b89dc1ad8a20725bdb6426e78e857ef3e010f929c0434741da57c492",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "100:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "100:explicit_evidence:supported",
+      "prediction_sha256": "208bd9cfd4e08ea0e562d793c5f0e8c93c62473aa2d72f363127750b41e7bbae",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "100:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "100:question_only",
+      "prediction_sha256": "1ddb3f6041395b0a075b9147098c04a3a3979f75af60a75b235a7749dc0fe3d4",
+      "judgement": "historical_reference_disagreement",
+      "truncated": true,
+      "note": "Question is time-sensitive/underspecified. Response disagrees with archive; do not count this as verified current factual accuracy."
+    },
+    {
+      "id": "193:ordinary:supported",
+      "prediction_sha256": "762f45e0c0d33158d9600463e3d969a723ad1e27e00f8471ecf2c264fe51ecf0",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "193:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "193:explicit_evidence:supported",
+      "prediction_sha256": "6f3996f27f1e0453265045b3447bca3a3d9f1a4414b592f29608566b6fffe132",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "193:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "193:question_only",
+      "prediction_sha256": "22fe6c4ad367819a44ecf46449bac93a079b6de132f9995f82934bd970c3e4e4",
+      "judgement": "wrong_year",
+      "truncated": false,
+      "note": "Month/day match reference aliases but 2018 contradicts the supplied 2022 release evidence; substring scoring would miss this."
+    },
+    {
+      "id": "136:ordinary:supported",
+      "prediction_sha256": "e1573fdad14989623c8caa7618c01d09a0a8ebbcaed1a1508e2dddcd005244f9",
+      "judgement": "wrong_event_round",
+      "truncated": false,
+      "note": "Sinner despite explicit Tiafoe semifinal evidence; same distractor answer as missing condition."
+    },
+    {
+      "id": "136:ordinary:missing",
+      "prediction_sha256": "e1573fdad14989623c8caa7618c01d09a0a8ebbcaed1a1508e2dddcd005244f9",
+      "judgement": "wrong_event_round",
+      "truncated": false,
+      "note": "Copies Sinner from quarterfinal evidence, confusing beat-to-reach with beat-in the semifinal."
+    },
+    {
+      "id": "136:explicit_evidence:supported",
+      "prediction_sha256": "2d1ee43af9b5ac1fa00fb636fc674dd69372c03847616095917d38088492f855",
+      "judgement": "wrong_event_round",
+      "truncated": false,
+      "note": "Sinner despite explicit Tiafoe semifinal evidence; same distractor answer as missing condition."
+    },
+    {
+      "id": "136:explicit_evidence:missing",
+      "prediction_sha256": "2d1ee43af9b5ac1fa00fb636fc674dd69372c03847616095917d38088492f855",
+      "judgement": "wrong_event_round",
+      "truncated": false,
+      "note": "Copies Sinner from quarterfinal evidence, confusing beat-to-reach with beat-in the semifinal."
+    },
+    {
+      "id": "136:question_only",
+      "prediction_sha256": "bbec340096e9b9b1469ef0ebc5d6439eb99ec3c73af60367ba66e32b807ad7ca",
+      "judgement": "reference_disagreement",
+      "truncated": true,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "71:ordinary:supported",
+      "prediction_sha256": "d4d430e1496e4fef87e6e7d5bccbff34769c93db0eb50d1ed7e39f9100f326fa",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "71:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "71:explicit_evidence:supported",
+      "prediction_sha256": "c41e81eba09918f922a9768761dd12968e8f60d13388f82c141e35df9155df48",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "71:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "71:question_only",
+      "prediction_sha256": "a5e05c58f9b299760d46133601da3ab665f83af1a15e25012614c4da12fc6c2d",
+      "judgement": "unsupported_denial",
+      "truncated": false,
+      "note": "Denies announced release, inconsistent with archive; contains UNKNOWN but is not a clean abstention."
+    },
+    {
+      "id": "11:ordinary:supported",
+      "prediction_sha256": "9266492ecc2ef84f10f3c6928079fb2d549bc191c41f4c84b77ab8c19b90caa9",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "11:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "11:explicit_evidence:supported",
+      "prediction_sha256": "9266492ecc2ef84f10f3c6928079fb2d549bc191c41f4c84b77ab8c19b90caa9",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "11:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "11:question_only",
+      "prediction_sha256": "9266492ecc2ef84f10f3c6928079fb2d549bc191c41f4c84b77ab8c19b90caa9",
+      "judgement": "reference_agreement",
+      "truncated": false,
+      "note": "Complete answer agrees with reviewed reference."
+    },
+    {
+      "id": "68:ordinary:supported",
+      "prediction_sha256": "cedfaa9c59c28e8fe6f257cbebcb85e036ec1979cbe2ff810439e58a8668cc44",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "68:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "68:explicit_evidence:supported",
+      "prediction_sha256": "517ca0346abb52f0f56a3d2c29b336063ce82a8c87039a51e0d78606f7adbd62",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "68:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "68:question_only",
+      "prediction_sha256": "e67c02022dd2efbccbf13b0b6838bb582f10248f0be38f9dda968d6fc562375a",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "139:ordinary:supported",
+      "prediction_sha256": "a71220e31e793f69110f53928a58599fd2eae0266394e90717e8d9dd8f322ddb",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "139:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "139:explicit_evidence:supported",
+      "prediction_sha256": "87d87ace9dd1356beb07f65c36aa9470fdb1d25a569de0b3730175109d8c015f",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "139:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "139:question_only",
+      "prediction_sha256": "db6d28f79d740f58a5b0193f11fc1d930893d032c7422a506e937bde4ded0d28",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "208:ordinary:supported",
+      "prediction_sha256": "64c576586aa6c199ddd810a6aaa63f8aa8ebfd95f580ecad5f433da2884bcab4",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "208:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "208:explicit_evidence:supported",
+      "prediction_sha256": "1d947e50505fc2d4bdfdde42f3980386114f84dd28b19582911c95a696394b98",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "208:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "208:question_only",
+      "prediction_sha256": "4abed00cff6d82b3e07c08c56dfc5592333af596e6867f96c16fa299c2387f7b",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "182:ordinary:supported",
+      "prediction_sha256": "ba4e5ab62732c5aa2087c6e491019e31494115c61bae6c9839842b12f4c1a9ec",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "182:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "182:explicit_evidence:supported",
+      "prediction_sha256": "ba4e5ab62732c5aa2087c6e491019e31494115c61bae6c9839842b12f4c1a9ec",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "182:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "182:question_only",
+      "prediction_sha256": "4623e095278f5037035417aadc87efce544169a9436f170287559f0db6be6a3f",
+      "judgement": "reference_disagreement",
+      "truncated": true,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "189:ordinary:supported",
+      "prediction_sha256": "8a0eac2ef2dc0e39ff6b3f60668eeac3ce97237a092ab7ad9cd8ea634b479a62",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "189:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "189:explicit_evidence:supported",
+      "prediction_sha256": "4662e45b27106f486200c9e58d609a38cc2a241c87b5c0e3fcd5ef9f98767b17",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "189:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "189:question_only",
+      "prediction_sha256": "f2a18b94dfcb4eea17f3c4c692b273aa722fbcd8fbabc76497282c2328cc5606",
+      "judgement": "historical_reference_disagreement",
+      "truncated": true,
+      "note": "Question is time-sensitive/underspecified. Response disagrees with archive; do not count this as verified current factual accuracy."
+    },
+    {
+      "id": "231:ordinary:supported",
+      "prediction_sha256": "f83eb67eba5ea23a481f8d5653434a7a60e5bacf6c6e48d541f3aa4ac915e10e",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "231:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "231:explicit_evidence:supported",
+      "prediction_sha256": "e0da46499c69c0dddfb40cceb73ea108efc611a065a8ca588fc695afa803ee57",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "231:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "231:question_only",
+      "prediction_sha256": "b85202e99b5630672cd56a3a783a728c10805e1bdea8a56ca6e2bc81c0f23658",
+      "judgement": "reference_disagreement",
+      "truncated": true,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    },
+    {
+      "id": "277:ordinary:supported",
+      "prediction_sha256": "9e0a9ea82a345c482c9451ccf178544eec24a05ba575f617e1f8c464027aff68",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "277:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "277:explicit_evidence:supported",
+      "prediction_sha256": "e04e787c4f393675c577c04793ce11a614c39c45a1cbaf7772feb417a0cd35da",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "277:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "277:question_only",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "abstained",
+      "truncated": false,
+      "note": "Exact UNKNOWN under the different knowledge-only instruction contract."
+    },
+    {
+      "id": "194:ordinary:supported",
+      "prediction_sha256": "263bfa47ec6f48df1419a58b774118d1e14119bc97590b1e9eb160a0cd4717cf",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "194:ordinary:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "194:explicit_evidence:supported",
+      "prediction_sha256": "f4e03c0f8029705fa16796125f42cd9c921ff9719032ceb1b36e8dec357504b9",
+      "judgement": "correct_content",
+      "truncated": false,
+      "note": "Answer agrees with the reviewed reference and supplied evidence."
+    },
+    {
+      "id": "194:explicit_evidence:missing",
+      "prediction_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "judgement": "correct_abstention",
+      "truncated": false,
+      "note": "Exact UNKNOWN."
+    },
+    {
+      "id": "194:question_only",
+      "prediction_sha256": "787b257395bb44816914c54f60bccd6007e64b5457e1293121b9d246971cd9c2",
+      "judgement": "reference_disagreement",
+      "truncated": false,
+      "note": "Disagrees with archived reference; not an independently verified present-day truth score."
+    }
+  ],
+  "decision": "Do not train on this slice. Only one repeated evidence-use error among 22 questions, below frozen threshold of four. Even including venue specificity and response truncation yields at most three affected questions."
+}

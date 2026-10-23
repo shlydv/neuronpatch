@@ -60,7 +60,7 @@ def main():
     compile(script, "<retrieval-evidence-baseline>", "exec")
     metadata = {
         "id": "shlydv/neuronpatch-retrieval-evidence-v1-20261023",
-        "title": "neuronpatch retrieval evidence baseline v1 20261023",
+        "title": "neuronpatch retrieval evidence v1 20261023",
         "code_file": "run.py",
         "language": "python",
         "kernel_type": "script",

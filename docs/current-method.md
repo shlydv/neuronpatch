@@ -14,12 +14,21 @@ LoRA loses accepted probability there. None meets the full preservation criterio
 The [additional primary-source review](research-2026-10-23.md) identifies close
 curvature and component-coefficient precedents that constrain future claims.
 
-The [current task qualification](../experiments/retrieval_evidence/README.md)
-inspects RGB retrieved-document contrasts. A deterministic 32-question candidate
-packet has been reviewed: 22 retained, 10 excluded without replacement. The 110
-baseline prompts reproduce exactly with the pinned offline tokenizer; none is
-truncated. This is not a submitted run or evidence of model failure. Natural SQuAD questions
-were already tried earlier and are not being presented as a new direction.
+The [retrieved-evidence baseline](../experiments/retrieval_evidence/complete_v1/REPORT.md)
+is complete: all 110 outputs reviewed and independently checked. Both prompt
+variants correctly abstain on 21/22 missing-evidence questions. Only one repeated
+event-relation error survives, below the frozen four-question qualification.
+Eleven responses hit the generation cap; these are recorded as incomplete, not
+silently repaired or counted as complete successes. **Do not train on this slice.**
+The explicit-prompt city-only venue answer is defensible and not a clear error.
+
+The unexpectedly weak question-only answers motivate a small precision/prompt
+sanity check before more adaptation. It compares the same checkpoint and inputs
+in FP16 versus FP32 with matched two-device placement, plus the original
+single-device FP16 replay. Two user-only prompts help distinguish the effect of
+the system instruction. This diagnostic is not a new method or evidence of an
+inference bug. It must finish before interpreting these outputs as a normal
+capability baseline. The event-relation example remains only one exposed case.
 
 ## Scope review before the next experiment
 

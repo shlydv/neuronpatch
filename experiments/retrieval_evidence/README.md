@@ -1,7 +1,7 @@
 # Qualify an evidence-use task before more adaptation
 
-This is preparation for a development experiment, not a new trained method or
-an announced GPU run. The previous two-fact diagnostic is closed; see the
+This is a development qualification experiment, not a new trained method.
+The unchanged-model baseline was submitted to Kaggle on 23 October 2026. The previous two-fact diagnostic is closed; see the
 [completed result](../alias_supervision/complete_v1/REPORT.md).
 
 ## Product question
@@ -46,7 +46,7 @@ license; they are not added to the library's permissively licensed code or offer
 as commercially usable training data. Our preparation module is independently
 written. Commercially reusable training data would be a separate product requirement.
 
-## Current state and next concrete step
+## Completed qualification
 
 An output-independent SHA256 ordering selected 32 candidate questions from all
 300 source records. The private packet contains their full question, answer
@@ -55,7 +55,9 @@ retains 22 and excludes 10, without replacements. Every complete document set
 was read before model inference. This is assistant review, not independent human
 adjudication. Exclusions include surviving explicit/implicit answers and
 ambiguous dates or release types.
-No model output has been used for selection and no new GPU run has been launched.
+No model output was used for selection. The baseline completed with worker exit 0 as version 1 of
+[`shlydv/neuronpatch-retrieval-evidence-v1-20261023`](https://www.kaggle.com/code/shlydv/neuronpatch-retrieval-evidence-v1-20261023).
+The downloaded execution source matches the [frozen SHA256](frozen_v1.json).
 
 The reproducible [input builder](inputs.py) produces 110 queries: ordinary and
 explicit evidence instructions on each supported/missing pair, plus one
@@ -65,7 +67,7 @@ model weights. Archived-document instructions prevent treating historical CEO
 or price answers as claims about today. Do not rewrite these questions after
 seeing model failures.
 
-Then freeze a small baseline-only comparison using the existing pinned 4B
+The frozen baseline-only comparison uses the existing pinned 4B
 generation infrastructure: supported documents, missing documents, and a
 question-only factual control. The last control measures whether ignoring the
 documents already answers the questions; it has a different instruction contract
@@ -73,7 +75,11 @@ and is not itself an abstention test. A stronger evidence-only prompt must be
 compared before attributing headroom to a missing weight update. Full answer
 correctness and supported/missing separation are distinct measurements.
 
-Training is warranted only if the reviewed outputs expose a repeated, meaningful
+The [completed baseline](complete_v1/REPORT.md) does not meet its frozen
+headroom criterion: 21/22 correct abstentions and only one repeated event-relation
+error. No adaptation follows on this slice.
+
+Training is warranted only if reviewed outputs expose a repeated, meaningful
 failure after simple prompting. These development examples cannot then serve as
 fresh confirmation. No automatic training follows from a low substring score.
 

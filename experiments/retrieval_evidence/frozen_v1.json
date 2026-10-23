@@ -1,0 +1,20 @@
+{
+  "revision": "ec3a55305d7096635954d88f3254780dafb8ba54",
+  "script_sha256": "faf0061a475214c721dea907c2331cb307f0c5be70a04c8c9da663b57c3b62fc",
+  "script_bytes": 252211,
+  "bundled_files": 17,
+  "all_source_matches_git": true,
+  "all_data_matches_reviewed_inputs": true,
+  "requested_provider_timeout_seconds": 3600,
+  "worker_timeout_seconds": 2100,
+  "internal_runtime_seconds": 1800,
+  "checks": "Pinned runtime tiny Qwen3 generation/unchanged weights/token budget test: 1 passed in 2.60s; Ruff and diff checks passed.",
+  "kaggle": {
+    "ref": "shlydv/neuronpatch-retrieval-evidence-v1-20261023",
+    "version": 1,
+    "kernel_id": 140370216,
+    "accepted_source_sha256": "faf0061a475214c721dea907c2331cb307f0c5be70a04c8c9da663b57c3b62fc",
+    "source_readback_matches": true,
+    "initial_submission": "Rejected HTTP 400 before matching notebook creation; title/slug mismatch corrected without changing execution source."
+  }
+}
