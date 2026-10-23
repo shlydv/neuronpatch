@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-10-23T07:42:11.853358+00:00",
+  "kernel": "shlydv/neuronpatch-outcome-guard-v1-20261023",
+  "source_revision": "36262363f9d464c78ed322d62f34e4f440b500eb",
+  "source_sha256": "9959047c7907da6730fddfabb5ed0f008b4641890db6ad7de5dad38588652a01",
+  "script_bytes": 137695,
+  "bundled_files": 34,
+  "all_bundle_files_match_frozen_git_revision": true,
+  "protocol_sha256": "8f0ff9c87acc0dec8843330944bc253422055a2d63c80c6778bca27c86dcfe2b",
+  "expected_endpoints": 6,
+  "expected_states": 8,
+  "expected_prefix_vectors": 840,
+  "expected_generations": 96,
+  "expected_base_generation_controls": 12,
+  "new_fits": 0,
+  "provider_timeout_seconds": 3600,
+  "worker_process_timeout_seconds": 2100,
+  "worker_internal_timeout_seconds": 1800,
+  "setup_timeouts_seconds": [
+    300,
+    300,
+    900
+  ],
+  "pretrained_outcome": null
+}
