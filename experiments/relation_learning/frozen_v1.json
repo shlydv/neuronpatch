@@ -1,0 +1,13 @@
+{
+  "source_revision": "4c95683",
+  "kernel": "shlydv/neuronpatch-relation-learning-v1-20261023",
+  "kernel_id": 140376584,
+  "version": 1,
+  "script_sha256": "dbf29b798277166318d1eedc989bad6e98c250a60e491b7c0eefaf57c85eaa43",
+  "accepted_source_exact": true,
+  "provider_limit_seconds": 7200,
+  "worker_limit_seconds": 6600,
+  "internal_limit_seconds": 6300,
+  "status_at_submission": "RUNNING",
+  "result_claim": "none; awaiting completed run"
+}

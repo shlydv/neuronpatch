@@ -1,6 +1,7 @@
 # Relation learning pilot
 
-Status: prepared locally; no training result yet.
+Status: Kaggle version 1 submitted and observed RUNNING on 2026-10-23.
+Accepted source exactly matches `frozen_v1.json`; no training result yet.
 
 The preceding relation-contrast probe found repeated errors distinguishing an
 interview's qualification assessor from its final assessor, and a release's
