@@ -58,41 +58,26 @@ selection sets from small training datasets and adds established Fisher-mask and
 gradient-informed low-rank baselines. Math is a possible later task, not another
 parallel experiment being started now.
 
-The [relation-learning pilot](../experiments/relation_learning/README.md) is now
-submitted as one private Kaggle version with an explicit two-hour provider cap.
-The accepted source matches the frozen hash. It compares eight fits: LoRA,
-two random paired-neuron selections, and a streaming empirical-Fisher group
-selection, each at two rates. All share 64 task and 20 preservation examples.
-There are 32 validation and 64 task-test examples with disjoint names; half the
-test examples also change wording. All 320 bank rows pass the actual pinned
-tokenizer's response-boundary/EOS checks, with maximum length 172 tokens.
-Version 1 stopped after 576 provider seconds: the first LoRA rate completed,
-then the higher rate encountered a nonfinite gradient after its last logged
-step 40. Exact failing step and forward-loss finiteness were not recorded by
-that worker. The comparison is incomplete, held-out outputs remain unreviewed,
-and no rate has been selected. Investigate numerical scaling before repeating
-the comparison; do not silently drop the higher rate or count the one fit as a
-method success. PyTorch's [FP16 guidance](https://docs.pytorch.org/docs/2.6/amp.html#gradient-scaling)
-identifies scale backoff as a relevant remedy, but the cause here is not yet
-established. A repair must retain the same examples and successful optimizer
-steps, record any numerical retries, and preserve all frozen evaluation data.
-Version 2 is now running with bounded PyTorch GradScaler backoff, retrying the
-same examples before an optimizer update. Real FP16-overflow tests establish
-that retries do not advance Adam or data and match a working-scale reference;
-the actual tiny worker and previous static path also pass. The frozen v2
-protocol changes no training inputs, rates, step counts or evaluation choices.
-This is a numerical remedy under test, not evidence that the GPU failure has
-been resolved across all fits. Live v2 logs now isolate the higher-rate LoRA
-failure at step 44: finite forward losses but nonfinite gradients at scale 128;
-retrying the same examples at scale 64 allows training through step 60. This
-supports the scaling-overflow explanation for that event. The first fit's
-logged endpoint loss metrics exactly match v1. Full tensor replay remains
-pending. Compare the completed first fit against v1 before efficacy
-analysis; no test generations have been reviewed.
-Fisher ranking is an established baseline adapted
-to groups, not a claim of novelty or preservation-aware selection. Select rates
-from validation loss before reviewing test outputs, then separately count
-corrections, regressions, appropriate abstentions and unsupported guesses.
+The [relation-learning pilot is complete](../experiments/relation_learning/complete_v2/REPORT.md).
+All eight fits and 2,880 generations pass independent artifact checks. Selected
+LoRA and both random supports improve task accuracy from 39/64 to 64/64;
+selected Fisher reaches 63/64 with one new unnecessary refusal. All selected
+conditions retain 16/16 solved-family controls. Random seed 71 loses one of eight
+unrelated utility answers; the others retain eight. The higher-rate, unselected
+Fisher fit returns empty answers on all eight utility questions. No selected
+neuron advantage is demonstrated. Rates were chosen by validation loss before
+viewing test outputs; semantic review corrects exact-match scoring of the base's
+valid explanatory answers.
+
+V2 completed in 2,908 provider seconds. Bounded loss-scale backoff resolves the
+high-rate LoRA overflow with one same-example retry at step 44. The earlier
+successful LoRA fit replays exactly, including adapter and teacher tensors,
+generated outputs and common training history. The frozen learning criterion
+passes. This is meaningful evidence of learnability, not a new adaptation method.
+Keep LoRA as the baseline. This budget now saturates the small synthetic task;
+no further format tweaks or unsupported selector promotion. Any next comparison
+must establish a practical quality/cost advantage on fresh confirmation data,
+with discovery cost and preservation included. The overall goal is unachieved.
 
 ## Scope review before the next experiment
 

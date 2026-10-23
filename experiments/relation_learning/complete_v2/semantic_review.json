@@ -1,0 +1,1199 @@
+{
+  "review_scope": "All nonexact full responses inspected; complete exact reference matches checked against frozen labels. Synthetic data; no independent human adjudication.",
+  "choices_sha256": "3992706d2ece6013a1c4096e21f11240f4bacc3e67524583f417e7e40fce7292",
+  "base_semantic_equivalence_overrides": [
+    "exposed:grant:0:0:target_first",
+    "exposed:grant:0:0:target_last",
+    "exposed:grant:0:0:target_only",
+    "exposed:grant:0:1:target_first",
+    "exposed:grant:0:1:target_last",
+    "exposed:grant:0:1:target_only",
+    "exposed:grant:1:0:target_first",
+    "exposed:grant:1:0:target_last",
+    "exposed:grant:1:0:target_only",
+    "exposed:grant:1:1:target_first",
+    "exposed:grant:1:1:target_last",
+    "exposed:grant:1:1:target_only",
+    "exposed:grant:2:0:target_first",
+    "exposed:grant:2:0:target_last",
+    "exposed:grant:2:0:target_only",
+    "exposed:grant:2:1:target_first",
+    "exposed:grant:2:1:target_last",
+    "exposed:grant:2:1:target_only",
+    "exposed:tournament:0:0:target_only",
+    "exposed:tournament:0:1:target_last",
+    "exposed:tournament:0:1:target_only",
+    "exposed:tournament:1:0:target_first",
+    "exposed:tournament:1:0:target_only",
+    "exposed:tournament:2:0:target_only",
+    "preserve:grant:0:original:0:target_first",
+    "preserve:grant:0:original:0:target_last",
+    "preserve:grant:0:original:0:target_only",
+    "preserve:grant:0:original:1:target_first",
+    "preserve:grant:0:original:1:target_last",
+    "preserve:grant:0:original:1:target_only",
+    "preserve:tournament:0:original:1:target_only",
+    "preserve:utility:0",
+    "preserve:utility:2",
+    "preserve:utility:3",
+    "scope_test:grant:8:original:0:target_first",
+    "scope_test:grant:8:original:0:target_last",
+    "scope_test:grant:8:original:0:target_only",
+    "scope_test:grant:8:original:1:target_first",
+    "scope_test:grant:8:original:1:target_last",
+    "scope_test:grant:8:original:1:target_only",
+    "scope_test:tournament:8:original:1:target_last",
+    "scope_test:tournament:8:original:1:target_only",
+    "scope_val:grant:9:original:0:target_first",
+    "scope_val:grant:9:original:0:target_last",
+    "scope_val:grant:9:original:0:target_only",
+    "scope_val:grant:9:original:1:target_first",
+    "scope_val:grant:9:original:1:target_last",
+    "scope_val:grant:9:original:1:target_only",
+    "train:release:0:original:1:target_first",
+    "utility_test:utility:0",
+    "utility_test:utility:2",
+    "utility_test:utility:6"
+  ],
+  "outputs": 2880,
+  "summary": [
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "train",
+      "count": 64,
+      "correct": 35,
+      "base_correct": 35,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 35,
+        "incorrect_abstention": 12,
+        "unsupported_answer": 16,
+        "incomplete": 1
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 17,
+      "base_correct": 17,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 17,
+        "incorrect_abstention": 7,
+        "unsupported_answer": 8
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 39,
+      "base_correct": 39,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 39,
+        "incorrect_abstention": 9,
+        "unsupported_answer": 16
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 75,
+      "base_correct": 75,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 63,
+        "appropriate_abstention": 12,
+        "incorrect_abstention": 9,
+        "unsupported_answer": 12
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "base",
+      "selected": false,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "train",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 35,
+      "corrections": 29,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 32,
+      "base_correct": 17,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 8
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 39,
+      "corrections": 25,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 96,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 24
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "lora-43-0.0003",
+      "selected": true,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "train",
+      "count": 64,
+      "correct": 59,
+      "base_correct": 35,
+      "corrections": 24,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 11,
+        "unsupported_answer": 5
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 29,
+      "base_correct": 17,
+      "corrections": 12,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 5,
+        "unsupported_answer": 3
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 58,
+      "base_correct": 39,
+      "corrections": 19,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 10,
+        "unsupported_answer": 6
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 90,
+      "base_correct": 75,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 18,
+        "unsupported_answer": 6
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "lora-43-0.001",
+      "selected": false,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "train",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 35,
+      "corrections": 29,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 32,
+      "base_correct": 17,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 8
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 62,
+      "base_correct": 39,
+      "corrections": 23,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 14,
+        "unsupported_answer": 2
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 96,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 24
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.0003",
+      "selected": false,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "train",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 35,
+      "corrections": 29,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 32,
+      "base_correct": 17,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 8
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 39,
+      "corrections": 25,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 96,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 24
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "paired_random-43-0.001",
+      "selected": true,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "train",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 35,
+      "corrections": 29,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 32,
+      "base_correct": 17,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 8
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 60,
+      "base_correct": 39,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 44,
+        "appropriate_abstention": 16,
+        "incorrect_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 96,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 24
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.0003",
+      "selected": false,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "train",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 35,
+      "corrections": 29,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 32,
+      "base_correct": 17,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 8
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 39,
+      "corrections": 25,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 96,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 24
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "paired_random-71-0.001",
+      "selected": true,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 7,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 1,
+      "categories": {
+        "incorrect_answer": 1,
+        "correct_answer": 7
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "train",
+      "count": 64,
+      "correct": 64,
+      "base_correct": 35,
+      "corrections": 29,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 48,
+        "appropriate_abstention": 16
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 20,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 16,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 32,
+      "base_correct": 17,
+      "corrections": 15,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 24,
+        "appropriate_abstention": 8
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 63,
+      "base_correct": 39,
+      "corrections": 25,
+      "regressions": 1,
+      "categories": {
+        "correct_answer": 47,
+        "appropriate_abstention": 16,
+        "incorrect_abstention": 1
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 16,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 12,
+        "appropriate_abstention": 4
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 96,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 72,
+        "appropriate_abstention": 24
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 4,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 4
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.0003",
+      "selected": true,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 8,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 0,
+      "categories": {
+        "correct_answer": 8
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "train",
+      "count": 64,
+      "correct": 58,
+      "base_correct": 35,
+      "corrections": 26,
+      "regressions": 3,
+      "categories": {
+        "correct_answer": 42,
+        "appropriate_abstention": 16,
+        "incorrect_abstention": 6
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "preserve",
+      "count": 20,
+      "correct": 13,
+      "base_correct": 20,
+      "corrections": 0,
+      "regressions": 7,
+      "categories": {
+        "correct_answer": 9,
+        "appropriate_abstention": 4,
+        "incorrect_abstention": 3,
+        "empty_answer": 4
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "target_val",
+      "count": 32,
+      "correct": 29,
+      "base_correct": 17,
+      "corrections": 13,
+      "regressions": 1,
+      "categories": {
+        "correct_answer": 21,
+        "appropriate_abstention": 8,
+        "incorrect_abstention": 3
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "target_test",
+      "count": 64,
+      "correct": 61,
+      "base_correct": 39,
+      "corrections": 24,
+      "regressions": 2,
+      "categories": {
+        "correct_answer": 45,
+        "appropriate_abstention": 16,
+        "incorrect_abstention": 3
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "scope_val",
+      "count": 16,
+      "correct": 10,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 6,
+      "categories": {
+        "correct_answer": 6,
+        "appropriate_abstention": 4,
+        "incorrect_abstention": 6
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "scope_test",
+      "count": 16,
+      "correct": 15,
+      "base_correct": 16,
+      "corrections": 0,
+      "regressions": 1,
+      "categories": {
+        "correct_answer": 11,
+        "appropriate_abstention": 4,
+        "incorrect_abstention": 1
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "scope_exposed",
+      "count": 96,
+      "correct": 90,
+      "base_correct": 75,
+      "corrections": 21,
+      "regressions": 6,
+      "categories": {
+        "correct_answer": 66,
+        "appropriate_abstention": 24,
+        "incorrect_abstention": 6
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "utility_val",
+      "count": 4,
+      "correct": 0,
+      "base_correct": 4,
+      "corrections": 0,
+      "regressions": 4,
+      "categories": {
+        "empty_answer": 4
+      }
+    },
+    {
+      "model": "paired_fisher-43-0.001",
+      "selected": false,
+      "bank": "utility_test",
+      "count": 8,
+      "correct": 0,
+      "base_correct": 8,
+      "corrections": 0,
+      "regressions": 8,
+      "categories": {
+        "empty_answer": 8
+      }
+    }
+  ]
+}

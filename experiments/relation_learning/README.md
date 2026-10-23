@@ -82,3 +82,10 @@ The streaming selection accumulator avoids retaining gradient factors for
 every discovery example. The tiny-model test independently checks its math
 and executes Fisher, random and LoRA training, export/reload, merge and base
 restoration. These checks establish implementation integrity, not efficacy.
+
+## Completed result
+
+See [the verified report](complete_v2/REPORT.md). All eight fits completed.
+The learning criterion passes; a Fisher-selection advantage does not. Validation
+choices, all predictions, semantic review, integrity checks and exact v1 replay
+are saved in `complete_v2/`.

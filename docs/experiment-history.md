@@ -102,3 +102,11 @@ retains all8/8 transfers without measured preservation losses and has a shorter
 total adaptation prefix. A late high-rate failure is isolated to an optimizer
 update causing premature EOS; it is distinct from the earlier semantic errors.
 The current guided recipe does not advance unchanged to fresh confirmation.
+
+The [relation-learning comparison](../experiments/relation_learning/complete_v2/REPORT.md)
+completes eight fits with matched supervision and approximate parameter budgets.
+LoRA and random reach 64/64 fresh task answers versus 39/64 base; Fisher reaches
+63/64. One selected random support loses a utility answer; high-rate Fisher
+produces empty utility responses. Selection provides no demonstrated advantage.
+Independent artifact verification and exact replay of the pre-repair successful
+LoRA fit pass. All reviewed test inputs are now development evidence.

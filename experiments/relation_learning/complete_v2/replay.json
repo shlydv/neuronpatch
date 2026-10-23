@@ -1,0 +1,47 @@
+{
+  "condition": "lora-43-0.0003",
+  "files": {
+    "inputs.json": {
+      "exact": true,
+      "before_sha256": "b137b5433d69acbeb0c5a245f804c6bd6ace7f1161e58ad277c97fa21b4493bf",
+      "after_sha256": "b137b5433d69acbeb0c5a245f804c6bd6ace7f1161e58ad277c97fa21b4493bf"
+    },
+    "tokenization.json": {
+      "exact": true,
+      "before_sha256": "bf289ad6c2737f9acf68521acbc59dbb75e4874f1a1fb393aa1ebe23ad434524",
+      "after_sha256": "bf289ad6c2737f9acf68521acbc59dbb75e4874f1a1fb393aa1ebe23ad434524"
+    },
+    "case-0-base.json": {
+      "exact": true,
+      "before_sha256": "b87543e01166079ebd70de1f3d8a1d194a56c774cdabfae1217389e131cab7d1",
+      "after_sha256": "b87543e01166079ebd70de1f3d8a1d194a56c774cdabfae1217389e131cab7d1"
+    },
+    "case-0-lora-43-0.0003.json": {
+      "exact": true,
+      "before_sha256": "dc490af7a3e599864432f6110f2a0590d856875ed3051355d8d85b849d50d96e",
+      "after_sha256": "dc490af7a3e599864432f6110f2a0590d856875ed3051355d8d85b849d50d96e"
+    }
+  },
+  "tensors": {
+    "case-0-lora-43-0.0003-teacher.safetensors": {
+      "exact": true,
+      "finite": true,
+      "max_abs_difference": 0.0
+    },
+    "case-0-lora-43-0.0003-adapter/adapter_model.safetensors": {
+      "exact": true,
+      "finite": true,
+      "max_abs_difference": 0.0
+    },
+    "case-0-scores.safetensors": {
+      "exact": true,
+      "finite": true,
+      "max_abs_difference": 0.0
+    }
+  },
+  "history_exact_ignoring_new_scale_metadata": true,
+  "metrics_exact": true,
+  "gradient_retries": 0,
+  "semantic_test_outputs_displayed": false,
+  "exact_replay": true
+}

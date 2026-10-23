@@ -17,6 +17,11 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Outcome-guard replay](experiments/outcome_guard/complete_v1/REPORT.md) | Correct greedy controls hide increased wrong-continuation probability; canonical auxiliary labels impose avoidable EOS pressure | A qualified protection rule, causal explanation of downstream errors, or improved trained method |
 | [Auxiliary-objective ablation](experiments/alias_supervision/complete_v1/REPORT.md) | Accepted-set supervision helps random/LoRA oxygen probabilities and selected Lakers answers; selected oxygen error persists | A selected-neuron advantage or a generally safe adaptation recipe |
 
+The [completed relation-learning pilot](experiments/relation_learning/complete_v2/REPORT.md)
+raises held-out task accuracy from 39/64 to 64/64 with LoRA and random patches,
+and 63/64 with Fisher-selected patches. Selection has no demonstrated advantage;
+all rates and preservation failures are reported.
+
 Start with the [current method decision](docs/current-method.md) for the active
 hypothesis and decision boundary. The [experiment history](docs/experiment-history.md)
 preserves the earlier transfer, preservation and failure investigations, with
