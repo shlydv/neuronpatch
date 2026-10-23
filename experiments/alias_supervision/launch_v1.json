@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-10-23T09:03:08.061767+00:00",
+  "kernel": "shlydv/neuronpatch-alias-supervision-v1-20261023",
+  "accepted_version": 1,
+  "current_version_verified": 1,
+  "kernel_id": 140362677,
+  "url": "https://www.kaggle.com/code/shlydv/neuronpatch-alias-supervision-v1-20261023",
+  "status": "RUNNING",
+  "accepted_source_byte_identical": true,
+  "source_sha256": "86b77a9844f49d4ac416becb65862aaf3909dbc7733907ff6ba51222329312b8",
+  "provider_session_timeout_requested_seconds": 7200,
+  "provider_timeout_enforcement_live_verified": false,
+  "observed_phase": "Kaggle running;dependency setup observed;no full-size training result yet"
+}

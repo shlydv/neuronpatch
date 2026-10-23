@@ -6,6 +6,23 @@ complete-response training and deployment checks. We do **not** have that
 advantage. The next step isolates a mismatch in auxiliary supervision before changing
 another selector. The [previous decision](decisions/2026-10-22-method.md) and
 [experiment history](experiment-history.md) preserve earlier reasoning/results.
+The [frozen auxiliary-objective comparison](../experiments/alias_supervision/README.md)
+has now been submitted to Kaggle; it has no verified full-size outcome yet.
+The [additional primary-source review](research-2026-10-23.md) identifies close
+curvature and component-coefficient precedents that constrain future claims.
+
+## Scope review before the next experiment
+
+The current two-fact comparison is a development diagnostic. Its correction
+scores are at a ceiling for all three representations, so it cannot establish
+a correction advantage or validate the intended reusable behavior recipe.
+Complete the already running loss ablation and review its outputs. Do not
+automatically follow it with another support/threshold variation on these same
+facts. The next experimental proposal must connect its result to the library's
+document-grounded answering application, use a strong common-objective LoRA
+control, and separate supported answering, appropriate abstention and unrelated
+utility. Existing failed QA pilots are evidence to audit, not fresh confirmation
+data. Broad robustness and a second task family remain required for the goal.
 
 ## What actually changes our decision
 

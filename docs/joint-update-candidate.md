@@ -11,6 +11,12 @@ that turns gradients into accepted updates. No model result is claimed here.
 
 ## Relevant prior art and what it rules out claiming
 
+The [23 October primary-source follow-up](research-2026-10-23.md) adds two
+particularly close comparisons: CrispEdit's curvature-constrained updates and
+Steer2Edit's fixed component directions with scalar edit strengths. The candidate
+below must be assessed against them; neither generic projection nor a
+coefficient parameterization is an original contribution on its own.
+
 [GEM](https://arxiv.org/html/1706.08840) projects a proposed gradient to the nearest
 one satisfying constraints derived from previous-task gradients. Its dual
 quadratic program is small in the number of constraints, even for many network
