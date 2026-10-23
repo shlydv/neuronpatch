@@ -5,6 +5,17 @@ setting after one completed fit. See `failure_v1.json`. Accepted source exactly
 matches `frozen_v1.json`. The comparison is incomplete; no efficacy claim.
 Held-out generations have not been reviewed and no rate has been selected.
 
+Version 2 uses `protocol_v2.json` with the exact same input bytes, eight
+conditions, rates and step counts. The only training change is optional
+PyTorch GradScaler backoff: start at 128, halve on a nonfinite gradient, and
+retry the same two examples without an Adam update. Stop if scale would go
+below 1/128. Nonfinite forward losses still fail immediately. There is no
+automatic scale growth or skipped training example. Every retry is logged and
+independently checked. Tests induce real FP16 overflow and confirm identical
+weights to a fixed-working-scale reference, plus no updates on unrecoverable
+failure. This validates retry mechanics, not the cause of the GPU failure.
+The completed first fit must be compared with v1 before reviewing efficacy.
+
 The preceding relation-contrast probe found repeated errors distinguishing an
 interview's qualification assessor from its final assessor, and a release's
 announcer from its releaser. This pilot tests learning those distinctions, not

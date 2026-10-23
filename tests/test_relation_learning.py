@@ -122,6 +122,7 @@ def test_actual_worker_fisher_random_lora_with_custom_messages(tmp_path):
         steps=1,
         max_new_tokens=2,
         discovery_indices=[1, 10, 41, 50],
+        minimum_loss_scale=1,
     )
     spec["conditions"] = [spec["conditions"][i] for i in (0, 2, 6)]
     spec["new_fits"] = 3

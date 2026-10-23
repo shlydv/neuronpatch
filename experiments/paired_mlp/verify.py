@@ -109,6 +109,17 @@ def verify(root, protocol, tokenizer):
             [order[step % len(order)] for order in orders]
             for step in range(protocol["steps"])
         ]
+        if "minimum_loss_scale" in protocol:
+            scale = protocol["loss_scale"]
+            for row in fit["history"]:
+                for retry in row["gradient_retries"]:
+                    assert retry["step"] == row["step"]
+                    assert retry["example_indices"] == row["example_indices"]
+                    assert retry["loss_scale"] == scale
+                    assert len(retry["losses"]) == 2
+                    assert all(math.isfinite(v) for v in retry["losses"])
+                    scale /= 2
+                assert row["loss_scale"] == scale >= protocol["minimum_loss_scale"]
         assert all(
             math.isfinite(r[k])
             for r in fit["history"]
