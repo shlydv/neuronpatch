@@ -1,0 +1,206 @@
+{
+  "reviewed_utc": "2026-10-24T13:51:53.610405+00:00",
+  "inputs_sha256": "7e7b6b2b1003a3c72c7538304ce240fe9dd3367e6edd2a48268e32cea590ab7e",
+  "source_review_sha256": "0e0330abd6044046dec532c328d2593f74a3ab093572225efcc10cc22ec3d65f",
+  "reviewer": "Assistant source-only review before experiment submission or generation",
+  "documents": {
+    "408d85291891f6b9a43a54c9ae611cf75ea333030567b1989044539194c0ebad": {
+      "index": 0,
+      "answer": "Ratan Planet",
+      "reason": "90m exceeds all listed heights.",
+      "exclude_qa": false
+    },
+    "d6e643f6d6f9afa21a08e5e5568b678e8c96ff70b1ca2626148e8b61736b6508": {
+      "index": 1,
+      "answer": "3",
+      "reason": "Kobold,Kedzie,Maxwell wins by decision.",
+      "exclude_qa": false
+    },
+    "cf69597ecaf3f54dd920bda3a3372d091be1b2bae288138159ca95358715bd0e": {
+      "index": 2,
+      "answer": "5",
+      "reason": "Home nonwins games3,4,8,12,13.",
+      "exclude_qa": false
+    },
+    "1b6a952cdc6d15942c5df25810305840389f0f4d34630db96f9832b11f7a5050": {
+      "index": 3,
+      "answer": "1st",
+      "reason": "BothAficio divisions showfirst.",
+      "exclude_qa": false
+    },
+    "685f56b32f9fa737a600f9c1dbfd8053754fed689690afb33523e529551a2223": {
+      "index": 4,
+      "answer": "5",
+      "reason": "Nike,Samurai,Canterbury,adidas,LottoSportItalia.",
+      "exclude_qa": false
+    },
+    "5c2211f877825023f195b288798dd8f1f96294273695201f1e853ee3832fd063": {
+      "index": 5,
+      "answer": "2:37.70",
+      "reason": "AurelieRivard row.",
+      "exclude_qa": false
+    },
+    "9718c996e39c2a0f6f162b2c9fbb860e0b523c0873a64848633a378231214cd2": {
+      "index": 6,
+      "answer": "Iran",
+      "reason": "Other rank5.",
+      "exclude_qa": false
+    },
+    "4edef8464615637ef3969b1c2d4534c6e448e70fe0c9658d0fbc1957b38bd077": {
+      "index": 7,
+      "answer": "1",
+      "reason": "OnlySaveWhatYouCan labelledpromotional.",
+      "exclude_qa": false
+    },
+    "b5a206b3c159fa9d59156f0eea72829065e7d8ff93989e9c6ca31af9731aa12c": {
+      "index": 8,
+      "answer": "63",
+      "reason": "Bears10+20+6+27;loss16-6 contributes6.",
+      "exclude_qa": false
+    },
+    "8412f03a015f370a350dc004d6f975150d8761a96bfea99b0e08896bc4900dae": {
+      "index": 9,
+      "answer": "SWAT 4: The Stetchkov Syndicate",
+      "reason": "BothIrrationalGames.",
+      "exclude_qa": false
+    },
+    "237ab7453a11300cfdd32b4b5f1e5c3c377ff608c67c0d6ea4db3fc0d0f33290": {
+      "index": 10,
+      "answer": "2",
+      "reason": "Saarbrucken14and10below20;33not.",
+      "exclude_qa": false
+    },
+    "0b5b8b6bbfcab3e523b1ad1f99cd4f449617d579cf2e77124226cfdca1600f4c": {
+      "index": 11,
+      "answer": "Resigned; hired by Leicester City",
+      "reason": "PlymouthArgyle row;resignedalone sufficient manner.",
+      "exclude_qa": false
+    },
+    "82df635983d7aee16cfd3d3caeed055e8608e79d1f9e2c57a1a54be4f5f66360": {
+      "index": 12,
+      "answer": "United States and Austria",
+      "reason": "Both8bronze;allothersbelow6.",
+      "exclude_qa": false
+    },
+    "2fe8c94ff8cf6a3f2939f8deb328eff5f3c7f192ff0ed7aad3a13684e9c56729": {
+      "index": 13,
+      "answer": "The Price to Pay",
+      "reason": "20versus35.",
+      "exclude_qa": false
+    },
+    "c65b3f1bc5ae02bcbed95289b6c581689b8c82a210322cd07b02f1b838bf4ddd": {
+      "index": 14,
+      "answer": "6",
+      "reason": "SixDidnotqualify;exclude2010-11N/A.",
+      "exclude_qa": false
+    },
+    "5b7df5accf88a5cf8f2ff3fd966936ae65149878d508f8a35fad1f3496320fd8": {
+      "index": 15,
+      "answer": "Not inferable from table",
+      "reason": "No nationality column;excludeQAallconditions,retaincontrols.",
+      "exclude_qa": true
+    },
+    "dac7f24af111fd404dab6114e09e6114f4d63ea64cbb81788a76b4cdc14e982c": {
+      "index": 16,
+      "answer": "08-0SA",
+      "reason": "Finalrow.",
+      "exclude_qa": false
+    },
+    "315565345f48b78b9ce69c6f616655b861fca9ad61a8bde793a0fd3523e29edf": {
+      "index": 17,
+      "answer": "Paul Ames",
+      "reason": "Pick123before124.",
+      "exclude_qa": false
+    },
+    "e105609cf9acf426f61f65acd98cb9279a14b509ff9bffc89b06fe0f02e5c8bc": {
+      "index": 18,
+      "answer": "36",
+      "reason": "Total12+12+12;do notdoublecounttotalrow.",
+      "exclude_qa": false
+    },
+    "74fbd33a53344ff018f123c152c7b44a573d696ed55ccd688fd8c26761c94961": {
+      "index": 19,
+      "answer": "2.1 million euros",
+      "reason": "8.6minus6.5.",
+      "exclude_qa": false
+    },
+    "8530d551d1b960b102a3931e9672a6210549a7d253e37962d646fd58e59a9727": {
+      "index": 20,
+      "answer": "Lionel Roberts Park",
+      "reason": "Five scoringrowsversusone;distinctfixtures2versus1. Requestedcomparisonidentical;fivegameswouldbeunsupported supportingclaim.",
+      "exclude_qa": false
+    },
+    "2935bbc06390897a10d5fa4675d1bfb64511c8417b94e480d54cad169561fe62": {
+      "index": 21,
+      "answer": "Uruguay",
+      "reason": "OnlynonUScountry.",
+      "exclude_qa": false
+    },
+    "14776afbcf50ff527bb90d8baca6e28f613db1c3813e8ec0b93fad8aab0b96c1": {
+      "index": 22,
+      "answer": "Nuno Capucho",
+      "reason": "0.67mgreater0.25mand0.2m.",
+      "exclude_qa": false
+    },
+    "d0f15504d1e0965b1c253e191358f5b89c45ebc7b7065b396e19d25eea3e4c2d": {
+      "index": 23,
+      "answer": "2",
+      "reason": "Diekirch andEttelbruck rowsmatchbothcolumns.",
+      "exclude_qa": false
+    },
+    "276e9ea636434f4d250a8400501add8620406f60c7c0d0baecf461deb557a186": {
+      "index": 24,
+      "answer": "AIAN",
+      "reason": "Secondhighestpopulationinboth2000and2005;growthnotpopulation.",
+      "exclude_qa": false
+    },
+    "8b41e1ee252e1bff45bbd86f035d9ee50939b1b5c8e4b65f2d790b93fc8b9205": {
+      "index": 25,
+      "answer": "5 measured peaks",
+      "reason": "3465,3353,3314,3251,3235;unmeasuredcannotbeasserted.",
+      "exclude_qa": false
+    },
+    "5d53a0649d6a9cbd3b1cbcebeb55a72eef605fc812c5bdf6e2c55c95ebe15f0f": {
+      "index": 26,
+      "answer": "Uniao de Leiria",
+      "reason": "PreviouslistedtieSantaClara3-2;tableorderinterpretation.",
+      "exclude_qa": false
+    },
+    "15d2e38afd26595db59c29055b14ecbd439937516847d795c1cb78c6b6da3a3b": {
+      "index": 27,
+      "answer": "6 categories including Others",
+      "reason": "Primarysixnontotalrows. SensitivityacceptfiveexplicitlynamedethnicitieswithOthersdistinguished;unqualifiedfivefailsprimary.",
+      "exclude_qa": false
+    },
+    "334b5ae0672ca79ef9e4fa4aba3eb15c6abd7115385cb89de04476cb3b07ef7e": {
+      "index": 28,
+      "answer": "2",
+      "reason": "ArleneSemeco andXimenaMariaVilar bothQ.",
+      "exclude_qa": false
+    },
+    "444a532de7d6f32e4b682108c0d53e98a6283dc9d97f61457b348bd563b38d91": {
+      "index": 29,
+      "answer": "K-Ci & JoJo",
+      "reason": "LasttrackGoTheDistance.",
+      "exclude_qa": false
+    },
+    "4b3d7bcbef63543b870d1616dfdecdfefabdde59dbcf2b4982d456a1ce2ffccc": {
+      "index": 30,
+      "answer": "4 weeks",
+      "reason": "FourweeklySeptemberwins beforeOctober2loss.",
+      "exclude_qa": false
+    },
+    "48f2e880906a20eaa86d7eae3694344107b6b410dab86dced4d23b232fc2afe1": {
+      "index": 31,
+      "answer": "1932 Summer, 1984 Summer and 1996 Summer Olympics",
+      "reason": "117,221,271events;othersbelow100.",
+      "exclude_qa": false
+    }
+  },
+  "sensitivity_documents": [
+    27
+  ],
+  "excluded_qa_indices": [
+    15
+  ]
+}
