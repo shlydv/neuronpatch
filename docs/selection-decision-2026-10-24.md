@@ -217,3 +217,9 @@ LoRA endpoint's total squared update norm. Existing shared supports capture
 this endpoint; this is not a behavioral capacity limit or evidence against
 training a different sparse solution. The old LoRA also fails full-document
 preservation and is not yet a suitable teacher for a claimed boundary repair.
+
+A [same-support learned-mixing control](sharing-relaxation-control.md) would
+relax fixed sharing with 1.25% additional scalars and contain every current
+grouped update. A tiny CPU check verifies equal initial gradients and first
+Adam outputs under group-based initialization. This is masked low-rank prior
+art, not a new method, and is conditional on the pending behavioral diagnosis.
