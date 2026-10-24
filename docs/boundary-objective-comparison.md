@@ -122,9 +122,8 @@ is hidden in this orchestration layer.
 Fifteen focused CPU tests pass, including the complete four-arm optimizer/export
 path on a randomly initialized tiny Qwen model, direct-gradient and Adam-update
 agreement, unequal response lengths, nonfinite retry, and base restoration.
-These establish implementation behavior, not full-model quality or T4 feasibility.
-Fresh held-out evaluation, frozen protocol, model-loading/bundling and GPU runtime
-checks remain before submission. No new GPU job has been launched.
+These establish implementation behavior, not full-model quality. The subsequent
+evaluation, packaging and submission stages are recorded below.
 
 ## Fresh evaluation and bounded protocol
 
@@ -145,6 +144,45 @@ remains diagnostic. Absolute quality and preservation gates are frozen before
 outputs, alongside paired improvements and failure analysis. One seed/rate is a
 bounded diagnostic, not an exhaustive comparison of objective potential.
 
-No new GPU run has been submitted. Hardware execution/packaging remains pending.
+The private single-T4 run `shlydv/neuronpatch-boundary-preference-v1-20261024`
+was accepted on24 October2026. The accepted source matches the locally recorded
+bundle. Base evaluation and narrow-SFT training/evaluation have completed; the
+provider reports RUNNING and narrow-DPO has reached update48 at this checkpoint.
+This is execution progress, not a reviewed behavioral finding.
 Passing this table-task evaluation would not establish unrelated-task retention
 or the project's requested sparse-adaptation advantage.
+
+## Interpretation before opening the generated answers
+
+The reporting code now includes four direct, paired comparisons: diverse versus
+narrow within each objective, and DPO versus SFT within each data bank. Each
+family records the individual questions gained and lost, even when the aggregate
+score is unchanged. Inspect those responses before proposing another fit.
+
+- If diverse training improves both objectives, the evidence favors changing the
+  training bank in this setting. It cannot distinguish semantic diversity from
+  more unique examples or fewer repetitions: those change together here.
+- If DPO improves both banks while preserving legitimate behavior, the explicit
+  preference objective is useful under these settings. Its extra compute and
+  different loss scale must accompany the quality result; equal learning rates
+  and update counts do not establish that either objective was optimally tuned.
+- If only diverse DPO works, treat data and objective as interacting. Do not
+  credit neuron selection, which is absent from all four arms, or conclude that
+  DPO alone solved the problem.
+- If attack resistance improves but legitimate task changes fail, we still have
+  a brittle instruction-following policy. A lower training loss or larger
+  preference margin does not repair that behavioral failure.
+- If every arm fails, inspect familiar calibration, absolute chosen/rejected
+  likelihoods, truncation and answer errors separately. Failure at one rank,
+  learning rate and budget does not show that the task or sparse adaptation is
+  impossible, nor does it identify neuron selection as the cause.
+
+A qualified baseline would justify the next matched representation comparison.
+Before spending compute on it, match which projections can change and document
+the update freedom: the previous grouped gate/up patch tied selected rows to a
+shared update, whereas all-projection LoRA could also change attention and down
+projections. That comparison confounded neuron selection with update constraints.
+Independent selected-row updates versus random rows with the same layer counts
+would isolate selection more directly; grouping should be a separate compression
+choice. The practical comparison must still include LoRA and discovery cost.
+None of these conditional next steps changes this run's frozen protocol or gates.
