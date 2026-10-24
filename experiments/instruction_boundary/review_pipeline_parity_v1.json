@@ -1,0 +1,22 @@
+{
+  "scope": "New blinded-review and paired-summary pipeline replays existing judgments exactly; not independent semantic re-review or model reproduction.",
+  "legacy_review_sha256": "ac9f7c7520bc5043ea572031bc968bb7ac8f2637700f1f4cc67238e2dc89ca62",
+  "packet_sha256": "4055fcc5b5121aa139862ad9c61da066aeb61ebf82b590a29964d5fef20828ef",
+  "modes": {
+    "final_answer": {
+      "reviewed_records": 1680,
+      "condition_groups": 35,
+      "legacy_counts_and_document_ids_exact": true
+    },
+    "strict_support": {
+      "reviewed_records": 1680,
+      "condition_groups": 35,
+      "legacy_counts_and_document_ids_exact": true
+    },
+    "lenient_row_identification": {
+      "reviewed_records": 1680,
+      "condition_groups": 35,
+      "legacy_counts_and_document_ids_exact": true
+    }
+  }
+}
