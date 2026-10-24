@@ -101,3 +101,27 @@ A working LoRA result supplies a behavior worth making cheaper. Then test sparse
 selection and sharing against that competent baseline with matched task coverage,
 additional seeds, unrelated-task retention and full costs. A successful preference
 baseline alone would not achieve the neuronpatch goal or establish novelty.
+
+## Integrated optimization and export check
+
+`preference_training.py` now caches frozen reference sequence scores, binds them
+to tokenized-pair identities, and runs common Adam/preservation schedules. DPO
+recomputes each response separately with the exact scalar chain-rule coefficient,
+retaining one model graph at a time. This trades memory for compute: four task
+forwards per DPO update versus one for SFT, plus one clean-preservation forward
+for both. Reference scoring costs two additional forwards per unique pair.
+Nonfinite gradients retry the same samples at a lower scale without an Adam step.
+
+`preference_experiment.py` runs all four coverage/objective arms from independently
+initialized adapters on the same fingerprinted base. It rejects conflicting data
+identities and existing output directories, verifies base restoration after every
+arm, and evaluates reloaded artifacts after exact two-response score checks.
+The evaluation callback must save full responses; no metric or checkpoint choice
+is hidden in this orchestration layer.
+
+Fifteen focused CPU tests pass, including the complete four-arm optimizer/export
+path on a randomly initialized tiny Qwen model, direct-gradient and Adam-update
+agreement, unequal response lengths, nonfinite retry, and base restoration.
+These establish implementation behavior, not full-model quality or T4 feasibility.
+Fresh held-out evaluation, frozen protocol, model-loading/bundling and GPU runtime
+checks remain before submission. No new GPU job has been launched.
