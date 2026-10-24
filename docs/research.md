@@ -251,3 +251,33 @@ step acceptance, not a ready-made repair. Before adopting a gate, compare it to
 matched stopping/subsampling and include its scoring cost. Our earlier guard
 failed on valid aliases; a different gate still needs a behaviorally valid
 objective. Keep the submitted supervision experiment unchanged.
+
+## Separating optimization from compression; a simpler sparse baseline
+
+[LoRA-Squeeze](https://arxiv.org/html/2602.10993v1), sections 3–5, studies training
+at higher rank and compressing the learned update with randomized SVD, either
+after or during training. This is prior art for separating training capacity
+from deployment capacity. It does not demonstrate sparse-neuron compression.
+Our rank-one comparator has no smaller nonzero rank; applying its recipe would
+require a different training budget. No reproduction or code audit was done.
+
+**Diagnostic inference:** if a verified successful teacher can be compressed into
+our patch representation but direct training fails, the representation admits a
+working solution and the training route becomes suspect. Failure to compress
+would not prove impossibility: the compression algorithm may be inadequate.
+Count teacher training and compression costs, and require an actual storage or
+behavior advantage. Do not call a successful compression a cheaper training method.
+
+[Refining Salience-Aware Sparse Fine-Tuning (ACL 2025)](https://aclanthology.org/2025.acl-long.1541.pdf)
+compares salience metrics and static/dynamic masks for individual weight entries.
+Its results favor a simple gradient-based static baseline in its experiments;
+they do not establish our shared-row method or broad preservation. This is a
+relevant lower-complexity baseline before adding adaptive selection machinery.
+
+The [official implementation, pinned at 6428f2a](https://github.com/0-ml/speft/tree/6428f2aaeb394bbfcc7bf9c7fd23afbb620a0501),
+was read locally without execution. `compute_gradient_based_scores` accumulates
+batch gradients, then the `gradient` option takes their absolute values.
+This differs from averaging absolute gradients or squared per-example gradients.
+`LinearSparse` stores selected scalar updates but scatters them into a dense
+weight for its forward pass; sparse trainables alone do not prove sparse compute.
+No external code was copied. The submitted supervision run is unchanged.
