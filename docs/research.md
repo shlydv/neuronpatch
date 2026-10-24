@@ -190,3 +190,43 @@ row deltas: sharing changes the update space and introduces cross-row effects.
 Our actual-optimizer observer is the appropriate existing measurement tool;
 the open issue is predictive utility across training/transfer examples, not the
 absence of another scoring formula. No new GPU run follows from this review.
+# Instruction-boundary objective prior art — 24 October 2026
+
+Read while the fixed-support supervision experiment was already submitted; this
+does not change its frozen inputs, objective, criteria or evaluation.
+
+[StruQ](https://www.usenix.org/conference/usenixsecurity25/presentation/chen-sizhe)
+combines an input-formatting front end with training that distinguishes the
+instruction and data portions. It augments instruction tuning with instructions
+inside data. Our ordinary JSON-quotation prompts and small adaptation are not a
+reproduction of that system, nor a new invention of instruction/data separation.
+
+[SecAlign, sections 3–4](https://arxiv.org/html/2410.05451v3) argues that training
+only the desired response leaves the competing injected response underspecified.
+It trains preferences between legitimate and injected responses and evaluates
+security plus utility. Its claims are specific to its models, datasets and attack
+evaluations; they do not establish that our fixed-support SFT repair will work.
+This is direct objective-design prior art, not evidence for a particular sparse
+selector. We read the paper, not reproduced its reported outcomes.
+
+In the [official implementation](https://github.com/facebookresearch/SecAlign/blob/main/align.py),
+`generate_preference_data` pairs an injected prompt with the original example's
+response as chosen and the injected example's response as rejected. The inspected
+entry point uses TRL preference trainers and rank-64 LoRA on q/v projections.
+This differs from our rank-one all-projection LoRA and shared gate/up row patches.
+Consequently importing its name or preference loss would not reproduce its
+experimental configuration. No source code was copied into neuronpatch.
+
+The [Meta SecAlign entry point](https://github.com/facebookresearch/Meta_SecAlign/blob/main/secalign_plus_plus.py)
+defaults to self-generated responses and randomized injection positions and
+launches a distributed LoRA DPO recipe. These are configuration observations,
+not an audit of every helper or proof of their isolated causal effects.
+
+**Inference for this project:** the pending run isolates missing trusted-context
+supervision. A later preference-objective comparison would be a separate question
+and should hold its data/support fixed. Do not add DPO, randomize positions, and
+change selection simultaneously, then attribute a gain to neurons. If sparse
+selection becomes useful, demonstrate that advantage against the same competent
+task objective, not against a deliberately weak adaptation baseline. Passing
+our small table task would still not certify general prompt-injection security.
+
