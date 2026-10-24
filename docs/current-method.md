@@ -5,6 +5,22 @@ in quality, preservation and cost against strong baselines. **Not achieved.**
 The library can train, save, reload and merge compact patches. No neuron-selection
 recipe has yet earned recommendation as a default or a superiority claim.
 
+## Active bounded test
+
+[Full-document supervision](https://www.kaggle.com/code/shlydv/neuronpatch-boundary-supervision-v1-20261024)
+kernel 140599487 version 1 is RUNNING at submission verification. Accepted source
+matches the frozen bundle. One private T4; provider/worker/internal caps are
+10,800/10,200/9,900 seconds. No paid scaling requested.
+The [protocol](../experiments/instruction_boundary/supervision_protocol_v1.json)
+fixes three new fits at rate 0.0003 using saved matched/random43 supports and
+LoRA. Short direct preservation inputs become full-document requests; teachers
+and sample schedules remain fixed. Three old endpoints replay on the same
+32 fresh documents: 2,912 new generations across seven conditions. All 368
+previously allocated documents are excluded. Source review predates submission;
+one QA item is excluded for missing nationalities, with all controls retained.
+No outcome is available. This tests supervision repair, not achieved superiority.
+See [design and provenance](boundary-supervision-test.md).
+
 ## Latest completed experiment
 
 [Matched-authority discovery](../experiments/instruction_boundary/complete_authority_v1/REPORT.md)

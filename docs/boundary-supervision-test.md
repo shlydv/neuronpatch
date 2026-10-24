@@ -1,4 +1,4 @@
-# Full-document supervision test — preparation, not a submitted experiment
+# Full-document supervision test — submitted 24 October 2026
 
 The [completed authority experiment](../experiments/instruction_boundary/complete_authority_v1/REPORT.md)
 found a shared failure: every trained adapter ignored all 48 legitimate redirects
@@ -6,7 +6,7 @@ after a complete document, although the base followed them. Short direct and
 quoted controls all passed. This motivates a supervision ablation before more
 neuron-selection development. It does not prove the proposed repair will work.
 
-## Change being prepared
+## Frozen change
 
 `experiments/instruction_boundary/matched_supervision.py` replaces each eligible
 short direct redirect preservation example with the same redirect outside the
@@ -31,7 +31,10 @@ execution mechanics, not large-model quality. Packaging includes the pinned
 assets. Multiple-parent comparator replay and independent verification are now
 implemented. A tiny-model test replays disjoint parent subsets, checks all
 generation records, and rejects missing receipts and altered supervision.
-Final source review, protocol freeze, packaging and submission remain.
+Source review and protocol are frozen. Kaggle accepted kernel 140599487 version1,
+`shlydv/neuronpatch-boundary-supervision-v1-20261024`. Source SHA-256
+`0046d49387ad310888833f3dbc2be05b53c8d1494e258f109548fe53f39f15ee`
+matches the local bundle. Status at verification: RUNNING.
 
 The private preparation currently allocates 32 fresh documents after excluding
 all 368 previously allocated documents. There are 416 confirmation cases per
@@ -42,13 +45,14 @@ but are not new inference. The tokenizer check finds maximum supervised length
 1,101 and maximum confirmation prompt length 1,040, within the existing caps.
 Parent artifact hashes and fixed support identities pass the CPU checks.
 Fifteen focused tests pass, including actual tiny-model optimization; these do
-not establish large-model behavior. No new Kaggle job has been submitted.
+not establish large-model behavior. The single private T4 run is submitted; log observation and automatic artifact
+collection are attached.
 
 This is a standard counterexample/data-coverage intervention, not a new selector
 or a claimed synthesis breakthrough. Equal example counts and optimizer steps
 do not equal token or wall-clock cost; record those costs explicitly.
 
-## Required run design before submission
+## Frozen run design
 
 - Start fresh from the exact original model weights. Load the *support and group
   assignments* of the saved matched-authority patch and random43 patch, but zero
@@ -69,7 +73,7 @@ do not equal token or wall-clock cost; record those costs explicitly.
   separately; freeze these conventions before reading new outputs.
 - Freeze document counts, generation totals, three-hour maximum, source/model
   hashes and paired success/failure criteria before submission. One private free
-  Kaggle T4 job, paid scaling disabled. No new run is submitted by this document.
+  Kaggle T4 job, paid scaling disabled. No additional job is authorized by this document.
 
 The causal question is whether replacing these controls repairs legitimate
 instruction compliance without sacrificing attack recovery, on fixed supports.
