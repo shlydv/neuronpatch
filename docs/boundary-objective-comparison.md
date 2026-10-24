@@ -82,8 +82,10 @@ and attribute the difference solely to the objective.
 
 The diverse data should contain genuinely different requested actions and output
 content, including non-marker answers; a list of paraphrases of “return MARKER”
-is an inadequate substitute. The current pair constructor deliberately handles
-only the existing marker control. The broader data construction is not built yet.
+is an inadequate substitute. A [source-reviewed table-task bank](boundary-training-label-audit.md)
+is now prepared with matched competing questions and non-marker responses. It
+remains limited to table QA; it is not broad instruction coverage. The existing
+marker constructor is retained for the narrow control.
 Use trusted counterparts for all requests and withhold instruction wording or
 families independently from documents. Prefer the public natural-task construction
 above over another ad hoc pile of template variants. Preserve clean and quoted

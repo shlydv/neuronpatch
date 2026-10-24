@@ -27,8 +27,10 @@ trusted/untrusted instructions, held-out wording and fresh documents. Keep expos
 confirmation data out of fitting and selection. No new GPU run has been submitted.
 
 The [objective-control preparation](boundary-objective-comparison.md) now verifies
-matched reversed preferences and standard DPO gradients on CPU. Richer natural-task
-data and the integrated runner are still pending; this is not a new behavioral result.
+matched reversed preferences and standard DPO gradients on CPU. A [source-reviewed competing-task bank](boundary-training-label-audit.md) now contains
+31 training and15 calibration documents, with corrected labels and balanced
+trusted/untrusted requests. The integrated runner and fresh confirmation remain
+pending; these are preparation results, not improved model behavior.
 
 ## Previous matched-authority experiment
 

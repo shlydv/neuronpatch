@@ -1,0 +1,348 @@
+{
+  "reviewer": "Assistant source-table review; not independent human labels",
+  "reviewed_utc": "2026-10-24T16:37:25.441312+00:00",
+  "source_inputs_sha256": "7e7b6b2b1003a3c72c7538304ce240fe9dd3367e6edd2a48268e32cea590ab7e",
+  "scope": "Training/calibration labels only; historical results unchanged; no new evaluation outputs seen",
+  "splits": {
+    "train": [
+      {
+        "document_id": "e8aba8f71521b8ab991216bbfaa9b96349967b0fdf7878d0de7e9b6b2111bbc0",
+        "source_case_sha256": "13e096c2ea9bf97408f0c0d2ddc7b9fe005e080e8aae18504cbf5b786544cb95",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Immediate predecessor row is Vaygach."
+      },
+      {
+        "document_id": "e16095b87c09b1b9834f25508684b0635fcbd067a74567ff20368c7525006e6d",
+        "source_case_sha256": "c0d5f602a61f1183760716ed8e0893d2a5f6dce61dd672d598518cbdf042fa0d",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Last Drumma Boy producer row is track9, not the final album track."
+      },
+      {
+        "document_id": "d9df4231687fd8318361bbe535c89992de5518d42fc59863dac2a00382d6d4fc",
+        "source_case_sha256": "56765cc218bdd2ee9acede4d7cd843abd6ac5b68226539cff2b3e8a62adec788",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "First player row."
+      },
+      {
+        "document_id": "b492008108e472ee990a566506d5039a792e2a4bfab7c61dabed220e7cda10de",
+        "source_case_sha256": "57952fe80ec1abb9d3b51bfc3774f07bd3460b698c9762b7effaa2a1aad0b2e5",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "One Budapest first-place relay row."
+      },
+      {
+        "document_id": "874f9e7eb458b62e439f3316efbcf6334168e41fd1a186f301bb5019dd926273",
+        "source_case_sha256": "4c356654ed69cf8cd5e0604d686e4cd94db9ead9d2b83a25de166e90653be7ee",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "July2010 row follows June."
+      },
+      {
+        "document_id": "311e5cf20539a6243e2e33627e5954a3e28e0cebdf5bc9321d56ae0375d584d1",
+        "source_case_sha256": "8b61e42039747d88e80f87ee1be650d13ee46c759d1db6cc7241144f07af9515",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Earliest years-as-tallest start1882."
+      },
+      {
+        "document_id": "815412f8e826280fbbe3fc1549ba9ff41da9b86866d4817aea04a37f8677ad05",
+        "source_case_sha256": "185528c11e4c6906c2ed2ab1f1946060f024c2e0504238f0e7a6ae8f4c4fc17f",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Eighth and last listed finisher."
+      },
+      {
+        "document_id": "f985947355a84efcf99f1d7962dffd8a9ab93ffe7009cce7dacd8adc7e178eba",
+        "source_case_sha256": "f79b4bfe42265a9af80a3ae691329a8544dd6658e9f75bc871b10368a0846862",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Poland silver13."
+      },
+      {
+        "document_id": "8809d773dbac55b6267fd3d258bde8a67c7f47ef581cce7c22e375d11959e8ec",
+        "source_case_sha256": "5658fac0962aed2c84adcf1f3cc8067bcbbab4f0c7d77b746896a2671a5280e0",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Three MHC rows versus one Enzo/Stephan row."
+      },
+      {
+        "document_id": "81cc4c1ba284d3a7011c4172a3dd403fa1a31af132d62e54d47484e02c96c6ca",
+        "source_case_sha256": "f32afbc34d0be53809e08c6f78809cdcb16cd11aaf9d0b4ac626cb7cd4615925",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "GillesSimon rightknee row."
+      },
+      {
+        "document_id": "b60dddef240e208050e9929603bdc1b4a6405bca9ec54037efb99ae973cbf4d9",
+        "source_case_sha256": "3fdbf38db521b23652aa7025edb2c1db1eff9b8d5b20be3dd02b97e51999211d",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Lisbon98.3 satisfies; Wahpeton94.7 also valid but choose one requested example."
+      },
+      {
+        "document_id": "15eeda306838799a369bb1593c711fbb30b3492ce1e1d75ea78f91b8b0fe6556",
+        "source_case_sha256": "ba817821e6054aedb0623629decc5ea090e07235be9ea4bf9a5b97a9dc762289",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Final district row."
+      },
+      {
+        "document_id": "c93b31cf89cc1b9f9690a31c4f4fdd79ec9bc67774ad8bf8a2c25d79c535877b",
+        "source_case_sha256": "17b60720a5585c042512b086c0fc3bffefc22f6e21d0d71b79b8827fc536e3a4",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Header immediately right is Song."
+      },
+      {
+        "document_id": "7da11638ef750d00fa40abc18efbe27134aac8982d4a95ac57dbb074a8e3ab18",
+        "source_case_sha256": "606a02381a94f6ed48d4fd5b1bfdc07c7a80c33b2b606738da560e053ad4919d",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Four2003homewins versus one2004/05:threefewer."
+      },
+      {
+        "document_id": "120f679996476aabdeb10ce43ed305e0d0c49e917ba7ce7daf5eb3d5242607cd",
+        "source_case_sha256": "d591b05f9b163ac833e4d518dae88a0e1f1bff2d5eea52b40c5f08872e123da2",
+        "exclude": true,
+        "question_revised": false,
+        "reason": "Flags/nationalities absent from text; exclude."
+      },
+      {
+        "document_id": "6a97ab313d3a59134582636e0ff65a0766d4d1a26c7b6bd7171f5c8a1932849c",
+        "source_case_sha256": "44ae7a4774d9ba2e4df8c8d3df8ee9afeed0af94bc27a0a708c8546b1f542d21",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "One first-place row2005EuropeanU23."
+      },
+      {
+        "document_id": "69b463a4f80ac504c0eca0526e99d9f1ed6484d928e54bc40e00d5a38c33a36a",
+        "source_case_sha256": "82fa1d3b92b94f340ca2fe753e000ffd0b3e7a80829364e4381fb3cd15396138",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "15Apr CenterOpen."
+      },
+      {
+        "document_id": "df54ed26b902010a0ac7427cf66c21c0d68488b1f7a632c03a81368c8466c136",
+        "source_case_sha256": "a844ea1076b2b2b24c15f67e88e52d6c04dfd04ba6d1e7e698fcca85b4735a28",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "2:00:07 exceeds1:58:18."
+      },
+      {
+        "document_id": "535e2f44846a401549942dcb24b63a11addc29cdbce2e0944397121313e78e55",
+        "source_case_sha256": "96e4932a8d054b3c390d586ac10aa58654221348b95114d84658deb7d139af5d",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Three PeterLittle rows."
+      },
+      {
+        "document_id": "03c033298373a9e537feaef1afb078213bbf9b483a9a4d482aa29272f578148d",
+        "source_case_sha256": "4d004ad8d211714aa3dad8a8cda26892f54b6c35ba2bbd56b325e3b8f81c36a7",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Largest sales164119."
+      },
+      {
+        "document_id": "c8bf0856e5716e194c7399269b0517306d0b13672a53c94f46fc5ad9f03e117d",
+        "source_case_sha256": "05cf42398e3503447840a6181328c638086971cba54441ff18357b8bb4c8301c",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Two listed Qatar stages3and5."
+      },
+      {
+        "document_id": "bca7248a7324e490db6aecd05fd7f6b9fbaa389ff28e9d4d7e4a9b70025109e7",
+        "source_case_sha256": "3764ba926872fcfbc84120321248d421bdc0eab4f49a9fca6a4f2d59bb5b4083",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Seven pairs,14distinctteams."
+      },
+      {
+        "document_id": "1146a25056ecb302b1e25acd7fbbca4836117b1cc391e17badf1f387fc465560",
+        "source_case_sha256": "fe04a888bd8c59b77ffc08b67f376119d87698be739084071734490bac7b43f5",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Lucas,Andrew,Tracy."
+      },
+      {
+        "document_id": "3c3bb70a4bafea92d50b7e97fd0c658789ba98a91cfd32047efce7c437e1fa03",
+        "source_case_sha256": "2d03b2e59effcfd9cc81be6508213aaf2478d20bc67fb7a5e841a487f77a5498",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Spain5silver versusMexico2."
+      },
+      {
+        "document_id": "68aa54cee9899fee6362e65915941306eb5ff0b7a90a068bbe03ea9419018c91",
+        "source_case_sha256": "190dbeb52b64707093a48384b726726db6259cce9219bf9e944faf2fed2005d6",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "MusicTree2008 precedesManyHappyReturns2009."
+      },
+      {
+        "document_id": "06ab7b204f3070cc994d62864bd6baee1c8c1a8e2b8674e78a7dc5f68d6de8f1",
+        "source_case_sha256": "a1b08c9d5abd30ac573cc1c3d6222d1840bdd928726a7a71b25c76df8ee2d575",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Argentina2009first."
+      },
+      {
+        "document_id": "8e75553580c925e0efca4f2fd187668d4e4b7c15fc8d9cfbf271180cdd00d367",
+        "source_case_sha256": "46bc3f45f511e8e7dfae8975f65a9a7c7d8ae5937ed6918a7a715bdad5f1dc35",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Final player row."
+      },
+      {
+        "document_id": "b9f039974b0826f4b5ea9ccbb73939ede1daa99f87919f80754e111e58917193",
+        "source_case_sha256": "6efddfed74171faf26835852208649416bfd931bfd738b60e376dacfef6f486b",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Two BestOf volumes."
+      },
+      {
+        "document_id": "97933ff6c7a41da3b2c2cb8f58edd5add9d5c3873aae0caaf15c105861e5ca50",
+        "source_case_sha256": "3b701e81614f8900dfb0217d8f6cb4200490d76a3ceda0509a8792b52fcb7057",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Minimum numeric appearances14in2009."
+      },
+      {
+        "document_id": "b2de1970e5844a1b87323cb10936e08483ac358b6efa5469f496b6fc9bdf3630",
+        "source_case_sha256": "b6bdf6fb126e199d2e953fb3e027b17a4580a4a6d54c4314eed62bc842e09de1",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "33+49+41=123."
+      },
+      {
+        "document_id": "24414e3b32244935d570283a75bf8964e5709d10e0ca9db0813fd1df0e9c2800",
+        "source_case_sha256": "a32a4de16f54e3468135d8d9f959846bba9d2b122ef7da8a3455f98187ebe2fa",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "2010-1992=18."
+      },
+      {
+        "document_id": "e8d0f015dad510fe95abfaa31f3f051e2910b68b0b4d5b9cae633305a9393017",
+        "source_case_sha256": "0d171b60c0c78afa9fc6546d657fc71dc1fe65d9806ec1ad2f70a32a01cacd0a",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "01:32and01:33arebothbelow2minutes."
+      }
+    ],
+    "calibration": [
+      {
+        "document_id": "7580bed4ced8a9f938c1f218ee315e00988b4d58d790534cffe462a3da9f5a77",
+        "source_case_sha256": "e79a0e71cb32367ab47f51405544ffef45cea3a790baabf1e6366aae376a48b1",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Both rows Respiratory."
+      },
+      {
+        "document_id": "72bc65ddd1b81b5f7e30bf82a6a0a7cb22374216b087db42d5fddf4840bbc34e",
+        "source_case_sha256": "c331659ba77217ff831cbab5daffbf5d2e7ed70ae489b3c709811dbb62cdd8b6",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "1961and1962firsthalfChrisSchenkel."
+      },
+      {
+        "document_id": "3f90fac718e3e942487c533818ad4192ebdbea0a5980d507d96ef5ca14df9f50",
+        "source_case_sha256": "322f661750d7f90134f9df33b127a4a5ff52172bbfd1dd1f48a128ff422722b6",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "No prior ESC Kempten row."
+      },
+      {
+        "document_id": "07bbdc847c3c34675c4254b8357f27f41c450f416e48836e980d3900a8dc94ff",
+        "source_case_sha256": "09c68a7ddf759ce332cc08466724f3c7402f560bb94f8534743fc845b462c72b",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "Three distinct artists with qualifying rows; not four distinct artists."
+      },
+      {
+        "document_id": "c4c22db5a3c67f422f8af8a7f94926e1d7536aaee0baaea0090ec23c1b91956f",
+        "source_case_sha256": "690aede8b0727db614693f26f1d194cca33fad07bc319e416312cad287e7b710",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "1380145>1362755."
+      },
+      {
+        "document_id": "0ae83067733063eb54322350d2c7f3f5cecd4aa8fd563ba3fb4dc9dabef07848",
+        "source_case_sha256": "4acd398281f7569ada9b860c000ef8b177029cc9f983474eb0ea9af4a2336a3f",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Only Benetton-Ford winningconstructor row."
+      },
+      {
+        "document_id": "31d43adbfc6f26481b86ccd2215dd67a2f519cd4506648c0684877252309783d",
+        "source_case_sha256": "1fbe74659345f138f2303eae1d41e14551a648090ec4656d95d48dfec4fdc683",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Six opponents prefixedat."
+      },
+      {
+        "document_id": "0257676067dcb6c2cccb85a0cb442926efef83c1be6923711253ff2690a94274",
+        "source_case_sha256": "7b4c5434ae7269ae1f30720aab93139c3626255c5ace9c4672383c8cb915f002",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "NineWon minusfiveNominated."
+      },
+      {
+        "document_id": "a84be9a7d4b184c5b0e2c08fc35b50d9a08c188ca00e31ea42e260ad4b0781f7",
+        "source_case_sha256": "5e045b7e8e2b872963298c575dde9c7a71416a50860723de8fb57c9bf30b96af",
+        "exclude": true,
+        "question_revised": false,
+        "reason": "Nationalities absent; cannot infer from names; exclude."
+      },
+      {
+        "document_id": "797e75f1d894704d91cd659b84f47c59875ae462bc504bf03dd5b9eb390f6e2b",
+        "source_case_sha256": "a0b0a36e3bb8a5ce94d4cf7039cce3995344c38b1f275fd3794e9f64c53dd4be",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Only2010associate row."
+      },
+      {
+        "document_id": "5dc35b2c6cd04404c4870e0d7abc720c515cf7271c8c4f7f1d53196b502ed6d7",
+        "source_case_sha256": "5c1ce645da322894a342aa6e863fcbb70ded87246a1e5764c9d567e222ad90b7",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "4231>4187."
+      },
+      {
+        "document_id": "2ac6656cea24d4fa77b0b4f5122572c3ee4aa2059965671c028488ccf883f8d3",
+        "source_case_sha256": "9531a1ba8cf8585eb0b443bbd57ddfabd2995232bcfd16987d83385d340e2f1c",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "4:30,3:55,4:32."
+      },
+      {
+        "document_id": "a2e57b9c96016442d8168655bbd026efe53912506db9bc57fa2b7c2d77aecab3",
+        "source_case_sha256": "e599db111dedcedfe1765395746bbf91ee4d40fa723b29bcc9557ea5d405ba1b",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "January7.9C minimum; December8.5Cnotminimum."
+      },
+      {
+        "document_id": "30b81dd56d843a60affa3c70a2de25a01d3423f4ead026ce882e250ca8fc2b04",
+        "source_case_sha256": "a7b7d8c94b6be55c22bc06e0618d81471297c15ebc1d08c85bc43e263b19edbc",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "Second songrow."
+      },
+      {
+        "document_id": "f42201f305dac0cf7eb462c68bc2793d53f21c5e2be4c80fe7b7a144c590cbbd",
+        "source_case_sha256": "523302d37990fb2b5d39c5d3bf91cea654959eb4c7474e185a8755fc52eb7457",
+        "exclude": false,
+        "question_revised": false,
+        "reason": "1975Finland row."
+      },
+      {
+        "document_id": "3d62874e7584d28e294c94f25abaa3b4b9112d032b3c7d033045c25d61e64d27",
+        "source_case_sha256": "8f65809b6f1f0ab1548b9dcc339eed4115dd214df3cc507e6ec74b26c13a9f9b",
+        "exclude": false,
+        "question_revised": true,
+        "reason": "3500V follows2.7V rows."
+      }
+    ]
+  }
+}

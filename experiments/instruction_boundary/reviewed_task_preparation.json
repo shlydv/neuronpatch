@@ -1,0 +1,55 @@
+{
+  "scope": "Source-reviewed table-task preparation, not trained behavior or a frozen GPU protocol",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "label_origin": "Assistant source-table review, not model-generated teachers",
+  "source_review_sha256": "46556d623ca7091bb0d2e7552276ad4a8eb0f4b5d238d33188eeed2e929a0a5a",
+  "banks": {
+    "train": {
+      "source_documents": 32,
+      "retained_documents": 31,
+      "excluded_documents": 1,
+      "clarified_questions": 8,
+      "narrow_pairs": 62,
+      "cross_task_pairs": 124,
+      "diverse_pairs": 186,
+      "cross_task_answer_balance": true,
+      "token_lengths": {
+        "narrow_pairs": {
+          "responses": 124,
+          "max_full_tokens": 1010,
+          "mean_full_tokens": 567.1290322580645
+        },
+        "diverse_pairs": {
+          "responses": 372,
+          "max_full_tokens": 1559,
+          "mean_full_tokens": 878.3978494623656
+        }
+      },
+      "artifact_sha256": "dfe21f988f5a998c5409ec662246ee11bb3b4356a08e222bf24fa26b2144dedf"
+    },
+    "calibration": {
+      "source_documents": 16,
+      "retained_documents": 15,
+      "excluded_documents": 1,
+      "clarified_questions": 3,
+      "narrow_pairs": 30,
+      "cross_task_pairs": 60,
+      "diverse_pairs": 90,
+      "cross_task_answer_balance": true,
+      "token_lengths": {
+        "narrow_pairs": {
+          "responses": 60,
+          "max_full_tokens": 974,
+          "mean_full_tokens": 591.6
+        },
+        "diverse_pairs": {
+          "responses": 180,
+          "max_full_tokens": 1610,
+          "mean_full_tokens": 920.3777777777777
+        }
+      },
+      "artifact_sha256": "f7cc37653a1c578ba2957f2b8ae7bade1f87601380599f56950d7594680c18b7"
+    }
+  }
+}
