@@ -84,6 +84,8 @@ def run_comparison(
             directory.mkdir()
             fitted = attach_lora(model, names, rank=rank, seed=protocol["seed"])
             try:
+                if torch.cuda.is_available():
+                    torch.cuda.reset_peak_memory_stats()
                 started = time.monotonic()
                 history = fit_preferences(
                     fitted,
@@ -96,6 +98,9 @@ def run_comparison(
                     check_time=check_time,
                 )
                 fit_seconds = time.monotonic() - started
+                peak_bytes = (
+                    torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None
+                )
                 write(directory / "history.json", history)
                 # Probe both alternatives, not just the response being reinforced.
                 probes = (banks[coverage][0].chosen, banks[coverage][0].rejected)
@@ -121,6 +126,10 @@ def run_comparison(
                 raise RuntimeError("Export/evaluation mutated frozen base weights")
             results[arm] = {
                 "fit_seconds": fit_seconds,
+                "peak_training_allocated_bytes": peak_bytes,
+                "adapter_bytes": sum(
+                    p.stat().st_size for p in (directory / "adapter").rglob("*") if p.is_file()
+                ),
                 "trainable_parameters": parameter_count,
                 "successful_steps": len(history),
                 "forward_calls": sum(

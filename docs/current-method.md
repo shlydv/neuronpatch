@@ -30,8 +30,9 @@ The [objective-control preparation](boundary-objective-comparison.md) now verifi
 matched reversed preferences and standard DPO gradients on CPU. A [source-reviewed competing-task bank](boundary-training-label-audit.md) now contains
 31 training and15 calibration documents, with corrected labels and balanced
 trusted/untrusted requests. The four-arm optimization/export runner now passes a tiny-Qwen integration test.
-Fresh confirmation, the frozen protocol and GPU packaging remain pending; these
-are preparation results, not improved model behavior.
+Fresh confirmation and the protocol are frozen. The full half-precision worker
+passes local integration tests, including generation and decoder recomputation.
+GPU submission is next; these are preparation results, not improved model behavior.
 
 ## Previous matched-authority experiment
 

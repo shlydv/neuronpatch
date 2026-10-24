@@ -15,10 +15,18 @@
     "preservation_weight": 1.0,
     "gradient_clip": 1.0
   },
-  "arms": ["narrow-sft", "narrow-dpo", "diverse-sft", "diverse-dpo"],
+  "arms": [
+    "narrow-sft",
+    "narrow-dpo",
+    "diverse-sft",
+    "diverse-dpo"
+  ],
   "schedule": "One fixed seeded permutation cycled: all 186 diverse pairs once; 62 narrow pairs three times; 31 clean examples six times. Same sample indices within each coverage/objective comparison.",
   "selection": "Final checkpoint only; no confirmation-based hyperparameter or checkpoint selection. Calibration is diagnostic, not selection.",
-  "generation": {"max_new_tokens": 128, "max_context_tokens": 4096},
+  "generation": {
+    "max_new_tokens": 128,
+    "max_context_tokens": 4096
+  },
   "max_sequence_tokens": 4096,
   "hardware": "One private free Kaggle T4; no full model on Mac",
   "provider_timeout_seconds": 10800,
@@ -46,5 +54,21 @@
     "Diverse task responses improve cross-task transfer relative to marker-only training within each objective.",
     "DPO improves the trust-location distinction relative to SFT within each coverage bank, but may reduce absolute chosen-response likelihood or damage clean QA.",
     "Neither gain is established by preference margin alone; generated answer correctness and legitimate task changes must improve together."
-  ]
+  ],
+  "runtime": {
+    "torch": "2.6.0",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "tokenizers": "0.22.1",
+    "huggingface_hub": "0.34.4",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "numpy": "1.26.4",
+    "setuptools": "70.3.0"
+  },
+  "data_sha256": {
+    "train": "dfe21f988f5a998c5409ec662246ee11bb3b4356a08e222bf24fa26b2144dedf",
+    "calibration": "f7cc37653a1c578ba2957f2b8ae7bade1f87601380599f56950d7594680c18b7",
+    "confirmation": "d9b7415d41c9f8e2eef9c61924d2d29450362aecde412972261ed7e8b5f0653f"
+  }
 }

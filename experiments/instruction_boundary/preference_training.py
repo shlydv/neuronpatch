@@ -86,6 +86,8 @@ def cache_references(model, pairs, *, base_identity, check_time=lambda: None):
                     "rejected": values[1],
                 }
             )
+            if len(records) % 30 == 0:
+                print("REFERENCE_PAIRS", len(records), flush=True)
     return {"base_identity": base_identity, "records": records, "records_sha256": digest(records)}
 
 
