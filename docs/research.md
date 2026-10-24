@@ -230,3 +230,24 @@ selection becomes useful, demonstrate that advantage against the same competent
 task objective, not against a deliberately weak adaptation baseline. Passing
 our small table task would still not certify general prompt-injection security.
 
+## Gradient admission: relevant prior art with unresolved reporting details
+
+[GRADE v1, 6 October 2026](https://arxiv.org/html/2610.07553v1) combines
+state-dependent sample selection with an update-admission gate. Section 4 uses
+shared random forward perturbations to estimate gradient alignment; this is data
+selection, not neuron selection. Appendix R reports poor sample-ranking agreement
+with exact gradients despite similar downstream results, so estimator fidelity
+and training benefit must be evaluated separately.
+
+There is a reporting inconsistency: section 5 says matched-step controls rule out
+early stopping, while appendix H describes random-skip and learning-rate-matched
+controls as future work. The appendix also labels several studies as plans.
+Consequently this inspection does not establish those controls as completed.
+No official code link was located in the inspected HTML; code paths mentioned
+there are not a verified implementation. No reproduction was run.
+
+**Project decision:** this is additional prior art for adaptive selection and
+step acceptance, not a ready-made repair. Before adopting a gate, compare it to
+matched stopping/subsampling and include its scoring cost. Our earlier guard
+failed on valid aliases; a different gate still needs a behaviorally valid
+objective. Keep the submitted supervision experiment unchanged.
