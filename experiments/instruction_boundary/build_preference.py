@@ -58,13 +58,16 @@ def main():
         "provider_timeout_seconds": spec["provider_timeout_seconds"],
     }
     payload = {
-        "files": {k: base64.b85encode(v).decode() for k, v in files.items()},
+        "files": {k: base64.b85encode(zlib.compress(v, 9)).decode() for k, v in files.items()},
         "hashes": hashes,
         "submission": submission,
     }
     packed = base64.b85encode(zlib.compress(json.dumps(payload).encode(), 9)).decode()
     bootstrap = (
-        BOOTSTRAP.replace("fine-transfer", "boundary-preference")
+        BOOTSTRAP.replace(
+            "raw=base64.b85decode(value)", "raw=zlib.decompress(base64.b85decode(value))"
+        )
+        .replace("fine-transfer", "boundary-preference")
         .replace("transfer-results", "boundary-preference-results")
         .replace("experiments.fine_transfer.run", "experiments.instruction_boundary.preference_run")
         .replace("'5700'", repr(str(spec["worker_timeout_seconds"])))
