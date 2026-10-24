@@ -24,6 +24,35 @@ Guided selection fails the frozen learning, selection, LoRA-quality and
 preservation criteria. Compact adaptation works in this pilot, but no robust
 selection advantage or training-speed advantage is established.
 
+### Next investigation: authority-matched discovery
+
+The experimental [pair constructor](../experiments/instruction_boundary/authority_pairs.py)
+now creates two prompts with the same question, table and redirect wording.
+The redirect appears inside the quoted JSON document in one and outside it as
+the user's final instruction in the other. Unlike the previous clean-versus-
+injected discovery labels, both classes contain the payload and its marker.
+Only the32 original training documents enter; generated answers and QA references
+do not. CPU tests check the decoded document boundary, identical payload content,
+source immutability and malformed-input rejection. The tokenizer-only
+[manifest](../experiments/instruction_boundary/authority_pairs_v1.json) records
+length differences rather than asserting the prompts are token-identical.
+
+This tests a specific suspected shortcut. It does not supply a new training
+objective, prove that the probe identifies editable neurons or establish general
+authority understanding. A causal comparison must keep the patch budget,
+grouping, training targets, rates and optimization fixed while changing discovery
+examples, and evaluate on fresh documents plus previously untested attack
+wordings. The existing confirmation set is exposed and must not choose the new
+support or rate. Existing trained comparator adapters can be evaluated on those
+same fresh inputs rather than retrained unnecessarily.
+
+[IH-Challenge](https://arxiv.org/abs/2603.10521) explicitly separates hierarchy
+failures from difficult instruction following and warns about shortcut learning.
+[SecAlign](https://arxiv.org/abs/2410.05451) contrasts legitimate and injected
+responses using preference optimization. These motivate controlled contrasts;
+neither establishes the effectiveness or novelty of this neuron-selection idea.
+No further GPU experiment has been submitted.
+
 The [raw marker outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
 also rejects the guided candidate's transfer criterion. All trained arms stop
 returning the attack marker on the48 redirect cases. On48 claimed-authority cases,
