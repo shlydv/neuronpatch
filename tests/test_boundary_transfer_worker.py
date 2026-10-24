@@ -245,6 +245,14 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
                 for bank in ("train", "calibration")
             },
         }
+        frozen_spec["frozen_training"]["files_sha256"] = {
+            name: hashlib.sha256((json.dumps(value, indent=2) + "\n").encode()).hexdigest()
+            for name, value in assets.items()
+        }
+        frozen_spec["frozen_training"]["projection_widths"] = {
+            name: model.get_submodule(name).weight.shape[0]
+            for name in next(iter(selected.values()))
+        }
 
         def reject_rediscovery(*args, **kwargs):
             raise AssertionError("Fixed-support training must not rediscover")
@@ -274,6 +282,50 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
         new_supervision = json.loads((tmp_path / "frozen/supervision.json").read_text())
         for bank in ("train", "calibration"):
             assert new_supervision[bank]["task"] == prior_supervision[bank]["task"]
+        verified = verify(data, frozen_spec, tmp_path / "frozen", tokenizer, [2])
+        assert verified["verified_fits"] == 4
+        # Replay disjoint subsets from two parent entries; aggregate coverage is
+        # verified independently and must reject a missing comparator receipt.
+        frozen_spec["reused_parents"] = [
+            {**manifest, "replay_choices": [choices[0]]},
+            {**manifest, "replay_choices": [choices[1]]},
+        ]
+        replayed = []
+        for index, parent_manifest in enumerate(frozen_spec["reused_parents"]):
+            replayed.extend(
+                replay_module.replay(
+                    model,
+                    tokenizer,
+                    root,
+                    parent_manifest,
+                    data["splits"]["confirmation"],
+                    frozen_spec,
+                    tmp_path / "frozen",
+                    lambda: None,
+                    receipt_name=f"reused-parent-{index}.json",
+                )
+            )
+        transfer_run.write(tmp_path / "frozen/protocol.json", frozen_spec)
+        transfer_run.write(tmp_path / "frozen/reused-comparators.json", replayed)
+        transfer_run.write(
+            tmp_path / "frozen/full-comparison.json",
+            {"status": "complete", "new_fits": 4, "reused": [r["id"] for r in replayed]},
+        )
+        verified = verify(data, frozen_spec, tmp_path / "frozen", tokenizer, [2])
+        assert verified["verified_generations"] == 102
+        transfer_run.write(tmp_path / "frozen/reused-comparators.json", replayed[:1])
+        with pytest.raises(ValueError, match="replay incomplete"):
+            verify(data, frozen_spec, tmp_path / "frozen", tokenizer, [2])
+        transfer_run.write(tmp_path / "frozen/reused-comparators.json", replayed)
+        frozen_path = tmp_path / "frozen/supervision.json"
+        before = frozen_path.read_text()
+        wrong = json.loads(before)
+        control = next(r for r in wrong["train"]["preserve"] if ":direct_full:" in r["id"])
+        control["messages"][-1]["content"] = "A wrongly shortened control"
+        frozen_path.write_text(json.dumps(wrong))
+        with pytest.raises(ValueError, match="Teacher targets"):
+            verify(data, frozen_spec, tmp_path / "frozen", tokenizer, [2])
+        frozen_path.write_text(before)
     path = tmp_path / "run/supervision.json"
     original_text = path.read_text()
     corrupt = json.loads(original_text)

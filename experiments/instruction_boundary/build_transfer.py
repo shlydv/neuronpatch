@@ -10,6 +10,9 @@ from pathlib import Path
 
 from experiments.fine_transfer.build import BOOTSTRAP, ROOT
 
+from .replay_plan import choices as replay_choices
+from .replay_plan import parents as replay_parents
+
 
 def main():
     parser = argparse.ArgumentParser(__doc__)
@@ -42,6 +45,7 @@ def main():
                     "matched_supervision",
                     "frozen_training",
                     "replay",
+                    "replay_plan",
                     "transfer_data",
                     "probe_selection",
                     "checkpointing",
@@ -75,7 +79,7 @@ def main():
         "limits": spec["limits"],
         "scope": {
             "new_fits": len(spec["arms"]) * len(spec["learning_rates"]),
-            "reused_comparators": len(spec.get("reused_parent", {}).get("choices", [])),
+            "reused_comparators": sum(len(replay_choices(p)) for p in replay_parents(spec)),
         },
     }
     payload = {
@@ -110,7 +114,7 @@ def main():
         "machine_shape": "NvidiaTeslaT4",
         "dataset_sources": [],
         "competition_sources": [],
-        "kernel_sources": [spec["reused_parent"]["kernel"]] if "reused_parent" in spec else [],
+        "kernel_sources": list(dict.fromkeys(p["kernel"] for p in replay_parents(spec))),
         "model_sources": [],
     }
     for name, value in (("kernel-metadata.json", metadata), ("submission.json", submission)):

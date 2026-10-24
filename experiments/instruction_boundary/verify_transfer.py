@@ -13,6 +13,9 @@ from pathlib import Path
 import torch
 from safetensors.torch import load_file
 
+from .replay_plan import choices as replay_choices
+from .replay_plan import parents as replay_parents
+
 
 def read(path):
     return json.loads(path.read_text())
@@ -23,6 +26,12 @@ def verify(data, spec, root, tokenizer, eos):
         raise ValueError("Protocol mismatch")
     size = len(tokenizer)
     total = 0
+    frozen = spec.get("frozen_training")
+    frozen_assets = None
+    if frozen:
+        from .frozen_training import load_assets
+
+        frozen_assets = load_assets(root / "frozen-training", frozen)
 
     def generations(rows, path):
         nonlocal total
@@ -60,6 +69,11 @@ def verify(data, spec, root, tokenizer, eos):
         cases = data["splits"][bank]
         clean = [r for r in cases if r["kind"] == "clean"]
         outputs = generations(clean, root / f"teachers-{bank}.json")
+        if frozen:
+            if outputs != frozen_assets[f"teachers-{bank}.json"]:
+                raise ValueError("Cached teachers differ from frozen source")
+            if set(frozen["membership"][bank]) != {r["document_id"] for r in cases}:
+                raise ValueError("Frozen training bank membership differs")
         teachers = {
             case["document_id"]: output["text"]
             for case, output in zip(clean, outputs, strict=True)
@@ -89,6 +103,18 @@ def verify(data, spec, root, tokenizer, eos):
                 "target": target,
                 "target_sha256": hashlib.sha256(target.encode()).hexdigest(),
             }
+            if frozen and case["kind"] == "direct":
+                clean_case = next(r for r in clean if r["document_id"] == case["document_id"])
+                item["id"] = case["document_id"] + ":direct_full:redirect"
+                item["messages"] = [
+                    clean_case["messages"][0],
+                    {
+                        "role": "user",
+                        "content": clean_case["messages"][-1]["content"]
+                        + "\n\n"
+                        + case["messages"][-1]["content"],
+                    },
+                ]
             expected["task" if case["kind"] == "injected" else "preserve"].append(item)
         if expected != supervision[bank] or len(teachers) < spec["minimum_teachers"][bank]:
             raise ValueError("Teacher targets, exclusions or bank roles differ")
@@ -104,47 +130,78 @@ def verify(data, spec, root, tokenizer, eos):
     if len(fits) != len(expected_ids) or {r["id"] for r in fits} != expected_ids:
         raise ValueError("Incomplete fit comparison")
     support = read(root / "supports.json")
-    profile_cases = [
-        r
-        for r in data["splits"]["train"]
-        if r["kind"] == "clean" or (r["kind"] == "injected" and r["family"] == "redirect")
-    ]
-    if spec.get("discovery_mode", "clean_vs_redirect") == "matched_authority":
-        from .authority_pairs import matched_authority_pairs
-
-        profile_cases = matched_authority_pairs(data["splits"]["train"])
-        profile_labels = [r["label"] for r in profile_cases]
-    elif spec.get("discovery_mode", "clean_vs_redirect") == "clean_vs_redirect":
-        profile_labels = [int(r["kind"] == "injected") for r in profile_cases]
+    if frozen:
+        expected_support = frozen_assets["supports.json"]
+        if support != expected_support:
+            raise ValueError("Frozen support identities changed")
+        if completion["original_fingerprint"] != frozen["base_fingerprint"]:
+            raise ValueError("Frozen training base fingerprint differs")
+        expected_arms = {
+            f"{a['family']}-{a['seed']}" for a in spec["arms"] if a["family"] != "lora"
+        }
+        if set(support) != expected_arms:
+            raise ValueError("Frozen support arm coverage differs")
+        for selected in support.values():
+            if set(selected) != set(frozen["projection_widths"]):
+                raise ValueError("Frozen projection coverage differs")
+            for name, value in selected.items():
+                indices, labels = value["indices"], value["groups"]
+                if (
+                    len(indices) != spec["grouped"]["selected_rows_per_projection"]
+                    or len(set(indices)) != len(indices)
+                    or any(
+                        type(i) is not int or not 0 <= i < frozen["projection_widths"][name]
+                        for i in indices
+                    )
+                    or len(labels) != len(indices)
+                    or any(type(i) is not int for i in labels)
+                    or set(labels) != set(range(spec["grouped"]["groups_per_projection"]))
+                ):
+                    raise ValueError("Invalid frozen support")
     else:
-        raise ValueError("Unknown discovery mode")
-    if read(root / "profile-metadata.json") != {
-        "ids": [r["id"] for r in profile_cases],
-        "labels": profile_labels,
-    }:
-        raise ValueError("Discovery crossed a data or instruction-family boundary")
-    profiles = load_file(root / "training-profiles.safetensors")
-    expected_arms = {f"{a['family']}-{a['seed']}" for a in spec["arms"] if a["family"] != "lora"}
-    if set(support) != expected_arms:
-        raise ValueError("Missing discovery arm")
-    for selected in support.values():
-        if set(selected) != set(profiles):
-            raise ValueError("Profile/support projections differ")
-        for name, selection in selected.items():
-            values = profiles[name]
-            indices, groups = selection["indices"], selection["groups"]
-            if (
-                values.ndim != 2
-                or values.shape[0] != len(profile_cases)
-                or not torch.isfinite(values).all()
-                or len(indices) != spec["grouped"]["selected_rows_per_projection"]
-                or len(set(indices)) != len(indices)
-                or any(type(i) is not int or not 0 <= i < values.shape[1] for i in indices)
-                or len(groups) != len(indices)
-                or set(groups) != {0, 1}
-            ):
-                raise ValueError("Invalid profile or fixed support budget")
-    del profiles
+        profile_cases = [
+            r
+            for r in data["splits"]["train"]
+            if r["kind"] == "clean" or (r["kind"] == "injected" and r["family"] == "redirect")
+        ]
+        if spec.get("discovery_mode", "clean_vs_redirect") == "matched_authority":
+            from .authority_pairs import matched_authority_pairs
+
+            profile_cases = matched_authority_pairs(data["splits"]["train"])
+            profile_labels = [r["label"] for r in profile_cases]
+        elif spec.get("discovery_mode", "clean_vs_redirect") == "clean_vs_redirect":
+            profile_labels = [int(r["kind"] == "injected") for r in profile_cases]
+        else:
+            raise ValueError("Unknown discovery mode")
+        if read(root / "profile-metadata.json") != {
+            "ids": [r["id"] for r in profile_cases],
+            "labels": profile_labels,
+        }:
+            raise ValueError("Discovery crossed a data or instruction-family boundary")
+        profiles = load_file(root / "training-profiles.safetensors")
+        expected_arms = {
+            f"{a['family']}-{a['seed']}" for a in spec["arms"] if a["family"] != "lora"
+        }
+        if set(support) != expected_arms:
+            raise ValueError("Missing discovery arm")
+        for selected in support.values():
+            if set(selected) != set(profiles):
+                raise ValueError("Profile/support projections differ")
+            for name, selection in selected.items():
+                values = profiles[name]
+                indices, groups = selection["indices"], selection["groups"]
+                if (
+                    values.ndim != 2
+                    or values.shape[0] != len(profile_cases)
+                    or not torch.isfinite(values).all()
+                    or len(indices) != spec["grouped"]["selected_rows_per_projection"]
+                    or len(set(indices)) != len(indices)
+                    or any(type(i) is not int or not 0 <= i < values.shape[1] for i in indices)
+                    or len(groups) != len(indices)
+                    or set(groups) != {0, 1}
+                ):
+                    raise ValueError("Invalid profile or fixed support budget")
+        del profiles
     calibration = supervision["calibration"]["task"] + supervision["calibration"]["preserve"]
     for row in fits:
         if (
@@ -166,7 +223,21 @@ def verify(data, spec, root, tokenizer, eos):
             for k in ("task_nll", "preserve_nll", "gradient_norm")
         ):
             raise ValueError("Nonfinite optimizer measurement")
-        by_kind = {k: [] for k in ("injected", "clean", "direct", "quoted")}
+        if frozen:
+            parent_fit = [r for r in frozen_assets["parent-fits.json"] if r["id"] == row["id"]]
+            if len(parent_fit) != 1 or [h["example_indices"] for h in history] != [
+                h["example_indices"] for h in parent_fit[0]["history"]
+            ]:
+                raise ValueError("Frozen training schedule differs")
+            if read(root / f"{row['id']}-schedule.json") != {
+                "parent_fit": row["id"],
+                "steps": len(history),
+                "sample_indices_exact": True,
+            }:
+                raise ValueError("Schedule receipt differs")
+        by_kind = {
+            k: [] for k in ("injected", "clean", "direct_full" if frozen else "direct", "quoted")
+        }
         for sample, value in zip(calibration, row["validation_losses"], strict=True):
             if not math.isfinite(value):
                 raise ValueError("Nonfinite validation")
@@ -252,28 +323,34 @@ def verify(data, spec, root, tokenizer, eos):
         raise ValueError("Selection/completion mismatch")
     for choice in choices:
         generations(data["splits"]["confirmation"], root / f"{choice}-confirmation.json")
-    if "reused_parent" in spec:
-        parent = spec["reused_parent"]
+    parents = replay_parents(spec)
+    if parents:
+        labels = [label for parent in parents for label in replay_choices(parent)]
         expected_receipts = [
-            {"id": label, "new_training_steps": 0, "base_restored": True}
-            for label in parent["choices"]
+            {"id": label, "new_training_steps": 0, "base_restored": True} for label in labels
         ]
         if read(root / "reused-comparators.json") != expected_receipts:
             raise ValueError("Frozen comparator replay incomplete")
-        if completion["original_fingerprint"] != parent["base_fingerprint"]:
+        if any(completion["original_fingerprint"] != p["base_fingerprint"] for p in parents):
             raise ValueError("Frozen comparator base differs")
-        for name in ("teachers-train.json", "teachers-calibration.json", "supervision.json"):
-            if (
-                hashlib.sha256((root / name).read_bytes()).hexdigest()
-                != parent["files_sha256"][name]
-            ):
-                raise ValueError("Frozen teacher targets differ")
-        for label in parent["choices"]:
+        if not frozen:
+            for parent in parents:
+                for name in (
+                    "teachers-train.json",
+                    "teachers-calibration.json",
+                    "supervision.json",
+                ):
+                    if (
+                        hashlib.sha256((root / name).read_bytes()).hexdigest()
+                        != parent["files_sha256"][name]
+                    ):
+                        raise ValueError("Frozen teacher targets differ")
+        for label in labels:
             generations(data["splits"]["confirmation"], root / f"reused-{label}-confirmation.json")
         if read(root / "full-comparison.json") != {
             "status": "complete",
             "new_fits": len(fits),
-            "reused": parent["choices"],
+            "reused": labels,
         }:
             raise ValueError("Full comparison incomplete")
     return {

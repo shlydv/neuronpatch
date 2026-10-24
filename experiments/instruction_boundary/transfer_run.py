@@ -23,6 +23,7 @@ from neuronpatch.supervision import chat_response
 from .authority_pairs import matched_authority_pairs
 from .checkpointing import enable_decoder_recomputation
 from .probe_selection import capture_prompt, fit_probe, select
+from .replay_plan import parents as replay_parents
 from .row_gradients import capture_rows
 from .run import write
 from .transfer_data import teacher_supervision
@@ -265,6 +266,11 @@ def execute(model, tokenizer, data, spec, output, check_time, *, frozen_assets=N
         raise ValueError("Frozen training protocol and verified assets required together")
     if frozen and original != frozen["base_fingerprint"]:
         raise ValueError("Frozen training base differs")
+    if frozen:
+        cached = output / "frozen-training"
+        cached.mkdir()
+        for name, value in frozen_assets.items():
+            write(cached / name, value)
     parent = spec.get("reused_parent")
     if parent and original != parent["base_fingerprint"]:
         raise ValueError("Frozen comparator base differs before training")
@@ -551,11 +557,11 @@ def main():
         from .frozen_training import load_assets
 
         frozen_assets = load_assets(args.data / "frozen-training", spec["frozen_training"])
-    parent = None
-    if "reused_parent" in spec:
+    parent_paths = []
+    for manifest in replay_parents(spec):
         from .replay import find_parent
 
-        parent = find_parent(Path("/kaggle/input"), spec["reused_parent"])
+        parent_paths.append((find_parent(Path("/kaggle/input"), manifest), manifest))
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
     started = time.monotonic()
@@ -578,25 +584,31 @@ def main():
     model.eval().requires_grad_(False)
     data = json.loads(raw)
     execute(model, tokenizer, data, spec, args.output, check_time, frozen_assets=frozen_assets)
-    if parent is not None:
+    if parent_paths:
         from .replay import replay
 
-        replay(
-            model,
-            tokenizer,
-            parent,
-            spec["reused_parent"],
-            data["splits"]["confirmation"],
-            spec,
-            args.output,
-            check_time,
-        )
+        receipts = []
+        for index, (parent, manifest) in enumerate(parent_paths):
+            receipts.extend(
+                replay(
+                    model,
+                    tokenizer,
+                    parent,
+                    manifest,
+                    data["splits"]["confirmation"],
+                    spec,
+                    args.output,
+                    check_time,
+                    receipt_name=f"reused-parent-{index}.json",
+                )
+            )
+            write(args.output / "reused-comparators.json", receipts)
         write(
             args.output / "full-comparison.json",
             {
                 "status": "complete",
                 "new_fits": len(spec["arms"]) * len(spec["learning_rates"]),
-                "reused": spec["reused_parent"]["choices"],
+                "reused": [row["id"] for row in receipts],
             },
         )
 

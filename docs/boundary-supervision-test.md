@@ -28,8 +28,21 @@ uses the full-document control in place of the short direct control. A tiny
 Qwen CPU fixture exercises actual Adam updates, serialization, reload, merge and
 base restoration through this path; only generation is stubbed. This verifies
 execution mechanics, not large-model quality. Packaging includes the pinned
-assets. Multiple-parent comparator replay, independent verification, final
-protocol and submission remain to be completed.
+assets. Multiple-parent comparator replay and independent verification are now
+implemented. A tiny-model test replays disjoint parent subsets, checks all
+generation records, and rejects missing receipts and altered supervision.
+Final source review, protocol freeze, packaging and submission remain.
+
+The private preparation currently allocates 32 fresh documents after excluding
+all 368 previously allocated documents. There are 416 confirmation cases per
+condition: clean plus injected/short-direct/quoted/full-document-direct for each
+of three known families. Three new fits and three replayed endpoints plus base
+require 2,912 new generations. Forty-eight cached teacher records are verified
+but are not new inference. The tokenizer check finds maximum supervised length
+1,101 and maximum confirmation prompt length 1,040, within the existing caps.
+Parent artifact hashes and fixed support identities pass the CPU checks.
+Fifteen focused tests pass, including actual tiny-model optimization; these do
+not establish large-model behavior. No new Kaggle job has been submitted.
 
 This is a standard counterexample/data-coverage intervention, not a new selector
 or a claimed synthesis breakthrough. Equal example counts and optimizer steps

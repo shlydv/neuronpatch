@@ -9,6 +9,9 @@ import hashlib
 import json
 from pathlib import Path
 
+from .replay_plan import choices as replay_choices
+from .replay_plan import parents as replay_parents
+
 
 def digest(value):
     return hashlib.sha256(
@@ -133,7 +136,7 @@ def main():
     conditions = [
         "base",
         *choices,
-        *["reused-" + label for label in spec.get("reused_parent", {}).get("choices", [])],
+        *["reused-" + label for parent in replay_parents(spec) for label in replay_choices(parent)],
     ]
     outputs = {
         name: json.loads((args.results / f"{name}-confirmation.json").read_text())

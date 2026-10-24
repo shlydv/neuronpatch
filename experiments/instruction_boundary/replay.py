@@ -10,6 +10,7 @@ from experiments.paired_mlp.model import load_lora, merge_lora
 from neuronpatch import NeuronPatch
 from neuronpatch.patch import fingerprint
 
+from .replay_plan import choices
 from .run import write
 from .transfer_run import detach_grouped, generate, projection_names
 
@@ -57,7 +58,18 @@ def find_parent(root, manifest):
     return matches[0]
 
 
-def replay(model, tokenizer, parent, manifest, rows, spec, output, check_time):
+def replay(
+    model,
+    tokenizer,
+    parent,
+    manifest,
+    rows,
+    spec,
+    output,
+    check_time,
+    *,
+    receipt_name="reused-comparators.json",
+):
     """Merge each saved endpoint, generate, then restore the exact base weights.
 
     No optimizer or selection is created. Restoring full affected projections
@@ -72,7 +84,7 @@ def replay(model, tokenizer, parent, manifest, rows, spec, output, check_time):
     parent_spec = json.loads((parent / "protocol.json").read_text())
     grouped, lora = projection_names(model)
     receipts = []
-    for label in manifest["choices"]:
+    for label in choices(manifest):
         check_time()
         candidates = [row for row in fits if row["id"] == label]
         if len(candidates) != 1:
@@ -106,5 +118,5 @@ def replay(model, tokenizer, parent, manifest, rows, spec, output, check_time):
             if fingerprint(model) != original:
                 raise ValueError("Comparator replay failed base restoration")
         receipts.append({"id": label, "new_training_steps": 0, "base_restored": True})
-        write(output / "reused-comparators.json", receipts)
+        write(output / receipt_name, receipts)
     return receipts
