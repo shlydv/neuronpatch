@@ -24,6 +24,10 @@ Guided selection fails the frozen learning, selection, LoRA-quality and
 preservation criteria. Compact adaptation works in this pilot, but no robust
 selection advantage or training-speed advantage is established.
 
+The [24 October selection review](selection-decision-2026-10-24.md) separates
+recognition, trainability, transfer and preservation, and records how each
+possible outcome of the running comparison should change the next decision.
+
 ### Next investigation: authority-matched discovery
 
 The experimental [pair constructor](../experiments/instruction_boundary/authority_pairs.py)
