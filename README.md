@@ -16,6 +16,7 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Measured-preservation training](experiments/guarded_training/complete_v1/REPORT.md) | All controls stall or fail transfer; the guard also penalizes valid answer aliases | A working protection rule or selected-neuron advantage |
 | [Outcome-guard replay](experiments/outcome_guard/complete_v1/REPORT.md) | Correct greedy controls hide increased wrong-continuation probability; canonical auxiliary labels impose avoidable EOS pressure | A qualified protection rule, causal explanation of downstream errors, or improved trained method |
 | [Auxiliary-objective ablation](experiments/alias_supervision/complete_v1/REPORT.md) | Accepted-set supervision helps random/LoRA oxygen probabilities and selected Lakers answers; selected oxygen error persists | A selected-neuron advantage or a generally safe adaptation recipe |
+| [Instruction-boundary comparison](experiments/instruction_boundary/complete_v2/REPORT.md) | Compact patches train and deploy; one random support recovers 19/27 unseen-authority failures versus 21/27 for LoRA and 0/27 for guided selection | A reliable selection recipe, broad security guarantee, or training-speed advantage |
 
 The [completed relation-learning pilot](experiments/relation_learning/complete_v2/REPORT.md)
 raises held-out task accuracy from 39/64 to 64/64 with LoRA and random patches,
@@ -39,10 +40,11 @@ See the [current method decision](docs/current-method.md) for the evidence,
 paper-informed choices, completed endpoint checks and next experiment boundary.
 
 The intended workflow is **select → train → evaluate target and preserved behavior
-→ export**. The first application will be document-grounded answering: answer
-supported questions and abstain when evidence is missing, without becoming less
-helpful on answerable questions. The user supplies both correction examples and
-examples of behavior to preserve.
+→ export**. The current research application is document-grounded answering:
+use document facts while respecting the user's instructions, preserve correct
+answers, and avoid unsupported answers. Earlier abstention experiments and the
+current instruction-boundary work have not established a recommended recipe.
+The user supplies both correction examples and examples of behavior to preserve.
 
 We build on published ideas rather than claiming a new fine-tuning algorithm.
 See [research provenance](docs/research.md) for what is implemented, what is only
@@ -143,7 +145,8 @@ are causal merely because their activations correlate with a label.
 
 1. **Foundation (implemented):** row/column deltas, export, merge and correctness tests.
 2. **Architecture integration (implemented):** tiny Qwen correctness tests and
-   experiments with pinned pretrained Qwen2.5-0.5B-Instruct. Behavioral robustness
+   experiments with pinned pretrained Qwen2.5-0.5B-Instruct and Qwen3-4B-Instruct-2507.
+   Behavioral robustness
    across model families remains unproven.
 3. **Guided selection (initial heuristic implemented):** collect actual
    down-projection inputs with explicit token masks, average within examples and
