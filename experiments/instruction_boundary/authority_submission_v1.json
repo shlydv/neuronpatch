@@ -1,0 +1,8 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-authority-v1-20261024",
+  "source_sha256": "67116a7583fe7fadbcc2f03edba33d6796d3dcb8b6387be59a12e0b14f7129cc",
+  "source_revision": "8bd063c8a4c0a6fd00fc0f86c2af3077c645c91b",
+  "provider_timeout_seconds": 10800,
+  "files": 29,
+  "parent_kernel_version": 1
+}
