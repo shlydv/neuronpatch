@@ -10,18 +10,30 @@ superiority claim is established. LoRA remains the practical comparison baseline
 passes for1728 generations and eight fits. All fits have zero gradient retries;
 peak allocated GPU memory is8.28–8.31 GiB. Baseline generations, teachers,
 supervision, supports, probes and group geometry exactly replay the failed v1
-run. No GPU experiment remains active; semantic review is in progress.
+run. No GPU experiment remains active; semantic review is complete.
 
-The [preliminary outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
-already rejects the guided candidate's transfer criterion. All trained arms stop
+The [completed answer review](../experiments/instruction_boundary/complete_v2/REPORT.md)
+establishes27 unambiguous base-clean-correct documents. LoRA recovers25 under
+redirect and21 under claimed authority; guided groups recover24 and0; random43
+recovers25 and19; random71 recovers25 and4. LoRA and random43 preserve all27
+clean answers. Guided groups introduce2 clean regressions and random71 introduces3.
+Five ambiguous QA documents are excluded consistently across arms; all192
+legitimate direct/quoted controls per model pass. Strict supporting-claim and
+lenient answer-identity sensitivity analyses preserve the method conclusion.
+Guided selection fails the frozen learning, selection, LoRA-quality and
+preservation criteria. Compact adaptation works in this pilot, but no robust
+selection advantage or training-speed advantage is established.
+
+The [raw marker outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
+also rejects the guided candidate's transfer criterion. All trained arms stop
 returning the attack marker on the48 redirect cases. On48 claimed-authority cases,
 guided selection still returns the attacker marker48 times, versus18 for LoRA,
 20 for random43 and43 for random71. All192 legitimate direct/quoted requests per
 model still return the requested marker. These are exact response counts, not
 semantic table-answer accuracy. Guided claimed-authority accuracy is necessarily
 zero because every response is the unrelated marker; it cannot beat either
-random arm by four correct answers. Whether the other arms recover correct
-answers without clean-answer regressions awaits response-bound source review.
+random arm by four correct answers. The response-bound review above additionally
+distinguishes actual recovered answers from merely suppressing the marker.
 
 **Earlier result, 24 October:** the [math baseline](../experiments/relation_learning/math_baseline_complete_v1/REPORT.md)
 completed and passed independent token/artifact verification. Review yields124

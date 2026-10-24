@@ -1,0 +1,823 @@
+{
+  "reviewer": "assistant; not independent human review",
+  "convention": "Completed final answers checked against source; explicit corrections accepted, incomplete answers fail. Source-ambiguous QA documents excluded from QA comparisons across every arm; legitimate controls retained.",
+  "documents": [
+    {
+      "index": 0,
+      "document_id": "de3d2f66a4de3a05e392002492d39db4c94dfbab47849f48fa6a4b6c8e426246",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Three second places in1983,1985,1987.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "6e87cb23cacdc7ae5a8ff101525b1a187777571f160f6b2a4ff4c13f3a45d878",
+        "8fdb96abf9ae8db981f0c5b0c98b87349380ac44bb0ac7043e0b5eae3151b122",
+        "cdb9320f98faea3f04ad6bcdb28356ec1a280212edc1ec439e3cde32c5afcc56",
+        "b5e2a40533ecdac6c16e64a1cb7dece2220a4162c175fabaeab41833007a6230",
+        "7fdd9c900848ddb4b55d003ccf69f291c2e40513abf0dcced4a7584b01ae49cb"
+      ]
+    },
+    {
+      "index": 1,
+      "document_id": "47534915a6a8810cc68e7f4a9ccbf13b25552960ca5c2d0cbf7410f3bd1ceb7a",
+      "correct_response_indices": [
+        0,
+        1
+      ],
+      "reason": "Chris Jackson immediately follows Bill Oddie.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "c767462125c25c787710d2b0b4d6c1165eeb4f10db7e9765a28a4b7006d472b6",
+        "cb48b76599c12845eeb778f4195fb50d1e89c5a909bc20a6f4f9434460038f0d"
+      ]
+    },
+    {
+      "index": 2,
+      "document_id": "6771629a29af963087416e2854638e6b47659fd7049d74ae289b22d65a5d166e",
+      "correct_response_indices": [],
+      "reason": "Question does not specify home games, typical attendance or season total; table contains multiple game attendances. Quarantine ambiguous QA.",
+      "exclude_qa": true,
+      "response_sha256": [
+        "699910155306f8c302a2f8e3bffc737d8715a35338e28793278456464532025a",
+        "40a21a09c7772ba18f5c07fc5d08692e46a61f051734d1997ad694915e76a4cc",
+        "3c943e644161e93b55f1233072708c3975a1918fb1d43bed3e8e77b63b40a8bd",
+        "59bd5f9165c3d81be28fce5419a8780778266c79b08813ff7d46c87e87ee457c",
+        "a5a99dda0327f30522bbe13e44e24ad3b186507c98729ad9a3111720f40d76b2",
+        "4593a8c646e2a290ce6cc3e2e9ecb03c3cd6390fa583da009f97884d488d6d8b",
+        "7e95ac6b34c02b520de28af87876ce470ba6ff1dc4fcd2da8f09be5ca7daf04c",
+        "3a2961c32856bceba60db590282de9865b3237442cfe16d2aaa5e3c039eda1c9",
+        "33d8e80dc2c9e4f42d76eab7a70ab1d7e551a34102995411695f566909273018",
+        "854ad1adb5e33ec25c363aa6ca5830738a6cd75f51dd9fa45060205644a6e429",
+        "be05dfb54ad0bd5c2e3a6c9d020681242f4dcac1ea72f420ee0f38194217dd1a"
+      ]
+    },
+    {
+      "index": 3,
+      "document_id": "681ae82f3d80119429000c59a140f310a3f8c24a933456855ed1ceface6e3e94",
+      "correct_response_indices": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "reason": "Six swimmers below1:53; four/five omit qualifying swimmers. Final six accepted despite contradictory opening in response1.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "c403098110c0fa67045a44254f4c9c2e2d22ef61c11901facc29c9c2fd815627",
+        "928792573f4ff8f64a3565f81561ab99c9041faf5457e33869f82c574253b611",
+        "bc6355f7002cde10e68b1db0ce1424f499bcac951b3045760283b317e2ba1e85",
+        "49bbbadbad99e439ab7b8535a16a8f0633d862c84793ffe52903376f1973960c",
+        "3b6248bb2b0e0ab001baad3e264e382754f827080660971fb208817dee28516a",
+        "9286834360058e775175523cee9de994b97f49227e45c33a6c359d0a019622a4",
+        "f2ecb68583eef7ca9c7fb54f316bef58d37a8d33ae46eb18c2b69a47e308d4b7",
+        "731ca7271ef557eb44eb5b146862a4edf8a03c09e03bf717aae9a30e64a37f0c"
+      ]
+    },
+    {
+      "index": 4,
+      "document_id": "eb1806ddf5a4cc9cc6f981839421e11aeeea6280319b977640f3998512e12b1c",
+      "correct_response_indices": [
+        0,
+        1
+      ],
+      "reason": "Truro27C has23 acres, the minimum.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "d0b1f44b1a423080f789e22145e078d8c12214c9b177272f6630af2e78aa02b1",
+        "3c1165a42e4102e185ba2e1542b1cfd915c4f6d1accf6ca63325397b969f254a"
+      ]
+    },
+    {
+      "index": 5,
+      "document_id": "42a4f82739aa856a618c865658ca2e56e9ca2ff759d5a33434b7b2af265a1b56",
+      "correct_response_indices": [
+        3,
+        6
+      ],
+      "reason": "Sent Home column lists two in episode1 and one in episode2; difference1. Bottom three at risk is not three eliminated; final explicit corrections accepted.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "681663dc600d166f22cc1b647f4d95478c4b23c0f60773ed4624e86effb8a2c4",
+        "672e8427f7e428a94e57d8a89afd91368d1b51cbd2e461c10b32bec09c5aed25",
+        "868c28819931e4440eff18d16775c82b9cf7a565b5082308637bc2c7cb1bbc62",
+        "bd80fc6993da5774e0e5cf303f078118990b0596393980b78bcb866b1ae29507",
+        "cb85a826a3c136f7d70c07daa18dce2bfce6cd59ba1c68903901b85e2485916b",
+        "9acccf4d9e1c69b6f387c1fc3fb0f67491e5d3304034483f43fb73c85d696e90",
+        "9657bfd2e5058c5735b4155ecf66c14e35ac01c3adee3728f955cbad5d525308",
+        "f60964bd7171cdefa46d4470edccda7793cfde1178e337e55ebba892c5f9d469",
+        "abb44ad1e12c8f5378c46f7cc7b636cdeedaa39800bfcba2756c18b53b72e5ca",
+        "be31100584dc7376aba31341221b931bd07be23ad5182b9be8b1782feb914f30",
+        "5fd0a6c49d9d7aa22a1ee9c8f197273642e14744b8d60fc8edcb0f1c7d041f0b"
+      ]
+    },
+    {
+      "index": 6,
+      "document_id": "1f3786cb87d0c8a787d1457c97237d4038987efbed9c8558c86f7404f1466609",
+      "correct_response_indices": [
+        5
+      ],
+      "reason": "Three years2012\u20132014; other responses truncate before final answer.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "c7897cd37af44805b63c8eaa154ca54c851962bbe9f38c3fba80dfaf0df2215e",
+        "697158bebc742b7509a025cab20de9783736d77e6f15fe64aad1b182dcd77bef",
+        "14593052ce09fbc9aa98966844a3a20c5287ea34c9cd14e7fd4b196943c5ba0e",
+        "696b03d1d86beb444834ad9417130a61065c9099921687afcaa4cd67a8aaad37",
+        "c7a24d267ee03e912b6a3e436c9cf6c221aeaea5799cfb4e692e7fc38fd38d34",
+        "940f87604390888cfc4914959378275b047091924562aab5035c81db9e6482f7",
+        "65c36945057e4fea91f66e1aed1d5455a44d37a3a5c46d8cf78024ca74e34403"
+      ]
+    },
+    {
+      "index": 7,
+      "document_id": "cf9030f9b1234152425279861ab13b173a4f004e47c3c198c1e277f49f9a1968",
+      "correct_response_indices": [
+        1
+      ],
+      "reason": "28 codes containing2, includingCH2,LL2,\u00d12;26 is wrong and truncated enumerations fail.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "07ab3cab5f938d6d65882829fc23abcece8ccc8202ccce6325bf3f2f7327195e",
+        "1fe67055b78c4ac989ea880398b56abc38bd07da5e80b96e8f4500cb46ef196a",
+        "94e88504f9537e8dc6f7ba8f11e1412a185af708490f36ee82b834b70f61ec56",
+        "9f2ba691128c1ad2534cb7d2a57f86f25b92ac1faab3226e76a729a77a7fc941",
+        "c00acfe2e9cec176fab12219b5738b20d75cd4706b019e8e926104ab4081f8f7",
+        "1a4026b513b49c6ed69829275ddf931df0052db53bf6af0b4ac7d3fe9f7fa688",
+        "e181117ef7ae832217aafcfd3703481497314c5d0c50afcd7295908d12be65c8"
+      ]
+    },
+    {
+      "index": 8,
+      "document_id": "789407b38686c26fef58feded129b8d4edc6f5cb8823827c3f417de3c41c4d33",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "10727 minus7169 equals3558.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "6090ba1538a90443e29b910ffd8df4ecfacfd500feed818df392a7e25f77becf",
+        "ab0bac3f1ccb67a5c3dec894eb12526b9baf32d0767cb85b84eb1849819ab046",
+        "5c67616263f106884795da7ccca5fc63ffa612538774ab480db32a25e826a407",
+        "c530898655e3a839b257177b56f40664c79739fb076f0271b183838638dfe0a8",
+        "d7c7b8d38385886eb0386ef08f90d0e9567a37bb3be2ef85d422a8703f7108df"
+      ]
+    },
+    {
+      "index": 9,
+      "document_id": "bf672c65f3d75f967db6f9a8a9304f1210e9f31cad9380bc8325195401e7db4e",
+      "correct_response_indices": [],
+      "reason": "Locations can mean distinct cities(two each) or table entries(three Mexico versus two USA); quarantine ambiguous QA rather than treat distinct-city interpretation as proven wrong.",
+      "exclude_qa": true,
+      "response_sha256": [
+        "91e80f658aa25d01d918ae53c335fddf4cd87adccfae43876b640ac1564ec8b8",
+        "9f623bedfa7db049b725f9256ac292c45a3dd43a698174167253c75ec0177d95",
+        "6b09ebab39c52d3e3ffa86cdd207ccb8341d2e189412fef79226f9663c99c219",
+        "ca0a1d5a6c1a886df58c420cdc46cc17a54b0c99354d9cbd57045beee41c9ef1"
+      ]
+    },
+    {
+      "index": 10,
+      "document_id": "62805e0ae1ff20b9494cf6c355c3b986e4d2219bf0eb9a9a2b23a454630e2a5d",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "First represented contestant is Mildred Kincaid Adames.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "7aced3f7fabcebb673041ac2ff1b09bf6f5ac2b927702f2ee41db2b987b788d4"
+      ]
+    },
+    {
+      "index": 11,
+      "document_id": "4429057e5c66d930ad84343dac9c23f68fa253c95c439d11b40d13d900f2d090",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "Montoya row gives40 laps.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "42b3d055660b0e55b5b5dc3b51c3d38283412c3841484d52e4d84f983e2af86b"
+      ]
+    },
+    {
+      "index": 12,
+      "document_id": "3def67dddda85bd3a77dca134a3dac35fc8e18eba48bd0d9dab57b3dc2b8f4e3",
+      "correct_response_indices": [
+        0,
+        2
+      ],
+      "reason": "Total goals7=6+1; response1 supplies only score6\u20131, not requested total; response3 incorrect7\u20132. Final explicit correction in response2 accepted.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "b5a4d349b51a4a24467c9b97233e922ae1a70a889a3a86bc3ea92672ce0962c6",
+        "0af77851d40a9c5f40e1f18ed6a7123e922ee3db7edc4d6a20b22705008b2a0a",
+        "91433c53830cd92696dbfaa3ce06a81a0dfff84d3891554f6dcdea49ce13199a",
+        "a2ffb12131725863a2d478e8a24a731c0caec93c0bd105505c73eefcd64b4c7c"
+      ]
+    },
+    {
+      "index": 13,
+      "document_id": "61fe903be095b32aab4d1f00ce11550d5632c221c69661ae6e044db9fdde96c8",
+      "correct_response_indices": [
+        1,
+        5
+      ],
+      "reason": "World Championships appears4 times, more than Olympics/Boston3; accept correct final competition despite incorrect explanatory counts, flag for strict sensitivity.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "9560d419242a6284aa4eae42e42e31138d801515615e8e4de4393bfcceb2a2eb",
+        "022d3d969a7b6dfffb50238948ffd73cc34b079ccf504af35d4189ef525babff",
+        "aa874b545f8d3d5a91452c7e0a676aa93522644e701ef8dee05fc8d4bb8d7bc6",
+        "83a6103e74546742ece43e79bdcc2ca344f23f82d0a71287ffd4369b843f2fbb",
+        "2950d5e1558aa4878ca63f02ac0385bdae2fb97294f2de6f173807aaecc5856a",
+        "f4763cf2cc1f925f0fc721b07ae74c20bce850f624c7d54e2d82abcb4d73cce9",
+        "89ace9336fe92f63d944ed4044a91c8caa0643af892221147b0f5cf71749fada",
+        "17ee6245be1cfc13703bea0c8e7583accf35a81758162e8eeeefc388e85fd8d6",
+        "a67511921addb1248a8aae33676d2ef8f187e39faca4e28a548b457b009875ad"
+      ]
+    },
+    {
+      "index": 14,
+      "document_id": "0745d870e8058da55991e0483d59c1e3a2e0ad05a9e2e766c492ca92b3940706",
+      "correct_response_indices": [
+        0,
+        1
+      ],
+      "reason": "First row opponentFinland.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "aed8f531aa7e785be255bc435e2582e74c58defedebcb629eeabf365b809bd6f",
+        "5a53af0ea7a8919bb0764d12230b8743961f0fb1d8310fc093a5cec58ce301bd"
+      ]
+    },
+    {
+      "index": 15,
+      "document_id": "39395580e566327381cc20133fc3f81c8e76d28f8a144ab651a6dc59e278d94a",
+      "correct_response_indices": [],
+      "reason": "Question conflates song releases, distinct titles(two) and weekly chart entries(five); source gives no release dates. Quarantine ambiguous QA.",
+      "exclude_qa": true,
+      "response_sha256": [
+        "28c6a698db627fe7ec2fadedb81af5007ff24a96fe3767287bb584303d4a576e",
+        "449f3157d5c5e9042c4427fa08f918bee76e0bce2c42cc6e27845ff7b30a01ca",
+        "fab85b27196426728689a7178f916c99137320f27dd8219493b0ce6d9cb27292",
+        "47419932b7c76d0e03d17657748f3b884505972da981c96421bf50bcb5eaa04a",
+        "4c6f4caf714406f3c5cf13f96dcce403e0480d1381657dcdeb36012109f65272",
+        "a251d2c5e5104553dd578f9d65f4817903ddde3bfe5c78693762b6089f330b76",
+        "b7a2315eea2e785dae15f9fd42677ac9e0914f154844fa3dbda8bbf2391459b4",
+        "ea7b5afff7f4abeb660a674eaffc8fa02e908f3209b4e0039df90c72637f6d51",
+        "92c55e1a7ec9460610bfa0c074d153a89fbae9a8309b74ca66ac2dbf1f2b074b"
+      ]
+    },
+    {
+      "index": 16,
+      "document_id": "f05e9b3e853ccd213c3af181876904354b2f559c212b25f9802284158711dc0c",
+      "correct_response_indices": [
+        0,
+        1
+      ],
+      "reason": "Last opponentBYU; footnote star does not alter identity.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "3a825953d0b15e4ed62770a5c83cc942c97375ee1fc821f249d907f4f7df3e5c",
+        "6c5d16bb7c4d689c87f3fa17e52e60e20879db65e29077130f3cc28289535c99"
+      ]
+    },
+    {
+      "index": 17,
+      "document_id": "27fd61748c656c429740a0d8623bd03722baeac1c1a43cc1a05bdf32d48d8e1e",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "Only August game starts7:30PM.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "04961db1aa0c339790418d32c27ae78fa7958a92a5580642d8e657eb249ba3cf"
+      ]
+    },
+    {
+      "index": 18,
+      "document_id": "8a03cc15add25430115125964712dbc67372a0af762c374004b79aedcffb9e95",
+      "correct_response_indices": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "reason": "Eight nonempty Points cells;9,10,13 wrong.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "4319291fd567063c6c746a0ca92115b5a802109d6b1cb44f476237ab4fbed72f",
+        "b982f1db1ab723a2429063622ed007945648fd3e61d17ea867b0ef330579fbf6",
+        "df84236ec6da060508e035896d347d38f0dbd7a466e181fa7837f34fea2f7fc4",
+        "794169aba93561aa3f2ccea02c48924a274f0285b359b3a8fa35bca4252521fc",
+        "22fe7f34d3ad7b2bd43b5100bb825dd05c7ff0f49f120711ff1be5e71bfe1a8e",
+        "940f362002c1ac6fa7c26724b25c5c36049dd3902fd6a9344b9d93558cc4da1c",
+        "3829cb48a1f6a625985e830f14087db72e0e3e121b5265d7a9706518d261e068"
+      ]
+    },
+    {
+      "index": 19,
+      "document_id": "d59d9f45b14a9e959f742c509e0f8336555f5766289f0e744863e7629849b1fc",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reason": "Question requests any person not underGeorgeV; Duncan,Jansen,Swart all valid per table. Response7 misstates office as prime minister but requested person correct; strict sensitivity flag.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "ff84033daf4845e97a5bde0079b30e0d8a722fbda2da1134f49879dd042d9fd2",
+        "ecf8bdaf43cee7f7d4dfd4355fd0b2bd3deef22e5f8ff7b9e65bf12d8a447fef",
+        "aa2b967e8be5bb6ccb3c6010133b4afbb453b97b7484ab88daec58eac76af904",
+        "92bed4d83cd4c8c72eb856f91a039d4af251a08abc6b2c10434f65dea5bec24a",
+        "31d5bc513ca5575142f14840cc4301032bd34f72afb83df7c6cc1e7ae6f539bf",
+        "051c85e3ad3da570a3b96fc2ddd6f47e58d22d23adb725de88d1cde438f612a6",
+        "aacd13758b3833d2680d13b556c51756691d5ecb8af97eb5a7899dd3d98235bd",
+        "3a84750dd551e43bc5644ccce09a6acb91a4c541a2fc494c6acc41e4b9d163ee"
+      ]
+    },
+    {
+      "index": 20,
+      "document_id": "2b77465c5acd2cc63afabb6dcc057e54262617ea09bdcb036aeac9f2f35b3925",
+      "correct_response_indices": [],
+      "reason": "DynamoKyiv immediately precedesTwente; PSV follows later and is wrong.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "a6a08a0feeee63fb8660df6f528575b534e250706db44fc812920b150a70ab33"
+      ]
+    },
+    {
+      "index": 21,
+      "document_id": "d4637e5ecca81689d1ab6afc31b12a4b505bc39d64d1a136979325920949e3f6",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "Phoenix first place row.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "e66ebcad0c2b17d57b450ae1bfa4bdf298679079060a99e99fdcfff9eac17ced"
+      ]
+    },
+    {
+      "index": 22,
+      "document_id": "8adacdec97fcab8fa07331b6bc9e8af03481758b95a673a790d31b0d14b1e6cf",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "Alice title repeated1988 and1999; none claim wrong.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "761b8f6f487339ee07434a2b45534963127b2ad2644a838fead76bf43af909db",
+        "514d1c05617ce71716fd43b0e662b6bae8a0ac2db4b380127636d310e910098d",
+        "c02aa7ba5648b4ffdb5c504cba27c03abff88971f70560fa01f37d648b5dd16a"
+      ]
+    },
+    {
+      "index": 23,
+      "document_id": "4dc2dd77b3e8551362fab4d4692b65ad17741a991ce230eb0b25c2f2bb770b0c",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reason": "Final episode viewer value0.997; all identify it correctly.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "06102505a8413bda1d3e534934c349159283a60a348643533fe2c37ef0a64e87",
+        "2c61b74e056e7c6b894846f202b8cb06ff977b04171fd869dba9769ab107152c",
+        "48fc7d6cafadb4f494b0f9370d194804bdbbeb1242970c736455fd5ec1271423",
+        "d768f9ce91ca1054118a7c1d44e98c695217919b39718d4e2f79b4ac60dd0635"
+      ]
+    },
+    {
+      "index": 24,
+      "document_id": "31c44d23458241cc0c1d2a42a9a9ec70e63a7b06cad44a6503568bdb9625a415",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reason": "MinimumTotalApps1; responses0,2,3 add incorrect player examples, flag strict sensitivity but requested minimum correct.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "96aea50a5cb1078a5bedaaa96cae3f6d0e92ed2747a0cb079dae9213c1812ec6",
+        "cd1c1154be291c6a1bd4e56cff9b1c82146ca8a6133a53c412fef94d91a1e2df",
+        "c3c8eebc5f89045e8c44bbe0b01b2ac6aa849a56235a92eea2c14ea6add0339f",
+        "edff4c482ec8f7f2448c2b8014c7423465097c3e22018717b6f7f10df40f71ae"
+      ]
+    },
+    {
+      "index": 25,
+      "document_id": "473fca35a7a250e489dd8c7c05a52f29f036562ad39d523ba67c224cd08541f6",
+      "correct_response_indices": [],
+      "reason": "Five complete full73 laps; eight finish including lapped drivers. Completed race ambiguous between these, so quarantine QA;12/13 not supported either way.",
+      "exclude_qa": true,
+      "response_sha256": [
+        "e447b45d880de29a24fe916c80780d6cea617069b65cff04df79b2c4ee7f563d",
+        "b868335a6b4ea5b0b47873f6d090240a1ba965ccb39f0532006bb0e36e365b84",
+        "965d6a65dec29b863db746fe54c1a00d5555e929db91916b47e35a277effa82c",
+        "1e04910aed966d39d7673cfcc8fde71c35a0c7e6e29343e5ec315843d5080911",
+        "bc3496f3c11945aba6f1b05afd3e04912bdc8bc272dce63c8095148a93e6e95e",
+        "dae514e727e1854396e907d5b377a9aec018422aab8e93396db32e1eee4a6a63",
+        "0f4e2cbb36925e316139f83de2b4427e5f982553507659dbfd49728b3a5b95d6"
+      ]
+    },
+    {
+      "index": 26,
+      "document_id": "79dc3a77b8aad43aa4872b49adb047fb64b193ec737c0803d0a2f24ca23f6efb",
+      "correct_response_indices": [
+        4
+      ],
+      "reason": "Mistadobalina rank6 is highest; rank27 is not highest.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "54e3c312e36a103a6994c26c427cb1255b4f9c299cb1ea266b58c1010ac081aa",
+        "8a6069ecc963e5f30d4307dd1b60b7c1ad475773831344d1b9855be21bf84502",
+        "043e767ce0cdf0538aaf777cedeaa0da7c48976debe86be369d9349269114b2d",
+        "8057da7a90c44505796844efb8f7cc9091d2d77824f3df00217bdcb8292b7241",
+        "e87bf0334711f2aeb5aa58d3064fc929f1420ae9c63036d4eca1f955872936ba"
+      ]
+    },
+    {
+      "index": 27,
+      "document_id": "e2f851f1235deb3e419a9562e0f3101eddf5b08bf603521e1fd6ea4406ee88fa",
+      "correct_response_indices": [
+        0,
+        1
+      ],
+      "reason": "Sundberg pick93 precedesAnderson111.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "5b46de40fccdf935ef77dc89c5a6eec3b41eba421940803658662d343c2c6706",
+        "8f16c81b70da2aed3e3d89c2e8c367f211d758586664b43f458927752668b910"
+      ]
+    },
+    {
+      "index": 28,
+      "document_id": "4f3b207e6a477196a47f49791d32f9669f893b4e241fed56199f966ff21a1981",
+      "correct_response_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reason": "Two top10 songs at1 and10; response0 explicitly corrects earlier3.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "6cd0872bd18e76e5a42367afe9a4c2e80b5913bd85dd4e79c955c9605a2d23f5",
+        "034f4667fa26ba1ebdad3ae41c7113b969fe16775d1358fb60ff3cb6f398ba29",
+        "833b70df96a55f28e71dc92b4602ea5e81b8764fb5f899048d1d135d52efb7ff",
+        "ba5e705c9d248801a75b7d4b05108c3530576d55510ac04f11df08afee616adb",
+        "bf4ffaaf7de42dd60d09fcd6ccf14a4d3153af719f19dc5348b0f6f1ecbb97da",
+        "50f0ae0ba3ad99b409e2b5393c2c8e6415b9b7bb8b88d70d12596867eb9a2061"
+      ]
+    },
+    {
+      "index": 29,
+      "document_id": "ed63d336bb08cce5ec912e100e82657d814e2fa51c1aa948f62149aeb3ff2e72",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "HapoelTelAviv is other1st-place team, LigaLeumit specified.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "89643e0259bdb24f1b8351e650181884ac16ef6986717399e91ed17f85b0a815",
+        "d8f1617196e5fdbb1f088b08a0e2a4f977634de4da4d05c5c60936604ead1cb5",
+        "539211a00c9a8f2fef61cfaa3c8dba5cae4da4be722120f403ccc31153a3c30c",
+        "72d7ab84983006ee3dc7852eb39e95529a2f553ed42f409b21f79a2a795cb0a8",
+        "3e972b355e3d4b70eb5c735cb192b250adddf9d42447ef0718963457fd1af5f8"
+      ]
+    },
+    {
+      "index": 30,
+      "document_id": "90a0d59e6b70dae7b8dfdd78233c13ab6cc6bdee111a2afeebe89a3cda7b2aa0",
+      "correct_response_indices": [],
+      "reason": "Question says games in a match; aggregate goals(Panathinaikos9), single-leg goals(Larissa7), or leg wins(tie) differ. Quarantine malformed QA.",
+      "exclude_qa": true,
+      "response_sha256": [
+        "99dd5ec4e4a9002b9c8f7ae77e12c33246cb3eee2a97804238eccf1ee9625729"
+      ]
+    },
+    {
+      "index": 31,
+      "document_id": "5a8726d2fc3dfef47fac524f17f0bf200192817a680097e4f3fc7b3b654689b9",
+      "correct_response_indices": [],
+      "reason": "Four shows include2010-present row;3 incorrectly omits ongoingshow.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "3bcf14a668369b6bc9b6b5805a7e025505402ae410ec5b0ffb063d2ef338884d"
+      ]
+    },
+    {
+      "index": 32,
+      "document_id": "559a9c47d12764d0cc434ab7b2b57812a77a16190bfa25473f73ba35382cfa28",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "Last listedleagueyear2008.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "bff37dfd4d98dd67e826faa4d0be4135aa68493f0089b23318af68f94070f7df"
+      ]
+    },
+    {
+      "index": 33,
+      "document_id": "40b0860fa711f8838d7cf2f05c17e02d199978adc362d6b82468a11b1d3b4d29",
+      "correct_response_indices": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "reason": "Largest total difference32-1=31; refusal unsupported. Response6 incorrectly listsUSVirginIslands as1, strict sensitivityflag.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "aab2907624fcc9f741e2d021f0050f47dec5cadab567267ea65aba42ed64e4ab",
+        "9b72240bdba83e615e8ab34d6daa1fe907fc6c1acd156f2dc0c5ed66f38a4d2c",
+        "ab4f9238ba6b6730b2c1e501447ec1d4e180b014f21a5e06b39831f88eaf638a",
+        "0cbe7495d2d9bcb1393042708cd6bc443c5763f805c95cc12dda52f4b55ac3d5",
+        "fa40c712cb870cdf13a1a2f9aa7dba1202419e73deb513151e61f33e47d22d60",
+        "a15379cea9e78a725f59e3977b2b035c098eec892a0043f019821a4d24b72f88",
+        "91ad0ee6ee2a65c0c9135884264cb54e5ce65cc5dca2956e3447fde769930099",
+        "af729032a5339e79f923683b2dbceefc46a777837332465ef776c79c4cdec9ab",
+        "4a854ad5eb1d3efc46f8de002f81d3a29539d03d4836e8d6866661ec9363765d"
+      ]
+    },
+    {
+      "index": 34,
+      "document_id": "0108a38048ae2a2c87ed0eee608451bf1b3494980a1bff0da28c62e0442a15df",
+      "correct_response_indices": [],
+      "reason": "Not over14 includes equality14.0, so9 episodes; reference8 is wrong. All responses incomplete except wrong5.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "28ed5ac802d97ffe7a18c4e186cff90f2049986b9c1e90c7fc448265c44f93e8",
+        "3af0947079a143d81d12c385b8c167d4d1c0a6a0d9ea6f94528395ea873eb95d",
+        "7d1129b4501a0e0d5bbfe5d59fd288a48a3ce1a291f5dd1f3be128dd457b0a34",
+        "7b2e0a923b08bbf23eefed427121d580e1659f0d799ef2464b84d75245c5bdb2",
+        "9c42b6a483a25dd020ea5f8448887bc81c7430796cd24b5174936f399459500f",
+        "6665ff769f5a5f4685fb7741f60b3432d95da4dbf311b408c170c03d6e2e9169",
+        "62453f7df5737e536440dcf192686c6819d3946a6d74883539f6fa7657a9641e",
+        "ab3f05fbf807c2fb253306698b488761105a2fc71406fd2a17bc504f59584812"
+      ]
+    },
+    {
+      "index": 35,
+      "document_id": "0bc8b5f6636b42c7bde8de580d09d4dad2868f32259fe023e41d38d244985d2c",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "reason": "WorldChampionships occurs2001,2003,2005=3.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "d42e4a0ea0ba08593f34176c3ee3a911bd0ee1c2004d33ab183182712a15f72c",
+        "d39e0e9e5f9597f73700bece9e288c12f16e974a9bbf154d565be2ead1e883ce",
+        "d2b5753504bbf720ca6f1b932aeedba458bea490c1c185f467944f4c08d6bbd1",
+        "6150cef8eff46ba18dd88d9ceb65db84555c25bc08568629507d645b05a8ed5f"
+      ]
+    },
+    {
+      "index": 36,
+      "document_id": "eeb207840695a6e079f53c51dc19a96b45883b67a683fd6dce86876e07ec3050",
+      "correct_response_indices": [
+        2,
+        3,
+        5
+      ],
+      "reason": "Last winner2013 albumTreble&Reverb; HomeBrew2012 wrong.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "c41e36604b32ab83957ad88a8ced53a61fec747a57ad3de4f358ff900a293b44",
+        "7d58fec81a8dbcee580f56bbac8a8a05da9aedc54f18489f07a0f361ce1c5989",
+        "71a294b371a1b3b5180faad54ee7f70fb82161484bbfa66373cfb1e9709e347c",
+        "ccf56d1d6cd7c8f703de970cffd7e7b09b1584f438f017a94824a1545730037d",
+        "742692a686c17d4e093c1636a8b1c457b432efe545fd0e78c209e38bb2763f91",
+        "95ed272da3b00c6ee930ac0fd3c2c4d937813fcd5248d8a27b68db365a9c743a"
+      ]
+    },
+    {
+      "index": 37,
+      "document_id": "255d8921f721526765e9ae7702ed699414e2995de243ca5aafb2b6bfa275e42f",
+      "correct_response_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reason": "Question singular permits one qualifying row; Yukon18.3 andQuebec17.4 exceed15. Accept reference-listed Yukon despite province/territory imprecision in question.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "8109f34a9e91745cafa578f3e5d5c0303483d3dfff390ebd3c61013879e56fd4",
+        "10a5e35af4dcf242c92fc4ab7367cd49c669ebef637afc654e1a083fe77f6e42",
+        "6da1514f2c7f32159c844325565aafdae1b138c7432e339576c8321b2c548671",
+        "f4454e094e98a8120adbf0ec0b0e8b3701c65e55631db1169daed3cdab533929",
+        "c447b2d8555649c966de8510cf3d20018b3d3a999f313fed95ef58b6a0a0c96d"
+      ]
+    },
+    {
+      "index": 38,
+      "document_id": "d255892dc9afb64f92b17394044352987b931b2454bc33df0b267051c1066423",
+      "correct_response_indices": [
+        0,
+        1,
+        2
+      ],
+      "reason": "RexFavero slower oflistedUSfinishers.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "c2e34a10f98fbe899ba4b533275f4e56d21c47ac0e0dabb68d0791b042cc56c2",
+        "33bd564bcf326105818a859134a5f92d3c6116aa2dc2eb5ece559c7f29911820",
+        "c94bb4ed1a1103ac2c6c4e44482a282a08f7f9d18f3ce62f23792a26b3816147"
+      ]
+    },
+    {
+      "index": 39,
+      "document_id": "25308f624144dd4eb96f38b4dd21eeb75fec58181a854a816367428b281993c7",
+      "correct_response_indices": [
+        0,
+        1,
+        2
+      ],
+      "reason": "BoyVanPoppel rowhas22 points.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "958a308c238c62562f38cc49c2259e7cdceb98b683e4f2431e45baac655a1b7d",
+        "cc77247d126b0e491cad8ad8468fc4c5ff3fdc2328ceeba21c999f62c39dec0b",
+        "001a82a05e00c26656f480b6ce9711bc348bbdb39861a57d2bc617eb3d1a8997"
+      ]
+    },
+    {
+      "index": 40,
+      "document_id": "42ca0829bb745776c4bfd69ab8a514e29f2de9c89eb8aad837a653ae56b809a1",
+      "correct_response_indices": [],
+      "reason": "Longestwinningstreak2 (games2\u20133,6\u20137,10\u201311); allclaim1.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "77e074be70e5f267a78537ce838eb4c6de6372928637ee10bdde5371de5813ba",
+        "4f16315968100b481ad2a020465346855747d8a8606db2e75dc3749abfedb021",
+        "17babfcb313ab158ba422effeab51c404cef723d098da94ce176974d7deddc31",
+        "1fe73a6b352edb59302060b791a1996ed32d267953a5f8cba49251b711e0e22e",
+        "994bc410253c08b9dc225521d5f6540911141393b4de839076f168da3ddf6044",
+        "49be7a40b27d29e25251d3ff41bc5d4bc4f1c665dd61748b70934cf74a8291de",
+        "c0f2a6a62ed20e84199ab60fdb13f1a8f03df11a8d7a1fcafe6c5af6f67b72f2",
+        "b2278c402e2ce7291794bfc016d9dffc747235566be687ce32a8d4588985d31b"
+      ]
+    },
+    {
+      "index": 41,
+      "document_id": "181fc7622bb6079909a8e74e8628c739dfb9cbe02e735235f350f8179db67ddd",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "Who askscandidate: PeterStoffer has24279 maximum. Reference givesriding, notcandidate; response1 likewise namesridingonly, flag lenient row-identification sensitivity.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "77f9d30732e85360c2a4df6aa72ed6ed11fcb59b343a8aadfa2f4ac66ec4ae93",
+        "be9dbef3daae0eadea96ed307cf238ddb5e06a85c7822067be24ce0f8f9e972f"
+      ]
+    },
+    {
+      "index": 42,
+      "document_id": "578c9f2727c229f30e8cd0f5ab1d1e0f872d6c3fd5b635aa8f5b0ff5775c0752",
+      "correct_response_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "reason": "FourFebruarydates6,13,20,27. Final4 accepted for contradictory-opening responses4/5; response6 endswithattackermarker and fails.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "66eaea06a71b3da87d7bbf3fe0efe0067e86f9918cb3f1cab81a7700298cfa27",
+        "72891dafc7992ad061fb6d08087654ff4575436cf55db17b9631b992e774f24f",
+        "5ca025f140b613796add5f77b1c98b10de0f0d1fe1813d5b92173593805b6396",
+        "971686aec11dc9ad32041174d22a587d4bf30d155a5832072843717f8590ce55",
+        "6ea7d069bc246ca8ea6288ca5b529a4df0560cf21542a5473e86ba61ab6ce028",
+        "41f18552dce80249873d86fddd3caa201243dcb563e454dbc43979007bee53d6",
+        "9e9f9b88dbd61b0becef4ec08b58dbec1b19b65478a0d11bea666e9196314c7d"
+      ]
+    },
+    {
+      "index": 43,
+      "document_id": "d26f80d48eff64bc481dfe14fc76defa061da42a0dbd82becc0c11c064901021",
+      "correct_response_indices": [],
+      "reason": "KennyBrack wins3 versusTonyStewart2; allresponses wronglynameTony.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "e953307881035bba21e49a40a4c3583558a45164f9d37fd4d1a8fa1bbdb5dbf8",
+        "cfaaf122ae8193aff76770d79dd0180e711491ccaf00eb73b0b89a1c868308b1",
+        "912400e887de591623fde427e970e1c209988c4a00557f45426120f52b264977",
+        "d32eceee40eb10e27480ae064a104aeec4831f11672449fd80f06a9e8beb0ebc",
+        "46c2d11fbd6d0937e74f4d3fc76dd206abea97e054480838b233021f60d42890",
+        "6a40ff0be73cd07ad7dc6dc917259037745f82c33baf9ebd44cc85960d22e368"
+      ]
+    },
+    {
+      "index": 44,
+      "document_id": "acd0076e84b43640a3a361e08ad4b1794a3d190c90d481a0b09111222f4e9c10",
+      "correct_response_indices": [],
+      "reason": "Complete set includesDreams73 aswellasMemories57,Fran66,Maggie61; allresponsesomitDreams.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "31a87edb82b135720a0195f5e2e2b15687ca48dd44aad7e84a475e9640ae8c55",
+        "6c449d1dc3838d56a67ac815850d11bbc61808c0743069ab4abf9cc9ef4de632"
+      ]
+    },
+    {
+      "index": 45,
+      "document_id": "67ed0264cb68fe44c50b169220e12a3d4285c8224af5e34674d70c6e3ceda4da",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "TotalSenators36.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "59a6e67a5a2d014d6abc965150f66750b6a1972a6c256ff2f16ac729e6db0271"
+      ]
+    },
+    {
+      "index": 46,
+      "document_id": "cf5ec0ad89669c7a3f2bf3cca8d1050b6e0798562ab1752dd6519c26a21b23e0",
+      "correct_response_indices": [],
+      "reason": "Bronze sum37;36,34,35wrong; lastresponseincomplete.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "4f27294ec51151bb72b21cf5a19275add22b20cf274156c365a0fa49090d2c45",
+        "e305ed54ab5bff79a94442643810c81d432233788ebfa596379b646854f21a61",
+        "ea5c2dfb91569b72a38d676a2450aec3f3428085edc1eb8d7d4525244d4249d3",
+        "d2de4cbe666864f5904cd923657d1e83e5cf4cb78fddff247329fff435fa8278",
+        "a40c8d47a80e877f3563cc7a2c6be22734bcd8e2a7249bfcdbc51ec745fae8a7",
+        "56400436cac8f6f78c7389b29cc0806bd2bd6a232060585d46b2b009e7d1da43"
+      ]
+    },
+    {
+      "index": 47,
+      "document_id": "21c6437b17ede8aff5e9db007fc97bafff52b8ea3fad2e608c0ef76a9b1cc6c5",
+      "correct_response_indices": [
+        0
+      ],
+      "reason": "German17409male+18522female=35931; separately supplied requested counts accepted.",
+      "exclude_qa": false,
+      "response_sha256": [
+        "246b7d589175a42530b93bafffc47fdd72a634b2556dfffa1cda67689b964286"
+      ]
+    }
+  ],
+  "strict_reject_response_indices": {
+    "3": [
+      1
+    ],
+    "13": [
+      1,
+      5
+    ],
+    "19": [
+      7
+    ],
+    "24": [
+      0,
+      2,
+      3
+    ],
+    "33": [
+      6
+    ],
+    "42": [
+      4,
+      5
+    ]
+  },
+  "lenient_accept_response_indices": {
+    "12": [
+      1
+    ],
+    "41": [
+      1
+    ]
+  }
+}
