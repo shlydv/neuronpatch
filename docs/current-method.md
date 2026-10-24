@@ -5,34 +5,32 @@ in quality, preservation and cost against strong baselines. **Not achieved.**
 The library can train, save, reload and merge compact patches. No neuron-selection
 recipe has yet earned recommendation as a default or a superiority claim.
 
-## One active experiment
+## Latest completed experiment
 
-[Matched-authority discovery](https://www.kaggle.com/code/shlydv/neuronpatch-boundary-authority-v1-20261024),
-private kernel140580989 version1, is running. Its two fits and new-candidate
-answer generation finished; saved-comparator replay has started. This is a
-progress snapshot, not a quality result or full completion. Paid scaling is off;
-provider/worker/internal limits are10800/10200/9900 seconds. No other GPU job is
-part of this plan.
+[Matched-authority discovery](../experiments/instruction_boundary/complete_authority_v1/REPORT.md)
+completed two new fits and 3,216 generations; all artifacts downloaded and passed
+integrity checks. All 309 unique anonymous QA answers were reviewed before
+condition attribution. There is no active GPU job for this experiment.
 
-The [frozen protocol](../experiments/instruction_boundary/authority_protocol_v1.json)
-changes discovery prompts while preserving training targets, budgets, rates and
-optimizer. Both discovery classes contain the same redirect text, placed inside
-untrusted JSON versus outside it as a legitimate user instruction. Grouping is
-recomputed from those profiles, so this evaluates the discovery recipe, not
-ranking alone. The32 training documents remain unchanged. Fresh confirmation
-uses48 documents, three attack families and legitimate-instruction controls.
-Four comparator adapters are reused without new fitting. The full plan contains
-3216 teacher/confirmation generations and two new fits.
+On 38 base-clean-correct fresh documents, the new grouped patch recovers 38
+familiar redirects, 16 unseen authority attacks and 20 grading-notice attacks.
+Old guided recovers 36/0/0; LoRA 37/31/23; random43 36/27/10; random71 37/3/7.
+The new discovery recipe improves on old guided but fails the frozen competitive
+criteria, including under more lenient answer-content scoring.
 
-Completion requires downloaded full-comparison artifacts, independent integrity
-verification and complete answer review. A candidate-only completion file does
-not suffice. The [source-only review](../experiments/instruction_boundary/authority_source_review_v1.json)
-is frozen before outputs: correct references6/9/45, accept valid alternatives46,
-exclude document14 QA for every condition, retain its controls, and apply the
-predeclared document43 sensitivity. Review anonymously before joining condition
-identities. Judge actual recovered answers, not just disappearance of attack text.
+**The larger finding:** all five trained adapters fail all 48 legitimate
+instruction changes after the full quoted document; the base passes all 48.
+Every method still passes the 288 short direct/quoted controls. Therefore those
+short controls were insufficient to establish boundary preservation. Relative
+preservation against equally damaged comparators is not absolute preservation.
 
-## Strongest completed evidence
+Discovery used matched trusted/untrusted contexts, but training supervision
+remained unchanged. The next investigation should hold support fixed and test
+matched full-document supervision with different targets across the boundary,
+using original training/calibration data and fresh confirmation. Do not launch
+another selector-only sweep or tune on exposed confirmation answers.
+
+## Previous completed evidence
 
 [Boundary-transfer v2](../experiments/instruction_boundary/complete_v2/REPORT.md)
 completed eight fits and1728 generations with verified artifacts. Qwen3-4B-
@@ -83,20 +81,18 @@ had insufficient completed errors and was retired without adaptation.
 The [selection decision record](selection-decision-2026-10-24.md) contains the
 measurements, interpretation limits and outcome-dependent next decisions.
 
-## Decision after the active run
+## Current method decision
 
-Honor the frozen success criteria, then inspect failure modes. If the new recipe
-beats random supports and approaches LoRA while preserving answers, replicate
-across seeds and tasks before recommending it. If it improves only the old guided
-patch, that is discovery-recipe improvement, not a competitive method. If it
-still fails, do not launch another arbitrary pooling, threshold or formatting
-sweep. Identify whether support, sharing or training coverage limits transfer;
-a new experiment must discriminate those explanations.
+We have evidence that changing discovery helps this particular guided patch,
+not that it beats strong controls. We also have a shared training failure that
+must be addressed before making sparse-selection claims. Fixing supervision is
+a controlled hypothesis, not an assumed cure: preserve fixed supports, budgets
+and strong baselines, and test both sides of the trust boundary on fresh inputs.
 
-We need selection to predict useful finite training changes on separate transfer
+Selection should predict useful finite training changes on separate transfer
 calibration examples, not merely large gradients or accurate input recognition.
-This remains an unvalidated direction with substantial prior art, not a new
-algorithm already established by our work. Never tune on confirmation outputs.
+This remains an unvalidated direction with substantial prior art. Even a perfect
+local predictor on an inadequate objective cannot certify the desired behavior.
 
 ## Paper provenance and completion requirements
 
