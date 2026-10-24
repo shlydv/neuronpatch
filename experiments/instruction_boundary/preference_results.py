@@ -118,8 +118,34 @@ def summarize(cases, reviewed, spec):
             "gates": gates,
             "qualified": name != "base" and all(gates.values()),
         }
+    contrasts = {}
+    comparisons = [
+        ("coverage_sft", "narrow-sft", "diverse-sft"),
+        ("coverage_dpo", "narrow-dpo", "diverse-dpo"),
+        ("objective_narrow", "narrow-sft", "narrow-dpo"),
+        ("objective_diverse", "diverse-sft", "diverse-dpo"),
+    ]
+    for label, before, after in comparisons:
+        if before not in conditions or after not in conditions:
+            continue
+        families = {}
+        for family, rows in sorted(groups.items()):
+            gained = [c["id"] for c in rows if correct(after, c) and not correct(before, c)]
+            lost = [c["id"] for c in rows if correct(before, c) and not correct(after, c)]
+            families[family] = {
+                "total": len(rows),
+                "gained_case_ids": gained,
+                "lost_case_ids": lost,
+                "net_gain": len(gained) - len(lost),
+                "both_correct": sum(correct(before, c) and correct(after, c) for c in rows),
+                "both_incorrect": sum(
+                    not correct(before, c) and not correct(after, c) for c in rows
+                ),
+            }
+        contrasts[label] = {"before": before, "after": after, "families": families}
     return {
         "conditions": results,
+        "paired_contrasts": contrasts,
         "base_clean_correct": len(base_clean),
         "interpretation": (
             "One-seed table-task pilot; family intervals are descriptive, "
