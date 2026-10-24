@@ -39,6 +39,8 @@ def main():
                 for name in (
                     "transfer_run",
                     "authority_pairs",
+                    "matched_supervision",
+                    "frozen_training",
                     "replay",
                     "transfer_data",
                     "probe_selection",
@@ -54,6 +56,13 @@ def main():
     data = args.data
     files["data/inputs.json"] = (data / "inputs.json").read_bytes()
     files["data/protocol.json"] = (json.dumps(spec, indent=2) + "\n").encode()
+    if "frozen_training" in spec:
+        from .frozen_training import load_assets
+
+        directory = data / "frozen-training"
+        load_assets(directory, spec["frozen_training"])
+        for name in spec["frozen_training"]["files_sha256"]:
+            files["data/frozen-training/" + name] = (directory / name).read_bytes()
     if hashlib.sha256(files["data/inputs.json"]).hexdigest() != spec["inputs_sha256"]:
         raise ValueError("Data differs from frozen protocol")
     (data / "protocol.json").write_bytes(files["data/protocol.json"])

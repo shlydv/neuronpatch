@@ -216,6 +216,64 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
         with pytest.raises(ValueError, match="hash mismatch"):
             replay_module.verify_parent(root, manifest)
         adapter.write_bytes(content)
+        # Exercise the new path with real tiny-model optimization. It must not
+        # discover again or load trained deltas; only row/group identities enter.
+        from copy import deepcopy
+
+        frozen_spec = deepcopy(spec)
+        frozen_spec["learning_rates"] = [spec["learning_rates"][0]]
+        frozen_spec["decoder_recomputation"] = False  # Already enabled on this fixture.
+        frozen_spec["frozen_training"] = {
+            "base_fingerprint": original,
+            "membership": {
+                bank: sorted({r["document_id"] for r in data["splits"][bank]})
+                for bank in ("train", "calibration")
+            },
+        }
+        selected = json.loads((root / "supports.json").read_text())
+        assets = {
+            "supports.json": {
+                arm: {
+                    name: {k: entry[k] for k in ("indices", "groups")}
+                    for name, entry in projections.items()
+                }
+                for arm, projections in selected.items()
+            },
+            "parent-fits.json": fits,
+            **{
+                f"teachers-{bank}.json": json.loads((root / f"teachers-{bank}.json").read_text())
+                for bank in ("train", "calibration")
+            },
+        }
+
+        def reject_rediscovery(*args, **kwargs):
+            raise AssertionError("Fixed-support training must not rediscover")
+
+        monkeypatch.setattr(transfer_run, "discover", reject_rediscovery)
+        new_fits = transfer_run.execute(
+            model,
+            tokenizer,
+            data,
+            frozen_spec,
+            tmp_path / "frozen",
+            lambda: None,
+            frozen_assets=assets,
+        )
+        assert len(new_fits) == 4
+        assert fingerprint(model) == original
+        for row in new_fits:
+            assert set(row["validation"]["kind_nll"]) == {
+                "injected",
+                "clean",
+                "direct_full",
+                "quoted",
+            }
+            receipt = json.loads((tmp_path / "frozen" / f"{row['id']}-schedule.json").read_text())
+            assert receipt["sample_indices_exact"]
+        prior_supervision = json.loads((root / "supervision.json").read_text())
+        new_supervision = json.loads((tmp_path / "frozen/supervision.json").read_text())
+        for bank in ("train", "calibration"):
+            assert new_supervision[bank]["task"] == prior_supervision[bank]["task"]
     path = tmp_path / "run/supervision.json"
     original_text = path.read_text()
     corrupt = json.loads(original_text)

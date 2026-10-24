@@ -21,8 +21,15 @@ CPU construction on the actual saved teachers replaces 32 training examples and
 unchanged task targets/order, incomplete-teacher handling, reference independence
 and allowed bank membership. Callers must supply authoritative split membership;
 the helper cannot detect a caller falsely labelling confirmation as training.
-It is not wired into the GPU runner yet. The old runner assumes four validation
-kinds and re-generates discovery, so calling it unchanged would not be this test.
+The runner now supports hash-bound frozen inputs, skips rediscovery and teacher
+generation, constructs fresh adapters from row/group identities, and validates
+the exact parent sample-index schedule after fitting. Its calibration scorer
+uses the full-document control in place of the short direct control. A tiny
+Qwen CPU fixture exercises actual Adam updates, serialization, reload, merge and
+base restoration through this path; only generation is stubbed. This verifies
+execution mechanics, not large-model quality. Packaging includes the pinned
+assets. Multiple-parent comparator replay, independent verification, final
+protocol and submission remain to be completed.
 
 This is a standard counterexample/data-coverage intervention, not a new selector
 or a claimed synthesis breakthrough. Equal example counts and optimizer steps

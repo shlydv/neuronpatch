@@ -113,8 +113,9 @@ def losses(model, examples):
     return [float(loss_for(model, sample)) for sample in examples]
 
 
-def validation_score(values, records):
-    banks = {kind: [] for kind in ("injected", "clean", "direct", "quoted")}
+def validation_score(values, records, *, full_document=False):
+    direct = "direct_full" if full_document else "direct"
+    banks = {kind: [] for kind in ("injected", "clean", direct, "quoted")}
     for value, row in zip(values, records, strict=True):
         banks[row["id"].split(":")[-2]].append(value)
     if not all(banks.values()):
@@ -255,10 +256,15 @@ def discover(model, tokenizer, train_rows, task_examples, spec, names, output, c
     return selections
 
 
-def execute(model, tokenizer, data, spec, output, check_time):
+def execute(model, tokenizer, data, spec, output, check_time, *, frozen_assets=None):
     output.mkdir(parents=True, exist_ok=False)
     write(output / "protocol.json", spec)
     original = fingerprint(model)
+    frozen = spec.get("frozen_training")
+    if bool(frozen) != (frozen_assets is not None):
+        raise ValueError("Frozen training protocol and verified assets required together")
+    if frozen and original != frozen["base_fingerprint"]:
+        raise ValueError("Frozen training base differs")
     parent = spec.get("reused_parent")
     if parent and original != parent["base_fingerprint"]:
         raise ValueError("Frozen comparator base differs before training")
@@ -266,15 +272,23 @@ def execute(model, tokenizer, data, spec, output, check_time):
     banks, supervision = {}, {}
     for bank in ("train", "calibration"):
         rows = data["splits"][bank]
-        teachers = generate(
-            model,
-            tokenizer,
-            [r for r in rows if r["kind"] == "clean"],
-            spec,
-            output / f"teachers-{bank}.json",
-            check_time,
-        )
-        supervision[bank] = teacher_supervision(rows, teachers)
+        if frozen:
+            from .frozen_training import supervision as frozen_supervision
+
+            teachers = frozen_assets[f"teachers-{bank}.json"]
+            write(output / f"teachers-{bank}.json", teachers)
+            supervision[bank], receipt = frozen_supervision(frozen_assets, rows, bank, frozen)
+            write(output / f"supervision-{bank}-receipt.json", receipt)
+        else:
+            teachers = generate(
+                model,
+                tokenizer,
+                [r for r in rows if r["kind"] == "clean"],
+                spec,
+                output / f"teachers-{bank}.json",
+                check_time,
+            )
+            supervision[bank] = teacher_supervision(rows, teachers)
         if len(supervision[bank]["task"]) < spec["minimum_teachers"][bank]:
             raise ValueError("Insufficient completed clean teachers")
         banks[bank] = {
@@ -282,7 +296,7 @@ def execute(model, tokenizer, data, spec, output, check_time):
             for key in ("task", "preserve")
         }
     write(output / "supervision.json", supervision)
-    if parent:
+    if parent and not frozen:
         for name in ("teachers-train.json", "teachers-calibration.json", "supervision.json"):
             if (
                 hashlib.sha256((output / name).read_bytes()).hexdigest()
@@ -298,19 +312,35 @@ def execute(model, tokenizer, data, spec, output, check_time):
         check_time,
     )
     started = time.monotonic()
-    supports = discover(
-        model,
-        tokenizer,
-        data["splits"]["train"],
-        banks["train"]["task"],
-        spec,
-        names,
-        output,
-        check_time,
-    )
+    if frozen:
+        from .frozen_training import fixed_supports
+
+        supports = fixed_supports(
+            frozen_assets,
+            spec["arms"],
+            {name: model.get_submodule(name).weight.shape[0] for name in names},
+            rows=spec["grouped"]["selected_rows_per_projection"],
+            groups=spec["grouped"]["groups_per_projection"],
+        )
+        write(output / "supports.json", supports)
+    else:
+        supports = discover(
+            model,
+            tokenizer,
+            data["splits"]["train"],
+            banks["train"]["task"],
+            spec,
+            names,
+            output,
+            check_time,
+        )
     write(
         output / "discovery.json",
-        {"seconds": time.monotonic() - started, "training_prompts_only": True},
+        {
+            "seconds": time.monotonic() - started,
+            "training_prompts_only": True,
+            "frozen_support_reuse": bool(frozen),
+        },
     )
     if spec.get("decoder_recomputation", False):
         enable_decoder_recomputation(model)
@@ -382,6 +412,13 @@ def execute(model, tokenizer, data, spec, output, check_time):
                 before_update=before,
                 after_update=after,
             )
+            if frozen:
+                from .frozen_training import verify_schedule
+
+                write(
+                    output / f"{label}-schedule.json",
+                    verify_schedule(history, frozen_assets, label),
+                )
             validation = losses(fitted, calibration)
             live = losses(fitted, calibration[:2])
             live_parameters = {
@@ -418,7 +455,9 @@ def execute(model, tokenizer, data, spec, output, check_time):
                 "lr": rate,
                 "trainable_scalars": count,
                 "history": history,
-                "validation": validation_score(validation, calibration_rows),
+                "validation": validation_score(
+                    validation, calibration_rows, full_document=bool(frozen)
+                ),
                 "validation_losses": validation,
                 "reload_probe_exact": True,
                 "reload_tensors_exact": True,
@@ -507,6 +546,11 @@ def main():
     raw = (args.data / "inputs.json").read_bytes()
     if hashlib.sha256(raw).hexdigest() != spec["inputs_sha256"]:
         raise ValueError("Input hash mismatch")
+    frozen_assets = None
+    if "frozen_training" in spec:
+        from .frozen_training import load_assets
+
+        frozen_assets = load_assets(args.data / "frozen-training", spec["frozen_training"])
     parent = None
     if "reused_parent" in spec:
         from .replay import find_parent
@@ -533,7 +577,7 @@ def main():
     )
     model.eval().requires_grad_(False)
     data = json.loads(raw)
-    execute(model, tokenizer, data, spec, args.output, check_time)
+    execute(model, tokenizer, data, spec, args.output, check_time, frozen_assets=frozen_assets)
     if parent is not None:
         from .replay import replay
 
