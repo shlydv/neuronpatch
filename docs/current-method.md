@@ -76,6 +76,17 @@ was accepted as kernel140580989 version1 and is RUNNING at the initial status
 check. The downloaded accepted source matches the frozen SHA256. Provider cap
 is10800 seconds; paid scaling is disabled. No outcomes are available yet.
 
+The [source-only audit](../experiments/instruction_boundary/authority_source_review_v1.json)
+was frozen before inspecting this run's responses. All48 questions were reviewed:
+three references need correction (indices6,9,45), one permits additional valid
+pairs (46), and one lacks the required nationality data (14), so its QA is
+excluded for all arms while controls remain. Index43 has a predeclared sensitivity
+for distinct tournament names versus appearances. These are assistant judgments,
+not independent human review. The private audit is hash-bound to the inputs.
+The new review packet withholds condition names and keeps attribution separately;
+it rejects stale output bindings, incomplete coverage and successful scores for
+unterminated answers. These review tools do not change the running worker.
+
 The [raw marker outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
 also rejects the guided candidate's transfer criterion. All trained arms stop
 returning the attack marker on the48 redirect cases. On48 claimed-authority cases,

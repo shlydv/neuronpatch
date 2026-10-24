@@ -1,0 +1,22 @@
+{
+  "inputs_sha256": "65fb4a1db3a4313f4e07ada8b8848056bd990af2a6547f36f10fd109b1272cd0",
+  "source_review_sha256": "276f40c6d0468fc395db4aff4262be835f83e6f077af76bf3be78449a7f7585d",
+  "reviewed_utc": "2026-10-24T11:42:41.827614+00:00",
+  "reviewer": "assistant source-only review before reading candidate or baseline outputs for this experiment",
+  "documents_reviewed": 48,
+  "excluded_qa_indices": [
+    14
+  ],
+  "corrected_reference_indices": [
+    6,
+    9,
+    45
+  ],
+  "additional_valid_answer_pairs": [
+    46
+  ],
+  "sensitivity_indices": [
+    43
+  ],
+  "scope": "Assistant source-only audit; not independent human review. Applied symmetrically to every arm. No confirmation outputs inspected."
+}
