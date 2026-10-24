@@ -66,8 +66,13 @@ unchanged. It adds one previously untested grading-notice wording and a
 full-document legitimate-instruction control. Its input SHA256 is
 `65fb4a1db3a4313f4e07ada8b8848056bd990af2a6547f36f10fd109b1272cd0`.
 The parent adapter manifest is [pinned here](../experiments/instruction_boundary/authority_parent_v1.json).
-Worker integration, the final frozen protocol, tokenizer preflight and provider
-preflight remain unfinished. No further GPU experiment has been submitted.
+Worker integration and local preflight are complete. The [frozen protocol](../experiments/instruction_boundary/authority_protocol_v1.json)
+requires two new fits and four saved comparator endpoints; all3216 planned
+teacher/confirmation generations share the prior limits. The tokenizer preflight
+finds maximum prompt1018 tokens and training sequence1101, within frozen caps.
+Seven tests cover training, replay identity and corrupted/missing artifacts.
+Provider preflight and submission remain outstanding. No further GPU experiment
+has been submitted.
 
 The [raw marker outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
 also rejects the guided candidate's transfer criterion. All trained arms stop

@@ -259,6 +259,9 @@ def execute(model, tokenizer, data, spec, output, check_time):
     output.mkdir(parents=True, exist_ok=False)
     write(output / "protocol.json", spec)
     original = fingerprint(model)
+    parent = spec.get("reused_parent")
+    if parent and original != parent["base_fingerprint"]:
+        raise ValueError("Frozen comparator base differs before training")
     names, lora_names = projection_names(model)
     banks, supervision = {}, {}
     for bank in ("train", "calibration"):
@@ -279,6 +282,13 @@ def execute(model, tokenizer, data, spec, output, check_time):
             for key in ("task", "preserve")
         }
     write(output / "supervision.json", supervision)
+    if parent:
+        for name in ("teachers-train.json", "teachers-calibration.json", "supervision.json"):
+            if (
+                hashlib.sha256((output / name).read_bytes()).hexdigest()
+                != parent["files_sha256"][name]
+            ):
+                raise ValueError(f"Teacher replay differs before training: {name}")
     generate(
         model,
         tokenizer,
@@ -497,6 +507,11 @@ def main():
     raw = (args.data / "inputs.json").read_bytes()
     if hashlib.sha256(raw).hexdigest() != spec["inputs_sha256"]:
         raise ValueError("Input hash mismatch")
+    parent = None
+    if "reused_parent" in spec:
+        from .replay import find_parent
+
+        parent = find_parent(Path("/kaggle/input"), spec["reused_parent"])
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
     started = time.monotonic()
@@ -517,7 +532,29 @@ def main():
         attn_implementation=spec["attn_implementation"],
     )
     model.eval().requires_grad_(False)
-    execute(model, tokenizer, json.loads(raw), spec, args.output, check_time)
+    data = json.loads(raw)
+    execute(model, tokenizer, data, spec, args.output, check_time)
+    if parent is not None:
+        from .replay import replay
+
+        replay(
+            model,
+            tokenizer,
+            parent,
+            spec["reused_parent"],
+            data["splits"]["confirmation"],
+            spec,
+            args.output,
+            check_time,
+        )
+        write(
+            args.output / "full-comparison.json",
+            {
+                "status": "complete",
+                "new_fits": len(spec["arms"]) * len(spec["learning_rates"]),
+                "reused": spec["reused_parent"]["choices"],
+            },
+        )
 
 
 if __name__ == "__main__":

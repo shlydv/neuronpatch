@@ -39,6 +39,7 @@ def main():
                 for name in (
                     "transfer_run",
                     "authority_pairs",
+                    "replay",
                     "transfer_data",
                     "probe_selection",
                     "checkpointing",
@@ -63,7 +64,10 @@ def main():
         ).strip(),
         "file_sha256": hashes,
         "limits": spec["limits"],
-        "scope": "Eight fits, four calibration-selected arms; exploratory boundary transfer",
+        "scope": {
+            "new_fits": len(spec["arms"]) * len(spec["learning_rates"]),
+            "reused_comparators": len(spec.get("reused_parent", {}).get("choices", [])),
+        },
     }
     payload = {
         "files": {name: base64.b85encode(value).decode() for name, value in files.items()},
@@ -97,7 +101,7 @@ def main():
         "machine_shape": "NvidiaTeslaT4",
         "dataset_sources": [],
         "competition_sources": [],
-        "kernel_sources": [],
+        "kernel_sources": [spec["reused_parent"]["kernel"]] if "reused_parent" in spec else [],
         "model_sources": [],
     }
     for name, value in (("kernel-metadata.json", metadata), ("submission.json", submission)):

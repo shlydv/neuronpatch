@@ -1,0 +1,17 @@
+{
+  "inputs_sha256": "65fb4a1db3a4313f4e07ada8b8848056bd990af2a6547f36f10fd109b1272cd0",
+  "prompt_max": {
+    "train": 1009,
+    "calibration": 1018,
+    "confirmation": 1008,
+    "discovery": 996
+  },
+  "training_sequence_max": 1101,
+  "confirmation_documents": 48,
+  "confirmation_cases": 528,
+  "new_fits": 2,
+  "reused_comparators": 4,
+  "planned_generations": 3216,
+  "parent_hashes_verified": 16,
+  "scope": "tokenizer and artifact checks only; no model weights loaded"
+}

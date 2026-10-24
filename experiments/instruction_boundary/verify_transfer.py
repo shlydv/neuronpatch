@@ -252,6 +252,30 @@ def verify(data, spec, root, tokenizer, eos):
         raise ValueError("Selection/completion mismatch")
     for choice in choices:
         generations(data["splits"]["confirmation"], root / f"{choice}-confirmation.json")
+    if "reused_parent" in spec:
+        parent = spec["reused_parent"]
+        expected_receipts = [
+            {"id": label, "new_training_steps": 0, "base_restored": True}
+            for label in parent["choices"]
+        ]
+        if read(root / "reused-comparators.json") != expected_receipts:
+            raise ValueError("Frozen comparator replay incomplete")
+        if completion["original_fingerprint"] != parent["base_fingerprint"]:
+            raise ValueError("Frozen comparator base differs")
+        for name in ("teachers-train.json", "teachers-calibration.json", "supervision.json"):
+            if (
+                hashlib.sha256((root / name).read_bytes()).hexdigest()
+                != parent["files_sha256"][name]
+            ):
+                raise ValueError("Frozen teacher targets differ")
+        for label in parent["choices"]:
+            generations(data["splits"]["confirmation"], root / f"reused-{label}-confirmation.json")
+        if read(root / "full-comparison.json") != {
+            "status": "complete",
+            "new_fits": len(fits),
+            "reused": parent["choices"],
+        }:
+            raise ValueError("Full comparison incomplete")
     return {
         "verified_generations": total,
         "verified_fits": len(fits),

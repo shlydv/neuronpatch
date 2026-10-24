@@ -21,6 +21,9 @@
     "random_grouped-43-0.0003-adapter/patch.safetensors": "2e214bdb35d7b768822a394d8e171d99c105c0e94aa762436121941b58105acd",
     "random_grouped-43-0.0003-adapter/patch.json": "0a6cdf91b1bf8a577434b566694432329bbdd34995bc085659529ea935fd8d57",
     "random_grouped-71-0.0003-adapter/patch.safetensors": "03287aca34949278ce6a064f56821a383290eb8bbfb0ef648eff233e98ae70c3",
-    "random_grouped-71-0.0003-adapter/patch.json": "a8bce1ef7745057f68ce2787f3252880945f943361c9c0ee326658c6542573b9"
+    "random_grouped-71-0.0003-adapter/patch.json": "a8bce1ef7745057f68ce2787f3252880945f943361c9c0ee326658c6542573b9",
+    "teachers-train.json": "a462db0521808fdd0e51000e3733bcef33ed046253623c099b2a77f15379eaf2",
+    "teachers-calibration.json": "7cf408f3d28df5ef194c3854511b17a947182f74d0d34efdd892117df23dcfed",
+    "supervision.json": "5dfd47c9b75468f8bdc723b9d304a9ed549952ddd33550d13d25bfd6b264b78f"
   }
 }

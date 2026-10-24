@@ -189,6 +189,27 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
                 evaluated_fingerprints[f"reused-{choice}-confirmation.json"]
                 == evaluated_fingerprints[f"{choice}-confirmation.json"]
             )
+        for name in ("teachers-train.json", "teachers-calibration.json", "supervision.json"):
+            manifest["files_sha256"][name] = hashlib.sha256((root / name).read_bytes()).hexdigest()
+        spec["reused_parent"] = manifest
+        transfer_run.write(root / "protocol.json", spec)
+        transfer_run.write(
+            root / "full-comparison.json",
+            {
+                "status": "complete",
+                "new_fits": 8,
+                "reused": choices,
+            },
+        )
+        assert verify(data, spec, root, tokenizer, [2])["verified_generations"] == 130
+        receipts_path = root / "reused-comparators.json"
+        receipts_path.write_text("[]")
+        with pytest.raises(ValueError, match="replay incomplete"):
+            verify(data, spec, root, tokenizer, [2])
+        transfer_run.write(receipts_path, receipts)
+        # Restore parent protocol before the independent adapter-corruption check.
+        del spec["reused_parent"]
+        transfer_run.write(root / "protocol.json", spec)
         adapter = next(p for p in pinned if p.suffix == ".safetensors")
         content = adapter.read_bytes()
         adapter.write_bytes(content + b"corrupted")
