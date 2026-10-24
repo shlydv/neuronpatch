@@ -125,3 +125,35 @@ with the same diagnostic. If further experiments become justified, distinguish
 changing support from changing sharing on a fixed support. Do not immediately
 replace clustering with balanced clusters on the strength of these counts.
 The current frozen run remains unchanged.
+
+## Document-held-out recognition audit
+
+The saved v2 discovery profiles permit a CPU-only check without consuming fresh
+evaluation inputs. Four folds keep each document's clean/injected variants
+together. Each fold refits all normalization and probe parameters on24 documents,
+selects its32 largest absolute coefficients, then refits a probe on those32
+features before predicting the eight held-out documents. This repeats for all72
+projections. No model weights or pending experiment settings change.
+
+Full-width probes make4,325/4,608 correct predictions(93.86%). The32-feature
+probes make4,603/4,608(99.89%). These are72 repeated predictions on the same64
+cases, not4,608 independent examples. Results and input hashes are in
+[probe_crossvalidation.json](../experiments/instruction_boundary/complete_v2/probe_crossvalidation.json);
+the executable is `experiments.instruction_boundary.probe_crossvalidation`.
+Each fold discovers its own support: this audits the recipe's recognition,
+not the exact final support's editing behavior. It uses only the original
+discovery templates and therefore does not establish cross-template recognition.
+
+The failure is consequently not well explained by pure memorization of the32
+discovery documents. A repeatable template cue remains consistent with this
+result. Strong discrimination does not establish useful update directions,
+cross-template behavior or preservation. This reinforces the need to assess the
+training consequences of selection rather than promoting classifier accuracy
+to an editing-quality metric.
+
+Rechecking [NeST sectionsIII-D andV](https://arxiv.org/html/2602.16835v2)
+also clarifies two differences: its cluster count is selected using silhouette
+scores, whereas ours is fixed at two; its case study supplies empirical
+within-cluster gradient alignment evidence. Neither fact implies that copying
+its cluster-count rule will solve our task. Our observed31/1 splits remain a
+diagnostic lead requiring controlled testing, not a justified fix.
