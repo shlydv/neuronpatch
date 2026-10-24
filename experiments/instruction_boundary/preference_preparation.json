@@ -1,0 +1,31 @@
+{
+  "scope": "CPU data audit only; no inference or preference training performed",
+  "banks": {
+    "train": {
+      "documents": 32,
+      "preference_pairs": 64,
+      "chosen_view_matches_current_supervision": true,
+      "excluded_documents": 0,
+      "artifact_sha256": "168cf055a258d66f883965021cf309071f57c9fb67e0bf1149e4a678b188ba96",
+      "old_supervision_counts": {
+        "injected:redirect": 32,
+        "clean:none": 32,
+        "direct_full:redirect": 32,
+        "quoted:redirect": 32
+      }
+    },
+    "calibration": {
+      "documents": 16,
+      "preference_pairs": 32,
+      "chosen_view_matches_current_supervision": true,
+      "excluded_documents": 0,
+      "artifact_sha256": "e39e11efd9060d697dce88d0cf9354daac63d4f1bda4458562921624d7f7b753",
+      "old_supervision_counts": {
+        "injected:redirect": 16,
+        "clean:none": 16,
+        "direct_full:redirect": 16,
+        "quoted:redirect": 16
+      }
+    }
+  }
+}

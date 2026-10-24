@@ -26,6 +26,10 @@ training coverage and establish a useful transferable baseline with varied match
 trusted/untrusted instructions, held-out wording and fresh documents. Keep exposed
 confirmation data out of fitting and selection. No new GPU run has been submitted.
 
+The [objective-control preparation](boundary-objective-comparison.md) now verifies
+matched reversed preferences and standard DPO gradients on CPU. Richer natural-task
+data and the integrated runner are still pending; this is not a new behavioral result.
+
 ## Previous matched-authority experiment
 
 [Matched-authority discovery](../experiments/instruction_boundary/complete_authority_v1/REPORT.md)
