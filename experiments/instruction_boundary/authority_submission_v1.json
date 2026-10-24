@@ -4,5 +4,9 @@
   "source_revision": "8bd063c8a4c0a6fd00fc0f86c2af3077c645c91b",
   "provider_timeout_seconds": 10800,
   "files": 29,
-  "parent_kernel_version": 1
+  "parent_kernel_version": 1,
+  "kernel_id": 140580989,
+  "version": 1,
+  "accepted_source_verified": true,
+  "initial_status": "RUNNING"
 }

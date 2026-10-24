@@ -71,8 +71,10 @@ requires two new fits and four saved comparator endpoints; all3216 planned
 teacher/confirmation generations share the prior limits. The tokenizer preflight
 finds maximum prompt1018 tokens and training sequence1101, within frozen caps.
 Seven tests cover training, replay identity and corrupted/missing artifacts.
-Provider preflight and submission remain outstanding. No further GPU experiment
-has been submitted.
+The private [Kaggle run](https://www.kaggle.com/code/shlydv/neuronpatch-boundary-authority-v1-20261024)
+was accepted as kernel140580989 version1 and is RUNNING at the initial status
+check. The downloaded accepted source matches the frozen SHA256. Provider cap
+is10800 seconds; paid scaling is disabled. No outcomes are available yet.
 
 The [raw marker outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
 also rejects the guided candidate's transfer criterion. All trained arms stop
