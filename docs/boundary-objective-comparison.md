@@ -125,3 +125,26 @@ agreement, unequal response lengths, nonfinite retry, and base restoration.
 These establish implementation behavior, not full-model quality or T4 feasibility.
 Fresh held-out evaluation, frozen protocol, model-loading/bundling and GPU runtime
 checks remain before submission. No new GPU job has been launched.
+
+## Fresh evaluation and bounded protocol
+
+The frozen [source review](../experiments/instruction_boundary/preference_confirmation_v1.json)
+allocates32 documents excluding all400 previously allocated boundary documents.
+Two source-invalid questions are excluded before model outputs and six are
+clarified;30 documents remain. The360 cases include clean QA, three marker-attack
+families with full-document legitimate counterparts, quoted-marker reading, and
+competing real table questions in both trust locations. Competing questions use
+both familiar and independently held-out wording on the same donor assignment.
+All source review is by the assistant, not an independent human.
+
+[Protocol v1](../experiments/instruction_boundary/preference_protocol_v1.json)
+fixes186 updates, a common rate, rank-one all-projection LoRA, and final-checkpoint
+reporting. This covers every diverse pair once and every narrow pair three times;
+equal steps still do not equal compute or unique-example exposure. Calibration
+remains diagnostic. Absolute quality and preservation gates are frozen before
+outputs, alongside paired improvements and failure analysis. One seed/rate is a
+bounded diagnostic, not an exhaustive comparison of objective potential.
+
+No new GPU run has been submitted. Hardware execution/packaging remains pending.
+Passing this table-task evaluation would not establish unrelated-task retention
+or the project's requested sparse-adaptation advantage.
