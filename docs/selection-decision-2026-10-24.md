@@ -177,3 +177,33 @@ norms match. Thus even perfect individual-coordinate alignment would not justify
 grouping without evaluating the resulting shared updates. The existing
 actual-optimizer observer already measures the appropriate proposed step; do
 not replace it with an unvalidated sum of individual selection scores.
+
+## Real-model forecast audit: accuracy on the wrong scope is insufficient
+
+The [observer summary](../experiments/instruction_boundary/complete_v2/observer_summary.json)
+checks saved pre-step predictions against post-step measurements for all eight
+completed v2 fits. It rechecks forecast identity and loss arithmetic, and hashes
+the inputs. Below are the four validation-selected endpoints, each observed at
+steps1/8/32/96 on two fixed calibration documents.
+
+| Endpoint | Task sign matches /4 | Clean sign matches /4 | First task NLL change: predicted / actual | Unseen-authority recovery /27 |
+|---|---:|---:|---:|---:|
+| LoRA |3|2|−0.211 / −0.122|21|
+| Guided |4|4|−0.773 / −0.746|0|
+| Random43 |3|4|−0.362 / −0.343|19|
+| Random71 |4|3|−0.300 / −0.296|4|
+
+These observations are correlated and too few for a general predictor-accuracy
+claim; tiny changes are particularly sensitive to sign errors. Nevertheless,
+guided selection's forecast correctly predicts its large initial gain on the
+familiar redirect template. Better local forecast accuracy would not change
+that gain's failure to imply cross-template performance. Its eight sign matches
+are also not eight independent questions or eight successful answers.
+
+The observer currently evaluates teacher-response NLL on clean and redirect
+calibration inputs, not transfer families. Thus future validation-guided selection
+must explicitly define the behavior and distribution being predicted, then test
+whether that prediction survives finite training and new examples. Merely
+improving this existing narrow score, adding a curvature term, or calling it
+functional selection would not address the demonstrated gap. This is a reason
+to change the selection question, not to tune against exposed confirmation data.
