@@ -33,7 +33,8 @@ trusted/untrusted requests. The four-arm optimization/export runner now passes a
 Fresh confirmation and the protocol are frozen. The full half-precision worker
 passes local integration tests, including generation and decoder recomputation.
 Kaggle accepted private kernel `shlydv/neuronpatch-boundary-preference-v1-20261024`
-version1 (kernel140625498), with a three-hour provider cap. Last checked: queued.
+version1 (kernel140625498), with a three-hour provider cap. Last checked: running;
+worker dependencies installed and all three model shards loaded.
 Uploaded source matches SHA256 `2fd316c3f603872357024142b63f13710c18809f6f0e8f560f9f9ce4c40f6a09`.
 No model-quality result is available yet. Artifact verification and blinded target
 routing now have tested local implementations.
