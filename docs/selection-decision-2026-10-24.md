@@ -157,3 +157,23 @@ scores, whereas ours is fixed at two; its case study supplies empirical
 within-cluster gradient alignment evidence. Neither fact implies that copying
 its cluster-count rule will solve our task. Our observed31/1 splits remain a
 diagnostic lead requiring controlled testing, not a justified fix.
+
+## Why a per-neuron transfer score must respect sharing
+
+For independent rows, a small SGD step has validation-loss change approximately
+`-eta * sum_i dot(v_i, g_i)`, where `g` and `v` are task and validation gradients.
+For rows sharing one update it becomes
+`-eta * dot(sum_i v_i, sum_i g_i)`. Cross-row terms can reverse the sign.
+This is elementary update geometry, not a new algorithm or a diagnosis of the
+trained model.
+
+The independent CPU fixture in
+`tests/test_grouped_transfer_geometry.py` uses task gradients `[2,-1]` and
+validation gradients `[1,-2]`. Each row individually aligns positively, but
+the sums have opposite signs. It executes a real first Adam step through
+`GroupedRowPatch`: independent and shared updates both reduce training loss,
+while only the independent update reduces validation loss. Effective weight-step
+norms match. Thus even perfect individual-coordinate alignment would not justify
+grouping without evaluating the resulting shared updates. The existing
+actual-optimizer observer already measures the appropriate proposed step; do
+not replace it with an unvalidated sum of individual selection scores.

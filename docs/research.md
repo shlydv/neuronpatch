@@ -170,3 +170,23 @@ core source. It also separates trainable coefficient count from the bytes needed
 for task-specific direction vectors. These findings constrain later claims and
 baseline choices; they do not establish another successful method. The pending
 functional calibration is unchanged.
+
+## Validation-guided parameter selection checked on24 October
+
+[DualSFT](https://arxiv.org/html/2605.06166v1), sections3–5 and appendicesB/F.10,
+already scores parameters and data using a shared validation-improvement
+approximation. It uses warmup, signed gradient interactions, a practical
+diagonal correction and a preservation direction. The authors explicitly
+distinguish their SGD-based local derivation from the AdamW-derived RMS-gradient
+proxy; that proxy is not an exact Hessian. They test predicted rankings against
+finite restricted-training outcomes at several horizons. The published setup
+uses four80GB A100s and a5% parameter budget. No official implementation was
+located in this inspection; no empirical result has been reproduced here.
+
+This is direct prior art for choosing weights by predicted validation benefit,
+not just an analogy from data selection. We must not present that idea as new.
+Its individual-coordinate score also cannot be assumed correct for our shared
+row deltas: sharing changes the update space and introduces cross-row effects.
+Our actual-optimizer observer is the appropriate existing measurement tool;
+the open issue is predictive utility across training/transfer examples, not the
+absence of another scoring formula. No new GPU run follows from this review.
