@@ -82,3 +82,26 @@ limitation. If only some improve, support/capacity interacts with the repair.
 If none improve, inspect the preservation objective, optimization and actual
 sample exposure before trying another selector. None of these outcomes alone
 establishes a library advantage over strong baselines or the cited papers.
+
+## Applying the frozen outcome gates
+
+After artifact verification and response-bound blinded review, run:
+
+```bash
+python -m experiments.instruction_boundary.supervision_verdict \
+  --inputs artifacts/boundary_supervision_v1/data/inputs.json \
+  --reviewed-records PATH_TO_REVIEWED_RECORDS.json \
+  --output NEW_VERDICT_PATH.json
+```
+
+The checker requires the complete 32-document, seven-condition case grid and
+applies the already frozen per-family thresholds, net corrections, own-parent
+task retention, and clean regressions. Fewer than 16 base-clean-correct documents
+produces an insufficient-headroom verdict. Secondary selection checks are eligible
+only when the guided arm passes its repair gate. Full-document and clean
+regressions are compared against both new random and LoRA endpoints. This counts
+reviewed outcomes; it does not validate judgments, substitute for the artifact
+verifier, establish significance, or satisfy cost/reporting requirements.
+Five CPU tests cover family-specific failures, net versus gross corrections,
+insufficient headroom, missing/incomplete records, and own-parent retention.
+No pending model outputs were used to write these rules.
