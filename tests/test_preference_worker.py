@@ -1,5 +1,6 @@
 import json
 
+import pytest
 import torch
 from test_paired_worker import TinyTokenizer
 from transformers import Qwen3Config, Qwen3ForCausalLM
@@ -55,6 +56,7 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
             gradient_clip=1.0,
         ),
     }
+    spec["arms"] = ["narrow-sft", "narrow-dpo", "diverse-sft", "diverse-dpo"]
     execute(model, tokenizer, data, spec, tmp_path / "run", lambda: None)
     assert fingerprint(model) == original
     assert json.loads((tmp_path / "run/complete.json").read_text()) == {
@@ -67,3 +69,14 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
         row = json.loads(p.read_text())[0]
         assert row["id"] == "test" and 1 <= len(row["tokens"]) <= 2
     assert len(list((tmp_path / "run").rglob("adapter_model.safetensors"))) == 4
+
+    from experiments.instruction_boundary.verify_preference import verify
+
+    receipt, outputs = verify(tmp_path / "run", data, spec, tokenizer)
+    assert receipt["fits"] == 4 and receipt["generations"] == 5
+    path = tmp_path / "run/comparison/narrow-dpo/history.json"
+    history = json.loads(path.read_text())
+    history[0]["pair_id"] = "wrong-pair"
+    path.write_text(json.dumps(history))
+    with pytest.raises(ValueError, match="Wrong training pair"):
+        verify(tmp_path / "run", data, spec, tokenizer)

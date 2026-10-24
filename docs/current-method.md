@@ -32,7 +32,11 @@ matched reversed preferences and standard DPO gradients on CPU. A [source-review
 trusted/untrusted requests. The four-arm optimization/export runner now passes a tiny-Qwen integration test.
 Fresh confirmation and the protocol are frozen. The full half-precision worker
 passes local integration tests, including generation and decoder recomputation.
-GPU submission is next; these are preparation results, not improved model behavior.
+Kaggle accepted private kernel `shlydv/neuronpatch-boundary-preference-v1-20261024`
+version1 (kernel140625498), with a three-hour provider cap. Last checked: queued.
+Uploaded source matches SHA256 `2fd316c3f603872357024142b63f13710c18809f6f0e8f560f9f9ce4c40f6a09`.
+No model-quality result is available yet. Artifact verification and blinded target
+routing now have tested local implementations.
 
 ## Previous matched-authority experiment
 
