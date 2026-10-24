@@ -207,3 +207,13 @@ whether that prediction survives finite training and new examples. Merely
 improving this existing narrow score, adding a curvature term, or calling it
 functional selection would not address the demonstrated gap. This is a reason
 to change the selection question, not to tune against exposed confirmation data.
+## Saved-update projection audit
+
+The [exact LoRA projection audit](update-projection-audit.md) separates projection
+coverage, row support, and group sharing without model inference. Even an oracle
+32 independent rows per gate/up projection captures only 1.9562% of the old
+LoRA endpoint's total squared update norm. Existing shared supports capture
+0.0112–0.0142%. Direct weight projection is therefore a poor route to copying
+this endpoint; this is not a behavioral capacity limit or evidence against
+training a different sparse solution. The old LoRA also fails full-document
+preservation and is not yet a suitable teacher for a claimed boundary repair.
