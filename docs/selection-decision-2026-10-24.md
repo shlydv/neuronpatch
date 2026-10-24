@@ -82,3 +82,46 @@ unclaimed invention or an automatic next GPU experiment. Existing attribution,
 subspace and gradient-based methods in [the research record](research.md) must
 remain controls. The active run should resolve the current targeted question
 before another selection design is promoted.
+
+## Takeover audit: selection also changes the sharing constraint
+
+An offline inspection of the completed v2 adapters found a large difference in
+group occupancy. Every projection has32 selected rows and two independently
+trained update vectors. The vectors are copied to all rows assigned to their
+group. In the guided adapter,26 of72 projections split31/1; neither random
+adapter has this split. The upper-middle sorted minority size is2 for guided,
+12 for random43 and11 for random71. Minority sizes are at most4 in53 guided
+projections, versus3 and5 in the random adapters. Exact counts, source hashes
+and per-projection measurements are saved in
+[adapter_geometry.json](../experiments/instruction_boundary/complete_v2/adapter_geometry.json).
+
+This is a descriptive finding, not a causal explanation. A31/1 split can be
+appropriate if the31 rows need compatible updates. Conversely, balancing groups
+can force incompatible neurons together. The earlier two-example gradient
+diagnostic does not resolve this. Both random adapters have broadly similar
+occupancies but substantially different transfer, so occupancy alone is already
+insufficient to explain the observed ordering.
+
+Effective pre-merge update Frobenius norms are8.06,8.96 and8.98 for guided,
+random43 andrandom71. Each adapter distributes roughly31–38% of squared norm
+to each third of the36 layers. These summaries do not suggest an absent update
+or a gross concentration in one depth range; they cannot measure functional
+impact, relative-to-base magnitude, or sensitivity of individual neurons.
+The norm counts each shared vector once per affected row and precedes FP16 merge
+rounding. It must not be read as an equal optimization budget or causal score.
+
+There are two separate comparisons to preserve:
+
+- Guided versus random uses the same row budget and sharing algorithm, but changes
+  both row identity and resulting group membership. It evaluates a discovery
+  recipe, not neuron ranking in isolation.
+- LoRA also modifies attention and MLP down projections; grouped patches modify
+  only gate/up projections. LoRA is a valid practical benchmark, but its advantage
+  does not identify which of support, sharing, module coverage or capacity caused
+  the gap.
+
+Before proposing a grouping fix, examine the pending matched-authority adapter
+with the same diagnostic. If further experiments become justified, distinguish
+changing support from changing sharing on a fixed support. Do not immediately
+replace clustering with balanced clusters on the strength of these counts.
+The current frozen run remains unchanged.
