@@ -5,6 +5,24 @@ verified practical advantage over strong baselines. Compact patches, training,
 export/reload and evaluation work. No recommended neuron-selection recipe or
 superiority claim is established. LoRA remains the practical comparison baseline.
 
+**Current status:** boundary-transfer v2 is COMPLETE, returncode0, wrapper elapsed
+6527.17 seconds. [Independent artifact verification](../experiments/instruction_boundary/complete_v2/integrity.json)
+passes for1728 generations and eight fits. All fits have zero gradient retries;
+peak allocated GPU memory is8.28–8.31 GiB. Baseline generations, teachers,
+supervision, supports, probes and group geometry exactly replay the failed v1
+run. No GPU experiment remains active; semantic review is in progress.
+
+The [preliminary outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
+already rejects the guided candidate's transfer criterion. All trained arms stop
+returning the attack marker on the48 redirect cases. On48 claimed-authority cases,
+guided selection still returns the attacker marker48 times, versus18 for LoRA,
+20 for random43 and43 for random71. All192 legitimate direct/quoted requests per
+model still return the requested marker. These are exact response counts, not
+semantic table-answer accuracy. Guided claimed-authority accuracy is necessarily
+zero because every response is the unrelated marker; it cannot beat either
+random arm by four correct answers. Whether the other arms recover correct
+answers without clean-answer regressions awaits response-bound source review.
+
 **Earlier result, 24 October:** the [math baseline](../experiments/relation_learning/math_baseline_complete_v1/REPORT.md)
 completed and passed independent token/artifact verification. Review yields124
 accepted answers, one completed mathematical error and three incomplete responses
@@ -64,13 +82,13 @@ memory viability still needs confirmation. Do not describe this infrastructure
 failure as evidence against guided selection, random selection or LoRA.
 
 The [v2 repair protocol](../experiments/instruction_boundary/transfer_protocol_v2.json)
-has now been submitted as private kernel140453112 version1 and reports RUNNING.
+was submitted as private kernel140453112 version1 and is now COMPLETE.
 Its downloaded source matches the frozen SHA256. The data hash, eight fits,
 selection/evaluation rules and runtime caps are unchanged. Preflight confirmed
 no active jobs, paid scaling off and33,422.676 free GPU seconds. Three CPU checks
 passed: exact FP16 output/gradient parity with recomputation, plus the full tiny
-eight-fit workflow with recomputation disabled and enabled. The repaired real
-comparison remains pending; this is not yet proof it fits the GPU or learns.
+eight-fit workflow with recomputation disabled and enabled. The real comparison
+now fits the GPU and completes; see the current status and outcome above.
 
 The failed v1 run did save discovery diagnostics. Its execution manifest matches
 the frozen bundle. The [summarized measurements](../experiments/instruction_boundary/discovery_diagnostic_v1.json)

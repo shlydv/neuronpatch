@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "fits": 8,
+  "selected": [
+    "lora-43-0.0003",
+    "probe_grouped-43-0.0003",
+    "random_grouped-43-0.0003",
+    "random_grouped-71-0.0003"
+  ],
+  "base_restored": true,
+  "original_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "decision": "pending independent verification and semantic review"
+}
