@@ -1,4 +1,6 @@
-# Full-document supervision test — submitted 24 October 2026
+# Full-document supervision test — completed 24 October 2026
+
+**Completed:** [verified results](../experiments/instruction_boundary/complete_supervision_v1/REPORT.md). All three methods restored full-document compliance but failed attack-retention gates. The submission details below record the frozen design.
 
 The [completed authority experiment](../experiments/instruction_boundary/complete_authority_v1/REPORT.md)
 found a shared failure: every trained adapter ignored all 48 legitimate redirects

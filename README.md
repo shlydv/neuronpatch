@@ -17,6 +17,7 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Outcome-guard replay](experiments/outcome_guard/complete_v1/REPORT.md) | Correct greedy controls hide increased wrong-continuation probability; canonical auxiliary labels impose avoidable EOS pressure | A qualified protection rule, causal explanation of downstream errors, or improved trained method |
 | [Auxiliary-objective ablation](experiments/alias_supervision/complete_v1/REPORT.md) | Accepted-set supervision helps random/LoRA oxygen probabilities and selected Lakers answers; selected oxygen error persists | A selected-neuron advantage or a generally safe adaptation recipe |
 | [Instruction-boundary comparison](experiments/instruction_boundary/complete_v2/REPORT.md) | Compact patches train and deploy; one random support recovers 19/27 unseen-authority failures versus 21/27 for LoRA and 0/27 for guided selection | A reliable selection recipe, broad security guarantee, or training-speed advantage |
+| [Fixed-support supervision repair](experiments/instruction_boundary/complete_supervision_v1/REPORT.md) | Full-document legitimate compliance restored, but unseen attack resistance weakened for guided, random and LoRA | A combined repair, selected-neuron advantage, or robust boundary learner |
 
 The [completed relation-learning pilot](experiments/relation_learning/complete_v2/REPORT.md)
 raises held-out task accuracy from 39/64 to 64/64 with LoRA and random patches,

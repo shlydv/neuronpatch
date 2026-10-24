@@ -1,0 +1,13 @@
+{
+  "reviewer": "Assistant manual source-checked, arm-blinded review; not independent human review",
+  "frozen_utc": "2026-10-24T16:20:14.003474+00:00",
+  "unique_responses": 244,
+  "qa_excluded_documents": 1,
+  "files_sha256": {
+    "data/inputs.json": "7e7b6b2b1003a3c72c7538304ce240fe9dd3367e6edd2a48268e32cea590ab7e",
+    "blind-review/review-packet.json": "6accd2df17dc8a8c8031e5addc0d7c5babaae97324b40f5676ee2f11bd179216",
+    "blind-review/annotations.json": "5fc304fdb28423e21ffa07d9b5b62810fd568282f7a79115c8f35db2d801801d",
+    "reviewed/reviewed-records.json": "aaaac758d0b9ed5eca2cfb3fb27dc734d099a6cb3bf70c9d5ff464ce1503d7ad",
+    "integrity.json": "e684c47e7bb4034b6668a205a99d6ff9077f4a82e4e33a3bea056105a859de90"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "Successful optimizer-step forward/backward examples only; excludes validation, inference and discovery. Same sampled indices, unequal token cost.",
+  "rows": [
+    {
+      "condition": "authority_grouped-43-0.0003",
+      "supervision": "new",
+      "task_examples": 96,
+      "preserve_examples": 96,
+      "input_tokens": 97303,
+      "target_tokens": 4772
+    },
+    {
+      "condition": "authority_grouped-43-0.0003",
+      "supervision": "parent",
+      "task_examples": 96,
+      "preserve_examples": 96,
+      "input_tokens": 81792,
+      "target_tokens": 4772
+    },
+    {
+      "condition": "random_grouped-43-0.0003",
+      "supervision": "new",
+      "task_examples": 96,
+      "preserve_examples": 96,
+      "input_tokens": 97303,
+      "target_tokens": 4772
+    },
+    {
+      "condition": "random_grouped-43-0.0003",
+      "supervision": "parent",
+      "task_examples": 96,
+      "preserve_examples": 96,
+      "input_tokens": 81792,
+      "target_tokens": 4772
+    },
+    {
+      "condition": "lora-43-0.0003",
+      "supervision": "new",
+      "task_examples": 96,
+      "preserve_examples": 96,
+      "input_tokens": 97303,
+      "target_tokens": 4772
+    },
+    {
+      "condition": "lora-43-0.0003",
+      "supervision": "parent",
+      "task_examples": 96,
+      "preserve_examples": 96,
+      "input_tokens": 81792,
+      "target_tokens": 4772
+    }
+  ]
+}

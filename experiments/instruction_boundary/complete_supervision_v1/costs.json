@@ -1,0 +1,53 @@
+[
+  {
+    "id": "authority_grouped-43-0.0003",
+    "seconds": 460.8743061969999,
+    "peak_gpu_bytes": 8886092288,
+    "patch_bytes": 1536012,
+    "trainable_scalars": 368640,
+    "validation": {
+      "macro_nll": 0.046183534058648945,
+      "kind_nll": {
+        "injected": 0.09941276248727604,
+        "clean": 0.08484193294680153,
+        "direct_full": 0.0004614304762071697,
+        "quoted": 1.801032431103522e-05
+      }
+    },
+    "gradient_retries": 0
+  },
+  {
+    "id": "random_grouped-43-0.0003",
+    "seconds": 460.57462579,
+    "peak_gpu_bytes": 8886092288,
+    "patch_bytes": 1536187,
+    "trainable_scalars": 368640,
+    "validation": {
+      "macro_nll": 0.05175080798945331,
+      "kind_nll": {
+        "injected": 0.11041579027187254,
+        "clean": 0.08921079770107099,
+        "direct_full": 0.007362359695662235,
+        "quoted": 1.4284289207466827e-05
+      }
+    },
+    "gradient_retries": 0
+  },
+  {
+    "id": "lora-43-0.0003",
+    "seconds": 456.1746345309998,
+    "peak_gpu_bytes": 8925635584,
+    "patch_bytes": 8329184,
+    "trainable_scalars": 2064384,
+    "validation": {
+      "macro_nll": 0.049221311013465385,
+      "kind_nll": {
+        "injected": 0.10771708411317604,
+        "clean": 0.0795412867645382,
+        "direct_full": 0.009624549936688709,
+        "quoted": 2.323239458590365e-06
+      }
+    },
+    "gradient_retries": 0
+  }
+]

@@ -5,23 +5,28 @@ in quality, preservation and cost against strong baselines. **Not achieved.**
 The library can train, save, reload and merge compact patches. No neuron-selection
 recipe has yet earned recommendation as a default or a superiority claim.
 
-## Active bounded test
+## Latest completed supervision test
 
-[Full-document supervision](https://www.kaggle.com/code/shlydv/neuronpatch-boundary-supervision-v1-20261024)
-kernel 140599487 version 1 is RUNNING at submission verification. Accepted source
-matches the frozen bundle. One private T4; provider/worker/internal caps are
-10,800/10,200/9,900 seconds. No paid scaling requested.
-The [protocol](../experiments/instruction_boundary/supervision_protocol_v1.json)
-fixes three new fits at rate 0.0003 using saved matched/random43 supports and
-LoRA. Short direct preservation inputs become full-document requests; teachers
-and sample schedules remain fixed. Three old endpoints replay on the same
-32 fresh documents: 2,912 new generations across seven conditions. All 368
-previously allocated documents are excluded. Source review predates submission;
-one QA item is excluded for missing nationalities, with all controls retained.
-No outcome is available. This tests supervision repair, not achieved superiority.
-See [design and provenance](boundary-supervision-test.md).
+[Full-document supervision](../experiments/instruction_boundary/complete_supervision_v1/REPORT.md)
+finished successfully: three fits, 2,960 verified records, 244 anonymous unique QA
+responses reviewed before attribution. All artifacts downloaded. No active GPU job.
 
-## Latest completed experiment
+Changing the legitimate-request training examples restored full-document compliance:
+guided and LoRA pass96/96; random passes95/96. But unseen attack recovery falls.
+On27 base-clean-correct documents, guided redirect/authority/grading is22/1/4
+(previously24/4/11), random25/1/1(previously26/12/7), LoRA26/8/9(previously26/19/11).
+All three fail the combined repair criteria. Guided has not beaten the controls.
+Lenient QA-content and stricter supporting-claim sensitivities preserve this result.
+
+This supports a supervision/generalization tradeoff at this budget. Low calibration
+loss on familiar wording shows the supplied distinction is learnable; it does not
+establish transfer or a representation-independent impossibility. Do not launch
+the learned-mixing control: its working-LoRA prerequisite was not met. First audit
+training coverage and establish a useful transferable baseline with varied matched
+trusted/untrusted instructions, held-out wording and fresh documents. Keep exposed
+confirmation data out of fitting and selection. No new GPU run has been submitted.
+
+## Previous matched-authority experiment
 
 [Matched-authority discovery](../experiments/instruction_boundary/complete_authority_v1/REPORT.md)
 completed two new fits and 3,216 generations; all artifacts downloaded and passed
@@ -40,11 +45,10 @@ Every method still passes the 288 short direct/quoted controls. Therefore those
 short controls were insufficient to establish boundary preservation. Relative
 preservation against equally damaged comparators is not absolute preservation.
 
-Discovery used matched trusted/untrusted contexts, but training supervision
-remained unchanged. The next investigation should hold support fixed and test
-matched full-document supervision with different targets across the boundary,
-using original training/calibration data and fresh confirmation. Do not launch
-another selector-only sweep or tune on exposed confirmation answers.
+Discovery used matched trusted/untrusted contexts while training remained unchanged.
+That motivated the completed fixed-support supervision test above. Its result
+repairs the legitimate-request damage while revealing a transfer tradeoff; it
+supersedes the earlier recommendation to treat that repair as pending.
 
 ## Previous completed evidence
 
@@ -99,11 +103,10 @@ measurements, interpretation limits and outcome-dependent next decisions.
 
 ## Current method decision
 
-We have evidence that changing discovery helps this particular guided patch,
-not that it beats strong controls. We also have a shared training failure that
-must be addressed before making sparse-selection claims. Fixing supervision is
-a controlled hypothesis, not an assumed cure: preserve fixed supports, budgets
-and strong baselines, and test both sides of the trust boundary on fresh inputs.
+Changing discovery helped one guided patch; changing supervision repaired one
+shared failure while reducing unseen attack recovery. Neither establishes a
+competitive adaptation recipe. The current priority is useful transfer with
+preservation, before testing another selector or sharing parameterization.
 
 Selection should predict useful finite training changes on separate transfer
 calibration examples, not merely large gradients or accurate input recognition.
