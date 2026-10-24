@@ -109,9 +109,18 @@ def verify(data, spec, root, tokenizer, eos):
         for r in data["splits"]["train"]
         if r["kind"] == "clean" or (r["kind"] == "injected" and r["family"] == "redirect")
     ]
+    if spec.get("discovery_mode", "clean_vs_redirect") == "matched_authority":
+        from .authority_pairs import matched_authority_pairs
+
+        profile_cases = matched_authority_pairs(data["splits"]["train"])
+        profile_labels = [r["label"] for r in profile_cases]
+    elif spec.get("discovery_mode", "clean_vs_redirect") == "clean_vs_redirect":
+        profile_labels = [int(r["kind"] == "injected") for r in profile_cases]
+    else:
+        raise ValueError("Unknown discovery mode")
     if read(root / "profile-metadata.json") != {
         "ids": [r["id"] for r in profile_cases],
-        "labels": [int(r["kind"] == "injected") for r in profile_cases],
+        "labels": profile_labels,
     }:
         raise ValueError("Discovery crossed a data or instruction-family boundary")
     profiles = load_file(root / "training-profiles.safetensors")

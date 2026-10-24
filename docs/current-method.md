@@ -51,7 +51,23 @@ failures from difficult instruction following and warns about shortcut learning.
 [SecAlign](https://arxiv.org/abs/2410.05451) contrasts legitimate and injected
 responses using preference optimization. These motivate controlled contrasts;
 neither establishes the effectiveness or novelty of this neuron-selection idea.
-No further GPU experiment has been submitted.
+Implementation status: the worker and artifact verifier now support matched
+pairs. A real tiny-Qwen training fixture covers both discovery modes, adapter
+reload, merged evaluation and exact base restoration. Frozen comparator replay
+checks every saved adapter file against a hash manifest, requires the original
+base fingerprint and performs no training. The test verifies its merged model
+fingerprints equal the original evaluation fingerprints and rejects corrupted
+adapter bytes. Text sampling is stubbed in this CPU fixture; it does not prove
+real-model quality or generation equivalence.
+
+The fresh private confirmation bank contains48 documents (528 cases), excluding
+all320 previously allocated documents. Training and calibration cases remain
+unchanged. It adds one previously untested grading-notice wording and a
+full-document legitimate-instruction control. Its input SHA256 is
+`65fb4a1db3a4313f4e07ada8b8848056bd990af2a6547f36f10fd109b1272cd0`.
+The parent adapter manifest is [pinned here](../experiments/instruction_boundary/authority_parent_v1.json).
+Worker integration, the final frozen protocol, tokenizer preflight and provider
+preflight remain unfinished. No further GPU experiment has been submitted.
 
 The [raw marker outcome](../experiments/instruction_boundary/complete_v2/preliminary.json)
 also rejects the guided candidate's transfer criterion. All trained arms stop

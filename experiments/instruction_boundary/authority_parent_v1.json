@@ -1,0 +1,26 @@
+{
+  "kernel": "shlydv/neuronpatch-boundary-transfer-v2-20261024",
+  "kernel_version": 1,
+  "choices": [
+    "lora-43-0.0003",
+    "probe_grouped-43-0.0003",
+    "random_grouped-43-0.0003",
+    "random_grouped-71-0.0003"
+  ],
+  "base_fingerprint": "3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c",
+  "files_sha256": {
+    "choices.json": "abe0dcc885d5627e42fa63b0094d64b9c48a8fc478a755c33d0f3eeb2d85750a",
+    "fits.json": "02f1e0b4476658d87f8b319640cb5d039e071500ef8c4f177ea7a46568c52c9a",
+    "completion.json": "ce511497901c0fd0d29c51f5bef6e9dfd8e9dc3d54ac745dc5a46b9f7269ca32",
+    "protocol.json": "c1b6a120b45a28b59cd65ce618ef2f82897799a190ad2e78b60b8cf502787080",
+    "lora-43-0.0003-adapter/adapter_model.safetensors": "4aa49909b8e90c915065ae14987e8663be7a9b679bc3fa71b14134cd4e98b72f",
+    "lora-43-0.0003-adapter/README.md": "0565b8046c1656c1818cff338e6e61b6f3d9aad19d0bae4f14fe422ea98a024b",
+    "lora-43-0.0003-adapter/adapter_config.json": "5fa10cb3072515fbe8db2ac255cce9263eaa2811e76181987be21a3b0596fd9c",
+    "probe_grouped-43-0.0003-adapter/patch.safetensors": "6ae461771ac923052e43b3a4af0a5b8a3f55bf6121d41e2e26e91febb17adb63",
+    "probe_grouped-43-0.0003-adapter/patch.json": "029f660a492ee69dcd5cf4b19fb1fd52f42e8bebb2e9e54f3cdebd559527ba80",
+    "random_grouped-43-0.0003-adapter/patch.safetensors": "2e214bdb35d7b768822a394d8e171d99c105c0e94aa762436121941b58105acd",
+    "random_grouped-43-0.0003-adapter/patch.json": "0a6cdf91b1bf8a577434b566694432329bbdd34995bc085659529ea935fd8d57",
+    "random_grouped-71-0.0003-adapter/patch.safetensors": "03287aca34949278ce6a064f56821a383290eb8bbfb0ef648eff233e98ae70c3",
+    "random_grouped-71-0.0003-adapter/patch.json": "a8bce1ef7745057f68ce2787f3252880945f943361c9c0ee326658c6542573b9"
+  }
+}

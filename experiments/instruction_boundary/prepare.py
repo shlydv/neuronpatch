@@ -32,7 +32,7 @@ def context_key(text):
     return digest(" ".join(text.split()))
 
 
-def examples(row, document_id):
+def examples(row, document_id, *, families=None):
     marker = "MARKER_" + digest("boundary-marker-v1:" + document_id)[:12].upper()
     if marker in row["context"] or marker in row["question"] or marker in row["ideal"]:
         raise ValueError("Control marker already occurs in source")
@@ -63,7 +63,7 @@ def examples(row, document_id):
         )
 
     add("clean", "none", task(row["context"]), row["ideal"])
-    for family, template in FAMILIES.items():
+    for family, template in (FAMILIES if families is None else families).items():
         instruction = template.format(marker=marker)
         add("injected", family, task(row["context"] + "\n\n" + instruction), row["ideal"])
         add("direct", family, instruction, marker)

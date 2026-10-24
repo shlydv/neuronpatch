@@ -54,9 +54,9 @@ def test_eval_decoder_recomputation_preserves_logits_and_gradients():
         enable_decoder_recomputation(model)
 
 
-@pytest.mark.parametrize("recompute", [False, True])
+@pytest.mark.parametrize("recompute,matched", [(False, False), (True, False), (True, True)])
 def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_model(
-    tmp_path, monkeypatch, recompute
+    tmp_path, monkeypatch, recompute, matched
 ):
     transformers = pytest.importorskip("transformers")
     pytest.importorskip("peft")
@@ -98,10 +98,16 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
         max_sequence_tokens=256,
         minimum_teachers={"train": 1, "calibration": 1},
     )
+    if matched:
+        spec["discovery_mode"] = "matched_authority"
+        for arm in spec["arms"]:
+            if arm["family"] == "probe_grouped":
+                arm["family"] = "authority_grouped"
     spec["diagnostics"]["observer_steps"] = [1, 2]
     spec["grouped"]["selected_rows_per_projection"] = 4
     spec["expected_budgets"].update(lora_rank1_all_projections=512, grouped_two_groups_gate_up=128)
     calls = []
+    evaluated_fingerprints = {}
 
     def deterministic_generation(model, tokenizer, rows, spec, path, check_time):
         # Only text sampling is stubbed. Real Qwen forwards, gradients, Adam,
@@ -109,6 +115,7 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
         if "confirmation" in path.name and not path.name.startswith("base-"):
             assert (path.parent / "choices.json").exists()
             calls.append(path.name)
+            evaluated_fingerprints[path.name] = fingerprint(model)
         records = []
         for row in rows:
             ids = transfer_run.prompt_inputs(tokenizer, row, model.device)["input_ids"][0].tolist()
@@ -141,6 +148,53 @@ def test_full_transfer_training_selection_reload_merge_restore_on_tiny_half_mode
         assert all(set(r["banks"]) == {"task", "clean"} for r in observed)
     checked = verify(data, spec, tmp_path / "run", tokenizer, [2])
     assert checked["verified_fits"] == 8 and checked["verified_generations"] == 74
+    if matched:
+        import hashlib
+
+        from experiments.instruction_boundary import replay as replay_module
+
+        root = tmp_path / "run"
+        pinned = [
+            root / name
+            for name in ("choices.json", "fits.json", "completion.json", "protocol.json")
+        ]
+        for choice in choices:
+            pinned.extend(p for p in (root / f"{choice}-adapter").rglob("*") if p.is_file())
+        manifest = {
+            "choices": choices,
+            "base_fingerprint": original,
+            "files_sha256": {
+                str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in pinned
+            },
+        }
+        assert replay_module.find_parent(tmp_path, manifest) == root
+        monkeypatch.setattr(replay_module, "generate", deterministic_generation)
+        receipts = replay_module.replay(
+            model,
+            tokenizer,
+            root,
+            manifest,
+            data["splits"]["confirmation"],
+            spec,
+            root,
+            lambda: None,
+        )
+        assert len(receipts) == 4
+        assert all(r["new_training_steps"] == 0 for r in receipts)
+        assert fingerprint(model) == original
+        for choice in choices:
+            reused = json.loads((root / f"reused-{choice}-confirmation.json").read_text())
+            assert reused == json.loads((root / f"{choice}-confirmation.json").read_text())
+            assert (
+                evaluated_fingerprints[f"reused-{choice}-confirmation.json"]
+                == evaluated_fingerprints[f"{choice}-confirmation.json"]
+            )
+        adapter = next(p for p in pinned if p.suffix == ".safetensors")
+        content = adapter.read_bytes()
+        adapter.write_bytes(content + b"corrupted")
+        with pytest.raises(ValueError, match="hash mismatch"):
+            replay_module.verify_parent(root, manifest)
+        adapter.write_bytes(content)
     path = tmp_path / "run/supervision.json"
     original_text = path.read_text()
     corrupt = json.loads(original_text)

@@ -20,6 +20,7 @@ from neuronpatch.losses import completion_nll
 from neuronpatch.patch import _replace_submodule, fingerprint
 from neuronpatch.supervision import chat_response
 
+from .authority_pairs import matched_authority_pairs
 from .checkpointing import enable_decoder_recomputation
 from .probe_selection import capture_prompt, fit_probe, select
 from .row_gradients import capture_rows
@@ -180,15 +181,25 @@ def update_observers(model, examples, spec, path, check_time):
 
 
 def discover(model, tokenizer, train_rows, task_examples, spec, names, output, check_time):
+    mode = spec.get("discovery_mode", "clean_vs_redirect")
+    if mode == "matched_authority":
+        discovery_rows = matched_authority_pairs(train_rows)
+    elif mode == "clean_vs_redirect":
+        discovery_rows = [
+            dict(row, label=int(row["kind"] == "injected"))
+            for row in train_rows
+            if row["kind"] == "clean" or (row["kind"] == "injected" and row["family"] == "redirect")
+        ]
+    else:
+        raise ValueError("Unknown discovery mode")
+    allowed = {"lora", "probe_grouped", "random_grouped", "authority_grouped"}
+    if any(arm["family"] not in allowed for arm in spec["arms"]):
+        raise ValueError("Unknown selection family")
     profiles, labels, profile_ids = {name: [] for name in names}, [], []
-    for row in train_rows:
-        if row["kind"] != "clean" and not (
-            row["kind"] == "injected" and row["family"] == "redirect"
-        ):
-            continue
+    for row in discovery_rows:
         check_time()
         captured = capture_prompt(model, prompt_inputs(tokenizer, row, model.device), names)
-        labels.append(int(row["kind"] == "injected"))
+        labels.append(row["label"])
         profile_ids.append(row["id"])
         for name in names:
             profiles[name].append(captured[name])
@@ -211,7 +222,7 @@ def discover(model, tokenizer, train_rows, task_examples, spec, names, output, c
                 profiles[name],
                 probe,
                 count=spec["grouped"]["selected_rows_per_projection"],
-                random_seed=None if arm["family"] == "probe_grouped" else arm["seed"] + ordinal,
+                random_seed=arm["seed"] + ordinal if arm["family"] == "random_grouped" else None,
             )
     write(output / "probes.json", probes)
     write(output / "supports.json", selections)

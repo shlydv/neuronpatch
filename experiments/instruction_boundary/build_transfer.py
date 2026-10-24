@@ -38,6 +38,7 @@ def main():
                 f"experiments/instruction_boundary/{name}.py"
                 for name in (
                     "transfer_run",
+                    "authority_pairs",
                     "transfer_data",
                     "probe_selection",
                     "checkpointing",
