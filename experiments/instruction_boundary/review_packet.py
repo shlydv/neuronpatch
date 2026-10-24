@@ -59,6 +59,7 @@ def build(cases, outputs):
                 "condition": condition,
                 "case_id": case["id"],
                 "output_sha256": digest(output),
+                "ended": output["ended"],
             }
             if case["kind"] in ("direct", "quoted", "direct_full"):
                 controls.append(
@@ -124,6 +125,7 @@ def main():
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--review", type=Path, help="Completed response-bound annotation file")
     args = parser.parse_args()
     data = json.loads((args.data / "inputs.json").read_text())
     spec = json.loads((args.data / "protocol.json").read_text())
@@ -138,9 +140,24 @@ def main():
         for name in conditions
     }
     packet, key = build(data["splits"]["confirmation"], outputs)
+    reviewed = None
+    if args.review is not None:
+        reviewed = validate_review(
+            packet,
+            key,
+            json.loads(args.review.read_text()),
+            data["splits"]["confirmation"],
+            outputs,
+        )
     args.output.mkdir(parents=True, exist_ok=False)
     for name, value in (("review-packet.json", packet), ("attribution-key.json", key)):
         (args.output / name).write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
+    if reviewed is not None:
+        from .paired_results import summarize
+
+        summary = summarize(data["splits"]["confirmation"], reviewed)
+        for name, value in (("reviewed-records.json", reviewed), ("paired-summary.json", summary)):
+            (args.output / name).write_text(json.dumps(value, indent=2) + "\n")
     print(
         json.dumps(
             {
