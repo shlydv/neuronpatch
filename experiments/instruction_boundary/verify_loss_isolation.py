@@ -1,24 +1,30 @@
 """CPU artifact checks for the loss diagnostic, not independent GPU replication."""
 
+import hashlib
 import math
 from pathlib import Path
 
 import torch
 from safetensors.torch import load_file
 
+from neuronpatch.supervision import chat_response
+
 from .loss_isolation_run import compare_replay, verify_prior
 from .preference_training import prepare_pair, reference_lookup
+from .response_retention import response_positions, sample_identity
 from .verify_preference import read
 
 
 def verify(root, data, spec, tokenizer, prior):
     root, prior = Path(root), Path(prior)
+    retention = spec["arms"] == ["diverse-sft-kl"]
+    expected_fits = 1 if retention else 2
     verify_prior(prior, spec["prior_files"])
     if read(root / "protocol.json") != spec:
         raise ValueError("Worker protocol changed")
     completed = read(root / "complete.json")
     if (
-        completed["fits"] != 2
+        completed["fits"] != expected_fits
         or not completed["exact_prior_output_replay"]
         or not completed["base_restored"]
     ):
@@ -79,12 +85,14 @@ def verify(root, data, spec, tokenizer, prior):
         "reference_forward_calls"
     ] != 2 * len(reference_ids):
         raise ValueError("Reference membership/cost differs")
+    if retention:
+        verify_retention_cache(comparison, data, spec, tokenizer, complete)
     final = {"combined": replay}
     intermediate = {}
     for name in spec["arms"]:
         directory = comparison / name
-        mode = name.removeprefix("diverse-sft-")
-        if mode not in ("task_only", "preservation_only"):
+        mode = "combined" if retention else name.removeprefix("diverse-sft-")
+        if mode not in ("task_only", "preservation_only", "combined"):
             raise ValueError("Unknown diagnostic arm")
         history = read(directory / "history.json")
         if len(history) != spec["training"]["steps"]:
@@ -105,20 +113,27 @@ def verify(root, data, spec, tokenizer, prior):
                 or row["loss_terms"] != mode
             ):
                 raise ValueError("Loss mode or training schedule changed")
+            expected_calls = 2 if retention else 1
             active, inactive = (
                 ("loss", "preserve_nll") if mode == "task_only" else ("preserve_nll", "loss")
             )
+            if retention:
+                active, inactive = "loss", "preserve_nll"
+                if row.get("preservation_objective") != "kl" or not math.isfinite(
+                    row["preserve_kl"]
+                ):
+                    raise ValueError("Invalid KL retention loss")
             if (
                 row[inactive] is not None
                 or not math.isfinite(row[active])
                 or not math.isfinite(row["gradient_norm"])
-                or row["forward_calls"] != 1
+                or row["forward_calls"] != expected_calls
             ):
                 raise ValueError("Invalid active/inactive loss or gradient")
             for retry in row["gradient_retries"]:
-                if retry["pair_id"] != row["pair_id"] or retry["forward_calls"] != 1:
+                if retry["pair_id"] != row["pair_id"] or retry["forward_calls"] != expected_calls:
                     raise ValueError("Retry changed sample or cost")
-            calls += 1 + len(row["gradient_retries"])
+            calls += expected_calls * (1 + len(row["gradient_retries"]))
         result = read(directory / "result.json")
         if (
             result != complete["arms"][name]
@@ -143,7 +158,7 @@ def verify(root, data, spec, tokenizer, prior):
     count = sum(map(len, final.values())) + sum(map(len, intermediate.values()))
     return (
         {
-            "fits": 2,
+            "fits": expected_fits,
             "generations": count,
             "exact_prior_output_replay": True,
             "scope": (
@@ -154,3 +169,55 @@ def verify(root, data, spec, tokenizer, prior):
         final,
         intermediate,
     )
+
+
+def verify_retention_cache(comparison, data, spec, tokenizer, complete):
+    receipt = read(comparison / "retention-reference.json")
+    path = comparison / "retention-reference.safetensors"
+    samples = [
+        chat_response(
+            tokenizer,
+            r["messages"],
+            r["target"],
+            max_length=spec["max_sequence_tokens"],
+            device="cpu",
+        )
+        for r in data["train"]["clean"]
+    ]
+    if (
+        receipt != complete["retention_reference"]
+        or receipt["base_identity"] != spec["base_fingerprint"]
+        or receipt["sample_sha256"] != [sample_identity(s) for s in samples]
+        or receipt["file_sha256"] != hashlib.sha256(path.read_bytes()).hexdigest()
+        or receipt["forward_calls"] != len(samples)
+    ):
+        raise ValueError("Retention cache identity mismatch")
+    tensors = load_file(path)
+    if set(tensors) != {str(i) for i in range(len(samples))}:
+        raise ValueError("Retention cache membership mismatch")
+    vocabulary_sizes = set()
+    for i, sample in enumerate(samples):
+        tensor = tensors[str(i)]
+        if (
+            tensor.ndim != 3
+            or tensor.shape[:2] != (1, len(response_positions(sample)))
+            or tensor.dtype != torch.float16
+            or not torch.isfinite(tensor).all()
+            or tensor.shape[-1] < 1
+        ):
+            raise ValueError("Invalid retention reference tensor")
+        vocabulary_sizes.add(tensor.shape[-1])
+    size = sum(t.numel() * t.element_size() for t in tensors.values())
+    if (
+        len(vocabulary_sizes) != 1
+        or size != receipt["tensor_bytes"]
+        or size > spec["max_retention_cache_bytes"]
+    ):
+        raise ValueError("Retention cache size mismatch")
+    initial = read(comparison / "diverse-sft-kl/initial-retention.json")
+    if (
+        initial["forward_calls"] != len(samples)
+        or len(initial["kl"]) != len(samples)
+        or any(not math.isfinite(v) or abs(v) > 1e-6 for v in initial["kl"])
+    ):
+        raise ValueError("Initial retention distribution drift")

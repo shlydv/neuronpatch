@@ -161,6 +161,16 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
     assert all(r["preserve_nll"] is None and r["preserve_kl"] is not None for r in retained_history)
     assert fingerprint(fresh_retention) == original
     assert json.loads((tmp_path / "retention/complete.json").read_text())["fits"] == 1
+    receipt, _, _ = verify_isolation(
+        tmp_path / "retention", diagnostic_data, retention_spec, tokenizer, prior
+    )
+    assert receipt["fits"] == 1 and receipt["generations"] == 3
+    cache_path = retained_root / "retention-reference.safetensors"
+    saved_cache = cache_path.read_bytes()
+    cache_path.write_bytes(saved_cache + b"corruption")
+    with pytest.raises(ValueError, match="cache identity"):
+        verify_isolation(tmp_path / "retention", diagnostic_data, retention_spec, tokenizer, prior)
+    cache_path.write_bytes(saved_cache)
     expected = json.loads((prior / "confirmation.json").read_text())
     altered = copy.deepcopy(expected)
     altered[0]["tokens"][0] = (altered[0]["tokens"][0] + 1) % 64
