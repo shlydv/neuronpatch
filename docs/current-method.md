@@ -48,8 +48,9 @@ absolute accuracy criterion. No GPU job remains active. The post-review signatur
 30 attack markers but repeats six clean errors; KL emits 21 markers. The next
 candidate must improve the authority boundary while preserving answer computation.
 Cross-context distribution matching has a tested CPU loss primitive and review
-gate, but no integrated GPU experiment. The teacher inventory matches 35 current
-prompts; four source-reviewed responses are incorrect and 31 remain pending.
+gate, but no integrated GPU experiment. All 35 identity-matching teachers are
+source-reviewed: 21 training and 10 calibration responses accepted, four rejected.
+Their archived origin hashes and model revision also pass preparation checks.
 See [the candidate record](cross-context-distillation.md). Do not change neuron
 support simultaneously or launch with an unreviewed teacher bank.
 

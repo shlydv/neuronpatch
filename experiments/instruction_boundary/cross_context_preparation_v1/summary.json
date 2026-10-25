@@ -1,0 +1,21 @@
+{
+  "scope": "All 35 identity-matching trajectories source-reviewed; not the eleven changed prompts; no independent human review",
+  "inventory_sha256": "9c1a0e998369c16a3c2463e008ebc364429f9e2e9bb84a7e5661b12fd12306b2",
+  "review_sha256": "b6aea9c00e7fd407651f9c27375e5b9a585af9f6779d7193e24735748cc1772c",
+  "splits": {
+    "train": {
+      "reviewed": 23,
+      "accepted": 21,
+      "rejected": 2,
+      "response_positions": 572,
+      "full_fp16_cache_bytes": 173814784
+    },
+    "calibration": {
+      "reviewed": 12,
+      "accepted": 10,
+      "rejected": 2,
+      "response_positions": 562,
+      "full_fp16_cache_bytes": 170776064
+    }
+  }
+}

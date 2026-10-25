@@ -68,26 +68,66 @@ random rows and LoRA on fresh transfer and unrelated-task retention.
 
 The saved bank has 23/31 training and 12/15 calibration trajectories whose prompt
 tokens match the current questions, whose decoded text matches their tokens, and
-which end with EOS. This is identity/completion evidence, not correctness approval
-or a completed checkpoint-provenance audit. Eleven changed prompts cannot reuse
+which end with EOS. Eleven changed prompts cannot reuse
 their old responses as exact clean-context trajectories.
 
-Four matching trajectories were source-reviewed and rejected: two training
+All 35 matching trajectories are now source-reviewed. Four were rejected: two training
 answers select the wrong producer's track and miscount songs under two minutes;
 two calibration answers miss consecutive broadcaster seasons and select the
 wrong minimum-temperature month. The private decisions bind exact task/teacher
-hashes. These were targeted checks of suspected errors, not a random sample from
-which to estimate the bank's error rate. The other 31 remain pending.
+hashes. The other 31 were accepted: 21 training and 10 calibration. One calibration
+response initially says five away games, then explicitly recounts and corrects
+the answer to six. Its correct final answer and source-supported enumeration are
+accepted with that caveat recorded; the trajectory is not silently rewritten.
+These are assistant judgments, not independent human review.
 
 `teacher_review.py` now requires one explicit accept/reject decision for every
 inventory item, binds decisions to the source document, question, prompt tokens
 and complete response, and preserves exclusions in a receipt. Changed content,
 missing decisions, duplicate documents and cross-split overlap fail validation.
-The actual partial review correctly fails with 31 pending. Eleven focused tests
-pass across review, cross-context loss and response retention. This gate is not
+The initial partial review correctly failed with 31 pending; the complete review
+passes. Eleven focused tests passed across review, cross-context loss and response
+retention. This gate is not
 yet connected to a GPU worker; it cannot establish semantic correctness itself.
 
 Do not replace rejected responses with reference strings and call those
 self-generated clean teacher trajectories. A corrected-target objective is a
 different control. Filtering must use identical accepted banks across comparator
 arms, and the original unfiltered evaluation population must remain visible.
+
+`prepare_cross_context.py` verifies the archived teacher files against the recorded
+parent hashes, checks model/revision consistency, checks every retained trajectory
+against its archived original, and runs the complete-review gate before exporting
+a bank. The current bank passes with recorded base fingerprint
+`3b369c58239c915efbf22934957e32f5134a697729ccad78f2d8e7b29b76ee5c`.
+Five additional tests check valid preparation and corrupted source, inventory,
+revision and ambiguous origin. Runtime must independently verify the loaded base,
+tokenizer, clean prompt IDs and termination before caching logits.
+
+The [preparation summary](../experiments/instruction_boundary/cross_context_preparation_v1/summary.json)
+pins the review and inventory. Accepted training responses have 572 positions,
+requiring 173,814,784 bytes for full FP16 reference logits. Calibration has 562
+positions and would require 170,776,064 bytes if cached. Neither includes model,
+activation or softmax workspace memory; cache only the bank needed for fitting.
+
+## Next comparison, before sparse selection
+
+The bounded comparison should train two fresh, identical LoRA adapters on the
+same 21 accepted documents and the same trusted/untrusted templates. Both retain
+the same clean-distribution KL term and trusted-instruction targets. Change only
+the untrusted-context target: hard teacher-response NLL versus clean-context
+distribution KL along that exact response. This separates the soft target from
+teacher filtering, response length and parameter support. The previous 31-document
+short-target adapter is historical context, not the causal control.
+
+The prediction is fewer explicit attack-marker responses without more lost clean
+answers or less legitimate-instruction compliance. Failure on either side rejects
+this candidate at the tested budget; it does not trigger another selector sweep.
+Report paired outcomes, unfinished answers, step/token exposure, all fitting and
+cache costs, and exact export/reload behavior. Existing exposed confirmation
+documents can diagnose this prediction but cannot establish fresh transfer or
+library superiority. A successful development result still needs fresh examples,
+matched sparse/random comparisons and the broader completion requirements.
+
+This comparison is a design decision, not a frozen runnable protocol or a
+submitted job. Worker integration and runtime bounds remain to be completed.
