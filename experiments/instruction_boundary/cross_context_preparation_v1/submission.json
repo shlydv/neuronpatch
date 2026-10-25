@@ -1,0 +1,9 @@
+{
+  "kernel": "shlydv/neuronpatch-cross-context-v1-20261025",
+  "kernel_id": 140759899,
+  "version": 1,
+  "source_sha256": "a9e5f6de889d15d73f5ad0f41b43b00701b364f51be79dc799ce66b9fa751d57",
+  "accepted_source_equals_submitted": true,
+  "provider_timeout_seconds": 7200,
+  "status": "RUNNING observed after submission; terminal result pending"
+}
