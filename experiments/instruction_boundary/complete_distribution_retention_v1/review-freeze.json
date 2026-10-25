@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-10-25T09:52:39.903974+00:00",
+  "review_sha256": "acbba4be319666acbd32eba792a8f2939dda687fe0cd4580da99248cd43b8cca",
+  "packet_sha256": "ecea79ea10bf83e1cbf9d7432eb9f393eb2fb9cfaa9afcb6fa62b57f3b671c18",
+  "unique_responses": 194,
+  "inherited_frozen_judgments": 158,
+  "new_source_reviewed": 36,
+  "new_correct": 10,
+  "reviewer": "Assistant, arm-blinded; not independent human review",
+  "attribution_read": false,
+  "sensitivity": "Retain existing source interpretation and judgments. Don January and Cello table context omissions are retained limitations, not new exclusions."
+}

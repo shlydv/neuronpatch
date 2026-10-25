@@ -1,0 +1,6 @@
+{
+  "fits": 1,
+  "generations": 300,
+  "exact_prior_output_replay": true,
+  "scope": "Artifact consistency, not independent GPU replication; termination flag not independently recomputed"
+}

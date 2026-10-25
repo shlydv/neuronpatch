@@ -1,6 +1,6 @@
 # Distribution-retention control
 
-Status: submitted; Kaggle reports RUNNING on 25 October 2026.
+Status: complete; [reviewed report](../experiments/instruction_boundary/complete_distribution_retention_v1/REPORT.md) shows reduced regressions but weaker task learning.
 
 The [loss-isolation result](../experiments/instruction_boundary/complete_loss_isolation_v1/REPORT.md)
 shows that both short-answer task training and short-answer preservation training
@@ -70,7 +70,7 @@ blinded answer review remain required after execution.
 
 ## Accepted run
 
-One private T4 run is active: [Kaggle version 1](https://www.kaggle.com/code/shlydv/neuronpatch-distribution-retention-v1-20261025), kernel 140750471. Accepted source matches the local bundle byte-for-byte, SHA256 `d5a5c0130ea993cf82b7880ef076186290e8793a876b71a9f35bb885b5995449`. Source revision: `b3477f5`. Provider limit: 5,400 seconds. Fifteen focused tests passed, including the full tiny-model lifecycle and rejection of a corrupted cache. No large-model result is available yet.
+The completed private T4 run: [Kaggle version 1](https://www.kaggle.com/code/shlydv/neuronpatch-distribution-retention-v1-20261025), kernel 140750471. Accepted source matches the local bundle byte-for-byte, SHA256 `d5a5c0130ea993cf82b7880ef076186290e8793a876b71a9f35bb885b5995449`. Source revision: `b3477f5`. Provider limit: 5,400 seconds. Fifteen focused tests passed, including the full tiny-model lifecycle and rejection of a corrupted cache. The reviewed large-model result is linked above.
 
 
 ## Related work checked during execution

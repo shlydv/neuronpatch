@@ -1,0 +1,25 @@
+{
+  "fit": {
+    "fit_seconds": 1066.9402404010002,
+    "peak_training_allocated_bytes": 9804741120,
+    "adapter_bytes": 8329184,
+    "trainable_parameters": 2064384,
+    "successful_steps": 186,
+    "forward_calls": 372,
+    "evaluation": {
+      "records": 120,
+      "ended": 119,
+      "evaluation_seconds": 267.472656421,
+      "intermediate_diagnostic_seconds": 171.53124702399987
+    },
+    "export_score_exact": true,
+    "base_restored": true
+  },
+  "provider": {
+    "provider": "Kaggle",
+    "started_utc": "2026-10-25T09:13:51.077037+00:00",
+    "gpu": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB\n",
+    "returncode": 0,
+    "elapsed_seconds": 2160.3599636790004
+  }
+}

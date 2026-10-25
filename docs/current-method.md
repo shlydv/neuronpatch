@@ -38,7 +38,14 @@ reproduces five of the same six. Clean scores are base23, combined20, task-only1
 preservation-only21 out of30. Removing preservation is not a repair. Both losses
 can damage clean answers independently at this recipe. The result motivates
 examining the shared training pressure, not another neuron-selector sweep.
-One [distribution-retention control](boundary-distribution-retention.md) is now running on Kaggle. It replaces short-reference hard-label preservation with KL on the same token contexts, keeping the task recipe fixed. This is a standard-objective diagnostic, not a new neuron-selection method. No result is available yet.
+The [completed distribution-retention control](../experiments/instruction_boundary/complete_distribution_retention_v1/REPORT.md)
+passed artifact checks and blinded review. It halves base-correct clean regressions
+from six to three, but clean accuracy stays 20/30: it gains no new correct answers.
+Authority recovery drops 19→6, competing-attack recovery 18→13, and legitimate
+competing-task accuracy 20→17. This is a preservation/learning tradeoff at one KL
+weight, not a repair. Both intermediate clean checkpoints also fail the original
+absolute accuracy criterion. No GPU job remains active. Inspect the remaining
+behavioral errors and objective mismatch before any new selection comparison.
 
 ## Previous matched-authority experiment
 
