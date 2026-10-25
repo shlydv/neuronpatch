@@ -121,3 +121,12 @@ The previous preference job was verified COMPLETE before submission. Dependency
 setup reached the worker launch; replay and training results are not available
 at this checkpoint. Local read-only collection is attached to this same job;
 observation interruptions must not trigger a replacement run.
+
+A separate CPU verifier now checks the downloaded loss-control artifacts against
+frozen inputs, reconstructs both sample permutations, checks active versus skipped
+loss records, counts actual forward calls including retries, validates finite
+exported parameters and checks prompt/token/text consistency for all final and
+intermediate generations. It rechecks the prior adapter hash and exact output
+replay against the original artifact. The tiny-model end-to-end test passes and
+rejects a deliberately introduced non-null disabled preservation loss. These are
+artifact checks, not an independent rerun of GPU training or semantic grading.

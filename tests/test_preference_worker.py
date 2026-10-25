@@ -95,6 +95,7 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
         )
     }
     diagnostic_spec["training"]["steps"] = 2
+    diagnostic_spec["arms"] = ["diverse-sft-task_only", "diverse-sft-preservation_only"]
     diagnostic_spec["diagnostic_steps"] = [1]
     diagnostic_spec["diagnostic_case_ids"] = ["test"]
     diagnostic_data = copy.deepcopy(data)
@@ -116,6 +117,21 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
     assert completed["fits"] == 2 and completed["exact_prior_output_replay"]
     assert len(list((tmp_path / "isolation").rglob("clean-step-1.json"))) == 2
     assert len(list((tmp_path / "isolation").rglob("adapter_model.safetensors"))) == 2
+    from experiments.instruction_boundary.verify_loss_isolation import verify as verify_isolation
+
+    receipt, final, intermediate = verify_isolation(
+        tmp_path / "isolation", diagnostic_data, diagnostic_spec, tokenizer, prior
+    )
+    assert receipt["generations"] == 5 and receipt["fits"] == 2
+    assert len(final) == 3 and len(intermediate) == 2
+    history_path = tmp_path / "isolation/comparison/diverse-sft-task_only/history.json"
+    saved_history = history_path.read_text()
+    wrong = json.loads(saved_history)
+    wrong[0]["preserve_nll"] = 0.0
+    history_path.write_text(json.dumps(wrong))
+    with pytest.raises(ValueError, match="active/inactive"):
+        verify_isolation(tmp_path / "isolation", diagnostic_data, diagnostic_spec, tokenizer, prior)
+    history_path.write_text(saved_history)
     expected = json.loads((prior / "confirmation.json").read_text())
     altered = copy.deepcopy(expected)
     altered[0]["tokens"][0] = (altered[0]["tokens"][0] + 1) % 64
