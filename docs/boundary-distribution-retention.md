@@ -87,8 +87,7 @@ evaluation includes other tasks. This is a different preservation objective from
 our per-context output KL. A mean activation anchor need not equal an individual
 example's original activations; retaining the mean does not mathematically imply
 retaining each answer. This last statement is our interpretation, not the paper's
-claim. The paper and repository landing page were inspected; its training code has
-not been audited or reproduced here.
+claim. The paper and two pinned core source files were inspected; no full upstream training reproduction was run. See the source observations below.
 
 Decision: retain the running one-factor control. Do not add activation anchoring,
 dynamic masks or data selection to it. If useful learning survives with fewer
@@ -97,3 +96,29 @@ guided comparison. If KL prevents both damage and learning, report that tradeoff
 If damage persists despite small training KL, examine context coverage rather than
 claiming preservation has been established by a low scalar loss. None of these
 outcomes alone establishes an advantage over existing sparse-tuning libraries.
+
+
+### NGFT released-source observations
+
+Inspected `NLP2CT/NGFT` commit `77537f90adba9d4cd33a84cfbc8add10cc4c926e`.
+The [trainer's mask block](https://github.com/NLP2CT/NGFT/blob/77537f90adba9d4cd33a84cfbc8add10cc4c926e/trainer.py#L2573)
+uses a space in the up-projection filter. Evaluating the exact parsed predicate
+on a standard `up_proj` name skips that block. Its substring layer predicate
+matches indices 0, 1 and 10 for layer 10, applying multiple masks successively.
+Other projection gradients skip this mask block too; whether they update depends
+on their trainability/optimizer setup elsewhere, which this audit does not establish.
+
+The alignment path at lines 3817–3873 uses an epoch-step condition, a hard-coded
+BioInstruct anchor filename and an imported similarity function, rather than
+transparently exposing the paper's CE-threshold/MSE recipe. Its hook path averages
+across sequence positions and builds an all-ones attention mask for generated
+inputs. These are implementation differences to resolve before a faithful port,
+not evidence that the published experiments used this exact path or that their
+results are invalid. Two AST predicates were executed on synthetic names; no
+upstream trainer, external pickle or model was executed. Pinned source hashes and
+the predicate receipt are in private `artifacts/ngft_source_audit`.
+
+Decision: do not adopt this trainer wholesale or treat its README as executable
+specification. Any future neuron-anchoring control must specify axis identities,
+masking, exact frozen references, loss direction and activation timing explicitly.
+The currently running output-KL control is unaffected.
