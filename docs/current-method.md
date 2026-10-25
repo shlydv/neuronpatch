@@ -9,7 +9,7 @@ recipe has yet earned recommendation as a default or a superiority claim.
 
 [Full-document supervision](../experiments/instruction_boundary/complete_supervision_v1/REPORT.md)
 finished successfully: three fits, 2,960 verified records, 244 anonymous unique QA
-responses reviewed before attribution. All artifacts downloaded. No active GPU job.
+responses reviewed before attribution. All artifacts from that experiment downloaded.
 
 Changing the legitimate-request training examples restored full-document compliance:
 guided and LoRA pass96/96; random passes95/96. But unseen attack recovery falls.
@@ -24,7 +24,7 @@ establish transfer or a representation-independent impossibility. Do not launch
 the learned-mixing control: its working-LoRA prerequisite was not met. First audit
 training coverage and establish a useful transferable baseline with varied matched
 trusted/untrusted instructions, held-out wording and fresh documents. Keep exposed
-confirmation data out of fitting and selection. No new GPU run has been submitted.
+confirmation data out of fitting and selection. That experiment is complete.
 
 The [completed four-arm objective comparison](../experiments/instruction_boundary/complete_preference_v1/REPORT.md)
 adds 1,800 verified generations. Broader SFT improves some competing-task outcomes,
@@ -38,7 +38,7 @@ reproduces five of the same six. Clean scores are base23, combined20, task-only1
 preservation-only21 out of30. Removing preservation is not a repair. Both losses
 can damage clean answers independently at this recipe. The result motivates
 examining the shared training pressure, not another neuron-selector sweep.
-No follow-up GPU job has been submitted.
+One [distribution-retention control](boundary-distribution-retention.md) is now running on Kaggle. It replaces short-reference hard-label preservation with KL on the same token contexts, keeping the task recipe fixed. This is a standard-objective diagnostic, not a new neuron-selection method. No result is available yet.
 
 ## Previous matched-authority experiment
 

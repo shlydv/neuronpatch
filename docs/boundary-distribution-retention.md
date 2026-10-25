@@ -71,3 +71,29 @@ blinded answer review remain required after execution.
 ## Accepted run
 
 One private T4 run is active: [Kaggle version 1](https://www.kaggle.com/code/shlydv/neuronpatch-distribution-retention-v1-20261025), kernel 140750471. Accepted source matches the local bundle byte-for-byte, SHA256 `d5a5c0130ea993cf82b7880ef076186290e8793a876b71a9f35bb885b5995449`. Source revision: `b3477f5`. Provider limit: 5,400 seconds. Fifteen focused tests passed, including the full tiny-model lifecycle and rejection of a corrupted cache. No large-model result is available yet.
+
+
+## Related work checked during execution
+
+[Refining Salience-Aware Sparse Fine-Tuning (ACL 2025)](https://aclanthology.org/2025.acl-long.1541/)
+reports competitive simple gradient-based static masks and no substantial dynamic-mask
+benefit in its experiments. This supplies a simpler baseline to consider, not evidence
+that activation probes or added selector complexity will improve our task.
+
+[NGFT (September 2026), section 3.3](https://arxiv.org/html/2609.05913v1)
+uses an MSE anchor derived from mean FFN activations on its instruction dataset,
+introduced after CE converges. Its appendix compares representation drift and its
+evaluation includes other tasks. This is a different preservation objective from
+our per-context output KL. A mean activation anchor need not equal an individual
+example's original activations; retaining the mean does not mathematically imply
+retaining each answer. This last statement is our interpretation, not the paper's
+claim. The paper and repository landing page were inspected; its training code has
+not been audited or reproduced here.
+
+Decision: retain the running one-factor control. Do not add activation anchoring,
+dynamic masks or data selection to it. If useful learning survives with fewer
+regressions, verify fresh transfer before a matched independent-row random/gradient/
+guided comparison. If KL prevents both damage and learning, report that tradeoff.
+If damage persists despite small training KL, examine context coverage rather than
+claiming preservation has been established by a low scalar loss. None of these
+outcomes alone establishes an advantage over existing sparse-tuning libraries.
