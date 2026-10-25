@@ -144,13 +144,12 @@ remains diagnostic. Absolute quality and preservation gates are frozen before
 outputs, alongside paired improvements and failure analysis. One seed/rate is a
 bounded diagnostic, not an exhaustive comparison of objective potential.
 
-The private single-T4 run `shlydv/neuronpatch-boundary-preference-v1-20261024`
-was accepted on24 October2026. The accepted source matches the locally recorded
-bundle. Base evaluation and narrow-SFT training/evaluation have completed; the
-provider reports RUNNING and narrow-DPO has reached update48 at this checkpoint.
-This is execution progress, not a reviewed behavioral finding.
-Passing this table-task evaluation would not establish unrelated-task retention
-or the project's requested sparse-adaptation advantage.
+The private run `shlydv/neuronpatch-boundary-preference-v1-20261024` completed.
+All four fits and 1,800 generations were downloaded and verified. The
+[completed report](../experiments/instruction_boundary/complete_preference_v1/REPORT.md)
+records blinded review, every family, failed qualification gates and costs.
+All four arms share six clean regressions; no candidate qualifies. The pre-result
+reasoning below is retained as experiment history.
 
 ## Interpretation before opening the generated answers
 

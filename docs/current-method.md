@@ -1,4 +1,4 @@
-# Current method decision — 24 October 2026
+# Current method decision — 25 October 2026
 
 **Goal:** a robust sparse-adaptation library with a verified practical advantage
 in quality, preservation and cost against strong baselines. **Not achieved.**
@@ -26,18 +26,12 @@ training coverage and establish a useful transferable baseline with varied match
 trusted/untrusted instructions, held-out wording and fresh documents. Keep exposed
 confirmation data out of fitting and selection. No new GPU run has been submitted.
 
-The [objective-control preparation](boundary-objective-comparison.md) now verifies
-matched reversed preferences and standard DPO gradients on CPU. A [source-reviewed competing-task bank](boundary-training-label-audit.md) now contains
-31 training and15 calibration documents, with corrected labels and balanced
-trusted/untrusted requests. The four-arm optimization/export runner now passes a tiny-Qwen integration test.
-Fresh confirmation and the protocol are frozen. The full half-precision worker
-passes local integration tests, including generation and decoder recomputation.
-Kaggle accepted private kernel `shlydv/neuronpatch-boundary-preference-v1-20261024`
-version1 (kernel140625498), with a three-hour provider cap. Last checked: running;
-worker dependencies installed and all three model shards loaded.
-Uploaded source matches SHA256 `2fd316c3f603872357024142b63f13710c18809f6f0e8f560f9f9ce4c40f6a09`.
-No model-quality result is available yet. Artifact verification and blinded target
-routing now have tested local implementations.
+The [completed four-arm objective comparison](../experiments/instruction_boundary/complete_preference_v1/REPORT.md)
+adds 1,800 verified generations. Broader SFT improves some competing-task outcomes,
+but all four adapters share six clean regressions and none qualifies. DPO does
+not consistently outperform SFT. Short reference-answer preservation and task
+training are confounded; [isolate their effects](boundary-loss-isolation.md) before another sparse-selector
+comparison. This experiment is complete; no follow-up GPU job has been submitted.
 
 ## Previous matched-authority experiment
 

@@ -1,0 +1,62 @@
+{
+  "narrow-sft": {
+    "fit_seconds": 647.6373237409998,
+    "peak_training_allocated_bytes": 8920375296,
+    "adapter_bytes": 8329184,
+    "trainable_parameters": 2064384,
+    "successful_steps": 186,
+    "forward_calls": 372,
+    "evaluation": {
+      "records": 360,
+      "ended": 360,
+      "evaluation_seconds": 836.344917167
+    },
+    "export_score_exact": true,
+    "base_restored": true
+  },
+  "narrow-dpo": {
+    "fit_seconds": 1187.8521199630004,
+    "peak_training_allocated_bytes": 8929683456,
+    "adapter_bytes": 8329184,
+    "trainable_parameters": 2064384,
+    "successful_steps": 186,
+    "forward_calls": 930,
+    "evaluation": {
+      "records": 360,
+      "ended": 360,
+      "evaluation_seconds": 814.7403165290007
+    },
+    "export_score_exact": true,
+    "base_restored": true
+  },
+  "diverse-sft": {
+    "fit_seconds": 913.1872473040003,
+    "peak_training_allocated_bytes": 9806139392,
+    "adapter_bytes": 8329184,
+    "trainable_parameters": 2064384,
+    "successful_steps": 186,
+    "forward_calls": 372,
+    "evaluation": {
+      "records": 360,
+      "ended": 360,
+      "evaluation_seconds": 824.4071777400004
+    },
+    "export_score_exact": true,
+    "base_restored": true
+  },
+  "diverse-dpo": {
+    "fit_seconds": 1895.710898026,
+    "peak_training_allocated_bytes": 9816125440,
+    "adapter_bytes": 8329184,
+    "trainable_parameters": 2064384,
+    "successful_steps": 186,
+    "forward_calls": 930,
+    "evaluation": {
+      "records": 360,
+      "ended": 360,
+      "evaluation_seconds": 816.7785750350013
+    },
+    "export_score_exact": true,
+    "base_restored": true
+  }
+}

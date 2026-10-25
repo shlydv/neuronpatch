@@ -1,0 +1,6 @@
+{
+  "conditions": 5,
+  "generations": 1800,
+  "fits": 4,
+  "scope": "Artifact consistency, not independent GPU replication"
+}

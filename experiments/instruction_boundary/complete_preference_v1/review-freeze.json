@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-25T08:00:37.109732+00:00",
+  "review_sha256": "c3067fa52731445959a231449dafa1009eee3e8d002fd9b8d4e74eebc18982a1",
+  "sensitivity_sha256": "d717074d59504cfbd7b6a0254053e45dd00551c8459dc979e5b280f3a48e46c1",
+  "packet_sha256": "acddb8c263829a502bda126826cfe714cf9f88e87e1c2e747fa0c5c8d06ede54",
+  "documents": 30,
+  "responses": 247,
+  "reviewer": "Assistant, arm-blinded; not independent human review",
+  "attribution_read": false
+}
