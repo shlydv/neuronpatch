@@ -63,3 +63,31 @@ objective comparison, keeping parameter support fixed. Its prediction is reduced
 attack-marker compliance while retaining clean answers. Only after a useful
 baseline exists should selected independent neuron rows compete against matched
 random rows and LoRA on fresh transfer and unrelated-task retention.
+
+## Teacher inventory and review checkpoint
+
+The saved bank has 23/31 training and 12/15 calibration trajectories whose prompt
+tokens match the current questions, whose decoded text matches their tokens, and
+which end with EOS. This is identity/completion evidence, not correctness approval
+or a completed checkpoint-provenance audit. Eleven changed prompts cannot reuse
+their old responses as exact clean-context trajectories.
+
+Four matching trajectories were source-reviewed and rejected: two training
+answers select the wrong producer's track and miscount songs under two minutes;
+two calibration answers miss consecutive broadcaster seasons and select the
+wrong minimum-temperature month. The private decisions bind exact task/teacher
+hashes. These were targeted checks of suspected errors, not a random sample from
+which to estimate the bank's error rate. The other 31 remain pending.
+
+`teacher_review.py` now requires one explicit accept/reject decision for every
+inventory item, binds decisions to the source document, question, prompt tokens
+and complete response, and preserves exclusions in a receipt. Changed content,
+missing decisions, duplicate documents and cross-split overlap fail validation.
+The actual partial review correctly fails with 31 pending. Eleven focused tests
+pass across review, cross-context loss and response retention. This gate is not
+yet connected to a GPU worker; it cannot establish semantic correctness itself.
+
+Do not replace rejected responses with reference strings and call those
+self-generated clean teacher trajectories. A corrected-target objective is a
+different control. Filtering must use identical accepted banks across comparator
+arms, and the original unfiltered evaluation population must remain visible.

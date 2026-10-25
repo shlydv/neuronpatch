@@ -47,9 +47,11 @@ weight, not a repair. Both intermediate clean checkpoints also fail the original
 absolute accuracy criterion. No GPU job remains active. The post-review signature audit shows a concrete difference: NLL emits zero of
 30 attack markers but repeats six clean errors; KL emits 21 markers. The next
 candidate must improve the authority boundary while preserving answer computation.
-Cross-context distribution matching is a candidate requiring prior-art and
-teacher-trajectory checks; it is not yet implemented or authorized by this note
-as a new run. Do not change neuron support simultaneously.
+Cross-context distribution matching has a tested CPU loss primitive and review
+gate, but no integrated GPU experiment. The teacher inventory matches 35 current
+prompts; four source-reviewed responses are incorrect and 31 remain pending.
+See [the candidate record](cross-context-distillation.md). Do not change neuron
+support simultaneously or launch with an unreviewed teacher bank.
 
 ## Previous matched-authority experiment
 
