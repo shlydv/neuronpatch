@@ -1,6 +1,6 @@
 # Distribution-retention control
 
-Status: optimizer integration tested; GPU worker not yet submitted.
+Status: submitted; Kaggle reports RUNNING on 25 October 2026.
 
 The [loss-isolation result](../experiments/instruction_boundary/complete_loss_isolation_v1/REPORT.md)
 shows that both short-answer task training and short-answer preservation training
@@ -67,3 +67,7 @@ cache cap, and a 5,400-second provider limit. No GPU submission has been made at
 this checkpoint. The protocol's memory estimate is from tokenization/config,
 not a measured large-model allocation. Independent artifact verification and
 blinded answer review remain required after execution.
+
+## Accepted run
+
+One private T4 run is active: [Kaggle version 1](https://www.kaggle.com/code/shlydv/neuronpatch-distribution-retention-v1-20261025), kernel 140750471. Accepted source matches the local bundle byte-for-byte, SHA256 `d5a5c0130ea993cf82b7880ef076186290e8793a876b71a9f35bb885b5995449`. Source revision: `b3477f5`. Provider limit: 5,400 seconds. Fifteen focused tests passed, including the full tiny-model lifecycle and rejection of a corrupted cache. No large-model result is available yet.
