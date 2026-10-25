@@ -130,3 +130,29 @@ intermediate generations. It rechecks the prior adapter hash and exact output
 replay against the original artifact. The tiny-model end-to-end test passes and
 rejects a deliberately introduced non-null disabled preservation loss. These are
 artifact checks, not an independent rerun of GPU training or semantic grading.
+
+## Why correct-reference training is not distribution preservation
+
+Rechecked against the [FiNE paper, equations 4–7](https://opanhw.github.io/fine-unified-editing/static/pdfs/manuscript.pdf)
+and [official knowledge-editing code, lines 206–212](https://github.com/opanhw/fine-unified-editing-code/blob/main/knowledge-editing/easyeditor/models/fine/fine_main.py).
+The paper combines target likelihood, KL and a repetition penalty. The code uses
+worst-token target NLL, a norm term, prefix-distribution KL and a repetition term;
+its KL direction is reference-to-edited, unlike the paper's written direction.
+This is a scoped editing recipe, not a demonstration on our table instruction task.
+
+Our mathematical implication: for one teacher-forced token with logits z,
+reference distribution q and current distribution p, reference-answer NLL has
+logit gradient p − one_hot(y). Even at the untouched model, this generally is
+nonzero. A correct y does not change that. Training on the base model's greedy
+answer also has this property; hard-label self-distillation is not a no-op.
+By contrast, KL(q || p) has gradient p − q, zero when p = q at initialization.
+It can oppose later distribution drift, but cannot guarantee retained accuracy
+on unobserved contexts or remove conflicts with the desired task update.
+
+For the library, these should eventually be explicit, distinct policies:
+reinforce a reference answer versus retain a reference distribution. Neither
+should be silently described as guaranteeing preservation. Do not implement or
+launch a KL repair merely because this derivation is appealing: first finish
+the current causal diagnostic, then test any repair against a competent LoRA
+baseline and matched sparse controls. Prefix KL from FiNE and response KL on
+preserved tasks are different constraints; specify token positions and direction.
