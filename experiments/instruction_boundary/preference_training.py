@@ -164,6 +164,8 @@ def fit_preferences(
     check_time=lambda: None,
     loss_terms="combined",
     on_step=None,
+    preservation_objective="nll",
+    retained_responses=None,
 ):
     """Shared Adam schedule, clean preservation, finite-gradient retries and cost counts.
 
@@ -201,6 +203,24 @@ def fit_preferences(
     use_preservation = loss_terms != "task_only" and protocol["preservation_weight"] > 0
     if not use_task and not use_preservation:
         raise ValueError("At least one nonzero loss term required")
+    if preservation_objective not in ("nll", "kl"):
+        raise ValueError("Unknown preservation objective")
+    if preservation_objective == "kl":
+        from .response_retention import retention_loss, sample_identity
+
+        if (
+            not use_preservation
+            or retained_responses is None
+            or len(retained_responses) != len(preserved)
+        ):
+            raise ValueError("Active KL preservation requires a matched reference cache")
+        for sample, retained in zip(preserved, retained_responses, strict=True):
+            if retained.base_identity != base_identity or retained.sample_sha256 != sample_identity(
+                sample
+            ):
+                raise ValueError("Preservation reference does not match base and sample order")
+    elif retained_responses is not None:
+        raise ValueError("Reference cache supplied for non-KL preservation")
     # Construct BOTH permutations even when a loss is disabled. The second
     # permutation must consume the same random stream as in the combined fit.
     generator = torch.Generator().manual_seed(protocol["seed"])
@@ -230,7 +250,12 @@ def fit_preferences(
             preserve_loss = None
             if use_preservation:
                 sample = preserved[indices[1]]
-                preserve_loss = -score(model, sample) / sample.completion_mask.sum()
+                if preservation_objective == "kl":
+                    preserve_loss = retention_loss(
+                        model, retained_responses[indices[1]], base_identity=base_identity
+                    )
+                else:
+                    preserve_loss = -score(model, sample) / sample.completion_mask.sum()
                 (preserve_loss * protocol["preservation_weight"] * scale).backward()
                 if not torch.isfinite(preserve_loss):
                     raise FloatingPointError("Nonfinite preservation loss")
@@ -257,8 +282,12 @@ def fit_preferences(
                 "objective": objective,
                 **metrics,
                 "preserve_nll": float(preserve_loss.detach())
-                if preserve_loss is not None
+                if preserve_loss is not None and preservation_objective == "nll"
                 else None,
+                "preserve_kl": float(preserve_loss.detach())
+                if preserve_loss is not None and preservation_objective == "kl"
+                else None,
+                "preservation_objective": preservation_objective,
                 "loss_terms": loss_terms,
                 "loss_scale": scale,
                 "gradient_norm": float(norm),

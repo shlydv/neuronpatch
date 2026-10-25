@@ -67,3 +67,63 @@ def test_cache_rejects_mutated_trajectory_wrong_base_trainable_teacher_and_budge
     sample.input_ids[0, 2] = 7
     with pytest.raises(ValueError, match="identity changed"):
         retention_loss(model, ref, base_identity="base")
+
+
+def test_combined_optimizer_with_kl_matches_independent_direct_loss():
+    from experiments.instruction_boundary.preference_training import fit_preferences, score
+
+    model, pairs, cache = fixture()
+    model.requires_grad_(False)
+    preserved = [pairs[0].chosen, pairs[0].rejected]
+    references = cache_responses(model, preserved, base_identity="tiny-base", max_cache_bytes=10000)
+    model.head.requires_grad_(True)
+    direct_model = copy.deepcopy(model)
+    config = dict(
+        steps=3,
+        lr=0.001,
+        seed=43,
+        beta=0.1,
+        loss_scale=32.0,
+        minimum_loss_scale=1.0,
+        preservation_weight=0.7,
+        gradient_clip=1.0,
+    )
+    history = fit_preferences(
+        model,
+        pairs,
+        preserved,
+        cache,
+        base_identity="tiny-base",
+        objective="sft",
+        protocol=config,
+        preservation_objective="kl",
+        retained_responses=references,
+    )
+    optimizer = torch.optim.Adam(direct_model.head.parameters(), lr=config["lr"])
+    for row in history:
+        i, j = row["example_indices"]
+        sample = preserved[j]
+        optimizer.zero_grad(set_to_none=True)
+        task = -score(direct_model, pairs[i].chosen) / pairs[i].chosen.completion_mask.sum()
+        logits = direct_model(sample.input_ids, sample.attention_mask).logits
+        logits = logits[:, response_positions(sample), :]
+        q = references[j].reference_logits.softmax(-1)
+        cross_entropy = -(q * logits.log_softmax(-1)).sum(-1).mean()
+        (task + config["preservation_weight"] * cross_entropy).backward()
+        torch.nn.utils.clip_grad_norm_(direct_model.head.parameters(), config["gradient_clip"])
+        optimizer.step()
+        assert row["preserve_nll"] is None and row["preserve_kl"] is not None
+        assert row["forward_calls"] == 2
+    torch.testing.assert_close(model.head.weight, direct_model.head.weight, atol=1e-7, rtol=1e-5)
+    with pytest.raises(ValueError, match="sample order"):
+        fit_preferences(
+            model,
+            pairs,
+            preserved,
+            cache,
+            base_identity="tiny-base",
+            objective="sft",
+            protocol=config,
+            preservation_objective="kl",
+            retained_responses=list(reversed(references)),
+        )
