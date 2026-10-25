@@ -31,12 +31,14 @@ adds 1,800 verified generations. Broader SFT improves some competing-task outcom
 but all four adapters share six clean regressions and none qualifies. DPO does
 not consistently outperform SFT. Short reference-answer preservation and task
 training are confounded; [isolate their effects](boundary-loss-isolation.md) before another sparse-selector
-comparison. The four-arm experiment is complete. The bounded
-[loss-isolation diagnostic](boundary-loss-isolation.md) is now running privately
-on Kaggle (`shlydv/neuronpatch-loss-isolation-v1-20261025`, version 1), with two
-new fits and a two-hour provider cap. Its prior-adapter replay matched all 120
-selected outputs exactly before reference scoring. Behavioral findings remain
-pending; do not interpret the replay as evidence for either loss hypothesis.
+comparison. The [completed loss-isolation diagnostic](../experiments/instruction_boundary/complete_loss_isolation_v1/REPORT.md)
+finished two fits and 480 verified generations. Task-only reproduces all six
+combined-fit clean regressions plus one new regression; preservation-only
+reproduces five of the same six. Clean scores are base23, combined20, task-only17,
+preservation-only21 out of30. Removing preservation is not a repair. Both losses
+can damage clean answers independently at this recipe. The result motivates
+examining the shared training pressure, not another neuron-selector sweep.
+No follow-up GPU job has been submitted.
 
 ## Previous matched-authority experiment
 

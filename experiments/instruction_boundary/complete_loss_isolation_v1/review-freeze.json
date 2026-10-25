@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-10-25T08:58:07.807890+00:00",
+  "review_sha256": "169b98e633ae954f124a2595f3eee4ec586c88e1bfc9afed5676300d9c2a2432",
+  "packet_sha256": "4042d4290daf930a79c95e3b9ec4fd9f58dd6c6bacd5a11ccf5d6e38254c52db",
+  "unique_responses": 195,
+  "inherited_frozen_judgments": 167,
+  "new_source_reviewed": 28,
+  "reviewer": "Assistant, arm-blinded; not independent human review",
+  "attribution_read": false,
+  "sensitivity": "Retain prior frozen borderline judgments and sensitivities; new responses have no additional borderline cases."
+}

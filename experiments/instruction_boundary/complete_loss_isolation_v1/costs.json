@@ -1,0 +1,45 @@
+{
+  "provider": {
+    "provider": "Kaggle",
+    "started_utc": "2026-10-25T08:15:50.455131+00:00",
+    "gpu": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB\n",
+    "returncode": 0,
+    "elapsed_seconds": 2349.9941808
+  },
+  "arms": {
+    "diverse-sft-task_only": {
+      "fit_seconds": 682.3732367790001,
+      "peak_training_allocated_bytes": 9804740608,
+      "adapter_bytes": 8329184,
+      "trainable_parameters": 2064384,
+      "successful_steps": 186,
+      "forward_calls": 186,
+      "evaluation": {
+        "records": 120,
+        "ended": 120,
+        "evaluation_seconds": 183.633991272,
+        "intermediate_diagnostic_seconds": 60.408239402999925
+      },
+      "export_score_exact": true,
+      "base_restored": true
+    },
+    "diverse-sft-preservation_only": {
+      "fit_seconds": 386.26390712600005,
+      "peak_training_allocated_bytes": 8876081152,
+      "adapter_bytes": 8329184,
+      "trainable_parameters": 2064384,
+      "successful_steps": 186,
+      "forward_calls": 186,
+      "evaluation": {
+        "records": 120,
+        "ended": 120,
+        "evaluation_seconds": 214.17339077900033,
+        "intermediate_diagnostic_seconds": 60.48578101699991
+      },
+      "export_score_exact": true,
+      "base_restored": true
+    }
+  },
+  "reference_seconds": 357.56524521099993,
+  "reference_forward_calls": 372
+}

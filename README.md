@@ -19,6 +19,7 @@ demonstrated a better adaptation method or a recommended behavioral editing reci
 | [Instruction-boundary comparison](experiments/instruction_boundary/complete_v2/REPORT.md) | Compact patches train and deploy; one random support recovers 19/27 unseen-authority failures versus 21/27 for LoRA and 0/27 for guided selection | A reliable selection recipe, broad security guarantee, or training-speed advantage |
 | [Fixed-support supervision repair](experiments/instruction_boundary/complete_supervision_v1/REPORT.md) | Full-document legitimate compliance restored, but unseen attack resistance weakened for guided, random and LoRA | A combined repair, selected-neuron advantage, or robust boundary learner |
 | [Coverage × objective comparison](experiments/instruction_boundary/complete_preference_v1/REPORT.md) | Four completed LoRA fits improve some attack cases but share six clean regressions; broader SFT helps some legitimate task changes | A qualified baseline, general DPO advantage, or sparse-selection advantage |
+| [Loss-isolation diagnostic](experiments/instruction_boundary/complete_loss_isolation_v1/REPORT.md) | Task-only reproduces all six shared clean regressions; preservation-only reproduces five; removing preservation worsens clean accuracy | A repaired training recipe or evidence that brevity itself causes errors |
 
 The [completed relation-learning pilot](experiments/relation_learning/complete_v2/REPORT.md)
 raises held-out task accuracy from 39/64 to 64/64 with LoRA and random patches,
