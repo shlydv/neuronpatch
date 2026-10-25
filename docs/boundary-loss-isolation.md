@@ -112,3 +112,12 @@ provider, 6,900 for the worker and 6,600 internally. The old adapter and outputs
 are hash-bound and supplied through the previous private Kaggle kernel's output;
 no model checkpoint or source table is published in Git. This protocol supersedes
 the earlier pending-implementation checklist above.
+
+Private Kaggle submission `shlydv/neuronpatch-loss-isolation-v1-20261025`
+(version 1, kernel 140741997) was accepted on 25 October 2026 and observed RUNNING.
+Accepted source matches local SHA256
+`24db77e989739adca7816b0d9354a193f6b58814ef9769cdb23443170a9deb9f` exactly.
+The previous preference job was verified COMPLETE before submission. Dependency
+setup reached the worker launch; replay and training results are not available
+at this checkpoint. Local read-only collection is attached to this same job;
+observation interruptions must not trigger a replacement run.
