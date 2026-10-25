@@ -37,6 +37,7 @@ def run_comparison(
     on_step=None,
     preservation_objective="nll",
     max_cache_bytes=None,
+    task_teacher_indices=None,
 ):
     """Run narrow/diverse × SFT/DPO from the same frozen weights.
 
@@ -58,7 +59,7 @@ def run_comparison(
     for coverage, objective, terms in arms:
         if (
             coverage not in ("narrow", "diverse")
-            or objective not in ("sft", "dpo")
+            or objective not in ("sft", "dpo", "cross_context")
             or terms not in ("combined", "task_only", "preservation_only")
         ):
             raise ValueError("Unknown comparison arm")
@@ -76,6 +77,16 @@ def run_comparison(
             union[pair.id] = pair
     if not set(p.id for p in banks["narrow"]).issubset(p.id for p in banks["diverse"]):
         raise ValueError("Diverse bank must include the narrow control")
+    if any(objective == "cross_context" for _, objective, _ in arms):
+        if preservation_objective != "kl" or task_teacher_indices is None:
+            raise ValueError("Cross-context fitting requires the clean cache and explicit mapping")
+        if set(task_teacher_indices) != set(union) or any(
+            i is not None and (type(i) is not int or not 0 <= i < len(preserved))
+            for i in task_teacher_indices.values()
+        ):
+            raise ValueError("Invalid pair-to-clean-teacher mapping")
+    elif task_teacher_indices is not None:
+        raise ValueError("Unexpected task teacher mapping")
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     original = fingerprint(model)
@@ -88,6 +99,7 @@ def run_comparison(
             "rank": rank,
             "modules": names,
             "base_identity": original,
+            "task_teacher_indices": task_teacher_indices,
             "banks": {
                 k: [{"id": p.id, "identity": p.identity} for p in v] for k, v in banks.items()
             },
@@ -166,6 +178,14 @@ def run_comparison(
                 loss_terms=loss_terms,
                 preservation_objective=preservation_objective,
                 retained_responses=retained,
+                task_teachers={
+                    p.id: retained[task_teacher_indices[p.id]]
+                    if task_teacher_indices[p.id] is not None
+                    else None
+                    for p in banks[coverage]
+                }
+                if objective == "cross_context"
+                else None,
                 on_step=(lambda fitted, row: on_step(fitted, directory, row))
                 if on_step is not None
                 else None,

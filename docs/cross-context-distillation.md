@@ -1,6 +1,6 @@
 # Cross-context distillation candidate — 25 October 2026
 
-Status: prior-art check and CPU loss primitive complete; no GPU submission.
+Status: reviewed-bank worker and CPU checks complete; bounded GPU protocol frozen.
 The goal remains a useful sparse-adaptation advantage, not merely a new defense.
 
 ## Prior art changes the claim
@@ -129,5 +129,23 @@ documents can diagnose this prediction but cannot establish fresh transfer or
 library superiority. A successful development result still needs fresh examples,
 matched sparse/random comparisons and the broader completion requirements.
 
-This comparison is a design decision, not a frozen runnable protocol or a
-submitted job. Worker integration and runtime bounds remain to be completed.
+The [frozen protocol](../experiments/instruction_boundary/cross_context_protocol_v1.json)
+and `cross_context_run.py` now implement this comparison. The existing diverse
+bank has one marker pair and two competing-question pairs per document, each in
+trusted and untrusted locations; it is not three marker-wording variants. Trusted
+competing questions retain their original source-reviewed hard answers in both
+arms. Untrusted questions use the exact archived recipient-response token IDs.
+No decoding/re-tokenization substitutes a different trajectory.
+
+The pinned-tokenizer preflight verifies 126 pairs, 21 clean trajectories, 63 soft
+targets and a maximum sequence length of1577 within the4096 cap. A tiny FP16 Qwen
+worker completes both fits with exact export/reload score agreement and base
+restoration. A separate mixed-objective test compares four Adam updates against
+an independent direct loss/gradient calculation. The relevant new and existing
+training/worker/retention checks pass. These tests establish implementation
+behavior on fixtures, not model-quality results.
+
+There are two126-step fits and360evaluation generations, with no rate or endpoint
+search. Provider time is capped at7200seconds. The protocol preserves the original
+absolute utility requirements and distinguishes a paired development signal from
+a useful repair. Submission and terminal status must be recorded separately.

@@ -166,6 +166,7 @@ def fit_preferences(
     on_step=None,
     preservation_objective="nll",
     retained_responses=None,
+    task_teachers=None,
 ):
     """Shared Adam schedule, clean preservation, finite-gradient retries and cost counts.
 
@@ -178,13 +179,33 @@ def fit_preferences(
     """
     if loss_terms not in ("combined", "task_only", "preservation_only"):
         raise ValueError("Unknown loss terms")
-    if objective not in ("sft", "dpo"):
-        raise ValueError("SFT/DPO objective required")
+    if objective not in ("sft", "dpo", "cross_context"):
+        raise ValueError("SFT/DPO/cross-context objective required")
     if model.training or any(m.training for m in model.modules()):
         raise ValueError("Deterministic eval mode required")
     if not pairs:
         raise ValueError("Nonempty training pairs required")
     refs = reference_lookup(pairs, cache, base_identity=base_identity)
+    if objective == "cross_context":
+        from .cross_context_retention import continuation_ids, cross_context_loss
+        from .response_retention import sample_identity
+
+        if task_teachers is None or set(task_teachers) != {p.id for p in pairs}:
+            raise ValueError("Explicit teacher or hard-target decision required for every pair")
+        if not any(t is not None for t in task_teachers.values()):
+            raise ValueError("At least one cross-context teacher required")
+        for pair in pairs:
+            teacher = task_teachers[pair.id]
+            if teacher is not None and (
+                teacher.base_identity != base_identity
+                or teacher.sample_sha256 != sample_identity(teacher.sample)
+                or not torch.equal(
+                    continuation_ids(pair.chosen).cpu(), continuation_ids(teacher.sample).cpu()
+                )
+            ):
+                raise ValueError("Task teacher base, sample or continuation mismatch")
+    elif task_teachers is not None:
+        raise ValueError("Task teachers supplied for a non-distillation objective")
     parameters = [p for p in model.parameters() if p.requires_grad]
     if not parameters or any(p.dtype != torch.float32 for p in parameters) or not preserved:
         raise ValueError("FP32 trainable parameters and preservation bank required")
@@ -239,14 +260,31 @@ def fit_preferences(
             pair = pairs[indices[0]]
             metrics = {"loss": None, "forward_calls": 0}
             if use_task:
-                metrics = backward_pair(
-                    model,
-                    pair,
-                    refs[pair.id],
-                    objective=objective,
-                    beta=protocol["beta"],
-                    scale=scale,
-                )
+                teacher = task_teachers[pair.id] if objective == "cross_context" else None
+                if teacher is not None:
+                    loss = cross_context_loss(
+                        model, pair.chosen, teacher, base_identity=base_identity
+                    )
+                    if not torch.isfinite(loss):
+                        raise FloatingPointError("Nonfinite task distillation loss")
+                    (loss * scale).backward()
+                    metrics = {
+                        "loss": float(loss.detach()),
+                        "forward_calls": 1,
+                        "task_target": "clean_distribution",
+                    }
+                    del loss
+                else:
+                    metrics = backward_pair(
+                        model,
+                        pair,
+                        refs[pair.id],
+                        objective="sft" if objective == "cross_context" else objective,
+                        beta=protocol["beta"],
+                        scale=scale,
+                    )
+                    if objective == "cross_context":
+                        metrics["task_target"] = "hard_response"
             preserve_loss = None
             if use_preservation:
                 sample = preserved[indices[1]]

@@ -22,16 +22,21 @@ def main():
     )
     parser.add_argument(
         "--worker",
-        choices=("preference_run", "loss_isolation_run", "distribution_retention_run"),
+        choices=(
+            "preference_run",
+            "loss_isolation_run",
+            "distribution_retention_run",
+            "cross_context_run",
+        ),
         default="preference_run",
     )
+    parser.add_argument("--teacher-bank", type=Path)
     args = parser.parse_args()
     if not args.kernel.startswith("shlydv/neuronpatch-"):
         raise ValueError("Personal neuronpatch kernel required")
     spec = json.loads(args.protocol.read_text())
-    if args.worker != "preference_run" and not spec.get("prior_kernel", "").startswith(
-        "shlydv/neuronpatch-"
-    ):
+    needs_prior = args.worker in ("loss_isolation_run", "distribution_retention_run")
+    if needs_prior and not spec.get("prior_kernel", "").startswith("shlydv/neuronpatch-"):
         raise ValueError("Personal prior kernel required for loss isolation")
     sources = list((ROOT / "src/neuronpatch").glob("*.py"))
     sources += [
@@ -45,6 +50,8 @@ def main():
             "loss_isolation_run",
             "distribution_retention_run",
             "response_retention",
+            "cross_context_run",
+            "cross_context_retention",
             "preference_experiment",
             "preference_training",
             "preference_objective",
@@ -62,6 +69,15 @@ def main():
         if hashlib.sha256(raw).hexdigest() != spec["data_sha256"][role]:
             raise ValueError("Private input differs from frozen protocol")
         files[f"data/{role}.json"] = raw
+    if args.worker == "cross_context_run":
+        if args.teacher_bank is None:
+            raise ValueError("Reviewed teacher bank required")
+        raw = args.teacher_bank.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != spec["data_sha256"]["teachers"]:
+            raise ValueError("Reviewed teachers differ from protocol")
+        files["data/teachers.json"] = raw
+    elif args.teacher_bank is not None:
+        raise ValueError("Unexpected teacher bank")
     files["data/protocol.json"] = (json.dumps(spec, indent=2) + "\n").encode()
     hashes = {k: hashlib.sha256(v).hexdigest() for k, v in files.items()}
     submission = {
@@ -107,7 +123,7 @@ def main():
         "machine_shape": "NvidiaTeslaT4",
         "dataset_sources": [],
         "competition_sources": [],
-        "kernel_sources": [spec["prior_kernel"]] if args.worker != "preference_run" else [],
+        "kernel_sources": [spec["prior_kernel"]] if needs_prior else [],
         "model_sources": [],
     }
     for name, value in [("kernel-metadata.json", metadata), ("submission.json", submission)]:
