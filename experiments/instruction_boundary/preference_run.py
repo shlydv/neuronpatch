@@ -141,7 +141,7 @@ def execute(model, tokenizer, data, spec, output, check_time):
     )
 
 
-def main():
+def main(*, execute_fn=execute):
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
@@ -174,7 +174,7 @@ def main():
         device_map={"": 0},
         attn_implementation="sdpa",
     )
-    execute(model.eval().requires_grad_(False), tokenizer, data, spec, args.output, check_time)
+    execute_fn(model.eval().requires_grad_(False), tokenizer, data, spec, args.output, check_time)
 
 
 if __name__ == "__main__":

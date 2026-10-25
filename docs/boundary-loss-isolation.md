@@ -98,3 +98,17 @@ implementation on small models, not the full-model scientific hypothesis.
 Remaining before submission: wire the diagnostic evaluation subset and checkpoint
 callback, package the old combined adapter for exact output replay, bind the
 runtime/source/data identities, and test the resulting worker end to end.
+
+The diagnostic worker is now implemented and covered by a half-precision tiny-Qwen
+end-to-end test: it reloads the prior combined adapter, checks prompt IDs, generated
+token IDs, decoded text and termination against saved outputs before fitting,
+then completes both controls and intermediate generation. A changed replay token
+is rejected. Eleven focused tests pass after this addition.
+
+[Protocol v1](../experiments/instruction_boundary/loss_isolation_protocol_v1.json)
+fixes 120 final diagnostic cases, clean outputs at steps 31 and 93, two fits and
+480 generated records including replay. Runtime limits are 7,200 seconds at the
+provider, 6,900 for the worker and 6,600 internally. The old adapter and outputs
+are hash-bound and supplied through the previous private Kaggle kernel's output;
+no model checkpoint or source table is published in Git. This protocol supersedes
+the earlier pending-implementation checklist above.

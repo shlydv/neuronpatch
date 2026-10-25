@@ -15,12 +15,22 @@ def main():
     parser = argparse.ArgumentParser(__doc__)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--kernel", required=True)
+    parser.add_argument(
+        "--protocol",
+        type=Path,
+        default=ROOT / "experiments/instruction_boundary/preference_protocol_v1.json",
+    )
+    parser.add_argument(
+        "--worker", choices=("preference_run", "loss_isolation_run"), default="preference_run"
+    )
     args = parser.parse_args()
     if not args.kernel.startswith("shlydv/neuronpatch-"):
         raise ValueError("Personal neuronpatch kernel required")
-    spec = json.loads(
-        (ROOT / "experiments/instruction_boundary/preference_protocol_v1.json").read_text()
-    )
+    spec = json.loads(args.protocol.read_text())
+    if args.worker == "loss_isolation_run" and not spec.get("prior_kernel", "").startswith(
+        "shlydv/neuronpatch-"
+    ):
+        raise ValueError("Personal prior kernel required for loss isolation")
     sources = list((ROOT / "src/neuronpatch").glob("*.py"))
     sources += [
         ROOT / "experiments/paired_mlp/model.py",
@@ -30,6 +40,7 @@ def main():
         ROOT / f"experiments/instruction_boundary/{n}.py"
         for n in (
             "preference_run",
+            "loss_isolation_run",
             "preference_experiment",
             "preference_training",
             "preference_objective",
@@ -54,7 +65,7 @@ def main():
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
         ).strip(),
         "file_sha256": hashes,
-        "scope": {"new_fits": 4, "conditions": 5},
+        "scope": spec.get("scope", {"new_fits": 4, "conditions": 5}),
         "provider_timeout_seconds": spec["provider_timeout_seconds"],
     }
     payload = {
@@ -69,7 +80,7 @@ def main():
         )
         .replace("fine-transfer", "boundary-preference")
         .replace("transfer-results", "boundary-preference-results")
-        .replace("experiments.fine_transfer.run", "experiments.instruction_boundary.preference_run")
+        .replace("experiments.fine_transfer.run", f"experiments.instruction_boundary.{args.worker}")
         .replace("'5700'", repr(str(spec["worker_timeout_seconds"])))
     )
     script = (
@@ -92,7 +103,7 @@ def main():
         "machine_shape": "NvidiaTeslaT4",
         "dataset_sources": [],
         "competition_sources": [],
-        "kernel_sources": [],
+        "kernel_sources": [spec["prior_kernel"]] if args.worker == "loss_isolation_run" else [],
         "model_sources": [],
     }
     for name, value in [("kernel-metadata.json", metadata), ("submission.json", submission)]:

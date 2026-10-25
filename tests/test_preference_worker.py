@@ -1,3 +1,5 @@
+import copy
+import hashlib
 import json
 
 import pytest
@@ -74,6 +76,52 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
 
     receipt, outputs = verify(tmp_path / "run", data, spec, tokenizer)
     assert receipt["fits"] == 4 and receipt["generations"] == 5
+    from experiments.instruction_boundary.loss_isolation_run import (
+        compare_replay,
+        find_prior,
+    )
+    from experiments.instruction_boundary.loss_isolation_run import (
+        execute as isolate,
+    )
+
+    prior = tmp_path / "run/comparison/diverse-sft"
+    diagnostic_spec = copy.deepcopy(spec)
+    diagnostic_spec["prior_files"] = {
+        name: hashlib.sha256((prior / name).read_bytes()).hexdigest()
+        for name in (
+            "adapter/adapter_config.json",
+            "adapter/adapter_model.safetensors",
+            "confirmation.json",
+        )
+    }
+    diagnostic_spec["training"]["steps"] = 2
+    diagnostic_spec["diagnostic_steps"] = [1]
+    diagnostic_spec["diagnostic_case_ids"] = ["test"]
+    diagnostic_data = copy.deepcopy(data)
+    diagnostic_data["confirmation"]["cases"][0]["kind"] = "clean"
+    torch.manual_seed(31)
+    fresh = Qwen3ForCausalLM(config).half().eval().requires_grad_(False)
+    assert find_prior(tmp_path, diagnostic_spec["prior_files"]) == prior
+    isolate(
+        fresh,
+        tokenizer,
+        diagnostic_data,
+        diagnostic_spec,
+        tmp_path / "isolation",
+        lambda: None,
+        prior=prior,
+    )
+    assert fingerprint(fresh) == original
+    completed = json.loads((tmp_path / "isolation/complete.json").read_text())
+    assert completed["fits"] == 2 and completed["exact_prior_output_replay"]
+    assert len(list((tmp_path / "isolation").rglob("clean-step-1.json"))) == 2
+    assert len(list((tmp_path / "isolation").rglob("adapter_model.safetensors"))) == 2
+    expected = json.loads((prior / "confirmation.json").read_text())
+    altered = copy.deepcopy(expected)
+    altered[0]["tokens"][0] = (altered[0]["tokens"][0] + 1) % 64
+    with pytest.raises(ValueError, match="replay differs"):
+        compare_replay(altered, expected, ["test"])
+
     path = tmp_path / "run/comparison/narrow-dpo/history.json"
     history = json.loads(path.read_text())
     history[0]["pair_id"] = "wrong-pair"
