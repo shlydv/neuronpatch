@@ -156,3 +156,27 @@ launch a KL repair merely because this derivation is appealing: first finish
 the current causal diagnostic, then test any repair against a competent LoRA
 baseline and matched sparse controls. Prefix KL from FiNE and response KL on
 preserved tasks are different constraints; specify token positions and direction.
+
+## Result and implementation direction after the ablation
+
+The [completed report](../experiments/instruction_boundary/complete_loss_isolation_v1/REPORT.md)
+shows that task-only reproduces all six combined clean regressions, while
+preservation-only reproduces five. The shared pressure is not isolated to the
+auxiliary term, and removing it worsens task-trained clean accuracy.
+
+`response_retention.py` now adapts the existing library KL primitive to explicit
+response trajectories: it shifts target masks once to prediction positions,
+caches only those full-vocabulary reference logits on CPU, binds the sample and
+base identities, and rejects trainable teachers, changed trajectories and cache
+budget overflow. It is experiment-local, not a new public loss or default.
+Three focused CPU tests verify causal positions including EOS, zero loss/gradient
+at an unchanged model, agreement with an independent soft-target cross-entropy
+gradient after perturbation, and lifecycle/identity errors.
+
+This helper deliberately does not choose which trajectories to preserve. KL on
+a short manually written answer still measures conditionals along that forced
+prefix, not along the base model's usual longer answer. The next experiment must
+specify that choice; otherwise a changed target style and a changed objective
+would be confounded. Full-response retention on base-generated clean trajectories
+is a candidate, but it can also preserve base mistakes. Any selected trajectory
+review must use training/calibration only. No new GPU run is submitted here.
