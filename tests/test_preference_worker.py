@@ -132,6 +132,35 @@ def test_full_half_precision_worker_checkpointing_generation_and_exports(tmp_pat
     with pytest.raises(ValueError, match="active/inactive"):
         verify_isolation(tmp_path / "isolation", diagnostic_data, diagnostic_spec, tokenizer, prior)
     history_path.write_text(saved_history)
+    from experiments.instruction_boundary.distribution_retention_run import execute as retain
+
+    retention_spec = copy.deepcopy(diagnostic_spec)
+    retention_spec["arms"] = ["diverse-sft-kl"]
+    retention_spec["max_retention_cache_bytes"] = 1024 * 1024
+    torch.manual_seed(31)
+    fresh_retention = Qwen3ForCausalLM(config).half().eval().requires_grad_(False)
+    retain(
+        fresh_retention,
+        tokenizer,
+        diagnostic_data,
+        retention_spec,
+        tmp_path / "retention",
+        lambda: None,
+        prior=prior,
+    )
+    retained_root = tmp_path / "retention/comparison"
+    initial = json.loads((retained_root / "diverse-sft-kl/initial-retention.json").read_text())
+    assert all(abs(v) < 1e-6 for v in initial["kl"])
+    reference_receipt = json.loads((retained_root / "retention-reference.json").read_text())
+    assert (
+        hashlib.sha256((retained_root / "retention-reference.safetensors").read_bytes()).hexdigest()
+        == reference_receipt["file_sha256"]
+    )
+    retained_history = json.loads((retained_root / "diverse-sft-kl/history.json").read_text())
+    assert len(retained_history) == 2
+    assert all(r["preserve_nll"] is None and r["preserve_kl"] is not None for r in retained_history)
+    assert fingerprint(fresh_retention) == original
+    assert json.loads((tmp_path / "retention/complete.json").read_text())["fits"] == 1
     expected = json.loads((prior / "confirmation.json").read_text())
     altered = copy.deepcopy(expected)
     altered[0]["tokens"][0] = (altered[0]["tokens"][0] + 1) % 64

@@ -5,6 +5,7 @@ runs only on the reloaded adapter, so reported behavior belongs to the artifact
 that users can actually load. This module never selects checkpoints or examples.
 """
 
+import hashlib
 import json
 import time
 from pathlib import Path
@@ -34,6 +35,8 @@ def run_comparison(
     check_time=lambda: None,
     arms=None,
     on_step=None,
+    preservation_objective="nll",
+    max_cache_bytes=None,
 ):
     """Run narrow/diverse × SFT/DPO from the same frozen weights.
 
@@ -42,6 +45,8 @@ def run_comparison(
     a success manifest. Existing output directories are rejected to prevent mixed
     attempts. The returned model has no adapters and exactly its original weights.
     """
+    if preservation_objective not in ("nll", "kl"):
+        raise ValueError("Unknown preservation objective")
     if arms is None:
         arms = [
             (coverage, objective, "combined")
@@ -79,6 +84,7 @@ def run_comparison(
         {
             "training": protocol,
             "arms": arms,
+            "preservation_objective": preservation_objective,
             "rank": rank,
             "modules": names,
             "base_identity": original,
@@ -93,16 +99,58 @@ def run_comparison(
     )
     write(output / "references.json", cache)
     reference_seconds = time.monotonic() - started
+    retained = None
+    retention_receipt = None
+    if preservation_objective == "kl":
+        from safetensors.torch import save_file
+
+        from .response_retention import cache_responses, retention_loss
+
+        started = time.monotonic()
+        retained = cache_responses(
+            model,
+            preserved,
+            base_identity=original,
+            max_cache_bytes=max_cache_bytes,
+            check_time=check_time,
+        )
+        path = output / "retention-reference.safetensors"
+        save_file({str(i): r.reference_logits for i, r in enumerate(retained)}, path)
+        retention_receipt = {
+            "base_identity": original,
+            "sample_sha256": [r.sample_sha256 for r in retained],
+            "file_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+            "tensor_bytes": sum(
+                r.reference_logits.numel() * r.reference_logits.element_size() for r in retained
+            ),
+            "forward_calls": len(retained),
+            "seconds": time.monotonic() - started,
+        }
+        write(output / "retention-reference.json", retention_receipt)
     results = {}
     for coverage, objective, loss_terms in arms:
         check_time()
         arm = f"{coverage}-{objective}"
         if loss_terms != "combined":
             arm += f"-{loss_terms}"
+        if preservation_objective == "kl":
+            arm += "-kl"
         directory = output / arm
         directory.mkdir()
         fitted = attach_lora(model, names, rank=rank, seed=protocol["seed"])
         try:
+            initial_kl = None
+            if retained is not None:
+                with torch.no_grad():
+                    initial_kl = [
+                        float(retention_loss(fitted, r, base_identity=original)) for r in retained
+                    ]
+                if any(not torch.isfinite(torch.tensor(v)) or abs(v) > 1e-6 for v in initial_kl):
+                    raise RuntimeError("Initial adapter does not match retention reference")
+                write(
+                    directory / "initial-retention.json",
+                    {"kl": initial_kl, "forward_calls": len(retained)},
+                )
             if torch.cuda.is_available():
                 torch.cuda.reset_peak_memory_stats()
             started = time.monotonic()
@@ -116,6 +164,8 @@ def run_comparison(
                 protocol=protocol,
                 check_time=check_time,
                 loss_terms=loss_terms,
+                preservation_objective=preservation_objective,
+                retained_responses=retained,
                 on_step=(lambda fitted, row: on_step(fitted, directory, row))
                 if on_step is not None
                 else None,
@@ -166,6 +216,7 @@ def run_comparison(
             "base_identity": original,
             "reference_seconds": reference_seconds,
             "reference_forward_calls": 2 * len(union),
+            "retention_reference": retention_receipt,
             "arms": results,
         },
     )

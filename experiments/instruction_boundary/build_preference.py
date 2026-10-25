@@ -21,13 +21,15 @@ def main():
         default=ROOT / "experiments/instruction_boundary/preference_protocol_v1.json",
     )
     parser.add_argument(
-        "--worker", choices=("preference_run", "loss_isolation_run"), default="preference_run"
+        "--worker",
+        choices=("preference_run", "loss_isolation_run", "distribution_retention_run"),
+        default="preference_run",
     )
     args = parser.parse_args()
     if not args.kernel.startswith("shlydv/neuronpatch-"):
         raise ValueError("Personal neuronpatch kernel required")
     spec = json.loads(args.protocol.read_text())
-    if args.worker == "loss_isolation_run" and not spec.get("prior_kernel", "").startswith(
+    if args.worker != "preference_run" and not spec.get("prior_kernel", "").startswith(
         "shlydv/neuronpatch-"
     ):
         raise ValueError("Personal prior kernel required for loss isolation")
@@ -41,6 +43,8 @@ def main():
         for n in (
             "preference_run",
             "loss_isolation_run",
+            "distribution_retention_run",
+            "response_retention",
             "preference_experiment",
             "preference_training",
             "preference_objective",
@@ -103,7 +107,7 @@ def main():
         "machine_shape": "NvidiaTeslaT4",
         "dataset_sources": [],
         "competition_sources": [],
-        "kernel_sources": [spec["prior_kernel"]] if args.worker == "loss_isolation_run" else [],
+        "kernel_sources": [spec["prior_kernel"]] if args.worker != "preference_run" else [],
         "model_sources": [],
     }
     for name, value in [("kernel-metadata.json", metadata), ("submission.json", submission)]:

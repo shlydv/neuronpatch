@@ -55,7 +55,7 @@ def compare_replay(actual, expected, ids):
                 raise ValueError("Prior output replay differs: " + row["id"] + "/" + key)
 
 
-def execute(model, tokenizer, data, spec, output, check_time, *, prior=None):
+def execute(model, tokenizer, data, spec, output, check_time, *, prior=None, retention=False):
     if fingerprint(model) != spec["base_fingerprint"]:
         raise ValueError("Loaded base differs from frozen identity")
     if model.training or any(p.requires_grad for p in model.parameters()):
@@ -174,7 +174,13 @@ def execute(model, tokenizer, data, spec, output, check_time, *, prior=None):
         output=output / "comparison",
         evaluate=evaluate,
         check_time=check_time,
-        arms=[("diverse", "sft", mode) for mode in ("task_only", "preservation_only")],
+        arms=(
+            [("diverse", "sft", "combined")]
+            if retention
+            else [("diverse", "sft", mode) for mode in ("task_only", "preservation_only")]
+        ),
+        preservation_objective="kl" if retention else "nll",
+        max_cache_bytes=spec.get("max_retention_cache_bytes"),
         on_step=on_step,
     )
     write(

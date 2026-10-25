@@ -50,3 +50,20 @@ measure initial reference KL and finite gradients, replay the existing combined
 adapter, and verify export/reload and evaluation in the actual tiny-model worker.
 Do not add new neuron selection, target wording, checkpoint selection or multiple
 rates to this objective control.
+
+## Integrated worker and frozen control
+
+The shared runner now prepares and saves reference logits before attaching LoRA,
+records their SHA256, tokenized-sample identities, base identity, bytes and cost,
+and checks initial KL for every cached response. It rejects initial drift over
+1e-6. The diagnostic worker replays the previous combined adapter, then performs
+one KL+SFT fit and evaluates the reloaded artifact, preserving the same two
+intermediate checkpoints. The full half-precision tiny-Qwen test passes, including
+reference-file hashing and base restoration; all 15 focused tests remain green.
+
+[Protocol v1](../experiments/instruction_boundary/distribution_retention_protocol_v1.json)
+fixes one fit, weight 1, 300 generated records including replay, a 64 MiB reference
+cache cap, and a 5,400-second provider limit. No GPU submission has been made at
+this checkpoint. The protocol's memory estimate is from tokenization/config,
+not a measured large-model allocation. Independent artifact verification and
+blinded answer review remain required after execution.
