@@ -78,3 +78,23 @@ prompt-injection benchmark, or that this table task should define the product.
 After isolating the regression, evaluate the repaired recipe against ordinary
 LoRA and matched random neuron supports on a fresh split and a second task.
 Only a measured quality/preservation/cost advantage justifies a library default.
+
+## Implementation checkpoint — 25 October 2026
+
+The shared optimizer now supports explicit `task_only` and `preservation_only`
+controls. It constructs both seeded permutations in all modes and skips disabled
+forward/backward passes. The default combined SFT/DPO path remains available.
+Per-step records identify active losses, skipped losses as null, actual forward
+counts, gradient norms and retries. A callback can observe successful updates
+for the predeclared intermediate diagnostics.
+
+The experiment runner supports the two controls and retains frozen-base checks,
+compact export, exact score equality after reload and evaluation of the reloaded
+artifact. Eleven focused CPU tests pass, including independently computed Adam
+updates for both controls, sample-order equality, the two-arm tiny-Qwen lifecycle,
+the original four-arm lifecycle, and the half-precision worker. This verifies the
+implementation on small models, not the full-model scientific hypothesis.
+
+Remaining before submission: wire the diagnostic evaluation subset and checkpoint
+callback, package the old combined adapter for exact output replay, bind the
+runtime/source/data identities, and test the resulting worker end to end.

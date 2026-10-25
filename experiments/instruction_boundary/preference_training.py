@@ -153,14 +153,33 @@ def backward_pair(model, pair, reference, *, objective, beta, scale):
 
 
 def fit_preferences(
-    model, pairs, preserved, cache, *, base_identity, objective, protocol, check_time=lambda: None
+    model,
+    pairs,
+    preserved,
+    cache,
+    *,
+    base_identity,
+    objective,
+    protocol,
+    check_time=lambda: None,
+    loss_terms="combined",
+    on_step=None,
 ):
     """Shared Adam schedule, clean preservation, finite-gradient retries and cost counts.
 
-    Successful steps use one pair and one preserved response each. Reference
+    Combined steps use one pair and one preserved response each. Loss ablations
+    retain both sample schedules but skip the disabled forward/backward entirely.
+    on_step observes successful updates only; it must not mutate model/RNG state.
+    Reference
     precomputation costs are separate. Retry records retain extra forward counts.
     A nonfinite attempt never calls optimizer.step or advances the sample order.
     """
+    if loss_terms not in ("combined", "task_only", "preservation_only"):
+        raise ValueError("Unknown loss terms")
+    if objective not in ("sft", "dpo"):
+        raise ValueError("SFT/DPO objective required")
+    if model.training or any(m.training for m in model.modules()):
+        raise ValueError("Deterministic eval mode required")
     if not pairs:
         raise ValueError("Nonempty training pairs required")
     refs = reference_lookup(pairs, cache, base_identity=base_identity)
@@ -178,6 +197,12 @@ def fit_preferences(
         or protocol["preservation_weight"] < 0
     ):
         raise ValueError("Invalid scale or preservation weight")
+    use_task = loss_terms != "preservation_only"
+    use_preservation = loss_terms != "task_only" and protocol["preservation_weight"] > 0
+    if not use_task and not use_preservation:
+        raise ValueError("At least one nonzero loss term required")
+    # Construct BOTH permutations even when a loss is disabled. The second
+    # permutation must consume the same random stream as in the combined fit.
     generator = torch.Generator().manual_seed(protocol["seed"])
     orders = [
         torch.randperm(len(rows), generator=generator).tolist() for rows in (pairs, preserved)
@@ -192,23 +217,31 @@ def fit_preferences(
             check_time()
             optimizer.zero_grad(set_to_none=True)
             pair = pairs[indices[0]]
-            metrics = backward_pair(
-                model, pair, refs[pair.id], objective=objective, beta=protocol["beta"], scale=scale
-            )
-            sample = preserved[indices[1]]
-            preserve_loss = -score(model, sample) / sample.completion_mask.sum()
-            (preserve_loss * protocol["preservation_weight"] * scale).backward()
-            if not torch.isfinite(preserve_loss):
-                raise FloatingPointError("Nonfinite preservation loss")
+            metrics = {"loss": None, "forward_calls": 0}
+            if use_task:
+                metrics = backward_pair(
+                    model,
+                    pair,
+                    refs[pair.id],
+                    objective=objective,
+                    beta=protocol["beta"],
+                    scale=scale,
+                )
+            preserve_loss = None
+            if use_preservation:
+                sample = preserved[indices[1]]
+                preserve_loss = -score(model, sample) / sample.completion_mask.sum()
+                (preserve_loss * protocol["preservation_weight"] * scale).backward()
+                if not torch.isfinite(preserve_loss):
+                    raise FloatingPointError("Nonfinite preservation loss")
+            forward_calls = metrics["forward_calls"] + int(use_preservation)
             if any(p.grad is None for p in parameters):
                 raise RuntimeError("Missing trainable gradient")
             for p in parameters:
                 p.grad.div_(scale)
             if all(torch.isfinite(p.grad).all() for p in parameters):
                 break
-            retries.append(
-                {"scale": scale, "pair_id": pair.id, "forward_calls": metrics["forward_calls"] + 1}
-            )
+            retries.append({"scale": scale, "pair_id": pair.id, "forward_calls": forward_calls})
             if scale / 2 < protocol["minimum_loss_scale"]:
                 raise FloatingPointError("Nonfinite gradients at minimum scale; no Adam update")
             scale /= 2
@@ -223,13 +256,18 @@ def fit_preferences(
                 "example_indices": indices,
                 "objective": objective,
                 **metrics,
-                "preserve_nll": float(preserve_loss.detach()),
+                "preserve_nll": float(preserve_loss.detach())
+                if preserve_loss is not None
+                else None,
+                "loss_terms": loss_terms,
                 "loss_scale": scale,
                 "gradient_norm": float(norm),
                 "gradient_retries": retries,
-                "forward_calls": metrics["forward_calls"] + 1,
+                "forward_calls": forward_calls,
             }
         )
+        if on_step is not None:
+            on_step(model, history[-1])
         if step == 0 or (step + 1) % 16 == 0:
             print("PREFERENCE_STEP", objective, step + 1, "loss", history[-1]["loss"], flush=True)
     return history

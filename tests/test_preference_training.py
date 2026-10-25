@@ -261,7 +261,8 @@ def test_tiny_qwen_fit_save_reload_and_base_restoration(tmp_path):
     assert all(torch.equal(v, model.state_dict()[k]) for k, v in original.items())
 
 
-def test_four_arm_runner_uses_exported_models_and_restores_base(tmp_path):
+@pytest.mark.parametrize("ablation", [False, True])
+def test_runner_uses_exported_models_and_restores_base(tmp_path, ablation):
     from transformers import Qwen3Config, Qwen3ForCausalLM
 
     from experiments.instruction_boundary.preference_experiment import run_comparison
@@ -306,6 +307,12 @@ def test_four_arm_runner_uses_exported_models_and_restores_base(tmp_path):
         preservation_weight=0.7,
         gradient_clip=1.0,
     )
+    arms = (
+        [("diverse", "sft", mode) for mode in ("task_only", "preservation_only")]
+        if ablation
+        else None
+    )
+    steps = []
     model, results = run_comparison(
         model,
         {"narrow": pairs[:1], "diverse": pairs},
@@ -315,13 +322,24 @@ def test_four_arm_runner_uses_exported_models_and_restores_base(tmp_path):
         protocol=config,
         output=tmp_path / "run",
         evaluate=evaluate,
+        arms=arms,
+        on_step=lambda _, directory, row: steps.append((directory.name, row["step"])),
     )
-    assert visited == ["narrow-sft", "narrow-dpo", "diverse-sft", "diverse-dpo"]
+    expected = (
+        ["diverse-sft-task_only", "diverse-sft-preservation_only"]
+        if ablation
+        else ["narrow-sft", "narrow-dpo", "diverse-sft", "diverse-dpo"]
+    )
+    assert visited == expected
+    assert steps == [(name, step) for name in expected for step in (1, 2)]
     assert fingerprint(model) == original
     assert (tmp_path / "run" / "complete.json").exists()
     assert all(r["successful_steps"] == 2 for r in results.values())
-    assert results["narrow-sft"]["forward_calls"] == 4
-    assert results["narrow-dpo"]["forward_calls"] == 10
+    if ablation:
+        assert all(r["forward_calls"] == 2 for r in results.values())
+    else:
+        assert results["narrow-sft"]["forward_calls"] == 4
+        assert results["narrow-dpo"]["forward_calls"] == 10
     with pytest.raises(FileExistsError):
         run_comparison(
             model,
@@ -333,3 +351,61 @@ def test_four_arm_runner_uses_exported_models_and_restores_base(tmp_path):
             output=tmp_path / "run",
             evaluate=evaluate,
         )
+
+
+@pytest.mark.parametrize("loss_terms", ["task_only", "preservation_only"])
+def test_loss_ablation_matches_direct_adam_and_preserves_both_orders(loss_terms):
+    model, pairs, cache = fixture()
+    control = copy.deepcopy(model)
+    combined = copy.deepcopy(model)
+    preserved = [pairs[0].chosen, pairs[0].rejected, pairs[1].chosen]
+    config = dict(
+        steps=4,
+        lr=0.001,
+        seed=43,
+        beta=0.1,
+        loss_scale=32.0,
+        minimum_loss_scale=1.0,
+        preservation_weight=0.7,
+        gradient_clip=1.0,
+    )
+    observed = []
+    before = model.calls
+    history = fit_preferences(
+        model,
+        pairs,
+        preserved,
+        cache,
+        base_identity="tiny-base",
+        objective="sft",
+        protocol=config,
+        loss_terms=loss_terms,
+        on_step=lambda _, row: observed.append(row["step"]),
+    )
+    assert observed == [1, 2, 3, 4]
+    assert model.calls - before == 4
+    joint_history = fit_preferences(
+        combined,
+        pairs,
+        preserved,
+        cache,
+        base_identity="tiny-base",
+        objective="sft",
+        protocol=config,
+    )
+    assert [r["example_indices"] for r in history] == [r["example_indices"] for r in joint_history]
+    opt = torch.optim.Adam(control.head.parameters(), lr=config["lr"])
+    for row in history:
+        i, j = row["example_indices"]
+        sample = pairs[i].chosen if loss_terms == "task_only" else preserved[j]
+        weight = 1.0 if loss_terms == "task_only" else config["preservation_weight"]
+        opt.zero_grad(set_to_none=True)
+        loss = -weight * score(control, sample) / sample.completion_mask.sum()
+        loss.backward()
+        torch.nn.utils.clip_grad_norm_(control.head.parameters(), config["gradient_clip"])
+        opt.step()
+        assert row["forward_calls"] == 1
+        assert (row["preserve_nll"] is None) == (loss_terms == "task_only")
+        assert (row["loss"] is None) == (loss_terms == "preservation_only")
+    torch.testing.assert_close(model.head.weight, control.head.weight, atol=1e-7, rtol=1e-5)
+    assert model.embedding.weight.grad is None

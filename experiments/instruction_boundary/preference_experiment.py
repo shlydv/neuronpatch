@@ -32,6 +32,8 @@ def run_comparison(
     output,
     evaluate,
     check_time=lambda: None,
+    arms=None,
+    on_step=None,
 ):
     """Run narrow/diverse × SFT/DPO from the same frozen weights.
 
@@ -40,6 +42,21 @@ def run_comparison(
     a success manifest. Existing output directories are rejected to prevent mixed
     attempts. The returned model has no adapters and exactly its original weights.
     """
+    if arms is None:
+        arms = [
+            (coverage, objective, "combined")
+            for coverage in ("narrow", "diverse")
+            for objective in ("sft", "dpo")
+        ]
+    if not arms or len(set(arms)) != len(arms):
+        raise ValueError("Nonempty unique arms required")
+    for coverage, objective, terms in arms:
+        if (
+            coverage not in ("narrow", "diverse")
+            or objective not in ("sft", "dpo")
+            or terms not in ("combined", "task_only", "preservation_only")
+        ):
+            raise ValueError("Unknown comparison arm")
     if set(banks) != {"narrow", "diverse"} or any(not rows for rows in banks.values()):
         raise ValueError("Nonempty narrow and diverse banks required")
     if model.training or any(p.requires_grad for p in model.parameters()):
@@ -61,6 +78,7 @@ def run_comparison(
         output / "protocol.json",
         {
             "training": protocol,
+            "arms": arms,
             "rank": rank,
             "modules": names,
             "base_identity": original,
@@ -76,72 +94,72 @@ def run_comparison(
     write(output / "references.json", cache)
     reference_seconds = time.monotonic() - started
     results = {}
-    for coverage in ("narrow", "diverse"):
-        for objective in ("sft", "dpo"):
-            check_time()
-            arm = f"{coverage}-{objective}"
-            directory = output / arm
-            directory.mkdir()
-            fitted = attach_lora(model, names, rank=rank, seed=protocol["seed"])
-            try:
-                if torch.cuda.is_available():
-                    torch.cuda.reset_peak_memory_stats()
-                started = time.monotonic()
-                history = fit_preferences(
-                    fitted,
-                    banks[coverage],
-                    preserved,
-                    cache,
-                    base_identity=original,
-                    objective=objective,
-                    protocol=protocol,
-                    check_time=check_time,
-                )
-                fit_seconds = time.monotonic() - started
-                peak_bytes = (
-                    torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None
-                )
-                write(directory / "history.json", history)
-                # Probe both alternatives, not just the response being reinforced.
-                probes = (banks[coverage][0].chosen, banks[coverage][0].rejected)
-                with torch.no_grad():
-                    before = torch.stack([score(fitted, s) for s in probes]).cpu()
-                parameter_count = sum(p.numel() for p in fitted.parameters() if p.requires_grad)
-                fitted.save_pretrained(directory / "adapter", safe_serialization=True)
-            finally:
-                model = unload_lora(fitted)
-            if fingerprint(model) != original:
-                raise RuntimeError("Training mutated frozen base weights")
-            reloaded = load_lora(
-                model, directory / "adapter", names, rank=rank, seed=protocol["seed"]
+    for coverage, objective, loss_terms in arms:
+        check_time()
+        arm = f"{coverage}-{objective}"
+        if loss_terms != "combined":
+            arm += f"-{loss_terms}"
+        directory = output / arm
+        directory.mkdir()
+        fitted = attach_lora(model, names, rank=rank, seed=protocol["seed"])
+        try:
+            if torch.cuda.is_available():
+                torch.cuda.reset_peak_memory_stats()
+            started = time.monotonic()
+            history = fit_preferences(
+                fitted,
+                banks[coverage],
+                preserved,
+                cache,
+                base_identity=original,
+                objective=objective,
+                protocol=protocol,
+                check_time=check_time,
+                loss_terms=loss_terms,
+                on_step=(lambda fitted, row: on_step(fitted, directory, row))
+                if on_step is not None
+                else None,
             )
-            try:
-                with torch.no_grad():
-                    after = torch.stack([score(reloaded, s) for s in probes]).cpu()
-                torch.testing.assert_close(before, after, rtol=0, atol=0)
-                evaluation = evaluate(reloaded, directory)
-            finally:
-                model = unload_lora(reloaded)
-            if fingerprint(model) != original:
-                raise RuntimeError("Export/evaluation mutated frozen base weights")
-            results[arm] = {
-                "fit_seconds": fit_seconds,
-                "peak_training_allocated_bytes": peak_bytes,
-                "adapter_bytes": sum(
-                    p.stat().st_size for p in (directory / "adapter").rglob("*") if p.is_file()
-                ),
-                "trainable_parameters": parameter_count,
-                "successful_steps": len(history),
-                "forward_calls": sum(
-                    r["forward_calls"]
-                    + sum(retry["forward_calls"] for retry in r["gradient_retries"])
-                    for r in history
-                ),
-                "evaluation": evaluation,
-                "export_score_exact": True,
-                "base_restored": True,
-            }
-            write(directory / "result.json", results[arm])
+            fit_seconds = time.monotonic() - started
+            peak_bytes = torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None
+            write(directory / "history.json", history)
+            # Probe both alternatives, not just the response being reinforced.
+            probes = (banks[coverage][0].chosen, banks[coverage][0].rejected)
+            with torch.no_grad():
+                before = torch.stack([score(fitted, s) for s in probes]).cpu()
+            parameter_count = sum(p.numel() for p in fitted.parameters() if p.requires_grad)
+            fitted.save_pretrained(directory / "adapter", safe_serialization=True)
+        finally:
+            model = unload_lora(fitted)
+        if fingerprint(model) != original:
+            raise RuntimeError("Training mutated frozen base weights")
+        reloaded = load_lora(model, directory / "adapter", names, rank=rank, seed=protocol["seed"])
+        try:
+            with torch.no_grad():
+                after = torch.stack([score(reloaded, s) for s in probes]).cpu()
+            torch.testing.assert_close(before, after, rtol=0, atol=0)
+            evaluation = evaluate(reloaded, directory)
+        finally:
+            model = unload_lora(reloaded)
+        if fingerprint(model) != original:
+            raise RuntimeError("Export/evaluation mutated frozen base weights")
+        results[arm] = {
+            "fit_seconds": fit_seconds,
+            "peak_training_allocated_bytes": peak_bytes,
+            "adapter_bytes": sum(
+                p.stat().st_size for p in (directory / "adapter").rglob("*") if p.is_file()
+            ),
+            "trainable_parameters": parameter_count,
+            "successful_steps": len(history),
+            "forward_calls": sum(
+                r["forward_calls"] + sum(retry["forward_calls"] for retry in r["gradient_retries"])
+                for r in history
+            ),
+            "evaluation": evaluation,
+            "export_score_exact": True,
+            "base_restored": True,
+        }
+        write(directory / "result.json", results[arm])
     write(
         output / "complete.json",
         {
