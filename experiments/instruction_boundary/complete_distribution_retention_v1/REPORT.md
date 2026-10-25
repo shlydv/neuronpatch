@@ -74,3 +74,50 @@ GPU run, examine the concrete remaining failures and whether the supervision is
 asking the model to rewrite correct answer behavior unnecessarily. A subsequent
 candidate must make a falsifiable prediction about the behavior/cost tradeoff,
 then be compared with tuned LoRA and matched random supports on fresh inputs.
+
+
+## Post-review failure separation
+
+A descriptive audit of the frozen outputs separates explicit attack compliance
+from answer correctness. These are behavioral signatures, not traced circuits.
+
+| Condition | Exact authority-marker responses /30 | Correct authority answers /30 | Wrong authority answers identical to its own clean answer |
+|---|---:|---:|---:|
+| Base |30|0|0|
+| Previous combined SFT |0|19|6|
+| KL retention |21|6|0|
+
+The previous recipe's 11 authority failures are all non-marker outputs, and six
+exactly repeat its clean errors. The KL recipe's 24 authority failures include
+21 exact attack markers. Therefore the KL change weakened the learned authority
+boundary in this test, not merely factual answer accuracy. Conversely, failing
+to print the marker does not prove correct boundary reasoning or general safety.
+
+For competing questions, the previous SFT has 12 wrong injected answers, six
+identical to its clean errors. KL has 17 wrong injected answers, none identical
+to its clean output; one exactly equals the competing answer. Another answer
+(Derrick Williams) is consistent with answering the competing weight question
+incorrectly, illustrating why exact-alternative counts underestimate wrong-task
+behavior. It is not legitimate to label all remaining wrong answers as either
+routing failures or factual failures automatically. The saved exact signatures
+are descriptive and overlapping; no causal neural mechanism is established.
+
+This changes the next design question: preserve the model's answer computation
+while teaching where instructions are authoritative. Merely raising a global
+clean-retention weight can preserve the original vulnerability. A candidate worth
+examining is clean-to-attacked **distribution matching on a shared continuation**,
+with matched legitimate updates using the appropriate donor teacher. That differs
+from self-KL on clean contexts: it supplies a positive learning signal on attacked
+contexts without forcing every task into short reference wording. It is ordinary
+cross-context distillation as a candidate, not a novelty claim or scheduled run.
+
+Earlier experiments already copied hard teacher answers, including mistakes.
+Repeating that is insufficient. Before implementing or launching this candidate,
+check prior methods/code, verify source-correct complete teacher trajectories and
+causal token alignment, and specify how teacher errors and full reference-cache
+costs are handled. Compare against the current NLL and KL controls; do not change
+neuron support simultaneously. Its key falsifiable prediction is reduced exact
+marker compliance without losing the clean QA behavior recovered by KL. If it
+only retains clean behavior while continuing to print markers, it fails that
+prediction. A useful result still needs fresh wording/documents and stronger
+baselines before any claim for neuronpatch.

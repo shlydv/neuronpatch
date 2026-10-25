@@ -44,8 +44,12 @@ from six to three, but clean accuracy stays 20/30: it gains no new correct answe
 Authority recovery drops 19→6, competing-attack recovery 18→13, and legitimate
 competing-task accuracy 20→17. This is a preservation/learning tradeoff at one KL
 weight, not a repair. Both intermediate clean checkpoints also fail the original
-absolute accuracy criterion. No GPU job remains active. Inspect the remaining
-behavioral errors and objective mismatch before any new selection comparison.
+absolute accuracy criterion. No GPU job remains active. The post-review signature audit shows a concrete difference: NLL emits zero of
+30 attack markers but repeats six clean errors; KL emits 21 markers. The next
+candidate must improve the authority boundary while preserving answer computation.
+Cross-context distribution matching is a candidate requiring prior-art and
+teacher-trajectory checks; it is not yet implemented or authorized by this note
+as a new run. Do not change neuron support simultaneously.
 
 ## Previous matched-authority experiment
 
